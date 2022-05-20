@@ -1,0 +1,92 @@
+// https://www.terraform.io/docs/providers/databricks/d/clusters
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface DataDatabricksClustersConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/clusters#cluster_name_contains DataDatabricksClusters#cluster_name_contains}
+  */
+  readonly clusterNameContains?: string;
+}
+
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/databricks/d/clusters databricks_clusters}
+*/
+export class DataDatabricksClusters extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType = "databricks_clusters";
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/databricks/d/clusters databricks_clusters} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataDatabricksClustersConfig = {}
+  */
+  public constructor(scope: Construct, id: string, config: DataDatabricksClustersConfig = {}) {
+    super(scope, id, {
+      terraformResourceType: 'databricks_clusters',
+      terraformGeneratorMetadata: {
+        providerName: 'databricks',
+        providerVersion: '0.5.8',
+        providerVersionConstraint: '~> 0.5'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle
+    });
+    this._clusterNameContains = config.clusterNameContains;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // cluster_name_contains - computed: false, optional: true, required: false
+  private _clusterNameContains?: string; 
+  public get clusterNameContains() {
+    return this.getStringAttribute('cluster_name_contains');
+  }
+  public set clusterNameContains(value: string) {
+    this._clusterNameContains = value;
+  }
+  public resetClusterNameContains() {
+    this._clusterNameContains = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterNameContainsInput() {
+    return this._clusterNameContains;
+  }
+
+  // id - computed: true, optional: true, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // ids - computed: true, optional: false, required: false
+  public get ids() {
+    return cdktf.Fn.tolist(this.getListAttribute('ids'));
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      cluster_name_contains: cdktf.stringToTerraform(this._clusterNameContains),
+    };
+  }
+}

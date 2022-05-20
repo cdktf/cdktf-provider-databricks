@@ -1,0 +1,125 @@
+// https://www.terraform.io/docs/providers/databricks/r/metastore_assignment
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface MetastoreAssignmentConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore_assignment#default_catalog_name MetastoreAssignment#default_catalog_name}
+  */
+  readonly defaultCatalogName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore_assignment#metastore_id MetastoreAssignment#metastore_id}
+  */
+  readonly metastoreId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore_assignment#workspace_id MetastoreAssignment#workspace_id}
+  */
+  readonly workspaceId: number;
+}
+
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/databricks/r/metastore_assignment databricks_metastore_assignment}
+*/
+export class MetastoreAssignment extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType = "databricks_metastore_assignment";
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/databricks/r/metastore_assignment databricks_metastore_assignment} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options MetastoreAssignmentConfig
+  */
+  public constructor(scope: Construct, id: string, config: MetastoreAssignmentConfig) {
+    super(scope, id, {
+      terraformResourceType: 'databricks_metastore_assignment',
+      terraformGeneratorMetadata: {
+        providerName: 'databricks',
+        providerVersion: '0.5.8',
+        providerVersionConstraint: '~> 0.5'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle
+    });
+    this._defaultCatalogName = config.defaultCatalogName;
+    this._metastoreId = config.metastoreId;
+    this._workspaceId = config.workspaceId;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // default_catalog_name - computed: false, optional: true, required: false
+  private _defaultCatalogName?: string; 
+  public get defaultCatalogName() {
+    return this.getStringAttribute('default_catalog_name');
+  }
+  public set defaultCatalogName(value: string) {
+    this._defaultCatalogName = value;
+  }
+  public resetDefaultCatalogName() {
+    this._defaultCatalogName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultCatalogNameInput() {
+    return this._defaultCatalogName;
+  }
+
+  // id - computed: true, optional: true, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // metastore_id - computed: false, optional: false, required: true
+  private _metastoreId?: string; 
+  public get metastoreId() {
+    return this.getStringAttribute('metastore_id');
+  }
+  public set metastoreId(value: string) {
+    this._metastoreId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metastoreIdInput() {
+    return this._metastoreId;
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: number; 
+  public get workspaceId() {
+    return this.getNumberAttribute('workspace_id');
+  }
+  public set workspaceId(value: number) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      default_catalog_name: cdktf.stringToTerraform(this._defaultCatalogName),
+      metastore_id: cdktf.stringToTerraform(this._metastoreId),
+      workspace_id: cdktf.numberToTerraform(this._workspaceId),
+    };
+  }
+}
