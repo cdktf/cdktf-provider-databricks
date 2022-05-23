@@ -1,0 +1,87 @@
+// https://www.terraform.io/docs/providers/databricks/d/jobs
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface DataDatabricksJobsConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/jobs#ids DataDatabricksJobs#ids}
+  */
+  readonly ids?: { [key: string]: string };
+}
+
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/databricks/d/jobs databricks_jobs}
+*/
+export class DataDatabricksJobs extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType = "databricks_jobs";
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/databricks/d/jobs databricks_jobs} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataDatabricksJobsConfig = {}
+  */
+  public constructor(scope: Construct, id: string, config: DataDatabricksJobsConfig = {}) {
+    super(scope, id, {
+      terraformResourceType: 'databricks_jobs',
+      terraformGeneratorMetadata: {
+        providerName: 'databricks',
+        providerVersion: '0.5.8',
+        providerVersionConstraint: '~> 0.5'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle
+    });
+    this._ids = config.ids;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // id - computed: true, optional: true, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // ids - computed: true, optional: true, required: false
+  private _ids?: { [key: string]: string }; 
+  public get ids() {
+    return this.getStringMapAttribute('ids');
+  }
+  public set ids(value: { [key: string]: string }) {
+    this._ids = value;
+  }
+  public resetIds() {
+    this._ids = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idsInput() {
+    return this._ids;
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      ids: cdktf.hashMapper(cdktf.stringToTerraform)(this._ids),
+    };
+  }
+}
