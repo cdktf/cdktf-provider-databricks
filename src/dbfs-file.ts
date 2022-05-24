@@ -12,6 +12,13 @@ export interface DbfsFileConfig extends cdktf.TerraformMetaArguments {
   */
   readonly contentBase64?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/dbfs_file#id DbfsFile#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/dbfs_file#md5 DbfsFile#md5}
   */
   readonly md5?: string;
@@ -60,6 +67,7 @@ export class DbfsFile extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._contentBase64 = config.contentBase64;
+    this._id = config.id;
     this._md5 = config.md5;
     this._path = config.path;
     this._source = config.source;
@@ -96,8 +104,19 @@ export class DbfsFile extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // md5 - computed: false, optional: true, required: false
@@ -152,6 +171,7 @@ export class DbfsFile extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       content_base64: cdktf.stringToTerraform(this._contentBase64),
+      id: cdktf.stringToTerraform(this._id),
       md5: cdktf.stringToTerraform(this._md5),
       path: cdktf.stringToTerraform(this._path),
       source: cdktf.stringToTerraform(this._source),

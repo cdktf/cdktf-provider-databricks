@@ -32,6 +32,13 @@ export interface MwsLogDeliveryConfig extends cdktf.TerraformMetaArguments {
   */
   readonly deliveryStartTime?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_log_delivery#id MwsLogDelivery#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_log_delivery#log_type MwsLogDelivery#log_type}
   */
   readonly logType: string;
@@ -93,6 +100,7 @@ export class MwsLogDelivery extends cdktf.TerraformResource {
     this._credentialsId = config.credentialsId;
     this._deliveryPathPrefix = config.deliveryPathPrefix;
     this._deliveryStartTime = config.deliveryStartTime;
+    this._id = config.id;
     this._logType = config.logType;
     this._outputFormat = config.outputFormat;
     this._status = config.status;
@@ -195,8 +203,19 @@ export class MwsLogDelivery extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // log_type - computed: false, optional: false, required: true
@@ -282,6 +301,7 @@ export class MwsLogDelivery extends cdktf.TerraformResource {
       credentials_id: cdktf.stringToTerraform(this._credentialsId),
       delivery_path_prefix: cdktf.stringToTerraform(this._deliveryPathPrefix),
       delivery_start_time: cdktf.stringToTerraform(this._deliveryStartTime),
+      id: cdktf.stringToTerraform(this._id),
       log_type: cdktf.stringToTerraform(this._logType),
       output_format: cdktf.stringToTerraform(this._outputFormat),
       status: cdktf.stringToTerraform(this._status),

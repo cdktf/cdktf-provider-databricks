@@ -16,6 +16,13 @@ export interface InstancePoolConfig extends cdktf.TerraformMetaArguments {
   */
   readonly enableElasticDisk?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#id InstancePool#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#idle_instance_autotermination_minutes InstancePool#idle_instance_autotermination_minutes}
   */
   readonly idleInstanceAutoterminationMinutes: number;
@@ -673,6 +680,105 @@ export function instancePoolPreloadedDockerImageToTerraform(struct?: InstancePoo
   }
 }
 
+export class InstancePoolPreloadedDockerImageOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): InstancePoolPreloadedDockerImage | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._url !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.url = this._url;
+    }
+    if (this._basicAuth?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.basicAuth = this._basicAuth?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: InstancePoolPreloadedDockerImage | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._url = undefined;
+      this._basicAuth.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._url = value.url;
+      this._basicAuth.internalValue = value.basicAuth;
+    }
+  }
+
+  // url - computed: false, optional: false, required: true
+  private _url?: string; 
+  public get url() {
+    return this.getStringAttribute('url');
+  }
+  public set url(value: string) {
+    this._url = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urlInput() {
+    return this._url;
+  }
+
+  // basic_auth - computed: false, optional: true, required: false
+  private _basicAuth = new InstancePoolPreloadedDockerImageBasicAuthOutputReference(this, "basic_auth");
+  public get basicAuth() {
+    return this._basicAuth;
+  }
+  public putBasicAuth(value: InstancePoolPreloadedDockerImageBasicAuth) {
+    this._basicAuth.internalValue = value;
+  }
+  public resetBasicAuth() {
+    this._basicAuth.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get basicAuthInput() {
+    return this._basicAuth.internalValue;
+  }
+}
+
+export class InstancePoolPreloadedDockerImageList extends cdktf.ComplexList {
+  public internalValue? : InstancePoolPreloadedDockerImage[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): InstancePoolPreloadedDockerImageOutputReference {
+    return new InstancePoolPreloadedDockerImageOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool databricks_instance_pool}
@@ -710,6 +816,7 @@ export class InstancePool extends cdktf.TerraformResource {
     });
     this._customTags = config.customTags;
     this._enableElasticDisk = config.enableElasticDisk;
+    this._id = config.id;
     this._idleInstanceAutoterminationMinutes = config.idleInstanceAutoterminationMinutes;
     this._instancePoolId = config.instancePoolId;
     this._instancePoolName = config.instancePoolName;
@@ -721,7 +828,7 @@ export class InstancePool extends cdktf.TerraformResource {
     this._azureAttributes.internalValue = config.azureAttributes;
     this._diskSpec.internalValue = config.diskSpec;
     this._gcpAttributes.internalValue = config.gcpAttributes;
-    this._preloadedDockerImage = config.preloadedDockerImage;
+    this._preloadedDockerImage.internalValue = config.preloadedDockerImage;
   }
 
   // ==========
@@ -761,8 +868,19 @@ export class InstancePool extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // idle_instance_autotermination_minutes - computed: false, optional: false, required: true
@@ -933,20 +1051,19 @@ export class InstancePool extends cdktf.TerraformResource {
   }
 
   // preloaded_docker_image - computed: false, optional: true, required: false
-  private _preloadedDockerImage?: InstancePoolPreloadedDockerImage[] | cdktf.IResolvable; 
+  private _preloadedDockerImage = new InstancePoolPreloadedDockerImageList(this, "preloaded_docker_image", true);
   public get preloadedDockerImage() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('preloaded_docker_image')));
+    return this._preloadedDockerImage;
   }
-  public set preloadedDockerImage(value: InstancePoolPreloadedDockerImage[] | cdktf.IResolvable) {
-    this._preloadedDockerImage = value;
+  public putPreloadedDockerImage(value: InstancePoolPreloadedDockerImage[] | cdktf.IResolvable) {
+    this._preloadedDockerImage.internalValue = value;
   }
   public resetPreloadedDockerImage() {
-    this._preloadedDockerImage = undefined;
+    this._preloadedDockerImage.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get preloadedDockerImageInput() {
-    return this._preloadedDockerImage;
+    return this._preloadedDockerImage.internalValue;
   }
 
   // =========
@@ -957,6 +1074,7 @@ export class InstancePool extends cdktf.TerraformResource {
     return {
       custom_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._customTags),
       enable_elastic_disk: cdktf.booleanToTerraform(this._enableElasticDisk),
+      id: cdktf.stringToTerraform(this._id),
       idle_instance_autotermination_minutes: cdktf.numberToTerraform(this._idleInstanceAutoterminationMinutes),
       instance_pool_id: cdktf.stringToTerraform(this._instancePoolId),
       instance_pool_name: cdktf.stringToTerraform(this._instancePoolName),
@@ -968,7 +1086,7 @@ export class InstancePool extends cdktf.TerraformResource {
       azure_attributes: instancePoolAzureAttributesToTerraform(this._azureAttributes.internalValue),
       disk_spec: instancePoolDiskSpecToTerraform(this._diskSpec.internalValue),
       gcp_attributes: instancePoolGcpAttributesToTerraform(this._gcpAttributes.internalValue),
-      preloaded_docker_image: cdktf.listMapper(instancePoolPreloadedDockerImageToTerraform)(this._preloadedDockerImage),
+      preloaded_docker_image: cdktf.listMapper(instancePoolPreloadedDockerImageToTerraform)(this._preloadedDockerImage.internalValue),
     };
   }
 }

@@ -12,6 +12,13 @@ export interface DataDatabricksNotebookConfig extends cdktf.TerraformMetaArgumen
   */
   readonly format: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/notebook#id DataDatabricksNotebook#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/notebook#language DataDatabricksNotebook#language}
   */
   readonly language?: string;
@@ -64,6 +71,7 @@ export class DataDatabricksNotebook extends cdktf.TerraformDataSource {
       lifecycle: config.lifecycle
     });
     this._format = config.format;
+    this._id = config.id;
     this._language = config.language;
     this._objectId = config.objectId;
     this._objectType = config.objectType;
@@ -93,8 +101,19 @@ export class DataDatabricksNotebook extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // language - computed: true, optional: true, required: false
@@ -165,6 +184,7 @@ export class DataDatabricksNotebook extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       format: cdktf.stringToTerraform(this._format),
+      id: cdktf.stringToTerraform(this._id),
       language: cdktf.stringToTerraform(this._language),
       object_id: cdktf.numberToTerraform(this._objectId),
       object_type: cdktf.stringToTerraform(this._objectType),

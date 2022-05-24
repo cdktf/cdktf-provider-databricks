@@ -32,6 +32,13 @@ export interface PermissionsConfig extends cdktf.TerraformMetaArguments {
   */
   readonly experimentId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/permissions#id Permissions#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/permissions#instance_pool_id Permissions#instance_pool_id}
   */
   readonly instancePoolId?: string;
@@ -118,6 +125,149 @@ export function permissionsAccessControlToTerraform(struct?: PermissionsAccessCo
   }
 }
 
+export class PermissionsAccessControlOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): PermissionsAccessControl | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._groupName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.groupName = this._groupName;
+    }
+    if (this._permissionLevel !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.permissionLevel = this._permissionLevel;
+    }
+    if (this._servicePrincipalName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.servicePrincipalName = this._servicePrincipalName;
+    }
+    if (this._userName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.userName = this._userName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PermissionsAccessControl | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._groupName = undefined;
+      this._permissionLevel = undefined;
+      this._servicePrincipalName = undefined;
+      this._userName = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._groupName = value.groupName;
+      this._permissionLevel = value.permissionLevel;
+      this._servicePrincipalName = value.servicePrincipalName;
+      this._userName = value.userName;
+    }
+  }
+
+  // group_name - computed: false, optional: true, required: false
+  private _groupName?: string; 
+  public get groupName() {
+    return this.getStringAttribute('group_name');
+  }
+  public set groupName(value: string) {
+    this._groupName = value;
+  }
+  public resetGroupName() {
+    this._groupName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupNameInput() {
+    return this._groupName;
+  }
+
+  // permission_level - computed: false, optional: false, required: true
+  private _permissionLevel?: string; 
+  public get permissionLevel() {
+    return this.getStringAttribute('permission_level');
+  }
+  public set permissionLevel(value: string) {
+    this._permissionLevel = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get permissionLevelInput() {
+    return this._permissionLevel;
+  }
+
+  // service_principal_name - computed: false, optional: true, required: false
+  private _servicePrincipalName?: string; 
+  public get servicePrincipalName() {
+    return this.getStringAttribute('service_principal_name');
+  }
+  public set servicePrincipalName(value: string) {
+    this._servicePrincipalName = value;
+  }
+  public resetServicePrincipalName() {
+    this._servicePrincipalName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get servicePrincipalNameInput() {
+    return this._servicePrincipalName;
+  }
+
+  // user_name - computed: false, optional: true, required: false
+  private _userName?: string; 
+  public get userName() {
+    return this.getStringAttribute('user_name');
+  }
+  public set userName(value: string) {
+    this._userName = value;
+  }
+  public resetUserName() {
+    this._userName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userNameInput() {
+    return this._userName;
+  }
+}
+
+export class PermissionsAccessControlList extends cdktf.ComplexList {
+  public internalValue? : PermissionsAccessControl[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PermissionsAccessControlOutputReference {
+    return new PermissionsAccessControlOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/databricks/r/permissions databricks_permissions}
@@ -159,6 +309,7 @@ export class Permissions extends cdktf.TerraformResource {
     this._directoryId = config.directoryId;
     this._directoryPath = config.directoryPath;
     this._experimentId = config.experimentId;
+    this._id = config.id;
     this._instancePoolId = config.instancePoolId;
     this._jobId = config.jobId;
     this._notebookId = config.notebookId;
@@ -171,7 +322,7 @@ export class Permissions extends cdktf.TerraformResource {
     this._sqlDashboardId = config.sqlDashboardId;
     this._sqlEndpointId = config.sqlEndpointId;
     this._sqlQueryId = config.sqlQueryId;
-    this._accessControl = config.accessControl;
+    this._accessControl.internalValue = config.accessControl;
   }
 
   // ==========
@@ -275,8 +426,19 @@ export class Permissions extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // instance_pool_id - computed: false, optional: true, required: false
@@ -472,17 +634,16 @@ export class Permissions extends cdktf.TerraformResource {
   }
 
   // access_control - computed: false, optional: false, required: true
-  private _accessControl?: PermissionsAccessControl[] | cdktf.IResolvable; 
+  private _accessControl = new PermissionsAccessControlList(this, "access_control", true);
   public get accessControl() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('access_control')));
+    return this._accessControl;
   }
-  public set accessControl(value: PermissionsAccessControl[] | cdktf.IResolvable) {
-    this._accessControl = value;
+  public putAccessControl(value: PermissionsAccessControl[] | cdktf.IResolvable) {
+    this._accessControl.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get accessControlInput() {
-    return this._accessControl;
+    return this._accessControl.internalValue;
   }
 
   // =========
@@ -497,6 +658,7 @@ export class Permissions extends cdktf.TerraformResource {
       directory_id: cdktf.stringToTerraform(this._directoryId),
       directory_path: cdktf.stringToTerraform(this._directoryPath),
       experiment_id: cdktf.stringToTerraform(this._experimentId),
+      id: cdktf.stringToTerraform(this._id),
       instance_pool_id: cdktf.stringToTerraform(this._instancePoolId),
       job_id: cdktf.stringToTerraform(this._jobId),
       notebook_id: cdktf.stringToTerraform(this._notebookId),
@@ -509,7 +671,7 @@ export class Permissions extends cdktf.TerraformResource {
       sql_dashboard_id: cdktf.stringToTerraform(this._sqlDashboardId),
       sql_endpoint_id: cdktf.stringToTerraform(this._sqlEndpointId),
       sql_query_id: cdktf.stringToTerraform(this._sqlQueryId),
-      access_control: cdktf.listMapper(permissionsAccessControlToTerraform)(this._accessControl),
+      access_control: cdktf.listMapper(permissionsAccessControlToTerraform)(this._accessControl.internalValue),
     };
   }
 }

@@ -36,6 +36,13 @@ export interface MwsWorkspacesConfig extends cdktf.TerraformMetaArguments {
   */
   readonly deploymentName?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_workspaces#id MwsWorkspaces#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_workspaces#is_no_public_ip_enabled MwsWorkspaces#is_no_public_ip_enabled}
   */
   readonly isNoPublicIpEnabled?: boolean | cdktf.IResolvable;
@@ -669,6 +676,7 @@ export function mwsWorkspacesTimeoutsToTerraform(struct?: MwsWorkspacesTimeoutsO
 
 export class MwsWorkspacesTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -678,7 +686,10 @@ export class MwsWorkspacesTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): MwsWorkspacesTimeouts | undefined {
+  public get internalValue(): MwsWorkspacesTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -696,15 +707,21 @@ export class MwsWorkspacesTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MwsWorkspacesTimeouts | undefined) {
+  public set internalValue(value: MwsWorkspacesTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._read = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._read = value.read;
       this._update = value.update;
@@ -947,6 +964,7 @@ export class MwsWorkspaces extends cdktf.TerraformResource {
     this._credentialsId = config.credentialsId;
     this._customerManagedKeyId = config.customerManagedKeyId;
     this._deploymentName = config.deploymentName;
+    this._id = config.id;
     this._isNoPublicIpEnabled = config.isNoPublicIpEnabled;
     this._location = config.location;
     this._managedServicesCustomerManagedKeyId = config.managedServicesCustomerManagedKeyId;
@@ -1081,8 +1099,19 @@ export class MwsWorkspaces extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // is_no_public_ip_enabled - computed: false, optional: true, required: false
@@ -1383,6 +1412,7 @@ export class MwsWorkspaces extends cdktf.TerraformResource {
       credentials_id: cdktf.stringToTerraform(this._credentialsId),
       customer_managed_key_id: cdktf.stringToTerraform(this._customerManagedKeyId),
       deployment_name: cdktf.stringToTerraform(this._deploymentName),
+      id: cdktf.stringToTerraform(this._id),
       is_no_public_ip_enabled: cdktf.booleanToTerraform(this._isNoPublicIpEnabled),
       location: cdktf.stringToTerraform(this._location),
       managed_services_customer_managed_key_id: cdktf.stringToTerraform(this._managedServicesCustomerManagedKeyId),

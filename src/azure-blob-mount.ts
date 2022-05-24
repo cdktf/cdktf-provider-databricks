@@ -24,6 +24,13 @@ export interface AzureBlobMountConfig extends cdktf.TerraformMetaArguments {
   */
   readonly directory?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/azure_blob_mount#id AzureBlobMount#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/azure_blob_mount#mount_name AzureBlobMount#mount_name}
   */
   readonly mountName: string;
@@ -79,6 +86,7 @@ export class AzureBlobMount extends cdktf.TerraformResource {
     this._clusterId = config.clusterId;
     this._containerName = config.containerName;
     this._directory = config.directory;
+    this._id = config.id;
     this._mountName = config.mountName;
     this._storageAccountName = config.storageAccountName;
     this._tokenSecretKey = config.tokenSecretKey;
@@ -148,8 +156,19 @@ export class AzureBlobMount extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // mount_name - computed: false, optional: false, required: true
@@ -219,6 +238,7 @@ export class AzureBlobMount extends cdktf.TerraformResource {
       cluster_id: cdktf.stringToTerraform(this._clusterId),
       container_name: cdktf.stringToTerraform(this._containerName),
       directory: cdktf.stringToTerraform(this._directory),
+      id: cdktf.stringToTerraform(this._id),
       mount_name: cdktf.stringToTerraform(this._mountName),
       storage_account_name: cdktf.stringToTerraform(this._storageAccountName),
       token_secret_key: cdktf.stringToTerraform(this._tokenSecretKey),

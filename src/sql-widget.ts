@@ -16,6 +16,13 @@ export interface SqlWidgetConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_widget#id SqlWidget#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_widget#text SqlWidget#text}
   */
   readonly text?: string;
@@ -86,6 +93,190 @@ export function sqlWidgetParameterToTerraform(struct?: SqlWidgetParameter | cdkt
   }
 }
 
+export class SqlWidgetParameterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SqlWidgetParameter | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._mapTo !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mapTo = this._mapTo;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._title !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.title = this._title;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SqlWidgetParameter | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._mapTo = undefined;
+      this._name = undefined;
+      this._title = undefined;
+      this._type = undefined;
+      this._value = undefined;
+      this._values = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._mapTo = value.mapTo;
+      this._name = value.name;
+      this._title = value.title;
+      this._type = value.type;
+      this._value = value.value;
+      this._values = value.values;
+    }
+  }
+
+  // map_to - computed: false, optional: true, required: false
+  private _mapTo?: string; 
+  public get mapTo() {
+    return this.getStringAttribute('map_to');
+  }
+  public set mapTo(value: string) {
+    this._mapTo = value;
+  }
+  public resetMapTo() {
+    this._mapTo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mapToInput() {
+    return this._mapTo;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // title - computed: false, optional: true, required: false
+  private _title?: string; 
+  public get title() {
+    return this.getStringAttribute('title');
+  }
+  public set title(value: string) {
+    this._title = value;
+  }
+  public resetTitle() {
+    this._title = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get titleInput() {
+    return this._title;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+
+export class SqlWidgetParameterList extends cdktf.ComplexList {
+  public internalValue? : SqlWidgetParameter[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SqlWidgetParameterOutputReference {
+    return new SqlWidgetParameterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface SqlWidgetPosition {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_widget#auto_height SqlWidget#auto_height}
@@ -290,11 +481,12 @@ export class SqlWidget extends cdktf.TerraformResource {
     });
     this._dashboardId = config.dashboardId;
     this._description = config.description;
+    this._id = config.id;
     this._text = config.text;
     this._title = config.title;
     this._visualizationId = config.visualizationId;
     this._widgetId = config.widgetId;
-    this._parameter = config.parameter;
+    this._parameter.internalValue = config.parameter;
     this._position.internalValue = config.position;
   }
 
@@ -332,8 +524,19 @@ export class SqlWidget extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // text - computed: false, optional: true, required: false
@@ -401,20 +604,19 @@ export class SqlWidget extends cdktf.TerraformResource {
   }
 
   // parameter - computed: false, optional: true, required: false
-  private _parameter?: SqlWidgetParameter[] | cdktf.IResolvable; 
+  private _parameter = new SqlWidgetParameterList(this, "parameter", true);
   public get parameter() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('parameter')));
+    return this._parameter;
   }
-  public set parameter(value: SqlWidgetParameter[] | cdktf.IResolvable) {
-    this._parameter = value;
+  public putParameter(value: SqlWidgetParameter[] | cdktf.IResolvable) {
+    this._parameter.internalValue = value;
   }
   public resetParameter() {
-    this._parameter = undefined;
+    this._parameter.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get parameterInput() {
-    return this._parameter;
+    return this._parameter.internalValue;
   }
 
   // position - computed: false, optional: true, required: false
@@ -441,11 +643,12 @@ export class SqlWidget extends cdktf.TerraformResource {
     return {
       dashboard_id: cdktf.stringToTerraform(this._dashboardId),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       text: cdktf.stringToTerraform(this._text),
       title: cdktf.stringToTerraform(this._title),
       visualization_id: cdktf.stringToTerraform(this._visualizationId),
       widget_id: cdktf.stringToTerraform(this._widgetId),
-      parameter: cdktf.listMapper(sqlWidgetParameterToTerraform)(this._parameter),
+      parameter: cdktf.listMapper(sqlWidgetParameterToTerraform)(this._parameter.internalValue),
       position: sqlWidgetPositionToTerraform(this._position.internalValue),
     };
   }

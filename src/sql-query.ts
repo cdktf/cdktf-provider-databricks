@@ -16,6 +16,13 @@ export interface SqlQueryConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_query#id SqlQuery#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_query#name SqlQuery#name}
   */
   readonly name: string;
@@ -1142,6 +1149,325 @@ export function sqlQueryParameterToTerraform(struct?: SqlQueryParameter | cdktf.
   }
 }
 
+export class SqlQueryParameterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SqlQueryParameter | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._title !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.title = this._title;
+    }
+    if (this._date?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.date = this._date?.internalValue;
+    }
+    if (this._dateRange?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dateRange = this._dateRange?.internalValue;
+    }
+    if (this._datetime?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.datetime = this._datetime?.internalValue;
+    }
+    if (this._datetimeRange?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.datetimeRange = this._datetimeRange?.internalValue;
+    }
+    if (this._datetimesec?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.datetimesec = this._datetimesec?.internalValue;
+    }
+    if (this._datetimesecRange?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.datetimesecRange = this._datetimesecRange?.internalValue;
+    }
+    if (this._enum?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enum = this._enum?.internalValue;
+    }
+    if (this._number?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.number = this._number?.internalValue;
+    }
+    if (this._query?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.query = this._query?.internalValue;
+    }
+    if (this._text?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.text = this._text?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SqlQueryParameter | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._title = undefined;
+      this._date.internalValue = undefined;
+      this._dateRange.internalValue = undefined;
+      this._datetime.internalValue = undefined;
+      this._datetimeRange.internalValue = undefined;
+      this._datetimesec.internalValue = undefined;
+      this._datetimesecRange.internalValue = undefined;
+      this._enum.internalValue = undefined;
+      this._number.internalValue = undefined;
+      this._query.internalValue = undefined;
+      this._text.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._title = value.title;
+      this._date.internalValue = value.date;
+      this._dateRange.internalValue = value.dateRange;
+      this._datetime.internalValue = value.datetime;
+      this._datetimeRange.internalValue = value.datetimeRange;
+      this._datetimesec.internalValue = value.datetimesec;
+      this._datetimesecRange.internalValue = value.datetimesecRange;
+      this._enum.internalValue = value.enum;
+      this._number.internalValue = value.number;
+      this._query.internalValue = value.query;
+      this._text.internalValue = value.text;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // title - computed: false, optional: true, required: false
+  private _title?: string; 
+  public get title() {
+    return this.getStringAttribute('title');
+  }
+  public set title(value: string) {
+    this._title = value;
+  }
+  public resetTitle() {
+    this._title = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get titleInput() {
+    return this._title;
+  }
+
+  // date - computed: false, optional: true, required: false
+  private _date = new SqlQueryParameterDateOutputReference(this, "date");
+  public get date() {
+    return this._date;
+  }
+  public putDate(value: SqlQueryParameterDate) {
+    this._date.internalValue = value;
+  }
+  public resetDate() {
+    this._date.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dateInput() {
+    return this._date.internalValue;
+  }
+
+  // date_range - computed: false, optional: true, required: false
+  private _dateRange = new SqlQueryParameterDateRangeOutputReference(this, "date_range");
+  public get dateRange() {
+    return this._dateRange;
+  }
+  public putDateRange(value: SqlQueryParameterDateRange) {
+    this._dateRange.internalValue = value;
+  }
+  public resetDateRange() {
+    this._dateRange.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dateRangeInput() {
+    return this._dateRange.internalValue;
+  }
+
+  // datetime - computed: false, optional: true, required: false
+  private _datetime = new SqlQueryParameterDatetimeOutputReference(this, "datetime");
+  public get datetime() {
+    return this._datetime;
+  }
+  public putDatetime(value: SqlQueryParameterDatetime) {
+    this._datetime.internalValue = value;
+  }
+  public resetDatetime() {
+    this._datetime.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get datetimeInput() {
+    return this._datetime.internalValue;
+  }
+
+  // datetime_range - computed: false, optional: true, required: false
+  private _datetimeRange = new SqlQueryParameterDatetimeRangeOutputReference(this, "datetime_range");
+  public get datetimeRange() {
+    return this._datetimeRange;
+  }
+  public putDatetimeRange(value: SqlQueryParameterDatetimeRange) {
+    this._datetimeRange.internalValue = value;
+  }
+  public resetDatetimeRange() {
+    this._datetimeRange.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get datetimeRangeInput() {
+    return this._datetimeRange.internalValue;
+  }
+
+  // datetimesec - computed: false, optional: true, required: false
+  private _datetimesec = new SqlQueryParameterDatetimesecOutputReference(this, "datetimesec");
+  public get datetimesec() {
+    return this._datetimesec;
+  }
+  public putDatetimesec(value: SqlQueryParameterDatetimesec) {
+    this._datetimesec.internalValue = value;
+  }
+  public resetDatetimesec() {
+    this._datetimesec.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get datetimesecInput() {
+    return this._datetimesec.internalValue;
+  }
+
+  // datetimesec_range - computed: false, optional: true, required: false
+  private _datetimesecRange = new SqlQueryParameterDatetimesecRangeOutputReference(this, "datetimesec_range");
+  public get datetimesecRange() {
+    return this._datetimesecRange;
+  }
+  public putDatetimesecRange(value: SqlQueryParameterDatetimesecRange) {
+    this._datetimesecRange.internalValue = value;
+  }
+  public resetDatetimesecRange() {
+    this._datetimesecRange.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get datetimesecRangeInput() {
+    return this._datetimesecRange.internalValue;
+  }
+
+  // enum - computed: false, optional: true, required: false
+  private _enum = new SqlQueryParameterEnumOutputReference(this, "enum");
+  public get enum() {
+    return this._enum;
+  }
+  public putEnum(value: SqlQueryParameterEnum) {
+    this._enum.internalValue = value;
+  }
+  public resetEnum() {
+    this._enum.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enumInput() {
+    return this._enum.internalValue;
+  }
+
+  // number - computed: false, optional: true, required: false
+  private _number = new SqlQueryParameterNumberOutputReference(this, "number");
+  public get number() {
+    return this._number;
+  }
+  public putNumber(value: SqlQueryParameterNumber) {
+    this._number.internalValue = value;
+  }
+  public resetNumber() {
+    this._number.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numberInput() {
+    return this._number.internalValue;
+  }
+
+  // query - computed: false, optional: true, required: false
+  private _query = new SqlQueryParameterQueryOutputReference(this, "query");
+  public get query() {
+    return this._query;
+  }
+  public putQuery(value: SqlQueryParameterQuery) {
+    this._query.internalValue = value;
+  }
+  public resetQuery() {
+    this._query.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queryInput() {
+    return this._query.internalValue;
+  }
+
+  // text - computed: false, optional: true, required: false
+  private _text = new SqlQueryParameterTextOutputReference(this, "text");
+  public get text() {
+    return this._text;
+  }
+  public putText(value: SqlQueryParameterText) {
+    this._text.internalValue = value;
+  }
+  public resetText() {
+    this._text.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get textInput() {
+    return this._text.internalValue;
+  }
+}
+
+export class SqlQueryParameterList extends cdktf.ComplexList {
+  public internalValue? : SqlQueryParameter[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SqlQueryParameterOutputReference {
+    return new SqlQueryParameterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface SqlQueryScheduleContinuous {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_query#interval_seconds SqlQuery#interval_seconds}
@@ -1643,11 +1969,12 @@ export class SqlQuery extends cdktf.TerraformResource {
     });
     this._dataSourceId = config.dataSourceId;
     this._description = config.description;
+    this._id = config.id;
     this._name = config.name;
     this._query = config.query;
     this._runAsRole = config.runAsRole;
     this._tags = config.tags;
-    this._parameter = config.parameter;
+    this._parameter.internalValue = config.parameter;
     this._schedule.internalValue = config.schedule;
   }
 
@@ -1685,8 +2012,19 @@ export class SqlQuery extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -1748,20 +2086,19 @@ export class SqlQuery extends cdktf.TerraformResource {
   }
 
   // parameter - computed: false, optional: true, required: false
-  private _parameter?: SqlQueryParameter[] | cdktf.IResolvable; 
+  private _parameter = new SqlQueryParameterList(this, "parameter", false);
   public get parameter() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('parameter');
+    return this._parameter;
   }
-  public set parameter(value: SqlQueryParameter[] | cdktf.IResolvable) {
-    this._parameter = value;
+  public putParameter(value: SqlQueryParameter[] | cdktf.IResolvable) {
+    this._parameter.internalValue = value;
   }
   public resetParameter() {
-    this._parameter = undefined;
+    this._parameter.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get parameterInput() {
-    return this._parameter;
+    return this._parameter.internalValue;
   }
 
   // schedule - computed: false, optional: true, required: false
@@ -1788,11 +2125,12 @@ export class SqlQuery extends cdktf.TerraformResource {
     return {
       data_source_id: cdktf.stringToTerraform(this._dataSourceId),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       query: cdktf.stringToTerraform(this._query),
       run_as_role: cdktf.stringToTerraform(this._runAsRole),
       tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
-      parameter: cdktf.listMapper(sqlQueryParameterToTerraform)(this._parameter),
+      parameter: cdktf.listMapper(sqlQueryParameterToTerraform)(this._parameter.internalValue),
       schedule: sqlQueryScheduleToTerraform(this._schedule.internalValue),
     };
   }

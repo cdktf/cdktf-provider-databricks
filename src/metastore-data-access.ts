@@ -12,6 +12,13 @@ export interface MetastoreDataAccessConfig extends cdktf.TerraformMetaArguments 
   */
   readonly configurationType?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore_data_access#id MetastoreDataAccess#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore_data_access#is_default MetastoreDataAccess#is_default}
   */
   readonly isDefault?: boolean | cdktf.IResolvable;
@@ -244,6 +251,7 @@ export class MetastoreDataAccess extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._configurationType = config.configurationType;
+    this._id = config.id;
     this._isDefault = config.isDefault;
     this._metastoreId = config.metastoreId;
     this._name = config.name;
@@ -272,8 +280,19 @@ export class MetastoreDataAccess extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // is_default - computed: false, optional: true, required: false
@@ -357,6 +376,7 @@ export class MetastoreDataAccess extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       configuration_type: cdktf.stringToTerraform(this._configurationType),
+      id: cdktf.stringToTerraform(this._id),
       is_default: cdktf.booleanToTerraform(this._isDefault),
       metastore_id: cdktf.stringToTerraform(this._metastoreId),
       name: cdktf.stringToTerraform(this._name),

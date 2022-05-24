@@ -20,6 +20,13 @@ export interface PipelineConfig extends cdktf.TerraformMetaArguments {
   */
   readonly continuous?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#id Pipeline#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#name Pipeline#name}
   */
   readonly name?: string;
@@ -1078,6 +1085,152 @@ export function pipelineClusterInitScriptsToTerraform(struct?: PipelineClusterIn
   }
 }
 
+export class PipelineClusterInitScriptsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): PipelineClusterInitScripts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dbfs?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dbfs = this._dbfs?.internalValue;
+    }
+    if (this._file?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.file = this._file?.internalValue;
+    }
+    if (this._gcs?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gcs = this._gcs?.internalValue;
+    }
+    if (this._s3?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.s3 = this._s3?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PipelineClusterInitScripts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._dbfs.internalValue = undefined;
+      this._file.internalValue = undefined;
+      this._gcs.internalValue = undefined;
+      this._s3.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._dbfs.internalValue = value.dbfs;
+      this._file.internalValue = value.file;
+      this._gcs.internalValue = value.gcs;
+      this._s3.internalValue = value.s3;
+    }
+  }
+
+  // dbfs - computed: false, optional: true, required: false
+  private _dbfs = new PipelineClusterInitScriptsDbfsOutputReference(this, "dbfs");
+  public get dbfs() {
+    return this._dbfs;
+  }
+  public putDbfs(value: PipelineClusterInitScriptsDbfs) {
+    this._dbfs.internalValue = value;
+  }
+  public resetDbfs() {
+    this._dbfs.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dbfsInput() {
+    return this._dbfs.internalValue;
+  }
+
+  // file - computed: false, optional: true, required: false
+  private _file = new PipelineClusterInitScriptsFileOutputReference(this, "file");
+  public get file() {
+    return this._file;
+  }
+  public putFile(value: PipelineClusterInitScriptsFile) {
+    this._file.internalValue = value;
+  }
+  public resetFile() {
+    this._file.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileInput() {
+    return this._file.internalValue;
+  }
+
+  // gcs - computed: false, optional: true, required: false
+  private _gcs = new PipelineClusterInitScriptsGcsOutputReference(this, "gcs");
+  public get gcs() {
+    return this._gcs;
+  }
+  public putGcs(value: PipelineClusterInitScriptsGcs) {
+    this._gcs.internalValue = value;
+  }
+  public resetGcs() {
+    this._gcs.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gcsInput() {
+    return this._gcs.internalValue;
+  }
+
+  // s3 - computed: false, optional: true, required: false
+  private _s3 = new PipelineClusterInitScriptsS3OutputReference(this, "s3");
+  public get s3() {
+    return this._s3;
+  }
+  public putS3(value: PipelineClusterInitScriptsS3) {
+    this._s3.internalValue = value;
+  }
+  public resetS3() {
+    this._s3.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3Input() {
+    return this._s3.internalValue;
+  }
+}
+
+export class PipelineClusterInitScriptsList extends cdktf.ComplexList {
+  public internalValue? : PipelineClusterInitScripts[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PipelineClusterInitScriptsOutputReference {
+    return new PipelineClusterInitScriptsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface PipelineCluster {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#custom_tags Pipeline#custom_tags}
@@ -1163,6 +1316,350 @@ export function pipelineClusterToTerraform(struct?: PipelineCluster | cdktf.IRes
   }
 }
 
+export class PipelineClusterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): PipelineCluster | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._customTags !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customTags = this._customTags;
+    }
+    if (this._driverNodeTypeId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.driverNodeTypeId = this._driverNodeTypeId;
+    }
+    if (this._instancePoolId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instancePoolId = this._instancePoolId;
+    }
+    if (this._label !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.label = this._label;
+    }
+    if (this._nodeTypeId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nodeTypeId = this._nodeTypeId;
+    }
+    if (this._numWorkers !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.numWorkers = this._numWorkers;
+    }
+    if (this._sparkConf !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sparkConf = this._sparkConf;
+    }
+    if (this._sparkEnvVars !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sparkEnvVars = this._sparkEnvVars;
+    }
+    if (this._sshPublicKeys !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sshPublicKeys = this._sshPublicKeys;
+    }
+    if (this._autoscale?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.autoscale = this._autoscale?.internalValue;
+    }
+    if (this._awsAttributes?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.awsAttributes = this._awsAttributes?.internalValue;
+    }
+    if (this._clusterLogConf?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clusterLogConf = this._clusterLogConf?.internalValue;
+    }
+    if (this._initScripts?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.initScripts = this._initScripts?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PipelineCluster | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._customTags = undefined;
+      this._driverNodeTypeId = undefined;
+      this._instancePoolId = undefined;
+      this._label = undefined;
+      this._nodeTypeId = undefined;
+      this._numWorkers = undefined;
+      this._sparkConf = undefined;
+      this._sparkEnvVars = undefined;
+      this._sshPublicKeys = undefined;
+      this._autoscale.internalValue = undefined;
+      this._awsAttributes.internalValue = undefined;
+      this._clusterLogConf.internalValue = undefined;
+      this._initScripts.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._customTags = value.customTags;
+      this._driverNodeTypeId = value.driverNodeTypeId;
+      this._instancePoolId = value.instancePoolId;
+      this._label = value.label;
+      this._nodeTypeId = value.nodeTypeId;
+      this._numWorkers = value.numWorkers;
+      this._sparkConf = value.sparkConf;
+      this._sparkEnvVars = value.sparkEnvVars;
+      this._sshPublicKeys = value.sshPublicKeys;
+      this._autoscale.internalValue = value.autoscale;
+      this._awsAttributes.internalValue = value.awsAttributes;
+      this._clusterLogConf.internalValue = value.clusterLogConf;
+      this._initScripts.internalValue = value.initScripts;
+    }
+  }
+
+  // custom_tags - computed: false, optional: true, required: false
+  private _customTags?: { [key: string]: string }; 
+  public get customTags() {
+    return this.getStringMapAttribute('custom_tags');
+  }
+  public set customTags(value: { [key: string]: string }) {
+    this._customTags = value;
+  }
+  public resetCustomTags() {
+    this._customTags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customTagsInput() {
+    return this._customTags;
+  }
+
+  // driver_node_type_id - computed: true, optional: true, required: false
+  private _driverNodeTypeId?: string; 
+  public get driverNodeTypeId() {
+    return this.getStringAttribute('driver_node_type_id');
+  }
+  public set driverNodeTypeId(value: string) {
+    this._driverNodeTypeId = value;
+  }
+  public resetDriverNodeTypeId() {
+    this._driverNodeTypeId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get driverNodeTypeIdInput() {
+    return this._driverNodeTypeId;
+  }
+
+  // instance_pool_id - computed: false, optional: true, required: false
+  private _instancePoolId?: string; 
+  public get instancePoolId() {
+    return this.getStringAttribute('instance_pool_id');
+  }
+  public set instancePoolId(value: string) {
+    this._instancePoolId = value;
+  }
+  public resetInstancePoolId() {
+    this._instancePoolId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instancePoolIdInput() {
+    return this._instancePoolId;
+  }
+
+  // label - computed: false, optional: true, required: false
+  private _label?: string; 
+  public get label() {
+    return this.getStringAttribute('label');
+  }
+  public set label(value: string) {
+    this._label = value;
+  }
+  public resetLabel() {
+    this._label = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get labelInput() {
+    return this._label;
+  }
+
+  // node_type_id - computed: true, optional: true, required: false
+  private _nodeTypeId?: string; 
+  public get nodeTypeId() {
+    return this.getStringAttribute('node_type_id');
+  }
+  public set nodeTypeId(value: string) {
+    this._nodeTypeId = value;
+  }
+  public resetNodeTypeId() {
+    this._nodeTypeId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodeTypeIdInput() {
+    return this._nodeTypeId;
+  }
+
+  // num_workers - computed: false, optional: true, required: false
+  private _numWorkers?: number; 
+  public get numWorkers() {
+    return this.getNumberAttribute('num_workers');
+  }
+  public set numWorkers(value: number) {
+    this._numWorkers = value;
+  }
+  public resetNumWorkers() {
+    this._numWorkers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numWorkersInput() {
+    return this._numWorkers;
+  }
+
+  // spark_conf - computed: false, optional: true, required: false
+  private _sparkConf?: { [key: string]: string }; 
+  public get sparkConf() {
+    return this.getStringMapAttribute('spark_conf');
+  }
+  public set sparkConf(value: { [key: string]: string }) {
+    this._sparkConf = value;
+  }
+  public resetSparkConf() {
+    this._sparkConf = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sparkConfInput() {
+    return this._sparkConf;
+  }
+
+  // spark_env_vars - computed: false, optional: true, required: false
+  private _sparkEnvVars?: { [key: string]: string }; 
+  public get sparkEnvVars() {
+    return this.getStringMapAttribute('spark_env_vars');
+  }
+  public set sparkEnvVars(value: { [key: string]: string }) {
+    this._sparkEnvVars = value;
+  }
+  public resetSparkEnvVars() {
+    this._sparkEnvVars = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sparkEnvVarsInput() {
+    return this._sparkEnvVars;
+  }
+
+  // ssh_public_keys - computed: false, optional: true, required: false
+  private _sshPublicKeys?: string[]; 
+  public get sshPublicKeys() {
+    return this.getListAttribute('ssh_public_keys');
+  }
+  public set sshPublicKeys(value: string[]) {
+    this._sshPublicKeys = value;
+  }
+  public resetSshPublicKeys() {
+    this._sshPublicKeys = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sshPublicKeysInput() {
+    return this._sshPublicKeys;
+  }
+
+  // autoscale - computed: false, optional: true, required: false
+  private _autoscale = new PipelineClusterAutoscaleOutputReference(this, "autoscale");
+  public get autoscale() {
+    return this._autoscale;
+  }
+  public putAutoscale(value: PipelineClusterAutoscale) {
+    this._autoscale.internalValue = value;
+  }
+  public resetAutoscale() {
+    this._autoscale.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoscaleInput() {
+    return this._autoscale.internalValue;
+  }
+
+  // aws_attributes - computed: false, optional: true, required: false
+  private _awsAttributes = new PipelineClusterAwsAttributesOutputReference(this, "aws_attributes");
+  public get awsAttributes() {
+    return this._awsAttributes;
+  }
+  public putAwsAttributes(value: PipelineClusterAwsAttributes) {
+    this._awsAttributes.internalValue = value;
+  }
+  public resetAwsAttributes() {
+    this._awsAttributes.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get awsAttributesInput() {
+    return this._awsAttributes.internalValue;
+  }
+
+  // cluster_log_conf - computed: false, optional: true, required: false
+  private _clusterLogConf = new PipelineClusterClusterLogConfOutputReference(this, "cluster_log_conf");
+  public get clusterLogConf() {
+    return this._clusterLogConf;
+  }
+  public putClusterLogConf(value: PipelineClusterClusterLogConf) {
+    this._clusterLogConf.internalValue = value;
+  }
+  public resetClusterLogConf() {
+    this._clusterLogConf.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterLogConfInput() {
+    return this._clusterLogConf.internalValue;
+  }
+
+  // init_scripts - computed: false, optional: true, required: false
+  private _initScripts = new PipelineClusterInitScriptsList(this, "init_scripts", false);
+  public get initScripts() {
+    return this._initScripts;
+  }
+  public putInitScripts(value: PipelineClusterInitScripts[] | cdktf.IResolvable) {
+    this._initScripts.internalValue = value;
+  }
+  public resetInitScripts() {
+    this._initScripts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get initScriptsInput() {
+    return this._initScripts.internalValue;
+  }
+}
+
+export class PipelineClusterList extends cdktf.ComplexList {
+  public internalValue? : PipelineCluster[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PipelineClusterOutputReference {
+    return new PipelineClusterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface PipelineFilters {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#exclude Pipeline#exclude}
@@ -1469,6 +1966,152 @@ export function pipelineLibraryToTerraform(struct?: PipelineLibrary | cdktf.IRes
   }
 }
 
+export class PipelineLibraryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): PipelineLibrary | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._jar !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.jar = this._jar;
+    }
+    if (this._whl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.whl = this._whl;
+    }
+    if (this._maven?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maven = this._maven?.internalValue;
+    }
+    if (this._notebook?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.notebook = this._notebook?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PipelineLibrary | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._jar = undefined;
+      this._whl = undefined;
+      this._maven.internalValue = undefined;
+      this._notebook.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._jar = value.jar;
+      this._whl = value.whl;
+      this._maven.internalValue = value.maven;
+      this._notebook.internalValue = value.notebook;
+    }
+  }
+
+  // jar - computed: false, optional: true, required: false
+  private _jar?: string; 
+  public get jar() {
+    return this.getStringAttribute('jar');
+  }
+  public set jar(value: string) {
+    this._jar = value;
+  }
+  public resetJar() {
+    this._jar = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jarInput() {
+    return this._jar;
+  }
+
+  // whl - computed: false, optional: true, required: false
+  private _whl?: string; 
+  public get whl() {
+    return this.getStringAttribute('whl');
+  }
+  public set whl(value: string) {
+    this._whl = value;
+  }
+  public resetWhl() {
+    this._whl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get whlInput() {
+    return this._whl;
+  }
+
+  // maven - computed: false, optional: true, required: false
+  private _maven = new PipelineLibraryMavenOutputReference(this, "maven");
+  public get maven() {
+    return this._maven;
+  }
+  public putMaven(value: PipelineLibraryMaven) {
+    this._maven.internalValue = value;
+  }
+  public resetMaven() {
+    this._maven.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mavenInput() {
+    return this._maven.internalValue;
+  }
+
+  // notebook - computed: false, optional: true, required: false
+  private _notebook = new PipelineLibraryNotebookOutputReference(this, "notebook");
+  public get notebook() {
+    return this._notebook;
+  }
+  public putNotebook(value: PipelineLibraryNotebook) {
+    this._notebook.internalValue = value;
+  }
+  public resetNotebook() {
+    this._notebook.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notebookInput() {
+    return this._notebook.internalValue;
+  }
+}
+
+export class PipelineLibraryList extends cdktf.ComplexList {
+  public internalValue? : PipelineLibrary[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PipelineLibraryOutputReference {
+    return new PipelineLibraryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface PipelineTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#default Pipeline#default}
@@ -1488,6 +2131,7 @@ export function pipelineTimeoutsToTerraform(struct?: PipelineTimeoutsOutputRefer
 
 export class PipelineTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1497,7 +2141,10 @@ export class PipelineTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PipelineTimeouts | undefined {
+  public get internalValue(): PipelineTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._default !== undefined) {
@@ -1507,13 +2154,19 @@ export class PipelineTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PipelineTimeouts | undefined) {
+  public set internalValue(value: PipelineTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._default = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._default = value.default;
     }
   }
@@ -1572,12 +2225,13 @@ export class Pipeline extends cdktf.TerraformResource {
     this._allowDuplicateNames = config.allowDuplicateNames;
     this._configuration = config.configuration;
     this._continuous = config.continuous;
+    this._id = config.id;
     this._name = config.name;
     this._storage = config.storage;
     this._target = config.target;
-    this._cluster = config.cluster;
+    this._cluster.internalValue = config.cluster;
     this._filters.internalValue = config.filters;
-    this._library = config.library;
+    this._library.internalValue = config.library;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -1634,8 +2288,19 @@ export class Pipeline extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: true, required: false
@@ -1692,20 +2357,19 @@ export class Pipeline extends cdktf.TerraformResource {
   }
 
   // cluster - computed: false, optional: true, required: false
-  private _cluster?: PipelineCluster[] | cdktf.IResolvable; 
+  private _cluster = new PipelineClusterList(this, "cluster", true);
   public get cluster() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('cluster')));
+    return this._cluster;
   }
-  public set cluster(value: PipelineCluster[] | cdktf.IResolvable) {
-    this._cluster = value;
+  public putCluster(value: PipelineCluster[] | cdktf.IResolvable) {
+    this._cluster.internalValue = value;
   }
   public resetCluster() {
-    this._cluster = undefined;
+    this._cluster.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get clusterInput() {
-    return this._cluster;
+    return this._cluster.internalValue;
   }
 
   // filters - computed: false, optional: false, required: true
@@ -1722,20 +2386,19 @@ export class Pipeline extends cdktf.TerraformResource {
   }
 
   // library - computed: false, optional: true, required: false
-  private _library?: PipelineLibrary[] | cdktf.IResolvable; 
+  private _library = new PipelineLibraryList(this, "library", true);
   public get library() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('library')));
+    return this._library;
   }
-  public set library(value: PipelineLibrary[] | cdktf.IResolvable) {
-    this._library = value;
+  public putLibrary(value: PipelineLibrary[] | cdktf.IResolvable) {
+    this._library.internalValue = value;
   }
   public resetLibrary() {
-    this._library = undefined;
+    this._library.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get libraryInput() {
-    return this._library;
+    return this._library.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -1763,12 +2426,13 @@ export class Pipeline extends cdktf.TerraformResource {
       allow_duplicate_names: cdktf.booleanToTerraform(this._allowDuplicateNames),
       configuration: cdktf.hashMapper(cdktf.stringToTerraform)(this._configuration),
       continuous: cdktf.booleanToTerraform(this._continuous),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       storage: cdktf.stringToTerraform(this._storage),
       target: cdktf.stringToTerraform(this._target),
-      cluster: cdktf.listMapper(pipelineClusterToTerraform)(this._cluster),
+      cluster: cdktf.listMapper(pipelineClusterToTerraform)(this._cluster.internalValue),
       filters: pipelineFiltersToTerraform(this._filters.internalValue),
-      library: cdktf.listMapper(pipelineLibraryToTerraform)(this._library),
+      library: cdktf.listMapper(pipelineLibraryToTerraform)(this._library.internalValue),
       timeouts: pipelineTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

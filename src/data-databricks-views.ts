@@ -12,6 +12,13 @@ export interface DataDatabricksViewsConfig extends cdktf.TerraformMetaArguments 
   */
   readonly catalogName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/views#id DataDatabricksViews#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/views#ids DataDatabricksViews#ids}
   */
   readonly ids?: string[];
@@ -56,6 +63,7 @@ export class DataDatabricksViews extends cdktf.TerraformDataSource {
       lifecycle: config.lifecycle
     });
     this._catalogName = config.catalogName;
+    this._id = config.id;
     this._ids = config.ids;
     this._schemaName = config.schemaName;
   }
@@ -78,8 +86,19 @@ export class DataDatabricksViews extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // ids - computed: true, optional: true, required: false
@@ -118,6 +137,7 @@ export class DataDatabricksViews extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       catalog_name: cdktf.stringToTerraform(this._catalogName),
+      id: cdktf.stringToTerraform(this._id),
       ids: cdktf.listMapper(cdktf.stringToTerraform)(this._ids),
       schema_name: cdktf.stringToTerraform(this._schemaName),
     };

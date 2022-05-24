@@ -20,6 +20,13 @@ export interface TokenConfig extends cdktf.TerraformMetaArguments {
   */
   readonly expiryTime?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/token#id Token#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/token#lifetime_seconds Token#lifetime_seconds}
   */
   readonly lifetimeSeconds?: number;
@@ -66,6 +73,7 @@ export class Token extends cdktf.TerraformResource {
     this._comment = config.comment;
     this._creationTime = config.creationTime;
     this._expiryTime = config.expiryTime;
+    this._id = config.id;
     this._lifetimeSeconds = config.lifetimeSeconds;
     this._tokenId = config.tokenId;
   }
@@ -123,8 +131,19 @@ export class Token extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // lifetime_seconds - computed: false, optional: true, required: false
@@ -173,6 +192,7 @@ export class Token extends cdktf.TerraformResource {
       comment: cdktf.stringToTerraform(this._comment),
       creation_time: cdktf.numberToTerraform(this._creationTime),
       expiry_time: cdktf.numberToTerraform(this._expiryTime),
+      id: cdktf.stringToTerraform(this._id),
       lifetime_seconds: cdktf.numberToTerraform(this._lifetimeSeconds),
       token_id: cdktf.stringToTerraform(this._tokenId),
     };

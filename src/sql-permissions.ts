@@ -28,6 +28,13 @@ export interface SqlPermissionsConfig extends cdktf.TerraformMetaArguments {
   */
   readonly database?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_permissions#id SqlPermissions#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_permissions#table SqlPermissions#table}
   */
   readonly table?: string;
@@ -64,6 +71,102 @@ export function sqlPermissionsPrivilegeAssignmentsToTerraform(struct?: SqlPermis
   }
 }
 
+export class SqlPermissionsPrivilegeAssignmentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SqlPermissionsPrivilegeAssignments | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._principal !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.principal = this._principal;
+    }
+    if (this._privileges !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.privileges = this._privileges;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SqlPermissionsPrivilegeAssignments | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._principal = undefined;
+      this._privileges = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._principal = value.principal;
+      this._privileges = value.privileges;
+    }
+  }
+
+  // principal - computed: false, optional: false, required: true
+  private _principal?: string; 
+  public get principal() {
+    return this.getStringAttribute('principal');
+  }
+  public set principal(value: string) {
+    this._principal = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get principalInput() {
+    return this._principal;
+  }
+
+  // privileges - computed: false, optional: false, required: true
+  private _privileges?: string[]; 
+  public get privileges() {
+    return cdktf.Fn.tolist(this.getListAttribute('privileges'));
+  }
+  public set privileges(value: string[]) {
+    this._privileges = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privilegesInput() {
+    return this._privileges;
+  }
+}
+
+export class SqlPermissionsPrivilegeAssignmentsList extends cdktf.ComplexList {
+  public internalValue? : SqlPermissionsPrivilegeAssignments[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SqlPermissionsPrivilegeAssignmentsOutputReference {
+    return new SqlPermissionsPrivilegeAssignmentsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/databricks/r/sql_permissions databricks_sql_permissions}
@@ -104,9 +207,10 @@ export class SqlPermissions extends cdktf.TerraformResource {
     this._catalog = config.catalog;
     this._clusterId = config.clusterId;
     this._database = config.database;
+    this._id = config.id;
     this._table = config.table;
     this._view = config.view;
-    this._privilegeAssignments = config.privilegeAssignments;
+    this._privilegeAssignments.internalValue = config.privilegeAssignments;
   }
 
   // ==========
@@ -194,8 +298,19 @@ export class SqlPermissions extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // table - computed: false, optional: true, required: false
@@ -231,20 +346,19 @@ export class SqlPermissions extends cdktf.TerraformResource {
   }
 
   // privilege_assignments - computed: false, optional: true, required: false
-  private _privilegeAssignments?: SqlPermissionsPrivilegeAssignments[] | cdktf.IResolvable; 
+  private _privilegeAssignments = new SqlPermissionsPrivilegeAssignmentsList(this, "privilege_assignments", true);
   public get privilegeAssignments() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('privilege_assignments')));
+    return this._privilegeAssignments;
   }
-  public set privilegeAssignments(value: SqlPermissionsPrivilegeAssignments[] | cdktf.IResolvable) {
-    this._privilegeAssignments = value;
+  public putPrivilegeAssignments(value: SqlPermissionsPrivilegeAssignments[] | cdktf.IResolvable) {
+    this._privilegeAssignments.internalValue = value;
   }
   public resetPrivilegeAssignments() {
-    this._privilegeAssignments = undefined;
+    this._privilegeAssignments.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get privilegeAssignmentsInput() {
-    return this._privilegeAssignments;
+    return this._privilegeAssignments.internalValue;
   }
 
   // =========
@@ -258,9 +372,10 @@ export class SqlPermissions extends cdktf.TerraformResource {
       catalog: cdktf.booleanToTerraform(this._catalog),
       cluster_id: cdktf.stringToTerraform(this._clusterId),
       database: cdktf.stringToTerraform(this._database),
+      id: cdktf.stringToTerraform(this._id),
       table: cdktf.stringToTerraform(this._table),
       view: cdktf.stringToTerraform(this._view),
-      privilege_assignments: cdktf.listMapper(sqlPermissionsPrivilegeAssignmentsToTerraform)(this._privilegeAssignments),
+      privilege_assignments: cdktf.listMapper(sqlPermissionsPrivilegeAssignmentsToTerraform)(this._privilegeAssignments.internalValue),
     };
   }
 }
