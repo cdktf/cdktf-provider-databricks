@@ -24,6 +24,13 @@ export interface MwsVpcEndpointConfig extends cdktf.TerraformMetaArguments {
   */
   readonly awsVpcEndpointId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_vpc_endpoint#id MwsVpcEndpoint#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_vpc_endpoint#region MwsVpcEndpoint#region}
   */
   readonly region: string;
@@ -83,6 +90,7 @@ export class MwsVpcEndpoint extends cdktf.TerraformResource {
     this._awsAccountId = config.awsAccountId;
     this._awsEndpointServiceId = config.awsEndpointServiceId;
     this._awsVpcEndpointId = config.awsVpcEndpointId;
+    this._id = config.id;
     this._region = config.region;
     this._state = config.state;
     this._useCase = config.useCase;
@@ -156,8 +164,19 @@ export class MwsVpcEndpoint extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // region - computed: false, optional: false, required: true
@@ -244,6 +263,7 @@ export class MwsVpcEndpoint extends cdktf.TerraformResource {
       aws_account_id: cdktf.stringToTerraform(this._awsAccountId),
       aws_endpoint_service_id: cdktf.stringToTerraform(this._awsEndpointServiceId),
       aws_vpc_endpoint_id: cdktf.stringToTerraform(this._awsVpcEndpointId),
+      id: cdktf.stringToTerraform(this._id),
       region: cdktf.stringToTerraform(this._region),
       state: cdktf.stringToTerraform(this._state),
       use_case: cdktf.stringToTerraform(this._useCase),

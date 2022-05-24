@@ -16,6 +16,13 @@ export interface GrantsConfig extends cdktf.TerraformMetaArguments {
   */
   readonly externalLocation?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/grants#id Grants#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/grants#schema Grants#schema}
   */
   readonly schema?: string;
@@ -60,6 +67,102 @@ export function grantsGrantToTerraform(struct?: GrantsGrant | cdktf.IResolvable)
   }
 }
 
+export class GrantsGrantOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GrantsGrant | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._principal !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.principal = this._principal;
+    }
+    if (this._privileges !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.privileges = this._privileges;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GrantsGrant | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._principal = undefined;
+      this._privileges = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._principal = value.principal;
+      this._privileges = value.privileges;
+    }
+  }
+
+  // principal - computed: false, optional: false, required: true
+  private _principal?: string; 
+  public get principal() {
+    return this.getStringAttribute('principal');
+  }
+  public set principal(value: string) {
+    this._principal = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get principalInput() {
+    return this._principal;
+  }
+
+  // privileges - computed: false, optional: false, required: true
+  private _privileges?: string[]; 
+  public get privileges() {
+    return cdktf.Fn.tolist(this.getListAttribute('privileges'));
+  }
+  public set privileges(value: string[]) {
+    this._privileges = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privilegesInput() {
+    return this._privileges;
+  }
+}
+
+export class GrantsGrantList extends cdktf.ComplexList {
+  public internalValue? : GrantsGrant[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GrantsGrantOutputReference {
+    return new GrantsGrantOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/databricks/r/grants databricks_grants}
@@ -97,11 +200,12 @@ export class Grants extends cdktf.TerraformResource {
     });
     this._catalog = config.catalog;
     this._externalLocation = config.externalLocation;
+    this._id = config.id;
     this._schema = config.schema;
     this._storageCredential = config.storageCredential;
     this._table = config.table;
     this._view = config.view;
-    this._grant = config.grant;
+    this._grant.internalValue = config.grant;
   }
 
   // ==========
@@ -141,8 +245,19 @@ export class Grants extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // schema - computed: false, optional: true, required: false
@@ -210,17 +325,16 @@ export class Grants extends cdktf.TerraformResource {
   }
 
   // grant - computed: false, optional: false, required: true
-  private _grant?: GrantsGrant[] | cdktf.IResolvable; 
+  private _grant = new GrantsGrantList(this, "grant", true);
   public get grant() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('grant')));
+    return this._grant;
   }
-  public set grant(value: GrantsGrant[] | cdktf.IResolvable) {
-    this._grant = value;
+  public putGrant(value: GrantsGrant[] | cdktf.IResolvable) {
+    this._grant.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get grantInput() {
-    return this._grant;
+    return this._grant.internalValue;
   }
 
   // =========
@@ -231,11 +345,12 @@ export class Grants extends cdktf.TerraformResource {
     return {
       catalog: cdktf.stringToTerraform(this._catalog),
       external_location: cdktf.stringToTerraform(this._externalLocation),
+      id: cdktf.stringToTerraform(this._id),
       schema: cdktf.stringToTerraform(this._schema),
       storage_credential: cdktf.stringToTerraform(this._storageCredential),
       table: cdktf.stringToTerraform(this._table),
       view: cdktf.stringToTerraform(this._view),
-      grant: cdktf.listMapper(grantsGrantToTerraform)(this._grant),
+      grant: cdktf.listMapper(grantsGrantToTerraform)(this._grant.internalValue),
     };
   }
 }

@@ -28,6 +28,13 @@ export interface SqlEndpointConfig extends cdktf.TerraformMetaArguments {
   */
   readonly enableServerlessCompute?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_endpoint#id SqlEndpoint#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_endpoint#instance_profile_arn SqlEndpoint#instance_profile_arn}
   */
   readonly instanceProfileArn?: string;
@@ -335,6 +342,102 @@ export function sqlEndpointTagsCustomTagsToTerraform(struct?: SqlEndpointTagsCus
   }
 }
 
+export class SqlEndpointTagsCustomTagsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SqlEndpointTagsCustomTags | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SqlEndpointTagsCustomTags | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class SqlEndpointTagsCustomTagsList extends cdktf.ComplexList {
+  public internalValue? : SqlEndpointTagsCustomTags[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SqlEndpointTagsCustomTagsOutputReference {
+    return new SqlEndpointTagsCustomTagsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface SqlEndpointTags {
   /**
   * custom_tags block
@@ -368,9 +471,9 @@ export class SqlEndpointTagsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): SqlEndpointTags | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._customTags !== undefined) {
+    if (this._customTags?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.customTags = this._customTags;
+      internalValueResult.customTags = this._customTags?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -378,26 +481,25 @@ export class SqlEndpointTagsOutputReference extends cdktf.ComplexObject {
   public set internalValue(value: SqlEndpointTags | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._customTags = undefined;
+      this._customTags.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._customTags = value.customTags;
+      this._customTags.internalValue = value.customTags;
     }
   }
 
   // custom_tags - computed: false, optional: false, required: true
-  private _customTags?: SqlEndpointTagsCustomTags[] | cdktf.IResolvable; 
+  private _customTags = new SqlEndpointTagsCustomTagsList(this, "custom_tags", false);
   public get customTags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('custom_tags');
+    return this._customTags;
   }
-  public set customTags(value: SqlEndpointTagsCustomTags[] | cdktf.IResolvable) {
-    this._customTags = value;
+  public putCustomTags(value: SqlEndpointTagsCustomTags[] | cdktf.IResolvable) {
+    this._customTags.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get customTagsInput() {
-    return this._customTags;
+    return this._customTags.internalValue;
   }
 }
 export interface SqlEndpointTimeouts {
@@ -419,6 +521,7 @@ export function sqlEndpointTimeoutsToTerraform(struct?: SqlEndpointTimeoutsOutpu
 
 export class SqlEndpointTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -428,7 +531,10 @@ export class SqlEndpointTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): SqlEndpointTimeouts | undefined {
+  public get internalValue(): SqlEndpointTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -438,13 +544,19 @@ export class SqlEndpointTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SqlEndpointTimeouts | undefined) {
+  public set internalValue(value: SqlEndpointTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
     }
   }
@@ -505,6 +617,7 @@ export class SqlEndpoint extends cdktf.TerraformResource {
     this._dataSourceId = config.dataSourceId;
     this._enablePhoton = config.enablePhoton;
     this._enableServerlessCompute = config.enableServerlessCompute;
+    this._id = config.id;
     this._instanceProfileArn = config.instanceProfileArn;
     this._jdbcUrl = config.jdbcUrl;
     this._maxNumClusters = config.maxNumClusters;
@@ -601,8 +714,19 @@ export class SqlEndpoint extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // instance_profile_arn - computed: false, optional: true, required: false
@@ -805,6 +929,7 @@ export class SqlEndpoint extends cdktf.TerraformResource {
       data_source_id: cdktf.stringToTerraform(this._dataSourceId),
       enable_photon: cdktf.booleanToTerraform(this._enablePhoton),
       enable_serverless_compute: cdktf.booleanToTerraform(this._enableServerlessCompute),
+      id: cdktf.stringToTerraform(this._id),
       instance_profile_arn: cdktf.stringToTerraform(this._instanceProfileArn),
       jdbc_url: cdktf.stringToTerraform(this._jdbcUrl),
       max_num_clusters: cdktf.numberToTerraform(this._maxNumClusters),

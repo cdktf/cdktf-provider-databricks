@@ -12,6 +12,13 @@ export interface AwsS3MountConfig extends cdktf.TerraformMetaArguments {
   */
   readonly clusterId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/aws_s3_mount#id AwsS3Mount#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/aws_s3_mount#instance_profile AwsS3Mount#instance_profile}
   */
   readonly instanceProfile?: string;
@@ -60,6 +67,7 @@ export class AwsS3Mount extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._clusterId = config.clusterId;
+    this._id = config.id;
     this._instanceProfile = config.instanceProfile;
     this._mountName = config.mountName;
     this._s3BucketName = config.s3BucketName;
@@ -86,8 +94,19 @@ export class AwsS3Mount extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // instance_profile - computed: false, optional: true, required: false
@@ -144,6 +163,7 @@ export class AwsS3Mount extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cluster_id: cdktf.stringToTerraform(this._clusterId),
+      id: cdktf.stringToTerraform(this._id),
       instance_profile: cdktf.stringToTerraform(this._instanceProfile),
       mount_name: cdktf.stringToTerraform(this._mountName),
       s3_bucket_name: cdktf.stringToTerraform(this._s3BucketName),

@@ -20,6 +20,13 @@ export interface TableConfig extends cdktf.TerraformMetaArguments {
   */
   readonly dataSourceFormat: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/table#id Table#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/table#name Table#name}
   */
   readonly name: string;
@@ -125,6 +132,294 @@ export function tableColumnToTerraform(struct?: TableColumn | cdktf.IResolvable)
   }
 }
 
+export class TableColumnOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): TableColumn | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._comment !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.comment = this._comment;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._nullable !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nullable = this._nullable;
+    }
+    if (this._partitionIndex !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.partitionIndex = this._partitionIndex;
+    }
+    if (this._position !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.position = this._position;
+    }
+    if (this._typeIntervalType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.typeIntervalType = this._typeIntervalType;
+    }
+    if (this._typeJson !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.typeJson = this._typeJson;
+    }
+    if (this._typeName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.typeName = this._typeName;
+    }
+    if (this._typePrecision !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.typePrecision = this._typePrecision;
+    }
+    if (this._typeScale !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.typeScale = this._typeScale;
+    }
+    if (this._typeText !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.typeText = this._typeText;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TableColumn | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._comment = undefined;
+      this._name = undefined;
+      this._nullable = undefined;
+      this._partitionIndex = undefined;
+      this._position = undefined;
+      this._typeIntervalType = undefined;
+      this._typeJson = undefined;
+      this._typeName = undefined;
+      this._typePrecision = undefined;
+      this._typeScale = undefined;
+      this._typeText = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._comment = value.comment;
+      this._name = value.name;
+      this._nullable = value.nullable;
+      this._partitionIndex = value.partitionIndex;
+      this._position = value.position;
+      this._typeIntervalType = value.typeIntervalType;
+      this._typeJson = value.typeJson;
+      this._typeName = value.typeName;
+      this._typePrecision = value.typePrecision;
+      this._typeScale = value.typeScale;
+      this._typeText = value.typeText;
+    }
+  }
+
+  // comment - computed: false, optional: true, required: false
+  private _comment?: string; 
+  public get comment() {
+    return this.getStringAttribute('comment');
+  }
+  public set comment(value: string) {
+    this._comment = value;
+  }
+  public resetComment() {
+    this._comment = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commentInput() {
+    return this._comment;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // nullable - computed: false, optional: true, required: false
+  private _nullable?: boolean | cdktf.IResolvable; 
+  public get nullable() {
+    return this.getBooleanAttribute('nullable');
+  }
+  public set nullable(value: boolean | cdktf.IResolvable) {
+    this._nullable = value;
+  }
+  public resetNullable() {
+    this._nullable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nullableInput() {
+    return this._nullable;
+  }
+
+  // partition_index - computed: false, optional: true, required: false
+  private _partitionIndex?: number; 
+  public get partitionIndex() {
+    return this.getNumberAttribute('partition_index');
+  }
+  public set partitionIndex(value: number) {
+    this._partitionIndex = value;
+  }
+  public resetPartitionIndex() {
+    this._partitionIndex = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get partitionIndexInput() {
+    return this._partitionIndex;
+  }
+
+  // position - computed: false, optional: false, required: true
+  private _position?: number; 
+  public get position() {
+    return this.getNumberAttribute('position');
+  }
+  public set position(value: number) {
+    this._position = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get positionInput() {
+    return this._position;
+  }
+
+  // type_interval_type - computed: false, optional: true, required: false
+  private _typeIntervalType?: string; 
+  public get typeIntervalType() {
+    return this.getStringAttribute('type_interval_type');
+  }
+  public set typeIntervalType(value: string) {
+    this._typeIntervalType = value;
+  }
+  public resetTypeIntervalType() {
+    this._typeIntervalType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeIntervalTypeInput() {
+    return this._typeIntervalType;
+  }
+
+  // type_json - computed: false, optional: true, required: false
+  private _typeJson?: string; 
+  public get typeJson() {
+    return this.getStringAttribute('type_json');
+  }
+  public set typeJson(value: string) {
+    this._typeJson = value;
+  }
+  public resetTypeJson() {
+    this._typeJson = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeJsonInput() {
+    return this._typeJson;
+  }
+
+  // type_name - computed: false, optional: false, required: true
+  private _typeName?: string; 
+  public get typeName() {
+    return this.getStringAttribute('type_name');
+  }
+  public set typeName(value: string) {
+    this._typeName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeNameInput() {
+    return this._typeName;
+  }
+
+  // type_precision - computed: false, optional: true, required: false
+  private _typePrecision?: number; 
+  public get typePrecision() {
+    return this.getNumberAttribute('type_precision');
+  }
+  public set typePrecision(value: number) {
+    this._typePrecision = value;
+  }
+  public resetTypePrecision() {
+    this._typePrecision = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typePrecisionInput() {
+    return this._typePrecision;
+  }
+
+  // type_scale - computed: false, optional: true, required: false
+  private _typeScale?: number; 
+  public get typeScale() {
+    return this.getNumberAttribute('type_scale');
+  }
+  public set typeScale(value: number) {
+    this._typeScale = value;
+  }
+  public resetTypeScale() {
+    this._typeScale = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeScaleInput() {
+    return this._typeScale;
+  }
+
+  // type_text - computed: false, optional: false, required: true
+  private _typeText?: string; 
+  public get typeText() {
+    return this.getStringAttribute('type_text');
+  }
+  public set typeText(value: string) {
+    this._typeText = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeTextInput() {
+    return this._typeText;
+  }
+}
+
+export class TableColumnList extends cdktf.ComplexList {
+  public internalValue? : TableColumn[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): TableColumnOutputReference {
+    return new TableColumnOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/databricks/r/table databricks_table}
@@ -163,6 +458,7 @@ export class Table extends cdktf.TerraformResource {
     this._catalogName = config.catalogName;
     this._comment = config.comment;
     this._dataSourceFormat = config.dataSourceFormat;
+    this._id = config.id;
     this._name = config.name;
     this._owner = config.owner;
     this._properties = config.properties;
@@ -171,7 +467,7 @@ export class Table extends cdktf.TerraformResource {
     this._storageLocation = config.storageLocation;
     this._tableType = config.tableType;
     this._viewDefinition = config.viewDefinition;
-    this._column = config.column;
+    this._column.internalValue = config.column;
   }
 
   // ==========
@@ -221,8 +517,19 @@ export class Table extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -345,17 +652,16 @@ export class Table extends cdktf.TerraformResource {
   }
 
   // column - computed: false, optional: false, required: true
-  private _column?: TableColumn[] | cdktf.IResolvable; 
+  private _column = new TableColumnList(this, "column", false);
   public get column() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('column');
+    return this._column;
   }
-  public set column(value: TableColumn[] | cdktf.IResolvable) {
-    this._column = value;
+  public putColumn(value: TableColumn[] | cdktf.IResolvable) {
+    this._column.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get columnInput() {
-    return this._column;
+    return this._column.internalValue;
   }
 
   // =========
@@ -367,6 +673,7 @@ export class Table extends cdktf.TerraformResource {
       catalog_name: cdktf.stringToTerraform(this._catalogName),
       comment: cdktf.stringToTerraform(this._comment),
       data_source_format: cdktf.stringToTerraform(this._dataSourceFormat),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       owner: cdktf.stringToTerraform(this._owner),
       properties: cdktf.hashMapper(cdktf.stringToTerraform)(this._properties),
@@ -375,7 +682,7 @@ export class Table extends cdktf.TerraformResource {
       storage_location: cdktf.stringToTerraform(this._storageLocation),
       table_type: cdktf.stringToTerraform(this._tableType),
       view_definition: cdktf.stringToTerraform(this._viewDefinition),
-      column: cdktf.listMapper(tableColumnToTerraform)(this._column),
+      column: cdktf.listMapper(tableColumnToTerraform)(this._column.internalValue),
     };
   }
 }

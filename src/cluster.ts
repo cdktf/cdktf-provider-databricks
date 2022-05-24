@@ -44,6 +44,13 @@ export interface ClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly enableLocalDiskEncryption?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#id Cluster#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#idempotency_token Cluster#idempotency_token}
   */
   readonly idempotencyToken?: string;
@@ -1795,6 +1802,152 @@ export function clusterInitScriptsToTerraform(struct?: ClusterInitScripts | cdkt
   }
 }
 
+export class ClusterInitScriptsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ClusterInitScripts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dbfs?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dbfs = this._dbfs?.internalValue;
+    }
+    if (this._file?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.file = this._file?.internalValue;
+    }
+    if (this._gcs?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gcs = this._gcs?.internalValue;
+    }
+    if (this._s3?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.s3 = this._s3?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ClusterInitScripts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._dbfs.internalValue = undefined;
+      this._file.internalValue = undefined;
+      this._gcs.internalValue = undefined;
+      this._s3.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._dbfs.internalValue = value.dbfs;
+      this._file.internalValue = value.file;
+      this._gcs.internalValue = value.gcs;
+      this._s3.internalValue = value.s3;
+    }
+  }
+
+  // dbfs - computed: false, optional: true, required: false
+  private _dbfs = new ClusterInitScriptsDbfsOutputReference(this, "dbfs");
+  public get dbfs() {
+    return this._dbfs;
+  }
+  public putDbfs(value: ClusterInitScriptsDbfs) {
+    this._dbfs.internalValue = value;
+  }
+  public resetDbfs() {
+    this._dbfs.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dbfsInput() {
+    return this._dbfs.internalValue;
+  }
+
+  // file - computed: false, optional: true, required: false
+  private _file = new ClusterInitScriptsFileOutputReference(this, "file");
+  public get file() {
+    return this._file;
+  }
+  public putFile(value: ClusterInitScriptsFile) {
+    this._file.internalValue = value;
+  }
+  public resetFile() {
+    this._file.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileInput() {
+    return this._file.internalValue;
+  }
+
+  // gcs - computed: false, optional: true, required: false
+  private _gcs = new ClusterInitScriptsGcsOutputReference(this, "gcs");
+  public get gcs() {
+    return this._gcs;
+  }
+  public putGcs(value: ClusterInitScriptsGcs) {
+    this._gcs.internalValue = value;
+  }
+  public resetGcs() {
+    this._gcs.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gcsInput() {
+    return this._gcs.internalValue;
+  }
+
+  // s3 - computed: false, optional: true, required: false
+  private _s3 = new ClusterInitScriptsS3OutputReference(this, "s3");
+  public get s3() {
+    return this._s3;
+  }
+  public putS3(value: ClusterInitScriptsS3) {
+    this._s3.internalValue = value;
+  }
+  public resetS3() {
+    this._s3.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3Input() {
+    return this._s3.internalValue;
+  }
+}
+
+export class ClusterInitScriptsList extends cdktf.ComplexList {
+  public internalValue? : ClusterInitScripts[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ClusterInitScriptsOutputReference {
+    return new ClusterInitScriptsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ClusterLibraryCran {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#package Cluster#package}
@@ -2137,6 +2290,196 @@ export function clusterLibraryToTerraform(struct?: ClusterLibrary | cdktf.IResol
   }
 }
 
+export class ClusterLibraryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ClusterLibrary | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._egg !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.egg = this._egg;
+    }
+    if (this._jar !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.jar = this._jar;
+    }
+    if (this._whl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.whl = this._whl;
+    }
+    if (this._cran?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cran = this._cran?.internalValue;
+    }
+    if (this._maven?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maven = this._maven?.internalValue;
+    }
+    if (this._pypi?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pypi = this._pypi?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ClusterLibrary | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._egg = undefined;
+      this._jar = undefined;
+      this._whl = undefined;
+      this._cran.internalValue = undefined;
+      this._maven.internalValue = undefined;
+      this._pypi.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._egg = value.egg;
+      this._jar = value.jar;
+      this._whl = value.whl;
+      this._cran.internalValue = value.cran;
+      this._maven.internalValue = value.maven;
+      this._pypi.internalValue = value.pypi;
+    }
+  }
+
+  // egg - computed: false, optional: true, required: false
+  private _egg?: string; 
+  public get egg() {
+    return this.getStringAttribute('egg');
+  }
+  public set egg(value: string) {
+    this._egg = value;
+  }
+  public resetEgg() {
+    this._egg = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eggInput() {
+    return this._egg;
+  }
+
+  // jar - computed: false, optional: true, required: false
+  private _jar?: string; 
+  public get jar() {
+    return this.getStringAttribute('jar');
+  }
+  public set jar(value: string) {
+    this._jar = value;
+  }
+  public resetJar() {
+    this._jar = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jarInput() {
+    return this._jar;
+  }
+
+  // whl - computed: false, optional: true, required: false
+  private _whl?: string; 
+  public get whl() {
+    return this.getStringAttribute('whl');
+  }
+  public set whl(value: string) {
+    this._whl = value;
+  }
+  public resetWhl() {
+    this._whl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get whlInput() {
+    return this._whl;
+  }
+
+  // cran - computed: false, optional: true, required: false
+  private _cran = new ClusterLibraryCranOutputReference(this, "cran");
+  public get cran() {
+    return this._cran;
+  }
+  public putCran(value: ClusterLibraryCran) {
+    this._cran.internalValue = value;
+  }
+  public resetCran() {
+    this._cran.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cranInput() {
+    return this._cran.internalValue;
+  }
+
+  // maven - computed: false, optional: true, required: false
+  private _maven = new ClusterLibraryMavenOutputReference(this, "maven");
+  public get maven() {
+    return this._maven;
+  }
+  public putMaven(value: ClusterLibraryMaven) {
+    this._maven.internalValue = value;
+  }
+  public resetMaven() {
+    this._maven.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mavenInput() {
+    return this._maven.internalValue;
+  }
+
+  // pypi - computed: false, optional: true, required: false
+  private _pypi = new ClusterLibraryPypiOutputReference(this, "pypi");
+  public get pypi() {
+    return this._pypi;
+  }
+  public putPypi(value: ClusterLibraryPypi) {
+    this._pypi.internalValue = value;
+  }
+  public resetPypi() {
+    this._pypi.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pypiInput() {
+    return this._pypi.internalValue;
+  }
+}
+
+export class ClusterLibraryList extends cdktf.ComplexList {
+  public internalValue? : ClusterLibrary[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ClusterLibraryOutputReference {
+    return new ClusterLibraryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ClusterTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#create Cluster#create}
@@ -2166,6 +2509,7 @@ export function clusterTimeoutsToTerraform(struct?: ClusterTimeoutsOutputReferen
 
 export class ClusterTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2175,7 +2519,10 @@ export class ClusterTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): ClusterTimeouts | undefined {
+  public get internalValue(): ClusterTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -2193,15 +2540,21 @@ export class ClusterTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ClusterTimeouts | undefined) {
+  public set internalValue(value: ClusterTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -2300,6 +2653,7 @@ export class Cluster extends cdktf.TerraformResource {
     this._driverNodeTypeId = config.driverNodeTypeId;
     this._enableElasticDisk = config.enableElasticDisk;
     this._enableLocalDiskEncryption = config.enableLocalDiskEncryption;
+    this._id = config.id;
     this._idempotencyToken = config.idempotencyToken;
     this._instancePoolId = config.instancePoolId;
     this._isPinned = config.isPinned;
@@ -2317,8 +2671,8 @@ export class Cluster extends cdktf.TerraformResource {
     this._clusterLogConf.internalValue = config.clusterLogConf;
     this._dockerImage.internalValue = config.dockerImage;
     this._gcpAttributes.internalValue = config.gcpAttributes;
-    this._initScripts = config.initScripts;
-    this._library = config.library;
+    this._initScripts.internalValue = config.initScripts;
+    this._library.internalValue = config.library;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -2407,8 +2761,9 @@ export class Cluster extends cdktf.TerraformResource {
   }
 
   // default_tags - computed: true, optional: false, required: false
-  public defaultTags(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'default_tags').lookup(key);
+  private _defaultTags = new cdktf.StringMap(this, "default_tags");
+  public get defaultTags() {
+    return this._defaultTags;
   }
 
   // driver_instance_pool_id - computed: true, optional: true, required: false
@@ -2476,8 +2831,19 @@ export class Cluster extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // idempotency_token - computed: false, optional: true, required: false
@@ -2760,37 +3126,35 @@ export class Cluster extends cdktf.TerraformResource {
   }
 
   // init_scripts - computed: false, optional: true, required: false
-  private _initScripts?: ClusterInitScripts[] | cdktf.IResolvable; 
+  private _initScripts = new ClusterInitScriptsList(this, "init_scripts", false);
   public get initScripts() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('init_scripts');
+    return this._initScripts;
   }
-  public set initScripts(value: ClusterInitScripts[] | cdktf.IResolvable) {
-    this._initScripts = value;
+  public putInitScripts(value: ClusterInitScripts[] | cdktf.IResolvable) {
+    this._initScripts.internalValue = value;
   }
   public resetInitScripts() {
-    this._initScripts = undefined;
+    this._initScripts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get initScriptsInput() {
-    return this._initScripts;
+    return this._initScripts.internalValue;
   }
 
   // library - computed: false, optional: true, required: false
-  private _library?: ClusterLibrary[] | cdktf.IResolvable; 
+  private _library = new ClusterLibraryList(this, "library", true);
   public get library() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('library')));
+    return this._library;
   }
-  public set library(value: ClusterLibrary[] | cdktf.IResolvable) {
-    this._library = value;
+  public putLibrary(value: ClusterLibrary[] | cdktf.IResolvable) {
+    this._library.internalValue = value;
   }
   public resetLibrary() {
-    this._library = undefined;
+    this._library.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get libraryInput() {
-    return this._library;
+    return this._library.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -2824,6 +3188,7 @@ export class Cluster extends cdktf.TerraformResource {
       driver_node_type_id: cdktf.stringToTerraform(this._driverNodeTypeId),
       enable_elastic_disk: cdktf.booleanToTerraform(this._enableElasticDisk),
       enable_local_disk_encryption: cdktf.booleanToTerraform(this._enableLocalDiskEncryption),
+      id: cdktf.stringToTerraform(this._id),
       idempotency_token: cdktf.stringToTerraform(this._idempotencyToken),
       instance_pool_id: cdktf.stringToTerraform(this._instancePoolId),
       is_pinned: cdktf.booleanToTerraform(this._isPinned),
@@ -2841,8 +3206,8 @@ export class Cluster extends cdktf.TerraformResource {
       cluster_log_conf: clusterClusterLogConfToTerraform(this._clusterLogConf.internalValue),
       docker_image: clusterDockerImageToTerraform(this._dockerImage.internalValue),
       gcp_attributes: clusterGcpAttributesToTerraform(this._gcpAttributes.internalValue),
-      init_scripts: cdktf.listMapper(clusterInitScriptsToTerraform)(this._initScripts),
-      library: cdktf.listMapper(clusterLibraryToTerraform)(this._library),
+      init_scripts: cdktf.listMapper(clusterInitScriptsToTerraform)(this._initScripts.internalValue),
+      library: cdktf.listMapper(clusterLibraryToTerraform)(this._library.internalValue),
       timeouts: clusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

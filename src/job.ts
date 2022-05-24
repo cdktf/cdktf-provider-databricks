@@ -20,6 +20,13 @@ export interface JobConfig extends cdktf.TerraformMetaArguments {
   */
   readonly format?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#id Job#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#max_concurrent_runs Job#max_concurrent_runs}
   */
   readonly maxConcurrentRuns?: number;
@@ -2097,6 +2104,152 @@ export function jobJobClusterNewClusterInitScriptsToTerraform(struct?: JobJobClu
   }
 }
 
+export class JobJobClusterNewClusterInitScriptsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): JobJobClusterNewClusterInitScripts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dbfs?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dbfs = this._dbfs?.internalValue;
+    }
+    if (this._file?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.file = this._file?.internalValue;
+    }
+    if (this._gcs?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gcs = this._gcs?.internalValue;
+    }
+    if (this._s3?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.s3 = this._s3?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: JobJobClusterNewClusterInitScripts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._dbfs.internalValue = undefined;
+      this._file.internalValue = undefined;
+      this._gcs.internalValue = undefined;
+      this._s3.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._dbfs.internalValue = value.dbfs;
+      this._file.internalValue = value.file;
+      this._gcs.internalValue = value.gcs;
+      this._s3.internalValue = value.s3;
+    }
+  }
+
+  // dbfs - computed: false, optional: true, required: false
+  private _dbfs = new JobJobClusterNewClusterInitScriptsDbfsOutputReference(this, "dbfs");
+  public get dbfs() {
+    return this._dbfs;
+  }
+  public putDbfs(value: JobJobClusterNewClusterInitScriptsDbfs) {
+    this._dbfs.internalValue = value;
+  }
+  public resetDbfs() {
+    this._dbfs.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dbfsInput() {
+    return this._dbfs.internalValue;
+  }
+
+  // file - computed: false, optional: true, required: false
+  private _file = new JobJobClusterNewClusterInitScriptsFileOutputReference(this, "file");
+  public get file() {
+    return this._file;
+  }
+  public putFile(value: JobJobClusterNewClusterInitScriptsFile) {
+    this._file.internalValue = value;
+  }
+  public resetFile() {
+    this._file.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileInput() {
+    return this._file.internalValue;
+  }
+
+  // gcs - computed: false, optional: true, required: false
+  private _gcs = new JobJobClusterNewClusterInitScriptsGcsOutputReference(this, "gcs");
+  public get gcs() {
+    return this._gcs;
+  }
+  public putGcs(value: JobJobClusterNewClusterInitScriptsGcs) {
+    this._gcs.internalValue = value;
+  }
+  public resetGcs() {
+    this._gcs.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gcsInput() {
+    return this._gcs.internalValue;
+  }
+
+  // s3 - computed: false, optional: true, required: false
+  private _s3 = new JobJobClusterNewClusterInitScriptsS3OutputReference(this, "s3");
+  public get s3() {
+    return this._s3;
+  }
+  public putS3(value: JobJobClusterNewClusterInitScriptsS3) {
+    this._s3.internalValue = value;
+  }
+  public resetS3() {
+    this._s3.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3Input() {
+    return this._s3.internalValue;
+  }
+}
+
+export class JobJobClusterNewClusterInitScriptsList extends cdktf.ComplexList {
+  public internalValue? : JobJobClusterNewClusterInitScripts[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): JobJobClusterNewClusterInitScriptsOutputReference {
+    return new JobJobClusterNewClusterInitScriptsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface JobJobClusterNewCluster {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#autotermination_minutes Job#autotermination_minutes}
@@ -2367,9 +2520,9 @@ export class JobJobClusterNewClusterOutputReference extends cdktf.ComplexObject 
       hasAnyValues = true;
       internalValueResult.gcpAttributes = this._gcpAttributes?.internalValue;
     }
-    if (this._initScripts !== undefined) {
+    if (this._initScripts?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.initScripts = this._initScripts;
+      internalValueResult.initScripts = this._initScripts?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -2402,7 +2555,7 @@ export class JobJobClusterNewClusterOutputReference extends cdktf.ComplexObject 
       this._clusterLogConf.internalValue = undefined;
       this._dockerImage.internalValue = undefined;
       this._gcpAttributes.internalValue = undefined;
-      this._initScripts = undefined;
+      this._initScripts.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -2431,7 +2584,7 @@ export class JobJobClusterNewClusterOutputReference extends cdktf.ComplexObject 
       this._clusterLogConf.internalValue = value.clusterLogConf;
       this._dockerImage.internalValue = value.dockerImage;
       this._gcpAttributes.internalValue = value.gcpAttributes;
-      this._initScripts = value.initScripts;
+      this._initScripts.internalValue = value.initScripts;
     }
   }
 
@@ -2833,20 +2986,19 @@ export class JobJobClusterNewClusterOutputReference extends cdktf.ComplexObject 
   }
 
   // init_scripts - computed: false, optional: true, required: false
-  private _initScripts?: JobJobClusterNewClusterInitScripts[] | cdktf.IResolvable; 
+  private _initScripts = new JobJobClusterNewClusterInitScriptsList(this, "init_scripts", false);
   public get initScripts() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('init_scripts');
+    return this._initScripts;
   }
-  public set initScripts(value: JobJobClusterNewClusterInitScripts[] | cdktf.IResolvable) {
-    this._initScripts = value;
+  public putInitScripts(value: JobJobClusterNewClusterInitScripts[] | cdktf.IResolvable) {
+    this._initScripts.internalValue = value;
   }
   public resetInitScripts() {
-    this._initScripts = undefined;
+    this._initScripts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get initScriptsInput() {
-    return this._initScripts;
+    return this._initScripts.internalValue;
   }
 }
 export interface JobJobCluster {
@@ -2873,6 +3025,108 @@ export function jobJobClusterToTerraform(struct?: JobJobCluster | cdktf.IResolva
   }
 }
 
+export class JobJobClusterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): JobJobCluster | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._jobClusterKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.jobClusterKey = this._jobClusterKey;
+    }
+    if (this._newCluster?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.newCluster = this._newCluster?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: JobJobCluster | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._jobClusterKey = undefined;
+      this._newCluster.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._jobClusterKey = value.jobClusterKey;
+      this._newCluster.internalValue = value.newCluster;
+    }
+  }
+
+  // job_cluster_key - computed: false, optional: true, required: false
+  private _jobClusterKey?: string; 
+  public get jobClusterKey() {
+    return this.getStringAttribute('job_cluster_key');
+  }
+  public set jobClusterKey(value: string) {
+    this._jobClusterKey = value;
+  }
+  public resetJobClusterKey() {
+    this._jobClusterKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jobClusterKeyInput() {
+    return this._jobClusterKey;
+  }
+
+  // new_cluster - computed: false, optional: true, required: false
+  private _newCluster = new JobJobClusterNewClusterOutputReference(this, "new_cluster");
+  public get newCluster() {
+    return this._newCluster;
+  }
+  public putNewCluster(value: JobJobClusterNewCluster) {
+    this._newCluster.internalValue = value;
+  }
+  public resetNewCluster() {
+    this._newCluster.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get newClusterInput() {
+    return this._newCluster.internalValue;
+  }
+}
+
+export class JobJobClusterList extends cdktf.ComplexList {
+  public internalValue? : JobJobCluster[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): JobJobClusterOutputReference {
+    return new JobJobClusterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface JobLibraryCran {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#package Job#package}
@@ -3215,6 +3469,196 @@ export function jobLibraryToTerraform(struct?: JobLibrary | cdktf.IResolvable): 
   }
 }
 
+export class JobLibraryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): JobLibrary | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._egg !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.egg = this._egg;
+    }
+    if (this._jar !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.jar = this._jar;
+    }
+    if (this._whl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.whl = this._whl;
+    }
+    if (this._cran?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cran = this._cran?.internalValue;
+    }
+    if (this._maven?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maven = this._maven?.internalValue;
+    }
+    if (this._pypi?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pypi = this._pypi?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: JobLibrary | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._egg = undefined;
+      this._jar = undefined;
+      this._whl = undefined;
+      this._cran.internalValue = undefined;
+      this._maven.internalValue = undefined;
+      this._pypi.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._egg = value.egg;
+      this._jar = value.jar;
+      this._whl = value.whl;
+      this._cran.internalValue = value.cran;
+      this._maven.internalValue = value.maven;
+      this._pypi.internalValue = value.pypi;
+    }
+  }
+
+  // egg - computed: false, optional: true, required: false
+  private _egg?: string; 
+  public get egg() {
+    return this.getStringAttribute('egg');
+  }
+  public set egg(value: string) {
+    this._egg = value;
+  }
+  public resetEgg() {
+    this._egg = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eggInput() {
+    return this._egg;
+  }
+
+  // jar - computed: false, optional: true, required: false
+  private _jar?: string; 
+  public get jar() {
+    return this.getStringAttribute('jar');
+  }
+  public set jar(value: string) {
+    this._jar = value;
+  }
+  public resetJar() {
+    this._jar = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jarInput() {
+    return this._jar;
+  }
+
+  // whl - computed: false, optional: true, required: false
+  private _whl?: string; 
+  public get whl() {
+    return this.getStringAttribute('whl');
+  }
+  public set whl(value: string) {
+    this._whl = value;
+  }
+  public resetWhl() {
+    this._whl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get whlInput() {
+    return this._whl;
+  }
+
+  // cran - computed: false, optional: true, required: false
+  private _cran = new JobLibraryCranOutputReference(this, "cran");
+  public get cran() {
+    return this._cran;
+  }
+  public putCran(value: JobLibraryCran) {
+    this._cran.internalValue = value;
+  }
+  public resetCran() {
+    this._cran.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cranInput() {
+    return this._cran.internalValue;
+  }
+
+  // maven - computed: false, optional: true, required: false
+  private _maven = new JobLibraryMavenOutputReference(this, "maven");
+  public get maven() {
+    return this._maven;
+  }
+  public putMaven(value: JobLibraryMaven) {
+    this._maven.internalValue = value;
+  }
+  public resetMaven() {
+    this._maven.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mavenInput() {
+    return this._maven.internalValue;
+  }
+
+  // pypi - computed: false, optional: true, required: false
+  private _pypi = new JobLibraryPypiOutputReference(this, "pypi");
+  public get pypi() {
+    return this._pypi;
+  }
+  public putPypi(value: JobLibraryPypi) {
+    this._pypi.internalValue = value;
+  }
+  public resetPypi() {
+    this._pypi.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pypiInput() {
+    return this._pypi.internalValue;
+  }
+}
+
+export class JobLibraryList extends cdktf.ComplexList {
+  public internalValue? : JobLibrary[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): JobLibraryOutputReference {
+    return new JobLibraryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface JobNewClusterAutoscale {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#max_workers Job#max_workers}
@@ -4868,6 +5312,152 @@ export function jobNewClusterInitScriptsToTerraform(struct?: JobNewClusterInitSc
   }
 }
 
+export class JobNewClusterInitScriptsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): JobNewClusterInitScripts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dbfs?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dbfs = this._dbfs?.internalValue;
+    }
+    if (this._file?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.file = this._file?.internalValue;
+    }
+    if (this._gcs?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gcs = this._gcs?.internalValue;
+    }
+    if (this._s3?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.s3 = this._s3?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: JobNewClusterInitScripts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._dbfs.internalValue = undefined;
+      this._file.internalValue = undefined;
+      this._gcs.internalValue = undefined;
+      this._s3.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._dbfs.internalValue = value.dbfs;
+      this._file.internalValue = value.file;
+      this._gcs.internalValue = value.gcs;
+      this._s3.internalValue = value.s3;
+    }
+  }
+
+  // dbfs - computed: false, optional: true, required: false
+  private _dbfs = new JobNewClusterInitScriptsDbfsOutputReference(this, "dbfs");
+  public get dbfs() {
+    return this._dbfs;
+  }
+  public putDbfs(value: JobNewClusterInitScriptsDbfs) {
+    this._dbfs.internalValue = value;
+  }
+  public resetDbfs() {
+    this._dbfs.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dbfsInput() {
+    return this._dbfs.internalValue;
+  }
+
+  // file - computed: false, optional: true, required: false
+  private _file = new JobNewClusterInitScriptsFileOutputReference(this, "file");
+  public get file() {
+    return this._file;
+  }
+  public putFile(value: JobNewClusterInitScriptsFile) {
+    this._file.internalValue = value;
+  }
+  public resetFile() {
+    this._file.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileInput() {
+    return this._file.internalValue;
+  }
+
+  // gcs - computed: false, optional: true, required: false
+  private _gcs = new JobNewClusterInitScriptsGcsOutputReference(this, "gcs");
+  public get gcs() {
+    return this._gcs;
+  }
+  public putGcs(value: JobNewClusterInitScriptsGcs) {
+    this._gcs.internalValue = value;
+  }
+  public resetGcs() {
+    this._gcs.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gcsInput() {
+    return this._gcs.internalValue;
+  }
+
+  // s3 - computed: false, optional: true, required: false
+  private _s3 = new JobNewClusterInitScriptsS3OutputReference(this, "s3");
+  public get s3() {
+    return this._s3;
+  }
+  public putS3(value: JobNewClusterInitScriptsS3) {
+    this._s3.internalValue = value;
+  }
+  public resetS3() {
+    this._s3.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3Input() {
+    return this._s3.internalValue;
+  }
+}
+
+export class JobNewClusterInitScriptsList extends cdktf.ComplexList {
+  public internalValue? : JobNewClusterInitScripts[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): JobNewClusterInitScriptsOutputReference {
+    return new JobNewClusterInitScriptsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface JobNewCluster {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#autotermination_minutes Job#autotermination_minutes}
@@ -5138,9 +5728,9 @@ export class JobNewClusterOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.gcpAttributes = this._gcpAttributes?.internalValue;
     }
-    if (this._initScripts !== undefined) {
+    if (this._initScripts?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.initScripts = this._initScripts;
+      internalValueResult.initScripts = this._initScripts?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -5173,7 +5763,7 @@ export class JobNewClusterOutputReference extends cdktf.ComplexObject {
       this._clusterLogConf.internalValue = undefined;
       this._dockerImage.internalValue = undefined;
       this._gcpAttributes.internalValue = undefined;
-      this._initScripts = undefined;
+      this._initScripts.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -5202,7 +5792,7 @@ export class JobNewClusterOutputReference extends cdktf.ComplexObject {
       this._clusterLogConf.internalValue = value.clusterLogConf;
       this._dockerImage.internalValue = value.dockerImage;
       this._gcpAttributes.internalValue = value.gcpAttributes;
-      this._initScripts = value.initScripts;
+      this._initScripts.internalValue = value.initScripts;
     }
   }
 
@@ -5604,20 +6194,19 @@ export class JobNewClusterOutputReference extends cdktf.ComplexObject {
   }
 
   // init_scripts - computed: false, optional: true, required: false
-  private _initScripts?: JobNewClusterInitScripts[] | cdktf.IResolvable; 
+  private _initScripts = new JobNewClusterInitScriptsList(this, "init_scripts", false);
   public get initScripts() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('init_scripts');
+    return this._initScripts;
   }
-  public set initScripts(value: JobNewClusterInitScripts[] | cdktf.IResolvable) {
-    this._initScripts = value;
+  public putInitScripts(value: JobNewClusterInitScripts[] | cdktf.IResolvable) {
+    this._initScripts.internalValue = value;
   }
   public resetInitScripts() {
-    this._initScripts = undefined;
+    this._initScripts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get initScriptsInput() {
-    return this._initScripts;
+    return this._initScripts.internalValue;
   }
 }
 export interface JobNotebookTask {
@@ -6320,6 +6909,86 @@ export function jobTaskDependsOnToTerraform(struct?: JobTaskDependsOn | cdktf.IR
   }
 }
 
+export class JobTaskDependsOnOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): JobTaskDependsOn | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._taskKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.taskKey = this._taskKey;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: JobTaskDependsOn | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._taskKey = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._taskKey = value.taskKey;
+    }
+  }
+
+  // task_key - computed: false, optional: true, required: false
+  private _taskKey?: string; 
+  public get taskKey() {
+    return this.getStringAttribute('task_key');
+  }
+  public set taskKey(value: string) {
+    this._taskKey = value;
+  }
+  public resetTaskKey() {
+    this._taskKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get taskKeyInput() {
+    return this._taskKey;
+  }
+}
+
+export class JobTaskDependsOnList extends cdktf.ComplexList {
+  public internalValue? : JobTaskDependsOn[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): JobTaskDependsOnOutputReference {
+    return new JobTaskDependsOnOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface JobTaskEmailNotifications {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}
@@ -6808,6 +7477,196 @@ export function jobTaskLibraryToTerraform(struct?: JobTaskLibrary | cdktf.IResol
   }
 }
 
+export class JobTaskLibraryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): JobTaskLibrary | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._egg !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.egg = this._egg;
+    }
+    if (this._jar !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.jar = this._jar;
+    }
+    if (this._whl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.whl = this._whl;
+    }
+    if (this._cran?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cran = this._cran?.internalValue;
+    }
+    if (this._maven?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maven = this._maven?.internalValue;
+    }
+    if (this._pypi?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pypi = this._pypi?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: JobTaskLibrary | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._egg = undefined;
+      this._jar = undefined;
+      this._whl = undefined;
+      this._cran.internalValue = undefined;
+      this._maven.internalValue = undefined;
+      this._pypi.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._egg = value.egg;
+      this._jar = value.jar;
+      this._whl = value.whl;
+      this._cran.internalValue = value.cran;
+      this._maven.internalValue = value.maven;
+      this._pypi.internalValue = value.pypi;
+    }
+  }
+
+  // egg - computed: false, optional: true, required: false
+  private _egg?: string; 
+  public get egg() {
+    return this.getStringAttribute('egg');
+  }
+  public set egg(value: string) {
+    this._egg = value;
+  }
+  public resetEgg() {
+    this._egg = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eggInput() {
+    return this._egg;
+  }
+
+  // jar - computed: false, optional: true, required: false
+  private _jar?: string; 
+  public get jar() {
+    return this.getStringAttribute('jar');
+  }
+  public set jar(value: string) {
+    this._jar = value;
+  }
+  public resetJar() {
+    this._jar = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jarInput() {
+    return this._jar;
+  }
+
+  // whl - computed: false, optional: true, required: false
+  private _whl?: string; 
+  public get whl() {
+    return this.getStringAttribute('whl');
+  }
+  public set whl(value: string) {
+    this._whl = value;
+  }
+  public resetWhl() {
+    this._whl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get whlInput() {
+    return this._whl;
+  }
+
+  // cran - computed: false, optional: true, required: false
+  private _cran = new JobTaskLibraryCranOutputReference(this, "cran");
+  public get cran() {
+    return this._cran;
+  }
+  public putCran(value: JobTaskLibraryCran) {
+    this._cran.internalValue = value;
+  }
+  public resetCran() {
+    this._cran.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cranInput() {
+    return this._cran.internalValue;
+  }
+
+  // maven - computed: false, optional: true, required: false
+  private _maven = new JobTaskLibraryMavenOutputReference(this, "maven");
+  public get maven() {
+    return this._maven;
+  }
+  public putMaven(value: JobTaskLibraryMaven) {
+    this._maven.internalValue = value;
+  }
+  public resetMaven() {
+    this._maven.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mavenInput() {
+    return this._maven.internalValue;
+  }
+
+  // pypi - computed: false, optional: true, required: false
+  private _pypi = new JobTaskLibraryPypiOutputReference(this, "pypi");
+  public get pypi() {
+    return this._pypi;
+  }
+  public putPypi(value: JobTaskLibraryPypi) {
+    this._pypi.internalValue = value;
+  }
+  public resetPypi() {
+    this._pypi.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pypiInput() {
+    return this._pypi.internalValue;
+  }
+}
+
+export class JobTaskLibraryList extends cdktf.ComplexList {
+  public internalValue? : JobTaskLibrary[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): JobTaskLibraryOutputReference {
+    return new JobTaskLibraryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface JobTaskNewClusterAutoscale {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#max_workers Job#max_workers}
@@ -8461,6 +9320,152 @@ export function jobTaskNewClusterInitScriptsToTerraform(struct?: JobTaskNewClust
   }
 }
 
+export class JobTaskNewClusterInitScriptsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): JobTaskNewClusterInitScripts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dbfs?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dbfs = this._dbfs?.internalValue;
+    }
+    if (this._file?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.file = this._file?.internalValue;
+    }
+    if (this._gcs?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gcs = this._gcs?.internalValue;
+    }
+    if (this._s3?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.s3 = this._s3?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: JobTaskNewClusterInitScripts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._dbfs.internalValue = undefined;
+      this._file.internalValue = undefined;
+      this._gcs.internalValue = undefined;
+      this._s3.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._dbfs.internalValue = value.dbfs;
+      this._file.internalValue = value.file;
+      this._gcs.internalValue = value.gcs;
+      this._s3.internalValue = value.s3;
+    }
+  }
+
+  // dbfs - computed: false, optional: true, required: false
+  private _dbfs = new JobTaskNewClusterInitScriptsDbfsOutputReference(this, "dbfs");
+  public get dbfs() {
+    return this._dbfs;
+  }
+  public putDbfs(value: JobTaskNewClusterInitScriptsDbfs) {
+    this._dbfs.internalValue = value;
+  }
+  public resetDbfs() {
+    this._dbfs.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dbfsInput() {
+    return this._dbfs.internalValue;
+  }
+
+  // file - computed: false, optional: true, required: false
+  private _file = new JobTaskNewClusterInitScriptsFileOutputReference(this, "file");
+  public get file() {
+    return this._file;
+  }
+  public putFile(value: JobTaskNewClusterInitScriptsFile) {
+    this._file.internalValue = value;
+  }
+  public resetFile() {
+    this._file.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileInput() {
+    return this._file.internalValue;
+  }
+
+  // gcs - computed: false, optional: true, required: false
+  private _gcs = new JobTaskNewClusterInitScriptsGcsOutputReference(this, "gcs");
+  public get gcs() {
+    return this._gcs;
+  }
+  public putGcs(value: JobTaskNewClusterInitScriptsGcs) {
+    this._gcs.internalValue = value;
+  }
+  public resetGcs() {
+    this._gcs.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gcsInput() {
+    return this._gcs.internalValue;
+  }
+
+  // s3 - computed: false, optional: true, required: false
+  private _s3 = new JobTaskNewClusterInitScriptsS3OutputReference(this, "s3");
+  public get s3() {
+    return this._s3;
+  }
+  public putS3(value: JobTaskNewClusterInitScriptsS3) {
+    this._s3.internalValue = value;
+  }
+  public resetS3() {
+    this._s3.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3Input() {
+    return this._s3.internalValue;
+  }
+}
+
+export class JobTaskNewClusterInitScriptsList extends cdktf.ComplexList {
+  public internalValue? : JobTaskNewClusterInitScripts[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): JobTaskNewClusterInitScriptsOutputReference {
+    return new JobTaskNewClusterInitScriptsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface JobTaskNewCluster {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#autotermination_minutes Job#autotermination_minutes}
@@ -8731,9 +9736,9 @@ export class JobTaskNewClusterOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.gcpAttributes = this._gcpAttributes?.internalValue;
     }
-    if (this._initScripts !== undefined) {
+    if (this._initScripts?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.initScripts = this._initScripts;
+      internalValueResult.initScripts = this._initScripts?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -8766,7 +9771,7 @@ export class JobTaskNewClusterOutputReference extends cdktf.ComplexObject {
       this._clusterLogConf.internalValue = undefined;
       this._dockerImage.internalValue = undefined;
       this._gcpAttributes.internalValue = undefined;
-      this._initScripts = undefined;
+      this._initScripts.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -8795,7 +9800,7 @@ export class JobTaskNewClusterOutputReference extends cdktf.ComplexObject {
       this._clusterLogConf.internalValue = value.clusterLogConf;
       this._dockerImage.internalValue = value.dockerImage;
       this._gcpAttributes.internalValue = value.gcpAttributes;
-      this._initScripts = value.initScripts;
+      this._initScripts.internalValue = value.initScripts;
     }
   }
 
@@ -9197,20 +10202,19 @@ export class JobTaskNewClusterOutputReference extends cdktf.ComplexObject {
   }
 
   // init_scripts - computed: false, optional: true, required: false
-  private _initScripts?: JobTaskNewClusterInitScripts[] | cdktf.IResolvable; 
+  private _initScripts = new JobTaskNewClusterInitScriptsList(this, "init_scripts", false);
   public get initScripts() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('init_scripts');
+    return this._initScripts;
   }
-  public set initScripts(value: JobTaskNewClusterInitScripts[] | cdktf.IResolvable) {
-    this._initScripts = value;
+  public putInitScripts(value: JobTaskNewClusterInitScripts[] | cdktf.IResolvable) {
+    this._initScripts.internalValue = value;
   }
   public resetInitScripts() {
-    this._initScripts = undefined;
+    this._initScripts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get initScriptsInput() {
-    return this._initScripts;
+    return this._initScripts.internalValue;
   }
 }
 export interface JobTaskNotebookTask {
@@ -9905,6 +10909,460 @@ export function jobTaskToTerraform(struct?: JobTask | cdktf.IResolvable): any {
   }
 }
 
+export class JobTaskOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): JobTask | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._description !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.description = this._description;
+    }
+    if (this._existingClusterId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.existingClusterId = this._existingClusterId;
+    }
+    if (this._jobClusterKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.jobClusterKey = this._jobClusterKey;
+    }
+    if (this._maxRetries !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxRetries = this._maxRetries;
+    }
+    if (this._minRetryIntervalMillis !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minRetryIntervalMillis = this._minRetryIntervalMillis;
+    }
+    if (this._retryOnTimeout !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.retryOnTimeout = this._retryOnTimeout;
+    }
+    if (this._taskKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.taskKey = this._taskKey;
+    }
+    if (this._timeoutSeconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeoutSeconds = this._timeoutSeconds;
+    }
+    if (this._dependsOn?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dependsOn = this._dependsOn?.internalValue;
+    }
+    if (this._emailNotifications?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.emailNotifications = this._emailNotifications?.internalValue;
+    }
+    if (this._library?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.library = this._library?.internalValue;
+    }
+    if (this._newCluster?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.newCluster = this._newCluster?.internalValue;
+    }
+    if (this._notebookTask?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.notebookTask = this._notebookTask?.internalValue;
+    }
+    if (this._pipelineTask?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pipelineTask = this._pipelineTask?.internalValue;
+    }
+    if (this._pythonWheelTask?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pythonWheelTask = this._pythonWheelTask?.internalValue;
+    }
+    if (this._sparkJarTask?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sparkJarTask = this._sparkJarTask?.internalValue;
+    }
+    if (this._sparkPythonTask?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sparkPythonTask = this._sparkPythonTask?.internalValue;
+    }
+    if (this._sparkSubmitTask?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sparkSubmitTask = this._sparkSubmitTask?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: JobTask | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._description = undefined;
+      this._existingClusterId = undefined;
+      this._jobClusterKey = undefined;
+      this._maxRetries = undefined;
+      this._minRetryIntervalMillis = undefined;
+      this._retryOnTimeout = undefined;
+      this._taskKey = undefined;
+      this._timeoutSeconds = undefined;
+      this._dependsOn.internalValue = undefined;
+      this._emailNotifications.internalValue = undefined;
+      this._library.internalValue = undefined;
+      this._newCluster.internalValue = undefined;
+      this._notebookTask.internalValue = undefined;
+      this._pipelineTask.internalValue = undefined;
+      this._pythonWheelTask.internalValue = undefined;
+      this._sparkJarTask.internalValue = undefined;
+      this._sparkPythonTask.internalValue = undefined;
+      this._sparkSubmitTask.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._description = value.description;
+      this._existingClusterId = value.existingClusterId;
+      this._jobClusterKey = value.jobClusterKey;
+      this._maxRetries = value.maxRetries;
+      this._minRetryIntervalMillis = value.minRetryIntervalMillis;
+      this._retryOnTimeout = value.retryOnTimeout;
+      this._taskKey = value.taskKey;
+      this._timeoutSeconds = value.timeoutSeconds;
+      this._dependsOn.internalValue = value.dependsOn;
+      this._emailNotifications.internalValue = value.emailNotifications;
+      this._library.internalValue = value.library;
+      this._newCluster.internalValue = value.newCluster;
+      this._notebookTask.internalValue = value.notebookTask;
+      this._pipelineTask.internalValue = value.pipelineTask;
+      this._pythonWheelTask.internalValue = value.pythonWheelTask;
+      this._sparkJarTask.internalValue = value.sparkJarTask;
+      this._sparkPythonTask.internalValue = value.sparkPythonTask;
+      this._sparkSubmitTask.internalValue = value.sparkSubmitTask;
+    }
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // existing_cluster_id - computed: false, optional: true, required: false
+  private _existingClusterId?: string; 
+  public get existingClusterId() {
+    return this.getStringAttribute('existing_cluster_id');
+  }
+  public set existingClusterId(value: string) {
+    this._existingClusterId = value;
+  }
+  public resetExistingClusterId() {
+    this._existingClusterId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get existingClusterIdInput() {
+    return this._existingClusterId;
+  }
+
+  // job_cluster_key - computed: false, optional: true, required: false
+  private _jobClusterKey?: string; 
+  public get jobClusterKey() {
+    return this.getStringAttribute('job_cluster_key');
+  }
+  public set jobClusterKey(value: string) {
+    this._jobClusterKey = value;
+  }
+  public resetJobClusterKey() {
+    this._jobClusterKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jobClusterKeyInput() {
+    return this._jobClusterKey;
+  }
+
+  // max_retries - computed: false, optional: true, required: false
+  private _maxRetries?: number; 
+  public get maxRetries() {
+    return this.getNumberAttribute('max_retries');
+  }
+  public set maxRetries(value: number) {
+    this._maxRetries = value;
+  }
+  public resetMaxRetries() {
+    this._maxRetries = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxRetriesInput() {
+    return this._maxRetries;
+  }
+
+  // min_retry_interval_millis - computed: false, optional: true, required: false
+  private _minRetryIntervalMillis?: number; 
+  public get minRetryIntervalMillis() {
+    return this.getNumberAttribute('min_retry_interval_millis');
+  }
+  public set minRetryIntervalMillis(value: number) {
+    this._minRetryIntervalMillis = value;
+  }
+  public resetMinRetryIntervalMillis() {
+    this._minRetryIntervalMillis = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minRetryIntervalMillisInput() {
+    return this._minRetryIntervalMillis;
+  }
+
+  // retry_on_timeout - computed: true, optional: true, required: false
+  private _retryOnTimeout?: boolean | cdktf.IResolvable; 
+  public get retryOnTimeout() {
+    return this.getBooleanAttribute('retry_on_timeout');
+  }
+  public set retryOnTimeout(value: boolean | cdktf.IResolvable) {
+    this._retryOnTimeout = value;
+  }
+  public resetRetryOnTimeout() {
+    this._retryOnTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retryOnTimeoutInput() {
+    return this._retryOnTimeout;
+  }
+
+  // task_key - computed: false, optional: true, required: false
+  private _taskKey?: string; 
+  public get taskKey() {
+    return this.getStringAttribute('task_key');
+  }
+  public set taskKey(value: string) {
+    this._taskKey = value;
+  }
+  public resetTaskKey() {
+    this._taskKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get taskKeyInput() {
+    return this._taskKey;
+  }
+
+  // timeout_seconds - computed: false, optional: true, required: false
+  private _timeoutSeconds?: number; 
+  public get timeoutSeconds() {
+    return this.getNumberAttribute('timeout_seconds');
+  }
+  public set timeoutSeconds(value: number) {
+    this._timeoutSeconds = value;
+  }
+  public resetTimeoutSeconds() {
+    this._timeoutSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutSecondsInput() {
+    return this._timeoutSeconds;
+  }
+
+  // depends_on - computed: false, optional: true, required: false
+  private _dependsOn = new JobTaskDependsOnList(this, "depends_on", false);
+  public get dependsOn() {
+    return this._dependsOn;
+  }
+  public putDependsOn(value: JobTaskDependsOn[] | cdktf.IResolvable) {
+    this._dependsOn.internalValue = value;
+  }
+  public resetDependsOn() {
+    this._dependsOn.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dependsOnInput() {
+    return this._dependsOn.internalValue;
+  }
+
+  // email_notifications - computed: false, optional: true, required: false
+  private _emailNotifications = new JobTaskEmailNotificationsOutputReference(this, "email_notifications");
+  public get emailNotifications() {
+    return this._emailNotifications;
+  }
+  public putEmailNotifications(value: JobTaskEmailNotifications) {
+    this._emailNotifications.internalValue = value;
+  }
+  public resetEmailNotifications() {
+    this._emailNotifications.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailNotificationsInput() {
+    return this._emailNotifications.internalValue;
+  }
+
+  // library - computed: false, optional: true, required: false
+  private _library = new JobTaskLibraryList(this, "library", true);
+  public get library() {
+    return this._library;
+  }
+  public putLibrary(value: JobTaskLibrary[] | cdktf.IResolvable) {
+    this._library.internalValue = value;
+  }
+  public resetLibrary() {
+    this._library.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get libraryInput() {
+    return this._library.internalValue;
+  }
+
+  // new_cluster - computed: false, optional: true, required: false
+  private _newCluster = new JobTaskNewClusterOutputReference(this, "new_cluster");
+  public get newCluster() {
+    return this._newCluster;
+  }
+  public putNewCluster(value: JobTaskNewCluster) {
+    this._newCluster.internalValue = value;
+  }
+  public resetNewCluster() {
+    this._newCluster.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get newClusterInput() {
+    return this._newCluster.internalValue;
+  }
+
+  // notebook_task - computed: false, optional: true, required: false
+  private _notebookTask = new JobTaskNotebookTaskOutputReference(this, "notebook_task");
+  public get notebookTask() {
+    return this._notebookTask;
+  }
+  public putNotebookTask(value: JobTaskNotebookTask) {
+    this._notebookTask.internalValue = value;
+  }
+  public resetNotebookTask() {
+    this._notebookTask.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notebookTaskInput() {
+    return this._notebookTask.internalValue;
+  }
+
+  // pipeline_task - computed: false, optional: true, required: false
+  private _pipelineTask = new JobTaskPipelineTaskOutputReference(this, "pipeline_task");
+  public get pipelineTask() {
+    return this._pipelineTask;
+  }
+  public putPipelineTask(value: JobTaskPipelineTask) {
+    this._pipelineTask.internalValue = value;
+  }
+  public resetPipelineTask() {
+    this._pipelineTask.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pipelineTaskInput() {
+    return this._pipelineTask.internalValue;
+  }
+
+  // python_wheel_task - computed: false, optional: true, required: false
+  private _pythonWheelTask = new JobTaskPythonWheelTaskOutputReference(this, "python_wheel_task");
+  public get pythonWheelTask() {
+    return this._pythonWheelTask;
+  }
+  public putPythonWheelTask(value: JobTaskPythonWheelTask) {
+    this._pythonWheelTask.internalValue = value;
+  }
+  public resetPythonWheelTask() {
+    this._pythonWheelTask.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pythonWheelTaskInput() {
+    return this._pythonWheelTask.internalValue;
+  }
+
+  // spark_jar_task - computed: false, optional: true, required: false
+  private _sparkJarTask = new JobTaskSparkJarTaskOutputReference(this, "spark_jar_task");
+  public get sparkJarTask() {
+    return this._sparkJarTask;
+  }
+  public putSparkJarTask(value: JobTaskSparkJarTask) {
+    this._sparkJarTask.internalValue = value;
+  }
+  public resetSparkJarTask() {
+    this._sparkJarTask.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sparkJarTaskInput() {
+    return this._sparkJarTask.internalValue;
+  }
+
+  // spark_python_task - computed: false, optional: true, required: false
+  private _sparkPythonTask = new JobTaskSparkPythonTaskOutputReference(this, "spark_python_task");
+  public get sparkPythonTask() {
+    return this._sparkPythonTask;
+  }
+  public putSparkPythonTask(value: JobTaskSparkPythonTask) {
+    this._sparkPythonTask.internalValue = value;
+  }
+  public resetSparkPythonTask() {
+    this._sparkPythonTask.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sparkPythonTaskInput() {
+    return this._sparkPythonTask.internalValue;
+  }
+
+  // spark_submit_task - computed: false, optional: true, required: false
+  private _sparkSubmitTask = new JobTaskSparkSubmitTaskOutputReference(this, "spark_submit_task");
+  public get sparkSubmitTask() {
+    return this._sparkSubmitTask;
+  }
+  public putSparkSubmitTask(value: JobTaskSparkSubmitTask) {
+    this._sparkSubmitTask.internalValue = value;
+  }
+  public resetSparkSubmitTask() {
+    this._sparkSubmitTask.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sparkSubmitTaskInput() {
+    return this._sparkSubmitTask.internalValue;
+  }
+}
+
+export class JobTaskList extends cdktf.ComplexList {
+  public internalValue? : JobTask[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): JobTaskOutputReference {
+    return new JobTaskOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface JobTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#create Job#create}
@@ -9929,6 +11387,7 @@ export function jobTimeoutsToTerraform(struct?: JobTimeoutsOutputReference | Job
 
 export class JobTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9938,7 +11397,10 @@ export class JobTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): JobTimeouts | undefined {
+  public get internalValue(): JobTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -9952,14 +11414,20 @@ export class JobTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobTimeouts | undefined) {
+  public set internalValue(value: JobTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._update = value.update;
     }
@@ -10035,6 +11503,7 @@ export class Job extends cdktf.TerraformResource {
     this._alwaysRunning = config.alwaysRunning;
     this._existingClusterId = config.existingClusterId;
     this._format = config.format;
+    this._id = config.id;
     this._maxConcurrentRuns = config.maxConcurrentRuns;
     this._maxRetries = config.maxRetries;
     this._minRetryIntervalMillis = config.minRetryIntervalMillis;
@@ -10043,8 +11512,8 @@ export class Job extends cdktf.TerraformResource {
     this._timeoutSeconds = config.timeoutSeconds;
     this._emailNotifications.internalValue = config.emailNotifications;
     this._gitSource.internalValue = config.gitSource;
-    this._jobCluster = config.jobCluster;
-    this._library = config.library;
+    this._jobCluster.internalValue = config.jobCluster;
+    this._library.internalValue = config.library;
     this._newCluster.internalValue = config.newCluster;
     this._notebookTask.internalValue = config.notebookTask;
     this._pipelineTask.internalValue = config.pipelineTask;
@@ -10053,7 +11522,7 @@ export class Job extends cdktf.TerraformResource {
     this._sparkJarTask.internalValue = config.sparkJarTask;
     this._sparkPythonTask.internalValue = config.sparkPythonTask;
     this._sparkSubmitTask.internalValue = config.sparkSubmitTask;
-    this._task = config.task;
+    this._task.internalValue = config.task;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -10110,8 +11579,19 @@ export class Job extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // max_concurrent_runs - computed: false, optional: true, required: false
@@ -10248,37 +11728,35 @@ export class Job extends cdktf.TerraformResource {
   }
 
   // job_cluster - computed: false, optional: true, required: false
-  private _jobCluster?: JobJobCluster[] | cdktf.IResolvable; 
+  private _jobCluster = new JobJobClusterList(this, "job_cluster", false);
   public get jobCluster() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('job_cluster');
+    return this._jobCluster;
   }
-  public set jobCluster(value: JobJobCluster[] | cdktf.IResolvable) {
-    this._jobCluster = value;
+  public putJobCluster(value: JobJobCluster[] | cdktf.IResolvable) {
+    this._jobCluster.internalValue = value;
   }
   public resetJobCluster() {
-    this._jobCluster = undefined;
+    this._jobCluster.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get jobClusterInput() {
-    return this._jobCluster;
+    return this._jobCluster.internalValue;
   }
 
   // library - computed: false, optional: true, required: false
-  private _library?: JobLibrary[] | cdktf.IResolvable; 
+  private _library = new JobLibraryList(this, "library", true);
   public get library() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('library')));
+    return this._library;
   }
-  public set library(value: JobLibrary[] | cdktf.IResolvable) {
-    this._library = value;
+  public putLibrary(value: JobLibrary[] | cdktf.IResolvable) {
+    this._library.internalValue = value;
   }
   public resetLibrary() {
-    this._library = undefined;
+    this._library.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get libraryInput() {
-    return this._library;
+    return this._library.internalValue;
   }
 
   // new_cluster - computed: false, optional: true, required: false
@@ -10410,20 +11888,19 @@ export class Job extends cdktf.TerraformResource {
   }
 
   // task - computed: false, optional: true, required: false
-  private _task?: JobTask[] | cdktf.IResolvable; 
+  private _task = new JobTaskList(this, "task", false);
   public get task() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('task');
+    return this._task;
   }
-  public set task(value: JobTask[] | cdktf.IResolvable) {
-    this._task = value;
+  public putTask(value: JobTask[] | cdktf.IResolvable) {
+    this._task.internalValue = value;
   }
   public resetTask() {
-    this._task = undefined;
+    this._task.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get taskInput() {
-    return this._task;
+    return this._task.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -10451,6 +11928,7 @@ export class Job extends cdktf.TerraformResource {
       always_running: cdktf.booleanToTerraform(this._alwaysRunning),
       existing_cluster_id: cdktf.stringToTerraform(this._existingClusterId),
       format: cdktf.stringToTerraform(this._format),
+      id: cdktf.stringToTerraform(this._id),
       max_concurrent_runs: cdktf.numberToTerraform(this._maxConcurrentRuns),
       max_retries: cdktf.numberToTerraform(this._maxRetries),
       min_retry_interval_millis: cdktf.numberToTerraform(this._minRetryIntervalMillis),
@@ -10459,8 +11937,8 @@ export class Job extends cdktf.TerraformResource {
       timeout_seconds: cdktf.numberToTerraform(this._timeoutSeconds),
       email_notifications: jobEmailNotificationsToTerraform(this._emailNotifications.internalValue),
       git_source: jobGitSourceToTerraform(this._gitSource.internalValue),
-      job_cluster: cdktf.listMapper(jobJobClusterToTerraform)(this._jobCluster),
-      library: cdktf.listMapper(jobLibraryToTerraform)(this._library),
+      job_cluster: cdktf.listMapper(jobJobClusterToTerraform)(this._jobCluster.internalValue),
+      library: cdktf.listMapper(jobLibraryToTerraform)(this._library.internalValue),
       new_cluster: jobNewClusterToTerraform(this._newCluster.internalValue),
       notebook_task: jobNotebookTaskToTerraform(this._notebookTask.internalValue),
       pipeline_task: jobPipelineTaskToTerraform(this._pipelineTask.internalValue),
@@ -10469,7 +11947,7 @@ export class Job extends cdktf.TerraformResource {
       spark_jar_task: jobSparkJarTaskToTerraform(this._sparkJarTask.internalValue),
       spark_python_task: jobSparkPythonTaskToTerraform(this._sparkPythonTask.internalValue),
       spark_submit_task: jobSparkSubmitTaskToTerraform(this._sparkSubmitTask.internalValue),
-      task: cdktf.listMapper(jobTaskToTerraform)(this._task),
+      task: cdktf.listMapper(jobTaskToTerraform)(this._task.internalValue),
       timeouts: jobTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

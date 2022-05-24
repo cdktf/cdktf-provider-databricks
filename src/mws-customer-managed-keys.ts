@@ -20,6 +20,13 @@ export interface MwsCustomerManagedKeysConfig extends cdktf.TerraformMetaArgumen
   */
   readonly customerManagedKeyId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_customer_managed_keys#id MwsCustomerManagedKeys#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_customer_managed_keys#use_cases MwsCustomerManagedKeys#use_cases}
   */
   readonly useCases: string[];
@@ -181,6 +188,7 @@ export class MwsCustomerManagedKeys extends cdktf.TerraformResource {
     this._accountId = config.accountId;
     this._creationTime = config.creationTime;
     this._customerManagedKeyId = config.customerManagedKeyId;
+    this._id = config.id;
     this._useCases = config.useCases;
     this._awsKeyInfo.internalValue = config.awsKeyInfo;
   }
@@ -235,8 +243,19 @@ export class MwsCustomerManagedKeys extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // use_cases - computed: false, optional: false, required: true
@@ -274,6 +293,7 @@ export class MwsCustomerManagedKeys extends cdktf.TerraformResource {
       account_id: cdktf.stringToTerraform(this._accountId),
       creation_time: cdktf.numberToTerraform(this._creationTime),
       customer_managed_key_id: cdktf.stringToTerraform(this._customerManagedKeyId),
+      id: cdktf.stringToTerraform(this._id),
       use_cases: cdktf.listMapper(cdktf.stringToTerraform)(this._useCases),
       aws_key_info: mwsCustomerManagedKeysAwsKeyInfoToTerraform(this._awsKeyInfo.internalValue),
     };

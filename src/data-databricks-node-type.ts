@@ -20,6 +20,13 @@ export interface DataDatabricksNodeTypeConfig extends cdktf.TerraformMetaArgumen
   */
   readonly graviton?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#id DataDatabricksNodeType#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#is_io_cache_enabled DataDatabricksNodeType#is_io_cache_enabled}
   */
   readonly isIoCacheEnabled?: boolean | cdktf.IResolvable;
@@ -90,6 +97,7 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
     this._category = config.category;
     this._gbPerCore = config.gbPerCore;
     this._graviton = config.graviton;
+    this._id = config.id;
     this._isIoCacheEnabled = config.isIoCacheEnabled;
     this._localDisk = config.localDisk;
     this._minCores = config.minCores;
@@ -153,8 +161,19 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // is_io_cache_enabled - computed: false, optional: true, required: false
@@ -294,6 +313,7 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
       category: cdktf.stringToTerraform(this._category),
       gb_per_core: cdktf.numberToTerraform(this._gbPerCore),
       graviton: cdktf.booleanToTerraform(this._graviton),
+      id: cdktf.stringToTerraform(this._id),
       is_io_cache_enabled: cdktf.booleanToTerraform(this._isIoCacheEnabled),
       local_disk: cdktf.booleanToTerraform(this._localDisk),
       min_cores: cdktf.numberToTerraform(this._minCores),

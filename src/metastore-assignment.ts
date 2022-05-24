@@ -12,6 +12,13 @@ export interface MetastoreAssignmentConfig extends cdktf.TerraformMetaArguments 
   */
   readonly defaultCatalogName?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore_assignment#id MetastoreAssignment#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore_assignment#metastore_id MetastoreAssignment#metastore_id}
   */
   readonly metastoreId: string;
@@ -56,6 +63,7 @@ export class MetastoreAssignment extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._defaultCatalogName = config.defaultCatalogName;
+    this._id = config.id;
     this._metastoreId = config.metastoreId;
     this._workspaceId = config.workspaceId;
   }
@@ -81,8 +89,19 @@ export class MetastoreAssignment extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // metastore_id - computed: false, optional: false, required: true
@@ -118,6 +137,7 @@ export class MetastoreAssignment extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       default_catalog_name: cdktf.stringToTerraform(this._defaultCatalogName),
+      id: cdktf.stringToTerraform(this._id),
       metastore_id: cdktf.stringToTerraform(this._metastoreId),
       workspace_id: cdktf.numberToTerraform(this._workspaceId),
     };

@@ -16,6 +16,13 @@ export interface SqlGlobalConfigConfig extends cdktf.TerraformMetaArguments {
   */
   readonly enableServerlessCompute?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_global_config#id SqlGlobalConfig#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_global_config#instance_profile_arn SqlGlobalConfig#instance_profile_arn}
   */
   readonly instanceProfileArn?: string;
@@ -65,6 +72,7 @@ export class SqlGlobalConfig extends cdktf.TerraformResource {
     });
     this._dataAccessConfig = config.dataAccessConfig;
     this._enableServerlessCompute = config.enableServerlessCompute;
+    this._id = config.id;
     this._instanceProfileArn = config.instanceProfileArn;
     this._securityPolicy = config.securityPolicy;
     this._sqlConfigParams = config.sqlConfigParams;
@@ -107,8 +115,19 @@ export class SqlGlobalConfig extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // instance_profile_arn - computed: false, optional: true, required: false
@@ -167,6 +186,7 @@ export class SqlGlobalConfig extends cdktf.TerraformResource {
     return {
       data_access_config: cdktf.hashMapper(cdktf.stringToTerraform)(this._dataAccessConfig),
       enable_serverless_compute: cdktf.booleanToTerraform(this._enableServerlessCompute),
+      id: cdktf.stringToTerraform(this._id),
       instance_profile_arn: cdktf.stringToTerraform(this._instanceProfileArn),
       security_policy: cdktf.stringToTerraform(this._securityPolicy),
       sql_config_params: cdktf.hashMapper(cdktf.stringToTerraform)(this._sqlConfigParams),

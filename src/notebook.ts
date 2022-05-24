@@ -16,6 +16,13 @@ export interface NotebookConfig extends cdktf.TerraformMetaArguments {
   */
   readonly format?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/notebook#id Notebook#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/notebook#language Notebook#language}
   */
   readonly language?: string;
@@ -77,6 +84,7 @@ export class Notebook extends cdktf.TerraformResource {
     });
     this._contentBase64 = config.contentBase64;
     this._format = config.format;
+    this._id = config.id;
     this._language = config.language;
     this._md5 = config.md5;
     this._objectId = config.objectId;
@@ -122,8 +130,19 @@ export class Notebook extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // language - computed: false, optional: true, required: false
@@ -232,6 +251,7 @@ export class Notebook extends cdktf.TerraformResource {
     return {
       content_base64: cdktf.stringToTerraform(this._contentBase64),
       format: cdktf.stringToTerraform(this._format),
+      id: cdktf.stringToTerraform(this._id),
       language: cdktf.stringToTerraform(this._language),
       md5: cdktf.stringToTerraform(this._md5),
       object_id: cdktf.numberToTerraform(this._objectId),
