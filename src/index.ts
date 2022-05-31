@@ -45,6 +45,7 @@ export * from './secret';
 export * from './secret-acl';
 export * from './secret-scope';
 export * from './service-principal';
+export * from './service-principal-role';
 export * from './sql-dashboard';
 export * from './sql-endpoint';
 export * from './sql-global-config';

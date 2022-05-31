@@ -56,7 +56,7 @@ export class DataDatabricksAwsAssumeRolePolicy extends cdktf.TerraformDataSource
       terraformResourceType: 'databricks_aws_assume_role_policy',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '0.5.8',
+        providerVersion: '0.5.9',
         providerVersionConstraint: '~> 0.5'
       },
       provider: config.provider,

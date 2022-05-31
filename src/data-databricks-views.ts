@@ -54,7 +54,7 @@ export class DataDatabricksViews extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_views',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '0.5.8',
+        providerVersion: '0.5.9',
         providerVersionConstraint: '~> 0.5'
       },
       provider: config.provider,

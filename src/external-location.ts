@@ -35,6 +35,10 @@ export interface ExternalLocationConfig extends cdktf.TerraformMetaArguments {
   */
   readonly owner?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/external_location#skip_validation ExternalLocation#skip_validation}
+  */
+  readonly skipValidation?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/external_location#url ExternalLocation#url}
   */
   readonly url: string;
@@ -66,7 +70,7 @@ export class ExternalLocation extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_external_location',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '0.5.8',
+        providerVersion: '0.5.9',
         providerVersionConstraint: '~> 0.5'
       },
       provider: config.provider,
@@ -80,6 +84,7 @@ export class ExternalLocation extends cdktf.TerraformResource {
     this._metastoreId = config.metastoreId;
     this._name = config.name;
     this._owner = config.owner;
+    this._skipValidation = config.skipValidation;
     this._url = config.url;
   }
 
@@ -177,6 +182,22 @@ export class ExternalLocation extends cdktf.TerraformResource {
     return this._owner;
   }
 
+  // skip_validation - computed: false, optional: true, required: false
+  private _skipValidation?: boolean | cdktf.IResolvable; 
+  public get skipValidation() {
+    return this.getBooleanAttribute('skip_validation');
+  }
+  public set skipValidation(value: boolean | cdktf.IResolvable) {
+    this._skipValidation = value;
+  }
+  public resetSkipValidation() {
+    this._skipValidation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipValidationInput() {
+    return this._skipValidation;
+  }
+
   // url - computed: false, optional: false, required: true
   private _url?: string; 
   public get url() {
@@ -202,6 +223,7 @@ export class ExternalLocation extends cdktf.TerraformResource {
       metastore_id: cdktf.stringToTerraform(this._metastoreId),
       name: cdktf.stringToTerraform(this._name),
       owner: cdktf.stringToTerraform(this._owner),
+      skip_validation: cdktf.booleanToTerraform(this._skipValidation),
       url: cdktf.stringToTerraform(this._url),
     };
   }

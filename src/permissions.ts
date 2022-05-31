@@ -295,7 +295,7 @@ export class Permissions extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_permissions',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '0.5.8',
+        providerVersion: '0.5.9',
         providerVersionConstraint: '~> 0.5'
       },
       provider: config.provider,

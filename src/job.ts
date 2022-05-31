@@ -47,6 +47,10 @@ export interface JobConfig extends cdktf.TerraformMetaArguments {
   */
   readonly retryOnTimeout?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#tags Job#tags}
+  */
+  readonly tags?: { [key: string]: string };
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#timeout_seconds Job#timeout_seconds}
   */
   readonly timeoutSeconds?: number;
@@ -137,6 +141,10 @@ export interface JobConfig extends cdktf.TerraformMetaArguments {
 }
 export interface JobEmailNotifications {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#alert_on_last_attempt Job#alert_on_last_attempt}
+  */
+  readonly alertOnLastAttempt?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}
   */
   readonly noAlertForSkippedRuns?: boolean | cdktf.IResolvable;
@@ -160,6 +168,7 @@ export function jobEmailNotificationsToTerraform(struct?: JobEmailNotificationsO
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    alert_on_last_attempt: cdktf.booleanToTerraform(struct!.alertOnLastAttempt),
     no_alert_for_skipped_runs: cdktf.booleanToTerraform(struct!.noAlertForSkippedRuns),
     on_failure: cdktf.listMapper(cdktf.stringToTerraform)(struct!.onFailure),
     on_start: cdktf.listMapper(cdktf.stringToTerraform)(struct!.onStart),
@@ -181,6 +190,10 @@ export class JobEmailNotificationsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): JobEmailNotifications | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._alertOnLastAttempt !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.alertOnLastAttempt = this._alertOnLastAttempt;
+    }
     if (this._noAlertForSkippedRuns !== undefined) {
       hasAnyValues = true;
       internalValueResult.noAlertForSkippedRuns = this._noAlertForSkippedRuns;
@@ -203,6 +216,7 @@ export class JobEmailNotificationsOutputReference extends cdktf.ComplexObject {
   public set internalValue(value: JobEmailNotifications | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._alertOnLastAttempt = undefined;
       this._noAlertForSkippedRuns = undefined;
       this._onFailure = undefined;
       this._onStart = undefined;
@@ -210,11 +224,28 @@ export class JobEmailNotificationsOutputReference extends cdktf.ComplexObject {
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._alertOnLastAttempt = value.alertOnLastAttempt;
       this._noAlertForSkippedRuns = value.noAlertForSkippedRuns;
       this._onFailure = value.onFailure;
       this._onStart = value.onStart;
       this._onSuccess = value.onSuccess;
     }
+  }
+
+  // alert_on_last_attempt - computed: false, optional: true, required: false
+  private _alertOnLastAttempt?: boolean | cdktf.IResolvable; 
+  public get alertOnLastAttempt() {
+    return this.getBooleanAttribute('alert_on_last_attempt');
+  }
+  public set alertOnLastAttempt(value: boolean | cdktf.IResolvable) {
+    this._alertOnLastAttempt = value;
+  }
+  public resetAlertOnLastAttempt() {
+    this._alertOnLastAttempt = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alertOnLastAttemptInput() {
+    return this._alertOnLastAttempt;
   }
 
   // no_alert_for_skipped_runs - computed: false, optional: true, required: false
@@ -6991,6 +7022,10 @@ export class JobTaskDependsOnList extends cdktf.ComplexList {
 }
 export interface JobTaskEmailNotifications {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#alert_on_last_attempt Job#alert_on_last_attempt}
+  */
+  readonly alertOnLastAttempt?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}
   */
   readonly noAlertForSkippedRuns?: boolean | cdktf.IResolvable;
@@ -7014,6 +7049,7 @@ export function jobTaskEmailNotificationsToTerraform(struct?: JobTaskEmailNotifi
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    alert_on_last_attempt: cdktf.booleanToTerraform(struct!.alertOnLastAttempt),
     no_alert_for_skipped_runs: cdktf.booleanToTerraform(struct!.noAlertForSkippedRuns),
     on_failure: cdktf.listMapper(cdktf.stringToTerraform)(struct!.onFailure),
     on_start: cdktf.listMapper(cdktf.stringToTerraform)(struct!.onStart),
@@ -7035,6 +7071,10 @@ export class JobTaskEmailNotificationsOutputReference extends cdktf.ComplexObjec
   public get internalValue(): JobTaskEmailNotifications | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._alertOnLastAttempt !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.alertOnLastAttempt = this._alertOnLastAttempt;
+    }
     if (this._noAlertForSkippedRuns !== undefined) {
       hasAnyValues = true;
       internalValueResult.noAlertForSkippedRuns = this._noAlertForSkippedRuns;
@@ -7057,6 +7097,7 @@ export class JobTaskEmailNotificationsOutputReference extends cdktf.ComplexObjec
   public set internalValue(value: JobTaskEmailNotifications | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._alertOnLastAttempt = undefined;
       this._noAlertForSkippedRuns = undefined;
       this._onFailure = undefined;
       this._onStart = undefined;
@@ -7064,11 +7105,28 @@ export class JobTaskEmailNotificationsOutputReference extends cdktf.ComplexObjec
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._alertOnLastAttempt = value.alertOnLastAttempt;
       this._noAlertForSkippedRuns = value.noAlertForSkippedRuns;
       this._onFailure = value.onFailure;
       this._onStart = value.onStart;
       this._onSuccess = value.onSuccess;
     }
+  }
+
+  // alert_on_last_attempt - computed: false, optional: true, required: false
+  private _alertOnLastAttempt?: boolean | cdktf.IResolvable; 
+  public get alertOnLastAttempt() {
+    return this.getBooleanAttribute('alert_on_last_attempt');
+  }
+  public set alertOnLastAttempt(value: boolean | cdktf.IResolvable) {
+    this._alertOnLastAttempt = value;
+  }
+  public resetAlertOnLastAttempt() {
+    this._alertOnLastAttempt = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alertOnLastAttemptInput() {
+    return this._alertOnLastAttempt;
   }
 
   // no_alert_for_skipped_runs - computed: false, optional: true, required: false
@@ -11492,7 +11550,7 @@ export class Job extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_job',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '0.5.8',
+        providerVersion: '0.5.9',
         providerVersionConstraint: '~> 0.5'
       },
       provider: config.provider,
@@ -11509,6 +11567,7 @@ export class Job extends cdktf.TerraformResource {
     this._minRetryIntervalMillis = config.minRetryIntervalMillis;
     this._name = config.name;
     this._retryOnTimeout = config.retryOnTimeout;
+    this._tags = config.tags;
     this._timeoutSeconds = config.timeoutSeconds;
     this._emailNotifications.internalValue = config.emailNotifications;
     this._gitSource.internalValue = config.gitSource;
@@ -11672,6 +11731,22 @@ export class Job extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get retryOnTimeoutInput() {
     return this._retryOnTimeout;
+  }
+
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string }; 
+  public get tags() {
+    return this.getStringMapAttribute('tags');
+  }
+  public set tags(value: { [key: string]: string }) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
   }
 
   // timeout_seconds - computed: false, optional: true, required: false
@@ -11934,6 +12009,7 @@ export class Job extends cdktf.TerraformResource {
       min_retry_interval_millis: cdktf.numberToTerraform(this._minRetryIntervalMillis),
       name: cdktf.stringToTerraform(this._name),
       retry_on_timeout: cdktf.booleanToTerraform(this._retryOnTimeout),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       timeout_seconds: cdktf.numberToTerraform(this._timeoutSeconds),
       email_notifications: jobEmailNotificationsToTerraform(this._emailNotifications.internalValue),
       git_source: jobGitSourceToTerraform(this._gitSource.internalValue),
