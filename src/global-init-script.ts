@@ -120,7 +120,7 @@ export class GlobalInitScript extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_global_init_script',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '0.5.8',
+        providerVersion: '0.5.9',
         providerVersionConstraint: '~> 0.5'
       },
       provider: config.provider,

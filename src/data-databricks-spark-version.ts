@@ -82,7 +82,7 @@ export class DataDatabricksSparkVersion extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_spark_version',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '0.5.8',
+        providerVersion: '0.5.9',
         providerVersionConstraint: '~> 0.5'
       },
       provider: config.provider,

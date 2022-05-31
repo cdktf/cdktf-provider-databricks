@@ -62,7 +62,7 @@ export class DataDatabricksNotebook extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_notebook',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '0.5.8',
+        providerVersion: '0.5.9',
         providerVersionConstraint: '~> 0.5'
       },
       provider: config.provider,

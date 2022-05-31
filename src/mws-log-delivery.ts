@@ -86,7 +86,7 @@ export class MwsLogDelivery extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_mws_log_delivery',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '0.5.8',
+        providerVersion: '0.5.9',
         providerVersionConstraint: '~> 0.5'
       },
       provider: config.provider,
