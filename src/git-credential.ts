@@ -58,7 +58,7 @@ export class GitCredential extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_git_credential',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '0.5.9',
+        providerVersion: '0.6.0',
         providerVersionConstraint: '~> 0.5'
       },
       provider: config.provider,

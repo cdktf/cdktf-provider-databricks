@@ -59,6 +59,10 @@ export interface PermissionsConfig extends cdktf.TerraformMetaArguments {
   */
   readonly objectType?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/permissions#pipeline_id Permissions#pipeline_id}
+  */
+  readonly pipelineId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/permissions#registered_model_id Permissions#registered_model_id}
   */
   readonly registeredModelId?: string;
@@ -295,7 +299,7 @@ export class Permissions extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_permissions',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '0.5.9',
+        providerVersion: '0.6.0',
         providerVersionConstraint: '~> 0.5'
       },
       provider: config.provider,
@@ -315,6 +319,7 @@ export class Permissions extends cdktf.TerraformResource {
     this._notebookId = config.notebookId;
     this._notebookPath = config.notebookPath;
     this._objectType = config.objectType;
+    this._pipelineId = config.pipelineId;
     this._registeredModelId = config.registeredModelId;
     this._repoId = config.repoId;
     this._repoPath = config.repoPath;
@@ -521,6 +526,22 @@ export class Permissions extends cdktf.TerraformResource {
     return this._objectType;
   }
 
+  // pipeline_id - computed: false, optional: true, required: false
+  private _pipelineId?: string; 
+  public get pipelineId() {
+    return this.getStringAttribute('pipeline_id');
+  }
+  public set pipelineId(value: string) {
+    this._pipelineId = value;
+  }
+  public resetPipelineId() {
+    this._pipelineId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pipelineIdInput() {
+    return this._pipelineId;
+  }
+
   // registered_model_id - computed: false, optional: true, required: false
   private _registeredModelId?: string; 
   public get registeredModelId() {
@@ -664,6 +685,7 @@ export class Permissions extends cdktf.TerraformResource {
       notebook_id: cdktf.stringToTerraform(this._notebookId),
       notebook_path: cdktf.stringToTerraform(this._notebookPath),
       object_type: cdktf.stringToTerraform(this._objectType),
+      pipeline_id: cdktf.stringToTerraform(this._pipelineId),
       registered_model_id: cdktf.stringToTerraform(this._registeredModelId),
       repo_id: cdktf.stringToTerraform(this._repoId),
       repo_path: cdktf.stringToTerraform(this._repoPath),

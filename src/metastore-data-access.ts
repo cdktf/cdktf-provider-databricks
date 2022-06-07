@@ -37,6 +37,12 @@ export interface MetastoreDataAccessConfig extends cdktf.TerraformMetaArguments 
   */
   readonly awsIamRole?: MetastoreDataAccessAwsIamRole;
   /**
+  * azure_managed_identity block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore_data_access#azure_managed_identity MetastoreDataAccess#azure_managed_identity}
+  */
+  readonly azureManagedIdentity?: MetastoreDataAccessAzureManagedIdentity;
+  /**
   * azure_service_principal block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore_data_access#azure_service_principal MetastoreDataAccess#azure_service_principal}
@@ -103,6 +109,68 @@ export class MetastoreDataAccessAwsIamRoleOutputReference extends cdktf.ComplexO
   // Temporarily expose input value. Use with caution.
   public get roleArnInput() {
     return this._roleArn;
+  }
+}
+export interface MetastoreDataAccessAzureManagedIdentity {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore_data_access#access_connector_id MetastoreDataAccess#access_connector_id}
+  */
+  readonly accessConnectorId: string;
+}
+
+export function metastoreDataAccessAzureManagedIdentityToTerraform(struct?: MetastoreDataAccessAzureManagedIdentityOutputReference | MetastoreDataAccessAzureManagedIdentity): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    access_connector_id: cdktf.stringToTerraform(struct!.accessConnectorId),
+  }
+}
+
+export class MetastoreDataAccessAzureManagedIdentityOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MetastoreDataAccessAzureManagedIdentity | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._accessConnectorId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accessConnectorId = this._accessConnectorId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MetastoreDataAccessAzureManagedIdentity | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._accessConnectorId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._accessConnectorId = value.accessConnectorId;
+    }
+  }
+
+  // access_connector_id - computed: false, optional: false, required: true
+  private _accessConnectorId?: string; 
+  public get accessConnectorId() {
+    return this.getStringAttribute('access_connector_id');
+  }
+  public set accessConnectorId(value: string) {
+    this._accessConnectorId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessConnectorIdInput() {
+    return this._accessConnectorId;
   }
 }
 export interface MetastoreDataAccessAzureServicePrincipal {
@@ -242,7 +310,7 @@ export class MetastoreDataAccess extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_metastore_data_access',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '0.5.9',
+        providerVersion: '0.6.0',
         providerVersionConstraint: '~> 0.5'
       },
       provider: config.provider,
@@ -256,6 +324,7 @@ export class MetastoreDataAccess extends cdktf.TerraformResource {
     this._metastoreId = config.metastoreId;
     this._name = config.name;
     this._awsIamRole.internalValue = config.awsIamRole;
+    this._azureManagedIdentity.internalValue = config.azureManagedIdentity;
     this._azureServicePrincipal.internalValue = config.azureServicePrincipal;
   }
 
@@ -353,6 +422,22 @@ export class MetastoreDataAccess extends cdktf.TerraformResource {
     return this._awsIamRole.internalValue;
   }
 
+  // azure_managed_identity - computed: false, optional: true, required: false
+  private _azureManagedIdentity = new MetastoreDataAccessAzureManagedIdentityOutputReference(this, "azure_managed_identity");
+  public get azureManagedIdentity() {
+    return this._azureManagedIdentity;
+  }
+  public putAzureManagedIdentity(value: MetastoreDataAccessAzureManagedIdentity) {
+    this._azureManagedIdentity.internalValue = value;
+  }
+  public resetAzureManagedIdentity() {
+    this._azureManagedIdentity.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get azureManagedIdentityInput() {
+    return this._azureManagedIdentity.internalValue;
+  }
+
   // azure_service_principal - computed: false, optional: true, required: false
   private _azureServicePrincipal = new MetastoreDataAccessAzureServicePrincipalOutputReference(this, "azure_service_principal");
   public get azureServicePrincipal() {
@@ -381,6 +466,7 @@ export class MetastoreDataAccess extends cdktf.TerraformResource {
       metastore_id: cdktf.stringToTerraform(this._metastoreId),
       name: cdktf.stringToTerraform(this._name),
       aws_iam_role: metastoreDataAccessAwsIamRoleToTerraform(this._awsIamRole.internalValue),
+      azure_managed_identity: metastoreDataAccessAzureManagedIdentityToTerraform(this._azureManagedIdentity.internalValue),
       azure_service_principal: metastoreDataAccessAzureServicePrincipalToTerraform(this._azureServicePrincipal.internalValue),
     };
   }
