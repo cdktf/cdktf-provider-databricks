@@ -27,11 +27,21 @@ export interface StorageCredentialConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/storage_credential#owner StorageCredential#owner}
+  */
+  readonly owner?: string;
+  /**
   * aws_iam_role block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/storage_credential#aws_iam_role StorageCredential#aws_iam_role}
   */
   readonly awsIamRole?: StorageCredentialAwsIamRole;
+  /**
+  * azure_managed_identity block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/storage_credential#azure_managed_identity StorageCredential#azure_managed_identity}
+  */
+  readonly azureManagedIdentity?: StorageCredentialAzureManagedIdentity;
   /**
   * azure_service_principal block
   * 
@@ -99,6 +109,68 @@ export class StorageCredentialAwsIamRoleOutputReference extends cdktf.ComplexObj
   // Temporarily expose input value. Use with caution.
   public get roleArnInput() {
     return this._roleArn;
+  }
+}
+export interface StorageCredentialAzureManagedIdentity {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/storage_credential#access_connector_id StorageCredential#access_connector_id}
+  */
+  readonly accessConnectorId: string;
+}
+
+export function storageCredentialAzureManagedIdentityToTerraform(struct?: StorageCredentialAzureManagedIdentityOutputReference | StorageCredentialAzureManagedIdentity): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    access_connector_id: cdktf.stringToTerraform(struct!.accessConnectorId),
+  }
+}
+
+export class StorageCredentialAzureManagedIdentityOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): StorageCredentialAzureManagedIdentity | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._accessConnectorId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accessConnectorId = this._accessConnectorId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: StorageCredentialAzureManagedIdentity | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._accessConnectorId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._accessConnectorId = value.accessConnectorId;
+    }
+  }
+
+  // access_connector_id - computed: false, optional: false, required: true
+  private _accessConnectorId?: string; 
+  public get accessConnectorId() {
+    return this.getStringAttribute('access_connector_id');
+  }
+  public set accessConnectorId(value: string) {
+    this._accessConnectorId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessConnectorIdInput() {
+    return this._accessConnectorId;
   }
 }
 export interface StorageCredentialAzureServicePrincipal {
@@ -238,7 +310,7 @@ export class StorageCredential extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_storage_credential',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '0.5.9',
+        providerVersion: '0.6.0',
         providerVersionConstraint: '~> 0.5'
       },
       provider: config.provider,
@@ -250,7 +322,9 @@ export class StorageCredential extends cdktf.TerraformResource {
     this._id = config.id;
     this._metastoreId = config.metastoreId;
     this._name = config.name;
+    this._owner = config.owner;
     this._awsIamRole.internalValue = config.awsIamRole;
+    this._azureManagedIdentity.internalValue = config.azureManagedIdentity;
     this._azureServicePrincipal.internalValue = config.azureServicePrincipal;
   }
 
@@ -319,6 +393,22 @@ export class StorageCredential extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // owner - computed: true, optional: true, required: false
+  private _owner?: string; 
+  public get owner() {
+    return this.getStringAttribute('owner');
+  }
+  public set owner(value: string) {
+    this._owner = value;
+  }
+  public resetOwner() {
+    this._owner = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ownerInput() {
+    return this._owner;
+  }
+
   // aws_iam_role - computed: false, optional: true, required: false
   private _awsIamRole = new StorageCredentialAwsIamRoleOutputReference(this, "aws_iam_role");
   public get awsIamRole() {
@@ -333,6 +423,22 @@ export class StorageCredential extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get awsIamRoleInput() {
     return this._awsIamRole.internalValue;
+  }
+
+  // azure_managed_identity - computed: false, optional: true, required: false
+  private _azureManagedIdentity = new StorageCredentialAzureManagedIdentityOutputReference(this, "azure_managed_identity");
+  public get azureManagedIdentity() {
+    return this._azureManagedIdentity;
+  }
+  public putAzureManagedIdentity(value: StorageCredentialAzureManagedIdentity) {
+    this._azureManagedIdentity.internalValue = value;
+  }
+  public resetAzureManagedIdentity() {
+    this._azureManagedIdentity.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get azureManagedIdentityInput() {
+    return this._azureManagedIdentity.internalValue;
   }
 
   // azure_service_principal - computed: false, optional: true, required: false
@@ -361,7 +467,9 @@ export class StorageCredential extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       metastore_id: cdktf.stringToTerraform(this._metastoreId),
       name: cdktf.stringToTerraform(this._name),
+      owner: cdktf.stringToTerraform(this._owner),
       aws_iam_role: storageCredentialAwsIamRoleToTerraform(this._awsIamRole.internalValue),
+      azure_managed_identity: storageCredentialAzureManagedIdentityToTerraform(this._azureManagedIdentity.internalValue),
       azure_service_principal: storageCredentialAzureServicePrincipalToTerraform(this._azureServicePrincipal.internalValue),
     };
   }

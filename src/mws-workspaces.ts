@@ -559,6 +559,10 @@ export class MwsWorkspacesNetworkGcpManagedNetworkConfigOutputReference extends 
 }
 export interface MwsWorkspacesNetwork {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_workspaces#network_id MwsWorkspaces#network_id}
+  */
+  readonly networkId?: string;
+  /**
   * gcp_common_network_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_workspaces#gcp_common_network_config MwsWorkspaces#gcp_common_network_config}
@@ -578,6 +582,7 @@ export function mwsWorkspacesNetworkToTerraform(struct?: MwsWorkspacesNetworkOut
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    network_id: cdktf.stringToTerraform(struct!.networkId),
     gcp_common_network_config: mwsWorkspacesNetworkGcpCommonNetworkConfigToTerraform(struct!.gcpCommonNetworkConfig),
     gcp_managed_network_config: mwsWorkspacesNetworkGcpManagedNetworkConfigToTerraform(struct!.gcpManagedNetworkConfig),
   }
@@ -597,6 +602,10 @@ export class MwsWorkspacesNetworkOutputReference extends cdktf.ComplexObject {
   public get internalValue(): MwsWorkspacesNetwork | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._networkId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkId = this._networkId;
+    }
     if (this._gcpCommonNetworkConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.gcpCommonNetworkConfig = this._gcpCommonNetworkConfig?.internalValue;
@@ -611,14 +620,32 @@ export class MwsWorkspacesNetworkOutputReference extends cdktf.ComplexObject {
   public set internalValue(value: MwsWorkspacesNetwork | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._networkId = undefined;
       this._gcpCommonNetworkConfig.internalValue = undefined;
       this._gcpManagedNetworkConfig.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._networkId = value.networkId;
       this._gcpCommonNetworkConfig.internalValue = value.gcpCommonNetworkConfig;
       this._gcpManagedNetworkConfig.internalValue = value.gcpManagedNetworkConfig;
     }
+  }
+
+  // network_id - computed: false, optional: true, required: false
+  private _networkId?: string; 
+  public get networkId() {
+    return this.getStringAttribute('network_id');
+  }
+  public set networkId(value: string) {
+    this._networkId = value;
+  }
+  public resetNetworkId() {
+    this._networkId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkIdInput() {
+    return this._networkId;
   }
 
   // gcp_common_network_config - computed: false, optional: false, required: true
@@ -949,7 +976,7 @@ export class MwsWorkspaces extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_mws_workspaces',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '0.5.9',
+        providerVersion: '0.6.0',
         providerVersionConstraint: '~> 0.5'
       },
       provider: config.provider,

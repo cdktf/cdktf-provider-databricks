@@ -119,7 +119,7 @@ export class DataDatabricksNotebookPaths extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_notebook_paths',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '0.5.9',
+        providerVersion: '0.6.0',
         providerVersionConstraint: '~> 0.5'
       },
       provider: config.provider,

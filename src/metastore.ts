@@ -8,13 +8,41 @@ import * as cdktf from 'cdktf';
 
 export interface MetastoreConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore#cloud Metastore#cloud}
+  */
+  readonly cloud?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore#created_at Metastore#created_at}
+  */
+  readonly createdAt?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore#created_by Metastore#created_by}
+  */
+  readonly createdBy?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore#default_data_access_config_id Metastore#default_data_access_config_id}
   */
   readonly defaultDataAccessConfigId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore#delta_sharing_enabled Metastore#delta_sharing_enabled}
+  */
+  readonly deltaSharingEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore#delta_sharing_organization_name Metastore#delta_sharing_organization_name}
+  */
+  readonly deltaSharingOrganizationName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore#delta_sharing_recipient_token_lifetime_in_seconds Metastore#delta_sharing_recipient_token_lifetime_in_seconds}
+  */
+  readonly deltaSharingRecipientTokenLifetimeInSeconds?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore#force_destroy Metastore#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore#global_metastore_id Metastore#global_metastore_id}
+  */
+  readonly globalMetastoreId?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore#id Metastore#id}
   *
@@ -31,9 +59,21 @@ export interface MetastoreConfig extends cdktf.TerraformMetaArguments {
   */
   readonly owner?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore#region Metastore#region}
+  */
+  readonly region?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore#storage_root Metastore#storage_root}
   */
   readonly storageRoot: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore#updated_at Metastore#updated_at}
+  */
+  readonly updatedAt?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore#updated_by Metastore#updated_by}
+  */
+  readonly updatedBy?: string;
 }
 
 /**
@@ -62,7 +102,7 @@ export class Metastore extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_metastore',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '0.5.9',
+        providerVersion: '0.6.0',
         providerVersionConstraint: '~> 0.5'
       },
       provider: config.provider,
@@ -70,17 +110,75 @@ export class Metastore extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._cloud = config.cloud;
+    this._createdAt = config.createdAt;
+    this._createdBy = config.createdBy;
     this._defaultDataAccessConfigId = config.defaultDataAccessConfigId;
+    this._deltaSharingEnabled = config.deltaSharingEnabled;
+    this._deltaSharingOrganizationName = config.deltaSharingOrganizationName;
+    this._deltaSharingRecipientTokenLifetimeInSeconds = config.deltaSharingRecipientTokenLifetimeInSeconds;
     this._forceDestroy = config.forceDestroy;
+    this._globalMetastoreId = config.globalMetastoreId;
     this._id = config.id;
     this._name = config.name;
     this._owner = config.owner;
+    this._region = config.region;
     this._storageRoot = config.storageRoot;
+    this._updatedAt = config.updatedAt;
+    this._updatedBy = config.updatedBy;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // cloud - computed: true, optional: true, required: false
+  private _cloud?: string; 
+  public get cloud() {
+    return this.getStringAttribute('cloud');
+  }
+  public set cloud(value: string) {
+    this._cloud = value;
+  }
+  public resetCloud() {
+    this._cloud = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cloudInput() {
+    return this._cloud;
+  }
+
+  // created_at - computed: true, optional: true, required: false
+  private _createdAt?: number; 
+  public get createdAt() {
+    return this.getNumberAttribute('created_at');
+  }
+  public set createdAt(value: number) {
+    this._createdAt = value;
+  }
+  public resetCreatedAt() {
+    this._createdAt = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createdAtInput() {
+    return this._createdAt;
+  }
+
+  // created_by - computed: true, optional: true, required: false
+  private _createdBy?: string; 
+  public get createdBy() {
+    return this.getStringAttribute('created_by');
+  }
+  public set createdBy(value: string) {
+    this._createdBy = value;
+  }
+  public resetCreatedBy() {
+    this._createdBy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createdByInput() {
+    return this._createdBy;
+  }
 
   // default_data_access_config_id - computed: false, optional: true, required: false
   private _defaultDataAccessConfigId?: string; 
@@ -98,6 +196,54 @@ export class Metastore extends cdktf.TerraformResource {
     return this._defaultDataAccessConfigId;
   }
 
+  // delta_sharing_enabled - computed: false, optional: true, required: false
+  private _deltaSharingEnabled?: boolean | cdktf.IResolvable; 
+  public get deltaSharingEnabled() {
+    return this.getBooleanAttribute('delta_sharing_enabled');
+  }
+  public set deltaSharingEnabled(value: boolean | cdktf.IResolvable) {
+    this._deltaSharingEnabled = value;
+  }
+  public resetDeltaSharingEnabled() {
+    this._deltaSharingEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deltaSharingEnabledInput() {
+    return this._deltaSharingEnabled;
+  }
+
+  // delta_sharing_organization_name - computed: false, optional: true, required: false
+  private _deltaSharingOrganizationName?: string; 
+  public get deltaSharingOrganizationName() {
+    return this.getStringAttribute('delta_sharing_organization_name');
+  }
+  public set deltaSharingOrganizationName(value: string) {
+    this._deltaSharingOrganizationName = value;
+  }
+  public resetDeltaSharingOrganizationName() {
+    this._deltaSharingOrganizationName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deltaSharingOrganizationNameInput() {
+    return this._deltaSharingOrganizationName;
+  }
+
+  // delta_sharing_recipient_token_lifetime_in_seconds - computed: false, optional: true, required: false
+  private _deltaSharingRecipientTokenLifetimeInSeconds?: number; 
+  public get deltaSharingRecipientTokenLifetimeInSeconds() {
+    return this.getNumberAttribute('delta_sharing_recipient_token_lifetime_in_seconds');
+  }
+  public set deltaSharingRecipientTokenLifetimeInSeconds(value: number) {
+    this._deltaSharingRecipientTokenLifetimeInSeconds = value;
+  }
+  public resetDeltaSharingRecipientTokenLifetimeInSeconds() {
+    this._deltaSharingRecipientTokenLifetimeInSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deltaSharingRecipientTokenLifetimeInSecondsInput() {
+    return this._deltaSharingRecipientTokenLifetimeInSeconds;
+  }
+
   // force_destroy - computed: false, optional: true, required: false
   private _forceDestroy?: boolean | cdktf.IResolvable; 
   public get forceDestroy() {
@@ -112,6 +258,22 @@ export class Metastore extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get forceDestroyInput() {
     return this._forceDestroy;
+  }
+
+  // global_metastore_id - computed: true, optional: true, required: false
+  private _globalMetastoreId?: string; 
+  public get globalMetastoreId() {
+    return this.getStringAttribute('global_metastore_id');
+  }
+  public set globalMetastoreId(value: string) {
+    this._globalMetastoreId = value;
+  }
+  public resetGlobalMetastoreId() {
+    this._globalMetastoreId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get globalMetastoreIdInput() {
+    return this._globalMetastoreId;
   }
 
   // id - computed: true, optional: true, required: false
@@ -159,6 +321,22 @@ export class Metastore extends cdktf.TerraformResource {
     return this._owner;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // storage_root - computed: false, optional: false, required: true
   private _storageRoot?: string; 
   public get storageRoot() {
@@ -172,18 +350,60 @@ export class Metastore extends cdktf.TerraformResource {
     return this._storageRoot;
   }
 
+  // updated_at - computed: true, optional: true, required: false
+  private _updatedAt?: number; 
+  public get updatedAt() {
+    return this.getNumberAttribute('updated_at');
+  }
+  public set updatedAt(value: number) {
+    this._updatedAt = value;
+  }
+  public resetUpdatedAt() {
+    this._updatedAt = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updatedAtInput() {
+    return this._updatedAt;
+  }
+
+  // updated_by - computed: true, optional: true, required: false
+  private _updatedBy?: string; 
+  public get updatedBy() {
+    return this.getStringAttribute('updated_by');
+  }
+  public set updatedBy(value: string) {
+    this._updatedBy = value;
+  }
+  public resetUpdatedBy() {
+    this._updatedBy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updatedByInput() {
+    return this._updatedBy;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      cloud: cdktf.stringToTerraform(this._cloud),
+      created_at: cdktf.numberToTerraform(this._createdAt),
+      created_by: cdktf.stringToTerraform(this._createdBy),
       default_data_access_config_id: cdktf.stringToTerraform(this._defaultDataAccessConfigId),
+      delta_sharing_enabled: cdktf.booleanToTerraform(this._deltaSharingEnabled),
+      delta_sharing_organization_name: cdktf.stringToTerraform(this._deltaSharingOrganizationName),
+      delta_sharing_recipient_token_lifetime_in_seconds: cdktf.numberToTerraform(this._deltaSharingRecipientTokenLifetimeInSeconds),
       force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
+      global_metastore_id: cdktf.stringToTerraform(this._globalMetastoreId),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       owner: cdktf.stringToTerraform(this._owner),
+      region: cdktf.stringToTerraform(this._region),
       storage_root: cdktf.stringToTerraform(this._storageRoot),
+      updated_at: cdktf.numberToTerraform(this._updatedAt),
+      updated_by: cdktf.stringToTerraform(this._updatedBy),
     };
   }
 }
