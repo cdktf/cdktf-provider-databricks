@@ -573,7 +573,7 @@ export interface MwsWorkspacesNetwork {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_workspaces#gcp_managed_network_config MwsWorkspaces#gcp_managed_network_config}
   */
-  readonly gcpManagedNetworkConfig: MwsWorkspacesNetworkGcpManagedNetworkConfig;
+  readonly gcpManagedNetworkConfig?: MwsWorkspacesNetworkGcpManagedNetworkConfig;
 }
 
 export function mwsWorkspacesNetworkToTerraform(struct?: MwsWorkspacesNetworkOutputReference | MwsWorkspacesNetwork): any {
@@ -661,13 +661,16 @@ export class MwsWorkspacesNetworkOutputReference extends cdktf.ComplexObject {
     return this._gcpCommonNetworkConfig.internalValue;
   }
 
-  // gcp_managed_network_config - computed: false, optional: false, required: true
+  // gcp_managed_network_config - computed: false, optional: true, required: false
   private _gcpManagedNetworkConfig = new MwsWorkspacesNetworkGcpManagedNetworkConfigOutputReference(this, "gcp_managed_network_config");
   public get gcpManagedNetworkConfig() {
     return this._gcpManagedNetworkConfig;
   }
   public putGcpManagedNetworkConfig(value: MwsWorkspacesNetworkGcpManagedNetworkConfig) {
     this._gcpManagedNetworkConfig.internalValue = value;
+  }
+  public resetGcpManagedNetworkConfig() {
+    this._gcpManagedNetworkConfig.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get gcpManagedNetworkConfigInput() {
@@ -976,7 +979,7 @@ export class MwsWorkspaces extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_mws_workspaces',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '0.6.0',
+        providerVersion: '0.6.1',
         providerVersionConstraint: '~> 0.5'
       },
       provider: config.provider,

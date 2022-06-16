@@ -50,7 +50,7 @@ export class DataDatabricksUser extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_user',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '0.6.0',
+        providerVersion: '0.6.1',
         providerVersionConstraint: '~> 0.5'
       },
       provider: config.provider,
@@ -70,6 +70,11 @@ export class DataDatabricksUser extends cdktf.TerraformDataSource {
   // alphanumeric - computed: true, optional: false, required: false
   public get alphanumeric() {
     return this.getStringAttribute('alphanumeric');
+  }
+
+  // application_id - computed: true, optional: false, required: false
+  public get applicationId() {
+    return this.getStringAttribute('application_id');
   }
 
   // display_name - computed: true, optional: false, required: false
