@@ -74,6 +74,8 @@ export * from './data-databricks-node-type';
 export * from './data-databricks-notebook';
 export * from './data-databricks-notebook-paths';
 export * from './data-databricks-schemas';
+export * from './data-databricks-service-principal';
+export * from './data-databricks-service-principals';
 export * from './data-databricks-spark-version';
 export * from './data-databricks-tables';
 export * from './data-databricks-user';

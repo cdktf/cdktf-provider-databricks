@@ -42,7 +42,7 @@ export class DataDatabricksCurrentUser extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_current_user',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '0.6.0',
+        providerVersion: '0.6.1',
         providerVersionConstraint: '~> 0.5'
       },
       provider: config.provider,

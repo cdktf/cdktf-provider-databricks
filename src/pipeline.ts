@@ -12,6 +12,10 @@ export interface PipelineConfig extends cdktf.TerraformMetaArguments {
   */
   readonly allowDuplicateNames?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#channel Pipeline#channel}
+  */
+  readonly channel?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#configuration Pipeline#configuration}
   */
   readonly configuration?: { [key: string]: string };
@@ -19,6 +23,14 @@ export interface PipelineConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#continuous Pipeline#continuous}
   */
   readonly continuous?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#development Pipeline#development}
+  */
+  readonly development?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#edition Pipeline#edition}
+  */
+  readonly edition?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#id Pipeline#id}
   *
@@ -30,6 +42,10 @@ export interface PipelineConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#name Pipeline#name}
   */
   readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#photon Pipeline#photon}
+  */
+  readonly photon?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#storage Pipeline#storage}
   */
@@ -49,7 +65,7 @@ export interface PipelineConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#filters Pipeline#filters}
   */
-  readonly filters: PipelineFilters;
+  readonly filters?: PipelineFilters;
   /**
   * library block
   * 
@@ -157,6 +173,10 @@ export class PipelineClusterAutoscaleOutputReference extends cdktf.ComplexObject
 }
 export interface PipelineClusterAwsAttributes {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#first_on_demand Pipeline#first_on_demand}
+  */
+  readonly firstOnDemand?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#instance_profile_arn Pipeline#instance_profile_arn}
   */
   readonly instanceProfileArn?: string;
@@ -172,6 +192,7 @@ export function pipelineClusterAwsAttributesToTerraform(struct?: PipelineCluster
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    first_on_demand: cdktf.numberToTerraform(struct!.firstOnDemand),
     instance_profile_arn: cdktf.stringToTerraform(struct!.instanceProfileArn),
     zone_id: cdktf.stringToTerraform(struct!.zoneId),
   }
@@ -191,6 +212,10 @@ export class PipelineClusterAwsAttributesOutputReference extends cdktf.ComplexOb
   public get internalValue(): PipelineClusterAwsAttributes | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._firstOnDemand !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.firstOnDemand = this._firstOnDemand;
+    }
     if (this._instanceProfileArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.instanceProfileArn = this._instanceProfileArn;
@@ -205,14 +230,32 @@ export class PipelineClusterAwsAttributesOutputReference extends cdktf.ComplexOb
   public set internalValue(value: PipelineClusterAwsAttributes | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._firstOnDemand = undefined;
       this._instanceProfileArn = undefined;
       this._zoneId = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._firstOnDemand = value.firstOnDemand;
       this._instanceProfileArn = value.instanceProfileArn;
       this._zoneId = value.zoneId;
     }
+  }
+
+  // first_on_demand - computed: false, optional: true, required: false
+  private _firstOnDemand?: number; 
+  public get firstOnDemand() {
+    return this.getNumberAttribute('first_on_demand');
+  }
+  public set firstOnDemand(value: number) {
+    this._firstOnDemand = value;
+  }
+  public resetFirstOnDemand() {
+    this._firstOnDemand = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get firstOnDemandInput() {
+    return this._firstOnDemand;
   }
 
   // instance_profile_arn - computed: false, optional: true, required: false
@@ -627,6 +670,71 @@ export class PipelineClusterClusterLogConfOutputReference extends cdktf.ComplexO
   // Temporarily expose input value. Use with caution.
   public get s3Input() {
     return this._s3.internalValue;
+  }
+}
+export interface PipelineClusterGcpAttributes {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#google_service_account Pipeline#google_service_account}
+  */
+  readonly googleServiceAccount?: string;
+}
+
+export function pipelineClusterGcpAttributesToTerraform(struct?: PipelineClusterGcpAttributesOutputReference | PipelineClusterGcpAttributes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    google_service_account: cdktf.stringToTerraform(struct!.googleServiceAccount),
+  }
+}
+
+export class PipelineClusterGcpAttributesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PipelineClusterGcpAttributes | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._googleServiceAccount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.googleServiceAccount = this._googleServiceAccount;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PipelineClusterGcpAttributes | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._googleServiceAccount = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._googleServiceAccount = value.googleServiceAccount;
+    }
+  }
+
+  // google_service_account - computed: false, optional: true, required: false
+  private _googleServiceAccount?: string; 
+  public get googleServiceAccount() {
+    return this.getStringAttribute('google_service_account');
+  }
+  public set googleServiceAccount(value: string) {
+    this._googleServiceAccount = value;
+  }
+  public resetGoogleServiceAccount() {
+    this._googleServiceAccount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get googleServiceAccountInput() {
+    return this._googleServiceAccount;
   }
 }
 export interface PipelineClusterInitScriptsDbfs {
@@ -1237,6 +1345,10 @@ export interface PipelineCluster {
   */
   readonly customTags?: { [key: string]: string };
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#driver_instance_pool_id Pipeline#driver_instance_pool_id}
+  */
+  readonly driverInstancePoolId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#driver_node_type_id Pipeline#driver_node_type_id}
   */
   readonly driverNodeTypeId?: string;
@@ -1287,6 +1399,12 @@ export interface PipelineCluster {
   */
   readonly clusterLogConf?: PipelineClusterClusterLogConf;
   /**
+  * gcp_attributes block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#gcp_attributes Pipeline#gcp_attributes}
+  */
+  readonly gcpAttributes?: PipelineClusterGcpAttributes;
+  /**
   * init_scripts block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#init_scripts Pipeline#init_scripts}
@@ -1301,6 +1419,7 @@ export function pipelineClusterToTerraform(struct?: PipelineCluster | cdktf.IRes
   }
   return {
     custom_tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.customTags),
+    driver_instance_pool_id: cdktf.stringToTerraform(struct!.driverInstancePoolId),
     driver_node_type_id: cdktf.stringToTerraform(struct!.driverNodeTypeId),
     instance_pool_id: cdktf.stringToTerraform(struct!.instancePoolId),
     label: cdktf.stringToTerraform(struct!.label),
@@ -1312,6 +1431,7 @@ export function pipelineClusterToTerraform(struct?: PipelineCluster | cdktf.IRes
     autoscale: pipelineClusterAutoscaleToTerraform(struct!.autoscale),
     aws_attributes: pipelineClusterAwsAttributesToTerraform(struct!.awsAttributes),
     cluster_log_conf: pipelineClusterClusterLogConfToTerraform(struct!.clusterLogConf),
+    gcp_attributes: pipelineClusterGcpAttributesToTerraform(struct!.gcpAttributes),
     init_scripts: cdktf.listMapper(pipelineClusterInitScriptsToTerraform)(struct!.initScripts),
   }
 }
@@ -1339,6 +1459,10 @@ export class PipelineClusterOutputReference extends cdktf.ComplexObject {
     if (this._customTags !== undefined) {
       hasAnyValues = true;
       internalValueResult.customTags = this._customTags;
+    }
+    if (this._driverInstancePoolId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.driverInstancePoolId = this._driverInstancePoolId;
     }
     if (this._driverNodeTypeId !== undefined) {
       hasAnyValues = true;
@@ -1384,6 +1508,10 @@ export class PipelineClusterOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.clusterLogConf = this._clusterLogConf?.internalValue;
     }
+    if (this._gcpAttributes?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gcpAttributes = this._gcpAttributes?.internalValue;
+    }
     if (this._initScripts?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.initScripts = this._initScripts?.internalValue;
@@ -1396,6 +1524,7 @@ export class PipelineClusterOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._customTags = undefined;
+      this._driverInstancePoolId = undefined;
       this._driverNodeTypeId = undefined;
       this._instancePoolId = undefined;
       this._label = undefined;
@@ -1407,6 +1536,7 @@ export class PipelineClusterOutputReference extends cdktf.ComplexObject {
       this._autoscale.internalValue = undefined;
       this._awsAttributes.internalValue = undefined;
       this._clusterLogConf.internalValue = undefined;
+      this._gcpAttributes.internalValue = undefined;
       this._initScripts.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -1417,6 +1547,7 @@ export class PipelineClusterOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._customTags = value.customTags;
+      this._driverInstancePoolId = value.driverInstancePoolId;
       this._driverNodeTypeId = value.driverNodeTypeId;
       this._instancePoolId = value.instancePoolId;
       this._label = value.label;
@@ -1428,6 +1559,7 @@ export class PipelineClusterOutputReference extends cdktf.ComplexObject {
       this._autoscale.internalValue = value.autoscale;
       this._awsAttributes.internalValue = value.awsAttributes;
       this._clusterLogConf.internalValue = value.clusterLogConf;
+      this._gcpAttributes.internalValue = value.gcpAttributes;
       this._initScripts.internalValue = value.initScripts;
     }
   }
@@ -1446,6 +1578,22 @@ export class PipelineClusterOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get customTagsInput() {
     return this._customTags;
+  }
+
+  // driver_instance_pool_id - computed: false, optional: true, required: false
+  private _driverInstancePoolId?: string; 
+  public get driverInstancePoolId() {
+    return this.getStringAttribute('driver_instance_pool_id');
+  }
+  public set driverInstancePoolId(value: string) {
+    this._driverInstancePoolId = value;
+  }
+  public resetDriverInstancePoolId() {
+    this._driverInstancePoolId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get driverInstancePoolIdInput() {
+    return this._driverInstancePoolId;
   }
 
   // driver_node_type_id - computed: true, optional: true, required: false
@@ -1622,6 +1770,22 @@ export class PipelineClusterOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get clusterLogConfInput() {
     return this._clusterLogConf.internalValue;
+  }
+
+  // gcp_attributes - computed: false, optional: true, required: false
+  private _gcpAttributes = new PipelineClusterGcpAttributesOutputReference(this, "gcp_attributes");
+  public get gcpAttributes() {
+    return this._gcpAttributes;
+  }
+  public putGcpAttributes(value: PipelineClusterGcpAttributes) {
+    this._gcpAttributes.internalValue = value;
+  }
+  public resetGcpAttributes() {
+    this._gcpAttributes.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gcpAttributesInput() {
+    return this._gcpAttributes.internalValue;
   }
 
   // init_scripts - computed: false, optional: true, required: false
@@ -2207,14 +2371,14 @@ export class Pipeline extends cdktf.TerraformResource {
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options PipelineConfig
+  * @param options PipelineConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: PipelineConfig) {
+  public constructor(scope: Construct, id: string, config: PipelineConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'databricks_pipeline',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '0.6.0',
+        providerVersion: '0.6.1',
         providerVersionConstraint: '~> 0.5'
       },
       provider: config.provider,
@@ -2223,10 +2387,14 @@ export class Pipeline extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._allowDuplicateNames = config.allowDuplicateNames;
+    this._channel = config.channel;
     this._configuration = config.configuration;
     this._continuous = config.continuous;
+    this._development = config.development;
+    this._edition = config.edition;
     this._id = config.id;
     this._name = config.name;
+    this._photon = config.photon;
     this._storage = config.storage;
     this._target = config.target;
     this._cluster.internalValue = config.cluster;
@@ -2253,6 +2421,22 @@ export class Pipeline extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get allowDuplicateNamesInput() {
     return this._allowDuplicateNames;
+  }
+
+  // channel - computed: false, optional: true, required: false
+  private _channel?: string; 
+  public get channel() {
+    return this.getStringAttribute('channel');
+  }
+  public set channel(value: string) {
+    this._channel = value;
+  }
+  public resetChannel() {
+    this._channel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get channelInput() {
+    return this._channel;
   }
 
   // configuration - computed: false, optional: true, required: false
@@ -2287,6 +2471,38 @@ export class Pipeline extends cdktf.TerraformResource {
     return this._continuous;
   }
 
+  // development - computed: false, optional: true, required: false
+  private _development?: boolean | cdktf.IResolvable; 
+  public get development() {
+    return this.getBooleanAttribute('development');
+  }
+  public set development(value: boolean | cdktf.IResolvable) {
+    this._development = value;
+  }
+  public resetDevelopment() {
+    this._development = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get developmentInput() {
+    return this._development;
+  }
+
+  // edition - computed: false, optional: true, required: false
+  private _edition?: string; 
+  public get edition() {
+    return this.getStringAttribute('edition');
+  }
+  public set edition(value: string) {
+    this._edition = value;
+  }
+  public resetEdition() {
+    this._edition = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get editionInput() {
+    return this._edition;
+  }
+
   // id - computed: true, optional: true, required: false
   private _id?: string; 
   public get id() {
@@ -2317,6 +2533,22 @@ export class Pipeline extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // photon - computed: false, optional: true, required: false
+  private _photon?: boolean | cdktf.IResolvable; 
+  public get photon() {
+    return this.getBooleanAttribute('photon');
+  }
+  public set photon(value: boolean | cdktf.IResolvable) {
+    this._photon = value;
+  }
+  public resetPhoton() {
+    this._photon = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get photonInput() {
+    return this._photon;
   }
 
   // storage - computed: false, optional: true, required: false
@@ -2372,13 +2604,16 @@ export class Pipeline extends cdktf.TerraformResource {
     return this._cluster.internalValue;
   }
 
-  // filters - computed: false, optional: false, required: true
+  // filters - computed: false, optional: true, required: false
   private _filters = new PipelineFiltersOutputReference(this, "filters");
   public get filters() {
     return this._filters;
   }
   public putFilters(value: PipelineFilters) {
     this._filters.internalValue = value;
+  }
+  public resetFilters() {
+    this._filters.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get filtersInput() {
@@ -2424,10 +2659,14 @@ export class Pipeline extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allow_duplicate_names: cdktf.booleanToTerraform(this._allowDuplicateNames),
+      channel: cdktf.stringToTerraform(this._channel),
       configuration: cdktf.hashMapper(cdktf.stringToTerraform)(this._configuration),
       continuous: cdktf.booleanToTerraform(this._continuous),
+      development: cdktf.booleanToTerraform(this._development),
+      edition: cdktf.stringToTerraform(this._edition),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      photon: cdktf.booleanToTerraform(this._photon),
       storage: cdktf.stringToTerraform(this._storage),
       target: cdktf.stringToTerraform(this._target),
       cluster: cdktf.listMapper(pipelineClusterToTerraform)(this._cluster.internalValue),

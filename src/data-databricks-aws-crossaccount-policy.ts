@@ -46,7 +46,7 @@ export class DataDatabricksAwsCrossaccountPolicy extends cdktf.TerraformDataSour
       terraformResourceType: 'databricks_aws_crossaccount_policy',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '0.6.0',
+        providerVersion: '0.6.1',
         providerVersionConstraint: '~> 0.5'
       },
       provider: config.provider,
