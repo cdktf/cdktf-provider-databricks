@@ -70,7 +70,7 @@ export class DataDatabricksServicePrincipal extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_service_principal',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '0.6.1',
+        providerVersion: '0.6.2',
         providerVersionConstraint: '~> 0.5'
       },
       provider: config.provider,
