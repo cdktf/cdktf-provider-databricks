@@ -170,9 +170,9 @@ export function jobEmailNotificationsToTerraform(struct?: JobEmailNotificationsO
   return {
     alert_on_last_attempt: cdktf.booleanToTerraform(struct!.alertOnLastAttempt),
     no_alert_for_skipped_runs: cdktf.booleanToTerraform(struct!.noAlertForSkippedRuns),
-    on_failure: cdktf.listMapper(cdktf.stringToTerraform)(struct!.onFailure),
-    on_start: cdktf.listMapper(cdktf.stringToTerraform)(struct!.onStart),
-    on_success: cdktf.listMapper(cdktf.stringToTerraform)(struct!.onSuccess),
+    on_failure: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.onFailure),
+    on_start: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.onStart),
+    on_success: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.onSuccess),
   }
 }
 
@@ -2588,14 +2588,14 @@ export function jobJobClusterNewClusterToTerraform(struct?: JobJobClusterNewClus
     spark_conf: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sparkConf),
     spark_env_vars: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sparkEnvVars),
     spark_version: cdktf.stringToTerraform(struct!.sparkVersion),
-    ssh_public_keys: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sshPublicKeys),
+    ssh_public_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sshPublicKeys),
     autoscale: jobJobClusterNewClusterAutoscaleToTerraform(struct!.autoscale),
     aws_attributes: jobJobClusterNewClusterAwsAttributesToTerraform(struct!.awsAttributes),
     azure_attributes: jobJobClusterNewClusterAzureAttributesToTerraform(struct!.azureAttributes),
     cluster_log_conf: jobJobClusterNewClusterClusterLogConfToTerraform(struct!.clusterLogConf),
     docker_image: jobJobClusterNewClusterDockerImageToTerraform(struct!.dockerImage),
     gcp_attributes: jobJobClusterNewClusterGcpAttributesToTerraform(struct!.gcpAttributes),
-    init_scripts: cdktf.listMapper(jobJobClusterNewClusterInitScriptsToTerraform)(struct!.initScripts),
+    init_scripts: cdktf.listMapper(jobJobClusterNewClusterInitScriptsToTerraform, true)(struct!.initScripts),
     workload_type: jobJobClusterNewClusterWorkloadTypeToTerraform(struct!.workloadType),
   }
 }
@@ -3454,7 +3454,7 @@ export function jobLibraryMavenToTerraform(struct?: JobLibraryMavenOutputReferen
   }
   return {
     coordinates: cdktf.stringToTerraform(struct!.coordinates),
-    exclusions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exclusions),
+    exclusions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exclusions),
     repo: cdktf.stringToTerraform(struct!.repo),
   }
 }
@@ -5981,14 +5981,14 @@ export function jobNewClusterToTerraform(struct?: JobNewClusterOutputReference |
     spark_conf: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sparkConf),
     spark_env_vars: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sparkEnvVars),
     spark_version: cdktf.stringToTerraform(struct!.sparkVersion),
-    ssh_public_keys: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sshPublicKeys),
+    ssh_public_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sshPublicKeys),
     autoscale: jobNewClusterAutoscaleToTerraform(struct!.autoscale),
     aws_attributes: jobNewClusterAwsAttributesToTerraform(struct!.awsAttributes),
     azure_attributes: jobNewClusterAzureAttributesToTerraform(struct!.azureAttributes),
     cluster_log_conf: jobNewClusterClusterLogConfToTerraform(struct!.clusterLogConf),
     docker_image: jobNewClusterDockerImageToTerraform(struct!.dockerImage),
     gcp_attributes: jobNewClusterGcpAttributesToTerraform(struct!.gcpAttributes),
-    init_scripts: cdktf.listMapper(jobNewClusterInitScriptsToTerraform)(struct!.initScripts),
+    init_scripts: cdktf.listMapper(jobNewClusterInitScriptsToTerraform, true)(struct!.initScripts),
     workload_type: jobNewClusterWorkloadTypeToTerraform(struct!.workloadType),
   }
 }
@@ -6789,7 +6789,7 @@ export function jobPythonWheelTaskToTerraform(struct?: JobPythonWheelTaskOutputR
     entry_point: cdktf.stringToTerraform(struct!.entryPoint),
     named_parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.namedParameters),
     package_name: cdktf.stringToTerraform(struct!.packageName),
-    parameters: cdktf.listMapper(cdktf.stringToTerraform)(struct!.parameters),
+    parameters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.parameters),
   }
 }
 
@@ -7043,7 +7043,7 @@ export function jobSparkJarTaskToTerraform(struct?: JobSparkJarTaskOutputReferen
   return {
     jar_uri: cdktf.stringToTerraform(struct!.jarUri),
     main_class_name: cdktf.stringToTerraform(struct!.mainClassName),
-    parameters: cdktf.listMapper(cdktf.stringToTerraform)(struct!.parameters),
+    parameters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.parameters),
   }
 }
 
@@ -7156,7 +7156,7 @@ export function jobSparkPythonTaskToTerraform(struct?: JobSparkPythonTaskOutputR
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    parameters: cdktf.listMapper(cdktf.stringToTerraform)(struct!.parameters),
+    parameters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.parameters),
     python_file: cdktf.stringToTerraform(struct!.pythonFile),
   }
 }
@@ -7241,7 +7241,7 @@ export function jobSparkSubmitTaskToTerraform(struct?: JobSparkSubmitTaskOutputR
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    parameters: cdktf.listMapper(cdktf.stringToTerraform)(struct!.parameters),
+    parameters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.parameters),
   }
 }
 
@@ -7314,7 +7314,7 @@ export function jobTaskDbtTaskToTerraform(struct?: JobTaskDbtTaskOutputReference
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    commands: cdktf.listMapper(cdktf.stringToTerraform)(struct!.commands),
+    commands: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.commands),
     project_directory: cdktf.stringToTerraform(struct!.projectDirectory),
     schema: cdktf.stringToTerraform(struct!.schema),
   }
@@ -7537,9 +7537,9 @@ export function jobTaskEmailNotificationsToTerraform(struct?: JobTaskEmailNotifi
   return {
     alert_on_last_attempt: cdktf.booleanToTerraform(struct!.alertOnLastAttempt),
     no_alert_for_skipped_runs: cdktf.booleanToTerraform(struct!.noAlertForSkippedRuns),
-    on_failure: cdktf.listMapper(cdktf.stringToTerraform)(struct!.onFailure),
-    on_start: cdktf.listMapper(cdktf.stringToTerraform)(struct!.onStart),
-    on_success: cdktf.listMapper(cdktf.stringToTerraform)(struct!.onSuccess),
+    on_failure: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.onFailure),
+    on_start: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.onStart),
+    on_success: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.onSuccess),
   }
 }
 
@@ -7790,7 +7790,7 @@ export function jobTaskLibraryMavenToTerraform(struct?: JobTaskLibraryMavenOutpu
   }
   return {
     coordinates: cdktf.stringToTerraform(struct!.coordinates),
-    exclusions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exclusions),
+    exclusions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exclusions),
     repo: cdktf.stringToTerraform(struct!.repo),
   }
 }
@@ -10317,14 +10317,14 @@ export function jobTaskNewClusterToTerraform(struct?: JobTaskNewClusterOutputRef
     spark_conf: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sparkConf),
     spark_env_vars: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sparkEnvVars),
     spark_version: cdktf.stringToTerraform(struct!.sparkVersion),
-    ssh_public_keys: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sshPublicKeys),
+    ssh_public_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sshPublicKeys),
     autoscale: jobTaskNewClusterAutoscaleToTerraform(struct!.autoscale),
     aws_attributes: jobTaskNewClusterAwsAttributesToTerraform(struct!.awsAttributes),
     azure_attributes: jobTaskNewClusterAzureAttributesToTerraform(struct!.azureAttributes),
     cluster_log_conf: jobTaskNewClusterClusterLogConfToTerraform(struct!.clusterLogConf),
     docker_image: jobTaskNewClusterDockerImageToTerraform(struct!.dockerImage),
     gcp_attributes: jobTaskNewClusterGcpAttributesToTerraform(struct!.gcpAttributes),
-    init_scripts: cdktf.listMapper(jobTaskNewClusterInitScriptsToTerraform)(struct!.initScripts),
+    init_scripts: cdktf.listMapper(jobTaskNewClusterInitScriptsToTerraform, true)(struct!.initScripts),
     workload_type: jobTaskNewClusterWorkloadTypeToTerraform(struct!.workloadType),
   }
 }
@@ -11125,7 +11125,7 @@ export function jobTaskPythonWheelTaskToTerraform(struct?: JobTaskPythonWheelTas
     entry_point: cdktf.stringToTerraform(struct!.entryPoint),
     named_parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.namedParameters),
     package_name: cdktf.stringToTerraform(struct!.packageName),
-    parameters: cdktf.listMapper(cdktf.stringToTerraform)(struct!.parameters),
+    parameters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.parameters),
   }
 }
 
@@ -11266,7 +11266,7 @@ export function jobTaskSparkJarTaskToTerraform(struct?: JobTaskSparkJarTaskOutpu
   return {
     jar_uri: cdktf.stringToTerraform(struct!.jarUri),
     main_class_name: cdktf.stringToTerraform(struct!.mainClassName),
-    parameters: cdktf.listMapper(cdktf.stringToTerraform)(struct!.parameters),
+    parameters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.parameters),
   }
 }
 
@@ -11379,7 +11379,7 @@ export function jobTaskSparkPythonTaskToTerraform(struct?: JobTaskSparkPythonTas
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    parameters: cdktf.listMapper(cdktf.stringToTerraform)(struct!.parameters),
+    parameters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.parameters),
     python_file: cdktf.stringToTerraform(struct!.pythonFile),
   }
 }
@@ -11464,7 +11464,7 @@ export function jobTaskSparkSubmitTaskToTerraform(struct?: JobTaskSparkSubmitTas
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    parameters: cdktf.listMapper(cdktf.stringToTerraform)(struct!.parameters),
+    parameters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.parameters),
   }
 }
 
@@ -12003,9 +12003,9 @@ export function jobTaskToTerraform(struct?: JobTask | cdktf.IResolvable): any {
     task_key: cdktf.stringToTerraform(struct!.taskKey),
     timeout_seconds: cdktf.numberToTerraform(struct!.timeoutSeconds),
     dbt_task: jobTaskDbtTaskToTerraform(struct!.dbtTask),
-    depends_on: cdktf.listMapper(jobTaskDependsOnToTerraform)(struct!.dependsOn),
+    depends_on: cdktf.listMapper(jobTaskDependsOnToTerraform, true)(struct!.dependsOn),
     email_notifications: jobTaskEmailNotificationsToTerraform(struct!.emailNotifications),
-    library: cdktf.listMapper(jobTaskLibraryToTerraform)(struct!.library),
+    library: cdktf.listMapper(jobTaskLibraryToTerraform, true)(struct!.library),
     new_cluster: jobTaskNewClusterToTerraform(struct!.newCluster),
     notebook_task: jobTaskNotebookTaskToTerraform(struct!.notebookTask),
     pipeline_task: jobTaskPipelineTaskToTerraform(struct!.pipelineTask),
@@ -12650,7 +12650,10 @@ export class Job extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._alwaysRunning = config.alwaysRunning;
     this._existingClusterId = config.existingClusterId;
@@ -13107,8 +13110,8 @@ export class Job extends cdktf.TerraformResource {
       timeout_seconds: cdktf.numberToTerraform(this._timeoutSeconds),
       email_notifications: jobEmailNotificationsToTerraform(this._emailNotifications.internalValue),
       git_source: jobGitSourceToTerraform(this._gitSource.internalValue),
-      job_cluster: cdktf.listMapper(jobJobClusterToTerraform)(this._jobCluster.internalValue),
-      library: cdktf.listMapper(jobLibraryToTerraform)(this._library.internalValue),
+      job_cluster: cdktf.listMapper(jobJobClusterToTerraform, true)(this._jobCluster.internalValue),
+      library: cdktf.listMapper(jobLibraryToTerraform, true)(this._library.internalValue),
       new_cluster: jobNewClusterToTerraform(this._newCluster.internalValue),
       notebook_task: jobNotebookTaskToTerraform(this._notebookTask.internalValue),
       pipeline_task: jobPipelineTaskToTerraform(this._pipelineTask.internalValue),
@@ -13117,7 +13120,7 @@ export class Job extends cdktf.TerraformResource {
       spark_jar_task: jobSparkJarTaskToTerraform(this._sparkJarTask.internalValue),
       spark_python_task: jobSparkPythonTaskToTerraform(this._sparkPythonTask.internalValue),
       spark_submit_task: jobSparkSubmitTaskToTerraform(this._sparkSubmitTask.internalValue),
-      task: cdktf.listMapper(jobTaskToTerraform)(this._task.internalValue),
+      task: cdktf.listMapper(jobTaskToTerraform, true)(this._task.internalValue),
       timeouts: jobTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

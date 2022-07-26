@@ -560,9 +560,9 @@ export function sqlQueryParameterEnumToTerraform(struct?: SqlQueryParameterEnumO
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    options: cdktf.listMapper(cdktf.stringToTerraform)(struct!.options),
+    options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.options),
     value: cdktf.stringToTerraform(struct!.value),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
     multiple: sqlQueryParameterEnumMultipleToTerraform(struct!.multiple),
   }
 }
@@ -879,7 +879,7 @@ export function sqlQueryParameterQueryToTerraform(struct?: SqlQueryParameterQuer
   return {
     query_id: cdktf.stringToTerraform(struct!.queryId),
     value: cdktf.stringToTerraform(struct!.value),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
     multiple: sqlQueryParameterQueryMultipleToTerraform(struct!.multiple),
   }
 }
@@ -1965,7 +1965,10 @@ export class SqlQuery extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._dataSourceId = config.dataSourceId;
     this._description = config.description;
@@ -2129,8 +2132,8 @@ export class SqlQuery extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       query: cdktf.stringToTerraform(this._query),
       run_as_role: cdktf.stringToTerraform(this._runAsRole),
-      tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
-      parameter: cdktf.listMapper(sqlQueryParameterToTerraform)(this._parameter.internalValue),
+      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
+      parameter: cdktf.listMapper(sqlQueryParameterToTerraform, true)(this._parameter.internalValue),
       schedule: sqlQueryScheduleToTerraform(this._schedule.internalValue),
     };
   }

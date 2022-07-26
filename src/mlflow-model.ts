@@ -196,7 +196,10 @@ export class MlflowModel extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._creationTimestamp = config.creationTimestamp;
     this._description = config.description;
@@ -350,7 +353,7 @@ export class MlflowModel extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       registered_model_id: cdktf.stringToTerraform(this._registeredModelId),
       user_id: cdktf.stringToTerraform(this._userId),
-      tags: cdktf.listMapper(mlflowModelTagsToTerraform)(this._tags.internalValue),
+      tags: cdktf.listMapper(mlflowModelTagsToTerraform, true)(this._tags.internalValue),
     };
   }
 }

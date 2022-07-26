@@ -64,7 +64,10 @@ export class IpAccessList extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._enabled = config.enabled;
     this._id = config.id;
@@ -156,7 +159,7 @@ export class IpAccessList extends cdktf.TerraformResource {
     return {
       enabled: cdktf.booleanToTerraform(this._enabled),
       id: cdktf.stringToTerraform(this._id),
-      ip_addresses: cdktf.listMapper(cdktf.stringToTerraform)(this._ipAddresses),
+      ip_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ipAddresses),
       label: cdktf.stringToTerraform(this._label),
       list_type: cdktf.stringToTerraform(this._listType),
     };

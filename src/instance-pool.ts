@@ -901,7 +901,7 @@ export function instancePoolInstancePoolFleetAttributesToTerraform(struct?: Inst
   return {
     fleet_on_demand_option: instancePoolInstancePoolFleetAttributesFleetOnDemandOptionToTerraform(struct!.fleetOnDemandOption),
     fleet_spot_option: instancePoolInstancePoolFleetAttributesFleetSpotOptionToTerraform(struct!.fleetSpotOption),
-    launch_template_override: cdktf.listMapper(instancePoolInstancePoolFleetAttributesLaunchTemplateOverrideToTerraform)(struct!.launchTemplateOverride),
+    launch_template_override: cdktf.listMapper(instancePoolInstancePoolFleetAttributesLaunchTemplateOverrideToTerraform, true)(struct!.launchTemplateOverride),
   }
 }
 
@@ -1236,7 +1236,10 @@ export class InstancePool extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._customTags = config.customTags;
     this._enableElasticDisk = config.enableElasticDisk;
@@ -1525,13 +1528,13 @@ export class InstancePool extends cdktf.TerraformResource {
       max_capacity: cdktf.numberToTerraform(this._maxCapacity),
       min_idle_instances: cdktf.numberToTerraform(this._minIdleInstances),
       node_type_id: cdktf.stringToTerraform(this._nodeTypeId),
-      preloaded_spark_versions: cdktf.listMapper(cdktf.stringToTerraform)(this._preloadedSparkVersions),
+      preloaded_spark_versions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._preloadedSparkVersions),
       aws_attributes: instancePoolAwsAttributesToTerraform(this._awsAttributes.internalValue),
       azure_attributes: instancePoolAzureAttributesToTerraform(this._azureAttributes.internalValue),
       disk_spec: instancePoolDiskSpecToTerraform(this._diskSpec.internalValue),
       gcp_attributes: instancePoolGcpAttributesToTerraform(this._gcpAttributes.internalValue),
       instance_pool_fleet_attributes: instancePoolInstancePoolFleetAttributesToTerraform(this._instancePoolFleetAttributes.internalValue),
-      preloaded_docker_image: cdktf.listMapper(instancePoolPreloadedDockerImageToTerraform)(this._preloadedDockerImage.internalValue),
+      preloaded_docker_image: cdktf.listMapper(instancePoolPreloadedDockerImageToTerraform, true)(this._preloadedDockerImage.internalValue),
     };
   }
 }

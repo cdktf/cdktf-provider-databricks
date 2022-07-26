@@ -80,7 +80,10 @@ export class MwsPrivateAccessSettings extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._allowedVpcEndpointIds = config.allowedVpcEndpointIds;
@@ -242,7 +245,7 @@ export class MwsPrivateAccessSettings extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
-      allowed_vpc_endpoint_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedVpcEndpointIds),
+      allowed_vpc_endpoint_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedVpcEndpointIds),
       id: cdktf.stringToTerraform(this._id),
       private_access_level: cdktf.stringToTerraform(this._privateAccessLevel),
       private_access_settings_id: cdktf.stringToTerraform(this._privateAccessSettingsId),

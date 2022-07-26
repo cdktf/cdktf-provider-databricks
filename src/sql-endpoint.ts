@@ -453,7 +453,7 @@ export function sqlEndpointTagsToTerraform(struct?: SqlEndpointTagsOutputReferen
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_tags: cdktf.listMapper(sqlEndpointTagsCustomTagsToTerraform)(struct!.customTags),
+    custom_tags: cdktf.listMapper(sqlEndpointTagsCustomTagsToTerraform, true)(struct!.customTags),
   }
 }
 
@@ -610,7 +610,10 @@ export class SqlEndpoint extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._autoStopMins = config.autoStopMins;
     this._clusterSize = config.clusterSize;

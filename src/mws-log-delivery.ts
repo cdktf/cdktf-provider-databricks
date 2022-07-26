@@ -92,7 +92,10 @@ export class MwsLogDelivery extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._configId = config.configId;
@@ -306,7 +309,7 @@ export class MwsLogDelivery extends cdktf.TerraformResource {
       output_format: cdktf.stringToTerraform(this._outputFormat),
       status: cdktf.stringToTerraform(this._status),
       storage_configuration_id: cdktf.stringToTerraform(this._storageConfigurationId),
-      workspace_ids_filter: cdktf.listMapper(cdktf.numberToTerraform)(this._workspaceIdsFilter),
+      workspace_ids_filter: cdktf.listMapper(cdktf.numberToTerraform, false)(this._workspaceIdsFilter),
     };
   }
 }

@@ -204,8 +204,8 @@ export function mwsNetworksVpcEndpointsToTerraform(struct?: MwsNetworksVpcEndpoi
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dataplane_relay: cdktf.listMapper(cdktf.stringToTerraform)(struct!.dataplaneRelay),
-    rest_api: cdktf.listMapper(cdktf.stringToTerraform)(struct!.restApi),
+    dataplane_relay: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dataplaneRelay),
+    rest_api: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.restApi),
   }
 }
 
@@ -306,7 +306,10 @@ export class MwsNetworks extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._creationTime = config.creationTime;
@@ -514,12 +517,12 @@ export class MwsNetworks extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       network_id: cdktf.stringToTerraform(this._networkId),
       network_name: cdktf.stringToTerraform(this._networkName),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
-      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
+      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetIds),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       vpc_status: cdktf.stringToTerraform(this._vpcStatus),
       workspace_id: cdktf.numberToTerraform(this._workspaceId),
-      error_messages: cdktf.listMapper(mwsNetworksErrorMessagesToTerraform)(this._errorMessages.internalValue),
+      error_messages: cdktf.listMapper(mwsNetworksErrorMessagesToTerraform, true)(this._errorMessages.internalValue),
       vpc_endpoints: mwsNetworksVpcEndpointsToTerraform(this._vpcEndpoints.internalValue),
     };
   }

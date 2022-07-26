@@ -2065,7 +2065,7 @@ export function clusterLibraryMavenToTerraform(struct?: ClusterLibraryMavenOutpu
   }
   return {
     coordinates: cdktf.stringToTerraform(struct!.coordinates),
-    exclusions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exclusions),
+    exclusions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exclusions),
     repo: cdktf.stringToTerraform(struct!.repo),
   }
 }
@@ -2804,7 +2804,10 @@ export class Cluster extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._autoterminationMinutes = config.autoterminationMinutes;
     this._clusterId = config.clusterId;
@@ -3378,15 +3381,15 @@ export class Cluster extends cdktf.TerraformResource {
       spark_conf: cdktf.hashMapper(cdktf.stringToTerraform)(this._sparkConf),
       spark_env_vars: cdktf.hashMapper(cdktf.stringToTerraform)(this._sparkEnvVars),
       spark_version: cdktf.stringToTerraform(this._sparkVersion),
-      ssh_public_keys: cdktf.listMapper(cdktf.stringToTerraform)(this._sshPublicKeys),
+      ssh_public_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sshPublicKeys),
       autoscale: clusterAutoscaleToTerraform(this._autoscale.internalValue),
       aws_attributes: clusterAwsAttributesToTerraform(this._awsAttributes.internalValue),
       azure_attributes: clusterAzureAttributesToTerraform(this._azureAttributes.internalValue),
       cluster_log_conf: clusterClusterLogConfToTerraform(this._clusterLogConf.internalValue),
       docker_image: clusterDockerImageToTerraform(this._dockerImage.internalValue),
       gcp_attributes: clusterGcpAttributesToTerraform(this._gcpAttributes.internalValue),
-      init_scripts: cdktf.listMapper(clusterInitScriptsToTerraform)(this._initScripts.internalValue),
-      library: cdktf.listMapper(clusterLibraryToTerraform)(this._library.internalValue),
+      init_scripts: cdktf.listMapper(clusterInitScriptsToTerraform, true)(this._initScripts.internalValue),
+      library: cdktf.listMapper(clusterLibraryToTerraform, true)(this._library.internalValue),
       timeouts: clusterTimeoutsToTerraform(this._timeouts.internalValue),
       workload_type: clusterWorkloadTypeToTerraform(this._workloadType.internalValue),
     };

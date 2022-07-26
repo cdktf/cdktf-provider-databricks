@@ -56,7 +56,10 @@ export class DataDatabricksSchemas extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._catalogName = config.catalogName;
     this._id = config.id;
@@ -120,7 +123,7 @@ export class DataDatabricksSchemas extends cdktf.TerraformDataSource {
     return {
       catalog_name: cdktf.stringToTerraform(this._catalogName),
       id: cdktf.stringToTerraform(this._id),
-      ids: cdktf.listMapper(cdktf.stringToTerraform)(this._ids),
+      ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ids),
     };
   }
 }

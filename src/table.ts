@@ -453,7 +453,10 @@ export class Table extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._catalogName = config.catalogName;
     this._comment = config.comment;
@@ -682,7 +685,7 @@ export class Table extends cdktf.TerraformResource {
       storage_location: cdktf.stringToTerraform(this._storageLocation),
       table_type: cdktf.stringToTerraform(this._tableType),
       view_definition: cdktf.stringToTerraform(this._viewDefinition),
-      column: cdktf.listMapper(tableColumnToTerraform)(this._column.internalValue),
+      column: cdktf.listMapper(tableColumnToTerraform, true)(this._column.internalValue),
     };
   }
 }

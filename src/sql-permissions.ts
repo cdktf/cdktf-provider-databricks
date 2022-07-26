@@ -67,7 +67,7 @@ export function sqlPermissionsPrivilegeAssignmentsToTerraform(struct?: SqlPermis
   }
   return {
     principal: cdktf.stringToTerraform(struct!.principal),
-    privileges: cdktf.listMapper(cdktf.stringToTerraform)(struct!.privileges),
+    privileges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.privileges),
   }
 }
 
@@ -200,7 +200,10 @@ export class SqlPermissions extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._anonymousFunction = config.anonymousFunction;
     this._anyFile = config.anyFile;
@@ -375,7 +378,7 @@ export class SqlPermissions extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       table: cdktf.stringToTerraform(this._table),
       view: cdktf.stringToTerraform(this._view),
-      privilege_assignments: cdktf.listMapper(sqlPermissionsPrivilegeAssignmentsToTerraform)(this._privilegeAssignments.internalValue),
+      privilege_assignments: cdktf.listMapper(sqlPermissionsPrivilegeAssignmentsToTerraform, true)(this._privilegeAssignments.internalValue),
     };
   }
 }

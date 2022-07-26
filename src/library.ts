@@ -160,7 +160,7 @@ export function libraryMavenToTerraform(struct?: LibraryMavenOutputReference | L
   }
   return {
     coordinates: cdktf.stringToTerraform(struct!.coordinates),
-    exclusions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exclusions),
+    exclusions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exclusions),
     repo: cdktf.stringToTerraform(struct!.repo),
   }
 }
@@ -376,7 +376,10 @@ export class Library extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._clusterId = config.clusterId;
     this._egg = config.egg;

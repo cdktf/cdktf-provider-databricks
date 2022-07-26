@@ -56,7 +56,10 @@ export class DataDatabricksServicePrincipals extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._applicationIds = config.applicationIds;
     this._displayNameContains = config.displayNameContains;
@@ -121,7 +124,7 @@ export class DataDatabricksServicePrincipals extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._applicationIds),
+      application_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._applicationIds),
       display_name_contains: cdktf.stringToTerraform(this._displayNameContains),
       id: cdktf.stringToTerraform(this._id),
     };
