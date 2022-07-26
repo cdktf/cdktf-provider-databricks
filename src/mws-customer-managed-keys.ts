@@ -183,7 +183,10 @@ export class MwsCustomerManagedKeys extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._creationTime = config.creationTime;
@@ -294,7 +297,7 @@ export class MwsCustomerManagedKeys extends cdktf.TerraformResource {
       creation_time: cdktf.numberToTerraform(this._creationTime),
       customer_managed_key_id: cdktf.stringToTerraform(this._customerManagedKeyId),
       id: cdktf.stringToTerraform(this._id),
-      use_cases: cdktf.listMapper(cdktf.stringToTerraform)(this._useCases),
+      use_cases: cdktf.listMapper(cdktf.stringToTerraform, false)(this._useCases),
       aws_key_info: mwsCustomerManagedKeysAwsKeyInfoToTerraform(this._awsKeyInfo.internalValue),
     };
   }

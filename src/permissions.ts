@@ -305,7 +305,10 @@ export class Permissions extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._authorization = config.authorization;
     this._clusterId = config.clusterId;
@@ -693,7 +696,7 @@ export class Permissions extends cdktf.TerraformResource {
       sql_dashboard_id: cdktf.stringToTerraform(this._sqlDashboardId),
       sql_endpoint_id: cdktf.stringToTerraform(this._sqlEndpointId),
       sql_query_id: cdktf.stringToTerraform(this._sqlQueryId),
-      access_control: cdktf.listMapper(permissionsAccessControlToTerraform)(this._accessControl.internalValue),
+      access_control: cdktf.listMapper(permissionsAccessControlToTerraform, true)(this._accessControl.internalValue),
     };
   }
 }

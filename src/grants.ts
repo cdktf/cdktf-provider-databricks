@@ -67,7 +67,7 @@ export function grantsGrantToTerraform(struct?: GrantsGrant | cdktf.IResolvable)
   }
   return {
     principal: cdktf.stringToTerraform(struct!.principal),
-    privileges: cdktf.listMapper(cdktf.stringToTerraform)(struct!.privileges),
+    privileges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.privileges),
   }
 }
 
@@ -200,7 +200,10 @@ export class Grants extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._catalog = config.catalog;
     this._externalLocation = config.externalLocation;
@@ -372,7 +375,7 @@ export class Grants extends cdktf.TerraformResource {
       storage_credential: cdktf.stringToTerraform(this._storageCredential),
       table: cdktf.stringToTerraform(this._table),
       view: cdktf.stringToTerraform(this._view),
-      grant: cdktf.listMapper(grantsGrantToTerraform)(this._grant.internalValue),
+      grant: cdktf.listMapper(grantsGrantToTerraform, true)(this._grant.internalValue),
     };
   }
 }

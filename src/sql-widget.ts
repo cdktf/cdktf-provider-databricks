@@ -89,7 +89,7 @@ export function sqlWidgetParameterToTerraform(struct?: SqlWidgetParameter | cdkt
     title: cdktf.stringToTerraform(struct!.title),
     type: cdktf.stringToTerraform(struct!.type),
     value: cdktf.stringToTerraform(struct!.value),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -477,7 +477,10 @@ export class SqlWidget extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._dashboardId = config.dashboardId;
     this._description = config.description;
@@ -648,7 +651,7 @@ export class SqlWidget extends cdktf.TerraformResource {
       title: cdktf.stringToTerraform(this._title),
       visualization_id: cdktf.stringToTerraform(this._visualizationId),
       widget_id: cdktf.stringToTerraform(this._widgetId),
-      parameter: cdktf.listMapper(sqlWidgetParameterToTerraform)(this._parameter.internalValue),
+      parameter: cdktf.listMapper(sqlWidgetParameterToTerraform, true)(this._parameter.internalValue),
       position: sqlWidgetPositionToTerraform(this._position.internalValue),
     };
   }

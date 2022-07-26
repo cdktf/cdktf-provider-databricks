@@ -447,7 +447,7 @@ export function dataDatabricksSqlWarehouseTagsToTerraform(struct?: DataDatabrick
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_tags: cdktf.listMapper(dataDatabricksSqlWarehouseTagsCustomTagsToTerraform)(struct!.customTags),
+    custom_tags: cdktf.listMapper(dataDatabricksSqlWarehouseTagsCustomTagsToTerraform, true)(struct!.customTags),
   }
 }
 
@@ -529,7 +529,10 @@ export class DataDatabricksSqlWarehouse extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._autoStopMins = config.autoStopMins;
     this._clusterSize = config.clusterSize;

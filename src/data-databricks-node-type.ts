@@ -96,7 +96,10 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._category = config.category;
     this._gbPerCore = config.gbPerCore;

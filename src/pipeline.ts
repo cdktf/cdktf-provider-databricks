@@ -1427,12 +1427,12 @@ export function pipelineClusterToTerraform(struct?: PipelineCluster | cdktf.IRes
     num_workers: cdktf.numberToTerraform(struct!.numWorkers),
     spark_conf: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sparkConf),
     spark_env_vars: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sparkEnvVars),
-    ssh_public_keys: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sshPublicKeys),
+    ssh_public_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sshPublicKeys),
     autoscale: pipelineClusterAutoscaleToTerraform(struct!.autoscale),
     aws_attributes: pipelineClusterAwsAttributesToTerraform(struct!.awsAttributes),
     cluster_log_conf: pipelineClusterClusterLogConfToTerraform(struct!.clusterLogConf),
     gcp_attributes: pipelineClusterGcpAttributesToTerraform(struct!.gcpAttributes),
-    init_scripts: cdktf.listMapper(pipelineClusterInitScriptsToTerraform)(struct!.initScripts),
+    init_scripts: cdktf.listMapper(pipelineClusterInitScriptsToTerraform, true)(struct!.initScripts),
   }
 }
 
@@ -1841,8 +1841,8 @@ export function pipelineFiltersToTerraform(struct?: PipelineFiltersOutputReferen
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    exclude: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exclude),
-    include: cdktf.listMapper(cdktf.stringToTerraform)(struct!.include),
+    exclude: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exclude),
+    include: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.include),
   }
 }
 
@@ -1938,7 +1938,7 @@ export function pipelineLibraryMavenToTerraform(struct?: PipelineLibraryMavenOut
   }
   return {
     coordinates: cdktf.stringToTerraform(struct!.coordinates),
-    exclusions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exclusions),
+    exclusions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exclusions),
     repo: cdktf.stringToTerraform(struct!.repo),
   }
 }
@@ -2384,7 +2384,10 @@ export class Pipeline extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allowDuplicateNames = config.allowDuplicateNames;
     this._channel = config.channel;
@@ -2669,9 +2672,9 @@ export class Pipeline extends cdktf.TerraformResource {
       photon: cdktf.booleanToTerraform(this._photon),
       storage: cdktf.stringToTerraform(this._storage),
       target: cdktf.stringToTerraform(this._target),
-      cluster: cdktf.listMapper(pipelineClusterToTerraform)(this._cluster.internalValue),
+      cluster: cdktf.listMapper(pipelineClusterToTerraform, true)(this._cluster.internalValue),
       filters: pipelineFiltersToTerraform(this._filters.internalValue),
-      library: cdktf.listMapper(pipelineLibraryToTerraform)(this._library.internalValue),
+      library: cdktf.listMapper(pipelineLibraryToTerraform, true)(this._library.internalValue),
       timeouts: pipelineTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

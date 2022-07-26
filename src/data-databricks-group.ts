@@ -100,7 +100,10 @@ export class DataDatabricksGroup extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allowClusterCreate = config.allowClusterCreate;
     this._allowInstancePoolCreate = config.allowInstancePoolCreate;
@@ -351,17 +354,17 @@ export class DataDatabricksGroup extends cdktf.TerraformDataSource {
     return {
       allow_cluster_create: cdktf.booleanToTerraform(this._allowClusterCreate),
       allow_instance_pool_create: cdktf.booleanToTerraform(this._allowInstancePoolCreate),
-      child_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._childGroups),
+      child_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._childGroups),
       databricks_sql_access: cdktf.booleanToTerraform(this._databricksSqlAccess),
       display_name: cdktf.stringToTerraform(this._displayName),
       external_id: cdktf.stringToTerraform(this._externalId),
-      groups: cdktf.listMapper(cdktf.stringToTerraform)(this._groups),
+      groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groups),
       id: cdktf.stringToTerraform(this._id),
-      instance_profiles: cdktf.listMapper(cdktf.stringToTerraform)(this._instanceProfiles),
-      members: cdktf.listMapper(cdktf.stringToTerraform)(this._members),
+      instance_profiles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._instanceProfiles),
+      members: cdktf.listMapper(cdktf.stringToTerraform, false)(this._members),
       recursive: cdktf.booleanToTerraform(this._recursive),
-      service_principals: cdktf.listMapper(cdktf.stringToTerraform)(this._servicePrincipals),
-      users: cdktf.listMapper(cdktf.stringToTerraform)(this._users),
+      service_principals: cdktf.listMapper(cdktf.stringToTerraform, false)(this._servicePrincipals),
+      users: cdktf.listMapper(cdktf.stringToTerraform, false)(this._users),
       workspace_access: cdktf.booleanToTerraform(this._workspaceAccess),
     };
   }

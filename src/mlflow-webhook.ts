@@ -332,7 +332,10 @@ export class MlflowWebhook extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._events = config.events;
@@ -463,7 +466,7 @@ export class MlflowWebhook extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
-      events: cdktf.listMapper(cdktf.stringToTerraform)(this._events),
+      events: cdktf.listMapper(cdktf.stringToTerraform, false)(this._events),
       id: cdktf.stringToTerraform(this._id),
       model_name: cdktf.stringToTerraform(this._modelName),
       status: cdktf.stringToTerraform(this._status),

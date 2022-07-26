@@ -2692,7 +2692,7 @@ export function dataDatabricksClusterClusterInfoToTerraform(struct?: DataDatabri
     spark_context_id: cdktf.numberToTerraform(struct!.sparkContextId),
     spark_env_vars: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sparkEnvVars),
     spark_version: cdktf.stringToTerraform(struct!.sparkVersion),
-    ssh_public_keys: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sshPublicKeys),
+    ssh_public_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sshPublicKeys),
     start_time: cdktf.numberToTerraform(struct!.startTime),
     state: cdktf.stringToTerraform(struct!.state),
     state_message: cdktf.stringToTerraform(struct!.stateMessage),
@@ -2704,9 +2704,9 @@ export function dataDatabricksClusterClusterInfoToTerraform(struct?: DataDatabri
     cluster_log_status: dataDatabricksClusterClusterInfoClusterLogStatusToTerraform(struct!.clusterLogStatus),
     docker_image: dataDatabricksClusterClusterInfoDockerImageToTerraform(struct!.dockerImage),
     driver: dataDatabricksClusterClusterInfoDriverToTerraform(struct!.driver),
-    executors: cdktf.listMapper(dataDatabricksClusterClusterInfoExecutorsToTerraform)(struct!.executors),
+    executors: cdktf.listMapper(dataDatabricksClusterClusterInfoExecutorsToTerraform, true)(struct!.executors),
     gcp_attributes: dataDatabricksClusterClusterInfoGcpAttributesToTerraform(struct!.gcpAttributes),
-    init_scripts: cdktf.listMapper(dataDatabricksClusterClusterInfoInitScriptsToTerraform)(struct!.initScripts),
+    init_scripts: cdktf.listMapper(dataDatabricksClusterClusterInfoInitScriptsToTerraform, true)(struct!.initScripts),
     termination_reason: dataDatabricksClusterClusterInfoTerminationReasonToTerraform(struct!.terminationReason),
   }
 }
@@ -3685,7 +3685,10 @@ export class DataDatabricksCluster extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._clusterId = config.clusterId;
     this._id = config.id;
