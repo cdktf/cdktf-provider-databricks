@@ -1,6 +1,6 @@
 const { CdktfProviderProject } = require("@cdktf/provider-project");
 const project = new CdktfProviderProject({
-  terraformProvider: "databrickslabs/databricks@~> 0.5",
+  terraformProvider: "databricks/databricks@~> 1.0",
   cdktfVersion: "^0.11.0",
   constructsVersion: "^10.0.0",
   minNodeVersion: "14.17.0",

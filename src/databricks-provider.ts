@@ -125,10 +125,10 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'databricks',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '0.6.2',
-        providerVersionConstraint: '~> 0.5'
+        providerVersion: '1.1.0',
+        providerVersionConstraint: '~> 1.0'
       },
-      terraformProviderSource: 'databrickslabs/databricks'
+      terraformProviderSource: 'databricks/databricks'
     });
     this._accountId = config.accountId;
     this._authType = config.authType;

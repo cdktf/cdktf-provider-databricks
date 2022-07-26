@@ -148,6 +148,12 @@ export interface ClusterConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#timeouts Cluster#timeouts}
   */
   readonly timeouts?: ClusterTimeouts;
+  /**
+  * workload_type block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#workload_type Cluster#workload_type}
+  */
+  readonly workloadType?: ClusterWorkloadType;
 }
 export interface ClusterAutoscale {
   /**
@@ -2609,6 +2615,162 @@ export class ClusterTimeoutsOutputReference extends cdktf.ComplexObject {
     return this._update;
   }
 }
+export interface ClusterWorkloadTypeClients {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#jobs Cluster#jobs}
+  */
+  readonly jobs?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#notebooks Cluster#notebooks}
+  */
+  readonly notebooks?: boolean | cdktf.IResolvable;
+}
+
+export function clusterWorkloadTypeClientsToTerraform(struct?: ClusterWorkloadTypeClientsOutputReference | ClusterWorkloadTypeClients): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    jobs: cdktf.booleanToTerraform(struct!.jobs),
+    notebooks: cdktf.booleanToTerraform(struct!.notebooks),
+  }
+}
+
+export class ClusterWorkloadTypeClientsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ClusterWorkloadTypeClients | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._jobs !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.jobs = this._jobs;
+    }
+    if (this._notebooks !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.notebooks = this._notebooks;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ClusterWorkloadTypeClients | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._jobs = undefined;
+      this._notebooks = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._jobs = value.jobs;
+      this._notebooks = value.notebooks;
+    }
+  }
+
+  // jobs - computed: false, optional: true, required: false
+  private _jobs?: boolean | cdktf.IResolvable; 
+  public get jobs() {
+    return this.getBooleanAttribute('jobs');
+  }
+  public set jobs(value: boolean | cdktf.IResolvable) {
+    this._jobs = value;
+  }
+  public resetJobs() {
+    this._jobs = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jobsInput() {
+    return this._jobs;
+  }
+
+  // notebooks - computed: false, optional: true, required: false
+  private _notebooks?: boolean | cdktf.IResolvable; 
+  public get notebooks() {
+    return this.getBooleanAttribute('notebooks');
+  }
+  public set notebooks(value: boolean | cdktf.IResolvable) {
+    this._notebooks = value;
+  }
+  public resetNotebooks() {
+    this._notebooks = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notebooksInput() {
+    return this._notebooks;
+  }
+}
+export interface ClusterWorkloadType {
+  /**
+  * clients block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#clients Cluster#clients}
+  */
+  readonly clients: ClusterWorkloadTypeClients;
+}
+
+export function clusterWorkloadTypeToTerraform(struct?: ClusterWorkloadTypeOutputReference | ClusterWorkloadType): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    clients: clusterWorkloadTypeClientsToTerraform(struct!.clients),
+  }
+}
+
+export class ClusterWorkloadTypeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ClusterWorkloadType | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._clients?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clients = this._clients?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ClusterWorkloadType | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._clients.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._clients.internalValue = value.clients;
+    }
+  }
+
+  // clients - computed: false, optional: false, required: true
+  private _clients = new ClusterWorkloadTypeClientsOutputReference(this, "clients");
+  public get clients() {
+    return this._clients;
+  }
+  public putClients(value: ClusterWorkloadTypeClients) {
+    this._clients.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientsInput() {
+    return this._clients.internalValue;
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/databricks/r/cluster databricks_cluster}
@@ -2636,8 +2798,8 @@ export class Cluster extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_cluster',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '0.6.2',
-        providerVersionConstraint: '~> 0.5'
+        providerVersion: '1.1.0',
+        providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -2674,6 +2836,7 @@ export class Cluster extends cdktf.TerraformResource {
     this._initScripts.internalValue = config.initScripts;
     this._library.internalValue = config.library;
     this._timeouts.internalValue = config.timeouts;
+    this._workloadType.internalValue = config.workloadType;
   }
 
   // ==========
@@ -3173,6 +3336,22 @@ export class Cluster extends cdktf.TerraformResource {
     return this._timeouts.internalValue;
   }
 
+  // workload_type - computed: false, optional: true, required: false
+  private _workloadType = new ClusterWorkloadTypeOutputReference(this, "workload_type");
+  public get workloadType() {
+    return this._workloadType;
+  }
+  public putWorkloadType(value: ClusterWorkloadType) {
+    this._workloadType.internalValue = value;
+  }
+  public resetWorkloadType() {
+    this._workloadType.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workloadTypeInput() {
+    return this._workloadType.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -3209,6 +3388,7 @@ export class Cluster extends cdktf.TerraformResource {
       init_scripts: cdktf.listMapper(clusterInitScriptsToTerraform)(this._initScripts.internalValue),
       library: cdktf.listMapper(clusterLibraryToTerraform)(this._library.internalValue),
       timeouts: clusterTimeoutsToTerraform(this._timeouts.internalValue),
+      workload_type: clusterWorkloadTypeToTerraform(this._workloadType.internalValue),
     };
   }
 }

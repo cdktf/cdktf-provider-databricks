@@ -24,10 +24,6 @@ export interface MetastoreConfig extends cdktf.TerraformMetaArguments {
   */
   readonly defaultDataAccessConfigId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore#delta_sharing_enabled Metastore#delta_sharing_enabled}
-  */
-  readonly deltaSharingEnabled?: boolean | cdktf.IResolvable;
-  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore#delta_sharing_organization_name Metastore#delta_sharing_organization_name}
   */
   readonly deltaSharingOrganizationName?: string;
@@ -35,6 +31,10 @@ export interface MetastoreConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore#delta_sharing_recipient_token_lifetime_in_seconds Metastore#delta_sharing_recipient_token_lifetime_in_seconds}
   */
   readonly deltaSharingRecipientTokenLifetimeInSeconds?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore#delta_sharing_scope Metastore#delta_sharing_scope}
+  */
+  readonly deltaSharingScope?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/metastore#force_destroy Metastore#force_destroy}
   */
@@ -102,8 +102,8 @@ export class Metastore extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_metastore',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '0.6.2',
-        providerVersionConstraint: '~> 0.5'
+        providerVersion: '1.1.0',
+        providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -114,9 +114,9 @@ export class Metastore extends cdktf.TerraformResource {
     this._createdAt = config.createdAt;
     this._createdBy = config.createdBy;
     this._defaultDataAccessConfigId = config.defaultDataAccessConfigId;
-    this._deltaSharingEnabled = config.deltaSharingEnabled;
     this._deltaSharingOrganizationName = config.deltaSharingOrganizationName;
     this._deltaSharingRecipientTokenLifetimeInSeconds = config.deltaSharingRecipientTokenLifetimeInSeconds;
+    this._deltaSharingScope = config.deltaSharingScope;
     this._forceDestroy = config.forceDestroy;
     this._globalMetastoreId = config.globalMetastoreId;
     this._id = config.id;
@@ -196,22 +196,6 @@ export class Metastore extends cdktf.TerraformResource {
     return this._defaultDataAccessConfigId;
   }
 
-  // delta_sharing_enabled - computed: false, optional: true, required: false
-  private _deltaSharingEnabled?: boolean | cdktf.IResolvable; 
-  public get deltaSharingEnabled() {
-    return this.getBooleanAttribute('delta_sharing_enabled');
-  }
-  public set deltaSharingEnabled(value: boolean | cdktf.IResolvable) {
-    this._deltaSharingEnabled = value;
-  }
-  public resetDeltaSharingEnabled() {
-    this._deltaSharingEnabled = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get deltaSharingEnabledInput() {
-    return this._deltaSharingEnabled;
-  }
-
   // delta_sharing_organization_name - computed: false, optional: true, required: false
   private _deltaSharingOrganizationName?: string; 
   public get deltaSharingOrganizationName() {
@@ -242,6 +226,22 @@ export class Metastore extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get deltaSharingRecipientTokenLifetimeInSecondsInput() {
     return this._deltaSharingRecipientTokenLifetimeInSeconds;
+  }
+
+  // delta_sharing_scope - computed: false, optional: true, required: false
+  private _deltaSharingScope?: string; 
+  public get deltaSharingScope() {
+    return this.getStringAttribute('delta_sharing_scope');
+  }
+  public set deltaSharingScope(value: string) {
+    this._deltaSharingScope = value;
+  }
+  public resetDeltaSharingScope() {
+    this._deltaSharingScope = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deltaSharingScopeInput() {
+    return this._deltaSharingScope;
   }
 
   // force_destroy - computed: false, optional: true, required: false
@@ -392,9 +392,9 @@ export class Metastore extends cdktf.TerraformResource {
       created_at: cdktf.numberToTerraform(this._createdAt),
       created_by: cdktf.stringToTerraform(this._createdBy),
       default_data_access_config_id: cdktf.stringToTerraform(this._defaultDataAccessConfigId),
-      delta_sharing_enabled: cdktf.booleanToTerraform(this._deltaSharingEnabled),
       delta_sharing_organization_name: cdktf.stringToTerraform(this._deltaSharingOrganizationName),
       delta_sharing_recipient_token_lifetime_in_seconds: cdktf.numberToTerraform(this._deltaSharingRecipientTokenLifetimeInSeconds),
+      delta_sharing_scope: cdktf.stringToTerraform(this._deltaSharingScope),
       force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
       global_metastore_id: cdktf.stringToTerraform(this._globalMetastoreId),
       id: cdktf.stringToTerraform(this._id),
