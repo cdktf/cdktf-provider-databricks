@@ -326,8 +326,8 @@ export class MlflowWebhook extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_mlflow_webhook',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '0.6.2',
-        providerVersionConstraint: '~> 0.5'
+        providerVersion: '1.1.0',
+        providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -45,7 +45,7 @@ export interface InstancePoolConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#node_type_id InstancePool#node_type_id}
   */
-  readonly nodeTypeId: string;
+  readonly nodeTypeId?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#preloaded_spark_versions InstancePool#preloaded_spark_versions}
   */
@@ -74,6 +74,12 @@ export interface InstancePoolConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#gcp_attributes InstancePool#gcp_attributes}
   */
   readonly gcpAttributes?: InstancePoolGcpAttributes;
+  /**
+  * instance_pool_fleet_attributes block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#instance_pool_fleet_attributes InstancePool#instance_pool_fleet_attributes}
+  */
+  readonly instancePoolFleetAttributes?: InstancePoolInstancePoolFleetAttributes;
   /**
   * preloaded_docker_image block
   * 
@@ -570,6 +576,424 @@ export class InstancePoolGcpAttributesOutputReference extends cdktf.ComplexObjec
     return this._availability;
   }
 }
+export interface InstancePoolInstancePoolFleetAttributesFleetOnDemandOption {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#allocation_strategy InstancePool#allocation_strategy}
+  */
+  readonly allocationStrategy: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#instance_pools_to_use_count InstancePool#instance_pools_to_use_count}
+  */
+  readonly instancePoolsToUseCount?: number;
+}
+
+export function instancePoolInstancePoolFleetAttributesFleetOnDemandOptionToTerraform(struct?: InstancePoolInstancePoolFleetAttributesFleetOnDemandOptionOutputReference | InstancePoolInstancePoolFleetAttributesFleetOnDemandOption): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    allocation_strategy: cdktf.stringToTerraform(struct!.allocationStrategy),
+    instance_pools_to_use_count: cdktf.numberToTerraform(struct!.instancePoolsToUseCount),
+  }
+}
+
+export class InstancePoolInstancePoolFleetAttributesFleetOnDemandOptionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): InstancePoolInstancePoolFleetAttributesFleetOnDemandOption | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allocationStrategy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allocationStrategy = this._allocationStrategy;
+    }
+    if (this._instancePoolsToUseCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instancePoolsToUseCount = this._instancePoolsToUseCount;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: InstancePoolInstancePoolFleetAttributesFleetOnDemandOption | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._allocationStrategy = undefined;
+      this._instancePoolsToUseCount = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._allocationStrategy = value.allocationStrategy;
+      this._instancePoolsToUseCount = value.instancePoolsToUseCount;
+    }
+  }
+
+  // allocation_strategy - computed: false, optional: false, required: true
+  private _allocationStrategy?: string; 
+  public get allocationStrategy() {
+    return this.getStringAttribute('allocation_strategy');
+  }
+  public set allocationStrategy(value: string) {
+    this._allocationStrategy = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allocationStrategyInput() {
+    return this._allocationStrategy;
+  }
+
+  // instance_pools_to_use_count - computed: false, optional: true, required: false
+  private _instancePoolsToUseCount?: number; 
+  public get instancePoolsToUseCount() {
+    return this.getNumberAttribute('instance_pools_to_use_count');
+  }
+  public set instancePoolsToUseCount(value: number) {
+    this._instancePoolsToUseCount = value;
+  }
+  public resetInstancePoolsToUseCount() {
+    this._instancePoolsToUseCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instancePoolsToUseCountInput() {
+    return this._instancePoolsToUseCount;
+  }
+}
+export interface InstancePoolInstancePoolFleetAttributesFleetSpotOption {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#allocation_strategy InstancePool#allocation_strategy}
+  */
+  readonly allocationStrategy: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#instance_pools_to_use_count InstancePool#instance_pools_to_use_count}
+  */
+  readonly instancePoolsToUseCount?: number;
+}
+
+export function instancePoolInstancePoolFleetAttributesFleetSpotOptionToTerraform(struct?: InstancePoolInstancePoolFleetAttributesFleetSpotOptionOutputReference | InstancePoolInstancePoolFleetAttributesFleetSpotOption): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    allocation_strategy: cdktf.stringToTerraform(struct!.allocationStrategy),
+    instance_pools_to_use_count: cdktf.numberToTerraform(struct!.instancePoolsToUseCount),
+  }
+}
+
+export class InstancePoolInstancePoolFleetAttributesFleetSpotOptionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): InstancePoolInstancePoolFleetAttributesFleetSpotOption | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allocationStrategy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allocationStrategy = this._allocationStrategy;
+    }
+    if (this._instancePoolsToUseCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instancePoolsToUseCount = this._instancePoolsToUseCount;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: InstancePoolInstancePoolFleetAttributesFleetSpotOption | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._allocationStrategy = undefined;
+      this._instancePoolsToUseCount = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._allocationStrategy = value.allocationStrategy;
+      this._instancePoolsToUseCount = value.instancePoolsToUseCount;
+    }
+  }
+
+  // allocation_strategy - computed: false, optional: false, required: true
+  private _allocationStrategy?: string; 
+  public get allocationStrategy() {
+    return this.getStringAttribute('allocation_strategy');
+  }
+  public set allocationStrategy(value: string) {
+    this._allocationStrategy = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allocationStrategyInput() {
+    return this._allocationStrategy;
+  }
+
+  // instance_pools_to_use_count - computed: false, optional: true, required: false
+  private _instancePoolsToUseCount?: number; 
+  public get instancePoolsToUseCount() {
+    return this.getNumberAttribute('instance_pools_to_use_count');
+  }
+  public set instancePoolsToUseCount(value: number) {
+    this._instancePoolsToUseCount = value;
+  }
+  public resetInstancePoolsToUseCount() {
+    this._instancePoolsToUseCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instancePoolsToUseCountInput() {
+    return this._instancePoolsToUseCount;
+  }
+}
+export interface InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#availability_zone InstancePool#availability_zone}
+  */
+  readonly availabilityZone: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#instance_type InstancePool#instance_type}
+  */
+  readonly instanceType: string;
+}
+
+export function instancePoolInstancePoolFleetAttributesLaunchTemplateOverrideToTerraform(struct?: InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    availability_zone: cdktf.stringToTerraform(struct!.availabilityZone),
+    instance_type: cdktf.stringToTerraform(struct!.instanceType),
+  }
+}
+
+export class InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._availabilityZone !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.availabilityZone = this._availabilityZone;
+    }
+    if (this._instanceType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instanceType = this._instanceType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._availabilityZone = undefined;
+      this._instanceType = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._availabilityZone = value.availabilityZone;
+      this._instanceType = value.instanceType;
+    }
+  }
+
+  // availability_zone - computed: false, optional: false, required: true
+  private _availabilityZone?: string; 
+  public get availabilityZone() {
+    return this.getStringAttribute('availability_zone');
+  }
+  public set availabilityZone(value: string) {
+    this._availabilityZone = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZoneInput() {
+    return this._availabilityZone;
+  }
+
+  // instance_type - computed: false, optional: false, required: true
+  private _instanceType?: string; 
+  public get instanceType() {
+    return this.getStringAttribute('instance_type');
+  }
+  public set instanceType(value: string) {
+    this._instanceType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceTypeInput() {
+    return this._instanceType;
+  }
+}
+
+export class InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideList extends cdktf.ComplexList {
+  public internalValue? : InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference {
+    return new InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface InstancePoolInstancePoolFleetAttributes {
+  /**
+  * fleet_on_demand_option block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#fleet_on_demand_option InstancePool#fleet_on_demand_option}
+  */
+  readonly fleetOnDemandOption?: InstancePoolInstancePoolFleetAttributesFleetOnDemandOption;
+  /**
+  * fleet_spot_option block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#fleet_spot_option InstancePool#fleet_spot_option}
+  */
+  readonly fleetSpotOption?: InstancePoolInstancePoolFleetAttributesFleetSpotOption;
+  /**
+  * launch_template_override block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#launch_template_override InstancePool#launch_template_override}
+  */
+  readonly launchTemplateOverride: InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride[] | cdktf.IResolvable;
+}
+
+export function instancePoolInstancePoolFleetAttributesToTerraform(struct?: InstancePoolInstancePoolFleetAttributesOutputReference | InstancePoolInstancePoolFleetAttributes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    fleet_on_demand_option: instancePoolInstancePoolFleetAttributesFleetOnDemandOptionToTerraform(struct!.fleetOnDemandOption),
+    fleet_spot_option: instancePoolInstancePoolFleetAttributesFleetSpotOptionToTerraform(struct!.fleetSpotOption),
+    launch_template_override: cdktf.listMapper(instancePoolInstancePoolFleetAttributesLaunchTemplateOverrideToTerraform)(struct!.launchTemplateOverride),
+  }
+}
+
+export class InstancePoolInstancePoolFleetAttributesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): InstancePoolInstancePoolFleetAttributes | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._fleetOnDemandOption?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fleetOnDemandOption = this._fleetOnDemandOption?.internalValue;
+    }
+    if (this._fleetSpotOption?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fleetSpotOption = this._fleetSpotOption?.internalValue;
+    }
+    if (this._launchTemplateOverride?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.launchTemplateOverride = this._launchTemplateOverride?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: InstancePoolInstancePoolFleetAttributes | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._fleetOnDemandOption.internalValue = undefined;
+      this._fleetSpotOption.internalValue = undefined;
+      this._launchTemplateOverride.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._fleetOnDemandOption.internalValue = value.fleetOnDemandOption;
+      this._fleetSpotOption.internalValue = value.fleetSpotOption;
+      this._launchTemplateOverride.internalValue = value.launchTemplateOverride;
+    }
+  }
+
+  // fleet_on_demand_option - computed: false, optional: true, required: false
+  private _fleetOnDemandOption = new InstancePoolInstancePoolFleetAttributesFleetOnDemandOptionOutputReference(this, "fleet_on_demand_option");
+  public get fleetOnDemandOption() {
+    return this._fleetOnDemandOption;
+  }
+  public putFleetOnDemandOption(value: InstancePoolInstancePoolFleetAttributesFleetOnDemandOption) {
+    this._fleetOnDemandOption.internalValue = value;
+  }
+  public resetFleetOnDemandOption() {
+    this._fleetOnDemandOption.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fleetOnDemandOptionInput() {
+    return this._fleetOnDemandOption.internalValue;
+  }
+
+  // fleet_spot_option - computed: false, optional: true, required: false
+  private _fleetSpotOption = new InstancePoolInstancePoolFleetAttributesFleetSpotOptionOutputReference(this, "fleet_spot_option");
+  public get fleetSpotOption() {
+    return this._fleetSpotOption;
+  }
+  public putFleetSpotOption(value: InstancePoolInstancePoolFleetAttributesFleetSpotOption) {
+    this._fleetSpotOption.internalValue = value;
+  }
+  public resetFleetSpotOption() {
+    this._fleetSpotOption.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fleetSpotOptionInput() {
+    return this._fleetSpotOption.internalValue;
+  }
+
+  // launch_template_override - computed: false, optional: false, required: true
+  private _launchTemplateOverride = new InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideList(this, "launch_template_override", true);
+  public get launchTemplateOverride() {
+    return this._launchTemplateOverride;
+  }
+  public putLaunchTemplateOverride(value: InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride[] | cdktf.IResolvable) {
+    this._launchTemplateOverride.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get launchTemplateOverrideInput() {
+    return this._launchTemplateOverride.internalValue;
+  }
+}
 export interface InstancePoolPreloadedDockerImageBasicAuth {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#password InstancePool#password}
@@ -806,8 +1230,8 @@ export class InstancePool extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_instance_pool',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '0.6.2',
-        providerVersionConstraint: '~> 0.5'
+        providerVersion: '1.1.0',
+        providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -828,6 +1252,7 @@ export class InstancePool extends cdktf.TerraformResource {
     this._azureAttributes.internalValue = config.azureAttributes;
     this._diskSpec.internalValue = config.diskSpec;
     this._gcpAttributes.internalValue = config.gcpAttributes;
+    this._instancePoolFleetAttributes.internalValue = config.instancePoolFleetAttributes;
     this._preloadedDockerImage.internalValue = config.preloadedDockerImage;
   }
 
@@ -957,13 +1382,16 @@ export class InstancePool extends cdktf.TerraformResource {
     return this._minIdleInstances;
   }
 
-  // node_type_id - computed: false, optional: false, required: true
+  // node_type_id - computed: false, optional: true, required: false
   private _nodeTypeId?: string; 
   public get nodeTypeId() {
     return this.getStringAttribute('node_type_id');
   }
   public set nodeTypeId(value: string) {
     this._nodeTypeId = value;
+  }
+  public resetNodeTypeId() {
+    this._nodeTypeId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get nodeTypeIdInput() {
@@ -1050,6 +1478,22 @@ export class InstancePool extends cdktf.TerraformResource {
     return this._gcpAttributes.internalValue;
   }
 
+  // instance_pool_fleet_attributes - computed: false, optional: true, required: false
+  private _instancePoolFleetAttributes = new InstancePoolInstancePoolFleetAttributesOutputReference(this, "instance_pool_fleet_attributes");
+  public get instancePoolFleetAttributes() {
+    return this._instancePoolFleetAttributes;
+  }
+  public putInstancePoolFleetAttributes(value: InstancePoolInstancePoolFleetAttributes) {
+    this._instancePoolFleetAttributes.internalValue = value;
+  }
+  public resetInstancePoolFleetAttributes() {
+    this._instancePoolFleetAttributes.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instancePoolFleetAttributesInput() {
+    return this._instancePoolFleetAttributes.internalValue;
+  }
+
   // preloaded_docker_image - computed: false, optional: true, required: false
   private _preloadedDockerImage = new InstancePoolPreloadedDockerImageList(this, "preloaded_docker_image", true);
   public get preloadedDockerImage() {
@@ -1086,6 +1530,7 @@ export class InstancePool extends cdktf.TerraformResource {
       azure_attributes: instancePoolAzureAttributesToTerraform(this._azureAttributes.internalValue),
       disk_spec: instancePoolDiskSpecToTerraform(this._diskSpec.internalValue),
       gcp_attributes: instancePoolGcpAttributesToTerraform(this._gcpAttributes.internalValue),
+      instance_pool_fleet_attributes: instancePoolInstancePoolFleetAttributesToTerraform(this._instancePoolFleetAttributes.internalValue),
       preloaded_docker_image: cdktf.listMapper(instancePoolPreloadedDockerImageToTerraform)(this._preloadedDockerImage.internalValue),
     };
   }

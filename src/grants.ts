@@ -23,6 +23,10 @@ export interface GrantsConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/grants#metastore Grants#metastore}
+  */
+  readonly metastore?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/grants#schema Grants#schema}
   */
   readonly schema?: string;
@@ -190,8 +194,8 @@ export class Grants extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_grants',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '0.6.2',
-        providerVersionConstraint: '~> 0.5'
+        providerVersion: '1.1.0',
+        providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -201,6 +205,7 @@ export class Grants extends cdktf.TerraformResource {
     this._catalog = config.catalog;
     this._externalLocation = config.externalLocation;
     this._id = config.id;
+    this._metastore = config.metastore;
     this._schema = config.schema;
     this._storageCredential = config.storageCredential;
     this._table = config.table;
@@ -258,6 +263,22 @@ export class Grants extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // metastore - computed: false, optional: true, required: false
+  private _metastore?: string; 
+  public get metastore() {
+    return this.getStringAttribute('metastore');
+  }
+  public set metastore(value: string) {
+    this._metastore = value;
+  }
+  public resetMetastore() {
+    this._metastore = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metastoreInput() {
+    return this._metastore;
   }
 
   // schema - computed: false, optional: true, required: false
@@ -346,6 +367,7 @@ export class Grants extends cdktf.TerraformResource {
       catalog: cdktf.stringToTerraform(this._catalog),
       external_location: cdktf.stringToTerraform(this._externalLocation),
       id: cdktf.stringToTerraform(this._id),
+      metastore: cdktf.stringToTerraform(this._metastore),
       schema: cdktf.stringToTerraform(this._schema),
       storage_credential: cdktf.stringToTerraform(this._storageCredential),
       table: cdktf.stringToTerraform(this._table),
