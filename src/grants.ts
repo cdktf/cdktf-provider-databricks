@@ -194,7 +194,7 @@ export class Grants extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_grants',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.1.0',
+        providerVersion: '1.2.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
