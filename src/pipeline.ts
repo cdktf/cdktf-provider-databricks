@@ -2378,7 +2378,7 @@ export class Pipeline extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_pipeline',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.1.0',
+        providerVersion: '1.2.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -2592,7 +2592,7 @@ export class Pipeline extends cdktf.TerraformResource {
   }
 
   // cluster - computed: false, optional: true, required: false
-  private _cluster = new PipelineClusterList(this, "cluster", true);
+  private _cluster = new PipelineClusterList(this, "cluster", false);
   public get cluster() {
     return this._cluster;
   }
