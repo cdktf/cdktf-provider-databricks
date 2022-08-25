@@ -16,6 +16,10 @@ export interface GrantsConfig extends cdktf.TerraformMetaArguments {
   */
   readonly externalLocation?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/grants#function Grants#function}
+  */
+  readonly function?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/grants#id Grants#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -194,7 +198,7 @@ export class Grants extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_grants',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.2.0',
+        providerVersion: '1.2.1',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -207,6 +211,7 @@ export class Grants extends cdktf.TerraformResource {
     });
     this._catalog = config.catalog;
     this._externalLocation = config.externalLocation;
+    this._function = config.function;
     this._id = config.id;
     this._metastore = config.metastore;
     this._schema = config.schema;
@@ -250,6 +255,22 @@ export class Grants extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get externalLocationInput() {
     return this._externalLocation;
+  }
+
+  // function - computed: false, optional: true, required: false
+  private _function?: string; 
+  public get function() {
+    return this.getStringAttribute('function');
+  }
+  public set function(value: string) {
+    this._function = value;
+  }
+  public resetFunction() {
+    this._function = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get functionInput() {
+    return this._function;
   }
 
   // id - computed: true, optional: true, required: false
@@ -369,6 +390,7 @@ export class Grants extends cdktf.TerraformResource {
     return {
       catalog: cdktf.stringToTerraform(this._catalog),
       external_location: cdktf.stringToTerraform(this._externalLocation),
+      function: cdktf.stringToTerraform(this._function),
       id: cdktf.stringToTerraform(this._id),
       metastore: cdktf.stringToTerraform(this._metastore),
       schema: cdktf.stringToTerraform(this._schema),
