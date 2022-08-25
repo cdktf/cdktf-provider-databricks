@@ -2439,6 +2439,10 @@ export class JobJobClusterNewClusterWorkloadTypeOutputReference extends cdktf.Co
 }
 export interface JobJobClusterNewCluster {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#apply_policy_default_values Job#apply_policy_default_values}
+  */
+  readonly applyPolicyDefaultValues?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#autotermination_minutes Job#autotermination_minutes}
   */
   readonly autoterminationMinutes?: number;
@@ -2570,6 +2574,7 @@ export function jobJobClusterNewClusterToTerraform(struct?: JobJobClusterNewClus
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    apply_policy_default_values: cdktf.booleanToTerraform(struct!.applyPolicyDefaultValues),
     autotermination_minutes: cdktf.numberToTerraform(struct!.autoterminationMinutes),
     cluster_id: cdktf.stringToTerraform(struct!.clusterId),
     cluster_name: cdktf.stringToTerraform(struct!.clusterName),
@@ -2614,6 +2619,10 @@ export class JobJobClusterNewClusterOutputReference extends cdktf.ComplexObject 
   public get internalValue(): JobJobClusterNewCluster | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._applyPolicyDefaultValues !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.applyPolicyDefaultValues = this._applyPolicyDefaultValues;
+    }
     if (this._autoterminationMinutes !== undefined) {
       hasAnyValues = true;
       internalValueResult.autoterminationMinutes = this._autoterminationMinutes;
@@ -2728,6 +2737,7 @@ export class JobJobClusterNewClusterOutputReference extends cdktf.ComplexObject 
   public set internalValue(value: JobJobClusterNewCluster | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._applyPolicyDefaultValues = undefined;
       this._autoterminationMinutes = undefined;
       this._clusterId = undefined;
       this._clusterName = undefined;
@@ -2758,6 +2768,7 @@ export class JobJobClusterNewClusterOutputReference extends cdktf.ComplexObject 
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._applyPolicyDefaultValues = value.applyPolicyDefaultValues;
       this._autoterminationMinutes = value.autoterminationMinutes;
       this._clusterId = value.clusterId;
       this._clusterName = value.clusterName;
@@ -2786,6 +2797,22 @@ export class JobJobClusterNewClusterOutputReference extends cdktf.ComplexObject 
       this._initScripts.internalValue = value.initScripts;
       this._workloadType.internalValue = value.workloadType;
     }
+  }
+
+  // apply_policy_default_values - computed: false, optional: true, required: false
+  private _applyPolicyDefaultValues?: boolean | cdktf.IResolvable; 
+  public get applyPolicyDefaultValues() {
+    return this.getBooleanAttribute('apply_policy_default_values');
+  }
+  public set applyPolicyDefaultValues(value: boolean | cdktf.IResolvable) {
+    this._applyPolicyDefaultValues = value;
+  }
+  public resetApplyPolicyDefaultValues() {
+    this._applyPolicyDefaultValues = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applyPolicyDefaultValuesInput() {
+    return this._applyPolicyDefaultValues;
   }
 
   // autotermination_minutes - computed: false, optional: true, required: false
@@ -5832,6 +5859,10 @@ export class JobNewClusterWorkloadTypeOutputReference extends cdktf.ComplexObjec
 }
 export interface JobNewCluster {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#apply_policy_default_values Job#apply_policy_default_values}
+  */
+  readonly applyPolicyDefaultValues?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#autotermination_minutes Job#autotermination_minutes}
   */
   readonly autoterminationMinutes?: number;
@@ -5963,6 +5994,7 @@ export function jobNewClusterToTerraform(struct?: JobNewClusterOutputReference |
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    apply_policy_default_values: cdktf.booleanToTerraform(struct!.applyPolicyDefaultValues),
     autotermination_minutes: cdktf.numberToTerraform(struct!.autoterminationMinutes),
     cluster_id: cdktf.stringToTerraform(struct!.clusterId),
     cluster_name: cdktf.stringToTerraform(struct!.clusterName),
@@ -6007,6 +6039,10 @@ export class JobNewClusterOutputReference extends cdktf.ComplexObject {
   public get internalValue(): JobNewCluster | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._applyPolicyDefaultValues !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.applyPolicyDefaultValues = this._applyPolicyDefaultValues;
+    }
     if (this._autoterminationMinutes !== undefined) {
       hasAnyValues = true;
       internalValueResult.autoterminationMinutes = this._autoterminationMinutes;
@@ -6121,6 +6157,7 @@ export class JobNewClusterOutputReference extends cdktf.ComplexObject {
   public set internalValue(value: JobNewCluster | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._applyPolicyDefaultValues = undefined;
       this._autoterminationMinutes = undefined;
       this._clusterId = undefined;
       this._clusterName = undefined;
@@ -6151,6 +6188,7 @@ export class JobNewClusterOutputReference extends cdktf.ComplexObject {
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._applyPolicyDefaultValues = value.applyPolicyDefaultValues;
       this._autoterminationMinutes = value.autoterminationMinutes;
       this._clusterId = value.clusterId;
       this._clusterName = value.clusterName;
@@ -6179,6 +6217,22 @@ export class JobNewClusterOutputReference extends cdktf.ComplexObject {
       this._initScripts.internalValue = value.initScripts;
       this._workloadType.internalValue = value.workloadType;
     }
+  }
+
+  // apply_policy_default_values - computed: false, optional: true, required: false
+  private _applyPolicyDefaultValues?: boolean | cdktf.IResolvable; 
+  public get applyPolicyDefaultValues() {
+    return this.getBooleanAttribute('apply_policy_default_values');
+  }
+  public set applyPolicyDefaultValues(value: boolean | cdktf.IResolvable) {
+    this._applyPolicyDefaultValues = value;
+  }
+  public resetApplyPolicyDefaultValues() {
+    this._applyPolicyDefaultValues = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applyPolicyDefaultValuesInput() {
+    return this._applyPolicyDefaultValues;
   }
 
   // autotermination_minutes - computed: false, optional: true, required: false
@@ -10168,6 +10222,10 @@ export class JobTaskNewClusterWorkloadTypeOutputReference extends cdktf.ComplexO
 }
 export interface JobTaskNewCluster {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#apply_policy_default_values Job#apply_policy_default_values}
+  */
+  readonly applyPolicyDefaultValues?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#autotermination_minutes Job#autotermination_minutes}
   */
   readonly autoterminationMinutes?: number;
@@ -10299,6 +10357,7 @@ export function jobTaskNewClusterToTerraform(struct?: JobTaskNewClusterOutputRef
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    apply_policy_default_values: cdktf.booleanToTerraform(struct!.applyPolicyDefaultValues),
     autotermination_minutes: cdktf.numberToTerraform(struct!.autoterminationMinutes),
     cluster_id: cdktf.stringToTerraform(struct!.clusterId),
     cluster_name: cdktf.stringToTerraform(struct!.clusterName),
@@ -10343,6 +10402,10 @@ export class JobTaskNewClusterOutputReference extends cdktf.ComplexObject {
   public get internalValue(): JobTaskNewCluster | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._applyPolicyDefaultValues !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.applyPolicyDefaultValues = this._applyPolicyDefaultValues;
+    }
     if (this._autoterminationMinutes !== undefined) {
       hasAnyValues = true;
       internalValueResult.autoterminationMinutes = this._autoterminationMinutes;
@@ -10457,6 +10520,7 @@ export class JobTaskNewClusterOutputReference extends cdktf.ComplexObject {
   public set internalValue(value: JobTaskNewCluster | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._applyPolicyDefaultValues = undefined;
       this._autoterminationMinutes = undefined;
       this._clusterId = undefined;
       this._clusterName = undefined;
@@ -10487,6 +10551,7 @@ export class JobTaskNewClusterOutputReference extends cdktf.ComplexObject {
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._applyPolicyDefaultValues = value.applyPolicyDefaultValues;
       this._autoterminationMinutes = value.autoterminationMinutes;
       this._clusterId = value.clusterId;
       this._clusterName = value.clusterName;
@@ -10515,6 +10580,22 @@ export class JobTaskNewClusterOutputReference extends cdktf.ComplexObject {
       this._initScripts.internalValue = value.initScripts;
       this._workloadType.internalValue = value.workloadType;
     }
+  }
+
+  // apply_policy_default_values - computed: false, optional: true, required: false
+  private _applyPolicyDefaultValues?: boolean | cdktf.IResolvable; 
+  public get applyPolicyDefaultValues() {
+    return this.getBooleanAttribute('apply_policy_default_values');
+  }
+  public set applyPolicyDefaultValues(value: boolean | cdktf.IResolvable) {
+    this._applyPolicyDefaultValues = value;
+  }
+  public resetApplyPolicyDefaultValues() {
+    this._applyPolicyDefaultValues = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applyPolicyDefaultValuesInput() {
+    return this._applyPolicyDefaultValues;
   }
 
   // autotermination_minutes - computed: false, optional: true, required: false
@@ -12644,7 +12725,7 @@ export class Job extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_job',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.2.0',
+        providerVersion: '1.2.1',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

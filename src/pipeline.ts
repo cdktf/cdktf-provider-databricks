@@ -1341,6 +1341,10 @@ export class PipelineClusterInitScriptsList extends cdktf.ComplexList {
 }
 export interface PipelineCluster {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#apply_policy_default_values Pipeline#apply_policy_default_values}
+  */
+  readonly applyPolicyDefaultValues?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#custom_tags Pipeline#custom_tags}
   */
   readonly customTags?: { [key: string]: string };
@@ -1368,6 +1372,10 @@ export interface PipelineCluster {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#num_workers Pipeline#num_workers}
   */
   readonly numWorkers?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#policy_id Pipeline#policy_id}
+  */
+  readonly policyId?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#spark_conf Pipeline#spark_conf}
   */
@@ -1418,6 +1426,7 @@ export function pipelineClusterToTerraform(struct?: PipelineCluster | cdktf.IRes
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    apply_policy_default_values: cdktf.booleanToTerraform(struct!.applyPolicyDefaultValues),
     custom_tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.customTags),
     driver_instance_pool_id: cdktf.stringToTerraform(struct!.driverInstancePoolId),
     driver_node_type_id: cdktf.stringToTerraform(struct!.driverNodeTypeId),
@@ -1425,6 +1434,7 @@ export function pipelineClusterToTerraform(struct?: PipelineCluster | cdktf.IRes
     label: cdktf.stringToTerraform(struct!.label),
     node_type_id: cdktf.stringToTerraform(struct!.nodeTypeId),
     num_workers: cdktf.numberToTerraform(struct!.numWorkers),
+    policy_id: cdktf.stringToTerraform(struct!.policyId),
     spark_conf: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sparkConf),
     spark_env_vars: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sparkEnvVars),
     ssh_public_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sshPublicKeys),
@@ -1456,6 +1466,10 @@ export class PipelineClusterOutputReference extends cdktf.ComplexObject {
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._applyPolicyDefaultValues !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.applyPolicyDefaultValues = this._applyPolicyDefaultValues;
+    }
     if (this._customTags !== undefined) {
       hasAnyValues = true;
       internalValueResult.customTags = this._customTags;
@@ -1483,6 +1497,10 @@ export class PipelineClusterOutputReference extends cdktf.ComplexObject {
     if (this._numWorkers !== undefined) {
       hasAnyValues = true;
       internalValueResult.numWorkers = this._numWorkers;
+    }
+    if (this._policyId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.policyId = this._policyId;
     }
     if (this._sparkConf !== undefined) {
       hasAnyValues = true;
@@ -1523,6 +1541,7 @@ export class PipelineClusterOutputReference extends cdktf.ComplexObject {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._applyPolicyDefaultValues = undefined;
       this._customTags = undefined;
       this._driverInstancePoolId = undefined;
       this._driverNodeTypeId = undefined;
@@ -1530,6 +1549,7 @@ export class PipelineClusterOutputReference extends cdktf.ComplexObject {
       this._label = undefined;
       this._nodeTypeId = undefined;
       this._numWorkers = undefined;
+      this._policyId = undefined;
       this._sparkConf = undefined;
       this._sparkEnvVars = undefined;
       this._sshPublicKeys = undefined;
@@ -1546,6 +1566,7 @@ export class PipelineClusterOutputReference extends cdktf.ComplexObject {
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._applyPolicyDefaultValues = value.applyPolicyDefaultValues;
       this._customTags = value.customTags;
       this._driverInstancePoolId = value.driverInstancePoolId;
       this._driverNodeTypeId = value.driverNodeTypeId;
@@ -1553,6 +1574,7 @@ export class PipelineClusterOutputReference extends cdktf.ComplexObject {
       this._label = value.label;
       this._nodeTypeId = value.nodeTypeId;
       this._numWorkers = value.numWorkers;
+      this._policyId = value.policyId;
       this._sparkConf = value.sparkConf;
       this._sparkEnvVars = value.sparkEnvVars;
       this._sshPublicKeys = value.sshPublicKeys;
@@ -1562,6 +1584,22 @@ export class PipelineClusterOutputReference extends cdktf.ComplexObject {
       this._gcpAttributes.internalValue = value.gcpAttributes;
       this._initScripts.internalValue = value.initScripts;
     }
+  }
+
+  // apply_policy_default_values - computed: false, optional: true, required: false
+  private _applyPolicyDefaultValues?: boolean | cdktf.IResolvable; 
+  public get applyPolicyDefaultValues() {
+    return this.getBooleanAttribute('apply_policy_default_values');
+  }
+  public set applyPolicyDefaultValues(value: boolean | cdktf.IResolvable) {
+    this._applyPolicyDefaultValues = value;
+  }
+  public resetApplyPolicyDefaultValues() {
+    this._applyPolicyDefaultValues = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applyPolicyDefaultValuesInput() {
+    return this._applyPolicyDefaultValues;
   }
 
   // custom_tags - computed: false, optional: true, required: false
@@ -1674,6 +1712,22 @@ export class PipelineClusterOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get numWorkersInput() {
     return this._numWorkers;
+  }
+
+  // policy_id - computed: false, optional: true, required: false
+  private _policyId?: string; 
+  public get policyId() {
+    return this.getStringAttribute('policy_id');
+  }
+  public set policyId(value: string) {
+    this._policyId = value;
+  }
+  public resetPolicyId() {
+    this._policyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyIdInput() {
+    return this._policyId;
   }
 
   // spark_conf - computed: false, optional: true, required: false
@@ -2378,7 +2432,7 @@ export class Pipeline extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_pipeline',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.2.0',
+        providerVersion: '1.2.1',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

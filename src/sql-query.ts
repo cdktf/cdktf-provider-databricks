@@ -1959,7 +1959,7 @@ export class SqlQuery extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_sql_query',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.2.0',
+        providerVersion: '1.2.1',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

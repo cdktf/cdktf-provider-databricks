@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 
 export interface ClusterConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#apply_policy_default_values Cluster#apply_policy_default_values}
+  */
+  readonly applyPolicyDefaultValues?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#autotermination_minutes Cluster#autotermination_minutes}
   */
   readonly autoterminationMinutes?: number;
@@ -2798,7 +2802,7 @@ export class Cluster extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_cluster',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.2.0',
+        providerVersion: '1.2.1',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -2809,6 +2813,7 @@ export class Cluster extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._applyPolicyDefaultValues = config.applyPolicyDefaultValues;
     this._autoterminationMinutes = config.autoterminationMinutes;
     this._clusterId = config.clusterId;
     this._clusterName = config.clusterName;
@@ -2845,6 +2850,22 @@ export class Cluster extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // apply_policy_default_values - computed: false, optional: true, required: false
+  private _applyPolicyDefaultValues?: boolean | cdktf.IResolvable; 
+  public get applyPolicyDefaultValues() {
+    return this.getBooleanAttribute('apply_policy_default_values');
+  }
+  public set applyPolicyDefaultValues(value: boolean | cdktf.IResolvable) {
+    this._applyPolicyDefaultValues = value;
+  }
+  public resetApplyPolicyDefaultValues() {
+    this._applyPolicyDefaultValues = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applyPolicyDefaultValuesInput() {
+    return this._applyPolicyDefaultValues;
+  }
 
   // autotermination_minutes - computed: false, optional: true, required: false
   private _autoterminationMinutes?: number; 
@@ -3361,6 +3382,7 @@ export class Cluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      apply_policy_default_values: cdktf.booleanToTerraform(this._applyPolicyDefaultValues),
       autotermination_minutes: cdktf.numberToTerraform(this._autoterminationMinutes),
       cluster_id: cdktf.stringToTerraform(this._clusterId),
       cluster_name: cdktf.stringToTerraform(this._clusterName),
