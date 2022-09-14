@@ -16,6 +16,10 @@ export interface SchemaConfig extends cdktf.TerraformMetaArguments {
   */
   readonly comment?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/schema#force_destroy Schema#force_destroy}
+  */
+  readonly forceDestroy?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/schema#id Schema#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -66,7 +70,7 @@ export class Schema extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_schema',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.2.1',
+        providerVersion: '1.3.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -79,6 +83,7 @@ export class Schema extends cdktf.TerraformResource {
     });
     this._catalogName = config.catalogName;
     this._comment = config.comment;
+    this._forceDestroy = config.forceDestroy;
     this._id = config.id;
     this._metastoreId = config.metastoreId;
     this._name = config.name;
@@ -117,6 +122,22 @@ export class Schema extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get commentInput() {
     return this._comment;
+  }
+
+  // force_destroy - computed: false, optional: true, required: false
+  private _forceDestroy?: boolean | cdktf.IResolvable; 
+  public get forceDestroy() {
+    return this.getBooleanAttribute('force_destroy');
+  }
+  public set forceDestroy(value: boolean | cdktf.IResolvable) {
+    this._forceDestroy = value;
+  }
+  public resetForceDestroy() {
+    this._forceDestroy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceDestroyInput() {
+    return this._forceDestroy;
   }
 
   // id - computed: true, optional: true, required: false
@@ -204,6 +225,7 @@ export class Schema extends cdktf.TerraformResource {
     return {
       catalog_name: cdktf.stringToTerraform(this._catalogName),
       comment: cdktf.stringToTerraform(this._comment),
+      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
       id: cdktf.stringToTerraform(this._id),
       metastore_id: cdktf.stringToTerraform(this._metastoreId),
       name: cdktf.stringToTerraform(this._name),

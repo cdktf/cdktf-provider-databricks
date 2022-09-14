@@ -12,6 +12,10 @@ export interface CatalogConfig extends cdktf.TerraformMetaArguments {
   */
   readonly comment?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/catalog#force_destroy Catalog#force_destroy}
+  */
+  readonly forceDestroy?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/catalog#id Catalog#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -62,7 +66,7 @@ export class Catalog extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_catalog',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.2.1',
+        providerVersion: '1.3.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -74,6 +78,7 @@ export class Catalog extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._comment = config.comment;
+    this._forceDestroy = config.forceDestroy;
     this._id = config.id;
     this._metastoreId = config.metastoreId;
     this._name = config.name;
@@ -99,6 +104,22 @@ export class Catalog extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get commentInput() {
     return this._comment;
+  }
+
+  // force_destroy - computed: false, optional: true, required: false
+  private _forceDestroy?: boolean | cdktf.IResolvable; 
+  public get forceDestroy() {
+    return this.getBooleanAttribute('force_destroy');
+  }
+  public set forceDestroy(value: boolean | cdktf.IResolvable) {
+    this._forceDestroy = value;
+  }
+  public resetForceDestroy() {
+    this._forceDestroy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceDestroyInput() {
+    return this._forceDestroy;
   }
 
   // id - computed: true, optional: true, required: false
@@ -185,6 +206,7 @@ export class Catalog extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       comment: cdktf.stringToTerraform(this._comment),
+      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
       id: cdktf.stringToTerraform(this._id),
       metastore_id: cdktf.stringToTerraform(this._metastoreId),
       name: cdktf.stringToTerraform(this._name),
