@@ -55,6 +55,12 @@ export interface JobConfig extends cdktf.TerraformMetaArguments {
   */
   readonly timeoutSeconds?: number;
   /**
+  * dbt_task block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#dbt_task Job#dbt_task}
+  */
+  readonly dbtTask?: JobDbtTask;
+  /**
   * email_notifications block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#email_notifications Job#email_notifications}
@@ -138,6 +144,176 @@ export interface JobConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#timeouts Job#timeouts}
   */
   readonly timeouts?: JobTimeouts;
+}
+export interface JobDbtTask {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#commands Job#commands}
+  */
+  readonly commands: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#profiles_directory Job#profiles_directory}
+  */
+  readonly profilesDirectory?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#project_directory Job#project_directory}
+  */
+  readonly projectDirectory?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#schema Job#schema}
+  */
+  readonly schema?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#warehouse_id Job#warehouse_id}
+  */
+  readonly warehouseId?: string;
+}
+
+export function jobDbtTaskToTerraform(struct?: JobDbtTaskOutputReference | JobDbtTask): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    commands: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.commands),
+    profiles_directory: cdktf.stringToTerraform(struct!.profilesDirectory),
+    project_directory: cdktf.stringToTerraform(struct!.projectDirectory),
+    schema: cdktf.stringToTerraform(struct!.schema),
+    warehouse_id: cdktf.stringToTerraform(struct!.warehouseId),
+  }
+}
+
+export class JobDbtTaskOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): JobDbtTask | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._commands !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.commands = this._commands;
+    }
+    if (this._profilesDirectory !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.profilesDirectory = this._profilesDirectory;
+    }
+    if (this._projectDirectory !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.projectDirectory = this._projectDirectory;
+    }
+    if (this._schema !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.schema = this._schema;
+    }
+    if (this._warehouseId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.warehouseId = this._warehouseId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: JobDbtTask | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._commands = undefined;
+      this._profilesDirectory = undefined;
+      this._projectDirectory = undefined;
+      this._schema = undefined;
+      this._warehouseId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._commands = value.commands;
+      this._profilesDirectory = value.profilesDirectory;
+      this._projectDirectory = value.projectDirectory;
+      this._schema = value.schema;
+      this._warehouseId = value.warehouseId;
+    }
+  }
+
+  // commands - computed: false, optional: false, required: true
+  private _commands?: string[]; 
+  public get commands() {
+    return this.getListAttribute('commands');
+  }
+  public set commands(value: string[]) {
+    this._commands = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commandsInput() {
+    return this._commands;
+  }
+
+  // profiles_directory - computed: false, optional: true, required: false
+  private _profilesDirectory?: string; 
+  public get profilesDirectory() {
+    return this.getStringAttribute('profiles_directory');
+  }
+  public set profilesDirectory(value: string) {
+    this._profilesDirectory = value;
+  }
+  public resetProfilesDirectory() {
+    this._profilesDirectory = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get profilesDirectoryInput() {
+    return this._profilesDirectory;
+  }
+
+  // project_directory - computed: false, optional: true, required: false
+  private _projectDirectory?: string; 
+  public get projectDirectory() {
+    return this.getStringAttribute('project_directory');
+  }
+  public set projectDirectory(value: string) {
+    this._projectDirectory = value;
+  }
+  public resetProjectDirectory() {
+    this._projectDirectory = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectDirectoryInput() {
+    return this._projectDirectory;
+  }
+
+  // schema - computed: false, optional: true, required: false
+  private _schema?: string; 
+  public get schema() {
+    return this.getStringAttribute('schema');
+  }
+  public set schema(value: string) {
+    this._schema = value;
+  }
+  public resetSchema() {
+    this._schema = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaInput() {
+    return this._schema;
+  }
+
+  // warehouse_id - computed: false, optional: true, required: false
+  private _warehouseId?: string; 
+  public get warehouseId() {
+    return this.getStringAttribute('warehouse_id');
+  }
+  public set warehouseId(value: string) {
+    this._warehouseId = value;
+  }
+  public resetWarehouseId() {
+    this._warehouseId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get warehouseIdInput() {
+    return this._warehouseId;
+  }
 }
 export interface JobEmailNotifications {
   /**
@@ -7353,6 +7529,10 @@ export interface JobTaskDbtTask {
   */
   readonly commands: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#profiles_directory Job#profiles_directory}
+  */
+  readonly profilesDirectory?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#project_directory Job#project_directory}
   */
   readonly projectDirectory?: string;
@@ -7360,6 +7540,10 @@ export interface JobTaskDbtTask {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#schema Job#schema}
   */
   readonly schema?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#warehouse_id Job#warehouse_id}
+  */
+  readonly warehouseId?: string;
 }
 
 export function jobTaskDbtTaskToTerraform(struct?: JobTaskDbtTaskOutputReference | JobTaskDbtTask): any {
@@ -7369,8 +7553,10 @@ export function jobTaskDbtTaskToTerraform(struct?: JobTaskDbtTaskOutputReference
   }
   return {
     commands: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.commands),
+    profiles_directory: cdktf.stringToTerraform(struct!.profilesDirectory),
     project_directory: cdktf.stringToTerraform(struct!.projectDirectory),
     schema: cdktf.stringToTerraform(struct!.schema),
+    warehouse_id: cdktf.stringToTerraform(struct!.warehouseId),
   }
 }
 
@@ -7392,6 +7578,10 @@ export class JobTaskDbtTaskOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.commands = this._commands;
     }
+    if (this._profilesDirectory !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.profilesDirectory = this._profilesDirectory;
+    }
     if (this._projectDirectory !== undefined) {
       hasAnyValues = true;
       internalValueResult.projectDirectory = this._projectDirectory;
@@ -7400,6 +7590,10 @@ export class JobTaskDbtTaskOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.schema = this._schema;
     }
+    if (this._warehouseId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.warehouseId = this._warehouseId;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -7407,14 +7601,18 @@ export class JobTaskDbtTaskOutputReference extends cdktf.ComplexObject {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._commands = undefined;
+      this._profilesDirectory = undefined;
       this._projectDirectory = undefined;
       this._schema = undefined;
+      this._warehouseId = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._commands = value.commands;
+      this._profilesDirectory = value.profilesDirectory;
       this._projectDirectory = value.projectDirectory;
       this._schema = value.schema;
+      this._warehouseId = value.warehouseId;
     }
   }
 
@@ -7429,6 +7627,22 @@ export class JobTaskDbtTaskOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get commandsInput() {
     return this._commands;
+  }
+
+  // profiles_directory - computed: false, optional: true, required: false
+  private _profilesDirectory?: string; 
+  public get profilesDirectory() {
+    return this.getStringAttribute('profiles_directory');
+  }
+  public set profilesDirectory(value: string) {
+    this._profilesDirectory = value;
+  }
+  public resetProfilesDirectory() {
+    this._profilesDirectory = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get profilesDirectoryInput() {
+    return this._profilesDirectory;
   }
 
   // project_directory - computed: false, optional: true, required: false
@@ -7461,6 +7675,22 @@ export class JobTaskDbtTaskOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get schemaInput() {
     return this._schema;
+  }
+
+  // warehouse_id - computed: false, optional: true, required: false
+  private _warehouseId?: string; 
+  public get warehouseId() {
+    return this.getStringAttribute('warehouse_id');
+  }
+  public set warehouseId(value: string) {
+    this._warehouseId = value;
+  }
+  public resetWarehouseId() {
+    this._warehouseId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get warehouseIdInput() {
+    return this._warehouseId;
   }
 }
 export interface JobTaskDependsOn {
@@ -12725,7 +12955,7 @@ export class Job extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_job',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.2.1',
+        providerVersion: '1.3.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -12747,6 +12977,7 @@ export class Job extends cdktf.TerraformResource {
     this._retryOnTimeout = config.retryOnTimeout;
     this._tags = config.tags;
     this._timeoutSeconds = config.timeoutSeconds;
+    this._dbtTask.internalValue = config.dbtTask;
     this._emailNotifications.internalValue = config.emailNotifications;
     this._gitSource.internalValue = config.gitSource;
     this._jobCluster.internalValue = config.jobCluster;
@@ -12946,6 +13177,22 @@ export class Job extends cdktf.TerraformResource {
   // url - computed: true, optional: false, required: false
   public get url() {
     return this.getStringAttribute('url');
+  }
+
+  // dbt_task - computed: false, optional: true, required: false
+  private _dbtTask = new JobDbtTaskOutputReference(this, "dbt_task");
+  public get dbtTask() {
+    return this._dbtTask;
+  }
+  public putDbtTask(value: JobDbtTask) {
+    this._dbtTask.internalValue = value;
+  }
+  public resetDbtTask() {
+    this._dbtTask.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dbtTaskInput() {
+    return this._dbtTask.internalValue;
   }
 
   // email_notifications - computed: false, optional: true, required: false
@@ -13189,6 +13436,7 @@ export class Job extends cdktf.TerraformResource {
       retry_on_timeout: cdktf.booleanToTerraform(this._retryOnTimeout),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       timeout_seconds: cdktf.numberToTerraform(this._timeoutSeconds),
+      dbt_task: jobDbtTaskToTerraform(this._dbtTask.internalValue),
       email_notifications: jobEmailNotificationsToTerraform(this._emailNotifications.internalValue),
       git_source: jobGitSourceToTerraform(this._gitSource.internalValue),
       job_cluster: cdktf.listMapper(jobJobClusterToTerraform, true)(this._jobCluster.internalValue),
