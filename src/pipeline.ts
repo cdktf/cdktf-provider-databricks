@@ -88,6 +88,10 @@ export interface PipelineClusterAutoscale {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#min_workers Pipeline#min_workers}
   */
   readonly minWorkers?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#mode Pipeline#mode}
+  */
+  readonly mode?: string;
 }
 
 export function pipelineClusterAutoscaleToTerraform(struct?: PipelineClusterAutoscaleOutputReference | PipelineClusterAutoscale): any {
@@ -98,6 +102,7 @@ export function pipelineClusterAutoscaleToTerraform(struct?: PipelineClusterAuto
   return {
     max_workers: cdktf.numberToTerraform(struct!.maxWorkers),
     min_workers: cdktf.numberToTerraform(struct!.minWorkers),
+    mode: cdktf.stringToTerraform(struct!.mode),
   }
 }
 
@@ -123,6 +128,10 @@ export class PipelineClusterAutoscaleOutputReference extends cdktf.ComplexObject
       hasAnyValues = true;
       internalValueResult.minWorkers = this._minWorkers;
     }
+    if (this._mode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mode = this._mode;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -131,11 +140,13 @@ export class PipelineClusterAutoscaleOutputReference extends cdktf.ComplexObject
       this.isEmptyObject = false;
       this._maxWorkers = undefined;
       this._minWorkers = undefined;
+      this._mode = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._maxWorkers = value.maxWorkers;
       this._minWorkers = value.minWorkers;
+      this._mode = value.mode;
     }
   }
 
@@ -169,6 +180,22 @@ export class PipelineClusterAutoscaleOutputReference extends cdktf.ComplexObject
   // Temporarily expose input value. Use with caution.
   public get minWorkersInput() {
     return this._minWorkers;
+  }
+
+  // mode - computed: false, optional: true, required: false
+  private _mode?: string; 
+  public get mode() {
+    return this.getStringAttribute('mode');
+  }
+  public set mode(value: string) {
+    this._mode = value;
+  }
+  public resetMode() {
+    this._mode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modeInput() {
+    return this._mode;
   }
 }
 export interface PipelineClusterAwsAttributes {
@@ -2432,7 +2459,7 @@ export class Pipeline extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_pipeline',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.3.0',
+        providerVersion: '1.3.1',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

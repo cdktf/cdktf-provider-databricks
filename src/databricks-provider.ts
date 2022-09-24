@@ -28,6 +28,10 @@ export interface DatabricksProviderConfig {
   */
   readonly azureEnvironment?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#azure_login_app_id DatabricksProvider#azure_login_app_id}
+  */
+  readonly azureLoginAppId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#azure_tenant_id DatabricksProvider#azure_tenant_id}
   */
   readonly azureTenantId?: string;
@@ -125,7 +129,7 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'databricks',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.3.0',
+        providerVersion: '1.3.1',
         providerVersionConstraint: '~> 1.0'
       },
       terraformProviderSource: 'databricks/databricks'
@@ -135,6 +139,7 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
     this._azureClientId = config.azureClientId;
     this._azureClientSecret = config.azureClientSecret;
     this._azureEnvironment = config.azureEnvironment;
+    this._azureLoginAppId = config.azureLoginAppId;
     this._azureTenantId = config.azureTenantId;
     this._azureUseMsi = config.azureUseMsi;
     this._azureWorkspaceResourceId = config.azureWorkspaceResourceId;
@@ -236,6 +241,22 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get azureEnvironmentInput() {
     return this._azureEnvironment;
+  }
+
+  // azure_login_app_id - computed: false, optional: true, required: false
+  private _azureLoginAppId?: string; 
+  public get azureLoginAppId() {
+    return this._azureLoginAppId;
+  }
+  public set azureLoginAppId(value: string | undefined) {
+    this._azureLoginAppId = value;
+  }
+  public resetAzureLoginAppId() {
+    this._azureLoginAppId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get azureLoginAppIdInput() {
+    return this._azureLoginAppId;
   }
 
   // azure_tenant_id - computed: false, optional: true, required: false
@@ -521,6 +542,7 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
       azure_client_id: cdktf.stringToTerraform(this._azureClientId),
       azure_client_secret: cdktf.stringToTerraform(this._azureClientSecret),
       azure_environment: cdktf.stringToTerraform(this._azureEnvironment),
+      azure_login_app_id: cdktf.stringToTerraform(this._azureLoginAppId),
       azure_tenant_id: cdktf.stringToTerraform(this._azureTenantId),
       azure_use_msi: cdktf.booleanToTerraform(this._azureUseMsi),
       azure_workspace_resource_id: cdktf.stringToTerraform(this._azureWorkspaceResourceId),
