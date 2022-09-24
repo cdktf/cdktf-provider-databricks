@@ -513,9 +513,9 @@ export class InstancePoolDiskSpecOutputReference extends cdktf.ComplexObject {
 }
 export interface InstancePoolGcpAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#availability InstancePool#availability}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#gcp_availability InstancePool#gcp_availability}
   */
-  readonly availability?: string;
+  readonly gcpAvailability?: string;
 }
 
 export function instancePoolGcpAttributesToTerraform(struct?: InstancePoolGcpAttributesOutputReference | InstancePoolGcpAttributes): any {
@@ -524,7 +524,7 @@ export function instancePoolGcpAttributesToTerraform(struct?: InstancePoolGcpAtt
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    availability: cdktf.stringToTerraform(struct!.availability),
+    gcp_availability: cdktf.stringToTerraform(struct!.gcpAvailability),
   }
 }
 
@@ -542,9 +542,9 @@ export class InstancePoolGcpAttributesOutputReference extends cdktf.ComplexObjec
   public get internalValue(): InstancePoolGcpAttributes | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._availability !== undefined) {
+    if (this._gcpAvailability !== undefined) {
       hasAnyValues = true;
-      internalValueResult.availability = this._availability;
+      internalValueResult.gcpAvailability = this._gcpAvailability;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -552,28 +552,28 @@ export class InstancePoolGcpAttributesOutputReference extends cdktf.ComplexObjec
   public set internalValue(value: InstancePoolGcpAttributes | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._availability = undefined;
+      this._gcpAvailability = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._availability = value.availability;
+      this._gcpAvailability = value.gcpAvailability;
     }
   }
 
-  // availability - computed: false, optional: true, required: false
-  private _availability?: string; 
-  public get availability() {
-    return this.getStringAttribute('availability');
+  // gcp_availability - computed: false, optional: true, required: false
+  private _gcpAvailability?: string; 
+  public get gcpAvailability() {
+    return this.getStringAttribute('gcp_availability');
   }
-  public set availability(value: string) {
-    this._availability = value;
+  public set gcpAvailability(value: string) {
+    this._gcpAvailability = value;
   }
-  public resetAvailability() {
-    this._availability = undefined;
+  public resetGcpAvailability() {
+    this._gcpAvailability = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get availabilityInput() {
-    return this._availability;
+  public get gcpAvailabilityInput() {
+    return this._gcpAvailability;
   }
 }
 export interface InstancePoolInstancePoolFleetAttributesFleetOnDemandOption {
@@ -1230,7 +1230,7 @@ export class InstancePool extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_instance_pool',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.3.0',
+        providerVersion: '1.3.1',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

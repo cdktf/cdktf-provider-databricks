@@ -58,7 +58,7 @@ export class IpAccessList extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_ip_access_list',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.3.0',
+        providerVersion: '1.3.1',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

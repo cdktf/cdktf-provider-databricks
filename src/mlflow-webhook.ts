@@ -53,9 +53,9 @@ export interface MlflowWebhookHttpUrlSpec {
   */
   readonly enableSslVerification?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mlflow_webhook#string MlflowWebhook#string}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mlflow_webhook#secret MlflowWebhook#secret}
   */
-  readonly string?: string;
+  readonly secret?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mlflow_webhook#url MlflowWebhook#url}
   */
@@ -70,7 +70,7 @@ export function mlflowWebhookHttpUrlSpecToTerraform(struct?: MlflowWebhookHttpUr
   return {
     authorization: cdktf.stringToTerraform(struct!.authorization),
     enable_ssl_verification: cdktf.booleanToTerraform(struct!.enableSslVerification),
-    string: cdktf.stringToTerraform(struct!.string),
+    secret: cdktf.stringToTerraform(struct!.secret),
     url: cdktf.stringToTerraform(struct!.url),
   }
 }
@@ -97,9 +97,9 @@ export class MlflowWebhookHttpUrlSpecOutputReference extends cdktf.ComplexObject
       hasAnyValues = true;
       internalValueResult.enableSslVerification = this._enableSslVerification;
     }
-    if (this._string !== undefined) {
+    if (this._secret !== undefined) {
       hasAnyValues = true;
-      internalValueResult.string = this._string;
+      internalValueResult.secret = this._secret;
     }
     if (this._url !== undefined) {
       hasAnyValues = true;
@@ -113,14 +113,14 @@ export class MlflowWebhookHttpUrlSpecOutputReference extends cdktf.ComplexObject
       this.isEmptyObject = false;
       this._authorization = undefined;
       this._enableSslVerification = undefined;
-      this._string = undefined;
+      this._secret = undefined;
       this._url = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._authorization = value.authorization;
       this._enableSslVerification = value.enableSslVerification;
-      this._string = value.string;
+      this._secret = value.secret;
       this._url = value.url;
     }
   }
@@ -157,20 +157,20 @@ export class MlflowWebhookHttpUrlSpecOutputReference extends cdktf.ComplexObject
     return this._enableSslVerification;
   }
 
-  // string - computed: false, optional: true, required: false
-  private _string?: string; 
-  public get string() {
-    return this.getStringAttribute('string');
+  // secret - computed: false, optional: true, required: false
+  private _secret?: string; 
+  public get secret() {
+    return this.getStringAttribute('secret');
   }
-  public set string(value: string) {
-    this._string = value;
+  public set secret(value: string) {
+    this._secret = value;
   }
-  public resetString() {
-    this._string = undefined;
+  public resetSecret() {
+    this._secret = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get stringInput() {
-    return this._string;
+  public get secretInput() {
+    return this._secret;
   }
 
   // url - computed: false, optional: false, required: true
@@ -326,7 +326,7 @@ export class MlflowWebhook extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_mlflow_webhook',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.3.0',
+        providerVersion: '1.3.1',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
