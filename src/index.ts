@@ -75,6 +75,7 @@ export * from './data-databricks-current-user';
 export * from './data-databricks-dbfs-file';
 export * from './data-databricks-dbfs-file-paths';
 export * from './data-databricks-group';
+export * from './data-databricks-job';
 export * from './data-databricks-jobs';
 export * from './data-databricks-mws-workspaces';
 export * from './data-databricks-node-type';
