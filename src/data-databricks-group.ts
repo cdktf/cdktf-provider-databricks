@@ -94,7 +94,7 @@ export class DataDatabricksGroup extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_group',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.3.1',
+        providerVersion: '1.4.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
