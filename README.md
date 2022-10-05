@@ -38,9 +38,9 @@ The Maven package is available at [https://mvnrepository.com/artifact/com.hashic
 
 ### Go
 
-The go package is generated into the [`github.com/hashicorp/cdktf-provider-databricks-go`](https://github.com/hashicorp/cdktf-provider-databricks-go) package.
+The go package is generated into the [`github.com/cdktf/cdktf-provider-databricks-go`](https://github.com/cdktf/cdktf-provider-databricks-go) package.
 
-`go get github.com/hashicorp/cdktf-provider-databricks-go/databricks`
+`go get github.com/cdktf/cdktf-provider-databricks-go/databricks`
 
 ## Docs
 
