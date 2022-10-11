@@ -27,6 +27,10 @@ export interface GrantsConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/grants#materialized_view Grants#materialized_view}
+  */
+  readonly materializedView?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/grants#metastore Grants#metastore}
   */
   readonly metastore?: string;
@@ -198,7 +202,7 @@ export class Grants extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_grants',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.4.0',
+        providerVersion: '1.5.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -213,6 +217,7 @@ export class Grants extends cdktf.TerraformResource {
     this._externalLocation = config.externalLocation;
     this._function = config.function;
     this._id = config.id;
+    this._materializedView = config.materializedView;
     this._metastore = config.metastore;
     this._schema = config.schema;
     this._storageCredential = config.storageCredential;
@@ -287,6 +292,22 @@ export class Grants extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // materialized_view - computed: false, optional: true, required: false
+  private _materializedView?: string; 
+  public get materializedView() {
+    return this.getStringAttribute('materialized_view');
+  }
+  public set materializedView(value: string) {
+    this._materializedView = value;
+  }
+  public resetMaterializedView() {
+    this._materializedView = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get materializedViewInput() {
+    return this._materializedView;
   }
 
   // metastore - computed: false, optional: true, required: false
@@ -392,6 +413,7 @@ export class Grants extends cdktf.TerraformResource {
       external_location: cdktf.stringToTerraform(this._externalLocation),
       function: cdktf.stringToTerraform(this._function),
       id: cdktf.stringToTerraform(this._id),
+      materialized_view: cdktf.stringToTerraform(this._materializedView),
       metastore: cdktf.stringToTerraform(this._metastore),
       schema: cdktf.stringToTerraform(this._schema),
       storage_credential: cdktf.stringToTerraform(this._storageCredential),
