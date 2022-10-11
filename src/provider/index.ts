@@ -44,6 +44,14 @@ export interface DatabricksProviderConfig {
   */
   readonly azureWorkspaceResourceId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#client_id DatabricksProvider#client_id}
+  */
+  readonly clientId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#client_secret DatabricksProvider#client_secret}
+  */
+  readonly clientSecret?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#config_file DatabricksProvider#config_file}
   */
   readonly configFile?: string;
@@ -92,6 +100,10 @@ export interface DatabricksProviderConfig {
   */
   readonly token?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#token_endpoint DatabricksProvider#token_endpoint}
+  */
+  readonly tokenEndpoint?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#username DatabricksProvider#username}
   */
   readonly username?: string;
@@ -129,7 +141,7 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'databricks',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.4.0',
+        providerVersion: '1.5.0',
         providerVersionConstraint: '~> 1.0'
       },
       terraformProviderSource: 'databricks/databricks'
@@ -143,6 +155,8 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
     this._azureTenantId = config.azureTenantId;
     this._azureUseMsi = config.azureUseMsi;
     this._azureWorkspaceResourceId = config.azureWorkspaceResourceId;
+    this._clientId = config.clientId;
+    this._clientSecret = config.clientSecret;
     this._configFile = config.configFile;
     this._debugHeaders = config.debugHeaders;
     this._debugTruncateBytes = config.debugTruncateBytes;
@@ -155,6 +169,7 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
     this._rateLimit = config.rateLimit;
     this._skipVerify = config.skipVerify;
     this._token = config.token;
+    this._tokenEndpoint = config.tokenEndpoint;
     this._username = config.username;
     this._alias = config.alias;
   }
@@ -305,6 +320,38 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get azureWorkspaceResourceIdInput() {
     return this._azureWorkspaceResourceId;
+  }
+
+  // client_id - computed: false, optional: true, required: false
+  private _clientId?: string; 
+  public get clientId() {
+    return this._clientId;
+  }
+  public set clientId(value: string | undefined) {
+    this._clientId = value;
+  }
+  public resetClientId() {
+    this._clientId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientIdInput() {
+    return this._clientId;
+  }
+
+  // client_secret - computed: false, optional: true, required: false
+  private _clientSecret?: string; 
+  public get clientSecret() {
+    return this._clientSecret;
+  }
+  public set clientSecret(value: string | undefined) {
+    this._clientSecret = value;
+  }
+  public resetClientSecret() {
+    this._clientSecret = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientSecretInput() {
+    return this._clientSecret;
   }
 
   // config_file - computed: false, optional: true, required: false
@@ -499,6 +546,22 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
     return this._token;
   }
 
+  // token_endpoint - computed: false, optional: true, required: false
+  private _tokenEndpoint?: string; 
+  public get tokenEndpoint() {
+    return this._tokenEndpoint;
+  }
+  public set tokenEndpoint(value: string | undefined) {
+    this._tokenEndpoint = value;
+  }
+  public resetTokenEndpoint() {
+    this._tokenEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tokenEndpointInput() {
+    return this._tokenEndpoint;
+  }
+
   // username - computed: false, optional: true, required: false
   private _username?: string; 
   public get username() {
@@ -546,6 +609,8 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
       azure_tenant_id: cdktf.stringToTerraform(this._azureTenantId),
       azure_use_msi: cdktf.booleanToTerraform(this._azureUseMsi),
       azure_workspace_resource_id: cdktf.stringToTerraform(this._azureWorkspaceResourceId),
+      client_id: cdktf.stringToTerraform(this._clientId),
+      client_secret: cdktf.stringToTerraform(this._clientSecret),
       config_file: cdktf.stringToTerraform(this._configFile),
       debug_headers: cdktf.booleanToTerraform(this._debugHeaders),
       debug_truncate_bytes: cdktf.numberToTerraform(this._debugTruncateBytes),
@@ -558,6 +623,7 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
       rate_limit: cdktf.numberToTerraform(this._rateLimit),
       skip_verify: cdktf.booleanToTerraform(this._skipVerify),
       token: cdktf.stringToTerraform(this._token),
+      token_endpoint: cdktf.stringToTerraform(this._tokenEndpoint),
       username: cdktf.stringToTerraform(this._username),
       alias: cdktf.stringToTerraform(this._alias),
     };

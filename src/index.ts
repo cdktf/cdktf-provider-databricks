@@ -51,6 +51,7 @@ export * as secretAcl from './secret-acl';
 export * as secretScope from './secret-scope';
 export * as servicePrincipal from './service-principal';
 export * as servicePrincipalRole from './service-principal-role';
+export * as servicePrincipalSecret from './service-principal-secret';
 export * as sqlDashboard from './sql-dashboard';
 export * as sqlEndpoint from './sql-endpoint';
 export * as sqlGlobalConfig from './sql-global-config';
