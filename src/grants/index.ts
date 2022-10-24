@@ -39,6 +39,10 @@ export interface GrantsConfig extends cdktf.TerraformMetaArguments {
   */
   readonly schema?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/grants#share Grants#share}
+  */
+  readonly share?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/grants#storage_credential Grants#storage_credential}
   */
   readonly storageCredential?: string;
@@ -202,7 +206,7 @@ export class Grants extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_grants',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.5.0',
+        providerVersion: '1.6.1',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -220,6 +224,7 @@ export class Grants extends cdktf.TerraformResource {
     this._materializedView = config.materializedView;
     this._metastore = config.metastore;
     this._schema = config.schema;
+    this._share = config.share;
     this._storageCredential = config.storageCredential;
     this._table = config.table;
     this._view = config.view;
@@ -342,6 +347,22 @@ export class Grants extends cdktf.TerraformResource {
     return this._schema;
   }
 
+  // share - computed: false, optional: true, required: false
+  private _share?: string; 
+  public get share() {
+    return this.getStringAttribute('share');
+  }
+  public set share(value: string) {
+    this._share = value;
+  }
+  public resetShare() {
+    this._share = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get shareInput() {
+    return this._share;
+  }
+
   // storage_credential - computed: false, optional: true, required: false
   private _storageCredential?: string; 
   public get storageCredential() {
@@ -416,6 +437,7 @@ export class Grants extends cdktf.TerraformResource {
       materialized_view: cdktf.stringToTerraform(this._materializedView),
       metastore: cdktf.stringToTerraform(this._metastore),
       schema: cdktf.stringToTerraform(this._schema),
+      share: cdktf.stringToTerraform(this._share),
       storage_credential: cdktf.stringToTerraform(this._storageCredential),
       table: cdktf.stringToTerraform(this._table),
       view: cdktf.stringToTerraform(this._view),
