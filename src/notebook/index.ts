@@ -74,7 +74,7 @@ export class Notebook extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_notebook',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.5.0',
+        providerVersion: '1.6.1',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
