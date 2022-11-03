@@ -16,6 +16,10 @@ export interface DataDatabricksAwsBucketPolicyConfig extends cdktf.TerraformMeta
   */
   readonly databricksAccountId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/aws_bucket_policy#databricks_e2_account_id DataDatabricksAwsBucketPolicy#databricks_e2_account_id}
+  */
+  readonly databricksE2AccountId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/aws_bucket_policy#full_access_role DataDatabricksAwsBucketPolicy#full_access_role}
   */
   readonly fullAccessRole?: string;
@@ -54,7 +58,7 @@ export class DataDatabricksAwsBucketPolicy extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_aws_bucket_policy',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.6.1',
+        providerVersion: '1.6.2',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -67,6 +71,7 @@ export class DataDatabricksAwsBucketPolicy extends cdktf.TerraformDataSource {
     });
     this._bucket = config.bucket;
     this._databricksAccountId = config.databricksAccountId;
+    this._databricksE2AccountId = config.databricksE2AccountId;
     this._fullAccessRole = config.fullAccessRole;
     this._id = config.id;
   }
@@ -102,6 +107,22 @@ export class DataDatabricksAwsBucketPolicy extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get databricksAccountIdInput() {
     return this._databricksAccountId;
+  }
+
+  // databricks_e2_account_id - computed: false, optional: true, required: false
+  private _databricksE2AccountId?: string; 
+  public get databricksE2AccountId() {
+    return this.getStringAttribute('databricks_e2_account_id');
+  }
+  public set databricksE2AccountId(value: string) {
+    this._databricksE2AccountId = value;
+  }
+  public resetDatabricksE2AccountId() {
+    this._databricksE2AccountId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databricksE2AccountIdInput() {
+    return this._databricksE2AccountId;
   }
 
   // full_access_role - computed: false, optional: true, required: false
@@ -149,6 +170,7 @@ export class DataDatabricksAwsBucketPolicy extends cdktf.TerraformDataSource {
     return {
       bucket: cdktf.stringToTerraform(this._bucket),
       databricks_account_id: cdktf.stringToTerraform(this._databricksAccountId),
+      databricks_e2_account_id: cdktf.stringToTerraform(this._databricksE2AccountId),
       full_access_role: cdktf.stringToTerraform(this._fullAccessRole),
       id: cdktf.stringToTerraform(this._id),
     };

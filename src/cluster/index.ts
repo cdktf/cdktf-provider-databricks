@@ -79,6 +79,10 @@ export interface ClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly policyId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#runtime_engine Cluster#runtime_engine}
+  */
+  readonly runtimeEngine?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#single_user_name Cluster#single_user_name}
   */
   readonly singleUserName?: string;
@@ -2802,7 +2806,7 @@ export class Cluster extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_cluster',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.6.1',
+        providerVersion: '1.6.2',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -2830,6 +2834,7 @@ export class Cluster extends cdktf.TerraformResource {
     this._nodeTypeId = config.nodeTypeId;
     this._numWorkers = config.numWorkers;
     this._policyId = config.policyId;
+    this._runtimeEngine = config.runtimeEngine;
     this._singleUserName = config.singleUserName;
     this._sparkConf = config.sparkConf;
     this._sparkEnvVars = config.sparkEnvVars;
@@ -3129,6 +3134,22 @@ export class Cluster extends cdktf.TerraformResource {
     return this._policyId;
   }
 
+  // runtime_engine - computed: false, optional: true, required: false
+  private _runtimeEngine?: string; 
+  public get runtimeEngine() {
+    return this.getStringAttribute('runtime_engine');
+  }
+  public set runtimeEngine(value: string) {
+    this._runtimeEngine = value;
+  }
+  public resetRuntimeEngine() {
+    this._runtimeEngine = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runtimeEngineInput() {
+    return this._runtimeEngine;
+  }
+
   // single_user_name - computed: false, optional: true, required: false
   private _singleUserName?: string; 
   public get singleUserName() {
@@ -3399,6 +3420,7 @@ export class Cluster extends cdktf.TerraformResource {
       node_type_id: cdktf.stringToTerraform(this._nodeTypeId),
       num_workers: cdktf.numberToTerraform(this._numWorkers),
       policy_id: cdktf.stringToTerraform(this._policyId),
+      runtime_engine: cdktf.stringToTerraform(this._runtimeEngine),
       single_user_name: cdktf.stringToTerraform(this._singleUserName),
       spark_conf: cdktf.hashMapper(cdktf.stringToTerraform)(this._sparkConf),
       spark_env_vars: cdktf.hashMapper(cdktf.stringToTerraform)(this._sparkEnvVars),
