@@ -604,7 +604,7 @@ export class SqlEndpoint extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_sql_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.6.1',
+        providerVersion: '1.6.2',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

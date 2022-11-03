@@ -2553,6 +2553,10 @@ export interface DataDatabricksClusterClusterInfo {
   */
   readonly policyId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/cluster#runtime_engine DataDatabricksCluster#runtime_engine}
+  */
+  readonly runtimeEngine?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/cluster#single_user_name DataDatabricksCluster#single_user_name}
   */
   readonly singleUserName?: string;
@@ -2687,6 +2691,7 @@ export function dataDatabricksClusterClusterInfoToTerraform(struct?: DataDatabri
     node_type_id: cdktf.stringToTerraform(struct!.nodeTypeId),
     num_workers: cdktf.numberToTerraform(struct!.numWorkers),
     policy_id: cdktf.stringToTerraform(struct!.policyId),
+    runtime_engine: cdktf.stringToTerraform(struct!.runtimeEngine),
     single_user_name: cdktf.stringToTerraform(struct!.singleUserName),
     spark_conf: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sparkConf),
     spark_context_id: cdktf.numberToTerraform(struct!.sparkContextId),
@@ -2809,6 +2814,10 @@ export class DataDatabricksClusterClusterInfoOutputReference extends cdktf.Compl
       hasAnyValues = true;
       internalValueResult.policyId = this._policyId;
     }
+    if (this._runtimeEngine !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.runtimeEngine = this._runtimeEngine;
+    }
     if (this._singleUserName !== undefined) {
       hasAnyValues = true;
       internalValueResult.singleUserName = this._singleUserName;
@@ -2920,6 +2929,7 @@ export class DataDatabricksClusterClusterInfoOutputReference extends cdktf.Compl
       this._nodeTypeId = undefined;
       this._numWorkers = undefined;
       this._policyId = undefined;
+      this._runtimeEngine = undefined;
       this._singleUserName = undefined;
       this._sparkConf = undefined;
       this._sparkContextId = undefined;
@@ -2965,6 +2975,7 @@ export class DataDatabricksClusterClusterInfoOutputReference extends cdktf.Compl
       this._nodeTypeId = value.nodeTypeId;
       this._numWorkers = value.numWorkers;
       this._policyId = value.policyId;
+      this._runtimeEngine = value.runtimeEngine;
       this._singleUserName = value.singleUserName;
       this._sparkConf = value.sparkConf;
       this._sparkContextId = value.sparkContextId;
@@ -3320,6 +3331,22 @@ export class DataDatabricksClusterClusterInfoOutputReference extends cdktf.Compl
   // Temporarily expose input value. Use with caution.
   public get policyIdInput() {
     return this._policyId;
+  }
+
+  // runtime_engine - computed: false, optional: true, required: false
+  private _runtimeEngine?: string; 
+  public get runtimeEngine() {
+    return this.getStringAttribute('runtime_engine');
+  }
+  public set runtimeEngine(value: string) {
+    this._runtimeEngine = value;
+  }
+  public resetRuntimeEngine() {
+    this._runtimeEngine = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runtimeEngineInput() {
+    return this._runtimeEngine;
   }
 
   // single_user_name - computed: false, optional: true, required: false
@@ -3679,7 +3706,7 @@ export class DataDatabricksCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_cluster',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.6.1',
+        providerVersion: '1.6.2',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

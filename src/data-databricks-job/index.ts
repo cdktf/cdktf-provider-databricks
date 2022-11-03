@@ -2559,6 +2559,10 @@ export interface DataDatabricksJobJobSettingsSettingsJobClusterNewCluster {
   */
   readonly policyId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#runtime_engine DataDatabricksJob#runtime_engine}
+  */
+  readonly runtimeEngine?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#single_user_name DataDatabricksJob#single_user_name}
   */
   readonly singleUserName?: string;
@@ -2649,6 +2653,7 @@ export function dataDatabricksJobJobSettingsSettingsJobClusterNewClusterToTerraf
     node_type_id: cdktf.stringToTerraform(struct!.nodeTypeId),
     num_workers: cdktf.numberToTerraform(struct!.numWorkers),
     policy_id: cdktf.stringToTerraform(struct!.policyId),
+    runtime_engine: cdktf.stringToTerraform(struct!.runtimeEngine),
     single_user_name: cdktf.stringToTerraform(struct!.singleUserName),
     spark_conf: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sparkConf),
     spark_env_vars: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sparkEnvVars),
@@ -2739,6 +2744,10 @@ export class DataDatabricksJobJobSettingsSettingsJobClusterNewClusterOutputRefer
       hasAnyValues = true;
       internalValueResult.policyId = this._policyId;
     }
+    if (this._runtimeEngine !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.runtimeEngine = this._runtimeEngine;
+    }
     if (this._singleUserName !== undefined) {
       hasAnyValues = true;
       internalValueResult.singleUserName = this._singleUserName;
@@ -2812,6 +2821,7 @@ export class DataDatabricksJobJobSettingsSettingsJobClusterNewClusterOutputRefer
       this._nodeTypeId = undefined;
       this._numWorkers = undefined;
       this._policyId = undefined;
+      this._runtimeEngine = undefined;
       this._singleUserName = undefined;
       this._sparkConf = undefined;
       this._sparkEnvVars = undefined;
@@ -2843,6 +2853,7 @@ export class DataDatabricksJobJobSettingsSettingsJobClusterNewClusterOutputRefer
       this._nodeTypeId = value.nodeTypeId;
       this._numWorkers = value.numWorkers;
       this._policyId = value.policyId;
+      this._runtimeEngine = value.runtimeEngine;
       this._singleUserName = value.singleUserName;
       this._sparkConf = value.sparkConf;
       this._sparkEnvVars = value.sparkEnvVars;
@@ -3094,6 +3105,22 @@ export class DataDatabricksJobJobSettingsSettingsJobClusterNewClusterOutputRefer
   // Temporarily expose input value. Use with caution.
   public get policyIdInput() {
     return this._policyId;
+  }
+
+  // runtime_engine - computed: false, optional: true, required: false
+  private _runtimeEngine?: string; 
+  public get runtimeEngine() {
+    return this.getStringAttribute('runtime_engine');
+  }
+  public set runtimeEngine(value: string) {
+    this._runtimeEngine = value;
+  }
+  public resetRuntimeEngine() {
+    this._runtimeEngine = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runtimeEngineInput() {
+    return this._runtimeEngine;
   }
 
   // single_user_name - computed: false, optional: true, required: false
@@ -5976,6 +6003,10 @@ export interface DataDatabricksJobJobSettingsSettingsNewCluster {
   */
   readonly policyId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#runtime_engine DataDatabricksJob#runtime_engine}
+  */
+  readonly runtimeEngine?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#single_user_name DataDatabricksJob#single_user_name}
   */
   readonly singleUserName?: string;
@@ -6066,6 +6097,7 @@ export function dataDatabricksJobJobSettingsSettingsNewClusterToTerraform(struct
     node_type_id: cdktf.stringToTerraform(struct!.nodeTypeId),
     num_workers: cdktf.numberToTerraform(struct!.numWorkers),
     policy_id: cdktf.stringToTerraform(struct!.policyId),
+    runtime_engine: cdktf.stringToTerraform(struct!.runtimeEngine),
     single_user_name: cdktf.stringToTerraform(struct!.singleUserName),
     spark_conf: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sparkConf),
     spark_env_vars: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sparkEnvVars),
@@ -6156,6 +6188,10 @@ export class DataDatabricksJobJobSettingsSettingsNewClusterOutputReference exten
       hasAnyValues = true;
       internalValueResult.policyId = this._policyId;
     }
+    if (this._runtimeEngine !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.runtimeEngine = this._runtimeEngine;
+    }
     if (this._singleUserName !== undefined) {
       hasAnyValues = true;
       internalValueResult.singleUserName = this._singleUserName;
@@ -6229,6 +6265,7 @@ export class DataDatabricksJobJobSettingsSettingsNewClusterOutputReference exten
       this._nodeTypeId = undefined;
       this._numWorkers = undefined;
       this._policyId = undefined;
+      this._runtimeEngine = undefined;
       this._singleUserName = undefined;
       this._sparkConf = undefined;
       this._sparkEnvVars = undefined;
@@ -6260,6 +6297,7 @@ export class DataDatabricksJobJobSettingsSettingsNewClusterOutputReference exten
       this._nodeTypeId = value.nodeTypeId;
       this._numWorkers = value.numWorkers;
       this._policyId = value.policyId;
+      this._runtimeEngine = value.runtimeEngine;
       this._singleUserName = value.singleUserName;
       this._sparkConf = value.sparkConf;
       this._sparkEnvVars = value.sparkEnvVars;
@@ -6511,6 +6549,22 @@ export class DataDatabricksJobJobSettingsSettingsNewClusterOutputReference exten
   // Temporarily expose input value. Use with caution.
   public get policyIdInput() {
     return this._policyId;
+  }
+
+  // runtime_engine - computed: false, optional: true, required: false
+  private _runtimeEngine?: string; 
+  public get runtimeEngine() {
+    return this.getStringAttribute('runtime_engine');
+  }
+  public set runtimeEngine(value: string) {
+    this._runtimeEngine = value;
+  }
+  public resetRuntimeEngine() {
+    this._runtimeEngine = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runtimeEngineInput() {
+    return this._runtimeEngine;
   }
 
   // single_user_name - computed: false, optional: true, required: false
@@ -10390,6 +10444,10 @@ export interface DataDatabricksJobJobSettingsSettingsTaskNewCluster {
   */
   readonly policyId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#runtime_engine DataDatabricksJob#runtime_engine}
+  */
+  readonly runtimeEngine?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#single_user_name DataDatabricksJob#single_user_name}
   */
   readonly singleUserName?: string;
@@ -10480,6 +10538,7 @@ export function dataDatabricksJobJobSettingsSettingsTaskNewClusterToTerraform(st
     node_type_id: cdktf.stringToTerraform(struct!.nodeTypeId),
     num_workers: cdktf.numberToTerraform(struct!.numWorkers),
     policy_id: cdktf.stringToTerraform(struct!.policyId),
+    runtime_engine: cdktf.stringToTerraform(struct!.runtimeEngine),
     single_user_name: cdktf.stringToTerraform(struct!.singleUserName),
     spark_conf: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sparkConf),
     spark_env_vars: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sparkEnvVars),
@@ -10570,6 +10629,10 @@ export class DataDatabricksJobJobSettingsSettingsTaskNewClusterOutputReference e
       hasAnyValues = true;
       internalValueResult.policyId = this._policyId;
     }
+    if (this._runtimeEngine !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.runtimeEngine = this._runtimeEngine;
+    }
     if (this._singleUserName !== undefined) {
       hasAnyValues = true;
       internalValueResult.singleUserName = this._singleUserName;
@@ -10643,6 +10706,7 @@ export class DataDatabricksJobJobSettingsSettingsTaskNewClusterOutputReference e
       this._nodeTypeId = undefined;
       this._numWorkers = undefined;
       this._policyId = undefined;
+      this._runtimeEngine = undefined;
       this._singleUserName = undefined;
       this._sparkConf = undefined;
       this._sparkEnvVars = undefined;
@@ -10674,6 +10738,7 @@ export class DataDatabricksJobJobSettingsSettingsTaskNewClusterOutputReference e
       this._nodeTypeId = value.nodeTypeId;
       this._numWorkers = value.numWorkers;
       this._policyId = value.policyId;
+      this._runtimeEngine = value.runtimeEngine;
       this._singleUserName = value.singleUserName;
       this._sparkConf = value.sparkConf;
       this._sparkEnvVars = value.sparkEnvVars;
@@ -10925,6 +10990,22 @@ export class DataDatabricksJobJobSettingsSettingsTaskNewClusterOutputReference e
   // Temporarily expose input value. Use with caution.
   public get policyIdInput() {
     return this._policyId;
+  }
+
+  // runtime_engine - computed: false, optional: true, required: false
+  private _runtimeEngine?: string; 
+  public get runtimeEngine() {
+    return this.getStringAttribute('runtime_engine');
+  }
+  public set runtimeEngine(value: string) {
+    this._runtimeEngine = value;
+  }
+  public resetRuntimeEngine() {
+    this._runtimeEngine = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runtimeEngineInput() {
+    return this._runtimeEngine;
   }
 
   // single_user_name - computed: false, optional: true, required: false
@@ -14008,7 +14089,7 @@ export class DataDatabricksJob extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_job',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.6.1',
+        providerVersion: '1.6.2',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
