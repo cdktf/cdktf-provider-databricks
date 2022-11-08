@@ -58,7 +58,7 @@ export class AwsS3Mount extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_aws_s3_mount',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.6.2',
+        providerVersion: '1.6.3',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
