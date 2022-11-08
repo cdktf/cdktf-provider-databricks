@@ -74,7 +74,7 @@ export class MwsPrivateAccessSettings extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_mws_private_access_settings',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.6.2',
+        providerVersion: '1.6.3',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

@@ -82,7 +82,7 @@ export class AzureAdlsGen2Mount extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_azure_adls_gen2_mount',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.6.2',
+        providerVersion: '1.6.3',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

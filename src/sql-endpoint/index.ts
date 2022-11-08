@@ -67,6 +67,10 @@ export interface SqlEndpointConfig extends cdktf.TerraformMetaArguments {
   */
   readonly state?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_endpoint#warehouse_type SqlEndpoint#warehouse_type}
+  */
+  readonly warehouseType?: string;
+  /**
   * channel block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_endpoint#channel SqlEndpoint#channel}
@@ -604,7 +608,7 @@ export class SqlEndpoint extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_sql_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.6.2',
+        providerVersion: '1.6.3',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -629,6 +633,7 @@ export class SqlEndpoint extends cdktf.TerraformResource {
     this._numClusters = config.numClusters;
     this._spotInstancePolicy = config.spotInstancePolicy;
     this._state = config.state;
+    this._warehouseType = config.warehouseType;
     this._channel.internalValue = config.channel;
     this._odbcParams.internalValue = config.odbcParams;
     this._tags.internalValue = config.tags;
@@ -857,6 +862,22 @@ export class SqlEndpoint extends cdktf.TerraformResource {
     return this._state;
   }
 
+  // warehouse_type - computed: false, optional: true, required: false
+  private _warehouseType?: string; 
+  public get warehouseType() {
+    return this.getStringAttribute('warehouse_type');
+  }
+  public set warehouseType(value: string) {
+    this._warehouseType = value;
+  }
+  public resetWarehouseType() {
+    this._warehouseType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get warehouseTypeInput() {
+    return this._warehouseType;
+  }
+
   // channel - computed: false, optional: true, required: false
   private _channel = new SqlEndpointChannelOutputReference(this, "channel");
   public get channel() {
@@ -941,6 +962,7 @@ export class SqlEndpoint extends cdktf.TerraformResource {
       num_clusters: cdktf.numberToTerraform(this._numClusters),
       spot_instance_policy: cdktf.stringToTerraform(this._spotInstancePolicy),
       state: cdktf.stringToTerraform(this._state),
+      warehouse_type: cdktf.stringToTerraform(this._warehouseType),
       channel: sqlEndpointChannelToTerraform(this._channel.internalValue),
       odbc_params: sqlEndpointOdbcParamsToTerraform(this._odbcParams.internalValue),
       tags: sqlEndpointTagsToTerraform(this._tags.internalValue),
