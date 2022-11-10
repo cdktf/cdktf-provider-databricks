@@ -70,7 +70,7 @@ export class ExternalLocation extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_external_location',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.6.3',
+        providerVersion: '1.6.4',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

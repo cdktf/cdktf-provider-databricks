@@ -50,7 +50,7 @@ export class PermissionAssignment extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_permission_assignment',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.6.3',
+        providerVersion: '1.6.4',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

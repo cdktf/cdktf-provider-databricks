@@ -141,7 +141,7 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'databricks',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.6.3',
+        providerVersion: '1.6.4',
         providerVersionConstraint: '~> 1.0'
       },
       terraformProviderSource: 'databricks/databricks'
