@@ -31,6 +31,10 @@ export interface SqlVisualizationConfig extends cdktf.TerraformMetaArguments {
   */
   readonly queryId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_visualization#query_plan SqlVisualization#query_plan}
+  */
+  readonly queryPlan?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_visualization#type SqlVisualization#type}
   */
   readonly type: string;
@@ -66,7 +70,7 @@ export class SqlVisualization extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_sql_visualization',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.6.4',
+        providerVersion: '1.6.5',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -82,6 +86,7 @@ export class SqlVisualization extends cdktf.TerraformResource {
     this._name = config.name;
     this._options = config.options;
     this._queryId = config.queryId;
+    this._queryPlan = config.queryPlan;
     this._type = config.type;
     this._visualizationId = config.visualizationId;
   }
@@ -161,6 +166,22 @@ export class SqlVisualization extends cdktf.TerraformResource {
     return this._queryId;
   }
 
+  // query_plan - computed: false, optional: true, required: false
+  private _queryPlan?: string; 
+  public get queryPlan() {
+    return this.getStringAttribute('query_plan');
+  }
+  public set queryPlan(value: string) {
+    this._queryPlan = value;
+  }
+  public resetQueryPlan() {
+    this._queryPlan = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queryPlanInput() {
+    return this._queryPlan;
+  }
+
   // type - computed: false, optional: false, required: true
   private _type?: string; 
   public get type() {
@@ -201,6 +222,7 @@ export class SqlVisualization extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       options: cdktf.stringToTerraform(this._options),
       query_id: cdktf.stringToTerraform(this._queryId),
+      query_plan: cdktf.stringToTerraform(this._queryPlan),
       type: cdktf.stringToTerraform(this._type),
       visualization_id: cdktf.stringToTerraform(this._visualizationId),
     };

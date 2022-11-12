@@ -286,7 +286,7 @@ export class DataDatabricksShare extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_share',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.6.4',
+        providerVersion: '1.6.5',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
