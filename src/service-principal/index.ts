@@ -40,12 +40,20 @@ export interface ServicePrincipalConfig extends cdktf.TerraformMetaArguments {
   */
   readonly force?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#home ServicePrincipal#home}
+  */
+  readonly home?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#id ServicePrincipal#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#repos ServicePrincipal#repos}
+  */
+  readonly repos?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#workspace_access ServicePrincipal#workspace_access}
   */
@@ -78,7 +86,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_service_principal',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.6.5',
+        providerVersion: '1.7.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -97,7 +105,9 @@ export class ServicePrincipal extends cdktf.TerraformResource {
     this._displayName = config.displayName;
     this._externalId = config.externalId;
     this._force = config.force;
+    this._home = config.home;
     this._id = config.id;
+    this._repos = config.repos;
     this._workspaceAccess = config.workspaceAccess;
   }
 
@@ -233,6 +243,22 @@ export class ServicePrincipal extends cdktf.TerraformResource {
     return this._force;
   }
 
+  // home - computed: true, optional: true, required: false
+  private _home?: string; 
+  public get home() {
+    return this.getStringAttribute('home');
+  }
+  public set home(value: string) {
+    this._home = value;
+  }
+  public resetHome() {
+    this._home = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get homeInput() {
+    return this._home;
+  }
+
   // id - computed: true, optional: true, required: false
   private _id?: string; 
   public get id() {
@@ -247,6 +273,22 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // repos - computed: true, optional: true, required: false
+  private _repos?: string; 
+  public get repos() {
+    return this.getStringAttribute('repos');
+  }
+  public set repos(value: string) {
+    this._repos = value;
+  }
+  public resetRepos() {
+    this._repos = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get reposInput() {
+    return this._repos;
   }
 
   // workspace_access - computed: false, optional: true, required: false
@@ -279,7 +321,9 @@ export class ServicePrincipal extends cdktf.TerraformResource {
       display_name: cdktf.stringToTerraform(this._displayName),
       external_id: cdktf.stringToTerraform(this._externalId),
       force: cdktf.booleanToTerraform(this._force),
+      home: cdktf.stringToTerraform(this._home),
       id: cdktf.stringToTerraform(this._id),
+      repos: cdktf.stringToTerraform(this._repos),
       workspace_access: cdktf.booleanToTerraform(this._workspaceAccess),
     };
   }

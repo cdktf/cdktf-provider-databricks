@@ -31,6 +31,10 @@ export interface DataDatabricksJobConfig extends cdktf.TerraformMetaArguments {
 }
 export interface DataDatabricksJobJobSettingsSettingsDbtTask {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#catalog DataDatabricksJob#catalog}
+  */
+  readonly catalog?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#commands DataDatabricksJob#commands}
   */
   readonly commands: string[];
@@ -58,6 +62,7 @@ export function dataDatabricksJobJobSettingsSettingsDbtTaskToTerraform(struct?: 
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    catalog: cdktf.stringToTerraform(struct!.catalog),
     commands: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.commands),
     profiles_directory: cdktf.stringToTerraform(struct!.profilesDirectory),
     project_directory: cdktf.stringToTerraform(struct!.projectDirectory),
@@ -80,6 +85,10 @@ export class DataDatabricksJobJobSettingsSettingsDbtTaskOutputReference extends 
   public get internalValue(): DataDatabricksJobJobSettingsSettingsDbtTask | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._catalog !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.catalog = this._catalog;
+    }
     if (this._commands !== undefined) {
       hasAnyValues = true;
       internalValueResult.commands = this._commands;
@@ -106,6 +115,7 @@ export class DataDatabricksJobJobSettingsSettingsDbtTaskOutputReference extends 
   public set internalValue(value: DataDatabricksJobJobSettingsSettingsDbtTask | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._catalog = undefined;
       this._commands = undefined;
       this._profilesDirectory = undefined;
       this._projectDirectory = undefined;
@@ -114,12 +124,29 @@ export class DataDatabricksJobJobSettingsSettingsDbtTaskOutputReference extends 
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._catalog = value.catalog;
       this._commands = value.commands;
       this._profilesDirectory = value.profilesDirectory;
       this._projectDirectory = value.projectDirectory;
       this._schema = value.schema;
       this._warehouseId = value.warehouseId;
     }
+  }
+
+  // catalog - computed: false, optional: true, required: false
+  private _catalog?: string; 
+  public get catalog() {
+    return this.getStringAttribute('catalog');
+  }
+  public set catalog(value: string) {
+    this._catalog = value;
+  }
+  public resetCatalog() {
+    this._catalog = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get catalogInput() {
+    return this._catalog;
   }
 
   // commands - computed: false, optional: false, required: true
@@ -1739,6 +1766,71 @@ export class DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttribut
     return this._zoneId;
   }
 }
+export interface DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfss {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#destination DataDatabricksJob#destination}
+  */
+  readonly destination?: string;
+}
+
+export function dataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfssToTerraform(struct?: DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfssOutputReference | DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfss): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    destination: cdktf.stringToTerraform(struct!.destination),
+  }
+}
+
+export class DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfssOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfss | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._destination !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destination = this._destination;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfss | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._destination = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._destination = value.destination;
+    }
+  }
+
+  // destination - computed: false, optional: true, required: false
+  private _destination?: string; 
+  public get destination() {
+    return this.getStringAttribute('destination');
+  }
+  public set destination(value: string) {
+    this._destination = value;
+  }
+  public resetDestination() {
+    this._destination = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationInput() {
+    return this._destination;
+  }
+}
 export interface DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsDbfs {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#destination DataDatabricksJob#destination}
@@ -2157,6 +2249,12 @@ export class DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScripts
 }
 export interface DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScripts {
   /**
+  * abfss block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#abfss DataDatabricksJob#abfss}
+  */
+  readonly abfss?: DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfss;
+  /**
   * dbfs block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#dbfs DataDatabricksJob#dbfs}
@@ -2188,6 +2286,7 @@ export function dataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScri
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    abfss: dataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfssToTerraform(struct!.abfss),
     dbfs: dataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsDbfsToTerraform(struct!.dbfs),
     file: dataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsFileToTerraform(struct!.file),
     gcs: dataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsGcsToTerraform(struct!.gcs),
@@ -2215,6 +2314,10 @@ export class DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScripts
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._abfss?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.abfss = this._abfss?.internalValue;
+    }
     if (this._dbfs?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.dbfs = this._dbfs?.internalValue;
@@ -2238,6 +2341,7 @@ export class DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScripts
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._abfss.internalValue = undefined;
       this._dbfs.internalValue = undefined;
       this._file.internalValue = undefined;
       this._gcs.internalValue = undefined;
@@ -2250,11 +2354,28 @@ export class DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScripts
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._abfss.internalValue = value.abfss;
       this._dbfs.internalValue = value.dbfs;
       this._file.internalValue = value.file;
       this._gcs.internalValue = value.gcs;
       this._s3.internalValue = value.s3;
     }
+  }
+
+  // abfss - computed: false, optional: true, required: false
+  private _abfss = new DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfssOutputReference(this, "abfss");
+  public get abfss() {
+    return this._abfss;
+  }
+  public putAbfss(value: DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfss) {
+    this._abfss.internalValue = value;
+  }
+  public resetAbfss() {
+    this._abfss.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get abfssInput() {
+    return this._abfss.internalValue;
   }
 
   // dbfs - computed: false, optional: true, required: false
@@ -5183,6 +5304,71 @@ export class DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributesOutputRe
     return this._zoneId;
   }
 }
+export interface DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfss {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#destination DataDatabricksJob#destination}
+  */
+  readonly destination?: string;
+}
+
+export function dataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfssToTerraform(struct?: DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfssOutputReference | DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfss): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    destination: cdktf.stringToTerraform(struct!.destination),
+  }
+}
+
+export class DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfssOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfss | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._destination !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destination = this._destination;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfss | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._destination = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._destination = value.destination;
+    }
+  }
+
+  // destination - computed: false, optional: true, required: false
+  private _destination?: string; 
+  public get destination() {
+    return this.getStringAttribute('destination');
+  }
+  public set destination(value: string) {
+    this._destination = value;
+  }
+  public resetDestination() {
+    this._destination = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationInput() {
+    return this._destination;
+  }
+}
 export interface DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsDbfs {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#destination DataDatabricksJob#destination}
@@ -5601,6 +5787,12 @@ export class DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3OutputRe
 }
 export interface DataDatabricksJobJobSettingsSettingsNewClusterInitScripts {
   /**
+  * abfss block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#abfss DataDatabricksJob#abfss}
+  */
+  readonly abfss?: DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfss;
+  /**
   * dbfs block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#dbfs DataDatabricksJob#dbfs}
@@ -5632,6 +5824,7 @@ export function dataDatabricksJobJobSettingsSettingsNewClusterInitScriptsToTerra
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    abfss: dataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfssToTerraform(struct!.abfss),
     dbfs: dataDatabricksJobJobSettingsSettingsNewClusterInitScriptsDbfsToTerraform(struct!.dbfs),
     file: dataDatabricksJobJobSettingsSettingsNewClusterInitScriptsFileToTerraform(struct!.file),
     gcs: dataDatabricksJobJobSettingsSettingsNewClusterInitScriptsGcsToTerraform(struct!.gcs),
@@ -5659,6 +5852,10 @@ export class DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsOutputRefe
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._abfss?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.abfss = this._abfss?.internalValue;
+    }
     if (this._dbfs?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.dbfs = this._dbfs?.internalValue;
@@ -5682,6 +5879,7 @@ export class DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsOutputRefe
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._abfss.internalValue = undefined;
       this._dbfs.internalValue = undefined;
       this._file.internalValue = undefined;
       this._gcs.internalValue = undefined;
@@ -5694,11 +5892,28 @@ export class DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsOutputRefe
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._abfss.internalValue = value.abfss;
       this._dbfs.internalValue = value.dbfs;
       this._file.internalValue = value.file;
       this._gcs.internalValue = value.gcs;
       this._s3.internalValue = value.s3;
     }
+  }
+
+  // abfss - computed: false, optional: true, required: false
+  private _abfss = new DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfssOutputReference(this, "abfss");
+  public get abfss() {
+    return this._abfss;
+  }
+  public putAbfss(value: DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfss) {
+    this._abfss.internalValue = value;
+  }
+  public resetAbfss() {
+    this._abfss.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get abfssInput() {
+    return this._abfss.internalValue;
   }
 
   // dbfs - computed: false, optional: true, required: false
@@ -6781,6 +6996,10 @@ export interface DataDatabricksJobJobSettingsSettingsNotebookTask {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#notebook_path DataDatabricksJob#notebook_path}
   */
   readonly notebookPath: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#source DataDatabricksJob#source}
+  */
+  readonly source?: string;
 }
 
 export function dataDatabricksJobJobSettingsSettingsNotebookTaskToTerraform(struct?: DataDatabricksJobJobSettingsSettingsNotebookTaskOutputReference | DataDatabricksJobJobSettingsSettingsNotebookTask): any {
@@ -6791,6 +7010,7 @@ export function dataDatabricksJobJobSettingsSettingsNotebookTaskToTerraform(stru
   return {
     base_parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.baseParameters),
     notebook_path: cdktf.stringToTerraform(struct!.notebookPath),
+    source: cdktf.stringToTerraform(struct!.source),
   }
 }
 
@@ -6816,6 +7036,10 @@ export class DataDatabricksJobJobSettingsSettingsNotebookTaskOutputReference ext
       hasAnyValues = true;
       internalValueResult.notebookPath = this._notebookPath;
     }
+    if (this._source !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.source = this._source;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -6824,11 +7048,13 @@ export class DataDatabricksJobJobSettingsSettingsNotebookTaskOutputReference ext
       this.isEmptyObject = false;
       this._baseParameters = undefined;
       this._notebookPath = undefined;
+      this._source = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._baseParameters = value.baseParameters;
       this._notebookPath = value.notebookPath;
+      this._source = value.source;
     }
   }
 
@@ -6859,6 +7085,22 @@ export class DataDatabricksJobJobSettingsSettingsNotebookTaskOutputReference ext
   // Temporarily expose input value. Use with caution.
   public get notebookPathInput() {
     return this._notebookPath;
+  }
+
+  // source - computed: false, optional: true, required: false
+  private _source?: string; 
+  public get source() {
+    return this.getStringAttribute('source');
+  }
+  public set source(value: string) {
+    this._source = value;
+  }
+  public resetSource() {
+    this._source = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceInput() {
+    return this._source;
   }
 }
 export interface DataDatabricksJobJobSettingsSettingsPipelineTask {
@@ -7457,6 +7699,10 @@ export class DataDatabricksJobJobSettingsSettingsSparkSubmitTaskOutputReference 
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskDbtTask {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#catalog DataDatabricksJob#catalog}
+  */
+  readonly catalog?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#commands DataDatabricksJob#commands}
   */
   readonly commands: string[];
@@ -7484,6 +7730,7 @@ export function dataDatabricksJobJobSettingsSettingsTaskDbtTaskToTerraform(struc
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    catalog: cdktf.stringToTerraform(struct!.catalog),
     commands: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.commands),
     profiles_directory: cdktf.stringToTerraform(struct!.profilesDirectory),
     project_directory: cdktf.stringToTerraform(struct!.projectDirectory),
@@ -7506,6 +7753,10 @@ export class DataDatabricksJobJobSettingsSettingsTaskDbtTaskOutputReference exte
   public get internalValue(): DataDatabricksJobJobSettingsSettingsTaskDbtTask | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._catalog !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.catalog = this._catalog;
+    }
     if (this._commands !== undefined) {
       hasAnyValues = true;
       internalValueResult.commands = this._commands;
@@ -7532,6 +7783,7 @@ export class DataDatabricksJobJobSettingsSettingsTaskDbtTaskOutputReference exte
   public set internalValue(value: DataDatabricksJobJobSettingsSettingsTaskDbtTask | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._catalog = undefined;
       this._commands = undefined;
       this._profilesDirectory = undefined;
       this._projectDirectory = undefined;
@@ -7540,12 +7792,29 @@ export class DataDatabricksJobJobSettingsSettingsTaskDbtTaskOutputReference exte
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._catalog = value.catalog;
       this._commands = value.commands;
       this._profilesDirectory = value.profilesDirectory;
       this._projectDirectory = value.projectDirectory;
       this._schema = value.schema;
       this._warehouseId = value.warehouseId;
     }
+  }
+
+  // catalog - computed: false, optional: true, required: false
+  private _catalog?: string; 
+  public get catalog() {
+    return this.getStringAttribute('catalog');
+  }
+  public set catalog(value: string) {
+    this._catalog = value;
+  }
+  public resetCatalog() {
+    this._catalog = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get catalogInput() {
+    return this._catalog;
   }
 
   // commands - computed: false, optional: false, required: true
@@ -9624,6 +9893,71 @@ export class DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributesOutp
     return this._zoneId;
   }
 }
+export interface DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfss {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#destination DataDatabricksJob#destination}
+  */
+  readonly destination?: string;
+}
+
+export function dataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfssToTerraform(struct?: DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfssOutputReference | DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfss): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    destination: cdktf.stringToTerraform(struct!.destination),
+  }
+}
+
+export class DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfssOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfss | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._destination !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destination = this._destination;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfss | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._destination = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._destination = value.destination;
+    }
+  }
+
+  // destination - computed: false, optional: true, required: false
+  private _destination?: string; 
+  public get destination() {
+    return this.getStringAttribute('destination');
+  }
+  public set destination(value: string) {
+    this._destination = value;
+  }
+  public resetDestination() {
+    this._destination = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationInput() {
+    return this._destination;
+  }
+}
 export interface DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsDbfs {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#destination DataDatabricksJob#destination}
@@ -10042,6 +10376,12 @@ export class DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3Outp
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScripts {
   /**
+  * abfss block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#abfss DataDatabricksJob#abfss}
+  */
+  readonly abfss?: DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfss;
+  /**
   * dbfs block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#dbfs DataDatabricksJob#dbfs}
@@ -10073,6 +10413,7 @@ export function dataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsToT
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    abfss: dataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfssToTerraform(struct!.abfss),
     dbfs: dataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsDbfsToTerraform(struct!.dbfs),
     file: dataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsFileToTerraform(struct!.file),
     gcs: dataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsGcsToTerraform(struct!.gcs),
@@ -10100,6 +10441,10 @@ export class DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsOutput
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._abfss?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.abfss = this._abfss?.internalValue;
+    }
     if (this._dbfs?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.dbfs = this._dbfs?.internalValue;
@@ -10123,6 +10468,7 @@ export class DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsOutput
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._abfss.internalValue = undefined;
       this._dbfs.internalValue = undefined;
       this._file.internalValue = undefined;
       this._gcs.internalValue = undefined;
@@ -10135,11 +10481,28 @@ export class DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsOutput
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._abfss.internalValue = value.abfss;
       this._dbfs.internalValue = value.dbfs;
       this._file.internalValue = value.file;
       this._gcs.internalValue = value.gcs;
       this._s3.internalValue = value.s3;
     }
+  }
+
+  // abfss - computed: false, optional: true, required: false
+  private _abfss = new DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfssOutputReference(this, "abfss");
+  public get abfss() {
+    return this._abfss;
+  }
+  public putAbfss(value: DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfss) {
+    this._abfss.internalValue = value;
+  }
+  public resetAbfss() {
+    this._abfss.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get abfssInput() {
+    return this._abfss.internalValue;
   }
 
   // dbfs - computed: false, optional: true, required: false
@@ -11222,6 +11585,10 @@ export interface DataDatabricksJobJobSettingsSettingsTaskNotebookTask {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#notebook_path DataDatabricksJob#notebook_path}
   */
   readonly notebookPath: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#source DataDatabricksJob#source}
+  */
+  readonly source?: string;
 }
 
 export function dataDatabricksJobJobSettingsSettingsTaskNotebookTaskToTerraform(struct?: DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference | DataDatabricksJobJobSettingsSettingsTaskNotebookTask): any {
@@ -11232,6 +11599,7 @@ export function dataDatabricksJobJobSettingsSettingsTaskNotebookTaskToTerraform(
   return {
     base_parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.baseParameters),
     notebook_path: cdktf.stringToTerraform(struct!.notebookPath),
+    source: cdktf.stringToTerraform(struct!.source),
   }
 }
 
@@ -11257,6 +11625,10 @@ export class DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference
       hasAnyValues = true;
       internalValueResult.notebookPath = this._notebookPath;
     }
+    if (this._source !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.source = this._source;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -11265,11 +11637,13 @@ export class DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference
       this.isEmptyObject = false;
       this._baseParameters = undefined;
       this._notebookPath = undefined;
+      this._source = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._baseParameters = value.baseParameters;
       this._notebookPath = value.notebookPath;
+      this._source = value.source;
     }
   }
 
@@ -11300,6 +11674,22 @@ export class DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference
   // Temporarily expose input value. Use with caution.
   public get notebookPathInput() {
     return this._notebookPath;
+  }
+
+  // source - computed: false, optional: true, required: false
+  private _source?: string; 
+  public get source() {
+    return this.getStringAttribute('source');
+  }
+  public set source(value: string) {
+    this._source = value;
+  }
+  public resetSource() {
+    this._source = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceInput() {
+    return this._source;
   }
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskPipelineTask {
@@ -14089,7 +14479,7 @@ export class DataDatabricksJob extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_job',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.6.5',
+        providerVersion: '1.7.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

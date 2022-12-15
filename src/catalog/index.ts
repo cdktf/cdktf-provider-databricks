@@ -38,6 +38,10 @@ export interface CatalogConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/catalog#properties Catalog#properties}
   */
   readonly properties?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/catalog#storage_root Catalog#storage_root}
+  */
+  readonly storageRoot?: string;
 }
 
 /**
@@ -66,7 +70,7 @@ export class Catalog extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_catalog',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.6.5',
+        providerVersion: '1.7.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -84,6 +88,7 @@ export class Catalog extends cdktf.TerraformResource {
     this._name = config.name;
     this._owner = config.owner;
     this._properties = config.properties;
+    this._storageRoot = config.storageRoot;
   }
 
   // ==========
@@ -199,6 +204,22 @@ export class Catalog extends cdktf.TerraformResource {
     return this._properties;
   }
 
+  // storage_root - computed: false, optional: true, required: false
+  private _storageRoot?: string; 
+  public get storageRoot() {
+    return this.getStringAttribute('storage_root');
+  }
+  public set storageRoot(value: string) {
+    this._storageRoot = value;
+  }
+  public resetStorageRoot() {
+    this._storageRoot = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageRootInput() {
+    return this._storageRoot;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -212,6 +233,7 @@ export class Catalog extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       owner: cdktf.stringToTerraform(this._owner),
       properties: cdktf.hashMapper(cdktf.stringToTerraform)(this._properties),
+      storage_root: cdktf.stringToTerraform(this._storageRoot),
     };
   }
 }

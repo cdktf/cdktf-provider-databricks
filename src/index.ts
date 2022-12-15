@@ -72,6 +72,7 @@ export * as dataDatabricksAwsBucketPolicy from './data-databricks-aws-bucket-pol
 export * as dataDatabricksAwsCrossaccountPolicy from './data-databricks-aws-crossaccount-policy';
 export * as dataDatabricksCatalogs from './data-databricks-catalogs';
 export * as dataDatabricksCluster from './data-databricks-cluster';
+export * as dataDatabricksClusterPolicy from './data-databricks-cluster-policy';
 export * as dataDatabricksClusters from './data-databricks-clusters';
 export * as dataDatabricksCurrentUser from './data-databricks-current-user';
 export * as dataDatabricksDbfsFile from './data-databricks-dbfs-file';

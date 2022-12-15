@@ -14,7 +14,7 @@ export interface OboTokenConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/obo_token#comment OboToken#comment}
   */
-  readonly comment: string;
+  readonly comment?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/obo_token#id OboToken#id}
   *
@@ -25,7 +25,7 @@ export interface OboTokenConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/obo_token#lifetime_seconds OboToken#lifetime_seconds}
   */
-  readonly lifetimeSeconds: number;
+  readonly lifetimeSeconds?: number;
 }
 
 /**
@@ -54,7 +54,7 @@ export class OboToken extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_obo_token',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.6.5',
+        providerVersion: '1.7.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -88,13 +88,16 @@ export class OboToken extends cdktf.TerraformResource {
     return this._applicationId;
   }
 
-  // comment - computed: false, optional: false, required: true
+  // comment - computed: false, optional: true, required: false
   private _comment?: string; 
   public get comment() {
     return this.getStringAttribute('comment');
   }
   public set comment(value: string) {
     this._comment = value;
+  }
+  public resetComment() {
+    this._comment = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get commentInput() {
@@ -117,13 +120,16 @@ export class OboToken extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // lifetime_seconds - computed: false, optional: false, required: true
+  // lifetime_seconds - computed: false, optional: true, required: false
   private _lifetimeSeconds?: number; 
   public get lifetimeSeconds() {
     return this.getNumberAttribute('lifetime_seconds');
   }
   public set lifetimeSeconds(value: number) {
     this._lifetimeSeconds = value;
+  }
+  public resetLifetimeSeconds() {
+    this._lifetimeSeconds = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get lifetimeSecondsInput() {
