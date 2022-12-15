@@ -48,6 +48,12 @@ export interface StorageCredentialConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/storage_credential#azure_service_principal StorageCredential#azure_service_principal}
   */
   readonly azureServicePrincipal?: StorageCredentialAzureServicePrincipal;
+  /**
+  * gcp_service_account_key block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/storage_credential#gcp_service_account_key StorageCredential#gcp_service_account_key}
+  */
+  readonly gcpServiceAccountKey?: StorageCredentialGcpServiceAccountKey;
 }
 export interface StorageCredentialAwsIamRole {
   /**
@@ -283,6 +289,116 @@ export class StorageCredentialAzureServicePrincipalOutputReference extends cdktf
     return this._directoryId;
   }
 }
+export interface StorageCredentialGcpServiceAccountKey {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/storage_credential#email StorageCredential#email}
+  */
+  readonly email: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/storage_credential#private_key StorageCredential#private_key}
+  */
+  readonly privateKey: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/storage_credential#private_key_id StorageCredential#private_key_id}
+  */
+  readonly privateKeyId: string;
+}
+
+export function storageCredentialGcpServiceAccountKeyToTerraform(struct?: StorageCredentialGcpServiceAccountKeyOutputReference | StorageCredentialGcpServiceAccountKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    email: cdktf.stringToTerraform(struct!.email),
+    private_key: cdktf.stringToTerraform(struct!.privateKey),
+    private_key_id: cdktf.stringToTerraform(struct!.privateKeyId),
+  }
+}
+
+export class StorageCredentialGcpServiceAccountKeyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): StorageCredentialGcpServiceAccountKey | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._email !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.email = this._email;
+    }
+    if (this._privateKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.privateKey = this._privateKey;
+    }
+    if (this._privateKeyId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.privateKeyId = this._privateKeyId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: StorageCredentialGcpServiceAccountKey | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._email = undefined;
+      this._privateKey = undefined;
+      this._privateKeyId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._email = value.email;
+      this._privateKey = value.privateKey;
+      this._privateKeyId = value.privateKeyId;
+    }
+  }
+
+  // email - computed: false, optional: false, required: true
+  private _email?: string; 
+  public get email() {
+    return this.getStringAttribute('email');
+  }
+  public set email(value: string) {
+    this._email = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailInput() {
+    return this._email;
+  }
+
+  // private_key - computed: false, optional: false, required: true
+  private _privateKey?: string; 
+  public get privateKey() {
+    return this.getStringAttribute('private_key');
+  }
+  public set privateKey(value: string) {
+    this._privateKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateKeyInput() {
+    return this._privateKey;
+  }
+
+  // private_key_id - computed: false, optional: false, required: true
+  private _privateKeyId?: string; 
+  public get privateKeyId() {
+    return this.getStringAttribute('private_key_id');
+  }
+  public set privateKeyId(value: string) {
+    this._privateKeyId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateKeyIdInput() {
+    return this._privateKeyId;
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/databricks/r/storage_credential databricks_storage_credential}
@@ -310,7 +426,7 @@ export class StorageCredential extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_storage_credential',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.6.5',
+        providerVersion: '1.7.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -329,6 +445,7 @@ export class StorageCredential extends cdktf.TerraformResource {
     this._awsIamRole.internalValue = config.awsIamRole;
     this._azureManagedIdentity.internalValue = config.azureManagedIdentity;
     this._azureServicePrincipal.internalValue = config.azureServicePrincipal;
+    this._gcpServiceAccountKey.internalValue = config.gcpServiceAccountKey;
   }
 
   // ==========
@@ -460,6 +577,22 @@ export class StorageCredential extends cdktf.TerraformResource {
     return this._azureServicePrincipal.internalValue;
   }
 
+  // gcp_service_account_key - computed: false, optional: true, required: false
+  private _gcpServiceAccountKey = new StorageCredentialGcpServiceAccountKeyOutputReference(this, "gcp_service_account_key");
+  public get gcpServiceAccountKey() {
+    return this._gcpServiceAccountKey;
+  }
+  public putGcpServiceAccountKey(value: StorageCredentialGcpServiceAccountKey) {
+    this._gcpServiceAccountKey.internalValue = value;
+  }
+  public resetGcpServiceAccountKey() {
+    this._gcpServiceAccountKey.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gcpServiceAccountKeyInput() {
+    return this._gcpServiceAccountKey.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -474,6 +607,7 @@ export class StorageCredential extends cdktf.TerraformResource {
       aws_iam_role: storageCredentialAwsIamRoleToTerraform(this._awsIamRole.internalValue),
       azure_managed_identity: storageCredentialAzureManagedIdentityToTerraform(this._azureManagedIdentity.internalValue),
       azure_service_principal: storageCredentialAzureServicePrincipalToTerraform(this._azureServicePrincipal.internalValue),
+      gcp_service_account_key: storageCredentialGcpServiceAccountKeyToTerraform(this._gcpServiceAccountKey.internalValue),
     };
   }
 }

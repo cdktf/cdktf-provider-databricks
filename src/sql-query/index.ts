@@ -113,11 +113,103 @@ export class SqlQueryParameterDateOutputReference extends cdktf.ComplexObject {
     return this._value;
   }
 }
+export interface SqlQueryParameterDateRangeRange {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_query#end SqlQuery#end}
+  */
+  readonly end: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_query#start SqlQuery#start}
+  */
+  readonly start: string;
+}
+
+export function sqlQueryParameterDateRangeRangeToTerraform(struct?: SqlQueryParameterDateRangeRangeOutputReference | SqlQueryParameterDateRangeRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    end: cdktf.stringToTerraform(struct!.end),
+    start: cdktf.stringToTerraform(struct!.start),
+  }
+}
+
+export class SqlQueryParameterDateRangeRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SqlQueryParameterDateRangeRange | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._end !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.end = this._end;
+    }
+    if (this._start !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.start = this._start;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SqlQueryParameterDateRangeRange | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._end = undefined;
+      this._start = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._end = value.end;
+      this._start = value.start;
+    }
+  }
+
+  // end - computed: false, optional: false, required: true
+  private _end?: string; 
+  public get end() {
+    return this.getStringAttribute('end');
+  }
+  public set end(value: string) {
+    this._end = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endInput() {
+    return this._end;
+  }
+
+  // start - computed: false, optional: false, required: true
+  private _start?: string; 
+  public get start() {
+    return this.getStringAttribute('start');
+  }
+  public set start(value: string) {
+    this._start = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startInput() {
+    return this._start;
+  }
+}
 export interface SqlQueryParameterDateRange {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_query#value SqlQuery#value}
   */
-  readonly value: string;
+  readonly value?: string;
+  /**
+  * range block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_query#range SqlQuery#range}
+  */
+  readonly range?: SqlQueryParameterDateRangeRange;
 }
 
 export function sqlQueryParameterDateRangeToTerraform(struct?: SqlQueryParameterDateRangeOutputReference | SqlQueryParameterDateRange): any {
@@ -127,6 +219,7 @@ export function sqlQueryParameterDateRangeToTerraform(struct?: SqlQueryParameter
   }
   return {
     value: cdktf.stringToTerraform(struct!.value),
+    range: sqlQueryParameterDateRangeRangeToTerraform(struct!.range),
   }
 }
 
@@ -148,6 +241,10 @@ export class SqlQueryParameterDateRangeOutputReference extends cdktf.ComplexObje
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
+    if (this._range?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.range = this._range?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -155,14 +252,16 @@ export class SqlQueryParameterDateRangeOutputReference extends cdktf.ComplexObje
     if (value === undefined) {
       this.isEmptyObject = false;
       this._value = undefined;
+      this._range.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._value = value.value;
+      this._range.internalValue = value.range;
     }
   }
 
-  // value - computed: false, optional: false, required: true
+  // value - computed: false, optional: true, required: false
   private _value?: string; 
   public get value() {
     return this.getStringAttribute('value');
@@ -170,9 +269,28 @@ export class SqlQueryParameterDateRangeOutputReference extends cdktf.ComplexObje
   public set value(value: string) {
     this._value = value;
   }
+  public resetValue() {
+    this._value = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get valueInput() {
     return this._value;
+  }
+
+  // range - computed: false, optional: true, required: false
+  private _range = new SqlQueryParameterDateRangeRangeOutputReference(this, "range");
+  public get range() {
+    return this._range;
+  }
+  public putRange(value: SqlQueryParameterDateRangeRange) {
+    this._range.internalValue = value;
+  }
+  public resetRange() {
+    this._range.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rangeInput() {
+    return this._range.internalValue;
   }
 }
 export interface SqlQueryParameterDatetime {
@@ -237,11 +355,103 @@ export class SqlQueryParameterDatetimeOutputReference extends cdktf.ComplexObjec
     return this._value;
   }
 }
+export interface SqlQueryParameterDatetimeRangeRange {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_query#end SqlQuery#end}
+  */
+  readonly end: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_query#start SqlQuery#start}
+  */
+  readonly start: string;
+}
+
+export function sqlQueryParameterDatetimeRangeRangeToTerraform(struct?: SqlQueryParameterDatetimeRangeRangeOutputReference | SqlQueryParameterDatetimeRangeRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    end: cdktf.stringToTerraform(struct!.end),
+    start: cdktf.stringToTerraform(struct!.start),
+  }
+}
+
+export class SqlQueryParameterDatetimeRangeRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SqlQueryParameterDatetimeRangeRange | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._end !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.end = this._end;
+    }
+    if (this._start !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.start = this._start;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SqlQueryParameterDatetimeRangeRange | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._end = undefined;
+      this._start = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._end = value.end;
+      this._start = value.start;
+    }
+  }
+
+  // end - computed: false, optional: false, required: true
+  private _end?: string; 
+  public get end() {
+    return this.getStringAttribute('end');
+  }
+  public set end(value: string) {
+    this._end = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endInput() {
+    return this._end;
+  }
+
+  // start - computed: false, optional: false, required: true
+  private _start?: string; 
+  public get start() {
+    return this.getStringAttribute('start');
+  }
+  public set start(value: string) {
+    this._start = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startInput() {
+    return this._start;
+  }
+}
 export interface SqlQueryParameterDatetimeRange {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_query#value SqlQuery#value}
   */
-  readonly value: string;
+  readonly value?: string;
+  /**
+  * range block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_query#range SqlQuery#range}
+  */
+  readonly range?: SqlQueryParameterDatetimeRangeRange;
 }
 
 export function sqlQueryParameterDatetimeRangeToTerraform(struct?: SqlQueryParameterDatetimeRangeOutputReference | SqlQueryParameterDatetimeRange): any {
@@ -251,6 +461,7 @@ export function sqlQueryParameterDatetimeRangeToTerraform(struct?: SqlQueryParam
   }
   return {
     value: cdktf.stringToTerraform(struct!.value),
+    range: sqlQueryParameterDatetimeRangeRangeToTerraform(struct!.range),
   }
 }
 
@@ -272,6 +483,10 @@ export class SqlQueryParameterDatetimeRangeOutputReference extends cdktf.Complex
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
+    if (this._range?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.range = this._range?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -279,14 +494,16 @@ export class SqlQueryParameterDatetimeRangeOutputReference extends cdktf.Complex
     if (value === undefined) {
       this.isEmptyObject = false;
       this._value = undefined;
+      this._range.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._value = value.value;
+      this._range.internalValue = value.range;
     }
   }
 
-  // value - computed: false, optional: false, required: true
+  // value - computed: false, optional: true, required: false
   private _value?: string; 
   public get value() {
     return this.getStringAttribute('value');
@@ -294,9 +511,28 @@ export class SqlQueryParameterDatetimeRangeOutputReference extends cdktf.Complex
   public set value(value: string) {
     this._value = value;
   }
+  public resetValue() {
+    this._value = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get valueInput() {
     return this._value;
+  }
+
+  // range - computed: false, optional: true, required: false
+  private _range = new SqlQueryParameterDatetimeRangeRangeOutputReference(this, "range");
+  public get range() {
+    return this._range;
+  }
+  public putRange(value: SqlQueryParameterDatetimeRangeRange) {
+    this._range.internalValue = value;
+  }
+  public resetRange() {
+    this._range.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rangeInput() {
+    return this._range.internalValue;
   }
 }
 export interface SqlQueryParameterDatetimesec {
@@ -361,11 +597,103 @@ export class SqlQueryParameterDatetimesecOutputReference extends cdktf.ComplexOb
     return this._value;
   }
 }
+export interface SqlQueryParameterDatetimesecRangeRange {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_query#end SqlQuery#end}
+  */
+  readonly end: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_query#start SqlQuery#start}
+  */
+  readonly start: string;
+}
+
+export function sqlQueryParameterDatetimesecRangeRangeToTerraform(struct?: SqlQueryParameterDatetimesecRangeRangeOutputReference | SqlQueryParameterDatetimesecRangeRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    end: cdktf.stringToTerraform(struct!.end),
+    start: cdktf.stringToTerraform(struct!.start),
+  }
+}
+
+export class SqlQueryParameterDatetimesecRangeRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SqlQueryParameterDatetimesecRangeRange | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._end !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.end = this._end;
+    }
+    if (this._start !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.start = this._start;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SqlQueryParameterDatetimesecRangeRange | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._end = undefined;
+      this._start = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._end = value.end;
+      this._start = value.start;
+    }
+  }
+
+  // end - computed: false, optional: false, required: true
+  private _end?: string; 
+  public get end() {
+    return this.getStringAttribute('end');
+  }
+  public set end(value: string) {
+    this._end = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endInput() {
+    return this._end;
+  }
+
+  // start - computed: false, optional: false, required: true
+  private _start?: string; 
+  public get start() {
+    return this.getStringAttribute('start');
+  }
+  public set start(value: string) {
+    this._start = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startInput() {
+    return this._start;
+  }
+}
 export interface SqlQueryParameterDatetimesecRange {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_query#value SqlQuery#value}
   */
-  readonly value: string;
+  readonly value?: string;
+  /**
+  * range block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_query#range SqlQuery#range}
+  */
+  readonly range?: SqlQueryParameterDatetimesecRangeRange;
 }
 
 export function sqlQueryParameterDatetimesecRangeToTerraform(struct?: SqlQueryParameterDatetimesecRangeOutputReference | SqlQueryParameterDatetimesecRange): any {
@@ -375,6 +703,7 @@ export function sqlQueryParameterDatetimesecRangeToTerraform(struct?: SqlQueryPa
   }
   return {
     value: cdktf.stringToTerraform(struct!.value),
+    range: sqlQueryParameterDatetimesecRangeRangeToTerraform(struct!.range),
   }
 }
 
@@ -396,6 +725,10 @@ export class SqlQueryParameterDatetimesecRangeOutputReference extends cdktf.Comp
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
+    if (this._range?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.range = this._range?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -403,14 +736,16 @@ export class SqlQueryParameterDatetimesecRangeOutputReference extends cdktf.Comp
     if (value === undefined) {
       this.isEmptyObject = false;
       this._value = undefined;
+      this._range.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._value = value.value;
+      this._range.internalValue = value.range;
     }
   }
 
-  // value - computed: false, optional: false, required: true
+  // value - computed: false, optional: true, required: false
   private _value?: string; 
   public get value() {
     return this.getStringAttribute('value');
@@ -418,9 +753,28 @@ export class SqlQueryParameterDatetimesecRangeOutputReference extends cdktf.Comp
   public set value(value: string) {
     this._value = value;
   }
+  public resetValue() {
+    this._value = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get valueInput() {
     return this._value;
+  }
+
+  // range - computed: false, optional: true, required: false
+  private _range = new SqlQueryParameterDatetimesecRangeRangeOutputReference(this, "range");
+  public get range() {
+    return this._range;
+  }
+  public putRange(value: SqlQueryParameterDatetimesecRangeRange) {
+    this._range.internalValue = value;
+  }
+  public resetRange() {
+    this._range.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rangeInput() {
+    return this._range.internalValue;
   }
 }
 export interface SqlQueryParameterEnumMultiple {
@@ -1959,7 +2313,7 @@ export class SqlQuery extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_sql_query',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.6.5',
+        providerVersion: '1.7.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
