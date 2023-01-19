@@ -5,16 +5,13 @@ on:
   issues:
     types:
       - opened
-  pull_request:
-    types:
-      - opened
 jobs:
   autoclose:
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
       issues: write
-    if: github.event.issue.author_association != 'OWNER' && github.event.issue.author_association != 'COLLABORATOR'
+    if: github.event.issue.author_association != 'OWNER' && github.event.issue.author_association != 'MEMBER' && github.event.issue.author_association != 'COLLABORATOR'
     steps:
       - name: Auto-close issues by non-collaborators
         uses: peter-evans/close-issue@v2
