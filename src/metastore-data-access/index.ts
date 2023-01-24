@@ -426,7 +426,7 @@ export class MetastoreDataAccess extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_metastore_data_access',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.7.0',
+        providerVersion: '1.9.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

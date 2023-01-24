@@ -200,6 +200,22 @@ export class PipelineClusterAutoscaleOutputReference extends cdktf.ComplexObject
 }
 export interface PipelineClusterAwsAttributes {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#availability Pipeline#availability}
+  */
+  readonly availability?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#ebs_volume_count Pipeline#ebs_volume_count}
+  */
+  readonly ebsVolumeCount?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#ebs_volume_size Pipeline#ebs_volume_size}
+  */
+  readonly ebsVolumeSize?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#ebs_volume_type Pipeline#ebs_volume_type}
+  */
+  readonly ebsVolumeType?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#first_on_demand Pipeline#first_on_demand}
   */
   readonly firstOnDemand?: number;
@@ -207,6 +223,10 @@ export interface PipelineClusterAwsAttributes {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#instance_profile_arn Pipeline#instance_profile_arn}
   */
   readonly instanceProfileArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#spot_bid_price_percent Pipeline#spot_bid_price_percent}
+  */
+  readonly spotBidPricePercent?: number;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#zone_id Pipeline#zone_id}
   */
@@ -219,8 +239,13 @@ export function pipelineClusterAwsAttributesToTerraform(struct?: PipelineCluster
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    availability: cdktf.stringToTerraform(struct!.availability),
+    ebs_volume_count: cdktf.numberToTerraform(struct!.ebsVolumeCount),
+    ebs_volume_size: cdktf.numberToTerraform(struct!.ebsVolumeSize),
+    ebs_volume_type: cdktf.stringToTerraform(struct!.ebsVolumeType),
     first_on_demand: cdktf.numberToTerraform(struct!.firstOnDemand),
     instance_profile_arn: cdktf.stringToTerraform(struct!.instanceProfileArn),
+    spot_bid_price_percent: cdktf.numberToTerraform(struct!.spotBidPricePercent),
     zone_id: cdktf.stringToTerraform(struct!.zoneId),
   }
 }
@@ -239,6 +264,22 @@ export class PipelineClusterAwsAttributesOutputReference extends cdktf.ComplexOb
   public get internalValue(): PipelineClusterAwsAttributes | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._availability !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.availability = this._availability;
+    }
+    if (this._ebsVolumeCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ebsVolumeCount = this._ebsVolumeCount;
+    }
+    if (this._ebsVolumeSize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ebsVolumeSize = this._ebsVolumeSize;
+    }
+    if (this._ebsVolumeType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ebsVolumeType = this._ebsVolumeType;
+    }
     if (this._firstOnDemand !== undefined) {
       hasAnyValues = true;
       internalValueResult.firstOnDemand = this._firstOnDemand;
@@ -246,6 +287,10 @@ export class PipelineClusterAwsAttributesOutputReference extends cdktf.ComplexOb
     if (this._instanceProfileArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.instanceProfileArn = this._instanceProfileArn;
+    }
+    if (this._spotBidPricePercent !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.spotBidPricePercent = this._spotBidPricePercent;
     }
     if (this._zoneId !== undefined) {
       hasAnyValues = true;
@@ -257,16 +302,90 @@ export class PipelineClusterAwsAttributesOutputReference extends cdktf.ComplexOb
   public set internalValue(value: PipelineClusterAwsAttributes | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._availability = undefined;
+      this._ebsVolumeCount = undefined;
+      this._ebsVolumeSize = undefined;
+      this._ebsVolumeType = undefined;
       this._firstOnDemand = undefined;
       this._instanceProfileArn = undefined;
+      this._spotBidPricePercent = undefined;
       this._zoneId = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._availability = value.availability;
+      this._ebsVolumeCount = value.ebsVolumeCount;
+      this._ebsVolumeSize = value.ebsVolumeSize;
+      this._ebsVolumeType = value.ebsVolumeType;
       this._firstOnDemand = value.firstOnDemand;
       this._instanceProfileArn = value.instanceProfileArn;
+      this._spotBidPricePercent = value.spotBidPricePercent;
       this._zoneId = value.zoneId;
     }
+  }
+
+  // availability - computed: false, optional: true, required: false
+  private _availability?: string; 
+  public get availability() {
+    return this.getStringAttribute('availability');
+  }
+  public set availability(value: string) {
+    this._availability = value;
+  }
+  public resetAvailability() {
+    this._availability = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityInput() {
+    return this._availability;
+  }
+
+  // ebs_volume_count - computed: false, optional: true, required: false
+  private _ebsVolumeCount?: number; 
+  public get ebsVolumeCount() {
+    return this.getNumberAttribute('ebs_volume_count');
+  }
+  public set ebsVolumeCount(value: number) {
+    this._ebsVolumeCount = value;
+  }
+  public resetEbsVolumeCount() {
+    this._ebsVolumeCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ebsVolumeCountInput() {
+    return this._ebsVolumeCount;
+  }
+
+  // ebs_volume_size - computed: false, optional: true, required: false
+  private _ebsVolumeSize?: number; 
+  public get ebsVolumeSize() {
+    return this.getNumberAttribute('ebs_volume_size');
+  }
+  public set ebsVolumeSize(value: number) {
+    this._ebsVolumeSize = value;
+  }
+  public resetEbsVolumeSize() {
+    this._ebsVolumeSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ebsVolumeSizeInput() {
+    return this._ebsVolumeSize;
+  }
+
+  // ebs_volume_type - computed: false, optional: true, required: false
+  private _ebsVolumeType?: string; 
+  public get ebsVolumeType() {
+    return this.getStringAttribute('ebs_volume_type');
+  }
+  public set ebsVolumeType(value: string) {
+    this._ebsVolumeType = value;
+  }
+  public resetEbsVolumeType() {
+    this._ebsVolumeType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ebsVolumeTypeInput() {
+    return this._ebsVolumeType;
   }
 
   // first_on_demand - computed: false, optional: true, required: false
@@ -301,6 +420,22 @@ export class PipelineClusterAwsAttributesOutputReference extends cdktf.ComplexOb
     return this._instanceProfileArn;
   }
 
+  // spot_bid_price_percent - computed: false, optional: true, required: false
+  private _spotBidPricePercent?: number; 
+  public get spotBidPricePercent() {
+    return this.getNumberAttribute('spot_bid_price_percent');
+  }
+  public set spotBidPricePercent(value: number) {
+    this._spotBidPricePercent = value;
+  }
+  public resetSpotBidPricePercent() {
+    this._spotBidPricePercent = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get spotBidPricePercentInput() {
+    return this._spotBidPricePercent;
+  }
+
   // zone_id - computed: false, optional: true, required: false
   private _zoneId?: string; 
   public get zoneId() {
@@ -315,6 +450,125 @@ export class PipelineClusterAwsAttributesOutputReference extends cdktf.ComplexOb
   // Temporarily expose input value. Use with caution.
   public get zoneIdInput() {
     return this._zoneId;
+  }
+}
+export interface PipelineClusterAzureAttributes {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#availability Pipeline#availability}
+  */
+  readonly availability?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#first_on_demand Pipeline#first_on_demand}
+  */
+  readonly firstOnDemand?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#spot_bid_max_price Pipeline#spot_bid_max_price}
+  */
+  readonly spotBidMaxPrice?: number;
+}
+
+export function pipelineClusterAzureAttributesToTerraform(struct?: PipelineClusterAzureAttributesOutputReference | PipelineClusterAzureAttributes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    availability: cdktf.stringToTerraform(struct!.availability),
+    first_on_demand: cdktf.numberToTerraform(struct!.firstOnDemand),
+    spot_bid_max_price: cdktf.numberToTerraform(struct!.spotBidMaxPrice),
+  }
+}
+
+export class PipelineClusterAzureAttributesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PipelineClusterAzureAttributes | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._availability !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.availability = this._availability;
+    }
+    if (this._firstOnDemand !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.firstOnDemand = this._firstOnDemand;
+    }
+    if (this._spotBidMaxPrice !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.spotBidMaxPrice = this._spotBidMaxPrice;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PipelineClusterAzureAttributes | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._availability = undefined;
+      this._firstOnDemand = undefined;
+      this._spotBidMaxPrice = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._availability = value.availability;
+      this._firstOnDemand = value.firstOnDemand;
+      this._spotBidMaxPrice = value.spotBidMaxPrice;
+    }
+  }
+
+  // availability - computed: false, optional: true, required: false
+  private _availability?: string; 
+  public get availability() {
+    return this.getStringAttribute('availability');
+  }
+  public set availability(value: string) {
+    this._availability = value;
+  }
+  public resetAvailability() {
+    this._availability = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityInput() {
+    return this._availability;
+  }
+
+  // first_on_demand - computed: false, optional: true, required: false
+  private _firstOnDemand?: number; 
+  public get firstOnDemand() {
+    return this.getNumberAttribute('first_on_demand');
+  }
+  public set firstOnDemand(value: number) {
+    this._firstOnDemand = value;
+  }
+  public resetFirstOnDemand() {
+    this._firstOnDemand = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get firstOnDemandInput() {
+    return this._firstOnDemand;
+  }
+
+  // spot_bid_max_price - computed: false, optional: true, required: false
+  private _spotBidMaxPrice?: number; 
+  public get spotBidMaxPrice() {
+    return this.getNumberAttribute('spot_bid_max_price');
+  }
+  public set spotBidMaxPrice(value: number) {
+    this._spotBidMaxPrice = value;
+  }
+  public resetSpotBidMaxPrice() {
+    this._spotBidMaxPrice = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get spotBidMaxPriceInput() {
+    return this._spotBidMaxPrice;
   }
 }
 export interface PipelineClusterClusterLogConfDbfs {
@@ -701,9 +955,17 @@ export class PipelineClusterClusterLogConfOutputReference extends cdktf.ComplexO
 }
 export interface PipelineClusterGcpAttributes {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#availability Pipeline#availability}
+  */
+  readonly availability?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#google_service_account Pipeline#google_service_account}
   */
   readonly googleServiceAccount?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#zone_id Pipeline#zone_id}
+  */
+  readonly zoneId?: string;
 }
 
 export function pipelineClusterGcpAttributesToTerraform(struct?: PipelineClusterGcpAttributesOutputReference | PipelineClusterGcpAttributes): any {
@@ -712,7 +974,9 @@ export function pipelineClusterGcpAttributesToTerraform(struct?: PipelineCluster
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    availability: cdktf.stringToTerraform(struct!.availability),
     google_service_account: cdktf.stringToTerraform(struct!.googleServiceAccount),
+    zone_id: cdktf.stringToTerraform(struct!.zoneId),
   }
 }
 
@@ -730,9 +994,17 @@ export class PipelineClusterGcpAttributesOutputReference extends cdktf.ComplexOb
   public get internalValue(): PipelineClusterGcpAttributes | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._availability !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.availability = this._availability;
+    }
     if (this._googleServiceAccount !== undefined) {
       hasAnyValues = true;
       internalValueResult.googleServiceAccount = this._googleServiceAccount;
+    }
+    if (this._zoneId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.zoneId = this._zoneId;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -740,12 +1012,32 @@ export class PipelineClusterGcpAttributesOutputReference extends cdktf.ComplexOb
   public set internalValue(value: PipelineClusterGcpAttributes | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._availability = undefined;
       this._googleServiceAccount = undefined;
+      this._zoneId = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._availability = value.availability;
       this._googleServiceAccount = value.googleServiceAccount;
+      this._zoneId = value.zoneId;
     }
+  }
+
+  // availability - computed: false, optional: true, required: false
+  private _availability?: string; 
+  public get availability() {
+    return this.getStringAttribute('availability');
+  }
+  public set availability(value: string) {
+    this._availability = value;
+  }
+  public resetAvailability() {
+    this._availability = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityInput() {
+    return this._availability;
   }
 
   // google_service_account - computed: false, optional: true, required: false
@@ -762,6 +1054,22 @@ export class PipelineClusterGcpAttributesOutputReference extends cdktf.ComplexOb
   // Temporarily expose input value. Use with caution.
   public get googleServiceAccountInput() {
     return this._googleServiceAccount;
+  }
+
+  // zone_id - computed: false, optional: true, required: false
+  private _zoneId?: string; 
+  public get zoneId() {
+    return this.getStringAttribute('zone_id');
+  }
+  public set zoneId(value: string) {
+    this._zoneId = value;
+  }
+  public resetZoneId() {
+    this._zoneId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get zoneIdInput() {
+    return this._zoneId;
   }
 }
 export interface PipelineClusterInitScriptsAbfss {
@@ -1478,6 +1786,10 @@ export interface PipelineCluster {
   */
   readonly driverNodeTypeId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#enable_local_disk_encryption Pipeline#enable_local_disk_encryption}
+  */
+  readonly enableLocalDiskEncryption?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#instance_pool_id Pipeline#instance_pool_id}
   */
   readonly instancePoolId?: string;
@@ -1522,6 +1834,12 @@ export interface PipelineCluster {
   */
   readonly awsAttributes?: PipelineClusterAwsAttributes;
   /**
+  * azure_attributes block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#azure_attributes Pipeline#azure_attributes}
+  */
+  readonly azureAttributes?: PipelineClusterAzureAttributes;
+  /**
   * cluster_log_conf block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#cluster_log_conf Pipeline#cluster_log_conf}
@@ -1551,6 +1869,7 @@ export function pipelineClusterToTerraform(struct?: PipelineCluster | cdktf.IRes
     custom_tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.customTags),
     driver_instance_pool_id: cdktf.stringToTerraform(struct!.driverInstancePoolId),
     driver_node_type_id: cdktf.stringToTerraform(struct!.driverNodeTypeId),
+    enable_local_disk_encryption: cdktf.booleanToTerraform(struct!.enableLocalDiskEncryption),
     instance_pool_id: cdktf.stringToTerraform(struct!.instancePoolId),
     label: cdktf.stringToTerraform(struct!.label),
     node_type_id: cdktf.stringToTerraform(struct!.nodeTypeId),
@@ -1561,6 +1880,7 @@ export function pipelineClusterToTerraform(struct?: PipelineCluster | cdktf.IRes
     ssh_public_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sshPublicKeys),
     autoscale: pipelineClusterAutoscaleToTerraform(struct!.autoscale),
     aws_attributes: pipelineClusterAwsAttributesToTerraform(struct!.awsAttributes),
+    azure_attributes: pipelineClusterAzureAttributesToTerraform(struct!.azureAttributes),
     cluster_log_conf: pipelineClusterClusterLogConfToTerraform(struct!.clusterLogConf),
     gcp_attributes: pipelineClusterGcpAttributesToTerraform(struct!.gcpAttributes),
     init_scripts: cdktf.listMapper(pipelineClusterInitScriptsToTerraform, true)(struct!.initScripts),
@@ -1603,6 +1923,10 @@ export class PipelineClusterOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.driverNodeTypeId = this._driverNodeTypeId;
     }
+    if (this._enableLocalDiskEncryption !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableLocalDiskEncryption = this._enableLocalDiskEncryption;
+    }
     if (this._instancePoolId !== undefined) {
       hasAnyValues = true;
       internalValueResult.instancePoolId = this._instancePoolId;
@@ -1643,6 +1967,10 @@ export class PipelineClusterOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.awsAttributes = this._awsAttributes?.internalValue;
     }
+    if (this._azureAttributes?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.azureAttributes = this._azureAttributes?.internalValue;
+    }
     if (this._clusterLogConf?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.clusterLogConf = this._clusterLogConf?.internalValue;
@@ -1666,6 +1994,7 @@ export class PipelineClusterOutputReference extends cdktf.ComplexObject {
       this._customTags = undefined;
       this._driverInstancePoolId = undefined;
       this._driverNodeTypeId = undefined;
+      this._enableLocalDiskEncryption = undefined;
       this._instancePoolId = undefined;
       this._label = undefined;
       this._nodeTypeId = undefined;
@@ -1676,6 +2005,7 @@ export class PipelineClusterOutputReference extends cdktf.ComplexObject {
       this._sshPublicKeys = undefined;
       this._autoscale.internalValue = undefined;
       this._awsAttributes.internalValue = undefined;
+      this._azureAttributes.internalValue = undefined;
       this._clusterLogConf.internalValue = undefined;
       this._gcpAttributes.internalValue = undefined;
       this._initScripts.internalValue = undefined;
@@ -1691,6 +2021,7 @@ export class PipelineClusterOutputReference extends cdktf.ComplexObject {
       this._customTags = value.customTags;
       this._driverInstancePoolId = value.driverInstancePoolId;
       this._driverNodeTypeId = value.driverNodeTypeId;
+      this._enableLocalDiskEncryption = value.enableLocalDiskEncryption;
       this._instancePoolId = value.instancePoolId;
       this._label = value.label;
       this._nodeTypeId = value.nodeTypeId;
@@ -1701,6 +2032,7 @@ export class PipelineClusterOutputReference extends cdktf.ComplexObject {
       this._sshPublicKeys = value.sshPublicKeys;
       this._autoscale.internalValue = value.autoscale;
       this._awsAttributes.internalValue = value.awsAttributes;
+      this._azureAttributes.internalValue = value.azureAttributes;
       this._clusterLogConf.internalValue = value.clusterLogConf;
       this._gcpAttributes.internalValue = value.gcpAttributes;
       this._initScripts.internalValue = value.initScripts;
@@ -1769,6 +2101,22 @@ export class PipelineClusterOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get driverNodeTypeIdInput() {
     return this._driverNodeTypeId;
+  }
+
+  // enable_local_disk_encryption - computed: true, optional: true, required: false
+  private _enableLocalDiskEncryption?: boolean | cdktf.IResolvable; 
+  public get enableLocalDiskEncryption() {
+    return this.getBooleanAttribute('enable_local_disk_encryption');
+  }
+  public set enableLocalDiskEncryption(value: boolean | cdktf.IResolvable) {
+    this._enableLocalDiskEncryption = value;
+  }
+  public resetEnableLocalDiskEncryption() {
+    this._enableLocalDiskEncryption = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableLocalDiskEncryptionInput() {
+    return this._enableLocalDiskEncryption;
   }
 
   // instance_pool_id - computed: false, optional: true, required: false
@@ -1929,6 +2277,22 @@ export class PipelineClusterOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get awsAttributesInput() {
     return this._awsAttributes.internalValue;
+  }
+
+  // azure_attributes - computed: false, optional: true, required: false
+  private _azureAttributes = new PipelineClusterAzureAttributesOutputReference(this, "azure_attributes");
+  public get azureAttributes() {
+    return this._azureAttributes;
+  }
+  public putAzureAttributes(value: PipelineClusterAzureAttributes) {
+    this._azureAttributes.internalValue = value;
+  }
+  public resetAzureAttributes() {
+    this._azureAttributes.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get azureAttributesInput() {
+    return this._azureAttributes.internalValue;
   }
 
   // cluster_log_conf - computed: false, optional: true, required: false
@@ -2553,7 +2917,7 @@ export class Pipeline extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_pipeline',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.7.0',
+        providerVersion: '1.9.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

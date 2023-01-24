@@ -39,6 +39,14 @@ export interface CatalogConfig extends cdktf.TerraformMetaArguments {
   */
   readonly properties?: { [key: string]: string };
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/catalog#provider_name Catalog#provider_name}
+  */
+  readonly providerName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/catalog#share_name Catalog#share_name}
+  */
+  readonly shareName?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/catalog#storage_root Catalog#storage_root}
   */
   readonly storageRoot?: string;
@@ -70,7 +78,7 @@ export class Catalog extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_catalog',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.7.0',
+        providerVersion: '1.9.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -88,6 +96,8 @@ export class Catalog extends cdktf.TerraformResource {
     this._name = config.name;
     this._owner = config.owner;
     this._properties = config.properties;
+    this._providerName = config.providerName;
+    this._shareName = config.shareName;
     this._storageRoot = config.storageRoot;
   }
 
@@ -204,6 +214,38 @@ export class Catalog extends cdktf.TerraformResource {
     return this._properties;
   }
 
+  // provider_name - computed: false, optional: true, required: false
+  private _providerName?: string; 
+  public get providerName() {
+    return this.getStringAttribute('provider_name');
+  }
+  public set providerName(value: string) {
+    this._providerName = value;
+  }
+  public resetProviderName() {
+    this._providerName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerNameInput() {
+    return this._providerName;
+  }
+
+  // share_name - computed: false, optional: true, required: false
+  private _shareName?: string; 
+  public get shareName() {
+    return this.getStringAttribute('share_name');
+  }
+  public set shareName(value: string) {
+    this._shareName = value;
+  }
+  public resetShareName() {
+    this._shareName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get shareNameInput() {
+    return this._shareName;
+  }
+
   // storage_root - computed: false, optional: true, required: false
   private _storageRoot?: string; 
   public get storageRoot() {
@@ -233,6 +275,8 @@ export class Catalog extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       owner: cdktf.stringToTerraform(this._owner),
       properties: cdktf.hashMapper(cdktf.stringToTerraform)(this._properties),
+      provider_name: cdktf.stringToTerraform(this._providerName),
+      share_name: cdktf.stringToTerraform(this._shareName),
       storage_root: cdktf.stringToTerraform(this._storageRoot),
     };
   }

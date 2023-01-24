@@ -33,15 +33,15 @@ export interface MwsNetworksConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_networks#security_group_ids MwsNetworks#security_group_ids}
   */
-  readonly securityGroupIds: string[];
+  readonly securityGroupIds?: string[];
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_networks#subnet_ids MwsNetworks#subnet_ids}
   */
-  readonly subnetIds: string[];
+  readonly subnetIds?: string[];
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_networks#vpc_id MwsNetworks#vpc_id}
   */
-  readonly vpcId: string;
+  readonly vpcId?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_networks#vpc_status MwsNetworks#vpc_status}
   */
@@ -56,6 +56,12 @@ export interface MwsNetworksConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_networks#error_messages MwsNetworks#error_messages}
   */
   readonly errorMessages?: MwsNetworksErrorMessages[] | cdktf.IResolvable;
+  /**
+  * gcp_network_info block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_networks#gcp_network_info MwsNetworks#gcp_network_info}
+  */
+  readonly gcpNetworkInfo?: MwsNetworksGcpNetworkInfo;
   /**
   * vpc_endpoints block
   * 
@@ -187,6 +193,188 @@ export class MwsNetworksErrorMessagesList extends cdktf.ComplexList {
     return new MwsNetworksErrorMessagesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface MwsNetworksGcpNetworkInfo {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_networks#network_project_id MwsNetworks#network_project_id}
+  */
+  readonly networkProjectId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_networks#pod_ip_range_name MwsNetworks#pod_ip_range_name}
+  */
+  readonly podIpRangeName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_networks#service_ip_range_name MwsNetworks#service_ip_range_name}
+  */
+  readonly serviceIpRangeName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_networks#subnet_id MwsNetworks#subnet_id}
+  */
+  readonly subnetId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_networks#subnet_region MwsNetworks#subnet_region}
+  */
+  readonly subnetRegion: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_networks#vpc_id MwsNetworks#vpc_id}
+  */
+  readonly vpcId: string;
+}
+
+export function mwsNetworksGcpNetworkInfoToTerraform(struct?: MwsNetworksGcpNetworkInfoOutputReference | MwsNetworksGcpNetworkInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    network_project_id: cdktf.stringToTerraform(struct!.networkProjectId),
+    pod_ip_range_name: cdktf.stringToTerraform(struct!.podIpRangeName),
+    service_ip_range_name: cdktf.stringToTerraform(struct!.serviceIpRangeName),
+    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+    subnet_region: cdktf.stringToTerraform(struct!.subnetRegion),
+    vpc_id: cdktf.stringToTerraform(struct!.vpcId),
+  }
+}
+
+export class MwsNetworksGcpNetworkInfoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MwsNetworksGcpNetworkInfo | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._networkProjectId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkProjectId = this._networkProjectId;
+    }
+    if (this._podIpRangeName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.podIpRangeName = this._podIpRangeName;
+    }
+    if (this._serviceIpRangeName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serviceIpRangeName = this._serviceIpRangeName;
+    }
+    if (this._subnetId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subnetId = this._subnetId;
+    }
+    if (this._subnetRegion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subnetRegion = this._subnetRegion;
+    }
+    if (this._vpcId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.vpcId = this._vpcId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MwsNetworksGcpNetworkInfo | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._networkProjectId = undefined;
+      this._podIpRangeName = undefined;
+      this._serviceIpRangeName = undefined;
+      this._subnetId = undefined;
+      this._subnetRegion = undefined;
+      this._vpcId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._networkProjectId = value.networkProjectId;
+      this._podIpRangeName = value.podIpRangeName;
+      this._serviceIpRangeName = value.serviceIpRangeName;
+      this._subnetId = value.subnetId;
+      this._subnetRegion = value.subnetRegion;
+      this._vpcId = value.vpcId;
+    }
+  }
+
+  // network_project_id - computed: false, optional: false, required: true
+  private _networkProjectId?: string; 
+  public get networkProjectId() {
+    return this.getStringAttribute('network_project_id');
+  }
+  public set networkProjectId(value: string) {
+    this._networkProjectId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkProjectIdInput() {
+    return this._networkProjectId;
+  }
+
+  // pod_ip_range_name - computed: false, optional: false, required: true
+  private _podIpRangeName?: string; 
+  public get podIpRangeName() {
+    return this.getStringAttribute('pod_ip_range_name');
+  }
+  public set podIpRangeName(value: string) {
+    this._podIpRangeName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get podIpRangeNameInput() {
+    return this._podIpRangeName;
+  }
+
+  // service_ip_range_name - computed: false, optional: false, required: true
+  private _serviceIpRangeName?: string; 
+  public get serviceIpRangeName() {
+    return this.getStringAttribute('service_ip_range_name');
+  }
+  public set serviceIpRangeName(value: string) {
+    this._serviceIpRangeName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceIpRangeNameInput() {
+    return this._serviceIpRangeName;
+  }
+
+  // subnet_id - computed: false, optional: false, required: true
+  private _subnetId?: string; 
+  public get subnetId() {
+    return this.getStringAttribute('subnet_id');
+  }
+  public set subnetId(value: string) {
+    this._subnetId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdInput() {
+    return this._subnetId;
+  }
+
+  // subnet_region - computed: false, optional: false, required: true
+  private _subnetRegion?: string; 
+  public get subnetRegion() {
+    return this.getStringAttribute('subnet_region');
+  }
+  public set subnetRegion(value: string) {
+    this._subnetRegion = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetRegionInput() {
+    return this._subnetRegion;
+  }
+
+  // vpc_id - computed: false, optional: false, required: true
+  private _vpcId?: string; 
+  public get vpcId() {
+    return this.getStringAttribute('vpc_id');
+  }
+  public set vpcId(value: string) {
+    this._vpcId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcIdInput() {
+    return this._vpcId;
+  }
+}
 export interface MwsNetworksVpcEndpoints {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_networks#dataplane_relay MwsNetworks#dataplane_relay}
@@ -300,7 +488,7 @@ export class MwsNetworks extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_mws_networks',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.7.0',
+        providerVersion: '1.9.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -322,6 +510,7 @@ export class MwsNetworks extends cdktf.TerraformResource {
     this._vpcStatus = config.vpcStatus;
     this._workspaceId = config.workspaceId;
     this._errorMessages.internalValue = config.errorMessages;
+    this._gcpNetworkInfo.internalValue = config.gcpNetworkInfo;
     this._vpcEndpoints.internalValue = config.vpcEndpoints;
   }
 
@@ -403,7 +592,7 @@ export class MwsNetworks extends cdktf.TerraformResource {
     return this._networkName;
   }
 
-  // security_group_ids - computed: false, optional: false, required: true
+  // security_group_ids - computed: false, optional: true, required: false
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
     return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
@@ -411,12 +600,15 @@ export class MwsNetworks extends cdktf.TerraformResource {
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
   }
+  public resetSecurityGroupIds() {
+    this._securityGroupIds = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get securityGroupIdsInput() {
     return this._securityGroupIds;
   }
 
-  // subnet_ids - computed: false, optional: false, required: true
+  // subnet_ids - computed: false, optional: true, required: false
   private _subnetIds?: string[]; 
   public get subnetIds() {
     return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
@@ -424,18 +616,24 @@ export class MwsNetworks extends cdktf.TerraformResource {
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
   }
+  public resetSubnetIds() {
+    this._subnetIds = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get subnetIdsInput() {
     return this._subnetIds;
   }
 
-  // vpc_id - computed: false, optional: false, required: true
+  // vpc_id - computed: false, optional: true, required: false
   private _vpcId?: string; 
   public get vpcId() {
     return this.getStringAttribute('vpc_id');
   }
   public set vpcId(value: string) {
     this._vpcId = value;
+  }
+  public resetVpcId() {
+    this._vpcId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get vpcIdInput() {
@@ -490,6 +688,22 @@ export class MwsNetworks extends cdktf.TerraformResource {
     return this._errorMessages.internalValue;
   }
 
+  // gcp_network_info - computed: false, optional: true, required: false
+  private _gcpNetworkInfo = new MwsNetworksGcpNetworkInfoOutputReference(this, "gcp_network_info");
+  public get gcpNetworkInfo() {
+    return this._gcpNetworkInfo;
+  }
+  public putGcpNetworkInfo(value: MwsNetworksGcpNetworkInfo) {
+    this._gcpNetworkInfo.internalValue = value;
+  }
+  public resetGcpNetworkInfo() {
+    this._gcpNetworkInfo.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gcpNetworkInfoInput() {
+    return this._gcpNetworkInfo.internalValue;
+  }
+
   // vpc_endpoints - computed: false, optional: true, required: false
   private _vpcEndpoints = new MwsNetworksVpcEndpointsOutputReference(this, "vpc_endpoints");
   public get vpcEndpoints() {
@@ -523,6 +737,7 @@ export class MwsNetworks extends cdktf.TerraformResource {
       vpc_status: cdktf.stringToTerraform(this._vpcStatus),
       workspace_id: cdktf.numberToTerraform(this._workspaceId),
       error_messages: cdktf.listMapper(mwsNetworksErrorMessagesToTerraform, true)(this._errorMessages.internalValue),
+      gcp_network_info: mwsNetworksGcpNetworkInfoToTerraform(this._gcpNetworkInfo.internalValue),
       vpc_endpoints: mwsNetworksVpcEndpointsToTerraform(this._vpcEndpoints.internalValue),
     };
   }
