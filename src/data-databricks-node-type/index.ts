@@ -35,6 +35,10 @@ export interface DataDatabricksNodeTypeConfig extends cdktf.TerraformMetaArgumen
   */
   readonly localDisk?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#local_disk_min_size DataDatabricksNodeType#local_disk_min_size}
+  */
+  readonly localDiskMinSize?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#min_cores DataDatabricksNodeType#min_cores}
   */
   readonly minCores?: number;
@@ -90,7 +94,7 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_node_type',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.7.0',
+        providerVersion: '1.9.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -107,6 +111,7 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
     this._id = config.id;
     this._isIoCacheEnabled = config.isIoCacheEnabled;
     this._localDisk = config.localDisk;
+    this._localDiskMinSize = config.localDiskMinSize;
     this._minCores = config.minCores;
     this._minGpus = config.minGpus;
     this._minMemoryGb = config.minMemoryGb;
@@ -214,6 +219,22 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get localDiskInput() {
     return this._localDisk;
+  }
+
+  // local_disk_min_size - computed: false, optional: true, required: false
+  private _localDiskMinSize?: number; 
+  public get localDiskMinSize() {
+    return this.getNumberAttribute('local_disk_min_size');
+  }
+  public set localDiskMinSize(value: number) {
+    this._localDiskMinSize = value;
+  }
+  public resetLocalDiskMinSize() {
+    this._localDiskMinSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get localDiskMinSizeInput() {
+    return this._localDiskMinSize;
   }
 
   // min_cores - computed: false, optional: true, required: false
@@ -340,6 +361,7 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       is_io_cache_enabled: cdktf.booleanToTerraform(this._isIoCacheEnabled),
       local_disk: cdktf.booleanToTerraform(this._localDisk),
+      local_disk_min_size: cdktf.numberToTerraform(this._localDiskMinSize),
       min_cores: cdktf.numberToTerraform(this._minCores),
       min_gpus: cdktf.numberToTerraform(this._minGpus),
       min_memory_gb: cdktf.numberToTerraform(this._minMemoryGb),

@@ -10,7 +10,11 @@ export interface DataDatabricksClusterConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/cluster#cluster_id DataDatabricksCluster#cluster_id}
   */
-  readonly clusterId: string;
+  readonly clusterId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/cluster#cluster_name DataDatabricksCluster#cluster_name}
+  */
+  readonly clusterName?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/cluster#id DataDatabricksCluster#id}
   *
@@ -3699,14 +3703,14 @@ export class DataDatabricksCluster extends cdktf.TerraformDataSource {
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataDatabricksClusterConfig
+  * @param options DataDatabricksClusterConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DataDatabricksClusterConfig) {
+  public constructor(scope: Construct, id: string, config: DataDatabricksClusterConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'databricks_cluster',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.7.0',
+        providerVersion: '1.9.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -3718,6 +3722,7 @@ export class DataDatabricksCluster extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._clusterId = config.clusterId;
+    this._clusterName = config.clusterName;
     this._id = config.id;
     this._clusterInfo.internalValue = config.clusterInfo;
   }
@@ -3726,7 +3731,7 @@ export class DataDatabricksCluster extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // cluster_id - computed: false, optional: false, required: true
+  // cluster_id - computed: true, optional: true, required: false
   private _clusterId?: string; 
   public get clusterId() {
     return this.getStringAttribute('cluster_id');
@@ -3734,9 +3739,28 @@ export class DataDatabricksCluster extends cdktf.TerraformDataSource {
   public set clusterId(value: string) {
     this._clusterId = value;
   }
+  public resetClusterId() {
+    this._clusterId = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get clusterIdInput() {
     return this._clusterId;
+  }
+
+  // cluster_name - computed: true, optional: true, required: false
+  private _clusterName?: string; 
+  public get clusterName() {
+    return this.getStringAttribute('cluster_name');
+  }
+  public set clusterName(value: string) {
+    this._clusterName = value;
+  }
+  public resetClusterName() {
+    this._clusterName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterNameInput() {
+    return this._clusterName;
   }
 
   // id - computed: true, optional: true, required: false
@@ -3778,6 +3802,7 @@ export class DataDatabricksCluster extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cluster_id: cdktf.stringToTerraform(this._clusterId),
+      cluster_name: cdktf.stringToTerraform(this._clusterName),
       id: cdktf.stringToTerraform(this._id),
       cluster_info: dataDatabricksClusterClusterInfoToTerraform(this._clusterInfo.internalValue),
     };

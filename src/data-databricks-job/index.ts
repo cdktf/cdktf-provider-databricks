@@ -23,6 +23,10 @@ export interface DataDatabricksJobConfig extends cdktf.TerraformMetaArguments {
   */
   readonly jobName?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#name DataDatabricksJob#name}
+  */
+  readonly name?: string;
+  /**
   * job_settings block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#job_settings DataDatabricksJob#job_settings}
@@ -14479,7 +14483,7 @@ export class DataDatabricksJob extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_job',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.7.0',
+        providerVersion: '1.9.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -14493,6 +14497,7 @@ export class DataDatabricksJob extends cdktf.TerraformDataSource {
     this._id = config.id;
     this._jobId = config.jobId;
     this._jobName = config.jobName;
+    this._name = config.name;
     this._jobSettings.internalValue = config.jobSettings;
   }
 
@@ -14548,6 +14553,22 @@ export class DataDatabricksJob extends cdktf.TerraformDataSource {
     return this._jobName;
   }
 
+  // name - computed: true, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
   // job_settings - computed: false, optional: true, required: false
   private _jobSettings = new DataDatabricksJobJobSettingsOutputReference(this, "job_settings");
   public get jobSettings() {
@@ -14573,6 +14594,7 @@ export class DataDatabricksJob extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       job_id: cdktf.stringToTerraform(this._jobId),
       job_name: cdktf.stringToTerraform(this._jobName),
+      name: cdktf.stringToTerraform(this._name),
       job_settings: dataDatabricksJobJobSettingsToTerraform(this._jobSettings.internalValue),
     };
   }

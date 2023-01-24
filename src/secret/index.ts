@@ -54,7 +54,7 @@ export class Secret extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_secret',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.7.0',
+        providerVersion: '1.9.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -74,6 +74,11 @@ export class Secret extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // config_reference - computed: true, optional: false, required: false
+  public get configReference() {
+    return this.getStringAttribute('config_reference');
+  }
 
   // id - computed: true, optional: true, required: false
   private _id?: string; 

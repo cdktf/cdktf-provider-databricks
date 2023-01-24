@@ -38,6 +38,74 @@ export interface RepoConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/repo#url Repo#url}
   */
   readonly url: string;
+  /**
+  * sparse_checkout block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/repo#sparse_checkout Repo#sparse_checkout}
+  */
+  readonly sparseCheckout?: RepoSparseCheckout;
+}
+export interface RepoSparseCheckout {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/repo#patterns Repo#patterns}
+  */
+  readonly patterns: string[];
+}
+
+export function repoSparseCheckoutToTerraform(struct?: RepoSparseCheckoutOutputReference | RepoSparseCheckout): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    patterns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.patterns),
+  }
+}
+
+export class RepoSparseCheckoutOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): RepoSparseCheckout | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._patterns !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.patterns = this._patterns;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RepoSparseCheckout | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._patterns = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._patterns = value.patterns;
+    }
+  }
+
+  // patterns - computed: false, optional: false, required: true
+  private _patterns?: string[]; 
+  public get patterns() {
+    return this.getListAttribute('patterns');
+  }
+  public set patterns(value: string[]) {
+    this._patterns = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get patternsInput() {
+    return this._patterns;
+  }
 }
 
 /**
@@ -66,7 +134,7 @@ export class Repo extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_repo',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.7.0',
+        providerVersion: '1.9.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -84,6 +152,7 @@ export class Repo extends cdktf.TerraformResource {
     this._path = config.path;
     this._tag = config.tag;
     this._url = config.url;
+    this._sparseCheckout.internalValue = config.sparseCheckout;
   }
 
   // ==========
@@ -199,6 +268,22 @@ export class Repo extends cdktf.TerraformResource {
     return this._url;
   }
 
+  // sparse_checkout - computed: false, optional: true, required: false
+  private _sparseCheckout = new RepoSparseCheckoutOutputReference(this, "sparse_checkout");
+  public get sparseCheckout() {
+    return this._sparseCheckout;
+  }
+  public putSparseCheckout(value: RepoSparseCheckout) {
+    this._sparseCheckout.internalValue = value;
+  }
+  public resetSparseCheckout() {
+    this._sparseCheckout.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sparseCheckoutInput() {
+    return this._sparseCheckout.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -212,6 +297,7 @@ export class Repo extends cdktf.TerraformResource {
       path: cdktf.stringToTerraform(this._path),
       tag: cdktf.stringToTerraform(this._tag),
       url: cdktf.stringToTerraform(this._url),
+      sparse_checkout: repoSparseCheckoutToTerraform(this._sparseCheckout.internalValue),
     };
   }
 }
