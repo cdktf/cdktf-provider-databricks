@@ -13,7 +13,7 @@ Databricks Policy Definition Language.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster_policy#definition ClusterPolicy#definition}
   */
-  readonly definition?: string;
+  readonly definition: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster_policy#id ClusterPolicy#id}
   *
@@ -21,6 +21,10 @@ Databricks Policy Definition Language.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster_policy#max_clusters_per_user ClusterPolicy#max_clusters_per_user}
+  */
+  readonly maxClustersPerUser?: number;
   /**
   * Cluster policy name. This must be unique.
 Length must be between 1 and 100 characters.
@@ -56,7 +60,7 @@ export class ClusterPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_cluster_policy',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.9.0',
+        providerVersion: '1.9.1',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -69,6 +73,7 @@ export class ClusterPolicy extends cdktf.TerraformResource {
     });
     this._definition = config.definition;
     this._id = config.id;
+    this._maxClustersPerUser = config.maxClustersPerUser;
     this._name = config.name;
   }
 
@@ -76,16 +81,13 @@ export class ClusterPolicy extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // definition - computed: false, optional: true, required: false
+  // definition - computed: false, optional: false, required: true
   private _definition?: string; 
   public get definition() {
     return this.getStringAttribute('definition');
   }
   public set definition(value: string) {
     this._definition = value;
-  }
-  public resetDefinition() {
-    this._definition = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get definitionInput() {
@@ -106,6 +108,22 @@ export class ClusterPolicy extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // max_clusters_per_user - computed: false, optional: true, required: false
+  private _maxClustersPerUser?: number; 
+  public get maxClustersPerUser() {
+    return this.getNumberAttribute('max_clusters_per_user');
+  }
+  public set maxClustersPerUser(value: number) {
+    this._maxClustersPerUser = value;
+  }
+  public resetMaxClustersPerUser() {
+    this._maxClustersPerUser = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxClustersPerUserInput() {
+    return this._maxClustersPerUser;
   }
 
   // name - computed: false, optional: false, required: true
@@ -134,6 +152,7 @@ export class ClusterPolicy extends cdktf.TerraformResource {
     return {
       definition: cdktf.stringToTerraform(this._definition),
       id: cdktf.stringToTerraform(this._id),
+      max_clusters_per_user: cdktf.numberToTerraform(this._maxClustersPerUser),
       name: cdktf.stringToTerraform(this._name),
     };
   }

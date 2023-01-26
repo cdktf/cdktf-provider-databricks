@@ -19,6 +19,10 @@ export interface SqlDashboardConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_dashboard#parent SqlDashboard#parent}
+  */
+  readonly parent?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_dashboard#tags SqlDashboard#tags}
   */
   readonly tags?: string[];
@@ -50,7 +54,7 @@ export class SqlDashboard extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_sql_dashboard',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.9.0',
+        providerVersion: '1.9.1',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -63,6 +67,7 @@ export class SqlDashboard extends cdktf.TerraformResource {
     });
     this._id = config.id;
     this._name = config.name;
+    this._parent = config.parent;
     this._tags = config.tags;
   }
 
@@ -99,6 +104,22 @@ export class SqlDashboard extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // parent - computed: false, optional: true, required: false
+  private _parent?: string; 
+  public get parent() {
+    return this.getStringAttribute('parent');
+  }
+  public set parent(value: string) {
+    this._parent = value;
+  }
+  public resetParent() {
+    this._parent = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parentInput() {
+    return this._parent;
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags?: string[]; 
   public get tags() {
@@ -123,6 +144,7 @@ export class SqlDashboard extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      parent: cdktf.stringToTerraform(this._parent),
       tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
     };
   }

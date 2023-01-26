@@ -127,6 +127,12 @@ export interface ClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly clusterLogConf?: ClusterClusterLogConf;
   /**
+  * cluster_mount_info block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#cluster_mount_info Cluster#cluster_mount_info}
+  */
+  readonly clusterMountInfo?: ClusterClusterMountInfo[] | cdktf.IResolvable;
+  /**
   * docker_image block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#docker_image Cluster#docker_image}
@@ -1008,6 +1014,242 @@ export class ClusterClusterLogConfOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get s3Input() {
     return this._s3.internalValue;
+  }
+}
+export interface ClusterClusterMountInfoNetworkFilesystemInfo {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#mount_options Cluster#mount_options}
+  */
+  readonly mountOptions?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#server_address Cluster#server_address}
+  */
+  readonly serverAddress: string;
+}
+
+export function clusterClusterMountInfoNetworkFilesystemInfoToTerraform(struct?: ClusterClusterMountInfoNetworkFilesystemInfoOutputReference | ClusterClusterMountInfoNetworkFilesystemInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    mount_options: cdktf.stringToTerraform(struct!.mountOptions),
+    server_address: cdktf.stringToTerraform(struct!.serverAddress),
+  }
+}
+
+export class ClusterClusterMountInfoNetworkFilesystemInfoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ClusterClusterMountInfoNetworkFilesystemInfo | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._mountOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mountOptions = this._mountOptions;
+    }
+    if (this._serverAddress !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serverAddress = this._serverAddress;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ClusterClusterMountInfoNetworkFilesystemInfo | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._mountOptions = undefined;
+      this._serverAddress = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._mountOptions = value.mountOptions;
+      this._serverAddress = value.serverAddress;
+    }
+  }
+
+  // mount_options - computed: false, optional: true, required: false
+  private _mountOptions?: string; 
+  public get mountOptions() {
+    return this.getStringAttribute('mount_options');
+  }
+  public set mountOptions(value: string) {
+    this._mountOptions = value;
+  }
+  public resetMountOptions() {
+    this._mountOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mountOptionsInput() {
+    return this._mountOptions;
+  }
+
+  // server_address - computed: false, optional: false, required: true
+  private _serverAddress?: string; 
+  public get serverAddress() {
+    return this.getStringAttribute('server_address');
+  }
+  public set serverAddress(value: string) {
+    this._serverAddress = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serverAddressInput() {
+    return this._serverAddress;
+  }
+}
+export interface ClusterClusterMountInfo {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#local_mount_dir_path Cluster#local_mount_dir_path}
+  */
+  readonly localMountDirPath: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#remote_mount_dir_path Cluster#remote_mount_dir_path}
+  */
+  readonly remoteMountDirPath?: string;
+  /**
+  * network_filesystem_info block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster#network_filesystem_info Cluster#network_filesystem_info}
+  */
+  readonly networkFilesystemInfo: ClusterClusterMountInfoNetworkFilesystemInfo;
+}
+
+export function clusterClusterMountInfoToTerraform(struct?: ClusterClusterMountInfo | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    local_mount_dir_path: cdktf.stringToTerraform(struct!.localMountDirPath),
+    remote_mount_dir_path: cdktf.stringToTerraform(struct!.remoteMountDirPath),
+    network_filesystem_info: clusterClusterMountInfoNetworkFilesystemInfoToTerraform(struct!.networkFilesystemInfo),
+  }
+}
+
+export class ClusterClusterMountInfoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ClusterClusterMountInfo | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._localMountDirPath !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.localMountDirPath = this._localMountDirPath;
+    }
+    if (this._remoteMountDirPath !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.remoteMountDirPath = this._remoteMountDirPath;
+    }
+    if (this._networkFilesystemInfo?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkFilesystemInfo = this._networkFilesystemInfo?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ClusterClusterMountInfo | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._localMountDirPath = undefined;
+      this._remoteMountDirPath = undefined;
+      this._networkFilesystemInfo.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._localMountDirPath = value.localMountDirPath;
+      this._remoteMountDirPath = value.remoteMountDirPath;
+      this._networkFilesystemInfo.internalValue = value.networkFilesystemInfo;
+    }
+  }
+
+  // local_mount_dir_path - computed: false, optional: false, required: true
+  private _localMountDirPath?: string; 
+  public get localMountDirPath() {
+    return this.getStringAttribute('local_mount_dir_path');
+  }
+  public set localMountDirPath(value: string) {
+    this._localMountDirPath = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get localMountDirPathInput() {
+    return this._localMountDirPath;
+  }
+
+  // remote_mount_dir_path - computed: false, optional: true, required: false
+  private _remoteMountDirPath?: string; 
+  public get remoteMountDirPath() {
+    return this.getStringAttribute('remote_mount_dir_path');
+  }
+  public set remoteMountDirPath(value: string) {
+    this._remoteMountDirPath = value;
+  }
+  public resetRemoteMountDirPath() {
+    this._remoteMountDirPath = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get remoteMountDirPathInput() {
+    return this._remoteMountDirPath;
+  }
+
+  // network_filesystem_info - computed: false, optional: false, required: true
+  private _networkFilesystemInfo = new ClusterClusterMountInfoNetworkFilesystemInfoOutputReference(this, "network_filesystem_info");
+  public get networkFilesystemInfo() {
+    return this._networkFilesystemInfo;
+  }
+  public putNetworkFilesystemInfo(value: ClusterClusterMountInfoNetworkFilesystemInfo) {
+    this._networkFilesystemInfo.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkFilesystemInfoInput() {
+    return this._networkFilesystemInfo.internalValue;
+  }
+}
+
+export class ClusterClusterMountInfoList extends cdktf.ComplexList {
+  public internalValue? : ClusterClusterMountInfo[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ClusterClusterMountInfoOutputReference {
+    return new ClusterClusterMountInfoOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface ClusterDockerImageBasicAuth {
@@ -2900,7 +3142,7 @@ export class Cluster extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_cluster',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.9.0',
+        providerVersion: '1.9.1',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -2938,6 +3180,7 @@ export class Cluster extends cdktf.TerraformResource {
     this._awsAttributes.internalValue = config.awsAttributes;
     this._azureAttributes.internalValue = config.azureAttributes;
     this._clusterLogConf.internalValue = config.clusterLogConf;
+    this._clusterMountInfo.internalValue = config.clusterMountInfo;
     this._dockerImage.internalValue = config.dockerImage;
     this._gcpAttributes.internalValue = config.gcpAttributes;
     this._initScripts.internalValue = config.initScripts;
@@ -3395,6 +3638,22 @@ export class Cluster extends cdktf.TerraformResource {
     return this._clusterLogConf.internalValue;
   }
 
+  // cluster_mount_info - computed: false, optional: true, required: false
+  private _clusterMountInfo = new ClusterClusterMountInfoList(this, "cluster_mount_info", false);
+  public get clusterMountInfo() {
+    return this._clusterMountInfo;
+  }
+  public putClusterMountInfo(value: ClusterClusterMountInfo[] | cdktf.IResolvable) {
+    this._clusterMountInfo.internalValue = value;
+  }
+  public resetClusterMountInfo() {
+    this._clusterMountInfo.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterMountInfoInput() {
+    return this._clusterMountInfo.internalValue;
+  }
+
   // docker_image - computed: false, optional: true, required: false
   private _dockerImage = new ClusterDockerImageOutputReference(this, "docker_image");
   public get dockerImage() {
@@ -3524,6 +3783,7 @@ export class Cluster extends cdktf.TerraformResource {
       aws_attributes: clusterAwsAttributesToTerraform(this._awsAttributes.internalValue),
       azure_attributes: clusterAzureAttributesToTerraform(this._azureAttributes.internalValue),
       cluster_log_conf: clusterClusterLogConfToTerraform(this._clusterLogConf.internalValue),
+      cluster_mount_info: cdktf.listMapper(clusterClusterMountInfoToTerraform, true)(this._clusterMountInfo.internalValue),
       docker_image: clusterDockerImageToTerraform(this._dockerImage.internalValue),
       gcp_attributes: clusterGcpAttributesToTerraform(this._gcpAttributes.internalValue),
       init_scripts: cdktf.listMapper(clusterInitScriptsToTerraform, true)(this._initScripts.internalValue),
