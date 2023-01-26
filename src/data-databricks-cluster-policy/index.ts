@@ -46,7 +46,7 @@ export class DataDatabricksClusterPolicy extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_cluster_policy',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.9.0',
+        providerVersion: '1.9.1',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -84,6 +84,11 @@ export class DataDatabricksClusterPolicy extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // max_clusters_per_user - computed: true, optional: false, required: false
+  public get maxClustersPerUser() {
+    return this.getNumberAttribute('max_clusters_per_user');
   }
 
   // name - computed: false, optional: false, required: true

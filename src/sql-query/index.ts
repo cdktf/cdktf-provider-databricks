@@ -27,6 +27,10 @@ export interface SqlQueryConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_query#parent SqlQuery#parent}
+  */
+  readonly parent?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_query#query SqlQuery#query}
   */
   readonly query: string;
@@ -2313,7 +2317,7 @@ export class SqlQuery extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_sql_query',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.9.0',
+        providerVersion: '1.9.1',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -2328,6 +2332,7 @@ export class SqlQuery extends cdktf.TerraformResource {
     this._description = config.description;
     this._id = config.id;
     this._name = config.name;
+    this._parent = config.parent;
     this._query = config.query;
     this._runAsRole = config.runAsRole;
     this._tags = config.tags;
@@ -2395,6 +2400,22 @@ export class SqlQuery extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // parent - computed: false, optional: true, required: false
+  private _parent?: string; 
+  public get parent() {
+    return this.getStringAttribute('parent');
+  }
+  public set parent(value: string) {
+    this._parent = value;
+  }
+  public resetParent() {
+    this._parent = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parentInput() {
+    return this._parent;
   }
 
   // query - computed: false, optional: false, required: true
@@ -2484,6 +2505,7 @@ export class SqlQuery extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      parent: cdktf.stringToTerraform(this._parent),
       query: cdktf.stringToTerraform(this._query),
       run_as_role: cdktf.stringToTerraform(this._runAsRole),
       tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),

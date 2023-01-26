@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 
 export interface InstanceProfileConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_profile#iam_role_arn InstanceProfile#iam_role_arn}
+  */
+  readonly iamRoleArn?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_profile#id InstanceProfile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -17,7 +21,7 @@ export interface InstanceProfileConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_profile#instance_profile_arn InstanceProfile#instance_profile_arn}
   */
-  readonly instanceProfileArn?: string;
+  readonly instanceProfileArn: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_profile#is_meta_instance_profile InstanceProfile#is_meta_instance_profile}
   */
@@ -47,14 +51,14 @@ export class InstanceProfile extends cdktf.TerraformResource {
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options InstanceProfileConfig = {}
+  * @param options InstanceProfileConfig
   */
-  public constructor(scope: Construct, id: string, config: InstanceProfileConfig = {}) {
+  public constructor(scope: Construct, id: string, config: InstanceProfileConfig) {
     super(scope, id, {
       terraformResourceType: 'databricks_instance_profile',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.9.0',
+        providerVersion: '1.9.1',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -65,6 +69,7 @@ export class InstanceProfile extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._iamRoleArn = config.iamRoleArn;
     this._id = config.id;
     this._instanceProfileArn = config.instanceProfileArn;
     this._isMetaInstanceProfile = config.isMetaInstanceProfile;
@@ -74,6 +79,22 @@ export class InstanceProfile extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // iam_role_arn - computed: false, optional: true, required: false
+  private _iamRoleArn?: string; 
+  public get iamRoleArn() {
+    return this.getStringAttribute('iam_role_arn');
+  }
+  public set iamRoleArn(value: string) {
+    this._iamRoleArn = value;
+  }
+  public resetIamRoleArn() {
+    this._iamRoleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get iamRoleArnInput() {
+    return this._iamRoleArn;
+  }
 
   // id - computed: true, optional: true, required: false
   private _id?: string; 
@@ -91,16 +112,13 @@ export class InstanceProfile extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // instance_profile_arn - computed: false, optional: true, required: false
+  // instance_profile_arn - computed: false, optional: false, required: true
   private _instanceProfileArn?: string; 
   public get instanceProfileArn() {
     return this.getStringAttribute('instance_profile_arn');
   }
   public set instanceProfileArn(value: string) {
     this._instanceProfileArn = value;
-  }
-  public resetInstanceProfileArn() {
-    this._instanceProfileArn = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get instanceProfileArnInput() {
@@ -145,6 +163,7 @@ export class InstanceProfile extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      iam_role_arn: cdktf.stringToTerraform(this._iamRoleArn),
       id: cdktf.stringToTerraform(this._id),
       instance_profile_arn: cdktf.stringToTerraform(this._instanceProfileArn),
       is_meta_instance_profile: cdktf.booleanToTerraform(this._isMetaInstanceProfile),
