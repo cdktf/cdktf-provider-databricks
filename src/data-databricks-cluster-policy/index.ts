@@ -46,7 +46,7 @@ export class DataDatabricksClusterPolicy extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_cluster_policy',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.9.1',
+        providerVersion: '1.9.2',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
