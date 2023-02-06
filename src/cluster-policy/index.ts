@@ -22,6 +22,9 @@ Databricks Policy Definition Language.
   */
   readonly id?: string;
   /**
+  * Max number of clusters per user that can be active
+using this policy. If not present, there is no max limit.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/cluster_policy#max_clusters_per_user ClusterPolicy#max_clusters_per_user}
   */
   readonly maxClustersPerUser?: number;
@@ -60,7 +63,7 @@ export class ClusterPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_cluster_policy',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.9.1',
+        providerVersion: '1.9.2',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

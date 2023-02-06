@@ -12,6 +12,10 @@ export interface PipelineConfig extends cdktf.TerraformMetaArguments {
   */
   readonly allowDuplicateNames?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#catalog Pipeline#catalog}
+  */
+  readonly catalog?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#channel Pipeline#channel}
   */
   readonly channel?: string;
@@ -2455,6 +2459,68 @@ export class PipelineFiltersOutputReference extends cdktf.ComplexObject {
     return this._include;
   }
 }
+export interface PipelineLibraryFile {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#path Pipeline#path}
+  */
+  readonly path: string;
+}
+
+export function pipelineLibraryFileToTerraform(struct?: PipelineLibraryFileOutputReference | PipelineLibraryFile): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    path: cdktf.stringToTerraform(struct!.path),
+  }
+}
+
+export class PipelineLibraryFileOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PipelineLibraryFile | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PipelineLibraryFile | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._path = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._path = value.path;
+    }
+  }
+
+  // path - computed: false, optional: false, required: true
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+}
 export interface PipelineLibraryMaven {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#coordinates Pipeline#coordinates}
@@ -2643,6 +2709,12 @@ export interface PipelineLibrary {
   */
   readonly whl?: string;
   /**
+  * file block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#file Pipeline#file}
+  */
+  readonly file?: PipelineLibraryFile;
+  /**
   * maven block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#maven Pipeline#maven}
@@ -2664,6 +2736,7 @@ export function pipelineLibraryToTerraform(struct?: PipelineLibrary | cdktf.IRes
   return {
     jar: cdktf.stringToTerraform(struct!.jar),
     whl: cdktf.stringToTerraform(struct!.whl),
+    file: pipelineLibraryFileToTerraform(struct!.file),
     maven: pipelineLibraryMavenToTerraform(struct!.maven),
     notebook: pipelineLibraryNotebookToTerraform(struct!.notebook),
   }
@@ -2697,6 +2770,10 @@ export class PipelineLibraryOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.whl = this._whl;
     }
+    if (this._file?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.file = this._file?.internalValue;
+    }
     if (this._maven?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.maven = this._maven?.internalValue;
@@ -2714,6 +2791,7 @@ export class PipelineLibraryOutputReference extends cdktf.ComplexObject {
       this.resolvableValue = undefined;
       this._jar = undefined;
       this._whl = undefined;
+      this._file.internalValue = undefined;
       this._maven.internalValue = undefined;
       this._notebook.internalValue = undefined;
     }
@@ -2726,6 +2804,7 @@ export class PipelineLibraryOutputReference extends cdktf.ComplexObject {
       this.resolvableValue = undefined;
       this._jar = value.jar;
       this._whl = value.whl;
+      this._file.internalValue = value.file;
       this._maven.internalValue = value.maven;
       this._notebook.internalValue = value.notebook;
     }
@@ -2761,6 +2840,22 @@ export class PipelineLibraryOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get whlInput() {
     return this._whl;
+  }
+
+  // file - computed: false, optional: true, required: false
+  private _file = new PipelineLibraryFileOutputReference(this, "file");
+  public get file() {
+    return this._file;
+  }
+  public putFile(value: PipelineLibraryFile) {
+    this._file.internalValue = value;
+  }
+  public resetFile() {
+    this._file.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileInput() {
+    return this._file.internalValue;
   }
 
   // maven - computed: false, optional: true, required: false
@@ -2917,7 +3012,7 @@ export class Pipeline extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_pipeline',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.9.1',
+        providerVersion: '1.9.2',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -2929,6 +3024,7 @@ export class Pipeline extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._allowDuplicateNames = config.allowDuplicateNames;
+    this._catalog = config.catalog;
     this._channel = config.channel;
     this._configuration = config.configuration;
     this._continuous = config.continuous;
@@ -2963,6 +3059,22 @@ export class Pipeline extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get allowDuplicateNamesInput() {
     return this._allowDuplicateNames;
+  }
+
+  // catalog - computed: false, optional: true, required: false
+  private _catalog?: string; 
+  public get catalog() {
+    return this.getStringAttribute('catalog');
+  }
+  public set catalog(value: string) {
+    this._catalog = value;
+  }
+  public resetCatalog() {
+    this._catalog = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get catalogInput() {
+    return this._catalog;
   }
 
   // channel - computed: false, optional: true, required: false
@@ -3201,6 +3313,7 @@ export class Pipeline extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allow_duplicate_names: cdktf.booleanToTerraform(this._allowDuplicateNames),
+      catalog: cdktf.stringToTerraform(this._catalog),
       channel: cdktf.stringToTerraform(this._channel),
       configuration: cdktf.hashMapper(cdktf.stringToTerraform)(this._configuration),
       continuous: cdktf.booleanToTerraform(this._continuous),
