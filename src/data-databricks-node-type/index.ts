@@ -12,6 +12,10 @@ export interface DataDatabricksNodeTypeConfig extends cdktf.TerraformMetaArgumen
   */
   readonly category?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#fleet DataDatabricksNodeType#fleet}
+  */
+  readonly fleet?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#gb_per_core DataDatabricksNodeType#gb_per_core}
   */
   readonly gbPerCore?: number;
@@ -94,7 +98,7 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_node_type',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.9.1',
+        providerVersion: '1.9.2',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -106,6 +110,7 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._category = config.category;
+    this._fleet = config.fleet;
     this._gbPerCore = config.gbPerCore;
     this._graviton = config.graviton;
     this._id = config.id;
@@ -139,6 +144,22 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get categoryInput() {
     return this._category;
+  }
+
+  // fleet - computed: false, optional: true, required: false
+  private _fleet?: boolean | cdktf.IResolvable; 
+  public get fleet() {
+    return this.getBooleanAttribute('fleet');
+  }
+  public set fleet(value: boolean | cdktf.IResolvable) {
+    this._fleet = value;
+  }
+  public resetFleet() {
+    this._fleet = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fleetInput() {
+    return this._fleet;
   }
 
   // gb_per_core - computed: false, optional: true, required: false
@@ -356,6 +377,7 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       category: cdktf.stringToTerraform(this._category),
+      fleet: cdktf.booleanToTerraform(this._fleet),
       gb_per_core: cdktf.numberToTerraform(this._gbPerCore),
       graviton: cdktf.booleanToTerraform(this._graviton),
       id: cdktf.stringToTerraform(this._id),
