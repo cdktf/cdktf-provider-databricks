@@ -92,6 +92,10 @@ export interface DatabricksProviderConfig {
   */
   readonly rateLimit?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}
+  */
+  readonly retryTimeoutSeconds?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#skip_verify DatabricksProvider#skip_verify}
   */
   readonly skipVerify?: boolean | cdktf.IResolvable;
@@ -99,10 +103,6 @@ export interface DatabricksProviderConfig {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#token DatabricksProvider#token}
   */
   readonly token?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#token_endpoint DatabricksProvider#token_endpoint}
-  */
-  readonly tokenEndpoint?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#username DatabricksProvider#username}
   */
@@ -141,7 +141,7 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'databricks',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.9.2',
+        providerVersion: '1.10.0',
         providerVersionConstraint: '~> 1.0'
       },
       terraformProviderSource: 'databricks/databricks'
@@ -167,9 +167,9 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
     this._password = config.password;
     this._profile = config.profile;
     this._rateLimit = config.rateLimit;
+    this._retryTimeoutSeconds = config.retryTimeoutSeconds;
     this._skipVerify = config.skipVerify;
     this._token = config.token;
-    this._tokenEndpoint = config.tokenEndpoint;
     this._username = config.username;
     this._alias = config.alias;
   }
@@ -514,6 +514,22 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
     return this._rateLimit;
   }
 
+  // retry_timeout_seconds - computed: false, optional: true, required: false
+  private _retryTimeoutSeconds?: number; 
+  public get retryTimeoutSeconds() {
+    return this._retryTimeoutSeconds;
+  }
+  public set retryTimeoutSeconds(value: number | undefined) {
+    this._retryTimeoutSeconds = value;
+  }
+  public resetRetryTimeoutSeconds() {
+    this._retryTimeoutSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retryTimeoutSecondsInput() {
+    return this._retryTimeoutSeconds;
+  }
+
   // skip_verify - computed: false, optional: true, required: false
   private _skipVerify?: boolean | cdktf.IResolvable; 
   public get skipVerify() {
@@ -544,22 +560,6 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get tokenInput() {
     return this._token;
-  }
-
-  // token_endpoint - computed: false, optional: true, required: false
-  private _tokenEndpoint?: string; 
-  public get tokenEndpoint() {
-    return this._tokenEndpoint;
-  }
-  public set tokenEndpoint(value: string | undefined) {
-    this._tokenEndpoint = value;
-  }
-  public resetTokenEndpoint() {
-    this._tokenEndpoint = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tokenEndpointInput() {
-    return this._tokenEndpoint;
   }
 
   // username - computed: false, optional: true, required: false
@@ -621,9 +621,9 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
       password: cdktf.stringToTerraform(this._password),
       profile: cdktf.stringToTerraform(this._profile),
       rate_limit: cdktf.numberToTerraform(this._rateLimit),
+      retry_timeout_seconds: cdktf.numberToTerraform(this._retryTimeoutSeconds),
       skip_verify: cdktf.booleanToTerraform(this._skipVerify),
       token: cdktf.stringToTerraform(this._token),
-      token_endpoint: cdktf.stringToTerraform(this._tokenEndpoint),
       username: cdktf.stringToTerraform(this._username),
       alias: cdktf.stringToTerraform(this._alias),
     };

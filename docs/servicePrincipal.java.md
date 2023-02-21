@@ -1,0 +1,1322 @@
+# `servicePrincipal` Submodule <a name="`servicePrincipal` Submodule" id="@cdktf/provider-databricks.servicePrincipal"></a>
+
+## Constructs <a name="Constructs" id="Constructs"></a>
+
+### ServicePrincipal <a name="ServicePrincipal" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/databricks/r/service_principal databricks_service_principal}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.databricks.service_principal.ServicePrincipal;
+
+ServicePrincipal.Builder.create(Construct scope, java.lang.String id)
+//  .connection(SSHProvisionerConnection)
+//  .connection(WinrmProvisionerConnection)
+//  .count(java.lang.Number)
+//  .dependsOn(java.util.List<ITerraformDependable>)
+//  .forEach(ITerraformIterator)
+//  .lifecycle(TerraformResourceLifecycle)
+//  .provider(TerraformProvider)
+//  .provisioners(java.util.List<FileProvisioner)
+//  .provisioners(LocalExecProvisioner)
+//  .provisioners(RemoteExecProvisioner>)
+//  .active(java.lang.Boolean)
+//  .active(IResolvable)
+//  .allowClusterCreate(java.lang.Boolean)
+//  .allowClusterCreate(IResolvable)
+//  .allowInstancePoolCreate(java.lang.Boolean)
+//  .allowInstancePoolCreate(IResolvable)
+//  .applicationId(java.lang.String)
+//  .databricksSqlAccess(java.lang.Boolean)
+//  .databricksSqlAccess(IResolvable)
+//  .displayName(java.lang.String)
+//  .externalId(java.lang.String)
+//  .force(java.lang.Boolean)
+//  .force(IResolvable)
+//  .home(java.lang.String)
+//  .id(java.lang.String)
+//  .repos(java.lang.String)
+//  .workspaceAccess(java.lang.Boolean)
+//  .workspaceAccess(IResolvable)
+    .build();
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.active">active</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#active ServicePrincipal#active}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.allowClusterCreate">allowClusterCreate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#allow_cluster_create ServicePrincipal#allow_cluster_create}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.allowInstancePoolCreate">allowInstancePoolCreate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#allow_instance_pool_create ServicePrincipal#allow_instance_pool_create}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.applicationId">applicationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#application_id ServicePrincipal#application_id}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.databricksSqlAccess">databricksSqlAccess</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#databricks_sql_access ServicePrincipal#databricks_sql_access}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#display_name ServicePrincipal#display_name}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#external_id ServicePrincipal#external_id}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.force">force</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#force ServicePrincipal#force}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.home">home</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#home ServicePrincipal#home}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#id ServicePrincipal#id}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.repos">repos</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#repos ServicePrincipal#repos}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.workspaceAccess">workspaceAccess</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#workspace_access ServicePrincipal#workspace_access}. |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.scope"></a>
+
+- *Type:* software.constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.id"></a>
+
+- *Type:* java.lang.String
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.connection"></a>
+
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.count"></a>
+
+- *Type:* java.lang.Number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.dependsOn"></a>
+
+- *Type:* java.util.List<com.hashicorp.cdktf.ITerraformDependable>
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.forEach"></a>
+
+- *Type:* com.hashicorp.cdktf.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.lifecycle"></a>
+
+- *Type:* com.hashicorp.cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.provider"></a>
+
+- *Type:* com.hashicorp.cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.provisioners"></a>
+
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+
+---
+
+##### `active`<sup>Optional</sup> <a name="active" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.active"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#active ServicePrincipal#active}.
+
+---
+
+##### `allowClusterCreate`<sup>Optional</sup> <a name="allowClusterCreate" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.allowClusterCreate"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#allow_cluster_create ServicePrincipal#allow_cluster_create}.
+
+---
+
+##### `allowInstancePoolCreate`<sup>Optional</sup> <a name="allowInstancePoolCreate" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.allowInstancePoolCreate"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#allow_instance_pool_create ServicePrincipal#allow_instance_pool_create}.
+
+---
+
+##### `applicationId`<sup>Optional</sup> <a name="applicationId" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.applicationId"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#application_id ServicePrincipal#application_id}.
+
+---
+
+##### `databricksSqlAccess`<sup>Optional</sup> <a name="databricksSqlAccess" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.databricksSqlAccess"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#databricks_sql_access ServicePrincipal#databricks_sql_access}.
+
+---
+
+##### `displayName`<sup>Optional</sup> <a name="displayName" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.displayName"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#display_name ServicePrincipal#display_name}.
+
+---
+
+##### `externalId`<sup>Optional</sup> <a name="externalId" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.externalId"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#external_id ServicePrincipal#external_id}.
+
+---
+
+##### `force`<sup>Optional</sup> <a name="force" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.force"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#force ServicePrincipal#force}.
+
+---
+
+##### `home`<sup>Optional</sup> <a name="home" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.home"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#home ServicePrincipal#home}.
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.id"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#id ServicePrincipal#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `repos`<sup>Optional</sup> <a name="repos" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.repos"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#repos ServicePrincipal#repos}.
+
+---
+
+##### `workspaceAccess`<sup>Optional</sup> <a name="workspaceAccess" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.Initializer.parameter.workspaceAccess"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#workspace_access ServicePrincipal#workspace_access}.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.resetActive">resetActive</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.resetAllowClusterCreate">resetAllowClusterCreate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.resetAllowInstancePoolCreate">resetAllowInstancePoolCreate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.resetApplicationId">resetApplicationId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.resetDatabricksSqlAccess">resetDatabricksSqlAccess</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.resetDisplayName">resetDisplayName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.resetExternalId">resetExternalId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.resetForce">resetForce</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.resetHome">resetHome</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.resetRepos">resetRepos</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.resetWorkspaceAccess">resetWorkspaceAccess</a></code> | *No description.* |
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Returns a string representation of this construct.
+
+##### `addOverride` <a name="addOverride" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.addOverride"></a>
+
+```java
+public void addOverride(java.lang.String path, java.lang.Object value)
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.addOverride.parameter.path"></a>
+
+- *Type:* java.lang.String
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.addOverride.parameter.value"></a>
+
+- *Type:* java.lang.Object
+
+---
+
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.overrideLogicalId"></a>
+
+```java
+public void overrideLogicalId(java.lang.String newLogicalId)
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* java.lang.String
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.resetOverrideLogicalId"></a>
+
+```java
+public void resetOverrideLogicalId()
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.toMetadata"></a>
+
+```java
+public java.lang.Object toMetadata()
+```
+
+##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.toTerraform"></a>
+
+```java
+public java.lang.Object toTerraform()
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resetActive` <a name="resetActive" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.resetActive"></a>
+
+```java
+public void resetActive()
+```
+
+##### `resetAllowClusterCreate` <a name="resetAllowClusterCreate" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.resetAllowClusterCreate"></a>
+
+```java
+public void resetAllowClusterCreate()
+```
+
+##### `resetAllowInstancePoolCreate` <a name="resetAllowInstancePoolCreate" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.resetAllowInstancePoolCreate"></a>
+
+```java
+public void resetAllowInstancePoolCreate()
+```
+
+##### `resetApplicationId` <a name="resetApplicationId" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.resetApplicationId"></a>
+
+```java
+public void resetApplicationId()
+```
+
+##### `resetDatabricksSqlAccess` <a name="resetDatabricksSqlAccess" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.resetDatabricksSqlAccess"></a>
+
+```java
+public void resetDatabricksSqlAccess()
+```
+
+##### `resetDisplayName` <a name="resetDisplayName" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.resetDisplayName"></a>
+
+```java
+public void resetDisplayName()
+```
+
+##### `resetExternalId` <a name="resetExternalId" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.resetExternalId"></a>
+
+```java
+public void resetExternalId()
+```
+
+##### `resetForce` <a name="resetForce" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.resetForce"></a>
+
+```java
+public void resetForce()
+```
+
+##### `resetHome` <a name="resetHome" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.resetHome"></a>
+
+```java
+public void resetHome()
+```
+
+##### `resetId` <a name="resetId" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.resetId"></a>
+
+```java
+public void resetId()
+```
+
+##### `resetRepos` <a name="resetRepos" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.resetRepos"></a>
+
+```java
+public void resetRepos()
+```
+
+##### `resetWorkspaceAccess` <a name="resetWorkspaceAccess" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.resetWorkspaceAccess"></a>
+
+```java
+public void resetWorkspaceAccess()
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+
+---
+
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.isConstruct"></a>
+
+```java
+import com.hashicorp.cdktf.providers.databricks.service_principal.ServicePrincipal;
+
+ServicePrincipal.isConstruct(java.lang.Object x)
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.isConstruct.parameter.x"></a>
+
+- *Type:* java.lang.Object
+
+Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.isTerraformElement"></a>
+
+```java
+import com.hashicorp.cdktf.providers.databricks.service_principal.ServicePrincipal;
+
+ServicePrincipal.isTerraformElement(java.lang.Object x)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.isTerraformElement.parameter.x"></a>
+
+- *Type:* java.lang.Object
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.isTerraformResource"></a>
+
+```java
+import com.hashicorp.cdktf.providers.databricks.service_principal.ServicePrincipal;
+
+ServicePrincipal.isTerraformResource(java.lang.Object x)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.isTerraformResource.parameter.x"></a>
+
+- *Type:* java.lang.Object
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.node">node</a></code> | <code>software.constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.cdktfStack">cdktfStack</a></code> | <code>com.hashicorp.cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.activeInput">activeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.allowClusterCreateInput">allowClusterCreateInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.allowInstancePoolCreateInput">allowInstancePoolCreateInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.applicationIdInput">applicationIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.databricksSqlAccessInput">databricksSqlAccessInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.displayNameInput">displayNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.externalIdInput">externalIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.forceInput">forceInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.homeInput">homeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.reposInput">reposInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.workspaceAccessInput">workspaceAccessInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.active">active</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.allowClusterCreate">allowClusterCreate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.allowInstancePoolCreate">allowInstancePoolCreate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.applicationId">applicationId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.databricksSqlAccess">databricksSqlAccess</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.displayName">displayName</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.externalId">externalId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.force">force</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.home">home</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.repos">repos</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.workspaceAccess">workspaceAccess</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.node"></a>
+
+```java
+public Node getNode();
+```
+
+- *Type:* software.constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.cdktfStack"></a>
+
+```java
+public TerraformStack getCdktfStack();
+```
+
+- *Type:* com.hashicorp.cdktf.TerraformStack
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.friendlyUniqueId"></a>
+
+```java
+public java.lang.String getFriendlyUniqueId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.terraformMetaArguments"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getTerraformMetaArguments();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.Object>
+
+---
+
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.terraformResourceType"></a>
+
+```java
+public java.lang.String getTerraformResourceType();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.terraformGeneratorMetadata"></a>
+
+```java
+public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
+```
+
+- *Type:* com.hashicorp.cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.connection"></a>
+
+```java
+public java.lang.Object getConnection();
+```
+
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.count"></a>
+
+```java
+public java.lang.Number getCount();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.dependsOn"></a>
+
+```java
+public java.util.List<java.lang.String> getDependsOn();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.forEach"></a>
+
+```java
+public ITerraformIterator getForEach();
+```
+
+- *Type:* com.hashicorp.cdktf.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.lifecycle"></a>
+
+```java
+public TerraformResourceLifecycle getLifecycle();
+```
+
+- *Type:* com.hashicorp.cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.provider"></a>
+
+```java
+public TerraformProvider getProvider();
+```
+
+- *Type:* com.hashicorp.cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.provisioners"></a>
+
+```java
+public java.lang.Object getProvisioners();
+```
+
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+
+---
+
+##### `activeInput`<sup>Optional</sup> <a name="activeInput" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.activeInput"></a>
+
+```java
+public java.lang.Object getActiveInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `allowClusterCreateInput`<sup>Optional</sup> <a name="allowClusterCreateInput" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.allowClusterCreateInput"></a>
+
+```java
+public java.lang.Object getAllowClusterCreateInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `allowInstancePoolCreateInput`<sup>Optional</sup> <a name="allowInstancePoolCreateInput" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.allowInstancePoolCreateInput"></a>
+
+```java
+public java.lang.Object getAllowInstancePoolCreateInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `applicationIdInput`<sup>Optional</sup> <a name="applicationIdInput" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.applicationIdInput"></a>
+
+```java
+public java.lang.String getApplicationIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `databricksSqlAccessInput`<sup>Optional</sup> <a name="databricksSqlAccessInput" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.databricksSqlAccessInput"></a>
+
+```java
+public java.lang.Object getDatabricksSqlAccessInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `displayNameInput`<sup>Optional</sup> <a name="displayNameInput" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.displayNameInput"></a>
+
+```java
+public java.lang.String getDisplayNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `externalIdInput`<sup>Optional</sup> <a name="externalIdInput" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.externalIdInput"></a>
+
+```java
+public java.lang.String getExternalIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `forceInput`<sup>Optional</sup> <a name="forceInput" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.forceInput"></a>
+
+```java
+public java.lang.Object getForceInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `homeInput`<sup>Optional</sup> <a name="homeInput" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.homeInput"></a>
+
+```java
+public java.lang.String getHomeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.idInput"></a>
+
+```java
+public java.lang.String getIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `reposInput`<sup>Optional</sup> <a name="reposInput" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.reposInput"></a>
+
+```java
+public java.lang.String getReposInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `workspaceAccessInput`<sup>Optional</sup> <a name="workspaceAccessInput" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.workspaceAccessInput"></a>
+
+```java
+public java.lang.Object getWorkspaceAccessInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `active`<sup>Required</sup> <a name="active" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.active"></a>
+
+```java
+public java.lang.Object getActive();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `allowClusterCreate`<sup>Required</sup> <a name="allowClusterCreate" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.allowClusterCreate"></a>
+
+```java
+public java.lang.Object getAllowClusterCreate();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `allowInstancePoolCreate`<sup>Required</sup> <a name="allowInstancePoolCreate" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.allowInstancePoolCreate"></a>
+
+```java
+public java.lang.Object getAllowInstancePoolCreate();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `applicationId`<sup>Required</sup> <a name="applicationId" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.applicationId"></a>
+
+```java
+public java.lang.String getApplicationId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `databricksSqlAccess`<sup>Required</sup> <a name="databricksSqlAccess" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.databricksSqlAccess"></a>
+
+```java
+public java.lang.Object getDatabricksSqlAccess();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `displayName`<sup>Required</sup> <a name="displayName" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.displayName"></a>
+
+```java
+public java.lang.String getDisplayName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `externalId`<sup>Required</sup> <a name="externalId" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.externalId"></a>
+
+```java
+public java.lang.String getExternalId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `force`<sup>Required</sup> <a name="force" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.force"></a>
+
+```java
+public java.lang.Object getForce();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `home`<sup>Required</sup> <a name="home" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.home"></a>
+
+```java
+public java.lang.String getHome();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.id"></a>
+
+```java
+public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `repos`<sup>Required</sup> <a name="repos" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.repos"></a>
+
+```java
+public java.lang.String getRepos();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `workspaceAccess`<sup>Required</sup> <a name="workspaceAccess" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.workspaceAccess"></a>
+
+```java
+public java.lang.Object getWorkspaceAccess();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.tfResourceType">tfResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipal.property.tfResourceType"></a>
+
+```java
+public java.lang.String getTfResourceType();
+```
+
+- *Type:* java.lang.String
+
+---
+
+## Structs <a name="Structs" id="Structs"></a>
+
+### ServicePrincipalConfig <a name="ServicePrincipalConfig" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.databricks.service_principal.ServicePrincipalConfig;
+
+ServicePrincipalConfig.builder()
+//  .connection(SSHProvisionerConnection)
+//  .connection(WinrmProvisionerConnection)
+//  .count(java.lang.Number)
+//  .dependsOn(java.util.List<ITerraformDependable>)
+//  .forEach(ITerraformIterator)
+//  .lifecycle(TerraformResourceLifecycle)
+//  .provider(TerraformProvider)
+//  .provisioners(java.util.List<FileProvisioner)
+//  .provisioners(LocalExecProvisioner)
+//  .provisioners(RemoteExecProvisioner>)
+//  .active(java.lang.Boolean)
+//  .active(IResolvable)
+//  .allowClusterCreate(java.lang.Boolean)
+//  .allowClusterCreate(IResolvable)
+//  .allowInstancePoolCreate(java.lang.Boolean)
+//  .allowInstancePoolCreate(IResolvable)
+//  .applicationId(java.lang.String)
+//  .databricksSqlAccess(java.lang.Boolean)
+//  .databricksSqlAccess(IResolvable)
+//  .displayName(java.lang.String)
+//  .externalId(java.lang.String)
+//  .force(java.lang.Boolean)
+//  .force(IResolvable)
+//  .home(java.lang.String)
+//  .id(java.lang.String)
+//  .repos(java.lang.String)
+//  .workspaceAccess(java.lang.Boolean)
+//  .workspaceAccess(IResolvable)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.active">active</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#active ServicePrincipal#active}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.allowClusterCreate">allowClusterCreate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#allow_cluster_create ServicePrincipal#allow_cluster_create}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.allowInstancePoolCreate">allowInstancePoolCreate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#allow_instance_pool_create ServicePrincipal#allow_instance_pool_create}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.applicationId">applicationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#application_id ServicePrincipal#application_id}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.databricksSqlAccess">databricksSqlAccess</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#databricks_sql_access ServicePrincipal#databricks_sql_access}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#display_name ServicePrincipal#display_name}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#external_id ServicePrincipal#external_id}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.force">force</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#force ServicePrincipal#force}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.home">home</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#home ServicePrincipal#home}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#id ServicePrincipal#id}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.repos">repos</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#repos ServicePrincipal#repos}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.workspaceAccess">workspaceAccess</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#workspace_access ServicePrincipal#workspace_access}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.connection"></a>
+
+```java
+public java.lang.Object getConnection();
+```
+
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.count"></a>
+
+```java
+public java.lang.Number getCount();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.dependsOn"></a>
+
+```java
+public java.util.List<ITerraformDependable> getDependsOn();
+```
+
+- *Type:* java.util.List<com.hashicorp.cdktf.ITerraformDependable>
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.forEach"></a>
+
+```java
+public ITerraformIterator getForEach();
+```
+
+- *Type:* com.hashicorp.cdktf.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.lifecycle"></a>
+
+```java
+public TerraformResourceLifecycle getLifecycle();
+```
+
+- *Type:* com.hashicorp.cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.provider"></a>
+
+```java
+public TerraformProvider getProvider();
+```
+
+- *Type:* com.hashicorp.cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.provisioners"></a>
+
+```java
+public java.lang.Object getProvisioners();
+```
+
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+
+---
+
+##### `active`<sup>Optional</sup> <a name="active" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.active"></a>
+
+```java
+public java.lang.Object getActive();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#active ServicePrincipal#active}.
+
+---
+
+##### `allowClusterCreate`<sup>Optional</sup> <a name="allowClusterCreate" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.allowClusterCreate"></a>
+
+```java
+public java.lang.Object getAllowClusterCreate();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#allow_cluster_create ServicePrincipal#allow_cluster_create}.
+
+---
+
+##### `allowInstancePoolCreate`<sup>Optional</sup> <a name="allowInstancePoolCreate" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.allowInstancePoolCreate"></a>
+
+```java
+public java.lang.Object getAllowInstancePoolCreate();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#allow_instance_pool_create ServicePrincipal#allow_instance_pool_create}.
+
+---
+
+##### `applicationId`<sup>Optional</sup> <a name="applicationId" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.applicationId"></a>
+
+```java
+public java.lang.String getApplicationId();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#application_id ServicePrincipal#application_id}.
+
+---
+
+##### `databricksSqlAccess`<sup>Optional</sup> <a name="databricksSqlAccess" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.databricksSqlAccess"></a>
+
+```java
+public java.lang.Object getDatabricksSqlAccess();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#databricks_sql_access ServicePrincipal#databricks_sql_access}.
+
+---
+
+##### `displayName`<sup>Optional</sup> <a name="displayName" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.displayName"></a>
+
+```java
+public java.lang.String getDisplayName();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#display_name ServicePrincipal#display_name}.
+
+---
+
+##### `externalId`<sup>Optional</sup> <a name="externalId" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.externalId"></a>
+
+```java
+public java.lang.String getExternalId();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#external_id ServicePrincipal#external_id}.
+
+---
+
+##### `force`<sup>Optional</sup> <a name="force" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.force"></a>
+
+```java
+public java.lang.Object getForce();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#force ServicePrincipal#force}.
+
+---
+
+##### `home`<sup>Optional</sup> <a name="home" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.home"></a>
+
+```java
+public java.lang.String getHome();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#home ServicePrincipal#home}.
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.id"></a>
+
+```java
+public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#id ServicePrincipal#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `repos`<sup>Optional</sup> <a name="repos" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.repos"></a>
+
+```java
+public java.lang.String getRepos();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#repos ServicePrincipal#repos}.
+
+---
+
+##### `workspaceAccess`<sup>Optional</sup> <a name="workspaceAccess" id="@cdktf/provider-databricks.servicePrincipal.ServicePrincipalConfig.property.workspaceAccess"></a>
+
+```java
+public java.lang.Object getWorkspaceAccess();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#workspace_access ServicePrincipal#workspace_access}.
+
+---
+
+
+

@@ -58,7 +58,7 @@ export class InstanceProfile extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_instance_profile',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.9.2',
+        providerVersion: '1.10.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
