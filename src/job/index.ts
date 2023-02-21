@@ -55,6 +55,12 @@ export interface JobConfig extends cdktf.TerraformMetaArguments {
   */
   readonly timeoutSeconds?: number;
   /**
+  * continuous block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#continuous Job#continuous}
+  */
+  readonly continuous?: JobContinuous;
+  /**
   * dbt_task block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#dbt_task Job#dbt_task}
@@ -150,6 +156,71 @@ export interface JobConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#webhook_notifications Job#webhook_notifications}
   */
   readonly webhookNotifications?: JobWebhookNotifications;
+}
+export interface JobContinuous {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#pause_status Job#pause_status}
+  */
+  readonly pauseStatus?: string;
+}
+
+export function jobContinuousToTerraform(struct?: JobContinuousOutputReference | JobContinuous): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    pause_status: cdktf.stringToTerraform(struct!.pauseStatus),
+  }
+}
+
+export class JobContinuousOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): JobContinuous | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._pauseStatus !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pauseStatus = this._pauseStatus;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: JobContinuous | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._pauseStatus = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._pauseStatus = value.pauseStatus;
+    }
+  }
+
+  // pause_status - computed: true, optional: true, required: false
+  private _pauseStatus?: string; 
+  public get pauseStatus() {
+    return this.getStringAttribute('pause_status');
+  }
+  public set pauseStatus(value: string) {
+    this._pauseStatus = value;
+  }
+  public resetPauseStatus() {
+    this._pauseStatus = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pauseStatusInput() {
+    return this._pauseStatus;
+  }
 }
 export interface JobDbtTask {
   /**
@@ -14643,7 +14714,7 @@ export class Job extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_job',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.9.2',
+        providerVersion: '1.10.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -14665,6 +14736,7 @@ export class Job extends cdktf.TerraformResource {
     this._retryOnTimeout = config.retryOnTimeout;
     this._tags = config.tags;
     this._timeoutSeconds = config.timeoutSeconds;
+    this._continuous.internalValue = config.continuous;
     this._dbtTask.internalValue = config.dbtTask;
     this._emailNotifications.internalValue = config.emailNotifications;
     this._gitSource.internalValue = config.gitSource;
@@ -14866,6 +14938,22 @@ export class Job extends cdktf.TerraformResource {
   // url - computed: true, optional: false, required: false
   public get url() {
     return this.getStringAttribute('url');
+  }
+
+  // continuous - computed: false, optional: true, required: false
+  private _continuous = new JobContinuousOutputReference(this, "continuous");
+  public get continuous() {
+    return this._continuous;
+  }
+  public putContinuous(value: JobContinuous) {
+    this._continuous.internalValue = value;
+  }
+  public resetContinuous() {
+    this._continuous.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get continuousInput() {
+    return this._continuous.internalValue;
   }
 
   // dbt_task - computed: false, optional: true, required: false
@@ -15141,6 +15229,7 @@ export class Job extends cdktf.TerraformResource {
       retry_on_timeout: cdktf.booleanToTerraform(this._retryOnTimeout),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       timeout_seconds: cdktf.numberToTerraform(this._timeoutSeconds),
+      continuous: jobContinuousToTerraform(this._continuous.internalValue),
       dbt_task: jobDbtTaskToTerraform(this._dbtTask.internalValue),
       email_notifications: jobEmailNotificationsToTerraform(this._emailNotifications.internalValue),
       git_source: jobGitSourceToTerraform(this._gitSource.internalValue),

@@ -33,6 +33,274 @@ export interface DataDatabricksShareConfig extends cdktf.TerraformMetaArguments 
   */
   readonly object?: DataDatabricksShareObject[] | cdktf.IResolvable;
 }
+export interface DataDatabricksShareObjectPartitionValue {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/share#name DataDatabricksShare#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/share#op DataDatabricksShare#op}
+  */
+  readonly op: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/share#recipient_property_key DataDatabricksShare#recipient_property_key}
+  */
+  readonly recipientPropertyKey?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/share#value DataDatabricksShare#value}
+  */
+  readonly value?: string;
+}
+
+export function dataDatabricksShareObjectPartitionValueToTerraform(struct?: DataDatabricksShareObjectPartitionValue | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    op: cdktf.stringToTerraform(struct!.op),
+    recipient_property_key: cdktf.stringToTerraform(struct!.recipientPropertyKey),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+export class DataDatabricksShareObjectPartitionValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDatabricksShareObjectPartitionValue | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._op !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.op = this._op;
+    }
+    if (this._recipientPropertyKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.recipientPropertyKey = this._recipientPropertyKey;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksShareObjectPartitionValue | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._op = undefined;
+      this._recipientPropertyKey = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._op = value.op;
+      this._recipientPropertyKey = value.recipientPropertyKey;
+      this._value = value.value;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // op - computed: false, optional: false, required: true
+  private _op?: string; 
+  public get op() {
+    return this.getStringAttribute('op');
+  }
+  public set op(value: string) {
+    this._op = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get opInput() {
+    return this._op;
+  }
+
+  // recipient_property_key - computed: false, optional: true, required: false
+  private _recipientPropertyKey?: string; 
+  public get recipientPropertyKey() {
+    return this.getStringAttribute('recipient_property_key');
+  }
+  public set recipientPropertyKey(value: string) {
+    this._recipientPropertyKey = value;
+  }
+  public resetRecipientPropertyKey() {
+    this._recipientPropertyKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get recipientPropertyKeyInput() {
+    return this._recipientPropertyKey;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class DataDatabricksShareObjectPartitionValueList extends cdktf.ComplexList {
+  public internalValue? : DataDatabricksShareObjectPartitionValue[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDatabricksShareObjectPartitionValueOutputReference {
+    return new DataDatabricksShareObjectPartitionValueOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataDatabricksShareObjectPartition {
+  /**
+  * value block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/share#value DataDatabricksShare#value}
+  */
+  readonly value: DataDatabricksShareObjectPartitionValue[] | cdktf.IResolvable;
+}
+
+export function dataDatabricksShareObjectPartitionToTerraform(struct?: DataDatabricksShareObjectPartition | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    value: cdktf.listMapper(dataDatabricksShareObjectPartitionValueToTerraform, true)(struct!.value),
+  }
+}
+
+export class DataDatabricksShareObjectPartitionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDatabricksShareObjectPartition | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._value?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksShareObjectPartition | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._value.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._value.internalValue = value.value;
+    }
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value = new DataDatabricksShareObjectPartitionValueList(this, "value", false);
+  public get value() {
+    return this._value;
+  }
+  public putValue(value: DataDatabricksShareObjectPartitionValue[] | cdktf.IResolvable) {
+    this._value.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value.internalValue;
+  }
+}
+
+export class DataDatabricksShareObjectPartitionList extends cdktf.ComplexList {
+  public internalValue? : DataDatabricksShareObjectPartition[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDatabricksShareObjectPartitionOutputReference {
+    return new DataDatabricksShareObjectPartitionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataDatabricksShareObject {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/share#added_at DataDatabricksShare#added_at}
@@ -43,6 +311,10 @@ export interface DataDatabricksShareObject {
   */
   readonly addedBy?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/share#cdf_enabled DataDatabricksShare#cdf_enabled}
+  */
+  readonly cdfEnabled?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/share#comment DataDatabricksShare#comment}
   */
   readonly comment?: string;
@@ -51,6 +323,10 @@ export interface DataDatabricksShareObject {
   */
   readonly dataObjectType: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/share#history_data_sharing_status DataDatabricksShare#history_data_sharing_status}
+  */
+  readonly historyDataSharingStatus?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/share#name DataDatabricksShare#name}
   */
   readonly name: string;
@@ -58,6 +334,20 @@ export interface DataDatabricksShareObject {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/share#shared_as DataDatabricksShare#shared_as}
   */
   readonly sharedAs?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/share#start_version DataDatabricksShare#start_version}
+  */
+  readonly startVersion?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/share#status DataDatabricksShare#status}
+  */
+  readonly status?: string;
+  /**
+  * partition block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/share#partition DataDatabricksShare#partition}
+  */
+  readonly partition?: DataDatabricksShareObjectPartition[] | cdktf.IResolvable;
 }
 
 export function dataDatabricksShareObjectToTerraform(struct?: DataDatabricksShareObject | cdktf.IResolvable): any {
@@ -68,10 +358,15 @@ export function dataDatabricksShareObjectToTerraform(struct?: DataDatabricksShar
   return {
     added_at: cdktf.numberToTerraform(struct!.addedAt),
     added_by: cdktf.stringToTerraform(struct!.addedBy),
+    cdf_enabled: cdktf.booleanToTerraform(struct!.cdfEnabled),
     comment: cdktf.stringToTerraform(struct!.comment),
     data_object_type: cdktf.stringToTerraform(struct!.dataObjectType),
+    history_data_sharing_status: cdktf.stringToTerraform(struct!.historyDataSharingStatus),
     name: cdktf.stringToTerraform(struct!.name),
     shared_as: cdktf.stringToTerraform(struct!.sharedAs),
+    start_version: cdktf.numberToTerraform(struct!.startVersion),
+    status: cdktf.stringToTerraform(struct!.status),
+    partition: cdktf.listMapper(dataDatabricksShareObjectPartitionToTerraform, true)(struct!.partition),
   }
 }
 
@@ -103,6 +398,10 @@ export class DataDatabricksShareObjectOutputReference extends cdktf.ComplexObjec
       hasAnyValues = true;
       internalValueResult.addedBy = this._addedBy;
     }
+    if (this._cdfEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cdfEnabled = this._cdfEnabled;
+    }
     if (this._comment !== undefined) {
       hasAnyValues = true;
       internalValueResult.comment = this._comment;
@@ -111,6 +410,10 @@ export class DataDatabricksShareObjectOutputReference extends cdktf.ComplexObjec
       hasAnyValues = true;
       internalValueResult.dataObjectType = this._dataObjectType;
     }
+    if (this._historyDataSharingStatus !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.historyDataSharingStatus = this._historyDataSharingStatus;
+    }
     if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
@@ -118,6 +421,18 @@ export class DataDatabricksShareObjectOutputReference extends cdktf.ComplexObjec
     if (this._sharedAs !== undefined) {
       hasAnyValues = true;
       internalValueResult.sharedAs = this._sharedAs;
+    }
+    if (this._startVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.startVersion = this._startVersion;
+    }
+    if (this._status !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.status = this._status;
+    }
+    if (this._partition?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.partition = this._partition?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -128,10 +443,15 @@ export class DataDatabricksShareObjectOutputReference extends cdktf.ComplexObjec
       this.resolvableValue = undefined;
       this._addedAt = undefined;
       this._addedBy = undefined;
+      this._cdfEnabled = undefined;
       this._comment = undefined;
       this._dataObjectType = undefined;
+      this._historyDataSharingStatus = undefined;
       this._name = undefined;
       this._sharedAs = undefined;
+      this._startVersion = undefined;
+      this._status = undefined;
+      this._partition.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -142,10 +462,15 @@ export class DataDatabricksShareObjectOutputReference extends cdktf.ComplexObjec
       this.resolvableValue = undefined;
       this._addedAt = value.addedAt;
       this._addedBy = value.addedBy;
+      this._cdfEnabled = value.cdfEnabled;
       this._comment = value.comment;
       this._dataObjectType = value.dataObjectType;
+      this._historyDataSharingStatus = value.historyDataSharingStatus;
       this._name = value.name;
       this._sharedAs = value.sharedAs;
+      this._startVersion = value.startVersion;
+      this._status = value.status;
+      this._partition.internalValue = value.partition;
     }
   }
 
@@ -181,6 +506,22 @@ export class DataDatabricksShareObjectOutputReference extends cdktf.ComplexObjec
     return this._addedBy;
   }
 
+  // cdf_enabled - computed: false, optional: true, required: false
+  private _cdfEnabled?: boolean | cdktf.IResolvable; 
+  public get cdfEnabled() {
+    return this.getBooleanAttribute('cdf_enabled');
+  }
+  public set cdfEnabled(value: boolean | cdktf.IResolvable) {
+    this._cdfEnabled = value;
+  }
+  public resetCdfEnabled() {
+    this._cdfEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cdfEnabledInput() {
+    return this._cdfEnabled;
+  }
+
   // comment - computed: false, optional: true, required: false
   private _comment?: string; 
   public get comment() {
@@ -210,6 +551,22 @@ export class DataDatabricksShareObjectOutputReference extends cdktf.ComplexObjec
     return this._dataObjectType;
   }
 
+  // history_data_sharing_status - computed: false, optional: true, required: false
+  private _historyDataSharingStatus?: string; 
+  public get historyDataSharingStatus() {
+    return this.getStringAttribute('history_data_sharing_status');
+  }
+  public set historyDataSharingStatus(value: string) {
+    this._historyDataSharingStatus = value;
+  }
+  public resetHistoryDataSharingStatus() {
+    this._historyDataSharingStatus = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get historyDataSharingStatusInput() {
+    return this._historyDataSharingStatus;
+  }
+
   // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
@@ -223,7 +580,7 @@ export class DataDatabricksShareObjectOutputReference extends cdktf.ComplexObjec
     return this._name;
   }
 
-  // shared_as - computed: true, optional: true, required: false
+  // shared_as - computed: false, optional: true, required: false
   private _sharedAs?: string; 
   public get sharedAs() {
     return this.getStringAttribute('shared_as');
@@ -237,6 +594,54 @@ export class DataDatabricksShareObjectOutputReference extends cdktf.ComplexObjec
   // Temporarily expose input value. Use with caution.
   public get sharedAsInput() {
     return this._sharedAs;
+  }
+
+  // start_version - computed: false, optional: true, required: false
+  private _startVersion?: number; 
+  public get startVersion() {
+    return this.getNumberAttribute('start_version');
+  }
+  public set startVersion(value: number) {
+    this._startVersion = value;
+  }
+  public resetStartVersion() {
+    this._startVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startVersionInput() {
+    return this._startVersion;
+  }
+
+  // status - computed: true, optional: true, required: false
+  private _status?: string; 
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+  public set status(value: string) {
+    this._status = value;
+  }
+  public resetStatus() {
+    this._status = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusInput() {
+    return this._status;
+  }
+
+  // partition - computed: false, optional: true, required: false
+  private _partition = new DataDatabricksShareObjectPartitionList(this, "partition", false);
+  public get partition() {
+    return this._partition;
+  }
+  public putPartition(value: DataDatabricksShareObjectPartition[] | cdktf.IResolvable) {
+    this._partition.internalValue = value;
+  }
+  public resetPartition() {
+    this._partition.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get partitionInput() {
+    return this._partition.internalValue;
   }
 }
 
@@ -286,7 +691,7 @@ export class DataDatabricksShare extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_share',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.9.2',
+        providerVersion: '1.10.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
