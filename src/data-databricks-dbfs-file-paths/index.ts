@@ -119,7 +119,7 @@ export class DataDatabricksDbfsFilePaths extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_dbfs_file_paths',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.10.0',
+        providerVersion: '1.10.1',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

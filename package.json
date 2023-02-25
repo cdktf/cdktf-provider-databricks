@@ -149,7 +149,7 @@
   "cdktf": {
     "provider": {
       "name": "registry.terraform.io/databricks/databricks",
-      "version": "1.10.0"
+      "version": "1.10.1"
     }
   },
   "resolutions": {
