@@ -35,7 +35,13 @@ export interface MwsCustomerManagedKeysConfig extends cdktf.TerraformMetaArgumen
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_customer_managed_keys#aws_key_info MwsCustomerManagedKeys#aws_key_info}
   */
-  readonly awsKeyInfo: MwsCustomerManagedKeysAwsKeyInfo;
+  readonly awsKeyInfo?: MwsCustomerManagedKeysAwsKeyInfo;
+  /**
+  * gcp_key_info block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_customer_managed_keys#gcp_key_info MwsCustomerManagedKeys#gcp_key_info}
+  */
+  readonly gcpKeyInfo?: MwsCustomerManagedKeysGcpKeyInfo;
 }
 export interface MwsCustomerManagedKeysAwsKeyInfo {
   /**
@@ -150,6 +156,68 @@ export class MwsCustomerManagedKeysAwsKeyInfoOutputReference extends cdktf.Compl
     return this._keyRegion;
   }
 }
+export interface MwsCustomerManagedKeysGcpKeyInfo {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_customer_managed_keys#kms_key_id MwsCustomerManagedKeys#kms_key_id}
+  */
+  readonly kmsKeyId: string;
+}
+
+export function mwsCustomerManagedKeysGcpKeyInfoToTerraform(struct?: MwsCustomerManagedKeysGcpKeyInfoOutputReference | MwsCustomerManagedKeysGcpKeyInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
+  }
+}
+
+export class MwsCustomerManagedKeysGcpKeyInfoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MwsCustomerManagedKeysGcpKeyInfo | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._kmsKeyId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsKeyId = this._kmsKeyId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MwsCustomerManagedKeysGcpKeyInfo | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._kmsKeyId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._kmsKeyId = value.kmsKeyId;
+    }
+  }
+
+  // kms_key_id - computed: false, optional: false, required: true
+  private _kmsKeyId?: string; 
+  public get kmsKeyId() {
+    return this.getStringAttribute('kms_key_id');
+  }
+  public set kmsKeyId(value: string) {
+    this._kmsKeyId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyIdInput() {
+    return this._kmsKeyId;
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/databricks/r/mws_customer_managed_keys databricks_mws_customer_managed_keys}
@@ -177,7 +245,7 @@ export class MwsCustomerManagedKeys extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_mws_customer_managed_keys',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.10.0',
+        providerVersion: '1.10.1',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -194,6 +262,7 @@ export class MwsCustomerManagedKeys extends cdktf.TerraformResource {
     this._id = config.id;
     this._useCases = config.useCases;
     this._awsKeyInfo.internalValue = config.awsKeyInfo;
+    this._gcpKeyInfo.internalValue = config.gcpKeyInfo;
   }
 
   // ==========
@@ -274,7 +343,7 @@ export class MwsCustomerManagedKeys extends cdktf.TerraformResource {
     return this._useCases;
   }
 
-  // aws_key_info - computed: false, optional: false, required: true
+  // aws_key_info - computed: false, optional: true, required: false
   private _awsKeyInfo = new MwsCustomerManagedKeysAwsKeyInfoOutputReference(this, "aws_key_info");
   public get awsKeyInfo() {
     return this._awsKeyInfo;
@@ -282,9 +351,28 @@ export class MwsCustomerManagedKeys extends cdktf.TerraformResource {
   public putAwsKeyInfo(value: MwsCustomerManagedKeysAwsKeyInfo) {
     this._awsKeyInfo.internalValue = value;
   }
+  public resetAwsKeyInfo() {
+    this._awsKeyInfo.internalValue = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get awsKeyInfoInput() {
     return this._awsKeyInfo.internalValue;
+  }
+
+  // gcp_key_info - computed: false, optional: true, required: false
+  private _gcpKeyInfo = new MwsCustomerManagedKeysGcpKeyInfoOutputReference(this, "gcp_key_info");
+  public get gcpKeyInfo() {
+    return this._gcpKeyInfo;
+  }
+  public putGcpKeyInfo(value: MwsCustomerManagedKeysGcpKeyInfo) {
+    this._gcpKeyInfo.internalValue = value;
+  }
+  public resetGcpKeyInfo() {
+    this._gcpKeyInfo.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gcpKeyInfoInput() {
+    return this._gcpKeyInfo.internalValue;
   }
 
   // =========
@@ -299,6 +387,7 @@ export class MwsCustomerManagedKeys extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       use_cases: cdktf.listMapper(cdktf.stringToTerraform, false)(this._useCases),
       aws_key_info: mwsCustomerManagedKeysAwsKeyInfoToTerraform(this._awsKeyInfo.internalValue),
+      gcp_key_info: mwsCustomerManagedKeysGcpKeyInfoToTerraform(this._gcpKeyInfo.internalValue),
     };
   }
 }
