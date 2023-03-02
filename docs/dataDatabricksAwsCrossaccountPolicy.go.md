@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/databricks/d/aws_cro
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksAwsCrossaccountPolicy.DataDatabricksAwsCrossaccountPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksawscrossaccountpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksawscrossaccountpolicy"
 
 datadatabricksawscrossaccountpolicy.NewDataDatabricksAwsCrossaccountPolicy(scope Construct, id *string, config DataDatabricksAwsCrossaccountPolicyConfig) DataDatabricksAwsCrossaccountPolicy
 ```
@@ -280,7 +280,7 @@ func ResetPassRoles()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksAwsCrossaccountPolicy.DataDatabricksAwsCrossaccountPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksawscrossaccountpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksawscrossaccountpolicy"
 
 datadatabricksawscrossaccountpolicy.DataDatabricksAwsCrossaccountPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksAwsCrossaccountPolicy.DataDatabricksAwsCrossaccountPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksawscrossaccountpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksawscrossaccountpolicy"
 
 datadatabricksawscrossaccountpolicy.DataDatabricksAwsCrossaccountPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ datadatabricksawscrossaccountpolicy.DataDatabricksAwsCrossaccountPolicy_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksAwsCrossaccountPolicy.DataDatabricksAwsCrossaccountPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksawscrossaccountpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksawscrossaccountpolicy"
 
 datadatabricksawscrossaccountpolicy.DataDatabricksAwsCrossaccountPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -558,7 +558,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksAwsCrossaccountPolicy.DataDatabricksAwsCrossaccountPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksawscrossaccountpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksawscrossaccountpolicy"
 
 &datadatabricksawscrossaccountpolicy.DataDatabricksAwsCrossaccountPolicyConfig {
 	Connection: interface{},
