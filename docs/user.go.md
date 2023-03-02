@@ -73,6 +73,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.user.User.resetDisplayName">ResetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.resetExternalId">ResetExternalId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.resetForce">ResetForce</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.user.User.resetForceDeleteHomeDir">ResetForceDeleteHomeDir</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.user.User.resetForceDeleteRepos">ResetForceDeleteRepos</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.resetHome">ResetHome</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.resetRepos">ResetRepos</a></code> | *No description.* |
@@ -306,6 +308,18 @@ func ResetExternalId()
 func ResetForce()
 ```
 
+##### `ResetForceDeleteHomeDir` <a name="ResetForceDeleteHomeDir" id="@cdktf/provider-databricks.user.User.resetForceDeleteHomeDir"></a>
+
+```go
+func ResetForceDeleteHomeDir()
+```
+
+##### `ResetForceDeleteRepos` <a name="ResetForceDeleteRepos" id="@cdktf/provider-databricks.user.User.resetForceDeleteRepos"></a>
+
+```go
+func ResetForceDeleteRepos()
+```
+
 ##### `ResetHome` <a name="ResetHome" id="@cdktf/provider-databricks.user.User.resetHome"></a>
 
 ```go
@@ -424,6 +438,8 @@ user.User_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-databricks.user.User.property.databricksSqlAccessInput">DatabricksSqlAccessInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.externalIdInput">ExternalIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.user.User.property.forceDeleteHomeDirInput">ForceDeleteHomeDirInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.user.User.property.forceDeleteReposInput">ForceDeleteReposInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.forceInput">ForceInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.homeInput">HomeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
@@ -437,6 +453,8 @@ user.User_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-databricks.user.User.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.externalId">ExternalId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.force">Force</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.user.User.property.forceDeleteHomeDir">ForceDeleteHomeDir</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.user.User.property.forceDeleteRepos">ForceDeleteRepos</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.home">Home</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.repos">Repos</a></code> | <code>*string</code> | *No description.* |
@@ -647,6 +665,26 @@ func ExternalIdInput() *string
 
 ---
 
+##### `ForceDeleteHomeDirInput`<sup>Optional</sup> <a name="ForceDeleteHomeDirInput" id="@cdktf/provider-databricks.user.User.property.forceDeleteHomeDirInput"></a>
+
+```go
+func ForceDeleteHomeDirInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `ForceDeleteReposInput`<sup>Optional</sup> <a name="ForceDeleteReposInput" id="@cdktf/provider-databricks.user.User.property.forceDeleteReposInput"></a>
+
+```go
+func ForceDeleteReposInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `ForceInput`<sup>Optional</sup> <a name="ForceInput" id="@cdktf/provider-databricks.user.User.property.forceInput"></a>
 
 ```go
@@ -777,6 +815,26 @@ func Force() interface{}
 
 ---
 
+##### `ForceDeleteHomeDir`<sup>Required</sup> <a name="ForceDeleteHomeDir" id="@cdktf/provider-databricks.user.User.property.forceDeleteHomeDir"></a>
+
+```go
+func ForceDeleteHomeDir() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `ForceDeleteRepos`<sup>Required</sup> <a name="ForceDeleteRepos" id="@cdktf/provider-databricks.user.User.property.forceDeleteRepos"></a>
+
+```go
+func ForceDeleteRepos() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `Home`<sup>Required</sup> <a name="Home" id="@cdktf/provider-databricks.user.User.property.home"></a>
 
 ```go
@@ -870,6 +928,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/user"
 	DisplayName: *string,
 	ExternalId: *string,
 	Force: interface{},
+	ForceDeleteHomeDir: interface{},
+	ForceDeleteRepos: interface{},
 	Home: *string,
 	Id: *string,
 	Repos: *string,
@@ -896,6 +956,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/user"
 | <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#display_name User#display_name}. |
 | <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#external_id User#external_id}. |
 | <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.force">Force</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#force User#force}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.forceDeleteHomeDir">ForceDeleteHomeDir</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#force_delete_home_dir User#force_delete_home_dir}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.forceDeleteRepos">ForceDeleteRepos</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#force_delete_repos User#force_delete_repos}. |
 | <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.home">Home</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#home User#home}. |
 | <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#id User#id}. |
 | <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.repos">Repos</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#repos User#repos}. |
@@ -1066,6 +1128,30 @@ Force interface{}
 - *Type:* interface{}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#force User#force}.
+
+---
+
+##### `ForceDeleteHomeDir`<sup>Optional</sup> <a name="ForceDeleteHomeDir" id="@cdktf/provider-databricks.user.UserConfig.property.forceDeleteHomeDir"></a>
+
+```go
+ForceDeleteHomeDir interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#force_delete_home_dir User#force_delete_home_dir}.
+
+---
+
+##### `ForceDeleteRepos`<sup>Optional</sup> <a name="ForceDeleteRepos" id="@cdktf/provider-databricks.user.UserConfig.property.forceDeleteRepos"></a>
+
+```go
+ForceDeleteRepos interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#force_delete_repos User#force_delete_repos}.
 
 ---
 

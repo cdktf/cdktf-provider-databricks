@@ -73,6 +73,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.user.User.resetDisplayName">resetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.resetExternalId">resetExternalId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.resetForce">resetForce</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.user.User.resetForceDeleteHomeDir">resetForceDeleteHomeDir</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.user.User.resetForceDeleteRepos">resetForceDeleteRepos</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.resetHome">resetHome</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.resetRepos">resetRepos</a></code> | *No description.* |
@@ -306,6 +308,18 @@ public resetExternalId(): void
 public resetForce(): void
 ```
 
+##### `resetForceDeleteHomeDir` <a name="resetForceDeleteHomeDir" id="@cdktf/provider-databricks.user.User.resetForceDeleteHomeDir"></a>
+
+```typescript
+public resetForceDeleteHomeDir(): void
+```
+
+##### `resetForceDeleteRepos` <a name="resetForceDeleteRepos" id="@cdktf/provider-databricks.user.User.resetForceDeleteRepos"></a>
+
+```typescript
+public resetForceDeleteRepos(): void
+```
+
 ##### `resetHome` <a name="resetHome" id="@cdktf/provider-databricks.user.User.resetHome"></a>
 
 ```typescript
@@ -424,6 +438,8 @@ user.User.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-databricks.user.User.property.databricksSqlAccessInput">databricksSqlAccessInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.displayNameInput">displayNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.externalIdInput">externalIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.user.User.property.forceDeleteHomeDirInput">forceDeleteHomeDirInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.user.User.property.forceDeleteReposInput">forceDeleteReposInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.forceInput">forceInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.homeInput">homeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -437,6 +453,8 @@ user.User.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-databricks.user.User.property.displayName">displayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.externalId">externalId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.force">force</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.user.User.property.forceDeleteHomeDir">forceDeleteHomeDir</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.user.User.property.forceDeleteRepos">forceDeleteRepos</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.home">home</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.repos">repos</a></code> | <code>string</code> | *No description.* |
@@ -647,6 +665,26 @@ public readonly externalIdInput: string;
 
 ---
 
+##### `forceDeleteHomeDirInput`<sup>Optional</sup> <a name="forceDeleteHomeDirInput" id="@cdktf/provider-databricks.user.User.property.forceDeleteHomeDirInput"></a>
+
+```typescript
+public readonly forceDeleteHomeDirInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `forceDeleteReposInput`<sup>Optional</sup> <a name="forceDeleteReposInput" id="@cdktf/provider-databricks.user.User.property.forceDeleteReposInput"></a>
+
+```typescript
+public readonly forceDeleteReposInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `forceInput`<sup>Optional</sup> <a name="forceInput" id="@cdktf/provider-databricks.user.User.property.forceInput"></a>
 
 ```typescript
@@ -777,6 +815,26 @@ public readonly force: boolean | IResolvable;
 
 ---
 
+##### `forceDeleteHomeDir`<sup>Required</sup> <a name="forceDeleteHomeDir" id="@cdktf/provider-databricks.user.User.property.forceDeleteHomeDir"></a>
+
+```typescript
+public readonly forceDeleteHomeDir: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `forceDeleteRepos`<sup>Required</sup> <a name="forceDeleteRepos" id="@cdktf/provider-databricks.user.User.property.forceDeleteRepos"></a>
+
+```typescript
+public readonly forceDeleteRepos: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `home`<sup>Required</sup> <a name="home" id="@cdktf/provider-databricks.user.User.property.home"></a>
 
 ```typescript
@@ -876,6 +934,8 @@ const userConfig: user.UserConfig = { ... }
 | <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#display_name User#display_name}. |
 | <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.externalId">externalId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#external_id User#external_id}. |
 | <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.force">force</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#force User#force}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.forceDeleteHomeDir">forceDeleteHomeDir</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#force_delete_home_dir User#force_delete_home_dir}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.forceDeleteRepos">forceDeleteRepos</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#force_delete_repos User#force_delete_repos}. |
 | <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.home">home</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#home User#home}. |
 | <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#id User#id}. |
 | <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.repos">repos</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#repos User#repos}. |
@@ -1046,6 +1106,30 @@ public readonly force: boolean | IResolvable;
 - *Type:* boolean | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#force User#force}.
+
+---
+
+##### `forceDeleteHomeDir`<sup>Optional</sup> <a name="forceDeleteHomeDir" id="@cdktf/provider-databricks.user.UserConfig.property.forceDeleteHomeDir"></a>
+
+```typescript
+public readonly forceDeleteHomeDir: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#force_delete_home_dir User#force_delete_home_dir}.
+
+---
+
+##### `forceDeleteRepos`<sup>Optional</sup> <a name="forceDeleteRepos" id="@cdktf/provider-databricks.user.UserConfig.property.forceDeleteRepos"></a>
+
+```typescript
+public readonly forceDeleteRepos: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#force_delete_repos User#force_delete_repos}.
 
 ---
 
