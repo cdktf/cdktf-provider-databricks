@@ -29,6 +29,8 @@ user.User(
   display_name: str = None,
   external_id: str = None,
   force: typing.Union[bool, IResolvable] = None,
+  force_delete_home_dir: typing.Union[bool, IResolvable] = None,
+  force_delete_repos: typing.Union[bool, IResolvable] = None,
   home: str = None,
   id: str = None,
   repos: str = None,
@@ -55,6 +57,8 @@ user.User(
 | <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#display_name User#display_name}. |
 | <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.externalId">external_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#external_id User#external_id}. |
 | <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.force">force</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#force User#force}. |
+| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.forceDeleteHomeDir">force_delete_home_dir</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#force_delete_home_dir User#force_delete_home_dir}. |
+| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.forceDeleteRepos">force_delete_repos</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#force_delete_repos User#force_delete_repos}. |
 | <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.home">home</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#home User#home}. |
 | <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#id User#id}. |
 | <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.repos">repos</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#repos User#repos}. |
@@ -186,6 +190,22 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 ---
 
+##### `force_delete_home_dir`<sup>Optional</sup> <a name="force_delete_home_dir" id="@cdktf/provider-databricks.user.User.Initializer.parameter.forceDeleteHomeDir"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#force_delete_home_dir User#force_delete_home_dir}.
+
+---
+
+##### `force_delete_repos`<sup>Optional</sup> <a name="force_delete_repos" id="@cdktf/provider-databricks.user.User.Initializer.parameter.forceDeleteRepos"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#force_delete_repos User#force_delete_repos}.
+
+---
+
 ##### `home`<sup>Optional</sup> <a name="home" id="@cdktf/provider-databricks.user.User.Initializer.parameter.home"></a>
 
 - *Type:* str
@@ -248,6 +268,8 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 | <code><a href="#@cdktf/provider-databricks.user.User.resetDisplayName">reset_display_name</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.resetExternalId">reset_external_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.resetForce">reset_force</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.user.User.resetForceDeleteHomeDir">reset_force_delete_home_dir</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.user.User.resetForceDeleteRepos">reset_force_delete_repos</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.resetHome">reset_home</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.resetRepos">reset_repos</a></code> | *No description.* |
@@ -506,6 +528,18 @@ def reset_external_id() -> None
 def reset_force() -> None
 ```
 
+##### `reset_force_delete_home_dir` <a name="reset_force_delete_home_dir" id="@cdktf/provider-databricks.user.User.resetForceDeleteHomeDir"></a>
+
+```python
+def reset_force_delete_home_dir() -> None
+```
+
+##### `reset_force_delete_repos` <a name="reset_force_delete_repos" id="@cdktf/provider-databricks.user.User.resetForceDeleteRepos"></a>
+
+```python
+def reset_force_delete_repos() -> None
+```
+
 ##### `reset_home` <a name="reset_home" id="@cdktf/provider-databricks.user.User.resetHome"></a>
 
 ```python
@@ -630,6 +664,8 @@ user.User.is_terraform_resource(
 | <code><a href="#@cdktf/provider-databricks.user.User.property.databricksSqlAccessInput">databricks_sql_access_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.externalIdInput">external_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.user.User.property.forceDeleteHomeDirInput">force_delete_home_dir_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.user.User.property.forceDeleteReposInput">force_delete_repos_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.forceInput">force_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.homeInput">home_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
@@ -643,6 +679,8 @@ user.User.is_terraform_resource(
 | <code><a href="#@cdktf/provider-databricks.user.User.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.externalId">external_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.force">force</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.user.User.property.forceDeleteHomeDir">force_delete_home_dir</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.user.User.property.forceDeleteRepos">force_delete_repos</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.home">home</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.repos">repos</a></code> | <code>str</code> | *No description.* |
@@ -853,6 +891,26 @@ external_id_input: str
 
 ---
 
+##### `force_delete_home_dir_input`<sup>Optional</sup> <a name="force_delete_home_dir_input" id="@cdktf/provider-databricks.user.User.property.forceDeleteHomeDirInput"></a>
+
+```python
+force_delete_home_dir_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `force_delete_repos_input`<sup>Optional</sup> <a name="force_delete_repos_input" id="@cdktf/provider-databricks.user.User.property.forceDeleteReposInput"></a>
+
+```python
+force_delete_repos_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `force_input`<sup>Optional</sup> <a name="force_input" id="@cdktf/provider-databricks.user.User.property.forceInput"></a>
 
 ```python
@@ -983,6 +1041,26 @@ force: typing.Union[bool, IResolvable]
 
 ---
 
+##### `force_delete_home_dir`<sup>Required</sup> <a name="force_delete_home_dir" id="@cdktf/provider-databricks.user.User.property.forceDeleteHomeDir"></a>
+
+```python
+force_delete_home_dir: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `force_delete_repos`<sup>Required</sup> <a name="force_delete_repos" id="@cdktf/provider-databricks.user.User.property.forceDeleteRepos"></a>
+
+```python
+force_delete_repos: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `home`<sup>Required</sup> <a name="home" id="@cdktf/provider-databricks.user.User.property.home"></a>
 
 ```python
@@ -1076,6 +1154,8 @@ user.UserConfig(
   display_name: str = None,
   external_id: str = None,
   force: typing.Union[bool, IResolvable] = None,
+  force_delete_home_dir: typing.Union[bool, IResolvable] = None,
+  force_delete_repos: typing.Union[bool, IResolvable] = None,
   home: str = None,
   id: str = None,
   repos: str = None,
@@ -1102,6 +1182,8 @@ user.UserConfig(
 | <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#display_name User#display_name}. |
 | <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.externalId">external_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#external_id User#external_id}. |
 | <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.force">force</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#force User#force}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.forceDeleteHomeDir">force_delete_home_dir</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#force_delete_home_dir User#force_delete_home_dir}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.forceDeleteRepos">force_delete_repos</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#force_delete_repos User#force_delete_repos}. |
 | <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.home">home</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#home User#home}. |
 | <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#id User#id}. |
 | <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.repos">repos</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#repos User#repos}. |
@@ -1272,6 +1354,30 @@ force: typing.Union[bool, IResolvable]
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#force User#force}.
+
+---
+
+##### `force_delete_home_dir`<sup>Optional</sup> <a name="force_delete_home_dir" id="@cdktf/provider-databricks.user.UserConfig.property.forceDeleteHomeDir"></a>
+
+```python
+force_delete_home_dir: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#force_delete_home_dir User#force_delete_home_dir}.
+
+---
+
+##### `force_delete_repos`<sup>Optional</sup> <a name="force_delete_repos" id="@cdktf/provider-databricks.user.UserConfig.property.forceDeleteRepos"></a>
+
+```python
+force_delete_repos: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/user#force_delete_repos User#force_delete_repos}.
 
 ---
 

@@ -40,6 +40,14 @@ export interface ServicePrincipalConfig extends cdktf.TerraformMetaArguments {
   */
   readonly force?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#force_delete_home_dir ServicePrincipal#force_delete_home_dir}
+  */
+  readonly forceDeleteHomeDir?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#force_delete_repos ServicePrincipal#force_delete_repos}
+  */
+  readonly forceDeleteRepos?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/service_principal#home ServicePrincipal#home}
   */
   readonly home?: string;
@@ -86,7 +94,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_service_principal',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.10.1',
+        providerVersion: '1.11.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -105,6 +113,8 @@ export class ServicePrincipal extends cdktf.TerraformResource {
     this._displayName = config.displayName;
     this._externalId = config.externalId;
     this._force = config.force;
+    this._forceDeleteHomeDir = config.forceDeleteHomeDir;
+    this._forceDeleteRepos = config.forceDeleteRepos;
     this._home = config.home;
     this._id = config.id;
     this._repos = config.repos;
@@ -243,6 +253,38 @@ export class ServicePrincipal extends cdktf.TerraformResource {
     return this._force;
   }
 
+  // force_delete_home_dir - computed: false, optional: true, required: false
+  private _forceDeleteHomeDir?: boolean | cdktf.IResolvable; 
+  public get forceDeleteHomeDir() {
+    return this.getBooleanAttribute('force_delete_home_dir');
+  }
+  public set forceDeleteHomeDir(value: boolean | cdktf.IResolvable) {
+    this._forceDeleteHomeDir = value;
+  }
+  public resetForceDeleteHomeDir() {
+    this._forceDeleteHomeDir = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceDeleteHomeDirInput() {
+    return this._forceDeleteHomeDir;
+  }
+
+  // force_delete_repos - computed: false, optional: true, required: false
+  private _forceDeleteRepos?: boolean | cdktf.IResolvable; 
+  public get forceDeleteRepos() {
+    return this.getBooleanAttribute('force_delete_repos');
+  }
+  public set forceDeleteRepos(value: boolean | cdktf.IResolvable) {
+    this._forceDeleteRepos = value;
+  }
+  public resetForceDeleteRepos() {
+    this._forceDeleteRepos = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceDeleteReposInput() {
+    return this._forceDeleteRepos;
+  }
+
   // home - computed: true, optional: true, required: false
   private _home?: string; 
   public get home() {
@@ -321,6 +363,8 @@ export class ServicePrincipal extends cdktf.TerraformResource {
       display_name: cdktf.stringToTerraform(this._displayName),
       external_id: cdktf.stringToTerraform(this._externalId),
       force: cdktf.booleanToTerraform(this._force),
+      force_delete_home_dir: cdktf.booleanToTerraform(this._forceDeleteHomeDir),
+      force_delete_repos: cdktf.booleanToTerraform(this._forceDeleteRepos),
       home: cdktf.stringToTerraform(this._home),
       id: cdktf.stringToTerraform(this._id),
       repos: cdktf.stringToTerraform(this._repos),
