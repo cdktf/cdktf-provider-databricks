@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/databricks/r/azure_b
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.azureBlobMount.AzureBlobMount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/azureblobmount"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/azureblobmount"
 
 azureblobmount.NewAzureBlobMount(scope Construct, id *string, config AzureBlobMountConfig) AzureBlobMount
 ```
@@ -287,7 +287,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.azureBlobMount.AzureBlobMount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/azureblobmount"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/azureblobmount"
 
 azureblobmount.AzureBlobMount_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.azureBlobMount.AzureBlobMount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/azureblobmount"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/azureblobmount"
 
 azureblobmount.AzureBlobMount_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ azureblobmount.AzureBlobMount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.azureBlobMount.AzureBlobMount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/azureblobmount"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/azureblobmount"
 
 azureblobmount.AzureBlobMount_IsTerraformResource(x interface{}) *bool
 ```
@@ -741,7 +741,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.azureBlobMount.AzureBlobMountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/azureblobmount"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/azureblobmount"
 
 &azureblobmount.AzureBlobMountConfig {
 	Connection: interface{},
