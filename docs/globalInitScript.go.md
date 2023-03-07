@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/databricks/r/global_
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.globalInitScript.GlobalInitScript.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/globalinitscript"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/globalinitscript"
 
 globalinitscript.NewGlobalInitScript(scope Construct, id *string, config GlobalInitScriptConfig) GlobalInitScript
 ```
@@ -321,7 +321,7 @@ func ResetSource()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.globalInitScript.GlobalInitScript.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/globalinitscript"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/globalinitscript"
 
 globalinitscript.GlobalInitScript_IsConstruct(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.globalInitScript.GlobalInitScript.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/globalinitscript"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/globalinitscript"
 
 globalinitscript.GlobalInitScript_IsTerraformElement(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ globalinitscript.GlobalInitScript_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.globalInitScript.GlobalInitScript.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/globalinitscript"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/globalinitscript"
 
 globalinitscript.GlobalInitScript_IsTerraformResource(x interface{}) *bool
 ```
@@ -742,7 +742,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.globalInitScript.GlobalInitScriptConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/globalinitscript"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/globalinitscript"
 
 &globalinitscript.GlobalInitScriptConfig {
 	Connection: interface{},
@@ -759,7 +759,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/globalinitsc
 	Md5: *string,
 	Position: *f64,
 	Source: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.globalInitScript.GlobalInitScriptTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-databricks-go/databricks.globalInitScript.GlobalInitScriptTimeouts,
 }
 ```
 
@@ -961,7 +961,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.globalInitScript.GlobalInitScriptTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/globalinitscript"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/globalinitscript"
 
 &globalinitscript.GlobalInitScriptTimeouts {
 
@@ -976,7 +976,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/globalinitsc
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.globalInitScript.GlobalInitScriptTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/globalinitscript"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/globalinitscript"
 
 globalinitscript.NewGlobalInitScriptTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlobalInitScriptTimeoutsOutputReference
 ```

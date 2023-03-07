@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/databricks/d/current
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabrickscurrentuser"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscurrentuser"
 
 datadatabrickscurrentuser.NewDataDatabricksCurrentUser(scope Construct, id *string, config DataDatabricksCurrentUserConfig) DataDatabricksCurrentUser
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabrickscurrentuser"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscurrentuser"
 
 datadatabrickscurrentuser.DataDatabricksCurrentUser_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabrickscurrentuser"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscurrentuser"
 
 datadatabrickscurrentuser.DataDatabricksCurrentUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datadatabrickscurrentuser.DataDatabricksCurrentUser_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabrickscurrentuser"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscurrentuser"
 
 datadatabrickscurrentuser.DataDatabricksCurrentUser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabrickscurrentuser"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscurrentuser"
 
 &datadatabrickscurrentuser.DataDatabricksCurrentUserConfig {
 	Connection: interface{},

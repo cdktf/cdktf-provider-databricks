@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/databricks/r/metasto
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/metastoredataaccess"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/metastoredataaccess"
 
 metastoredataaccess.NewMetastoreDataAccess(scope Construct, id *string, config MetastoreDataAccessConfig) MetastoreDataAccess
 ```
@@ -367,7 +367,7 @@ func ResetIsDefault()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/metastoredataaccess"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/metastoredataaccess"
 
 metastoredataaccess.MetastoreDataAccess_IsConstruct(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/metastoredataaccess"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/metastoredataaccess"
 
 metastoredataaccess.MetastoreDataAccess_IsTerraformElement(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ metastoredataaccess.MetastoreDataAccess_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/metastoredataaccess"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/metastoredataaccess"
 
 metastoredataaccess.MetastoreDataAccess_IsTerraformResource(x interface{}) *bool
 ```
@@ -810,7 +810,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAwsIamRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/metastoredataaccess"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/metastoredataaccess"
 
 &metastoredataaccess.MetastoreDataAccessAwsIamRole {
 	RoleArn: *string,
@@ -842,7 +842,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureManagedIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/metastoredataaccess"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/metastoredataaccess"
 
 &metastoredataaccess.MetastoreDataAccessAzureManagedIdentity {
 	AccessConnectorId: *string,
@@ -874,7 +874,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureServicePrincipal.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/metastoredataaccess"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/metastoredataaccess"
 
 &metastoredataaccess.MetastoreDataAccessAzureServicePrincipal {
 	ApplicationId: *string,
@@ -934,7 +934,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/metastoredataaccess"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/metastoredataaccess"
 
 &metastoredataaccess.MetastoreDataAccessConfig {
 	Connection: interface{},
@@ -946,11 +946,11 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/metastoredat
 	Provisioners: *[]interface{},
 	MetastoreId: *string,
 	Name: *string,
-	AwsIamRole: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.metastoreDataAccess.MetastoreDataAccessAwsIamRole,
-	AzureManagedIdentity: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.metastoreDataAccess.MetastoreDataAccessAzureManagedIdentity,
-	AzureServicePrincipal: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.metastoreDataAccess.MetastoreDataAccessAzureServicePrincipal,
+	AwsIamRole: github.com/cdktf/cdktf-provider-databricks-go/databricks.metastoreDataAccess.MetastoreDataAccessAwsIamRole,
+	AzureManagedIdentity: github.com/cdktf/cdktf-provider-databricks-go/databricks.metastoreDataAccess.MetastoreDataAccessAzureManagedIdentity,
+	AzureServicePrincipal: github.com/cdktf/cdktf-provider-databricks-go/databricks.metastoreDataAccess.MetastoreDataAccessAzureServicePrincipal,
 	ConfigurationType: *string,
-	GcpServiceAccountKey: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.metastoreDataAccess.MetastoreDataAccessGcpServiceAccountKey,
+	GcpServiceAccountKey: github.com/cdktf/cdktf-provider-databricks-go/databricks.metastoreDataAccess.MetastoreDataAccessGcpServiceAccountKey,
 	Id: *string,
 	IsDefault: interface{},
 }
@@ -1173,7 +1173,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessGcpServiceAccountKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/metastoredataaccess"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/metastoredataaccess"
 
 &metastoredataaccess.MetastoreDataAccessGcpServiceAccountKey {
 	Email: *string,
@@ -1235,7 +1235,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAwsIamRoleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/metastoredataaccess"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/metastoredataaccess"
 
 metastoredataaccess.NewMetastoreDataAccessAwsIamRoleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MetastoreDataAccessAwsIamRoleOutputReference
 ```
@@ -1506,7 +1506,7 @@ func InternalValue() MetastoreDataAccessAwsIamRole
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureManagedIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/metastoredataaccess"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/metastoredataaccess"
 
 metastoredataaccess.NewMetastoreDataAccessAzureManagedIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MetastoreDataAccessAzureManagedIdentityOutputReference
 ```
@@ -1777,7 +1777,7 @@ func InternalValue() MetastoreDataAccessAzureManagedIdentity
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureServicePrincipalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/metastoredataaccess"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/metastoredataaccess"
 
 metastoredataaccess.NewMetastoreDataAccessAzureServicePrincipalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MetastoreDataAccessAzureServicePrincipalOutputReference
 ```
@@ -2092,7 +2092,7 @@ func InternalValue() MetastoreDataAccessAzureServicePrincipal
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessGcpServiceAccountKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/metastoredataaccess"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/metastoredataaccess"
 
 metastoredataaccess.NewMetastoreDataAccessGcpServiceAccountKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MetastoreDataAccessGcpServiceAccountKeyOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/databricks/d/mws_cre
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksmwscredentials"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwscredentials"
 
 datadatabricksmwscredentials.NewDataDatabricksMwsCredentials(scope Construct, id *string, config DataDatabricksMwsCredentialsConfig) DataDatabricksMwsCredentials
 ```
@@ -280,7 +280,7 @@ func ResetIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentials.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksmwscredentials"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwscredentials"
 
 datadatabricksmwscredentials.DataDatabricksMwsCredentials_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentials.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksmwscredentials"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwscredentials"
 
 datadatabricksmwscredentials.DataDatabricksMwsCredentials_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ datadatabricksmwscredentials.DataDatabricksMwsCredentials_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentials.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksmwscredentials"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwscredentials"
 
 datadatabricksmwscredentials.DataDatabricksMwsCredentials_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentialsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksmwscredentials"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwscredentials"
 
 &datadatabricksmwscredentials.DataDatabricksMwsCredentialsConfig {
 	Connection: interface{},
