@@ -43,8 +43,6 @@ DataDatabricksNodeType.Builder.create(Construct scope, java.lang.String id)
 //  .photonWorkerCapable(IResolvable)
 //  .supportPortForwarding(java.lang.Boolean)
 //  .supportPortForwarding(IResolvable)
-//  .vcpu(java.lang.Boolean)
-//  .vcpu(IResolvable)
     .build();
 ```
 
@@ -73,7 +71,6 @@ DataDatabricksNodeType.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.Initializer.parameter.photonDriverCapable">photonDriverCapable</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#photon_driver_capable DataDatabricksNodeType#photon_driver_capable}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.Initializer.parameter.photonWorkerCapable">photonWorkerCapable</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#photon_worker_capable DataDatabricksNodeType#photon_worker_capable}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.Initializer.parameter.supportPortForwarding">supportPortForwarding</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#support_port_forwarding DataDatabricksNodeType#support_port_forwarding}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.Initializer.parameter.vcpu">vcpu</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#vcpu DataDatabricksNodeType#vcpu}. |
 
 ---
 
@@ -252,14 +249,6 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 ---
 
-##### `vcpu`<sup>Optional</sup> <a name="vcpu" id="@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.Initializer.parameter.vcpu"></a>
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#vcpu DataDatabricksNodeType#vcpu}.
-
----
-
 #### Methods <a name="Methods" id="Methods"></a>
 
 | **Name** | **Description** |
@@ -294,7 +283,6 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.resetPhotonDriverCapable">resetPhotonDriverCapable</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.resetPhotonWorkerCapable">resetPhotonWorkerCapable</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.resetSupportPortForwarding">resetSupportPortForwarding</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.resetVcpu">resetVcpu</a></code> | *No description.* |
 
 ---
 
@@ -566,12 +554,6 @@ public void resetPhotonWorkerCapable()
 public void resetSupportPortForwarding()
 ```
 
-##### `resetVcpu` <a name="resetVcpu" id="@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.resetVcpu"></a>
-
-```java
-public void resetVcpu()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -672,7 +654,6 @@ DataDatabricksNodeType.isTerraformDataSource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.property.photonDriverCapableInput">photonDriverCapableInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.property.photonWorkerCapableInput">photonWorkerCapableInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.property.supportPortForwardingInput">supportPortForwardingInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.property.vcpuInput">vcpuInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.property.category">category</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.property.fleet">fleet</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.property.gbPerCore">gbPerCore</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -687,7 +668,6 @@ DataDatabricksNodeType.isTerraformDataSource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.property.photonDriverCapable">photonDriverCapable</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.property.photonWorkerCapable">photonWorkerCapable</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.property.supportPortForwarding">supportPortForwarding</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.property.vcpu">vcpu</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -953,16 +933,6 @@ public java.lang.Object getSupportPortForwardingInput();
 
 ---
 
-##### `vcpuInput`<sup>Optional</sup> <a name="vcpuInput" id="@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.property.vcpuInput"></a>
-
-```java
-public java.lang.Object getVcpuInput();
-```
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
----
-
 ##### `category`<sup>Required</sup> <a name="category" id="@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.property.category"></a>
 
 ```java
@@ -1103,16 +1073,6 @@ public java.lang.Object getSupportPortForwarding();
 
 ---
 
-##### `vcpu`<sup>Required</sup> <a name="vcpu" id="@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.property.vcpu"></a>
-
-```java
-public java.lang.Object getVcpu();
-```
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
----
-
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1172,8 +1132,6 @@ DataDatabricksNodeTypeConfig.builder()
 //  .photonWorkerCapable(IResolvable)
 //  .supportPortForwarding(java.lang.Boolean)
 //  .supportPortForwarding(IResolvable)
-//  .vcpu(java.lang.Boolean)
-//  .vcpu(IResolvable)
     .build();
 ```
 
@@ -1202,7 +1160,6 @@ DataDatabricksNodeTypeConfig.builder()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeTypeConfig.property.photonDriverCapable">photonDriverCapable</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#photon_driver_capable DataDatabricksNodeType#photon_driver_capable}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeTypeConfig.property.photonWorkerCapable">photonWorkerCapable</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#photon_worker_capable DataDatabricksNodeType#photon_worker_capable}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeTypeConfig.property.supportPortForwarding">supportPortForwarding</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#support_port_forwarding DataDatabricksNodeType#support_port_forwarding}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeTypeConfig.property.vcpu">vcpu</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#vcpu DataDatabricksNodeType#vcpu}. |
 
 ---
 
@@ -1444,18 +1401,6 @@ public java.lang.Object getSupportPortForwarding();
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#support_port_forwarding DataDatabricksNodeType#support_port_forwarding}.
-
----
-
-##### `vcpu`<sup>Optional</sup> <a name="vcpu" id="@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeTypeConfig.property.vcpu"></a>
-
-```java
-public java.lang.Object getVcpu();
-```
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#vcpu DataDatabricksNodeType#vcpu}.
 
 ---
 

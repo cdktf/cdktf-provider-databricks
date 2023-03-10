@@ -80,7 +80,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.resetPhotonDriverCapable">ResetPhotonDriverCapable</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.resetPhotonWorkerCapable">ResetPhotonWorkerCapable</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.resetSupportPortForwarding">ResetSupportPortForwarding</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.resetVcpu">ResetVcpu</a></code> | *No description.* |
 
 ---
 
@@ -352,12 +351,6 @@ private void ResetPhotonWorkerCapable()
 private void ResetSupportPortForwarding()
 ```
 
-##### `ResetVcpu` <a name="ResetVcpu" id="@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.resetVcpu"></a>
-
-```csharp
-private void ResetVcpu()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -458,7 +451,6 @@ DataDatabricksNodeType.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.property.photonDriverCapableInput">PhotonDriverCapableInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.property.photonWorkerCapableInput">PhotonWorkerCapableInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.property.supportPortForwardingInput">SupportPortForwardingInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.property.vcpuInput">VcpuInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.property.category">Category</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.property.fleet">Fleet</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.property.gbPerCore">GbPerCore</a></code> | <code>double</code> | *No description.* |
@@ -473,7 +465,6 @@ DataDatabricksNodeType.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.property.photonDriverCapable">PhotonDriverCapable</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.property.photonWorkerCapable">PhotonWorkerCapable</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.property.supportPortForwarding">SupportPortForwarding</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.property.vcpu">Vcpu</a></code> | <code>object</code> | *No description.* |
 
 ---
 
@@ -739,16 +730,6 @@ public object SupportPortForwardingInput { get; }
 
 ---
 
-##### `VcpuInput`<sup>Optional</sup> <a name="VcpuInput" id="@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.property.vcpuInput"></a>
-
-```csharp
-public object VcpuInput { get; }
-```
-
-- *Type:* object
-
----
-
 ##### `Category`<sup>Required</sup> <a name="Category" id="@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.property.category"></a>
 
 ```csharp
@@ -889,16 +870,6 @@ public object SupportPortForwarding { get; }
 
 ---
 
-##### `Vcpu`<sup>Required</sup> <a name="Vcpu" id="@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.property.vcpu"></a>
-
-```csharp
-public object Vcpu { get; }
-```
-
-- *Type:* object
-
----
-
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -947,8 +918,7 @@ new DataDatabricksNodeTypeConfig {
     double MinMemoryGb = null,
     object PhotonDriverCapable = null,
     object PhotonWorkerCapable = null,
-    object SupportPortForwarding = null,
-    object Vcpu = null
+    object SupportPortForwarding = null
 };
 ```
 
@@ -977,7 +947,6 @@ new DataDatabricksNodeTypeConfig {
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeTypeConfig.property.photonDriverCapable">PhotonDriverCapable</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#photon_driver_capable DataDatabricksNodeType#photon_driver_capable}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeTypeConfig.property.photonWorkerCapable">PhotonWorkerCapable</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#photon_worker_capable DataDatabricksNodeType#photon_worker_capable}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeTypeConfig.property.supportPortForwarding">SupportPortForwarding</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#support_port_forwarding DataDatabricksNodeType#support_port_forwarding}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeTypeConfig.property.vcpu">Vcpu</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#vcpu DataDatabricksNodeType#vcpu}. |
 
 ---
 
@@ -1219,18 +1188,6 @@ public object SupportPortForwarding { get; set; }
 - *Type:* object
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#support_port_forwarding DataDatabricksNodeType#support_port_forwarding}.
-
----
-
-##### `Vcpu`<sup>Optional</sup> <a name="Vcpu" id="@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeTypeConfig.property.vcpu"></a>
-
-```csharp
-public object Vcpu { get; set; }
-```
-
-- *Type:* object
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#vcpu DataDatabricksNodeType#vcpu}.
 
 ---
 

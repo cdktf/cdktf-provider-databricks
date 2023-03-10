@@ -23,11 +23,11 @@ GitCredential.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .gitProvider(java.lang.String)
-    .gitUsername(java.lang.String)
-    .personalAccessToken(java.lang.String)
 //  .force(java.lang.Boolean)
 //  .force(IResolvable)
+//  .gitUsername(java.lang.String)
 //  .id(java.lang.String)
+//  .personalAccessToken(java.lang.String)
     .build();
 ```
 
@@ -43,10 +43,10 @@ GitCredential.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-databricks.gitCredential.GitCredential.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.gitCredential.GitCredential.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.gitCredential.GitCredential.Initializer.parameter.gitProvider">gitProvider</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/git_credential#git_provider GitCredential#git_provider}. |
-| <code><a href="#@cdktf/provider-databricks.gitCredential.GitCredential.Initializer.parameter.gitUsername">gitUsername</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/git_credential#git_username GitCredential#git_username}. |
-| <code><a href="#@cdktf/provider-databricks.gitCredential.GitCredential.Initializer.parameter.personalAccessToken">personalAccessToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/git_credential#personal_access_token GitCredential#personal_access_token}. |
 | <code><a href="#@cdktf/provider-databricks.gitCredential.GitCredential.Initializer.parameter.force">force</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/git_credential#force GitCredential#force}. |
+| <code><a href="#@cdktf/provider-databricks.gitCredential.GitCredential.Initializer.parameter.gitUsername">gitUsername</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/git_credential#git_username GitCredential#git_username}. |
 | <code><a href="#@cdktf/provider-databricks.gitCredential.GitCredential.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/git_credential#id GitCredential#id}. |
+| <code><a href="#@cdktf/provider-databricks.gitCredential.GitCredential.Initializer.parameter.personalAccessToken">personalAccessToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/git_credential#personal_access_token GitCredential#personal_access_token}. |
 
 ---
 
@@ -118,27 +118,19 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 ---
 
-##### `gitUsername`<sup>Required</sup> <a name="gitUsername" id="@cdktf/provider-databricks.gitCredential.GitCredential.Initializer.parameter.gitUsername"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/git_credential#git_username GitCredential#git_username}.
-
----
-
-##### `personalAccessToken`<sup>Required</sup> <a name="personalAccessToken" id="@cdktf/provider-databricks.gitCredential.GitCredential.Initializer.parameter.personalAccessToken"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/git_credential#personal_access_token GitCredential#personal_access_token}.
-
----
-
 ##### `force`<sup>Optional</sup> <a name="force" id="@cdktf/provider-databricks.gitCredential.GitCredential.Initializer.parameter.force"></a>
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/git_credential#force GitCredential#force}.
+
+---
+
+##### `gitUsername`<sup>Optional</sup> <a name="gitUsername" id="@cdktf/provider-databricks.gitCredential.GitCredential.Initializer.parameter.gitUsername"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/git_credential#git_username GitCredential#git_username}.
 
 ---
 
@@ -150,6 +142,14 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `personalAccessToken`<sup>Optional</sup> <a name="personalAccessToken" id="@cdktf/provider-databricks.gitCredential.GitCredential.Initializer.parameter.personalAccessToken"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/git_credential#personal_access_token GitCredential#personal_access_token}.
 
 ---
 
@@ -174,7 +174,9 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-databricks.gitCredential.GitCredential.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.gitCredential.GitCredential.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.gitCredential.GitCredential.resetForce">resetForce</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.gitCredential.GitCredential.resetGitUsername">resetGitUsername</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.gitCredential.GitCredential.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.gitCredential.GitCredential.resetPersonalAccessToken">resetPersonalAccessToken</a></code> | *No description.* |
 
 ---
 
@@ -368,10 +370,22 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 public void resetForce()
 ```
 
+##### `resetGitUsername` <a name="resetGitUsername" id="@cdktf/provider-databricks.gitCredential.GitCredential.resetGitUsername"></a>
+
+```java
+public void resetGitUsername()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-databricks.gitCredential.GitCredential.resetId"></a>
 
 ```java
 public void resetId()
+```
+
+##### `resetPersonalAccessToken` <a name="resetPersonalAccessToken" id="@cdktf/provider-databricks.gitCredential.GitCredential.resetPersonalAccessToken"></a>
+
+```java
+public void resetPersonalAccessToken()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -756,11 +770,11 @@ GitCredentialConfig.builder()
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .gitProvider(java.lang.String)
-    .gitUsername(java.lang.String)
-    .personalAccessToken(java.lang.String)
 //  .force(java.lang.Boolean)
 //  .force(IResolvable)
+//  .gitUsername(java.lang.String)
 //  .id(java.lang.String)
+//  .personalAccessToken(java.lang.String)
     .build();
 ```
 
@@ -776,10 +790,10 @@ GitCredentialConfig.builder()
 | <code><a href="#@cdktf/provider-databricks.gitCredential.GitCredentialConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.gitCredential.GitCredentialConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.gitCredential.GitCredentialConfig.property.gitProvider">gitProvider</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/git_credential#git_provider GitCredential#git_provider}. |
-| <code><a href="#@cdktf/provider-databricks.gitCredential.GitCredentialConfig.property.gitUsername">gitUsername</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/git_credential#git_username GitCredential#git_username}. |
-| <code><a href="#@cdktf/provider-databricks.gitCredential.GitCredentialConfig.property.personalAccessToken">personalAccessToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/git_credential#personal_access_token GitCredential#personal_access_token}. |
 | <code><a href="#@cdktf/provider-databricks.gitCredential.GitCredentialConfig.property.force">force</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/git_credential#force GitCredential#force}. |
+| <code><a href="#@cdktf/provider-databricks.gitCredential.GitCredentialConfig.property.gitUsername">gitUsername</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/git_credential#git_username GitCredential#git_username}. |
 | <code><a href="#@cdktf/provider-databricks.gitCredential.GitCredentialConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/git_credential#id GitCredential#id}. |
+| <code><a href="#@cdktf/provider-databricks.gitCredential.GitCredentialConfig.property.personalAccessToken">personalAccessToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/git_credential#personal_access_token GitCredential#personal_access_token}. |
 
 ---
 
@@ -865,30 +879,6 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 ---
 
-##### `gitUsername`<sup>Required</sup> <a name="gitUsername" id="@cdktf/provider-databricks.gitCredential.GitCredentialConfig.property.gitUsername"></a>
-
-```java
-public java.lang.String getGitUsername();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/git_credential#git_username GitCredential#git_username}.
-
----
-
-##### `personalAccessToken`<sup>Required</sup> <a name="personalAccessToken" id="@cdktf/provider-databricks.gitCredential.GitCredentialConfig.property.personalAccessToken"></a>
-
-```java
-public java.lang.String getPersonalAccessToken();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/git_credential#personal_access_token GitCredential#personal_access_token}.
-
----
-
 ##### `force`<sup>Optional</sup> <a name="force" id="@cdktf/provider-databricks.gitCredential.GitCredentialConfig.property.force"></a>
 
 ```java
@@ -898,6 +888,18 @@ public java.lang.Object getForce();
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/git_credential#force GitCredential#force}.
+
+---
+
+##### `gitUsername`<sup>Optional</sup> <a name="gitUsername" id="@cdktf/provider-databricks.gitCredential.GitCredentialConfig.property.gitUsername"></a>
+
+```java
+public java.lang.String getGitUsername();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/git_credential#git_username GitCredential#git_username}.
 
 ---
 
@@ -913,6 +915,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `personalAccessToken`<sup>Optional</sup> <a name="personalAccessToken" id="@cdktf/provider-databricks.gitCredential.GitCredentialConfig.property.personalAccessToken"></a>
+
+```java
+public java.lang.String getPersonalAccessToken();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/git_credential#personal_access_token GitCredential#personal_access_token}.
 
 ---
 

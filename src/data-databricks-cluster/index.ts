@@ -1938,6 +1938,71 @@ export class DataDatabricksClusterClusterInfoGcpAttributesOutputReference extend
     return this._zoneId;
   }
 }
+export interface DataDatabricksClusterClusterInfoInitScriptsAbfss {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/cluster#destination DataDatabricksCluster#destination}
+  */
+  readonly destination?: string;
+}
+
+export function dataDatabricksClusterClusterInfoInitScriptsAbfssToTerraform(struct?: DataDatabricksClusterClusterInfoInitScriptsAbfssOutputReference | DataDatabricksClusterClusterInfoInitScriptsAbfss): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    destination: cdktf.stringToTerraform(struct!.destination),
+  }
+}
+
+export class DataDatabricksClusterClusterInfoInitScriptsAbfssOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataDatabricksClusterClusterInfoInitScriptsAbfss | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._destination !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destination = this._destination;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksClusterClusterInfoInitScriptsAbfss | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._destination = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._destination = value.destination;
+    }
+  }
+
+  // destination - computed: false, optional: true, required: false
+  private _destination?: string; 
+  public get destination() {
+    return this.getStringAttribute('destination');
+  }
+  public set destination(value: string) {
+    this._destination = value;
+  }
+  public resetDestination() {
+    this._destination = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationInput() {
+    return this._destination;
+  }
+}
 export interface DataDatabricksClusterClusterInfoInitScriptsDbfs {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/cluster#destination DataDatabricksCluster#destination}
@@ -1994,6 +2059,136 @@ export class DataDatabricksClusterClusterInfoInitScriptsDbfsOutputReference exte
   }
   public set destination(value: string) {
     this._destination = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationInput() {
+    return this._destination;
+  }
+}
+export interface DataDatabricksClusterClusterInfoInitScriptsFile {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/cluster#destination DataDatabricksCluster#destination}
+  */
+  readonly destination?: string;
+}
+
+export function dataDatabricksClusterClusterInfoInitScriptsFileToTerraform(struct?: DataDatabricksClusterClusterInfoInitScriptsFileOutputReference | DataDatabricksClusterClusterInfoInitScriptsFile): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    destination: cdktf.stringToTerraform(struct!.destination),
+  }
+}
+
+export class DataDatabricksClusterClusterInfoInitScriptsFileOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataDatabricksClusterClusterInfoInitScriptsFile | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._destination !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destination = this._destination;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksClusterClusterInfoInitScriptsFile | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._destination = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._destination = value.destination;
+    }
+  }
+
+  // destination - computed: false, optional: true, required: false
+  private _destination?: string; 
+  public get destination() {
+    return this.getStringAttribute('destination');
+  }
+  public set destination(value: string) {
+    this._destination = value;
+  }
+  public resetDestination() {
+    this._destination = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationInput() {
+    return this._destination;
+  }
+}
+export interface DataDatabricksClusterClusterInfoInitScriptsGcs {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/cluster#destination DataDatabricksCluster#destination}
+  */
+  readonly destination?: string;
+}
+
+export function dataDatabricksClusterClusterInfoInitScriptsGcsToTerraform(struct?: DataDatabricksClusterClusterInfoInitScriptsGcsOutputReference | DataDatabricksClusterClusterInfoInitScriptsGcs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    destination: cdktf.stringToTerraform(struct!.destination),
+  }
+}
+
+export class DataDatabricksClusterClusterInfoInitScriptsGcsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataDatabricksClusterClusterInfoInitScriptsGcs | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._destination !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destination = this._destination;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksClusterClusterInfoInitScriptsGcs | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._destination = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._destination = value.destination;
+    }
+  }
+
+  // destination - computed: false, optional: true, required: false
+  private _destination?: string; 
+  public get destination() {
+    return this.getStringAttribute('destination');
+  }
+  public set destination(value: string) {
+    this._destination = value;
+  }
+  public resetDestination() {
+    this._destination = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get destinationInput() {
@@ -2226,11 +2421,29 @@ export class DataDatabricksClusterClusterInfoInitScriptsS3OutputReference extend
 }
 export interface DataDatabricksClusterClusterInfoInitScripts {
   /**
+  * abfss block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/cluster#abfss DataDatabricksCluster#abfss}
+  */
+  readonly abfss?: DataDatabricksClusterClusterInfoInitScriptsAbfss;
+  /**
   * dbfs block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/cluster#dbfs DataDatabricksCluster#dbfs}
   */
   readonly dbfs?: DataDatabricksClusterClusterInfoInitScriptsDbfs;
+  /**
+  * file block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/cluster#file DataDatabricksCluster#file}
+  */
+  readonly file?: DataDatabricksClusterClusterInfoInitScriptsFile;
+  /**
+  * gcs block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/cluster#gcs DataDatabricksCluster#gcs}
+  */
+  readonly gcs?: DataDatabricksClusterClusterInfoInitScriptsGcs;
   /**
   * s3 block
   * 
@@ -2245,7 +2458,10 @@ export function dataDatabricksClusterClusterInfoInitScriptsToTerraform(struct?: 
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    abfss: dataDatabricksClusterClusterInfoInitScriptsAbfssToTerraform(struct!.abfss),
     dbfs: dataDatabricksClusterClusterInfoInitScriptsDbfsToTerraform(struct!.dbfs),
+    file: dataDatabricksClusterClusterInfoInitScriptsFileToTerraform(struct!.file),
+    gcs: dataDatabricksClusterClusterInfoInitScriptsGcsToTerraform(struct!.gcs),
     s3: dataDatabricksClusterClusterInfoInitScriptsS3ToTerraform(struct!.s3),
   }
 }
@@ -2270,9 +2486,21 @@ export class DataDatabricksClusterClusterInfoInitScriptsOutputReference extends 
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._abfss?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.abfss = this._abfss?.internalValue;
+    }
     if (this._dbfs?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.dbfs = this._dbfs?.internalValue;
+    }
+    if (this._file?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.file = this._file?.internalValue;
+    }
+    if (this._gcs?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gcs = this._gcs?.internalValue;
     }
     if (this._s3?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -2285,7 +2513,10 @@ export class DataDatabricksClusterClusterInfoInitScriptsOutputReference extends 
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._abfss.internalValue = undefined;
       this._dbfs.internalValue = undefined;
+      this._file.internalValue = undefined;
+      this._gcs.internalValue = undefined;
       this._s3.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -2295,9 +2526,28 @@ export class DataDatabricksClusterClusterInfoInitScriptsOutputReference extends 
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._abfss.internalValue = value.abfss;
       this._dbfs.internalValue = value.dbfs;
+      this._file.internalValue = value.file;
+      this._gcs.internalValue = value.gcs;
       this._s3.internalValue = value.s3;
     }
+  }
+
+  // abfss - computed: false, optional: true, required: false
+  private _abfss = new DataDatabricksClusterClusterInfoInitScriptsAbfssOutputReference(this, "abfss");
+  public get abfss() {
+    return this._abfss;
+  }
+  public putAbfss(value: DataDatabricksClusterClusterInfoInitScriptsAbfss) {
+    this._abfss.internalValue = value;
+  }
+  public resetAbfss() {
+    this._abfss.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get abfssInput() {
+    return this._abfss.internalValue;
   }
 
   // dbfs - computed: false, optional: true, required: false
@@ -2314,6 +2564,38 @@ export class DataDatabricksClusterClusterInfoInitScriptsOutputReference extends 
   // Temporarily expose input value. Use with caution.
   public get dbfsInput() {
     return this._dbfs.internalValue;
+  }
+
+  // file - computed: false, optional: true, required: false
+  private _file = new DataDatabricksClusterClusterInfoInitScriptsFileOutputReference(this, "file");
+  public get file() {
+    return this._file;
+  }
+  public putFile(value: DataDatabricksClusterClusterInfoInitScriptsFile) {
+    this._file.internalValue = value;
+  }
+  public resetFile() {
+    this._file.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileInput() {
+    return this._file.internalValue;
+  }
+
+  // gcs - computed: false, optional: true, required: false
+  private _gcs = new DataDatabricksClusterClusterInfoInitScriptsGcsOutputReference(this, "gcs");
+  public get gcs() {
+    return this._gcs;
+  }
+  public putGcs(value: DataDatabricksClusterClusterInfoInitScriptsGcs) {
+    this._gcs.internalValue = value;
+  }
+  public resetGcs() {
+    this._gcs.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gcsInput() {
+    return this._gcs.internalValue;
   }
 
   // s3 - computed: false, optional: true, required: false
@@ -3710,7 +3992,7 @@ export class DataDatabricksCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_cluster',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.11.1',
+        providerVersion: '1.12.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

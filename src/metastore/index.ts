@@ -102,7 +102,7 @@ export class Metastore extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_metastore',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.11.1',
+        providerVersion: '1.12.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
