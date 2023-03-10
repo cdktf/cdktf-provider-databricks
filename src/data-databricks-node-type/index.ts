@@ -66,10 +66,6 @@ export interface DataDatabricksNodeTypeConfig extends cdktf.TerraformMetaArgumen
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#support_port_forwarding DataDatabricksNodeType#support_port_forwarding}
   */
   readonly supportPortForwarding?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/node_type#vcpu DataDatabricksNodeType#vcpu}
-  */
-  readonly vcpu?: boolean | cdktf.IResolvable;
 }
 
 /**
@@ -98,7 +94,7 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_node_type',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.11.1',
+        providerVersion: '1.12.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -123,7 +119,6 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
     this._photonDriverCapable = config.photonDriverCapable;
     this._photonWorkerCapable = config.photonWorkerCapable;
     this._supportPortForwarding = config.supportPortForwarding;
-    this._vcpu = config.vcpu;
   }
 
   // ==========
@@ -354,22 +349,6 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
     return this._supportPortForwarding;
   }
 
-  // vcpu - computed: false, optional: true, required: false
-  private _vcpu?: boolean | cdktf.IResolvable; 
-  public get vcpu() {
-    return this.getBooleanAttribute('vcpu');
-  }
-  public set vcpu(value: boolean | cdktf.IResolvable) {
-    this._vcpu = value;
-  }
-  public resetVcpu() {
-    this._vcpu = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get vcpuInput() {
-    return this._vcpu;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -390,7 +369,6 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
       photon_driver_capable: cdktf.booleanToTerraform(this._photonDriverCapable),
       photon_worker_capable: cdktf.booleanToTerraform(this._photonWorkerCapable),
       support_port_forwarding: cdktf.booleanToTerraform(this._supportPortForwarding),
-      vcpu: cdktf.booleanToTerraform(this._vcpu),
     };
   }
 }

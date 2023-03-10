@@ -62,6 +62,7 @@ The following submodules are available:
 - [mlflowExperiment](./mlflowExperiment.csharp.md)
 - [mlflowModel](./mlflowModel.csharp.md)
 - [mlflowWebhook](./mlflowWebhook.csharp.md)
+- [modelServing](./modelServing.csharp.md)
 - [mount](./mount.csharp.md)
 - [mwsCredentials](./mwsCredentials.csharp.md)
 - [mwsCustomerManagedKeys](./mwsCustomerManagedKeys.csharp.md)

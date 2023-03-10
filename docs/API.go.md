@@ -62,6 +62,7 @@ The following submodules are available:
 - [mlflowExperiment](./mlflowExperiment.go.md)
 - [mlflowModel](./mlflowModel.go.md)
 - [mlflowWebhook](./mlflowWebhook.go.md)
+- [modelServing](./modelServing.go.md)
 - [mount](./mount.go.md)
 - [mwsCredentials](./mwsCredentials.go.md)
 - [mwsCustomerManagedKeys](./mwsCustomerManagedKeys.go.md)

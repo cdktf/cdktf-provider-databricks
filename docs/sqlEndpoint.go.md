@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/databricks/r/sql_end
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlEndpoint.SqlEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/sqlendpoint"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlendpoint"
 
 sqlendpoint.NewSqlEndpoint(scope Construct, id *string, config SqlEndpointConfig) SqlEndpoint
 ```
@@ -437,7 +437,7 @@ func ResetWarehouseType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.sqlEndpoint.SqlEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/sqlendpoint"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlendpoint"
 
 sqlendpoint.SqlEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -469,7 +469,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.sqlEndpoint.SqlEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/sqlendpoint"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlendpoint"
 
 sqlendpoint.SqlEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -483,7 +483,7 @@ sqlendpoint.SqlEndpoint_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.sqlEndpoint.SqlEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/sqlendpoint"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlendpoint"
 
 sqlendpoint.SqlEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -1100,7 +1100,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlEndpoint.SqlEndpointChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/sqlendpoint"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlendpoint"
 
 &sqlendpoint.SqlEndpointChannel {
 	Name: *string,
@@ -1132,7 +1132,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlEndpoint.SqlEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/sqlendpoint"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlendpoint"
 
 &sqlendpoint.SqlEndpointConfig {
 	Connection: interface{},
@@ -1145,7 +1145,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/sqlendpoint"
 	ClusterSize: *string,
 	Name: *string,
 	AutoStopMins: *f64,
-	Channel: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.sqlEndpoint.SqlEndpointChannel,
+	Channel: github.com/cdktf/cdktf-provider-databricks-go/databricks.sqlEndpoint.SqlEndpointChannel,
 	DataSourceId: *string,
 	EnablePhoton: interface{},
 	EnableServerlessCompute: interface{},
@@ -1155,11 +1155,11 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/sqlendpoint"
 	MaxNumClusters: *f64,
 	MinNumClusters: *f64,
 	NumClusters: *f64,
-	OdbcParams: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.sqlEndpoint.SqlEndpointOdbcParams,
+	OdbcParams: github.com/cdktf/cdktf-provider-databricks-go/databricks.sqlEndpoint.SqlEndpointOdbcParams,
 	SpotInstancePolicy: *string,
 	State: *string,
-	Tags: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.sqlEndpoint.SqlEndpointTags,
-	Timeouts: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.sqlEndpoint.SqlEndpointTimeouts,
+	Tags: github.com/cdktf/cdktf-provider-databricks-go/databricks.sqlEndpoint.SqlEndpointTags,
+	Timeouts: github.com/cdktf/cdktf-provider-databricks-go/databricks.sqlEndpoint.SqlEndpointTimeouts,
 	WarehouseType: *string,
 }
 ```
@@ -1511,7 +1511,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlEndpoint.SqlEndpointOdbcParams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/sqlendpoint"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlendpoint"
 
 &sqlendpoint.SqlEndpointOdbcParams {
 	Path: *string,
@@ -1599,7 +1599,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlEndpoint.SqlEndpointTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/sqlendpoint"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlendpoint"
 
 &sqlendpoint.SqlEndpointTags {
 	CustomTags: interface{},
@@ -1633,7 +1633,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlEndpoint.SqlEndpointTagsCustomTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/sqlendpoint"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlendpoint"
 
 &sqlendpoint.SqlEndpointTagsCustomTags {
 	Key: *string,
@@ -1679,7 +1679,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlEndpoint.SqlEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/sqlendpoint"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlendpoint"
 
 &sqlendpoint.SqlEndpointTimeouts {
 	Create: *string,
@@ -1713,7 +1713,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlEndpoint.SqlEndpointChannelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/sqlendpoint"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlendpoint"
 
 sqlendpoint.NewSqlEndpointChannelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlEndpointChannelOutputReference
 ```
@@ -1991,7 +1991,7 @@ func InternalValue() SqlEndpointChannel
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlEndpoint.SqlEndpointOdbcParamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/sqlendpoint"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlendpoint"
 
 sqlendpoint.NewSqlEndpointOdbcParamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlEndpointOdbcParamsOutputReference
 ```
@@ -2364,7 +2364,7 @@ func InternalValue() SqlEndpointOdbcParams
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlEndpoint.SqlEndpointTagsCustomTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/sqlendpoint"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlendpoint"
 
 sqlendpoint.NewSqlEndpointTagsCustomTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SqlEndpointTagsCustomTagsList
 ```
@@ -2507,7 +2507,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlEndpoint.SqlEndpointTagsCustomTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/sqlendpoint"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlendpoint"
 
 sqlendpoint.NewSqlEndpointTagsCustomTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SqlEndpointTagsCustomTagsOutputReference
 ```
@@ -2818,7 +2818,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlEndpoint.SqlEndpointTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/sqlendpoint"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlendpoint"
 
 sqlendpoint.NewSqlEndpointTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlEndpointTagsOutputReference
 ```
@@ -3102,7 +3102,7 @@ func InternalValue() SqlEndpointTags
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlEndpoint.SqlEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/sqlendpoint"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlendpoint"
 
 sqlendpoint.NewSqlEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlEndpointTimeoutsOutputReference
 ```

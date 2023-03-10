@@ -62,6 +62,7 @@ The following submodules are available:
 - [mlflowExperiment](./mlflowExperiment.typescript.md)
 - [mlflowModel](./mlflowModel.typescript.md)
 - [mlflowWebhook](./mlflowWebhook.typescript.md)
+- [modelServing](./modelServing.typescript.md)
 - [mount](./mount.typescript.md)
 - [mwsCredentials](./mwsCredentials.typescript.md)
 - [mwsCustomerManagedKeys](./mwsCustomerManagedKeys.typescript.md)

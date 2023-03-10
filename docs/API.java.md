@@ -62,6 +62,7 @@ The following submodules are available:
 - [mlflowExperiment](./mlflowExperiment.java.md)
 - [mlflowModel](./mlflowModel.java.md)
 - [mlflowWebhook](./mlflowWebhook.java.md)
+- [modelServing](./modelServing.java.md)
 - [mount](./mount.java.md)
 - [mwsCredentials](./mwsCredentials.java.md)
 - [mwsCustomerManagedKeys](./mwsCustomerManagedKeys.java.md)

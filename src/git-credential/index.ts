@@ -18,7 +18,7 @@ export interface GitCredentialConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/git_credential#git_username GitCredential#git_username}
   */
-  readonly gitUsername: string;
+  readonly gitUsername?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/git_credential#id GitCredential#id}
   *
@@ -29,7 +29,7 @@ export interface GitCredentialConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/git_credential#personal_access_token GitCredential#personal_access_token}
   */
-  readonly personalAccessToken: string;
+  readonly personalAccessToken?: string;
 }
 
 /**
@@ -58,7 +58,7 @@ export class GitCredential extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_git_credential',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.11.1',
+        providerVersion: '1.12.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -109,13 +109,16 @@ export class GitCredential extends cdktf.TerraformResource {
     return this._gitProvider;
   }
 
-  // git_username - computed: false, optional: false, required: true
+  // git_username - computed: false, optional: true, required: false
   private _gitUsername?: string; 
   public get gitUsername() {
     return this.getStringAttribute('git_username');
   }
   public set gitUsername(value: string) {
     this._gitUsername = value;
+  }
+  public resetGitUsername() {
+    this._gitUsername = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get gitUsernameInput() {
@@ -138,13 +141,16 @@ export class GitCredential extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // personal_access_token - computed: false, optional: false, required: true
+  // personal_access_token - computed: false, optional: true, required: false
   private _personalAccessToken?: string; 
   public get personalAccessToken() {
     return this.getStringAttribute('personal_access_token');
   }
   public set personalAccessToken(value: string) {
     this._personalAccessToken = value;
+  }
+  public resetPersonalAccessToken() {
+    this._personalAccessToken = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get personalAccessTokenInput() {

@@ -62,6 +62,7 @@ The following submodules are available:
 - [mlflowExperiment](./mlflowExperiment.python.md)
 - [mlflowModel](./mlflowModel.python.md)
 - [mlflowWebhook](./mlflowWebhook.python.md)
+- [modelServing](./modelServing.python.md)
 - [mount](./mount.python.md)
 - [mwsCredentials](./mwsCredentials.python.md)
 - [mwsCustomerManagedKeys](./mwsCustomerManagedKeys.python.md)
