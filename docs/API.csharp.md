@@ -90,6 +90,7 @@ The following submodules are available:
 - [servicePrincipalRole](./servicePrincipalRole.csharp.md)
 - [servicePrincipalSecret](./servicePrincipalSecret.csharp.md)
 - [share](./share.csharp.md)
+- [sqlAlert](./sqlAlert.csharp.md)
 - [sqlDashboard](./sqlDashboard.csharp.md)
 - [sqlEndpoint](./sqlEndpoint.csharp.md)
 - [sqlGlobalConfig](./sqlGlobalConfig.csharp.md)

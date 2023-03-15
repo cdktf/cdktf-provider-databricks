@@ -90,6 +90,7 @@ The following submodules are available:
 - [servicePrincipalRole](./servicePrincipalRole.python.md)
 - [servicePrincipalSecret](./servicePrincipalSecret.python.md)
 - [share](./share.python.md)
+- [sqlAlert](./sqlAlert.python.md)
 - [sqlDashboard](./sqlDashboard.python.md)
 - [sqlEndpoint](./sqlEndpoint.python.md)
 - [sqlGlobalConfig](./sqlGlobalConfig.python.md)

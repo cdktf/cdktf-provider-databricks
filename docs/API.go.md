@@ -90,6 +90,7 @@ The following submodules are available:
 - [servicePrincipalRole](./servicePrincipalRole.go.md)
 - [servicePrincipalSecret](./servicePrincipalSecret.go.md)
 - [share](./share.go.md)
+- [sqlAlert](./sqlAlert.go.md)
 - [sqlDashboard](./sqlDashboard.go.md)
 - [sqlEndpoint](./sqlEndpoint.go.md)
 - [sqlGlobalConfig](./sqlGlobalConfig.go.md)

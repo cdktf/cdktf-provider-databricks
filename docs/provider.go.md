@@ -66,6 +66,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureTenantId">ResetAzureTenantId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureUseMsi">ResetAzureUseMsi</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureWorkspaceResourceId">ResetAzureWorkspaceResourceId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetBricksCliPath">ResetBricksCliPath</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetClientId">ResetClientId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetClientSecret">ResetClientSecret</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetConfigFile">ResetConfigFile</a></code> | *No description.* |
@@ -207,6 +208,12 @@ func ResetAzureUseMsi()
 
 ```go
 func ResetAzureWorkspaceResourceId()
+```
+
+##### `ResetBricksCliPath` <a name="ResetBricksCliPath" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetBricksCliPath"></a>
+
+```go
+func ResetBricksCliPath()
 ```
 
 ##### `ResetClientId` <a name="ResetClientId" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetClientId"></a>
@@ -398,6 +405,7 @@ provider.DatabricksProvider_IsTerraformProvider(x interface{}) *bool
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureTenantIdInput">AzureTenantIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureUseMsiInput">AzureUseMsiInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureWorkspaceResourceIdInput">AzureWorkspaceResourceIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.bricksCliPathInput">BricksCliPathInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.clientIdInput">ClientIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.clientSecretInput">ClientSecretInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.configFileInput">ConfigFileInput</a></code> | <code>*string</code> | *No description.* |
@@ -423,6 +431,7 @@ provider.DatabricksProvider_IsTerraformProvider(x interface{}) *bool
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureTenantId">AzureTenantId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureUseMsi">AzureUseMsi</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureWorkspaceResourceId">AzureWorkspaceResourceId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.bricksCliPath">BricksCliPath</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.clientId">ClientId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.configFile">ConfigFile</a></code> | <code>*string</code> | *No description.* |
@@ -628,6 +637,16 @@ func AzureUseMsiInput() interface{}
 
 ```go
 func AzureWorkspaceResourceIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `BricksCliPathInput`<sup>Optional</sup> <a name="BricksCliPathInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.bricksCliPathInput"></a>
+
+```go
+func BricksCliPathInput() *string
 ```
 
 - *Type:* *string
@@ -884,6 +903,16 @@ func AzureWorkspaceResourceId() *string
 
 ---
 
+##### `BricksCliPath`<sup>Optional</sup> <a name="BricksCliPath" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.bricksCliPath"></a>
+
+```go
+func BricksCliPath() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ClientId`<sup>Optional</sup> <a name="ClientId" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.clientId"></a>
 
 ```go
@@ -1082,6 +1111,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/provider"
 	AzureTenantId: *string,
 	AzureUseMsi: interface{},
 	AzureWorkspaceResourceId: *string,
+	BricksCliPath: *string,
 	ClientId: *string,
 	ClientSecret: *string,
 	ConfigFile: *string,
@@ -1115,6 +1145,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/provider"
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureTenantId">AzureTenantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#azure_tenant_id DatabricksProvider#azure_tenant_id}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureUseMsi">AzureUseMsi</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#azure_use_msi DatabricksProvider#azure_use_msi}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureWorkspaceResourceId">AzureWorkspaceResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.bricksCliPath">BricksCliPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#bricks_cli_path DatabricksProvider#bricks_cli_path}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#client_id DatabricksProvider#client_id}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#client_secret DatabricksProvider#client_secret}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.configFile">ConfigFile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#config_file DatabricksProvider#config_file}. |
@@ -1253,6 +1284,18 @@ AzureWorkspaceResourceId *string
 - *Type:* *string
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}.
+
+---
+
+##### `BricksCliPath`<sup>Optional</sup> <a name="BricksCliPath" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.bricksCliPath"></a>
+
+```go
+BricksCliPath *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#bricks_cli_path DatabricksProvider#bricks_cli_path}.
 
 ---
 

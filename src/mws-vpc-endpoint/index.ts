@@ -22,7 +22,7 @@ export interface MwsVpcEndpointConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_vpc_endpoint#aws_vpc_endpoint_id MwsVpcEndpoint#aws_vpc_endpoint_id}
   */
-  readonly awsVpcEndpointId: string;
+  readonly awsVpcEndpointId?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_vpc_endpoint#id MwsVpcEndpoint#id}
   *
@@ -33,7 +33,7 @@ export interface MwsVpcEndpointConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_vpc_endpoint#region MwsVpcEndpoint#region}
   */
-  readonly region: string;
+  readonly region?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_vpc_endpoint#state MwsVpcEndpoint#state}
   */
@@ -50,6 +50,176 @@ export interface MwsVpcEndpointConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_vpc_endpoint#vpc_endpoint_name MwsVpcEndpoint#vpc_endpoint_name}
   */
   readonly vpcEndpointName: string;
+  /**
+  * gcp_vpc_endpoint_info block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_vpc_endpoint#gcp_vpc_endpoint_info MwsVpcEndpoint#gcp_vpc_endpoint_info}
+  */
+  readonly gcpVpcEndpointInfo?: MwsVpcEndpointGcpVpcEndpointInfo;
+}
+export interface MwsVpcEndpointGcpVpcEndpointInfo {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_vpc_endpoint#endpoint_region MwsVpcEndpoint#endpoint_region}
+  */
+  readonly endpointRegion: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_vpc_endpoint#project_id MwsVpcEndpoint#project_id}
+  */
+  readonly projectId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_vpc_endpoint#psc_connection_id MwsVpcEndpoint#psc_connection_id}
+  */
+  readonly pscConnectionId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_vpc_endpoint#psc_endpoint_name MwsVpcEndpoint#psc_endpoint_name}
+  */
+  readonly pscEndpointName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/mws_vpc_endpoint#service_attachment_id MwsVpcEndpoint#service_attachment_id}
+  */
+  readonly serviceAttachmentId?: string;
+}
+
+export function mwsVpcEndpointGcpVpcEndpointInfoToTerraform(struct?: MwsVpcEndpointGcpVpcEndpointInfoOutputReference | MwsVpcEndpointGcpVpcEndpointInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    endpoint_region: cdktf.stringToTerraform(struct!.endpointRegion),
+    project_id: cdktf.stringToTerraform(struct!.projectId),
+    psc_connection_id: cdktf.stringToTerraform(struct!.pscConnectionId),
+    psc_endpoint_name: cdktf.stringToTerraform(struct!.pscEndpointName),
+    service_attachment_id: cdktf.stringToTerraform(struct!.serviceAttachmentId),
+  }
+}
+
+export class MwsVpcEndpointGcpVpcEndpointInfoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MwsVpcEndpointGcpVpcEndpointInfo | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._endpointRegion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.endpointRegion = this._endpointRegion;
+    }
+    if (this._projectId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.projectId = this._projectId;
+    }
+    if (this._pscConnectionId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pscConnectionId = this._pscConnectionId;
+    }
+    if (this._pscEndpointName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pscEndpointName = this._pscEndpointName;
+    }
+    if (this._serviceAttachmentId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serviceAttachmentId = this._serviceAttachmentId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MwsVpcEndpointGcpVpcEndpointInfo | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._endpointRegion = undefined;
+      this._projectId = undefined;
+      this._pscConnectionId = undefined;
+      this._pscEndpointName = undefined;
+      this._serviceAttachmentId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._endpointRegion = value.endpointRegion;
+      this._projectId = value.projectId;
+      this._pscConnectionId = value.pscConnectionId;
+      this._pscEndpointName = value.pscEndpointName;
+      this._serviceAttachmentId = value.serviceAttachmentId;
+    }
+  }
+
+  // endpoint_region - computed: false, optional: false, required: true
+  private _endpointRegion?: string; 
+  public get endpointRegion() {
+    return this.getStringAttribute('endpoint_region');
+  }
+  public set endpointRegion(value: string) {
+    this._endpointRegion = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointRegionInput() {
+    return this._endpointRegion;
+  }
+
+  // project_id - computed: false, optional: false, required: true
+  private _projectId?: string; 
+  public get projectId() {
+    return this.getStringAttribute('project_id');
+  }
+  public set projectId(value: string) {
+    this._projectId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectIdInput() {
+    return this._projectId;
+  }
+
+  // psc_connection_id - computed: true, optional: true, required: false
+  private _pscConnectionId?: string; 
+  public get pscConnectionId() {
+    return this.getStringAttribute('psc_connection_id');
+  }
+  public set pscConnectionId(value: string) {
+    this._pscConnectionId = value;
+  }
+  public resetPscConnectionId() {
+    this._pscConnectionId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pscConnectionIdInput() {
+    return this._pscConnectionId;
+  }
+
+  // psc_endpoint_name - computed: false, optional: false, required: true
+  private _pscEndpointName?: string; 
+  public get pscEndpointName() {
+    return this.getStringAttribute('psc_endpoint_name');
+  }
+  public set pscEndpointName(value: string) {
+    this._pscEndpointName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pscEndpointNameInput() {
+    return this._pscEndpointName;
+  }
+
+  // service_attachment_id - computed: true, optional: true, required: false
+  private _serviceAttachmentId?: string; 
+  public get serviceAttachmentId() {
+    return this.getStringAttribute('service_attachment_id');
+  }
+  public set serviceAttachmentId(value: string) {
+    this._serviceAttachmentId = value;
+  }
+  public resetServiceAttachmentId() {
+    this._serviceAttachmentId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceAttachmentIdInput() {
+    return this._serviceAttachmentId;
+  }
 }
 
 /**
@@ -78,7 +248,7 @@ export class MwsVpcEndpoint extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_mws_vpc_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.12.0',
+        providerVersion: '1.13.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -99,6 +269,7 @@ export class MwsVpcEndpoint extends cdktf.TerraformResource {
     this._useCase = config.useCase;
     this._vpcEndpointId = config.vpcEndpointId;
     this._vpcEndpointName = config.vpcEndpointName;
+    this._gcpVpcEndpointInfo.internalValue = config.gcpVpcEndpointInfo;
   }
 
   // ==========
@@ -153,13 +324,16 @@ export class MwsVpcEndpoint extends cdktf.TerraformResource {
     return this._awsEndpointServiceId;
   }
 
-  // aws_vpc_endpoint_id - computed: false, optional: false, required: true
+  // aws_vpc_endpoint_id - computed: false, optional: true, required: false
   private _awsVpcEndpointId?: string; 
   public get awsVpcEndpointId() {
     return this.getStringAttribute('aws_vpc_endpoint_id');
   }
   public set awsVpcEndpointId(value: string) {
     this._awsVpcEndpointId = value;
+  }
+  public resetAwsVpcEndpointId() {
+    this._awsVpcEndpointId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get awsVpcEndpointIdInput() {
@@ -182,13 +356,16 @@ export class MwsVpcEndpoint extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // region - computed: false, optional: false, required: true
+  // region - computed: false, optional: true, required: false
   private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
   public set region(value: string) {
     this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
@@ -256,6 +433,22 @@ export class MwsVpcEndpoint extends cdktf.TerraformResource {
     return this._vpcEndpointName;
   }
 
+  // gcp_vpc_endpoint_info - computed: false, optional: true, required: false
+  private _gcpVpcEndpointInfo = new MwsVpcEndpointGcpVpcEndpointInfoOutputReference(this, "gcp_vpc_endpoint_info");
+  public get gcpVpcEndpointInfo() {
+    return this._gcpVpcEndpointInfo;
+  }
+  public putGcpVpcEndpointInfo(value: MwsVpcEndpointGcpVpcEndpointInfo) {
+    this._gcpVpcEndpointInfo.internalValue = value;
+  }
+  public resetGcpVpcEndpointInfo() {
+    this._gcpVpcEndpointInfo.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gcpVpcEndpointInfoInput() {
+    return this._gcpVpcEndpointInfo.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -272,6 +465,7 @@ export class MwsVpcEndpoint extends cdktf.TerraformResource {
       use_case: cdktf.stringToTerraform(this._useCase),
       vpc_endpoint_id: cdktf.stringToTerraform(this._vpcEndpointId),
       vpc_endpoint_name: cdktf.stringToTerraform(this._vpcEndpointName),
+      gcp_vpc_endpoint_info: mwsVpcEndpointGcpVpcEndpointInfoToTerraform(this._gcpVpcEndpointInfo.internalValue),
     };
   }
 }

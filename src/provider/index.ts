@@ -44,6 +44,10 @@ export interface DatabricksProviderConfig {
   */
   readonly azureWorkspaceResourceId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#bricks_cli_path DatabricksProvider#bricks_cli_path}
+  */
+  readonly bricksCliPath?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#client_id DatabricksProvider#client_id}
   */
   readonly clientId?: string;
@@ -141,7 +145,7 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'databricks',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.12.0',
+        providerVersion: '1.13.0',
         providerVersionConstraint: '~> 1.0'
       },
       terraformProviderSource: 'databricks/databricks'
@@ -155,6 +159,7 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
     this._azureTenantId = config.azureTenantId;
     this._azureUseMsi = config.azureUseMsi;
     this._azureWorkspaceResourceId = config.azureWorkspaceResourceId;
+    this._bricksCliPath = config.bricksCliPath;
     this._clientId = config.clientId;
     this._clientSecret = config.clientSecret;
     this._configFile = config.configFile;
@@ -320,6 +325,22 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get azureWorkspaceResourceIdInput() {
     return this._azureWorkspaceResourceId;
+  }
+
+  // bricks_cli_path - computed: false, optional: true, required: false
+  private _bricksCliPath?: string; 
+  public get bricksCliPath() {
+    return this._bricksCliPath;
+  }
+  public set bricksCliPath(value: string | undefined) {
+    this._bricksCliPath = value;
+  }
+  public resetBricksCliPath() {
+    this._bricksCliPath = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bricksCliPathInput() {
+    return this._bricksCliPath;
   }
 
   // client_id - computed: false, optional: true, required: false
@@ -609,6 +630,7 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
       azure_tenant_id: cdktf.stringToTerraform(this._azureTenantId),
       azure_use_msi: cdktf.booleanToTerraform(this._azureUseMsi),
       azure_workspace_resource_id: cdktf.stringToTerraform(this._azureWorkspaceResourceId),
+      bricks_cli_path: cdktf.stringToTerraform(this._bricksCliPath),
       client_id: cdktf.stringToTerraform(this._clientId),
       client_secret: cdktf.stringToTerraform(this._clientSecret),
       config_file: cdktf.stringToTerraform(this._configFile),

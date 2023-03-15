@@ -90,6 +90,7 @@ The following submodules are available:
 - [servicePrincipalRole](./servicePrincipalRole.java.md)
 - [servicePrincipalSecret](./servicePrincipalSecret.java.md)
 - [share](./share.java.md)
+- [sqlAlert](./sqlAlert.java.md)
 - [sqlDashboard](./sqlDashboard.java.md)
 - [sqlEndpoint](./sqlEndpoint.java.md)
 - [sqlGlobalConfig](./sqlGlobalConfig.java.md)
