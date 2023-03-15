@@ -24,6 +24,7 @@ provider.DatabricksProvider(
   azure_tenant_id: str = None,
   azure_use_msi: typing.Union[bool, IResolvable] = None,
   azure_workspace_resource_id: str = None,
+  bricks_cli_path: str = None,
   client_id: str = None,
   client_secret: str = None,
   config_file: str = None,
@@ -57,6 +58,7 @@ provider.DatabricksProvider(
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#azure_tenant_id DatabricksProvider#azure_tenant_id}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureUseMsi">azure_use_msi</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#azure_use_msi DatabricksProvider#azure_use_msi}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureWorkspaceResourceId">azure_workspace_resource_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.bricksCliPath">bricks_cli_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#bricks_cli_path DatabricksProvider#bricks_cli_path}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.clientId">client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#client_id DatabricksProvider#client_id}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.clientSecret">client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#client_secret DatabricksProvider#client_secret}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.configFile">config_file</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#config_file DatabricksProvider#config_file}. |
@@ -173,6 +175,14 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 - *Type:* str
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}.
+
+---
+
+##### `bricks_cli_path`<sup>Optional</sup> <a name="bricks_cli_path" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.bricksCliPath"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#bricks_cli_path DatabricksProvider#bricks_cli_path}.
 
 ---
 
@@ -324,6 +334,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureTenantId">reset_azure_tenant_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureUseMsi">reset_azure_use_msi</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureWorkspaceResourceId">reset_azure_workspace_resource_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetBricksCliPath">reset_bricks_cli_path</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetClientId">reset_client_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetClientSecret">reset_client_secret</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetConfigFile">reset_config_file</a></code> | *No description.* |
@@ -470,6 +481,12 @@ def reset_azure_use_msi() -> None
 
 ```python
 def reset_azure_workspace_resource_id() -> None
+```
+
+##### `reset_bricks_cli_path` <a name="reset_bricks_cli_path" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetBricksCliPath"></a>
+
+```python
+def reset_bricks_cli_path() -> None
 ```
 
 ##### `reset_client_id` <a name="reset_client_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetClientId"></a>
@@ -667,6 +684,7 @@ provider.DatabricksProvider.is_terraform_provider(
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureTenantIdInput">azure_tenant_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureUseMsiInput">azure_use_msi_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureWorkspaceResourceIdInput">azure_workspace_resource_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.bricksCliPathInput">bricks_cli_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.clientIdInput">client_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.clientSecretInput">client_secret_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.configFileInput">config_file_input</a></code> | <code>str</code> | *No description.* |
@@ -692,6 +710,7 @@ provider.DatabricksProvider.is_terraform_provider(
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureUseMsi">azure_use_msi</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureWorkspaceResourceId">azure_workspace_resource_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.bricksCliPath">bricks_cli_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.clientId">client_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.clientSecret">client_secret</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.configFile">config_file</a></code> | <code>str</code> | *No description.* |
@@ -897,6 +916,16 @@ azure_use_msi_input: typing.Union[bool, IResolvable]
 
 ```python
 azure_workspace_resource_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `bricks_cli_path_input`<sup>Optional</sup> <a name="bricks_cli_path_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.bricksCliPathInput"></a>
+
+```python
+bricks_cli_path_input: str
 ```
 
 - *Type:* str
@@ -1153,6 +1182,16 @@ azure_workspace_resource_id: str
 
 ---
 
+##### `bricks_cli_path`<sup>Optional</sup> <a name="bricks_cli_path" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.bricksCliPath"></a>
+
+```python
+bricks_cli_path: str
+```
+
+- *Type:* str
+
+---
+
 ##### `client_id`<sup>Optional</sup> <a name="client_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.clientId"></a>
 
 ```python
@@ -1351,6 +1390,7 @@ provider.DatabricksProviderConfig(
   azure_tenant_id: str = None,
   azure_use_msi: typing.Union[bool, IResolvable] = None,
   azure_workspace_resource_id: str = None,
+  bricks_cli_path: str = None,
   client_id: str = None,
   client_secret: str = None,
   config_file: str = None,
@@ -1384,6 +1424,7 @@ provider.DatabricksProviderConfig(
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#azure_tenant_id DatabricksProvider#azure_tenant_id}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureUseMsi">azure_use_msi</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#azure_use_msi DatabricksProvider#azure_use_msi}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureWorkspaceResourceId">azure_workspace_resource_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.bricksCliPath">bricks_cli_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#bricks_cli_path DatabricksProvider#bricks_cli_path}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.clientId">client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#client_id DatabricksProvider#client_id}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.clientSecret">client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#client_secret DatabricksProvider#client_secret}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.configFile">config_file</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#config_file DatabricksProvider#config_file}. |
@@ -1522,6 +1563,18 @@ azure_workspace_resource_id: str
 - *Type:* str
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}.
+
+---
+
+##### `bricks_cli_path`<sup>Optional</sup> <a name="bricks_cli_path" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.bricksCliPath"></a>
+
+```python
+bricks_cli_path: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#bricks_cli_path DatabricksProvider#bricks_cli_path}.
 
 ---
 

@@ -90,6 +90,7 @@ The following submodules are available:
 - [servicePrincipalRole](./servicePrincipalRole.typescript.md)
 - [servicePrincipalSecret](./servicePrincipalSecret.typescript.md)
 - [share](./share.typescript.md)
+- [sqlAlert](./sqlAlert.typescript.md)
 - [sqlDashboard](./sqlDashboard.typescript.md)
 - [sqlEndpoint](./sqlEndpoint.typescript.md)
 - [sqlGlobalConfig](./sqlGlobalConfig.typescript.md)

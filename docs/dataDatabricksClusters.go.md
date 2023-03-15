@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/databricks/d/cluster
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClusters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksclusters"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusters"
 
 datadatabricksclusters.NewDataDatabricksClusters(scope Construct, id *string, config DataDatabricksClustersConfig) DataDatabricksClusters
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClusters.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksclusters"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusters"
 
 datadatabricksclusters.DataDatabricksClusters_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClusters.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksclusters"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusters"
 
 datadatabricksclusters.DataDatabricksClusters_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ datadatabricksclusters.DataDatabricksClusters_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClusters.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksclusters"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusters"
 
 datadatabricksclusters.DataDatabricksClusters_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -558,7 +558,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClustersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksclusters"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusters"
 
 &datadatabricksclusters.DataDatabricksClustersConfig {
 	Connection: interface{},
