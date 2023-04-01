@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksClusterPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/cluster_policy#definition DataDatabricksClusterPolicy#definition}
+  */
+  readonly definition?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/cluster_policy#id DataDatabricksClusterPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -15,9 +19,13 @@ export interface DataDatabricksClusterPolicyConfig extends cdktf.TerraformMetaAr
   */
   readonly id?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/cluster_policy#max_clusters_per_user DataDatabricksClusterPolicy#max_clusters_per_user}
+  */
+  readonly maxClustersPerUser?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/cluster_policy#name DataDatabricksClusterPolicy#name}
   */
-  readonly name: string;
+  readonly name?: string;
 }
 
 /**
@@ -39,14 +47,14 @@ export class DataDatabricksClusterPolicy extends cdktf.TerraformDataSource {
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataDatabricksClusterPolicyConfig
+  * @param options DataDatabricksClusterPolicyConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DataDatabricksClusterPolicyConfig) {
+  public constructor(scope: Construct, id: string, config: DataDatabricksClusterPolicyConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'databricks_cluster_policy',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.13.0',
+        providerVersion: '1.14.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -57,7 +65,9 @@ export class DataDatabricksClusterPolicy extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._definition = config.definition;
     this._id = config.id;
+    this._maxClustersPerUser = config.maxClustersPerUser;
     this._name = config.name;
   }
 
@@ -65,9 +75,20 @@ export class DataDatabricksClusterPolicy extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // definition - computed: true, optional: false, required: false
+  // definition - computed: true, optional: true, required: false
+  private _definition?: string; 
   public get definition() {
     return this.getStringAttribute('definition');
+  }
+  public set definition(value: string) {
+    this._definition = value;
+  }
+  public resetDefinition() {
+    this._definition = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get definitionInput() {
+    return this._definition;
   }
 
   // id - computed: true, optional: true, required: false
@@ -86,18 +107,32 @@ export class DataDatabricksClusterPolicy extends cdktf.TerraformDataSource {
     return this._id;
   }
 
-  // max_clusters_per_user - computed: true, optional: false, required: false
+  // max_clusters_per_user - computed: true, optional: true, required: false
+  private _maxClustersPerUser?: number; 
   public get maxClustersPerUser() {
     return this.getNumberAttribute('max_clusters_per_user');
   }
+  public set maxClustersPerUser(value: number) {
+    this._maxClustersPerUser = value;
+  }
+  public resetMaxClustersPerUser() {
+    this._maxClustersPerUser = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxClustersPerUserInput() {
+    return this._maxClustersPerUser;
+  }
 
-  // name - computed: false, optional: false, required: true
+  // name - computed: true, optional: true, required: false
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
@@ -110,7 +145,9 @@ export class DataDatabricksClusterPolicy extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      definition: cdktf.stringToTerraform(this._definition),
       id: cdktf.stringToTerraform(this._id),
+      max_clusters_per_user: cdktf.numberToTerraform(this._maxClustersPerUser),
       name: cdktf.stringToTerraform(this._name),
     };
   }

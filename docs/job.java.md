@@ -43,6 +43,7 @@ Job.Builder.create(Construct scope, java.lang.String id)
 //  .notebookTask(JobNotebookTask)
 //  .pipelineTask(JobPipelineTask)
 //  .pythonWheelTask(JobPythonWheelTask)
+//  .queue(JobQueue)
 //  .retryOnTimeout(java.lang.Boolean)
 //  .retryOnTimeout(IResolvable)
 //  .schedule(JobSchedule)
@@ -54,6 +55,7 @@ Job.Builder.create(Construct scope, java.lang.String id)
 //  .task(java.util.List<JobTask>)
 //  .timeouts(JobTimeouts)
 //  .timeoutSeconds(java.lang.Number)
+//  .trigger(JobTrigger)
 //  .webhookNotifications(JobWebhookNotifications)
     .build();
 ```
@@ -87,6 +89,7 @@ Job.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.notebookTask">notebookTask</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNotebookTask">JobNotebookTask</a></code> | notebook_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.pipelineTask">pipelineTask</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobPipelineTask">JobPipelineTask</a></code> | pipeline_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.pythonWheelTask">pythonWheelTask</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobPythonWheelTask">JobPythonWheelTask</a></code> | python_wheel_task block. |
+| <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.queue">queue</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobQueue">JobQueue</a></code> | queue block. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.retryOnTimeout">retryOnTimeout</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#retry_on_timeout Job#retry_on_timeout}. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.schedule">schedule</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobSchedule">JobSchedule</a></code> | schedule block. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.sparkJarTask">sparkJarTask</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobSparkJarTask">JobSparkJarTask</a></code> | spark_jar_task block. |
@@ -96,6 +99,7 @@ Job.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.task">task</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.job.JobTask">JobTask</a>></code> | task block. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTimeouts">JobTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.timeoutSeconds">timeoutSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#timeout_seconds Job#timeout_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.trigger">trigger</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTrigger">JobTrigger</a></code> | trigger block. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.webhookNotifications">webhookNotifications</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotifications">JobWebhookNotifications</a></code> | webhook_notifications block. |
 
 ---
@@ -327,6 +331,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 ---
 
+##### `queue`<sup>Optional</sup> <a name="queue" id="@cdktf/provider-databricks.job.Job.Initializer.parameter.queue"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobQueue">JobQueue</a>
+
+queue block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#queue Job#queue}
+
+---
+
 ##### `retryOnTimeout`<sup>Optional</sup> <a name="retryOnTimeout" id="@cdktf/provider-databricks.job.Job.Initializer.parameter.retryOnTimeout"></a>
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
@@ -411,6 +425,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 ---
 
+##### `trigger`<sup>Optional</sup> <a name="trigger" id="@cdktf/provider-databricks.job.Job.Initializer.parameter.trigger"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTrigger">JobTrigger</a>
+
+trigger block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#trigger Job#trigger}
+
+---
+
 ##### `webhookNotifications`<sup>Optional</sup> <a name="webhookNotifications" id="@cdktf/provider-databricks.job.Job.Initializer.parameter.webhookNotifications"></a>
 
 - *Type:* <a href="#@cdktf/provider-databricks.job.JobWebhookNotifications">JobWebhookNotifications</a>
@@ -451,12 +475,14 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 | <code><a href="#@cdktf/provider-databricks.job.Job.putNotebookTask">putNotebookTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.putPipelineTask">putPipelineTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.putPythonWheelTask">putPythonWheelTask</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.Job.putQueue">putQueue</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.putSchedule">putSchedule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.putSparkJarTask">putSparkJarTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.putSparkPythonTask">putSparkPythonTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.putSparkSubmitTask">putSparkSubmitTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.putTask">putTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.Job.putTrigger">putTrigger</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.putWebhookNotifications">putWebhookNotifications</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.resetAlwaysRunning">resetAlwaysRunning</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.resetContinuous">resetContinuous</a></code> | *No description.* |
@@ -476,6 +502,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 | <code><a href="#@cdktf/provider-databricks.job.Job.resetNotebookTask">resetNotebookTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.resetPipelineTask">resetPipelineTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.resetPythonWheelTask">resetPythonWheelTask</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.Job.resetQueue">resetQueue</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.resetRetryOnTimeout">resetRetryOnTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.resetSchedule">resetSchedule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.resetSparkJarTask">resetSparkJarTask</a></code> | *No description.* |
@@ -485,6 +512,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 | <code><a href="#@cdktf/provider-databricks.job.Job.resetTask">resetTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.resetTimeoutSeconds">resetTimeoutSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.Job.resetTrigger">resetTrigger</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.resetWebhookNotifications">resetWebhookNotifications</a></code> | *No description.* |
 
 ---
@@ -793,6 +821,18 @@ public void putPythonWheelTask(JobPythonWheelTask value)
 
 ---
 
+##### `putQueue` <a name="putQueue" id="@cdktf/provider-databricks.job.Job.putQueue"></a>
+
+```java
+public void putQueue(JobQueue value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.job.Job.putQueue.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobQueue">JobQueue</a>
+
+---
+
 ##### `putSchedule` <a name="putSchedule" id="@cdktf/provider-databricks.job.Job.putSchedule"></a>
 
 ```java
@@ -862,6 +902,18 @@ public void putTimeouts(JobTimeouts value)
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.job.Job.putTimeouts.parameter.value"></a>
 
 - *Type:* <a href="#@cdktf/provider-databricks.job.JobTimeouts">JobTimeouts</a>
+
+---
+
+##### `putTrigger` <a name="putTrigger" id="@cdktf/provider-databricks.job.Job.putTrigger"></a>
+
+```java
+public void putTrigger(JobTrigger value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.job.Job.putTrigger.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTrigger">JobTrigger</a>
 
 ---
 
@@ -985,6 +1037,12 @@ public void resetPipelineTask()
 public void resetPythonWheelTask()
 ```
 
+##### `resetQueue` <a name="resetQueue" id="@cdktf/provider-databricks.job.Job.resetQueue"></a>
+
+```java
+public void resetQueue()
+```
+
 ##### `resetRetryOnTimeout` <a name="resetRetryOnTimeout" id="@cdktf/provider-databricks.job.Job.resetRetryOnTimeout"></a>
 
 ```java
@@ -1037,6 +1095,12 @@ public void resetTimeouts()
 
 ```java
 public void resetTimeoutSeconds()
+```
+
+##### `resetTrigger` <a name="resetTrigger" id="@cdktf/provider-databricks.job.Job.resetTrigger"></a>
+
+```java
+public void resetTrigger()
 ```
 
 ##### `resetWebhookNotifications` <a name="resetWebhookNotifications" id="@cdktf/provider-databricks.job.Job.resetWebhookNotifications"></a>
@@ -1143,12 +1207,14 @@ Job.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.notebookTask">notebookTask</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNotebookTaskOutputReference">JobNotebookTaskOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.pipelineTask">pipelineTask</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobPipelineTaskOutputReference">JobPipelineTaskOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.pythonWheelTask">pythonWheelTask</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobPythonWheelTaskOutputReference">JobPythonWheelTaskOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.Job.property.queue">queue</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference">JobQueueOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.schedule">schedule</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobScheduleOutputReference">JobScheduleOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.sparkJarTask">sparkJarTask</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobSparkJarTaskOutputReference">JobSparkJarTaskOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.sparkPythonTask">sparkPythonTask</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference">JobSparkPythonTaskOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.sparkSubmitTask">sparkSubmitTask</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobSparkSubmitTaskOutputReference">JobSparkSubmitTaskOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.task">task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskList">JobTaskList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTimeoutsOutputReference">JobTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.Job.property.trigger">trigger</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference">JobTriggerOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.webhookNotifications">webhookNotifications</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOutputReference">JobWebhookNotificationsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.alwaysRunningInput">alwaysRunningInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
@@ -1169,6 +1235,7 @@ Job.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.notebookTaskInput">notebookTaskInput</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNotebookTask">JobNotebookTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.pipelineTaskInput">pipelineTaskInput</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobPipelineTask">JobPipelineTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.pythonWheelTaskInput">pythonWheelTaskInput</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobPythonWheelTask">JobPythonWheelTask</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.Job.property.queueInput">queueInput</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobQueue">JobQueue</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.retryOnTimeoutInput">retryOnTimeoutInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.scheduleInput">scheduleInput</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobSchedule">JobSchedule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.sparkJarTaskInput">sparkJarTaskInput</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobSparkJarTask">JobSparkJarTask</a></code> | *No description.* |
@@ -1178,6 +1245,7 @@ Job.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.taskInput">taskInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.job.JobTask">JobTask</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.timeoutSecondsInput">timeoutSecondsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTimeouts">JobTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.Job.property.triggerInput">triggerInput</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTrigger">JobTrigger</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.webhookNotificationsInput">webhookNotificationsInput</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotifications">JobWebhookNotifications</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.alwaysRunning">alwaysRunning</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.existingClusterId">existingClusterId</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1435,6 +1503,16 @@ public JobPythonWheelTaskOutputReference getPythonWheelTask();
 
 ---
 
+##### `queue`<sup>Required</sup> <a name="queue" id="@cdktf/provider-databricks.job.Job.property.queue"></a>
+
+```java
+public JobQueueOutputReference getQueue();
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobQueueOutputReference">JobQueueOutputReference</a>
+
+---
+
 ##### `schedule`<sup>Required</sup> <a name="schedule" id="@cdktf/provider-databricks.job.Job.property.schedule"></a>
 
 ```java
@@ -1492,6 +1570,16 @@ public JobTimeoutsOutputReference getTimeouts();
 ```
 
 - *Type:* <a href="#@cdktf/provider-databricks.job.JobTimeoutsOutputReference">JobTimeoutsOutputReference</a>
+
+---
+
+##### `trigger`<sup>Required</sup> <a name="trigger" id="@cdktf/provider-databricks.job.Job.property.trigger"></a>
+
+```java
+public JobTriggerOutputReference getTrigger();
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference">JobTriggerOutputReference</a>
 
 ---
 
@@ -1695,6 +1783,16 @@ public JobPythonWheelTask getPythonWheelTaskInput();
 
 ---
 
+##### `queueInput`<sup>Optional</sup> <a name="queueInput" id="@cdktf/provider-databricks.job.Job.property.queueInput"></a>
+
+```java
+public JobQueue getQueueInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobQueue">JobQueue</a>
+
+---
+
 ##### `retryOnTimeoutInput`<sup>Optional</sup> <a name="retryOnTimeoutInput" id="@cdktf/provider-databricks.job.Job.property.retryOnTimeoutInput"></a>
 
 ```java
@@ -1782,6 +1880,16 @@ public java.lang.Object getTimeoutsInput();
 ```
 
 - *Type:* <a href="#@cdktf/provider-databricks.job.JobTimeouts">JobTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `triggerInput`<sup>Optional</sup> <a name="triggerInput" id="@cdktf/provider-databricks.job.Job.property.triggerInput"></a>
+
+```java
+public JobTrigger getTriggerInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTrigger">JobTrigger</a>
 
 ---
 
@@ -1964,6 +2072,7 @@ JobConfig.builder()
 //  .notebookTask(JobNotebookTask)
 //  .pipelineTask(JobPipelineTask)
 //  .pythonWheelTask(JobPythonWheelTask)
+//  .queue(JobQueue)
 //  .retryOnTimeout(java.lang.Boolean)
 //  .retryOnTimeout(IResolvable)
 //  .schedule(JobSchedule)
@@ -1975,6 +2084,7 @@ JobConfig.builder()
 //  .task(java.util.List<JobTask>)
 //  .timeouts(JobTimeouts)
 //  .timeoutSeconds(java.lang.Number)
+//  .trigger(JobTrigger)
 //  .webhookNotifications(JobWebhookNotifications)
     .build();
 ```
@@ -2008,6 +2118,7 @@ JobConfig.builder()
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.notebookTask">notebookTask</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNotebookTask">JobNotebookTask</a></code> | notebook_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.pipelineTask">pipelineTask</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobPipelineTask">JobPipelineTask</a></code> | pipeline_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.pythonWheelTask">pythonWheelTask</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobPythonWheelTask">JobPythonWheelTask</a></code> | python_wheel_task block. |
+| <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.queue">queue</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobQueue">JobQueue</a></code> | queue block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.retryOnTimeout">retryOnTimeout</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#retry_on_timeout Job#retry_on_timeout}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.schedule">schedule</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobSchedule">JobSchedule</a></code> | schedule block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.sparkJarTask">sparkJarTask</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobSparkJarTask">JobSparkJarTask</a></code> | spark_jar_task block. |
@@ -2017,6 +2128,7 @@ JobConfig.builder()
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.task">task</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.job.JobTask">JobTask</a>></code> | task block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTimeouts">JobTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.timeoutSeconds">timeoutSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#timeout_seconds Job#timeout_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.trigger">trigger</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTrigger">JobTrigger</a></code> | trigger block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.webhookNotifications">webhookNotifications</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotifications">JobWebhookNotifications</a></code> | webhook_notifications block. |
 
 ---
@@ -2330,6 +2442,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 ---
 
+##### `queue`<sup>Optional</sup> <a name="queue" id="@cdktf/provider-databricks.job.JobConfig.property.queue"></a>
+
+```java
+public JobQueue getQueue();
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobQueue">JobQueue</a>
+
+queue block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#queue Job#queue}
+
+---
+
 ##### `retryOnTimeout`<sup>Optional</sup> <a name="retryOnTimeout" id="@cdktf/provider-databricks.job.JobConfig.property.retryOnTimeout"></a>
 
 ```java
@@ -2447,6 +2573,20 @@ public java.lang.Number getTimeoutSeconds();
 - *Type:* java.lang.Number
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#timeout_seconds Job#timeout_seconds}.
+
+---
+
+##### `trigger`<sup>Optional</sup> <a name="trigger" id="@cdktf/provider-databricks.job.JobConfig.property.trigger"></a>
+
+```java
+public JobTrigger getTrigger();
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTrigger">JobTrigger</a>
+
+trigger block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#trigger Job#trigger}
 
 ---
 
@@ -6474,6 +6614,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 ---
 
+### JobQueue <a name="JobQueue" id="@cdktf/provider-databricks.job.JobQueue"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.job.JobQueue.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.databricks.job.JobQueue;
+
+JobQueue.builder()
+    .build();
+```
+
+
 ### JobSchedule <a name="JobSchedule" id="@cdktf/provider-databricks.job.JobSchedule"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.job.JobSchedule.Initializer"></a>
@@ -6604,6 +6756,7 @@ import com.hashicorp.cdktf.providers.databricks.job.JobSparkPythonTask;
 JobSparkPythonTask.builder()
     .pythonFile(java.lang.String)
 //  .parameters(java.util.List<java.lang.String>)
+//  .source(java.lang.String)
     .build();
 ```
 
@@ -6613,6 +6766,7 @@ JobSparkPythonTask.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTask.property.pythonFile">pythonFile</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#python_file Job#python_file}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTask.property.parameters">parameters</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#parameters Job#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTask.property.source">source</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#source Job#source}. |
 
 ---
 
@@ -6637,6 +6791,18 @@ public java.util.List<java.lang.String> getParameters();
 - *Type:* java.util.List<java.lang.String>
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#parameters Job#parameters}.
+
+---
+
+##### `source`<sup>Optional</sup> <a name="source" id="@cdktf/provider-databricks.job.JobSparkPythonTask.property.source"></a>
+
+```java
+public java.lang.String getSource();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#source Job#source}.
 
 ---
 
@@ -6697,6 +6863,7 @@ JobTask.builder()
 //  .pythonWheelTask(JobTaskPythonWheelTask)
 //  .retryOnTimeout(java.lang.Boolean)
 //  .retryOnTimeout(IResolvable)
+//  .runIf(java.lang.String)
 //  .sparkJarTask(JobTaskSparkJarTask)
 //  .sparkPythonTask(JobTaskSparkPythonTask)
 //  .sparkSubmitTask(JobTaskSparkSubmitTask)
@@ -6724,6 +6891,7 @@ JobTask.builder()
 | <code><a href="#@cdktf/provider-databricks.job.JobTask.property.pipelineTask">pipelineTask</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskPipelineTask">JobTaskPipelineTask</a></code> | pipeline_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTask.property.pythonWheelTask">pythonWheelTask</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskPythonWheelTask">JobTaskPythonWheelTask</a></code> | python_wheel_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTask.property.retryOnTimeout">retryOnTimeout</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#retry_on_timeout Job#retry_on_timeout}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTask.property.runIf">runIf</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#run_if Job#run_if}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTask.property.sparkJarTask">sparkJarTask</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkJarTask">JobTaskSparkJarTask</a></code> | spark_jar_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTask.property.sparkPythonTask">sparkPythonTask</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTask">JobTaskSparkPythonTask</a></code> | spark_python_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTask.property.sparkSubmitTask">sparkSubmitTask</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkSubmitTask">JobTaskSparkSubmitTask</a></code> | spark_submit_task block. |
@@ -6914,6 +7082,18 @@ public java.lang.Object getRetryOnTimeout();
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#retry_on_timeout Job#retry_on_timeout}.
+
+---
+
+##### `runIf`<sup>Optional</sup> <a name="runIf" id="@cdktf/provider-databricks.job.JobTask.property.runIf"></a>
+
+```java
+public java.lang.String getRunIf();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#run_if Job#run_if}.
 
 ---
 
@@ -9329,6 +9509,7 @@ import com.hashicorp.cdktf.providers.databricks.job.JobTaskSparkPythonTask;
 JobTaskSparkPythonTask.builder()
     .pythonFile(java.lang.String)
 //  .parameters(java.util.List<java.lang.String>)
+//  .source(java.lang.String)
     .build();
 ```
 
@@ -9338,6 +9519,7 @@ JobTaskSparkPythonTask.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTask.property.pythonFile">pythonFile</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#python_file Job#python_file}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTask.property.parameters">parameters</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#parameters Job#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTask.property.source">source</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#source Job#source}. |
 
 ---
 
@@ -9362,6 +9544,18 @@ public java.util.List<java.lang.String> getParameters();
 - *Type:* java.util.List<java.lang.String>
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#parameters Job#parameters}.
+
+---
+
+##### `source`<sup>Optional</sup> <a name="source" id="@cdktf/provider-databricks.job.JobTaskSparkPythonTask.property.source"></a>
+
+```java
+public java.lang.String getSource();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#source Job#source}.
 
 ---
 
@@ -9630,6 +9824,114 @@ public java.lang.String getUpdate();
 - *Type:* java.lang.String
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#update Job#update}.
+
+---
+
+### JobTrigger <a name="JobTrigger" id="@cdktf/provider-databricks.job.JobTrigger"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.job.JobTrigger.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.databricks.job.JobTrigger;
+
+JobTrigger.builder()
+    .fileArrival(JobTriggerFileArrival)
+//  .pauseStatus(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.job.JobTrigger.property.fileArrival">fileArrival</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrival">JobTriggerFileArrival</a></code> | file_arrival block. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTrigger.property.pauseStatus">pauseStatus</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#pause_status Job#pause_status}. |
+
+---
+
+##### `fileArrival`<sup>Required</sup> <a name="fileArrival" id="@cdktf/provider-databricks.job.JobTrigger.property.fileArrival"></a>
+
+```java
+public JobTriggerFileArrival getFileArrival();
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTriggerFileArrival">JobTriggerFileArrival</a>
+
+file_arrival block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#file_arrival Job#file_arrival}
+
+---
+
+##### `pauseStatus`<sup>Optional</sup> <a name="pauseStatus" id="@cdktf/provider-databricks.job.JobTrigger.property.pauseStatus"></a>
+
+```java
+public java.lang.String getPauseStatus();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#pause_status Job#pause_status}.
+
+---
+
+### JobTriggerFileArrival <a name="JobTriggerFileArrival" id="@cdktf/provider-databricks.job.JobTriggerFileArrival"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.job.JobTriggerFileArrival.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.databricks.job.JobTriggerFileArrival;
+
+JobTriggerFileArrival.builder()
+    .url(java.lang.String)
+//  .minTimeBetweenTriggerSeconds(java.lang.Number)
+//  .waitAfterLastChangeSeconds(java.lang.Number)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrival.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#url Job#url}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrival.property.minTimeBetweenTriggerSeconds">minTimeBetweenTriggerSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#min_time_between_trigger_seconds Job#min_time_between_trigger_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrival.property.waitAfterLastChangeSeconds">waitAfterLastChangeSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#wait_after_last_change_seconds Job#wait_after_last_change_seconds}. |
+
+---
+
+##### `url`<sup>Required</sup> <a name="url" id="@cdktf/provider-databricks.job.JobTriggerFileArrival.property.url"></a>
+
+```java
+public java.lang.String getUrl();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#url Job#url}.
+
+---
+
+##### `minTimeBetweenTriggerSeconds`<sup>Optional</sup> <a name="minTimeBetweenTriggerSeconds" id="@cdktf/provider-databricks.job.JobTriggerFileArrival.property.minTimeBetweenTriggerSeconds"></a>
+
+```java
+public java.lang.Number getMinTimeBetweenTriggerSeconds();
+```
+
+- *Type:* java.lang.Number
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#min_time_between_trigger_seconds Job#min_time_between_trigger_seconds}.
+
+---
+
+##### `waitAfterLastChangeSeconds`<sup>Optional</sup> <a name="waitAfterLastChangeSeconds" id="@cdktf/provider-databricks.job.JobTriggerFileArrival.property.waitAfterLastChangeSeconds"></a>
+
+```java
+public java.lang.Number getWaitAfterLastChangeSeconds();
+```
+
+- *Type:* java.lang.Number
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#wait_after_last_change_seconds Job#wait_after_last_change_seconds}.
 
 ---
 
@@ -30200,6 +30502,255 @@ public JobPythonWheelTask getInternalValue();
 ---
 
 
+### JobQueueOutputReference <a name="JobQueueOutputReference" id="@cdktf/provider-databricks.job.JobQueueOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.job.JobQueueOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.databricks.job.JobQueueOutputReference;
+
+new JobQueueOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-databricks.job.JobQueueOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-databricks.job.JobQueueOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.job.JobQueueOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.job.JobQueueOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.job.JobQueueOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-databricks.job.JobQueueOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobQueue">JobQueue</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-databricks.job.JobQueueOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.job.JobQueueOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.job.JobQueueOutputReference.property.internalValue"></a>
+
+```java
+public JobQueue getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobQueue">JobQueue</a>
+
+---
+
+
 ### JobScheduleOutputReference <a name="JobScheduleOutputReference" id="@cdktf/provider-databricks.job.JobScheduleOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.job.JobScheduleOutputReference.Initializer"></a>
@@ -30909,6 +31460,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.resetParameters">resetParameters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.resetSource">resetSource</a></code> | *No description.* |
 
 ---
 
@@ -31068,6 +31620,12 @@ Returns a reversible string representation.
 public void resetParameters()
 ```
 
+##### `resetSource` <a name="resetSource" id="@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.resetSource"></a>
+
+```java
+public void resetSource()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -31077,8 +31635,10 @@ public void resetParameters()
 | <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.property.parametersInput">parametersInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.property.pythonFileInput">pythonFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.property.sourceInput">sourceInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.property.parameters">parameters</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.property.pythonFile">pythonFile</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.property.source">source</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTask">JobSparkPythonTask</a></code> | *No description.* |
 
 ---
@@ -31127,6 +31687,16 @@ public java.lang.String getPythonFileInput();
 
 ---
 
+##### `sourceInput`<sup>Optional</sup> <a name="sourceInput" id="@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.property.sourceInput"></a>
+
+```java
+public java.lang.String getSourceInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `parameters`<sup>Required</sup> <a name="parameters" id="@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.property.parameters"></a>
 
 ```java
@@ -31141,6 +31711,16 @@ public java.util.List<java.lang.String> getParameters();
 
 ```java
 public java.lang.String getPythonFile();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `source`<sup>Required</sup> <a name="source" id="@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.property.source"></a>
+
+```java
+public java.lang.String getSource();
 ```
 
 - *Type:* java.lang.String
@@ -42762,6 +43342,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.resetPipelineTask">resetPipelineTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.resetPythonWheelTask">resetPythonWheelTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.resetRetryOnTimeout">resetRetryOnTimeout</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.resetRunIf">resetRunIf</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.resetSparkJarTask">resetSparkJarTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.resetSparkPythonTask">resetSparkPythonTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.resetSparkSubmitTask">resetSparkSubmitTask</a></code> | *No description.* |
@@ -43149,6 +43730,12 @@ public void resetPythonWheelTask()
 public void resetRetryOnTimeout()
 ```
 
+##### `resetRunIf` <a name="resetRunIf" id="@cdktf/provider-databricks.job.JobTaskOutputReference.resetRunIf"></a>
+
+```java
+public void resetRunIf()
+```
+
 ##### `resetSparkJarTask` <a name="resetSparkJarTask" id="@cdktf/provider-databricks.job.JobTaskOutputReference.resetSparkJarTask"></a>
 
 ```java
@@ -43218,6 +43805,7 @@ public void resetTimeoutSeconds()
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.pipelineTaskInput">pipelineTaskInput</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskPipelineTask">JobTaskPipelineTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.pythonWheelTaskInput">pythonWheelTaskInput</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskPythonWheelTask">JobTaskPythonWheelTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.retryOnTimeoutInput">retryOnTimeoutInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.runIfInput">runIfInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.sparkJarTaskInput">sparkJarTaskInput</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkJarTask">JobTaskSparkJarTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.sparkPythonTaskInput">sparkPythonTaskInput</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTask">JobTaskSparkPythonTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.sparkSubmitTaskInput">sparkSubmitTaskInput</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkSubmitTask">JobTaskSparkSubmitTask</a></code> | *No description.* |
@@ -43230,6 +43818,7 @@ public void resetTimeoutSeconds()
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.maxRetries">maxRetries</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.minRetryIntervalMillis">minRetryIntervalMillis</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.retryOnTimeout">retryOnTimeout</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.runIf">runIf</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.taskKey">taskKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.timeoutSeconds">timeoutSeconds</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTask">JobTask</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
@@ -43520,6 +44109,16 @@ public java.lang.Object getRetryOnTimeoutInput();
 
 ---
 
+##### `runIfInput`<sup>Optional</sup> <a name="runIfInput" id="@cdktf/provider-databricks.job.JobTaskOutputReference.property.runIfInput"></a>
+
+```java
+public java.lang.String getRunIfInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `sparkJarTaskInput`<sup>Optional</sup> <a name="sparkJarTaskInput" id="@cdktf/provider-databricks.job.JobTaskOutputReference.property.sparkJarTaskInput"></a>
 
 ```java
@@ -43637,6 +44236,16 @@ public java.lang.Object getRetryOnTimeout();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `runIf`<sup>Required</sup> <a name="runIf" id="@cdktf/provider-databricks.job.JobTaskOutputReference.property.runIf"></a>
+
+```java
+public java.lang.String getRunIf();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -44694,6 +45303,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.resetParameters">resetParameters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.resetSource">resetSource</a></code> | *No description.* |
 
 ---
 
@@ -44853,6 +45463,12 @@ Returns a reversible string representation.
 public void resetParameters()
 ```
 
+##### `resetSource` <a name="resetSource" id="@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.resetSource"></a>
+
+```java
+public void resetSource()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -44862,8 +45478,10 @@ public void resetParameters()
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.property.parametersInput">parametersInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.property.pythonFileInput">pythonFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.property.sourceInput">sourceInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.property.parameters">parameters</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.property.pythonFile">pythonFile</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.property.source">source</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTask">JobTaskSparkPythonTask</a></code> | *No description.* |
 
 ---
@@ -44912,6 +45530,16 @@ public java.lang.String getPythonFileInput();
 
 ---
 
+##### `sourceInput`<sup>Optional</sup> <a name="sourceInput" id="@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.property.sourceInput"></a>
+
+```java
+public java.lang.String getSourceInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `parameters`<sup>Required</sup> <a name="parameters" id="@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.property.parameters"></a>
 
 ```java
@@ -44926,6 +45554,16 @@ public java.util.List<java.lang.String> getParameters();
 
 ```java
 public java.lang.String getPythonFile();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `source`<sup>Required</sup> <a name="source" id="@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.property.source"></a>
+
+```java
+public java.lang.String getSource();
 ```
 
 - *Type:* java.lang.String
@@ -46770,6 +47408,648 @@ public java.lang.Object getInternalValue();
 ```
 
 - *Type:* <a href="#@cdktf/provider-databricks.job.JobTimeouts">JobTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+
+---
+
+
+### JobTriggerFileArrivalOutputReference <a name="JobTriggerFileArrivalOutputReference" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.databricks.job.JobTriggerFileArrivalOutputReference;
+
+new JobTriggerFileArrivalOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.resetMinTimeBetweenTriggerSeconds">resetMinTimeBetweenTriggerSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.resetWaitAfterLastChangeSeconds">resetWaitAfterLastChangeSeconds</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetMinTimeBetweenTriggerSeconds` <a name="resetMinTimeBetweenTriggerSeconds" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.resetMinTimeBetweenTriggerSeconds"></a>
+
+```java
+public void resetMinTimeBetweenTriggerSeconds()
+```
+
+##### `resetWaitAfterLastChangeSeconds` <a name="resetWaitAfterLastChangeSeconds" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.resetWaitAfterLastChangeSeconds"></a>
+
+```java
+public void resetWaitAfterLastChangeSeconds()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.minTimeBetweenTriggerSecondsInput">minTimeBetweenTriggerSecondsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.urlInput">urlInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.waitAfterLastChangeSecondsInput">waitAfterLastChangeSecondsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.minTimeBetweenTriggerSeconds">minTimeBetweenTriggerSeconds</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.waitAfterLastChangeSeconds">waitAfterLastChangeSeconds</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrival">JobTriggerFileArrival</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `minTimeBetweenTriggerSecondsInput`<sup>Optional</sup> <a name="minTimeBetweenTriggerSecondsInput" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.minTimeBetweenTriggerSecondsInput"></a>
+
+```java
+public java.lang.Number getMinTimeBetweenTriggerSecondsInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `urlInput`<sup>Optional</sup> <a name="urlInput" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.urlInput"></a>
+
+```java
+public java.lang.String getUrlInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `waitAfterLastChangeSecondsInput`<sup>Optional</sup> <a name="waitAfterLastChangeSecondsInput" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.waitAfterLastChangeSecondsInput"></a>
+
+```java
+public java.lang.Number getWaitAfterLastChangeSecondsInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `minTimeBetweenTriggerSeconds`<sup>Required</sup> <a name="minTimeBetweenTriggerSeconds" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.minTimeBetweenTriggerSeconds"></a>
+
+```java
+public java.lang.Number getMinTimeBetweenTriggerSeconds();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `url`<sup>Required</sup> <a name="url" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.url"></a>
+
+```java
+public java.lang.String getUrl();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `waitAfterLastChangeSeconds`<sup>Required</sup> <a name="waitAfterLastChangeSeconds" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.waitAfterLastChangeSeconds"></a>
+
+```java
+public java.lang.Number getWaitAfterLastChangeSeconds();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.internalValue"></a>
+
+```java
+public JobTriggerFileArrival getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTriggerFileArrival">JobTriggerFileArrival</a>
+
+---
+
+
+### JobTriggerOutputReference <a name="JobTriggerOutputReference" id="@cdktf/provider-databricks.job.JobTriggerOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.databricks.job.JobTriggerOutputReference;
+
+new JobTriggerOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.putFileArrival">putFileArrival</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.resetPauseStatus">resetPauseStatus</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putFileArrival` <a name="putFileArrival" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.putFileArrival"></a>
+
+```java
+public void putFileArrival(JobTriggerFileArrival value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.putFileArrival.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTriggerFileArrival">JobTriggerFileArrival</a>
+
+---
+
+##### `resetPauseStatus` <a name="resetPauseStatus" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.resetPauseStatus"></a>
+
+```java
+public void resetPauseStatus()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.property.fileArrival">fileArrival</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference">JobTriggerFileArrivalOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.property.fileArrivalInput">fileArrivalInput</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrival">JobTriggerFileArrival</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.property.pauseStatusInput">pauseStatusInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.property.pauseStatus">pauseStatus</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTrigger">JobTrigger</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `fileArrival`<sup>Required</sup> <a name="fileArrival" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.property.fileArrival"></a>
+
+```java
+public JobTriggerFileArrivalOutputReference getFileArrival();
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference">JobTriggerFileArrivalOutputReference</a>
+
+---
+
+##### `fileArrivalInput`<sup>Optional</sup> <a name="fileArrivalInput" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.property.fileArrivalInput"></a>
+
+```java
+public JobTriggerFileArrival getFileArrivalInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTriggerFileArrival">JobTriggerFileArrival</a>
+
+---
+
+##### `pauseStatusInput`<sup>Optional</sup> <a name="pauseStatusInput" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.property.pauseStatusInput"></a>
+
+```java
+public java.lang.String getPauseStatusInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `pauseStatus`<sup>Required</sup> <a name="pauseStatus" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.property.pauseStatus"></a>
+
+```java
+public java.lang.String getPauseStatus();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.property.internalValue"></a>
+
+```java
+public JobTrigger getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTrigger">JobTrigger</a>
 
 ---
 

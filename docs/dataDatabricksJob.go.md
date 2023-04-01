@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/databricks/d/job dat
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJob.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJob(scope Construct, id *string, config DataDatabricksJobConfig) DataDatabricksJob
 ```
@@ -314,7 +314,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJob.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.DataDatabricksJob_IsConstruct(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJob.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.DataDatabricksJob_IsTerraformElement(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ datadatabricksjob.DataDatabricksJob_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJob.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.DataDatabricksJob_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -647,7 +647,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobConfig {
 	Connection: interface{},
@@ -660,7 +660,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabric
 	Id: *string,
 	JobId: *string,
 	JobName: *string,
-	JobSettings: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettings,
+	JobSettings: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettings,
 	Name: *string,
 }
 ```
@@ -824,13 +824,13 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettings {
 	CreatedTime: *f64,
 	CreatorUserName: *string,
 	JobId: *f64,
-	Settings: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettings,
+	Settings: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings,
 }
 ```
 
@@ -900,34 +900,36 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettings {
-	Continuous: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsContinuous,
-	DbtTask: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDbtTask,
-	EmailNotifications: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEmailNotifications,
+	Continuous: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsContinuous,
+	DbtTask: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDbtTask,
+	EmailNotifications: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEmailNotifications,
 	ExistingClusterId: *string,
 	Format: *string,
-	GitSource: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSource,
+	GitSource: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSource,
 	JobCluster: interface{},
 	Library: interface{},
 	MaxConcurrentRuns: *f64,
 	MaxRetries: *f64,
 	MinRetryIntervalMillis: *f64,
 	Name: *string,
-	NewCluster: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster,
-	NotebookTask: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotebookTask,
-	PipelineTask: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPipelineTask,
-	PythonWheelTask: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPythonWheelTask,
+	NewCluster: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster,
+	NotebookTask: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotebookTask,
+	PipelineTask: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPipelineTask,
+	PythonWheelTask: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPythonWheelTask,
+	Queue: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueue,
 	RetryOnTimeout: interface{},
-	Schedule: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSchedule,
-	SparkJarTask: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkJarTask,
-	SparkPythonTask: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTask,
-	SparkSubmitTask: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkSubmitTask,
+	Schedule: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSchedule,
+	SparkJarTask: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkJarTask,
+	SparkPythonTask: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTask,
+	SparkSubmitTask: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkSubmitTask,
 	Tags: *map[string]*string,
 	Task: interface{},
 	TimeoutSeconds: *f64,
-	WebhookNotifications: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotifications,
+	Trigger: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTrigger,
+	WebhookNotifications: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotifications,
 }
 ```
 
@@ -951,6 +953,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabric
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.notebookTask">NotebookTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotebookTask">DataDatabricksJobJobSettingsSettingsNotebookTask</a></code> | notebook_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.pipelineTask">PipelineTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPipelineTask">DataDatabricksJobJobSettingsSettingsPipelineTask</a></code> | pipeline_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.pythonWheelTask">PythonWheelTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPythonWheelTask">DataDatabricksJobJobSettingsSettingsPythonWheelTask</a></code> | python_wheel_task block. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.queue">Queue</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueue">DataDatabricksJobJobSettingsSettingsQueue</a></code> | queue block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.retryOnTimeout">RetryOnTimeout</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#retry_on_timeout DataDatabricksJob#retry_on_timeout}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.schedule">Schedule</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSchedule">DataDatabricksJobJobSettingsSettingsSchedule</a></code> | schedule block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.sparkJarTask">SparkJarTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkJarTask">DataDatabricksJobJobSettingsSettingsSparkJarTask</a></code> | spark_jar_task block. |
@@ -959,6 +962,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabric
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#tags DataDatabricksJob#tags}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.task">Task</a></code> | <code>interface{}</code> | task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.timeoutSeconds">TimeoutSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#timeout_seconds DataDatabricksJob#timeout_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.trigger">Trigger</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTrigger">DataDatabricksJobJobSettingsSettingsTrigger</a></code> | trigger block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.webhookNotifications">WebhookNotifications</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotifications">DataDatabricksJobJobSettingsSettingsWebhookNotifications</a></code> | webhook_notifications block. |
 
 ---
@@ -1175,6 +1179,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 ---
 
+##### `Queue`<sup>Optional</sup> <a name="Queue" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.queue"></a>
+
+```go
+Queue DataDatabricksJobJobSettingsSettingsQueue
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueue">DataDatabricksJobJobSettingsSettingsQueue</a>
+
+queue block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#queue DataDatabricksJob#queue}
+
+---
+
 ##### `RetryOnTimeout`<sup>Optional</sup> <a name="RetryOnTimeout" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.retryOnTimeout"></a>
 
 ```go
@@ -1281,6 +1299,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 ---
 
+##### `Trigger`<sup>Optional</sup> <a name="Trigger" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.trigger"></a>
+
+```go
+Trigger DataDatabricksJobJobSettingsSettingsTrigger
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTrigger">DataDatabricksJobJobSettingsSettingsTrigger</a>
+
+trigger block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#trigger DataDatabricksJob#trigger}
+
+---
+
 ##### `WebhookNotifications`<sup>Optional</sup> <a name="WebhookNotifications" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.webhookNotifications"></a>
 
 ```go
@@ -1300,7 +1332,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsContinuous.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsContinuous {
 	PauseStatus: *string,
@@ -1332,7 +1364,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDbtTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsDbtTask {
 	Commands: *[]*string,
@@ -1434,7 +1466,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEmailNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsEmailNotifications {
 	AlertOnLastAttempt: interface{},
@@ -1522,7 +1554,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsGitSource {
 	Url: *string,
@@ -1610,11 +1642,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobCluster {
 	JobClusterKey: *string,
-	NewCluster: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster,
+	NewCluster: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster,
 }
 ```
 
@@ -1658,28 +1690,28 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster {
 	NumWorkers: *f64,
 	SparkVersion: *string,
 	ApplyPolicyDefaultValues: interface{},
-	Autoscale: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAutoscale,
+	Autoscale: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAutoscale,
 	AutoterminationMinutes: *f64,
-	AwsAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributes,
-	AzureAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAzureAttributes,
+	AwsAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributes,
+	AzureAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAzureAttributes,
 	ClusterId: *string,
-	ClusterLogConf: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConf,
+	ClusterLogConf: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConf,
 	ClusterMountInfo: interface{},
 	ClusterName: *string,
 	CustomTags: *map[string]*string,
 	DataSecurityMode: *string,
-	DockerImage: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImage,
+	DockerImage: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImage,
 	DriverInstancePoolId: *string,
 	DriverNodeTypeId: *string,
 	EnableElasticDisk: interface{},
 	EnableLocalDiskEncryption: interface{},
-	GcpAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributes,
+	GcpAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributes,
 	IdempotencyToken: *string,
 	InitScripts: interface{},
 	InstancePoolId: *string,
@@ -1690,7 +1722,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabric
 	SparkConf: *map[string]*string,
 	SparkEnvVars: *map[string]*string,
 	SshPublicKeys: *[]*string,
-	WorkloadType: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadType,
+	WorkloadType: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadType,
 }
 ```
 
@@ -2114,7 +2146,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAutoscale.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAutoscale {
 	MaxWorkers: *f64,
@@ -2160,7 +2192,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributes {
 	Availability: *string,
@@ -2290,7 +2322,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAzureAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAzureAttributes {
 	Availability: *string,
@@ -2350,11 +2382,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConf.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConf {
-	Dbfs: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfDbfs,
-	S3: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3,
+	Dbfs: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfDbfs,
+	S3: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3,
 }
 ```
 
@@ -2400,7 +2432,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfDbfs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfDbfs {
 	Destination: *string,
@@ -2432,7 +2464,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3 {
 	Destination: *string,
@@ -2548,11 +2580,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfo {
 	LocalMountDirPath: *string,
-	NetworkFilesystemInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoNetworkFilesystemInfo,
+	NetworkFilesystemInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoNetworkFilesystemInfo,
 	RemoteMountDirPath: *string,
 }
 ```
@@ -2610,7 +2642,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoNetworkFilesystemInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoNetworkFilesystemInfo {
 	ServerAddress: *string,
@@ -2656,11 +2688,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImage {
 	Url: *string,
-	BasicAuth: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImageBasicAuth,
+	BasicAuth: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImageBasicAuth,
 }
 ```
 
@@ -2704,7 +2736,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImageBasicAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImageBasicAuth {
 	Password: *string,
@@ -2750,7 +2782,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributes {
 	Availability: *string,
@@ -2838,14 +2870,14 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScripts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScripts {
-	Abfss: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfss,
-	Dbfs: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsDbfs,
-	File: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsFile,
-	Gcs: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsGcs,
-	S3: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3,
+	Abfss: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfss,
+	Dbfs: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsDbfs,
+	File: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsFile,
+	Gcs: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsGcs,
+	S3: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3,
 }
 ```
 
@@ -2936,7 +2968,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfss.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfss {
 	Destination: *string,
@@ -2968,7 +3000,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsDbfs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsDbfs {
 	Destination: *string,
@@ -3000,7 +3032,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsFile {
 	Destination: *string,
@@ -3032,7 +3064,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsGcs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsGcs {
 	Destination: *string,
@@ -3064,7 +3096,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3 {
 	Destination: *string,
@@ -3180,10 +3212,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadType {
-	Clients: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadTypeClients,
+	Clients: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadTypeClients,
 }
 ```
 
@@ -3214,7 +3246,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadTypeClients.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadTypeClients {
 	Jobs: interface{},
@@ -3260,14 +3292,14 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibrary.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsLibrary {
-	Cran: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryCran,
+	Cran: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryCran,
 	Egg: *string,
 	Jar: *string,
-	Maven: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryMaven,
-	Pypi: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryPypi,
+	Maven: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryMaven,
+	Pypi: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryPypi,
 	Whl: *string,
 }
 ```
@@ -3368,7 +3400,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryCran.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsLibraryCran {
 	Package: *string,
@@ -3414,7 +3446,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryMaven.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsLibraryMaven {
 	Coordinates: *string,
@@ -3474,7 +3506,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryPypi.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsLibraryPypi {
 	Package: *string,
@@ -3520,28 +3552,28 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewCluster {
 	NumWorkers: *f64,
 	SparkVersion: *string,
 	ApplyPolicyDefaultValues: interface{},
-	Autoscale: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAutoscale,
+	Autoscale: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAutoscale,
 	AutoterminationMinutes: *f64,
-	AwsAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes,
-	AzureAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAzureAttributes,
+	AwsAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes,
+	AzureAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAzureAttributes,
 	ClusterId: *string,
-	ClusterLogConf: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConf,
+	ClusterLogConf: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConf,
 	ClusterMountInfo: interface{},
 	ClusterName: *string,
 	CustomTags: *map[string]*string,
 	DataSecurityMode: *string,
-	DockerImage: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterDockerImage,
+	DockerImage: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterDockerImage,
 	DriverInstancePoolId: *string,
 	DriverNodeTypeId: *string,
 	EnableElasticDisk: interface{},
 	EnableLocalDiskEncryption: interface{},
-	GcpAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributes,
+	GcpAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributes,
 	IdempotencyToken: *string,
 	InitScripts: interface{},
 	InstancePoolId: *string,
@@ -3552,7 +3584,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabric
 	SparkConf: *map[string]*string,
 	SparkEnvVars: *map[string]*string,
 	SshPublicKeys: *[]*string,
-	WorkloadType: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterWorkloadType,
+	WorkloadType: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterWorkloadType,
 }
 ```
 
@@ -3976,7 +4008,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAutoscale.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterAutoscale {
 	MaxWorkers: *f64,
@@ -4022,7 +4054,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes {
 	Availability: *string,
@@ -4152,7 +4184,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAzureAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterAzureAttributes {
 	Availability: *string,
@@ -4212,11 +4244,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConf.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConf {
-	Dbfs: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfDbfs,
-	S3: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3,
+	Dbfs: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfDbfs,
+	S3: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3,
 }
 ```
 
@@ -4262,7 +4294,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfDbfs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfDbfs {
 	Destination: *string,
@@ -4294,7 +4326,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3 {
 	Destination: *string,
@@ -4410,11 +4442,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfo {
 	LocalMountDirPath: *string,
-	NetworkFilesystemInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoNetworkFilesystemInfo,
+	NetworkFilesystemInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoNetworkFilesystemInfo,
 	RemoteMountDirPath: *string,
 }
 ```
@@ -4472,7 +4504,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoNetworkFilesystemInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoNetworkFilesystemInfo {
 	ServerAddress: *string,
@@ -4518,11 +4550,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterDockerImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterDockerImage {
 	Url: *string,
-	BasicAuth: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterDockerImageBasicAuth,
+	BasicAuth: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterDockerImageBasicAuth,
 }
 ```
 
@@ -4566,7 +4598,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterDockerImageBasicAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterDockerImageBasicAuth {
 	Password: *string,
@@ -4612,7 +4644,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributes {
 	Availability: *string,
@@ -4700,14 +4732,14 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScripts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterInitScripts {
-	Abfss: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfss,
-	Dbfs: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsDbfs,
-	File: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsFile,
-	Gcs: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsGcs,
-	S3: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3,
+	Abfss: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfss,
+	Dbfs: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsDbfs,
+	File: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsFile,
+	Gcs: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsGcs,
+	S3: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3,
 }
 ```
 
@@ -4798,7 +4830,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfss.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfss {
 	Destination: *string,
@@ -4830,7 +4862,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsDbfs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsDbfs {
 	Destination: *string,
@@ -4862,7 +4894,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsFile {
 	Destination: *string,
@@ -4894,7 +4926,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsGcs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsGcs {
 	Destination: *string,
@@ -4926,7 +4958,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3 {
 	Destination: *string,
@@ -5042,10 +5074,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterWorkloadType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterWorkloadType {
-	Clients: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterWorkloadTypeClients,
+	Clients: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterWorkloadTypeClients,
 }
 ```
 
@@ -5076,7 +5108,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterWorkloadTypeClients.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterWorkloadTypeClients {
 	Jobs: interface{},
@@ -5122,7 +5154,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotebookTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNotebookTask {
 	NotebookPath: *string,
@@ -5182,7 +5214,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPipelineTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsPipelineTask {
 	PipelineId: *string,
@@ -5214,7 +5246,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPythonWheelTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsPythonWheelTask {
 	EntryPoint: *string,
@@ -5283,12 +5315,25 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 ---
 
+### DataDatabricksJobJobSettingsSettingsQueue <a name="DataDatabricksJobJobSettingsSettingsQueue" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueue"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueue.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
+
+&datadatabricksjob.DataDatabricksJobJobSettingsSettingsQueue {
+
+}
+```
+
+
 ### DataDatabricksJobJobSettingsSettingsSchedule <a name="DataDatabricksJobJobSettingsSettingsSchedule" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSchedule"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsSchedule {
 	QuartzCronExpression: *string,
@@ -5348,7 +5393,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkJarTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsSparkJarTask {
 	JarUri: *string,
@@ -5408,11 +5453,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsSparkPythonTask {
 	PythonFile: *string,
 	Parameters: *[]*string,
+	Source: *string,
 }
 ```
 
@@ -5422,6 +5468,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabric
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTask.property.pythonFile">PythonFile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#python_file DataDatabricksJob#python_file}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTask.property.parameters">Parameters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#parameters DataDatabricksJob#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTask.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#source DataDatabricksJob#source}. |
 
 ---
 
@@ -5449,12 +5496,24 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 ---
 
+##### `Source`<sup>Optional</sup> <a name="Source" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTask.property.source"></a>
+
+```go
+Source *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#source DataDatabricksJob#source}.
+
+---
+
 ### DataDatabricksJobJobSettingsSettingsSparkSubmitTask <a name="DataDatabricksJobJobSettingsSettingsSparkSubmitTask" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkSubmitTask"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkSubmitTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsSparkSubmitTask {
 	Parameters: *[]*string,
@@ -5486,27 +5545,28 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTask {
-	DbtTask: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDbtTask,
+	DbtTask: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDbtTask,
 	DependsOn: interface{},
 	Description: *string,
-	EmailNotifications: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskEmailNotifications,
+	EmailNotifications: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskEmailNotifications,
 	ExistingClusterId: *string,
 	JobClusterKey: *string,
 	Library: interface{},
 	MaxRetries: *f64,
 	MinRetryIntervalMillis: *f64,
-	NewCluster: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster,
-	NotebookTask: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotebookTask,
-	PipelineTask: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPipelineTask,
-	PythonWheelTask: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPythonWheelTask,
+	NewCluster: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster,
+	NotebookTask: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotebookTask,
+	PipelineTask: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPipelineTask,
+	PythonWheelTask: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPythonWheelTask,
 	RetryOnTimeout: interface{},
-	SparkJarTask: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkJarTask,
-	SparkPythonTask: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask,
-	SparkSubmitTask: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTask,
-	SqlTask: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTask,
+	RunIf: *string,
+	SparkJarTask: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkJarTask,
+	SparkPythonTask: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask,
+	SparkSubmitTask: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTask,
+	SqlTask: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTask,
 	TaskKey: *string,
 	TimeoutSeconds: *f64,
 }
@@ -5530,6 +5590,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabric
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.pipelineTask">PipelineTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPipelineTask">DataDatabricksJobJobSettingsSettingsTaskPipelineTask</a></code> | pipeline_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.pythonWheelTask">PythonWheelTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPythonWheelTask">DataDatabricksJobJobSettingsSettingsTaskPythonWheelTask</a></code> | python_wheel_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.retryOnTimeout">RetryOnTimeout</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#retry_on_timeout DataDatabricksJob#retry_on_timeout}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.runIf">RunIf</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#run_if DataDatabricksJob#run_if}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.sparkJarTask">SparkJarTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkJarTask">DataDatabricksJobJobSettingsSettingsTaskSparkJarTask</a></code> | spark_jar_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.sparkPythonTask">SparkPythonTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask">DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask</a></code> | spark_python_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.sparkSubmitTask">SparkSubmitTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTask">DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTask</a></code> | spark_submit_task block. |
@@ -5723,6 +5784,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 ---
 
+##### `RunIf`<sup>Optional</sup> <a name="RunIf" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.runIf"></a>
+
+```go
+RunIf *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#run_if DataDatabricksJob#run_if}.
+
+---
+
 ##### `SparkJarTask`<sup>Optional</sup> <a name="SparkJarTask" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.sparkJarTask"></a>
 
 ```go
@@ -5808,7 +5881,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDbtTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskDbtTask {
 	Commands: *[]*string,
@@ -5910,7 +5983,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDependsOn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskDependsOn {
 	TaskKey: *string,
@@ -5942,7 +6015,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskEmailNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskEmailNotifications {
 	AlertOnLastAttempt: interface{},
@@ -6030,14 +6103,14 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibrary.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskLibrary {
-	Cran: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryCran,
+	Cran: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryCran,
 	Egg: *string,
 	Jar: *string,
-	Maven: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryMaven,
-	Pypi: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryPypi,
+	Maven: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryMaven,
+	Pypi: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryPypi,
 	Whl: *string,
 }
 ```
@@ -6138,7 +6211,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryCran.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskLibraryCran {
 	Package: *string,
@@ -6184,7 +6257,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryMaven.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskLibraryMaven {
 	Coordinates: *string,
@@ -6244,7 +6317,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryPypi.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskLibraryPypi {
 	Package: *string,
@@ -6290,28 +6363,28 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewCluster {
 	NumWorkers: *f64,
 	SparkVersion: *string,
 	ApplyPolicyDefaultValues: interface{},
-	Autoscale: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAutoscale,
+	Autoscale: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAutoscale,
 	AutoterminationMinutes: *f64,
-	AwsAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributes,
-	AzureAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAzureAttributes,
+	AwsAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributes,
+	AzureAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAzureAttributes,
 	ClusterId: *string,
-	ClusterLogConf: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConf,
+	ClusterLogConf: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConf,
 	ClusterMountInfo: interface{},
 	ClusterName: *string,
 	CustomTags: *map[string]*string,
 	DataSecurityMode: *string,
-	DockerImage: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImage,
+	DockerImage: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImage,
 	DriverInstancePoolId: *string,
 	DriverNodeTypeId: *string,
 	EnableElasticDisk: interface{},
 	EnableLocalDiskEncryption: interface{},
-	GcpAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributes,
+	GcpAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributes,
 	IdempotencyToken: *string,
 	InitScripts: interface{},
 	InstancePoolId: *string,
@@ -6322,7 +6395,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabric
 	SparkConf: *map[string]*string,
 	SparkEnvVars: *map[string]*string,
 	SshPublicKeys: *[]*string,
-	WorkloadType: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadType,
+	WorkloadType: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadType,
 }
 ```
 
@@ -6746,7 +6819,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAutoscale.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAutoscale {
 	MaxWorkers: *f64,
@@ -6792,7 +6865,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributes {
 	Availability: *string,
@@ -6922,7 +6995,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAzureAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAzureAttributes {
 	Availability: *string,
@@ -6982,11 +7055,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConf.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConf {
-	Dbfs: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfDbfs,
-	S3: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3,
+	Dbfs: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfDbfs,
+	S3: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3,
 }
 ```
 
@@ -7032,7 +7105,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfDbfs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfDbfs {
 	Destination: *string,
@@ -7064,7 +7137,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3 {
 	Destination: *string,
@@ -7180,11 +7253,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfo {
 	LocalMountDirPath: *string,
-	NetworkFilesystemInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoNetworkFilesystemInfo,
+	NetworkFilesystemInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoNetworkFilesystemInfo,
 	RemoteMountDirPath: *string,
 }
 ```
@@ -7242,7 +7315,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoNetworkFilesystemInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoNetworkFilesystemInfo {
 	ServerAddress: *string,
@@ -7288,11 +7361,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImage {
 	Url: *string,
-	BasicAuth: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageBasicAuth,
+	BasicAuth: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageBasicAuth,
 }
 ```
 
@@ -7336,7 +7409,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageBasicAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageBasicAuth {
 	Password: *string,
@@ -7382,7 +7455,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributes {
 	Availability: *string,
@@ -7470,14 +7543,14 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScripts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScripts {
-	Abfss: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfss,
-	Dbfs: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsDbfs,
-	File: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsFile,
-	Gcs: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsGcs,
-	S3: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3,
+	Abfss: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfss,
+	Dbfs: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsDbfs,
+	File: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsFile,
+	Gcs: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsGcs,
+	S3: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3,
 }
 ```
 
@@ -7568,7 +7641,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfss.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfss {
 	Destination: *string,
@@ -7600,7 +7673,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsDbfs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsDbfs {
 	Destination: *string,
@@ -7632,7 +7705,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsFile {
 	Destination: *string,
@@ -7664,7 +7737,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsGcs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsGcs {
 	Destination: *string,
@@ -7696,7 +7769,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3 {
 	Destination: *string,
@@ -7812,10 +7885,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadType {
-	Clients: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadTypeClients,
+	Clients: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadTypeClients,
 }
 ```
 
@@ -7846,7 +7919,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadTypeClients.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadTypeClients {
 	Jobs: interface{},
@@ -7892,7 +7965,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotebookTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNotebookTask {
 	NotebookPath: *string,
@@ -7952,7 +8025,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPipelineTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskPipelineTask {
 	PipelineId: *string,
@@ -7984,7 +8057,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPythonWheelTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskPythonWheelTask {
 	EntryPoint: *string,
@@ -8058,7 +8131,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkJarTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskSparkJarTask {
 	JarUri: *string,
@@ -8118,11 +8191,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask {
 	PythonFile: *string,
 	Parameters: *[]*string,
+	Source: *string,
 }
 ```
 
@@ -8132,6 +8206,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabric
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask.property.pythonFile">PythonFile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#python_file DataDatabricksJob#python_file}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask.property.parameters">Parameters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#parameters DataDatabricksJob#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#source DataDatabricksJob#source}. |
 
 ---
 
@@ -8159,12 +8234,24 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 ---
 
+##### `Source`<sup>Optional</sup> <a name="Source" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask.property.source"></a>
+
+```go
+Source *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#source DataDatabricksJob#source}.
+
+---
+
 ### DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTask <a name="DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTask" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTask"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTask {
 	Parameters: *[]*string,
@@ -8196,13 +8283,13 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskSqlTask {
-	Alert: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlert,
-	Dashboard: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboard,
+	Alert: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlert,
+	Dashboard: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboard,
 	Parameters: *map[string]*string,
-	Query: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskQuery,
+	Query: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskQuery,
 	WarehouseId: *string,
 }
 ```
@@ -8290,7 +8377,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlert {
 	AlertId: *string,
@@ -8322,7 +8409,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboard.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboard {
 	DashboardId: *string,
@@ -8354,7 +8441,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskQuery {
 	QueryId: *string,
@@ -8381,12 +8468,120 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 ---
 
+### DataDatabricksJobJobSettingsSettingsTrigger <a name="DataDatabricksJobJobSettingsSettingsTrigger" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTrigger"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTrigger.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
+
+&datadatabricksjob.DataDatabricksJobJobSettingsSettingsTrigger {
+	FileArrival: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrival,
+	PauseStatus: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTrigger.property.fileArrival">FileArrival</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrival">DataDatabricksJobJobSettingsSettingsTriggerFileArrival</a></code> | file_arrival block. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTrigger.property.pauseStatus">PauseStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#pause_status DataDatabricksJob#pause_status}. |
+
+---
+
+##### `FileArrival`<sup>Required</sup> <a name="FileArrival" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTrigger.property.fileArrival"></a>
+
+```go
+FileArrival DataDatabricksJobJobSettingsSettingsTriggerFileArrival
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrival">DataDatabricksJobJobSettingsSettingsTriggerFileArrival</a>
+
+file_arrival block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#file_arrival DataDatabricksJob#file_arrival}
+
+---
+
+##### `PauseStatus`<sup>Optional</sup> <a name="PauseStatus" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTrigger.property.pauseStatus"></a>
+
+```go
+PauseStatus *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#pause_status DataDatabricksJob#pause_status}.
+
+---
+
+### DataDatabricksJobJobSettingsSettingsTriggerFileArrival <a name="DataDatabricksJobJobSettingsSettingsTriggerFileArrival" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrival"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrival.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
+
+&datadatabricksjob.DataDatabricksJobJobSettingsSettingsTriggerFileArrival {
+	Url: *string,
+	MinTimeBetweenTriggerSeconds: *f64,
+	WaitAfterLastChangeSeconds: *f64,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrival.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#url DataDatabricksJob#url}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrival.property.minTimeBetweenTriggerSeconds">MinTimeBetweenTriggerSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#min_time_between_trigger_seconds DataDatabricksJob#min_time_between_trigger_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrival.property.waitAfterLastChangeSeconds">WaitAfterLastChangeSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#wait_after_last_change_seconds DataDatabricksJob#wait_after_last_change_seconds}. |
+
+---
+
+##### `Url`<sup>Required</sup> <a name="Url" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrival.property.url"></a>
+
+```go
+Url *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#url DataDatabricksJob#url}.
+
+---
+
+##### `MinTimeBetweenTriggerSeconds`<sup>Optional</sup> <a name="MinTimeBetweenTriggerSeconds" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrival.property.minTimeBetweenTriggerSeconds"></a>
+
+```go
+MinTimeBetweenTriggerSeconds *f64
+```
+
+- *Type:* *f64
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#min_time_between_trigger_seconds DataDatabricksJob#min_time_between_trigger_seconds}.
+
+---
+
+##### `WaitAfterLastChangeSeconds`<sup>Optional</sup> <a name="WaitAfterLastChangeSeconds" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrival.property.waitAfterLastChangeSeconds"></a>
+
+```go
+WaitAfterLastChangeSeconds *f64
+```
+
+- *Type:* *f64
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#wait_after_last_change_seconds DataDatabricksJob#wait_after_last_change_seconds}.
+
+---
+
 ### DataDatabricksJobJobSettingsSettingsWebhookNotifications <a name="DataDatabricksJobJobSettingsSettingsWebhookNotifications" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotifications"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsWebhookNotifications {
 	OnFailure: interface{},
@@ -8452,7 +8647,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailure.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailure {
 	Id: *string,
@@ -8487,7 +8682,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStart.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStart {
 	Id: *string,
@@ -8522,7 +8717,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccess {
 	Id: *string,
@@ -8559,7 +8754,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsOutputReference
 ```
@@ -8937,7 +9132,7 @@ func InternalValue() DataDatabricksJobJobSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsContinuousOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsContinuousOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsContinuousOutputReference
 ```
@@ -9215,7 +9410,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsContinuous
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDbtTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsDbtTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsDbtTaskOutputReference
 ```
@@ -9631,7 +9826,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsDbtTask
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEmailNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsEmailNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsEmailNotificationsOutputReference
 ```
@@ -10025,7 +10220,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsEmailNotifications
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsGitSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsGitSourceOutputReference
 ```
@@ -10412,7 +10607,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsGitSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsJobClusterList
 ```
@@ -10555,7 +10750,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAutoscaleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterAutoscaleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAutoscaleOutputReference
 ```
@@ -10862,7 +11057,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAut
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributesOutputReference
 ```
@@ -11343,7 +11538,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAws
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAzureAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterAzureAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAzureAttributesOutputReference
 ```
@@ -11679,7 +11874,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAzu
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfDbfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfDbfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfDbfsOutputReference
 ```
@@ -11950,7 +12145,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClu
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfOutputReference
 ```
@@ -12283,7 +12478,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClu
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3OutputReference
 ```
@@ -12728,7 +12923,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClu
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoList
 ```
@@ -12871,7 +13066,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference
 ```
@@ -13171,7 +13366,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClu
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoOutputReference
 ```
@@ -13524,7 +13719,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImageBasicAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImageBasicAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImageBasicAuthOutputReference
 ```
@@ -13817,7 +14012,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDoc
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImageOutputReference
 ```
@@ -14130,7 +14325,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDoc
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributesOutputReference
 ```
@@ -14524,7 +14719,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcp
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfssOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfssOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfssOutputReference
 ```
@@ -14802,7 +14997,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterIni
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsDbfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsDbfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsDbfsOutputReference
 ```
@@ -15073,7 +15268,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterIni
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsFileOutputReference
 ```
@@ -15351,7 +15546,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterIni
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsGcsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsGcsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsGcsOutputReference
 ```
@@ -15629,7 +15824,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterIni
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsList
 ```
@@ -15772,7 +15967,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsOutputReference
 ```
@@ -16249,7 +16444,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3OutputReference
 ```
@@ -16694,7 +16889,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterIni
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterOutputReference
 ```
@@ -17916,7 +18111,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewCluster
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadTypeClientsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadTypeClientsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadTypeClientsOutputReference
 ```
@@ -18223,7 +18418,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWor
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadTypeOutputReference
 ```
@@ -18507,7 +18702,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWor
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsJobClusterOutputReference
 ```
@@ -18845,7 +19040,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryCranOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsLibraryCranOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsLibraryCranOutputReference
 ```
@@ -19145,7 +19340,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsLibraryCran
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsLibraryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsLibraryList
 ```
@@ -19288,7 +19483,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryMavenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsLibraryMavenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsLibraryMavenOutputReference
 ```
@@ -19617,7 +19812,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsLibraryMaven
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsLibraryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsLibraryOutputReference
 ```
@@ -20097,7 +20292,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryPypiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsLibraryPypiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsLibraryPypiOutputReference
 ```
@@ -20397,7 +20592,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsLibraryPypi
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAutoscaleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterAutoscaleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterAutoscaleOutputReference
 ```
@@ -20704,7 +20899,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterAutoscale
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterAwsAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributesOutputReference
 ```
@@ -21185,7 +21380,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAzureAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterAzureAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterAzureAttributesOutputReference
 ```
@@ -21521,7 +21716,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterAzureAttribut
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfDbfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfDbfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfDbfsOutputReference
 ```
@@ -21792,7 +21987,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterClusterLogCon
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfOutputReference
 ```
@@ -22125,7 +22320,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterClusterLogCon
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3OutputReference
 ```
@@ -22570,7 +22765,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterClusterLogCon
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoList
 ```
@@ -22713,7 +22908,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference
 ```
@@ -23013,7 +23208,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterClusterMountI
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoOutputReference
 ```
@@ -23366,7 +23561,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterDockerImageBasicAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterDockerImageBasicAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterDockerImageBasicAuthOutputReference
 ```
@@ -23659,7 +23854,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterDockerImageBa
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterDockerImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterDockerImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterDockerImageOutputReference
 ```
@@ -23972,7 +24167,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterDockerImage
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterGcpAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributesOutputReference
 ```
@@ -24366,7 +24561,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributes
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfssOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfssOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfssOutputReference
 ```
@@ -24644,7 +24839,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAb
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsDbfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterInitScriptsDbfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsDbfsOutputReference
 ```
@@ -24915,7 +25110,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsDb
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterInitScriptsFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsFileOutputReference
 ```
@@ -25193,7 +25388,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsFi
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsGcsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterInitScriptsGcsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsGcsOutputReference
 ```
@@ -25471,7 +25666,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsGc
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterInitScriptsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsList
 ```
@@ -25614,7 +25809,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterInitScriptsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsOutputReference
 ```
@@ -26091,7 +26286,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3OutputReference
 ```
@@ -26536,7 +26731,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterOutputReference
 ```
@@ -27758,7 +27953,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewCluster
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterWorkloadTypeClientsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterWorkloadTypeClientsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterWorkloadTypeClientsOutputReference
 ```
@@ -28065,7 +28260,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterWorkloadTypeC
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterWorkloadTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterWorkloadTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterWorkloadTypeOutputReference
 ```
@@ -28349,7 +28544,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterWorkloadType
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotebookTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNotebookTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNotebookTaskOutputReference
 ```
@@ -28678,7 +28873,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNotebookTask
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsOutputReference
 ```
@@ -28733,11 +28928,13 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.putNotebookTask">PutNotebookTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.putPipelineTask">PutPipelineTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.putPythonWheelTask">PutPythonWheelTask</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.putQueue">PutQueue</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.putSchedule">PutSchedule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.putSparkJarTask">PutSparkJarTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.putSparkPythonTask">PutSparkPythonTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.putSparkSubmitTask">PutSparkSubmitTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.putTask">PutTask</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.putTrigger">PutTrigger</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.putWebhookNotifications">PutWebhookNotifications</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.resetContinuous">ResetContinuous</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.resetDbtTask">ResetDbtTask</a></code> | *No description.* |
@@ -28755,6 +28952,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.resetNotebookTask">ResetNotebookTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.resetPipelineTask">ResetPipelineTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.resetPythonWheelTask">ResetPythonWheelTask</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.resetQueue">ResetQueue</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.resetRetryOnTimeout">ResetRetryOnTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.resetSchedule">ResetSchedule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.resetSparkJarTask">ResetSparkJarTask</a></code> | *No description.* |
@@ -28763,6 +28961,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.resetTask">ResetTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.resetTimeoutSeconds">ResetTimeoutSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.resetTrigger">ResetTrigger</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.resetWebhookNotifications">ResetWebhookNotifications</a></code> | *No description.* |
 
 ---
@@ -29037,6 +29236,18 @@ func PutPythonWheelTask(value DataDatabricksJobJobSettingsSettingsPythonWheelTas
 
 ---
 
+##### `PutQueue` <a name="PutQueue" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.putQueue"></a>
+
+```go
+func PutQueue(value DataDatabricksJobJobSettingsSettingsQueue)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.putQueue.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueue">DataDatabricksJobJobSettingsSettingsQueue</a>
+
+---
+
 ##### `PutSchedule` <a name="PutSchedule" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.putSchedule"></a>
 
 ```go
@@ -29094,6 +29305,18 @@ func PutTask(value interface{})
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.putTask.parameter.value"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `PutTrigger` <a name="PutTrigger" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.putTrigger"></a>
+
+```go
+func PutTrigger(value DataDatabricksJobJobSettingsSettingsTrigger)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.putTrigger.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTrigger">DataDatabricksJobJobSettingsSettingsTrigger</a>
 
 ---
 
@@ -29205,6 +29428,12 @@ func ResetPipelineTask()
 func ResetPythonWheelTask()
 ```
 
+##### `ResetQueue` <a name="ResetQueue" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.resetQueue"></a>
+
+```go
+func ResetQueue()
+```
+
 ##### `ResetRetryOnTimeout` <a name="ResetRetryOnTimeout" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.resetRetryOnTimeout"></a>
 
 ```go
@@ -29253,6 +29482,12 @@ func ResetTask()
 func ResetTimeoutSeconds()
 ```
 
+##### `ResetTrigger` <a name="ResetTrigger" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.resetTrigger"></a>
+
+```go
+func ResetTrigger()
+```
+
 ##### `ResetWebhookNotifications` <a name="ResetWebhookNotifications" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.resetWebhookNotifications"></a>
 
 ```go
@@ -29276,11 +29511,13 @@ func ResetWebhookNotifications()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.notebookTask">NotebookTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotebookTaskOutputReference">DataDatabricksJobJobSettingsSettingsNotebookTaskOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.pipelineTask">PipelineTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPipelineTaskOutputReference">DataDatabricksJobJobSettingsSettingsPipelineTaskOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.pythonWheelTask">PythonWheelTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPythonWheelTaskOutputReference">DataDatabricksJobJobSettingsSettingsPythonWheelTaskOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.queue">Queue</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference">DataDatabricksJobJobSettingsSettingsQueueOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.schedule">Schedule</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsScheduleOutputReference">DataDatabricksJobJobSettingsSettingsScheduleOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.sparkJarTask">SparkJarTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkJarTaskOutputReference">DataDatabricksJobJobSettingsSettingsSparkJarTaskOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.sparkPythonTask">SparkPythonTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTaskOutputReference">DataDatabricksJobJobSettingsSettingsSparkPythonTaskOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.sparkSubmitTask">SparkSubmitTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkSubmitTaskOutputReference">DataDatabricksJobJobSettingsSettingsSparkSubmitTaskOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.task">Task</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskList">DataDatabricksJobJobSettingsSettingsTaskList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.trigger">Trigger</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference">DataDatabricksJobJobSettingsSettingsTriggerOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.webhookNotifications">WebhookNotifications</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReference">DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.continuousInput">ContinuousInput</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsContinuous">DataDatabricksJobJobSettingsSettingsContinuous</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.dbtTaskInput">DbtTaskInput</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDbtTask">DataDatabricksJobJobSettingsSettingsDbtTask</a></code> | *No description.* |
@@ -29298,6 +29535,7 @@ func ResetWebhookNotifications()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.notebookTaskInput">NotebookTaskInput</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotebookTask">DataDatabricksJobJobSettingsSettingsNotebookTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.pipelineTaskInput">PipelineTaskInput</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPipelineTask">DataDatabricksJobJobSettingsSettingsPipelineTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.pythonWheelTaskInput">PythonWheelTaskInput</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPythonWheelTask">DataDatabricksJobJobSettingsSettingsPythonWheelTask</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.queueInput">QueueInput</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueue">DataDatabricksJobJobSettingsSettingsQueue</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.retryOnTimeoutInput">RetryOnTimeoutInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.scheduleInput">ScheduleInput</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSchedule">DataDatabricksJobJobSettingsSettingsSchedule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.sparkJarTaskInput">SparkJarTaskInput</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkJarTask">DataDatabricksJobJobSettingsSettingsSparkJarTask</a></code> | *No description.* |
@@ -29306,6 +29544,7 @@ func ResetWebhookNotifications()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.taskInput">TaskInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.timeoutSecondsInput">TimeoutSecondsInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.triggerInput">TriggerInput</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTrigger">DataDatabricksJobJobSettingsSettingsTrigger</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.webhookNotificationsInput">WebhookNotificationsInput</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotifications">DataDatabricksJobJobSettingsSettingsWebhookNotifications</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.existingClusterId">ExistingClusterId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.format">Format</a></code> | <code>*string</code> | *No description.* |
@@ -29444,6 +29683,16 @@ func PythonWheelTask() DataDatabricksJobJobSettingsSettingsPythonWheelTaskOutput
 
 ---
 
+##### `Queue`<sup>Required</sup> <a name="Queue" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.queue"></a>
+
+```go
+func Queue() DataDatabricksJobJobSettingsSettingsQueueOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference">DataDatabricksJobJobSettingsSettingsQueueOutputReference</a>
+
+---
+
 ##### `Schedule`<sup>Required</sup> <a name="Schedule" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.schedule"></a>
 
 ```go
@@ -29491,6 +29740,16 @@ func Task() DataDatabricksJobJobSettingsSettingsTaskList
 ```
 
 - *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskList">DataDatabricksJobJobSettingsSettingsTaskList</a>
+
+---
+
+##### `Trigger`<sup>Required</sup> <a name="Trigger" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.trigger"></a>
+
+```go
+func Trigger() DataDatabricksJobJobSettingsSettingsTriggerOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference">DataDatabricksJobJobSettingsSettingsTriggerOutputReference</a>
 
 ---
 
@@ -29664,6 +29923,16 @@ func PythonWheelTaskInput() DataDatabricksJobJobSettingsSettingsPythonWheelTask
 
 ---
 
+##### `QueueInput`<sup>Optional</sup> <a name="QueueInput" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.queueInput"></a>
+
+```go
+func QueueInput() DataDatabricksJobJobSettingsSettingsQueue
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueue">DataDatabricksJobJobSettingsSettingsQueue</a>
+
+---
+
 ##### `RetryOnTimeoutInput`<sup>Optional</sup> <a name="RetryOnTimeoutInput" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.retryOnTimeoutInput"></a>
 
 ```go
@@ -29741,6 +30010,16 @@ func TimeoutSecondsInput() *f64
 ```
 
 - *Type:* *f64
+
+---
+
+##### `TriggerInput`<sup>Optional</sup> <a name="TriggerInput" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.property.triggerInput"></a>
+
+```go
+func TriggerInput() DataDatabricksJobJobSettingsSettingsTrigger
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTrigger">DataDatabricksJobJobSettingsSettingsTrigger</a>
 
 ---
 
@@ -29860,7 +30139,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPipelineTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsPipelineTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsPipelineTaskOutputReference
 ```
@@ -30131,7 +30410,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsPipelineTask
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPythonWheelTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsPythonWheelTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsPythonWheelTaskOutputReference
 ```
@@ -30491,12 +30770,261 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsPythonWheelTask
 ---
 
 
+### DataDatabricksJobJobSettingsSettingsQueueOutputReference <a name="DataDatabricksJobJobSettingsSettingsQueueOutputReference" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
+
+datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsQueueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsQueueOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueue">DataDatabricksJobJobSettingsSettingsQueue</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataDatabricksJobJobSettingsSettingsQueue
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueue">DataDatabricksJobJobSettingsSettingsQueue</a>
+
+---
+
+
 ### DataDatabricksJobJobSettingsSettingsScheduleOutputReference <a name="DataDatabricksJobJobSettingsSettingsScheduleOutputReference" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsScheduleOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsScheduleOutputReference
 ```
@@ -30818,7 +31346,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsSchedule
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkJarTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsSparkJarTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsSparkJarTaskOutputReference
 ```
@@ -31154,7 +31682,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsSparkJarTask
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsSparkPythonTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsSparkPythonTaskOutputReference
 ```
@@ -31200,6 +31728,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTaskOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTaskOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTaskOutputReference.resetParameters">ResetParameters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTaskOutputReference.resetSource">ResetSource</a></code> | *No description.* |
 
 ---
 
@@ -31359,6 +31888,12 @@ Returns a reversible string representation.
 func ResetParameters()
 ```
 
+##### `ResetSource` <a name="ResetSource" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTaskOutputReference.resetSource"></a>
+
+```go
+func ResetSource()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -31368,8 +31903,10 @@ func ResetParameters()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTaskOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTaskOutputReference.property.parametersInput">ParametersInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTaskOutputReference.property.pythonFileInput">PythonFileInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTaskOutputReference.property.sourceInput">SourceInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTaskOutputReference.property.parameters">Parameters</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTaskOutputReference.property.pythonFile">PythonFile</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTaskOutputReference.property.source">Source</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTaskOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTask">DataDatabricksJobJobSettingsSettingsSparkPythonTask</a></code> | *No description.* |
 
 ---
@@ -31418,6 +31955,16 @@ func PythonFileInput() *string
 
 ---
 
+##### `SourceInput`<sup>Optional</sup> <a name="SourceInput" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTaskOutputReference.property.sourceInput"></a>
+
+```go
+func SourceInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Parameters`<sup>Required</sup> <a name="Parameters" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTaskOutputReference.property.parameters"></a>
 
 ```go
@@ -31432,6 +31979,16 @@ func Parameters() *[]*string
 
 ```go
 func PythonFile() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Source`<sup>Required</sup> <a name="Source" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTaskOutputReference.property.source"></a>
+
+```go
+func Source() *string
 ```
 
 - *Type:* *string
@@ -31454,7 +32011,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsSparkPythonTask
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkSubmitTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsSparkSubmitTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsSparkSubmitTaskOutputReference
 ```
@@ -31732,7 +32289,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsSparkSubmitTask
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDbtTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskDbtTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskDbtTaskOutputReference
 ```
@@ -32148,7 +32705,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskDbtTask
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDependsOnList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskDependsOnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskDependsOnList
 ```
@@ -32291,7 +32848,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDependsOnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskDependsOnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskDependsOnOutputReference
 ```
@@ -32587,7 +33144,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference
 ```
@@ -32981,7 +33538,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskEmailNotifications
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryCranOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskLibraryCranOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskLibraryCranOutputReference
 ```
@@ -33281,7 +33838,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskLibraryCran
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskLibraryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskLibraryList
 ```
@@ -33424,7 +33981,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryMavenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskLibraryMavenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskLibraryMavenOutputReference
 ```
@@ -33753,7 +34310,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskLibraryMaven
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskLibraryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskLibraryOutputReference
 ```
@@ -34233,7 +34790,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryPypiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskLibraryPypiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskLibraryPypiOutputReference
 ```
@@ -34533,7 +35090,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskLibraryPypi
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskList
 ```
@@ -34676,7 +35233,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAutoscaleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterAutoscaleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterAutoscaleOutputReference
 ```
@@ -34983,7 +35540,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterAutoscale
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributesOutputReference
 ```
@@ -35464,7 +36021,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttrib
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAzureAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterAzureAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterAzureAttributesOutputReference
 ```
@@ -35800,7 +36357,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterAzureAttr
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfDbfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfDbfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfDbfsOutputReference
 ```
@@ -36071,7 +36628,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLo
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfOutputReference
 ```
@@ -36404,7 +36961,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLo
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3OutputReference
 ```
@@ -36849,7 +37406,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLo
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoList
 ```
@@ -36992,7 +37549,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference
 ```
@@ -37292,7 +37849,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMo
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoOutputReference
 ```
@@ -37645,7 +38202,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageBasicAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageBasicAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageBasicAuthOutputReference
 ```
@@ -37938,7 +38495,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerIma
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageOutputReference
 ```
@@ -38251,7 +38808,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerIma
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributesOutputReference
 ```
@@ -38645,7 +39202,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttrib
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfssOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfssOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfssOutputReference
 ```
@@ -38923,7 +39480,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScrip
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsDbfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsDbfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsDbfsOutputReference
 ```
@@ -39194,7 +39751,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScrip
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsFileOutputReference
 ```
@@ -39472,7 +40029,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScrip
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsGcsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsGcsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsGcsOutputReference
 ```
@@ -39750,7 +40307,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScrip
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsList
 ```
@@ -39893,7 +40450,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsOutputReference
 ```
@@ -40370,7 +40927,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3OutputReference
 ```
@@ -40815,7 +41372,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScrip
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterOutputReference
 ```
@@ -42037,7 +42594,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewCluster
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadTypeClientsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadTypeClientsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadTypeClientsOutputReference
 ```
@@ -42344,7 +42901,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadT
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadTypeOutputReference
 ```
@@ -42628,7 +43185,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadT
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference
 ```
@@ -42957,7 +43514,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNotebookTask
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskOutputReference
 ```
@@ -43046,6 +43603,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.resetPipelineTask">ResetPipelineTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.resetPythonWheelTask">ResetPythonWheelTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.resetRetryOnTimeout">ResetRetryOnTimeout</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.resetRunIf">ResetRunIf</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.resetSparkJarTask">ResetSparkJarTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.resetSparkPythonTask">ResetSparkPythonTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.resetSparkSubmitTask">ResetSparkSubmitTask</a></code> | *No description.* |
@@ -43433,6 +43991,12 @@ func ResetPythonWheelTask()
 func ResetRetryOnTimeout()
 ```
 
+##### `ResetRunIf` <a name="ResetRunIf" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.resetRunIf"></a>
+
+```go
+func ResetRunIf()
+```
+
 ##### `ResetSparkJarTask` <a name="ResetSparkJarTask" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.resetSparkJarTask"></a>
 
 ```go
@@ -43502,6 +44066,7 @@ func ResetTimeoutSeconds()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.property.pipelineTaskInput">PipelineTaskInput</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPipelineTask">DataDatabricksJobJobSettingsSettingsTaskPipelineTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.property.pythonWheelTaskInput">PythonWheelTaskInput</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPythonWheelTask">DataDatabricksJobJobSettingsSettingsTaskPythonWheelTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.property.retryOnTimeoutInput">RetryOnTimeoutInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.property.runIfInput">RunIfInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.property.sparkJarTaskInput">SparkJarTaskInput</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkJarTask">DataDatabricksJobJobSettingsSettingsTaskSparkJarTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.property.sparkPythonTaskInput">SparkPythonTaskInput</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask">DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.property.sparkSubmitTaskInput">SparkSubmitTaskInput</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTask">DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTask</a></code> | *No description.* |
@@ -43514,6 +44079,7 @@ func ResetTimeoutSeconds()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.property.maxRetries">MaxRetries</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.property.minRetryIntervalMillis">MinRetryIntervalMillis</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.property.retryOnTimeout">RetryOnTimeout</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.property.runIf">RunIf</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.property.taskKey">TaskKey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.property.timeoutSeconds">TimeoutSeconds</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
@@ -43804,6 +44370,16 @@ func RetryOnTimeoutInput() interface{}
 
 ---
 
+##### `RunIfInput`<sup>Optional</sup> <a name="RunIfInput" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.property.runIfInput"></a>
+
+```go
+func RunIfInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `SparkJarTaskInput`<sup>Optional</sup> <a name="SparkJarTaskInput" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.property.sparkJarTaskInput"></a>
 
 ```go
@@ -43924,6 +44500,16 @@ func RetryOnTimeout() interface{}
 
 ---
 
+##### `RunIf`<sup>Required</sup> <a name="RunIf" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.property.runIf"></a>
+
+```go
+func RunIf() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TaskKey`<sup>Required</sup> <a name="TaskKey" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.property.taskKey"></a>
 
 ```go
@@ -43960,7 +44546,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPipelineTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskPipelineTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskPipelineTaskOutputReference
 ```
@@ -44231,7 +44817,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskPipelineTask
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPythonWheelTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskPythonWheelTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskPythonWheelTaskOutputReference
 ```
@@ -44596,7 +45182,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskPythonWheelTask
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkJarTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskSparkJarTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskSparkJarTaskOutputReference
 ```
@@ -44932,7 +45518,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskSparkJarTask
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference
 ```
@@ -44978,6 +45564,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference.resetParameters">ResetParameters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference.resetSource">ResetSource</a></code> | *No description.* |
 
 ---
 
@@ -45137,6 +45724,12 @@ Returns a reversible string representation.
 func ResetParameters()
 ```
 
+##### `ResetSource` <a name="ResetSource" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference.resetSource"></a>
+
+```go
+func ResetSource()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -45146,8 +45739,10 @@ func ResetParameters()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference.property.parametersInput">ParametersInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference.property.pythonFileInput">PythonFileInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference.property.sourceInput">SourceInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference.property.parameters">Parameters</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference.property.pythonFile">PythonFile</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference.property.source">Source</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask">DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask</a></code> | *No description.* |
 
 ---
@@ -45196,6 +45791,16 @@ func PythonFileInput() *string
 
 ---
 
+##### `SourceInput`<sup>Optional</sup> <a name="SourceInput" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference.property.sourceInput"></a>
+
+```go
+func SourceInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Parameters`<sup>Required</sup> <a name="Parameters" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference.property.parameters"></a>
 
 ```go
@@ -45210,6 +45815,16 @@ func Parameters() *[]*string
 
 ```go
 func PythonFile() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Source`<sup>Required</sup> <a name="Source" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference.property.source"></a>
+
+```go
+func Source() *string
 ```
 
 - *Type:* *string
@@ -45232,7 +45847,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskSparkSubmitTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTaskOutputReference
 ```
@@ -45510,7 +46125,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTask
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertOutputReference
 ```
@@ -45781,7 +46396,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlert
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardOutputReference
 ```
@@ -46052,7 +46667,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboard
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskSqlTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskSqlTaskOutputReference
 ```
@@ -46485,7 +47100,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskSqlTask
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskSqlTaskQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskSqlTaskQueryOutputReference
 ```
@@ -46751,12 +47366,654 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskSqlTaskQuery
 ---
 
 
+### DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference <a name="DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
+
+datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.resetMinTimeBetweenTriggerSeconds">ResetMinTimeBetweenTriggerSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.resetWaitAfterLastChangeSeconds">ResetWaitAfterLastChangeSeconds</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetMinTimeBetweenTriggerSeconds` <a name="ResetMinTimeBetweenTriggerSeconds" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.resetMinTimeBetweenTriggerSeconds"></a>
+
+```go
+func ResetMinTimeBetweenTriggerSeconds()
+```
+
+##### `ResetWaitAfterLastChangeSeconds` <a name="ResetWaitAfterLastChangeSeconds" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.resetWaitAfterLastChangeSeconds"></a>
+
+```go
+func ResetWaitAfterLastChangeSeconds()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.property.minTimeBetweenTriggerSecondsInput">MinTimeBetweenTriggerSecondsInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.property.urlInput">UrlInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.property.waitAfterLastChangeSecondsInput">WaitAfterLastChangeSecondsInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.property.minTimeBetweenTriggerSeconds">MinTimeBetweenTriggerSeconds</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.property.url">Url</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.property.waitAfterLastChangeSeconds">WaitAfterLastChangeSeconds</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrival">DataDatabricksJobJobSettingsSettingsTriggerFileArrival</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `MinTimeBetweenTriggerSecondsInput`<sup>Optional</sup> <a name="MinTimeBetweenTriggerSecondsInput" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.property.minTimeBetweenTriggerSecondsInput"></a>
+
+```go
+func MinTimeBetweenTriggerSecondsInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `UrlInput`<sup>Optional</sup> <a name="UrlInput" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.property.urlInput"></a>
+
+```go
+func UrlInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `WaitAfterLastChangeSecondsInput`<sup>Optional</sup> <a name="WaitAfterLastChangeSecondsInput" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.property.waitAfterLastChangeSecondsInput"></a>
+
+```go
+func WaitAfterLastChangeSecondsInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `MinTimeBetweenTriggerSeconds`<sup>Required</sup> <a name="MinTimeBetweenTriggerSeconds" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.property.minTimeBetweenTriggerSeconds"></a>
+
+```go
+func MinTimeBetweenTriggerSeconds() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `Url`<sup>Required</sup> <a name="Url" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.property.url"></a>
+
+```go
+func Url() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `WaitAfterLastChangeSeconds`<sup>Required</sup> <a name="WaitAfterLastChangeSeconds" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.property.waitAfterLastChangeSeconds"></a>
+
+```go
+func WaitAfterLastChangeSeconds() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataDatabricksJobJobSettingsSettingsTriggerFileArrival
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrival">DataDatabricksJobJobSettingsSettingsTriggerFileArrival</a>
+
+---
+
+
+### DataDatabricksJobJobSettingsSettingsTriggerOutputReference <a name="DataDatabricksJobJobSettingsSettingsTriggerOutputReference" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
+
+datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTriggerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTriggerOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.putFileArrival">PutFileArrival</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.resetPauseStatus">ResetPauseStatus</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutFileArrival` <a name="PutFileArrival" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.putFileArrival"></a>
+
+```go
+func PutFileArrival(value DataDatabricksJobJobSettingsSettingsTriggerFileArrival)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.putFileArrival.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrival">DataDatabricksJobJobSettingsSettingsTriggerFileArrival</a>
+
+---
+
+##### `ResetPauseStatus` <a name="ResetPauseStatus" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.resetPauseStatus"></a>
+
+```go
+func ResetPauseStatus()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.property.fileArrival">FileArrival</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference">DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.property.fileArrivalInput">FileArrivalInput</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrival">DataDatabricksJobJobSettingsSettingsTriggerFileArrival</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.property.pauseStatusInput">PauseStatusInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.property.pauseStatus">PauseStatus</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTrigger">DataDatabricksJobJobSettingsSettingsTrigger</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `FileArrival`<sup>Required</sup> <a name="FileArrival" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.property.fileArrival"></a>
+
+```go
+func FileArrival() DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference">DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference</a>
+
+---
+
+##### `FileArrivalInput`<sup>Optional</sup> <a name="FileArrivalInput" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.property.fileArrivalInput"></a>
+
+```go
+func FileArrivalInput() DataDatabricksJobJobSettingsSettingsTriggerFileArrival
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrival">DataDatabricksJobJobSettingsSettingsTriggerFileArrival</a>
+
+---
+
+##### `PauseStatusInput`<sup>Optional</sup> <a name="PauseStatusInput" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.property.pauseStatusInput"></a>
+
+```go
+func PauseStatusInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PauseStatus`<sup>Required</sup> <a name="PauseStatus" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.property.pauseStatus"></a>
+
+```go
+func PauseStatus() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataDatabricksJobJobSettingsSettingsTrigger
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTrigger">DataDatabricksJobJobSettingsSettingsTrigger</a>
+
+---
+
+
 ### DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureList <a name="DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureList" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureList
 ```
@@ -46899,7 +48156,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureOutputReference
 ```
@@ -47188,7 +48445,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStartList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStartList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStartList
 ```
@@ -47331,7 +48588,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStartOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStartOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStartOutputReference
 ```
@@ -47620,7 +48877,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccessList
 ```
@@ -47763,7 +49020,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccessOutputReference
 ```
@@ -48052,7 +49309,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksjob"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReference
 ```
