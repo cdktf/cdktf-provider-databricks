@@ -39,6 +39,7 @@ job.Job(
   notebook_task: JobNotebookTask = None,
   pipeline_task: JobPipelineTask = None,
   python_wheel_task: JobPythonWheelTask = None,
+  queue: JobQueue = None,
   retry_on_timeout: typing.Union[bool, IResolvable] = None,
   schedule: JobSchedule = None,
   spark_jar_task: JobSparkJarTask = None,
@@ -48,6 +49,7 @@ job.Job(
   task: typing.Union[IResolvable, typing.List[JobTask]] = None,
   timeouts: JobTimeouts = None,
   timeout_seconds: typing.Union[int, float] = None,
+  trigger: JobTrigger = None,
   webhook_notifications: JobWebhookNotifications = None
 )
 ```
@@ -81,6 +83,7 @@ job.Job(
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.notebookTask">notebook_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNotebookTask">JobNotebookTask</a></code> | notebook_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.pipelineTask">pipeline_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobPipelineTask">JobPipelineTask</a></code> | pipeline_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.pythonWheelTask">python_wheel_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobPythonWheelTask">JobPythonWheelTask</a></code> | python_wheel_task block. |
+| <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.queue">queue</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobQueue">JobQueue</a></code> | queue block. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.retryOnTimeout">retry_on_timeout</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#retry_on_timeout Job#retry_on_timeout}. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.schedule">schedule</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobSchedule">JobSchedule</a></code> | schedule block. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.sparkJarTask">spark_jar_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobSparkJarTask">JobSparkJarTask</a></code> | spark_jar_task block. |
@@ -90,6 +93,7 @@ job.Job(
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.task">task</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.job.JobTask">JobTask</a>]]</code> | task block. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTimeouts">JobTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.timeoutSeconds">timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#timeout_seconds Job#timeout_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.trigger">trigger</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTrigger">JobTrigger</a></code> | trigger block. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.webhookNotifications">webhook_notifications</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotifications">JobWebhookNotifications</a></code> | webhook_notifications block. |
 
 ---
@@ -321,6 +325,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 ---
 
+##### `queue`<sup>Optional</sup> <a name="queue" id="@cdktf/provider-databricks.job.Job.Initializer.parameter.queue"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobQueue">JobQueue</a>
+
+queue block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#queue Job#queue}
+
+---
+
 ##### `retry_on_timeout`<sup>Optional</sup> <a name="retry_on_timeout" id="@cdktf/provider-databricks.job.Job.Initializer.parameter.retryOnTimeout"></a>
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
@@ -405,6 +419,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 ---
 
+##### `trigger`<sup>Optional</sup> <a name="trigger" id="@cdktf/provider-databricks.job.Job.Initializer.parameter.trigger"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTrigger">JobTrigger</a>
+
+trigger block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#trigger Job#trigger}
+
+---
+
 ##### `webhook_notifications`<sup>Optional</sup> <a name="webhook_notifications" id="@cdktf/provider-databricks.job.Job.Initializer.parameter.webhookNotifications"></a>
 
 - *Type:* <a href="#@cdktf/provider-databricks.job.JobWebhookNotifications">JobWebhookNotifications</a>
@@ -445,12 +469,14 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 | <code><a href="#@cdktf/provider-databricks.job.Job.putNotebookTask">put_notebook_task</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.putPipelineTask">put_pipeline_task</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.putPythonWheelTask">put_python_wheel_task</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.Job.putQueue">put_queue</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.putSchedule">put_schedule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.putSparkJarTask">put_spark_jar_task</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.putSparkPythonTask">put_spark_python_task</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.putSparkSubmitTask">put_spark_submit_task</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.putTask">put_task</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.Job.putTrigger">put_trigger</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.putWebhookNotifications">put_webhook_notifications</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.resetAlwaysRunning">reset_always_running</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.resetContinuous">reset_continuous</a></code> | *No description.* |
@@ -470,6 +496,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 | <code><a href="#@cdktf/provider-databricks.job.Job.resetNotebookTask">reset_notebook_task</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.resetPipelineTask">reset_pipeline_task</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.resetPythonWheelTask">reset_python_wheel_task</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.Job.resetQueue">reset_queue</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.resetRetryOnTimeout">reset_retry_on_timeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.resetSchedule">reset_schedule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.resetSparkJarTask">reset_spark_jar_task</a></code> | *No description.* |
@@ -479,6 +506,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 | <code><a href="#@cdktf/provider-databricks.job.Job.resetTask">reset_task</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.resetTimeoutSeconds">reset_timeout_seconds</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.Job.resetTrigger">reset_trigger</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.resetWebhookNotifications">reset_webhook_notifications</a></code> | *No description.* |
 
 ---
@@ -1289,6 +1317,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 ---
 
+##### `put_queue` <a name="put_queue" id="@cdktf/provider-databricks.job.Job.putQueue"></a>
+
+```python
+def put_queue() -> None
+```
+
 ##### `put_schedule` <a name="put_schedule" id="@cdktf/provider-databricks.job.Job.putSchedule"></a>
 
 ```python
@@ -1362,7 +1396,8 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 ```python
 def put_spark_python_task(
   python_file: str,
-  parameters: typing.List[str] = None
+  parameters: typing.List[str] = None,
+  source: str = None
 ) -> None
 ```
 
@@ -1379,6 +1414,14 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 - *Type:* typing.List[str]
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#parameters Job#parameters}.
+
+---
+
+###### `source`<sup>Optional</sup> <a name="source" id="@cdktf/provider-databricks.job.Job.putSparkPythonTask.parameter.source"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#source Job#source}.
 
 ---
 
@@ -1434,6 +1477,33 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 - *Type:* str
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#update Job#update}.
+
+---
+
+##### `put_trigger` <a name="put_trigger" id="@cdktf/provider-databricks.job.Job.putTrigger"></a>
+
+```python
+def put_trigger(
+  file_arrival: JobTriggerFileArrival,
+  pause_status: str = None
+) -> None
+```
+
+###### `file_arrival`<sup>Required</sup> <a name="file_arrival" id="@cdktf/provider-databricks.job.Job.putTrigger.parameter.fileArrival"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTriggerFileArrival">JobTriggerFileArrival</a>
+
+file_arrival block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#file_arrival Job#file_arrival}
+
+---
+
+###### `pause_status`<sup>Optional</sup> <a name="pause_status" id="@cdktf/provider-databricks.job.Job.putTrigger.parameter.pauseStatus"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#pause_status Job#pause_status}.
 
 ---
 
@@ -1585,6 +1655,12 @@ def reset_pipeline_task() -> None
 def reset_python_wheel_task() -> None
 ```
 
+##### `reset_queue` <a name="reset_queue" id="@cdktf/provider-databricks.job.Job.resetQueue"></a>
+
+```python
+def reset_queue() -> None
+```
+
 ##### `reset_retry_on_timeout` <a name="reset_retry_on_timeout" id="@cdktf/provider-databricks.job.Job.resetRetryOnTimeout"></a>
 
 ```python
@@ -1637,6 +1713,12 @@ def reset_timeouts() -> None
 
 ```python
 def reset_timeout_seconds() -> None
+```
+
+##### `reset_trigger` <a name="reset_trigger" id="@cdktf/provider-databricks.job.Job.resetTrigger"></a>
+
+```python
+def reset_trigger() -> None
 ```
 
 ##### `reset_webhook_notifications` <a name="reset_webhook_notifications" id="@cdktf/provider-databricks.job.Job.resetWebhookNotifications"></a>
@@ -1749,12 +1831,14 @@ job.Job.is_terraform_resource(
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.notebookTask">notebook_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNotebookTaskOutputReference">JobNotebookTaskOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.pipelineTask">pipeline_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobPipelineTaskOutputReference">JobPipelineTaskOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.pythonWheelTask">python_wheel_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobPythonWheelTaskOutputReference">JobPythonWheelTaskOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.Job.property.queue">queue</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference">JobQueueOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.schedule">schedule</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobScheduleOutputReference">JobScheduleOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.sparkJarTask">spark_jar_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobSparkJarTaskOutputReference">JobSparkJarTaskOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.sparkPythonTask">spark_python_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference">JobSparkPythonTaskOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.sparkSubmitTask">spark_submit_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobSparkSubmitTaskOutputReference">JobSparkSubmitTaskOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.task">task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskList">JobTaskList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTimeoutsOutputReference">JobTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.Job.property.trigger">trigger</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference">JobTriggerOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.url">url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.webhookNotifications">webhook_notifications</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOutputReference">JobWebhookNotificationsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.alwaysRunningInput">always_running_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -1775,6 +1859,7 @@ job.Job.is_terraform_resource(
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.notebookTaskInput">notebook_task_input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNotebookTask">JobNotebookTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.pipelineTaskInput">pipeline_task_input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobPipelineTask">JobPipelineTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.pythonWheelTaskInput">python_wheel_task_input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobPythonWheelTask">JobPythonWheelTask</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.Job.property.queueInput">queue_input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobQueue">JobQueue</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.retryOnTimeoutInput">retry_on_timeout_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.scheduleInput">schedule_input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobSchedule">JobSchedule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.sparkJarTaskInput">spark_jar_task_input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobSparkJarTask">JobSparkJarTask</a></code> | *No description.* |
@@ -1784,6 +1869,7 @@ job.Job.is_terraform_resource(
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.taskInput">task_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.job.JobTask">JobTask</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.timeoutSecondsInput">timeout_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-databricks.job.JobTimeouts">JobTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.Job.property.triggerInput">trigger_input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTrigger">JobTrigger</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.webhookNotificationsInput">webhook_notifications_input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotifications">JobWebhookNotifications</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.alwaysRunning">always_running</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.existingClusterId">existing_cluster_id</a></code> | <code>str</code> | *No description.* |
@@ -2041,6 +2127,16 @@ python_wheel_task: JobPythonWheelTaskOutputReference
 
 ---
 
+##### `queue`<sup>Required</sup> <a name="queue" id="@cdktf/provider-databricks.job.Job.property.queue"></a>
+
+```python
+queue: JobQueueOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobQueueOutputReference">JobQueueOutputReference</a>
+
+---
+
 ##### `schedule`<sup>Required</sup> <a name="schedule" id="@cdktf/provider-databricks.job.Job.property.schedule"></a>
 
 ```python
@@ -2098,6 +2194,16 @@ timeouts: JobTimeoutsOutputReference
 ```
 
 - *Type:* <a href="#@cdktf/provider-databricks.job.JobTimeoutsOutputReference">JobTimeoutsOutputReference</a>
+
+---
+
+##### `trigger`<sup>Required</sup> <a name="trigger" id="@cdktf/provider-databricks.job.Job.property.trigger"></a>
+
+```python
+trigger: JobTriggerOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference">JobTriggerOutputReference</a>
 
 ---
 
@@ -2301,6 +2407,16 @@ python_wheel_task_input: JobPythonWheelTask
 
 ---
 
+##### `queue_input`<sup>Optional</sup> <a name="queue_input" id="@cdktf/provider-databricks.job.Job.property.queueInput"></a>
+
+```python
+queue_input: JobQueue
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobQueue">JobQueue</a>
+
+---
+
 ##### `retry_on_timeout_input`<sup>Optional</sup> <a name="retry_on_timeout_input" id="@cdktf/provider-databricks.job.Job.property.retryOnTimeoutInput"></a>
 
 ```python
@@ -2388,6 +2504,16 @@ timeouts_input: typing.Union[JobTimeouts, IResolvable]
 ```
 
 - *Type:* typing.Union[<a href="#@cdktf/provider-databricks.job.JobTimeouts">JobTimeouts</a>, cdktf.IResolvable]
+
+---
+
+##### `trigger_input`<sup>Optional</sup> <a name="trigger_input" id="@cdktf/provider-databricks.job.Job.property.triggerInput"></a>
+
+```python
+trigger_input: JobTrigger
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTrigger">JobTrigger</a>
 
 ---
 
@@ -2564,6 +2690,7 @@ job.JobConfig(
   notebook_task: JobNotebookTask = None,
   pipeline_task: JobPipelineTask = None,
   python_wheel_task: JobPythonWheelTask = None,
+  queue: JobQueue = None,
   retry_on_timeout: typing.Union[bool, IResolvable] = None,
   schedule: JobSchedule = None,
   spark_jar_task: JobSparkJarTask = None,
@@ -2573,6 +2700,7 @@ job.JobConfig(
   task: typing.Union[IResolvable, typing.List[JobTask]] = None,
   timeouts: JobTimeouts = None,
   timeout_seconds: typing.Union[int, float] = None,
+  trigger: JobTrigger = None,
   webhook_notifications: JobWebhookNotifications = None
 )
 ```
@@ -2606,6 +2734,7 @@ job.JobConfig(
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.notebookTask">notebook_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNotebookTask">JobNotebookTask</a></code> | notebook_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.pipelineTask">pipeline_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobPipelineTask">JobPipelineTask</a></code> | pipeline_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.pythonWheelTask">python_wheel_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobPythonWheelTask">JobPythonWheelTask</a></code> | python_wheel_task block. |
+| <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.queue">queue</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobQueue">JobQueue</a></code> | queue block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.retryOnTimeout">retry_on_timeout</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#retry_on_timeout Job#retry_on_timeout}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.schedule">schedule</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobSchedule">JobSchedule</a></code> | schedule block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.sparkJarTask">spark_jar_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobSparkJarTask">JobSparkJarTask</a></code> | spark_jar_task block. |
@@ -2615,6 +2744,7 @@ job.JobConfig(
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.task">task</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.job.JobTask">JobTask</a>]]</code> | task block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTimeouts">JobTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.timeoutSeconds">timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#timeout_seconds Job#timeout_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.trigger">trigger</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTrigger">JobTrigger</a></code> | trigger block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.webhookNotifications">webhook_notifications</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotifications">JobWebhookNotifications</a></code> | webhook_notifications block. |
 
 ---
@@ -2928,6 +3058,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 ---
 
+##### `queue`<sup>Optional</sup> <a name="queue" id="@cdktf/provider-databricks.job.JobConfig.property.queue"></a>
+
+```python
+queue: JobQueue
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobQueue">JobQueue</a>
+
+queue block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#queue Job#queue}
+
+---
+
 ##### `retry_on_timeout`<sup>Optional</sup> <a name="retry_on_timeout" id="@cdktf/provider-databricks.job.JobConfig.property.retryOnTimeout"></a>
 
 ```python
@@ -3045,6 +3189,20 @@ timeout_seconds: typing.Union[int, float]
 - *Type:* typing.Union[int, float]
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#timeout_seconds Job#timeout_seconds}.
+
+---
+
+##### `trigger`<sup>Optional</sup> <a name="trigger" id="@cdktf/provider-databricks.job.JobConfig.property.trigger"></a>
+
+```python
+trigger: JobTrigger
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTrigger">JobTrigger</a>
+
+trigger block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#trigger Job#trigger}
 
 ---
 
@@ -7050,6 +7208,17 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 ---
 
+### JobQueue <a name="JobQueue" id="@cdktf/provider-databricks.job.JobQueue"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.job.JobQueue.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import job
+
+job.JobQueue()
+```
+
+
 ### JobSchedule <a name="JobSchedule" id="@cdktf/provider-databricks.job.JobSchedule"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.job.JobSchedule.Initializer"></a>
@@ -7179,7 +7348,8 @@ from cdktf_cdktf_provider_databricks import job
 
 job.JobSparkPythonTask(
   python_file: str,
-  parameters: typing.List[str] = None
+  parameters: typing.List[str] = None,
+  source: str = None
 )
 ```
 
@@ -7189,6 +7359,7 @@ job.JobSparkPythonTask(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTask.property.pythonFile">python_file</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#python_file Job#python_file}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTask.property.parameters">parameters</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#parameters Job#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTask.property.source">source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#source Job#source}. |
 
 ---
 
@@ -7213,6 +7384,18 @@ parameters: typing.List[str]
 - *Type:* typing.List[str]
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#parameters Job#parameters}.
+
+---
+
+##### `source`<sup>Optional</sup> <a name="source" id="@cdktf/provider-databricks.job.JobSparkPythonTask.property.source"></a>
+
+```python
+source: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#source Job#source}.
 
 ---
 
@@ -7270,6 +7453,7 @@ job.JobTask(
   pipeline_task: JobTaskPipelineTask = None,
   python_wheel_task: JobTaskPythonWheelTask = None,
   retry_on_timeout: typing.Union[bool, IResolvable] = None,
+  run_if: str = None,
   spark_jar_task: JobTaskSparkJarTask = None,
   spark_python_task: JobTaskSparkPythonTask = None,
   spark_submit_task: JobTaskSparkSubmitTask = None,
@@ -7297,6 +7481,7 @@ job.JobTask(
 | <code><a href="#@cdktf/provider-databricks.job.JobTask.property.pipelineTask">pipeline_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskPipelineTask">JobTaskPipelineTask</a></code> | pipeline_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTask.property.pythonWheelTask">python_wheel_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskPythonWheelTask">JobTaskPythonWheelTask</a></code> | python_wheel_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTask.property.retryOnTimeout">retry_on_timeout</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#retry_on_timeout Job#retry_on_timeout}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTask.property.runIf">run_if</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#run_if Job#run_if}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTask.property.sparkJarTask">spark_jar_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkJarTask">JobTaskSparkJarTask</a></code> | spark_jar_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTask.property.sparkPythonTask">spark_python_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTask">JobTaskSparkPythonTask</a></code> | spark_python_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTask.property.sparkSubmitTask">spark_submit_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkSubmitTask">JobTaskSparkSubmitTask</a></code> | spark_submit_task block. |
@@ -7487,6 +7672,18 @@ retry_on_timeout: typing.Union[bool, IResolvable]
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#retry_on_timeout Job#retry_on_timeout}.
+
+---
+
+##### `run_if`<sup>Optional</sup> <a name="run_if" id="@cdktf/provider-databricks.job.JobTask.property.runIf"></a>
+
+```python
+run_if: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#run_if Job#run_if}.
 
 ---
 
@@ -9889,7 +10086,8 @@ from cdktf_cdktf_provider_databricks import job
 
 job.JobTaskSparkPythonTask(
   python_file: str,
-  parameters: typing.List[str] = None
+  parameters: typing.List[str] = None,
+  source: str = None
 )
 ```
 
@@ -9899,6 +10097,7 @@ job.JobTaskSparkPythonTask(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTask.property.pythonFile">python_file</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#python_file Job#python_file}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTask.property.parameters">parameters</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#parameters Job#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTask.property.source">source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#source Job#source}. |
 
 ---
 
@@ -9923,6 +10122,18 @@ parameters: typing.List[str]
 - *Type:* typing.List[str]
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#parameters Job#parameters}.
+
+---
+
+##### `source`<sup>Optional</sup> <a name="source" id="@cdktf/provider-databricks.job.JobTaskSparkPythonTask.property.source"></a>
+
+```python
+source: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#source Job#source}.
 
 ---
 
@@ -10191,6 +10402,114 @@ update: str
 - *Type:* str
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#update Job#update}.
+
+---
+
+### JobTrigger <a name="JobTrigger" id="@cdktf/provider-databricks.job.JobTrigger"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.job.JobTrigger.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import job
+
+job.JobTrigger(
+  file_arrival: JobTriggerFileArrival,
+  pause_status: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.job.JobTrigger.property.fileArrival">file_arrival</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrival">JobTriggerFileArrival</a></code> | file_arrival block. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTrigger.property.pauseStatus">pause_status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#pause_status Job#pause_status}. |
+
+---
+
+##### `file_arrival`<sup>Required</sup> <a name="file_arrival" id="@cdktf/provider-databricks.job.JobTrigger.property.fileArrival"></a>
+
+```python
+file_arrival: JobTriggerFileArrival
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTriggerFileArrival">JobTriggerFileArrival</a>
+
+file_arrival block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#file_arrival Job#file_arrival}
+
+---
+
+##### `pause_status`<sup>Optional</sup> <a name="pause_status" id="@cdktf/provider-databricks.job.JobTrigger.property.pauseStatus"></a>
+
+```python
+pause_status: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#pause_status Job#pause_status}.
+
+---
+
+### JobTriggerFileArrival <a name="JobTriggerFileArrival" id="@cdktf/provider-databricks.job.JobTriggerFileArrival"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.job.JobTriggerFileArrival.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import job
+
+job.JobTriggerFileArrival(
+  url: str,
+  min_time_between_trigger_seconds: typing.Union[int, float] = None,
+  wait_after_last_change_seconds: typing.Union[int, float] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrival.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#url Job#url}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrival.property.minTimeBetweenTriggerSeconds">min_time_between_trigger_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#min_time_between_trigger_seconds Job#min_time_between_trigger_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrival.property.waitAfterLastChangeSeconds">wait_after_last_change_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#wait_after_last_change_seconds Job#wait_after_last_change_seconds}. |
+
+---
+
+##### `url`<sup>Required</sup> <a name="url" id="@cdktf/provider-databricks.job.JobTriggerFileArrival.property.url"></a>
+
+```python
+url: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#url Job#url}.
+
+---
+
+##### `min_time_between_trigger_seconds`<sup>Optional</sup> <a name="min_time_between_trigger_seconds" id="@cdktf/provider-databricks.job.JobTriggerFileArrival.property.minTimeBetweenTriggerSeconds"></a>
+
+```python
+min_time_between_trigger_seconds: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#min_time_between_trigger_seconds Job#min_time_between_trigger_seconds}.
+
+---
+
+##### `wait_after_last_change_seconds`<sup>Optional</sup> <a name="wait_after_last_change_seconds" id="@cdktf/provider-databricks.job.JobTriggerFileArrival.property.waitAfterLastChangeSeconds"></a>
+
+```python
+wait_after_last_change_seconds: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#wait_after_last_change_seconds Job#wait_after_last_change_seconds}.
 
 ---
 
@@ -33167,6 +33486,280 @@ internal_value: JobPythonWheelTask
 ---
 
 
+### JobQueueOutputReference <a name="JobQueueOutputReference" id="@cdktf/provider-databricks.job.JobQueueOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.job.JobQueueOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import job
+
+job.JobQueueOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-databricks.job.JobQueueOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-databricks.job.JobQueueOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-databricks.job.JobQueueOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.job.JobQueueOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.job.JobQueueOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.job.JobQueueOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.job.JobQueueOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueueOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobQueue">JobQueue</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-databricks.job.JobQueueOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.job.JobQueueOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.job.JobQueueOutputReference.property.internalValue"></a>
+
+```python
+internal_value: JobQueue
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobQueue">JobQueue</a>
+
+---
+
+
 ### JobScheduleOutputReference <a name="JobScheduleOutputReference" id="@cdktf/provider-databricks.job.JobScheduleOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.job.JobScheduleOutputReference.Initializer"></a>
@@ -33929,6 +34522,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.resetParameters">reset_parameters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.resetSource">reset_source</a></code> | *No description.* |
 
 ---
 
@@ -34110,6 +34704,12 @@ Returns a reversible string representation.
 def reset_parameters() -> None
 ```
 
+##### `reset_source` <a name="reset_source" id="@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.resetSource"></a>
+
+```python
+def reset_source() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -34119,8 +34719,10 @@ def reset_parameters() -> None
 | <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.property.parametersInput">parameters_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.property.pythonFileInput">python_file_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.property.sourceInput">source_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.property.parameters">parameters</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.property.pythonFile">python_file</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.property.source">source</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTask">JobSparkPythonTask</a></code> | *No description.* |
 
 ---
@@ -34169,6 +34771,16 @@ python_file_input: str
 
 ---
 
+##### `source_input`<sup>Optional</sup> <a name="source_input" id="@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.property.sourceInput"></a>
+
+```python
+source_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `parameters`<sup>Required</sup> <a name="parameters" id="@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.property.parameters"></a>
 
 ```python
@@ -34183,6 +34795,16 @@ parameters: typing.List[str]
 
 ```python
 python_file: str
+```
+
+- *Type:* str
+
+---
+
+##### `source`<sup>Required</sup> <a name="source" id="@cdktf/provider-databricks.job.JobSparkPythonTaskOutputReference.property.source"></a>
+
+```python
+source: str
 ```
 
 - *Type:* str
@@ -46989,6 +47611,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.resetPipelineTask">reset_pipeline_task</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.resetPythonWheelTask">reset_python_wheel_task</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.resetRetryOnTimeout">reset_retry_on_timeout</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.resetRunIf">reset_run_if</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.resetSparkJarTask">reset_spark_jar_task</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.resetSparkPythonTask">reset_spark_python_task</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.resetSparkSubmitTask">reset_spark_submit_task</a></code> | *No description.* |
@@ -47738,7 +48361,8 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 ```python
 def put_spark_python_task(
   python_file: str,
-  parameters: typing.List[str] = None
+  parameters: typing.List[str] = None,
+  source: str = None
 ) -> None
 ```
 
@@ -47755,6 +48379,14 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 - *Type:* typing.List[str]
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#parameters Job#parameters}.
+
+---
+
+###### `source`<sup>Optional</sup> <a name="source" id="@cdktf/provider-databricks.job.JobTaskOutputReference.putSparkPythonTask.parameter.source"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#source Job#source}.
 
 ---
 
@@ -47916,6 +48548,12 @@ def reset_python_wheel_task() -> None
 def reset_retry_on_timeout() -> None
 ```
 
+##### `reset_run_if` <a name="reset_run_if" id="@cdktf/provider-databricks.job.JobTaskOutputReference.resetRunIf"></a>
+
+```python
+def reset_run_if() -> None
+```
+
 ##### `reset_spark_jar_task` <a name="reset_spark_jar_task" id="@cdktf/provider-databricks.job.JobTaskOutputReference.resetSparkJarTask"></a>
 
 ```python
@@ -47985,6 +48623,7 @@ def reset_timeout_seconds() -> None
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.pipelineTaskInput">pipeline_task_input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskPipelineTask">JobTaskPipelineTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.pythonWheelTaskInput">python_wheel_task_input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskPythonWheelTask">JobTaskPythonWheelTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.retryOnTimeoutInput">retry_on_timeout_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.runIfInput">run_if_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.sparkJarTaskInput">spark_jar_task_input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkJarTask">JobTaskSparkJarTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.sparkPythonTaskInput">spark_python_task_input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTask">JobTaskSparkPythonTask</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.sparkSubmitTaskInput">spark_submit_task_input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkSubmitTask">JobTaskSparkSubmitTask</a></code> | *No description.* |
@@ -47997,6 +48636,7 @@ def reset_timeout_seconds() -> None
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.minRetryIntervalMillis">min_retry_interval_millis</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.retryOnTimeout">retry_on_timeout</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.runIf">run_if</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.taskKey">task_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.timeoutSeconds">timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-databricks.job.JobTask">JobTask</a>, cdktf.IResolvable]</code> | *No description.* |
@@ -48287,6 +48927,16 @@ retry_on_timeout_input: typing.Union[bool, IResolvable]
 
 ---
 
+##### `run_if_input`<sup>Optional</sup> <a name="run_if_input" id="@cdktf/provider-databricks.job.JobTaskOutputReference.property.runIfInput"></a>
+
+```python
+run_if_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `spark_jar_task_input`<sup>Optional</sup> <a name="spark_jar_task_input" id="@cdktf/provider-databricks.job.JobTaskOutputReference.property.sparkJarTaskInput"></a>
 
 ```python
@@ -48404,6 +49054,16 @@ retry_on_timeout: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `run_if`<sup>Required</sup> <a name="run_if" id="@cdktf/provider-databricks.job.JobTaskOutputReference.property.runIf"></a>
+
+```python
+run_if: str
+```
+
+- *Type:* str
 
 ---
 
@@ -49539,6 +50199,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.resetParameters">reset_parameters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.resetSource">reset_source</a></code> | *No description.* |
 
 ---
 
@@ -49720,6 +50381,12 @@ Returns a reversible string representation.
 def reset_parameters() -> None
 ```
 
+##### `reset_source` <a name="reset_source" id="@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.resetSource"></a>
+
+```python
+def reset_source() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -49729,8 +50396,10 @@ def reset_parameters() -> None
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.property.parametersInput">parameters_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.property.pythonFileInput">python_file_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.property.sourceInput">source_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.property.parameters">parameters</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.property.pythonFile">python_file</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.property.source">source</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTask">JobTaskSparkPythonTask</a></code> | *No description.* |
 
 ---
@@ -49779,6 +50448,16 @@ python_file_input: str
 
 ---
 
+##### `source_input`<sup>Optional</sup> <a name="source_input" id="@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.property.sourceInput"></a>
+
+```python
+source_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `parameters`<sup>Required</sup> <a name="parameters" id="@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.property.parameters"></a>
 
 ```python
@@ -49793,6 +50472,16 @@ parameters: typing.List[str]
 
 ```python
 python_file: str
+```
+
+- *Type:* str
+
+---
+
+##### `source`<sup>Required</sup> <a name="source" id="@cdktf/provider-databricks.job.JobTaskSparkPythonTaskOutputReference.property.source"></a>
+
+```python
+source: str
 ```
 
 - *Type:* str
@@ -51799,6 +52488,720 @@ internal_value: typing.Union[JobTimeouts, IResolvable]
 ```
 
 - *Type:* typing.Union[<a href="#@cdktf/provider-databricks.job.JobTimeouts">JobTimeouts</a>, cdktf.IResolvable]
+
+---
+
+
+### JobTriggerFileArrivalOutputReference <a name="JobTriggerFileArrivalOutputReference" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import job
+
+job.JobTriggerFileArrivalOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.resetMinTimeBetweenTriggerSeconds">reset_min_time_between_trigger_seconds</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.resetWaitAfterLastChangeSeconds">reset_wait_after_last_change_seconds</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_min_time_between_trigger_seconds` <a name="reset_min_time_between_trigger_seconds" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.resetMinTimeBetweenTriggerSeconds"></a>
+
+```python
+def reset_min_time_between_trigger_seconds() -> None
+```
+
+##### `reset_wait_after_last_change_seconds` <a name="reset_wait_after_last_change_seconds" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.resetWaitAfterLastChangeSeconds"></a>
+
+```python
+def reset_wait_after_last_change_seconds() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.minTimeBetweenTriggerSecondsInput">min_time_between_trigger_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.waitAfterLastChangeSecondsInput">wait_after_last_change_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.minTimeBetweenTriggerSeconds">min_time_between_trigger_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.url">url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.waitAfterLastChangeSeconds">wait_after_last_change_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrival">JobTriggerFileArrival</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `min_time_between_trigger_seconds_input`<sup>Optional</sup> <a name="min_time_between_trigger_seconds_input" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.minTimeBetweenTriggerSecondsInput"></a>
+
+```python
+min_time_between_trigger_seconds_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `url_input`<sup>Optional</sup> <a name="url_input" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.urlInput"></a>
+
+```python
+url_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `wait_after_last_change_seconds_input`<sup>Optional</sup> <a name="wait_after_last_change_seconds_input" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.waitAfterLastChangeSecondsInput"></a>
+
+```python
+wait_after_last_change_seconds_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `min_time_between_trigger_seconds`<sup>Required</sup> <a name="min_time_between_trigger_seconds" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.minTimeBetweenTriggerSeconds"></a>
+
+```python
+min_time_between_trigger_seconds: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `url`<sup>Required</sup> <a name="url" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.url"></a>
+
+```python
+url: str
+```
+
+- *Type:* str
+
+---
+
+##### `wait_after_last_change_seconds`<sup>Required</sup> <a name="wait_after_last_change_seconds" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.waitAfterLastChangeSeconds"></a>
+
+```python
+wait_after_last_change_seconds: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference.property.internalValue"></a>
+
+```python
+internal_value: JobTriggerFileArrival
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTriggerFileArrival">JobTriggerFileArrival</a>
+
+---
+
+
+### JobTriggerOutputReference <a name="JobTriggerOutputReference" id="@cdktf/provider-databricks.job.JobTriggerOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import job
+
+job.JobTriggerOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.putFileArrival">put_file_arrival</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.resetPauseStatus">reset_pause_status</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_file_arrival` <a name="put_file_arrival" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.putFileArrival"></a>
+
+```python
+def put_file_arrival(
+  url: str,
+  min_time_between_trigger_seconds: typing.Union[int, float] = None,
+  wait_after_last_change_seconds: typing.Union[int, float] = None
+) -> None
+```
+
+###### `url`<sup>Required</sup> <a name="url" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.putFileArrival.parameter.url"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#url Job#url}.
+
+---
+
+###### `min_time_between_trigger_seconds`<sup>Optional</sup> <a name="min_time_between_trigger_seconds" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.putFileArrival.parameter.minTimeBetweenTriggerSeconds"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#min_time_between_trigger_seconds Job#min_time_between_trigger_seconds}.
+
+---
+
+###### `wait_after_last_change_seconds`<sup>Optional</sup> <a name="wait_after_last_change_seconds" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.putFileArrival.parameter.waitAfterLastChangeSeconds"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#wait_after_last_change_seconds Job#wait_after_last_change_seconds}.
+
+---
+
+##### `reset_pause_status` <a name="reset_pause_status" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.resetPauseStatus"></a>
+
+```python
+def reset_pause_status() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.property.fileArrival">file_arrival</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference">JobTriggerFileArrivalOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.property.fileArrivalInput">file_arrival_input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrival">JobTriggerFileArrival</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.property.pauseStatusInput">pause_status_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.property.pauseStatus">pause_status</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTrigger">JobTrigger</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `file_arrival`<sup>Required</sup> <a name="file_arrival" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.property.fileArrival"></a>
+
+```python
+file_arrival: JobTriggerFileArrivalOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTriggerFileArrivalOutputReference">JobTriggerFileArrivalOutputReference</a>
+
+---
+
+##### `file_arrival_input`<sup>Optional</sup> <a name="file_arrival_input" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.property.fileArrivalInput"></a>
+
+```python
+file_arrival_input: JobTriggerFileArrival
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTriggerFileArrival">JobTriggerFileArrival</a>
+
+---
+
+##### `pause_status_input`<sup>Optional</sup> <a name="pause_status_input" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.property.pauseStatusInput"></a>
+
+```python
+pause_status_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `pause_status`<sup>Required</sup> <a name="pause_status" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.property.pauseStatus"></a>
+
+```python
+pause_status: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.job.JobTriggerOutputReference.property.internalValue"></a>
+
+```python
+internal_value: JobTrigger
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTrigger">JobTrigger</a>
 
 ---
 

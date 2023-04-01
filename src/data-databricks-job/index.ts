@@ -7910,6 +7910,44 @@ export class DataDatabricksJobJobSettingsSettingsPythonWheelTaskOutputReference 
     return this._parameters;
   }
 }
+export interface DataDatabricksJobJobSettingsSettingsQueue {
+}
+
+export function dataDatabricksJobJobSettingsSettingsQueueToTerraform(struct?: DataDatabricksJobJobSettingsSettingsQueueOutputReference | DataDatabricksJobJobSettingsSettingsQueue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataDatabricksJobJobSettingsSettingsQueueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataDatabricksJobJobSettingsSettingsQueue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksJobJobSettingsSettingsQueue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+}
 export interface DataDatabricksJobJobSettingsSettingsSchedule {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#pause_status DataDatabricksJob#pause_status}
@@ -8151,6 +8189,10 @@ export interface DataDatabricksJobJobSettingsSettingsSparkPythonTask {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#python_file DataDatabricksJob#python_file}
   */
   readonly pythonFile: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#source DataDatabricksJob#source}
+  */
+  readonly source?: string;
 }
 
 export function dataDatabricksJobJobSettingsSettingsSparkPythonTaskToTerraform(struct?: DataDatabricksJobJobSettingsSettingsSparkPythonTaskOutputReference | DataDatabricksJobJobSettingsSettingsSparkPythonTask): any {
@@ -8161,6 +8203,7 @@ export function dataDatabricksJobJobSettingsSettingsSparkPythonTaskToTerraform(s
   return {
     parameters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.parameters),
     python_file: cdktf.stringToTerraform(struct!.pythonFile),
+    source: cdktf.stringToTerraform(struct!.source),
   }
 }
 
@@ -8186,6 +8229,10 @@ export class DataDatabricksJobJobSettingsSettingsSparkPythonTaskOutputReference 
       hasAnyValues = true;
       internalValueResult.pythonFile = this._pythonFile;
     }
+    if (this._source !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.source = this._source;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -8194,11 +8241,13 @@ export class DataDatabricksJobJobSettingsSettingsSparkPythonTaskOutputReference 
       this.isEmptyObject = false;
       this._parameters = undefined;
       this._pythonFile = undefined;
+      this._source = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._parameters = value.parameters;
       this._pythonFile = value.pythonFile;
+      this._source = value.source;
     }
   }
 
@@ -8229,6 +8278,22 @@ export class DataDatabricksJobJobSettingsSettingsSparkPythonTaskOutputReference 
   // Temporarily expose input value. Use with caution.
   public get pythonFileInput() {
     return this._pythonFile;
+  }
+
+  // source - computed: false, optional: true, required: false
+  private _source?: string; 
+  public get source() {
+    return this.getStringAttribute('source');
+  }
+  public set source(value: string) {
+    this._source = value;
+  }
+  public resetSource() {
+    this._source = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceInput() {
+    return this._source;
   }
 }
 export interface DataDatabricksJobJobSettingsSettingsSparkSubmitTask {
@@ -12892,6 +12957,10 @@ export interface DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#python_file DataDatabricksJob#python_file}
   */
   readonly pythonFile: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#source DataDatabricksJob#source}
+  */
+  readonly source?: string;
 }
 
 export function dataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskToTerraform(struct?: DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference | DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask): any {
@@ -12902,6 +12971,7 @@ export function dataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskToTerrafo
   return {
     parameters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.parameters),
     python_file: cdktf.stringToTerraform(struct!.pythonFile),
+    source: cdktf.stringToTerraform(struct!.source),
   }
 }
 
@@ -12927,6 +12997,10 @@ export class DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputRefere
       hasAnyValues = true;
       internalValueResult.pythonFile = this._pythonFile;
     }
+    if (this._source !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.source = this._source;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -12935,11 +13009,13 @@ export class DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputRefere
       this.isEmptyObject = false;
       this._parameters = undefined;
       this._pythonFile = undefined;
+      this._source = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._parameters = value.parameters;
       this._pythonFile = value.pythonFile;
+      this._source = value.source;
     }
   }
 
@@ -12970,6 +13046,22 @@ export class DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputRefere
   // Temporarily expose input value. Use with caution.
   public get pythonFileInput() {
     return this._pythonFile;
+  }
+
+  // source - computed: false, optional: true, required: false
+  private _source?: string; 
+  public get source() {
+    return this.getStringAttribute('source');
+  }
+  public set source(value: string) {
+    this._source = value;
+  }
+  public resetSource() {
+    this._source = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceInput() {
+    return this._source;
   }
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTask {
@@ -13428,6 +13520,10 @@ export interface DataDatabricksJobJobSettingsSettingsTask {
   */
   readonly retryOnTimeout?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#run_if DataDatabricksJob#run_if}
+  */
+  readonly runIf?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#task_key DataDatabricksJob#task_key}
   */
   readonly taskKey?: string;
@@ -13521,6 +13617,7 @@ export function dataDatabricksJobJobSettingsSettingsTaskToTerraform(struct?: Dat
     max_retries: cdktf.numberToTerraform(struct!.maxRetries),
     min_retry_interval_millis: cdktf.numberToTerraform(struct!.minRetryIntervalMillis),
     retry_on_timeout: cdktf.booleanToTerraform(struct!.retryOnTimeout),
+    run_if: cdktf.stringToTerraform(struct!.runIf),
     task_key: cdktf.stringToTerraform(struct!.taskKey),
     timeout_seconds: cdktf.numberToTerraform(struct!.timeoutSeconds),
     dbt_task: dataDatabricksJobJobSettingsSettingsTaskDbtTaskToTerraform(struct!.dbtTask),
@@ -13581,6 +13678,10 @@ export class DataDatabricksJobJobSettingsSettingsTaskOutputReference extends cdk
     if (this._retryOnTimeout !== undefined) {
       hasAnyValues = true;
       internalValueResult.retryOnTimeout = this._retryOnTimeout;
+    }
+    if (this._runIf !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.runIf = this._runIf;
     }
     if (this._taskKey !== undefined) {
       hasAnyValues = true;
@@ -13651,6 +13752,7 @@ export class DataDatabricksJobJobSettingsSettingsTaskOutputReference extends cdk
       this._maxRetries = undefined;
       this._minRetryIntervalMillis = undefined;
       this._retryOnTimeout = undefined;
+      this._runIf = undefined;
       this._taskKey = undefined;
       this._timeoutSeconds = undefined;
       this._dbtTask.internalValue = undefined;
@@ -13679,6 +13781,7 @@ export class DataDatabricksJobJobSettingsSettingsTaskOutputReference extends cdk
       this._maxRetries = value.maxRetries;
       this._minRetryIntervalMillis = value.minRetryIntervalMillis;
       this._retryOnTimeout = value.retryOnTimeout;
+      this._runIf = value.runIf;
       this._taskKey = value.taskKey;
       this._timeoutSeconds = value.timeoutSeconds;
       this._dbtTask.internalValue = value.dbtTask;
@@ -13790,6 +13893,22 @@ export class DataDatabricksJobJobSettingsSettingsTaskOutputReference extends cdk
   // Temporarily expose input value. Use with caution.
   public get retryOnTimeoutInput() {
     return this._retryOnTimeout;
+  }
+
+  // run_if - computed: false, optional: true, required: false
+  private _runIf?: string; 
+  public get runIf() {
+    return this.getStringAttribute('run_if');
+  }
+  public set runIf(value: string) {
+    this._runIf = value;
+  }
+  public resetRunIf() {
+    this._runIf = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runIfInput() {
+    return this._runIf;
   }
 
   // task_key - computed: false, optional: true, required: false
@@ -14034,6 +14153,213 @@ export class DataDatabricksJobJobSettingsSettingsTaskList extends cdktf.ComplexL
   */
   public get(index: number): DataDatabricksJobJobSettingsSettingsTaskOutputReference {
     return new DataDatabricksJobJobSettingsSettingsTaskOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataDatabricksJobJobSettingsSettingsTriggerFileArrival {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#min_time_between_trigger_seconds DataDatabricksJob#min_time_between_trigger_seconds}
+  */
+  readonly minTimeBetweenTriggerSeconds?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#url DataDatabricksJob#url}
+  */
+  readonly url: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#wait_after_last_change_seconds DataDatabricksJob#wait_after_last_change_seconds}
+  */
+  readonly waitAfterLastChangeSeconds?: number;
+}
+
+export function dataDatabricksJobJobSettingsSettingsTriggerFileArrivalToTerraform(struct?: DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference | DataDatabricksJobJobSettingsSettingsTriggerFileArrival): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    min_time_between_trigger_seconds: cdktf.numberToTerraform(struct!.minTimeBetweenTriggerSeconds),
+    url: cdktf.stringToTerraform(struct!.url),
+    wait_after_last_change_seconds: cdktf.numberToTerraform(struct!.waitAfterLastChangeSeconds),
+  }
+}
+
+export class DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataDatabricksJobJobSettingsSettingsTriggerFileArrival | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._minTimeBetweenTriggerSeconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minTimeBetweenTriggerSeconds = this._minTimeBetweenTriggerSeconds;
+    }
+    if (this._url !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.url = this._url;
+    }
+    if (this._waitAfterLastChangeSeconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.waitAfterLastChangeSeconds = this._waitAfterLastChangeSeconds;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksJobJobSettingsSettingsTriggerFileArrival | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._minTimeBetweenTriggerSeconds = undefined;
+      this._url = undefined;
+      this._waitAfterLastChangeSeconds = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._minTimeBetweenTriggerSeconds = value.minTimeBetweenTriggerSeconds;
+      this._url = value.url;
+      this._waitAfterLastChangeSeconds = value.waitAfterLastChangeSeconds;
+    }
+  }
+
+  // min_time_between_trigger_seconds - computed: false, optional: true, required: false
+  private _minTimeBetweenTriggerSeconds?: number; 
+  public get minTimeBetweenTriggerSeconds() {
+    return this.getNumberAttribute('min_time_between_trigger_seconds');
+  }
+  public set minTimeBetweenTriggerSeconds(value: number) {
+    this._minTimeBetweenTriggerSeconds = value;
+  }
+  public resetMinTimeBetweenTriggerSeconds() {
+    this._minTimeBetweenTriggerSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minTimeBetweenTriggerSecondsInput() {
+    return this._minTimeBetweenTriggerSeconds;
+  }
+
+  // url - computed: false, optional: false, required: true
+  private _url?: string; 
+  public get url() {
+    return this.getStringAttribute('url');
+  }
+  public set url(value: string) {
+    this._url = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urlInput() {
+    return this._url;
+  }
+
+  // wait_after_last_change_seconds - computed: false, optional: true, required: false
+  private _waitAfterLastChangeSeconds?: number; 
+  public get waitAfterLastChangeSeconds() {
+    return this.getNumberAttribute('wait_after_last_change_seconds');
+  }
+  public set waitAfterLastChangeSeconds(value: number) {
+    this._waitAfterLastChangeSeconds = value;
+  }
+  public resetWaitAfterLastChangeSeconds() {
+    this._waitAfterLastChangeSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get waitAfterLastChangeSecondsInput() {
+    return this._waitAfterLastChangeSeconds;
+  }
+}
+export interface DataDatabricksJobJobSettingsSettingsTrigger {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#pause_status DataDatabricksJob#pause_status}
+  */
+  readonly pauseStatus?: string;
+  /**
+  * file_arrival block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#file_arrival DataDatabricksJob#file_arrival}
+  */
+  readonly fileArrival: DataDatabricksJobJobSettingsSettingsTriggerFileArrival;
+}
+
+export function dataDatabricksJobJobSettingsSettingsTriggerToTerraform(struct?: DataDatabricksJobJobSettingsSettingsTriggerOutputReference | DataDatabricksJobJobSettingsSettingsTrigger): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    pause_status: cdktf.stringToTerraform(struct!.pauseStatus),
+    file_arrival: dataDatabricksJobJobSettingsSettingsTriggerFileArrivalToTerraform(struct!.fileArrival),
+  }
+}
+
+export class DataDatabricksJobJobSettingsSettingsTriggerOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataDatabricksJobJobSettingsSettingsTrigger | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._pauseStatus !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pauseStatus = this._pauseStatus;
+    }
+    if (this._fileArrival?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fileArrival = this._fileArrival?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksJobJobSettingsSettingsTrigger | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._pauseStatus = undefined;
+      this._fileArrival.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._pauseStatus = value.pauseStatus;
+      this._fileArrival.internalValue = value.fileArrival;
+    }
+  }
+
+  // pause_status - computed: true, optional: true, required: false
+  private _pauseStatus?: string; 
+  public get pauseStatus() {
+    return this.getStringAttribute('pause_status');
+  }
+  public set pauseStatus(value: string) {
+    this._pauseStatus = value;
+  }
+  public resetPauseStatus() {
+    this._pauseStatus = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pauseStatusInput() {
+    return this._pauseStatus;
+  }
+
+  // file_arrival - computed: false, optional: false, required: true
+  private _fileArrival = new DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference(this, "file_arrival");
+  public get fileArrival() {
+    return this._fileArrival;
+  }
+  public putFileArrival(value: DataDatabricksJobJobSettingsSettingsTriggerFileArrival) {
+    this._fileArrival.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileArrivalInput() {
+    return this._fileArrival.internalValue;
   }
 }
 export interface DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailure {
@@ -14550,6 +14876,12 @@ export interface DataDatabricksJobJobSettingsSettings {
   */
   readonly pythonWheelTask?: DataDatabricksJobJobSettingsSettingsPythonWheelTask;
   /**
+  * queue block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#queue DataDatabricksJob#queue}
+  */
+  readonly queue?: DataDatabricksJobJobSettingsSettingsQueue;
+  /**
   * schedule block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#schedule DataDatabricksJob#schedule}
@@ -14579,6 +14911,12 @@ export interface DataDatabricksJobJobSettingsSettings {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#task DataDatabricksJob#task}
   */
   readonly task?: DataDatabricksJobJobSettingsSettingsTask[] | cdktf.IResolvable;
+  /**
+  * trigger block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#trigger DataDatabricksJob#trigger}
+  */
+  readonly trigger?: DataDatabricksJobJobSettingsSettingsTrigger;
   /**
   * webhook_notifications block
   * 
@@ -14612,11 +14950,13 @@ export function dataDatabricksJobJobSettingsSettingsToTerraform(struct?: DataDat
     notebook_task: dataDatabricksJobJobSettingsSettingsNotebookTaskToTerraform(struct!.notebookTask),
     pipeline_task: dataDatabricksJobJobSettingsSettingsPipelineTaskToTerraform(struct!.pipelineTask),
     python_wheel_task: dataDatabricksJobJobSettingsSettingsPythonWheelTaskToTerraform(struct!.pythonWheelTask),
+    queue: dataDatabricksJobJobSettingsSettingsQueueToTerraform(struct!.queue),
     schedule: dataDatabricksJobJobSettingsSettingsScheduleToTerraform(struct!.schedule),
     spark_jar_task: dataDatabricksJobJobSettingsSettingsSparkJarTaskToTerraform(struct!.sparkJarTask),
     spark_python_task: dataDatabricksJobJobSettingsSettingsSparkPythonTaskToTerraform(struct!.sparkPythonTask),
     spark_submit_task: dataDatabricksJobJobSettingsSettingsSparkSubmitTaskToTerraform(struct!.sparkSubmitTask),
     task: cdktf.listMapper(dataDatabricksJobJobSettingsSettingsTaskToTerraform, true)(struct!.task),
+    trigger: dataDatabricksJobJobSettingsSettingsTriggerToTerraform(struct!.trigger),
     webhook_notifications: dataDatabricksJobJobSettingsSettingsWebhookNotificationsToTerraform(struct!.webhookNotifications),
   }
 }
@@ -14711,6 +15051,10 @@ export class DataDatabricksJobJobSettingsSettingsOutputReference extends cdktf.C
       hasAnyValues = true;
       internalValueResult.pythonWheelTask = this._pythonWheelTask?.internalValue;
     }
+    if (this._queue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.queue = this._queue?.internalValue;
+    }
     if (this._schedule?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.schedule = this._schedule?.internalValue;
@@ -14730,6 +15074,10 @@ export class DataDatabricksJobJobSettingsSettingsOutputReference extends cdktf.C
     if (this._task?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.task = this._task?.internalValue;
+    }
+    if (this._trigger?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.trigger = this._trigger?.internalValue;
     }
     if (this._webhookNotifications?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -14760,11 +15108,13 @@ export class DataDatabricksJobJobSettingsSettingsOutputReference extends cdktf.C
       this._notebookTask.internalValue = undefined;
       this._pipelineTask.internalValue = undefined;
       this._pythonWheelTask.internalValue = undefined;
+      this._queue.internalValue = undefined;
       this._schedule.internalValue = undefined;
       this._sparkJarTask.internalValue = undefined;
       this._sparkPythonTask.internalValue = undefined;
       this._sparkSubmitTask.internalValue = undefined;
       this._task.internalValue = undefined;
+      this._trigger.internalValue = undefined;
       this._webhookNotifications.internalValue = undefined;
     }
     else {
@@ -14788,11 +15138,13 @@ export class DataDatabricksJobJobSettingsSettingsOutputReference extends cdktf.C
       this._notebookTask.internalValue = value.notebookTask;
       this._pipelineTask.internalValue = value.pipelineTask;
       this._pythonWheelTask.internalValue = value.pythonWheelTask;
+      this._queue.internalValue = value.queue;
       this._schedule.internalValue = value.schedule;
       this._sparkJarTask.internalValue = value.sparkJarTask;
       this._sparkPythonTask.internalValue = value.sparkPythonTask;
       this._sparkSubmitTask.internalValue = value.sparkSubmitTask;
       this._task.internalValue = value.task;
+      this._trigger.internalValue = value.trigger;
       this._webhookNotifications.internalValue = value.webhookNotifications;
     }
   }
@@ -15101,6 +15453,22 @@ export class DataDatabricksJobJobSettingsSettingsOutputReference extends cdktf.C
     return this._pythonWheelTask.internalValue;
   }
 
+  // queue - computed: false, optional: true, required: false
+  private _queue = new DataDatabricksJobJobSettingsSettingsQueueOutputReference(this, "queue");
+  public get queue() {
+    return this._queue;
+  }
+  public putQueue(value: DataDatabricksJobJobSettingsSettingsQueue) {
+    this._queue.internalValue = value;
+  }
+  public resetQueue() {
+    this._queue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queueInput() {
+    return this._queue.internalValue;
+  }
+
   // schedule - computed: false, optional: true, required: false
   private _schedule = new DataDatabricksJobJobSettingsSettingsScheduleOutputReference(this, "schedule");
   public get schedule() {
@@ -15179,6 +15547,22 @@ export class DataDatabricksJobJobSettingsSettingsOutputReference extends cdktf.C
   // Temporarily expose input value. Use with caution.
   public get taskInput() {
     return this._task.internalValue;
+  }
+
+  // trigger - computed: false, optional: true, required: false
+  private _trigger = new DataDatabricksJobJobSettingsSettingsTriggerOutputReference(this, "trigger");
+  public get trigger() {
+    return this._trigger;
+  }
+  public putTrigger(value: DataDatabricksJobJobSettingsSettingsTrigger) {
+    this._trigger.internalValue = value;
+  }
+  public resetTrigger() {
+    this._trigger.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get triggerInput() {
+    return this._trigger.internalValue;
   }
 
   // webhook_notifications - computed: false, optional: true, required: false
@@ -15372,7 +15756,7 @@ export class DataDatabricksJob extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_job',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.13.0',
+        providerVersion: '1.14.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

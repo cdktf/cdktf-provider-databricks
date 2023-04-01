@@ -190,7 +190,7 @@ export class MlflowModel extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_mlflow_model',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.13.0',
+        providerVersion: '1.14.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
