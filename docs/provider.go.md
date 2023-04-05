@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/databricks databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/provider"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/provider"
 
 provider.NewDatabricksProvider(scope Construct, id *string, config DatabricksProviderConfig) DatabricksProvider
 ```
@@ -325,7 +325,7 @@ func ResetUsername()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.provider.DatabricksProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/provider"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/provider"
 
 provider.DatabricksProvider_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.provider.DatabricksProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/provider"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/provider"
 
 provider.DatabricksProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ provider.DatabricksProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-databricks.provider.DatabricksProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/provider"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/provider"
 
 provider.DatabricksProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -1098,7 +1098,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/provider"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/provider"
 
 &provider.DatabricksProviderConfig {
 	AccountId: *string,
