@@ -255,7 +255,7 @@ export class SqlAlert extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_sql_alert',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.14.1',
+        providerVersion: '1.14.2',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

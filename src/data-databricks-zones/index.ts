@@ -42,7 +42,7 @@ export class DataDatabricksZones extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_zones',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.14.1',
+        providerVersion: '1.14.2',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

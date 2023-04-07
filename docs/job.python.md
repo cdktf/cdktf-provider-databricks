@@ -10179,6 +10179,7 @@ from cdktf_cdktf_provider_databricks import job
 job.JobTaskSqlTask(
   alert: JobTaskSqlTaskAlert = None,
   dashboard: JobTaskSqlTaskDashboard = None,
+  file: JobTaskSqlTaskFile = None,
   parameters: typing.Mapping[str] = None,
   query: JobTaskSqlTaskQuery = None,
   warehouse_id: str = None
@@ -10191,6 +10192,7 @@ job.JobTaskSqlTask(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTask.property.alert">alert</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskAlert">JobTaskSqlTaskAlert</a></code> | alert block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTask.property.dashboard">dashboard</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskDashboard">JobTaskSqlTaskDashboard</a></code> | dashboard block. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTask.property.file">file</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFile">JobTaskSqlTaskFile</a></code> | file block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTask.property.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#parameters Job#parameters}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTask.property.query">query</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskQuery">JobTaskSqlTaskQuery</a></code> | query block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTask.property.warehouseId">warehouse_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#warehouse_id Job#warehouse_id}. |
@@ -10222,6 +10224,20 @@ dashboard: JobTaskSqlTaskDashboard
 dashboard block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#dashboard Job#dashboard}
+
+---
+
+##### `file`<sup>Optional</sup> <a name="file" id="@cdktf/provider-databricks.job.JobTaskSqlTask.property.file"></a>
+
+```python
+file: JobTaskSqlTaskFile
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFile">JobTaskSqlTaskFile</a>
+
+file block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#file Job#file}
 
 ---
 
@@ -10324,6 +10340,38 @@ dashboard_id: str
 - *Type:* str
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#dashboard_id Job#dashboard_id}.
+
+---
+
+### JobTaskSqlTaskFile <a name="JobTaskSqlTaskFile" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFile"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFile.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import job
+
+job.JobTaskSqlTaskFile(
+  path: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFile.property.path">path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#path Job#path}. |
+
+---
+
+##### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFile.property.path"></a>
+
+```python
+path: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#path Job#path}.
 
 ---
 
@@ -48412,6 +48460,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 def put_sql_task(
   alert: JobTaskSqlTaskAlert = None,
   dashboard: JobTaskSqlTaskDashboard = None,
+  file: JobTaskSqlTaskFile = None,
   parameters: typing.Mapping[str] = None,
   query: JobTaskSqlTaskQuery = None,
   warehouse_id: str = None
@@ -48435,6 +48484,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 dashboard block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#dashboard Job#dashboard}
+
+---
+
+###### `file`<sup>Optional</sup> <a name="file" id="@cdktf/provider-databricks.job.JobTaskOutputReference.putSqlTask.parameter.file"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFile">JobTaskSqlTaskFile</a>
+
+file block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#file Job#file}
 
 ---
 
@@ -51394,6 +51453,302 @@ internal_value: JobTaskSqlTaskDashboard
 ---
 
 
+### JobTaskSqlTaskFileOutputReference <a name="JobTaskSqlTaskFileOutputReference" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import job
+
+job.JobTaskSqlTaskFileOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.property.path">path</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFile">JobTaskSqlTaskFile</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `path_input`<sup>Optional</sup> <a name="path_input" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.property.pathInput"></a>
+
+```python
+path_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.property.path"></a>
+
+```python
+path: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.property.internalValue"></a>
+
+```python
+internal_value: JobTaskSqlTaskFile
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFile">JobTaskSqlTaskFile</a>
+
+---
+
+
 ### JobTaskSqlTaskOutputReference <a name="JobTaskSqlTaskOutputReference" id="@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.Initializer"></a>
@@ -51449,9 +51804,11 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.putAlert">put_alert</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.putDashboard">put_dashboard</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.putFile">put_file</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.putQuery">put_query</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.resetAlert">reset_alert</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.resetDashboard">reset_dashboard</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.resetFile">reset_file</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.resetParameters">reset_parameters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.resetQuery">reset_query</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.resetWarehouseId">reset_warehouse_id</a></code> | *No description.* |
@@ -51662,6 +52019,22 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 ---
 
+##### `put_file` <a name="put_file" id="@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.putFile"></a>
+
+```python
+def put_file(
+  path: str
+) -> None
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.putFile.parameter.path"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#path Job#path}.
+
+---
+
 ##### `put_query` <a name="put_query" id="@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.putQuery"></a>
 
 ```python
@@ -51688,6 +52061,12 @@ def reset_alert() -> None
 
 ```python
 def reset_dashboard() -> None
+```
+
+##### `reset_file` <a name="reset_file" id="@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.resetFile"></a>
+
+```python
+def reset_file() -> None
 ```
 
 ##### `reset_parameters` <a name="reset_parameters" id="@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.resetParameters"></a>
@@ -51717,9 +52096,11 @@ def reset_warehouse_id() -> None
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.property.alert">alert</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskAlertOutputReference">JobTaskSqlTaskAlertOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.property.dashboard">dashboard</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskDashboardOutputReference">JobTaskSqlTaskDashboardOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.property.file">file</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference">JobTaskSqlTaskFileOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.property.query">query</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskQueryOutputReference">JobTaskSqlTaskQueryOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.property.alertInput">alert_input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskAlert">JobTaskSqlTaskAlert</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.property.dashboardInput">dashboard_input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskDashboard">JobTaskSqlTaskDashboard</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.property.fileInput">file_input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFile">JobTaskSqlTaskFile</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.property.parametersInput">parameters_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.property.queryInput">query_input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskQuery">JobTaskSqlTaskQuery</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.property.warehouseIdInput">warehouse_id_input</a></code> | <code>str</code> | *No description.* |
@@ -51773,6 +52154,16 @@ dashboard: JobTaskSqlTaskDashboardOutputReference
 
 ---
 
+##### `file`<sup>Required</sup> <a name="file" id="@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.property.file"></a>
+
+```python
+file: JobTaskSqlTaskFileOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference">JobTaskSqlTaskFileOutputReference</a>
+
+---
+
 ##### `query`<sup>Required</sup> <a name="query" id="@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.property.query"></a>
 
 ```python
@@ -51800,6 +52191,16 @@ dashboard_input: JobTaskSqlTaskDashboard
 ```
 
 - *Type:* <a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskDashboard">JobTaskSqlTaskDashboard</a>
+
+---
+
+##### `file_input`<sup>Optional</sup> <a name="file_input" id="@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.property.fileInput"></a>
+
+```python
+file_input: JobTaskSqlTaskFile
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFile">JobTaskSqlTaskFile</a>
 
 ---
 

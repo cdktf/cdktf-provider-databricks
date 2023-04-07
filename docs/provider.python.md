@@ -34,6 +34,7 @@ provider.DatabricksProvider(
   google_service_account: str = None,
   host: str = None,
   http_timeout_seconds: typing.Union[int, float] = None,
+  metadata_service_url: str = None,
   password: str = None,
   profile: str = None,
   rate_limit: typing.Union[int, float] = None,
@@ -68,6 +69,7 @@ provider.DatabricksProvider(
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.googleServiceAccount">google_service_account</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#google_service_account DatabricksProvider#google_service_account}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.host">host</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#host DatabricksProvider#host}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.httpTimeoutSeconds">http_timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#http_timeout_seconds DatabricksProvider#http_timeout_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.metadataServiceUrl">metadata_service_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#metadata_service_url DatabricksProvider#metadata_service_url}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#password DatabricksProvider#password}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.profile">profile</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#profile DatabricksProvider#profile}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.rateLimit">rate_limit</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#rate_limit DatabricksProvider#rate_limit}. |
@@ -258,6 +260,14 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 ---
 
+##### `metadata_service_url`<sup>Optional</sup> <a name="metadata_service_url" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.metadataServiceUrl"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#metadata_service_url DatabricksProvider#metadata_service_url}.
+
+---
+
 ##### `password`<sup>Optional</sup> <a name="password" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.password"></a>
 
 - *Type:* str
@@ -344,6 +354,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetGoogleServiceAccount">reset_google_service_account</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetHost">reset_host</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetHttpTimeoutSeconds">reset_http_timeout_seconds</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetMetadataServiceUrl">reset_metadata_service_url</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetPassword">reset_password</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetProfile">reset_profile</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetRateLimit">reset_rate_limit</a></code> | *No description.* |
@@ -543,6 +554,12 @@ def reset_host() -> None
 def reset_http_timeout_seconds() -> None
 ```
 
+##### `reset_metadata_service_url` <a name="reset_metadata_service_url" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetMetadataServiceUrl"></a>
+
+```python
+def reset_metadata_service_url() -> None
+```
+
 ##### `reset_password` <a name="reset_password" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetPassword"></a>
 
 ```python
@@ -694,6 +711,7 @@ provider.DatabricksProvider.is_terraform_provider(
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.googleServiceAccountInput">google_service_account_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.hostInput">host_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.httpTimeoutSecondsInput">http_timeout_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.metadataServiceUrlInput">metadata_service_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.passwordInput">password_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.profileInput">profile_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.rateLimitInput">rate_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -720,6 +738,7 @@ provider.DatabricksProvider.is_terraform_provider(
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.googleServiceAccount">google_service_account</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.host">host</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.httpTimeoutSeconds">http_timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.metadataServiceUrl">metadata_service_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.password">password</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.profile">profile</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.rateLimit">rate_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -1022,6 +1041,16 @@ http_timeout_seconds_input: typing.Union[int, float]
 
 ---
 
+##### `metadata_service_url_input`<sup>Optional</sup> <a name="metadata_service_url_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.metadataServiceUrlInput"></a>
+
+```python
+metadata_service_url_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `password_input`<sup>Optional</sup> <a name="password_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.passwordInput"></a>
 
 ```python
@@ -1282,6 +1311,16 @@ http_timeout_seconds: typing.Union[int, float]
 
 ---
 
+##### `metadata_service_url`<sup>Optional</sup> <a name="metadata_service_url" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.metadataServiceUrl"></a>
+
+```python
+metadata_service_url: str
+```
+
+- *Type:* str
+
+---
+
 ##### `password`<sup>Optional</sup> <a name="password" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.password"></a>
 
 ```python
@@ -1400,6 +1439,7 @@ provider.DatabricksProviderConfig(
   google_service_account: str = None,
   host: str = None,
   http_timeout_seconds: typing.Union[int, float] = None,
+  metadata_service_url: str = None,
   password: str = None,
   profile: str = None,
   rate_limit: typing.Union[int, float] = None,
@@ -1434,6 +1474,7 @@ provider.DatabricksProviderConfig(
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.googleServiceAccount">google_service_account</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#google_service_account DatabricksProvider#google_service_account}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.host">host</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#host DatabricksProvider#host}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.httpTimeoutSeconds">http_timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#http_timeout_seconds DatabricksProvider#http_timeout_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.metadataServiceUrl">metadata_service_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#metadata_service_url DatabricksProvider#metadata_service_url}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#password DatabricksProvider#password}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.profile">profile</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#profile DatabricksProvider#profile}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.rateLimit">rate_limit</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#rate_limit DatabricksProvider#rate_limit}. |
@@ -1683,6 +1724,18 @@ http_timeout_seconds: typing.Union[int, float]
 - *Type:* typing.Union[int, float]
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#http_timeout_seconds DatabricksProvider#http_timeout_seconds}.
+
+---
+
+##### `metadata_service_url`<sup>Optional</sup> <a name="metadata_service_url" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.metadataServiceUrl"></a>
+
+```python
+metadata_service_url: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#metadata_service_url DatabricksProvider#metadata_service_url}.
 
 ---
 
