@@ -9158,6 +9158,7 @@ using HashiCorp.Cdktf.Providers.Databricks;
 new JobTaskSqlTask {
     JobTaskSqlTaskAlert Alert = null,
     JobTaskSqlTaskDashboard Dashboard = null,
+    JobTaskSqlTaskFile File = null,
     System.Collections.Generic.IDictionary<string, string> Parameters = null,
     JobTaskSqlTaskQuery Query = null,
     string WarehouseId = null
@@ -9170,6 +9171,7 @@ new JobTaskSqlTask {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTask.property.alert">Alert</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskAlert">JobTaskSqlTaskAlert</a></code> | alert block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTask.property.dashboard">Dashboard</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskDashboard">JobTaskSqlTaskDashboard</a></code> | dashboard block. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTask.property.file">File</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFile">JobTaskSqlTaskFile</a></code> | file block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTask.property.parameters">Parameters</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#parameters Job#parameters}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTask.property.query">Query</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskQuery">JobTaskSqlTaskQuery</a></code> | query block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTask.property.warehouseId">WarehouseId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#warehouse_id Job#warehouse_id}. |
@@ -9201,6 +9203,20 @@ public JobTaskSqlTaskDashboard Dashboard { get; set; }
 dashboard block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#dashboard Job#dashboard}
+
+---
+
+##### `File`<sup>Optional</sup> <a name="File" id="@cdktf/provider-databricks.job.JobTaskSqlTask.property.file"></a>
+
+```csharp
+public JobTaskSqlTaskFile File { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFile">JobTaskSqlTaskFile</a>
+
+file block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#file Job#file}
 
 ---
 
@@ -9303,6 +9319,38 @@ public string DashboardId { get; set; }
 - *Type:* string
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#dashboard_id Job#dashboard_id}.
+
+---
+
+### JobTaskSqlTaskFile <a name="JobTaskSqlTaskFile" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFile"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFile.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Databricks;
+
+new JobTaskSqlTaskFile {
+    string Path
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFile.property.path">Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#path Job#path}. |
+
+---
+
+##### `Path`<sup>Required</sup> <a name="Path" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFile.property.path"></a>
+
+```csharp
+public string Path { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#path Job#path}.
 
 ---
 
@@ -45955,6 +46003,277 @@ public JobTaskSqlTaskDashboard InternalValue { get; }
 ---
 
 
+### JobTaskSqlTaskFileOutputReference <a name="JobTaskSqlTaskFileOutputReference" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Databricks;
+
+new JobTaskSqlTaskFileOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.property.pathInput">PathInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.property.path">Path</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFile">JobTaskSqlTaskFile</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PathInput`<sup>Optional</sup> <a name="PathInput" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.property.pathInput"></a>
+
+```csharp
+public string PathInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Path`<sup>Required</sup> <a name="Path" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.property.path"></a>
+
+```csharp
+public string Path { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference.property.internalValue"></a>
+
+```csharp
+public JobTaskSqlTaskFile InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFile">JobTaskSqlTaskFile</a>
+
+---
+
+
 ### JobTaskSqlTaskOutputReference <a name="JobTaskSqlTaskOutputReference" id="@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.Initializer"></a>
@@ -46007,9 +46326,11 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.putAlert">PutAlert</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.putDashboard">PutDashboard</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.putFile">PutFile</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.putQuery">PutQuery</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.resetAlert">ResetAlert</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.resetDashboard">ResetDashboard</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.resetFile">ResetFile</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.resetParameters">ResetParameters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.resetQuery">ResetQuery</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.resetWarehouseId">ResetWarehouseId</a></code> | *No description.* |
@@ -46190,6 +46511,18 @@ private void PutDashboard(JobTaskSqlTaskDashboard Value)
 
 ---
 
+##### `PutFile` <a name="PutFile" id="@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.putFile"></a>
+
+```csharp
+private void PutFile(JobTaskSqlTaskFile Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.putFile.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFile">JobTaskSqlTaskFile</a>
+
+---
+
 ##### `PutQuery` <a name="PutQuery" id="@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.putQuery"></a>
 
 ```csharp
@@ -46212,6 +46545,12 @@ private void ResetAlert()
 
 ```csharp
 private void ResetDashboard()
+```
+
+##### `ResetFile` <a name="ResetFile" id="@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.resetFile"></a>
+
+```csharp
+private void ResetFile()
 ```
 
 ##### `ResetParameters` <a name="ResetParameters" id="@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.resetParameters"></a>
@@ -46241,9 +46580,11 @@ private void ResetWarehouseId()
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.property.alert">Alert</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskAlertOutputReference">JobTaskSqlTaskAlertOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.property.dashboard">Dashboard</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskDashboardOutputReference">JobTaskSqlTaskDashboardOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.property.file">File</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference">JobTaskSqlTaskFileOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.property.query">Query</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskQueryOutputReference">JobTaskSqlTaskQueryOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.property.alertInput">AlertInput</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskAlert">JobTaskSqlTaskAlert</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.property.dashboardInput">DashboardInput</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskDashboard">JobTaskSqlTaskDashboard</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.property.fileInput">FileInput</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFile">JobTaskSqlTaskFile</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.property.parametersInput">ParametersInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.property.queryInput">QueryInput</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskQuery">JobTaskSqlTaskQuery</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.property.warehouseIdInput">WarehouseIdInput</a></code> | <code>string</code> | *No description.* |
@@ -46297,6 +46638,16 @@ public JobTaskSqlTaskDashboardOutputReference Dashboard { get; }
 
 ---
 
+##### `File`<sup>Required</sup> <a name="File" id="@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.property.file"></a>
+
+```csharp
+public JobTaskSqlTaskFileOutputReference File { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFileOutputReference">JobTaskSqlTaskFileOutputReference</a>
+
+---
+
 ##### `Query`<sup>Required</sup> <a name="Query" id="@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.property.query"></a>
 
 ```csharp
@@ -46324,6 +46675,16 @@ public JobTaskSqlTaskDashboard DashboardInput { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskDashboard">JobTaskSqlTaskDashboard</a>
+
+---
+
+##### `FileInput`<sup>Optional</sup> <a name="FileInput" id="@cdktf/provider-databricks.job.JobTaskSqlTaskOutputReference.property.fileInput"></a>
+
+```csharp
+public JobTaskSqlTaskFile FileInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFile">JobTaskSqlTaskFile</a>
 
 ---
 

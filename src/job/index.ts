@@ -13398,6 +13398,68 @@ export class JobTaskSqlTaskDashboardOutputReference extends cdktf.ComplexObject 
     return this._dashboardId;
   }
 }
+export interface JobTaskSqlTaskFile {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#path Job#path}
+  */
+  readonly path: string;
+}
+
+export function jobTaskSqlTaskFileToTerraform(struct?: JobTaskSqlTaskFileOutputReference | JobTaskSqlTaskFile): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    path: cdktf.stringToTerraform(struct!.path),
+  }
+}
+
+export class JobTaskSqlTaskFileOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): JobTaskSqlTaskFile | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: JobTaskSqlTaskFile | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._path = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._path = value.path;
+    }
+  }
+
+  // path - computed: false, optional: false, required: true
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+}
 export interface JobTaskSqlTaskQuery {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#query_id Job#query_id}
@@ -13482,6 +13544,12 @@ export interface JobTaskSqlTask {
   */
   readonly dashboard?: JobTaskSqlTaskDashboard;
   /**
+  * file block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#file Job#file}
+  */
+  readonly file?: JobTaskSqlTaskFile;
+  /**
   * query block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/job#query Job#query}
@@ -13499,6 +13567,7 @@ export function jobTaskSqlTaskToTerraform(struct?: JobTaskSqlTaskOutputReference
     warehouse_id: cdktf.stringToTerraform(struct!.warehouseId),
     alert: jobTaskSqlTaskAlertToTerraform(struct!.alert),
     dashboard: jobTaskSqlTaskDashboardToTerraform(struct!.dashboard),
+    file: jobTaskSqlTaskFileToTerraform(struct!.file),
     query: jobTaskSqlTaskQueryToTerraform(struct!.query),
   }
 }
@@ -13533,6 +13602,10 @@ export class JobTaskSqlTaskOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.dashboard = this._dashboard?.internalValue;
     }
+    if (this._file?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.file = this._file?.internalValue;
+    }
     if (this._query?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.query = this._query?.internalValue;
@@ -13547,6 +13620,7 @@ export class JobTaskSqlTaskOutputReference extends cdktf.ComplexObject {
       this._warehouseId = undefined;
       this._alert.internalValue = undefined;
       this._dashboard.internalValue = undefined;
+      this._file.internalValue = undefined;
       this._query.internalValue = undefined;
     }
     else {
@@ -13555,6 +13629,7 @@ export class JobTaskSqlTaskOutputReference extends cdktf.ComplexObject {
       this._warehouseId = value.warehouseId;
       this._alert.internalValue = value.alert;
       this._dashboard.internalValue = value.dashboard;
+      this._file.internalValue = value.file;
       this._query.internalValue = value.query;
     }
   }
@@ -13621,6 +13696,22 @@ export class JobTaskSqlTaskOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get dashboardInput() {
     return this._dashboard.internalValue;
+  }
+
+  // file - computed: false, optional: true, required: false
+  private _file = new JobTaskSqlTaskFileOutputReference(this, "file");
+  public get file() {
+    return this._file;
+  }
+  public putFile(value: JobTaskSqlTaskFile) {
+    this._file.internalValue = value;
+  }
+  public resetFile() {
+    this._file.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileInput() {
+    return this._file.internalValue;
   }
 
   // query - computed: false, optional: true, required: false
@@ -15052,7 +15143,7 @@ export class Job extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_job',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.14.1',
+        providerVersion: '1.14.2',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

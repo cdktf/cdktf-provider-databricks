@@ -13253,6 +13253,68 @@ export class DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardOutputRefer
     return this._dashboardId;
   }
 }
+export interface DataDatabricksJobJobSettingsSettingsTaskSqlTaskFile {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#path DataDatabricksJob#path}
+  */
+  readonly path: string;
+}
+
+export function dataDatabricksJobJobSettingsSettingsTaskSqlTaskFileToTerraform(struct?: DataDatabricksJobJobSettingsSettingsTaskSqlTaskFileOutputReference | DataDatabricksJobJobSettingsSettingsTaskSqlTaskFile): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    path: cdktf.stringToTerraform(struct!.path),
+  }
+}
+
+export class DataDatabricksJobJobSettingsSettingsTaskSqlTaskFileOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataDatabricksJobJobSettingsSettingsTaskSqlTaskFile | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksJobJobSettingsSettingsTaskSqlTaskFile | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._path = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._path = value.path;
+    }
+  }
+
+  // path - computed: false, optional: false, required: true
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+}
 export interface DataDatabricksJobJobSettingsSettingsTaskSqlTaskQuery {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#query_id DataDatabricksJob#query_id}
@@ -13337,6 +13399,12 @@ export interface DataDatabricksJobJobSettingsSettingsTaskSqlTask {
   */
   readonly dashboard?: DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboard;
   /**
+  * file block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#file DataDatabricksJob#file}
+  */
+  readonly file?: DataDatabricksJobJobSettingsSettingsTaskSqlTaskFile;
+  /**
   * query block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/job#query DataDatabricksJob#query}
@@ -13354,6 +13422,7 @@ export function dataDatabricksJobJobSettingsSettingsTaskSqlTaskToTerraform(struc
     warehouse_id: cdktf.stringToTerraform(struct!.warehouseId),
     alert: dataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertToTerraform(struct!.alert),
     dashboard: dataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardToTerraform(struct!.dashboard),
+    file: dataDatabricksJobJobSettingsSettingsTaskSqlTaskFileToTerraform(struct!.file),
     query: dataDatabricksJobJobSettingsSettingsTaskSqlTaskQueryToTerraform(struct!.query),
   }
 }
@@ -13388,6 +13457,10 @@ export class DataDatabricksJobJobSettingsSettingsTaskSqlTaskOutputReference exte
       hasAnyValues = true;
       internalValueResult.dashboard = this._dashboard?.internalValue;
     }
+    if (this._file?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.file = this._file?.internalValue;
+    }
     if (this._query?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.query = this._query?.internalValue;
@@ -13402,6 +13475,7 @@ export class DataDatabricksJobJobSettingsSettingsTaskSqlTaskOutputReference exte
       this._warehouseId = undefined;
       this._alert.internalValue = undefined;
       this._dashboard.internalValue = undefined;
+      this._file.internalValue = undefined;
       this._query.internalValue = undefined;
     }
     else {
@@ -13410,6 +13484,7 @@ export class DataDatabricksJobJobSettingsSettingsTaskSqlTaskOutputReference exte
       this._warehouseId = value.warehouseId;
       this._alert.internalValue = value.alert;
       this._dashboard.internalValue = value.dashboard;
+      this._file.internalValue = value.file;
       this._query.internalValue = value.query;
     }
   }
@@ -13476,6 +13551,22 @@ export class DataDatabricksJobJobSettingsSettingsTaskSqlTaskOutputReference exte
   // Temporarily expose input value. Use with caution.
   public get dashboardInput() {
     return this._dashboard.internalValue;
+  }
+
+  // file - computed: false, optional: true, required: false
+  private _file = new DataDatabricksJobJobSettingsSettingsTaskSqlTaskFileOutputReference(this, "file");
+  public get file() {
+    return this._file;
+  }
+  public putFile(value: DataDatabricksJobJobSettingsSettingsTaskSqlTaskFile) {
+    this._file.internalValue = value;
+  }
+  public resetFile() {
+    this._file.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileInput() {
+    return this._file.internalValue;
   }
 
   // query - computed: false, optional: true, required: false
@@ -15756,7 +15847,7 @@ export class DataDatabricksJob extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_job',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.14.1',
+        providerVersion: '1.14.2',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

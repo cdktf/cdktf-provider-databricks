@@ -84,6 +84,10 @@ export interface DatabricksProviderConfig {
   */
   readonly httpTimeoutSeconds?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#metadata_service_url DatabricksProvider#metadata_service_url}
+  */
+  readonly metadataServiceUrl?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks#password DatabricksProvider#password}
   */
   readonly password?: string;
@@ -145,7 +149,7 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'databricks',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.14.1',
+        providerVersion: '1.14.2',
         providerVersionConstraint: '~> 1.0'
       },
       terraformProviderSource: 'databricks/databricks'
@@ -169,6 +173,7 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
     this._googleServiceAccount = config.googleServiceAccount;
     this._host = config.host;
     this._httpTimeoutSeconds = config.httpTimeoutSeconds;
+    this._metadataServiceUrl = config.metadataServiceUrl;
     this._password = config.password;
     this._profile = config.profile;
     this._rateLimit = config.rateLimit;
@@ -487,6 +492,22 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
     return this._httpTimeoutSeconds;
   }
 
+  // metadata_service_url - computed: false, optional: true, required: false
+  private _metadataServiceUrl?: string; 
+  public get metadataServiceUrl() {
+    return this._metadataServiceUrl;
+  }
+  public set metadataServiceUrl(value: string | undefined) {
+    this._metadataServiceUrl = value;
+  }
+  public resetMetadataServiceUrl() {
+    this._metadataServiceUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metadataServiceUrlInput() {
+    return this._metadataServiceUrl;
+  }
+
   // password - computed: false, optional: true, required: false
   private _password?: string; 
   public get password() {
@@ -640,6 +661,7 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
       google_service_account: cdktf.stringToTerraform(this._googleServiceAccount),
       host: cdktf.stringToTerraform(this._host),
       http_timeout_seconds: cdktf.numberToTerraform(this._httpTimeoutSeconds),
+      metadata_service_url: cdktf.stringToTerraform(this._metadataServiceUrl),
       password: cdktf.stringToTerraform(this._password),
       profile: cdktf.stringToTerraform(this._profile),
       rate_limit: cdktf.numberToTerraform(this._rateLimit),

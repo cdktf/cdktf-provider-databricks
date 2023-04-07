@@ -94,7 +94,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_service_principal',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.14.1',
+        providerVersion: '1.14.2',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
