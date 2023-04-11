@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/databricks/r/obo_tok
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.oboToken.OboToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/obotoken"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/obotoken"
 
 obotoken.NewOboToken(scope Construct, id *string, config OboTokenConfig) OboToken
 ```
@@ -287,7 +287,7 @@ func ResetLifetimeSeconds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.oboToken.OboToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/obotoken"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/obotoken"
 
 obotoken.OboToken_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.oboToken.OboToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/obotoken"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/obotoken"
 
 obotoken.OboToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ obotoken.OboToken_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.oboToken.OboToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/obotoken"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/obotoken"
 
 obotoken.OboToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -631,7 +631,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.oboToken.OboTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/obotoken"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/obotoken"
 
 &obotoken.OboTokenConfig {
 	Connection: interface{},

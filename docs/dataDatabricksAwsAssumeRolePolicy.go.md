@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/databricks/d/aws_ass
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksAwsAssumeRolePolicy.DataDatabricksAwsAssumeRolePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksawsassumerolepolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksawsassumerolepolicy"
 
 datadatabricksawsassumerolepolicy.NewDataDatabricksAwsAssumeRolePolicy(scope Construct, id *string, config DataDatabricksAwsAssumeRolePolicyConfig) DataDatabricksAwsAssumeRolePolicy
 ```
@@ -287,7 +287,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksAwsAssumeRolePolicy.DataDatabricksAwsAssumeRolePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksawsassumerolepolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksawsassumerolepolicy"
 
 datadatabricksawsassumerolepolicy.DataDatabricksAwsAssumeRolePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksAwsAssumeRolePolicy.DataDatabricksAwsAssumeRolePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksawsassumerolepolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksawsassumerolepolicy"
 
 datadatabricksawsassumerolepolicy.DataDatabricksAwsAssumeRolePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ datadatabricksawsassumerolepolicy.DataDatabricksAwsAssumeRolePolicy_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksAwsAssumeRolePolicy.DataDatabricksAwsAssumeRolePolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksawsassumerolepolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksawsassumerolepolicy"
 
 datadatabricksawsassumerolepolicy.DataDatabricksAwsAssumeRolePolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -609,7 +609,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksAwsAssumeRolePolicy.DataDatabricksAwsAssumeRolePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksawsassumerolepolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksawsassumerolepolicy"
 
 &datadatabricksawsassumerolepolicy.DataDatabricksAwsAssumeRolePolicyConfig {
 	Connection: interface{},

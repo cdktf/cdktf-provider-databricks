@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/databricks/d/service
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksServicePrincipal.DataDatabricksServicePrincipal.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksserviceprincipal"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksserviceprincipal"
 
 datadatabricksserviceprincipal.NewDataDatabricksServicePrincipal(scope Construct, id *string, config DataDatabricksServicePrincipalConfig) DataDatabricksServicePrincipal
 ```
@@ -322,7 +322,7 @@ func ResetSpId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksServicePrincipal.DataDatabricksServicePrincipal.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksserviceprincipal"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksserviceprincipal"
 
 datadatabricksserviceprincipal.DataDatabricksServicePrincipal_IsConstruct(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksServicePrincipal.DataDatabricksServicePrincipal.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksserviceprincipal"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksserviceprincipal"
 
 datadatabricksserviceprincipal.DataDatabricksServicePrincipal_IsTerraformElement(x interface{}) *bool
 ```
@@ -368,7 +368,7 @@ datadatabricksserviceprincipal.DataDatabricksServicePrincipal_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksServicePrincipal.DataDatabricksServicePrincipal.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksserviceprincipal"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksserviceprincipal"
 
 datadatabricksserviceprincipal.DataDatabricksServicePrincipal_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -721,7 +721,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksServicePrincipal.DataDatabricksServicePrincipalConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/datadatabricksserviceprincipal"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksserviceprincipal"
 
 &datadatabricksserviceprincipal.DataDatabricksServicePrincipalConfig {
 	Connection: interface{},

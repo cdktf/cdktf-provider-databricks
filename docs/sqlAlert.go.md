@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/databricks/r/sql_ale
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlAlert.SqlAlert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/sqlalert"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/sqlalert"
 
 sqlalert.NewSqlAlert(scope Construct, id *string, config SqlAlertConfig) SqlAlert
 ```
@@ -300,7 +300,7 @@ func ResetRearm()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.sqlAlert.SqlAlert.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/sqlalert"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/sqlalert"
 
 sqlalert.SqlAlert_IsConstruct(x interface{}) *bool
 ```
@@ -332,7 +332,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.sqlAlert.SqlAlert.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/sqlalert"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/sqlalert"
 
 sqlalert.SqlAlert_IsTerraformElement(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ sqlalert.SqlAlert_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.sqlAlert.SqlAlert.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/sqlalert"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/sqlalert"
 
 sqlalert.SqlAlert_IsTerraformResource(x interface{}) *bool
 ```
@@ -677,7 +677,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlAlert.SqlAlertConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/sqlalert"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/sqlalert"
 
 &sqlalert.SqlAlertConfig {
 	Connection: interface{},
@@ -688,7 +688,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/sqlalert"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	Options: github.com/cdktf/cdktf-provider-databricks-go/databricks/v5.sqlAlert.SqlAlertOptions,
+	Options: github.com/cdktf/cdktf-provider-databricks-go/databricks/v6.sqlAlert.SqlAlertOptions,
 	QueryId: *string,
 	Id: *string,
 	Parent: *string,
@@ -868,7 +868,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlAlert.SqlAlertOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/sqlalert"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/sqlalert"
 
 &sqlalert.SqlAlertOptions {
 	Column: *string,
@@ -972,7 +972,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlAlert.SqlAlertOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v5/sqlalert"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/sqlalert"
 
 sqlalert.NewSqlAlertOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlAlertOptionsOutputReference
 ```
