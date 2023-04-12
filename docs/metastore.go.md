@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/databricks/r/metasto
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.metastore.Metastore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/metastore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/metastore"
 
 metastore.NewMetastore(scope Construct, id *string, config MetastoreConfig) Metastore
 ```
@@ -364,7 +364,7 @@ func ResetUpdatedBy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.metastore.Metastore.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/metastore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/metastore"
 
 metastore.Metastore_IsConstruct(x interface{}) *bool
 ```
@@ -396,7 +396,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.metastore.Metastore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/metastore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/metastore"
 
 metastore.Metastore_IsTerraformElement(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ metastore.Metastore_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.metastore.Metastore.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/metastore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/metastore"
 
 metastore.Metastore_IsTerraformResource(x interface{}) *bool
 ```
@@ -961,7 +961,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.metastore.MetastoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/metastore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/metastore"
 
 &metastore.MetastoreConfig {
 	Connection: interface{},

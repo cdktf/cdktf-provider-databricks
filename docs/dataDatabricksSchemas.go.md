@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/databricks/d/schemas
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemas.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksschemas"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksschemas"
 
 datadatabricksschemas.NewDataDatabricksSchemas(scope Construct, id *string, config DataDatabricksSchemasConfig) DataDatabricksSchemas
 ```
@@ -280,7 +280,7 @@ func ResetIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemas.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksschemas"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksschemas"
 
 datadatabricksschemas.DataDatabricksSchemas_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemas.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksschemas"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksschemas"
 
 datadatabricksschemas.DataDatabricksSchemas_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ datadatabricksschemas.DataDatabricksSchemas_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemas.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksschemas"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksschemas"
 
 datadatabricksschemas.DataDatabricksSchemas_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -569,7 +569,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksschemas"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksschemas"
 
 &datadatabricksschemas.DataDatabricksSchemasConfig {
 	Connection: interface{},
