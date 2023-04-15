@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/databricks/d/mws_wor
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspaces.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwsworkspaces"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksmwsworkspaces"
 
 datadatabricksmwsworkspaces.NewDataDatabricksMwsWorkspaces(scope Construct, id *string, config DataDatabricksMwsWorkspacesConfig) DataDatabricksMwsWorkspaces
 ```
@@ -280,7 +280,7 @@ func ResetIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspaces.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwsworkspaces"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksmwsworkspaces"
 
 datadatabricksmwsworkspaces.DataDatabricksMwsWorkspaces_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspaces.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwsworkspaces"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksmwsworkspaces"
 
 datadatabricksmwsworkspaces.DataDatabricksMwsWorkspaces_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ datadatabricksmwsworkspaces.DataDatabricksMwsWorkspaces_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspaces.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwsworkspaces"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksmwsworkspaces"
 
 datadatabricksmwsworkspaces.DataDatabricksMwsWorkspaces_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspacesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwsworkspaces"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksmwsworkspaces"
 
 &datadatabricksmwsworkspaces.DataDatabricksMwsWorkspacesConfig {
 	Connection: interface{},
