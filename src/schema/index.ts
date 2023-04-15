@@ -74,7 +74,7 @@ export class Schema extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_schema',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.14.2',
+        providerVersion: '1.14.3',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

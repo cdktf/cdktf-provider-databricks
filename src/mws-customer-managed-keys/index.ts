@@ -245,7 +245,7 @@ export class MwsCustomerManagedKeys extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_mws_customer_managed_keys',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.14.2',
+        providerVersion: '1.14.3',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
