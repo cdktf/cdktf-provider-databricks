@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/databricks/r/library
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.library.Library.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/library"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/library"
 
 library.NewLibrary(scope Construct, id *string, config LibraryConfig) Library
 ```
@@ -354,7 +354,7 @@ func ResetWhl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.library.Library.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/library"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/library"
 
 library.Library_IsConstruct(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.library.Library.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/library"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/library"
 
 library.Library_IsTerraformElement(x interface{}) *bool
 ```
@@ -400,7 +400,7 @@ library.Library_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.library.Library.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/library"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/library"
 
 library.Library_IsTerraformResource(x interface{}) *bool
 ```
@@ -775,7 +775,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.library.LibraryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/library"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/library"
 
 &library.LibraryConfig {
 	Connection: interface{},
@@ -786,12 +786,12 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/library"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	ClusterId: *string,
-	Cran: github.com/cdktf/cdktf-provider-databricks-go/databricks/v6.library.LibraryCran,
+	Cran: github.com/cdktf/cdktf-provider-databricks-go/databricks.library.LibraryCran,
 	Egg: *string,
 	Id: *string,
 	Jar: *string,
-	Maven: github.com/cdktf/cdktf-provider-databricks-go/databricks/v6.library.LibraryMaven,
-	Pypi: github.com/cdktf/cdktf-provider-databricks-go/databricks/v6.library.LibraryPypi,
+	Maven: github.com/cdktf/cdktf-provider-databricks-go/databricks.library.LibraryMaven,
+	Pypi: github.com/cdktf/cdktf-provider-databricks-go/databricks.library.LibraryPypi,
 	Whl: *string,
 }
 ```
@@ -998,7 +998,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.library.LibraryCran.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/library"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/library"
 
 &library.LibraryCran {
 	Package: *string,
@@ -1044,7 +1044,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.library.LibraryMaven.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/library"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/library"
 
 &library.LibraryMaven {
 	Coordinates: *string,
@@ -1104,7 +1104,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.library.LibraryPypi.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/library"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/library"
 
 &library.LibraryPypi {
 	Package: *string,
@@ -1152,7 +1152,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.library.LibraryCranOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/library"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/library"
 
 library.NewLibraryCranOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LibraryCranOutputReference
 ```
@@ -1452,7 +1452,7 @@ func InternalValue() LibraryCran
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.library.LibraryMavenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/library"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/library"
 
 library.NewLibraryMavenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LibraryMavenOutputReference
 ```
@@ -1781,7 +1781,7 @@ func InternalValue() LibraryMaven
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.library.LibraryPypiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/library"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/library"
 
 library.NewLibraryPypiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LibraryPypiOutputReference
 ```

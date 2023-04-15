@@ -77,6 +77,12 @@ export interface PipelineConfig extends cdktf.TerraformMetaArguments {
   */
   readonly library?: PipelineLibrary[] | cdktf.IResolvable;
   /**
+  * notification block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#notification Pipeline#notification}
+  */
+  readonly notification?: PipelineNotification[] | cdktf.IResolvable;
+  /**
   * timeouts block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#timeouts Pipeline#timeouts}
@@ -2910,6 +2916,124 @@ export class PipelineLibraryList extends cdktf.ComplexList {
     return new PipelineLibraryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface PipelineNotification {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#alerts Pipeline#alerts}
+  */
+  readonly alerts: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#email_recipients Pipeline#email_recipients}
+  */
+  readonly emailRecipients: string[];
+}
+
+export function pipelineNotificationToTerraform(struct?: PipelineNotification | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    alerts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.alerts),
+    email_recipients: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.emailRecipients),
+  }
+}
+
+export class PipelineNotificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): PipelineNotification | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._alerts !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.alerts = this._alerts;
+    }
+    if (this._emailRecipients !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.emailRecipients = this._emailRecipients;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PipelineNotification | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._alerts = undefined;
+      this._emailRecipients = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._alerts = value.alerts;
+      this._emailRecipients = value.emailRecipients;
+    }
+  }
+
+  // alerts - computed: false, optional: false, required: true
+  private _alerts?: string[]; 
+  public get alerts() {
+    return this.getListAttribute('alerts');
+  }
+  public set alerts(value: string[]) {
+    this._alerts = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alertsInput() {
+    return this._alerts;
+  }
+
+  // email_recipients - computed: false, optional: false, required: true
+  private _emailRecipients?: string[]; 
+  public get emailRecipients() {
+    return this.getListAttribute('email_recipients');
+  }
+  public set emailRecipients(value: string[]) {
+    this._emailRecipients = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailRecipientsInput() {
+    return this._emailRecipients;
+  }
+}
+
+export class PipelineNotificationList extends cdktf.ComplexList {
+  public internalValue? : PipelineNotification[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PipelineNotificationOutputReference {
+    return new PipelineNotificationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface PipelineTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/pipeline#default Pipeline#default}
@@ -3012,7 +3136,7 @@ export class Pipeline extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_pipeline',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.14.2',
+        providerVersion: '1.14.3',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -3038,6 +3162,7 @@ export class Pipeline extends cdktf.TerraformResource {
     this._cluster.internalValue = config.cluster;
     this._filters.internalValue = config.filters;
     this._library.internalValue = config.library;
+    this._notification.internalValue = config.notification;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -3290,6 +3415,22 @@ export class Pipeline extends cdktf.TerraformResource {
     return this._library.internalValue;
   }
 
+  // notification - computed: false, optional: true, required: false
+  private _notification = new PipelineNotificationList(this, "notification", false);
+  public get notification() {
+    return this._notification;
+  }
+  public putNotification(value: PipelineNotification[] | cdktf.IResolvable) {
+    this._notification.internalValue = value;
+  }
+  public resetNotification() {
+    this._notification.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notificationInput() {
+    return this._notification.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new PipelineTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -3327,6 +3468,7 @@ export class Pipeline extends cdktf.TerraformResource {
       cluster: cdktf.listMapper(pipelineClusterToTerraform, true)(this._cluster.internalValue),
       filters: pipelineFiltersToTerraform(this._filters.internalValue),
       library: cdktf.listMapper(pipelineLibraryToTerraform, true)(this._library.internalValue),
+      notification: cdktf.listMapper(pipelineNotificationToTerraform, true)(this._notification.internalValue),
       timeouts: pipelineTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

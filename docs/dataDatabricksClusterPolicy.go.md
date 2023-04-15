@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/databricks/d/cluster
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPolicy.DataDatabricksClusterPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksclusterpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpolicy"
 
 datadatabricksclusterpolicy.NewDataDatabricksClusterPolicy(scope Construct, id *string, config DataDatabricksClusterPolicyConfig) DataDatabricksClusterPolicy
 ```
@@ -294,7 +294,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksClusterPolicy.DataDatabricksClusterPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksclusterpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpolicy"
 
 datadatabricksclusterpolicy.DataDatabricksClusterPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksClusterPolicy.DataDatabricksClusterPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksclusterpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpolicy"
 
 datadatabricksclusterpolicy.DataDatabricksClusterPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ datadatabricksclusterpolicy.DataDatabricksClusterPolicy_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksClusterPolicy.DataDatabricksClusterPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksclusterpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpolicy"
 
 datadatabricksclusterpolicy.DataDatabricksClusterPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPolicy.DataDatabricksClusterPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v6/datadatabricksclusterpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpolicy"
 
 &datadatabricksclusterpolicy.DataDatabricksClusterPolicyConfig {
 	Connection: interface{},
