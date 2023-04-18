@@ -1,6 +1,6 @@
 # `databricks_instance_pool`
 
-Refer to the Terraform Registory for docs: [`databricks_instance_pool`](https://www.terraform.io/docs/providers/databricks/r/instance_pool).
+Refer to the Terraform Registory for docs: [`databricks_instance_pool`](https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool).
 
 # `instancePool` Submodule <a name="`instancePool` Submodule" id="@cdktf/provider-databricks.instancePool"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`databricks_instance_pool`](https://
 
 ### InstancePool <a name="InstancePool" id="@cdktf/provider-databricks.instancePool.InstancePool"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool databricks_instance_pool}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool databricks_instance_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.instancePool.InstancePool.Initializer"></a>
 
@@ -19,6 +19,7 @@ InstancePool.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -52,28 +53,28 @@ InstancePool.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.idleInstanceAutoterminationMinutes">idleInstanceAutoterminationMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#idle_instance_autotermination_minutes InstancePool#idle_instance_autotermination_minutes}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.instancePoolName">instancePoolName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#instance_pool_name InstancePool#instance_pool_name}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.idleInstanceAutoterminationMinutes">idleInstanceAutoterminationMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#idle_instance_autotermination_minutes InstancePool#idle_instance_autotermination_minutes}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.instancePoolName">instancePoolName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#instance_pool_name InstancePool#instance_pool_name}. |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.awsAttributes">awsAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolAwsAttributes">InstancePoolAwsAttributes</a></code> | aws_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.azureAttributes">azureAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolAzureAttributes">InstancePoolAzureAttributes</a></code> | azure_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.customTags">customTags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#custom_tags InstancePool#custom_tags}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.customTags">customTags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#custom_tags InstancePool#custom_tags}. |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.diskSpec">diskSpec</a></code> | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolDiskSpec">InstancePoolDiskSpec</a></code> | disk_spec block. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.enableElasticDisk">enableElasticDisk</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#enable_elastic_disk InstancePool#enable_elastic_disk}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.enableElasticDisk">enableElasticDisk</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#enable_elastic_disk InstancePool#enable_elastic_disk}. |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.gcpAttributes">gcpAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolGcpAttributes">InstancePoolGcpAttributes</a></code> | gcp_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#id InstancePool#id}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#id InstancePool#id}. |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.instancePoolFleetAttributes">instancePoolFleetAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributes">InstancePoolInstancePoolFleetAttributes</a></code> | instance_pool_fleet_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.instancePoolId">instancePoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#instance_pool_id InstancePool#instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.maxCapacity">maxCapacity</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#max_capacity InstancePool#max_capacity}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.minIdleInstances">minIdleInstances</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#min_idle_instances InstancePool#min_idle_instances}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.nodeTypeId">nodeTypeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#node_type_id InstancePool#node_type_id}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.instancePoolId">instancePoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#instance_pool_id InstancePool#instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.maxCapacity">maxCapacity</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#max_capacity InstancePool#max_capacity}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.minIdleInstances">minIdleInstances</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#min_idle_instances InstancePool#min_idle_instances}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.nodeTypeId">nodeTypeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#node_type_id InstancePool#node_type_id}. |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.preloadedDockerImage">preloadedDockerImage</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImage">InstancePoolPreloadedDockerImage</a>></code> | preloaded_docker_image block. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.preloadedSparkVersions">preloadedSparkVersions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#preloaded_spark_versions InstancePool#preloaded_spark_versions}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.preloadedSparkVersions">preloadedSparkVersions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#preloaded_spark_versions InstancePool#preloaded_spark_versions}. |
 
 ---
 
@@ -103,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-databricks.instancePool.InstancePool.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -141,7 +142,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#idle_instance_autotermination_minutes InstancePool#idle_instance_autotermination_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#idle_instance_autotermination_minutes InstancePool#idle_instance_autotermination_minutes}.
 
 ---
 
@@ -149,7 +150,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#instance_pool_name InstancePool#instance_pool_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#instance_pool_name InstancePool#instance_pool_name}.
 
 ---
 
@@ -159,7 +160,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 aws_attributes block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#aws_attributes InstancePool#aws_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#aws_attributes InstancePool#aws_attributes}
 
 ---
 
@@ -169,7 +170,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 azure_attributes block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#azure_attributes InstancePool#azure_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#azure_attributes InstancePool#azure_attributes}
 
 ---
 
@@ -177,7 +178,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#custom_tags InstancePool#custom_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#custom_tags InstancePool#custom_tags}.
 
 ---
 
@@ -187,7 +188,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 disk_spec block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#disk_spec InstancePool#disk_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#disk_spec InstancePool#disk_spec}
 
 ---
 
@@ -195,7 +196,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#enable_elastic_disk InstancePool#enable_elastic_disk}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#enable_elastic_disk InstancePool#enable_elastic_disk}.
 
 ---
 
@@ -205,7 +206,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 gcp_attributes block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#gcp_attributes InstancePool#gcp_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#gcp_attributes InstancePool#gcp_attributes}
 
 ---
 
@@ -213,7 +214,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#id InstancePool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#id InstancePool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -226,7 +227,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 instance_pool_fleet_attributes block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#instance_pool_fleet_attributes InstancePool#instance_pool_fleet_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#instance_pool_fleet_attributes InstancePool#instance_pool_fleet_attributes}
 
 ---
 
@@ -234,7 +235,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#instance_pool_id InstancePool#instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#instance_pool_id InstancePool#instance_pool_id}.
 
 ---
 
@@ -242,7 +243,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#max_capacity InstancePool#max_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#max_capacity InstancePool#max_capacity}.
 
 ---
 
@@ -250,7 +251,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#min_idle_instances InstancePool#min_idle_instances}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#min_idle_instances InstancePool#min_idle_instances}.
 
 ---
 
@@ -258,7 +259,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#node_type_id InstancePool#node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#node_type_id InstancePool#node_type_id}.
 
 ---
 
@@ -268,7 +269,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 preloaded_docker_image block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#preloaded_docker_image InstancePool#preloaded_docker_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#preloaded_docker_image InstancePool#preloaded_docker_image}
 
 ---
 
@@ -276,7 +277,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datab
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#preloaded_spark_versions InstancePool#preloaded_spark_versions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#preloaded_spark_versions InstancePool#preloaded_spark_versions}.
 
 ---
 
@@ -745,7 +746,7 @@ InstancePool.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePool.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -871,10 +872,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-databricks.instancePool.InstancePool.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1286,9 +1287,9 @@ InstancePoolAwsAttributes.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolAwsAttributes.property.availability">availability</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#availability InstancePool#availability}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolAwsAttributes.property.spotBidPricePercent">spotBidPricePercent</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#spot_bid_price_percent InstancePool#spot_bid_price_percent}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolAwsAttributes.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#zone_id InstancePool#zone_id}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolAwsAttributes.property.availability">availability</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#availability InstancePool#availability}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolAwsAttributes.property.spotBidPricePercent">spotBidPricePercent</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#spot_bid_price_percent InstancePool#spot_bid_price_percent}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolAwsAttributes.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#zone_id InstancePool#zone_id}. |
 
 ---
 
@@ -1300,7 +1301,7 @@ public java.lang.String getAvailability();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#availability InstancePool#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#availability InstancePool#availability}.
 
 ---
 
@@ -1312,7 +1313,7 @@ public java.lang.Number getSpotBidPricePercent();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#spot_bid_price_percent InstancePool#spot_bid_price_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#spot_bid_price_percent InstancePool#spot_bid_price_percent}.
 
 ---
 
@@ -1324,7 +1325,7 @@ public java.lang.String getZoneId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#zone_id InstancePool#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#zone_id InstancePool#zone_id}.
 
 ---
 
@@ -1345,8 +1346,8 @@ InstancePoolAzureAttributes.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolAzureAttributes.property.availability">availability</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#availability InstancePool#availability}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolAzureAttributes.property.spotBidMaxPrice">spotBidMaxPrice</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#spot_bid_max_price InstancePool#spot_bid_max_price}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolAzureAttributes.property.availability">availability</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#availability InstancePool#availability}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolAzureAttributes.property.spotBidMaxPrice">spotBidMaxPrice</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#spot_bid_max_price InstancePool#spot_bid_max_price}. |
 
 ---
 
@@ -1358,7 +1359,7 @@ public java.lang.String getAvailability();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#availability InstancePool#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#availability InstancePool#availability}.
 
 ---
 
@@ -1370,7 +1371,7 @@ public java.lang.Number getSpotBidMaxPrice();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#spot_bid_max_price InstancePool#spot_bid_max_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#spot_bid_max_price InstancePool#spot_bid_max_price}.
 
 ---
 
@@ -1385,6 +1386,7 @@ InstancePoolConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -1418,28 +1420,28 @@ InstancePoolConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.idleInstanceAutoterminationMinutes">idleInstanceAutoterminationMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#idle_instance_autotermination_minutes InstancePool#idle_instance_autotermination_minutes}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.instancePoolName">instancePoolName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#instance_pool_name InstancePool#instance_pool_name}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.idleInstanceAutoterminationMinutes">idleInstanceAutoterminationMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#idle_instance_autotermination_minutes InstancePool#idle_instance_autotermination_minutes}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.instancePoolName">instancePoolName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#instance_pool_name InstancePool#instance_pool_name}. |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.awsAttributes">awsAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolAwsAttributes">InstancePoolAwsAttributes</a></code> | aws_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.azureAttributes">azureAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolAzureAttributes">InstancePoolAzureAttributes</a></code> | azure_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.customTags">customTags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#custom_tags InstancePool#custom_tags}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.customTags">customTags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#custom_tags InstancePool#custom_tags}. |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.diskSpec">diskSpec</a></code> | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolDiskSpec">InstancePoolDiskSpec</a></code> | disk_spec block. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.enableElasticDisk">enableElasticDisk</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#enable_elastic_disk InstancePool#enable_elastic_disk}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.enableElasticDisk">enableElasticDisk</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#enable_elastic_disk InstancePool#enable_elastic_disk}. |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.gcpAttributes">gcpAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolGcpAttributes">InstancePoolGcpAttributes</a></code> | gcp_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#id InstancePool#id}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#id InstancePool#id}. |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.instancePoolFleetAttributes">instancePoolFleetAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributes">InstancePoolInstancePoolFleetAttributes</a></code> | instance_pool_fleet_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.instancePoolId">instancePoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#instance_pool_id InstancePool#instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.maxCapacity">maxCapacity</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#max_capacity InstancePool#max_capacity}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.minIdleInstances">minIdleInstances</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#min_idle_instances InstancePool#min_idle_instances}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.nodeTypeId">nodeTypeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#node_type_id InstancePool#node_type_id}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.instancePoolId">instancePoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#instance_pool_id InstancePool#instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.maxCapacity">maxCapacity</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#max_capacity InstancePool#max_capacity}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.minIdleInstances">minIdleInstances</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#min_idle_instances InstancePool#min_idle_instances}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.nodeTypeId">nodeTypeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#node_type_id InstancePool#node_type_id}. |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.preloadedDockerImage">preloadedDockerImage</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImage">InstancePoolPreloadedDockerImage</a>></code> | preloaded_docker_image block. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.preloadedSparkVersions">preloadedSparkVersions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#preloaded_spark_versions InstancePool#preloaded_spark_versions}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.preloadedSparkVersions">preloadedSparkVersions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#preloaded_spark_versions InstancePool#preloaded_spark_versions}. |
 
 ---
 
@@ -1456,10 +1458,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1521,7 +1523,7 @@ public java.lang.Number getIdleInstanceAutoterminationMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#idle_instance_autotermination_minutes InstancePool#idle_instance_autotermination_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#idle_instance_autotermination_minutes InstancePool#idle_instance_autotermination_minutes}.
 
 ---
 
@@ -1533,7 +1535,7 @@ public java.lang.String getInstancePoolName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#instance_pool_name InstancePool#instance_pool_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#instance_pool_name InstancePool#instance_pool_name}.
 
 ---
 
@@ -1547,7 +1549,7 @@ public InstancePoolAwsAttributes getAwsAttributes();
 
 aws_attributes block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#aws_attributes InstancePool#aws_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#aws_attributes InstancePool#aws_attributes}
 
 ---
 
@@ -1561,7 +1563,7 @@ public InstancePoolAzureAttributes getAzureAttributes();
 
 azure_attributes block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#azure_attributes InstancePool#azure_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#azure_attributes InstancePool#azure_attributes}
 
 ---
 
@@ -1573,7 +1575,7 @@ public java.util.Map<java.lang.String, java.lang.String> getCustomTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#custom_tags InstancePool#custom_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#custom_tags InstancePool#custom_tags}.
 
 ---
 
@@ -1587,7 +1589,7 @@ public InstancePoolDiskSpec getDiskSpec();
 
 disk_spec block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#disk_spec InstancePool#disk_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#disk_spec InstancePool#disk_spec}
 
 ---
 
@@ -1599,7 +1601,7 @@ public java.lang.Object getEnableElasticDisk();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#enable_elastic_disk InstancePool#enable_elastic_disk}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#enable_elastic_disk InstancePool#enable_elastic_disk}.
 
 ---
 
@@ -1613,7 +1615,7 @@ public InstancePoolGcpAttributes getGcpAttributes();
 
 gcp_attributes block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#gcp_attributes InstancePool#gcp_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#gcp_attributes InstancePool#gcp_attributes}
 
 ---
 
@@ -1625,7 +1627,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#id InstancePool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#id InstancePool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1642,7 +1644,7 @@ public InstancePoolInstancePoolFleetAttributes getInstancePoolFleetAttributes();
 
 instance_pool_fleet_attributes block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#instance_pool_fleet_attributes InstancePool#instance_pool_fleet_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#instance_pool_fleet_attributes InstancePool#instance_pool_fleet_attributes}
 
 ---
 
@@ -1654,7 +1656,7 @@ public java.lang.String getInstancePoolId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#instance_pool_id InstancePool#instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#instance_pool_id InstancePool#instance_pool_id}.
 
 ---
 
@@ -1666,7 +1668,7 @@ public java.lang.Number getMaxCapacity();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#max_capacity InstancePool#max_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#max_capacity InstancePool#max_capacity}.
 
 ---
 
@@ -1678,7 +1680,7 @@ public java.lang.Number getMinIdleInstances();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#min_idle_instances InstancePool#min_idle_instances}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#min_idle_instances InstancePool#min_idle_instances}.
 
 ---
 
@@ -1690,7 +1692,7 @@ public java.lang.String getNodeTypeId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#node_type_id InstancePool#node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#node_type_id InstancePool#node_type_id}.
 
 ---
 
@@ -1704,7 +1706,7 @@ public java.lang.Object getPreloadedDockerImage();
 
 preloaded_docker_image block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#preloaded_docker_image InstancePool#preloaded_docker_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#preloaded_docker_image InstancePool#preloaded_docker_image}
 
 ---
 
@@ -1716,7 +1718,7 @@ public java.util.List<java.lang.String> getPreloadedSparkVersions();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#preloaded_spark_versions InstancePool#preloaded_spark_versions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#preloaded_spark_versions InstancePool#preloaded_spark_versions}.
 
 ---
 
@@ -1738,8 +1740,8 @@ InstancePoolDiskSpec.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolDiskSpec.property.diskCount">diskCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#disk_count InstancePool#disk_count}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolDiskSpec.property.diskSize">diskSize</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#disk_size InstancePool#disk_size}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolDiskSpec.property.diskCount">diskCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#disk_count InstancePool#disk_count}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolDiskSpec.property.diskSize">diskSize</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#disk_size InstancePool#disk_size}. |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolDiskSpec.property.diskType">diskType</a></code> | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolDiskSpecDiskType">InstancePoolDiskSpecDiskType</a></code> | disk_type block. |
 
 ---
@@ -1752,7 +1754,7 @@ public java.lang.Number getDiskCount();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#disk_count InstancePool#disk_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#disk_count InstancePool#disk_count}.
 
 ---
 
@@ -1764,7 +1766,7 @@ public java.lang.Number getDiskSize();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#disk_size InstancePool#disk_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#disk_size InstancePool#disk_size}.
 
 ---
 
@@ -1778,7 +1780,7 @@ public InstancePoolDiskSpecDiskType getDiskType();
 
 disk_type block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#disk_type InstancePool#disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#disk_type InstancePool#disk_type}
 
 ---
 
@@ -1799,8 +1801,8 @@ InstancePoolDiskSpecDiskType.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolDiskSpecDiskType.property.azureDiskVolumeType">azureDiskVolumeType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#azure_disk_volume_type InstancePool#azure_disk_volume_type}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolDiskSpecDiskType.property.ebsVolumeType">ebsVolumeType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#ebs_volume_type InstancePool#ebs_volume_type}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolDiskSpecDiskType.property.azureDiskVolumeType">azureDiskVolumeType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#azure_disk_volume_type InstancePool#azure_disk_volume_type}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolDiskSpecDiskType.property.ebsVolumeType">ebsVolumeType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#ebs_volume_type InstancePool#ebs_volume_type}. |
 
 ---
 
@@ -1812,7 +1814,7 @@ public java.lang.String getAzureDiskVolumeType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#azure_disk_volume_type InstancePool#azure_disk_volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#azure_disk_volume_type InstancePool#azure_disk_volume_type}.
 
 ---
 
@@ -1824,7 +1826,7 @@ public java.lang.String getEbsVolumeType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#ebs_volume_type InstancePool#ebs_volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#ebs_volume_type InstancePool#ebs_volume_type}.
 
 ---
 
@@ -1844,7 +1846,7 @@ InstancePoolGcpAttributes.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolGcpAttributes.property.gcpAvailability">gcpAvailability</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#gcp_availability InstancePool#gcp_availability}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolGcpAttributes.property.gcpAvailability">gcpAvailability</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#gcp_availability InstancePool#gcp_availability}. |
 
 ---
 
@@ -1856,7 +1858,7 @@ public java.lang.String getGcpAvailability();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#gcp_availability InstancePool#gcp_availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#gcp_availability InstancePool#gcp_availability}.
 
 ---
 
@@ -1895,7 +1897,7 @@ public java.lang.Object getLaunchTemplateOverride();
 
 launch_template_override block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#launch_template_override InstancePool#launch_template_override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#launch_template_override InstancePool#launch_template_override}
 
 ---
 
@@ -1909,7 +1911,7 @@ public InstancePoolInstancePoolFleetAttributesFleetOnDemandOption getFleetOnDema
 
 fleet_on_demand_option block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#fleet_on_demand_option InstancePool#fleet_on_demand_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#fleet_on_demand_option InstancePool#fleet_on_demand_option}
 
 ---
 
@@ -1923,7 +1925,7 @@ public InstancePoolInstancePoolFleetAttributesFleetSpotOption getFleetSpotOption
 
 fleet_spot_option block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#fleet_spot_option InstancePool#fleet_spot_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#fleet_spot_option InstancePool#fleet_spot_option}
 
 ---
 
@@ -1944,8 +1946,8 @@ InstancePoolInstancePoolFleetAttributesFleetOnDemandOption.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetOnDemandOption.property.allocationStrategy">allocationStrategy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#allocation_strategy InstancePool#allocation_strategy}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetOnDemandOption.property.instancePoolsToUseCount">instancePoolsToUseCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#instance_pools_to_use_count InstancePool#instance_pools_to_use_count}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetOnDemandOption.property.allocationStrategy">allocationStrategy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#allocation_strategy InstancePool#allocation_strategy}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetOnDemandOption.property.instancePoolsToUseCount">instancePoolsToUseCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#instance_pools_to_use_count InstancePool#instance_pools_to_use_count}. |
 
 ---
 
@@ -1957,7 +1959,7 @@ public java.lang.String getAllocationStrategy();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#allocation_strategy InstancePool#allocation_strategy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#allocation_strategy InstancePool#allocation_strategy}.
 
 ---
 
@@ -1969,7 +1971,7 @@ public java.lang.Number getInstancePoolsToUseCount();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#instance_pools_to_use_count InstancePool#instance_pools_to_use_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#instance_pools_to_use_count InstancePool#instance_pools_to_use_count}.
 
 ---
 
@@ -1990,8 +1992,8 @@ InstancePoolInstancePoolFleetAttributesFleetSpotOption.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetSpotOption.property.allocationStrategy">allocationStrategy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#allocation_strategy InstancePool#allocation_strategy}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetSpotOption.property.instancePoolsToUseCount">instancePoolsToUseCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#instance_pools_to_use_count InstancePool#instance_pools_to_use_count}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetSpotOption.property.allocationStrategy">allocationStrategy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#allocation_strategy InstancePool#allocation_strategy}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetSpotOption.property.instancePoolsToUseCount">instancePoolsToUseCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#instance_pools_to_use_count InstancePool#instance_pools_to_use_count}. |
 
 ---
 
@@ -2003,7 +2005,7 @@ public java.lang.String getAllocationStrategy();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#allocation_strategy InstancePool#allocation_strategy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#allocation_strategy InstancePool#allocation_strategy}.
 
 ---
 
@@ -2015,7 +2017,7 @@ public java.lang.Number getInstancePoolsToUseCount();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#instance_pools_to_use_count InstancePool#instance_pools_to_use_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#instance_pools_to_use_count InstancePool#instance_pools_to_use_count}.
 
 ---
 
@@ -2036,8 +2038,8 @@ InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride.property.availabilityZone">availabilityZone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#availability_zone InstancePool#availability_zone}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride.property.instanceType">instanceType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#instance_type InstancePool#instance_type}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride.property.availabilityZone">availabilityZone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#availability_zone InstancePool#availability_zone}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride.property.instanceType">instanceType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#instance_type InstancePool#instance_type}. |
 
 ---
 
@@ -2049,7 +2051,7 @@ public java.lang.String getAvailabilityZone();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#availability_zone InstancePool#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#availability_zone InstancePool#availability_zone}.
 
 ---
 
@@ -2061,7 +2063,7 @@ public java.lang.String getInstanceType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#instance_type InstancePool#instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#instance_type InstancePool#instance_type}.
 
 ---
 
@@ -2082,7 +2084,7 @@ InstancePoolPreloadedDockerImage.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImage.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#url InstancePool#url}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImage.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#url InstancePool#url}. |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImage.property.basicAuth">basicAuth</a></code> | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImageBasicAuth">InstancePoolPreloadedDockerImageBasicAuth</a></code> | basic_auth block. |
 
 ---
@@ -2095,7 +2097,7 @@ public java.lang.String getUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#url InstancePool#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#url InstancePool#url}.
 
 ---
 
@@ -2109,7 +2111,7 @@ public InstancePoolPreloadedDockerImageBasicAuth getBasicAuth();
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#basic_auth InstancePool#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#basic_auth InstancePool#basic_auth}
 
 ---
 
@@ -2130,8 +2132,8 @@ InstancePoolPreloadedDockerImageBasicAuth.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImageBasicAuth.property.password">password</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#password InstancePool#password}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImageBasicAuth.property.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#username InstancePool#username}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImageBasicAuth.property.password">password</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#password InstancePool#password}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImageBasicAuth.property.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#username InstancePool#username}. |
 
 ---
 
@@ -2143,7 +2145,7 @@ public java.lang.String getPassword();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#password InstancePool#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#password InstancePool#password}.
 
 ---
 
@@ -2155,7 +2157,7 @@ public java.lang.String getUsername();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/instance_pool#username InstancePool#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool#username InstancePool#username}.
 
 ---
 

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/databricks/r/workspace_conf
+// https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/workspace_conf
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,11 +8,11 @@ import * as cdktf from 'cdktf';
 
 export interface WorkspaceConfConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/workspace_conf#custom_config WorkspaceConf#custom_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/workspace_conf#custom_config WorkspaceConf#custom_config}
   */
   readonly customConfig?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/workspace_conf#id WorkspaceConf#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/workspace_conf#id WorkspaceConf#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -21,7 +21,7 @@ export interface WorkspaceConfConfig extends cdktf.TerraformMetaArguments {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/databricks/r/workspace_conf databricks_workspace_conf}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/workspace_conf databricks_workspace_conf}
 */
 export class WorkspaceConf extends cdktf.TerraformResource {
 
@@ -35,7 +35,7 @@ export class WorkspaceConf extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/databricks/r/workspace_conf databricks_workspace_conf} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/workspace_conf databricks_workspace_conf} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

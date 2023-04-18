@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/databricks/r/sql_visualization
+// https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/sql_visualization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,44 +8,44 @@ import * as cdktf from 'cdktf';
 
 export interface SqlVisualizationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_visualization#description SqlVisualization#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/sql_visualization#description SqlVisualization#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_visualization#id SqlVisualization#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/sql_visualization#id SqlVisualization#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_visualization#name SqlVisualization#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/sql_visualization#name SqlVisualization#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_visualization#options SqlVisualization#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/sql_visualization#options SqlVisualization#options}
   */
   readonly options: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_visualization#query_id SqlVisualization#query_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/sql_visualization#query_id SqlVisualization#query_id}
   */
   readonly queryId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_visualization#query_plan SqlVisualization#query_plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/sql_visualization#query_plan SqlVisualization#query_plan}
   */
   readonly queryPlan?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_visualization#type SqlVisualization#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/sql_visualization#type SqlVisualization#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/sql_visualization#visualization_id SqlVisualization#visualization_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/sql_visualization#visualization_id SqlVisualization#visualization_id}
   */
   readonly visualizationId?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/databricks/r/sql_visualization databricks_sql_visualization}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/sql_visualization databricks_sql_visualization}
 */
 export class SqlVisualization extends cdktf.TerraformResource {
 
@@ -59,7 +59,7 @@ export class SqlVisualization extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/databricks/r/sql_visualization databricks_sql_visualization} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/sql_visualization databricks_sql_visualization} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

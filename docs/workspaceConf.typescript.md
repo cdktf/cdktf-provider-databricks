@@ -1,6 +1,6 @@
 # `databricks_workspace_conf`
 
-Refer to the Terraform Registory for docs: [`databricks_workspace_conf`](https://www.terraform.io/docs/providers/databricks/r/workspace_conf).
+Refer to the Terraform Registory for docs: [`databricks_workspace_conf`](https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/workspace_conf).
 
 # `workspaceConf` Submodule <a name="`workspaceConf` Submodule" id="@cdktf/provider-databricks.workspaceConf"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`databricks_workspace_conf`](https:/
 
 ### WorkspaceConf <a name="WorkspaceConf" id="@cdktf/provider-databricks.workspaceConf.WorkspaceConf"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/databricks/r/workspace_conf databricks_workspace_conf}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/workspace_conf databricks_workspace_conf}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.workspaceConf.WorkspaceConf.Initializer"></a>
 
@@ -353,7 +353,7 @@ workspaceConf.WorkspaceConf.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-databricks.workspaceConf.WorkspaceConf.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.workspaceConf.WorkspaceConf.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.workspaceConf.WorkspaceConf.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.workspaceConf.WorkspaceConf.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.workspaceConf.WorkspaceConf.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.workspaceConf.WorkspaceConf.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.workspaceConf.WorkspaceConf.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.workspaceConf.WorkspaceConf.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -451,10 +451,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-databricks.workspaceConf.WorkspaceConf.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -583,14 +583,14 @@ const workspaceConfConfig: workspaceConf.WorkspaceConfConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.workspaceConf.WorkspaceConfConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.workspaceConf.WorkspaceConfConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.workspaceConf.WorkspaceConfConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.workspaceConf.WorkspaceConfConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.workspaceConf.WorkspaceConfConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.workspaceConf.WorkspaceConfConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.workspaceConf.WorkspaceConfConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.workspaceConf.WorkspaceConfConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.workspaceConf.WorkspaceConfConfig.property.customConfig">customConfig</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/workspace_conf#custom_config WorkspaceConf#custom_config}. |
-| <code><a href="#@cdktf/provider-databricks.workspaceConf.WorkspaceConfConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/workspace_conf#id WorkspaceConf#id}. |
+| <code><a href="#@cdktf/provider-databricks.workspaceConf.WorkspaceConfConfig.property.customConfig">customConfig</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/workspace_conf#custom_config WorkspaceConf#custom_config}. |
+| <code><a href="#@cdktf/provider-databricks.workspaceConf.WorkspaceConfConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/workspace_conf#id WorkspaceConf#id}. |
 
 ---
 
@@ -607,10 +607,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-databricks.workspaceConf.WorkspaceConfConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -672,7 +672,7 @@ public readonly customConfig: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/workspace_conf#custom_config WorkspaceConf#custom_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/workspace_conf#custom_config WorkspaceConf#custom_config}.
 
 ---
 
@@ -684,7 +684,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/workspace_conf#id WorkspaceConf#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/workspace_conf#id WorkspaceConf#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

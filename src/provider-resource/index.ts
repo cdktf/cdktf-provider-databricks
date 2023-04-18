@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/databricks/r/provider
+// https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/provider
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,32 +8,32 @@ import * as cdktf from 'cdktf';
 
 export interface ProviderResourceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/provider#authentication_type ProviderResource#authentication_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/provider#authentication_type ProviderResource#authentication_type}
   */
   readonly authenticationType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/provider#comment ProviderResource#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/provider#comment ProviderResource#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/provider#id ProviderResource#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/provider#id ProviderResource#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/provider#name ProviderResource#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/provider#name ProviderResource#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/provider#recipient_profile_str ProviderResource#recipient_profile_str}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/provider#recipient_profile_str ProviderResource#recipient_profile_str}
   */
   readonly recipientProfileStr: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/databricks/r/provider databricks_provider}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/provider databricks_provider}
 */
 export class ProviderResource extends cdktf.TerraformResource {
 
@@ -47,7 +47,7 @@ export class ProviderResource extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/databricks/r/provider databricks_provider} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/provider databricks_provider} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

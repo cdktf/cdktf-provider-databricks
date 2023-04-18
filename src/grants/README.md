@@ -1,3 +1,3 @@
 # `databricks_grants`
 
-Refer to the Terraform Registory for docs: [`databricks_grants`](https://www.terraform.io/docs/providers/databricks/r/grants).
+Refer to the Terraform Registory for docs: [`databricks_grants`](https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/grants).

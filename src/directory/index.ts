@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/databricks/r/directory
+// https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/directory
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,28 +8,28 @@ import * as cdktf from 'cdktf';
 
 export interface DirectoryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/directory#delete_recursive Directory#delete_recursive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/directory#delete_recursive Directory#delete_recursive}
   */
   readonly deleteRecursive?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/directory#id Directory#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/directory#id Directory#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/directory#object_id Directory#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/directory#object_id Directory#object_id}
   */
   readonly objectId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/directory#path Directory#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/directory#path Directory#path}
   */
   readonly path: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/databricks/r/directory databricks_directory}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/directory databricks_directory}
 */
 export class Directory extends cdktf.TerraformResource {
 
@@ -43,7 +43,7 @@ export class Directory extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/databricks/r/directory databricks_directory} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/directory databricks_directory} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

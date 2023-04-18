@@ -1,3 +1,3 @@
 # `databricks_instance_pool`
 
-Refer to the Terraform Registory for docs: [`databricks_instance_pool`](https://www.terraform.io/docs/providers/databricks/r/instance_pool).
+Refer to the Terraform Registory for docs: [`databricks_instance_pool`](https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/instance_pool).

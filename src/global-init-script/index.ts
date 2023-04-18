@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/databricks/r/global_init_script
+// https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/global_init_script
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,47 +8,47 @@ import * as cdktf from 'cdktf';
 
 export interface GlobalInitScriptConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/global_init_script#content_base64 GlobalInitScript#content_base64}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/global_init_script#content_base64 GlobalInitScript#content_base64}
   */
   readonly contentBase64?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/global_init_script#enabled GlobalInitScript#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/global_init_script#enabled GlobalInitScript#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/global_init_script#id GlobalInitScript#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/global_init_script#id GlobalInitScript#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/global_init_script#md5 GlobalInitScript#md5}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/global_init_script#md5 GlobalInitScript#md5}
   */
   readonly md5?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/global_init_script#name GlobalInitScript#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/global_init_script#name GlobalInitScript#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/global_init_script#position GlobalInitScript#position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/global_init_script#position GlobalInitScript#position}
   */
   readonly position?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/global_init_script#source GlobalInitScript#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/global_init_script#source GlobalInitScript#source}
   */
   readonly source?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/global_init_script#timeouts GlobalInitScript#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/global_init_script#timeouts GlobalInitScript#timeouts}
   */
   readonly timeouts?: GlobalInitScriptTimeouts;
 }
 export interface GlobalInitScriptTimeouts {
 }
 
-export function globalInitScriptTimeoutsToTerraform(struct?: GlobalInitScriptTimeoutsOutputReference | GlobalInitScriptTimeouts | cdktf.IResolvable): any {
+export function globalInitScriptTimeoutsToTerraform(struct?: GlobalInitScriptTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -66,7 +66,7 @@ export class GlobalInitScriptTimeoutsOutputReference extends cdktf.ComplexObject
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): GlobalInitScriptTimeouts | cdktf.IResolvable | undefined {
@@ -95,7 +95,7 @@ export class GlobalInitScriptTimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/databricks/r/global_init_script databricks_global_init_script}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/global_init_script databricks_global_init_script}
 */
 export class GlobalInitScript extends cdktf.TerraformResource {
 
@@ -109,7 +109,7 @@ export class GlobalInitScript extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/databricks/r/global_init_script databricks_global_init_script} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/global_init_script databricks_global_init_script} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

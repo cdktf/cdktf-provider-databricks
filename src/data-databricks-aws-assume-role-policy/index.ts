@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/databricks/d/aws_assume_role_policy
+// https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/aws_assume_role_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksAwsAssumeRolePolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/aws_assume_role_policy#databricks_account_id DataDatabricksAwsAssumeRolePolicy#databricks_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/aws_assume_role_policy#databricks_account_id DataDatabricksAwsAssumeRolePolicy#databricks_account_id}
   */
   readonly databricksAccountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/aws_assume_role_policy#external_id DataDatabricksAwsAssumeRolePolicy#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/aws_assume_role_policy#external_id DataDatabricksAwsAssumeRolePolicy#external_id}
   */
   readonly externalId: string;
   /**
   * Grant AssumeRole to Databricks SaasUsageDeliveryRole instead of root account
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/aws_assume_role_policy#for_log_delivery DataDatabricksAwsAssumeRolePolicy#for_log_delivery}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/aws_assume_role_policy#for_log_delivery DataDatabricksAwsAssumeRolePolicy#for_log_delivery}
   */
   readonly forLogDelivery?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/aws_assume_role_policy#id DataDatabricksAwsAssumeRolePolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/aws_assume_role_policy#id DataDatabricksAwsAssumeRolePolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -31,7 +31,7 @@ export interface DataDatabricksAwsAssumeRolePolicyConfig extends cdktf.Terraform
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/databricks/d/aws_assume_role_policy databricks_aws_assume_role_policy}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/aws_assume_role_policy databricks_aws_assume_role_policy}
 */
 export class DataDatabricksAwsAssumeRolePolicy extends cdktf.TerraformDataSource {
 
@@ -45,7 +45,7 @@ export class DataDatabricksAwsAssumeRolePolicy extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/databricks/d/aws_assume_role_policy databricks_aws_assume_role_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/aws_assume_role_policy databricks_aws_assume_role_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

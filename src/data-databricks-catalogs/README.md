@@ -1,3 +1,3 @@
 # `data_databricks_catalogs`
 
-Refer to the Terraform Registory for docs: [`data_databricks_catalogs`](https://www.terraform.io/docs/providers/databricks/d/catalogs).
+Refer to the Terraform Registory for docs: [`data_databricks_catalogs`](https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/catalogs).
