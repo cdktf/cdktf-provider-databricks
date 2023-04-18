@@ -1,3 +1,7 @@
+# `databricks_library`
+
+Refer to the Terraform Registory for docs: [`databricks_library`](https://www.terraform.io/docs/providers/databricks/r/library).
+
 # `library` Submodule <a name="`library` Submodule" id="@cdktf/provider-databricks.library"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

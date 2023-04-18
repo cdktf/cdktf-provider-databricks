@@ -1,3 +1,7 @@
+# `data_databricks_group`
+
+Refer to the Terraform Registory for docs: [`data_databricks_group`](https://www.terraform.io/docs/providers/databricks/d/group).
+
 # `dataDatabricksGroup` Submodule <a name="`dataDatabricksGroup` Submodule" id="@cdktf/provider-databricks.dataDatabricksGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `databricks_obo_token`
+
+Refer to the Terraform Registory for docs: [`databricks_obo_token`](https://www.terraform.io/docs/providers/databricks/r/obo_token).
+
 # `oboToken` Submodule <a name="`oboToken` Submodule" id="@cdktf/provider-databricks.oboToken"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

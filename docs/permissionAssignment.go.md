@@ -1,3 +1,7 @@
+# `databricks_permission_assignment`
+
+Refer to the Terraform Registory for docs: [`databricks_permission_assignment`](https://www.terraform.io/docs/providers/databricks/r/permission_assignment).
+
 # `permissionAssignment` Submodule <a name="`permissionAssignment` Submodule" id="@cdktf/provider-databricks.permissionAssignment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

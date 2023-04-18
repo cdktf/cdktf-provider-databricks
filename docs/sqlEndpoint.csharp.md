@@ -1,3 +1,7 @@
+# `databricks_sql_endpoint`
+
+Refer to the Terraform Registory for docs: [`databricks_sql_endpoint`](https://www.terraform.io/docs/providers/databricks/r/sql_endpoint).
+
 # `sqlEndpoint` Submodule <a name="`sqlEndpoint` Submodule" id="@cdktf/provider-databricks.sqlEndpoint"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

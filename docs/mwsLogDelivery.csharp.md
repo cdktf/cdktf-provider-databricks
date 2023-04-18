@@ -1,3 +1,7 @@
+# `databricks_mws_log_delivery`
+
+Refer to the Terraform Registory for docs: [`databricks_mws_log_delivery`](https://www.terraform.io/docs/providers/databricks/r/mws_log_delivery).
+
 # `mwsLogDelivery` Submodule <a name="`mwsLogDelivery` Submodule" id="@cdktf/provider-databricks.mwsLogDelivery"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

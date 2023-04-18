@@ -1,3 +1,7 @@
+# `databricks_git_credential`
+
+Refer to the Terraform Registory for docs: [`databricks_git_credential`](https://www.terraform.io/docs/providers/databricks/r/git_credential).
+
 # `gitCredential` Submodule <a name="`gitCredential` Submodule" id="@cdktf/provider-databricks.gitCredential"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

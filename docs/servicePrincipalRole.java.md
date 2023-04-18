@@ -1,3 +1,7 @@
+# `databricks_service_principal_role`
+
+Refer to the Terraform Registory for docs: [`databricks_service_principal_role`](https://www.terraform.io/docs/providers/databricks/r/service_principal_role).
+
 # `servicePrincipalRole` Submodule <a name="`servicePrincipalRole` Submodule" id="@cdktf/provider-databricks.servicePrincipalRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

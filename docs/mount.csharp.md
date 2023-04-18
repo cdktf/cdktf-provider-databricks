@@ -1,3 +1,7 @@
+# `databricks_mount`
+
+Refer to the Terraform Registory for docs: [`databricks_mount`](https://www.terraform.io/docs/providers/databricks/r/mount).
+
 # `mount` Submodule <a name="`mount` Submodule" id="@cdktf/provider-databricks.mount"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

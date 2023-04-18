@@ -1,3 +1,7 @@
+# `data_databricks_current_user`
+
+Refer to the Terraform Registory for docs: [`data_databricks_current_user`](https://www.terraform.io/docs/providers/databricks/d/current_user).
+
 # `dataDatabricksCurrentUser` Submodule <a name="`dataDatabricksCurrentUser` Submodule" id="@cdktf/provider-databricks.dataDatabricksCurrentUser"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
