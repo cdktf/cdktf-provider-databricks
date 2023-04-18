@@ -1,3 +1,7 @@
+# `databricks_repo`
+
+Refer to the Terraform Registory for docs: [`databricks_repo`](https://www.terraform.io/docs/providers/databricks/r/repo).
+
 # `repo` Submodule <a name="`repo` Submodule" id="@cdktf/provider-databricks.repo"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

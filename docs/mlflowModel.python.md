@@ -1,3 +1,7 @@
+# `databricks_mlflow_model`
+
+Refer to the Terraform Registory for docs: [`databricks_mlflow_model`](https://www.terraform.io/docs/providers/databricks/r/mlflow_model).
+
 # `mlflowModel` Submodule <a name="`mlflowModel` Submodule" id="@cdktf/provider-databricks.mlflowModel"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

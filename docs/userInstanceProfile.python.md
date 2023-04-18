@@ -1,3 +1,7 @@
+# `databricks_user_instance_profile`
+
+Refer to the Terraform Registory for docs: [`databricks_user_instance_profile`](https://www.terraform.io/docs/providers/databricks/r/user_instance_profile).
+
 # `userInstanceProfile` Submodule <a name="`userInstanceProfile` Submodule" id="@cdktf/provider-databricks.userInstanceProfile"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

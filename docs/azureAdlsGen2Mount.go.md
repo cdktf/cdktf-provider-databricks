@@ -1,3 +1,7 @@
+# `databricks_azure_adls_gen2_mount`
+
+Refer to the Terraform Registory for docs: [`databricks_azure_adls_gen2_mount`](https://www.terraform.io/docs/providers/databricks/r/azure_adls_gen2_mount).
+
 # `azureAdlsGen2Mount` Submodule <a name="`azureAdlsGen2Mount` Submodule" id="@cdktf/provider-databricks.azureAdlsGen2Mount"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

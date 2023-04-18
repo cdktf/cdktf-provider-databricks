@@ -1,3 +1,7 @@
+# `databricks_permissions`
+
+Refer to the Terraform Registory for docs: [`databricks_permissions`](https://www.terraform.io/docs/providers/databricks/r/permissions).
+
 # `permissions` Submodule <a name="`permissions` Submodule" id="@cdktf/provider-databricks.permissions"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

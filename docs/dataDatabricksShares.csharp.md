@@ -1,3 +1,7 @@
+# `data_databricks_shares`
+
+Refer to the Terraform Registory for docs: [`data_databricks_shares`](https://www.terraform.io/docs/providers/databricks/d/shares).
+
 # `dataDatabricksShares` Submodule <a name="`dataDatabricksShares` Submodule" id="@cdktf/provider-databricks.dataDatabricksShares"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

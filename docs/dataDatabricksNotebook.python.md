@@ -1,3 +1,7 @@
+# `data_databricks_notebook`
+
+Refer to the Terraform Registory for docs: [`data_databricks_notebook`](https://www.terraform.io/docs/providers/databricks/d/notebook).
+
 # `dataDatabricksNotebook` Submodule <a name="`dataDatabricksNotebook` Submodule" id="@cdktf/provider-databricks.dataDatabricksNotebook"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

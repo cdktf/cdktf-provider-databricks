@@ -1,3 +1,7 @@
+# `databricks_instance_pool`
+
+Refer to the Terraform Registory for docs: [`databricks_instance_pool`](https://www.terraform.io/docs/providers/databricks/r/instance_pool).
+
 # `instancePool` Submodule <a name="`instancePool` Submodule" id="@cdktf/provider-databricks.instancePool"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `databricks_sql_permissions`
+
+Refer to the Terraform Registory for docs: [`databricks_sql_permissions`](https://www.terraform.io/docs/providers/databricks/r/sql_permissions).
+
 # `sqlPermissions` Submodule <a name="`sqlPermissions` Submodule" id="@cdktf/provider-databricks.sqlPermissions"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

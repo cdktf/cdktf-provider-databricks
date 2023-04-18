@@ -1,3 +1,7 @@
+# `databricks_job`
+
+Refer to the Terraform Registory for docs: [`databricks_job`](https://www.terraform.io/docs/providers/databricks/r/job).
+
 # `job` Submodule <a name="`job` Submodule" id="@cdktf/provider-databricks.job"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `databricks_entitlements`
+
+Refer to the Terraform Registory for docs: [`databricks_entitlements`](https://www.terraform.io/docs/providers/databricks/r/entitlements).
+
 # `entitlements` Submodule <a name="`entitlements` Submodule" id="@cdktf/provider-databricks.entitlements"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

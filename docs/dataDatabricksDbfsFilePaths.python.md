@@ -1,3 +1,7 @@
+# `data_databricks_dbfs_file_paths`
+
+Refer to the Terraform Registory for docs: [`data_databricks_dbfs_file_paths`](https://www.terraform.io/docs/providers/databricks/d/dbfs_file_paths).
+
 # `dataDatabricksDbfsFilePaths` Submodule <a name="`dataDatabricksDbfsFilePaths` Submodule" id="@cdktf/provider-databricks.dataDatabricksDbfsFilePaths"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
