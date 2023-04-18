@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/databricks/r/model_serving
+// https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/model_serving
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,48 +8,48 @@ import * as cdktf from 'cdktf';
 
 export interface ModelServingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/model_serving#id ModelServing#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/model_serving#id ModelServing#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/model_serving#name ModelServing#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/model_serving#name ModelServing#name}
   */
   readonly name: string;
   /**
   * config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/model_serving#config ModelServing#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/model_serving#config ModelServing#config}
   */
   readonly config: ModelServingConfigA;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/model_serving#timeouts ModelServing#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/model_serving#timeouts ModelServing#timeouts}
   */
   readonly timeouts?: ModelServingTimeouts;
 }
 export interface ModelServingConfigServedModels {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/model_serving#model_name ModelServing#model_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/model_serving#model_name ModelServing#model_name}
   */
   readonly modelName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/model_serving#model_version ModelServing#model_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/model_serving#model_version ModelServing#model_version}
   */
   readonly modelVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/model_serving#name ModelServing#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/model_serving#name ModelServing#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/model_serving#scale_to_zero_enabled ModelServing#scale_to_zero_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/model_serving#scale_to_zero_enabled ModelServing#scale_to_zero_enabled}
   */
   readonly scaleToZeroEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/model_serving#workload_size ModelServing#workload_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/model_serving#workload_size ModelServing#workload_size}
   */
   readonly workloadSize: string;
 }
@@ -229,11 +229,11 @@ export class ModelServingConfigServedModelsList extends cdktf.ComplexList {
 }
 export interface ModelServingConfigTrafficConfigRoutes {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/model_serving#served_model_name ModelServing#served_model_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/model_serving#served_model_name ModelServing#served_model_name}
   */
   readonly servedModelName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/model_serving#traffic_percentage ModelServing#traffic_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/model_serving#traffic_percentage ModelServing#traffic_percentage}
   */
   readonly trafficPercentage: number;
 }
@@ -349,7 +349,7 @@ export interface ModelServingConfigTrafficConfig {
   /**
   * routes block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/model_serving#routes ModelServing#routes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/model_serving#routes ModelServing#routes}
   */
   readonly routes?: ModelServingConfigTrafficConfigRoutes[] | cdktf.IResolvable;
 }
@@ -416,13 +416,13 @@ export interface ModelServingConfigA {
   /**
   * served_models block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/model_serving#served_models ModelServing#served_models}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/model_serving#served_models ModelServing#served_models}
   */
   readonly servedModels: ModelServingConfigServedModels[] | cdktf.IResolvable;
   /**
   * traffic_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/model_serving#traffic_config ModelServing#traffic_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/model_serving#traffic_config ModelServing#traffic_config}
   */
   readonly trafficConfig?: ModelServingConfigTrafficConfig;
 }
@@ -507,16 +507,16 @@ export class ModelServingConfigAOutputReference extends cdktf.ComplexObject {
 }
 export interface ModelServingTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/model_serving#create ModelServing#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/model_serving#create ModelServing#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/r/model_serving#update ModelServing#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/model_serving#update ModelServing#update}
   */
   readonly update?: string;
 }
 
-export function modelServingTimeoutsToTerraform(struct?: ModelServingTimeoutsOutputReference | ModelServingTimeouts | cdktf.IResolvable): any {
+export function modelServingTimeoutsToTerraform(struct?: ModelServingTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -536,7 +536,7 @@ export class ModelServingTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): ModelServingTimeouts | cdktf.IResolvable | undefined {
@@ -609,7 +609,7 @@ export class ModelServingTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/databricks/r/model_serving databricks_model_serving}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/model_serving databricks_model_serving}
 */
 export class ModelServing extends cdktf.TerraformResource {
 
@@ -623,7 +623,7 @@ export class ModelServing extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/databricks/r/model_serving databricks_model_serving} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/model_serving databricks_model_serving} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

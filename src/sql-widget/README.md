@@ -1,3 +1,3 @@
 # `databricks_sql_widget`
 
-Refer to the Terraform Registory for docs: [`databricks_sql_widget`](https://www.terraform.io/docs/providers/databricks/r/sql_widget).
+Refer to the Terraform Registory for docs: [`databricks_sql_widget`](https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/sql_widget).

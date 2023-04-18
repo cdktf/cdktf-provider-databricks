@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/databricks/d/directory
+// https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/directory
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,24 +8,24 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksDirectoryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/directory#id DataDatabricksDirectory#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/directory#id DataDatabricksDirectory#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/directory#object_id DataDatabricksDirectory#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/directory#object_id DataDatabricksDirectory#object_id}
   */
   readonly objectId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/directory#path DataDatabricksDirectory#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/directory#path DataDatabricksDirectory#path}
   */
   readonly path: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/databricks/d/directory databricks_directory}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/directory databricks_directory}
 */
 export class DataDatabricksDirectory extends cdktf.TerraformDataSource {
 
@@ -39,7 +39,7 @@ export class DataDatabricksDirectory extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/databricks/d/directory databricks_directory} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/directory databricks_directory} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

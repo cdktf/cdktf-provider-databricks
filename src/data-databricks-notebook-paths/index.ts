@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/databricks/d/notebook_paths
+// https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/notebook_paths
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,18 +8,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksNotebookPathsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/notebook_paths#id DataDatabricksNotebookPaths#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/notebook_paths#id DataDatabricksNotebookPaths#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/notebook_paths#path DataDatabricksNotebookPaths#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/notebook_paths#path DataDatabricksNotebookPaths#path}
   */
   readonly path: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/databricks/d/notebook_paths#recursive DataDatabricksNotebookPaths#recursive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/notebook_paths#recursive DataDatabricksNotebookPaths#recursive}
   */
   readonly recursive: boolean | cdktf.IResolvable;
 }
@@ -94,7 +94,7 @@ export class DataDatabricksNotebookPathsNotebookPathListList extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/databricks/d/notebook_paths databricks_notebook_paths}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/notebook_paths databricks_notebook_paths}
 */
 export class DataDatabricksNotebookPaths extends cdktf.TerraformDataSource {
 
@@ -108,7 +108,7 @@ export class DataDatabricksNotebookPaths extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/databricks/d/notebook_paths databricks_notebook_paths} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/notebook_paths databricks_notebook_paths} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

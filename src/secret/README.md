@@ -1,3 +1,3 @@
 # `databricks_secret`
 
-Refer to the Terraform Registory for docs: [`databricks_secret`](https://www.terraform.io/docs/providers/databricks/r/secret).
+Refer to the Terraform Registory for docs: [`databricks_secret`](https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/secret).
