@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJobs.DataDatabricksJobs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/datadatabricksjobs"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjobs"
 
 datadatabricksjobs.NewDataDatabricksJobs(scope Construct, id *string, config DataDatabricksJobsConfig) DataDatabricksJobs
 ```
@@ -284,7 +284,7 @@ func ResetIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksJobs.DataDatabricksJobs.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/datadatabricksjobs"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjobs"
 
 datadatabricksjobs.DataDatabricksJobs_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksJobs.DataDatabricksJobs.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/datadatabricksjobs"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjobs"
 
 datadatabricksjobs.DataDatabricksJobs_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datadatabricksjobs.DataDatabricksJobs_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksJobs.DataDatabricksJobs.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/datadatabricksjobs"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjobs"
 
 datadatabricksjobs.DataDatabricksJobs_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -551,7 +551,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksJobs.DataDatabricksJobsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/datadatabricksjobs"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksjobs"
 
 &datadatabricksjobs.DataDatabricksJobsConfig {
 	Connection: interface{},
