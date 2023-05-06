@@ -1,3 +1,3 @@
 # `data_databricks_zones`
 
-Refer to the Terraform Registory for docs: [`data_databricks_zones`](https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/data-sources/zones).
+Refer to the Terraform Registory for docs: [`data_databricks_zones`](https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/data-sources/zones).

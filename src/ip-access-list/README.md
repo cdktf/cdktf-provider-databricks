@@ -1,3 +1,3 @@
 # `databricks_ip_access_list`
 
-Refer to the Terraform Registory for docs: [`databricks_ip_access_list`](https://registry.terraform.io/providers/databricks/databricks/1.14.3/docs/resources/ip_access_list).
+Refer to the Terraform Registory for docs: [`databricks_ip_access_list`](https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/ip_access_list).
