@@ -107,3 +107,4 @@ The following submodules are available:
 - [userInstanceProfile](./userInstanceProfile.java.md)
 - [userRole](./userRole.java.md)
 - [workspaceConf](./workspaceConf.java.md)
+- [workspaceFile](./workspaceFile.java.md)

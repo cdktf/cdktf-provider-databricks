@@ -71,6 +71,7 @@ export * as user from './user';
 export * as userInstanceProfile from './user-instance-profile';
 export * as userRole from './user-role';
 export * as workspaceConf from './workspace-conf';
+export * as workspaceFile from './workspace-file';
 export * as dataDatabricksAwsAssumeRolePolicy from './data-databricks-aws-assume-role-policy';
 export * as dataDatabricksAwsBucketPolicy from './data-databricks-aws-bucket-policy';
 export * as dataDatabricksAwsCrossaccountPolicy from './data-databricks-aws-crossaccount-policy';

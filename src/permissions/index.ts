@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions
+// https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,110 +8,118 @@ import * as cdktf from 'cdktf';
 
 export interface PermissionsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions#authorization Permissions#authorization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions#authorization Permissions#authorization}
   */
   readonly authorization?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions#cluster_id Permissions#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions#cluster_id Permissions#cluster_id}
   */
   readonly clusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions#cluster_policy_id Permissions#cluster_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions#cluster_policy_id Permissions#cluster_policy_id}
   */
   readonly clusterPolicyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions#directory_id Permissions#directory_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions#directory_id Permissions#directory_id}
   */
   readonly directoryId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions#directory_path Permissions#directory_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions#directory_path Permissions#directory_path}
   */
   readonly directoryPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions#experiment_id Permissions#experiment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions#experiment_id Permissions#experiment_id}
   */
   readonly experimentId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions#id Permissions#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions#id Permissions#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions#instance_pool_id Permissions#instance_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions#instance_pool_id Permissions#instance_pool_id}
   */
   readonly instancePoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions#job_id Permissions#job_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions#job_id Permissions#job_id}
   */
   readonly jobId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions#notebook_id Permissions#notebook_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions#notebook_id Permissions#notebook_id}
   */
   readonly notebookId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions#notebook_path Permissions#notebook_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions#notebook_path Permissions#notebook_path}
   */
   readonly notebookPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions#object_type Permissions#object_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions#object_type Permissions#object_type}
   */
   readonly objectType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions#pipeline_id Permissions#pipeline_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions#pipeline_id Permissions#pipeline_id}
   */
   readonly pipelineId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions#registered_model_id Permissions#registered_model_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions#registered_model_id Permissions#registered_model_id}
   */
   readonly registeredModelId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions#repo_id Permissions#repo_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions#repo_id Permissions#repo_id}
   */
   readonly repoId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions#repo_path Permissions#repo_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions#repo_path Permissions#repo_path}
   */
   readonly repoPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions#sql_alert_id Permissions#sql_alert_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions#sql_alert_id Permissions#sql_alert_id}
   */
   readonly sqlAlertId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions#sql_dashboard_id Permissions#sql_dashboard_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions#sql_dashboard_id Permissions#sql_dashboard_id}
   */
   readonly sqlDashboardId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions#sql_endpoint_id Permissions#sql_endpoint_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions#sql_endpoint_id Permissions#sql_endpoint_id}
   */
   readonly sqlEndpointId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions#sql_query_id Permissions#sql_query_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions#sql_query_id Permissions#sql_query_id}
   */
   readonly sqlQueryId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions#workspace_file_id Permissions#workspace_file_id}
+  */
+  readonly workspaceFileId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions#workspace_file_path Permissions#workspace_file_path}
+  */
+  readonly workspaceFilePath?: string;
+  /**
   * access_control block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions#access_control Permissions#access_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions#access_control Permissions#access_control}
   */
   readonly accessControl: PermissionsAccessControl[] | cdktf.IResolvable;
 }
 export interface PermissionsAccessControl {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions#group_name Permissions#group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions#group_name Permissions#group_name}
   */
   readonly groupName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions#permission_level Permissions#permission_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions#permission_level Permissions#permission_level}
   */
   readonly permissionLevel: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions#service_principal_name Permissions#service_principal_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions#service_principal_name Permissions#service_principal_name}
   */
   readonly servicePrincipalName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions#user_name Permissions#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions#user_name Permissions#user_name}
   */
   readonly userName?: string;
 }
@@ -274,7 +282,7 @@ export class PermissionsAccessControlList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions databricks_permissions}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions databricks_permissions}
 */
 export class Permissions extends cdktf.TerraformResource {
 
@@ -288,7 +296,7 @@ export class Permissions extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.15.0/docs/resources/permissions databricks_permissions} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/permissions databricks_permissions} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -299,7 +307,7 @@ export class Permissions extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_permissions',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.15.0',
+        providerVersion: '1.16.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -330,6 +338,8 @@ export class Permissions extends cdktf.TerraformResource {
     this._sqlDashboardId = config.sqlDashboardId;
     this._sqlEndpointId = config.sqlEndpointId;
     this._sqlQueryId = config.sqlQueryId;
+    this._workspaceFileId = config.workspaceFileId;
+    this._workspaceFilePath = config.workspaceFilePath;
     this._accessControl.internalValue = config.accessControl;
   }
 
@@ -657,6 +667,38 @@ export class Permissions extends cdktf.TerraformResource {
     return this._sqlQueryId;
   }
 
+  // workspace_file_id - computed: false, optional: true, required: false
+  private _workspaceFileId?: string; 
+  public get workspaceFileId() {
+    return this.getStringAttribute('workspace_file_id');
+  }
+  public set workspaceFileId(value: string) {
+    this._workspaceFileId = value;
+  }
+  public resetWorkspaceFileId() {
+    this._workspaceFileId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceFileIdInput() {
+    return this._workspaceFileId;
+  }
+
+  // workspace_file_path - computed: false, optional: true, required: false
+  private _workspaceFilePath?: string; 
+  public get workspaceFilePath() {
+    return this.getStringAttribute('workspace_file_path');
+  }
+  public set workspaceFilePath(value: string) {
+    this._workspaceFilePath = value;
+  }
+  public resetWorkspaceFilePath() {
+    this._workspaceFilePath = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceFilePathInput() {
+    return this._workspaceFilePath;
+  }
+
   // access_control - computed: false, optional: false, required: true
   private _accessControl = new PermissionsAccessControlList(this, "access_control", true);
   public get accessControl() {
@@ -696,6 +738,8 @@ export class Permissions extends cdktf.TerraformResource {
       sql_dashboard_id: cdktf.stringToTerraform(this._sqlDashboardId),
       sql_endpoint_id: cdktf.stringToTerraform(this._sqlEndpointId),
       sql_query_id: cdktf.stringToTerraform(this._sqlQueryId),
+      workspace_file_id: cdktf.stringToTerraform(this._workspaceFileId),
+      workspace_file_path: cdktf.stringToTerraform(this._workspaceFilePath),
       access_control: cdktf.listMapper(permissionsAccessControlToTerraform, true)(this._accessControl.internalValue),
     };
   }

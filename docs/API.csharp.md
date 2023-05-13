@@ -107,3 +107,4 @@ The following submodules are available:
 - [userInstanceProfile](./userInstanceProfile.csharp.md)
 - [userRole](./userRole.csharp.md)
 - [workspaceConf](./workspaceConf.csharp.md)
+- [workspaceFile](./workspaceFile.csharp.md)

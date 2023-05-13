@@ -107,3 +107,4 @@ The following submodules are available:
 - [userInstanceProfile](./userInstanceProfile.python.md)
 - [userRole](./userRole.python.md)
 - [workspaceConf](./workspaceConf.python.md)
+- [workspaceFile](./workspaceFile.python.md)
