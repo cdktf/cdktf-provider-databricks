@@ -107,3 +107,4 @@ The following submodules are available:
 - [userInstanceProfile](./userInstanceProfile.typescript.md)
 - [userRole](./userRole.typescript.md)
 - [workspaceConf](./workspaceConf.typescript.md)
+- [workspaceFile](./workspaceFile.typescript.md)
