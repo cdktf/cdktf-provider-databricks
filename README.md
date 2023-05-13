@@ -61,7 +61,8 @@ This project is explicitly not tracking the Terraform databricks Provider versio
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform databricks Provider](https://github.com/terraform-providers/terraform-provider-databricks)
+- [Terraform databricks Provider](https://registry.terraform.io/providers/databricks/databricks/1.0.0)
+    - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-databricks/releases)
 - [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.
