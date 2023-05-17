@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/mws_credentials
+// https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/mws_credentials
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,28 +8,28 @@ import * as cdktf from 'cdktf';
 
 export interface MwsCredentialsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/mws_credentials#account_id MwsCredentials#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/mws_credentials#account_id MwsCredentials#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/mws_credentials#credentials_name MwsCredentials#credentials_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/mws_credentials#credentials_name MwsCredentials#credentials_name}
   */
   readonly credentialsName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/mws_credentials#id MwsCredentials#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/mws_credentials#id MwsCredentials#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/mws_credentials#role_arn MwsCredentials#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/mws_credentials#role_arn MwsCredentials#role_arn}
   */
   readonly roleArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/mws_credentials databricks_mws_credentials}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/mws_credentials databricks_mws_credentials}
 */
 export class MwsCredentials extends cdktf.TerraformResource {
 
@@ -43,7 +43,7 @@ export class MwsCredentials extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.16.0/docs/resources/mws_credentials databricks_mws_credentials} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/mws_credentials databricks_mws_credentials} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -54,7 +54,7 @@ export class MwsCredentials extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_mws_credentials',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.16.0',
+        providerVersion: '1.16.1',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
