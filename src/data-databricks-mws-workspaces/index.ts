@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/data-sources/mws_workspaces
+// https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/data-sources/mws_workspaces
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,20 +8,20 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksMwsWorkspacesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/data-sources/mws_workspaces#id DataDatabricksMwsWorkspaces#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/data-sources/mws_workspaces#id DataDatabricksMwsWorkspaces#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/data-sources/mws_workspaces#ids DataDatabricksMwsWorkspaces#ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/data-sources/mws_workspaces#ids DataDatabricksMwsWorkspaces#ids}
   */
   readonly ids?: { [key: string]: number };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/data-sources/mws_workspaces databricks_mws_workspaces}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/data-sources/mws_workspaces databricks_mws_workspaces}
 */
 export class DataDatabricksMwsWorkspaces extends cdktf.TerraformDataSource {
 
@@ -35,7 +35,7 @@ export class DataDatabricksMwsWorkspaces extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/data-sources/mws_workspaces databricks_mws_workspaces} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/data-sources/mws_workspaces databricks_mws_workspaces} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -46,7 +46,7 @@ export class DataDatabricksMwsWorkspaces extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_mws_workspaces',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.16.1',
+        providerVersion: '1.17.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
