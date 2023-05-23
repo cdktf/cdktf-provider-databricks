@@ -1,6 +1,6 @@
 # `databricks_user`
 
-Refer to the Terraform Registory for docs: [`databricks_user`](https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/user).
+Refer to the Terraform Registory for docs: [`databricks_user`](https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/user).
 
 # `user` Submodule <a name="`user` Submodule" id="@cdktf/provider-databricks.user"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`databricks_user`](https://registry.
 
 ### User <a name="User" id="@cdktf/provider-databricks.user.User"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/user databricks_user}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/user databricks_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.user.User.Initializer"></a>
 
@@ -930,20 +930,20 @@ const userConfig: user.UserConfig = { ... }
 | <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.userName">userName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/user#user_name User#user_name}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.active">active</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/user#active User#active}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.allowClusterCreate">allowClusterCreate</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/user#allow_cluster_create User#allow_cluster_create}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.allowInstancePoolCreate">allowInstancePoolCreate</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/user#allow_instance_pool_create User#allow_instance_pool_create}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.databricksSqlAccess">databricksSqlAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/user#databricks_sql_access User#databricks_sql_access}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/user#display_name User#display_name}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.externalId">externalId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/user#external_id User#external_id}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.force">force</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/user#force User#force}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.forceDeleteHomeDir">forceDeleteHomeDir</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/user#force_delete_home_dir User#force_delete_home_dir}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.forceDeleteRepos">forceDeleteRepos</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/user#force_delete_repos User#force_delete_repos}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.home">home</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/user#home User#home}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/user#id User#id}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.repos">repos</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/user#repos User#repos}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.workspaceAccess">workspaceAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/user#workspace_access User#workspace_access}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.userName">userName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/user#user_name User#user_name}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.active">active</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/user#active User#active}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.allowClusterCreate">allowClusterCreate</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/user#allow_cluster_create User#allow_cluster_create}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.allowInstancePoolCreate">allowInstancePoolCreate</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/user#allow_instance_pool_create User#allow_instance_pool_create}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.databricksSqlAccess">databricksSqlAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/user#databricks_sql_access User#databricks_sql_access}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/user#display_name User#display_name}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.externalId">externalId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/user#external_id User#external_id}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.force">force</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/user#force User#force}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.forceDeleteHomeDir">forceDeleteHomeDir</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/user#force_delete_home_dir User#force_delete_home_dir}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.forceDeleteRepos">forceDeleteRepos</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/user#force_delete_repos User#force_delete_repos}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.home">home</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/user#home User#home}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/user#id User#id}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.repos">repos</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/user#repos User#repos}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.workspaceAccess">workspaceAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/user#workspace_access User#workspace_access}. |
 
 ---
 
@@ -1025,7 +1025,7 @@ public readonly userName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/user#user_name User#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/user#user_name User#user_name}.
 
 ---
 
@@ -1037,7 +1037,7 @@ public readonly active: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/user#active User#active}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/user#active User#active}.
 
 ---
 
@@ -1049,7 +1049,7 @@ public readonly allowClusterCreate: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/user#allow_cluster_create User#allow_cluster_create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/user#allow_cluster_create User#allow_cluster_create}.
 
 ---
 
@@ -1061,7 +1061,7 @@ public readonly allowInstancePoolCreate: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/user#allow_instance_pool_create User#allow_instance_pool_create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/user#allow_instance_pool_create User#allow_instance_pool_create}.
 
 ---
 
@@ -1073,7 +1073,7 @@ public readonly databricksSqlAccess: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/user#databricks_sql_access User#databricks_sql_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/user#databricks_sql_access User#databricks_sql_access}.
 
 ---
 
@@ -1085,7 +1085,7 @@ public readonly displayName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/user#display_name User#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/user#display_name User#display_name}.
 
 ---
 
@@ -1097,7 +1097,7 @@ public readonly externalId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/user#external_id User#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/user#external_id User#external_id}.
 
 ---
 
@@ -1109,7 +1109,7 @@ public readonly force: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/user#force User#force}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/user#force User#force}.
 
 ---
 
@@ -1121,7 +1121,7 @@ public readonly forceDeleteHomeDir: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/user#force_delete_home_dir User#force_delete_home_dir}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/user#force_delete_home_dir User#force_delete_home_dir}.
 
 ---
 
@@ -1133,7 +1133,7 @@ public readonly forceDeleteRepos: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/user#force_delete_repos User#force_delete_repos}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/user#force_delete_repos User#force_delete_repos}.
 
 ---
 
@@ -1145,7 +1145,7 @@ public readonly home: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/user#home User#home}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/user#home User#home}.
 
 ---
 
@@ -1157,7 +1157,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/user#id User#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/user#id User#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1172,7 +1172,7 @@ public readonly repos: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/user#repos User#repos}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/user#repos User#repos}.
 
 ---
 
@@ -1184,7 +1184,7 @@ public readonly workspaceAccess: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/user#workspace_access User#workspace_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/user#workspace_access User#workspace_access}.
 
 ---
 

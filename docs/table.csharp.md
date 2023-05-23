@@ -1,6 +1,6 @@
 # `databricks_table`
 
-Refer to the Terraform Registory for docs: [`databricks_table`](https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table).
+Refer to the Terraform Registory for docs: [`databricks_table`](https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table).
 
 # `table` Submodule <a name="`table` Submodule" id="@cdktf/provider-databricks.table"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`databricks_table`](https://registry
 
 ### Table <a name="Table" id="@cdktf/provider-databricks.table.Table"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table databricks_table}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table databricks_table}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.table.Table.Initializer"></a>
 
@@ -884,17 +884,17 @@ new TableColumn {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.table.TableColumn.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#name Table#name}. |
-| <code><a href="#@cdktf/provider-databricks.table.TableColumn.property.position">Position</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#position Table#position}. |
-| <code><a href="#@cdktf/provider-databricks.table.TableColumn.property.typeName">TypeName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#type_name Table#type_name}. |
-| <code><a href="#@cdktf/provider-databricks.table.TableColumn.property.typeText">TypeText</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#type_text Table#type_text}. |
-| <code><a href="#@cdktf/provider-databricks.table.TableColumn.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#comment Table#comment}. |
-| <code><a href="#@cdktf/provider-databricks.table.TableColumn.property.nullable">Nullable</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#nullable Table#nullable}. |
-| <code><a href="#@cdktf/provider-databricks.table.TableColumn.property.partitionIndex">PartitionIndex</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#partition_index Table#partition_index}. |
-| <code><a href="#@cdktf/provider-databricks.table.TableColumn.property.typeIntervalType">TypeIntervalType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#type_interval_type Table#type_interval_type}. |
-| <code><a href="#@cdktf/provider-databricks.table.TableColumn.property.typeJson">TypeJson</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#type_json Table#type_json}. |
-| <code><a href="#@cdktf/provider-databricks.table.TableColumn.property.typePrecision">TypePrecision</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#type_precision Table#type_precision}. |
-| <code><a href="#@cdktf/provider-databricks.table.TableColumn.property.typeScale">TypeScale</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#type_scale Table#type_scale}. |
+| <code><a href="#@cdktf/provider-databricks.table.TableColumn.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#name Table#name}. |
+| <code><a href="#@cdktf/provider-databricks.table.TableColumn.property.position">Position</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#position Table#position}. |
+| <code><a href="#@cdktf/provider-databricks.table.TableColumn.property.typeName">TypeName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#type_name Table#type_name}. |
+| <code><a href="#@cdktf/provider-databricks.table.TableColumn.property.typeText">TypeText</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#type_text Table#type_text}. |
+| <code><a href="#@cdktf/provider-databricks.table.TableColumn.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#comment Table#comment}. |
+| <code><a href="#@cdktf/provider-databricks.table.TableColumn.property.nullable">Nullable</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#nullable Table#nullable}. |
+| <code><a href="#@cdktf/provider-databricks.table.TableColumn.property.partitionIndex">PartitionIndex</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#partition_index Table#partition_index}. |
+| <code><a href="#@cdktf/provider-databricks.table.TableColumn.property.typeIntervalType">TypeIntervalType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#type_interval_type Table#type_interval_type}. |
+| <code><a href="#@cdktf/provider-databricks.table.TableColumn.property.typeJson">TypeJson</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#type_json Table#type_json}. |
+| <code><a href="#@cdktf/provider-databricks.table.TableColumn.property.typePrecision">TypePrecision</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#type_precision Table#type_precision}. |
+| <code><a href="#@cdktf/provider-databricks.table.TableColumn.property.typeScale">TypeScale</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#type_scale Table#type_scale}. |
 
 ---
 
@@ -906,7 +906,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#name Table#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#name Table#name}.
 
 ---
 
@@ -918,7 +918,7 @@ public double Position { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#position Table#position}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#position Table#position}.
 
 ---
 
@@ -930,7 +930,7 @@ public string TypeName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#type_name Table#type_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#type_name Table#type_name}.
 
 ---
 
@@ -942,7 +942,7 @@ public string TypeText { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#type_text Table#type_text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#type_text Table#type_text}.
 
 ---
 
@@ -954,7 +954,7 @@ public string Comment { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#comment Table#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#comment Table#comment}.
 
 ---
 
@@ -966,7 +966,7 @@ public object Nullable { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#nullable Table#nullable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#nullable Table#nullable}.
 
 ---
 
@@ -978,7 +978,7 @@ public double PartitionIndex { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#partition_index Table#partition_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#partition_index Table#partition_index}.
 
 ---
 
@@ -990,7 +990,7 @@ public string TypeIntervalType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#type_interval_type Table#type_interval_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#type_interval_type Table#type_interval_type}.
 
 ---
 
@@ -1002,7 +1002,7 @@ public string TypeJson { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#type_json Table#type_json}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#type_json Table#type_json}.
 
 ---
 
@@ -1014,7 +1014,7 @@ public double TypePrecision { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#type_precision Table#type_precision}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#type_precision Table#type_precision}.
 
 ---
 
@@ -1026,7 +1026,7 @@ public double TypeScale { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#type_scale Table#type_scale}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#type_scale Table#type_scale}.
 
 ---
 
@@ -1072,19 +1072,19 @@ new TableConfig {
 | <code><a href="#@cdktf/provider-databricks.table.TableConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.table.TableConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.table.TableConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.table.TableConfig.property.catalogName">CatalogName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#catalog_name Table#catalog_name}. |
+| <code><a href="#@cdktf/provider-databricks.table.TableConfig.property.catalogName">CatalogName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#catalog_name Table#catalog_name}. |
 | <code><a href="#@cdktf/provider-databricks.table.TableConfig.property.column">Column</a></code> | <code>object</code> | column block. |
-| <code><a href="#@cdktf/provider-databricks.table.TableConfig.property.dataSourceFormat">DataSourceFormat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#data_source_format Table#data_source_format}. |
-| <code><a href="#@cdktf/provider-databricks.table.TableConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#name Table#name}. |
-| <code><a href="#@cdktf/provider-databricks.table.TableConfig.property.schemaName">SchemaName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#schema_name Table#schema_name}. |
-| <code><a href="#@cdktf/provider-databricks.table.TableConfig.property.tableType">TableType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#table_type Table#table_type}. |
-| <code><a href="#@cdktf/provider-databricks.table.TableConfig.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#comment Table#comment}. |
-| <code><a href="#@cdktf/provider-databricks.table.TableConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#id Table#id}. |
-| <code><a href="#@cdktf/provider-databricks.table.TableConfig.property.owner">Owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#owner Table#owner}. |
-| <code><a href="#@cdktf/provider-databricks.table.TableConfig.property.properties">Properties</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#properties Table#properties}. |
-| <code><a href="#@cdktf/provider-databricks.table.TableConfig.property.storageCredentialName">StorageCredentialName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#storage_credential_name Table#storage_credential_name}. |
-| <code><a href="#@cdktf/provider-databricks.table.TableConfig.property.storageLocation">StorageLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#storage_location Table#storage_location}. |
-| <code><a href="#@cdktf/provider-databricks.table.TableConfig.property.viewDefinition">ViewDefinition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#view_definition Table#view_definition}. |
+| <code><a href="#@cdktf/provider-databricks.table.TableConfig.property.dataSourceFormat">DataSourceFormat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#data_source_format Table#data_source_format}. |
+| <code><a href="#@cdktf/provider-databricks.table.TableConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#name Table#name}. |
+| <code><a href="#@cdktf/provider-databricks.table.TableConfig.property.schemaName">SchemaName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#schema_name Table#schema_name}. |
+| <code><a href="#@cdktf/provider-databricks.table.TableConfig.property.tableType">TableType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#table_type Table#table_type}. |
+| <code><a href="#@cdktf/provider-databricks.table.TableConfig.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#comment Table#comment}. |
+| <code><a href="#@cdktf/provider-databricks.table.TableConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#id Table#id}. |
+| <code><a href="#@cdktf/provider-databricks.table.TableConfig.property.owner">Owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#owner Table#owner}. |
+| <code><a href="#@cdktf/provider-databricks.table.TableConfig.property.properties">Properties</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#properties Table#properties}. |
+| <code><a href="#@cdktf/provider-databricks.table.TableConfig.property.storageCredentialName">StorageCredentialName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#storage_credential_name Table#storage_credential_name}. |
+| <code><a href="#@cdktf/provider-databricks.table.TableConfig.property.storageLocation">StorageLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#storage_location Table#storage_location}. |
+| <code><a href="#@cdktf/provider-databricks.table.TableConfig.property.viewDefinition">ViewDefinition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#view_definition Table#view_definition}. |
 
 ---
 
@@ -1166,7 +1166,7 @@ public string CatalogName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#catalog_name Table#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#catalog_name Table#catalog_name}.
 
 ---
 
@@ -1180,7 +1180,7 @@ public object Column { get; set; }
 
 column block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#column Table#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#column Table#column}
 
 ---
 
@@ -1192,7 +1192,7 @@ public string DataSourceFormat { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#data_source_format Table#data_source_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#data_source_format Table#data_source_format}.
 
 ---
 
@@ -1204,7 +1204,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#name Table#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#name Table#name}.
 
 ---
 
@@ -1216,7 +1216,7 @@ public string SchemaName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#schema_name Table#schema_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#schema_name Table#schema_name}.
 
 ---
 
@@ -1228,7 +1228,7 @@ public string TableType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#table_type Table#table_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#table_type Table#table_type}.
 
 ---
 
@@ -1240,7 +1240,7 @@ public string Comment { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#comment Table#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#comment Table#comment}.
 
 ---
 
@@ -1252,7 +1252,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#id Table#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#id Table#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1267,7 +1267,7 @@ public string Owner { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#owner Table#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#owner Table#owner}.
 
 ---
 
@@ -1279,7 +1279,7 @@ public System.Collections.Generic.IDictionary<string, string> Properties { get; 
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#properties Table#properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#properties Table#properties}.
 
 ---
 
@@ -1291,7 +1291,7 @@ public string StorageCredentialName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#storage_credential_name Table#storage_credential_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#storage_credential_name Table#storage_credential_name}.
 
 ---
 
@@ -1303,7 +1303,7 @@ public string StorageLocation { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#storage_location Table#storage_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#storage_location Table#storage_location}.
 
 ---
 
@@ -1315,7 +1315,7 @@ public string ViewDefinition { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.16.1/docs/resources/table#view_definition Table#view_definition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/table#view_definition Table#view_definition}.
 
 ---
 
