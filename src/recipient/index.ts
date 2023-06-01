@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/recipient
 // generated from terraform resource schema
 
@@ -44,7 +39,7 @@ export interface RecipientConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/recipient#ip_access_list Recipient#ip_access_list}
   */
-  readonly ipAccessList?: RecipientIpAccessList;
+  readonly ipAccessList?: RecipientIpAccessListStruct;
   /**
   * tokens block
   * 
@@ -52,14 +47,14 @@ export interface RecipientConfig extends cdktf.TerraformMetaArguments {
   */
   readonly tokens?: RecipientTokens[] | cdktf.IResolvable;
 }
-export interface RecipientIpAccessList {
+export interface RecipientIpAccessListStruct {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/recipient#allowed_ip_addresses Recipient#allowed_ip_addresses}
   */
   readonly allowedIpAddresses: string[];
 }
 
-export function recipientIpAccessListToTerraform(struct?: RecipientIpAccessListOutputReference | RecipientIpAccessList): any {
+export function recipientIpAccessListStructToTerraform(struct?: RecipientIpAccessListStructOutputReference | RecipientIpAccessListStruct): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -69,7 +64,7 @@ export function recipientIpAccessListToTerraform(struct?: RecipientIpAccessListO
   }
 }
 
-export class RecipientIpAccessListOutputReference extends cdktf.ComplexObject {
+export class RecipientIpAccessListStructOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -80,7 +75,7 @@ export class RecipientIpAccessListOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): RecipientIpAccessList | undefined {
+  public get internalValue(): RecipientIpAccessListStruct | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._allowedIpAddresses !== undefined) {
@@ -90,7 +85,7 @@ export class RecipientIpAccessListOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RecipientIpAccessList | undefined) {
+  public set internalValue(value: RecipientIpAccessListStruct | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._allowedIpAddresses = undefined;
@@ -519,11 +514,11 @@ export class Recipient extends cdktf.TerraformResource {
   }
 
   // ip_access_list - computed: false, optional: true, required: false
-  private _ipAccessList = new RecipientIpAccessListOutputReference(this, "ip_access_list");
+  private _ipAccessList = new RecipientIpAccessListStructOutputReference(this, "ip_access_list");
   public get ipAccessList() {
     return this._ipAccessList;
   }
-  public putIpAccessList(value: RecipientIpAccessList) {
+  public putIpAccessList(value: RecipientIpAccessListStruct) {
     this._ipAccessList.internalValue = value;
   }
   public resetIpAccessList() {
@@ -562,7 +557,7 @@ export class Recipient extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       sharing_code: cdktf.stringToTerraform(this._sharingCode),
-      ip_access_list: recipientIpAccessListToTerraform(this._ipAccessList.internalValue),
+      ip_access_list: recipientIpAccessListStructToTerraform(this._ipAccessList.internalValue),
       tokens: cdktf.listMapper(recipientTokensToTerraform, true)(this._tokens.internalValue),
     };
   }

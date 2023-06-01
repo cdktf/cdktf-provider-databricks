@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/data-sources/notebook_paths
 // generated from terraform resource schema
 
@@ -28,10 +23,10 @@ export interface DataDatabricksNotebookPathsConfig extends cdktf.TerraformMetaAr
   */
   readonly recursive: boolean | cdktf.IResolvable;
 }
-export interface DataDatabricksNotebookPathsNotebookPathList {
+export interface DataDatabricksNotebookPathsNotebookPathListStruct {
 }
 
-export function dataDatabricksNotebookPathsNotebookPathListToTerraform(struct?: DataDatabricksNotebookPathsNotebookPathList): any {
+export function dataDatabricksNotebookPathsNotebookPathListStructToTerraform(struct?: DataDatabricksNotebookPathsNotebookPathListStruct): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -40,7 +35,7 @@ export function dataDatabricksNotebookPathsNotebookPathListToTerraform(struct?: 
   }
 }
 
-export class DataDatabricksNotebookPathsNotebookPathListOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksNotebookPathsNotebookPathListStructOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -53,13 +48,13 @@ export class DataDatabricksNotebookPathsNotebookPathListOutputReference extends 
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksNotebookPathsNotebookPathList | undefined {
+  public get internalValue(): DataDatabricksNotebookPathsNotebookPathListStruct | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksNotebookPathsNotebookPathList | undefined) {
+  public set internalValue(value: DataDatabricksNotebookPathsNotebookPathListStruct | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -79,7 +74,7 @@ export class DataDatabricksNotebookPathsNotebookPathListOutputReference extends 
   }
 }
 
-export class DataDatabricksNotebookPathsNotebookPathListList extends cdktf.ComplexList {
+export class DataDatabricksNotebookPathsNotebookPathListStructList extends cdktf.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -93,8 +88,8 @@ export class DataDatabricksNotebookPathsNotebookPathListList extends cdktf.Compl
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataDatabricksNotebookPathsNotebookPathListOutputReference {
-    return new DataDatabricksNotebookPathsNotebookPathListOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): DataDatabricksNotebookPathsNotebookPathListStructOutputReference {
+    return new DataDatabricksNotebookPathsNotebookPathListStructOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
@@ -161,7 +156,7 @@ export class DataDatabricksNotebookPaths extends cdktf.TerraformDataSource {
   }
 
   // notebook_path_list - computed: true, optional: false, required: false
-  private _notebookPathList = new DataDatabricksNotebookPathsNotebookPathListList(this, "notebook_path_list", true);
+  private _notebookPathList = new DataDatabricksNotebookPathsNotebookPathListStructList(this, "notebook_path_list", true);
   public get notebookPathList() {
     return this._notebookPathList;
   }
