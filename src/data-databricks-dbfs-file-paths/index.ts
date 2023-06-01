@@ -28,10 +28,10 @@ export interface DataDatabricksDbfsFilePathsConfig extends cdktf.TerraformMetaAr
   */
   readonly recursive: boolean | cdktf.IResolvable;
 }
-export interface DataDatabricksDbfsFilePathsPathList {
+export interface DataDatabricksDbfsFilePathsPathListStruct {
 }
 
-export function dataDatabricksDbfsFilePathsPathListToTerraform(struct?: DataDatabricksDbfsFilePathsPathList): any {
+export function dataDatabricksDbfsFilePathsPathListStructToTerraform(struct?: DataDatabricksDbfsFilePathsPathListStruct): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -40,7 +40,7 @@ export function dataDatabricksDbfsFilePathsPathListToTerraform(struct?: DataData
   }
 }
 
-export class DataDatabricksDbfsFilePathsPathListOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksDbfsFilePathsPathListStructOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -53,13 +53,13 @@ export class DataDatabricksDbfsFilePathsPathListOutputReference extends cdktf.Co
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksDbfsFilePathsPathList | undefined {
+  public get internalValue(): DataDatabricksDbfsFilePathsPathListStruct | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksDbfsFilePathsPathList | undefined) {
+  public set internalValue(value: DataDatabricksDbfsFilePathsPathListStruct | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -79,7 +79,7 @@ export class DataDatabricksDbfsFilePathsPathListOutputReference extends cdktf.Co
   }
 }
 
-export class DataDatabricksDbfsFilePathsPathListList extends cdktf.ComplexList {
+export class DataDatabricksDbfsFilePathsPathListStructList extends cdktf.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -93,8 +93,8 @@ export class DataDatabricksDbfsFilePathsPathListList extends cdktf.ComplexList {
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataDatabricksDbfsFilePathsPathListOutputReference {
-    return new DataDatabricksDbfsFilePathsPathListOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): DataDatabricksDbfsFilePathsPathListStructOutputReference {
+    return new DataDatabricksDbfsFilePathsPathListStructOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
@@ -174,7 +174,7 @@ export class DataDatabricksDbfsFilePaths extends cdktf.TerraformDataSource {
   }
 
   // path_list - computed: true, optional: false, required: false
-  private _pathList = new DataDatabricksDbfsFilePathsPathListList(this, "path_list", true);
+  private _pathList = new DataDatabricksDbfsFilePathsPathListStructList(this, "path_list", true);
   public get pathList() {
     return this._pathList;
   }
