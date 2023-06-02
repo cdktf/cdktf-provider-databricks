@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/data-sources/cluster_policy
+// https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/data-sources/cluster_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +8,28 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksClusterPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/data-sources/cluster_policy#definition DataDatabricksClusterPolicy#definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/data-sources/cluster_policy#definition DataDatabricksClusterPolicy#definition}
   */
   readonly definition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/data-sources/cluster_policy#id DataDatabricksClusterPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/data-sources/cluster_policy#id DataDatabricksClusterPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/data-sources/cluster_policy#max_clusters_per_user DataDatabricksClusterPolicy#max_clusters_per_user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/data-sources/cluster_policy#max_clusters_per_user DataDatabricksClusterPolicy#max_clusters_per_user}
   */
   readonly maxClustersPerUser?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/data-sources/cluster_policy#name DataDatabricksClusterPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/data-sources/cluster_policy#name DataDatabricksClusterPolicy#name}
   */
   readonly name?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/data-sources/cluster_policy databricks_cluster_policy}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/data-sources/cluster_policy databricks_cluster_policy}
 */
 export class DataDatabricksClusterPolicy extends cdktf.TerraformDataSource {
 
@@ -48,7 +43,7 @@ export class DataDatabricksClusterPolicy extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/data-sources/cluster_policy databricks_cluster_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/data-sources/cluster_policy databricks_cluster_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +54,7 @@ export class DataDatabricksClusterPolicy extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_cluster_policy',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.17.0',
+        providerVersion: '1.18.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

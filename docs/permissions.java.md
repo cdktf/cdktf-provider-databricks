@@ -1,6 +1,6 @@
 # `databricks_permissions`
 
-Refer to the Terraform Registory for docs: [`databricks_permissions`](https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions).
+Refer to the Terraform Registory for docs: [`databricks_permissions`](https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions).
 
 # `permissions` Submodule <a name="`permissions` Submodule" id="@cdktf/provider-databricks.permissions"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`databricks_permissions`](https://re
 
 ### Permissions <a name="Permissions" id="@cdktf/provider-databricks.permissions.Permissions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions databricks_permissions}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions databricks_permissions}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.permissions.Permissions.Initializer"></a>
 
@@ -45,6 +45,7 @@ Permissions.Builder.create(Construct scope, java.lang.String id)
 //  .registeredModelId(java.lang.String)
 //  .repoId(java.lang.String)
 //  .repoPath(java.lang.String)
+//  .servingEndpointId(java.lang.String)
 //  .sqlAlertId(java.lang.String)
 //  .sqlDashboardId(java.lang.String)
 //  .sqlEndpointId(java.lang.String)
@@ -66,28 +67,29 @@ Permissions.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.accessControl">accessControl</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.permissions.PermissionsAccessControl">PermissionsAccessControl</a>></code> | access_control block. |
-| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.authorization">authorization</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#authorization Permissions#authorization}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.clusterId">clusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#cluster_id Permissions#cluster_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.clusterPolicyId">clusterPolicyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#cluster_policy_id Permissions#cluster_policy_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.directoryId">directoryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#directory_id Permissions#directory_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.directoryPath">directoryPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#directory_path Permissions#directory_path}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.experimentId">experimentId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#experiment_id Permissions#experiment_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#id Permissions#id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.instancePoolId">instancePoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#instance_pool_id Permissions#instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.jobId">jobId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#job_id Permissions#job_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.notebookId">notebookId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#notebook_id Permissions#notebook_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.notebookPath">notebookPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#notebook_path Permissions#notebook_path}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.objectType">objectType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#object_type Permissions#object_type}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.pipelineId">pipelineId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#pipeline_id Permissions#pipeline_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.registeredModelId">registeredModelId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#registered_model_id Permissions#registered_model_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.repoId">repoId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#repo_id Permissions#repo_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.repoPath">repoPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#repo_path Permissions#repo_path}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.sqlAlertId">sqlAlertId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#sql_alert_id Permissions#sql_alert_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.sqlDashboardId">sqlDashboardId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#sql_dashboard_id Permissions#sql_dashboard_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.sqlEndpointId">sqlEndpointId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#sql_endpoint_id Permissions#sql_endpoint_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.sqlQueryId">sqlQueryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#sql_query_id Permissions#sql_query_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.workspaceFileId">workspaceFileId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#workspace_file_id Permissions#workspace_file_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.workspaceFilePath">workspaceFilePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#workspace_file_path Permissions#workspace_file_path}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.authorization">authorization</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#authorization Permissions#authorization}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.clusterId">clusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#cluster_id Permissions#cluster_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.clusterPolicyId">clusterPolicyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#cluster_policy_id Permissions#cluster_policy_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.directoryId">directoryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#directory_id Permissions#directory_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.directoryPath">directoryPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#directory_path Permissions#directory_path}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.experimentId">experimentId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#experiment_id Permissions#experiment_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#id Permissions#id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.instancePoolId">instancePoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#instance_pool_id Permissions#instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.jobId">jobId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#job_id Permissions#job_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.notebookId">notebookId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#notebook_id Permissions#notebook_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.notebookPath">notebookPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#notebook_path Permissions#notebook_path}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.objectType">objectType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#object_type Permissions#object_type}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.pipelineId">pipelineId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#pipeline_id Permissions#pipeline_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.registeredModelId">registeredModelId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#registered_model_id Permissions#registered_model_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.repoId">repoId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#repo_id Permissions#repo_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.repoPath">repoPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#repo_path Permissions#repo_path}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.servingEndpointId">servingEndpointId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#serving_endpoint_id Permissions#serving_endpoint_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.sqlAlertId">sqlAlertId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#sql_alert_id Permissions#sql_alert_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.sqlDashboardId">sqlDashboardId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#sql_dashboard_id Permissions#sql_dashboard_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.sqlEndpointId">sqlEndpointId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#sql_endpoint_id Permissions#sql_endpoint_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.sqlQueryId">sqlQueryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#sql_query_id Permissions#sql_query_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.workspaceFileId">workspaceFileId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#workspace_file_id Permissions#workspace_file_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.workspaceFilePath">workspaceFilePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#workspace_file_path Permissions#workspace_file_path}. |
 
 ---
 
@@ -157,7 +159,7 @@ Must be unique amongst siblings in the same scope
 
 access_control block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#access_control Permissions#access_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#access_control Permissions#access_control}
 
 ---
 
@@ -165,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#authorization Permissions#authorization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#authorization Permissions#authorization}.
 
 ---
 
@@ -173,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#cluster_id Permissions#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#cluster_id Permissions#cluster_id}.
 
 ---
 
@@ -181,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#cluster_policy_id Permissions#cluster_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#cluster_policy_id Permissions#cluster_policy_id}.
 
 ---
 
@@ -189,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#directory_id Permissions#directory_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#directory_id Permissions#directory_id}.
 
 ---
 
@@ -197,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#directory_path Permissions#directory_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#directory_path Permissions#directory_path}.
 
 ---
 
@@ -205,7 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#experiment_id Permissions#experiment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#experiment_id Permissions#experiment_id}.
 
 ---
 
@@ -213,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#id Permissions#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#id Permissions#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -224,7 +226,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#instance_pool_id Permissions#instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#instance_pool_id Permissions#instance_pool_id}.
 
 ---
 
@@ -232,7 +234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#job_id Permissions#job_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#job_id Permissions#job_id}.
 
 ---
 
@@ -240,7 +242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#notebook_id Permissions#notebook_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#notebook_id Permissions#notebook_id}.
 
 ---
 
@@ -248,7 +250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#notebook_path Permissions#notebook_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#notebook_path Permissions#notebook_path}.
 
 ---
 
@@ -256,7 +258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#object_type Permissions#object_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#object_type Permissions#object_type}.
 
 ---
 
@@ -264,7 +266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#pipeline_id Permissions#pipeline_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#pipeline_id Permissions#pipeline_id}.
 
 ---
 
@@ -272,7 +274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#registered_model_id Permissions#registered_model_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#registered_model_id Permissions#registered_model_id}.
 
 ---
 
@@ -280,7 +282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#repo_id Permissions#repo_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#repo_id Permissions#repo_id}.
 
 ---
 
@@ -288,7 +290,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#repo_path Permissions#repo_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#repo_path Permissions#repo_path}.
+
+---
+
+##### `servingEndpointId`<sup>Optional</sup> <a name="servingEndpointId" id="@cdktf/provider-databricks.permissions.Permissions.Initializer.parameter.servingEndpointId"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#serving_endpoint_id Permissions#serving_endpoint_id}.
 
 ---
 
@@ -296,7 +306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#sql_alert_id Permissions#sql_alert_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#sql_alert_id Permissions#sql_alert_id}.
 
 ---
 
@@ -304,7 +314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#sql_dashboard_id Permissions#sql_dashboard_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#sql_dashboard_id Permissions#sql_dashboard_id}.
 
 ---
 
@@ -312,7 +322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#sql_endpoint_id Permissions#sql_endpoint_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#sql_endpoint_id Permissions#sql_endpoint_id}.
 
 ---
 
@@ -320,7 +330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#sql_query_id Permissions#sql_query_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#sql_query_id Permissions#sql_query_id}.
 
 ---
 
@@ -328,7 +338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#workspace_file_id Permissions#workspace_file_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#workspace_file_id Permissions#workspace_file_id}.
 
 ---
 
@@ -336,7 +346,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#workspace_file_path Permissions#workspace_file_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#workspace_file_path Permissions#workspace_file_path}.
 
 ---
 
@@ -377,6 +387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktf/provider-databricks.permissions.Permissions.resetRegisteredModelId">resetRegisteredModelId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissions.Permissions.resetRepoId">resetRepoId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissions.Permissions.resetRepoPath">resetRepoPath</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.resetServingEndpointId">resetServingEndpointId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissions.Permissions.resetSqlAlertId">resetSqlAlertId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissions.Permissions.resetSqlDashboardId">resetSqlDashboardId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissions.Permissions.resetSqlEndpointId">resetSqlEndpointId</a></code> | *No description.* |
@@ -678,6 +689,12 @@ public void resetRepoId()
 public void resetRepoPath()
 ```
 
+##### `resetServingEndpointId` <a name="resetServingEndpointId" id="@cdktf/provider-databricks.permissions.Permissions.resetServingEndpointId"></a>
+
+```java
+public void resetServingEndpointId()
+```
+
 ##### `resetSqlAlertId` <a name="resetSqlAlertId" id="@cdktf/provider-databricks.permissions.Permissions.resetSqlAlertId"></a>
 
 ```java
@@ -820,6 +837,7 @@ Permissions.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-databricks.permissions.Permissions.property.registeredModelIdInput">registeredModelIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissions.Permissions.property.repoIdInput">repoIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissions.Permissions.property.repoPathInput">repoPathInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.property.servingEndpointIdInput">servingEndpointIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissions.Permissions.property.sqlAlertIdInput">sqlAlertIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissions.Permissions.property.sqlDashboardIdInput">sqlDashboardIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissions.Permissions.property.sqlEndpointIdInput">sqlEndpointIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -842,6 +860,7 @@ Permissions.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-databricks.permissions.Permissions.property.registeredModelId">registeredModelId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissions.Permissions.property.repoId">repoId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissions.Permissions.property.repoPath">repoPath</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissions.Permissions.property.servingEndpointId">servingEndpointId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissions.Permissions.property.sqlAlertId">sqlAlertId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissions.Permissions.property.sqlDashboardId">sqlDashboardId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissions.Permissions.property.sqlEndpointId">sqlEndpointId</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1173,6 +1192,16 @@ public java.lang.String getRepoPathInput();
 
 ---
 
+##### `servingEndpointIdInput`<sup>Optional</sup> <a name="servingEndpointIdInput" id="@cdktf/provider-databricks.permissions.Permissions.property.servingEndpointIdInput"></a>
+
+```java
+public java.lang.String getServingEndpointIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `sqlAlertIdInput`<sup>Optional</sup> <a name="sqlAlertIdInput" id="@cdktf/provider-databricks.permissions.Permissions.property.sqlAlertIdInput"></a>
 
 ```java
@@ -1393,6 +1422,16 @@ public java.lang.String getRepoPath();
 
 ---
 
+##### `servingEndpointId`<sup>Required</sup> <a name="servingEndpointId" id="@cdktf/provider-databricks.permissions.Permissions.property.servingEndpointId"></a>
+
+```java
+public java.lang.String getServingEndpointId();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `sqlAlertId`<sup>Required</sup> <a name="sqlAlertId" id="@cdktf/provider-databricks.permissions.Permissions.property.sqlAlertId"></a>
 
 ```java
@@ -1492,10 +1531,10 @@ PermissionsAccessControl.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsAccessControl.property.permissionLevel">permissionLevel</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#permission_level Permissions#permission_level}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsAccessControl.property.groupName">groupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#group_name Permissions#group_name}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsAccessControl.property.servicePrincipalName">servicePrincipalName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#service_principal_name Permissions#service_principal_name}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsAccessControl.property.userName">userName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#user_name Permissions#user_name}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsAccessControl.property.permissionLevel">permissionLevel</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#permission_level Permissions#permission_level}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsAccessControl.property.groupName">groupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#group_name Permissions#group_name}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsAccessControl.property.servicePrincipalName">servicePrincipalName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#service_principal_name Permissions#service_principal_name}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsAccessControl.property.userName">userName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#user_name Permissions#user_name}. |
 
 ---
 
@@ -1507,7 +1546,7 @@ public java.lang.String getPermissionLevel();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#permission_level Permissions#permission_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#permission_level Permissions#permission_level}.
 
 ---
 
@@ -1519,7 +1558,7 @@ public java.lang.String getGroupName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#group_name Permissions#group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#group_name Permissions#group_name}.
 
 ---
 
@@ -1531,7 +1570,7 @@ public java.lang.String getServicePrincipalName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#service_principal_name Permissions#service_principal_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#service_principal_name Permissions#service_principal_name}.
 
 ---
 
@@ -1543,7 +1582,7 @@ public java.lang.String getUserName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#user_name Permissions#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#user_name Permissions#user_name}.
 
 ---
 
@@ -1584,6 +1623,7 @@ PermissionsConfig.builder()
 //  .registeredModelId(java.lang.String)
 //  .repoId(java.lang.String)
 //  .repoPath(java.lang.String)
+//  .servingEndpointId(java.lang.String)
 //  .sqlAlertId(java.lang.String)
 //  .sqlDashboardId(java.lang.String)
 //  .sqlEndpointId(java.lang.String)
@@ -1605,28 +1645,29 @@ PermissionsConfig.builder()
 | <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.accessControl">accessControl</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.permissions.PermissionsAccessControl">PermissionsAccessControl</a>></code> | access_control block. |
-| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.authorization">authorization</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#authorization Permissions#authorization}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.clusterId">clusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#cluster_id Permissions#cluster_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.clusterPolicyId">clusterPolicyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#cluster_policy_id Permissions#cluster_policy_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.directoryId">directoryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#directory_id Permissions#directory_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.directoryPath">directoryPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#directory_path Permissions#directory_path}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.experimentId">experimentId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#experiment_id Permissions#experiment_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#id Permissions#id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.instancePoolId">instancePoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#instance_pool_id Permissions#instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.jobId">jobId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#job_id Permissions#job_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.notebookId">notebookId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#notebook_id Permissions#notebook_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.notebookPath">notebookPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#notebook_path Permissions#notebook_path}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.objectType">objectType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#object_type Permissions#object_type}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.pipelineId">pipelineId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#pipeline_id Permissions#pipeline_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.registeredModelId">registeredModelId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#registered_model_id Permissions#registered_model_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.repoId">repoId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#repo_id Permissions#repo_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.repoPath">repoPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#repo_path Permissions#repo_path}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.sqlAlertId">sqlAlertId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#sql_alert_id Permissions#sql_alert_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.sqlDashboardId">sqlDashboardId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#sql_dashboard_id Permissions#sql_dashboard_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.sqlEndpointId">sqlEndpointId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#sql_endpoint_id Permissions#sql_endpoint_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.sqlQueryId">sqlQueryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#sql_query_id Permissions#sql_query_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.workspaceFileId">workspaceFileId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#workspace_file_id Permissions#workspace_file_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.workspaceFilePath">workspaceFilePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#workspace_file_path Permissions#workspace_file_path}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.authorization">authorization</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#authorization Permissions#authorization}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.clusterId">clusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#cluster_id Permissions#cluster_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.clusterPolicyId">clusterPolicyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#cluster_policy_id Permissions#cluster_policy_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.directoryId">directoryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#directory_id Permissions#directory_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.directoryPath">directoryPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#directory_path Permissions#directory_path}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.experimentId">experimentId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#experiment_id Permissions#experiment_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#id Permissions#id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.instancePoolId">instancePoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#instance_pool_id Permissions#instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.jobId">jobId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#job_id Permissions#job_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.notebookId">notebookId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#notebook_id Permissions#notebook_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.notebookPath">notebookPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#notebook_path Permissions#notebook_path}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.objectType">objectType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#object_type Permissions#object_type}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.pipelineId">pipelineId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#pipeline_id Permissions#pipeline_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.registeredModelId">registeredModelId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#registered_model_id Permissions#registered_model_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.repoId">repoId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#repo_id Permissions#repo_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.repoPath">repoPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#repo_path Permissions#repo_path}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.servingEndpointId">servingEndpointId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#serving_endpoint_id Permissions#serving_endpoint_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.sqlAlertId">sqlAlertId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#sql_alert_id Permissions#sql_alert_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.sqlDashboardId">sqlDashboardId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#sql_dashboard_id Permissions#sql_dashboard_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.sqlEndpointId">sqlEndpointId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#sql_endpoint_id Permissions#sql_endpoint_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.sqlQueryId">sqlQueryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#sql_query_id Permissions#sql_query_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.workspaceFileId">workspaceFileId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#workspace_file_id Permissions#workspace_file_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsConfig.property.workspaceFilePath">workspaceFilePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#workspace_file_path Permissions#workspace_file_path}. |
 
 ---
 
@@ -1710,7 +1751,7 @@ public java.lang.Object getAccessControl();
 
 access_control block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#access_control Permissions#access_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#access_control Permissions#access_control}
 
 ---
 
@@ -1722,7 +1763,7 @@ public java.lang.String getAuthorization();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#authorization Permissions#authorization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#authorization Permissions#authorization}.
 
 ---
 
@@ -1734,7 +1775,7 @@ public java.lang.String getClusterId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#cluster_id Permissions#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#cluster_id Permissions#cluster_id}.
 
 ---
 
@@ -1746,7 +1787,7 @@ public java.lang.String getClusterPolicyId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#cluster_policy_id Permissions#cluster_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#cluster_policy_id Permissions#cluster_policy_id}.
 
 ---
 
@@ -1758,7 +1799,7 @@ public java.lang.String getDirectoryId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#directory_id Permissions#directory_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#directory_id Permissions#directory_id}.
 
 ---
 
@@ -1770,7 +1811,7 @@ public java.lang.String getDirectoryPath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#directory_path Permissions#directory_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#directory_path Permissions#directory_path}.
 
 ---
 
@@ -1782,7 +1823,7 @@ public java.lang.String getExperimentId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#experiment_id Permissions#experiment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#experiment_id Permissions#experiment_id}.
 
 ---
 
@@ -1794,7 +1835,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#id Permissions#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#id Permissions#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1809,7 +1850,7 @@ public java.lang.String getInstancePoolId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#instance_pool_id Permissions#instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#instance_pool_id Permissions#instance_pool_id}.
 
 ---
 
@@ -1821,7 +1862,7 @@ public java.lang.String getJobId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#job_id Permissions#job_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#job_id Permissions#job_id}.
 
 ---
 
@@ -1833,7 +1874,7 @@ public java.lang.String getNotebookId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#notebook_id Permissions#notebook_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#notebook_id Permissions#notebook_id}.
 
 ---
 
@@ -1845,7 +1886,7 @@ public java.lang.String getNotebookPath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#notebook_path Permissions#notebook_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#notebook_path Permissions#notebook_path}.
 
 ---
 
@@ -1857,7 +1898,7 @@ public java.lang.String getObjectType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#object_type Permissions#object_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#object_type Permissions#object_type}.
 
 ---
 
@@ -1869,7 +1910,7 @@ public java.lang.String getPipelineId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#pipeline_id Permissions#pipeline_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#pipeline_id Permissions#pipeline_id}.
 
 ---
 
@@ -1881,7 +1922,7 @@ public java.lang.String getRegisteredModelId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#registered_model_id Permissions#registered_model_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#registered_model_id Permissions#registered_model_id}.
 
 ---
 
@@ -1893,7 +1934,7 @@ public java.lang.String getRepoId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#repo_id Permissions#repo_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#repo_id Permissions#repo_id}.
 
 ---
 
@@ -1905,7 +1946,19 @@ public java.lang.String getRepoPath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#repo_path Permissions#repo_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#repo_path Permissions#repo_path}.
+
+---
+
+##### `servingEndpointId`<sup>Optional</sup> <a name="servingEndpointId" id="@cdktf/provider-databricks.permissions.PermissionsConfig.property.servingEndpointId"></a>
+
+```java
+public java.lang.String getServingEndpointId();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#serving_endpoint_id Permissions#serving_endpoint_id}.
 
 ---
 
@@ -1917,7 +1970,7 @@ public java.lang.String getSqlAlertId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#sql_alert_id Permissions#sql_alert_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#sql_alert_id Permissions#sql_alert_id}.
 
 ---
 
@@ -1929,7 +1982,7 @@ public java.lang.String getSqlDashboardId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#sql_dashboard_id Permissions#sql_dashboard_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#sql_dashboard_id Permissions#sql_dashboard_id}.
 
 ---
 
@@ -1941,7 +1994,7 @@ public java.lang.String getSqlEndpointId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#sql_endpoint_id Permissions#sql_endpoint_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#sql_endpoint_id Permissions#sql_endpoint_id}.
 
 ---
 
@@ -1953,7 +2006,7 @@ public java.lang.String getSqlQueryId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#sql_query_id Permissions#sql_query_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#sql_query_id Permissions#sql_query_id}.
 
 ---
 
@@ -1965,7 +2018,7 @@ public java.lang.String getWorkspaceFileId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#workspace_file_id Permissions#workspace_file_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#workspace_file_id Permissions#workspace_file_id}.
 
 ---
 
@@ -1977,7 +2030,7 @@ public java.lang.String getWorkspaceFilePath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/permissions#workspace_file_path Permissions#workspace_file_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/permissions#workspace_file_path Permissions#workspace_file_path}.
 
 ---
 

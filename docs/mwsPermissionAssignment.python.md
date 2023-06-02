@@ -1,6 +1,6 @@
 # `databricks_mws_permission_assignment`
 
-Refer to the Terraform Registory for docs: [`databricks_mws_permission_assignment`](https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/mws_permission_assignment).
+Refer to the Terraform Registory for docs: [`databricks_mws_permission_assignment`](https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/mws_permission_assignment).
 
 # `mwsPermissionAssignment` Submodule <a name="`mwsPermissionAssignment` Submodule" id="@cdktf/provider-databricks.mwsPermissionAssignment"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`databricks_mws_permission_assignmen
 
 ### MwsPermissionAssignment <a name="MwsPermissionAssignment" id="@cdktf/provider-databricks.mwsPermissionAssignment.MwsPermissionAssignment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/mws_permission_assignment databricks_mws_permission_assignment}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/mws_permission_assignment databricks_mws_permission_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mwsPermissionAssignment.MwsPermissionAssignment.Initializer"></a>
 
@@ -43,10 +43,10 @@ mwsPermissionAssignment.MwsPermissionAssignment(
 | <code><a href="#@cdktf/provider-databricks.mwsPermissionAssignment.MwsPermissionAssignment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsPermissionAssignment.MwsPermissionAssignment.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsPermissionAssignment.MwsPermissionAssignment.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.mwsPermissionAssignment.MwsPermissionAssignment.Initializer.parameter.permissions">permissions</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/mws_permission_assignment#permissions MwsPermissionAssignment#permissions}. |
-| <code><a href="#@cdktf/provider-databricks.mwsPermissionAssignment.MwsPermissionAssignment.Initializer.parameter.principalId">principal_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/mws_permission_assignment#principal_id MwsPermissionAssignment#principal_id}. |
-| <code><a href="#@cdktf/provider-databricks.mwsPermissionAssignment.MwsPermissionAssignment.Initializer.parameter.workspaceId">workspace_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/mws_permission_assignment#workspace_id MwsPermissionAssignment#workspace_id}. |
-| <code><a href="#@cdktf/provider-databricks.mwsPermissionAssignment.MwsPermissionAssignment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/mws_permission_assignment#id MwsPermissionAssignment#id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsPermissionAssignment.MwsPermissionAssignment.Initializer.parameter.permissions">permissions</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/mws_permission_assignment#permissions MwsPermissionAssignment#permissions}. |
+| <code><a href="#@cdktf/provider-databricks.mwsPermissionAssignment.MwsPermissionAssignment.Initializer.parameter.principalId">principal_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/mws_permission_assignment#principal_id MwsPermissionAssignment#principal_id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsPermissionAssignment.MwsPermissionAssignment.Initializer.parameter.workspaceId">workspace_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/mws_permission_assignment#workspace_id MwsPermissionAssignment#workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsPermissionAssignment.MwsPermissionAssignment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/mws_permission_assignment#id MwsPermissionAssignment#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/mws_permission_assignment#permissions MwsPermissionAssignment#permissions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/mws_permission_assignment#permissions MwsPermissionAssignment#permissions}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/mws_permission_assignment#principal_id MwsPermissionAssignment#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/mws_permission_assignment#principal_id MwsPermissionAssignment#principal_id}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/mws_permission_assignment#workspace_id MwsPermissionAssignment#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/mws_permission_assignment#workspace_id MwsPermissionAssignment#workspace_id}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/mws_permission_assignment#id MwsPermissionAssignment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/mws_permission_assignment#id MwsPermissionAssignment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -764,10 +764,10 @@ mwsPermissionAssignment.MwsPermissionAssignmentConfig(
 | <code><a href="#@cdktf/provider-databricks.mwsPermissionAssignment.MwsPermissionAssignmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsPermissionAssignment.MwsPermissionAssignmentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsPermissionAssignment.MwsPermissionAssignmentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.mwsPermissionAssignment.MwsPermissionAssignmentConfig.property.permissions">permissions</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/mws_permission_assignment#permissions MwsPermissionAssignment#permissions}. |
-| <code><a href="#@cdktf/provider-databricks.mwsPermissionAssignment.MwsPermissionAssignmentConfig.property.principalId">principal_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/mws_permission_assignment#principal_id MwsPermissionAssignment#principal_id}. |
-| <code><a href="#@cdktf/provider-databricks.mwsPermissionAssignment.MwsPermissionAssignmentConfig.property.workspaceId">workspace_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/mws_permission_assignment#workspace_id MwsPermissionAssignment#workspace_id}. |
-| <code><a href="#@cdktf/provider-databricks.mwsPermissionAssignment.MwsPermissionAssignmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/mws_permission_assignment#id MwsPermissionAssignment#id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsPermissionAssignment.MwsPermissionAssignmentConfig.property.permissions">permissions</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/mws_permission_assignment#permissions MwsPermissionAssignment#permissions}. |
+| <code><a href="#@cdktf/provider-databricks.mwsPermissionAssignment.MwsPermissionAssignmentConfig.property.principalId">principal_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/mws_permission_assignment#principal_id MwsPermissionAssignment#principal_id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsPermissionAssignment.MwsPermissionAssignmentConfig.property.workspaceId">workspace_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/mws_permission_assignment#workspace_id MwsPermissionAssignment#workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsPermissionAssignment.MwsPermissionAssignmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/mws_permission_assignment#id MwsPermissionAssignment#id}. |
 
 ---
 
@@ -849,7 +849,7 @@ permissions: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/mws_permission_assignment#permissions MwsPermissionAssignment#permissions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/mws_permission_assignment#permissions MwsPermissionAssignment#permissions}.
 
 ---
 
@@ -861,7 +861,7 @@ principal_id: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/mws_permission_assignment#principal_id MwsPermissionAssignment#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/mws_permission_assignment#principal_id MwsPermissionAssignment#principal_id}.
 
 ---
 
@@ -873,7 +873,7 @@ workspace_id: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/mws_permission_assignment#workspace_id MwsPermissionAssignment#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/mws_permission_assignment#workspace_id MwsPermissionAssignment#workspace_id}.
 
 ---
 
@@ -885,7 +885,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.17.0/docs/resources/mws_permission_assignment#id MwsPermissionAssignment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/mws_permission_assignment#id MwsPermissionAssignment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

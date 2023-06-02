@@ -106,5 +106,6 @@ The following submodules are available:
 - [user](./user.csharp.md)
 - [userInstanceProfile](./userInstanceProfile.csharp.md)
 - [userRole](./userRole.csharp.md)
+- [volume](./volume.csharp.md)
 - [workspaceConf](./workspaceConf.csharp.md)
 - [workspaceFile](./workspaceFile.csharp.md)
