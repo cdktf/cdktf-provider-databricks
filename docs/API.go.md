@@ -106,5 +106,6 @@ The following submodules are available:
 - [user](./user.go.md)
 - [userInstanceProfile](./userInstanceProfile.go.md)
 - [userRole](./userRole.go.md)
+- [volume](./volume.go.md)
 - [workspaceConf](./workspaceConf.go.md)
 - [workspaceFile](./workspaceFile.go.md)
