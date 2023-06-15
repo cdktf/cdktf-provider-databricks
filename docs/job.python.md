@@ -1966,7 +1966,7 @@ job.Job.is_terraform_resource(
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.taskInput">task_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.job.JobTask">JobTask</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.timeoutSecondsInput">timeout_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.Job.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-databricks.job.JobTimeouts">JobTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.Job.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobTimeouts">JobTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.triggerInput">trigger_input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTrigger">JobTrigger</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.webhookNotificationsInput">webhook_notifications_input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotifications">JobWebhookNotifications</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.alwaysRunning">always_running</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -2638,10 +2638,10 @@ timeout_seconds_input: typing.Union[int, float]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-databricks.job.Job.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[JobTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, JobTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-databricks.job.JobTimeouts">JobTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobTimeouts">JobTimeouts</a>]
 
 ---
 
@@ -16021,7 +16021,7 @@ def reset_remote_mount_dir_path() -> None
 | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfoOutputReference.property.remoteMountDirPathInput">remote_mount_dir_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfoOutputReference.property.localMountDirPath">local_mount_dir_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfoOutputReference.property.remoteMountDirPath">remote_mount_dir_path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfoOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfo">JobJobClusterNewClusterClusterMountInfo</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfoOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfo">JobJobClusterNewClusterClusterMountInfo</a>]</code> | *No description.* |
 
 ---
 
@@ -16112,10 +16112,10 @@ remote_mount_dir_path: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfoOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[JobJobClusterNewClusterClusterMountInfo, IResolvable]
+internal_value: typing.Union[IResolvable, JobJobClusterNewClusterClusterMountInfo]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfo">JobJobClusterNewClusterClusterMountInfo</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfo">JobJobClusterNewClusterClusterMountInfo</a>]
 
 ---
 
@@ -19029,7 +19029,7 @@ def reset_workspace() -> None
 | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsOutputReference.property.gcsInput">gcs_input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsGcs">JobJobClusterNewClusterInitScriptsGcs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsOutputReference.property.s3Input">s3_input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsS3">JobJobClusterNewClusterInitScriptsS3</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsOutputReference.property.workspaceInput">workspace_input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsWorkspace">JobJobClusterNewClusterInitScriptsWorkspace</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScripts">JobJobClusterNewClusterInitScripts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScripts">JobJobClusterNewClusterInitScripts</a>]</code> | *No description.* |
 
 ---
 
@@ -19180,10 +19180,10 @@ workspace_input: JobJobClusterNewClusterInitScriptsWorkspace
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[JobJobClusterNewClusterInitScripts, IResolvable]
+internal_value: typing.Union[IResolvable, JobJobClusterNewClusterInitScripts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScripts">JobJobClusterNewClusterInitScripts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScripts">JobJobClusterNewClusterInitScripts</a>]
 
 ---
 
@@ -22622,7 +22622,7 @@ def reset_new_cluster() -> None
 | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterOutputReference.property.jobClusterKeyInput">job_cluster_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterOutputReference.property.newClusterInput">new_cluster_input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster">JobJobClusterNewCluster</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterOutputReference.property.jobClusterKey">job_cluster_key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-databricks.job.JobJobCluster">JobJobCluster</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobJobCluster">JobJobCluster</a>]</code> | *No description.* |
 
 ---
 
@@ -22693,10 +22693,10 @@ job_cluster_key: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.job.JobJobClusterOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[JobJobCluster, IResolvable]
+internal_value: typing.Union[IResolvable, JobJobCluster]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-databricks.job.JobJobCluster">JobJobCluster</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobJobCluster">JobJobCluster</a>]
 
 ---
 
@@ -23927,7 +23927,7 @@ def reset_whl() -> None
 | <code><a href="#@cdktf/provider-databricks.job.JobLibraryOutputReference.property.egg">egg</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobLibraryOutputReference.property.jar">jar</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobLibraryOutputReference.property.whl">whl</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobLibraryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-databricks.job.JobLibrary">JobLibrary</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobLibraryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobLibrary">JobLibrary</a>]</code> | *No description.* |
 
 ---
 
@@ -24078,10 +24078,10 @@ whl: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.job.JobLibraryOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[JobLibrary, IResolvable]
+internal_value: typing.Union[IResolvable, JobLibrary]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-databricks.job.JobLibrary">JobLibrary</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobLibrary">JobLibrary</a>]
 
 ---
 
@@ -27566,7 +27566,7 @@ def reset_remote_mount_dir_path() -> None
 | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterMountInfoOutputReference.property.remoteMountDirPathInput">remote_mount_dir_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterMountInfoOutputReference.property.localMountDirPath">local_mount_dir_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterMountInfoOutputReference.property.remoteMountDirPath">remote_mount_dir_path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterMountInfoOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-databricks.job.JobNewClusterClusterMountInfo">JobNewClusterClusterMountInfo</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterMountInfoOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobNewClusterClusterMountInfo">JobNewClusterClusterMountInfo</a>]</code> | *No description.* |
 
 ---
 
@@ -27657,10 +27657,10 @@ remote_mount_dir_path: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.job.JobNewClusterClusterMountInfoOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[JobNewClusterClusterMountInfo, IResolvable]
+internal_value: typing.Union[IResolvable, JobNewClusterClusterMountInfo]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-databricks.job.JobNewClusterClusterMountInfo">JobNewClusterClusterMountInfo</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobNewClusterClusterMountInfo">JobNewClusterClusterMountInfo</a>]
 
 ---
 
@@ -30574,7 +30574,7 @@ def reset_workspace() -> None
 | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsOutputReference.property.gcsInput">gcs_input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsGcs">JobNewClusterInitScriptsGcs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsOutputReference.property.s3Input">s3_input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsS3">JobNewClusterInitScriptsS3</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsOutputReference.property.workspaceInput">workspace_input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsWorkspace">JobNewClusterInitScriptsWorkspace</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-databricks.job.JobNewClusterInitScripts">JobNewClusterInitScripts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobNewClusterInitScripts">JobNewClusterInitScripts</a>]</code> | *No description.* |
 
 ---
 
@@ -30725,10 +30725,10 @@ workspace_input: JobNewClusterInitScriptsWorkspace
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.job.JobNewClusterInitScriptsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[JobNewClusterInitScripts, IResolvable]
+internal_value: typing.Union[IResolvable, JobNewClusterInitScripts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-databricks.job.JobNewClusterInitScripts">JobNewClusterInitScripts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobNewClusterInitScripts">JobNewClusterInitScripts</a>]
 
 ---
 
@@ -37797,7 +37797,7 @@ def reset_task_key() -> None
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskDependsOnOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskDependsOnOutputReference.property.taskKeyInput">task_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskDependsOnOutputReference.property.taskKey">task_key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskDependsOnOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-databricks.job.JobTaskDependsOn">JobTaskDependsOn</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskDependsOnOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobTaskDependsOn">JobTaskDependsOn</a>]</code> | *No description.* |
 
 ---
 
@@ -37848,10 +37848,10 @@ task_key: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.job.JobTaskDependsOnOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[JobTaskDependsOn, IResolvable]
+internal_value: typing.Union[IResolvable, JobTaskDependsOn]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-databricks.job.JobTaskDependsOn">JobTaskDependsOn</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobTaskDependsOn">JobTaskDependsOn</a>]
 
 ---
 
@@ -39501,7 +39501,7 @@ def reset_whl() -> None
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskLibraryOutputReference.property.egg">egg</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskLibraryOutputReference.property.jar">jar</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskLibraryOutputReference.property.whl">whl</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskLibraryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-databricks.job.JobTaskLibrary">JobTaskLibrary</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskLibraryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobTaskLibrary">JobTaskLibrary</a>]</code> | *No description.* |
 
 ---
 
@@ -39652,10 +39652,10 @@ whl: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.job.JobTaskLibraryOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[JobTaskLibrary, IResolvable]
+internal_value: typing.Union[IResolvable, JobTaskLibrary]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-databricks.job.JobTaskLibrary">JobTaskLibrary</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobTaskLibrary">JobTaskLibrary</a>]
 
 ---
 
@@ -43291,7 +43291,7 @@ def reset_remote_mount_dir_path() -> None
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfoOutputReference.property.remoteMountDirPathInput">remote_mount_dir_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfoOutputReference.property.localMountDirPath">local_mount_dir_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfoOutputReference.property.remoteMountDirPath">remote_mount_dir_path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfoOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfo">JobTaskNewClusterClusterMountInfo</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfoOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfo">JobTaskNewClusterClusterMountInfo</a>]</code> | *No description.* |
 
 ---
 
@@ -43382,10 +43382,10 @@ remote_mount_dir_path: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfoOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[JobTaskNewClusterClusterMountInfo, IResolvable]
+internal_value: typing.Union[IResolvable, JobTaskNewClusterClusterMountInfo]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfo">JobTaskNewClusterClusterMountInfo</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfo">JobTaskNewClusterClusterMountInfo</a>]
 
 ---
 
@@ -46299,7 +46299,7 @@ def reset_workspace() -> None
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsOutputReference.property.gcsInput">gcs_input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsGcs">JobTaskNewClusterInitScriptsGcs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsOutputReference.property.s3Input">s3_input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsS3">JobTaskNewClusterInitScriptsS3</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsOutputReference.property.workspaceInput">workspace_input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsWorkspace">JobTaskNewClusterInitScriptsWorkspace</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScripts">JobTaskNewClusterInitScripts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScripts">JobTaskNewClusterInitScripts</a>]</code> | *No description.* |
 
 ---
 
@@ -46450,10 +46450,10 @@ workspace_input: JobTaskNewClusterInitScriptsWorkspace
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[JobTaskNewClusterInitScripts, IResolvable]
+internal_value: typing.Union[IResolvable, JobTaskNewClusterInitScripts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScripts">JobTaskNewClusterInitScripts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScripts">JobTaskNewClusterInitScripts</a>]
 
 ---
 
@@ -50815,7 +50815,7 @@ def reset_timeout_seconds() -> None
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.runIf">run_if</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.taskKey">task_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.timeoutSeconds">timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-databricks.job.JobTask">JobTask</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobTask">JobTask</a>]</code> | *No description.* |
 
 ---
 
@@ -51266,10 +51266,10 @@ timeout_seconds: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.job.JobTaskOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[JobTask, IResolvable]
+internal_value: typing.Union[IResolvable, JobTask]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-databricks.job.JobTask">JobTask</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobTask">JobTask</a>]
 
 ---
 
@@ -54931,7 +54931,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-databricks.job.JobTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-databricks.job.JobTimeouts">JobTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobTimeouts">JobTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -55002,10 +55002,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.job.JobTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[JobTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, JobTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-databricks.job.JobTimeouts">JobTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobTimeouts">JobTimeouts</a>]
 
 ---
 
@@ -56132,7 +56132,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnFailureOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnFailureOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnFailureOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnFailureOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnFailure">JobWebhookNotificationsOnFailure</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnFailureOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnFailure">JobWebhookNotificationsOnFailure</a>]</code> | *No description.* |
 
 ---
 
@@ -56183,10 +56183,10 @@ id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.job.JobWebhookNotificationsOnFailureOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[JobWebhookNotificationsOnFailure, IResolvable]
+internal_value: typing.Union[IResolvable, JobWebhookNotificationsOnFailure]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnFailure">JobWebhookNotificationsOnFailure</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnFailure">JobWebhookNotificationsOnFailure</a>]
 
 ---
 
@@ -56599,7 +56599,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnStartOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnStartOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnStartOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnStartOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnStart">JobWebhookNotificationsOnStart</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnStartOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnStart">JobWebhookNotificationsOnStart</a>]</code> | *No description.* |
 
 ---
 
@@ -56650,10 +56650,10 @@ id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.job.JobWebhookNotificationsOnStartOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[JobWebhookNotificationsOnStart, IResolvable]
+internal_value: typing.Union[IResolvable, JobWebhookNotificationsOnStart]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnStart">JobWebhookNotificationsOnStart</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnStart">JobWebhookNotificationsOnStart</a>]
 
 ---
 
@@ -57066,7 +57066,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnSuccessOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnSuccessOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnSuccessOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnSuccessOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnSuccess">JobWebhookNotificationsOnSuccess</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnSuccessOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnSuccess">JobWebhookNotificationsOnSuccess</a>]</code> | *No description.* |
 
 ---
 
@@ -57117,10 +57117,10 @@ id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.job.JobWebhookNotificationsOnSuccessOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[JobWebhookNotificationsOnSuccess, IResolvable]
+internal_value: typing.Union[IResolvable, JobWebhookNotificationsOnSuccess]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnSuccess">JobWebhookNotificationsOnSuccess</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnSuccess">JobWebhookNotificationsOnSuccess</a>]
 
 ---
 

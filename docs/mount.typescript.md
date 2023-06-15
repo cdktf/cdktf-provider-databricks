@@ -531,7 +531,7 @@ mount.Mount.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-databricks.mount.Mount.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mount.Mount.property.resourceIdInput">resourceIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mount.Mount.property.s3Input">s3Input</a></code> | <code><a href="#@cdktf/provider-databricks.mount.MountS3">MountS3</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.mount.Mount.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-databricks.mount.MountTimeouts">MountTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.mount.Mount.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.mount.MountTimeouts">MountTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mount.Mount.property.uriInput">uriInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mount.Mount.property.wasbInput">wasbInput</a></code> | <code><a href="#@cdktf/provider-databricks.mount.MountWasb">MountWasb</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mount.Mount.property.clusterId">clusterId</a></code> | <code>string</code> | *No description.* |
@@ -859,10 +859,10 @@ public readonly s3Input: MountS3;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-databricks.mount.Mount.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: MountTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | MountTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.mount.MountTimeouts">MountTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.mount.MountTimeouts">MountTimeouts</a>
 
 ---
 
@@ -3399,7 +3399,7 @@ public resetDefault(): void
 | <code><a href="#@cdktf/provider-databricks.mount.MountTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mount.MountTimeoutsOutputReference.property.defaultInput">defaultInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mount.MountTimeoutsOutputReference.property.default">default</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.mount.MountTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.mount.MountTimeouts">MountTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.mount.MountTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.mount.MountTimeouts">MountTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -3450,10 +3450,10 @@ public readonly default: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.mount.MountTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: MountTimeouts | IResolvable;
+public readonly internalValue: IResolvable | MountTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.mount.MountTimeouts">MountTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.mount.MountTimeouts">MountTimeouts</a>
 
 ---
 

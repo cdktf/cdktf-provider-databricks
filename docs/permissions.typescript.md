@@ -2094,7 +2094,7 @@ public resetUserName(): void
 | <code><a href="#@cdktf/provider-databricks.permissions.PermissionsAccessControlOutputReference.property.permissionLevel">permissionLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissions.PermissionsAccessControlOutputReference.property.servicePrincipalName">servicePrincipalName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissions.PermissionsAccessControlOutputReference.property.userName">userName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsAccessControlOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.permissions.PermissionsAccessControl">PermissionsAccessControl</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsAccessControlOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.permissions.PermissionsAccessControl">PermissionsAccessControl</a></code> | *No description.* |
 
 ---
 
@@ -2205,10 +2205,10 @@ public readonly userName: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.permissions.PermissionsAccessControlOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: PermissionsAccessControl | IResolvable;
+public readonly internalValue: IResolvable | PermissionsAccessControl;
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.permissions.PermissionsAccessControl">PermissionsAccessControl</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.permissions.PermissionsAccessControl">PermissionsAccessControl</a>
 
 ---
 

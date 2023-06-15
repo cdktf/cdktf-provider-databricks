@@ -1604,7 +1604,7 @@ public resetNullable(): void
 | <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableColumnOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableColumnOutputReference.property.nullable">nullable</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableColumnOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableColumnOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableColumn">SqlTableColumn</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableColumnOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.sqlTable.SqlTableColumn">SqlTableColumn</a></code> | *No description.* |
 
 ---
 
@@ -1715,10 +1715,10 @@ public readonly type: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.sqlTable.SqlTableColumnOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SqlTableColumn | IResolvable;
+public readonly internalValue: IResolvable | SqlTableColumn;
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.sqlTable.SqlTableColumn">SqlTableColumn</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.sqlTable.SqlTableColumn">SqlTableColumn</a>
 
 ---
 

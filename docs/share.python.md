@@ -1768,7 +1768,7 @@ def reset_status() -> None
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.sharedAs">shared_as</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.startVersion">start_version</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.status">status</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>]</code> | *No description.* |
 
 ---
 
@@ -2019,10 +2019,10 @@ status: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ShareObject, IResolvable]
+internal_value: typing.Union[IResolvable, ShareObject]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>]
 
 ---
 
@@ -2450,7 +2450,7 @@ def put_value(
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.property.value">value</a></code> | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueList">ShareObjectPartitionValueList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.property.valueInput">value_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>]</code> | *No description.* |
 
 ---
 
@@ -2501,10 +2501,10 @@ value_input: typing.Union[IResolvable, typing.List[ShareObjectPartitionValue]]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ShareObjectPartition, IResolvable]
+internal_value: typing.Union[IResolvable, ShareObjectPartition]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>]
 
 ---
 
@@ -2937,7 +2937,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueOutputReference.property.op">op</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueOutputReference.property.recipientPropertyKey">recipient_property_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>]</code> | *No description.* |
 
 ---
 
@@ -3048,10 +3048,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.share.ShareObjectPartitionValueOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ShareObjectPartitionValue, IResolvable]
+internal_value: typing.Union[IResolvable, ShareObjectPartitionValue]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>]
 
 ---
 

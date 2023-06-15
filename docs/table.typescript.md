@@ -1730,7 +1730,7 @@ public resetTypeScale(): void
 | <code><a href="#@cdktf/provider-databricks.table.TableColumnOutputReference.property.typePrecision">typePrecision</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.table.TableColumnOutputReference.property.typeScale">typeScale</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.table.TableColumnOutputReference.property.typeText">typeText</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.table.TableColumnOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.table.TableColumn">TableColumn</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.table.TableColumnOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.table.TableColumn">TableColumn</a></code> | *No description.* |
 
 ---
 
@@ -1981,10 +1981,10 @@ public readonly typeText: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.table.TableColumnOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: TableColumn | IResolvable;
+public readonly internalValue: IResolvable | TableColumn;
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.table.TableColumn">TableColumn</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.table.TableColumn">TableColumn</a>
 
 ---
 
