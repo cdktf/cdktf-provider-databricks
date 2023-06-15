@@ -2496,7 +2496,7 @@ def reset_user_name() -> None
 | <code><a href="#@cdktf/provider-databricks.permissions.PermissionsAccessControlOutputReference.property.permissionLevel">permission_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissions.PermissionsAccessControlOutputReference.property.servicePrincipalName">service_principal_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissions.PermissionsAccessControlOutputReference.property.userName">user_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsAccessControlOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-databricks.permissions.PermissionsAccessControl">PermissionsAccessControl</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissions.PermissionsAccessControlOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.permissions.PermissionsAccessControl">PermissionsAccessControl</a>]</code> | *No description.* |
 
 ---
 
@@ -2607,10 +2607,10 @@ user_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.permissions.PermissionsAccessControlOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[PermissionsAccessControl, IResolvable]
+internal_value: typing.Union[IResolvable, PermissionsAccessControl]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-databricks.permissions.PermissionsAccessControl">PermissionsAccessControl</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.permissions.PermissionsAccessControl">PermissionsAccessControl</a>]
 
 ---
 

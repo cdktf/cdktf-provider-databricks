@@ -1539,7 +1539,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-databricks.grants.GrantsGrantOutputReference.property.privilegesInput">privilegesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.grants.GrantsGrantOutputReference.property.principal">principal</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.grants.GrantsGrantOutputReference.property.privileges">privileges</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grants.GrantsGrantOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.grants.GrantsGrant">GrantsGrant</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.grants.GrantsGrantOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.grants.GrantsGrant">GrantsGrant</a></code> | *No description.* |
 
 ---
 
@@ -1610,10 +1610,10 @@ public readonly privileges: string[];
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.grants.GrantsGrantOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: GrantsGrant | IResolvable;
+public readonly internalValue: IResolvable | GrantsGrant;
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.grants.GrantsGrant">GrantsGrant</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.grants.GrantsGrant">GrantsGrant</a>
 
 ---
 

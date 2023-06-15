@@ -1317,7 +1317,7 @@ Job.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.tagsInput">tagsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.taskInput">taskInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.job.JobTask">JobTask</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.timeoutSecondsInput">timeoutSecondsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.Job.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTimeouts">JobTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.Job.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobTimeouts">JobTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.triggerInput">triggerInput</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTrigger">JobTrigger</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.webhookNotificationsInput">webhookNotificationsInput</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotifications">JobWebhookNotifications</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.property.alwaysRunning">alwaysRunning</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
@@ -1992,7 +1992,7 @@ public java.lang.Number getTimeoutSecondsInput();
 public java.lang.Object getTimeoutsInput();
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.job.JobTimeouts">JobTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobTimeouts">JobTimeouts</a>
 
 ---
 
@@ -15031,7 +15031,7 @@ public void resetRemoteMountDirPath()
 | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfoOutputReference.property.remoteMountDirPathInput">remoteMountDirPathInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfoOutputReference.property.localMountDirPath">localMountDirPath</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfoOutputReference.property.remoteMountDirPath">remoteMountDirPath</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfoOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfo">JobJobClusterNewClusterClusterMountInfo</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfoOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfo">JobJobClusterNewClusterClusterMountInfo</a></code> | *No description.* |
 
 ---
 
@@ -15125,7 +15125,7 @@ public java.lang.String getRemoteMountDirPath();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfo">JobJobClusterNewClusterClusterMountInfo</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfo">JobJobClusterNewClusterClusterMountInfo</a>
 
 ---
 
@@ -17738,7 +17738,7 @@ public void resetWorkspace()
 | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsOutputReference.property.gcsInput">gcsInput</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsGcs">JobJobClusterNewClusterInitScriptsGcs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsOutputReference.property.s3Input">s3Input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsS3">JobJobClusterNewClusterInitScriptsS3</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsOutputReference.property.workspaceInput">workspaceInput</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsWorkspace">JobJobClusterNewClusterInitScriptsWorkspace</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScripts">JobJobClusterNewClusterInitScripts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScripts">JobJobClusterNewClusterInitScripts</a></code> | *No description.* |
 
 ---
 
@@ -17892,7 +17892,7 @@ public JobJobClusterNewClusterInitScriptsWorkspace getWorkspaceInput();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScripts">JobJobClusterNewClusterInitScripts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScripts">JobJobClusterNewClusterInitScripts</a>
 
 ---
 
@@ -20699,7 +20699,7 @@ public void resetNewCluster()
 | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterOutputReference.property.jobClusterKeyInput">jobClusterKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterOutputReference.property.newClusterInput">newClusterInput</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster">JobJobClusterNewCluster</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterOutputReference.property.jobClusterKey">jobClusterKey</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobJobCluster">JobJobCluster</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobJobCluster">JobJobCluster</a></code> | *No description.* |
 
 ---
 
@@ -20773,7 +20773,7 @@ public java.lang.String getJobClusterKey();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.job.JobJobCluster">JobJobCluster</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobJobCluster">JobJobCluster</a>
 
 ---
 
@@ -21871,7 +21871,7 @@ public void resetWhl()
 | <code><a href="#@cdktf/provider-databricks.job.JobLibraryOutputReference.property.egg">egg</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobLibraryOutputReference.property.jar">jar</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobLibraryOutputReference.property.whl">whl</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobLibraryOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobLibrary">JobLibrary</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobLibraryOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobLibrary">JobLibrary</a></code> | *No description.* |
 
 ---
 
@@ -22025,7 +22025,7 @@ public java.lang.String getWhl();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.job.JobLibrary">JobLibrary</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobLibrary">JobLibrary</a>
 
 ---
 
@@ -25200,7 +25200,7 @@ public void resetRemoteMountDirPath()
 | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterMountInfoOutputReference.property.remoteMountDirPathInput">remoteMountDirPathInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterMountInfoOutputReference.property.localMountDirPath">localMountDirPath</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterMountInfoOutputReference.property.remoteMountDirPath">remoteMountDirPath</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterMountInfoOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterMountInfo">JobNewClusterClusterMountInfo</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterMountInfoOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobNewClusterClusterMountInfo">JobNewClusterClusterMountInfo</a></code> | *No description.* |
 
 ---
 
@@ -25294,7 +25294,7 @@ public java.lang.String getRemoteMountDirPath();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.job.JobNewClusterClusterMountInfo">JobNewClusterClusterMountInfo</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobNewClusterClusterMountInfo">JobNewClusterClusterMountInfo</a>
 
 ---
 
@@ -27907,7 +27907,7 @@ public void resetWorkspace()
 | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsOutputReference.property.gcsInput">gcsInput</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsGcs">JobNewClusterInitScriptsGcs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsOutputReference.property.s3Input">s3Input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsS3">JobNewClusterInitScriptsS3</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsOutputReference.property.workspaceInput">workspaceInput</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsWorkspace">JobNewClusterInitScriptsWorkspace</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScripts">JobNewClusterInitScripts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobNewClusterInitScripts">JobNewClusterInitScripts</a></code> | *No description.* |
 
 ---
 
@@ -28061,7 +28061,7 @@ public JobNewClusterInitScriptsWorkspace getWorkspaceInput();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.job.JobNewClusterInitScripts">JobNewClusterInitScripts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobNewClusterInitScripts">JobNewClusterInitScripts</a>
 
 ---
 
@@ -34498,7 +34498,7 @@ public void resetTaskKey()
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskDependsOnOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskDependsOnOutputReference.property.taskKeyInput">taskKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskDependsOnOutputReference.property.taskKey">taskKey</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskDependsOnOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskDependsOn">JobTaskDependsOn</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskDependsOnOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobTaskDependsOn">JobTaskDependsOn</a></code> | *No description.* |
 
 ---
 
@@ -34552,7 +34552,7 @@ public java.lang.String getTaskKey();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.job.JobTaskDependsOn">JobTaskDependsOn</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobTaskDependsOn">JobTaskDependsOn</a>
 
 ---
 
@@ -36044,7 +36044,7 @@ public void resetWhl()
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskLibraryOutputReference.property.egg">egg</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskLibraryOutputReference.property.jar">jar</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskLibraryOutputReference.property.whl">whl</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskLibraryOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskLibrary">JobTaskLibrary</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskLibraryOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobTaskLibrary">JobTaskLibrary</a></code> | *No description.* |
 
 ---
 
@@ -36198,7 +36198,7 @@ public java.lang.String getWhl();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.job.JobTaskLibrary">JobTaskLibrary</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobTaskLibrary">JobTaskLibrary</a>
 
 ---
 
@@ -39516,7 +39516,7 @@ public void resetRemoteMountDirPath()
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfoOutputReference.property.remoteMountDirPathInput">remoteMountDirPathInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfoOutputReference.property.localMountDirPath">localMountDirPath</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfoOutputReference.property.remoteMountDirPath">remoteMountDirPath</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfoOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfo">JobTaskNewClusterClusterMountInfo</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfoOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfo">JobTaskNewClusterClusterMountInfo</a></code> | *No description.* |
 
 ---
 
@@ -39610,7 +39610,7 @@ public java.lang.String getRemoteMountDirPath();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfo">JobTaskNewClusterClusterMountInfo</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfo">JobTaskNewClusterClusterMountInfo</a>
 
 ---
 
@@ -42223,7 +42223,7 @@ public void resetWorkspace()
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsOutputReference.property.gcsInput">gcsInput</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsGcs">JobTaskNewClusterInitScriptsGcs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsOutputReference.property.s3Input">s3Input</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsS3">JobTaskNewClusterInitScriptsS3</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsOutputReference.property.workspaceInput">workspaceInput</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsWorkspace">JobTaskNewClusterInitScriptsWorkspace</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScripts">JobTaskNewClusterInitScripts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScripts">JobTaskNewClusterInitScripts</a></code> | *No description.* |
 
 ---
 
@@ -42377,7 +42377,7 @@ public JobTaskNewClusterInitScriptsWorkspace getWorkspaceInput();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScripts">JobTaskNewClusterInitScripts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScripts">JobTaskNewClusterInitScripts</a>
 
 ---
 
@@ -45827,7 +45827,7 @@ public void resetTimeoutSeconds()
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.runIf">runIf</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.taskKey">taskKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.timeoutSeconds">timeoutSeconds</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTask">JobTask</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobTask">JobTask</a></code> | *No description.* |
 
 ---
 
@@ -46281,7 +46281,7 @@ public java.lang.Number getTimeoutSeconds();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.job.JobTask">JobTask</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobTask">JobTask</a>
 
 ---
 
@@ -49652,7 +49652,7 @@ public void resetUpdate()
 | <code><a href="#@cdktf/provider-databricks.job.JobTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTimeoutsOutputReference.property.create">create</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobTimeoutsOutputReference.property.update">update</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTimeouts">JobTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobTimeouts">JobTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -49726,7 +49726,7 @@ public java.lang.String getUpdate();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.job.JobTimeouts">JobTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobTimeouts">JobTimeouts</a>
 
 ---
 
@@ -50746,7 +50746,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnFailureOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnFailureOutputReference.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnFailureOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnFailureOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnFailure">JobWebhookNotificationsOnFailure</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnFailureOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnFailure">JobWebhookNotificationsOnFailure</a></code> | *No description.* |
 
 ---
 
@@ -50800,7 +50800,7 @@ public java.lang.String getId();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnFailure">JobWebhookNotificationsOnFailure</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnFailure">JobWebhookNotificationsOnFailure</a>
 
 ---
 
@@ -51178,7 +51178,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnStartOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnStartOutputReference.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnStartOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnStartOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnStart">JobWebhookNotificationsOnStart</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnStartOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnStart">JobWebhookNotificationsOnStart</a></code> | *No description.* |
 
 ---
 
@@ -51232,7 +51232,7 @@ public java.lang.String getId();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnStart">JobWebhookNotificationsOnStart</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnStart">JobWebhookNotificationsOnStart</a>
 
 ---
 
@@ -51610,7 +51610,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnSuccessOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnSuccessOutputReference.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnSuccessOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnSuccessOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnSuccess">JobWebhookNotificationsOnSuccess</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnSuccessOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnSuccess">JobWebhookNotificationsOnSuccess</a></code> | *No description.* |
 
 ---
 
@@ -51664,7 +51664,7 @@ public java.lang.String getId();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnSuccess">JobWebhookNotificationsOnSuccess</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnSuccess">JobWebhookNotificationsOnSuccess</a>
 
 ---
 

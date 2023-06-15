@@ -1959,7 +1959,7 @@ public void resetTypeScale()
 | <code><a href="#@cdktf/provider-databricks.table.TableColumnOutputReference.property.typePrecision">typePrecision</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.table.TableColumnOutputReference.property.typeScale">typeScale</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.table.TableColumnOutputReference.property.typeText">typeText</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.table.TableColumnOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.table.TableColumn">TableColumn</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.table.TableColumnOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.table.TableColumn">TableColumn</a></code> | *No description.* |
 
 ---
 
@@ -2213,7 +2213,7 @@ public java.lang.String getTypeText();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.table.TableColumn">TableColumn</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.table.TableColumn">TableColumn</a>
 
 ---
 

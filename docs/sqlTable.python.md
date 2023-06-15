@@ -1885,7 +1885,7 @@ def reset_nullable() -> None
 | <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableColumnOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableColumnOutputReference.property.nullable">nullable</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableColumnOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableColumnOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-databricks.sqlTable.SqlTableColumn">SqlTableColumn</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableColumnOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.sqlTable.SqlTableColumn">SqlTableColumn</a>]</code> | *No description.* |
 
 ---
 
@@ -1996,10 +1996,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.sqlTable.SqlTableColumnOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SqlTableColumn, IResolvable]
+internal_value: typing.Union[IResolvable, SqlTableColumn]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-databricks.sqlTable.SqlTableColumn">SqlTableColumn</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.sqlTable.SqlTableColumn">SqlTableColumn</a>]
 
 ---
 

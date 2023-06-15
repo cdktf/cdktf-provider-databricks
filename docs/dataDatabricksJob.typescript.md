@@ -13421,7 +13421,7 @@ public resetRemoteMountDirPath(): void
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoOutputReference.property.remoteMountDirPathInput">remoteMountDirPathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoOutputReference.property.localMountDirPath">localMountDirPath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoOutputReference.property.remoteMountDirPath">remoteMountDirPath</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfo">DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfo</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfo">DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfo</a></code> | *No description.* |
 
 ---
 
@@ -13512,10 +13512,10 @@ public readonly remoteMountDirPath: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfo | IResolvable;
+public readonly internalValue: IResolvable | DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfo;
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfo">DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfo</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfo">DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfo</a>
 
 ---
 
@@ -16128,7 +16128,7 @@ public resetWorkspace(): void
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsOutputReference.property.gcsInput">gcsInput</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsGcs">DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsGcs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsOutputReference.property.s3Input">s3Input</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3">DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsOutputReference.property.workspaceInput">workspaceInput</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsWorkspace">DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsWorkspace</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScripts">DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScripts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScripts">DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScripts</a></code> | *No description.* |
 
 ---
 
@@ -16279,10 +16279,10 @@ public readonly workspaceInput: DataDatabricksJobJobSettingsSettingsJobClusterNe
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScripts | IResolvable;
+public readonly internalValue: IResolvable | DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScripts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScripts">DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScripts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScripts">DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScripts</a>
 
 ---
 
@@ -19082,7 +19082,7 @@ public resetNewCluster(): void
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterOutputReference.property.jobClusterKeyInput">jobClusterKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterOutputReference.property.newClusterInput">newClusterInput</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster">DataDatabricksJobJobSettingsSettingsJobClusterNewCluster</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterOutputReference.property.jobClusterKey">jobClusterKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobCluster">DataDatabricksJobJobSettingsSettingsJobCluster</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobCluster">DataDatabricksJobJobSettingsSettingsJobCluster</a></code> | *No description.* |
 
 ---
 
@@ -19153,10 +19153,10 @@ public readonly jobClusterKey: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataDatabricksJobJobSettingsSettingsJobCluster | IResolvable;
+public readonly internalValue: IResolvable | DataDatabricksJobJobSettingsSettingsJobCluster;
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobCluster">DataDatabricksJobJobSettingsSettingsJobCluster</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobCluster">DataDatabricksJobJobSettingsSettingsJobCluster</a>
 
 ---
 
@@ -20254,7 +20254,7 @@ public resetWhl(): void
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryOutputReference.property.egg">egg</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryOutputReference.property.jar">jar</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryOutputReference.property.whl">whl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibrary">DataDatabricksJobJobSettingsSettingsLibrary</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibrary">DataDatabricksJobJobSettingsSettingsLibrary</a></code> | *No description.* |
 
 ---
 
@@ -20405,10 +20405,10 @@ public readonly whl: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataDatabricksJobJobSettingsSettingsLibrary | IResolvable;
+public readonly internalValue: IResolvable | DataDatabricksJobJobSettingsSettingsLibrary;
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibrary">DataDatabricksJobJobSettingsSettingsLibrary</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibrary">DataDatabricksJobJobSettingsSettingsLibrary</a>
 
 ---
 
@@ -23583,7 +23583,7 @@ public resetRemoteMountDirPath(): void
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoOutputReference.property.remoteMountDirPathInput">remoteMountDirPathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoOutputReference.property.localMountDirPath">localMountDirPath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoOutputReference.property.remoteMountDirPath">remoteMountDirPath</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfo">DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfo</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfo">DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfo</a></code> | *No description.* |
 
 ---
 
@@ -23674,10 +23674,10 @@ public readonly remoteMountDirPath: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfo | IResolvable;
+public readonly internalValue: IResolvable | DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfo;
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfo">DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfo</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfo">DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfo</a>
 
 ---
 
@@ -26290,7 +26290,7 @@ public resetWorkspace(): void
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsOutputReference.property.gcsInput">gcsInput</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsGcs">DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsGcs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsOutputReference.property.s3Input">s3Input</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3">DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsOutputReference.property.workspaceInput">workspaceInput</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsWorkspace">DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsWorkspace</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScripts">DataDatabricksJobJobSettingsSettingsNewClusterInitScripts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScripts">DataDatabricksJobJobSettingsSettingsNewClusterInitScripts</a></code> | *No description.* |
 
 ---
 
@@ -26441,10 +26441,10 @@ public readonly workspaceInput: DataDatabricksJobJobSettingsSettingsNewClusterIn
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataDatabricksJobJobSettingsSettingsNewClusterInitScripts | IResolvable;
+public readonly internalValue: IResolvable | DataDatabricksJobJobSettingsSettingsNewClusterInitScripts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScripts">DataDatabricksJobJobSettingsSettingsNewClusterInitScripts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScripts">DataDatabricksJobJobSettingsSettingsNewClusterInitScripts</a>
 
 ---
 
@@ -34224,7 +34224,7 @@ public resetTaskKey(): void
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDependsOnOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDependsOnOutputReference.property.taskKeyInput">taskKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDependsOnOutputReference.property.taskKey">taskKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDependsOnOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDependsOn">DataDatabricksJobJobSettingsSettingsTaskDependsOn</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDependsOnOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDependsOn">DataDatabricksJobJobSettingsSettingsTaskDependsOn</a></code> | *No description.* |
 
 ---
 
@@ -34275,10 +34275,10 @@ public readonly taskKey: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDependsOnOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataDatabricksJobJobSettingsSettingsTaskDependsOn | IResolvable;
+public readonly internalValue: IResolvable | DataDatabricksJobJobSettingsSettingsTaskDependsOn;
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDependsOn">DataDatabricksJobJobSettingsSettingsTaskDependsOn</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDependsOn">DataDatabricksJobJobSettingsSettingsTaskDependsOn</a>
 
 ---
 
@@ -35770,7 +35770,7 @@ public resetWhl(): void
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryOutputReference.property.egg">egg</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryOutputReference.property.jar">jar</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryOutputReference.property.whl">whl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibrary">DataDatabricksJobJobSettingsSettingsTaskLibrary</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibrary">DataDatabricksJobJobSettingsSettingsTaskLibrary</a></code> | *No description.* |
 
 ---
 
@@ -35921,10 +35921,10 @@ public readonly whl: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataDatabricksJobJobSettingsSettingsTaskLibrary | IResolvable;
+public readonly internalValue: IResolvable | DataDatabricksJobJobSettingsSettingsTaskLibrary;
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibrary">DataDatabricksJobJobSettingsSettingsTaskLibrary</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibrary">DataDatabricksJobJobSettingsSettingsTaskLibrary</a>
 
 ---
 
@@ -39242,7 +39242,7 @@ public resetRemoteMountDirPath(): void
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoOutputReference.property.remoteMountDirPathInput">remoteMountDirPathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoOutputReference.property.localMountDirPath">localMountDirPath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoOutputReference.property.remoteMountDirPath">remoteMountDirPath</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfo">DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfo</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfo">DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfo</a></code> | *No description.* |
 
 ---
 
@@ -39333,10 +39333,10 @@ public readonly remoteMountDirPath: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfo | IResolvable;
+public readonly internalValue: IResolvable | DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfo;
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfo">DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfo</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfo">DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfo</a>
 
 ---
 
@@ -41949,7 +41949,7 @@ public resetWorkspace(): void
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsOutputReference.property.gcsInput">gcsInput</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsGcs">DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsGcs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsOutputReference.property.s3Input">s3Input</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3">DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsOutputReference.property.workspaceInput">workspaceInput</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsWorkspace">DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsWorkspace</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScripts">DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScripts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScripts">DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScripts</a></code> | *No description.* |
 
 ---
 
@@ -42100,10 +42100,10 @@ public readonly workspaceInput: DataDatabricksJobJobSettingsSettingsTaskNewClust
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScripts | IResolvable;
+public readonly internalValue: IResolvable | DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScripts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScripts">DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScripts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScripts">DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScripts</a>
 
 ---
 
@@ -45546,7 +45546,7 @@ public resetTimeoutSeconds(): void
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.property.runIf">runIf</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.property.taskKey">taskKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.property.timeoutSeconds">timeoutSeconds</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask">DataDatabricksJobJobSettingsSettingsTask</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask">DataDatabricksJobJobSettingsSettingsTask</a></code> | *No description.* |
 
 ---
 
@@ -45997,10 +45997,10 @@ public readonly timeoutSeconds: number;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataDatabricksJobJobSettingsSettingsTask | IResolvable;
+public readonly internalValue: IResolvable | DataDatabricksJobJobSettingsSettingsTask;
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask">DataDatabricksJobJobSettingsSettingsTask</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask">DataDatabricksJobJobSettingsSettingsTask</a>
 
 ---
 
@@ -50158,7 +50158,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureOutputReference.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailure">DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailure</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailure">DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailure</a></code> | *No description.* |
 
 ---
 
@@ -50209,10 +50209,10 @@ public readonly id: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailure | IResolvable;
+public readonly internalValue: IResolvable | DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailure;
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailure">DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailure</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailure">DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailure</a>
 
 ---
 
@@ -50590,7 +50590,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStartOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStartOutputReference.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStartOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStartOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStart">DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStart</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStartOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStart">DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStart</a></code> | *No description.* |
 
 ---
 
@@ -50641,10 +50641,10 @@ public readonly id: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStartOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStart | IResolvable;
+public readonly internalValue: IResolvable | DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStart;
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStart">DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStart</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStart">DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStart</a>
 
 ---
 
@@ -51022,7 +51022,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccessOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccessOutputReference.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccessOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccessOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccess">DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccess</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccessOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccess">DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccess</a></code> | *No description.* |
 
 ---
 
@@ -51073,10 +51073,10 @@ public readonly id: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccessOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccess | IResolvable;
+public readonly internalValue: IResolvable | DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccess;
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccess">DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccess</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccess">DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccess</a>
 
 ---
 

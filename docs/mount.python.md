@@ -963,7 +963,7 @@ mount.Mount.is_terraform_resource(
 | <code><a href="#@cdktf/provider-databricks.mount.Mount.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mount.Mount.property.resourceIdInput">resource_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mount.Mount.property.s3Input">s3_input</a></code> | <code><a href="#@cdktf/provider-databricks.mount.MountS3">MountS3</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.mount.Mount.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-databricks.mount.MountTimeouts">MountTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.mount.Mount.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.mount.MountTimeouts">MountTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mount.Mount.property.uriInput">uri_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mount.Mount.property.wasbInput">wasb_input</a></code> | <code><a href="#@cdktf/provider-databricks.mount.MountWasb">MountWasb</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mount.Mount.property.clusterId">cluster_id</a></code> | <code>str</code> | *No description.* |
@@ -1291,10 +1291,10 @@ s3_input: MountS3
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-databricks.mount.Mount.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[MountTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, MountTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-databricks.mount.MountTimeouts">MountTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.mount.MountTimeouts">MountTimeouts</a>]
 
 ---
 
@@ -4009,7 +4009,7 @@ def reset_default() -> None
 | <code><a href="#@cdktf/provider-databricks.mount.MountTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mount.MountTimeoutsOutputReference.property.defaultInput">default_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mount.MountTimeoutsOutputReference.property.default">default</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.mount.MountTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-databricks.mount.MountTimeouts">MountTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.mount.MountTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.mount.MountTimeouts">MountTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -4060,10 +4060,10 @@ default: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.mount.MountTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[MountTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, MountTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-databricks.mount.MountTimeouts">MountTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.mount.MountTimeouts">MountTimeouts</a>]
 
 ---
 

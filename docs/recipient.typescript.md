@@ -1807,7 +1807,7 @@ public resetUpdatedBy(): void
 | <code><a href="#@cdktf/provider-databricks.recipient.RecipientTokensOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.recipient.RecipientTokensOutputReference.property.updatedAt">updatedAt</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.recipient.RecipientTokensOutputReference.property.updatedBy">updatedBy</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.recipient.RecipientTokensOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.recipient.RecipientTokens">RecipientTokens</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.recipient.RecipientTokensOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.recipient.RecipientTokens">RecipientTokens</a></code> | *No description.* |
 
 ---
 
@@ -1978,10 +1978,10 @@ public readonly updatedBy: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.recipient.RecipientTokensOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: RecipientTokens | IResolvable;
+public readonly internalValue: IResolvable | RecipientTokens;
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.recipient.RecipientTokens">RecipientTokens</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.recipient.RecipientTokens">RecipientTokens</a>
 
 ---
 

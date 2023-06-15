@@ -1421,7 +1421,7 @@ cluster.Cluster.is_terraform_resource(
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.sparkEnvVarsInput">spark_env_vars_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.sparkVersionInput">spark_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.sshPublicKeysInput">ssh_public_keys_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-databricks.cluster.ClusterTimeouts">ClusterTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.cluster.ClusterTimeouts">ClusterTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.workloadTypeInput">workload_type_input</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterWorkloadType">ClusterWorkloadType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.applyPolicyDefaultValues">apply_policy_default_values</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.autoterminationMinutes">autotermination_minutes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -2054,10 +2054,10 @@ ssh_public_keys_input: typing.List[str]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-databricks.cluster.Cluster.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[ClusterTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, ClusterTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-databricks.cluster.ClusterTimeouts">ClusterTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.cluster.ClusterTimeouts">ClusterTimeouts</a>]
 
 ---
 
@@ -7595,7 +7595,7 @@ def reset_remote_mount_dir_path() -> None
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfoOutputReference.property.remoteMountDirPathInput">remote_mount_dir_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfoOutputReference.property.localMountDirPath">local_mount_dir_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfoOutputReference.property.remoteMountDirPath">remote_mount_dir_path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfoOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfo">ClusterClusterMountInfo</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfoOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfo">ClusterClusterMountInfo</a>]</code> | *No description.* |
 
 ---
 
@@ -7686,10 +7686,10 @@ remote_mount_dir_path: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.cluster.ClusterClusterMountInfoOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ClusterClusterMountInfo, IResolvable]
+internal_value: typing.Union[IResolvable, ClusterClusterMountInfo]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfo">ClusterClusterMountInfo</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfo">ClusterClusterMountInfo</a>]
 
 ---
 
@@ -10603,7 +10603,7 @@ def reset_workspace() -> None
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsOutputReference.property.gcsInput">gcs_input</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsGcs">ClusterInitScriptsGcs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsOutputReference.property.s3Input">s3_input</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3">ClusterInitScriptsS3</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsOutputReference.property.workspaceInput">workspace_input</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsWorkspace">ClusterInitScriptsWorkspace</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-databricks.cluster.ClusterInitScripts">ClusterInitScripts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.cluster.ClusterInitScripts">ClusterInitScripts</a>]</code> | *No description.* |
 
 ---
 
@@ -10754,10 +10754,10 @@ workspace_input: ClusterInitScriptsWorkspace
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.cluster.ClusterInitScriptsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ClusterInitScripts, IResolvable]
+internal_value: typing.Union[IResolvable, ClusterInitScripts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-databricks.cluster.ClusterInitScripts">ClusterInitScripts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.cluster.ClusterInitScripts">ClusterInitScripts</a>]
 
 ---
 
@@ -12761,7 +12761,7 @@ def reset_whl() -> None
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryOutputReference.property.egg">egg</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryOutputReference.property.jar">jar</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryOutputReference.property.whl">whl</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-databricks.cluster.ClusterLibrary">ClusterLibrary</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.cluster.ClusterLibrary">ClusterLibrary</a>]</code> | *No description.* |
 
 ---
 
@@ -12912,10 +12912,10 @@ whl: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.cluster.ClusterLibraryOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ClusterLibrary, IResolvable]
+internal_value: typing.Union[IResolvable, ClusterLibrary]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-databricks.cluster.ClusterLibrary">ClusterLibrary</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.cluster.ClusterLibrary">ClusterLibrary</a>]
 
 ---
 
@@ -13507,7 +13507,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-databricks.cluster.ClusterTimeouts">ClusterTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.cluster.ClusterTimeouts">ClusterTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -13598,10 +13598,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.cluster.ClusterTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ClusterTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, ClusterTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-databricks.cluster.ClusterTimeouts">ClusterTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.cluster.ClusterTimeouts">ClusterTimeouts</a>]
 
 ---
 

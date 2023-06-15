@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.metastoreAssignment.MetastoreAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/metastoreassignment"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/metastoreassignment"
 
 metastoreassignment.NewMetastoreAssignment(scope Construct, id *string, config MetastoreAssignmentConfig) MetastoreAssignment
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.metastoreAssignment.MetastoreAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/metastoreassignment"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/metastoreassignment"
 
 metastoreassignment.MetastoreAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.metastoreAssignment.MetastoreAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/metastoreassignment"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/metastoreassignment"
 
 metastoreassignment.MetastoreAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ metastoreassignment.MetastoreAssignment_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.metastoreAssignment.MetastoreAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/metastoreassignment"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/metastoreassignment"
 
 metastoreassignment.MetastoreAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -617,7 +617,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.metastoreAssignment.MetastoreAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/metastoreassignment"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/metastoreassignment"
 
 &metastoreassignment.MetastoreAssignmentConfig {
 	Connection: interface{},

@@ -1559,7 +1559,7 @@ public resetStatus(): void
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.sharedAs">sharedAs</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.startVersion">startVersion</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.status">status</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a></code> | *No description.* |
 
 ---
 
@@ -1810,10 +1810,10 @@ public readonly status: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ShareObject | IResolvable;
+public readonly internalValue: IResolvable | ShareObject;
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>
 
 ---
 
@@ -2204,7 +2204,7 @@ public putValue(value: IResolvable | ShareObjectPartitionValue[]): void
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.property.value">value</a></code> | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueList">ShareObjectPartitionValueList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.property.valueInput">valueInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a></code> | *No description.* |
 
 ---
 
@@ -2255,10 +2255,10 @@ public readonly valueInput: IResolvable | ShareObjectPartitionValue[];
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ShareObjectPartition | IResolvable;
+public readonly internalValue: IResolvable | ShareObjectPartition;
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>
 
 ---
 
@@ -2656,7 +2656,7 @@ public resetValue(): void
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueOutputReference.property.op">op</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueOutputReference.property.recipientPropertyKey">recipientPropertyKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a></code> | *No description.* |
 
 ---
 
@@ -2767,10 +2767,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.share.ShareObjectPartitionValueOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ShareObjectPartitionValue | IResolvable;
+public readonly internalValue: IResolvable | ShareObjectPartitionValue;
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>
 
 ---
 

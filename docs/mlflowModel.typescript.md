@@ -1371,7 +1371,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModelTagsOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModelTagsOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModelTagsOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModelTagsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModelTags">MlflowModelTags</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModelTagsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.mlflowModel.MlflowModelTags">MlflowModelTags</a></code> | *No description.* |
 
 ---
 
@@ -1442,10 +1442,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.mlflowModel.MlflowModelTagsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: MlflowModelTags | IResolvable;
+public readonly internalValue: IResolvable | MlflowModelTags;
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.mlflowModel.MlflowModelTags">MlflowModelTags</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.mlflowModel.MlflowModelTags">MlflowModelTags</a>
 
 ---
 
