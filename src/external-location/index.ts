@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/external_location
+// https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/external_location
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,44 +8,52 @@ import * as cdktf from 'cdktf';
 
 export interface ExternalLocationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/external_location#comment ExternalLocation#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/external_location#comment ExternalLocation#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/external_location#credential_name ExternalLocation#credential_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/external_location#credential_name ExternalLocation#credential_name}
   */
   readonly credentialName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/external_location#id ExternalLocation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/external_location#force_destroy ExternalLocation#force_destroy}
+  */
+  readonly forceDestroy?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/external_location#id ExternalLocation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/external_location#metastore_id ExternalLocation#metastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/external_location#metastore_id ExternalLocation#metastore_id}
   */
   readonly metastoreId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/external_location#name ExternalLocation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/external_location#name ExternalLocation#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/external_location#owner ExternalLocation#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/external_location#owner ExternalLocation#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/external_location#skip_validation ExternalLocation#skip_validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/external_location#read_only ExternalLocation#read_only}
+  */
+  readonly readOnly?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/external_location#skip_validation ExternalLocation#skip_validation}
   */
   readonly skipValidation?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/external_location#url ExternalLocation#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/external_location#url ExternalLocation#url}
   */
   readonly url: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/external_location databricks_external_location}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/external_location databricks_external_location}
 */
 export class ExternalLocation extends cdktf.TerraformResource {
 
@@ -64,7 +67,7 @@ export class ExternalLocation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/resources/external_location databricks_external_location} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/external_location databricks_external_location} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -75,7 +78,7 @@ export class ExternalLocation extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_external_location',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.18.0',
+        providerVersion: '1.19.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -88,10 +91,12 @@ export class ExternalLocation extends cdktf.TerraformResource {
     });
     this._comment = config.comment;
     this._credentialName = config.credentialName;
+    this._forceDestroy = config.forceDestroy;
     this._id = config.id;
     this._metastoreId = config.metastoreId;
     this._name = config.name;
     this._owner = config.owner;
+    this._readOnly = config.readOnly;
     this._skipValidation = config.skipValidation;
     this._url = config.url;
   }
@@ -127,6 +132,22 @@ export class ExternalLocation extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get credentialNameInput() {
     return this._credentialName;
+  }
+
+  // force_destroy - computed: false, optional: true, required: false
+  private _forceDestroy?: boolean | cdktf.IResolvable; 
+  public get forceDestroy() {
+    return this.getBooleanAttribute('force_destroy');
+  }
+  public set forceDestroy(value: boolean | cdktf.IResolvable) {
+    this._forceDestroy = value;
+  }
+  public resetForceDestroy() {
+    this._forceDestroy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceDestroyInput() {
+    return this._forceDestroy;
   }
 
   // id - computed: true, optional: true, required: false
@@ -190,6 +211,22 @@ export class ExternalLocation extends cdktf.TerraformResource {
     return this._owner;
   }
 
+  // read_only - computed: false, optional: true, required: false
+  private _readOnly?: boolean | cdktf.IResolvable; 
+  public get readOnly() {
+    return this.getBooleanAttribute('read_only');
+  }
+  public set readOnly(value: boolean | cdktf.IResolvable) {
+    this._readOnly = value;
+  }
+  public resetReadOnly() {
+    this._readOnly = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readOnlyInput() {
+    return this._readOnly;
+  }
+
   // skip_validation - computed: false, optional: true, required: false
   private _skipValidation?: boolean | cdktf.IResolvable; 
   public get skipValidation() {
@@ -227,10 +264,12 @@ export class ExternalLocation extends cdktf.TerraformResource {
     return {
       comment: cdktf.stringToTerraform(this._comment),
       credential_name: cdktf.stringToTerraform(this._credentialName),
+      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
       id: cdktf.stringToTerraform(this._id),
       metastore_id: cdktf.stringToTerraform(this._metastoreId),
       name: cdktf.stringToTerraform(this._name),
       owner: cdktf.stringToTerraform(this._owner),
+      read_only: cdktf.booleanToTerraform(this._readOnly),
       skip_validation: cdktf.booleanToTerraform(this._skipValidation),
       url: cdktf.stringToTerraform(this._url),
     };

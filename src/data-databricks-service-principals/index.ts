@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/data-sources/service_principals
+// https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/data-sources/service_principals
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +8,15 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksServicePrincipalsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/data-sources/service_principals#application_ids DataDatabricksServicePrincipals#application_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/data-sources/service_principals#application_ids DataDatabricksServicePrincipals#application_ids}
   */
   readonly applicationIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/data-sources/service_principals#display_name_contains DataDatabricksServicePrincipals#display_name_contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/data-sources/service_principals#display_name_contains DataDatabricksServicePrincipals#display_name_contains}
   */
   readonly displayNameContains?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/data-sources/service_principals#id DataDatabricksServicePrincipals#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/data-sources/service_principals#id DataDatabricksServicePrincipals#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,7 +25,7 @@ export interface DataDatabricksServicePrincipalsConfig extends cdktf.TerraformMe
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/data-sources/service_principals databricks_service_principals}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/data-sources/service_principals databricks_service_principals}
 */
 export class DataDatabricksServicePrincipals extends cdktf.TerraformDataSource {
 
@@ -44,7 +39,7 @@ export class DataDatabricksServicePrincipals extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/data-sources/service_principals databricks_service_principals} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/data-sources/service_principals databricks_service_principals} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -55,7 +50,7 @@ export class DataDatabricksServicePrincipals extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_service_principals',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.18.0',
+        providerVersion: '1.19.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
