@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.clusterPolicy.ClusterPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/clusterpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/clusterpolicy"
 
 clusterpolicy.NewClusterPolicy(scope Construct, id *string, config ClusterPolicyConfig) ClusterPolicy
 ```
@@ -312,7 +312,7 @@ func ResetPolicyFamilyId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.clusterPolicy.ClusterPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/clusterpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/clusterpolicy"
 
 clusterpolicy.ClusterPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.clusterPolicy.ClusterPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/clusterpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/clusterpolicy"
 
 clusterpolicy.ClusterPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ clusterpolicy.ClusterPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.clusterPolicy.ClusterPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/clusterpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/clusterpolicy"
 
 clusterpolicy.ClusterPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.clusterPolicy.ClusterPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v7/clusterpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v8/clusterpolicy"
 
 &clusterpolicy.ClusterPolicyConfig {
 	Connection: interface{},
