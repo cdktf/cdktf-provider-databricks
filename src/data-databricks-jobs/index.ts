@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/data-sources/jobs
+// https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/data-sources/jobs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +13,20 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksJobsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/data-sources/jobs#id DataDatabricksJobs#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/data-sources/jobs#id DataDatabricksJobs#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/data-sources/jobs#ids DataDatabricksJobs#ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/data-sources/jobs#ids DataDatabricksJobs#ids}
   */
   readonly ids?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/data-sources/jobs databricks_jobs}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/data-sources/jobs databricks_jobs}
 */
 export class DataDatabricksJobs extends cdktf.TerraformDataSource {
 
@@ -40,7 +40,7 @@ export class DataDatabricksJobs extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.18.0/docs/data-sources/jobs databricks_jobs} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/data-sources/jobs databricks_jobs} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -51,7 +51,7 @@ export class DataDatabricksJobs extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_jobs',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.18.0',
+        providerVersion: '1.19.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
