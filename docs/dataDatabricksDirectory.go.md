@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdirectory"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/datadatabricksdirectory"
 
 datadatabricksdirectory.NewDataDatabricksDirectory(scope Construct, id *string, config DataDatabricksDirectoryConfig) DataDatabricksDirectory
 ```
@@ -284,7 +284,7 @@ func ResetObjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdirectory"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/datadatabricksdirectory"
 
 datadatabricksdirectory.DataDatabricksDirectory_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdirectory"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/datadatabricksdirectory"
 
 datadatabricksdirectory.DataDatabricksDirectory_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datadatabricksdirectory.DataDatabricksDirectory_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdirectory"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/datadatabricksdirectory"
 
 datadatabricksdirectory.DataDatabricksDirectory_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdirectory"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/datadatabricksdirectory"
 
 &datadatabricksdirectory.DataDatabricksDirectoryConfig {
 	Connection: interface{},
