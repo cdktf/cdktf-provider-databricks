@@ -6,6 +6,7 @@ The following submodules are available:
 - [azureAdlsGen2Mount](./azureAdlsGen2Mount.csharp.md)
 - [azureBlobMount](./azureBlobMount.csharp.md)
 - [catalog](./catalog.csharp.md)
+- [catalogWorkspaceBinding](./catalogWorkspaceBinding.csharp.md)
 - [cluster](./cluster.csharp.md)
 - [clusterPolicy](./clusterPolicy.csharp.md)
 - [dataDatabricksAwsAssumeRolePolicy](./dataDatabricksAwsAssumeRolePolicy.csharp.md)

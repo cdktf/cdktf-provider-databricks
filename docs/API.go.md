@@ -6,6 +6,7 @@ The following submodules are available:
 - [azureAdlsGen2Mount](./azureAdlsGen2Mount.go.md)
 - [azureBlobMount](./azureBlobMount.go.md)
 - [catalog](./catalog.go.md)
+- [catalogWorkspaceBinding](./catalogWorkspaceBinding.go.md)
 - [cluster](./cluster.go.md)
 - [clusterPolicy](./clusterPolicy.go.md)
 - [dataDatabricksAwsAssumeRolePolicy](./dataDatabricksAwsAssumeRolePolicy.go.md)

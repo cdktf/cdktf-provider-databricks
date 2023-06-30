@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs
+// https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,123 +8,131 @@ import * as cdktf from 'cdktf';
 
 export interface DatabricksProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs#account_id DatabricksProvider#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs#account_id DatabricksProvider#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs#auth_type DatabricksProvider#auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs#auth_type DatabricksProvider#auth_type}
   */
   readonly authType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs#azure_client_id DatabricksProvider#azure_client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs#azure_client_id DatabricksProvider#azure_client_id}
   */
   readonly azureClientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs#azure_client_secret DatabricksProvider#azure_client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs#azure_client_secret DatabricksProvider#azure_client_secret}
   */
   readonly azureClientSecret?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs#azure_environment DatabricksProvider#azure_environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs#azure_environment DatabricksProvider#azure_environment}
   */
   readonly azureEnvironment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}
   */
   readonly azureLoginAppId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}
   */
   readonly azureTenantId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}
   */
   readonly azureUseMsi?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}
   */
   readonly azureWorkspaceResourceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs#client_id DatabricksProvider#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs#client_id DatabricksProvider#client_id}
   */
   readonly clientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs#client_secret DatabricksProvider#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs#client_secret DatabricksProvider#client_secret}
   */
   readonly clientSecret?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs#config_file DatabricksProvider#config_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs#cluster_id DatabricksProvider#cluster_id}
+  */
+  readonly clusterId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs#config_file DatabricksProvider#config_file}
   */
   readonly configFile?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}
   */
   readonly databricksCliPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs#debug_headers DatabricksProvider#debug_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs#debug_headers DatabricksProvider#debug_headers}
   */
   readonly debugHeaders?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}
   */
   readonly debugTruncateBytes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs#google_credentials DatabricksProvider#google_credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs#google_credentials DatabricksProvider#google_credentials}
   */
   readonly googleCredentials?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs#google_service_account DatabricksProvider#google_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs#google_service_account DatabricksProvider#google_service_account}
   */
   readonly googleServiceAccount?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs#host DatabricksProvider#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs#host DatabricksProvider#host}
   */
   readonly host?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}
   */
   readonly httpTimeoutSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs#metadata_service_url DatabricksProvider#metadata_service_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs#metadata_service_url DatabricksProvider#metadata_service_url}
   */
   readonly metadataServiceUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs#password DatabricksProvider#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs#password DatabricksProvider#password}
   */
   readonly password?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs#profile DatabricksProvider#profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs#profile DatabricksProvider#profile}
   */
   readonly profile?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs#rate_limit DatabricksProvider#rate_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs#rate_limit DatabricksProvider#rate_limit}
   */
   readonly rateLimit?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}
   */
   readonly retryTimeoutSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs#skip_verify DatabricksProvider#skip_verify}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs#skip_verify DatabricksProvider#skip_verify}
   */
   readonly skipVerify?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs#token DatabricksProvider#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs#token DatabricksProvider#token}
   */
   readonly token?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs#username DatabricksProvider#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs#username DatabricksProvider#username}
   */
   readonly username?: string;
   /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs#warehouse_id DatabricksProvider#warehouse_id}
+  */
+  readonly warehouseId?: string;
+  /**
   * Alias name
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs#alias DatabricksProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs#alias DatabricksProvider#alias}
   */
   readonly alias?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs databricks}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs databricks}
 */
 export class DatabricksProvider extends cdktf.TerraformProvider {
 
@@ -143,7 +146,7 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs databricks} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs databricks} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -154,7 +157,7 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'databricks',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.19.0',
+        providerVersion: '1.20.0',
         providerVersionConstraint: '~> 1.0'
       },
       terraformProviderSource: 'databricks/databricks'
@@ -170,6 +173,7 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
     this._azureWorkspaceResourceId = config.azureWorkspaceResourceId;
     this._clientId = config.clientId;
     this._clientSecret = config.clientSecret;
+    this._clusterId = config.clusterId;
     this._configFile = config.configFile;
     this._databricksCliPath = config.databricksCliPath;
     this._debugHeaders = config.debugHeaders;
@@ -186,6 +190,7 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
     this._skipVerify = config.skipVerify;
     this._token = config.token;
     this._username = config.username;
+    this._warehouseId = config.warehouseId;
     this._alias = config.alias;
   }
 
@@ -367,6 +372,22 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get clientSecretInput() {
     return this._clientSecret;
+  }
+
+  // cluster_id - computed: false, optional: true, required: false
+  private _clusterId?: string; 
+  public get clusterId() {
+    return this._clusterId;
+  }
+  public set clusterId(value: string | undefined) {
+    this._clusterId = value;
+  }
+  public resetClusterId() {
+    this._clusterId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterIdInput() {
+    return this._clusterId;
   }
 
   // config_file - computed: false, optional: true, required: false
@@ -625,6 +646,22 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
     return this._username;
   }
 
+  // warehouse_id - computed: false, optional: true, required: false
+  private _warehouseId?: string; 
+  public get warehouseId() {
+    return this._warehouseId;
+  }
+  public set warehouseId(value: string | undefined) {
+    this._warehouseId = value;
+  }
+  public resetWarehouseId() {
+    this._warehouseId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get warehouseIdInput() {
+    return this._warehouseId;
+  }
+
   // alias - computed: false, optional: true, required: false
   private _alias?: string; 
   public get alias() {
@@ -658,6 +695,7 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
       azure_workspace_resource_id: cdktf.stringToTerraform(this._azureWorkspaceResourceId),
       client_id: cdktf.stringToTerraform(this._clientId),
       client_secret: cdktf.stringToTerraform(this._clientSecret),
+      cluster_id: cdktf.stringToTerraform(this._clusterId),
       config_file: cdktf.stringToTerraform(this._configFile),
       databricks_cli_path: cdktf.stringToTerraform(this._databricksCliPath),
       debug_headers: cdktf.booleanToTerraform(this._debugHeaders),
@@ -674,6 +712,7 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
       skip_verify: cdktf.booleanToTerraform(this._skipVerify),
       token: cdktf.stringToTerraform(this._token),
       username: cdktf.stringToTerraform(this._username),
+      warehouse_id: cdktf.stringToTerraform(this._warehouseId),
       alias: cdktf.stringToTerraform(this._alias),
     };
   }

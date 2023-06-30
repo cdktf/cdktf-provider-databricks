@@ -6,6 +6,7 @@ The following submodules are available:
 - [azureAdlsGen2Mount](./azureAdlsGen2Mount.python.md)
 - [azureBlobMount](./azureBlobMount.python.md)
 - [catalog](./catalog.python.md)
+- [catalogWorkspaceBinding](./catalogWorkspaceBinding.python.md)
 - [cluster](./cluster.python.md)
 - [clusterPolicy](./clusterPolicy.python.md)
 - [dataDatabricksAwsAssumeRolePolicy](./dataDatabricksAwsAssumeRolePolicy.python.md)
