@@ -1,6 +1,6 @@
 # `databricks_user`
 
-Refer to the Terraform Registory for docs: [`databricks_user`](https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user).
+Refer to the Terraform Registory for docs: [`databricks_user`](https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user).
 
 # `user` Submodule <a name="`user` Submodule" id="@cdktf/provider-databricks.user"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`databricks_user`](https://registry.
 
 ### User <a name="User" id="@cdktf/provider-databricks.user.User"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user databricks_user}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user databricks_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.user.User.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.user.User.resetAllowClusterCreate">ResetAllowClusterCreate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.resetAllowInstancePoolCreate">ResetAllowInstancePoolCreate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.resetDatabricksSqlAccess">ResetDatabricksSqlAccess</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.user.User.resetDisableAsUserDeletion">ResetDisableAsUserDeletion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.resetDisplayName">ResetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.resetExternalId">ResetExternalId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.resetForce">ResetForce</a></code> | *No description.* |
@@ -294,6 +295,12 @@ private void ResetAllowInstancePoolCreate()
 private void ResetDatabricksSqlAccess()
 ```
 
+##### `ResetDisableAsUserDeletion` <a name="ResetDisableAsUserDeletion" id="@cdktf/provider-databricks.user.User.resetDisableAsUserDeletion"></a>
+
+```csharp
+private void ResetDisableAsUserDeletion()
+```
+
 ##### `ResetDisplayName` <a name="ResetDisplayName" id="@cdktf/provider-databricks.user.User.resetDisplayName"></a>
 
 ```csharp
@@ -440,6 +447,7 @@ User.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-databricks.user.User.property.allowClusterCreateInput">AllowClusterCreateInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.allowInstancePoolCreateInput">AllowInstancePoolCreateInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.databricksSqlAccessInput">DatabricksSqlAccessInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.user.User.property.disableAsUserDeletionInput">DisableAsUserDeletionInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.displayNameInput">DisplayNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.externalIdInput">ExternalIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.forceDeleteHomeDirInput">ForceDeleteHomeDirInput</a></code> | <code>object</code> | *No description.* |
@@ -454,6 +462,7 @@ User.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-databricks.user.User.property.allowClusterCreate">AllowClusterCreate</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.allowInstancePoolCreate">AllowInstancePoolCreate</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.databricksSqlAccess">DatabricksSqlAccess</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.user.User.property.disableAsUserDeletion">DisableAsUserDeletion</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.displayName">DisplayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.externalId">ExternalId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.force">Force</a></code> | <code>object</code> | *No description.* |
@@ -649,6 +658,16 @@ public object DatabricksSqlAccessInput { get; }
 
 ---
 
+##### `DisableAsUserDeletionInput`<sup>Optional</sup> <a name="DisableAsUserDeletionInput" id="@cdktf/provider-databricks.user.User.property.disableAsUserDeletionInput"></a>
+
+```csharp
+public object DisableAsUserDeletionInput { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `DisplayNameInput`<sup>Optional</sup> <a name="DisplayNameInput" id="@cdktf/provider-databricks.user.User.property.displayNameInput"></a>
 
 ```csharp
@@ -783,6 +802,16 @@ public object AllowInstancePoolCreate { get; }
 
 ```csharp
 public object DatabricksSqlAccess { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `DisableAsUserDeletion`<sup>Required</sup> <a name="DisableAsUserDeletion" id="@cdktf/provider-databricks.user.User.property.disableAsUserDeletion"></a>
+
+```csharp
+public object DisableAsUserDeletion { get; }
 ```
 
 - *Type:* object
@@ -929,6 +958,7 @@ new UserConfig {
     object AllowClusterCreate = null,
     object AllowInstancePoolCreate = null,
     object DatabricksSqlAccess = null,
+    object DisableAsUserDeletion = null,
     string DisplayName = null,
     string ExternalId = null,
     object Force = null,
@@ -952,20 +982,21 @@ new UserConfig {
 | <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.userName">UserName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#user_name User#user_name}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.active">Active</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#active User#active}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.allowClusterCreate">AllowClusterCreate</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#allow_cluster_create User#allow_cluster_create}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.allowInstancePoolCreate">AllowInstancePoolCreate</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#allow_instance_pool_create User#allow_instance_pool_create}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.databricksSqlAccess">DatabricksSqlAccess</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#databricks_sql_access User#databricks_sql_access}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.displayName">DisplayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#display_name User#display_name}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.externalId">ExternalId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#external_id User#external_id}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.force">Force</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#force User#force}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.forceDeleteHomeDir">ForceDeleteHomeDir</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#force_delete_home_dir User#force_delete_home_dir}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.forceDeleteRepos">ForceDeleteRepos</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#force_delete_repos User#force_delete_repos}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.home">Home</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#home User#home}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#id User#id}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.repos">Repos</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#repos User#repos}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.workspaceAccess">WorkspaceAccess</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#workspace_access User#workspace_access}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.userName">UserName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#user_name User#user_name}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.active">Active</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#active User#active}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.allowClusterCreate">AllowClusterCreate</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#allow_cluster_create User#allow_cluster_create}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.allowInstancePoolCreate">AllowInstancePoolCreate</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#allow_instance_pool_create User#allow_instance_pool_create}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.databricksSqlAccess">DatabricksSqlAccess</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#databricks_sql_access User#databricks_sql_access}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.disableAsUserDeletion">DisableAsUserDeletion</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#disable_as_user_deletion User#disable_as_user_deletion}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.displayName">DisplayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#display_name User#display_name}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.externalId">ExternalId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#external_id User#external_id}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.force">Force</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#force User#force}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.forceDeleteHomeDir">ForceDeleteHomeDir</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#force_delete_home_dir User#force_delete_home_dir}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.forceDeleteRepos">ForceDeleteRepos</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#force_delete_repos User#force_delete_repos}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.home">Home</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#home User#home}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#id User#id}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.repos">Repos</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#repos User#repos}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.workspaceAccess">WorkspaceAccess</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#workspace_access User#workspace_access}. |
 
 ---
 
@@ -1047,7 +1078,7 @@ public string UserName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#user_name User#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#user_name User#user_name}.
 
 ---
 
@@ -1059,7 +1090,7 @@ public object Active { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#active User#active}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#active User#active}.
 
 ---
 
@@ -1071,7 +1102,7 @@ public object AllowClusterCreate { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#allow_cluster_create User#allow_cluster_create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#allow_cluster_create User#allow_cluster_create}.
 
 ---
 
@@ -1083,7 +1114,7 @@ public object AllowInstancePoolCreate { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#allow_instance_pool_create User#allow_instance_pool_create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#allow_instance_pool_create User#allow_instance_pool_create}.
 
 ---
 
@@ -1095,7 +1126,19 @@ public object DatabricksSqlAccess { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#databricks_sql_access User#databricks_sql_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#databricks_sql_access User#databricks_sql_access}.
+
+---
+
+##### `DisableAsUserDeletion`<sup>Optional</sup> <a name="DisableAsUserDeletion" id="@cdktf/provider-databricks.user.UserConfig.property.disableAsUserDeletion"></a>
+
+```csharp
+public object DisableAsUserDeletion { get; set; }
+```
+
+- *Type:* object
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#disable_as_user_deletion User#disable_as_user_deletion}.
 
 ---
 
@@ -1107,7 +1150,7 @@ public string DisplayName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#display_name User#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#display_name User#display_name}.
 
 ---
 
@@ -1119,7 +1162,7 @@ public string ExternalId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#external_id User#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#external_id User#external_id}.
 
 ---
 
@@ -1131,7 +1174,7 @@ public object Force { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#force User#force}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#force User#force}.
 
 ---
 
@@ -1143,7 +1186,7 @@ public object ForceDeleteHomeDir { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#force_delete_home_dir User#force_delete_home_dir}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#force_delete_home_dir User#force_delete_home_dir}.
 
 ---
 
@@ -1155,7 +1198,7 @@ public object ForceDeleteRepos { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#force_delete_repos User#force_delete_repos}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#force_delete_repos User#force_delete_repos}.
 
 ---
 
@@ -1167,7 +1210,7 @@ public string Home { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#home User#home}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#home User#home}.
 
 ---
 
@@ -1179,7 +1222,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#id User#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#id User#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1194,7 +1237,7 @@ public string Repos { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#repos User#repos}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#repos User#repos}.
 
 ---
 
@@ -1206,7 +1249,7 @@ public object WorkspaceAccess { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#workspace_access User#workspace_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#workspace_access User#workspace_access}.
 
 ---
 

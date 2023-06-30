@@ -6,6 +6,7 @@ The following submodules are available:
 - [azureAdlsGen2Mount](./azureAdlsGen2Mount.typescript.md)
 - [azureBlobMount](./azureBlobMount.typescript.md)
 - [catalog](./catalog.typescript.md)
+- [catalogWorkspaceBinding](./catalogWorkspaceBinding.typescript.md)
 - [cluster](./cluster.typescript.md)
 - [clusterPolicy](./clusterPolicy.typescript.md)
 - [dataDatabricksAwsAssumeRolePolicy](./dataDatabricksAwsAssumeRolePolicy.typescript.md)

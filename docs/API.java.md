@@ -6,6 +6,7 @@ The following submodules are available:
 - [azureAdlsGen2Mount](./azureAdlsGen2Mount.java.md)
 - [azureBlobMount](./azureBlobMount.java.md)
 - [catalog](./catalog.java.md)
+- [catalogWorkspaceBinding](./catalogWorkspaceBinding.java.md)
 - [cluster](./cluster.java.md)
 - [clusterPolicy](./clusterPolicy.java.md)
 - [dataDatabricksAwsAssumeRolePolicy](./dataDatabricksAwsAssumeRolePolicy.java.md)

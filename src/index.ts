@@ -9,6 +9,7 @@ export * as azureAdlsGen1Mount from './azure-adls-gen1-mount';
 export * as azureAdlsGen2Mount from './azure-adls-gen2-mount';
 export * as azureBlobMount from './azure-blob-mount';
 export * as catalog from './catalog';
+export * as catalogWorkspaceBinding from './catalog-workspace-binding';
 export * as cluster from './cluster';
 export * as clusterPolicy from './cluster-policy';
 export * as dbfsFile from './dbfs-file';

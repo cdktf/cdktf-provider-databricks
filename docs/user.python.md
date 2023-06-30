@@ -1,6 +1,6 @@
 # `databricks_user`
 
-Refer to the Terraform Registory for docs: [`databricks_user`](https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user).
+Refer to the Terraform Registory for docs: [`databricks_user`](https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user).
 
 # `user` Submodule <a name="`user` Submodule" id="@cdktf/provider-databricks.user"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`databricks_user`](https://registry.
 
 ### User <a name="User" id="@cdktf/provider-databricks.user.User"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user databricks_user}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user databricks_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.user.User.Initializer"></a>
 
@@ -30,6 +30,7 @@ user.User(
   allow_cluster_create: typing.Union[bool, IResolvable] = None,
   allow_instance_pool_create: typing.Union[bool, IResolvable] = None,
   databricks_sql_access: typing.Union[bool, IResolvable] = None,
+  disable_as_user_deletion: typing.Union[bool, IResolvable] = None,
   display_name: str = None,
   external_id: str = None,
   force: typing.Union[bool, IResolvable] = None,
@@ -53,20 +54,21 @@ user.User(
 | <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.userName">user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#user_name User#user_name}. |
-| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.active">active</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#active User#active}. |
-| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.allowClusterCreate">allow_cluster_create</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#allow_cluster_create User#allow_cluster_create}. |
-| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.allowInstancePoolCreate">allow_instance_pool_create</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#allow_instance_pool_create User#allow_instance_pool_create}. |
-| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.databricksSqlAccess">databricks_sql_access</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#databricks_sql_access User#databricks_sql_access}. |
-| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#display_name User#display_name}. |
-| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.externalId">external_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#external_id User#external_id}. |
-| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.force">force</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#force User#force}. |
-| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.forceDeleteHomeDir">force_delete_home_dir</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#force_delete_home_dir User#force_delete_home_dir}. |
-| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.forceDeleteRepos">force_delete_repos</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#force_delete_repos User#force_delete_repos}. |
-| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.home">home</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#home User#home}. |
-| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#id User#id}. |
-| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.repos">repos</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#repos User#repos}. |
-| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.workspaceAccess">workspace_access</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#workspace_access User#workspace_access}. |
+| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.userName">user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#user_name User#user_name}. |
+| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.active">active</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#active User#active}. |
+| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.allowClusterCreate">allow_cluster_create</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#allow_cluster_create User#allow_cluster_create}. |
+| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.allowInstancePoolCreate">allow_instance_pool_create</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#allow_instance_pool_create User#allow_instance_pool_create}. |
+| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.databricksSqlAccess">databricks_sql_access</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#databricks_sql_access User#databricks_sql_access}. |
+| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.disableAsUserDeletion">disable_as_user_deletion</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#disable_as_user_deletion User#disable_as_user_deletion}. |
+| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#display_name User#display_name}. |
+| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.externalId">external_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#external_id User#external_id}. |
+| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.force">force</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#force User#force}. |
+| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.forceDeleteHomeDir">force_delete_home_dir</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#force_delete_home_dir User#force_delete_home_dir}. |
+| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.forceDeleteRepos">force_delete_repos</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#force_delete_repos User#force_delete_repos}. |
+| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.home">home</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#home User#home}. |
+| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#id User#id}. |
+| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.repos">repos</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#repos User#repos}. |
+| <code><a href="#@cdktf/provider-databricks.user.User.Initializer.parameter.workspaceAccess">workspace_access</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#workspace_access User#workspace_access}. |
 
 ---
 
@@ -134,7 +136,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#user_name User#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#user_name User#user_name}.
 
 ---
 
@@ -142,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#active User#active}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#active User#active}.
 
 ---
 
@@ -150,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#allow_cluster_create User#allow_cluster_create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#allow_cluster_create User#allow_cluster_create}.
 
 ---
 
@@ -158,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#allow_instance_pool_create User#allow_instance_pool_create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#allow_instance_pool_create User#allow_instance_pool_create}.
 
 ---
 
@@ -166,7 +168,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#databricks_sql_access User#databricks_sql_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#databricks_sql_access User#databricks_sql_access}.
+
+---
+
+##### `disable_as_user_deletion`<sup>Optional</sup> <a name="disable_as_user_deletion" id="@cdktf/provider-databricks.user.User.Initializer.parameter.disableAsUserDeletion"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#disable_as_user_deletion User#disable_as_user_deletion}.
 
 ---
 
@@ -174,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#display_name User#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#display_name User#display_name}.
 
 ---
 
@@ -182,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#external_id User#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#external_id User#external_id}.
 
 ---
 
@@ -190,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#force User#force}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#force User#force}.
 
 ---
 
@@ -198,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#force_delete_home_dir User#force_delete_home_dir}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#force_delete_home_dir User#force_delete_home_dir}.
 
 ---
 
@@ -206,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#force_delete_repos User#force_delete_repos}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#force_delete_repos User#force_delete_repos}.
 
 ---
 
@@ -214,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#home User#home}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#home User#home}.
 
 ---
 
@@ -222,7 +232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#id User#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#id User#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -233,7 +243,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#repos User#repos}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#repos User#repos}.
 
 ---
 
@@ -241,7 +251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#workspace_access User#workspace_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#workspace_access User#workspace_access}.
 
 ---
 
@@ -269,6 +279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktf/provider-databricks.user.User.resetAllowClusterCreate">reset_allow_cluster_create</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.resetAllowInstancePoolCreate">reset_allow_instance_pool_create</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.resetDatabricksSqlAccess">reset_databricks_sql_access</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.user.User.resetDisableAsUserDeletion">reset_disable_as_user_deletion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.resetDisplayName">reset_display_name</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.resetExternalId">reset_external_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.resetForce">reset_force</a></code> | *No description.* |
@@ -514,6 +525,12 @@ def reset_allow_instance_pool_create() -> None
 def reset_databricks_sql_access() -> None
 ```
 
+##### `reset_disable_as_user_deletion` <a name="reset_disable_as_user_deletion" id="@cdktf/provider-databricks.user.User.resetDisableAsUserDeletion"></a>
+
+```python
+def reset_disable_as_user_deletion() -> None
+```
+
 ##### `reset_display_name` <a name="reset_display_name" id="@cdktf/provider-databricks.user.User.resetDisplayName"></a>
 
 ```python
@@ -666,6 +683,7 @@ user.User.is_terraform_resource(
 | <code><a href="#@cdktf/provider-databricks.user.User.property.allowClusterCreateInput">allow_cluster_create_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.allowInstancePoolCreateInput">allow_instance_pool_create_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.databricksSqlAccessInput">databricks_sql_access_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.user.User.property.disableAsUserDeletionInput">disable_as_user_deletion_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.externalIdInput">external_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.forceDeleteHomeDirInput">force_delete_home_dir_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -680,6 +698,7 @@ user.User.is_terraform_resource(
 | <code><a href="#@cdktf/provider-databricks.user.User.property.allowClusterCreate">allow_cluster_create</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.allowInstancePoolCreate">allow_instance_pool_create</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.databricksSqlAccess">databricks_sql_access</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.user.User.property.disableAsUserDeletion">disable_as_user_deletion</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.externalId">external_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.User.property.force">force</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -875,6 +894,16 @@ databricks_sql_access_input: typing.Union[bool, IResolvable]
 
 ---
 
+##### `disable_as_user_deletion_input`<sup>Optional</sup> <a name="disable_as_user_deletion_input" id="@cdktf/provider-databricks.user.User.property.disableAsUserDeletionInput"></a>
+
+```python
+disable_as_user_deletion_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `display_name_input`<sup>Optional</sup> <a name="display_name_input" id="@cdktf/provider-databricks.user.User.property.displayNameInput"></a>
 
 ```python
@@ -1009,6 +1038,16 @@ allow_instance_pool_create: typing.Union[bool, IResolvable]
 
 ```python
 databricks_sql_access: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `disable_as_user_deletion`<sup>Required</sup> <a name="disable_as_user_deletion" id="@cdktf/provider-databricks.user.User.property.disableAsUserDeletion"></a>
+
+```python
+disable_as_user_deletion: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
@@ -1155,6 +1194,7 @@ user.UserConfig(
   allow_cluster_create: typing.Union[bool, IResolvable] = None,
   allow_instance_pool_create: typing.Union[bool, IResolvable] = None,
   databricks_sql_access: typing.Union[bool, IResolvable] = None,
+  disable_as_user_deletion: typing.Union[bool, IResolvable] = None,
   display_name: str = None,
   external_id: str = None,
   force: typing.Union[bool, IResolvable] = None,
@@ -1178,20 +1218,21 @@ user.UserConfig(
 | <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.userName">user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#user_name User#user_name}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.active">active</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#active User#active}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.allowClusterCreate">allow_cluster_create</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#allow_cluster_create User#allow_cluster_create}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.allowInstancePoolCreate">allow_instance_pool_create</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#allow_instance_pool_create User#allow_instance_pool_create}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.databricksSqlAccess">databricks_sql_access</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#databricks_sql_access User#databricks_sql_access}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#display_name User#display_name}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.externalId">external_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#external_id User#external_id}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.force">force</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#force User#force}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.forceDeleteHomeDir">force_delete_home_dir</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#force_delete_home_dir User#force_delete_home_dir}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.forceDeleteRepos">force_delete_repos</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#force_delete_repos User#force_delete_repos}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.home">home</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#home User#home}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#id User#id}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.repos">repos</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#repos User#repos}. |
-| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.workspaceAccess">workspace_access</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#workspace_access User#workspace_access}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.userName">user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#user_name User#user_name}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.active">active</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#active User#active}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.allowClusterCreate">allow_cluster_create</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#allow_cluster_create User#allow_cluster_create}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.allowInstancePoolCreate">allow_instance_pool_create</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#allow_instance_pool_create User#allow_instance_pool_create}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.databricksSqlAccess">databricks_sql_access</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#databricks_sql_access User#databricks_sql_access}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.disableAsUserDeletion">disable_as_user_deletion</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#disable_as_user_deletion User#disable_as_user_deletion}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#display_name User#display_name}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.externalId">external_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#external_id User#external_id}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.force">force</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#force User#force}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.forceDeleteHomeDir">force_delete_home_dir</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#force_delete_home_dir User#force_delete_home_dir}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.forceDeleteRepos">force_delete_repos</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#force_delete_repos User#force_delete_repos}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.home">home</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#home User#home}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#id User#id}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.repos">repos</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#repos User#repos}. |
+| <code><a href="#@cdktf/provider-databricks.user.UserConfig.property.workspaceAccess">workspace_access</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#workspace_access User#workspace_access}. |
 
 ---
 
@@ -1273,7 +1314,7 @@ user_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#user_name User#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#user_name User#user_name}.
 
 ---
 
@@ -1285,7 +1326,7 @@ active: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#active User#active}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#active User#active}.
 
 ---
 
@@ -1297,7 +1338,7 @@ allow_cluster_create: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#allow_cluster_create User#allow_cluster_create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#allow_cluster_create User#allow_cluster_create}.
 
 ---
 
@@ -1309,7 +1350,7 @@ allow_instance_pool_create: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#allow_instance_pool_create User#allow_instance_pool_create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#allow_instance_pool_create User#allow_instance_pool_create}.
 
 ---
 
@@ -1321,7 +1362,19 @@ databricks_sql_access: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#databricks_sql_access User#databricks_sql_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#databricks_sql_access User#databricks_sql_access}.
+
+---
+
+##### `disable_as_user_deletion`<sup>Optional</sup> <a name="disable_as_user_deletion" id="@cdktf/provider-databricks.user.UserConfig.property.disableAsUserDeletion"></a>
+
+```python
+disable_as_user_deletion: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#disable_as_user_deletion User#disable_as_user_deletion}.
 
 ---
 
@@ -1333,7 +1386,7 @@ display_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#display_name User#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#display_name User#display_name}.
 
 ---
 
@@ -1345,7 +1398,7 @@ external_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#external_id User#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#external_id User#external_id}.
 
 ---
 
@@ -1357,7 +1410,7 @@ force: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#force User#force}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#force User#force}.
 
 ---
 
@@ -1369,7 +1422,7 @@ force_delete_home_dir: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#force_delete_home_dir User#force_delete_home_dir}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#force_delete_home_dir User#force_delete_home_dir}.
 
 ---
 
@@ -1381,7 +1434,7 @@ force_delete_repos: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#force_delete_repos User#force_delete_repos}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#force_delete_repos User#force_delete_repos}.
 
 ---
 
@@ -1393,7 +1446,7 @@ home: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#home User#home}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#home User#home}.
 
 ---
 
@@ -1405,7 +1458,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#id User#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#id User#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1420,7 +1473,7 @@ repos: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#repos User#repos}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#repos User#repos}.
 
 ---
 
@@ -1432,7 +1485,7 @@ workspace_access: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.19.0/docs/resources/user#workspace_access User#workspace_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/user#workspace_access User#workspace_access}.
 
 ---
 
