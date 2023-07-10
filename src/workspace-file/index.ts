@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/workspace_file
+// https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/workspace_file
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,36 +8,36 @@ import * as cdktf from 'cdktf';
 
 export interface WorkspaceFileConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/workspace_file#content_base64 WorkspaceFile#content_base64}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/workspace_file#content_base64 WorkspaceFile#content_base64}
   */
   readonly contentBase64?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/workspace_file#id WorkspaceFile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/workspace_file#id WorkspaceFile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/workspace_file#md5 WorkspaceFile#md5}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/workspace_file#md5 WorkspaceFile#md5}
   */
   readonly md5?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/workspace_file#object_id WorkspaceFile#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/workspace_file#object_id WorkspaceFile#object_id}
   */
   readonly objectId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/workspace_file#path WorkspaceFile#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/workspace_file#path WorkspaceFile#path}
   */
   readonly path: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/workspace_file#source WorkspaceFile#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/workspace_file#source WorkspaceFile#source}
   */
   readonly source?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/workspace_file databricks_workspace_file}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/workspace_file databricks_workspace_file}
 */
 export class WorkspaceFile extends cdktf.TerraformResource {
 
@@ -56,7 +51,7 @@ export class WorkspaceFile extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/workspace_file databricks_workspace_file} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/workspace_file databricks_workspace_file} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +62,7 @@ export class WorkspaceFile extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_workspace_file',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.20.0',
+        providerVersion: '1.21.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

@@ -1,3 +1,3 @@
 # `databricks_mws_workspaces`
 
-Refer to the Terraform Registory for docs: [`databricks_mws_workspaces`](https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/mws_workspaces).
+Refer to the Terraform Registory for docs: [`databricks_mws_workspaces`](https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_workspaces).
