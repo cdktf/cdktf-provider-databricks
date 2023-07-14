@@ -1,6 +1,6 @@
 # `data_databricks_mws_workspaces`
 
-Refer to the Terraform Registory for docs: [`data_databricks_mws_workspaces`](https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/data-sources/mws_workspaces).
+Refer to the Terraform Registory for docs: [`data_databricks_mws_workspaces`](https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/mws_workspaces).
 
 # `dataDatabricksMwsWorkspaces` Submodule <a name="`dataDatabricksMwsWorkspaces` Submodule" id="@cdktf/provider-databricks.dataDatabricksMwsWorkspaces"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_databricks_mws_workspaces`](ht
 
 ### DataDatabricksMwsWorkspaces <a name="DataDatabricksMwsWorkspaces" id="@cdktf/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspaces"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/data-sources/mws_workspaces databricks_mws_workspaces}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/mws_workspaces databricks_mws_workspaces}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspaces.Initializer"></a>
 
@@ -567,8 +567,8 @@ const dataDatabricksMwsWorkspacesConfig: dataDatabricksMwsWorkspaces.DataDatabri
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspacesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspacesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspacesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspacesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/data-sources/mws_workspaces#id DataDatabricksMwsWorkspaces#id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspacesConfig.property.ids">ids</a></code> | <code>{[ key: string ]: number}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/data-sources/mws_workspaces#ids DataDatabricksMwsWorkspaces#ids}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspacesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/mws_workspaces#id DataDatabricksMwsWorkspaces#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspacesConfig.property.ids">ids</a></code> | <code>{[ key: string ]: number}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/mws_workspaces#ids DataDatabricksMwsWorkspaces#ids}. |
 
 ---
 
@@ -650,7 +650,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/data-sources/mws_workspaces#id DataDatabricksMwsWorkspaces#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/mws_workspaces#id DataDatabricksMwsWorkspaces#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -665,7 +665,7 @@ public readonly ids: {[ key: string ]: number};
 
 - *Type:* {[ key: string ]: number}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/data-sources/mws_workspaces#ids DataDatabricksMwsWorkspaces#ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/mws_workspaces#ids DataDatabricksMwsWorkspaces#ids}.
 
 ---
 
