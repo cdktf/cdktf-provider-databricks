@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/mws_customer_managed_keys
+// https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_customer_managed_keys
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,52 +13,52 @@ import * as cdktf from 'cdktf';
 
 export interface MwsCustomerManagedKeysConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/mws_customer_managed_keys#account_id MwsCustomerManagedKeys#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_customer_managed_keys#account_id MwsCustomerManagedKeys#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/mws_customer_managed_keys#creation_time MwsCustomerManagedKeys#creation_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_customer_managed_keys#creation_time MwsCustomerManagedKeys#creation_time}
   */
   readonly creationTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/mws_customer_managed_keys#customer_managed_key_id MwsCustomerManagedKeys#customer_managed_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_customer_managed_keys#customer_managed_key_id MwsCustomerManagedKeys#customer_managed_key_id}
   */
   readonly customerManagedKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/mws_customer_managed_keys#id MwsCustomerManagedKeys#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_customer_managed_keys#id MwsCustomerManagedKeys#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/mws_customer_managed_keys#use_cases MwsCustomerManagedKeys#use_cases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_customer_managed_keys#use_cases MwsCustomerManagedKeys#use_cases}
   */
   readonly useCases: string[];
   /**
   * aws_key_info block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/mws_customer_managed_keys#aws_key_info MwsCustomerManagedKeys#aws_key_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_customer_managed_keys#aws_key_info MwsCustomerManagedKeys#aws_key_info}
   */
   readonly awsKeyInfo?: MwsCustomerManagedKeysAwsKeyInfo;
   /**
   * gcp_key_info block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/mws_customer_managed_keys#gcp_key_info MwsCustomerManagedKeys#gcp_key_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_customer_managed_keys#gcp_key_info MwsCustomerManagedKeys#gcp_key_info}
   */
   readonly gcpKeyInfo?: MwsCustomerManagedKeysGcpKeyInfo;
 }
 export interface MwsCustomerManagedKeysAwsKeyInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/mws_customer_managed_keys#key_alias MwsCustomerManagedKeys#key_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_customer_managed_keys#key_alias MwsCustomerManagedKeys#key_alias}
   */
   readonly keyAlias: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/mws_customer_managed_keys#key_arn MwsCustomerManagedKeys#key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_customer_managed_keys#key_arn MwsCustomerManagedKeys#key_arn}
   */
   readonly keyArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/mws_customer_managed_keys#key_region MwsCustomerManagedKeys#key_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_customer_managed_keys#key_region MwsCustomerManagedKeys#key_region}
   */
   readonly keyRegion?: string;
 }
@@ -163,7 +163,7 @@ export class MwsCustomerManagedKeysAwsKeyInfoOutputReference extends cdktf.Compl
 }
 export interface MwsCustomerManagedKeysGcpKeyInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/mws_customer_managed_keys#kms_key_id MwsCustomerManagedKeys#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_customer_managed_keys#kms_key_id MwsCustomerManagedKeys#kms_key_id}
   */
   readonly kmsKeyId: string;
 }
@@ -225,7 +225,7 @@ export class MwsCustomerManagedKeysGcpKeyInfoOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/mws_customer_managed_keys databricks_mws_customer_managed_keys}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_customer_managed_keys databricks_mws_customer_managed_keys}
 */
 export class MwsCustomerManagedKeys extends cdktf.TerraformResource {
 
@@ -239,7 +239,7 @@ export class MwsCustomerManagedKeys extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.20.0/docs/resources/mws_customer_managed_keys databricks_mws_customer_managed_keys} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_customer_managed_keys databricks_mws_customer_managed_keys} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -250,7 +250,7 @@ export class MwsCustomerManagedKeys extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_mws_customer_managed_keys',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.20.0',
+        providerVersion: '1.21.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
