@@ -22,7 +22,7 @@ export interface DataDatabricksAwsAssumeRolePolicyConfig extends cdktf.Terraform
   readonly externalId: string;
   /**
   * Grant AssumeRole to Databricks SaasUsageDeliveryRole instead of root account
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/aws_assume_role_policy#for_log_delivery DataDatabricksAwsAssumeRolePolicy#for_log_delivery}
   */
   readonly forLogDelivery?: boolean | cdktf.IResolvable;

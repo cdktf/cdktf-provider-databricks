@@ -37,13 +37,13 @@ export interface MlflowWebhookConfig extends cdktf.TerraformMetaArguments {
   readonly status?: string;
   /**
   * http_url_spec block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mlflow_webhook#http_url_spec MlflowWebhook#http_url_spec}
   */
   readonly httpUrlSpec?: MlflowWebhookHttpUrlSpec;
   /**
   * job_spec block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mlflow_webhook#job_spec MlflowWebhook#job_spec}
   */
   readonly jobSpec?: MlflowWebhookJobSpec;

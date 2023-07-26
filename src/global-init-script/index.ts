@@ -45,7 +45,7 @@ export interface GlobalInitScriptConfig extends cdktf.TerraformMetaArguments {
   readonly source?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/global_init_script#timeouts GlobalInitScript#timeouts}
   */
   readonly timeouts?: GlobalInitScriptTimeouts;

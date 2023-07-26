@@ -109,67 +109,67 @@ export interface ClusterConfig extends cdktf.TerraformMetaArguments {
   readonly sshPublicKeys?: string[];
   /**
   * autoscale block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/cluster#autoscale Cluster#autoscale}
   */
   readonly autoscale?: ClusterAutoscale;
   /**
   * aws_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/cluster#aws_attributes Cluster#aws_attributes}
   */
   readonly awsAttributes?: ClusterAwsAttributes;
   /**
   * azure_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/cluster#azure_attributes Cluster#azure_attributes}
   */
   readonly azureAttributes?: ClusterAzureAttributes;
   /**
   * cluster_log_conf block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/cluster#cluster_log_conf Cluster#cluster_log_conf}
   */
   readonly clusterLogConf?: ClusterClusterLogConf;
   /**
   * cluster_mount_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/cluster#cluster_mount_info Cluster#cluster_mount_info}
   */
   readonly clusterMountInfo?: ClusterClusterMountInfo[] | cdktf.IResolvable;
   /**
   * docker_image block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/cluster#docker_image Cluster#docker_image}
   */
   readonly dockerImage?: ClusterDockerImage;
   /**
   * gcp_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/cluster#gcp_attributes Cluster#gcp_attributes}
   */
   readonly gcpAttributes?: ClusterGcpAttributes;
   /**
   * init_scripts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/cluster#init_scripts Cluster#init_scripts}
   */
   readonly initScripts?: ClusterInitScripts[] | cdktf.IResolvable;
   /**
   * library block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/cluster#library Cluster#library}
   */
   readonly library?: ClusterLibrary[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/cluster#timeouts Cluster#timeouts}
   */
   readonly timeouts?: ClusterTimeouts;
   /**
   * workload_type block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/cluster#workload_type Cluster#workload_type}
   */
   readonly workloadType?: ClusterWorkloadType;
@@ -928,13 +928,13 @@ export class ClusterClusterLogConfS3OutputReference extends cdktf.ComplexObject 
 export interface ClusterClusterLogConf {
   /**
   * dbfs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/cluster#dbfs Cluster#dbfs}
   */
   readonly dbfs?: ClusterClusterLogConfDbfs;
   /**
   * s3 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/cluster#s3 Cluster#s3}
   */
   readonly s3?: ClusterClusterLogConfS3;
@@ -1121,7 +1121,7 @@ export interface ClusterClusterMountInfo {
   readonly remoteMountDirPath?: string;
   /**
   * network_filesystem_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/cluster#network_filesystem_info Cluster#network_filesystem_info}
   */
   readonly networkFilesystemInfo: ClusterClusterMountInfoNetworkFilesystemInfo;
@@ -1350,7 +1350,7 @@ export interface ClusterDockerImage {
   readonly url: string;
   /**
   * basic_auth block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/cluster#basic_auth Cluster#basic_auth}
   */
   readonly basicAuth?: ClusterDockerImageBasicAuth;
@@ -2156,37 +2156,37 @@ export class ClusterInitScriptsWorkspaceOutputReference extends cdktf.ComplexObj
 export interface ClusterInitScripts {
   /**
   * abfss block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/cluster#abfss Cluster#abfss}
   */
   readonly abfss?: ClusterInitScriptsAbfss;
   /**
   * dbfs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/cluster#dbfs Cluster#dbfs}
   */
   readonly dbfs?: ClusterInitScriptsDbfs;
   /**
   * file block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/cluster#file Cluster#file}
   */
   readonly file?: ClusterInitScriptsFile;
   /**
   * gcs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/cluster#gcs Cluster#gcs}
   */
   readonly gcs?: ClusterInitScriptsGcs;
   /**
   * s3 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/cluster#s3 Cluster#s3}
   */
   readonly s3?: ClusterInitScriptsS3;
   /**
   * workspace block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/cluster#workspace Cluster#workspace}
   */
   readonly workspace?: ClusterInitScriptsWorkspace;
@@ -2706,19 +2706,19 @@ export interface ClusterLibrary {
   readonly whl?: string;
   /**
   * cran block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/cluster#cran Cluster#cran}
   */
   readonly cran?: ClusterLibraryCran;
   /**
   * maven block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/cluster#maven Cluster#maven}
   */
   readonly maven?: ClusterLibraryMaven;
   /**
   * pypi block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/cluster#pypi Cluster#pypi}
   */
   readonly pypi?: ClusterLibraryPypi;
@@ -3153,7 +3153,7 @@ export class ClusterWorkloadTypeClientsOutputReference extends cdktf.ComplexObje
 export interface ClusterWorkloadType {
   /**
   * clients block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/cluster#clients Cluster#clients}
   */
   readonly clients: ClusterWorkloadTypeClients;

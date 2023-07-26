@@ -49,7 +49,7 @@ export interface SqlPermissionsConfig extends cdktf.TerraformMetaArguments {
   readonly view?: string;
   /**
   * privilege_assignments block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_permissions#privilege_assignments SqlPermissions#privilege_assignments}
   */
   readonly privilegeAssignments?: SqlPermissionsPrivilegeAssignments[] | cdktf.IResolvable;

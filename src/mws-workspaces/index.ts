@@ -101,37 +101,37 @@ export interface MwsWorkspacesConfig extends cdktf.TerraformMetaArguments {
   readonly workspaceUrl?: string;
   /**
   * cloud_resource_container block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_workspaces#cloud_resource_container MwsWorkspaces#cloud_resource_container}
   */
   readonly cloudResourceContainer?: MwsWorkspacesCloudResourceContainer;
   /**
   * external_customer_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_workspaces#external_customer_info MwsWorkspaces#external_customer_info}
   */
   readonly externalCustomerInfo?: MwsWorkspacesExternalCustomerInfo;
   /**
   * gcp_managed_network_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_workspaces#gcp_managed_network_config MwsWorkspaces#gcp_managed_network_config}
   */
   readonly gcpManagedNetworkConfig?: MwsWorkspacesGcpManagedNetworkConfig;
   /**
   * gke_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_workspaces#gke_config MwsWorkspaces#gke_config}
   */
   readonly gkeConfig?: MwsWorkspacesGkeConfig;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_workspaces#timeouts MwsWorkspaces#timeouts}
   */
   readonly timeouts?: MwsWorkspacesTimeouts;
   /**
   * token block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_workspaces#token MwsWorkspaces#token}
   */
   readonly token?: MwsWorkspacesToken;
@@ -201,7 +201,7 @@ export class MwsWorkspacesCloudResourceContainerGcpOutputReference extends cdktf
 export interface MwsWorkspacesCloudResourceContainer {
   /**
   * gcp block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_workspaces#gcp MwsWorkspaces#gcp}
   */
   readonly gcp: MwsWorkspacesCloudResourceContainerGcp;

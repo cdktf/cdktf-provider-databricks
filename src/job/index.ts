@@ -61,133 +61,133 @@ export interface JobConfig extends cdktf.TerraformMetaArguments {
   readonly timeoutSeconds?: number;
   /**
   * compute block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#compute Job#compute}
   */
   readonly compute?: JobCompute[] | cdktf.IResolvable;
   /**
   * continuous block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#continuous Job#continuous}
   */
   readonly continuous?: JobContinuous;
   /**
   * dbt_task block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#dbt_task Job#dbt_task}
   */
   readonly dbtTask?: JobDbtTask;
   /**
   * email_notifications block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#email_notifications Job#email_notifications}
   */
   readonly emailNotifications?: JobEmailNotifications;
   /**
   * git_source block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#git_source Job#git_source}
   */
   readonly gitSource?: JobGitSource;
   /**
   * job_cluster block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#job_cluster Job#job_cluster}
   */
   readonly jobCluster?: JobJobCluster[] | cdktf.IResolvable;
   /**
   * library block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#library Job#library}
   */
   readonly library?: JobLibrary[] | cdktf.IResolvable;
   /**
   * new_cluster block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#new_cluster Job#new_cluster}
   */
   readonly newCluster?: JobNewCluster;
   /**
   * notebook_task block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#notebook_task Job#notebook_task}
   */
   readonly notebookTask?: JobNotebookTask;
   /**
   * notification_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#notification_settings Job#notification_settings}
   */
   readonly notificationSettings?: JobNotificationSettings;
   /**
   * pipeline_task block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#pipeline_task Job#pipeline_task}
   */
   readonly pipelineTask?: JobPipelineTask;
   /**
   * python_wheel_task block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#python_wheel_task Job#python_wheel_task}
   */
   readonly pythonWheelTask?: JobPythonWheelTask;
   /**
   * queue block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#queue Job#queue}
   */
   readonly queue?: JobQueue;
   /**
   * run_as block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#run_as Job#run_as}
   */
   readonly runAs?: JobRunAs;
   /**
   * schedule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#schedule Job#schedule}
   */
   readonly schedule?: JobSchedule;
   /**
   * spark_jar_task block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#spark_jar_task Job#spark_jar_task}
   */
   readonly sparkJarTask?: JobSparkJarTask;
   /**
   * spark_python_task block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#spark_python_task Job#spark_python_task}
   */
   readonly sparkPythonTask?: JobSparkPythonTask;
   /**
   * spark_submit_task block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#spark_submit_task Job#spark_submit_task}
   */
   readonly sparkSubmitTask?: JobSparkSubmitTask;
   /**
   * task block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#task Job#task}
   */
   readonly task?: JobTask[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#timeouts Job#timeouts}
   */
   readonly timeouts?: JobTimeouts;
   /**
   * trigger block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#trigger Job#trigger}
   */
   readonly trigger?: JobTrigger;
   /**
   * webhook_notifications block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#webhook_notifications Job#webhook_notifications}
   */
   readonly webhookNotifications?: JobWebhookNotifications;
@@ -264,7 +264,7 @@ export interface JobCompute {
   readonly computeKey?: string;
   /**
   * spec block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#spec Job#spec}
   */
   readonly spec?: JobComputeSpec;
@@ -1742,13 +1742,13 @@ export class JobJobClusterNewClusterClusterLogConfS3OutputReference extends cdkt
 export interface JobJobClusterNewClusterClusterLogConf {
   /**
   * dbfs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#dbfs Job#dbfs}
   */
   readonly dbfs?: JobJobClusterNewClusterClusterLogConfDbfs;
   /**
   * s3 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#s3 Job#s3}
   */
   readonly s3?: JobJobClusterNewClusterClusterLogConfS3;
@@ -1935,7 +1935,7 @@ export interface JobJobClusterNewClusterClusterMountInfo {
   readonly remoteMountDirPath?: string;
   /**
   * network_filesystem_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#network_filesystem_info Job#network_filesystem_info}
   */
   readonly networkFilesystemInfo: JobJobClusterNewClusterClusterMountInfoNetworkFilesystemInfo;
@@ -2164,7 +2164,7 @@ export interface JobJobClusterNewClusterDockerImage {
   readonly url: string;
   /**
   * basic_auth block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#basic_auth Job#basic_auth}
   */
   readonly basicAuth?: JobJobClusterNewClusterDockerImageBasicAuth;
@@ -2970,37 +2970,37 @@ export class JobJobClusterNewClusterInitScriptsWorkspaceOutputReference extends 
 export interface JobJobClusterNewClusterInitScripts {
   /**
   * abfss block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#abfss Job#abfss}
   */
   readonly abfss?: JobJobClusterNewClusterInitScriptsAbfss;
   /**
   * dbfs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#dbfs Job#dbfs}
   */
   readonly dbfs?: JobJobClusterNewClusterInitScriptsDbfs;
   /**
   * file block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#file Job#file}
   */
   readonly file?: JobJobClusterNewClusterInitScriptsFile;
   /**
   * gcs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#gcs Job#gcs}
   */
   readonly gcs?: JobJobClusterNewClusterInitScriptsGcs;
   /**
   * s3 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#s3 Job#s3}
   */
   readonly s3?: JobJobClusterNewClusterInitScriptsS3;
   /**
   * workspace block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#workspace Job#workspace}
   */
   readonly workspace?: JobJobClusterNewClusterInitScriptsWorkspace;
@@ -3306,7 +3306,7 @@ export class JobJobClusterNewClusterWorkloadTypeClientsOutputReference extends c
 export interface JobJobClusterNewClusterWorkloadType {
   /**
   * clients block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#clients Job#clients}
   */
   readonly clients: JobJobClusterNewClusterWorkloadTypeClients;
@@ -3454,55 +3454,55 @@ export interface JobJobClusterNewCluster {
   readonly sshPublicKeys?: string[];
   /**
   * autoscale block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#autoscale Job#autoscale}
   */
   readonly autoscale?: JobJobClusterNewClusterAutoscale;
   /**
   * aws_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#aws_attributes Job#aws_attributes}
   */
   readonly awsAttributes?: JobJobClusterNewClusterAwsAttributes;
   /**
   * azure_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#azure_attributes Job#azure_attributes}
   */
   readonly azureAttributes?: JobJobClusterNewClusterAzureAttributes;
   /**
   * cluster_log_conf block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#cluster_log_conf Job#cluster_log_conf}
   */
   readonly clusterLogConf?: JobJobClusterNewClusterClusterLogConf;
   /**
   * cluster_mount_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#cluster_mount_info Job#cluster_mount_info}
   */
   readonly clusterMountInfo?: JobJobClusterNewClusterClusterMountInfo[] | cdktf.IResolvable;
   /**
   * docker_image block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#docker_image Job#docker_image}
   */
   readonly dockerImage?: JobJobClusterNewClusterDockerImage;
   /**
   * gcp_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#gcp_attributes Job#gcp_attributes}
   */
   readonly gcpAttributes?: JobJobClusterNewClusterGcpAttributes;
   /**
   * init_scripts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#init_scripts Job#init_scripts}
   */
   readonly initScripts?: JobJobClusterNewClusterInitScripts[] | cdktf.IResolvable;
   /**
   * workload_type block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#workload_type Job#workload_type}
   */
   readonly workloadType?: JobJobClusterNewClusterWorkloadType;
@@ -4237,7 +4237,7 @@ export interface JobJobCluster {
   readonly jobClusterKey?: string;
   /**
   * new_cluster block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#new_cluster Job#new_cluster}
   */
   readonly newCluster?: JobJobClusterNewCluster;
@@ -4665,19 +4665,19 @@ export interface JobLibrary {
   readonly whl?: string;
   /**
   * cran block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#cran Job#cran}
   */
   readonly cran?: JobLibraryCran;
   /**
   * maven block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#maven Job#maven}
   */
   readonly maven?: JobLibraryMaven;
   /**
   * pypi block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#pypi Job#pypi}
   */
   readonly pypi?: JobLibraryPypi;
@@ -5642,13 +5642,13 @@ export class JobNewClusterClusterLogConfS3OutputReference extends cdktf.ComplexO
 export interface JobNewClusterClusterLogConf {
   /**
   * dbfs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#dbfs Job#dbfs}
   */
   readonly dbfs?: JobNewClusterClusterLogConfDbfs;
   /**
   * s3 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#s3 Job#s3}
   */
   readonly s3?: JobNewClusterClusterLogConfS3;
@@ -5835,7 +5835,7 @@ export interface JobNewClusterClusterMountInfo {
   readonly remoteMountDirPath?: string;
   /**
   * network_filesystem_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#network_filesystem_info Job#network_filesystem_info}
   */
   readonly networkFilesystemInfo: JobNewClusterClusterMountInfoNetworkFilesystemInfo;
@@ -6064,7 +6064,7 @@ export interface JobNewClusterDockerImage {
   readonly url: string;
   /**
   * basic_auth block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#basic_auth Job#basic_auth}
   */
   readonly basicAuth?: JobNewClusterDockerImageBasicAuth;
@@ -6870,37 +6870,37 @@ export class JobNewClusterInitScriptsWorkspaceOutputReference extends cdktf.Comp
 export interface JobNewClusterInitScripts {
   /**
   * abfss block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#abfss Job#abfss}
   */
   readonly abfss?: JobNewClusterInitScriptsAbfss;
   /**
   * dbfs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#dbfs Job#dbfs}
   */
   readonly dbfs?: JobNewClusterInitScriptsDbfs;
   /**
   * file block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#file Job#file}
   */
   readonly file?: JobNewClusterInitScriptsFile;
   /**
   * gcs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#gcs Job#gcs}
   */
   readonly gcs?: JobNewClusterInitScriptsGcs;
   /**
   * s3 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#s3 Job#s3}
   */
   readonly s3?: JobNewClusterInitScriptsS3;
   /**
   * workspace block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#workspace Job#workspace}
   */
   readonly workspace?: JobNewClusterInitScriptsWorkspace;
@@ -7206,7 +7206,7 @@ export class JobNewClusterWorkloadTypeClientsOutputReference extends cdktf.Compl
 export interface JobNewClusterWorkloadType {
   /**
   * clients block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#clients Job#clients}
   */
   readonly clients: JobNewClusterWorkloadTypeClients;
@@ -7354,55 +7354,55 @@ export interface JobNewCluster {
   readonly sshPublicKeys?: string[];
   /**
   * autoscale block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#autoscale Job#autoscale}
   */
   readonly autoscale?: JobNewClusterAutoscale;
   /**
   * aws_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#aws_attributes Job#aws_attributes}
   */
   readonly awsAttributes?: JobNewClusterAwsAttributes;
   /**
   * azure_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#azure_attributes Job#azure_attributes}
   */
   readonly azureAttributes?: JobNewClusterAzureAttributes;
   /**
   * cluster_log_conf block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#cluster_log_conf Job#cluster_log_conf}
   */
   readonly clusterLogConf?: JobNewClusterClusterLogConf;
   /**
   * cluster_mount_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#cluster_mount_info Job#cluster_mount_info}
   */
   readonly clusterMountInfo?: JobNewClusterClusterMountInfo[] | cdktf.IResolvable;
   /**
   * docker_image block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#docker_image Job#docker_image}
   */
   readonly dockerImage?: JobNewClusterDockerImage;
   /**
   * gcp_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#gcp_attributes Job#gcp_attributes}
   */
   readonly gcpAttributes?: JobNewClusterGcpAttributes;
   /**
   * init_scripts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#init_scripts Job#init_scripts}
   */
   readonly initScripts?: JobNewClusterInitScripts[] | cdktf.IResolvable;
   /**
   * workload_type block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#workload_type Job#workload_type}
   */
   readonly workloadType?: JobNewClusterWorkloadType;
@@ -10008,19 +10008,19 @@ export interface JobTaskLibrary {
   readonly whl?: string;
   /**
   * cran block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#cran Job#cran}
   */
   readonly cran?: JobTaskLibraryCran;
   /**
   * maven block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#maven Job#maven}
   */
   readonly maven?: JobTaskLibraryMaven;
   /**
   * pypi block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#pypi Job#pypi}
   */
   readonly pypi?: JobTaskLibraryPypi;
@@ -10985,13 +10985,13 @@ export class JobTaskNewClusterClusterLogConfS3OutputReference extends cdktf.Comp
 export interface JobTaskNewClusterClusterLogConf {
   /**
   * dbfs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#dbfs Job#dbfs}
   */
   readonly dbfs?: JobTaskNewClusterClusterLogConfDbfs;
   /**
   * s3 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#s3 Job#s3}
   */
   readonly s3?: JobTaskNewClusterClusterLogConfS3;
@@ -11178,7 +11178,7 @@ export interface JobTaskNewClusterClusterMountInfo {
   readonly remoteMountDirPath?: string;
   /**
   * network_filesystem_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#network_filesystem_info Job#network_filesystem_info}
   */
   readonly networkFilesystemInfo: JobTaskNewClusterClusterMountInfoNetworkFilesystemInfo;
@@ -11407,7 +11407,7 @@ export interface JobTaskNewClusterDockerImage {
   readonly url: string;
   /**
   * basic_auth block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#basic_auth Job#basic_auth}
   */
   readonly basicAuth?: JobTaskNewClusterDockerImageBasicAuth;
@@ -12213,37 +12213,37 @@ export class JobTaskNewClusterInitScriptsWorkspaceOutputReference extends cdktf.
 export interface JobTaskNewClusterInitScripts {
   /**
   * abfss block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#abfss Job#abfss}
   */
   readonly abfss?: JobTaskNewClusterInitScriptsAbfss;
   /**
   * dbfs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#dbfs Job#dbfs}
   */
   readonly dbfs?: JobTaskNewClusterInitScriptsDbfs;
   /**
   * file block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#file Job#file}
   */
   readonly file?: JobTaskNewClusterInitScriptsFile;
   /**
   * gcs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#gcs Job#gcs}
   */
   readonly gcs?: JobTaskNewClusterInitScriptsGcs;
   /**
   * s3 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#s3 Job#s3}
   */
   readonly s3?: JobTaskNewClusterInitScriptsS3;
   /**
   * workspace block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#workspace Job#workspace}
   */
   readonly workspace?: JobTaskNewClusterInitScriptsWorkspace;
@@ -12549,7 +12549,7 @@ export class JobTaskNewClusterWorkloadTypeClientsOutputReference extends cdktf.C
 export interface JobTaskNewClusterWorkloadType {
   /**
   * clients block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#clients Job#clients}
   */
   readonly clients: JobTaskNewClusterWorkloadTypeClients;
@@ -12697,55 +12697,55 @@ export interface JobTaskNewCluster {
   readonly sshPublicKeys?: string[];
   /**
   * autoscale block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#autoscale Job#autoscale}
   */
   readonly autoscale?: JobTaskNewClusterAutoscale;
   /**
   * aws_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#aws_attributes Job#aws_attributes}
   */
   readonly awsAttributes?: JobTaskNewClusterAwsAttributes;
   /**
   * azure_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#azure_attributes Job#azure_attributes}
   */
   readonly azureAttributes?: JobTaskNewClusterAzureAttributes;
   /**
   * cluster_log_conf block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#cluster_log_conf Job#cluster_log_conf}
   */
   readonly clusterLogConf?: JobTaskNewClusterClusterLogConf;
   /**
   * cluster_mount_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#cluster_mount_info Job#cluster_mount_info}
   */
   readonly clusterMountInfo?: JobTaskNewClusterClusterMountInfo[] | cdktf.IResolvable;
   /**
   * docker_image block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#docker_image Job#docker_image}
   */
   readonly dockerImage?: JobTaskNewClusterDockerImage;
   /**
   * gcp_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#gcp_attributes Job#gcp_attributes}
   */
   readonly gcpAttributes?: JobTaskNewClusterGcpAttributes;
   /**
   * init_scripts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#init_scripts Job#init_scripts}
   */
   readonly initScripts?: JobTaskNewClusterInitScripts[] | cdktf.IResolvable;
   /**
   * workload_type block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#workload_type Job#workload_type}
   */
   readonly workloadType?: JobTaskNewClusterWorkloadType;
@@ -14232,7 +14232,7 @@ export interface JobTaskSqlTaskAlert {
   readonly pauseSubscriptions?: boolean | cdktf.IResolvable;
   /**
   * subscriptions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#subscriptions Job#subscriptions}
   */
   readonly subscriptions: JobTaskSqlTaskAlertSubscriptions[] | cdktf.IResolvable;
@@ -14475,7 +14475,7 @@ export interface JobTaskSqlTaskDashboard {
   readonly pauseSubscriptions?: boolean | cdktf.IResolvable;
   /**
   * subscriptions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#subscriptions Job#subscriptions}
   */
   readonly subscriptions?: JobTaskSqlTaskDashboardSubscriptions[] | cdktf.IResolvable;
@@ -14740,25 +14740,25 @@ export interface JobTaskSqlTask {
   readonly warehouseId?: string;
   /**
   * alert block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#alert Job#alert}
   */
   readonly alert?: JobTaskSqlTaskAlert;
   /**
   * dashboard block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#dashboard Job#dashboard}
   */
   readonly dashboard?: JobTaskSqlTaskDashboard;
   /**
   * file block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#file Job#file}
   */
   readonly file?: JobTaskSqlTaskFile;
   /**
   * query block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#query Job#query}
   */
   readonly query?: JobTaskSqlTaskQuery;
@@ -14980,79 +14980,79 @@ export interface JobTask {
   readonly timeoutSeconds?: number;
   /**
   * condition_task block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#condition_task Job#condition_task}
   */
   readonly conditionTask?: JobTaskConditionTask;
   /**
   * dbt_task block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#dbt_task Job#dbt_task}
   */
   readonly dbtTask?: JobTaskDbtTask;
   /**
   * depends_on block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#depends_on Job#depends_on}
   */
   readonly dependsOn?: JobTaskDependsOn[] | cdktf.IResolvable;
   /**
   * email_notifications block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#email_notifications Job#email_notifications}
   */
   readonly emailNotifications?: JobTaskEmailNotifications;
   /**
   * library block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#library Job#library}
   */
   readonly library?: JobTaskLibrary[] | cdktf.IResolvable;
   /**
   * new_cluster block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#new_cluster Job#new_cluster}
   */
   readonly newCluster?: JobTaskNewCluster;
   /**
   * notebook_task block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#notebook_task Job#notebook_task}
   */
   readonly notebookTask?: JobTaskNotebookTask;
   /**
   * pipeline_task block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#pipeline_task Job#pipeline_task}
   */
   readonly pipelineTask?: JobTaskPipelineTask;
   /**
   * python_wheel_task block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#python_wheel_task Job#python_wheel_task}
   */
   readonly pythonWheelTask?: JobTaskPythonWheelTask;
   /**
   * spark_jar_task block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#spark_jar_task Job#spark_jar_task}
   */
   readonly sparkJarTask?: JobTaskSparkJarTask;
   /**
   * spark_python_task block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#spark_python_task Job#spark_python_task}
   */
   readonly sparkPythonTask?: JobTaskSparkPythonTask;
   /**
   * spark_submit_task block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#spark_submit_task Job#spark_submit_task}
   */
   readonly sparkSubmitTask?: JobTaskSparkSubmitTask;
   /**
   * sql_task block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#sql_task Job#sql_task}
   */
   readonly sqlTask?: JobTaskSqlTask;
@@ -15879,7 +15879,7 @@ export interface JobTrigger {
   readonly pauseStatus?: string;
   /**
   * file_arrival block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#file_arrival Job#file_arrival}
   */
   readonly fileArrival: JobTriggerFileArrival;
@@ -16257,19 +16257,19 @@ export class JobWebhookNotificationsOnSuccessList extends cdktf.ComplexList {
 export interface JobWebhookNotifications {
   /**
   * on_failure block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#on_failure Job#on_failure}
   */
   readonly onFailure?: JobWebhookNotificationsOnFailure[] | cdktf.IResolvable;
   /**
   * on_start block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#on_start Job#on_start}
   */
   readonly onStart?: JobWebhookNotificationsOnStart[] | cdktf.IResolvable;
   /**
   * on_success block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/job#on_success Job#on_success}
   */
   readonly onSuccess?: JobWebhookNotificationsOnSuccess[] | cdktf.IResolvable;

@@ -65,7 +65,7 @@ export interface TableConfig extends cdktf.TerraformMetaArguments {
   readonly viewDefinition?: string;
   /**
   * column block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/table#column Table#column}
   */
   readonly column: TableColumn[] | cdktf.IResolvable;

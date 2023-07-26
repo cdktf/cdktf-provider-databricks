@@ -29,7 +29,7 @@ export interface DataDatabricksClusterConfig extends cdktf.TerraformMetaArgument
   readonly id?: string;
   /**
   * cluster_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/cluster#cluster_info DataDatabricksCluster#cluster_info}
   */
   readonly clusterInfo?: DataDatabricksClusterClusterInfo;
@@ -788,13 +788,13 @@ export class DataDatabricksClusterClusterInfoClusterLogConfS3OutputReference ext
 export interface DataDatabricksClusterClusterInfoClusterLogConf {
   /**
   * dbfs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/cluster#dbfs DataDatabricksCluster#dbfs}
   */
   readonly dbfs?: DataDatabricksClusterClusterInfoClusterLogConfDbfs;
   /**
   * s3 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/cluster#s3 DataDatabricksCluster#s3}
   */
   readonly s3?: DataDatabricksClusterClusterInfoClusterLogConfS3;
@@ -1066,7 +1066,7 @@ export interface DataDatabricksClusterClusterInfoDockerImage {
   readonly url: string;
   /**
   * basic_auth block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/cluster#basic_auth DataDatabricksCluster#basic_auth}
   */
   readonly basicAuth?: DataDatabricksClusterClusterInfoDockerImageBasicAuth;
@@ -1242,7 +1242,7 @@ export interface DataDatabricksClusterClusterInfoDriver {
   readonly startTimestamp?: number;
   /**
   * node_aws_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/cluster#node_aws_attributes DataDatabricksCluster#node_aws_attributes}
   */
   readonly nodeAwsAttributes?: DataDatabricksClusterClusterInfoDriverNodeAwsAttributes;
@@ -1536,7 +1536,7 @@ export interface DataDatabricksClusterClusterInfoExecutors {
   readonly startTimestamp?: number;
   /**
   * node_aws_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/cluster#node_aws_attributes DataDatabricksCluster#node_aws_attributes}
   */
   readonly nodeAwsAttributes?: DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributes;
@@ -2492,37 +2492,37 @@ export class DataDatabricksClusterClusterInfoInitScriptsWorkspaceOutputReference
 export interface DataDatabricksClusterClusterInfoInitScripts {
   /**
   * abfss block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/cluster#abfss DataDatabricksCluster#abfss}
   */
   readonly abfss?: DataDatabricksClusterClusterInfoInitScriptsAbfss;
   /**
   * dbfs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/cluster#dbfs DataDatabricksCluster#dbfs}
   */
   readonly dbfs?: DataDatabricksClusterClusterInfoInitScriptsDbfs;
   /**
   * file block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/cluster#file DataDatabricksCluster#file}
   */
   readonly file?: DataDatabricksClusterClusterInfoInitScriptsFile;
   /**
   * gcs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/cluster#gcs DataDatabricksCluster#gcs}
   */
   readonly gcs?: DataDatabricksClusterClusterInfoInitScriptsGcs;
   /**
   * s3 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/cluster#s3 DataDatabricksCluster#s3}
   */
   readonly s3?: DataDatabricksClusterClusterInfoInitScriptsS3;
   /**
   * workspace block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/cluster#workspace DataDatabricksCluster#workspace}
   */
   readonly workspace?: DataDatabricksClusterClusterInfoInitScriptsWorkspace;
@@ -2983,67 +2983,67 @@ export interface DataDatabricksClusterClusterInfo {
   readonly terminateTime?: number;
   /**
   * autoscale block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/cluster#autoscale DataDatabricksCluster#autoscale}
   */
   readonly autoscale?: DataDatabricksClusterClusterInfoAutoscale;
   /**
   * aws_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/cluster#aws_attributes DataDatabricksCluster#aws_attributes}
   */
   readonly awsAttributes?: DataDatabricksClusterClusterInfoAwsAttributes;
   /**
   * azure_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/cluster#azure_attributes DataDatabricksCluster#azure_attributes}
   */
   readonly azureAttributes?: DataDatabricksClusterClusterInfoAzureAttributes;
   /**
   * cluster_log_conf block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/cluster#cluster_log_conf DataDatabricksCluster#cluster_log_conf}
   */
   readonly clusterLogConf?: DataDatabricksClusterClusterInfoClusterLogConf;
   /**
   * cluster_log_status block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/cluster#cluster_log_status DataDatabricksCluster#cluster_log_status}
   */
   readonly clusterLogStatus?: DataDatabricksClusterClusterInfoClusterLogStatus;
   /**
   * docker_image block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/cluster#docker_image DataDatabricksCluster#docker_image}
   */
   readonly dockerImage?: DataDatabricksClusterClusterInfoDockerImage;
   /**
   * driver block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/cluster#driver DataDatabricksCluster#driver}
   */
   readonly driver?: DataDatabricksClusterClusterInfoDriver;
   /**
   * executors block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/cluster#executors DataDatabricksCluster#executors}
   */
   readonly executors?: DataDatabricksClusterClusterInfoExecutors[] | cdktf.IResolvable;
   /**
   * gcp_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/cluster#gcp_attributes DataDatabricksCluster#gcp_attributes}
   */
   readonly gcpAttributes?: DataDatabricksClusterClusterInfoGcpAttributes;
   /**
   * init_scripts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/cluster#init_scripts DataDatabricksCluster#init_scripts}
   */
   readonly initScripts?: DataDatabricksClusterClusterInfoInitScripts[] | cdktf.IResolvable;
   /**
   * termination_reason block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/cluster#termination_reason DataDatabricksCluster#termination_reason}
   */
   readonly terminationReason?: DataDatabricksClusterClusterInfoTerminationReason;

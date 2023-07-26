@@ -45,13 +45,13 @@ export interface SqlWidgetConfig extends cdktf.TerraformMetaArguments {
   readonly widgetId?: string;
   /**
   * parameter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_widget#parameter SqlWidget#parameter}
   */
   readonly parameter?: SqlWidgetParameter[] | cdktf.IResolvable;
   /**
   * position block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_widget#position SqlWidget#position}
   */
   readonly position?: SqlWidgetPosition;

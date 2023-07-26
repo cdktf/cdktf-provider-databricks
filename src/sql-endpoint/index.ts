@@ -77,25 +77,25 @@ export interface SqlEndpointConfig extends cdktf.TerraformMetaArguments {
   readonly warehouseType?: string;
   /**
   * channel block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_endpoint#channel SqlEndpoint#channel}
   */
   readonly channel?: SqlEndpointChannel;
   /**
   * odbc_params block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_endpoint#odbc_params SqlEndpoint#odbc_params}
   */
   readonly odbcParams?: SqlEndpointOdbcParams;
   /**
   * tags block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_endpoint#tags SqlEndpoint#tags}
   */
   readonly tags?: SqlEndpointTags;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_endpoint#timeouts SqlEndpoint#timeouts}
   */
   readonly timeouts?: SqlEndpointTimeouts;
@@ -450,7 +450,7 @@ export class SqlEndpointTagsCustomTagsList extends cdktf.ComplexList {
 export interface SqlEndpointTags {
   /**
   * custom_tags block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_endpoint#custom_tags SqlEndpoint#custom_tags}
   */
   readonly customTags: SqlEndpointTagsCustomTags[] | cdktf.IResolvable;

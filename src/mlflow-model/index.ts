@@ -45,7 +45,7 @@ export interface MlflowModelConfig extends cdktf.TerraformMetaArguments {
   readonly userId?: string;
   /**
   * tags block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mlflow_model#tags MlflowModel#tags}
   */
   readonly tags?: MlflowModelTags[] | cdktf.IResolvable;

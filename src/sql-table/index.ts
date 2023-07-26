@@ -65,7 +65,7 @@ export interface SqlTableConfig extends cdktf.TerraformMetaArguments {
   readonly viewDefinition?: string;
   /**
   * column block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_table#column SqlTable#column}
   */
   readonly column?: SqlTableColumn[] | cdktf.IResolvable;

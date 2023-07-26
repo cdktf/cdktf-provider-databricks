@@ -73,19 +73,19 @@ export interface DataDatabricksSqlWarehouseConfig extends cdktf.TerraformMetaArg
   readonly state?: string;
   /**
   * channel block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/sql_warehouse#channel DataDatabricksSqlWarehouse#channel}
   */
   readonly channel?: DataDatabricksSqlWarehouseChannel;
   /**
   * odbc_params block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/sql_warehouse#odbc_params DataDatabricksSqlWarehouse#odbc_params}
   */
   readonly odbcParams?: DataDatabricksSqlWarehouseOdbcParams;
   /**
   * tags block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/sql_warehouse#tags DataDatabricksSqlWarehouse#tags}
   */
   readonly tags?: DataDatabricksSqlWarehouseTags;
@@ -440,7 +440,7 @@ export class DataDatabricksSqlWarehouseTagsCustomTagsList extends cdktf.ComplexL
 export interface DataDatabricksSqlWarehouseTags {
   /**
   * custom_tags block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/sql_warehouse#custom_tags DataDatabricksSqlWarehouse#custom_tags}
   */
   readonly customTags: DataDatabricksSqlWarehouseTagsCustomTags[] | cdktf.IResolvable;

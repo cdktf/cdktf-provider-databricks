@@ -45,7 +45,7 @@ export interface RepoConfig extends cdktf.TerraformMetaArguments {
   readonly url: string;
   /**
   * sparse_checkout block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/repo#sparse_checkout Repo#sparse_checkout}
   */
   readonly sparseCheckout?: RepoSparseCheckout;

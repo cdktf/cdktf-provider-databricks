@@ -33,7 +33,7 @@ export interface DataDatabricksShareConfig extends cdktf.TerraformMetaArguments 
   readonly name?: string;
   /**
   * object block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/share#object DataDatabricksShare#object}
   */
   readonly object?: DataDatabricksShareObject[] | cdktf.IResolvable;
@@ -213,7 +213,7 @@ export class DataDatabricksShareObjectPartitionValueList extends cdktf.ComplexLi
 export interface DataDatabricksShareObjectPartition {
   /**
   * value block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/share#value DataDatabricksShare#value}
   */
   readonly value: DataDatabricksShareObjectPartitionValue[] | cdktf.IResolvable;
@@ -349,7 +349,7 @@ export interface DataDatabricksShareObject {
   readonly status?: string;
   /**
   * partition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/share#partition DataDatabricksShare#partition}
   */
   readonly partition?: DataDatabricksShareObjectPartition[] | cdktf.IResolvable;

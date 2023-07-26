@@ -109,7 +109,7 @@ export interface PermissionsConfig extends cdktf.TerraformMetaArguments {
   readonly workspaceFilePath?: string;
   /**
   * access_control block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/permissions#access_control Permissions#access_control}
   */
   readonly accessControl: PermissionsAccessControl[] | cdktf.IResolvable;
