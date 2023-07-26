@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mount
 // generated from terraform resource schema
 
@@ -45,37 +40,37 @@ export interface MountConfig extends cdktf.TerraformMetaArguments {
   readonly uri?: string;
   /**
   * abfs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mount#abfs Mount#abfs}
   */
   readonly abfs?: MountAbfs;
   /**
   * adl block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mount#adl Mount#adl}
   */
   readonly adl?: MountAdl;
   /**
   * gs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mount#gs Mount#gs}
   */
   readonly gs?: MountGs;
   /**
   * s3 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mount#s3 Mount#s3}
   */
   readonly s3?: MountS3;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mount#timeouts Mount#timeouts}
   */
   readonly timeouts?: MountTimeouts;
   /**
   * wasb block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mount#wasb Mount#wasb}
   */
   readonly wasb?: MountWasb;

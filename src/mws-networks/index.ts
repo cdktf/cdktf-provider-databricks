@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_networks
 // generated from terraform resource schema
 
@@ -57,19 +52,19 @@ export interface MwsNetworksConfig extends cdktf.TerraformMetaArguments {
   readonly workspaceId?: number;
   /**
   * error_messages block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_networks#error_messages MwsNetworks#error_messages}
   */
   readonly errorMessages?: MwsNetworksErrorMessages[] | cdktf.IResolvable;
   /**
   * gcp_network_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_networks#gcp_network_info MwsNetworks#gcp_network_info}
   */
   readonly gcpNetworkInfo?: MwsNetworksGcpNetworkInfo;
   /**
   * vpc_endpoints block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_networks#vpc_endpoints MwsNetworks#vpc_endpoints}
   */
   readonly vpcEndpoints?: MwsNetworksVpcEndpoints;

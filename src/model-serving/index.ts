@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/model_serving
 // generated from terraform resource schema
 
@@ -25,13 +20,13 @@ export interface ModelServingConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /**
   * config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/model_serving#config ModelServing#config}
   */
   readonly config: ModelServingConfigA;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/model_serving#timeouts ModelServing#timeouts}
   */
   readonly timeouts?: ModelServingTimeouts;
@@ -380,7 +375,7 @@ export class ModelServingConfigTrafficConfigRoutesList extends cdktf.ComplexList
 export interface ModelServingConfigTrafficConfig {
   /**
   * routes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/model_serving#routes ModelServing#routes}
   */
   readonly routes?: ModelServingConfigTrafficConfigRoutes[] | cdktf.IResolvable;
@@ -447,13 +442,13 @@ export class ModelServingConfigTrafficConfigOutputReference extends cdktf.Comple
 export interface ModelServingConfigA {
   /**
   * served_models block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/model_serving#served_models ModelServing#served_models}
   */
   readonly servedModels: ModelServingConfigServedModels[] | cdktf.IResolvable;
   /**
   * traffic_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/model_serving#traffic_config ModelServing#traffic_config}
   */
   readonly trafficConfig?: ModelServingConfigTrafficConfig;

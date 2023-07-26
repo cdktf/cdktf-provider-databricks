@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/recipient
 // generated from terraform resource schema
 
@@ -41,13 +36,13 @@ export interface RecipientConfig extends cdktf.TerraformMetaArguments {
   readonly sharingCode?: string;
   /**
   * ip_access_list block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/recipient#ip_access_list Recipient#ip_access_list}
   */
   readonly ipAccessList?: RecipientIpAccessListStruct;
   /**
   * tokens block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/recipient#tokens Recipient#tokens}
   */
   readonly tokens?: RecipientTokens[] | cdktf.IResolvable;

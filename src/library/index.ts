@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/library
 // generated from terraform resource schema
 
@@ -37,19 +32,19 @@ export interface LibraryConfig extends cdktf.TerraformMetaArguments {
   readonly whl?: string;
   /**
   * cran block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/library#cran Library#cran}
   */
   readonly cran?: LibraryCran;
   /**
   * maven block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/library#maven Library#maven}
   */
   readonly maven?: LibraryMaven;
   /**
   * pypi block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/library#pypi Library#pypi}
   */
   readonly pypi?: LibraryPypi;

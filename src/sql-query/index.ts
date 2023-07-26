@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_query
 // generated from terraform resource schema
 
@@ -49,13 +44,13 @@ export interface SqlQueryConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: string[];
   /**
   * parameter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_query#parameter SqlQuery#parameter}
   */
   readonly parameter?: SqlQueryParameter[] | cdktf.IResolvable;
   /**
   * schedule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_query#schedule SqlQuery#schedule}
   */
   readonly schedule?: SqlQuerySchedule;
@@ -215,7 +210,7 @@ export interface SqlQueryParameterDateRange {
   readonly value?: string;
   /**
   * range block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_query#range SqlQuery#range}
   */
   readonly range?: SqlQueryParameterDateRangeRange;
@@ -457,7 +452,7 @@ export interface SqlQueryParameterDatetimeRange {
   readonly value?: string;
   /**
   * range block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_query#range SqlQuery#range}
   */
   readonly range?: SqlQueryParameterDatetimeRangeRange;
@@ -699,7 +694,7 @@ export interface SqlQueryParameterDatetimesecRange {
   readonly value?: string;
   /**
   * range block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_query#range SqlQuery#range}
   */
   readonly range?: SqlQueryParameterDatetimesecRangeRange;
@@ -911,7 +906,7 @@ export interface SqlQueryParameterEnum {
   readonly values?: string[];
   /**
   * multiple block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_query#multiple SqlQuery#multiple}
   */
   readonly multiple?: SqlQueryParameterEnumMultiple;
@@ -1228,7 +1223,7 @@ export interface SqlQueryParameterQuery {
   readonly values?: string[];
   /**
   * multiple block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_query#multiple SqlQuery#multiple}
   */
   readonly multiple?: SqlQueryParameterQueryMultiple;
@@ -1431,61 +1426,61 @@ export interface SqlQueryParameter {
   readonly title?: string;
   /**
   * date block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_query#date SqlQuery#date}
   */
   readonly date?: SqlQueryParameterDate;
   /**
   * date_range block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_query#date_range SqlQuery#date_range}
   */
   readonly dateRange?: SqlQueryParameterDateRange;
   /**
   * datetime block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_query#datetime SqlQuery#datetime}
   */
   readonly datetime?: SqlQueryParameterDatetime;
   /**
   * datetime_range block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_query#datetime_range SqlQuery#datetime_range}
   */
   readonly datetimeRange?: SqlQueryParameterDatetimeRange;
   /**
   * datetimesec block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_query#datetimesec SqlQuery#datetimesec}
   */
   readonly datetimesec?: SqlQueryParameterDatetimesec;
   /**
   * datetimesec_range block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_query#datetimesec_range SqlQuery#datetimesec_range}
   */
   readonly datetimesecRange?: SqlQueryParameterDatetimesecRange;
   /**
   * enum block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_query#enum SqlQuery#enum}
   */
   readonly enum?: SqlQueryParameterEnum;
   /**
   * number block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_query#number SqlQuery#number}
   */
   readonly number?: SqlQueryParameterNumber;
   /**
   * query block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_query#query SqlQuery#query}
   */
   readonly query?: SqlQueryParameterQuery;
   /**
   * text block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_query#text SqlQuery#text}
   */
   readonly text?: SqlQueryParameterText;
@@ -2173,19 +2168,19 @@ export class SqlQueryScheduleWeeklyOutputReference extends cdktf.ComplexObject {
 export interface SqlQuerySchedule {
   /**
   * continuous block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_query#continuous SqlQuery#continuous}
   */
   readonly continuous?: SqlQueryScheduleContinuous;
   /**
   * daily block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_query#daily SqlQuery#daily}
   */
   readonly daily?: SqlQueryScheduleDaily;
   /**
   * weekly block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_query#weekly SqlQuery#weekly}
   */
   readonly weekly?: SqlQueryScheduleWeekly;

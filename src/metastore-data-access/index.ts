@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/metastore_data_access
 // generated from terraform resource schema
 
@@ -37,31 +32,31 @@ export interface MetastoreDataAccessConfig extends cdktf.TerraformMetaArguments 
   readonly name: string;
   /**
   * aws_iam_role block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/metastore_data_access#aws_iam_role MetastoreDataAccess#aws_iam_role}
   */
   readonly awsIamRole?: MetastoreDataAccessAwsIamRole;
   /**
   * azure_managed_identity block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/metastore_data_access#azure_managed_identity MetastoreDataAccess#azure_managed_identity}
   */
   readonly azureManagedIdentity?: MetastoreDataAccessAzureManagedIdentity;
   /**
   * azure_service_principal block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/metastore_data_access#azure_service_principal MetastoreDataAccess#azure_service_principal}
   */
   readonly azureServicePrincipal?: MetastoreDataAccessAzureServicePrincipal;
   /**
   * databricks_gcp_service_account block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/metastore_data_access#databricks_gcp_service_account MetastoreDataAccess#databricks_gcp_service_account}
   */
   readonly databricksGcpServiceAccount?: MetastoreDataAccessDatabricksGcpServiceAccount;
   /**
   * gcp_service_account_key block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/metastore_data_access#gcp_service_account_key MetastoreDataAccess#gcp_service_account_key}
   */
   readonly gcpServiceAccountKey?: MetastoreDataAccessGcpServiceAccountKey;

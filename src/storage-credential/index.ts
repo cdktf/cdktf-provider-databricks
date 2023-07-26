@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/storage_credential
 // generated from terraform resource schema
 
@@ -41,31 +36,31 @@ export interface StorageCredentialConfig extends cdktf.TerraformMetaArguments {
   readonly readOnly?: boolean | cdktf.IResolvable;
   /**
   * aws_iam_role block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/storage_credential#aws_iam_role StorageCredential#aws_iam_role}
   */
   readonly awsIamRole?: StorageCredentialAwsIamRole;
   /**
   * azure_managed_identity block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/storage_credential#azure_managed_identity StorageCredential#azure_managed_identity}
   */
   readonly azureManagedIdentity?: StorageCredentialAzureManagedIdentity;
   /**
   * azure_service_principal block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/storage_credential#azure_service_principal StorageCredential#azure_service_principal}
   */
   readonly azureServicePrincipal?: StorageCredentialAzureServicePrincipal;
   /**
   * databricks_gcp_service_account block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/storage_credential#databricks_gcp_service_account StorageCredential#databricks_gcp_service_account}
   */
   readonly databricksGcpServiceAccount?: StorageCredentialDatabricksGcpServiceAccount;
   /**
   * gcp_service_account_key block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/storage_credential#gcp_service_account_key StorageCredential#gcp_service_account_key}
   */
   readonly gcpServiceAccountKey?: StorageCredentialGcpServiceAccountKey;

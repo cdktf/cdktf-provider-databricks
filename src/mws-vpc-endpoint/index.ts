@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_vpc_endpoint
 // generated from terraform resource schema
 
@@ -57,7 +52,7 @@ export interface MwsVpcEndpointConfig extends cdktf.TerraformMetaArguments {
   readonly vpcEndpointName: string;
   /**
   * gcp_vpc_endpoint_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_vpc_endpoint#gcp_vpc_endpoint_info MwsVpcEndpoint#gcp_vpc_endpoint_info}
   */
   readonly gcpVpcEndpointInfo?: MwsVpcEndpointGcpVpcEndpointInfo;

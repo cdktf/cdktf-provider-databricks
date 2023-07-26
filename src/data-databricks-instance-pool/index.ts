@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/instance_pool
 // generated from terraform resource schema
 
@@ -25,7 +20,7 @@ export interface DataDatabricksInstancePoolConfig extends cdktf.TerraformMetaArg
   readonly name: string;
   /**
   * pool_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/instance_pool#pool_info DataDatabricksInstancePool#pool_info}
   */
   readonly poolInfo?: DataDatabricksInstancePoolPoolInfo;
@@ -344,7 +339,7 @@ export interface DataDatabricksInstancePoolPoolInfoDiskSpec {
   readonly diskSize?: number;
   /**
   * disk_type block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/instance_pool#disk_type DataDatabricksInstancePool#disk_type}
   */
   readonly diskType?: DataDatabricksInstancePoolPoolInfoDiskSpecDiskType;
@@ -818,19 +813,19 @@ export class DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesLaunch
 export interface DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributes {
   /**
   * fleet_on_demand_option block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/instance_pool#fleet_on_demand_option DataDatabricksInstancePool#fleet_on_demand_option}
   */
   readonly fleetOnDemandOption?: DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesFleetOnDemandOption;
   /**
   * fleet_spot_option block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/instance_pool#fleet_spot_option DataDatabricksInstancePool#fleet_spot_option}
   */
   readonly fleetSpotOption?: DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesFleetSpotOption;
   /**
   * launch_template_override block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/instance_pool#launch_template_override DataDatabricksInstancePool#launch_template_override}
   */
   readonly launchTemplateOverride: DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesLaunchTemplateOverride[] | cdktf.IResolvable;
@@ -1062,7 +1057,7 @@ export interface DataDatabricksInstancePoolPoolInfoPreloadedDockerImage {
   readonly url: string;
   /**
   * basic_auth block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/instance_pool#basic_auth DataDatabricksInstancePool#basic_auth}
   */
   readonly basicAuth?: DataDatabricksInstancePoolPoolInfoPreloadedDockerImageBasicAuth;
@@ -1371,43 +1366,43 @@ export interface DataDatabricksInstancePoolPoolInfo {
   readonly state?: string;
   /**
   * aws_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/instance_pool#aws_attributes DataDatabricksInstancePool#aws_attributes}
   */
   readonly awsAttributes?: DataDatabricksInstancePoolPoolInfoAwsAttributes;
   /**
   * azure_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/instance_pool#azure_attributes DataDatabricksInstancePool#azure_attributes}
   */
   readonly azureAttributes?: DataDatabricksInstancePoolPoolInfoAzureAttributes;
   /**
   * disk_spec block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/instance_pool#disk_spec DataDatabricksInstancePool#disk_spec}
   */
   readonly diskSpec?: DataDatabricksInstancePoolPoolInfoDiskSpec;
   /**
   * gcp_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/instance_pool#gcp_attributes DataDatabricksInstancePool#gcp_attributes}
   */
   readonly gcpAttributes?: DataDatabricksInstancePoolPoolInfoGcpAttributes;
   /**
   * instance_pool_fleet_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/instance_pool#instance_pool_fleet_attributes DataDatabricksInstancePool#instance_pool_fleet_attributes}
   */
   readonly instancePoolFleetAttributes?: DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributes[] | cdktf.IResolvable;
   /**
   * preloaded_docker_image block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/instance_pool#preloaded_docker_image DataDatabricksInstancePool#preloaded_docker_image}
   */
   readonly preloadedDockerImage?: DataDatabricksInstancePoolPoolInfoPreloadedDockerImage[] | cdktf.IResolvable;
   /**
   * stats block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/instance_pool#stats DataDatabricksInstancePool#stats}
   */
   readonly stats?: DataDatabricksInstancePoolPoolInfoStats;

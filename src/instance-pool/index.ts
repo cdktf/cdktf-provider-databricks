@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/instance_pool
 // generated from terraform resource schema
 
@@ -57,37 +52,37 @@ export interface InstancePoolConfig extends cdktf.TerraformMetaArguments {
   readonly preloadedSparkVersions?: string[];
   /**
   * aws_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/instance_pool#aws_attributes InstancePool#aws_attributes}
   */
   readonly awsAttributes?: InstancePoolAwsAttributes;
   /**
   * azure_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/instance_pool#azure_attributes InstancePool#azure_attributes}
   */
   readonly azureAttributes?: InstancePoolAzureAttributes;
   /**
   * disk_spec block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/instance_pool#disk_spec InstancePool#disk_spec}
   */
   readonly diskSpec?: InstancePoolDiskSpec;
   /**
   * gcp_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/instance_pool#gcp_attributes InstancePool#gcp_attributes}
   */
   readonly gcpAttributes?: InstancePoolGcpAttributes;
   /**
   * instance_pool_fleet_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/instance_pool#instance_pool_fleet_attributes InstancePool#instance_pool_fleet_attributes}
   */
   readonly instancePoolFleetAttributes?: InstancePoolInstancePoolFleetAttributes;
   /**
   * preloaded_docker_image block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/instance_pool#preloaded_docker_image InstancePool#preloaded_docker_image}
   */
   readonly preloadedDockerImage?: InstancePoolPreloadedDockerImage[] | cdktf.IResolvable;
@@ -406,7 +401,7 @@ export interface InstancePoolDiskSpec {
   readonly diskSize?: number;
   /**
   * disk_type block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/instance_pool#disk_type InstancePool#disk_type}
   */
   readonly diskType?: InstancePoolDiskSpecDiskType;
@@ -880,19 +875,19 @@ export class InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideList e
 export interface InstancePoolInstancePoolFleetAttributes {
   /**
   * fleet_on_demand_option block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/instance_pool#fleet_on_demand_option InstancePool#fleet_on_demand_option}
   */
   readonly fleetOnDemandOption?: InstancePoolInstancePoolFleetAttributesFleetOnDemandOption;
   /**
   * fleet_spot_option block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/instance_pool#fleet_spot_option InstancePool#fleet_spot_option}
   */
   readonly fleetSpotOption?: InstancePoolInstancePoolFleetAttributesFleetSpotOption;
   /**
   * launch_template_override block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/instance_pool#launch_template_override InstancePool#launch_template_override}
   */
   readonly launchTemplateOverride: InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride[] | cdktf.IResolvable;
@@ -1092,7 +1087,7 @@ export interface InstancePoolPreloadedDockerImage {
   readonly url: string;
   /**
   * basic_auth block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/instance_pool#basic_auth InstancePool#basic_auth}
   */
   readonly basicAuth?: InstancePoolPreloadedDockerImageBasicAuth;

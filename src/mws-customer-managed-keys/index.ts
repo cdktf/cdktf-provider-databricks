@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_customer_managed_keys
 // generated from terraform resource schema
 
@@ -37,13 +32,13 @@ export interface MwsCustomerManagedKeysConfig extends cdktf.TerraformMetaArgumen
   readonly useCases: string[];
   /**
   * aws_key_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_customer_managed_keys#aws_key_info MwsCustomerManagedKeys#aws_key_info}
   */
   readonly awsKeyInfo?: MwsCustomerManagedKeysAwsKeyInfo;
   /**
   * gcp_key_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mws_customer_managed_keys#gcp_key_info MwsCustomerManagedKeys#gcp_key_info}
   */
   readonly gcpKeyInfo?: MwsCustomerManagedKeysGcpKeyInfo;

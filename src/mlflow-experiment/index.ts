@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mlflow_experiment
 // generated from terraform resource schema
 
@@ -49,7 +44,7 @@ export interface MlflowExperimentConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/mlflow_experiment#timeouts MlflowExperiment#timeouts}
   */
   readonly timeouts?: MlflowExperimentTimeouts;

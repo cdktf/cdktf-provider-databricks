@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs
 // generated from terraform resource schema
 
@@ -130,7 +125,7 @@ export interface DatabricksProviderConfig {
   readonly warehouseId?: string;
   /**
   * Alias name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs#alias DatabricksProvider#alias}
   */
   readonly alias?: string;

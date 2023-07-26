@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/share
 // generated from terraform resource schema
 
@@ -33,7 +28,7 @@ export interface ShareConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /**
   * object block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/share#object Share#object}
   */
   readonly object?: ShareObject[] | cdktf.IResolvable;
@@ -213,7 +208,7 @@ export class ShareObjectPartitionValueList extends cdktf.ComplexList {
 export interface ShareObjectPartition {
   /**
   * value block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/share#value Share#value}
   */
   readonly value: ShareObjectPartitionValue[] | cdktf.IResolvable;
@@ -349,7 +344,7 @@ export interface ShareObject {
   readonly status?: string;
   /**
   * partition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/share#partition Share#partition}
   */
   readonly partition?: ShareObjectPartition[] | cdktf.IResolvable;

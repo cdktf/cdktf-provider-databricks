@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/secret_scope
 // generated from terraform resource schema
 
@@ -33,7 +28,7 @@ export interface SecretScopeConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /**
   * keyvault_metadata block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/secret_scope#keyvault_metadata SecretScope#keyvault_metadata}
   */
   readonly keyvaultMetadata?: SecretScopeKeyvaultMetadata;

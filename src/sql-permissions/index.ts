@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_permissions
 // generated from terraform resource schema
 
@@ -49,7 +44,7 @@ export interface SqlPermissionsConfig extends cdktf.TerraformMetaArguments {
   readonly view?: string;
   /**
   * privilege_assignments block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/sql_permissions#privilege_assignments SqlPermissions#privilege_assignments}
   */
   readonly privilegeAssignments?: SqlPermissionsPrivilegeAssignments[] | cdktf.IResolvable;
