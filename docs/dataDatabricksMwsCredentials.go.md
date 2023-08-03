@@ -1,6 +1,6 @@
 # `data_databricks_mws_credentials`
 
-Refer to the Terraform Registory for docs: [`data_databricks_mws_credentials`](https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/mws_credentials).
+Refer to the Terraform Registory for docs: [`data_databricks_mws_credentials`](https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/mws_credentials).
 
 # `dataDatabricksMwsCredentials` Submodule <a name="`dataDatabricksMwsCredentials` Submodule" id="@cdktf/provider-databricks.dataDatabricksMwsCredentials"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_databricks_mws_credentials`](h
 
 ### DataDatabricksMwsCredentials <a name="DataDatabricksMwsCredentials" id="@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentials"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/mws_credentials databricks_mws_credentials}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/mws_credentials databricks_mws_credentials}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/datadatabricksmwscredentials"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwscredentials"
 
 datadatabricksmwscredentials.NewDataDatabricksMwsCredentials(scope Construct, id *string, config DataDatabricksMwsCredentialsConfig) DataDatabricksMwsCredentials
 ```
@@ -284,7 +284,7 @@ func ResetIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentials.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/datadatabricksmwscredentials"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwscredentials"
 
 datadatabricksmwscredentials.DataDatabricksMwsCredentials_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentials.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/datadatabricksmwscredentials"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwscredentials"
 
 datadatabricksmwscredentials.DataDatabricksMwsCredentials_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datadatabricksmwscredentials.DataDatabricksMwsCredentials_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentials.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/datadatabricksmwscredentials"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwscredentials"
 
 datadatabricksmwscredentials.DataDatabricksMwsCredentials_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -551,7 +551,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentialsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/datadatabricksmwscredentials"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwscredentials"
 
 &datadatabricksmwscredentials.DataDatabricksMwsCredentialsConfig {
 	Connection: interface{},
@@ -577,8 +577,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/datadatabric
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentialsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentialsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentialsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentialsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/mws_credentials#id DataDatabricksMwsCredentials#id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentialsConfig.property.ids">Ids</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/mws_credentials#ids DataDatabricksMwsCredentials#ids}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentialsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/mws_credentials#id DataDatabricksMwsCredentials#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentialsConfig.property.ids">Ids</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/mws_credentials#ids DataDatabricksMwsCredentials#ids}. |
 
 ---
 
@@ -660,7 +660,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/mws_credentials#id DataDatabricksMwsCredentials#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/mws_credentials#id DataDatabricksMwsCredentials#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -675,7 +675,7 @@ Ids *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/mws_credentials#ids DataDatabricksMwsCredentials#ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/mws_credentials#ids DataDatabricksMwsCredentials#ids}.
 
 ---
 

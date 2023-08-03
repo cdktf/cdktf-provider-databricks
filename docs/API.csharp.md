@@ -1,6 +1,7 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+- [accessControlRuleSet](./accessControlRuleSet.csharp.md)
 - [awsS3Mount](./awsS3Mount.csharp.md)
 - [azureAdlsGen1Mount](./azureAdlsGen1Mount.csharp.md)
 - [azureAdlsGen2Mount](./azureAdlsGen2Mount.csharp.md)
@@ -24,6 +25,8 @@ The following submodules are available:
 - [dataDatabricksInstancePool](./dataDatabricksInstancePool.csharp.md)
 - [dataDatabricksJob](./dataDatabricksJob.csharp.md)
 - [dataDatabricksJobs](./dataDatabricksJobs.csharp.md)
+- [dataDatabricksMetastore](./dataDatabricksMetastore.csharp.md)
+- [dataDatabricksMetastores](./dataDatabricksMetastores.csharp.md)
 - [dataDatabricksMwsCredentials](./dataDatabricksMwsCredentials.csharp.md)
 - [dataDatabricksMwsWorkspaces](./dataDatabricksMwsWorkspaces.csharp.md)
 - [dataDatabricksNodeType](./dataDatabricksNodeType.csharp.md)

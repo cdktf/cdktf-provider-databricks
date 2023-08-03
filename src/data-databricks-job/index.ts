@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job
+// https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +8,34 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksJobConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#id DataDatabricksJob#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#id DataDatabricksJob#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}
   */
   readonly jobId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#job_name DataDatabricksJob#job_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#job_name DataDatabricksJob#job_name}
   */
   readonly jobName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#name DataDatabricksJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#name DataDatabricksJob#name}
   */
   readonly name?: string;
   /**
   * job_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#job_settings DataDatabricksJob#job_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#job_settings DataDatabricksJob#job_settings}
   */
   readonly jobSettings?: DataDatabricksJobJobSettings;
 }
 export interface DataDatabricksJobJobSettingsSettingsComputeSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#kind DataDatabricksJob#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#kind DataDatabricksJob#kind}
   */
   readonly kind?: string;
 }
@@ -105,13 +100,13 @@ export class DataDatabricksJobJobSettingsSettingsComputeSpecOutputReference exte
 }
 export interface DataDatabricksJobJobSettingsSettingsCompute {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#compute_key DataDatabricksJob#compute_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#compute_key DataDatabricksJob#compute_key}
   */
   readonly computeKey?: string;
   /**
   * spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#spec DataDatabricksJob#spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#spec DataDatabricksJob#spec}
   */
   readonly spec?: DataDatabricksJobJobSettingsSettingsComputeSpec;
 }
@@ -231,7 +226,7 @@ export class DataDatabricksJobJobSettingsSettingsComputeList extends cdktf.Compl
 }
 export interface DataDatabricksJobJobSettingsSettingsContinuous {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#pause_status DataDatabricksJob#pause_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#pause_status DataDatabricksJob#pause_status}
   */
   readonly pauseStatus?: string;
 }
@@ -296,27 +291,27 @@ export class DataDatabricksJobJobSettingsSettingsContinuousOutputReference exten
 }
 export interface DataDatabricksJobJobSettingsSettingsDbtTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#catalog DataDatabricksJob#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#catalog DataDatabricksJob#catalog}
   */
   readonly catalog?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#commands DataDatabricksJob#commands}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#commands DataDatabricksJob#commands}
   */
   readonly commands: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#profiles_directory DataDatabricksJob#profiles_directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#profiles_directory DataDatabricksJob#profiles_directory}
   */
   readonly profilesDirectory?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#project_directory DataDatabricksJob#project_directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#project_directory DataDatabricksJob#project_directory}
   */
   readonly projectDirectory?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#schema DataDatabricksJob#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#schema DataDatabricksJob#schema}
   */
   readonly schema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}
   */
   readonly warehouseId?: string;
 }
@@ -493,23 +488,27 @@ export class DataDatabricksJobJobSettingsSettingsDbtTaskOutputReference extends 
 }
 export interface DataDatabricksJobJobSettingsSettingsEmailNotifications {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#alert_on_last_attempt DataDatabricksJob#alert_on_last_attempt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#alert_on_last_attempt DataDatabricksJob#alert_on_last_attempt}
   */
   readonly alertOnLastAttempt?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}
   */
   readonly noAlertForSkippedRuns?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#on_failure DataDatabricksJob#on_failure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#on_duration_warning_threshold_exceeded DataDatabricksJob#on_duration_warning_threshold_exceeded}
+  */
+  readonly onDurationWarningThresholdExceeded?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#on_failure DataDatabricksJob#on_failure}
   */
   readonly onFailure?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#on_start DataDatabricksJob#on_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#on_start DataDatabricksJob#on_start}
   */
   readonly onStart?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#on_success DataDatabricksJob#on_success}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#on_success DataDatabricksJob#on_success}
   */
   readonly onSuccess?: string[];
 }
@@ -522,6 +521,7 @@ export function dataDatabricksJobJobSettingsSettingsEmailNotificationsToTerrafor
   return {
     alert_on_last_attempt: cdktf.booleanToTerraform(struct!.alertOnLastAttempt),
     no_alert_for_skipped_runs: cdktf.booleanToTerraform(struct!.noAlertForSkippedRuns),
+    on_duration_warning_threshold_exceeded: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.onDurationWarningThresholdExceeded),
     on_failure: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.onFailure),
     on_start: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.onStart),
     on_success: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.onSuccess),
@@ -550,6 +550,10 @@ export class DataDatabricksJobJobSettingsSettingsEmailNotificationsOutputReferen
       hasAnyValues = true;
       internalValueResult.noAlertForSkippedRuns = this._noAlertForSkippedRuns;
     }
+    if (this._onDurationWarningThresholdExceeded !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.onDurationWarningThresholdExceeded = this._onDurationWarningThresholdExceeded;
+    }
     if (this._onFailure !== undefined) {
       hasAnyValues = true;
       internalValueResult.onFailure = this._onFailure;
@@ -570,6 +574,7 @@ export class DataDatabricksJobJobSettingsSettingsEmailNotificationsOutputReferen
       this.isEmptyObject = false;
       this._alertOnLastAttempt = undefined;
       this._noAlertForSkippedRuns = undefined;
+      this._onDurationWarningThresholdExceeded = undefined;
       this._onFailure = undefined;
       this._onStart = undefined;
       this._onSuccess = undefined;
@@ -578,6 +583,7 @@ export class DataDatabricksJobJobSettingsSettingsEmailNotificationsOutputReferen
       this.isEmptyObject = Object.keys(value).length === 0;
       this._alertOnLastAttempt = value.alertOnLastAttempt;
       this._noAlertForSkippedRuns = value.noAlertForSkippedRuns;
+      this._onDurationWarningThresholdExceeded = value.onDurationWarningThresholdExceeded;
       this._onFailure = value.onFailure;
       this._onStart = value.onStart;
       this._onSuccess = value.onSuccess;
@@ -614,6 +620,22 @@ export class DataDatabricksJobJobSettingsSettingsEmailNotificationsOutputReferen
   // Temporarily expose input value. Use with caution.
   public get noAlertForSkippedRunsInput() {
     return this._noAlertForSkippedRuns;
+  }
+
+  // on_duration_warning_threshold_exceeded - computed: false, optional: true, required: false
+  private _onDurationWarningThresholdExceeded?: string[]; 
+  public get onDurationWarningThresholdExceeded() {
+    return this.getListAttribute('on_duration_warning_threshold_exceeded');
+  }
+  public set onDurationWarningThresholdExceeded(value: string[]) {
+    this._onDurationWarningThresholdExceeded = value;
+  }
+  public resetOnDurationWarningThresholdExceeded() {
+    this._onDurationWarningThresholdExceeded = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get onDurationWarningThresholdExceededInput() {
+    return this._onDurationWarningThresholdExceeded;
   }
 
   // on_failure - computed: false, optional: true, required: false
@@ -664,27 +686,146 @@ export class DataDatabricksJobJobSettingsSettingsEmailNotificationsOutputReferen
     return this._onSuccess;
   }
 }
+export interface DataDatabricksJobJobSettingsSettingsGitSourceJobSource {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#dirty_state DataDatabricksJob#dirty_state}
+  */
+  readonly dirtyState?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#import_from_git_branch DataDatabricksJob#import_from_git_branch}
+  */
+  readonly importFromGitBranch: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#job_config_path DataDatabricksJob#job_config_path}
+  */
+  readonly jobConfigPath: string;
+}
+
+export function dataDatabricksJobJobSettingsSettingsGitSourceJobSourceToTerraform(struct?: DataDatabricksJobJobSettingsSettingsGitSourceJobSourceOutputReference | DataDatabricksJobJobSettingsSettingsGitSourceJobSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    dirty_state: cdktf.stringToTerraform(struct!.dirtyState),
+    import_from_git_branch: cdktf.stringToTerraform(struct!.importFromGitBranch),
+    job_config_path: cdktf.stringToTerraform(struct!.jobConfigPath),
+  }
+}
+
+export class DataDatabricksJobJobSettingsSettingsGitSourceJobSourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataDatabricksJobJobSettingsSettingsGitSourceJobSource | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dirtyState !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dirtyState = this._dirtyState;
+    }
+    if (this._importFromGitBranch !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.importFromGitBranch = this._importFromGitBranch;
+    }
+    if (this._jobConfigPath !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.jobConfigPath = this._jobConfigPath;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksJobJobSettingsSettingsGitSourceJobSource | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._dirtyState = undefined;
+      this._importFromGitBranch = undefined;
+      this._jobConfigPath = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._dirtyState = value.dirtyState;
+      this._importFromGitBranch = value.importFromGitBranch;
+      this._jobConfigPath = value.jobConfigPath;
+    }
+  }
+
+  // dirty_state - computed: false, optional: true, required: false
+  private _dirtyState?: string; 
+  public get dirtyState() {
+    return this.getStringAttribute('dirty_state');
+  }
+  public set dirtyState(value: string) {
+    this._dirtyState = value;
+  }
+  public resetDirtyState() {
+    this._dirtyState = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dirtyStateInput() {
+    return this._dirtyState;
+  }
+
+  // import_from_git_branch - computed: false, optional: false, required: true
+  private _importFromGitBranch?: string; 
+  public get importFromGitBranch() {
+    return this.getStringAttribute('import_from_git_branch');
+  }
+  public set importFromGitBranch(value: string) {
+    this._importFromGitBranch = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get importFromGitBranchInput() {
+    return this._importFromGitBranch;
+  }
+
+  // job_config_path - computed: false, optional: false, required: true
+  private _jobConfigPath?: string; 
+  public get jobConfigPath() {
+    return this.getStringAttribute('job_config_path');
+  }
+  public set jobConfigPath(value: string) {
+    this._jobConfigPath = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jobConfigPathInput() {
+    return this._jobConfigPath;
+  }
+}
 export interface DataDatabricksJobJobSettingsSettingsGitSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#branch DataDatabricksJob#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#branch DataDatabricksJob#branch}
   */
   readonly branch?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#commit DataDatabricksJob#commit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#commit DataDatabricksJob#commit}
   */
   readonly commit?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#provider DataDatabricksJob#provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#provider DataDatabricksJob#provider}
   */
   readonly provider?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#tag DataDatabricksJob#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#tag DataDatabricksJob#tag}
   */
   readonly tag?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#url DataDatabricksJob#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#url DataDatabricksJob#url}
   */
   readonly url: string;
+  /**
+  * job_source block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#job_source DataDatabricksJob#job_source}
+  */
+  readonly jobSource?: DataDatabricksJobJobSettingsSettingsGitSourceJobSource;
 }
 
 export function dataDatabricksJobJobSettingsSettingsGitSourceToTerraform(struct?: DataDatabricksJobJobSettingsSettingsGitSourceOutputReference | DataDatabricksJobJobSettingsSettingsGitSource): any {
@@ -698,6 +839,7 @@ export function dataDatabricksJobJobSettingsSettingsGitSourceToTerraform(struct?
     provider: cdktf.stringToTerraform(struct!.provider),
     tag: cdktf.stringToTerraform(struct!.tag),
     url: cdktf.stringToTerraform(struct!.url),
+    job_source: dataDatabricksJobJobSettingsSettingsGitSourceJobSourceToTerraform(struct!.jobSource),
   }
 }
 
@@ -735,6 +877,10 @@ export class DataDatabricksJobJobSettingsSettingsGitSourceOutputReference extend
       hasAnyValues = true;
       internalValueResult.url = this._url;
     }
+    if (this._jobSource?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.jobSource = this._jobSource?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -746,6 +892,7 @@ export class DataDatabricksJobJobSettingsSettingsGitSourceOutputReference extend
       this._provider = undefined;
       this._tag = undefined;
       this._url = undefined;
+      this._jobSource.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -754,6 +901,7 @@ export class DataDatabricksJobJobSettingsSettingsGitSourceOutputReference extend
       this._provider = value.provider;
       this._tag = value.tag;
       this._url = value.url;
+      this._jobSource.internalValue = value.jobSource;
     }
   }
 
@@ -833,14 +981,245 @@ export class DataDatabricksJobJobSettingsSettingsGitSourceOutputReference extend
   public get urlInput() {
     return this._url;
   }
+
+  // job_source - computed: false, optional: true, required: false
+  private _jobSource = new DataDatabricksJobJobSettingsSettingsGitSourceJobSourceOutputReference(this, "job_source");
+  public get jobSource() {
+    return this._jobSource;
+  }
+  public putJobSource(value: DataDatabricksJobJobSettingsSettingsGitSourceJobSource) {
+    this._jobSource.internalValue = value;
+  }
+  public resetJobSource() {
+    this._jobSource.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jobSourceInput() {
+    return this._jobSource.internalValue;
+  }
+}
+export interface DataDatabricksJobJobSettingsSettingsHealthRules {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#metric DataDatabricksJob#metric}
+  */
+  readonly metric?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#op DataDatabricksJob#op}
+  */
+  readonly op?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#value DataDatabricksJob#value}
+  */
+  readonly value?: number;
+}
+
+export function dataDatabricksJobJobSettingsSettingsHealthRulesToTerraform(struct?: DataDatabricksJobJobSettingsSettingsHealthRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    metric: cdktf.stringToTerraform(struct!.metric),
+    op: cdktf.stringToTerraform(struct!.op),
+    value: cdktf.numberToTerraform(struct!.value),
+  }
+}
+
+export class DataDatabricksJobJobSettingsSettingsHealthRulesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDatabricksJobJobSettingsSettingsHealthRules | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._metric !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metric = this._metric;
+    }
+    if (this._op !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.op = this._op;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksJobJobSettingsSettingsHealthRules | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._metric = undefined;
+      this._op = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._metric = value.metric;
+      this._op = value.op;
+      this._value = value.value;
+    }
+  }
+
+  // metric - computed: false, optional: true, required: false
+  private _metric?: string; 
+  public get metric() {
+    return this.getStringAttribute('metric');
+  }
+  public set metric(value: string) {
+    this._metric = value;
+  }
+  public resetMetric() {
+    this._metric = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricInput() {
+    return this._metric;
+  }
+
+  // op - computed: false, optional: true, required: false
+  private _op?: string; 
+  public get op() {
+    return this.getStringAttribute('op');
+  }
+  public set op(value: string) {
+    this._op = value;
+  }
+  public resetOp() {
+    this._op = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get opInput() {
+    return this._op;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: number; 
+  public get value() {
+    return this.getNumberAttribute('value');
+  }
+  public set value(value: number) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class DataDatabricksJobJobSettingsSettingsHealthRulesList extends cdktf.ComplexList {
+  public internalValue? : DataDatabricksJobJobSettingsSettingsHealthRules[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDatabricksJobJobSettingsSettingsHealthRulesOutputReference {
+    return new DataDatabricksJobJobSettingsSettingsHealthRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataDatabricksJobJobSettingsSettingsHealth {
+  /**
+  * rules block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#rules DataDatabricksJob#rules}
+  */
+  readonly rules: DataDatabricksJobJobSettingsSettingsHealthRules[] | cdktf.IResolvable;
+}
+
+export function dataDatabricksJobJobSettingsSettingsHealthToTerraform(struct?: DataDatabricksJobJobSettingsSettingsHealthOutputReference | DataDatabricksJobJobSettingsSettingsHealth): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    rules: cdktf.listMapper(dataDatabricksJobJobSettingsSettingsHealthRulesToTerraform, true)(struct!.rules),
+  }
+}
+
+export class DataDatabricksJobJobSettingsSettingsHealthOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataDatabricksJobJobSettingsSettingsHealth | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._rules?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rules = this._rules?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksJobJobSettingsSettingsHealth | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._rules.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._rules.internalValue = value.rules;
+    }
+  }
+
+  // rules - computed: false, optional: false, required: true
+  private _rules = new DataDatabricksJobJobSettingsSettingsHealthRulesList(this, "rules", false);
+  public get rules() {
+    return this._rules;
+  }
+  public putRules(value: DataDatabricksJobJobSettingsSettingsHealthRules[] | cdktf.IResolvable) {
+    this._rules.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rulesInput() {
+    return this._rules.internalValue;
+  }
 }
 export interface DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAutoscale {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#max_workers DataDatabricksJob#max_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#max_workers DataDatabricksJob#max_workers}
   */
   readonly maxWorkers?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#min_workers DataDatabricksJob#min_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#min_workers DataDatabricksJob#min_workers}
   */
   readonly minWorkers?: number;
 }
@@ -928,35 +1307,35 @@ export class DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAutoscaleOu
 }
 export interface DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#availability DataDatabricksJob#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#availability DataDatabricksJob#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#ebs_volume_count DataDatabricksJob#ebs_volume_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#ebs_volume_count DataDatabricksJob#ebs_volume_count}
   */
   readonly ebsVolumeCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#ebs_volume_size DataDatabricksJob#ebs_volume_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#ebs_volume_size DataDatabricksJob#ebs_volume_size}
   */
   readonly ebsVolumeSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#ebs_volume_type DataDatabricksJob#ebs_volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#ebs_volume_type DataDatabricksJob#ebs_volume_type}
   */
   readonly ebsVolumeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#instance_profile_arn DataDatabricksJob#instance_profile_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#instance_profile_arn DataDatabricksJob#instance_profile_arn}
   */
   readonly instanceProfileArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#spot_bid_price_percent DataDatabricksJob#spot_bid_price_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#spot_bid_price_percent DataDatabricksJob#spot_bid_price_percent}
   */
   readonly spotBidPricePercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -1182,15 +1561,15 @@ export class DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttribut
 }
 export interface DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAzureAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#availability DataDatabricksJob#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#availability DataDatabricksJob#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#spot_bid_max_price DataDatabricksJob#spot_bid_max_price}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#spot_bid_max_price DataDatabricksJob#spot_bid_max_price}
   */
   readonly spotBidMaxPrice?: number;
 }
@@ -1301,7 +1680,7 @@ export class DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAzureAttrib
 }
 export interface DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfDbfs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#destination DataDatabricksJob#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#destination DataDatabricksJob#destination}
   */
   readonly destination: string;
 }
@@ -1363,31 +1742,31 @@ export class DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogC
 }
 export interface DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}
   */
   readonly cannedAcl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#destination DataDatabricksJob#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#destination DataDatabricksJob#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}
   */
   readonly enableEncryption?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}
   */
   readonly encryptionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}
   */
   readonly endpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}
   */
   readonly kmsKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#region DataDatabricksJob#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#region DataDatabricksJob#region}
   */
   readonly region?: string;
 }
@@ -1589,13 +1968,13 @@ export interface DataDatabricksJobJobSettingsSettingsJobClusterNewClusterCluster
   /**
   * dbfs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#dbfs DataDatabricksJob#dbfs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#dbfs DataDatabricksJob#dbfs}
   */
   readonly dbfs?: DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfDbfs;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#s3 DataDatabricksJob#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#s3 DataDatabricksJob#s3}
   */
   readonly s3?: DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3;
 }
@@ -1683,11 +2062,11 @@ export class DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogC
 }
 export interface DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoNetworkFilesystemInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#mount_options DataDatabricksJob#mount_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#mount_options DataDatabricksJob#mount_options}
   */
   readonly mountOptions?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#server_address DataDatabricksJob#server_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#server_address DataDatabricksJob#server_address}
   */
   readonly serverAddress: string;
 }
@@ -1772,17 +2151,17 @@ export class DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMoun
 }
 export interface DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#local_mount_dir_path DataDatabricksJob#local_mount_dir_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#local_mount_dir_path DataDatabricksJob#local_mount_dir_path}
   */
   readonly localMountDirPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#remote_mount_dir_path DataDatabricksJob#remote_mount_dir_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#remote_mount_dir_path DataDatabricksJob#remote_mount_dir_path}
   */
   readonly remoteMountDirPath?: string;
   /**
   * network_filesystem_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#network_filesystem_info DataDatabricksJob#network_filesystem_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#network_filesystem_info DataDatabricksJob#network_filesystem_info}
   */
   readonly networkFilesystemInfo: DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoNetworkFilesystemInfo;
 }
@@ -1919,11 +2298,11 @@ export class DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMoun
 }
 export interface DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImageBasicAuth {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#password DataDatabricksJob#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#password DataDatabricksJob#password}
   */
   readonly password: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#username DataDatabricksJob#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#username DataDatabricksJob#username}
   */
   readonly username: string;
 }
@@ -2005,13 +2384,13 @@ export class DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImage
 }
 export interface DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#url DataDatabricksJob#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#url DataDatabricksJob#url}
   */
   readonly url: string;
   /**
   * basic_auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#basic_auth DataDatabricksJob#basic_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#basic_auth DataDatabricksJob#basic_auth}
   */
   readonly basicAuth?: DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImageBasicAuth;
 }
@@ -2096,23 +2475,23 @@ export class DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImage
 }
 export interface DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#availability DataDatabricksJob#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#availability DataDatabricksJob#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#boot_disk_size DataDatabricksJob#boot_disk_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#boot_disk_size DataDatabricksJob#boot_disk_size}
   */
   readonly bootDiskSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#google_service_account DataDatabricksJob#google_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#google_service_account DataDatabricksJob#google_service_account}
   */
   readonly googleServiceAccount?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#use_preemptible_executors DataDatabricksJob#use_preemptible_executors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#use_preemptible_executors DataDatabricksJob#use_preemptible_executors}
   */
   readonly usePreemptibleExecutors?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -2269,7 +2648,7 @@ export class DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttribut
 }
 export interface DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfss {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#destination DataDatabricksJob#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#destination DataDatabricksJob#destination}
   */
   readonly destination?: string;
 }
@@ -2334,7 +2713,7 @@ export class DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScripts
 }
 export interface DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsDbfs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#destination DataDatabricksJob#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#destination DataDatabricksJob#destination}
   */
   readonly destination: string;
 }
@@ -2396,7 +2775,7 @@ export class DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScripts
 }
 export interface DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsFile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#destination DataDatabricksJob#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#destination DataDatabricksJob#destination}
   */
   readonly destination?: string;
 }
@@ -2461,7 +2840,7 @@ export class DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScripts
 }
 export interface DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsGcs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#destination DataDatabricksJob#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#destination DataDatabricksJob#destination}
   */
   readonly destination?: string;
 }
@@ -2526,31 +2905,31 @@ export class DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScripts
 }
 export interface DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}
   */
   readonly cannedAcl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#destination DataDatabricksJob#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#destination DataDatabricksJob#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}
   */
   readonly enableEncryption?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}
   */
   readonly encryptionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}
   */
   readonly endpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}
   */
   readonly kmsKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#region DataDatabricksJob#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#region DataDatabricksJob#region}
   */
   readonly region?: string;
 }
@@ -2750,7 +3129,7 @@ export class DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScripts
 }
 export interface DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsWorkspace {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#destination DataDatabricksJob#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#destination DataDatabricksJob#destination}
   */
   readonly destination?: string;
 }
@@ -2817,37 +3196,37 @@ export interface DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScr
   /**
   * abfss block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#abfss DataDatabricksJob#abfss}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#abfss DataDatabricksJob#abfss}
   */
   readonly abfss?: DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfss;
   /**
   * dbfs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#dbfs DataDatabricksJob#dbfs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#dbfs DataDatabricksJob#dbfs}
   */
   readonly dbfs?: DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsDbfs;
   /**
   * file block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#file DataDatabricksJob#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#file DataDatabricksJob#file}
   */
   readonly file?: DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsFile;
   /**
   * gcs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#gcs DataDatabricksJob#gcs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#gcs DataDatabricksJob#gcs}
   */
   readonly gcs?: DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsGcs;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#s3 DataDatabricksJob#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#s3 DataDatabricksJob#s3}
   */
   readonly s3?: DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3;
   /**
   * workspace block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#workspace DataDatabricksJob#workspace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#workspace DataDatabricksJob#workspace}
   */
   readonly workspace?: DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsWorkspace;
 }
@@ -3059,11 +3438,11 @@ export class DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScripts
 }
 export interface DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadTypeClients {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#jobs DataDatabricksJob#jobs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#jobs DataDatabricksJob#jobs}
   */
   readonly jobs?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#notebooks DataDatabricksJob#notebooks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#notebooks DataDatabricksJob#notebooks}
   */
   readonly notebooks?: boolean | cdktf.IResolvable;
 }
@@ -3153,7 +3532,7 @@ export interface DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloa
   /**
   * clients block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#clients DataDatabricksJob#clients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#clients DataDatabricksJob#clients}
   */
   readonly clients: DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadTypeClients;
 }
@@ -3215,141 +3594,141 @@ export class DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadTyp
 }
 export interface DataDatabricksJobJobSettingsSettingsJobClusterNewCluster {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#apply_policy_default_values DataDatabricksJob#apply_policy_default_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#apply_policy_default_values DataDatabricksJob#apply_policy_default_values}
   */
   readonly applyPolicyDefaultValues?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#autotermination_minutes DataDatabricksJob#autotermination_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#autotermination_minutes DataDatabricksJob#autotermination_minutes}
   */
   readonly autoterminationMinutes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#cluster_id DataDatabricksJob#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#cluster_id DataDatabricksJob#cluster_id}
   */
   readonly clusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#cluster_name DataDatabricksJob#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#cluster_name DataDatabricksJob#cluster_name}
   */
   readonly clusterName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#custom_tags DataDatabricksJob#custom_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#custom_tags DataDatabricksJob#custom_tags}
   */
   readonly customTags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#data_security_mode DataDatabricksJob#data_security_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#data_security_mode DataDatabricksJob#data_security_mode}
   */
   readonly dataSecurityMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#driver_instance_pool_id DataDatabricksJob#driver_instance_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#driver_instance_pool_id DataDatabricksJob#driver_instance_pool_id}
   */
   readonly driverInstancePoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#driver_node_type_id DataDatabricksJob#driver_node_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#driver_node_type_id DataDatabricksJob#driver_node_type_id}
   */
   readonly driverNodeTypeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#enable_elastic_disk DataDatabricksJob#enable_elastic_disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#enable_elastic_disk DataDatabricksJob#enable_elastic_disk}
   */
   readonly enableElasticDisk?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#enable_local_disk_encryption DataDatabricksJob#enable_local_disk_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#enable_local_disk_encryption DataDatabricksJob#enable_local_disk_encryption}
   */
   readonly enableLocalDiskEncryption?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#idempotency_token DataDatabricksJob#idempotency_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#idempotency_token DataDatabricksJob#idempotency_token}
   */
   readonly idempotencyToken?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#instance_pool_id DataDatabricksJob#instance_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#instance_pool_id DataDatabricksJob#instance_pool_id}
   */
   readonly instancePoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#node_type_id DataDatabricksJob#node_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#node_type_id DataDatabricksJob#node_type_id}
   */
   readonly nodeTypeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#num_workers DataDatabricksJob#num_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#num_workers DataDatabricksJob#num_workers}
   */
   readonly numWorkers: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#policy_id DataDatabricksJob#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#policy_id DataDatabricksJob#policy_id}
   */
   readonly policyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#runtime_engine DataDatabricksJob#runtime_engine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#runtime_engine DataDatabricksJob#runtime_engine}
   */
   readonly runtimeEngine?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#single_user_name DataDatabricksJob#single_user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#single_user_name DataDatabricksJob#single_user_name}
   */
   readonly singleUserName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#spark_conf DataDatabricksJob#spark_conf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#spark_conf DataDatabricksJob#spark_conf}
   */
   readonly sparkConf?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#spark_env_vars DataDatabricksJob#spark_env_vars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#spark_env_vars DataDatabricksJob#spark_env_vars}
   */
   readonly sparkEnvVars?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#spark_version DataDatabricksJob#spark_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#spark_version DataDatabricksJob#spark_version}
   */
   readonly sparkVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#ssh_public_keys DataDatabricksJob#ssh_public_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#ssh_public_keys DataDatabricksJob#ssh_public_keys}
   */
   readonly sshPublicKeys?: string[];
   /**
   * autoscale block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#autoscale DataDatabricksJob#autoscale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#autoscale DataDatabricksJob#autoscale}
   */
   readonly autoscale?: DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAutoscale;
   /**
   * aws_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#aws_attributes DataDatabricksJob#aws_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#aws_attributes DataDatabricksJob#aws_attributes}
   */
   readonly awsAttributes?: DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributes;
   /**
   * azure_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#azure_attributes DataDatabricksJob#azure_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#azure_attributes DataDatabricksJob#azure_attributes}
   */
   readonly azureAttributes?: DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAzureAttributes;
   /**
   * cluster_log_conf block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#cluster_log_conf DataDatabricksJob#cluster_log_conf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#cluster_log_conf DataDatabricksJob#cluster_log_conf}
   */
   readonly clusterLogConf?: DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConf;
   /**
   * cluster_mount_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#cluster_mount_info DataDatabricksJob#cluster_mount_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#cluster_mount_info DataDatabricksJob#cluster_mount_info}
   */
   readonly clusterMountInfo?: DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfo[] | cdktf.IResolvable;
   /**
   * docker_image block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#docker_image DataDatabricksJob#docker_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#docker_image DataDatabricksJob#docker_image}
   */
   readonly dockerImage?: DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImage;
   /**
   * gcp_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#gcp_attributes DataDatabricksJob#gcp_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#gcp_attributes DataDatabricksJob#gcp_attributes}
   */
   readonly gcpAttributes?: DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributes;
   /**
   * init_scripts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#init_scripts DataDatabricksJob#init_scripts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#init_scripts DataDatabricksJob#init_scripts}
   */
   readonly initScripts?: DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScripts[] | cdktf.IResolvable;
   /**
   * workload_type block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#workload_type DataDatabricksJob#workload_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#workload_type DataDatabricksJob#workload_type}
   */
   readonly workloadType?: DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadType;
 }
@@ -4075,13 +4454,13 @@ export class DataDatabricksJobJobSettingsSettingsJobClusterNewClusterOutputRefer
 }
 export interface DataDatabricksJobJobSettingsSettingsJobCluster {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#job_cluster_key DataDatabricksJob#job_cluster_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#job_cluster_key DataDatabricksJob#job_cluster_key}
   */
   readonly jobClusterKey?: string;
   /**
   * new_cluster block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#new_cluster DataDatabricksJob#new_cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#new_cluster DataDatabricksJob#new_cluster}
   */
   readonly newCluster?: DataDatabricksJobJobSettingsSettingsJobClusterNewCluster;
 }
@@ -4201,11 +4580,11 @@ export class DataDatabricksJobJobSettingsSettingsJobClusterList extends cdktf.Co
 }
 export interface DataDatabricksJobJobSettingsSettingsLibraryCran {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#package DataDatabricksJob#package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#package DataDatabricksJob#package}
   */
   readonly package: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#repo DataDatabricksJob#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#repo DataDatabricksJob#repo}
   */
   readonly repo?: string;
 }
@@ -4290,15 +4669,15 @@ export class DataDatabricksJobJobSettingsSettingsLibraryCranOutputReference exte
 }
 export interface DataDatabricksJobJobSettingsSettingsLibraryMaven {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#coordinates DataDatabricksJob#coordinates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#coordinates DataDatabricksJob#coordinates}
   */
   readonly coordinates: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#exclusions DataDatabricksJob#exclusions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#exclusions DataDatabricksJob#exclusions}
   */
   readonly exclusions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#repo DataDatabricksJob#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#repo DataDatabricksJob#repo}
   */
   readonly repo?: string;
 }
@@ -4406,11 +4785,11 @@ export class DataDatabricksJobJobSettingsSettingsLibraryMavenOutputReference ext
 }
 export interface DataDatabricksJobJobSettingsSettingsLibraryPypi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#package DataDatabricksJob#package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#package DataDatabricksJob#package}
   */
   readonly package: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#repo DataDatabricksJob#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#repo DataDatabricksJob#repo}
   */
   readonly repo?: string;
 }
@@ -4495,33 +4874,33 @@ export class DataDatabricksJobJobSettingsSettingsLibraryPypiOutputReference exte
 }
 export interface DataDatabricksJobJobSettingsSettingsLibrary {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#egg DataDatabricksJob#egg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#egg DataDatabricksJob#egg}
   */
   readonly egg?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#jar DataDatabricksJob#jar}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#jar DataDatabricksJob#jar}
   */
   readonly jar?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#whl DataDatabricksJob#whl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#whl DataDatabricksJob#whl}
   */
   readonly whl?: string;
   /**
   * cran block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#cran DataDatabricksJob#cran}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#cran DataDatabricksJob#cran}
   */
   readonly cran?: DataDatabricksJobJobSettingsSettingsLibraryCran;
   /**
   * maven block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#maven DataDatabricksJob#maven}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#maven DataDatabricksJob#maven}
   */
   readonly maven?: DataDatabricksJobJobSettingsSettingsLibraryMaven;
   /**
   * pypi block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#pypi DataDatabricksJob#pypi}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#pypi DataDatabricksJob#pypi}
   */
   readonly pypi?: DataDatabricksJobJobSettingsSettingsLibraryPypi;
 }
@@ -4733,11 +5112,11 @@ export class DataDatabricksJobJobSettingsSettingsLibraryList extends cdktf.Compl
 }
 export interface DataDatabricksJobJobSettingsSettingsNewClusterAutoscale {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#max_workers DataDatabricksJob#max_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#max_workers DataDatabricksJob#max_workers}
   */
   readonly maxWorkers?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#min_workers DataDatabricksJob#min_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#min_workers DataDatabricksJob#min_workers}
   */
   readonly minWorkers?: number;
 }
@@ -4825,35 +5204,35 @@ export class DataDatabricksJobJobSettingsSettingsNewClusterAutoscaleOutputRefere
 }
 export interface DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#availability DataDatabricksJob#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#availability DataDatabricksJob#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#ebs_volume_count DataDatabricksJob#ebs_volume_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#ebs_volume_count DataDatabricksJob#ebs_volume_count}
   */
   readonly ebsVolumeCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#ebs_volume_size DataDatabricksJob#ebs_volume_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#ebs_volume_size DataDatabricksJob#ebs_volume_size}
   */
   readonly ebsVolumeSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#ebs_volume_type DataDatabricksJob#ebs_volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#ebs_volume_type DataDatabricksJob#ebs_volume_type}
   */
   readonly ebsVolumeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#instance_profile_arn DataDatabricksJob#instance_profile_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#instance_profile_arn DataDatabricksJob#instance_profile_arn}
   */
   readonly instanceProfileArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#spot_bid_price_percent DataDatabricksJob#spot_bid_price_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#spot_bid_price_percent DataDatabricksJob#spot_bid_price_percent}
   */
   readonly spotBidPricePercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -5079,15 +5458,15 @@ export class DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributesOutputRe
 }
 export interface DataDatabricksJobJobSettingsSettingsNewClusterAzureAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#availability DataDatabricksJob#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#availability DataDatabricksJob#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#spot_bid_max_price DataDatabricksJob#spot_bid_max_price}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#spot_bid_max_price DataDatabricksJob#spot_bid_max_price}
   */
   readonly spotBidMaxPrice?: number;
 }
@@ -5198,7 +5577,7 @@ export class DataDatabricksJobJobSettingsSettingsNewClusterAzureAttributesOutput
 }
 export interface DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfDbfs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#destination DataDatabricksJob#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#destination DataDatabricksJob#destination}
   */
   readonly destination: string;
 }
@@ -5260,31 +5639,31 @@ export class DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfDbfsOut
 }
 export interface DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}
   */
   readonly cannedAcl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#destination DataDatabricksJob#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#destination DataDatabricksJob#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}
   */
   readonly enableEncryption?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}
   */
   readonly encryptionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}
   */
   readonly endpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}
   */
   readonly kmsKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#region DataDatabricksJob#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#region DataDatabricksJob#region}
   */
   readonly region?: string;
 }
@@ -5486,13 +5865,13 @@ export interface DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConf {
   /**
   * dbfs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#dbfs DataDatabricksJob#dbfs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#dbfs DataDatabricksJob#dbfs}
   */
   readonly dbfs?: DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfDbfs;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#s3 DataDatabricksJob#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#s3 DataDatabricksJob#s3}
   */
   readonly s3?: DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3;
 }
@@ -5580,11 +5959,11 @@ export class DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfOutputR
 }
 export interface DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoNetworkFilesystemInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#mount_options DataDatabricksJob#mount_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#mount_options DataDatabricksJob#mount_options}
   */
   readonly mountOptions?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#server_address DataDatabricksJob#server_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#server_address DataDatabricksJob#server_address}
   */
   readonly serverAddress: string;
 }
@@ -5669,17 +6048,17 @@ export class DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoNetwo
 }
 export interface DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#local_mount_dir_path DataDatabricksJob#local_mount_dir_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#local_mount_dir_path DataDatabricksJob#local_mount_dir_path}
   */
   readonly localMountDirPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#remote_mount_dir_path DataDatabricksJob#remote_mount_dir_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#remote_mount_dir_path DataDatabricksJob#remote_mount_dir_path}
   */
   readonly remoteMountDirPath?: string;
   /**
   * network_filesystem_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#network_filesystem_info DataDatabricksJob#network_filesystem_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#network_filesystem_info DataDatabricksJob#network_filesystem_info}
   */
   readonly networkFilesystemInfo: DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoNetworkFilesystemInfo;
 }
@@ -5816,11 +6195,11 @@ export class DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoList 
 }
 export interface DataDatabricksJobJobSettingsSettingsNewClusterDockerImageBasicAuth {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#password DataDatabricksJob#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#password DataDatabricksJob#password}
   */
   readonly password: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#username DataDatabricksJob#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#username DataDatabricksJob#username}
   */
   readonly username: string;
 }
@@ -5902,13 +6281,13 @@ export class DataDatabricksJobJobSettingsSettingsNewClusterDockerImageBasicAuthO
 }
 export interface DataDatabricksJobJobSettingsSettingsNewClusterDockerImage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#url DataDatabricksJob#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#url DataDatabricksJob#url}
   */
   readonly url: string;
   /**
   * basic_auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#basic_auth DataDatabricksJob#basic_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#basic_auth DataDatabricksJob#basic_auth}
   */
   readonly basicAuth?: DataDatabricksJobJobSettingsSettingsNewClusterDockerImageBasicAuth;
 }
@@ -5993,23 +6372,23 @@ export class DataDatabricksJobJobSettingsSettingsNewClusterDockerImageOutputRefe
 }
 export interface DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#availability DataDatabricksJob#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#availability DataDatabricksJob#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#boot_disk_size DataDatabricksJob#boot_disk_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#boot_disk_size DataDatabricksJob#boot_disk_size}
   */
   readonly bootDiskSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#google_service_account DataDatabricksJob#google_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#google_service_account DataDatabricksJob#google_service_account}
   */
   readonly googleServiceAccount?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#use_preemptible_executors DataDatabricksJob#use_preemptible_executors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#use_preemptible_executors DataDatabricksJob#use_preemptible_executors}
   */
   readonly usePreemptibleExecutors?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -6166,7 +6545,7 @@ export class DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributesOutputRe
 }
 export interface DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfss {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#destination DataDatabricksJob#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#destination DataDatabricksJob#destination}
   */
   readonly destination?: string;
 }
@@ -6231,7 +6610,7 @@ export class DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfssOutpu
 }
 export interface DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsDbfs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#destination DataDatabricksJob#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#destination DataDatabricksJob#destination}
   */
   readonly destination: string;
 }
@@ -6293,7 +6672,7 @@ export class DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsDbfsOutput
 }
 export interface DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsFile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#destination DataDatabricksJob#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#destination DataDatabricksJob#destination}
   */
   readonly destination?: string;
 }
@@ -6358,7 +6737,7 @@ export class DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsFileOutput
 }
 export interface DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsGcs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#destination DataDatabricksJob#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#destination DataDatabricksJob#destination}
   */
   readonly destination?: string;
 }
@@ -6423,31 +6802,31 @@ export class DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsGcsOutputR
 }
 export interface DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}
   */
   readonly cannedAcl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#destination DataDatabricksJob#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#destination DataDatabricksJob#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}
   */
   readonly enableEncryption?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}
   */
   readonly encryptionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}
   */
   readonly endpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}
   */
   readonly kmsKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#region DataDatabricksJob#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#region DataDatabricksJob#region}
   */
   readonly region?: string;
 }
@@ -6647,7 +7026,7 @@ export class DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3OutputRe
 }
 export interface DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsWorkspace {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#destination DataDatabricksJob#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#destination DataDatabricksJob#destination}
   */
   readonly destination?: string;
 }
@@ -6714,37 +7093,37 @@ export interface DataDatabricksJobJobSettingsSettingsNewClusterInitScripts {
   /**
   * abfss block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#abfss DataDatabricksJob#abfss}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#abfss DataDatabricksJob#abfss}
   */
   readonly abfss?: DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfss;
   /**
   * dbfs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#dbfs DataDatabricksJob#dbfs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#dbfs DataDatabricksJob#dbfs}
   */
   readonly dbfs?: DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsDbfs;
   /**
   * file block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#file DataDatabricksJob#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#file DataDatabricksJob#file}
   */
   readonly file?: DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsFile;
   /**
   * gcs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#gcs DataDatabricksJob#gcs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#gcs DataDatabricksJob#gcs}
   */
   readonly gcs?: DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsGcs;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#s3 DataDatabricksJob#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#s3 DataDatabricksJob#s3}
   */
   readonly s3?: DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3;
   /**
   * workspace block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#workspace DataDatabricksJob#workspace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#workspace DataDatabricksJob#workspace}
   */
   readonly workspace?: DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsWorkspace;
 }
@@ -6956,11 +7335,11 @@ export class DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsList exten
 }
 export interface DataDatabricksJobJobSettingsSettingsNewClusterWorkloadTypeClients {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#jobs DataDatabricksJob#jobs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#jobs DataDatabricksJob#jobs}
   */
   readonly jobs?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#notebooks DataDatabricksJob#notebooks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#notebooks DataDatabricksJob#notebooks}
   */
   readonly notebooks?: boolean | cdktf.IResolvable;
 }
@@ -7050,7 +7429,7 @@ export interface DataDatabricksJobJobSettingsSettingsNewClusterWorkloadType {
   /**
   * clients block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#clients DataDatabricksJob#clients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#clients DataDatabricksJob#clients}
   */
   readonly clients: DataDatabricksJobJobSettingsSettingsNewClusterWorkloadTypeClients;
 }
@@ -7112,141 +7491,141 @@ export class DataDatabricksJobJobSettingsSettingsNewClusterWorkloadTypeOutputRef
 }
 export interface DataDatabricksJobJobSettingsSettingsNewCluster {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#apply_policy_default_values DataDatabricksJob#apply_policy_default_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#apply_policy_default_values DataDatabricksJob#apply_policy_default_values}
   */
   readonly applyPolicyDefaultValues?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#autotermination_minutes DataDatabricksJob#autotermination_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#autotermination_minutes DataDatabricksJob#autotermination_minutes}
   */
   readonly autoterminationMinutes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#cluster_id DataDatabricksJob#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#cluster_id DataDatabricksJob#cluster_id}
   */
   readonly clusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#cluster_name DataDatabricksJob#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#cluster_name DataDatabricksJob#cluster_name}
   */
   readonly clusterName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#custom_tags DataDatabricksJob#custom_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#custom_tags DataDatabricksJob#custom_tags}
   */
   readonly customTags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#data_security_mode DataDatabricksJob#data_security_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#data_security_mode DataDatabricksJob#data_security_mode}
   */
   readonly dataSecurityMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#driver_instance_pool_id DataDatabricksJob#driver_instance_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#driver_instance_pool_id DataDatabricksJob#driver_instance_pool_id}
   */
   readonly driverInstancePoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#driver_node_type_id DataDatabricksJob#driver_node_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#driver_node_type_id DataDatabricksJob#driver_node_type_id}
   */
   readonly driverNodeTypeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#enable_elastic_disk DataDatabricksJob#enable_elastic_disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#enable_elastic_disk DataDatabricksJob#enable_elastic_disk}
   */
   readonly enableElasticDisk?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#enable_local_disk_encryption DataDatabricksJob#enable_local_disk_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#enable_local_disk_encryption DataDatabricksJob#enable_local_disk_encryption}
   */
   readonly enableLocalDiskEncryption?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#idempotency_token DataDatabricksJob#idempotency_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#idempotency_token DataDatabricksJob#idempotency_token}
   */
   readonly idempotencyToken?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#instance_pool_id DataDatabricksJob#instance_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#instance_pool_id DataDatabricksJob#instance_pool_id}
   */
   readonly instancePoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#node_type_id DataDatabricksJob#node_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#node_type_id DataDatabricksJob#node_type_id}
   */
   readonly nodeTypeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#num_workers DataDatabricksJob#num_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#num_workers DataDatabricksJob#num_workers}
   */
   readonly numWorkers: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#policy_id DataDatabricksJob#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#policy_id DataDatabricksJob#policy_id}
   */
   readonly policyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#runtime_engine DataDatabricksJob#runtime_engine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#runtime_engine DataDatabricksJob#runtime_engine}
   */
   readonly runtimeEngine?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#single_user_name DataDatabricksJob#single_user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#single_user_name DataDatabricksJob#single_user_name}
   */
   readonly singleUserName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#spark_conf DataDatabricksJob#spark_conf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#spark_conf DataDatabricksJob#spark_conf}
   */
   readonly sparkConf?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#spark_env_vars DataDatabricksJob#spark_env_vars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#spark_env_vars DataDatabricksJob#spark_env_vars}
   */
   readonly sparkEnvVars?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#spark_version DataDatabricksJob#spark_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#spark_version DataDatabricksJob#spark_version}
   */
   readonly sparkVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#ssh_public_keys DataDatabricksJob#ssh_public_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#ssh_public_keys DataDatabricksJob#ssh_public_keys}
   */
   readonly sshPublicKeys?: string[];
   /**
   * autoscale block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#autoscale DataDatabricksJob#autoscale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#autoscale DataDatabricksJob#autoscale}
   */
   readonly autoscale?: DataDatabricksJobJobSettingsSettingsNewClusterAutoscale;
   /**
   * aws_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#aws_attributes DataDatabricksJob#aws_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#aws_attributes DataDatabricksJob#aws_attributes}
   */
   readonly awsAttributes?: DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes;
   /**
   * azure_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#azure_attributes DataDatabricksJob#azure_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#azure_attributes DataDatabricksJob#azure_attributes}
   */
   readonly azureAttributes?: DataDatabricksJobJobSettingsSettingsNewClusterAzureAttributes;
   /**
   * cluster_log_conf block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#cluster_log_conf DataDatabricksJob#cluster_log_conf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#cluster_log_conf DataDatabricksJob#cluster_log_conf}
   */
   readonly clusterLogConf?: DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConf;
   /**
   * cluster_mount_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#cluster_mount_info DataDatabricksJob#cluster_mount_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#cluster_mount_info DataDatabricksJob#cluster_mount_info}
   */
   readonly clusterMountInfo?: DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfo[] | cdktf.IResolvable;
   /**
   * docker_image block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#docker_image DataDatabricksJob#docker_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#docker_image DataDatabricksJob#docker_image}
   */
   readonly dockerImage?: DataDatabricksJobJobSettingsSettingsNewClusterDockerImage;
   /**
   * gcp_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#gcp_attributes DataDatabricksJob#gcp_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#gcp_attributes DataDatabricksJob#gcp_attributes}
   */
   readonly gcpAttributes?: DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributes;
   /**
   * init_scripts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#init_scripts DataDatabricksJob#init_scripts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#init_scripts DataDatabricksJob#init_scripts}
   */
   readonly initScripts?: DataDatabricksJobJobSettingsSettingsNewClusterInitScripts[] | cdktf.IResolvable;
   /**
   * workload_type block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#workload_type DataDatabricksJob#workload_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#workload_type DataDatabricksJob#workload_type}
   */
   readonly workloadType?: DataDatabricksJobJobSettingsSettingsNewClusterWorkloadType;
 }
@@ -7972,15 +8351,15 @@ export class DataDatabricksJobJobSettingsSettingsNewClusterOutputReference exten
 }
 export interface DataDatabricksJobJobSettingsSettingsNotebookTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#base_parameters DataDatabricksJob#base_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#base_parameters DataDatabricksJob#base_parameters}
   */
   readonly baseParameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#notebook_path DataDatabricksJob#notebook_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#notebook_path DataDatabricksJob#notebook_path}
   */
   readonly notebookPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#source DataDatabricksJob#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#source DataDatabricksJob#source}
   */
   readonly source?: string;
 }
@@ -8088,11 +8467,11 @@ export class DataDatabricksJobJobSettingsSettingsNotebookTaskOutputReference ext
 }
 export interface DataDatabricksJobJobSettingsSettingsNotificationSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#no_alert_for_canceled_runs DataDatabricksJob#no_alert_for_canceled_runs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#no_alert_for_canceled_runs DataDatabricksJob#no_alert_for_canceled_runs}
   */
   readonly noAlertForCanceledRuns?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}
   */
   readonly noAlertForSkippedRuns?: boolean | cdktf.IResolvable;
 }
@@ -8180,7 +8559,11 @@ export class DataDatabricksJobJobSettingsSettingsNotificationSettingsOutputRefer
 }
 export interface DataDatabricksJobJobSettingsSettingsPipelineTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#pipeline_id DataDatabricksJob#pipeline_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#full_refresh DataDatabricksJob#full_refresh}
+  */
+  readonly fullRefresh?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#pipeline_id DataDatabricksJob#pipeline_id}
   */
   readonly pipelineId: string;
 }
@@ -8191,6 +8574,7 @@ export function dataDatabricksJobJobSettingsSettingsPipelineTaskToTerraform(stru
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    full_refresh: cdktf.booleanToTerraform(struct!.fullRefresh),
     pipeline_id: cdktf.stringToTerraform(struct!.pipelineId),
   }
 }
@@ -8209,6 +8593,10 @@ export class DataDatabricksJobJobSettingsSettingsPipelineTaskOutputReference ext
   public get internalValue(): DataDatabricksJobJobSettingsSettingsPipelineTask | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._fullRefresh !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fullRefresh = this._fullRefresh;
+    }
     if (this._pipelineId !== undefined) {
       hasAnyValues = true;
       internalValueResult.pipelineId = this._pipelineId;
@@ -8219,12 +8607,30 @@ export class DataDatabricksJobJobSettingsSettingsPipelineTaskOutputReference ext
   public set internalValue(value: DataDatabricksJobJobSettingsSettingsPipelineTask | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._fullRefresh = undefined;
       this._pipelineId = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._fullRefresh = value.fullRefresh;
       this._pipelineId = value.pipelineId;
     }
+  }
+
+  // full_refresh - computed: false, optional: true, required: false
+  private _fullRefresh?: boolean | cdktf.IResolvable; 
+  public get fullRefresh() {
+    return this.getBooleanAttribute('full_refresh');
+  }
+  public set fullRefresh(value: boolean | cdktf.IResolvable) {
+    this._fullRefresh = value;
+  }
+  public resetFullRefresh() {
+    this._fullRefresh = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fullRefreshInput() {
+    return this._fullRefresh;
   }
 
   // pipeline_id - computed: false, optional: false, required: true
@@ -8242,19 +8648,19 @@ export class DataDatabricksJobJobSettingsSettingsPipelineTaskOutputReference ext
 }
 export interface DataDatabricksJobJobSettingsSettingsPythonWheelTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#entry_point DataDatabricksJob#entry_point}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#entry_point DataDatabricksJob#entry_point}
   */
   readonly entryPoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#named_parameters DataDatabricksJob#named_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#named_parameters DataDatabricksJob#named_parameters}
   */
   readonly namedParameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#package_name DataDatabricksJob#package_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#package_name DataDatabricksJob#package_name}
   */
   readonly packageName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}
   */
   readonly parameters?: string[];
 }
@@ -8426,11 +8832,11 @@ export class DataDatabricksJobJobSettingsSettingsQueueOutputReference extends cd
 }
 export interface DataDatabricksJobJobSettingsSettingsRunAs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#service_principal_name DataDatabricksJob#service_principal_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#service_principal_name DataDatabricksJob#service_principal_name}
   */
   readonly servicePrincipalName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}
   */
   readonly userName?: string;
 }
@@ -8518,15 +8924,15 @@ export class DataDatabricksJobJobSettingsSettingsRunAsOutputReference extends cd
 }
 export interface DataDatabricksJobJobSettingsSettingsSchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#pause_status DataDatabricksJob#pause_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#pause_status DataDatabricksJob#pause_status}
   */
   readonly pauseStatus?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#quartz_cron_expression DataDatabricksJob#quartz_cron_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#quartz_cron_expression DataDatabricksJob#quartz_cron_expression}
   */
   readonly quartzCronExpression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#timezone_id DataDatabricksJob#timezone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#timezone_id DataDatabricksJob#timezone_id}
   */
   readonly timezoneId: string;
 }
@@ -8631,15 +9037,15 @@ export class DataDatabricksJobJobSettingsSettingsScheduleOutputReference extends
 }
 export interface DataDatabricksJobJobSettingsSettingsSparkJarTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#jar_uri DataDatabricksJob#jar_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#jar_uri DataDatabricksJob#jar_uri}
   */
   readonly jarUri?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#main_class_name DataDatabricksJob#main_class_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#main_class_name DataDatabricksJob#main_class_name}
   */
   readonly mainClassName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}
   */
   readonly parameters?: string[];
 }
@@ -8750,15 +9156,15 @@ export class DataDatabricksJobJobSettingsSettingsSparkJarTaskOutputReference ext
 }
 export interface DataDatabricksJobJobSettingsSettingsSparkPythonTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}
   */
   readonly parameters?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#python_file DataDatabricksJob#python_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#python_file DataDatabricksJob#python_file}
   */
   readonly pythonFile: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#source DataDatabricksJob#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#source DataDatabricksJob#source}
   */
   readonly source?: string;
 }
@@ -8866,7 +9272,7 @@ export class DataDatabricksJobJobSettingsSettingsSparkPythonTaskOutputReference 
 }
 export interface DataDatabricksJobJobSettingsSettingsSparkSubmitTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}
   */
   readonly parameters?: string[];
 }
@@ -8931,15 +9337,15 @@ export class DataDatabricksJobJobSettingsSettingsSparkSubmitTaskOutputReference 
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskConditionTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#left DataDatabricksJob#left}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#left DataDatabricksJob#left}
   */
   readonly left?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#op DataDatabricksJob#op}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#op DataDatabricksJob#op}
   */
   readonly op?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#right DataDatabricksJob#right}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#right DataDatabricksJob#right}
   */
   readonly right?: string;
 }
@@ -9050,27 +9456,27 @@ export class DataDatabricksJobJobSettingsSettingsTaskConditionTaskOutputReferenc
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskDbtTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#catalog DataDatabricksJob#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#catalog DataDatabricksJob#catalog}
   */
   readonly catalog?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#commands DataDatabricksJob#commands}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#commands DataDatabricksJob#commands}
   */
   readonly commands: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#profiles_directory DataDatabricksJob#profiles_directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#profiles_directory DataDatabricksJob#profiles_directory}
   */
   readonly profilesDirectory?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#project_directory DataDatabricksJob#project_directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#project_directory DataDatabricksJob#project_directory}
   */
   readonly projectDirectory?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#schema DataDatabricksJob#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#schema DataDatabricksJob#schema}
   */
   readonly schema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}
   */
   readonly warehouseId?: string;
 }
@@ -9247,11 +9653,11 @@ export class DataDatabricksJobJobSettingsSettingsTaskDbtTaskOutputReference exte
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskDependsOn {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#outcome DataDatabricksJob#outcome}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#outcome DataDatabricksJob#outcome}
   */
   readonly outcome?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#task_key DataDatabricksJob#task_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#task_key DataDatabricksJob#task_key}
   */
   readonly taskKey: string;
 }
@@ -9368,23 +9774,27 @@ export class DataDatabricksJobJobSettingsSettingsTaskDependsOnList extends cdktf
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskEmailNotifications {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#alert_on_last_attempt DataDatabricksJob#alert_on_last_attempt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#alert_on_last_attempt DataDatabricksJob#alert_on_last_attempt}
   */
   readonly alertOnLastAttempt?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}
   */
   readonly noAlertForSkippedRuns?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#on_failure DataDatabricksJob#on_failure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#on_duration_warning_threshold_exceeded DataDatabricksJob#on_duration_warning_threshold_exceeded}
+  */
+  readonly onDurationWarningThresholdExceeded?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#on_failure DataDatabricksJob#on_failure}
   */
   readonly onFailure?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#on_start DataDatabricksJob#on_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#on_start DataDatabricksJob#on_start}
   */
   readonly onStart?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#on_success DataDatabricksJob#on_success}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#on_success DataDatabricksJob#on_success}
   */
   readonly onSuccess?: string[];
 }
@@ -9397,6 +9807,7 @@ export function dataDatabricksJobJobSettingsSettingsTaskEmailNotificationsToTerr
   return {
     alert_on_last_attempt: cdktf.booleanToTerraform(struct!.alertOnLastAttempt),
     no_alert_for_skipped_runs: cdktf.booleanToTerraform(struct!.noAlertForSkippedRuns),
+    on_duration_warning_threshold_exceeded: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.onDurationWarningThresholdExceeded),
     on_failure: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.onFailure),
     on_start: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.onStart),
     on_success: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.onSuccess),
@@ -9425,6 +9836,10 @@ export class DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputRef
       hasAnyValues = true;
       internalValueResult.noAlertForSkippedRuns = this._noAlertForSkippedRuns;
     }
+    if (this._onDurationWarningThresholdExceeded !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.onDurationWarningThresholdExceeded = this._onDurationWarningThresholdExceeded;
+    }
     if (this._onFailure !== undefined) {
       hasAnyValues = true;
       internalValueResult.onFailure = this._onFailure;
@@ -9445,6 +9860,7 @@ export class DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputRef
       this.isEmptyObject = false;
       this._alertOnLastAttempt = undefined;
       this._noAlertForSkippedRuns = undefined;
+      this._onDurationWarningThresholdExceeded = undefined;
       this._onFailure = undefined;
       this._onStart = undefined;
       this._onSuccess = undefined;
@@ -9453,6 +9869,7 @@ export class DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputRef
       this.isEmptyObject = Object.keys(value).length === 0;
       this._alertOnLastAttempt = value.alertOnLastAttempt;
       this._noAlertForSkippedRuns = value.noAlertForSkippedRuns;
+      this._onDurationWarningThresholdExceeded = value.onDurationWarningThresholdExceeded;
       this._onFailure = value.onFailure;
       this._onStart = value.onStart;
       this._onSuccess = value.onSuccess;
@@ -9489,6 +9906,22 @@ export class DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputRef
   // Temporarily expose input value. Use with caution.
   public get noAlertForSkippedRunsInput() {
     return this._noAlertForSkippedRuns;
+  }
+
+  // on_duration_warning_threshold_exceeded - computed: false, optional: true, required: false
+  private _onDurationWarningThresholdExceeded?: string[]; 
+  public get onDurationWarningThresholdExceeded() {
+    return this.getListAttribute('on_duration_warning_threshold_exceeded');
+  }
+  public set onDurationWarningThresholdExceeded(value: string[]) {
+    this._onDurationWarningThresholdExceeded = value;
+  }
+  public resetOnDurationWarningThresholdExceeded() {
+    this._onDurationWarningThresholdExceeded = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get onDurationWarningThresholdExceededInput() {
+    return this._onDurationWarningThresholdExceeded;
   }
 
   // on_failure - computed: false, optional: true, required: false
@@ -9539,13 +9972,228 @@ export class DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputRef
     return this._onSuccess;
   }
 }
+export interface DataDatabricksJobJobSettingsSettingsTaskHealthRules {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#metric DataDatabricksJob#metric}
+  */
+  readonly metric?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#op DataDatabricksJob#op}
+  */
+  readonly op?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#value DataDatabricksJob#value}
+  */
+  readonly value?: number;
+}
+
+export function dataDatabricksJobJobSettingsSettingsTaskHealthRulesToTerraform(struct?: DataDatabricksJobJobSettingsSettingsTaskHealthRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    metric: cdktf.stringToTerraform(struct!.metric),
+    op: cdktf.stringToTerraform(struct!.op),
+    value: cdktf.numberToTerraform(struct!.value),
+  }
+}
+
+export class DataDatabricksJobJobSettingsSettingsTaskHealthRulesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDatabricksJobJobSettingsSettingsTaskHealthRules | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._metric !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metric = this._metric;
+    }
+    if (this._op !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.op = this._op;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksJobJobSettingsSettingsTaskHealthRules | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._metric = undefined;
+      this._op = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._metric = value.metric;
+      this._op = value.op;
+      this._value = value.value;
+    }
+  }
+
+  // metric - computed: false, optional: true, required: false
+  private _metric?: string; 
+  public get metric() {
+    return this.getStringAttribute('metric');
+  }
+  public set metric(value: string) {
+    this._metric = value;
+  }
+  public resetMetric() {
+    this._metric = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricInput() {
+    return this._metric;
+  }
+
+  // op - computed: false, optional: true, required: false
+  private _op?: string; 
+  public get op() {
+    return this.getStringAttribute('op');
+  }
+  public set op(value: string) {
+    this._op = value;
+  }
+  public resetOp() {
+    this._op = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get opInput() {
+    return this._op;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: number; 
+  public get value() {
+    return this.getNumberAttribute('value');
+  }
+  public set value(value: number) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class DataDatabricksJobJobSettingsSettingsTaskHealthRulesList extends cdktf.ComplexList {
+  public internalValue? : DataDatabricksJobJobSettingsSettingsTaskHealthRules[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDatabricksJobJobSettingsSettingsTaskHealthRulesOutputReference {
+    return new DataDatabricksJobJobSettingsSettingsTaskHealthRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataDatabricksJobJobSettingsSettingsTaskHealth {
+  /**
+  * rules block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#rules DataDatabricksJob#rules}
+  */
+  readonly rules: DataDatabricksJobJobSettingsSettingsTaskHealthRules[] | cdktf.IResolvable;
+}
+
+export function dataDatabricksJobJobSettingsSettingsTaskHealthToTerraform(struct?: DataDatabricksJobJobSettingsSettingsTaskHealthOutputReference | DataDatabricksJobJobSettingsSettingsTaskHealth): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    rules: cdktf.listMapper(dataDatabricksJobJobSettingsSettingsTaskHealthRulesToTerraform, true)(struct!.rules),
+  }
+}
+
+export class DataDatabricksJobJobSettingsSettingsTaskHealthOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataDatabricksJobJobSettingsSettingsTaskHealth | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._rules?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rules = this._rules?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksJobJobSettingsSettingsTaskHealth | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._rules.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._rules.internalValue = value.rules;
+    }
+  }
+
+  // rules - computed: false, optional: false, required: true
+  private _rules = new DataDatabricksJobJobSettingsSettingsTaskHealthRulesList(this, "rules", false);
+  public get rules() {
+    return this._rules;
+  }
+  public putRules(value: DataDatabricksJobJobSettingsSettingsTaskHealthRules[] | cdktf.IResolvable) {
+    this._rules.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rulesInput() {
+    return this._rules.internalValue;
+  }
+}
 export interface DataDatabricksJobJobSettingsSettingsTaskLibraryCran {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#package DataDatabricksJob#package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#package DataDatabricksJob#package}
   */
   readonly package: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#repo DataDatabricksJob#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#repo DataDatabricksJob#repo}
   */
   readonly repo?: string;
 }
@@ -9630,15 +10278,15 @@ export class DataDatabricksJobJobSettingsSettingsTaskLibraryCranOutputReference 
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskLibraryMaven {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#coordinates DataDatabricksJob#coordinates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#coordinates DataDatabricksJob#coordinates}
   */
   readonly coordinates: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#exclusions DataDatabricksJob#exclusions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#exclusions DataDatabricksJob#exclusions}
   */
   readonly exclusions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#repo DataDatabricksJob#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#repo DataDatabricksJob#repo}
   */
   readonly repo?: string;
 }
@@ -9746,11 +10394,11 @@ export class DataDatabricksJobJobSettingsSettingsTaskLibraryMavenOutputReference
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskLibraryPypi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#package DataDatabricksJob#package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#package DataDatabricksJob#package}
   */
   readonly package: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#repo DataDatabricksJob#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#repo DataDatabricksJob#repo}
   */
   readonly repo?: string;
 }
@@ -9835,33 +10483,33 @@ export class DataDatabricksJobJobSettingsSettingsTaskLibraryPypiOutputReference 
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskLibrary {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#egg DataDatabricksJob#egg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#egg DataDatabricksJob#egg}
   */
   readonly egg?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#jar DataDatabricksJob#jar}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#jar DataDatabricksJob#jar}
   */
   readonly jar?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#whl DataDatabricksJob#whl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#whl DataDatabricksJob#whl}
   */
   readonly whl?: string;
   /**
   * cran block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#cran DataDatabricksJob#cran}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#cran DataDatabricksJob#cran}
   */
   readonly cran?: DataDatabricksJobJobSettingsSettingsTaskLibraryCran;
   /**
   * maven block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#maven DataDatabricksJob#maven}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#maven DataDatabricksJob#maven}
   */
   readonly maven?: DataDatabricksJobJobSettingsSettingsTaskLibraryMaven;
   /**
   * pypi block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#pypi DataDatabricksJob#pypi}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#pypi DataDatabricksJob#pypi}
   */
   readonly pypi?: DataDatabricksJobJobSettingsSettingsTaskLibraryPypi;
 }
@@ -10073,11 +10721,11 @@ export class DataDatabricksJobJobSettingsSettingsTaskLibraryList extends cdktf.C
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskNewClusterAutoscale {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#max_workers DataDatabricksJob#max_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#max_workers DataDatabricksJob#max_workers}
   */
   readonly maxWorkers?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#min_workers DataDatabricksJob#min_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#min_workers DataDatabricksJob#min_workers}
   */
   readonly minWorkers?: number;
 }
@@ -10165,35 +10813,35 @@ export class DataDatabricksJobJobSettingsSettingsTaskNewClusterAutoscaleOutputRe
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#availability DataDatabricksJob#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#availability DataDatabricksJob#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#ebs_volume_count DataDatabricksJob#ebs_volume_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#ebs_volume_count DataDatabricksJob#ebs_volume_count}
   */
   readonly ebsVolumeCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#ebs_volume_size DataDatabricksJob#ebs_volume_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#ebs_volume_size DataDatabricksJob#ebs_volume_size}
   */
   readonly ebsVolumeSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#ebs_volume_type DataDatabricksJob#ebs_volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#ebs_volume_type DataDatabricksJob#ebs_volume_type}
   */
   readonly ebsVolumeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#instance_profile_arn DataDatabricksJob#instance_profile_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#instance_profile_arn DataDatabricksJob#instance_profile_arn}
   */
   readonly instanceProfileArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#spot_bid_price_percent DataDatabricksJob#spot_bid_price_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#spot_bid_price_percent DataDatabricksJob#spot_bid_price_percent}
   */
   readonly spotBidPricePercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -10419,15 +11067,15 @@ export class DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributesOutp
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskNewClusterAzureAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#availability DataDatabricksJob#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#availability DataDatabricksJob#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#spot_bid_max_price DataDatabricksJob#spot_bid_max_price}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#spot_bid_max_price DataDatabricksJob#spot_bid_max_price}
   */
   readonly spotBidMaxPrice?: number;
 }
@@ -10538,7 +11186,7 @@ export class DataDatabricksJobJobSettingsSettingsTaskNewClusterAzureAttributesOu
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfDbfs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#destination DataDatabricksJob#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#destination DataDatabricksJob#destination}
   */
   readonly destination: string;
 }
@@ -10600,31 +11248,31 @@ export class DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfDbf
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}
   */
   readonly cannedAcl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#destination DataDatabricksJob#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#destination DataDatabricksJob#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}
   */
   readonly enableEncryption?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}
   */
   readonly encryptionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}
   */
   readonly endpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}
   */
   readonly kmsKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#region DataDatabricksJob#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#region DataDatabricksJob#region}
   */
   readonly region?: string;
 }
@@ -10826,13 +11474,13 @@ export interface DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogCon
   /**
   * dbfs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#dbfs DataDatabricksJob#dbfs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#dbfs DataDatabricksJob#dbfs}
   */
   readonly dbfs?: DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfDbfs;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#s3 DataDatabricksJob#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#s3 DataDatabricksJob#s3}
   */
   readonly s3?: DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3;
 }
@@ -10920,11 +11568,11 @@ export class DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfOut
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoNetworkFilesystemInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#mount_options DataDatabricksJob#mount_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#mount_options DataDatabricksJob#mount_options}
   */
   readonly mountOptions?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#server_address DataDatabricksJob#server_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#server_address DataDatabricksJob#server_address}
   */
   readonly serverAddress: string;
 }
@@ -11009,17 +11657,17 @@ export class DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoN
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#local_mount_dir_path DataDatabricksJob#local_mount_dir_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#local_mount_dir_path DataDatabricksJob#local_mount_dir_path}
   */
   readonly localMountDirPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#remote_mount_dir_path DataDatabricksJob#remote_mount_dir_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#remote_mount_dir_path DataDatabricksJob#remote_mount_dir_path}
   */
   readonly remoteMountDirPath?: string;
   /**
   * network_filesystem_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#network_filesystem_info DataDatabricksJob#network_filesystem_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#network_filesystem_info DataDatabricksJob#network_filesystem_info}
   */
   readonly networkFilesystemInfo: DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoNetworkFilesystemInfo;
 }
@@ -11156,11 +11804,11 @@ export class DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoL
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageBasicAuth {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#password DataDatabricksJob#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#password DataDatabricksJob#password}
   */
   readonly password: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#username DataDatabricksJob#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#username DataDatabricksJob#username}
   */
   readonly username: string;
 }
@@ -11242,13 +11890,13 @@ export class DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageBasicA
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#url DataDatabricksJob#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#url DataDatabricksJob#url}
   */
   readonly url: string;
   /**
   * basic_auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#basic_auth DataDatabricksJob#basic_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#basic_auth DataDatabricksJob#basic_auth}
   */
   readonly basicAuth?: DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageBasicAuth;
 }
@@ -11333,23 +11981,23 @@ export class DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageOutput
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#availability DataDatabricksJob#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#availability DataDatabricksJob#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#boot_disk_size DataDatabricksJob#boot_disk_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#boot_disk_size DataDatabricksJob#boot_disk_size}
   */
   readonly bootDiskSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#google_service_account DataDatabricksJob#google_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#google_service_account DataDatabricksJob#google_service_account}
   */
   readonly googleServiceAccount?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#use_preemptible_executors DataDatabricksJob#use_preemptible_executors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#use_preemptible_executors DataDatabricksJob#use_preemptible_executors}
   */
   readonly usePreemptibleExecutors?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -11506,7 +12154,7 @@ export class DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributesOutp
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfss {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#destination DataDatabricksJob#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#destination DataDatabricksJob#destination}
   */
   readonly destination?: string;
 }
@@ -11571,7 +12219,7 @@ export class DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfssO
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsDbfs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#destination DataDatabricksJob#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#destination DataDatabricksJob#destination}
   */
   readonly destination: string;
 }
@@ -11633,7 +12281,7 @@ export class DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsDbfsOu
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsFile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#destination DataDatabricksJob#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#destination DataDatabricksJob#destination}
   */
   readonly destination?: string;
 }
@@ -11698,7 +12346,7 @@ export class DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsFileOu
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsGcs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#destination DataDatabricksJob#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#destination DataDatabricksJob#destination}
   */
   readonly destination?: string;
 }
@@ -11763,31 +12411,31 @@ export class DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsGcsOut
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}
   */
   readonly cannedAcl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#destination DataDatabricksJob#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#destination DataDatabricksJob#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}
   */
   readonly enableEncryption?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}
   */
   readonly encryptionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}
   */
   readonly endpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}
   */
   readonly kmsKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#region DataDatabricksJob#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#region DataDatabricksJob#region}
   */
   readonly region?: string;
 }
@@ -11987,7 +12635,7 @@ export class DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3Outp
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsWorkspace {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#destination DataDatabricksJob#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#destination DataDatabricksJob#destination}
   */
   readonly destination?: string;
 }
@@ -12054,37 +12702,37 @@ export interface DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScripts {
   /**
   * abfss block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#abfss DataDatabricksJob#abfss}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#abfss DataDatabricksJob#abfss}
   */
   readonly abfss?: DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfss;
   /**
   * dbfs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#dbfs DataDatabricksJob#dbfs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#dbfs DataDatabricksJob#dbfs}
   */
   readonly dbfs?: DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsDbfs;
   /**
   * file block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#file DataDatabricksJob#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#file DataDatabricksJob#file}
   */
   readonly file?: DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsFile;
   /**
   * gcs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#gcs DataDatabricksJob#gcs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#gcs DataDatabricksJob#gcs}
   */
   readonly gcs?: DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsGcs;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#s3 DataDatabricksJob#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#s3 DataDatabricksJob#s3}
   */
   readonly s3?: DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3;
   /**
   * workspace block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#workspace DataDatabricksJob#workspace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#workspace DataDatabricksJob#workspace}
   */
   readonly workspace?: DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsWorkspace;
 }
@@ -12296,11 +12944,11 @@ export class DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsList e
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadTypeClients {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#jobs DataDatabricksJob#jobs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#jobs DataDatabricksJob#jobs}
   */
   readonly jobs?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#notebooks DataDatabricksJob#notebooks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#notebooks DataDatabricksJob#notebooks}
   */
   readonly notebooks?: boolean | cdktf.IResolvable;
 }
@@ -12390,7 +13038,7 @@ export interface DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadType 
   /**
   * clients block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#clients DataDatabricksJob#clients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#clients DataDatabricksJob#clients}
   */
   readonly clients: DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadTypeClients;
 }
@@ -12452,141 +13100,141 @@ export class DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadTypeOutpu
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskNewCluster {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#apply_policy_default_values DataDatabricksJob#apply_policy_default_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#apply_policy_default_values DataDatabricksJob#apply_policy_default_values}
   */
   readonly applyPolicyDefaultValues?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#autotermination_minutes DataDatabricksJob#autotermination_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#autotermination_minutes DataDatabricksJob#autotermination_minutes}
   */
   readonly autoterminationMinutes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#cluster_id DataDatabricksJob#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#cluster_id DataDatabricksJob#cluster_id}
   */
   readonly clusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#cluster_name DataDatabricksJob#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#cluster_name DataDatabricksJob#cluster_name}
   */
   readonly clusterName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#custom_tags DataDatabricksJob#custom_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#custom_tags DataDatabricksJob#custom_tags}
   */
   readonly customTags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#data_security_mode DataDatabricksJob#data_security_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#data_security_mode DataDatabricksJob#data_security_mode}
   */
   readonly dataSecurityMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#driver_instance_pool_id DataDatabricksJob#driver_instance_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#driver_instance_pool_id DataDatabricksJob#driver_instance_pool_id}
   */
   readonly driverInstancePoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#driver_node_type_id DataDatabricksJob#driver_node_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#driver_node_type_id DataDatabricksJob#driver_node_type_id}
   */
   readonly driverNodeTypeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#enable_elastic_disk DataDatabricksJob#enable_elastic_disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#enable_elastic_disk DataDatabricksJob#enable_elastic_disk}
   */
   readonly enableElasticDisk?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#enable_local_disk_encryption DataDatabricksJob#enable_local_disk_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#enable_local_disk_encryption DataDatabricksJob#enable_local_disk_encryption}
   */
   readonly enableLocalDiskEncryption?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#idempotency_token DataDatabricksJob#idempotency_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#idempotency_token DataDatabricksJob#idempotency_token}
   */
   readonly idempotencyToken?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#instance_pool_id DataDatabricksJob#instance_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#instance_pool_id DataDatabricksJob#instance_pool_id}
   */
   readonly instancePoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#node_type_id DataDatabricksJob#node_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#node_type_id DataDatabricksJob#node_type_id}
   */
   readonly nodeTypeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#num_workers DataDatabricksJob#num_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#num_workers DataDatabricksJob#num_workers}
   */
   readonly numWorkers: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#policy_id DataDatabricksJob#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#policy_id DataDatabricksJob#policy_id}
   */
   readonly policyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#runtime_engine DataDatabricksJob#runtime_engine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#runtime_engine DataDatabricksJob#runtime_engine}
   */
   readonly runtimeEngine?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#single_user_name DataDatabricksJob#single_user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#single_user_name DataDatabricksJob#single_user_name}
   */
   readonly singleUserName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#spark_conf DataDatabricksJob#spark_conf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#spark_conf DataDatabricksJob#spark_conf}
   */
   readonly sparkConf?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#spark_env_vars DataDatabricksJob#spark_env_vars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#spark_env_vars DataDatabricksJob#spark_env_vars}
   */
   readonly sparkEnvVars?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#spark_version DataDatabricksJob#spark_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#spark_version DataDatabricksJob#spark_version}
   */
   readonly sparkVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#ssh_public_keys DataDatabricksJob#ssh_public_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#ssh_public_keys DataDatabricksJob#ssh_public_keys}
   */
   readonly sshPublicKeys?: string[];
   /**
   * autoscale block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#autoscale DataDatabricksJob#autoscale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#autoscale DataDatabricksJob#autoscale}
   */
   readonly autoscale?: DataDatabricksJobJobSettingsSettingsTaskNewClusterAutoscale;
   /**
   * aws_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#aws_attributes DataDatabricksJob#aws_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#aws_attributes DataDatabricksJob#aws_attributes}
   */
   readonly awsAttributes?: DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributes;
   /**
   * azure_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#azure_attributes DataDatabricksJob#azure_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#azure_attributes DataDatabricksJob#azure_attributes}
   */
   readonly azureAttributes?: DataDatabricksJobJobSettingsSettingsTaskNewClusterAzureAttributes;
   /**
   * cluster_log_conf block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#cluster_log_conf DataDatabricksJob#cluster_log_conf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#cluster_log_conf DataDatabricksJob#cluster_log_conf}
   */
   readonly clusterLogConf?: DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConf;
   /**
   * cluster_mount_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#cluster_mount_info DataDatabricksJob#cluster_mount_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#cluster_mount_info DataDatabricksJob#cluster_mount_info}
   */
   readonly clusterMountInfo?: DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfo[] | cdktf.IResolvable;
   /**
   * docker_image block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#docker_image DataDatabricksJob#docker_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#docker_image DataDatabricksJob#docker_image}
   */
   readonly dockerImage?: DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImage;
   /**
   * gcp_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#gcp_attributes DataDatabricksJob#gcp_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#gcp_attributes DataDatabricksJob#gcp_attributes}
   */
   readonly gcpAttributes?: DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributes;
   /**
   * init_scripts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#init_scripts DataDatabricksJob#init_scripts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#init_scripts DataDatabricksJob#init_scripts}
   */
   readonly initScripts?: DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScripts[] | cdktf.IResolvable;
   /**
   * workload_type block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#workload_type DataDatabricksJob#workload_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#workload_type DataDatabricksJob#workload_type}
   */
   readonly workloadType?: DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadType;
 }
@@ -13312,15 +13960,15 @@ export class DataDatabricksJobJobSettingsSettingsTaskNewClusterOutputReference e
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskNotebookTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#base_parameters DataDatabricksJob#base_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#base_parameters DataDatabricksJob#base_parameters}
   */
   readonly baseParameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#notebook_path DataDatabricksJob#notebook_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#notebook_path DataDatabricksJob#notebook_path}
   */
   readonly notebookPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#source DataDatabricksJob#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#source DataDatabricksJob#source}
   */
   readonly source?: string;
 }
@@ -13426,9 +14074,132 @@ export class DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference
     return this._source;
   }
 }
+export interface DataDatabricksJobJobSettingsSettingsTaskNotificationSettings {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#alert_on_last_attempt DataDatabricksJob#alert_on_last_attempt}
+  */
+  readonly alertOnLastAttempt?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#no_alert_for_canceled_runs DataDatabricksJob#no_alert_for_canceled_runs}
+  */
+  readonly noAlertForCanceledRuns?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}
+  */
+  readonly noAlertForSkippedRuns?: boolean | cdktf.IResolvable;
+}
+
+export function dataDatabricksJobJobSettingsSettingsTaskNotificationSettingsToTerraform(struct?: DataDatabricksJobJobSettingsSettingsTaskNotificationSettingsOutputReference | DataDatabricksJobJobSettingsSettingsTaskNotificationSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    alert_on_last_attempt: cdktf.booleanToTerraform(struct!.alertOnLastAttempt),
+    no_alert_for_canceled_runs: cdktf.booleanToTerraform(struct!.noAlertForCanceledRuns),
+    no_alert_for_skipped_runs: cdktf.booleanToTerraform(struct!.noAlertForSkippedRuns),
+  }
+}
+
+export class DataDatabricksJobJobSettingsSettingsTaskNotificationSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataDatabricksJobJobSettingsSettingsTaskNotificationSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._alertOnLastAttempt !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.alertOnLastAttempt = this._alertOnLastAttempt;
+    }
+    if (this._noAlertForCanceledRuns !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.noAlertForCanceledRuns = this._noAlertForCanceledRuns;
+    }
+    if (this._noAlertForSkippedRuns !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.noAlertForSkippedRuns = this._noAlertForSkippedRuns;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksJobJobSettingsSettingsTaskNotificationSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._alertOnLastAttempt = undefined;
+      this._noAlertForCanceledRuns = undefined;
+      this._noAlertForSkippedRuns = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._alertOnLastAttempt = value.alertOnLastAttempt;
+      this._noAlertForCanceledRuns = value.noAlertForCanceledRuns;
+      this._noAlertForSkippedRuns = value.noAlertForSkippedRuns;
+    }
+  }
+
+  // alert_on_last_attempt - computed: false, optional: true, required: false
+  private _alertOnLastAttempt?: boolean | cdktf.IResolvable; 
+  public get alertOnLastAttempt() {
+    return this.getBooleanAttribute('alert_on_last_attempt');
+  }
+  public set alertOnLastAttempt(value: boolean | cdktf.IResolvable) {
+    this._alertOnLastAttempt = value;
+  }
+  public resetAlertOnLastAttempt() {
+    this._alertOnLastAttempt = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alertOnLastAttemptInput() {
+    return this._alertOnLastAttempt;
+  }
+
+  // no_alert_for_canceled_runs - computed: false, optional: true, required: false
+  private _noAlertForCanceledRuns?: boolean | cdktf.IResolvable; 
+  public get noAlertForCanceledRuns() {
+    return this.getBooleanAttribute('no_alert_for_canceled_runs');
+  }
+  public set noAlertForCanceledRuns(value: boolean | cdktf.IResolvable) {
+    this._noAlertForCanceledRuns = value;
+  }
+  public resetNoAlertForCanceledRuns() {
+    this._noAlertForCanceledRuns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get noAlertForCanceledRunsInput() {
+    return this._noAlertForCanceledRuns;
+  }
+
+  // no_alert_for_skipped_runs - computed: false, optional: true, required: false
+  private _noAlertForSkippedRuns?: boolean | cdktf.IResolvable; 
+  public get noAlertForSkippedRuns() {
+    return this.getBooleanAttribute('no_alert_for_skipped_runs');
+  }
+  public set noAlertForSkippedRuns(value: boolean | cdktf.IResolvable) {
+    this._noAlertForSkippedRuns = value;
+  }
+  public resetNoAlertForSkippedRuns() {
+    this._noAlertForSkippedRuns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get noAlertForSkippedRunsInput() {
+    return this._noAlertForSkippedRuns;
+  }
+}
 export interface DataDatabricksJobJobSettingsSettingsTaskPipelineTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#pipeline_id DataDatabricksJob#pipeline_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#full_refresh DataDatabricksJob#full_refresh}
+  */
+  readonly fullRefresh?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#pipeline_id DataDatabricksJob#pipeline_id}
   */
   readonly pipelineId: string;
 }
@@ -13439,6 +14210,7 @@ export function dataDatabricksJobJobSettingsSettingsTaskPipelineTaskToTerraform(
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    full_refresh: cdktf.booleanToTerraform(struct!.fullRefresh),
     pipeline_id: cdktf.stringToTerraform(struct!.pipelineId),
   }
 }
@@ -13457,6 +14229,10 @@ export class DataDatabricksJobJobSettingsSettingsTaskPipelineTaskOutputReference
   public get internalValue(): DataDatabricksJobJobSettingsSettingsTaskPipelineTask | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._fullRefresh !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fullRefresh = this._fullRefresh;
+    }
     if (this._pipelineId !== undefined) {
       hasAnyValues = true;
       internalValueResult.pipelineId = this._pipelineId;
@@ -13467,12 +14243,30 @@ export class DataDatabricksJobJobSettingsSettingsTaskPipelineTaskOutputReference
   public set internalValue(value: DataDatabricksJobJobSettingsSettingsTaskPipelineTask | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._fullRefresh = undefined;
       this._pipelineId = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._fullRefresh = value.fullRefresh;
       this._pipelineId = value.pipelineId;
     }
+  }
+
+  // full_refresh - computed: false, optional: true, required: false
+  private _fullRefresh?: boolean | cdktf.IResolvable; 
+  public get fullRefresh() {
+    return this.getBooleanAttribute('full_refresh');
+  }
+  public set fullRefresh(value: boolean | cdktf.IResolvable) {
+    this._fullRefresh = value;
+  }
+  public resetFullRefresh() {
+    this._fullRefresh = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fullRefreshInput() {
+    return this._fullRefresh;
   }
 
   // pipeline_id - computed: false, optional: false, required: true
@@ -13490,19 +14284,19 @@ export class DataDatabricksJobJobSettingsSettingsTaskPipelineTaskOutputReference
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskPythonWheelTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#entry_point DataDatabricksJob#entry_point}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#entry_point DataDatabricksJob#entry_point}
   */
   readonly entryPoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#named_parameters DataDatabricksJob#named_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#named_parameters DataDatabricksJob#named_parameters}
   */
   readonly namedParameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#package_name DataDatabricksJob#package_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#package_name DataDatabricksJob#package_name}
   */
   readonly packageName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}
   */
   readonly parameters?: string[];
 }
@@ -13636,15 +14430,15 @@ export class DataDatabricksJobJobSettingsSettingsTaskPythonWheelTaskOutputRefere
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskSparkJarTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#jar_uri DataDatabricksJob#jar_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#jar_uri DataDatabricksJob#jar_uri}
   */
   readonly jarUri?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#main_class_name DataDatabricksJob#main_class_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#main_class_name DataDatabricksJob#main_class_name}
   */
   readonly mainClassName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}
   */
   readonly parameters?: string[];
 }
@@ -13755,15 +14549,15 @@ export class DataDatabricksJobJobSettingsSettingsTaskSparkJarTaskOutputReference
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}
   */
   readonly parameters?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#python_file DataDatabricksJob#python_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#python_file DataDatabricksJob#python_file}
   */
   readonly pythonFile: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#source DataDatabricksJob#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#source DataDatabricksJob#source}
   */
   readonly source?: string;
 }
@@ -13871,7 +14665,7 @@ export class DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputRefere
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}
   */
   readonly parameters?: string[];
 }
@@ -13936,11 +14730,11 @@ export class DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTaskOutputRefere
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertSubscriptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#destination_id DataDatabricksJob#destination_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#destination_id DataDatabricksJob#destination_id}
   */
   readonly destinationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}
   */
   readonly userName?: string;
 }
@@ -14060,17 +14854,17 @@ export class DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertSubscriptionsLi
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlert {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#alert_id DataDatabricksJob#alert_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#alert_id DataDatabricksJob#alert_id}
   */
   readonly alertId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#pause_subscriptions DataDatabricksJob#pause_subscriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#pause_subscriptions DataDatabricksJob#pause_subscriptions}
   */
   readonly pauseSubscriptions?: boolean | cdktf.IResolvable;
   /**
   * subscriptions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#subscriptions DataDatabricksJob#subscriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#subscriptions DataDatabricksJob#subscriptions}
   */
   readonly subscriptions: DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertSubscriptions[] | cdktf.IResolvable;
 }
@@ -14175,11 +14969,11 @@ export class DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertOutputReference
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardSubscriptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#destination_id DataDatabricksJob#destination_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#destination_id DataDatabricksJob#destination_id}
   */
   readonly destinationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}
   */
   readonly userName?: string;
 }
@@ -14299,21 +15093,21 @@ export class DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardSubscriptio
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboard {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#custom_subject DataDatabricksJob#custom_subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#custom_subject DataDatabricksJob#custom_subject}
   */
   readonly customSubject?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#dashboard_id DataDatabricksJob#dashboard_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#dashboard_id DataDatabricksJob#dashboard_id}
   */
   readonly dashboardId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#pause_subscriptions DataDatabricksJob#pause_subscriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#pause_subscriptions DataDatabricksJob#pause_subscriptions}
   */
   readonly pauseSubscriptions?: boolean | cdktf.IResolvable;
   /**
   * subscriptions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#subscriptions DataDatabricksJob#subscriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#subscriptions DataDatabricksJob#subscriptions}
   */
   readonly subscriptions?: DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardSubscriptions[] | cdktf.IResolvable;
 }
@@ -14444,7 +15238,7 @@ export class DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardOutputRefer
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskSqlTaskFile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#path DataDatabricksJob#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#path DataDatabricksJob#path}
   */
   readonly path: string;
 }
@@ -14506,7 +15300,7 @@ export class DataDatabricksJobJobSettingsSettingsTaskSqlTaskFileOutputReference 
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskSqlTaskQuery {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#query_id DataDatabricksJob#query_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#query_id DataDatabricksJob#query_id}
   */
   readonly queryId: string;
 }
@@ -14568,35 +15362,35 @@ export class DataDatabricksJobJobSettingsSettingsTaskSqlTaskQueryOutputReference
 }
 export interface DataDatabricksJobJobSettingsSettingsTaskSqlTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}
   */
   readonly warehouseId?: string;
   /**
   * alert block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#alert DataDatabricksJob#alert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#alert DataDatabricksJob#alert}
   */
   readonly alert?: DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlert;
   /**
   * dashboard block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#dashboard DataDatabricksJob#dashboard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#dashboard DataDatabricksJob#dashboard}
   */
   readonly dashboard?: DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboard;
   /**
   * file block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#file DataDatabricksJob#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#file DataDatabricksJob#file}
   */
   readonly file?: DataDatabricksJobJobSettingsSettingsTaskSqlTaskFile;
   /**
   * query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#query DataDatabricksJob#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#query DataDatabricksJob#query}
   */
   readonly query?: DataDatabricksJobJobSettingsSettingsTaskSqlTaskQuery;
 }
@@ -14776,121 +15570,133 @@ export class DataDatabricksJobJobSettingsSettingsTaskSqlTaskOutputReference exte
 }
 export interface DataDatabricksJobJobSettingsSettingsTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#compute_key DataDatabricksJob#compute_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#compute_key DataDatabricksJob#compute_key}
   */
   readonly computeKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#description DataDatabricksJob#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#description DataDatabricksJob#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#existing_cluster_id DataDatabricksJob#existing_cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#existing_cluster_id DataDatabricksJob#existing_cluster_id}
   */
   readonly existingClusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#job_cluster_key DataDatabricksJob#job_cluster_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#job_cluster_key DataDatabricksJob#job_cluster_key}
   */
   readonly jobClusterKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#max_retries DataDatabricksJob#max_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#max_retries DataDatabricksJob#max_retries}
   */
   readonly maxRetries?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#min_retry_interval_millis DataDatabricksJob#min_retry_interval_millis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#min_retry_interval_millis DataDatabricksJob#min_retry_interval_millis}
   */
   readonly minRetryIntervalMillis?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#retry_on_timeout DataDatabricksJob#retry_on_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#retry_on_timeout DataDatabricksJob#retry_on_timeout}
   */
   readonly retryOnTimeout?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#run_if DataDatabricksJob#run_if}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#run_if DataDatabricksJob#run_if}
   */
   readonly runIf?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#task_key DataDatabricksJob#task_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#task_key DataDatabricksJob#task_key}
   */
   readonly taskKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#timeout_seconds DataDatabricksJob#timeout_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#timeout_seconds DataDatabricksJob#timeout_seconds}
   */
   readonly timeoutSeconds?: number;
   /**
   * condition_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#condition_task DataDatabricksJob#condition_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#condition_task DataDatabricksJob#condition_task}
   */
   readonly conditionTask?: DataDatabricksJobJobSettingsSettingsTaskConditionTask;
   /**
   * dbt_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#dbt_task DataDatabricksJob#dbt_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#dbt_task DataDatabricksJob#dbt_task}
   */
   readonly dbtTask?: DataDatabricksJobJobSettingsSettingsTaskDbtTask;
   /**
   * depends_on block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#depends_on DataDatabricksJob#depends_on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#depends_on DataDatabricksJob#depends_on}
   */
   readonly dependsOn?: DataDatabricksJobJobSettingsSettingsTaskDependsOn[] | cdktf.IResolvable;
   /**
   * email_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#email_notifications DataDatabricksJob#email_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#email_notifications DataDatabricksJob#email_notifications}
   */
   readonly emailNotifications?: DataDatabricksJobJobSettingsSettingsTaskEmailNotifications;
   /**
+  * health block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#health DataDatabricksJob#health}
+  */
+  readonly health?: DataDatabricksJobJobSettingsSettingsTaskHealth;
+  /**
   * library block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#library DataDatabricksJob#library}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#library DataDatabricksJob#library}
   */
   readonly library?: DataDatabricksJobJobSettingsSettingsTaskLibrary[] | cdktf.IResolvable;
   /**
   * new_cluster block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#new_cluster DataDatabricksJob#new_cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#new_cluster DataDatabricksJob#new_cluster}
   */
   readonly newCluster?: DataDatabricksJobJobSettingsSettingsTaskNewCluster;
   /**
   * notebook_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#notebook_task DataDatabricksJob#notebook_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#notebook_task DataDatabricksJob#notebook_task}
   */
   readonly notebookTask?: DataDatabricksJobJobSettingsSettingsTaskNotebookTask;
   /**
+  * notification_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#notification_settings DataDatabricksJob#notification_settings}
+  */
+  readonly notificationSettings?: DataDatabricksJobJobSettingsSettingsTaskNotificationSettings;
+  /**
   * pipeline_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#pipeline_task DataDatabricksJob#pipeline_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#pipeline_task DataDatabricksJob#pipeline_task}
   */
   readonly pipelineTask?: DataDatabricksJobJobSettingsSettingsTaskPipelineTask;
   /**
   * python_wheel_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#python_wheel_task DataDatabricksJob#python_wheel_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#python_wheel_task DataDatabricksJob#python_wheel_task}
   */
   readonly pythonWheelTask?: DataDatabricksJobJobSettingsSettingsTaskPythonWheelTask;
   /**
   * spark_jar_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#spark_jar_task DataDatabricksJob#spark_jar_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#spark_jar_task DataDatabricksJob#spark_jar_task}
   */
   readonly sparkJarTask?: DataDatabricksJobJobSettingsSettingsTaskSparkJarTask;
   /**
   * spark_python_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#spark_python_task DataDatabricksJob#spark_python_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#spark_python_task DataDatabricksJob#spark_python_task}
   */
   readonly sparkPythonTask?: DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask;
   /**
   * spark_submit_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#spark_submit_task DataDatabricksJob#spark_submit_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#spark_submit_task DataDatabricksJob#spark_submit_task}
   */
   readonly sparkSubmitTask?: DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTask;
   /**
   * sql_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#sql_task DataDatabricksJob#sql_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#sql_task DataDatabricksJob#sql_task}
   */
   readonly sqlTask?: DataDatabricksJobJobSettingsSettingsTaskSqlTask;
 }
@@ -14915,9 +15721,11 @@ export function dataDatabricksJobJobSettingsSettingsTaskToTerraform(struct?: Dat
     dbt_task: dataDatabricksJobJobSettingsSettingsTaskDbtTaskToTerraform(struct!.dbtTask),
     depends_on: cdktf.listMapper(dataDatabricksJobJobSettingsSettingsTaskDependsOnToTerraform, true)(struct!.dependsOn),
     email_notifications: dataDatabricksJobJobSettingsSettingsTaskEmailNotificationsToTerraform(struct!.emailNotifications),
+    health: dataDatabricksJobJobSettingsSettingsTaskHealthToTerraform(struct!.health),
     library: cdktf.listMapper(dataDatabricksJobJobSettingsSettingsTaskLibraryToTerraform, true)(struct!.library),
     new_cluster: dataDatabricksJobJobSettingsSettingsTaskNewClusterToTerraform(struct!.newCluster),
     notebook_task: dataDatabricksJobJobSettingsSettingsTaskNotebookTaskToTerraform(struct!.notebookTask),
+    notification_settings: dataDatabricksJobJobSettingsSettingsTaskNotificationSettingsToTerraform(struct!.notificationSettings),
     pipeline_task: dataDatabricksJobJobSettingsSettingsTaskPipelineTaskToTerraform(struct!.pipelineTask),
     python_wheel_task: dataDatabricksJobJobSettingsSettingsTaskPythonWheelTaskToTerraform(struct!.pythonWheelTask),
     spark_jar_task: dataDatabricksJobJobSettingsSettingsTaskSparkJarTaskToTerraform(struct!.sparkJarTask),
@@ -15003,6 +15811,10 @@ export class DataDatabricksJobJobSettingsSettingsTaskOutputReference extends cdk
       hasAnyValues = true;
       internalValueResult.emailNotifications = this._emailNotifications?.internalValue;
     }
+    if (this._health?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.health = this._health?.internalValue;
+    }
     if (this._library?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.library = this._library?.internalValue;
@@ -15014,6 +15826,10 @@ export class DataDatabricksJobJobSettingsSettingsTaskOutputReference extends cdk
     if (this._notebookTask?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.notebookTask = this._notebookTask?.internalValue;
+    }
+    if (this._notificationSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.notificationSettings = this._notificationSettings?.internalValue;
     }
     if (this._pipelineTask?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -15060,9 +15876,11 @@ export class DataDatabricksJobJobSettingsSettingsTaskOutputReference extends cdk
       this._dbtTask.internalValue = undefined;
       this._dependsOn.internalValue = undefined;
       this._emailNotifications.internalValue = undefined;
+      this._health.internalValue = undefined;
       this._library.internalValue = undefined;
       this._newCluster.internalValue = undefined;
       this._notebookTask.internalValue = undefined;
+      this._notificationSettings.internalValue = undefined;
       this._pipelineTask.internalValue = undefined;
       this._pythonWheelTask.internalValue = undefined;
       this._sparkJarTask.internalValue = undefined;
@@ -15091,9 +15909,11 @@ export class DataDatabricksJobJobSettingsSettingsTaskOutputReference extends cdk
       this._dbtTask.internalValue = value.dbtTask;
       this._dependsOn.internalValue = value.dependsOn;
       this._emailNotifications.internalValue = value.emailNotifications;
+      this._health.internalValue = value.health;
       this._library.internalValue = value.library;
       this._newCluster.internalValue = value.newCluster;
       this._notebookTask.internalValue = value.notebookTask;
+      this._notificationSettings.internalValue = value.notificationSettings;
       this._pipelineTask.internalValue = value.pipelineTask;
       this._pythonWheelTask.internalValue = value.pythonWheelTask;
       this._sparkJarTask.internalValue = value.sparkJarTask;
@@ -15327,6 +16147,22 @@ export class DataDatabricksJobJobSettingsSettingsTaskOutputReference extends cdk
     return this._emailNotifications.internalValue;
   }
 
+  // health - computed: false, optional: true, required: false
+  private _health = new DataDatabricksJobJobSettingsSettingsTaskHealthOutputReference(this, "health");
+  public get health() {
+    return this._health;
+  }
+  public putHealth(value: DataDatabricksJobJobSettingsSettingsTaskHealth) {
+    this._health.internalValue = value;
+  }
+  public resetHealth() {
+    this._health.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get healthInput() {
+    return this._health.internalValue;
+  }
+
   // library - computed: false, optional: true, required: false
   private _library = new DataDatabricksJobJobSettingsSettingsTaskLibraryList(this, "library", true);
   public get library() {
@@ -15373,6 +16209,22 @@ export class DataDatabricksJobJobSettingsSettingsTaskOutputReference extends cdk
   // Temporarily expose input value. Use with caution.
   public get notebookTaskInput() {
     return this._notebookTask.internalValue;
+  }
+
+  // notification_settings - computed: false, optional: true, required: false
+  private _notificationSettings = new DataDatabricksJobJobSettingsSettingsTaskNotificationSettingsOutputReference(this, "notification_settings");
+  public get notificationSettings() {
+    return this._notificationSettings;
+  }
+  public putNotificationSettings(value: DataDatabricksJobJobSettingsSettingsTaskNotificationSettings) {
+    this._notificationSettings.internalValue = value;
+  }
+  public resetNotificationSettings() {
+    this._notificationSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notificationSettingsInput() {
+    return this._notificationSettings.internalValue;
   }
 
   // pipeline_task - computed: false, optional: true, required: false
@@ -15493,15 +16345,15 @@ export class DataDatabricksJobJobSettingsSettingsTaskList extends cdktf.ComplexL
 }
 export interface DataDatabricksJobJobSettingsSettingsTriggerFileArrival {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#min_time_between_triggers_seconds DataDatabricksJob#min_time_between_triggers_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#min_time_between_triggers_seconds DataDatabricksJob#min_time_between_triggers_seconds}
   */
   readonly minTimeBetweenTriggersSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#url DataDatabricksJob#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#url DataDatabricksJob#url}
   */
   readonly url: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#wait_after_last_change_seconds DataDatabricksJob#wait_after_last_change_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#wait_after_last_change_seconds DataDatabricksJob#wait_after_last_change_seconds}
   */
   readonly waitAfterLastChangeSeconds?: number;
 }
@@ -15609,13 +16461,13 @@ export class DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReferen
 }
 export interface DataDatabricksJobJobSettingsSettingsTrigger {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#pause_status DataDatabricksJob#pause_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#pause_status DataDatabricksJob#pause_status}
   */
   readonly pauseStatus?: string;
   /**
   * file_arrival block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#file_arrival DataDatabricksJob#file_arrival}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#file_arrival DataDatabricksJob#file_arrival}
   */
   readonly fileArrival: DataDatabricksJobJobSettingsSettingsTriggerFileArrival;
 }
@@ -15698,9 +16550,106 @@ export class DataDatabricksJobJobSettingsSettingsTriggerOutputReference extends 
     return this._fileArrival.internalValue;
   }
 }
+export interface DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceeded {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#id DataDatabricksJob#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id: string;
+}
+
+export function dataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceededToTerraform(struct?: DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceeded | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
+  }
+}
+
+export class DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceededOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceeded | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceeded | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+    }
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+}
+
+export class DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceededList extends cdktf.ComplexList {
+  public internalValue? : DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceeded[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceededOutputReference {
+    return new DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceededOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailure {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#id DataDatabricksJob#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#id DataDatabricksJob#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -15797,7 +16746,7 @@ export class DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureLi
 }
 export interface DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStart {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#id DataDatabricksJob#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#id DataDatabricksJob#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -15894,7 +16843,7 @@ export class DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStartList
 }
 export interface DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccess {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#id DataDatabricksJob#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#id DataDatabricksJob#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -15991,21 +16940,27 @@ export class DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccessLi
 }
 export interface DataDatabricksJobJobSettingsSettingsWebhookNotifications {
   /**
+  * on_duration_warning_threshold_exceeded block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#on_duration_warning_threshold_exceeded DataDatabricksJob#on_duration_warning_threshold_exceeded}
+  */
+  readonly onDurationWarningThresholdExceeded?: DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceeded[] | cdktf.IResolvable;
+  /**
   * on_failure block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#on_failure DataDatabricksJob#on_failure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#on_failure DataDatabricksJob#on_failure}
   */
   readonly onFailure?: DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailure[] | cdktf.IResolvable;
   /**
   * on_start block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#on_start DataDatabricksJob#on_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#on_start DataDatabricksJob#on_start}
   */
   readonly onStart?: DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStart[] | cdktf.IResolvable;
   /**
   * on_success block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#on_success DataDatabricksJob#on_success}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#on_success DataDatabricksJob#on_success}
   */
   readonly onSuccess?: DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccess[] | cdktf.IResolvable;
 }
@@ -16016,6 +16971,7 @@ export function dataDatabricksJobJobSettingsSettingsWebhookNotificationsToTerraf
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    on_duration_warning_threshold_exceeded: cdktf.listMapper(dataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceededToTerraform, true)(struct!.onDurationWarningThresholdExceeded),
     on_failure: cdktf.listMapper(dataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureToTerraform, true)(struct!.onFailure),
     on_start: cdktf.listMapper(dataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStartToTerraform, true)(struct!.onStart),
     on_success: cdktf.listMapper(dataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccessToTerraform, true)(struct!.onSuccess),
@@ -16036,6 +16992,10 @@ export class DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputRefer
   public get internalValue(): DataDatabricksJobJobSettingsSettingsWebhookNotifications | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._onDurationWarningThresholdExceeded?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.onDurationWarningThresholdExceeded = this._onDurationWarningThresholdExceeded?.internalValue;
+    }
     if (this._onFailure?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.onFailure = this._onFailure?.internalValue;
@@ -16054,16 +17014,34 @@ export class DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputRefer
   public set internalValue(value: DataDatabricksJobJobSettingsSettingsWebhookNotifications | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._onDurationWarningThresholdExceeded.internalValue = undefined;
       this._onFailure.internalValue = undefined;
       this._onStart.internalValue = undefined;
       this._onSuccess.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._onDurationWarningThresholdExceeded.internalValue = value.onDurationWarningThresholdExceeded;
       this._onFailure.internalValue = value.onFailure;
       this._onStart.internalValue = value.onStart;
       this._onSuccess.internalValue = value.onSuccess;
     }
+  }
+
+  // on_duration_warning_threshold_exceeded - computed: false, optional: true, required: false
+  private _onDurationWarningThresholdExceeded = new DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceededList(this, "on_duration_warning_threshold_exceeded", false);
+  public get onDurationWarningThresholdExceeded() {
+    return this._onDurationWarningThresholdExceeded;
+  }
+  public putOnDurationWarningThresholdExceeded(value: DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceeded[] | cdktf.IResolvable) {
+    this._onDurationWarningThresholdExceeded.internalValue = value;
+  }
+  public resetOnDurationWarningThresholdExceeded() {
+    this._onDurationWarningThresholdExceeded.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get onDurationWarningThresholdExceededInput() {
+    return this._onDurationWarningThresholdExceeded.internalValue;
   }
 
   // on_failure - computed: false, optional: true, required: false
@@ -16116,165 +17094,171 @@ export class DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputRefer
 }
 export interface DataDatabricksJobJobSettingsSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#existing_cluster_id DataDatabricksJob#existing_cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#existing_cluster_id DataDatabricksJob#existing_cluster_id}
   */
   readonly existingClusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#format DataDatabricksJob#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#format DataDatabricksJob#format}
   */
   readonly format?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#max_concurrent_runs DataDatabricksJob#max_concurrent_runs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#max_concurrent_runs DataDatabricksJob#max_concurrent_runs}
   */
   readonly maxConcurrentRuns?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#max_retries DataDatabricksJob#max_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#max_retries DataDatabricksJob#max_retries}
   */
   readonly maxRetries?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#min_retry_interval_millis DataDatabricksJob#min_retry_interval_millis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#min_retry_interval_millis DataDatabricksJob#min_retry_interval_millis}
   */
   readonly minRetryIntervalMillis?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#name DataDatabricksJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#name DataDatabricksJob#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#retry_on_timeout DataDatabricksJob#retry_on_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#retry_on_timeout DataDatabricksJob#retry_on_timeout}
   */
   readonly retryOnTimeout?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#tags DataDatabricksJob#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#tags DataDatabricksJob#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#timeout_seconds DataDatabricksJob#timeout_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#timeout_seconds DataDatabricksJob#timeout_seconds}
   */
   readonly timeoutSeconds?: number;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#compute DataDatabricksJob#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#compute DataDatabricksJob#compute}
   */
   readonly compute?: DataDatabricksJobJobSettingsSettingsCompute[] | cdktf.IResolvable;
   /**
   * continuous block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#continuous DataDatabricksJob#continuous}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#continuous DataDatabricksJob#continuous}
   */
   readonly continuous?: DataDatabricksJobJobSettingsSettingsContinuous;
   /**
   * dbt_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#dbt_task DataDatabricksJob#dbt_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#dbt_task DataDatabricksJob#dbt_task}
   */
   readonly dbtTask?: DataDatabricksJobJobSettingsSettingsDbtTask;
   /**
   * email_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#email_notifications DataDatabricksJob#email_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#email_notifications DataDatabricksJob#email_notifications}
   */
   readonly emailNotifications?: DataDatabricksJobJobSettingsSettingsEmailNotifications;
   /**
   * git_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#git_source DataDatabricksJob#git_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#git_source DataDatabricksJob#git_source}
   */
   readonly gitSource?: DataDatabricksJobJobSettingsSettingsGitSource;
   /**
+  * health block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#health DataDatabricksJob#health}
+  */
+  readonly health?: DataDatabricksJobJobSettingsSettingsHealth;
+  /**
   * job_cluster block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#job_cluster DataDatabricksJob#job_cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#job_cluster DataDatabricksJob#job_cluster}
   */
   readonly jobCluster?: DataDatabricksJobJobSettingsSettingsJobCluster[] | cdktf.IResolvable;
   /**
   * library block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#library DataDatabricksJob#library}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#library DataDatabricksJob#library}
   */
   readonly library?: DataDatabricksJobJobSettingsSettingsLibrary[] | cdktf.IResolvable;
   /**
   * new_cluster block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#new_cluster DataDatabricksJob#new_cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#new_cluster DataDatabricksJob#new_cluster}
   */
   readonly newCluster?: DataDatabricksJobJobSettingsSettingsNewCluster;
   /**
   * notebook_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#notebook_task DataDatabricksJob#notebook_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#notebook_task DataDatabricksJob#notebook_task}
   */
   readonly notebookTask?: DataDatabricksJobJobSettingsSettingsNotebookTask;
   /**
   * notification_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#notification_settings DataDatabricksJob#notification_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#notification_settings DataDatabricksJob#notification_settings}
   */
   readonly notificationSettings?: DataDatabricksJobJobSettingsSettingsNotificationSettings;
   /**
   * pipeline_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#pipeline_task DataDatabricksJob#pipeline_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#pipeline_task DataDatabricksJob#pipeline_task}
   */
   readonly pipelineTask?: DataDatabricksJobJobSettingsSettingsPipelineTask;
   /**
   * python_wheel_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#python_wheel_task DataDatabricksJob#python_wheel_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#python_wheel_task DataDatabricksJob#python_wheel_task}
   */
   readonly pythonWheelTask?: DataDatabricksJobJobSettingsSettingsPythonWheelTask;
   /**
   * queue block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#queue DataDatabricksJob#queue}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#queue DataDatabricksJob#queue}
   */
   readonly queue?: DataDatabricksJobJobSettingsSettingsQueue;
   /**
   * run_as block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#run_as DataDatabricksJob#run_as}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#run_as DataDatabricksJob#run_as}
   */
   readonly runAs?: DataDatabricksJobJobSettingsSettingsRunAs;
   /**
   * schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#schedule DataDatabricksJob#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#schedule DataDatabricksJob#schedule}
   */
   readonly schedule?: DataDatabricksJobJobSettingsSettingsSchedule;
   /**
   * spark_jar_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#spark_jar_task DataDatabricksJob#spark_jar_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#spark_jar_task DataDatabricksJob#spark_jar_task}
   */
   readonly sparkJarTask?: DataDatabricksJobJobSettingsSettingsSparkJarTask;
   /**
   * spark_python_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#spark_python_task DataDatabricksJob#spark_python_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#spark_python_task DataDatabricksJob#spark_python_task}
   */
   readonly sparkPythonTask?: DataDatabricksJobJobSettingsSettingsSparkPythonTask;
   /**
   * spark_submit_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#spark_submit_task DataDatabricksJob#spark_submit_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#spark_submit_task DataDatabricksJob#spark_submit_task}
   */
   readonly sparkSubmitTask?: DataDatabricksJobJobSettingsSettingsSparkSubmitTask;
   /**
   * task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#task DataDatabricksJob#task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#task DataDatabricksJob#task}
   */
   readonly task?: DataDatabricksJobJobSettingsSettingsTask[] | cdktf.IResolvable;
   /**
   * trigger block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#trigger DataDatabricksJob#trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#trigger DataDatabricksJob#trigger}
   */
   readonly trigger?: DataDatabricksJobJobSettingsSettingsTrigger;
   /**
   * webhook_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#webhook_notifications DataDatabricksJob#webhook_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#webhook_notifications DataDatabricksJob#webhook_notifications}
   */
   readonly webhookNotifications?: DataDatabricksJobJobSettingsSettingsWebhookNotifications;
 }
@@ -16299,6 +17283,7 @@ export function dataDatabricksJobJobSettingsSettingsToTerraform(struct?: DataDat
     dbt_task: dataDatabricksJobJobSettingsSettingsDbtTaskToTerraform(struct!.dbtTask),
     email_notifications: dataDatabricksJobJobSettingsSettingsEmailNotificationsToTerraform(struct!.emailNotifications),
     git_source: dataDatabricksJobJobSettingsSettingsGitSourceToTerraform(struct!.gitSource),
+    health: dataDatabricksJobJobSettingsSettingsHealthToTerraform(struct!.health),
     job_cluster: cdktf.listMapper(dataDatabricksJobJobSettingsSettingsJobClusterToTerraform, true)(struct!.jobCluster),
     library: cdktf.listMapper(dataDatabricksJobJobSettingsSettingsLibraryToTerraform, true)(struct!.library),
     new_cluster: dataDatabricksJobJobSettingsSettingsNewClusterToTerraform(struct!.newCluster),
@@ -16388,6 +17373,10 @@ export class DataDatabricksJobJobSettingsSettingsOutputReference extends cdktf.C
       hasAnyValues = true;
       internalValueResult.gitSource = this._gitSource?.internalValue;
     }
+    if (this._health?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.health = this._health?.internalValue;
+    }
     if (this._jobCluster?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.jobCluster = this._jobCluster?.internalValue;
@@ -16472,6 +17461,7 @@ export class DataDatabricksJobJobSettingsSettingsOutputReference extends cdktf.C
       this._dbtTask.internalValue = undefined;
       this._emailNotifications.internalValue = undefined;
       this._gitSource.internalValue = undefined;
+      this._health.internalValue = undefined;
       this._jobCluster.internalValue = undefined;
       this._library.internalValue = undefined;
       this._newCluster.internalValue = undefined;
@@ -16505,6 +17495,7 @@ export class DataDatabricksJobJobSettingsSettingsOutputReference extends cdktf.C
       this._dbtTask.internalValue = value.dbtTask;
       this._emailNotifications.internalValue = value.emailNotifications;
       this._gitSource.internalValue = value.gitSource;
+      this._health.internalValue = value.health;
       this._jobCluster.internalValue = value.jobCluster;
       this._library.internalValue = value.library;
       this._newCluster.internalValue = value.newCluster;
@@ -16746,6 +17737,22 @@ export class DataDatabricksJobJobSettingsSettingsOutputReference extends cdktf.C
   // Temporarily expose input value. Use with caution.
   public get gitSourceInput() {
     return this._gitSource.internalValue;
+  }
+
+  // health - computed: false, optional: true, required: false
+  private _health = new DataDatabricksJobJobSettingsSettingsHealthOutputReference(this, "health");
+  public get health() {
+    return this._health;
+  }
+  public putHealth(value: DataDatabricksJobJobSettingsSettingsHealth) {
+    this._health.internalValue = value;
+  }
+  public resetHealth() {
+    this._health.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get healthInput() {
+    return this._health.internalValue;
   }
 
   // job_cluster - computed: false, optional: true, required: false
@@ -17006,25 +18013,25 @@ export class DataDatabricksJobJobSettingsSettingsOutputReference extends cdktf.C
 }
 export interface DataDatabricksJobJobSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#created_time DataDatabricksJob#created_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#created_time DataDatabricksJob#created_time}
   */
   readonly createdTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#creator_user_name DataDatabricksJob#creator_user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#creator_user_name DataDatabricksJob#creator_user_name}
   */
   readonly creatorUserName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}
   */
   readonly jobId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#run_as_user_name DataDatabricksJob#run_as_user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#run_as_user_name DataDatabricksJob#run_as_user_name}
   */
   readonly runAsUserName?: string;
   /**
   * settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job#settings DataDatabricksJob#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job#settings DataDatabricksJob#settings}
   */
   readonly settings?: DataDatabricksJobJobSettingsSettings;
 }
@@ -17181,7 +18188,7 @@ export class DataDatabricksJobJobSettingsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job databricks_job}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job databricks_job}
 */
 export class DataDatabricksJob extends cdktf.TerraformDataSource {
 
@@ -17195,7 +18202,7 @@ export class DataDatabricksJob extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/data-sources/job databricks_job} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/job databricks_job} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -17206,7 +18213,7 @@ export class DataDatabricksJob extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_job',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.21.0',
+        providerVersion: '1.22.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

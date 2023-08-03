@@ -1,6 +1,6 @@
 # `databricks_group`
 
-Refer to the Terraform Registory for docs: [`databricks_group`](https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/group).
+Refer to the Terraform Registory for docs: [`databricks_group`](https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/group).
 
 # `group` Submodule <a name="`group` Submodule" id="@cdktf/provider-databricks.group"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`databricks_group`](https://registry
 
 ### Group <a name="Group" id="@cdktf/provider-databricks.group.Group"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/group databricks_group}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/group databricks_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.group.Group.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/group"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/group"
 
 group.NewGroup(scope Construct, id *string, config GroupConfig) Group
 ```
@@ -70,6 +70,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.group.Group.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.group.Group.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.group.Group.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.group.Group.resetAclPrincipalId">ResetAclPrincipalId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.group.Group.resetAllowClusterCreate">ResetAllowClusterCreate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.group.Group.resetAllowInstancePoolCreate">ResetAllowInstancePoolCreate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.group.Group.resetDatabricksSqlAccess">ResetDatabricksSqlAccess</a></code> | *No description.* |
@@ -265,6 +266,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
+##### `ResetAclPrincipalId` <a name="ResetAclPrincipalId" id="@cdktf/provider-databricks.group.Group.resetAclPrincipalId"></a>
+
+```go
+func ResetAclPrincipalId()
+```
+
 ##### `ResetAllowClusterCreate` <a name="ResetAllowClusterCreate" id="@cdktf/provider-databricks.group.Group.resetAllowClusterCreate"></a>
 
 ```go
@@ -326,7 +333,7 @@ func ResetWorkspaceAccess()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.group.Group.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/group"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/group"
 
 group.Group_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +365,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.group.Group.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/group"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/group"
 
 group.Group_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +379,7 @@ group.Group_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.group.Group.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/group"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/group"
 
 group.Group_IsTerraformResource(x interface{}) *bool
 ```
@@ -401,6 +408,7 @@ group.Group_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-databricks.group.Group.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.group.Group.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.group.Group.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.group.Group.property.aclPrincipalIdInput">AclPrincipalIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.group.Group.property.allowClusterCreateInput">AllowClusterCreateInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.group.Group.property.allowInstancePoolCreateInput">AllowInstancePoolCreateInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.group.Group.property.databricksSqlAccessInput">DatabricksSqlAccessInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -410,6 +418,7 @@ group.Group_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-databricks.group.Group.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.group.Group.property.urlInput">UrlInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.group.Group.property.workspaceAccessInput">WorkspaceAccessInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.group.Group.property.aclPrincipalId">AclPrincipalId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.group.Group.property.allowClusterCreate">AllowClusterCreate</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.group.Group.property.allowInstancePoolCreate">AllowInstancePoolCreate</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.group.Group.property.databricksSqlAccess">DatabricksSqlAccess</a></code> | <code>interface{}</code> | *No description.* |
@@ -564,6 +573,16 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `AclPrincipalIdInput`<sup>Optional</sup> <a name="AclPrincipalIdInput" id="@cdktf/provider-databricks.group.Group.property.aclPrincipalIdInput"></a>
+
+```go
+func AclPrincipalIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `AllowClusterCreateInput`<sup>Optional</sup> <a name="AllowClusterCreateInput" id="@cdktf/provider-databricks.group.Group.property.allowClusterCreateInput"></a>
 
 ```go
@@ -651,6 +670,16 @@ func WorkspaceAccessInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `AclPrincipalId`<sup>Required</sup> <a name="AclPrincipalId" id="@cdktf/provider-databricks.group.Group.property.aclPrincipalId"></a>
+
+```go
+func AclPrincipalId() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -769,7 +798,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.group.GroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/group"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/group"
 
 &group.GroupConfig {
 	Connection: interface{},
@@ -780,6 +809,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/group"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	DisplayName: *string,
+	AclPrincipalId: *string,
 	AllowClusterCreate: interface{},
 	AllowInstancePoolCreate: interface{},
 	DatabricksSqlAccess: interface{},
@@ -802,15 +832,16 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/group"
 | <code><a href="#@cdktf/provider-databricks.group.GroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.group.GroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.group.GroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.group.GroupConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/group#display_name Group#display_name}. |
-| <code><a href="#@cdktf/provider-databricks.group.GroupConfig.property.allowClusterCreate">AllowClusterCreate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/group#allow_cluster_create Group#allow_cluster_create}. |
-| <code><a href="#@cdktf/provider-databricks.group.GroupConfig.property.allowInstancePoolCreate">AllowInstancePoolCreate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/group#allow_instance_pool_create Group#allow_instance_pool_create}. |
-| <code><a href="#@cdktf/provider-databricks.group.GroupConfig.property.databricksSqlAccess">DatabricksSqlAccess</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/group#databricks_sql_access Group#databricks_sql_access}. |
-| <code><a href="#@cdktf/provider-databricks.group.GroupConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/group#external_id Group#external_id}. |
-| <code><a href="#@cdktf/provider-databricks.group.GroupConfig.property.force">Force</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/group#force Group#force}. |
-| <code><a href="#@cdktf/provider-databricks.group.GroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/group#id Group#id}. |
-| <code><a href="#@cdktf/provider-databricks.group.GroupConfig.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/group#url Group#url}. |
-| <code><a href="#@cdktf/provider-databricks.group.GroupConfig.property.workspaceAccess">WorkspaceAccess</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/group#workspace_access Group#workspace_access}. |
+| <code><a href="#@cdktf/provider-databricks.group.GroupConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/group#display_name Group#display_name}. |
+| <code><a href="#@cdktf/provider-databricks.group.GroupConfig.property.aclPrincipalId">AclPrincipalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/group#acl_principal_id Group#acl_principal_id}. |
+| <code><a href="#@cdktf/provider-databricks.group.GroupConfig.property.allowClusterCreate">AllowClusterCreate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/group#allow_cluster_create Group#allow_cluster_create}. |
+| <code><a href="#@cdktf/provider-databricks.group.GroupConfig.property.allowInstancePoolCreate">AllowInstancePoolCreate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/group#allow_instance_pool_create Group#allow_instance_pool_create}. |
+| <code><a href="#@cdktf/provider-databricks.group.GroupConfig.property.databricksSqlAccess">DatabricksSqlAccess</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/group#databricks_sql_access Group#databricks_sql_access}. |
+| <code><a href="#@cdktf/provider-databricks.group.GroupConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/group#external_id Group#external_id}. |
+| <code><a href="#@cdktf/provider-databricks.group.GroupConfig.property.force">Force</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/group#force Group#force}. |
+| <code><a href="#@cdktf/provider-databricks.group.GroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/group#id Group#id}. |
+| <code><a href="#@cdktf/provider-databricks.group.GroupConfig.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/group#url Group#url}. |
+| <code><a href="#@cdktf/provider-databricks.group.GroupConfig.property.workspaceAccess">WorkspaceAccess</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/group#workspace_access Group#workspace_access}. |
 
 ---
 
@@ -892,7 +923,19 @@ DisplayName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/group#display_name Group#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/group#display_name Group#display_name}.
+
+---
+
+##### `AclPrincipalId`<sup>Optional</sup> <a name="AclPrincipalId" id="@cdktf/provider-databricks.group.GroupConfig.property.aclPrincipalId"></a>
+
+```go
+AclPrincipalId *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/group#acl_principal_id Group#acl_principal_id}.
 
 ---
 
@@ -904,7 +947,7 @@ AllowClusterCreate interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/group#allow_cluster_create Group#allow_cluster_create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/group#allow_cluster_create Group#allow_cluster_create}.
 
 ---
 
@@ -916,7 +959,7 @@ AllowInstancePoolCreate interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/group#allow_instance_pool_create Group#allow_instance_pool_create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/group#allow_instance_pool_create Group#allow_instance_pool_create}.
 
 ---
 
@@ -928,7 +971,7 @@ DatabricksSqlAccess interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/group#databricks_sql_access Group#databricks_sql_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/group#databricks_sql_access Group#databricks_sql_access}.
 
 ---
 
@@ -940,7 +983,7 @@ ExternalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/group#external_id Group#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/group#external_id Group#external_id}.
 
 ---
 
@@ -952,7 +995,7 @@ Force interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/group#force Group#force}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/group#force Group#force}.
 
 ---
 
@@ -964,7 +1007,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/group#id Group#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/group#id Group#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -979,7 +1022,7 @@ Url *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/group#url Group#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/group#url Group#url}.
 
 ---
 
@@ -991,7 +1034,7 @@ WorkspaceAccess interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/group#workspace_access Group#workspace_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/group#workspace_access Group#workspace_access}.
 
 ---
 

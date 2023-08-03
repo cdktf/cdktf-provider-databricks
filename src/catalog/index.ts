@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/catalog
+// https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/catalog
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,56 +8,56 @@ import * as cdktf from 'cdktf';
 
 export interface CatalogConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/catalog#comment Catalog#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/catalog#comment Catalog#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/catalog#force_destroy Catalog#force_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/catalog#force_destroy Catalog#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/catalog#id Catalog#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/catalog#id Catalog#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/catalog#isolation_mode Catalog#isolation_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/catalog#isolation_mode Catalog#isolation_mode}
   */
   readonly isolationMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/catalog#metastore_id Catalog#metastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/catalog#metastore_id Catalog#metastore_id}
   */
   readonly metastoreId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/catalog#name Catalog#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/catalog#name Catalog#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/catalog#owner Catalog#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/catalog#owner Catalog#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/catalog#properties Catalog#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/catalog#properties Catalog#properties}
   */
   readonly properties?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/catalog#provider_name Catalog#provider_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/catalog#provider_name Catalog#provider_name}
   */
   readonly providerName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/catalog#share_name Catalog#share_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/catalog#share_name Catalog#share_name}
   */
   readonly shareName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/catalog#storage_root Catalog#storage_root}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/catalog#storage_root Catalog#storage_root}
   */
   readonly storageRoot?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/catalog databricks_catalog}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/catalog databricks_catalog}
 */
 export class Catalog extends cdktf.TerraformResource {
 
@@ -76,7 +71,7 @@ export class Catalog extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.21.0/docs/resources/catalog databricks_catalog} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/resources/catalog databricks_catalog} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -87,7 +82,7 @@ export class Catalog extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_catalog',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.21.0',
+        providerVersion: '1.22.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

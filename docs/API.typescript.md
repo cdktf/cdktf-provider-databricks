@@ -1,6 +1,7 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+- [accessControlRuleSet](./accessControlRuleSet.typescript.md)
 - [awsS3Mount](./awsS3Mount.typescript.md)
 - [azureAdlsGen1Mount](./azureAdlsGen1Mount.typescript.md)
 - [azureAdlsGen2Mount](./azureAdlsGen2Mount.typescript.md)
@@ -24,6 +25,8 @@ The following submodules are available:
 - [dataDatabricksInstancePool](./dataDatabricksInstancePool.typescript.md)
 - [dataDatabricksJob](./dataDatabricksJob.typescript.md)
 - [dataDatabricksJobs](./dataDatabricksJobs.typescript.md)
+- [dataDatabricksMetastore](./dataDatabricksMetastore.typescript.md)
+- [dataDatabricksMetastores](./dataDatabricksMetastores.typescript.md)
 - [dataDatabricksMwsCredentials](./dataDatabricksMwsCredentials.typescript.md)
 - [dataDatabricksMwsWorkspaces](./dataDatabricksMwsWorkspaces.typescript.md)
 - [dataDatabricksNodeType](./dataDatabricksNodeType.typescript.md)
