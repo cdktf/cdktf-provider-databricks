@@ -1,6 +1,7 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+- [accessControlRuleSet](./accessControlRuleSet.java.md)
 - [awsS3Mount](./awsS3Mount.java.md)
 - [azureAdlsGen1Mount](./azureAdlsGen1Mount.java.md)
 - [azureAdlsGen2Mount](./azureAdlsGen2Mount.java.md)
@@ -24,6 +25,8 @@ The following submodules are available:
 - [dataDatabricksInstancePool](./dataDatabricksInstancePool.java.md)
 - [dataDatabricksJob](./dataDatabricksJob.java.md)
 - [dataDatabricksJobs](./dataDatabricksJobs.java.md)
+- [dataDatabricksMetastore](./dataDatabricksMetastore.java.md)
+- [dataDatabricksMetastores](./dataDatabricksMetastores.java.md)
 - [dataDatabricksMwsCredentials](./dataDatabricksMwsCredentials.java.md)
 - [dataDatabricksMwsWorkspaces](./dataDatabricksMwsWorkspaces.java.md)
 - [dataDatabricksNodeType](./dataDatabricksNodeType.java.md)
