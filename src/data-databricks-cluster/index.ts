@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster
+// https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +8,15 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksClusterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#cluster_id DataDatabricksCluster#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#cluster_id DataDatabricksCluster#cluster_id}
   */
   readonly clusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#cluster_name DataDatabricksCluster#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#cluster_name DataDatabricksCluster#cluster_name}
   */
   readonly clusterName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#id DataDatabricksCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#id DataDatabricksCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,17 +25,17 @@ export interface DataDatabricksClusterConfig extends cdktf.TerraformMetaArgument
   /**
   * cluster_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#cluster_info DataDatabricksCluster#cluster_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#cluster_info DataDatabricksCluster#cluster_info}
   */
   readonly clusterInfo?: DataDatabricksClusterClusterInfo;
 }
 export interface DataDatabricksClusterClusterInfoAutoscale {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#max_workers DataDatabricksCluster#max_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#max_workers DataDatabricksCluster#max_workers}
   */
   readonly maxWorkers?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#min_workers DataDatabricksCluster#min_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#min_workers DataDatabricksCluster#min_workers}
   */
   readonly minWorkers?: number;
 }
@@ -128,35 +123,35 @@ export class DataDatabricksClusterClusterInfoAutoscaleOutputReference extends cd
 }
 export interface DataDatabricksClusterClusterInfoAwsAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#availability DataDatabricksCluster#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#availability DataDatabricksCluster#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#ebs_volume_count DataDatabricksCluster#ebs_volume_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#ebs_volume_count DataDatabricksCluster#ebs_volume_count}
   */
   readonly ebsVolumeCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#ebs_volume_size DataDatabricksCluster#ebs_volume_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#ebs_volume_size DataDatabricksCluster#ebs_volume_size}
   */
   readonly ebsVolumeSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#ebs_volume_type DataDatabricksCluster#ebs_volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#ebs_volume_type DataDatabricksCluster#ebs_volume_type}
   */
   readonly ebsVolumeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#first_on_demand DataDatabricksCluster#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#first_on_demand DataDatabricksCluster#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#instance_profile_arn DataDatabricksCluster#instance_profile_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#instance_profile_arn DataDatabricksCluster#instance_profile_arn}
   */
   readonly instanceProfileArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#spot_bid_price_percent DataDatabricksCluster#spot_bid_price_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#spot_bid_price_percent DataDatabricksCluster#spot_bid_price_percent}
   */
   readonly spotBidPricePercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#zone_id DataDatabricksCluster#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#zone_id DataDatabricksCluster#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -382,15 +377,15 @@ export class DataDatabricksClusterClusterInfoAwsAttributesOutputReference extend
 }
 export interface DataDatabricksClusterClusterInfoAzureAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#availability DataDatabricksCluster#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#availability DataDatabricksCluster#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#first_on_demand DataDatabricksCluster#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#first_on_demand DataDatabricksCluster#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#spot_bid_max_price DataDatabricksCluster#spot_bid_max_price}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#spot_bid_max_price DataDatabricksCluster#spot_bid_max_price}
   */
   readonly spotBidMaxPrice?: number;
 }
@@ -501,7 +496,7 @@ export class DataDatabricksClusterClusterInfoAzureAttributesOutputReference exte
 }
 export interface DataDatabricksClusterClusterInfoClusterLogConfDbfs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}
   */
   readonly destination: string;
 }
@@ -563,31 +558,31 @@ export class DataDatabricksClusterClusterInfoClusterLogConfDbfsOutputReference e
 }
 export interface DataDatabricksClusterClusterInfoClusterLogConfS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#canned_acl DataDatabricksCluster#canned_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#canned_acl DataDatabricksCluster#canned_acl}
   */
   readonly cannedAcl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}
   */
   readonly enableEncryption?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#encryption_type DataDatabricksCluster#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#encryption_type DataDatabricksCluster#encryption_type}
   */
   readonly encryptionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#endpoint DataDatabricksCluster#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#endpoint DataDatabricksCluster#endpoint}
   */
   readonly endpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#kms_key DataDatabricksCluster#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#kms_key DataDatabricksCluster#kms_key}
   */
   readonly kmsKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#region DataDatabricksCluster#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#region DataDatabricksCluster#region}
   */
   readonly region?: string;
 }
@@ -789,13 +784,13 @@ export interface DataDatabricksClusterClusterInfoClusterLogConf {
   /**
   * dbfs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#dbfs DataDatabricksCluster#dbfs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#dbfs DataDatabricksCluster#dbfs}
   */
   readonly dbfs?: DataDatabricksClusterClusterInfoClusterLogConfDbfs;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#s3 DataDatabricksCluster#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#s3 DataDatabricksCluster#s3}
   */
   readonly s3?: DataDatabricksClusterClusterInfoClusterLogConfS3;
 }
@@ -883,11 +878,11 @@ export class DataDatabricksClusterClusterInfoClusterLogConfOutputReference exten
 }
 export interface DataDatabricksClusterClusterInfoClusterLogStatus {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#last_attempted DataDatabricksCluster#last_attempted}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#last_attempted DataDatabricksCluster#last_attempted}
   */
   readonly lastAttempted?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#last_exception DataDatabricksCluster#last_exception}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#last_exception DataDatabricksCluster#last_exception}
   */
   readonly lastException?: string;
 }
@@ -975,11 +970,11 @@ export class DataDatabricksClusterClusterInfoClusterLogStatusOutputReference ext
 }
 export interface DataDatabricksClusterClusterInfoDockerImageBasicAuth {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#password DataDatabricksCluster#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#password DataDatabricksCluster#password}
   */
   readonly password: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#username DataDatabricksCluster#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#username DataDatabricksCluster#username}
   */
   readonly username: string;
 }
@@ -1061,13 +1056,13 @@ export class DataDatabricksClusterClusterInfoDockerImageBasicAuthOutputReference
 }
 export interface DataDatabricksClusterClusterInfoDockerImage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#url DataDatabricksCluster#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#url DataDatabricksCluster#url}
   */
   readonly url: string;
   /**
   * basic_auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#basic_auth DataDatabricksCluster#basic_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#basic_auth DataDatabricksCluster#basic_auth}
   */
   readonly basicAuth?: DataDatabricksClusterClusterInfoDockerImageBasicAuth;
 }
@@ -1152,7 +1147,7 @@ export class DataDatabricksClusterClusterInfoDockerImageOutputReference extends 
 }
 export interface DataDatabricksClusterClusterInfoDriverNodeAwsAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#is_spot DataDatabricksCluster#is_spot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#is_spot DataDatabricksCluster#is_spot}
   */
   readonly isSpot?: boolean | cdktf.IResolvable;
 }
@@ -1217,33 +1212,33 @@ export class DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputRefere
 }
 export interface DataDatabricksClusterClusterInfoDriver {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#host_private_ip DataDatabricksCluster#host_private_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#host_private_ip DataDatabricksCluster#host_private_ip}
   */
   readonly hostPrivateIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#instance_id DataDatabricksCluster#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#instance_id DataDatabricksCluster#instance_id}
   */
   readonly instanceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#node_id DataDatabricksCluster#node_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#node_id DataDatabricksCluster#node_id}
   */
   readonly nodeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#private_ip DataDatabricksCluster#private_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#private_ip DataDatabricksCluster#private_ip}
   */
   readonly privateIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#public_dns DataDatabricksCluster#public_dns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#public_dns DataDatabricksCluster#public_dns}
   */
   readonly publicDns?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#start_timestamp DataDatabricksCluster#start_timestamp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#start_timestamp DataDatabricksCluster#start_timestamp}
   */
   readonly startTimestamp?: number;
   /**
   * node_aws_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#node_aws_attributes DataDatabricksCluster#node_aws_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#node_aws_attributes DataDatabricksCluster#node_aws_attributes}
   */
   readonly nodeAwsAttributes?: DataDatabricksClusterClusterInfoDriverNodeAwsAttributes;
 }
@@ -1446,7 +1441,7 @@ export class DataDatabricksClusterClusterInfoDriverOutputReference extends cdktf
 }
 export interface DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#is_spot DataDatabricksCluster#is_spot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#is_spot DataDatabricksCluster#is_spot}
   */
   readonly isSpot?: boolean | cdktf.IResolvable;
 }
@@ -1511,33 +1506,33 @@ export class DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributesOutputRef
 }
 export interface DataDatabricksClusterClusterInfoExecutors {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#host_private_ip DataDatabricksCluster#host_private_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#host_private_ip DataDatabricksCluster#host_private_ip}
   */
   readonly hostPrivateIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#instance_id DataDatabricksCluster#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#instance_id DataDatabricksCluster#instance_id}
   */
   readonly instanceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#node_id DataDatabricksCluster#node_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#node_id DataDatabricksCluster#node_id}
   */
   readonly nodeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#private_ip DataDatabricksCluster#private_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#private_ip DataDatabricksCluster#private_ip}
   */
   readonly privateIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#public_dns DataDatabricksCluster#public_dns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#public_dns DataDatabricksCluster#public_dns}
   */
   readonly publicDns?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#start_timestamp DataDatabricksCluster#start_timestamp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#start_timestamp DataDatabricksCluster#start_timestamp}
   */
   readonly startTimestamp?: number;
   /**
   * node_aws_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#node_aws_attributes DataDatabricksCluster#node_aws_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#node_aws_attributes DataDatabricksCluster#node_aws_attributes}
   */
   readonly nodeAwsAttributes?: DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributes;
 }
@@ -1772,23 +1767,27 @@ export class DataDatabricksClusterClusterInfoExecutorsList extends cdktf.Complex
 }
 export interface DataDatabricksClusterClusterInfoGcpAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#availability DataDatabricksCluster#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#availability DataDatabricksCluster#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#boot_disk_size DataDatabricksCluster#boot_disk_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#boot_disk_size DataDatabricksCluster#boot_disk_size}
   */
   readonly bootDiskSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#google_service_account DataDatabricksCluster#google_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#google_service_account DataDatabricksCluster#google_service_account}
   */
   readonly googleServiceAccount?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#use_preemptible_executors DataDatabricksCluster#use_preemptible_executors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#local_ssd_count DataDatabricksCluster#local_ssd_count}
+  */
+  readonly localSsdCount?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#use_preemptible_executors DataDatabricksCluster#use_preemptible_executors}
   */
   readonly usePreemptibleExecutors?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#zone_id DataDatabricksCluster#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#zone_id DataDatabricksCluster#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -1802,6 +1801,7 @@ export function dataDatabricksClusterClusterInfoGcpAttributesToTerraform(struct?
     availability: cdktf.stringToTerraform(struct!.availability),
     boot_disk_size: cdktf.numberToTerraform(struct!.bootDiskSize),
     google_service_account: cdktf.stringToTerraform(struct!.googleServiceAccount),
+    local_ssd_count: cdktf.numberToTerraform(struct!.localSsdCount),
     use_preemptible_executors: cdktf.booleanToTerraform(struct!.usePreemptibleExecutors),
     zone_id: cdktf.stringToTerraform(struct!.zoneId),
   }
@@ -1833,6 +1833,10 @@ export class DataDatabricksClusterClusterInfoGcpAttributesOutputReference extend
       hasAnyValues = true;
       internalValueResult.googleServiceAccount = this._googleServiceAccount;
     }
+    if (this._localSsdCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.localSsdCount = this._localSsdCount;
+    }
     if (this._usePreemptibleExecutors !== undefined) {
       hasAnyValues = true;
       internalValueResult.usePreemptibleExecutors = this._usePreemptibleExecutors;
@@ -1850,6 +1854,7 @@ export class DataDatabricksClusterClusterInfoGcpAttributesOutputReference extend
       this._availability = undefined;
       this._bootDiskSize = undefined;
       this._googleServiceAccount = undefined;
+      this._localSsdCount = undefined;
       this._usePreemptibleExecutors = undefined;
       this._zoneId = undefined;
     }
@@ -1858,6 +1863,7 @@ export class DataDatabricksClusterClusterInfoGcpAttributesOutputReference extend
       this._availability = value.availability;
       this._bootDiskSize = value.bootDiskSize;
       this._googleServiceAccount = value.googleServiceAccount;
+      this._localSsdCount = value.localSsdCount;
       this._usePreemptibleExecutors = value.usePreemptibleExecutors;
       this._zoneId = value.zoneId;
     }
@@ -1911,6 +1917,22 @@ export class DataDatabricksClusterClusterInfoGcpAttributesOutputReference extend
     return this._googleServiceAccount;
   }
 
+  // local_ssd_count - computed: false, optional: true, required: false
+  private _localSsdCount?: number; 
+  public get localSsdCount() {
+    return this.getNumberAttribute('local_ssd_count');
+  }
+  public set localSsdCount(value: number) {
+    this._localSsdCount = value;
+  }
+  public resetLocalSsdCount() {
+    this._localSsdCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get localSsdCountInput() {
+    return this._localSsdCount;
+  }
+
   // use_preemptible_executors - computed: false, optional: true, required: false
   private _usePreemptibleExecutors?: boolean | cdktf.IResolvable; 
   public get usePreemptibleExecutors() {
@@ -1945,7 +1967,7 @@ export class DataDatabricksClusterClusterInfoGcpAttributesOutputReference extend
 }
 export interface DataDatabricksClusterClusterInfoInitScriptsAbfss {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}
   */
   readonly destination?: string;
 }
@@ -2010,7 +2032,7 @@ export class DataDatabricksClusterClusterInfoInitScriptsAbfssOutputReference ext
 }
 export interface DataDatabricksClusterClusterInfoInitScriptsDbfs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}
   */
   readonly destination: string;
 }
@@ -2072,7 +2094,7 @@ export class DataDatabricksClusterClusterInfoInitScriptsDbfsOutputReference exte
 }
 export interface DataDatabricksClusterClusterInfoInitScriptsFile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}
   */
   readonly destination?: string;
 }
@@ -2137,7 +2159,7 @@ export class DataDatabricksClusterClusterInfoInitScriptsFileOutputReference exte
 }
 export interface DataDatabricksClusterClusterInfoInitScriptsGcs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}
   */
   readonly destination?: string;
 }
@@ -2202,31 +2224,31 @@ export class DataDatabricksClusterClusterInfoInitScriptsGcsOutputReference exten
 }
 export interface DataDatabricksClusterClusterInfoInitScriptsS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#canned_acl DataDatabricksCluster#canned_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#canned_acl DataDatabricksCluster#canned_acl}
   */
   readonly cannedAcl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}
   */
   readonly enableEncryption?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#encryption_type DataDatabricksCluster#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#encryption_type DataDatabricksCluster#encryption_type}
   */
   readonly encryptionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#endpoint DataDatabricksCluster#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#endpoint DataDatabricksCluster#endpoint}
   */
   readonly endpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#kms_key DataDatabricksCluster#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#kms_key DataDatabricksCluster#kms_key}
   */
   readonly kmsKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#region DataDatabricksCluster#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#region DataDatabricksCluster#region}
   */
   readonly region?: string;
 }
@@ -2426,7 +2448,7 @@ export class DataDatabricksClusterClusterInfoInitScriptsS3OutputReference extend
 }
 export interface DataDatabricksClusterClusterInfoInitScriptsWorkspace {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}
   */
   readonly destination?: string;
 }
@@ -2493,37 +2515,37 @@ export interface DataDatabricksClusterClusterInfoInitScripts {
   /**
   * abfss block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#abfss DataDatabricksCluster#abfss}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#abfss DataDatabricksCluster#abfss}
   */
   readonly abfss?: DataDatabricksClusterClusterInfoInitScriptsAbfss;
   /**
   * dbfs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#dbfs DataDatabricksCluster#dbfs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#dbfs DataDatabricksCluster#dbfs}
   */
   readonly dbfs?: DataDatabricksClusterClusterInfoInitScriptsDbfs;
   /**
   * file block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#file DataDatabricksCluster#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#file DataDatabricksCluster#file}
   */
   readonly file?: DataDatabricksClusterClusterInfoInitScriptsFile;
   /**
   * gcs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#gcs DataDatabricksCluster#gcs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#gcs DataDatabricksCluster#gcs}
   */
   readonly gcs?: DataDatabricksClusterClusterInfoInitScriptsGcs;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#s3 DataDatabricksCluster#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#s3 DataDatabricksCluster#s3}
   */
   readonly s3?: DataDatabricksClusterClusterInfoInitScriptsS3;
   /**
   * workspace block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#workspace DataDatabricksCluster#workspace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#workspace DataDatabricksCluster#workspace}
   */
   readonly workspace?: DataDatabricksClusterClusterInfoInitScriptsWorkspace;
 }
@@ -2735,15 +2757,15 @@ export class DataDatabricksClusterClusterInfoInitScriptsList extends cdktf.Compl
 }
 export interface DataDatabricksClusterClusterInfoTerminationReason {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#code DataDatabricksCluster#code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#code DataDatabricksCluster#code}
   */
   readonly code?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#parameters DataDatabricksCluster#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#parameters DataDatabricksCluster#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#type DataDatabricksCluster#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#type DataDatabricksCluster#type}
   */
   readonly type?: string;
 }
@@ -2854,197 +2876,197 @@ export class DataDatabricksClusterClusterInfoTerminationReasonOutputReference ex
 }
 export interface DataDatabricksClusterClusterInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#autotermination_minutes DataDatabricksCluster#autotermination_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#autotermination_minutes DataDatabricksCluster#autotermination_minutes}
   */
   readonly autoterminationMinutes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#cluster_cores DataDatabricksCluster#cluster_cores}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#cluster_cores DataDatabricksCluster#cluster_cores}
   */
   readonly clusterCores?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#cluster_id DataDatabricksCluster#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#cluster_id DataDatabricksCluster#cluster_id}
   */
   readonly clusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#cluster_memory_mb DataDatabricksCluster#cluster_memory_mb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#cluster_memory_mb DataDatabricksCluster#cluster_memory_mb}
   */
   readonly clusterMemoryMb?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#cluster_name DataDatabricksCluster#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#cluster_name DataDatabricksCluster#cluster_name}
   */
   readonly clusterName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#cluster_source DataDatabricksCluster#cluster_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#cluster_source DataDatabricksCluster#cluster_source}
   */
   readonly clusterSource?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#creator_user_name DataDatabricksCluster#creator_user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#creator_user_name DataDatabricksCluster#creator_user_name}
   */
   readonly creatorUserName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#custom_tags DataDatabricksCluster#custom_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#custom_tags DataDatabricksCluster#custom_tags}
   */
   readonly customTags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#data_security_mode DataDatabricksCluster#data_security_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#data_security_mode DataDatabricksCluster#data_security_mode}
   */
   readonly dataSecurityMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#default_tags DataDatabricksCluster#default_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#default_tags DataDatabricksCluster#default_tags}
   */
   readonly defaultTags: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#driver_instance_pool_id DataDatabricksCluster#driver_instance_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#driver_instance_pool_id DataDatabricksCluster#driver_instance_pool_id}
   */
   readonly driverInstancePoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#driver_node_type_id DataDatabricksCluster#driver_node_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#driver_node_type_id DataDatabricksCluster#driver_node_type_id}
   */
   readonly driverNodeTypeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#enable_elastic_disk DataDatabricksCluster#enable_elastic_disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#enable_elastic_disk DataDatabricksCluster#enable_elastic_disk}
   */
   readonly enableElasticDisk?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#enable_local_disk_encryption DataDatabricksCluster#enable_local_disk_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#enable_local_disk_encryption DataDatabricksCluster#enable_local_disk_encryption}
   */
   readonly enableLocalDiskEncryption?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#instance_pool_id DataDatabricksCluster#instance_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#instance_pool_id DataDatabricksCluster#instance_pool_id}
   */
   readonly instancePoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#jdbc_port DataDatabricksCluster#jdbc_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#jdbc_port DataDatabricksCluster#jdbc_port}
   */
   readonly jdbcPort?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#last_activity_time DataDatabricksCluster#last_activity_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#last_activity_time DataDatabricksCluster#last_activity_time}
   */
   readonly lastActivityTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#last_state_loss_time DataDatabricksCluster#last_state_loss_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#last_state_loss_time DataDatabricksCluster#last_state_loss_time}
   */
   readonly lastStateLossTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#node_type_id DataDatabricksCluster#node_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#node_type_id DataDatabricksCluster#node_type_id}
   */
   readonly nodeTypeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#num_workers DataDatabricksCluster#num_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#num_workers DataDatabricksCluster#num_workers}
   */
   readonly numWorkers?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#policy_id DataDatabricksCluster#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#policy_id DataDatabricksCluster#policy_id}
   */
   readonly policyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#runtime_engine DataDatabricksCluster#runtime_engine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#runtime_engine DataDatabricksCluster#runtime_engine}
   */
   readonly runtimeEngine?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#single_user_name DataDatabricksCluster#single_user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#single_user_name DataDatabricksCluster#single_user_name}
   */
   readonly singleUserName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#spark_conf DataDatabricksCluster#spark_conf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#spark_conf DataDatabricksCluster#spark_conf}
   */
   readonly sparkConf?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#spark_context_id DataDatabricksCluster#spark_context_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#spark_context_id DataDatabricksCluster#spark_context_id}
   */
   readonly sparkContextId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#spark_env_vars DataDatabricksCluster#spark_env_vars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#spark_env_vars DataDatabricksCluster#spark_env_vars}
   */
   readonly sparkEnvVars?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#spark_version DataDatabricksCluster#spark_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#spark_version DataDatabricksCluster#spark_version}
   */
   readonly sparkVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#ssh_public_keys DataDatabricksCluster#ssh_public_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#ssh_public_keys DataDatabricksCluster#ssh_public_keys}
   */
   readonly sshPublicKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#start_time DataDatabricksCluster#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#start_time DataDatabricksCluster#start_time}
   */
   readonly startTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#state DataDatabricksCluster#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#state DataDatabricksCluster#state}
   */
   readonly state: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#state_message DataDatabricksCluster#state_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#state_message DataDatabricksCluster#state_message}
   */
   readonly stateMessage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#terminate_time DataDatabricksCluster#terminate_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#terminate_time DataDatabricksCluster#terminate_time}
   */
   readonly terminateTime?: number;
   /**
   * autoscale block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#autoscale DataDatabricksCluster#autoscale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#autoscale DataDatabricksCluster#autoscale}
   */
   readonly autoscale?: DataDatabricksClusterClusterInfoAutoscale;
   /**
   * aws_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#aws_attributes DataDatabricksCluster#aws_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#aws_attributes DataDatabricksCluster#aws_attributes}
   */
   readonly awsAttributes?: DataDatabricksClusterClusterInfoAwsAttributes;
   /**
   * azure_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#azure_attributes DataDatabricksCluster#azure_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#azure_attributes DataDatabricksCluster#azure_attributes}
   */
   readonly azureAttributes?: DataDatabricksClusterClusterInfoAzureAttributes;
   /**
   * cluster_log_conf block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#cluster_log_conf DataDatabricksCluster#cluster_log_conf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#cluster_log_conf DataDatabricksCluster#cluster_log_conf}
   */
   readonly clusterLogConf?: DataDatabricksClusterClusterInfoClusterLogConf;
   /**
   * cluster_log_status block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#cluster_log_status DataDatabricksCluster#cluster_log_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#cluster_log_status DataDatabricksCluster#cluster_log_status}
   */
   readonly clusterLogStatus?: DataDatabricksClusterClusterInfoClusterLogStatus;
   /**
   * docker_image block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#docker_image DataDatabricksCluster#docker_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#docker_image DataDatabricksCluster#docker_image}
   */
   readonly dockerImage?: DataDatabricksClusterClusterInfoDockerImage;
   /**
   * driver block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#driver DataDatabricksCluster#driver}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#driver DataDatabricksCluster#driver}
   */
   readonly driver?: DataDatabricksClusterClusterInfoDriver;
   /**
   * executors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#executors DataDatabricksCluster#executors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#executors DataDatabricksCluster#executors}
   */
   readonly executors?: DataDatabricksClusterClusterInfoExecutors[] | cdktf.IResolvable;
   /**
   * gcp_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#gcp_attributes DataDatabricksCluster#gcp_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#gcp_attributes DataDatabricksCluster#gcp_attributes}
   */
   readonly gcpAttributes?: DataDatabricksClusterClusterInfoGcpAttributes;
   /**
   * init_scripts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#init_scripts DataDatabricksCluster#init_scripts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#init_scripts DataDatabricksCluster#init_scripts}
   */
   readonly initScripts?: DataDatabricksClusterClusterInfoInitScripts[] | cdktf.IResolvable;
   /**
   * termination_reason block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster#termination_reason DataDatabricksCluster#termination_reason}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster#termination_reason DataDatabricksCluster#termination_reason}
   */
   readonly terminationReason?: DataDatabricksClusterClusterInfoTerminationReason;
 }
@@ -4066,7 +4088,7 @@ export class DataDatabricksClusterClusterInfoOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster databricks_cluster}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster databricks_cluster}
 */
 export class DataDatabricksCluster extends cdktf.TerraformDataSource {
 
@@ -4080,7 +4102,7 @@ export class DataDatabricksCluster extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.22.0/docs/data-sources/cluster databricks_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/cluster databricks_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4091,7 +4113,7 @@ export class DataDatabricksCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_cluster',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.22.0',
+        providerVersion: '1.23.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
