@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/datadatabricksnodetype"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabricksnodetype"
 
 datadatabricksnodetype.NewDataDatabricksNodeType(scope Construct, id *string, config DataDatabricksNodeTypeConfig) DataDatabricksNodeType
 ```
@@ -368,7 +368,7 @@ func ResetSupportPortForwarding()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/datadatabricksnodetype"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabricksnodetype"
 
 datadatabricksnodetype.DataDatabricksNodeType_IsConstruct(x interface{}) *bool
 ```
@@ -400,7 +400,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/datadatabricksnodetype"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabricksnodetype"
 
 datadatabricksnodetype.DataDatabricksNodeType_IsTerraformElement(x interface{}) *bool
 ```
@@ -414,7 +414,7 @@ datadatabricksnodetype.DataDatabricksNodeType_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/datadatabricksnodetype"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabricksnodetype"
 
 datadatabricksnodetype.DataDatabricksNodeType_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -899,7 +899,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v9/datadatabricksnodetype"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabricksnodetype"
 
 &datadatabricksnodetype.DataDatabricksNodeTypeConfig {
 	Connection: interface{},
