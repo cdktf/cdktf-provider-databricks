@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksDbfsFilePaths.DataDatabricksDbfsFilePaths.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdbfsfilepaths"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabricksdbfsfilepaths"
 
 datadatabricksdbfsfilepaths.NewDataDatabricksDbfsFilePaths(scope Construct, id *string, config DataDatabricksDbfsFilePathsConfig) DataDatabricksDbfsFilePaths
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksDbfsFilePaths.DataDatabricksDbfsFilePaths.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdbfsfilepaths"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabricksdbfsfilepaths"
 
 datadatabricksdbfsfilepaths.DataDatabricksDbfsFilePaths_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksDbfsFilePaths.DataDatabricksDbfsFilePaths.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdbfsfilepaths"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabricksdbfsfilepaths"
 
 datadatabricksdbfsfilepaths.DataDatabricksDbfsFilePaths_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datadatabricksdbfsfilepaths.DataDatabricksDbfsFilePaths_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksDbfsFilePaths.DataDatabricksDbfsFilePaths.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdbfsfilepaths"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabricksdbfsfilepaths"
 
 datadatabricksdbfsfilepaths.DataDatabricksDbfsFilePaths_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -577,7 +577,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksDbfsFilePaths.DataDatabricksDbfsFilePathsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdbfsfilepaths"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabricksdbfsfilepaths"
 
 &datadatabricksdbfsfilepaths.DataDatabricksDbfsFilePathsConfig {
 	Connection: interface{},
@@ -724,7 +724,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksDbfsFilePaths.DataDatabricksDbfsFilePathsPathListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdbfsfilepaths"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabricksdbfsfilepaths"
 
 &datadatabricksdbfsfilepaths.DataDatabricksDbfsFilePathsPathListStruct {
 
@@ -739,7 +739,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksd
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksDbfsFilePaths.DataDatabricksDbfsFilePathsPathListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdbfsfilepaths"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabricksdbfsfilepaths"
 
 datadatabricksdbfsfilepaths.NewDataDatabricksDbfsFilePathsPathListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksDbfsFilePathsPathListStructList
 ```
@@ -871,7 +871,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksDbfsFilePaths.DataDatabricksDbfsFilePathsPathListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdbfsfilepaths"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabricksdbfsfilepaths"
 
 datadatabricksdbfsfilepaths.NewDataDatabricksDbfsFilePathsPathListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksDbfsFilePathsPathListStructOutputReference
 ```
