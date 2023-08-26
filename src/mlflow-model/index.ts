@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/mlflow_model
+// https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/mlflow_model
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,52 +13,48 @@ import * as cdktf from 'cdktf';
 
 export interface MlflowModelConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/mlflow_model#creation_timestamp MlflowModel#creation_timestamp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/mlflow_model#creation_timestamp MlflowModel#creation_timestamp}
   */
   readonly creationTimestamp?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/mlflow_model#description MlflowModel#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/mlflow_model#description MlflowModel#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/mlflow_model#id MlflowModel#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/mlflow_model#id MlflowModel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/mlflow_model#last_updated_timestamp MlflowModel#last_updated_timestamp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/mlflow_model#last_updated_timestamp MlflowModel#last_updated_timestamp}
   */
   readonly lastUpdatedTimestamp?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/mlflow_model#name MlflowModel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/mlflow_model#name MlflowModel#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/mlflow_model#registered_model_id MlflowModel#registered_model_id}
-  */
-  readonly registeredModelId?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/mlflow_model#user_id MlflowModel#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/mlflow_model#user_id MlflowModel#user_id}
   */
   readonly userId?: string;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/mlflow_model#tags MlflowModel#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/mlflow_model#tags MlflowModel#tags}
   */
   readonly tags?: MlflowModelTags[] | cdktf.IResolvable;
 }
 export interface MlflowModelTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/mlflow_model#key MlflowModel#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/mlflow_model#key MlflowModel#key}
   */
-  readonly key: string;
+  readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/mlflow_model#value MlflowModel#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/mlflow_model#value MlflowModel#value}
   */
-  readonly value: string;
+  readonly value?: string;
 }
 
 export function mlflowModelTagsToTerraform(struct?: MlflowModelTags | cdktf.IResolvable): any {
@@ -122,7 +118,7 @@ export class MlflowModelTagsOutputReference extends cdktf.ComplexObject {
     }
   }
 
-  // key - computed: false, optional: false, required: true
+  // key - computed: false, optional: true, required: false
   private _key?: string; 
   public get key() {
     return this.getStringAttribute('key');
@@ -130,18 +126,24 @@ export class MlflowModelTagsOutputReference extends cdktf.ComplexObject {
   public set key(value: string) {
     this._key = value;
   }
+  public resetKey() {
+    this._key = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get keyInput() {
     return this._key;
   }
 
-  // value - computed: false, optional: false, required: true
+  // value - computed: false, optional: true, required: false
   private _value?: string; 
   public get value() {
     return this.getStringAttribute('value');
   }
   public set value(value: string) {
     this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get valueInput() {
@@ -170,7 +172,7 @@ export class MlflowModelTagsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/mlflow_model databricks_mlflow_model}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/mlflow_model databricks_mlflow_model}
 */
 export class MlflowModel extends cdktf.TerraformResource {
 
@@ -184,7 +186,7 @@ export class MlflowModel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/mlflow_model databricks_mlflow_model} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/mlflow_model databricks_mlflow_model} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -195,7 +197,7 @@ export class MlflowModel extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_mlflow_model',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.23.0',
+        providerVersion: '1.24.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -211,7 +213,6 @@ export class MlflowModel extends cdktf.TerraformResource {
     this._id = config.id;
     this._lastUpdatedTimestamp = config.lastUpdatedTimestamp;
     this._name = config.name;
-    this._registeredModelId = config.registeredModelId;
     this._userId = config.userId;
     this._tags.internalValue = config.tags;
   }
@@ -220,7 +221,7 @@ export class MlflowModel extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // creation_timestamp - computed: true, optional: true, required: false
+  // creation_timestamp - computed: false, optional: true, required: false
   private _creationTimestamp?: number; 
   public get creationTimestamp() {
     return this.getNumberAttribute('creation_timestamp');
@@ -268,7 +269,7 @@ export class MlflowModel extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // last_updated_timestamp - computed: true, optional: true, required: false
+  // last_updated_timestamp - computed: false, optional: true, required: false
   private _lastUpdatedTimestamp?: number; 
   public get lastUpdatedTimestamp() {
     return this.getNumberAttribute('last_updated_timestamp');
@@ -297,23 +298,7 @@ export class MlflowModel extends cdktf.TerraformResource {
     return this._name;
   }
 
-  // registered_model_id - computed: true, optional: true, required: false
-  private _registeredModelId?: string; 
-  public get registeredModelId() {
-    return this.getStringAttribute('registered_model_id');
-  }
-  public set registeredModelId(value: string) {
-    this._registeredModelId = value;
-  }
-  public resetRegisteredModelId() {
-    this._registeredModelId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get registeredModelIdInput() {
-    return this._registeredModelId;
-  }
-
-  // user_id - computed: true, optional: true, required: false
+  // user_id - computed: false, optional: true, required: false
   private _userId?: string; 
   public get userId() {
     return this.getStringAttribute('user_id');
@@ -356,7 +341,6 @@ export class MlflowModel extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       last_updated_timestamp: cdktf.numberToTerraform(this._lastUpdatedTimestamp),
       name: cdktf.stringToTerraform(this._name),
-      registered_model_id: cdktf.stringToTerraform(this._registeredModelId),
       user_id: cdktf.stringToTerraform(this._userId),
       tags: cdktf.listMapper(mlflowModelTagsToTerraform, true)(this._tags.internalValue),
     };

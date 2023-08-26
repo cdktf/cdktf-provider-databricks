@@ -10,6 +10,7 @@ The following submodules are available:
 - [catalogWorkspaceBinding](./catalogWorkspaceBinding.java.md)
 - [cluster](./cluster.java.md)
 - [clusterPolicy](./clusterPolicy.java.md)
+- [connection](./connection.java.md)
 - [dataDatabricksAwsAssumeRolePolicy](./dataDatabricksAwsAssumeRolePolicy.java.md)
 - [dataDatabricksAwsBucketPolicy](./dataDatabricksAwsBucketPolicy.java.md)
 - [dataDatabricksAwsCrossaccountPolicy](./dataDatabricksAwsCrossaccountPolicy.java.md)

@@ -13,6 +13,7 @@ Object.defineProperty(exports, 'catalog', { get: function () { return require('.
 Object.defineProperty(exports, 'catalogWorkspaceBinding', { get: function () { return require('./catalog-workspace-binding'); } });
 Object.defineProperty(exports, 'cluster', { get: function () { return require('./cluster'); } });
 Object.defineProperty(exports, 'clusterPolicy', { get: function () { return require('./cluster-policy'); } });
+Object.defineProperty(exports, 'connection', { get: function () { return require('./connection'); } });
 Object.defineProperty(exports, 'dbfsFile', { get: function () { return require('./dbfs-file'); } });
 Object.defineProperty(exports, 'directory', { get: function () { return require('./directory'); } });
 Object.defineProperty(exports, 'entitlements', { get: function () { return require('./entitlements'); } });

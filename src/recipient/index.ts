@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/recipient
+// https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/recipient
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,48 +13,48 @@ import * as cdktf from 'cdktf';
 
 export interface RecipientConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/recipient#authentication_type Recipient#authentication_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/recipient#authentication_type Recipient#authentication_type}
   */
   readonly authenticationType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/recipient#comment Recipient#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/recipient#comment Recipient#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/recipient#data_recipient_global_metastore_id Recipient#data_recipient_global_metastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/recipient#data_recipient_global_metastore_id Recipient#data_recipient_global_metastore_id}
   */
   readonly dataRecipientGlobalMetastoreId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/recipient#id Recipient#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/recipient#id Recipient#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/recipient#name Recipient#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/recipient#name Recipient#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/recipient#sharing_code Recipient#sharing_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/recipient#sharing_code Recipient#sharing_code}
   */
   readonly sharingCode?: string;
   /**
   * ip_access_list block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/recipient#ip_access_list Recipient#ip_access_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/recipient#ip_access_list Recipient#ip_access_list}
   */
   readonly ipAccessList?: RecipientIpAccessListStruct;
   /**
   * tokens block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/recipient#tokens Recipient#tokens}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/recipient#tokens Recipient#tokens}
   */
   readonly tokens?: RecipientTokens[] | cdktf.IResolvable;
 }
 export interface RecipientIpAccessListStruct {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/recipient#allowed_ip_addresses Recipient#allowed_ip_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/recipient#allowed_ip_addresses Recipient#allowed_ip_addresses}
   */
   readonly allowedIpAddresses: string[];
 }
@@ -116,34 +116,34 @@ export class RecipientIpAccessListStructOutputReference extends cdktf.ComplexObj
 }
 export interface RecipientTokens {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/recipient#activation_url Recipient#activation_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/recipient#activation_url Recipient#activation_url}
   */
   readonly activationUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/recipient#created_at Recipient#created_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/recipient#created_at Recipient#created_at}
   */
   readonly createdAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/recipient#created_by Recipient#created_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/recipient#created_by Recipient#created_by}
   */
   readonly createdBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/recipient#expiration_time Recipient#expiration_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/recipient#expiration_time Recipient#expiration_time}
   */
   readonly expirationTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/recipient#id Recipient#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/recipient#id Recipient#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/recipient#updated_at Recipient#updated_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/recipient#updated_at Recipient#updated_at}
   */
   readonly updatedAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/recipient#updated_by Recipient#updated_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/recipient#updated_by Recipient#updated_by}
   */
   readonly updatedBy?: string;
 }
@@ -378,7 +378,7 @@ export class RecipientTokensList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/recipient databricks_recipient}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/recipient databricks_recipient}
 */
 export class Recipient extends cdktf.TerraformResource {
 
@@ -392,7 +392,7 @@ export class Recipient extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/recipient databricks_recipient} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/recipient databricks_recipient} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -403,7 +403,7 @@ export class Recipient extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_recipient',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.23.0',
+        providerVersion: '1.24.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

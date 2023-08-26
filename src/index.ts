@@ -13,6 +13,7 @@ export * as catalog from './catalog';
 export * as catalogWorkspaceBinding from './catalog-workspace-binding';
 export * as cluster from './cluster';
 export * as clusterPolicy from './cluster-policy';
+export * as connection from './connection';
 export * as dbfsFile from './dbfs-file';
 export * as directory from './directory';
 export * as entitlements from './entitlements';

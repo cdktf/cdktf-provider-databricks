@@ -10,6 +10,7 @@ The following submodules are available:
 - [catalogWorkspaceBinding](./catalogWorkspaceBinding.python.md)
 - [cluster](./cluster.python.md)
 - [clusterPolicy](./clusterPolicy.python.md)
+- [connection](./connection.python.md)
 - [dataDatabricksAwsAssumeRolePolicy](./dataDatabricksAwsAssumeRolePolicy.python.md)
 - [dataDatabricksAwsBucketPolicy](./dataDatabricksAwsBucketPolicy.python.md)
 - [dataDatabricksAwsCrossaccountPolicy](./dataDatabricksAwsCrossaccountPolicy.python.md)

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/external_location
+// https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/external_location
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,52 +13,225 @@ import * as cdktf from 'cdktf';
 
 export interface ExternalLocationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/external_location#comment ExternalLocation#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/external_location#access_point ExternalLocation#access_point}
+  */
+  readonly accessPoint?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/external_location#comment ExternalLocation#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/external_location#credential_name ExternalLocation#credential_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/external_location#credential_name ExternalLocation#credential_name}
   */
   readonly credentialName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/external_location#force_destroy ExternalLocation#force_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/external_location#force_destroy ExternalLocation#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/external_location#id ExternalLocation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/external_location#force_update ExternalLocation#force_update}
+  */
+  readonly forceUpdate?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/external_location#id ExternalLocation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/external_location#metastore_id ExternalLocation#metastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/external_location#metastore_id ExternalLocation#metastore_id}
   */
   readonly metastoreId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/external_location#name ExternalLocation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/external_location#name ExternalLocation#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/external_location#owner ExternalLocation#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/external_location#owner ExternalLocation#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/external_location#read_only ExternalLocation#read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/external_location#read_only ExternalLocation#read_only}
   */
   readonly readOnly?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/external_location#skip_validation ExternalLocation#skip_validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/external_location#skip_validation ExternalLocation#skip_validation}
   */
   readonly skipValidation?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/external_location#url ExternalLocation#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/external_location#url ExternalLocation#url}
   */
   readonly url: string;
+  /**
+  * encryption_details block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/external_location#encryption_details ExternalLocation#encryption_details}
+  */
+  readonly encryptionDetails?: ExternalLocationEncryptionDetails;
+}
+export interface ExternalLocationEncryptionDetailsSseEncryptionDetails {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/external_location#algorithm ExternalLocation#algorithm}
+  */
+  readonly algorithm?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/external_location#aws_kms_key_arn ExternalLocation#aws_kms_key_arn}
+  */
+  readonly awsKmsKeyArn?: string;
+}
+
+export function externalLocationEncryptionDetailsSseEncryptionDetailsToTerraform(struct?: ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference | ExternalLocationEncryptionDetailsSseEncryptionDetails): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    algorithm: cdktf.stringToTerraform(struct!.algorithm),
+    aws_kms_key_arn: cdktf.stringToTerraform(struct!.awsKmsKeyArn),
+  }
+}
+
+export class ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ExternalLocationEncryptionDetailsSseEncryptionDetails | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._algorithm !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.algorithm = this._algorithm;
+    }
+    if (this._awsKmsKeyArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.awsKmsKeyArn = this._awsKmsKeyArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ExternalLocationEncryptionDetailsSseEncryptionDetails | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._algorithm = undefined;
+      this._awsKmsKeyArn = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._algorithm = value.algorithm;
+      this._awsKmsKeyArn = value.awsKmsKeyArn;
+    }
+  }
+
+  // algorithm - computed: false, optional: true, required: false
+  private _algorithm?: string; 
+  public get algorithm() {
+    return this.getStringAttribute('algorithm');
+  }
+  public set algorithm(value: string) {
+    this._algorithm = value;
+  }
+  public resetAlgorithm() {
+    this._algorithm = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get algorithmInput() {
+    return this._algorithm;
+  }
+
+  // aws_kms_key_arn - computed: false, optional: true, required: false
+  private _awsKmsKeyArn?: string; 
+  public get awsKmsKeyArn() {
+    return this.getStringAttribute('aws_kms_key_arn');
+  }
+  public set awsKmsKeyArn(value: string) {
+    this._awsKmsKeyArn = value;
+  }
+  public resetAwsKmsKeyArn() {
+    this._awsKmsKeyArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get awsKmsKeyArnInput() {
+    return this._awsKmsKeyArn;
+  }
+}
+export interface ExternalLocationEncryptionDetails {
+  /**
+  * sse_encryption_details block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/external_location#sse_encryption_details ExternalLocation#sse_encryption_details}
+  */
+  readonly sseEncryptionDetails?: ExternalLocationEncryptionDetailsSseEncryptionDetails;
+}
+
+export function externalLocationEncryptionDetailsToTerraform(struct?: ExternalLocationEncryptionDetailsOutputReference | ExternalLocationEncryptionDetails): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    sse_encryption_details: externalLocationEncryptionDetailsSseEncryptionDetailsToTerraform(struct!.sseEncryptionDetails),
+  }
+}
+
+export class ExternalLocationEncryptionDetailsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ExternalLocationEncryptionDetails | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._sseEncryptionDetails?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sseEncryptionDetails = this._sseEncryptionDetails?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ExternalLocationEncryptionDetails | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._sseEncryptionDetails.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._sseEncryptionDetails.internalValue = value.sseEncryptionDetails;
+    }
+  }
+
+  // sse_encryption_details - computed: false, optional: true, required: false
+  private _sseEncryptionDetails = new ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference(this, "sse_encryption_details");
+  public get sseEncryptionDetails() {
+    return this._sseEncryptionDetails;
+  }
+  public putSseEncryptionDetails(value: ExternalLocationEncryptionDetailsSseEncryptionDetails) {
+    this._sseEncryptionDetails.internalValue = value;
+  }
+  public resetSseEncryptionDetails() {
+    this._sseEncryptionDetails.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sseEncryptionDetailsInput() {
+    return this._sseEncryptionDetails.internalValue;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/external_location databricks_external_location}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/external_location databricks_external_location}
 */
 export class ExternalLocation extends cdktf.TerraformResource {
 
@@ -72,7 +245,7 @@ export class ExternalLocation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/external_location databricks_external_location} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/external_location databricks_external_location} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +256,7 @@ export class ExternalLocation extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_external_location',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.23.0',
+        providerVersion: '1.24.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -94,9 +267,11 @@ export class ExternalLocation extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._accessPoint = config.accessPoint;
     this._comment = config.comment;
     this._credentialName = config.credentialName;
     this._forceDestroy = config.forceDestroy;
+    this._forceUpdate = config.forceUpdate;
     this._id = config.id;
     this._metastoreId = config.metastoreId;
     this._name = config.name;
@@ -104,11 +279,28 @@ export class ExternalLocation extends cdktf.TerraformResource {
     this._readOnly = config.readOnly;
     this._skipValidation = config.skipValidation;
     this._url = config.url;
+    this._encryptionDetails.internalValue = config.encryptionDetails;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // access_point - computed: false, optional: true, required: false
+  private _accessPoint?: string; 
+  public get accessPoint() {
+    return this.getStringAttribute('access_point');
+  }
+  public set accessPoint(value: string) {
+    this._accessPoint = value;
+  }
+  public resetAccessPoint() {
+    this._accessPoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessPointInput() {
+    return this._accessPoint;
+  }
 
   // comment - computed: false, optional: true, required: false
   private _comment?: string; 
@@ -153,6 +345,22 @@ export class ExternalLocation extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get forceDestroyInput() {
     return this._forceDestroy;
+  }
+
+  // force_update - computed: false, optional: true, required: false
+  private _forceUpdate?: boolean | cdktf.IResolvable; 
+  public get forceUpdate() {
+    return this.getBooleanAttribute('force_update');
+  }
+  public set forceUpdate(value: boolean | cdktf.IResolvable) {
+    this._forceUpdate = value;
+  }
+  public resetForceUpdate() {
+    this._forceUpdate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceUpdateInput() {
+    return this._forceUpdate;
   }
 
   // id - computed: true, optional: true, required: false
@@ -261,15 +469,33 @@ export class ExternalLocation extends cdktf.TerraformResource {
     return this._url;
   }
 
+  // encryption_details - computed: false, optional: true, required: false
+  private _encryptionDetails = new ExternalLocationEncryptionDetailsOutputReference(this, "encryption_details");
+  public get encryptionDetails() {
+    return this._encryptionDetails;
+  }
+  public putEncryptionDetails(value: ExternalLocationEncryptionDetails) {
+    this._encryptionDetails.internalValue = value;
+  }
+  public resetEncryptionDetails() {
+    this._encryptionDetails.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptionDetailsInput() {
+    return this._encryptionDetails.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      access_point: cdktf.stringToTerraform(this._accessPoint),
       comment: cdktf.stringToTerraform(this._comment),
       credential_name: cdktf.stringToTerraform(this._credentialName),
       force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
+      force_update: cdktf.booleanToTerraform(this._forceUpdate),
       id: cdktf.stringToTerraform(this._id),
       metastore_id: cdktf.stringToTerraform(this._metastoreId),
       name: cdktf.stringToTerraform(this._name),
@@ -277,6 +503,7 @@ export class ExternalLocation extends cdktf.TerraformResource {
       read_only: cdktf.booleanToTerraform(this._readOnly),
       skip_validation: cdktf.booleanToTerraform(this._skipValidation),
       url: cdktf.stringToTerraform(this._url),
+      encryption_details: externalLocationEncryptionDetailsToTerraform(this._encryptionDetails.internalValue),
     };
   }
 }

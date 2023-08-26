@@ -1,3 +1,3 @@
 # `data_databricks_tables`
 
-Refer to the Terraform Registory for docs: [`data_databricks_tables`](https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/data-sources/tables).
+Refer to the Terraform Registory for docs: [`data_databricks_tables`](https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/data-sources/tables).

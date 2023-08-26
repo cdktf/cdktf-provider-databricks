@@ -1,6 +1,6 @@
 # `databricks_sql_query`
 
-Refer to the Terraform Registory for docs: [`databricks_sql_query`](https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query).
+Refer to the Terraform Registory for docs: [`databricks_sql_query`](https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query).
 
 # `sqlQuery` Submodule <a name="`sqlQuery` Submodule" id="@cdktf/provider-databricks.sqlQuery"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`databricks_sql_query`](https://regi
 
 ### SqlQuery <a name="SqlQuery" id="@cdktf/provider-databricks.sqlQuery.SqlQuery"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query databricks_sql_query}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query databricks_sql_query}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlQuery.SqlQuery.Initializer"></a>
 
@@ -72,6 +72,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuery.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuery.putParameter">PutParameter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuery.putSchedule">PutSchedule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuery.resetCreatedAt">ResetCreatedAt</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuery.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuery.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuery.resetParameter">ResetParameter</a></code> | *No description.* |
@@ -79,6 +80,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuery.resetRunAsRole">ResetRunAsRole</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuery.resetSchedule">ResetSchedule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuery.resetTags">ResetTags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuery.resetUpdatedAt">ResetUpdatedAt</a></code> | *No description.* |
 
 ---
 
@@ -290,6 +292,12 @@ func PutSchedule(value SqlQuerySchedule)
 
 ---
 
+##### `ResetCreatedAt` <a name="ResetCreatedAt" id="@cdktf/provider-databricks.sqlQuery.SqlQuery.resetCreatedAt"></a>
+
+```go
+func ResetCreatedAt()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktf/provider-databricks.sqlQuery.SqlQuery.resetDescription"></a>
 
 ```go
@@ -330,6 +338,12 @@ func ResetSchedule()
 
 ```go
 func ResetTags()
+```
+
+##### `ResetUpdatedAt` <a name="ResetUpdatedAt" id="@cdktf/provider-databricks.sqlQuery.SqlQuery.resetUpdatedAt"></a>
+
+```go
+func ResetUpdatedAt()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -422,6 +436,7 @@ sqlquery.SqlQuery_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuery.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuery.property.parameter">Parameter</a></code> | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterList">SqlQueryParameterList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuery.property.schedule">Schedule</a></code> | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleOutputReference">SqlQueryScheduleOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuery.property.createdAtInput">CreatedAtInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuery.property.dataSourceIdInput">DataSourceIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuery.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuery.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
@@ -432,6 +447,8 @@ sqlquery.SqlQuery_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuery.property.runAsRoleInput">RunAsRoleInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuery.property.scheduleInput">ScheduleInput</a></code> | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuerySchedule">SqlQuerySchedule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuery.property.tagsInput">TagsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuery.property.updatedAtInput">UpdatedAtInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuery.property.createdAt">CreatedAt</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuery.property.dataSourceId">DataSourceId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuery.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuery.property.id">Id</a></code> | <code>*string</code> | *No description.* |
@@ -440,6 +457,7 @@ sqlquery.SqlQuery_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuery.property.query">Query</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuery.property.runAsRole">RunAsRole</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuery.property.tags">Tags</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuery.property.updatedAt">UpdatedAt</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -605,6 +623,16 @@ func Schedule() SqlQueryScheduleOutputReference
 
 ---
 
+##### `CreatedAtInput`<sup>Optional</sup> <a name="CreatedAtInput" id="@cdktf/provider-databricks.sqlQuery.SqlQuery.property.createdAtInput"></a>
+
+```go
+func CreatedAtInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DataSourceIdInput`<sup>Optional</sup> <a name="DataSourceIdInput" id="@cdktf/provider-databricks.sqlQuery.SqlQuery.property.dataSourceIdInput"></a>
 
 ```go
@@ -705,6 +733,26 @@ func TagsInput() *[]*string
 
 ---
 
+##### `UpdatedAtInput`<sup>Optional</sup> <a name="UpdatedAtInput" id="@cdktf/provider-databricks.sqlQuery.SqlQuery.property.updatedAtInput"></a>
+
+```go
+func UpdatedAtInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CreatedAt`<sup>Required</sup> <a name="CreatedAt" id="@cdktf/provider-databricks.sqlQuery.SqlQuery.property.createdAt"></a>
+
+```go
+func CreatedAt() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DataSourceId`<sup>Required</sup> <a name="DataSourceId" id="@cdktf/provider-databricks.sqlQuery.SqlQuery.property.dataSourceId"></a>
 
 ```go
@@ -785,6 +833,16 @@ func Tags() *[]*string
 
 ---
 
+##### `UpdatedAt`<sup>Required</sup> <a name="UpdatedAt" id="@cdktf/provider-databricks.sqlQuery.SqlQuery.property.updatedAt"></a>
+
+```go
+func UpdatedAt() *string
+```
+
+- *Type:* *string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -823,6 +881,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/sqlquery"
 	DataSourceId: *string,
 	Name: *string,
 	Query: *string,
+	CreatedAt: *string,
 	Description: *string,
 	Id: *string,
 	Parameter: interface{},
@@ -830,6 +889,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/sqlquery"
 	RunAsRole: *string,
 	Schedule: github.com/cdktf/cdktf-provider-databricks-go/databricks/v10.sqlQuery.SqlQuerySchedule,
 	Tags: *[]*string,
+	UpdatedAt: *string,
 }
 ```
 
@@ -844,16 +904,18 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/sqlquery"
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryConfig.property.dataSourceId">DataSourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#data_source_id SqlQuery#data_source_id}. |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#name SqlQuery#name}. |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryConfig.property.query">Query</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#query SqlQuery#query}. |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#description SqlQuery#description}. |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#id SqlQuery#id}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryConfig.property.dataSourceId">DataSourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#data_source_id SqlQuery#data_source_id}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#name SqlQuery#name}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryConfig.property.query">Query</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#query SqlQuery#query}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryConfig.property.createdAt">CreatedAt</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#created_at SqlQuery#created_at}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#description SqlQuery#description}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#id SqlQuery#id}. |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryConfig.property.parameter">Parameter</a></code> | <code>interface{}</code> | parameter block. |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryConfig.property.parent">Parent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#parent SqlQuery#parent}. |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryConfig.property.runAsRole">RunAsRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#run_as_role SqlQuery#run_as_role}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryConfig.property.parent">Parent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#parent SqlQuery#parent}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryConfig.property.runAsRole">RunAsRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#run_as_role SqlQuery#run_as_role}. |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryConfig.property.schedule">Schedule</a></code> | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQuerySchedule">SqlQuerySchedule</a></code> | schedule block. |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryConfig.property.tags">Tags</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#tags SqlQuery#tags}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryConfig.property.tags">Tags</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#tags SqlQuery#tags}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryConfig.property.updatedAt">UpdatedAt</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#updated_at SqlQuery#updated_at}. |
 
 ---
 
@@ -935,7 +997,7 @@ DataSourceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#data_source_id SqlQuery#data_source_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#data_source_id SqlQuery#data_source_id}.
 
 ---
 
@@ -947,7 +1009,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#name SqlQuery#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#name SqlQuery#name}.
 
 ---
 
@@ -959,7 +1021,19 @@ Query *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#query SqlQuery#query}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#query SqlQuery#query}.
+
+---
+
+##### `CreatedAt`<sup>Optional</sup> <a name="CreatedAt" id="@cdktf/provider-databricks.sqlQuery.SqlQueryConfig.property.createdAt"></a>
+
+```go
+CreatedAt *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#created_at SqlQuery#created_at}.
 
 ---
 
@@ -971,7 +1045,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#description SqlQuery#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#description SqlQuery#description}.
 
 ---
 
@@ -983,7 +1057,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#id SqlQuery#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#id SqlQuery#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1000,7 +1074,7 @@ Parameter interface{}
 
 parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#parameter SqlQuery#parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#parameter SqlQuery#parameter}
 
 ---
 
@@ -1012,7 +1086,7 @@ Parent *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#parent SqlQuery#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#parent SqlQuery#parent}.
 
 ---
 
@@ -1024,7 +1098,7 @@ RunAsRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#run_as_role SqlQuery#run_as_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#run_as_role SqlQuery#run_as_role}.
 
 ---
 
@@ -1038,7 +1112,7 @@ Schedule SqlQuerySchedule
 
 schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#schedule SqlQuery#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#schedule SqlQuery#schedule}
 
 ---
 
@@ -1050,7 +1124,19 @@ Tags *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#tags SqlQuery#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#tags SqlQuery#tags}.
+
+---
+
+##### `UpdatedAt`<sup>Optional</sup> <a name="UpdatedAt" id="@cdktf/provider-databricks.sqlQuery.SqlQueryConfig.property.updatedAt"></a>
+
+```go
+UpdatedAt *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#updated_at SqlQuery#updated_at}.
 
 ---
 
@@ -1081,7 +1167,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/sqlquery"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#name SqlQuery#name}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#name SqlQuery#name}. |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameter.property.date">Date</a></code> | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDate">SqlQueryParameterDate</a></code> | date block. |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameter.property.dateRange">DateRange</a></code> | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDateRange">SqlQueryParameterDateRange</a></code> | date_range block. |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameter.property.datetime">Datetime</a></code> | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetime">SqlQueryParameterDatetime</a></code> | datetime block. |
@@ -1092,7 +1178,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/sqlquery"
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameter.property.number">Number</a></code> | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterNumber">SqlQueryParameterNumber</a></code> | number block. |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameter.property.query">Query</a></code> | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterQuery">SqlQueryParameterQuery</a></code> | query block. |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameter.property.text">Text</a></code> | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterText">SqlQueryParameterText</a></code> | text block. |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameter.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#title SqlQuery#title}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameter.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#title SqlQuery#title}. |
 
 ---
 
@@ -1104,7 +1190,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#name SqlQuery#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#name SqlQuery#name}.
 
 ---
 
@@ -1118,7 +1204,7 @@ Date SqlQueryParameterDate
 
 date block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#date SqlQuery#date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#date SqlQuery#date}
 
 ---
 
@@ -1132,7 +1218,7 @@ DateRange SqlQueryParameterDateRange
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#date_range SqlQuery#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#date_range SqlQuery#date_range}
 
 ---
 
@@ -1146,7 +1232,7 @@ Datetime SqlQueryParameterDatetime
 
 datetime block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#datetime SqlQuery#datetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#datetime SqlQuery#datetime}
 
 ---
 
@@ -1160,7 +1246,7 @@ DatetimeRange SqlQueryParameterDatetimeRange
 
 datetime_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#datetime_range SqlQuery#datetime_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#datetime_range SqlQuery#datetime_range}
 
 ---
 
@@ -1174,7 +1260,7 @@ Datetimesec SqlQueryParameterDatetimesec
 
 datetimesec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#datetimesec SqlQuery#datetimesec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#datetimesec SqlQuery#datetimesec}
 
 ---
 
@@ -1188,7 +1274,7 @@ DatetimesecRange SqlQueryParameterDatetimesecRange
 
 datetimesec_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#datetimesec_range SqlQuery#datetimesec_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#datetimesec_range SqlQuery#datetimesec_range}
 
 ---
 
@@ -1202,7 +1288,7 @@ Enum SqlQueryParameterEnum
 
 enum block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#enum SqlQuery#enum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#enum SqlQuery#enum}
 
 ---
 
@@ -1216,7 +1302,7 @@ Number SqlQueryParameterNumber
 
 number block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#number SqlQuery#number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#number SqlQuery#number}
 
 ---
 
@@ -1230,7 +1316,7 @@ Query SqlQueryParameterQuery
 
 query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#query SqlQuery#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#query SqlQuery#query}
 
 ---
 
@@ -1244,7 +1330,7 @@ Text SqlQueryParameterText
 
 text block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#text SqlQuery#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#text SqlQuery#text}
 
 ---
 
@@ -1256,7 +1342,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#title SqlQuery#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#title SqlQuery#title}.
 
 ---
 
@@ -1276,7 +1362,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/sqlquery"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDate.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#value SqlQuery#value}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDate.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#value SqlQuery#value}. |
 
 ---
 
@@ -1288,7 +1374,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#value SqlQuery#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#value SqlQuery#value}.
 
 ---
 
@@ -1310,7 +1396,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/sqlquery"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDateRange.property.range">Range</a></code> | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDateRangeRange">SqlQueryParameterDateRangeRange</a></code> | range block. |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDateRange.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#value SqlQuery#value}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDateRange.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#value SqlQuery#value}. |
 
 ---
 
@@ -1324,7 +1410,7 @@ Range SqlQueryParameterDateRangeRange
 
 range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#range SqlQuery#range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#range SqlQuery#range}
 
 ---
 
@@ -1336,7 +1422,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#value SqlQuery#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#value SqlQuery#value}.
 
 ---
 
@@ -1357,8 +1443,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/sqlquery"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDateRangeRange.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#end SqlQuery#end}. |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDateRangeRange.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#start SqlQuery#start}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDateRangeRange.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#end SqlQuery#end}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDateRangeRange.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#start SqlQuery#start}. |
 
 ---
 
@@ -1370,7 +1456,7 @@ End *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#end SqlQuery#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#end SqlQuery#end}.
 
 ---
 
@@ -1382,7 +1468,7 @@ Start *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#start SqlQuery#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#start SqlQuery#start}.
 
 ---
 
@@ -1402,7 +1488,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/sqlquery"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetime.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#value SqlQuery#value}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetime.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#value SqlQuery#value}. |
 
 ---
 
@@ -1414,7 +1500,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#value SqlQuery#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#value SqlQuery#value}.
 
 ---
 
@@ -1436,7 +1522,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/sqlquery"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimeRange.property.range">Range</a></code> | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimeRangeRange">SqlQueryParameterDatetimeRangeRange</a></code> | range block. |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimeRange.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#value SqlQuery#value}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimeRange.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#value SqlQuery#value}. |
 
 ---
 
@@ -1450,7 +1536,7 @@ Range SqlQueryParameterDatetimeRangeRange
 
 range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#range SqlQuery#range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#range SqlQuery#range}
 
 ---
 
@@ -1462,7 +1548,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#value SqlQuery#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#value SqlQuery#value}.
 
 ---
 
@@ -1483,8 +1569,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/sqlquery"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimeRangeRange.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#end SqlQuery#end}. |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimeRangeRange.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#start SqlQuery#start}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimeRangeRange.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#end SqlQuery#end}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimeRangeRange.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#start SqlQuery#start}. |
 
 ---
 
@@ -1496,7 +1582,7 @@ End *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#end SqlQuery#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#end SqlQuery#end}.
 
 ---
 
@@ -1508,7 +1594,7 @@ Start *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#start SqlQuery#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#start SqlQuery#start}.
 
 ---
 
@@ -1528,7 +1614,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/sqlquery"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimesec.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#value SqlQuery#value}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimesec.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#value SqlQuery#value}. |
 
 ---
 
@@ -1540,7 +1626,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#value SqlQuery#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#value SqlQuery#value}.
 
 ---
 
@@ -1562,7 +1648,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/sqlquery"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimesecRange.property.range">Range</a></code> | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimesecRangeRange">SqlQueryParameterDatetimesecRangeRange</a></code> | range block. |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimesecRange.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#value SqlQuery#value}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimesecRange.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#value SqlQuery#value}. |
 
 ---
 
@@ -1576,7 +1662,7 @@ Range SqlQueryParameterDatetimesecRangeRange
 
 range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#range SqlQuery#range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#range SqlQuery#range}
 
 ---
 
@@ -1588,7 +1674,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#value SqlQuery#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#value SqlQuery#value}.
 
 ---
 
@@ -1609,8 +1695,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/sqlquery"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimesecRangeRange.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#end SqlQuery#end}. |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimesecRangeRange.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#start SqlQuery#start}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimesecRangeRange.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#end SqlQuery#end}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimesecRangeRange.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#start SqlQuery#start}. |
 
 ---
 
@@ -1622,7 +1708,7 @@ End *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#end SqlQuery#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#end SqlQuery#end}.
 
 ---
 
@@ -1634,7 +1720,7 @@ Start *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#start SqlQuery#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#start SqlQuery#start}.
 
 ---
 
@@ -1657,10 +1743,10 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/sqlquery"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterEnum.property.options">Options</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#options SqlQuery#options}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterEnum.property.options">Options</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#options SqlQuery#options}. |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterEnum.property.multiple">Multiple</a></code> | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterEnumMultiple">SqlQueryParameterEnumMultiple</a></code> | multiple block. |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterEnum.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#value SqlQuery#value}. |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterEnum.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#values SqlQuery#values}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterEnum.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#value SqlQuery#value}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterEnum.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#values SqlQuery#values}. |
 
 ---
 
@@ -1672,7 +1758,7 @@ Options *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#options SqlQuery#options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#options SqlQuery#options}.
 
 ---
 
@@ -1686,7 +1772,7 @@ Multiple SqlQueryParameterEnumMultiple
 
 multiple block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#multiple SqlQuery#multiple}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#multiple SqlQuery#multiple}
 
 ---
 
@@ -1698,7 +1784,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#value SqlQuery#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#value SqlQuery#value}.
 
 ---
 
@@ -1710,7 +1796,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#values SqlQuery#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#values SqlQuery#values}.
 
 ---
 
@@ -1732,9 +1818,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/sqlquery"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterEnumMultiple.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#prefix SqlQuery#prefix}. |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterEnumMultiple.property.separator">Separator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#separator SqlQuery#separator}. |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterEnumMultiple.property.suffix">Suffix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#suffix SqlQuery#suffix}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterEnumMultiple.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#prefix SqlQuery#prefix}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterEnumMultiple.property.separator">Separator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#separator SqlQuery#separator}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterEnumMultiple.property.suffix">Suffix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#suffix SqlQuery#suffix}. |
 
 ---
 
@@ -1746,7 +1832,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#prefix SqlQuery#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#prefix SqlQuery#prefix}.
 
 ---
 
@@ -1758,7 +1844,7 @@ Separator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#separator SqlQuery#separator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#separator SqlQuery#separator}.
 
 ---
 
@@ -1770,7 +1856,7 @@ Suffix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#suffix SqlQuery#suffix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#suffix SqlQuery#suffix}.
 
 ---
 
@@ -1790,7 +1876,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/sqlquery"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterNumber.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#value SqlQuery#value}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterNumber.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#value SqlQuery#value}. |
 
 ---
 
@@ -1802,7 +1888,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#value SqlQuery#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#value SqlQuery#value}.
 
 ---
 
@@ -1825,10 +1911,10 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/sqlquery"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterQuery.property.queryId">QueryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#query_id SqlQuery#query_id}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterQuery.property.queryId">QueryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#query_id SqlQuery#query_id}. |
 | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterQuery.property.multiple">Multiple</a></code> | <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterQueryMultiple">SqlQueryParameterQueryMultiple</a></code> | multiple block. |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterQuery.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#value SqlQuery#value}. |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterQuery.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#values SqlQuery#values}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterQuery.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#value SqlQuery#value}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterQuery.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#values SqlQuery#values}. |
 
 ---
 
@@ -1840,7 +1926,7 @@ QueryId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#query_id SqlQuery#query_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#query_id SqlQuery#query_id}.
 
 ---
 
@@ -1854,7 +1940,7 @@ Multiple SqlQueryParameterQueryMultiple
 
 multiple block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#multiple SqlQuery#multiple}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#multiple SqlQuery#multiple}
 
 ---
 
@@ -1866,7 +1952,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#value SqlQuery#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#value SqlQuery#value}.
 
 ---
 
@@ -1878,7 +1964,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#values SqlQuery#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#values SqlQuery#values}.
 
 ---
 
@@ -1900,9 +1986,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/sqlquery"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterQueryMultiple.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#prefix SqlQuery#prefix}. |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterQueryMultiple.property.separator">Separator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#separator SqlQuery#separator}. |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterQueryMultiple.property.suffix">Suffix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#suffix SqlQuery#suffix}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterQueryMultiple.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#prefix SqlQuery#prefix}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterQueryMultiple.property.separator">Separator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#separator SqlQuery#separator}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterQueryMultiple.property.suffix">Suffix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#suffix SqlQuery#suffix}. |
 
 ---
 
@@ -1914,7 +2000,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#prefix SqlQuery#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#prefix SqlQuery#prefix}.
 
 ---
 
@@ -1926,7 +2012,7 @@ Separator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#separator SqlQuery#separator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#separator SqlQuery#separator}.
 
 ---
 
@@ -1938,7 +2024,7 @@ Suffix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#suffix SqlQuery#suffix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#suffix SqlQuery#suffix}.
 
 ---
 
@@ -1958,7 +2044,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/sqlquery"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterText.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#value SqlQuery#value}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryParameterText.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#value SqlQuery#value}. |
 
 ---
 
@@ -1970,7 +2056,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#value SqlQuery#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#value SqlQuery#value}.
 
 ---
 
@@ -2008,7 +2094,7 @@ Continuous SqlQueryScheduleContinuous
 
 continuous block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#continuous SqlQuery#continuous}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#continuous SqlQuery#continuous}
 
 ---
 
@@ -2022,7 +2108,7 @@ Daily SqlQueryScheduleDaily
 
 daily block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#daily SqlQuery#daily}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#daily SqlQuery#daily}
 
 ---
 
@@ -2036,7 +2122,7 @@ Weekly SqlQueryScheduleWeekly
 
 weekly block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#weekly SqlQuery#weekly}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#weekly SqlQuery#weekly}
 
 ---
 
@@ -2057,8 +2143,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/sqlquery"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleContinuous.property.intervalSeconds">IntervalSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#interval_seconds SqlQuery#interval_seconds}. |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleContinuous.property.untilDate">UntilDate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#until_date SqlQuery#until_date}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleContinuous.property.intervalSeconds">IntervalSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#interval_seconds SqlQuery#interval_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleContinuous.property.untilDate">UntilDate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#until_date SqlQuery#until_date}. |
 
 ---
 
@@ -2070,7 +2156,7 @@ IntervalSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#interval_seconds SqlQuery#interval_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#interval_seconds SqlQuery#interval_seconds}.
 
 ---
 
@@ -2082,7 +2168,7 @@ UntilDate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#until_date SqlQuery#until_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#until_date SqlQuery#until_date}.
 
 ---
 
@@ -2104,9 +2190,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/sqlquery"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleDaily.property.intervalDays">IntervalDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#interval_days SqlQuery#interval_days}. |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleDaily.property.timeOfDay">TimeOfDay</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#time_of_day SqlQuery#time_of_day}. |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleDaily.property.untilDate">UntilDate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#until_date SqlQuery#until_date}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleDaily.property.intervalDays">IntervalDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#interval_days SqlQuery#interval_days}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleDaily.property.timeOfDay">TimeOfDay</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#time_of_day SqlQuery#time_of_day}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleDaily.property.untilDate">UntilDate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#until_date SqlQuery#until_date}. |
 
 ---
 
@@ -2118,7 +2204,7 @@ IntervalDays *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#interval_days SqlQuery#interval_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#interval_days SqlQuery#interval_days}.
 
 ---
 
@@ -2130,7 +2216,7 @@ TimeOfDay *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#time_of_day SqlQuery#time_of_day}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#time_of_day SqlQuery#time_of_day}.
 
 ---
 
@@ -2142,7 +2228,7 @@ UntilDate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#until_date SqlQuery#until_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#until_date SqlQuery#until_date}.
 
 ---
 
@@ -2165,10 +2251,10 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/sqlquery"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleWeekly.property.dayOfWeek">DayOfWeek</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#day_of_week SqlQuery#day_of_week}. |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleWeekly.property.intervalWeeks">IntervalWeeks</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#interval_weeks SqlQuery#interval_weeks}. |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleWeekly.property.timeOfDay">TimeOfDay</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#time_of_day SqlQuery#time_of_day}. |
-| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleWeekly.property.untilDate">UntilDate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#until_date SqlQuery#until_date}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleWeekly.property.dayOfWeek">DayOfWeek</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#day_of_week SqlQuery#day_of_week}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleWeekly.property.intervalWeeks">IntervalWeeks</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#interval_weeks SqlQuery#interval_weeks}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleWeekly.property.timeOfDay">TimeOfDay</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#time_of_day SqlQuery#time_of_day}. |
+| <code><a href="#@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleWeekly.property.untilDate">UntilDate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#until_date SqlQuery#until_date}. |
 
 ---
 
@@ -2180,7 +2266,7 @@ DayOfWeek *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#day_of_week SqlQuery#day_of_week}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#day_of_week SqlQuery#day_of_week}.
 
 ---
 
@@ -2192,7 +2278,7 @@ IntervalWeeks *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#interval_weeks SqlQuery#interval_weeks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#interval_weeks SqlQuery#interval_weeks}.
 
 ---
 
@@ -2204,7 +2290,7 @@ TimeOfDay *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#time_of_day SqlQuery#time_of_day}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#time_of_day SqlQuery#time_of_day}.
 
 ---
 
@@ -2216,7 +2302,7 @@ UntilDate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/sql_query#until_date SqlQuery#until_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/sql_query#until_date SqlQuery#until_date}.
 
 ---
 
