@@ -1,6 +1,6 @@
 # `databricks_metastore`
 
-Refer to the Terraform Registory for docs: [`databricks_metastore`](https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore).
+Refer to the Terraform Registory for docs: [`databricks_metastore`](https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore).
 
 # `metastore` Submodule <a name="`metastore` Submodule" id="@cdktf/provider-databricks.metastore"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`databricks_metastore`](https://regi
 
 ### Metastore <a name="Metastore" id="@cdktf/provider-databricks.metastore.Metastore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore databricks_metastore}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore databricks_metastore}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.metastore.Metastore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/metastore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/metastore"
 
 metastore.NewMetastore(scope Construct, id *string, config MetastoreConfig) Metastore
 ```
@@ -80,8 +80,10 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.metastore.Metastore.resetForceDestroy">ResetForceDestroy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastore.Metastore.resetGlobalMetastoreId">ResetGlobalMetastoreId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastore.Metastore.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.metastore.Metastore.resetMetastoreId">ResetMetastoreId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastore.Metastore.resetOwner">ResetOwner</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastore.Metastore.resetRegion">ResetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.metastore.Metastore.resetStorageRootCredentialId">ResetStorageRootCredentialId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastore.Metastore.resetUpdatedAt">ResetUpdatedAt</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastore.Metastore.resetUpdatedBy">ResetUpdatedBy</a></code> | *No description.* |
 
@@ -331,6 +333,12 @@ func ResetGlobalMetastoreId()
 func ResetId()
 ```
 
+##### `ResetMetastoreId` <a name="ResetMetastoreId" id="@cdktf/provider-databricks.metastore.Metastore.resetMetastoreId"></a>
+
+```go
+func ResetMetastoreId()
+```
+
 ##### `ResetOwner` <a name="ResetOwner" id="@cdktf/provider-databricks.metastore.Metastore.resetOwner"></a>
 
 ```go
@@ -341,6 +349,12 @@ func ResetOwner()
 
 ```go
 func ResetRegion()
+```
+
+##### `ResetStorageRootCredentialId` <a name="ResetStorageRootCredentialId" id="@cdktf/provider-databricks.metastore.Metastore.resetStorageRootCredentialId"></a>
+
+```go
+func ResetStorageRootCredentialId()
 ```
 
 ##### `ResetUpdatedAt` <a name="ResetUpdatedAt" id="@cdktf/provider-databricks.metastore.Metastore.resetUpdatedAt"></a>
@@ -368,7 +382,7 @@ func ResetUpdatedBy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.metastore.Metastore.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/metastore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/metastore"
 
 metastore.Metastore_IsConstruct(x interface{}) *bool
 ```
@@ -400,7 +414,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.metastore.Metastore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/metastore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/metastore"
 
 metastore.Metastore_IsTerraformElement(x interface{}) *bool
 ```
@@ -414,7 +428,7 @@ metastore.Metastore_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.metastore.Metastore.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/metastore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/metastore"
 
 metastore.Metastore_IsTerraformResource(x interface{}) *bool
 ```
@@ -453,9 +467,11 @@ metastore.Metastore_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-databricks.metastore.Metastore.property.forceDestroyInput">ForceDestroyInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastore.Metastore.property.globalMetastoreIdInput">GlobalMetastoreIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastore.Metastore.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.metastore.Metastore.property.metastoreIdInput">MetastoreIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastore.Metastore.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastore.Metastore.property.ownerInput">OwnerInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastore.Metastore.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.metastore.Metastore.property.storageRootCredentialIdInput">StorageRootCredentialIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastore.Metastore.property.storageRootInput">StorageRootInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastore.Metastore.property.updatedAtInput">UpdatedAtInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastore.Metastore.property.updatedByInput">UpdatedByInput</a></code> | <code>*string</code> | *No description.* |
@@ -469,10 +485,12 @@ metastore.Metastore_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-databricks.metastore.Metastore.property.forceDestroy">ForceDestroy</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastore.Metastore.property.globalMetastoreId">GlobalMetastoreId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastore.Metastore.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.metastore.Metastore.property.metastoreId">MetastoreId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastore.Metastore.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastore.Metastore.property.owner">Owner</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastore.Metastore.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastore.Metastore.property.storageRoot">StorageRoot</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.metastore.Metastore.property.storageRootCredentialId">StorageRootCredentialId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastore.Metastore.property.updatedAt">UpdatedAt</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastore.Metastore.property.updatedBy">UpdatedBy</a></code> | <code>*string</code> | *No description.* |
 
@@ -720,6 +738,16 @@ func IdInput() *string
 
 ---
 
+##### `MetastoreIdInput`<sup>Optional</sup> <a name="MetastoreIdInput" id="@cdktf/provider-databricks.metastore.Metastore.property.metastoreIdInput"></a>
+
+```go
+func MetastoreIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-databricks.metastore.Metastore.property.nameInput"></a>
 
 ```go
@@ -744,6 +772,16 @@ func OwnerInput() *string
 
 ```go
 func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `StorageRootCredentialIdInput`<sup>Optional</sup> <a name="StorageRootCredentialIdInput" id="@cdktf/provider-databricks.metastore.Metastore.property.storageRootCredentialIdInput"></a>
+
+```go
+func StorageRootCredentialIdInput() *string
 ```
 
 - *Type:* *string
@@ -880,6 +918,16 @@ func Id() *string
 
 ---
 
+##### `MetastoreId`<sup>Required</sup> <a name="MetastoreId" id="@cdktf/provider-databricks.metastore.Metastore.property.metastoreId"></a>
+
+```go
+func MetastoreId() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-databricks.metastore.Metastore.property.name"></a>
 
 ```go
@@ -914,6 +962,16 @@ func Region() *string
 
 ```go
 func StorageRoot() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `StorageRootCredentialId`<sup>Required</sup> <a name="StorageRootCredentialId" id="@cdktf/provider-databricks.metastore.Metastore.property.storageRootCredentialId"></a>
+
+```go
+func StorageRootCredentialId() *string
 ```
 
 - *Type:* *string
@@ -965,7 +1023,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.metastore.MetastoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/metastore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/metastore"
 
 &metastore.MetastoreConfig {
 	Connection: interface{},
@@ -987,8 +1045,10 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/metastore"
 	ForceDestroy: interface{},
 	GlobalMetastoreId: *string,
 	Id: *string,
+	MetastoreId: *string,
 	Owner: *string,
 	Region: *string,
+	StorageRootCredentialId: *string,
 	UpdatedAt: *f64,
 	UpdatedBy: *string,
 }
@@ -1005,22 +1065,24 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/metastore"
 | <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#name Metastore#name}. |
-| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.storageRoot">StorageRoot</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#storage_root Metastore#storage_root}. |
-| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.cloud">Cloud</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#cloud Metastore#cloud}. |
-| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.createdAt">CreatedAt</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#created_at Metastore#created_at}. |
-| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.createdBy">CreatedBy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#created_by Metastore#created_by}. |
-| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.defaultDataAccessConfigId">DefaultDataAccessConfigId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#default_data_access_config_id Metastore#default_data_access_config_id}. |
-| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.deltaSharingOrganizationName">DeltaSharingOrganizationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#delta_sharing_organization_name Metastore#delta_sharing_organization_name}. |
-| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.deltaSharingRecipientTokenLifetimeInSeconds">DeltaSharingRecipientTokenLifetimeInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#delta_sharing_recipient_token_lifetime_in_seconds Metastore#delta_sharing_recipient_token_lifetime_in_seconds}. |
-| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.deltaSharingScope">DeltaSharingScope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#delta_sharing_scope Metastore#delta_sharing_scope}. |
-| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.forceDestroy">ForceDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#force_destroy Metastore#force_destroy}. |
-| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.globalMetastoreId">GlobalMetastoreId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#global_metastore_id Metastore#global_metastore_id}. |
-| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#id Metastore#id}. |
-| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.owner">Owner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#owner Metastore#owner}. |
-| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#region Metastore#region}. |
-| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.updatedAt">UpdatedAt</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#updated_at Metastore#updated_at}. |
-| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.updatedBy">UpdatedBy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#updated_by Metastore#updated_by}. |
+| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#name Metastore#name}. |
+| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.storageRoot">StorageRoot</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#storage_root Metastore#storage_root}. |
+| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.cloud">Cloud</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#cloud Metastore#cloud}. |
+| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.createdAt">CreatedAt</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#created_at Metastore#created_at}. |
+| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.createdBy">CreatedBy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#created_by Metastore#created_by}. |
+| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.defaultDataAccessConfigId">DefaultDataAccessConfigId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#default_data_access_config_id Metastore#default_data_access_config_id}. |
+| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.deltaSharingOrganizationName">DeltaSharingOrganizationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#delta_sharing_organization_name Metastore#delta_sharing_organization_name}. |
+| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.deltaSharingRecipientTokenLifetimeInSeconds">DeltaSharingRecipientTokenLifetimeInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#delta_sharing_recipient_token_lifetime_in_seconds Metastore#delta_sharing_recipient_token_lifetime_in_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.deltaSharingScope">DeltaSharingScope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#delta_sharing_scope Metastore#delta_sharing_scope}. |
+| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.forceDestroy">ForceDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#force_destroy Metastore#force_destroy}. |
+| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.globalMetastoreId">GlobalMetastoreId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#global_metastore_id Metastore#global_metastore_id}. |
+| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#id Metastore#id}. |
+| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.metastoreId">MetastoreId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#metastore_id Metastore#metastore_id}. |
+| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.owner">Owner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#owner Metastore#owner}. |
+| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#region Metastore#region}. |
+| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.storageRootCredentialId">StorageRootCredentialId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#storage_root_credential_id Metastore#storage_root_credential_id}. |
+| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.updatedAt">UpdatedAt</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#updated_at Metastore#updated_at}. |
+| <code><a href="#@cdktf/provider-databricks.metastore.MetastoreConfig.property.updatedBy">UpdatedBy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#updated_by Metastore#updated_by}. |
 
 ---
 
@@ -1102,7 +1164,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#name Metastore#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#name Metastore#name}.
 
 ---
 
@@ -1114,7 +1176,7 @@ StorageRoot *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#storage_root Metastore#storage_root}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#storage_root Metastore#storage_root}.
 
 ---
 
@@ -1126,7 +1188,7 @@ Cloud *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#cloud Metastore#cloud}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#cloud Metastore#cloud}.
 
 ---
 
@@ -1138,7 +1200,7 @@ CreatedAt *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#created_at Metastore#created_at}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#created_at Metastore#created_at}.
 
 ---
 
@@ -1150,7 +1212,7 @@ CreatedBy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#created_by Metastore#created_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#created_by Metastore#created_by}.
 
 ---
 
@@ -1162,7 +1224,7 @@ DefaultDataAccessConfigId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#default_data_access_config_id Metastore#default_data_access_config_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#default_data_access_config_id Metastore#default_data_access_config_id}.
 
 ---
 
@@ -1174,7 +1236,7 @@ DeltaSharingOrganizationName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#delta_sharing_organization_name Metastore#delta_sharing_organization_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#delta_sharing_organization_name Metastore#delta_sharing_organization_name}.
 
 ---
 
@@ -1186,7 +1248,7 @@ DeltaSharingRecipientTokenLifetimeInSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#delta_sharing_recipient_token_lifetime_in_seconds Metastore#delta_sharing_recipient_token_lifetime_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#delta_sharing_recipient_token_lifetime_in_seconds Metastore#delta_sharing_recipient_token_lifetime_in_seconds}.
 
 ---
 
@@ -1198,7 +1260,7 @@ DeltaSharingScope *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#delta_sharing_scope Metastore#delta_sharing_scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#delta_sharing_scope Metastore#delta_sharing_scope}.
 
 ---
 
@@ -1210,7 +1272,7 @@ ForceDestroy interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#force_destroy Metastore#force_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#force_destroy Metastore#force_destroy}.
 
 ---
 
@@ -1222,7 +1284,7 @@ GlobalMetastoreId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#global_metastore_id Metastore#global_metastore_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#global_metastore_id Metastore#global_metastore_id}.
 
 ---
 
@@ -1234,10 +1296,22 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#id Metastore#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#id Metastore#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `MetastoreId`<sup>Optional</sup> <a name="MetastoreId" id="@cdktf/provider-databricks.metastore.MetastoreConfig.property.metastoreId"></a>
+
+```go
+MetastoreId *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#metastore_id Metastore#metastore_id}.
 
 ---
 
@@ -1249,7 +1323,7 @@ Owner *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#owner Metastore#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#owner Metastore#owner}.
 
 ---
 
@@ -1261,7 +1335,19 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#region Metastore#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#region Metastore#region}.
+
+---
+
+##### `StorageRootCredentialId`<sup>Optional</sup> <a name="StorageRootCredentialId" id="@cdktf/provider-databricks.metastore.MetastoreConfig.property.storageRootCredentialId"></a>
+
+```go
+StorageRootCredentialId *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#storage_root_credential_id Metastore#storage_root_credential_id}.
 
 ---
 
@@ -1273,7 +1359,7 @@ UpdatedAt *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#updated_at Metastore#updated_at}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#updated_at Metastore#updated_at}.
 
 ---
 
@@ -1285,7 +1371,7 @@ UpdatedBy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/metastore#updated_by Metastore#updated_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/metastore#updated_by Metastore#updated_by}.
 
 ---
 

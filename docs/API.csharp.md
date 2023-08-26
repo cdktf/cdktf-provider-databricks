@@ -10,6 +10,7 @@ The following submodules are available:
 - [catalogWorkspaceBinding](./catalogWorkspaceBinding.csharp.md)
 - [cluster](./cluster.csharp.md)
 - [clusterPolicy](./clusterPolicy.csharp.md)
+- [connection](./connection.csharp.md)
 - [dataDatabricksAwsAssumeRolePolicy](./dataDatabricksAwsAssumeRolePolicy.csharp.md)
 - [dataDatabricksAwsBucketPolicy](./dataDatabricksAwsBucketPolicy.csharp.md)
 - [dataDatabricksAwsCrossaccountPolicy](./dataDatabricksAwsCrossaccountPolicy.csharp.md)

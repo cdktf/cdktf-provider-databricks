@@ -10,6 +10,7 @@ The following submodules are available:
 - [catalogWorkspaceBinding](./catalogWorkspaceBinding.typescript.md)
 - [cluster](./cluster.typescript.md)
 - [clusterPolicy](./clusterPolicy.typescript.md)
+- [connection](./connection.typescript.md)
 - [dataDatabricksAwsAssumeRolePolicy](./dataDatabricksAwsAssumeRolePolicy.typescript.md)
 - [dataDatabricksAwsBucketPolicy](./dataDatabricksAwsBucketPolicy.typescript.md)
 - [dataDatabricksAwsCrossaccountPolicy](./dataDatabricksAwsCrossaccountPolicy.typescript.md)

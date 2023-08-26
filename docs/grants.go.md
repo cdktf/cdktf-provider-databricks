@@ -1,6 +1,6 @@
 # `databricks_grants`
 
-Refer to the Terraform Registory for docs: [`databricks_grants`](https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants).
+Refer to the Terraform Registory for docs: [`databricks_grants`](https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants).
 
 # `grants` Submodule <a name="`grants` Submodule" id="@cdktf/provider-databricks.grants"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`databricks_grants`](https://registr
 
 ### Grants <a name="Grants" id="@cdktf/provider-databricks.grants.Grants"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants databricks_grants}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants databricks_grants}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.grants.Grants.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/grants"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/grants"
 
 grants.NewGrants(scope Construct, id *string, config GrantsConfig) Grants
 ```
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.grants.Grants.putGrant">PutGrant</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.grants.Grants.resetCatalog">ResetCatalog</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.grants.Grants.resetExternalLocation">ResetExternalLocation</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.grants.Grants.resetForeignConnection">ResetForeignConnection</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.grants.Grants.resetFunction">ResetFunction</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.grants.Grants.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.grants.Grants.resetMaterializedView">ResetMaterializedView</a></code> | *No description.* |
@@ -294,6 +295,12 @@ func ResetCatalog()
 func ResetExternalLocation()
 ```
 
+##### `ResetForeignConnection` <a name="ResetForeignConnection" id="@cdktf/provider-databricks.grants.Grants.resetForeignConnection"></a>
+
+```go
+func ResetForeignConnection()
+```
+
 ##### `ResetFunction` <a name="ResetFunction" id="@cdktf/provider-databricks.grants.Grants.resetFunction"></a>
 
 ```go
@@ -367,7 +374,7 @@ func ResetVolume()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.grants.Grants.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/grants"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/grants"
 
 grants.Grants_IsConstruct(x interface{}) *bool
 ```
@@ -399,7 +406,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.grants.Grants.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/grants"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/grants"
 
 grants.Grants_IsTerraformElement(x interface{}) *bool
 ```
@@ -413,7 +420,7 @@ grants.Grants_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.grants.Grants.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/grants"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/grants"
 
 grants.Grants_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,6 +452,7 @@ grants.Grants_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-databricks.grants.Grants.property.grant">Grant</a></code> | <code><a href="#@cdktf/provider-databricks.grants.GrantsGrantList">GrantsGrantList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.grants.Grants.property.catalogInput">CatalogInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.grants.Grants.property.externalLocationInput">ExternalLocationInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.grants.Grants.property.foreignConnectionInput">ForeignConnectionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.grants.Grants.property.functionInput">FunctionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.grants.Grants.property.grantInput">GrantInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.grants.Grants.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
@@ -458,6 +466,7 @@ grants.Grants_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-databricks.grants.Grants.property.volumeInput">VolumeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.grants.Grants.property.catalog">Catalog</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.grants.Grants.property.externalLocation">ExternalLocation</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.grants.Grants.property.foreignConnection">ForeignConnection</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.grants.Grants.property.function">Function</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.grants.Grants.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.grants.Grants.property.materializedView">MaterializedView</a></code> | <code>*string</code> | *No description.* |
@@ -643,6 +652,16 @@ func ExternalLocationInput() *string
 
 ---
 
+##### `ForeignConnectionInput`<sup>Optional</sup> <a name="ForeignConnectionInput" id="@cdktf/provider-databricks.grants.Grants.property.foreignConnectionInput"></a>
+
+```go
+func ForeignConnectionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `FunctionInput`<sup>Optional</sup> <a name="FunctionInput" id="@cdktf/provider-databricks.grants.Grants.property.functionInput"></a>
 
 ```go
@@ -767,6 +786,16 @@ func Catalog() *string
 
 ```go
 func ExternalLocation() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ForeignConnection`<sup>Required</sup> <a name="ForeignConnection" id="@cdktf/provider-databricks.grants.Grants.property.foreignConnection"></a>
+
+```go
+func ForeignConnection() *string
 ```
 
 - *Type:* *string
@@ -898,7 +927,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.grants.GrantsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/grants"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/grants"
 
 &grants.GrantsConfig {
 	Connection: interface{},
@@ -911,6 +940,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/grants"
 	Grant: interface{},
 	Catalog: *string,
 	ExternalLocation: *string,
+	ForeignConnection: *string,
 	Function: *string,
 	Id: *string,
 	MaterializedView: *string,
@@ -936,18 +966,19 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/grants"
 | <code><a href="#@cdktf/provider-databricks.grants.GrantsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.grants.GrantsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.grants.GrantsConfig.property.grant">Grant</a></code> | <code>interface{}</code> | grant block. |
-| <code><a href="#@cdktf/provider-databricks.grants.GrantsConfig.property.catalog">Catalog</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants#catalog Grants#catalog}. |
-| <code><a href="#@cdktf/provider-databricks.grants.GrantsConfig.property.externalLocation">ExternalLocation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants#external_location Grants#external_location}. |
-| <code><a href="#@cdktf/provider-databricks.grants.GrantsConfig.property.function">Function</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants#function Grants#function}. |
-| <code><a href="#@cdktf/provider-databricks.grants.GrantsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants#id Grants#id}. |
-| <code><a href="#@cdktf/provider-databricks.grants.GrantsConfig.property.materializedView">MaterializedView</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants#materialized_view Grants#materialized_view}. |
-| <code><a href="#@cdktf/provider-databricks.grants.GrantsConfig.property.metastore">Metastore</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants#metastore Grants#metastore}. |
-| <code><a href="#@cdktf/provider-databricks.grants.GrantsConfig.property.schema">Schema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants#schema Grants#schema}. |
-| <code><a href="#@cdktf/provider-databricks.grants.GrantsConfig.property.share">Share</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants#share Grants#share}. |
-| <code><a href="#@cdktf/provider-databricks.grants.GrantsConfig.property.storageCredential">StorageCredential</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants#storage_credential Grants#storage_credential}. |
-| <code><a href="#@cdktf/provider-databricks.grants.GrantsConfig.property.table">Table</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants#table Grants#table}. |
-| <code><a href="#@cdktf/provider-databricks.grants.GrantsConfig.property.view">View</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants#view Grants#view}. |
-| <code><a href="#@cdktf/provider-databricks.grants.GrantsConfig.property.volume">Volume</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants#volume Grants#volume}. |
+| <code><a href="#@cdktf/provider-databricks.grants.GrantsConfig.property.catalog">Catalog</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#catalog Grants#catalog}. |
+| <code><a href="#@cdktf/provider-databricks.grants.GrantsConfig.property.externalLocation">ExternalLocation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#external_location Grants#external_location}. |
+| <code><a href="#@cdktf/provider-databricks.grants.GrantsConfig.property.foreignConnection">ForeignConnection</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#foreign_connection Grants#foreign_connection}. |
+| <code><a href="#@cdktf/provider-databricks.grants.GrantsConfig.property.function">Function</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#function Grants#function}. |
+| <code><a href="#@cdktf/provider-databricks.grants.GrantsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#id Grants#id}. |
+| <code><a href="#@cdktf/provider-databricks.grants.GrantsConfig.property.materializedView">MaterializedView</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#materialized_view Grants#materialized_view}. |
+| <code><a href="#@cdktf/provider-databricks.grants.GrantsConfig.property.metastore">Metastore</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#metastore Grants#metastore}. |
+| <code><a href="#@cdktf/provider-databricks.grants.GrantsConfig.property.schema">Schema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#schema Grants#schema}. |
+| <code><a href="#@cdktf/provider-databricks.grants.GrantsConfig.property.share">Share</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#share Grants#share}. |
+| <code><a href="#@cdktf/provider-databricks.grants.GrantsConfig.property.storageCredential">StorageCredential</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#storage_credential Grants#storage_credential}. |
+| <code><a href="#@cdktf/provider-databricks.grants.GrantsConfig.property.table">Table</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#table Grants#table}. |
+| <code><a href="#@cdktf/provider-databricks.grants.GrantsConfig.property.view">View</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#view Grants#view}. |
+| <code><a href="#@cdktf/provider-databricks.grants.GrantsConfig.property.volume">Volume</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#volume Grants#volume}. |
 
 ---
 
@@ -1031,7 +1062,7 @@ Grant interface{}
 
 grant block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants#grant Grants#grant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#grant Grants#grant}
 
 ---
 
@@ -1043,7 +1074,7 @@ Catalog *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants#catalog Grants#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#catalog Grants#catalog}.
 
 ---
 
@@ -1055,7 +1086,19 @@ ExternalLocation *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants#external_location Grants#external_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#external_location Grants#external_location}.
+
+---
+
+##### `ForeignConnection`<sup>Optional</sup> <a name="ForeignConnection" id="@cdktf/provider-databricks.grants.GrantsConfig.property.foreignConnection"></a>
+
+```go
+ForeignConnection *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#foreign_connection Grants#foreign_connection}.
 
 ---
 
@@ -1067,7 +1110,7 @@ Function *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants#function Grants#function}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#function Grants#function}.
 
 ---
 
@@ -1079,7 +1122,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants#id Grants#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#id Grants#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1094,7 +1137,7 @@ MaterializedView *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants#materialized_view Grants#materialized_view}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#materialized_view Grants#materialized_view}.
 
 ---
 
@@ -1106,7 +1149,7 @@ Metastore *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants#metastore Grants#metastore}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#metastore Grants#metastore}.
 
 ---
 
@@ -1118,7 +1161,7 @@ Schema *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants#schema Grants#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#schema Grants#schema}.
 
 ---
 
@@ -1130,7 +1173,7 @@ Share *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants#share Grants#share}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#share Grants#share}.
 
 ---
 
@@ -1142,7 +1185,7 @@ StorageCredential *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants#storage_credential Grants#storage_credential}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#storage_credential Grants#storage_credential}.
 
 ---
 
@@ -1154,7 +1197,7 @@ Table *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants#table Grants#table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#table Grants#table}.
 
 ---
 
@@ -1166,7 +1209,7 @@ View *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants#view Grants#view}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#view Grants#view}.
 
 ---
 
@@ -1178,7 +1221,7 @@ Volume *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants#volume Grants#volume}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#volume Grants#volume}.
 
 ---
 
@@ -1187,7 +1230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.grants.GrantsGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/grants"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/grants"
 
 &grants.GrantsGrant {
 	Principal: *string,
@@ -1199,8 +1242,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/grants"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.grants.GrantsGrant.property.principal">Principal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants#principal Grants#principal}. |
-| <code><a href="#@cdktf/provider-databricks.grants.GrantsGrant.property.privileges">Privileges</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants#privileges Grants#privileges}. |
+| <code><a href="#@cdktf/provider-databricks.grants.GrantsGrant.property.principal">Principal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#principal Grants#principal}. |
+| <code><a href="#@cdktf/provider-databricks.grants.GrantsGrant.property.privileges">Privileges</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#privileges Grants#privileges}. |
 
 ---
 
@@ -1212,7 +1255,7 @@ Principal *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants#principal Grants#principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#principal Grants#principal}.
 
 ---
 
@@ -1224,7 +1267,7 @@ Privileges *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/grants#privileges Grants#privileges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/grants#privileges Grants#privileges}.
 
 ---
 
@@ -1235,7 +1278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.grants.GrantsGrantList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/grants"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/grants"
 
 grants.NewGrantsGrantList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GrantsGrantList
 ```
@@ -1378,7 +1421,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.grants.GrantsGrantOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/grants"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/grants"
 
 grants.NewGrantsGrantOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GrantsGrantOutputReference
 ```

@@ -1,6 +1,6 @@
 # `databricks_secret_acl`
 
-Refer to the Terraform Registory for docs: [`databricks_secret_acl`](https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/secret_acl).
+Refer to the Terraform Registory for docs: [`databricks_secret_acl`](https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/secret_acl).
 
 # `secretAcl` Submodule <a name="`secretAcl` Submodule" id="@cdktf/provider-databricks.secretAcl"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`databricks_secret_acl`](https://reg
 
 ### SecretAcl <a name="SecretAcl" id="@cdktf/provider-databricks.secretAcl.SecretAcl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/secret_acl databricks_secret_acl}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/secret_acl databricks_secret_acl}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.secretAcl.SecretAcl.Initializer"></a>
 
@@ -626,10 +626,10 @@ const secretAclConfig: secretAcl.SecretAclConfig = { ... }
 | <code><a href="#@cdktf/provider-databricks.secretAcl.SecretAclConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.secretAcl.SecretAclConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.secretAcl.SecretAclConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.secretAcl.SecretAclConfig.property.permission">permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/secret_acl#permission SecretAcl#permission}. |
-| <code><a href="#@cdktf/provider-databricks.secretAcl.SecretAclConfig.property.principal">principal</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/secret_acl#principal SecretAcl#principal}. |
-| <code><a href="#@cdktf/provider-databricks.secretAcl.SecretAclConfig.property.scope">scope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/secret_acl#scope SecretAcl#scope}. |
-| <code><a href="#@cdktf/provider-databricks.secretAcl.SecretAclConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/secret_acl#id SecretAcl#id}. |
+| <code><a href="#@cdktf/provider-databricks.secretAcl.SecretAclConfig.property.permission">permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/secret_acl#permission SecretAcl#permission}. |
+| <code><a href="#@cdktf/provider-databricks.secretAcl.SecretAclConfig.property.principal">principal</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/secret_acl#principal SecretAcl#principal}. |
+| <code><a href="#@cdktf/provider-databricks.secretAcl.SecretAclConfig.property.scope">scope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/secret_acl#scope SecretAcl#scope}. |
+| <code><a href="#@cdktf/provider-databricks.secretAcl.SecretAclConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/secret_acl#id SecretAcl#id}. |
 
 ---
 
@@ -711,7 +711,7 @@ public readonly permission: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/secret_acl#permission SecretAcl#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/secret_acl#permission SecretAcl#permission}.
 
 ---
 
@@ -723,7 +723,7 @@ public readonly principal: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/secret_acl#principal SecretAcl#principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/secret_acl#principal SecretAcl#principal}.
 
 ---
 
@@ -735,7 +735,7 @@ public readonly scope: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/secret_acl#scope SecretAcl#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/secret_acl#scope SecretAcl#scope}.
 
 ---
 
@@ -747,7 +747,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.23.0/docs/resources/secret_acl#id SecretAcl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/resources/secret_acl#id SecretAcl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
