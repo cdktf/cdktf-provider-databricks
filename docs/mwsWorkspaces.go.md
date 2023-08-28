@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsworkspaces"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/mwsworkspaces"
 
 mwsworkspaces.NewMwsWorkspaces(scope Construct, id *string, config MwsWorkspacesConfig) MwsWorkspaces
 ```
@@ -523,7 +523,7 @@ func ResetWorkspaceUrl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsworkspaces"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/mwsworkspaces"
 
 mwsworkspaces.MwsWorkspaces_IsConstruct(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsworkspaces"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/mwsworkspaces"
 
 mwsworkspaces.MwsWorkspaces_IsTerraformElement(x interface{}) *bool
 ```
@@ -569,7 +569,7 @@ mwsworkspaces.MwsWorkspaces_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsworkspaces"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/mwsworkspaces"
 
 mwsworkspaces.MwsWorkspaces_IsTerraformResource(x interface{}) *bool
 ```
@@ -1362,10 +1362,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesCloudResourceContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsworkspaces"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/mwsworkspaces"
 
 &mwsworkspaces.MwsWorkspacesCloudResourceContainer {
-	Gcp: github.com/cdktf/cdktf-provider-databricks-go/databricks.mwsWorkspaces.MwsWorkspacesCloudResourceContainerGcp,
+	Gcp: github.com/cdktf/cdktf-provider-databricks-go/databricks/v10.mwsWorkspaces.MwsWorkspacesCloudResourceContainerGcp,
 }
 ```
 
@@ -1396,7 +1396,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesCloudResourceContainerGcp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsworkspaces"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/mwsworkspaces"
 
 &mwsworkspaces.MwsWorkspacesCloudResourceContainerGcp {
 	ProjectId: *string,
@@ -1428,7 +1428,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsworkspaces"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/mwsworkspaces"
 
 &mwsworkspaces.MwsWorkspacesConfig {
 	Connection: interface{},
@@ -1442,14 +1442,14 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsworkspaces"
 	WorkspaceName: *string,
 	AwsRegion: *string,
 	Cloud: *string,
-	CloudResourceContainer: github.com/cdktf/cdktf-provider-databricks-go/databricks.mwsWorkspaces.MwsWorkspacesCloudResourceContainer,
+	CloudResourceContainer: github.com/cdktf/cdktf-provider-databricks-go/databricks/v10.mwsWorkspaces.MwsWorkspacesCloudResourceContainer,
 	CreationTime: *f64,
 	CredentialsId: *string,
 	CustomerManagedKeyId: *string,
 	DeploymentName: *string,
-	ExternalCustomerInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks.mwsWorkspaces.MwsWorkspacesExternalCustomerInfo,
-	GcpManagedNetworkConfig: github.com/cdktf/cdktf-provider-databricks-go/databricks.mwsWorkspaces.MwsWorkspacesGcpManagedNetworkConfig,
-	GkeConfig: github.com/cdktf/cdktf-provider-databricks-go/databricks.mwsWorkspaces.MwsWorkspacesGkeConfig,
+	ExternalCustomerInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks/v10.mwsWorkspaces.MwsWorkspacesExternalCustomerInfo,
+	GcpManagedNetworkConfig: github.com/cdktf/cdktf-provider-databricks-go/databricks/v10.mwsWorkspaces.MwsWorkspacesGcpManagedNetworkConfig,
+	GkeConfig: github.com/cdktf/cdktf-provider-databricks-go/databricks/v10.mwsWorkspaces.MwsWorkspacesGkeConfig,
 	Id: *string,
 	IsNoPublicIpEnabled: interface{},
 	Location: *string,
@@ -1459,8 +1459,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsworkspaces"
 	PrivateAccessSettingsId: *string,
 	StorageConfigurationId: *string,
 	StorageCustomerManagedKeyId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-databricks-go/databricks.mwsWorkspaces.MwsWorkspacesTimeouts,
-	Token: github.com/cdktf/cdktf-provider-databricks-go/databricks.mwsWorkspaces.MwsWorkspacesToken,
+	Timeouts: github.com/cdktf/cdktf-provider-databricks-go/databricks/v10.mwsWorkspaces.MwsWorkspacesTimeouts,
+	Token: github.com/cdktf/cdktf-provider-databricks-go/databricks/v10.mwsWorkspaces.MwsWorkspacesToken,
 	WorkspaceId: *f64,
 	WorkspaceStatus: *string,
 	WorkspaceStatusMessage: *string,
@@ -1923,7 +1923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesExternalCustomerInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsworkspaces"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/mwsworkspaces"
 
 &mwsworkspaces.MwsWorkspacesExternalCustomerInfo {
 	AuthoritativeUserEmail: *string,
@@ -1983,7 +1983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesGcpManagedNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsworkspaces"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/mwsworkspaces"
 
 &mwsworkspaces.MwsWorkspacesGcpManagedNetworkConfig {
 	GkeClusterPodIpRange: *string,
@@ -2043,7 +2043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesGkeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsworkspaces"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/mwsworkspaces"
 
 &mwsworkspaces.MwsWorkspacesGkeConfig {
 	ConnectivityType: *string,
@@ -2089,7 +2089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsworkspaces"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/mwsworkspaces"
 
 &mwsworkspaces.MwsWorkspacesTimeouts {
 	Create: *string,
@@ -2149,7 +2149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsworkspaces"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/mwsworkspaces"
 
 &mwsworkspaces.MwsWorkspacesToken {
 	Comment: *string,
@@ -2225,7 +2225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesCloudResourceContainerGcpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsworkspaces"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/mwsworkspaces"
 
 mwsworkspaces.NewMwsWorkspacesCloudResourceContainerGcpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MwsWorkspacesCloudResourceContainerGcpOutputReference
 ```
@@ -2496,7 +2496,7 @@ func InternalValue() MwsWorkspacesCloudResourceContainerGcp
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesCloudResourceContainerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsworkspaces"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/mwsworkspaces"
 
 mwsworkspaces.NewMwsWorkspacesCloudResourceContainerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MwsWorkspacesCloudResourceContainerOutputReference
 ```
@@ -2780,7 +2780,7 @@ func InternalValue() MwsWorkspacesCloudResourceContainer
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesExternalCustomerInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsworkspaces"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/mwsworkspaces"
 
 mwsworkspaces.NewMwsWorkspacesExternalCustomerInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MwsWorkspacesExternalCustomerInfoOutputReference
 ```
@@ -3095,7 +3095,7 @@ func InternalValue() MwsWorkspacesExternalCustomerInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesGcpManagedNetworkConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsworkspaces"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/mwsworkspaces"
 
 mwsworkspaces.NewMwsWorkspacesGcpManagedNetworkConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MwsWorkspacesGcpManagedNetworkConfigOutputReference
 ```
@@ -3410,7 +3410,7 @@ func InternalValue() MwsWorkspacesGcpManagedNetworkConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesGkeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsworkspaces"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/mwsworkspaces"
 
 mwsworkspaces.NewMwsWorkspacesGkeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MwsWorkspacesGkeConfigOutputReference
 ```
@@ -3703,7 +3703,7 @@ func InternalValue() MwsWorkspacesGkeConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsworkspaces"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/mwsworkspaces"
 
 mwsworkspaces.NewMwsWorkspacesTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MwsWorkspacesTimeoutsOutputReference
 ```
@@ -4039,7 +4039,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsworkspaces"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/mwsworkspaces"
 
 mwsworkspaces.NewMwsWorkspacesTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MwsWorkspacesTokenOutputReference
 ```
