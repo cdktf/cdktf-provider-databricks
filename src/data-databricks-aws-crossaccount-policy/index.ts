@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/data-sources/aws_crossaccount_policy
+// https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/data-sources/aws_crossaccount_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +13,20 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksAwsCrossaccountPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/data-sources/aws_crossaccount_policy#id DataDatabricksAwsCrossaccountPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/data-sources/aws_crossaccount_policy#id DataDatabricksAwsCrossaccountPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/data-sources/aws_crossaccount_policy#pass_roles DataDatabricksAwsCrossaccountPolicy#pass_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/data-sources/aws_crossaccount_policy#pass_roles DataDatabricksAwsCrossaccountPolicy#pass_roles}
   */
   readonly passRoles?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/data-sources/aws_crossaccount_policy databricks_aws_crossaccount_policy}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/data-sources/aws_crossaccount_policy databricks_aws_crossaccount_policy}
 */
 export class DataDatabricksAwsCrossaccountPolicy extends cdktf.TerraformDataSource {
 
@@ -40,7 +40,7 @@ export class DataDatabricksAwsCrossaccountPolicy extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.0/docs/data-sources/aws_crossaccount_policy databricks_aws_crossaccount_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/data-sources/aws_crossaccount_policy databricks_aws_crossaccount_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -51,7 +51,7 @@ export class DataDatabricksAwsCrossaccountPolicy extends cdktf.TerraformDataSour
       terraformResourceType: 'databricks_aws_crossaccount_policy',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.24.0',
+        providerVersion: '1.24.1',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
