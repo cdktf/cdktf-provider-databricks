@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/catalog_workspace_binding
+// https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/catalog_workspace_binding
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktf from 'cdktf';
 
 export interface CatalogWorkspaceBindingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/catalog_workspace_binding#catalog_name CatalogWorkspaceBinding#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/catalog_workspace_binding#catalog_name CatalogWorkspaceBinding#catalog_name}
   */
   readonly catalogName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/catalog_workspace_binding#id CatalogWorkspaceBinding#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/catalog_workspace_binding#id CatalogWorkspaceBinding#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/catalog_workspace_binding#workspace_id CatalogWorkspaceBinding#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/catalog_workspace_binding#workspace_id CatalogWorkspaceBinding#workspace_id}
   */
   readonly workspaceId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding}
 */
 export class CatalogWorkspaceBinding extends cdktf.TerraformResource {
 
@@ -44,7 +44,7 @@ export class CatalogWorkspaceBinding extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -55,7 +55,7 @@ export class CatalogWorkspaceBinding extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_catalog_workspace_binding',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.24.1',
+        providerVersion: '1.25.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
