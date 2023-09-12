@@ -1,6 +1,6 @@
 # `databricks_instance_pool`
 
-Refer to the Terraform Registory for docs: [`databricks_instance_pool`](https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool).
+Refer to the Terraform Registory for docs: [`databricks_instance_pool`](https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool).
 
 # `instancePool` Submodule <a name="`instancePool` Submodule" id="@cdktf/provider-databricks.instancePool"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`databricks_instance_pool`](https://
 
 ### InstancePool <a name="InstancePool" id="@cdktf/provider-databricks.instancePool.InstancePool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool databricks_instance_pool}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool databricks_instance_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.instancePool.InstancePool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.NewInstancePool(scope Construct, id *string, config InstancePoolConfig) InstancePool
 ```
@@ -446,7 +446,7 @@ func ResetPreloadedSparkVersions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.instancePool.InstancePool.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.InstancePool_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.instancePool.InstancePool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.InstancePool_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ instancepool.InstancePool_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.instancePool.InstancePool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.InstancePool_IsTerraformResource(x interface{}) *bool
 ```
@@ -1043,7 +1043,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.instancePool.InstancePoolAwsAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 &instancepool.InstancePoolAwsAttributes {
 	Availability: *string,
@@ -1056,9 +1056,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepoo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolAwsAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#availability InstancePool#availability}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolAwsAttributes.property.spotBidPricePercent">SpotBidPricePercent</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#spot_bid_price_percent InstancePool#spot_bid_price_percent}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolAwsAttributes.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#zone_id InstancePool#zone_id}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolAwsAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#availability InstancePool#availability}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolAwsAttributes.property.spotBidPricePercent">SpotBidPricePercent</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#spot_bid_price_percent InstancePool#spot_bid_price_percent}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolAwsAttributes.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#zone_id InstancePool#zone_id}. |
 
 ---
 
@@ -1070,7 +1070,7 @@ Availability *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#availability InstancePool#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#availability InstancePool#availability}.
 
 ---
 
@@ -1082,7 +1082,7 @@ SpotBidPricePercent *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#spot_bid_price_percent InstancePool#spot_bid_price_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#spot_bid_price_percent InstancePool#spot_bid_price_percent}.
 
 ---
 
@@ -1094,7 +1094,7 @@ ZoneId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#zone_id InstancePool#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#zone_id InstancePool#zone_id}.
 
 ---
 
@@ -1103,7 +1103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.instancePool.InstancePoolAzureAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 &instancepool.InstancePoolAzureAttributes {
 	Availability: *string,
@@ -1115,8 +1115,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepoo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolAzureAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#availability InstancePool#availability}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolAzureAttributes.property.spotBidMaxPrice">SpotBidMaxPrice</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#spot_bid_max_price InstancePool#spot_bid_max_price}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolAzureAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#availability InstancePool#availability}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolAzureAttributes.property.spotBidMaxPrice">SpotBidMaxPrice</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#spot_bid_max_price InstancePool#spot_bid_max_price}. |
 
 ---
 
@@ -1128,7 +1128,7 @@ Availability *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#availability InstancePool#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#availability InstancePool#availability}.
 
 ---
 
@@ -1140,7 +1140,7 @@ SpotBidMaxPrice *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#spot_bid_max_price InstancePool#spot_bid_max_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#spot_bid_max_price InstancePool#spot_bid_max_price}.
 
 ---
 
@@ -1149,7 +1149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.instancePool.InstancePoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 &instancepool.InstancePoolConfig {
 	Connection: interface{},
@@ -1161,14 +1161,14 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepoo
 	Provisioners: *[]interface{},
 	IdleInstanceAutoterminationMinutes: *f64,
 	InstancePoolName: *string,
-	AwsAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v10.instancePool.InstancePoolAwsAttributes,
-	AzureAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v10.instancePool.InstancePoolAzureAttributes,
+	AwsAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks.instancePool.InstancePoolAwsAttributes,
+	AzureAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks.instancePool.InstancePoolAzureAttributes,
 	CustomTags: *map[string]*string,
-	DiskSpec: github.com/cdktf/cdktf-provider-databricks-go/databricks/v10.instancePool.InstancePoolDiskSpec,
+	DiskSpec: github.com/cdktf/cdktf-provider-databricks-go/databricks.instancePool.InstancePoolDiskSpec,
 	EnableElasticDisk: interface{},
-	GcpAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v10.instancePool.InstancePoolGcpAttributes,
+	GcpAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks.instancePool.InstancePoolGcpAttributes,
 	Id: *string,
-	InstancePoolFleetAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v10.instancePool.InstancePoolInstancePoolFleetAttributes,
+	InstancePoolFleetAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks.instancePool.InstancePoolInstancePoolFleetAttributes,
 	InstancePoolId: *string,
 	MaxCapacity: *f64,
 	MinIdleInstances: *f64,
@@ -1189,22 +1189,22 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepoo
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.idleInstanceAutoterminationMinutes">IdleInstanceAutoterminationMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#idle_instance_autotermination_minutes InstancePool#idle_instance_autotermination_minutes}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.instancePoolName">InstancePoolName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#instance_pool_name InstancePool#instance_pool_name}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.idleInstanceAutoterminationMinutes">IdleInstanceAutoterminationMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#idle_instance_autotermination_minutes InstancePool#idle_instance_autotermination_minutes}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.instancePoolName">InstancePoolName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#instance_pool_name InstancePool#instance_pool_name}. |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.awsAttributes">AwsAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolAwsAttributes">InstancePoolAwsAttributes</a></code> | aws_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.azureAttributes">AzureAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolAzureAttributes">InstancePoolAzureAttributes</a></code> | azure_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.customTags">CustomTags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#custom_tags InstancePool#custom_tags}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.customTags">CustomTags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#custom_tags InstancePool#custom_tags}. |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.diskSpec">DiskSpec</a></code> | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolDiskSpec">InstancePoolDiskSpec</a></code> | disk_spec block. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.enableElasticDisk">EnableElasticDisk</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#enable_elastic_disk InstancePool#enable_elastic_disk}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.enableElasticDisk">EnableElasticDisk</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#enable_elastic_disk InstancePool#enable_elastic_disk}. |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.gcpAttributes">GcpAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolGcpAttributes">InstancePoolGcpAttributes</a></code> | gcp_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#id InstancePool#id}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#id InstancePool#id}. |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.instancePoolFleetAttributes">InstancePoolFleetAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributes">InstancePoolInstancePoolFleetAttributes</a></code> | instance_pool_fleet_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.instancePoolId">InstancePoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#instance_pool_id InstancePool#instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.maxCapacity">MaxCapacity</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#max_capacity InstancePool#max_capacity}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.minIdleInstances">MinIdleInstances</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#min_idle_instances InstancePool#min_idle_instances}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.nodeTypeId">NodeTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#node_type_id InstancePool#node_type_id}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.instancePoolId">InstancePoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#instance_pool_id InstancePool#instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.maxCapacity">MaxCapacity</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#max_capacity InstancePool#max_capacity}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.minIdleInstances">MinIdleInstances</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#min_idle_instances InstancePool#min_idle_instances}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.nodeTypeId">NodeTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#node_type_id InstancePool#node_type_id}. |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.preloadedDockerImage">PreloadedDockerImage</a></code> | <code>interface{}</code> | preloaded_docker_image block. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.preloadedSparkVersions">PreloadedSparkVersions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#preloaded_spark_versions InstancePool#preloaded_spark_versions}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolConfig.property.preloadedSparkVersions">PreloadedSparkVersions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#preloaded_spark_versions InstancePool#preloaded_spark_versions}. |
 
 ---
 
@@ -1286,7 +1286,7 @@ IdleInstanceAutoterminationMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#idle_instance_autotermination_minutes InstancePool#idle_instance_autotermination_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#idle_instance_autotermination_minutes InstancePool#idle_instance_autotermination_minutes}.
 
 ---
 
@@ -1298,7 +1298,7 @@ InstancePoolName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#instance_pool_name InstancePool#instance_pool_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#instance_pool_name InstancePool#instance_pool_name}.
 
 ---
 
@@ -1312,7 +1312,7 @@ AwsAttributes InstancePoolAwsAttributes
 
 aws_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#aws_attributes InstancePool#aws_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#aws_attributes InstancePool#aws_attributes}
 
 ---
 
@@ -1326,7 +1326,7 @@ AzureAttributes InstancePoolAzureAttributes
 
 azure_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#azure_attributes InstancePool#azure_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#azure_attributes InstancePool#azure_attributes}
 
 ---
 
@@ -1338,7 +1338,7 @@ CustomTags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#custom_tags InstancePool#custom_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#custom_tags InstancePool#custom_tags}.
 
 ---
 
@@ -1352,7 +1352,7 @@ DiskSpec InstancePoolDiskSpec
 
 disk_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#disk_spec InstancePool#disk_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#disk_spec InstancePool#disk_spec}
 
 ---
 
@@ -1364,7 +1364,7 @@ EnableElasticDisk interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#enable_elastic_disk InstancePool#enable_elastic_disk}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#enable_elastic_disk InstancePool#enable_elastic_disk}.
 
 ---
 
@@ -1378,7 +1378,7 @@ GcpAttributes InstancePoolGcpAttributes
 
 gcp_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#gcp_attributes InstancePool#gcp_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#gcp_attributes InstancePool#gcp_attributes}
 
 ---
 
@@ -1390,7 +1390,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#id InstancePool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#id InstancePool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1407,7 +1407,7 @@ InstancePoolFleetAttributes InstancePoolInstancePoolFleetAttributes
 
 instance_pool_fleet_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#instance_pool_fleet_attributes InstancePool#instance_pool_fleet_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#instance_pool_fleet_attributes InstancePool#instance_pool_fleet_attributes}
 
 ---
 
@@ -1419,7 +1419,7 @@ InstancePoolId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#instance_pool_id InstancePool#instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#instance_pool_id InstancePool#instance_pool_id}.
 
 ---
 
@@ -1431,7 +1431,7 @@ MaxCapacity *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#max_capacity InstancePool#max_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#max_capacity InstancePool#max_capacity}.
 
 ---
 
@@ -1443,7 +1443,7 @@ MinIdleInstances *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#min_idle_instances InstancePool#min_idle_instances}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#min_idle_instances InstancePool#min_idle_instances}.
 
 ---
 
@@ -1455,7 +1455,7 @@ NodeTypeId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#node_type_id InstancePool#node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#node_type_id InstancePool#node_type_id}.
 
 ---
 
@@ -1469,7 +1469,7 @@ PreloadedDockerImage interface{}
 
 preloaded_docker_image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#preloaded_docker_image InstancePool#preloaded_docker_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#preloaded_docker_image InstancePool#preloaded_docker_image}
 
 ---
 
@@ -1481,7 +1481,7 @@ PreloadedSparkVersions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#preloaded_spark_versions InstancePool#preloaded_spark_versions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#preloaded_spark_versions InstancePool#preloaded_spark_versions}.
 
 ---
 
@@ -1490,12 +1490,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.instancePool.InstancePoolDiskSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 &instancepool.InstancePoolDiskSpec {
 	DiskCount: *f64,
 	DiskSize: *f64,
-	DiskType: github.com/cdktf/cdktf-provider-databricks-go/databricks/v10.instancePool.InstancePoolDiskSpecDiskType,
+	DiskType: github.com/cdktf/cdktf-provider-databricks-go/databricks.instancePool.InstancePoolDiskSpecDiskType,
 }
 ```
 
@@ -1503,8 +1503,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepoo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolDiskSpec.property.diskCount">DiskCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#disk_count InstancePool#disk_count}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolDiskSpec.property.diskSize">DiskSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#disk_size InstancePool#disk_size}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolDiskSpec.property.diskCount">DiskCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#disk_count InstancePool#disk_count}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolDiskSpec.property.diskSize">DiskSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#disk_size InstancePool#disk_size}. |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolDiskSpec.property.diskType">DiskType</a></code> | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolDiskSpecDiskType">InstancePoolDiskSpecDiskType</a></code> | disk_type block. |
 
 ---
@@ -1517,7 +1517,7 @@ DiskCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#disk_count InstancePool#disk_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#disk_count InstancePool#disk_count}.
 
 ---
 
@@ -1529,7 +1529,7 @@ DiskSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#disk_size InstancePool#disk_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#disk_size InstancePool#disk_size}.
 
 ---
 
@@ -1543,7 +1543,7 @@ DiskType InstancePoolDiskSpecDiskType
 
 disk_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#disk_type InstancePool#disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#disk_type InstancePool#disk_type}
 
 ---
 
@@ -1552,7 +1552,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.instancePool.InstancePoolDiskSpecDiskType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 &instancepool.InstancePoolDiskSpecDiskType {
 	AzureDiskVolumeType: *string,
@@ -1564,8 +1564,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepoo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolDiskSpecDiskType.property.azureDiskVolumeType">AzureDiskVolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#azure_disk_volume_type InstancePool#azure_disk_volume_type}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolDiskSpecDiskType.property.ebsVolumeType">EbsVolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#ebs_volume_type InstancePool#ebs_volume_type}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolDiskSpecDiskType.property.azureDiskVolumeType">AzureDiskVolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#azure_disk_volume_type InstancePool#azure_disk_volume_type}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolDiskSpecDiskType.property.ebsVolumeType">EbsVolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#ebs_volume_type InstancePool#ebs_volume_type}. |
 
 ---
 
@@ -1577,7 +1577,7 @@ AzureDiskVolumeType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#azure_disk_volume_type InstancePool#azure_disk_volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#azure_disk_volume_type InstancePool#azure_disk_volume_type}.
 
 ---
 
@@ -1589,7 +1589,7 @@ EbsVolumeType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#ebs_volume_type InstancePool#ebs_volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#ebs_volume_type InstancePool#ebs_volume_type}.
 
 ---
 
@@ -1598,7 +1598,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.instancePool.InstancePoolGcpAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 &instancepool.InstancePoolGcpAttributes {
 	GcpAvailability: *string,
@@ -1610,8 +1610,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepoo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolGcpAttributes.property.gcpAvailability">GcpAvailability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#gcp_availability InstancePool#gcp_availability}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolGcpAttributes.property.localSsdCount">LocalSsdCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#local_ssd_count InstancePool#local_ssd_count}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolGcpAttributes.property.gcpAvailability">GcpAvailability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#gcp_availability InstancePool#gcp_availability}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolGcpAttributes.property.localSsdCount">LocalSsdCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#local_ssd_count InstancePool#local_ssd_count}. |
 
 ---
 
@@ -1623,7 +1623,7 @@ GcpAvailability *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#gcp_availability InstancePool#gcp_availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#gcp_availability InstancePool#gcp_availability}.
 
 ---
 
@@ -1635,7 +1635,7 @@ LocalSsdCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#local_ssd_count InstancePool#local_ssd_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#local_ssd_count InstancePool#local_ssd_count}.
 
 ---
 
@@ -1644,12 +1644,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 &instancepool.InstancePoolInstancePoolFleetAttributes {
 	LaunchTemplateOverride: interface{},
-	FleetOnDemandOption: github.com/cdktf/cdktf-provider-databricks-go/databricks/v10.instancePool.InstancePoolInstancePoolFleetAttributesFleetOnDemandOption,
-	FleetSpotOption: github.com/cdktf/cdktf-provider-databricks-go/databricks/v10.instancePool.InstancePoolInstancePoolFleetAttributesFleetSpotOption,
+	FleetOnDemandOption: github.com/cdktf/cdktf-provider-databricks-go/databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetOnDemandOption,
+	FleetSpotOption: github.com/cdktf/cdktf-provider-databricks-go/databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetSpotOption,
 }
 ```
 
@@ -1673,7 +1673,7 @@ LaunchTemplateOverride interface{}
 
 launch_template_override block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#launch_template_override InstancePool#launch_template_override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#launch_template_override InstancePool#launch_template_override}
 
 ---
 
@@ -1687,7 +1687,7 @@ FleetOnDemandOption InstancePoolInstancePoolFleetAttributesFleetOnDemandOption
 
 fleet_on_demand_option block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#fleet_on_demand_option InstancePool#fleet_on_demand_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#fleet_on_demand_option InstancePool#fleet_on_demand_option}
 
 ---
 
@@ -1701,7 +1701,7 @@ FleetSpotOption InstancePoolInstancePoolFleetAttributesFleetSpotOption
 
 fleet_spot_option block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#fleet_spot_option InstancePool#fleet_spot_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#fleet_spot_option InstancePool#fleet_spot_option}
 
 ---
 
@@ -1710,7 +1710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetOnDemandOption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 &instancepool.InstancePoolInstancePoolFleetAttributesFleetOnDemandOption {
 	AllocationStrategy: *string,
@@ -1722,8 +1722,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepoo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetOnDemandOption.property.allocationStrategy">AllocationStrategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#allocation_strategy InstancePool#allocation_strategy}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetOnDemandOption.property.instancePoolsToUseCount">InstancePoolsToUseCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#instance_pools_to_use_count InstancePool#instance_pools_to_use_count}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetOnDemandOption.property.allocationStrategy">AllocationStrategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#allocation_strategy InstancePool#allocation_strategy}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetOnDemandOption.property.instancePoolsToUseCount">InstancePoolsToUseCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#instance_pools_to_use_count InstancePool#instance_pools_to_use_count}. |
 
 ---
 
@@ -1735,7 +1735,7 @@ AllocationStrategy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#allocation_strategy InstancePool#allocation_strategy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#allocation_strategy InstancePool#allocation_strategy}.
 
 ---
 
@@ -1747,7 +1747,7 @@ InstancePoolsToUseCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#instance_pools_to_use_count InstancePool#instance_pools_to_use_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#instance_pools_to_use_count InstancePool#instance_pools_to_use_count}.
 
 ---
 
@@ -1756,7 +1756,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetSpotOption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 &instancepool.InstancePoolInstancePoolFleetAttributesFleetSpotOption {
 	AllocationStrategy: *string,
@@ -1768,8 +1768,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepoo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetSpotOption.property.allocationStrategy">AllocationStrategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#allocation_strategy InstancePool#allocation_strategy}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetSpotOption.property.instancePoolsToUseCount">InstancePoolsToUseCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#instance_pools_to_use_count InstancePool#instance_pools_to_use_count}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetSpotOption.property.allocationStrategy">AllocationStrategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#allocation_strategy InstancePool#allocation_strategy}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetSpotOption.property.instancePoolsToUseCount">InstancePoolsToUseCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#instance_pools_to_use_count InstancePool#instance_pools_to_use_count}. |
 
 ---
 
@@ -1781,7 +1781,7 @@ AllocationStrategy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#allocation_strategy InstancePool#allocation_strategy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#allocation_strategy InstancePool#allocation_strategy}.
 
 ---
 
@@ -1793,7 +1793,7 @@ InstancePoolsToUseCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#instance_pools_to_use_count InstancePool#instance_pools_to_use_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#instance_pools_to_use_count InstancePool#instance_pools_to_use_count}.
 
 ---
 
@@ -1802,7 +1802,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 &instancepool.InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride {
 	AvailabilityZone: *string,
@@ -1814,8 +1814,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepoo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#availability_zone InstancePool#availability_zone}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#instance_type InstancePool#instance_type}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#availability_zone InstancePool#availability_zone}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#instance_type InstancePool#instance_type}. |
 
 ---
 
@@ -1827,7 +1827,7 @@ AvailabilityZone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#availability_zone InstancePool#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#availability_zone InstancePool#availability_zone}.
 
 ---
 
@@ -1839,7 +1839,7 @@ InstanceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#instance_type InstancePool#instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#instance_type InstancePool#instance_type}.
 
 ---
 
@@ -1848,11 +1848,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 &instancepool.InstancePoolPreloadedDockerImage {
 	Url: *string,
-	BasicAuth: github.com/cdktf/cdktf-provider-databricks-go/databricks/v10.instancePool.InstancePoolPreloadedDockerImageBasicAuth,
+	BasicAuth: github.com/cdktf/cdktf-provider-databricks-go/databricks.instancePool.InstancePoolPreloadedDockerImageBasicAuth,
 }
 ```
 
@@ -1860,7 +1860,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepoo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImage.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#url InstancePool#url}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImage.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#url InstancePool#url}. |
 | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImage.property.basicAuth">BasicAuth</a></code> | <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImageBasicAuth">InstancePoolPreloadedDockerImageBasicAuth</a></code> | basic_auth block. |
 
 ---
@@ -1873,7 +1873,7 @@ Url *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#url InstancePool#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#url InstancePool#url}.
 
 ---
 
@@ -1887,7 +1887,7 @@ BasicAuth InstancePoolPreloadedDockerImageBasicAuth
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#basic_auth InstancePool#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#basic_auth InstancePool#basic_auth}
 
 ---
 
@@ -1896,7 +1896,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImageBasicAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 &instancepool.InstancePoolPreloadedDockerImageBasicAuth {
 	Password: *string,
@@ -1908,8 +1908,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepoo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImageBasicAuth.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#password InstancePool#password}. |
-| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImageBasicAuth.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#username InstancePool#username}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImageBasicAuth.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#password InstancePool#password}. |
+| <code><a href="#@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImageBasicAuth.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#username InstancePool#username}. |
 
 ---
 
@@ -1921,7 +1921,7 @@ Password *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#password InstancePool#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#password InstancePool#password}.
 
 ---
 
@@ -1933,7 +1933,7 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.24.1/docs/resources/instance_pool#username InstancePool#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.0/docs/resources/instance_pool#username InstancePool#username}.
 
 ---
 
@@ -1944,7 +1944,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.instancePool.InstancePoolAwsAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.NewInstancePoolAwsAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstancePoolAwsAttributesOutputReference
 ```
@@ -2280,7 +2280,7 @@ func InternalValue() InstancePoolAwsAttributes
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.instancePool.InstancePoolAzureAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.NewInstancePoolAzureAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstancePoolAzureAttributesOutputReference
 ```
@@ -2587,7 +2587,7 @@ func InternalValue() InstancePoolAzureAttributes
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.instancePool.InstancePoolDiskSpecDiskTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.NewInstancePoolDiskSpecDiskTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstancePoolDiskSpecDiskTypeOutputReference
 ```
@@ -2894,7 +2894,7 @@ func InternalValue() InstancePoolDiskSpecDiskType
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.instancePool.InstancePoolDiskSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.NewInstancePoolDiskSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstancePoolDiskSpecOutputReference
 ```
@@ -3243,7 +3243,7 @@ func InternalValue() InstancePoolDiskSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.instancePool.InstancePoolGcpAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.NewInstancePoolGcpAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstancePoolGcpAttributesOutputReference
 ```
@@ -3550,7 +3550,7 @@ func InternalValue() InstancePoolGcpAttributes
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetOnDemandOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.NewInstancePoolInstancePoolFleetAttributesFleetOnDemandOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstancePoolInstancePoolFleetAttributesFleetOnDemandOptionOutputReference
 ```
@@ -3850,7 +3850,7 @@ func InternalValue() InstancePoolInstancePoolFleetAttributesFleetOnDemandOption
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetSpotOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.NewInstancePoolInstancePoolFleetAttributesFleetSpotOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstancePoolInstancePoolFleetAttributesFleetSpotOptionOutputReference
 ```
@@ -4150,7 +4150,7 @@ func InternalValue() InstancePoolInstancePoolFleetAttributesFleetSpotOption
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.NewInstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideList
 ```
@@ -4293,7 +4293,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.NewInstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference
 ```
@@ -4604,7 +4604,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.NewInstancePoolInstancePoolFleetAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstancePoolInstancePoolFleetAttributesOutputReference
 ```
@@ -4972,7 +4972,7 @@ func InternalValue() InstancePoolInstancePoolFleetAttributes
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImageBasicAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.NewInstancePoolPreloadedDockerImageBasicAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstancePoolPreloadedDockerImageBasicAuthOutputReference
 ```
@@ -5265,7 +5265,7 @@ func InternalValue() InstancePoolPreloadedDockerImageBasicAuth
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.NewInstancePoolPreloadedDockerImageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) InstancePoolPreloadedDockerImageList
 ```
@@ -5408,7 +5408,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.NewInstancePoolPreloadedDockerImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) InstancePoolPreloadedDockerImageOutputReference
 ```
