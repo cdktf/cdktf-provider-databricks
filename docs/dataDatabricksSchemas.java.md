@@ -1,6 +1,6 @@
 # `data_databricks_schemas`
 
-Refer to the Terraform Registory for docs: [`data_databricks_schemas`](https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/data-sources/schemas).
+Refer to the Terraform Registory for docs: [`data_databricks_schemas`](https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/schemas).
 
 # `dataDatabricksSchemas` Submodule <a name="`dataDatabricksSchemas` Submodule" id="@cdktf/provider-databricks.dataDatabricksSchemas"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_databricks_schemas`](https://r
 
 ### DataDatabricksSchemas <a name="DataDatabricksSchemas" id="@cdktf/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemas"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/data-sources/schemas databricks_schemas}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/schemas databricks_schemas}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemas.Initializer"></a>
 
@@ -44,9 +44,9 @@ DataDatabricksSchemas.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemas.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemas.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemas.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemas.Initializer.parameter.catalogName">catalogName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/data-sources/schemas#catalog_name DataDatabricksSchemas#catalog_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemas.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/data-sources/schemas#id DataDatabricksSchemas#id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemas.Initializer.parameter.ids">ids</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/data-sources/schemas#ids DataDatabricksSchemas#ids}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemas.Initializer.parameter.catalogName">catalogName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/schemas#catalog_name DataDatabricksSchemas#catalog_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemas.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/schemas#id DataDatabricksSchemas#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemas.Initializer.parameter.ids">ids</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/schemas#ids DataDatabricksSchemas#ids}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/data-sources/schemas#catalog_name DataDatabricksSchemas#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/schemas#catalog_name DataDatabricksSchemas#catalog_name}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/data-sources/schemas#id DataDatabricksSchemas#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/schemas#id DataDatabricksSchemas#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -133,7 +133,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/data-sources/schemas#ids DataDatabricksSchemas#ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/schemas#ids DataDatabricksSchemas#ids}.
 
 ---
 
@@ -691,9 +691,9 @@ DataDatabricksSchemasConfig.builder()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemasConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemasConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemasConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemasConfig.property.catalogName">catalogName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/data-sources/schemas#catalog_name DataDatabricksSchemas#catalog_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemasConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/data-sources/schemas#id DataDatabricksSchemas#id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemasConfig.property.ids">ids</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/data-sources/schemas#ids DataDatabricksSchemas#ids}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemasConfig.property.catalogName">catalogName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/schemas#catalog_name DataDatabricksSchemas#catalog_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemasConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/schemas#id DataDatabricksSchemas#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemasConfig.property.ids">ids</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/schemas#ids DataDatabricksSchemas#ids}. |
 
 ---
 
@@ -775,7 +775,7 @@ public java.lang.String getCatalogName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/data-sources/schemas#catalog_name DataDatabricksSchemas#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/schemas#catalog_name DataDatabricksSchemas#catalog_name}.
 
 ---
 
@@ -787,7 +787,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/data-sources/schemas#id DataDatabricksSchemas#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/schemas#id DataDatabricksSchemas#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -802,7 +802,7 @@ public java.util.List<java.lang.String> getIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/data-sources/schemas#ids DataDatabricksSchemas#ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/schemas#ids DataDatabricksSchemas#ids}.
 
 ---
 

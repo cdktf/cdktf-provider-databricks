@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/resources/cluster_policy
+// https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/cluster_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +8,40 @@ import * as cdktf from 'cdktf';
 
 export interface ClusterPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/resources/cluster_policy#definition ClusterPolicy#definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/cluster_policy#definition ClusterPolicy#definition}
   */
   readonly definition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/resources/cluster_policy#description ClusterPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/cluster_policy#description ClusterPolicy#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/resources/cluster_policy#id ClusterPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/cluster_policy#id ClusterPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/resources/cluster_policy#max_clusters_per_user ClusterPolicy#max_clusters_per_user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/cluster_policy#max_clusters_per_user ClusterPolicy#max_clusters_per_user}
   */
   readonly maxClustersPerUser?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/resources/cluster_policy#name ClusterPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/cluster_policy#name ClusterPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/resources/cluster_policy#policy_family_definition_overrides ClusterPolicy#policy_family_definition_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/cluster_policy#policy_family_definition_overrides ClusterPolicy#policy_family_definition_overrides}
   */
   readonly policyFamilyDefinitionOverrides?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/resources/cluster_policy#policy_family_id ClusterPolicy#policy_family_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/cluster_policy#policy_family_id ClusterPolicy#policy_family_id}
   */
   readonly policyFamilyId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/resources/cluster_policy databricks_cluster_policy}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/cluster_policy databricks_cluster_policy}
 */
 export class ClusterPolicy extends cdktf.TerraformResource {
 
@@ -60,7 +55,7 @@ export class ClusterPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/resources/cluster_policy databricks_cluster_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/cluster_policy databricks_cluster_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +66,7 @@ export class ClusterPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_cluster_policy',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.25.1',
+        providerVersion: '1.26.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

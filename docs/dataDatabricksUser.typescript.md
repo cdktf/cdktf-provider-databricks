@@ -1,6 +1,6 @@
 # `data_databricks_user`
 
-Refer to the Terraform Registory for docs: [`data_databricks_user`](https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/data-sources/user).
+Refer to the Terraform Registory for docs: [`data_databricks_user`](https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/user).
 
 # `dataDatabricksUser` Submodule <a name="`dataDatabricksUser` Submodule" id="@cdktf/provider-databricks.dataDatabricksUser"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_databricks_user`](https://regi
 
 ### DataDatabricksUser <a name="DataDatabricksUser" id="@cdktf/provider-databricks.dataDatabricksUser.DataDatabricksUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/data-sources/user databricks_user}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/user databricks_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksUser.DataDatabricksUser.Initializer"></a>
 
@@ -673,9 +673,9 @@ const dataDatabricksUserConfig: dataDatabricksUser.DataDatabricksUserConfig = { 
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksUser.DataDatabricksUserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksUser.DataDatabricksUserConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksUser.DataDatabricksUserConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksUser.DataDatabricksUserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/data-sources/user#id DataDatabricksUser#id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksUser.DataDatabricksUserConfig.property.userId">userId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/data-sources/user#user_id DataDatabricksUser#user_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksUser.DataDatabricksUserConfig.property.userName">userName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/data-sources/user#user_name DataDatabricksUser#user_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksUser.DataDatabricksUserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/user#id DataDatabricksUser#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksUser.DataDatabricksUserConfig.property.userId">userId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/user#user_id DataDatabricksUser#user_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksUser.DataDatabricksUserConfig.property.userName">userName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/user#user_name DataDatabricksUser#user_name}. |
 
 ---
 
@@ -757,7 +757,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/data-sources/user#id DataDatabricksUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/user#id DataDatabricksUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -772,7 +772,7 @@ public readonly userId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/data-sources/user#user_id DataDatabricksUser#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/user#user_id DataDatabricksUser#user_id}.
 
 ---
 
@@ -784,7 +784,7 @@ public readonly userName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.25.1/docs/data-sources/user#user_name DataDatabricksUser#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/user#user_name DataDatabricksUser#user_name}.
 
 ---
 
