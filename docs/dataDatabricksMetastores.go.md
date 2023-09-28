@@ -1,6 +1,6 @@
 # `data_databricks_metastores`
 
-Refer to the Terraform Registory for docs: [`data_databricks_metastores`](https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/metastores).
+Refer to the Terraform Registory for docs: [`data_databricks_metastores`](https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/metastores).
 
 # `dataDatabricksMetastores` Submodule <a name="`dataDatabricksMetastores` Submodule" id="@cdktf/provider-databricks.dataDatabricksMetastores"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_databricks_metastores`](https:
 
 ### DataDatabricksMetastores <a name="DataDatabricksMetastores" id="@cdktf/provider-databricks.dataDatabricksMetastores.DataDatabricksMetastores"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/metastores databricks_metastores}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/metastores databricks_metastores}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksMetastores.DataDatabricksMetastores.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabricksmetastores"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmetastores"
 
 datadatabricksmetastores.NewDataDatabricksMetastores(scope Construct, id *string, config DataDatabricksMetastoresConfig) DataDatabricksMetastores
 ```
@@ -284,7 +284,7 @@ func ResetIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksMetastores.DataDatabricksMetastores.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabricksmetastores"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmetastores"
 
 datadatabricksmetastores.DataDatabricksMetastores_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksMetastores.DataDatabricksMetastores.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabricksmetastores"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmetastores"
 
 datadatabricksmetastores.DataDatabricksMetastores_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datadatabricksmetastores.DataDatabricksMetastores_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksMetastores.DataDatabricksMetastores.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabricksmetastores"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmetastores"
 
 datadatabricksmetastores.DataDatabricksMetastores_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -551,7 +551,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksMetastores.DataDatabricksMetastoresConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabricksmetastores"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmetastores"
 
 &datadatabricksmetastores.DataDatabricksMetastoresConfig {
 	Connection: interface{},
@@ -577,8 +577,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/datadatabri
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksMetastores.DataDatabricksMetastoresConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksMetastores.DataDatabricksMetastoresConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksMetastores.DataDatabricksMetastoresConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksMetastores.DataDatabricksMetastoresConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/metastores#id DataDatabricksMetastores#id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksMetastores.DataDatabricksMetastoresConfig.property.ids">Ids</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/metastores#ids DataDatabricksMetastores#ids}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksMetastores.DataDatabricksMetastoresConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/metastores#id DataDatabricksMetastores#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksMetastores.DataDatabricksMetastoresConfig.property.ids">Ids</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/metastores#ids DataDatabricksMetastores#ids}. |
 
 ---
 
@@ -660,7 +660,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/metastores#id DataDatabricksMetastores#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/metastores#id DataDatabricksMetastores#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -675,7 +675,7 @@ Ids *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/metastores#ids DataDatabricksMetastores#ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/metastores#ids DataDatabricksMetastores#ids}.
 
 ---
 

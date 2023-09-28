@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/git_credential
+// https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/git_credential
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +8,32 @@ import * as cdktf from 'cdktf';
 
 export interface GitCredentialConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/git_credential#force GitCredential#force}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/git_credential#force GitCredential#force}
   */
   readonly force?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/git_credential#git_provider GitCredential#git_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/git_credential#git_provider GitCredential#git_provider}
   */
   readonly gitProvider: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/git_credential#git_username GitCredential#git_username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/git_credential#git_username GitCredential#git_username}
   */
   readonly gitUsername?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/git_credential#id GitCredential#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/git_credential#id GitCredential#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/git_credential#personal_access_token GitCredential#personal_access_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/git_credential#personal_access_token GitCredential#personal_access_token}
   */
   readonly personalAccessToken?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/git_credential databricks_git_credential}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/git_credential databricks_git_credential}
 */
 export class GitCredential extends cdktf.TerraformResource {
 
@@ -52,7 +47,7 @@ export class GitCredential extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/git_credential databricks_git_credential} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/git_credential databricks_git_credential} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -63,7 +58,7 @@ export class GitCredential extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_git_credential',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.26.0',
+        providerVersion: '1.27.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

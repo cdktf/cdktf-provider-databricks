@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/mws_storage_configurations
+// https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/mws_storage_configurations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +8,28 @@ import * as cdktf from 'cdktf';
 
 export interface MwsStorageConfigurationsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/mws_storage_configurations#account_id MwsStorageConfigurations#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/mws_storage_configurations#account_id MwsStorageConfigurations#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/mws_storage_configurations#bucket_name MwsStorageConfigurations#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/mws_storage_configurations#bucket_name MwsStorageConfigurations#bucket_name}
   */
   readonly bucketName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/mws_storage_configurations#id MwsStorageConfigurations#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/mws_storage_configurations#id MwsStorageConfigurations#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/mws_storage_configurations#storage_configuration_name MwsStorageConfigurations#storage_configuration_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/mws_storage_configurations#storage_configuration_name MwsStorageConfigurations#storage_configuration_name}
   */
   readonly storageConfigurationName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/mws_storage_configurations databricks_mws_storage_configurations}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/mws_storage_configurations databricks_mws_storage_configurations}
 */
 export class MwsStorageConfigurations extends cdktf.TerraformResource {
 
@@ -48,7 +43,7 @@ export class MwsStorageConfigurations extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/mws_storage_configurations databricks_mws_storage_configurations} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/mws_storage_configurations databricks_mws_storage_configurations} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +54,7 @@ export class MwsStorageConfigurations extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_mws_storage_configurations',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.26.0',
+        providerVersion: '1.27.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
