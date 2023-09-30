@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/clusters
+// https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/clusters
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksClustersConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/clusters#cluster_name_contains DataDatabricksClusters#cluster_name_contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/clusters#cluster_name_contains DataDatabricksClusters#cluster_name_contains}
   */
   readonly clusterNameContains?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/clusters#id DataDatabricksClusters#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/clusters#id DataDatabricksClusters#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,7 +26,7 @@ export interface DataDatabricksClustersConfig extends cdktf.TerraformMetaArgumen
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/clusters databricks_clusters}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/clusters databricks_clusters}
 */
 export class DataDatabricksClusters extends cdktf.TerraformDataSource {
 
@@ -40,7 +40,7 @@ export class DataDatabricksClusters extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/clusters databricks_clusters} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/clusters databricks_clusters} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -51,7 +51,7 @@ export class DataDatabricksClusters extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_clusters',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.26.0',
+        providerVersion: '1.27.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

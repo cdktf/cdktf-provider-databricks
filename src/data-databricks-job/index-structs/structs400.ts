@@ -9,25 +9,25 @@ dataDatabricksJobJobSettingsSettingsToTerraform,
 DataDatabricksJobJobSettingsSettingsOutputReference } from './structs0'
 export interface DataDatabricksJobJobSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/job#created_time DataDatabricksJob#created_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/job#created_time DataDatabricksJob#created_time}
   */
   readonly createdTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/job#creator_user_name DataDatabricksJob#creator_user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/job#creator_user_name DataDatabricksJob#creator_user_name}
   */
   readonly creatorUserName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}
   */
   readonly jobId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/job#run_as_user_name DataDatabricksJob#run_as_user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/job#run_as_user_name DataDatabricksJob#run_as_user_name}
   */
   readonly runAsUserName?: string;
   /**
   * settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/job#settings DataDatabricksJob#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/job#settings DataDatabricksJob#settings}
   */
   readonly settings?: DataDatabricksJobJobSettingsSettings;
 }

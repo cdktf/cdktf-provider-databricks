@@ -1,6 +1,6 @@
 # `databricks_dbfs_file`
 
-Refer to the Terraform Registory for docs: [`databricks_dbfs_file`](https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/dbfs_file).
+Refer to the Terraform Registory for docs: [`databricks_dbfs_file`](https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/dbfs_file).
 
 # `dbfsFile` Submodule <a name="`dbfsFile` Submodule" id="@cdktf/provider-databricks.dbfsFile"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`databricks_dbfs_file`](https://regi
 
 ### DbfsFile <a name="DbfsFile" id="@cdktf/provider-databricks.dbfsFile.DbfsFile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/dbfs_file databricks_dbfs_file}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/dbfs_file databricks_dbfs_file}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dbfsFile.DbfsFile.Initializer"></a>
 
@@ -704,11 +704,11 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/dbfsfile"
 | <code><a href="#@cdktf/provider-databricks.dbfsFile.DbfsFileConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dbfsFile.DbfsFileConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dbfsFile.DbfsFileConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dbfsFile.DbfsFileConfig.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/dbfs_file#path DbfsFile#path}. |
-| <code><a href="#@cdktf/provider-databricks.dbfsFile.DbfsFileConfig.property.contentBase64">ContentBase64</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/dbfs_file#content_base64 DbfsFile#content_base64}. |
-| <code><a href="#@cdktf/provider-databricks.dbfsFile.DbfsFileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/dbfs_file#id DbfsFile#id}. |
-| <code><a href="#@cdktf/provider-databricks.dbfsFile.DbfsFileConfig.property.md5">Md5</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/dbfs_file#md5 DbfsFile#md5}. |
-| <code><a href="#@cdktf/provider-databricks.dbfsFile.DbfsFileConfig.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/dbfs_file#source DbfsFile#source}. |
+| <code><a href="#@cdktf/provider-databricks.dbfsFile.DbfsFileConfig.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/dbfs_file#path DbfsFile#path}. |
+| <code><a href="#@cdktf/provider-databricks.dbfsFile.DbfsFileConfig.property.contentBase64">ContentBase64</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/dbfs_file#content_base64 DbfsFile#content_base64}. |
+| <code><a href="#@cdktf/provider-databricks.dbfsFile.DbfsFileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/dbfs_file#id DbfsFile#id}. |
+| <code><a href="#@cdktf/provider-databricks.dbfsFile.DbfsFileConfig.property.md5">Md5</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/dbfs_file#md5 DbfsFile#md5}. |
+| <code><a href="#@cdktf/provider-databricks.dbfsFile.DbfsFileConfig.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/dbfs_file#source DbfsFile#source}. |
 
 ---
 
@@ -790,7 +790,7 @@ Path *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/dbfs_file#path DbfsFile#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/dbfs_file#path DbfsFile#path}.
 
 ---
 
@@ -802,7 +802,7 @@ ContentBase64 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/dbfs_file#content_base64 DbfsFile#content_base64}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/dbfs_file#content_base64 DbfsFile#content_base64}.
 
 ---
 
@@ -814,7 +814,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/dbfs_file#id DbfsFile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/dbfs_file#id DbfsFile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -829,7 +829,7 @@ Md5 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/dbfs_file#md5 DbfsFile#md5}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/dbfs_file#md5 DbfsFile#md5}.
 
 ---
 
@@ -841,7 +841,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/resources/dbfs_file#source DbfsFile#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/dbfs_file#source DbfsFile#source}.
 
 ---
 

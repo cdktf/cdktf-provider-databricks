@@ -13,34 +13,34 @@ import { Construct } from 'constructs';
 import * as cdktf from 'cdktf';
 export interface DataDatabricksJobConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/job#id DataDatabricksJob#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/job#id DataDatabricksJob#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}
   */
   readonly jobId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/job#job_name DataDatabricksJob#job_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/job#job_name DataDatabricksJob#job_name}
   */
   readonly jobName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/job#name DataDatabricksJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/job#name DataDatabricksJob#name}
   */
   readonly name?: string;
   /**
   * job_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/job#job_settings DataDatabricksJob#job_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/job#job_settings DataDatabricksJob#job_settings}
   */
   readonly jobSettings?: DataDatabricksJobJobSettings;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/job databricks_job}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/job databricks_job}
 */
 export class DataDatabricksJob extends cdktf.TerraformDataSource {
 
@@ -54,7 +54,7 @@ export class DataDatabricksJob extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/job databricks_job} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/job databricks_job} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,7 @@ export class DataDatabricksJob extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_job',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.26.0',
+        providerVersion: '1.27.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

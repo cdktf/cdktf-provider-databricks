@@ -1,6 +1,6 @@
 # `data_databricks_mws_credentials`
 
-Refer to the Terraform Registory for docs: [`data_databricks_mws_credentials`](https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/mws_credentials).
+Refer to the Terraform Registory for docs: [`data_databricks_mws_credentials`](https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/mws_credentials).
 
 # `dataDatabricksMwsCredentials` Submodule <a name="`dataDatabricksMwsCredentials` Submodule" id="@cdktf/provider-databricks.dataDatabricksMwsCredentials"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_databricks_mws_credentials`](h
 
 ### DataDatabricksMwsCredentials <a name="DataDatabricksMwsCredentials" id="@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentials"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/mws_credentials databricks_mws_credentials}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/mws_credentials databricks_mws_credentials}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentials.Initializer"></a>
 
@@ -567,8 +567,8 @@ const dataDatabricksMwsCredentialsConfig: dataDatabricksMwsCredentials.DataDatab
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentialsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentialsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentialsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentialsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/mws_credentials#id DataDatabricksMwsCredentials#id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentialsConfig.property.ids">ids</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/mws_credentials#ids DataDatabricksMwsCredentials#ids}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentialsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/mws_credentials#id DataDatabricksMwsCredentials#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentialsConfig.property.ids">ids</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/mws_credentials#ids DataDatabricksMwsCredentials#ids}. |
 
 ---
 
@@ -650,7 +650,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/mws_credentials#id DataDatabricksMwsCredentials#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/mws_credentials#id DataDatabricksMwsCredentials#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -665,7 +665,7 @@ public readonly ids: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.26.0/docs/data-sources/mws_credentials#ids DataDatabricksMwsCredentials#ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/data-sources/mws_credentials#ids DataDatabricksMwsCredentials#ids}.
 
 ---
 
