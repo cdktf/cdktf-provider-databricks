@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.workspaceConf.WorkspaceConf.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/workspaceconf"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/workspaceconf"
 
 workspaceconf.NewWorkspaceConf(scope Construct, id *string, config WorkspaceConfConfig) WorkspaceConf
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.workspaceConf.WorkspaceConf.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/workspaceconf"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/workspaceconf"
 
 workspaceconf.WorkspaceConf_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.workspaceConf.WorkspaceConf.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/workspaceconf"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/workspaceconf"
 
 workspaceconf.WorkspaceConf_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ workspaceconf.WorkspaceConf_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.workspaceConf.WorkspaceConf.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/workspaceconf"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/workspaceconf"
 
 workspaceconf.WorkspaceConf_IsTerraformResource(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.workspaceConf.WorkspaceConfConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v10/workspaceconf"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/workspaceconf"
 
 &workspaceconf.WorkspaceConfConfig {
 	Connection: interface{},
