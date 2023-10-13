@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPaths.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksnotebookpaths"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/datadatabricksnotebookpaths"
 
 datadatabricksnotebookpaths.NewDataDatabricksNotebookPaths(scope Construct, id *string, config DataDatabricksNotebookPathsConfig) DataDatabricksNotebookPaths
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPaths.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksnotebookpaths"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/datadatabricksnotebookpaths"
 
 datadatabricksnotebookpaths.DataDatabricksNotebookPaths_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPaths.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksnotebookpaths"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/datadatabricksnotebookpaths"
 
 datadatabricksnotebookpaths.DataDatabricksNotebookPaths_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datadatabricksnotebookpaths.DataDatabricksNotebookPaths_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPaths.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksnotebookpaths"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/datadatabricksnotebookpaths"
 
 datadatabricksnotebookpaths.DataDatabricksNotebookPaths_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -577,7 +577,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksnotebookpaths"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/datadatabricksnotebookpaths"
 
 &datadatabricksnotebookpaths.DataDatabricksNotebookPathsConfig {
 	Connection: interface{},
@@ -724,7 +724,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsNotebookPathListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksnotebookpaths"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/datadatabricksnotebookpaths"
 
 &datadatabricksnotebookpaths.DataDatabricksNotebookPathsNotebookPathListStruct {
 
@@ -739,7 +739,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksn
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsNotebookPathListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksnotebookpaths"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/datadatabricksnotebookpaths"
 
 datadatabricksnotebookpaths.NewDataDatabricksNotebookPathsNotebookPathListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksNotebookPathsNotebookPathListStructList
 ```
@@ -871,7 +871,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsNotebookPathListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksnotebookpaths"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/datadatabricksnotebookpaths"
 
 datadatabricksnotebookpaths.NewDataDatabricksNotebookPathsNotebookPathListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksNotebookPathsNotebookPathListStructOutputReference
 ```
