@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/instance_profile
+// https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/instance_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +13,32 @@ import * as cdktf from 'cdktf';
 
 export interface InstanceProfileConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/instance_profile#iam_role_arn InstanceProfile#iam_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/instance_profile#iam_role_arn InstanceProfile#iam_role_arn}
   */
   readonly iamRoleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/instance_profile#id InstanceProfile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/instance_profile#id InstanceProfile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/instance_profile#instance_profile_arn InstanceProfile#instance_profile_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/instance_profile#instance_profile_arn InstanceProfile#instance_profile_arn}
   */
   readonly instanceProfileArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/instance_profile#is_meta_instance_profile InstanceProfile#is_meta_instance_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/instance_profile#is_meta_instance_profile InstanceProfile#is_meta_instance_profile}
   */
   readonly isMetaInstanceProfile?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/instance_profile#skip_validation InstanceProfile#skip_validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/instance_profile#skip_validation InstanceProfile#skip_validation}
   */
   readonly skipValidation?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/instance_profile databricks_instance_profile}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/instance_profile databricks_instance_profile}
 */
 export class InstanceProfile extends cdktf.TerraformResource {
 
@@ -52,7 +52,7 @@ export class InstanceProfile extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/instance_profile databricks_instance_profile} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/instance_profile databricks_instance_profile} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -63,7 +63,7 @@ export class InstanceProfile extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_instance_profile',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.27.0',
+        providerVersion: '1.28.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

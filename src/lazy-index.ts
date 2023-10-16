@@ -54,6 +54,7 @@ Object.defineProperty(exports, 'permissions', { get: function () { return requir
 Object.defineProperty(exports, 'pipeline', { get: function () { return require('./pipeline'); } });
 Object.defineProperty(exports, 'providerResource', { get: function () { return require('./provider-resource'); } });
 Object.defineProperty(exports, 'recipient', { get: function () { return require('./recipient'); } });
+Object.defineProperty(exports, 'registeredModel', { get: function () { return require('./registered-model'); } });
 Object.defineProperty(exports, 'repo', { get: function () { return require('./repo'); } });
 Object.defineProperty(exports, 'schema', { get: function () { return require('./schema'); } });
 Object.defineProperty(exports, 'secret', { get: function () { return require('./secret'); } });
@@ -73,6 +74,7 @@ Object.defineProperty(exports, 'sqlTable', { get: function () { return require('
 Object.defineProperty(exports, 'sqlVisualization', { get: function () { return require('./sql-visualization'); } });
 Object.defineProperty(exports, 'sqlWidget', { get: function () { return require('./sql-widget'); } });
 Object.defineProperty(exports, 'storageCredential', { get: function () { return require('./storage-credential'); } });
+Object.defineProperty(exports, 'systemSchema', { get: function () { return require('./system-schema'); } });
 Object.defineProperty(exports, 'table', { get: function () { return require('./table'); } });
 Object.defineProperty(exports, 'token', { get: function () { return require('./token'); } });
 Object.defineProperty(exports, 'user', { get: function () { return require('./user'); } });
