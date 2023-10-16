@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.systemSchema.SystemSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/systemschema"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/systemschema"
 
 systemschema.NewSystemSchema(scope Construct, id *string, config SystemSchemaConfig) SystemSchema
 ```
@@ -291,7 +291,7 @@ func ResetState()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.systemSchema.SystemSchema.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/systemschema"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/systemschema"
 
 systemschema.SystemSchema_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.systemSchema.SystemSchema.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/systemschema"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/systemschema"
 
 systemschema.SystemSchema_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ systemschema.SystemSchema_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.systemSchema.SystemSchema.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/systemschema"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/systemschema"
 
 systemschema.SystemSchema_IsTerraformResource(x interface{}) *bool
 ```
@@ -613,7 +613,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.systemSchema.SystemSchemaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/systemschema"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/systemschema"
 
 &systemschema.SystemSchemaConfig {
 	Connection: interface{},
