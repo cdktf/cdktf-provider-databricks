@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/grants
+// https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/grants
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,74 +8,78 @@ import * as cdktf from 'cdktf';
 
 export interface GrantsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/grants#catalog Grants#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/grants#catalog Grants#catalog}
   */
   readonly catalog?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/grants#external_location Grants#external_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/grants#external_location Grants#external_location}
   */
   readonly externalLocation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/grants#foreign_connection Grants#foreign_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/grants#foreign_connection Grants#foreign_connection}
   */
   readonly foreignConnection?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/grants#function Grants#function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/grants#function Grants#function}
   */
   readonly function?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/grants#id Grants#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/grants#id Grants#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/grants#materialized_view Grants#materialized_view}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/grants#materialized_view Grants#materialized_view}
   */
   readonly materializedView?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/grants#metastore Grants#metastore}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/grants#metastore Grants#metastore}
   */
   readonly metastore?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/grants#schema Grants#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/grants#model Grants#model}
+  */
+  readonly model?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/grants#schema Grants#schema}
   */
   readonly schema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/grants#share Grants#share}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/grants#share Grants#share}
   */
   readonly share?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/grants#storage_credential Grants#storage_credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/grants#storage_credential Grants#storage_credential}
   */
   readonly storageCredential?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/grants#table Grants#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/grants#table Grants#table}
   */
   readonly table?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/grants#view Grants#view}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/grants#view Grants#view}
   */
   readonly view?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/grants#volume Grants#volume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/grants#volume Grants#volume}
   */
   readonly volume?: string;
   /**
   * grant block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/grants#grant Grants#grant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/grants#grant Grants#grant}
   */
   readonly grant: GrantsGrant[] | cdktf.IResolvable;
 }
 export interface GrantsGrant {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/grants#principal Grants#principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/grants#principal Grants#principal}
   */
   readonly principal: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/grants#privileges Grants#privileges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/grants#privileges Grants#privileges}
   */
   readonly privileges: string[];
 }
@@ -194,7 +193,7 @@ export class GrantsGrantList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/grants databricks_grants}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/grants databricks_grants}
 */
 export class Grants extends cdktf.TerraformResource {
 
@@ -208,7 +207,7 @@ export class Grants extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/grants databricks_grants} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/grants databricks_grants} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -219,7 +218,7 @@ export class Grants extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_grants',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.27.0',
+        providerVersion: '1.28.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -237,6 +236,7 @@ export class Grants extends cdktf.TerraformResource {
     this._id = config.id;
     this._materializedView = config.materializedView;
     this._metastore = config.metastore;
+    this._model = config.model;
     this._schema = config.schema;
     this._share = config.share;
     this._storageCredential = config.storageCredential;
@@ -362,6 +362,22 @@ export class Grants extends cdktf.TerraformResource {
     return this._metastore;
   }
 
+  // model - computed: false, optional: true, required: false
+  private _model?: string; 
+  public get model() {
+    return this.getStringAttribute('model');
+  }
+  public set model(value: string) {
+    this._model = value;
+  }
+  public resetModel() {
+    this._model = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modelInput() {
+    return this._model;
+  }
+
   // schema - computed: false, optional: true, required: false
   private _schema?: string; 
   public get schema() {
@@ -484,6 +500,7 @@ export class Grants extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       materialized_view: cdktf.stringToTerraform(this._materializedView),
       metastore: cdktf.stringToTerraform(this._metastore),
+      model: cdktf.stringToTerraform(this._model),
       schema: cdktf.stringToTerraform(this._schema),
       share: cdktf.stringToTerraform(this._share),
       storage_credential: cdktf.stringToTerraform(this._storageCredential),

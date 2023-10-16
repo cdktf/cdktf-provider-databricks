@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/sql_alert
+// https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/sql_alert
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,66 +8,70 @@ import * as cdktf from 'cdktf';
 
 export interface SqlAlertConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/sql_alert#created_at SqlAlert#created_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/sql_alert#created_at SqlAlert#created_at}
   */
   readonly createdAt?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/sql_alert#id SqlAlert#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/sql_alert#id SqlAlert#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/sql_alert#name SqlAlert#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/sql_alert#name SqlAlert#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/sql_alert#parent SqlAlert#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/sql_alert#parent SqlAlert#parent}
   */
   readonly parent?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/sql_alert#query_id SqlAlert#query_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/sql_alert#query_id SqlAlert#query_id}
   */
   readonly queryId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/sql_alert#rearm SqlAlert#rearm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/sql_alert#rearm SqlAlert#rearm}
   */
   readonly rearm?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/sql_alert#updated_at SqlAlert#updated_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/sql_alert#updated_at SqlAlert#updated_at}
   */
   readonly updatedAt?: string;
   /**
   * options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/sql_alert#options SqlAlert#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/sql_alert#options SqlAlert#options}
   */
   readonly options: SqlAlertOptions;
 }
 export interface SqlAlertOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/sql_alert#column SqlAlert#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/sql_alert#column SqlAlert#column}
   */
   readonly column: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/sql_alert#custom_body SqlAlert#custom_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/sql_alert#custom_body SqlAlert#custom_body}
   */
   readonly customBody?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/sql_alert#custom_subject SqlAlert#custom_subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/sql_alert#custom_subject SqlAlert#custom_subject}
   */
   readonly customSubject?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/sql_alert#muted SqlAlert#muted}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/sql_alert#empty_result_state SqlAlert#empty_result_state}
+  */
+  readonly emptyResultState?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/sql_alert#muted SqlAlert#muted}
   */
   readonly muted?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/sql_alert#op SqlAlert#op}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/sql_alert#op SqlAlert#op}
   */
   readonly op: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/sql_alert#value SqlAlert#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/sql_alert#value SqlAlert#value}
   */
   readonly value: string;
 }
@@ -86,6 +85,7 @@ export function sqlAlertOptionsToTerraform(struct?: SqlAlertOptionsOutputReferen
     column: cdktf.stringToTerraform(struct!.column),
     custom_body: cdktf.stringToTerraform(struct!.customBody),
     custom_subject: cdktf.stringToTerraform(struct!.customSubject),
+    empty_result_state: cdktf.stringToTerraform(struct!.emptyResultState),
     muted: cdktf.booleanToTerraform(struct!.muted),
     op: cdktf.stringToTerraform(struct!.op),
     value: cdktf.stringToTerraform(struct!.value),
@@ -118,6 +118,10 @@ export class SqlAlertOptionsOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.customSubject = this._customSubject;
     }
+    if (this._emptyResultState !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.emptyResultState = this._emptyResultState;
+    }
     if (this._muted !== undefined) {
       hasAnyValues = true;
       internalValueResult.muted = this._muted;
@@ -139,6 +143,7 @@ export class SqlAlertOptionsOutputReference extends cdktf.ComplexObject {
       this._column = undefined;
       this._customBody = undefined;
       this._customSubject = undefined;
+      this._emptyResultState = undefined;
       this._muted = undefined;
       this._op = undefined;
       this._value = undefined;
@@ -148,6 +153,7 @@ export class SqlAlertOptionsOutputReference extends cdktf.ComplexObject {
       this._column = value.column;
       this._customBody = value.customBody;
       this._customSubject = value.customSubject;
+      this._emptyResultState = value.emptyResultState;
       this._muted = value.muted;
       this._op = value.op;
       this._value = value.value;
@@ -199,6 +205,22 @@ export class SqlAlertOptionsOutputReference extends cdktf.ComplexObject {
     return this._customSubject;
   }
 
+  // empty_result_state - computed: false, optional: true, required: false
+  private _emptyResultState?: string; 
+  public get emptyResultState() {
+    return this.getStringAttribute('empty_result_state');
+  }
+  public set emptyResultState(value: string) {
+    this._emptyResultState = value;
+  }
+  public resetEmptyResultState() {
+    this._emptyResultState = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emptyResultStateInput() {
+    return this._emptyResultState;
+  }
+
   // muted - computed: false, optional: true, required: false
   private _muted?: boolean | cdktf.IResolvable; 
   public get muted() {
@@ -243,7 +265,7 @@ export class SqlAlertOptionsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/sql_alert databricks_sql_alert}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/sql_alert databricks_sql_alert}
 */
 export class SqlAlert extends cdktf.TerraformResource {
 
@@ -257,7 +279,7 @@ export class SqlAlert extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/sql_alert databricks_sql_alert} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/sql_alert databricks_sql_alert} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -268,7 +290,7 @@ export class SqlAlert extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_sql_alert',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.27.0',
+        providerVersion: '1.28.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

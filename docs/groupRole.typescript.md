@@ -1,6 +1,6 @@
 # `databricks_group_role`
 
-Refer to the Terraform Registory for docs: [`databricks_group_role`](https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/group_role).
+Refer to the Terraform Registory for docs: [`databricks_group_role`](https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/group_role).
 
 # `groupRole` Submodule <a name="`groupRole` Submodule" id="@cdktf/provider-databricks.groupRole"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`databricks_group_role`](https://reg
 
 ### GroupRole <a name="GroupRole" id="@cdktf/provider-databricks.groupRole.GroupRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/group_role databricks_group_role}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/group_role databricks_group_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.groupRole.GroupRole.Initializer"></a>
 
@@ -604,9 +604,9 @@ const groupRoleConfig: groupRole.GroupRoleConfig = { ... }
 | <code><a href="#@cdktf/provider-databricks.groupRole.GroupRoleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.groupRole.GroupRoleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.groupRole.GroupRoleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.groupRole.GroupRoleConfig.property.groupId">groupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/group_role#group_id GroupRole#group_id}. |
-| <code><a href="#@cdktf/provider-databricks.groupRole.GroupRoleConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/group_role#role GroupRole#role}. |
-| <code><a href="#@cdktf/provider-databricks.groupRole.GroupRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/group_role#id GroupRole#id}. |
+| <code><a href="#@cdktf/provider-databricks.groupRole.GroupRoleConfig.property.groupId">groupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/group_role#group_id GroupRole#group_id}. |
+| <code><a href="#@cdktf/provider-databricks.groupRole.GroupRoleConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/group_role#role GroupRole#role}. |
+| <code><a href="#@cdktf/provider-databricks.groupRole.GroupRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/group_role#id GroupRole#id}. |
 
 ---
 
@@ -688,7 +688,7 @@ public readonly groupId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/group_role#group_id GroupRole#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/group_role#group_id GroupRole#group_id}.
 
 ---
 
@@ -700,7 +700,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/group_role#role GroupRole#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/group_role#role GroupRole#role}.
 
 ---
 
@@ -712,7 +712,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.27.0/docs/resources/group_role#id GroupRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/group_role#id GroupRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
