@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/data-sources/metastores
 // generated from terraform resource schema
 
@@ -34,6 +29,20 @@ export class DataDatabricksMetastores extends cdktf.TerraformDataSource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "databricks_metastores";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataDatabricksMetastores resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataDatabricksMetastores to import
+  * @param importFromId The id of the existing DataDatabricksMetastores that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/data-sources/metastores#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataDatabricksMetastores to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_metastores", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER
