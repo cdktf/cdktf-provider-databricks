@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mount.Mount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mount"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mount"
 
 mount.NewMount(scope Construct, id *string, config MountConfig) Mount
 ```
@@ -501,7 +501,7 @@ func ResetWasb()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.mount.Mount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mount"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mount"
 
 mount.Mount_IsConstruct(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.mount.Mount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mount"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mount"
 
 mount.Mount_IsTerraformElement(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ mount.Mount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.mount.Mount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mount"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mount"
 
 mount.Mount_IsTerraformResource(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ mount.Mount_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.mount.Mount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mount"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mount"
 
 mount.Mount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1087,7 +1087,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mount.MountAbfs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mount"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mount"
 
 &mount.MountAbfs {
 	ClientId: *string,
@@ -1217,7 +1217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mount.MountAdl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mount"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mount"
 
 &mount.MountAdl {
 	ClientId: *string,
@@ -1333,7 +1333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mount.MountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mount"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mount"
 
 &mount.MountConfig {
 	Connection: interface{},
@@ -1343,19 +1343,19 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mount"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Abfs: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.mount.MountAbfs,
-	Adl: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.mount.MountAdl,
+	Abfs: github.com/cdktf/cdktf-provider-databricks-go/databricks.mount.MountAbfs,
+	Adl: github.com/cdktf/cdktf-provider-databricks-go/databricks.mount.MountAdl,
 	ClusterId: *string,
 	EncryptionType: *string,
 	ExtraConfigs: *map[string]*string,
-	Gs: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.mount.MountGs,
+	Gs: github.com/cdktf/cdktf-provider-databricks-go/databricks.mount.MountGs,
 	Id: *string,
 	Name: *string,
 	ResourceId: *string,
-	S3: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.mount.MountS3,
-	Timeouts: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.mount.MountTimeouts,
+	S3: github.com/cdktf/cdktf-provider-databricks-go/databricks.mount.MountS3,
+	Timeouts: github.com/cdktf/cdktf-provider-databricks-go/databricks.mount.MountTimeouts,
 	Uri: *string,
-	Wasb: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.mount.MountWasb,
+	Wasb: github.com/cdktf/cdktf-provider-databricks-go/databricks.mount.MountWasb,
 }
 ```
 
@@ -1632,7 +1632,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mount.MountGs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mount"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mount"
 
 &mount.MountGs {
 	BucketName: *string,
@@ -1678,7 +1678,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mount.MountS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mount"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mount"
 
 &mount.MountS3 {
 	BucketName: *string,
@@ -1724,7 +1724,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mount.MountTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mount"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mount"
 
 &mount.MountTimeouts {
 	Default: *string,
@@ -1756,7 +1756,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mount.MountWasb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mount"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mount"
 
 &mount.MountWasb {
 	AuthType: *string,
@@ -1860,7 +1860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mount.MountAbfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mount"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mount"
 
 mount.NewMountAbfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MountAbfsOutputReference
 ```
@@ -2313,7 +2313,7 @@ func InternalValue() MountAbfs
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mount.MountAdlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mount"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mount"
 
 mount.NewMountAdlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MountAdlOutputReference
 ```
@@ -2744,7 +2744,7 @@ func InternalValue() MountAdl
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mount.MountGsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mount"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mount"
 
 mount.NewMountGsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MountGsOutputReference
 ```
@@ -3044,7 +3044,7 @@ func InternalValue() MountGs
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mount.MountS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mount"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mount"
 
 mount.NewMountS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MountS3OutputReference
 ```
@@ -3344,7 +3344,7 @@ func InternalValue() MountS3
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mount.MountTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mount"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mount"
 
 mount.NewMountTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MountTimeoutsOutputReference
 ```
@@ -3622,7 +3622,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mount.MountWasbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mount"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mount"
 
 mount.NewMountWasbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MountWasbOutputReference
 ```
