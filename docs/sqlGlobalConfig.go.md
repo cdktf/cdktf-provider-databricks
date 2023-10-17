@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlGlobalConfig.SqlGlobalConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlglobalconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlglobalconfig"
 
 sqlglobalconfig.NewSqlGlobalConfig(scope Construct, id *string, config SqlGlobalConfigConfig) SqlGlobalConfig
 ```
@@ -381,7 +381,7 @@ func ResetSqlConfigParams()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.sqlGlobalConfig.SqlGlobalConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlglobalconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlglobalconfig"
 
 sqlglobalconfig.SqlGlobalConfig_IsConstruct(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.sqlGlobalConfig.SqlGlobalConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlglobalconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlglobalconfig"
 
 sqlglobalconfig.SqlGlobalConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -427,7 +427,7 @@ sqlglobalconfig.SqlGlobalConfig_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.sqlGlobalConfig.SqlGlobalConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlglobalconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlglobalconfig"
 
 sqlglobalconfig.SqlGlobalConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -441,7 +441,7 @@ sqlglobalconfig.SqlGlobalConfig_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.sqlGlobalConfig.SqlGlobalConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlglobalconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlglobalconfig"
 
 sqlglobalconfig.SqlGlobalConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -824,7 +824,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlGlobalConfig.SqlGlobalConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlglobalconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlglobalconfig"
 
 &sqlglobalconfig.SqlGlobalConfigConfig {
 	Connection: interface{},
