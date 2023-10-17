@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlAlert.SqlAlert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/sqlalert"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlalert"
 
 sqlalert.NewSqlAlert(scope Construct, id *string, config SqlAlertConfig) SqlAlert
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.sqlAlert.SqlAlert.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-databricks.sqlAlert.SqlAlert.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlAlert.SqlAlert.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-databricks.sqlAlert.SqlAlert.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-databricks.sqlAlert.SqlAlert.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlAlert.SqlAlert.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlAlert.SqlAlert.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.sqlAlert.SqlAlert.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlAlert.SqlAlert.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlAlert.SqlAlert.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.sqlAlert.SqlAlert.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlAlert.SqlAlert.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.sqlAlert.SqlAlert.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-databricks.sqlAlert.SqlAlert.putOptions">PutOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlAlert.SqlAlert.resetCreatedAt">ResetCreatedAt</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlAlert.SqlAlert.resetId">ResetId</a></code> | *No description.* |
@@ -142,6 +145,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-databricks.sqlAlert.SqlAlert.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-databricks.sqlAlert.SqlAlert.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-databricks.sqlAlert.SqlAlert.getAnyMapAttribute"></a>
 
@@ -251,6 +270,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-databricks.sqlAlert.SqlAlert.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-databricks.sqlAlert.SqlAlert.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-databricks.sqlAlert.SqlAlert.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-databricks.sqlAlert.SqlAlert.interpolationForAttribute"></a>
 
 ```go
@@ -260,6 +297,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.sqlAlert.SqlAlert.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-databricks.sqlAlert.SqlAlert.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-databricks.sqlAlert.SqlAlert.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-databricks.sqlAlert.SqlAlert.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -312,13 +373,14 @@ func ResetUpdatedAt()
 | <code><a href="#@cdktf/provider-databricks.sqlAlert.SqlAlert.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-databricks.sqlAlert.SqlAlert.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlAlert.SqlAlert.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.sqlAlert.SqlAlert.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a SqlAlert resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.sqlAlert.SqlAlert.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/sqlalert"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlalert"
 
 sqlalert.SqlAlert_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +412,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.sqlAlert.SqlAlert.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/sqlalert"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlalert"
 
 sqlalert.SqlAlert_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +426,7 @@ sqlalert.SqlAlert_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.sqlAlert.SqlAlert.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/sqlalert"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlalert"
 
 sqlalert.SqlAlert_IsTerraformResource(x interface{}) *bool
 ```
@@ -372,6 +434,50 @@ sqlalert.SqlAlert_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-databricks.sqlAlert.SqlAlert.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.sqlAlert.SqlAlert.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlalert"
+
+sqlalert.SqlAlert_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a SqlAlert resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-databricks.sqlAlert.SqlAlert.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-databricks.sqlAlert.SqlAlert.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the SqlAlert to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-databricks.sqlAlert.SqlAlert.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing SqlAlert that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/sql_alert#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-databricks.sqlAlert.SqlAlert.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the SqlAlert to import is found.
 
 ---
 
@@ -739,7 +845,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlAlert.SqlAlertConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/sqlalert"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlalert"
 
 &sqlalert.SqlAlertConfig {
 	Connection: interface{},
@@ -750,7 +856,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/sqlalert"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	Options: github.com/cdktf/cdktf-provider-databricks-go/databricks/v11.sqlAlert.SqlAlertOptions,
+	Options: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.sqlAlert.SqlAlertOptions,
 	QueryId: *string,
 	CreatedAt: *string,
 	Id: *string,
@@ -958,7 +1064,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlAlert.SqlAlertOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/sqlalert"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlalert"
 
 &sqlalert.SqlAlertOptions {
 	Column: *string,
@@ -1076,7 +1182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlAlert.SqlAlertOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/sqlalert"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlalert"
 
 sqlalert.NewSqlAlertOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlAlertOptionsOutputReference
 ```

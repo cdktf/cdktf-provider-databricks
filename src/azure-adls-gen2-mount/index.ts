@@ -71,6 +71,20 @@ export class AzureAdlsGen2Mount extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "databricks_azure_adls_gen2_mount";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a AzureAdlsGen2Mount resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the AzureAdlsGen2Mount to import
+  * @param importFromId The id of the existing AzureAdlsGen2Mount that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/azure_adls_gen2_mount#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the AzureAdlsGen2Mount to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_azure_adls_gen2_mount", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

@@ -45,6 +45,20 @@ export class DataDatabricksAwsAssumeRolePolicy extends cdktf.TerraformDataSource
   // =================
   public static readonly tfResourceType = "databricks_aws_assume_role_policy";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataDatabricksAwsAssumeRolePolicy resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataDatabricksAwsAssumeRolePolicy to import
+  * @param importFromId The id of the existing DataDatabricksAwsAssumeRolePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/data-sources/aws_assume_role_policy#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataDatabricksAwsAssumeRolePolicy to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_aws_assume_role_policy", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShare.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/datadatabricksshare"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksshare"
 
 datadatabricksshare.NewDataDatabricksShare(scope Construct, id *string, config DataDatabricksShareConfig) DataDatabricksShare
 ```
@@ -312,13 +312,14 @@ func ResetObject()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShare.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShare.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShare.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShare.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataDatabricksShare resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShare.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/datadatabricksshare"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksshare"
 
 datadatabricksshare.DataDatabricksShare_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShare.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/datadatabricksshare"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksshare"
 
 datadatabricksshare.DataDatabricksShare_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +365,7 @@ datadatabricksshare.DataDatabricksShare_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShare.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/datadatabricksshare"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksshare"
 
 datadatabricksshare.DataDatabricksShare_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,6 +373,50 @@ datadatabricksshare.DataDatabricksShare_IsTerraformDataSource(x interface{}) *bo
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShare.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShare.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksshare"
+
+datadatabricksshare.DataDatabricksShare_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataDatabricksShare resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShare.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShare.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataDatabricksShare to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShare.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataDatabricksShare that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/data-sources/share#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShare.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataDatabricksShare to import is found.
 
 ---
 
@@ -651,7 +696,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/datadatabricksshare"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksshare"
 
 &datadatabricksshare.DataDatabricksShareConfig {
 	Connection: interface{},
@@ -828,7 +873,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/datadatabricksshare"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksshare"
 
 &datadatabricksshare.DataDatabricksShareObject {
 	DataObjectType: *string,
@@ -1002,7 +1047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/datadatabricksshare"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksshare"
 
 &datadatabricksshare.DataDatabricksShareObjectPartition {
 	Value: interface{},
@@ -1036,7 +1081,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartitionValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/datadatabricksshare"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksshare"
 
 &datadatabricksshare.DataDatabricksShareObjectPartitionValue {
 	Name: *string,
@@ -1112,7 +1157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/datadatabricksshare"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksshare"
 
 datadatabricksshare.NewDataDatabricksShareObjectList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksShareObjectList
 ```
@@ -1255,7 +1300,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/datadatabricksshare"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksshare"
 
 datadatabricksshare.NewDataDatabricksShareObjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksShareObjectOutputReference
 ```
@@ -1840,7 +1885,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/datadatabricksshare"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksshare"
 
 datadatabricksshare.NewDataDatabricksShareObjectPartitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksShareObjectPartitionList
 ```
@@ -1983,7 +2028,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/datadatabricksshare"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksshare"
 
 datadatabricksshare.NewDataDatabricksShareObjectPartitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksShareObjectPartitionOutputReference
 ```
@@ -2285,7 +2330,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartitionValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/datadatabricksshare"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksshare"
 
 datadatabricksshare.NewDataDatabricksShareObjectPartitionValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksShareObjectPartitionValueList
 ```
@@ -2428,7 +2473,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartitionValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/datadatabricksshare"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksshare"
 
 datadatabricksshare.NewDataDatabricksShareObjectPartitionValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksShareObjectPartitionValueOutputReference
 ```

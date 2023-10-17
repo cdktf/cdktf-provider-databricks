@@ -109,6 +109,20 @@ export class GlobalInitScript extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "databricks_global_init_script";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a GlobalInitScript resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the GlobalInitScript to import
+  * @param importFromId The id of the existing GlobalInitScript that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/global_init_script#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the GlobalInitScript to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_global_init_script", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

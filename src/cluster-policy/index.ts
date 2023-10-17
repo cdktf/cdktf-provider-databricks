@@ -55,6 +55,20 @@ export class ClusterPolicy extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "databricks_cluster_policy";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a ClusterPolicy resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the ClusterPolicy to import
+  * @param importFromId The id of the existing ClusterPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/cluster_policy#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the ClusterPolicy to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_cluster_policy", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========
