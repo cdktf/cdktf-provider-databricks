@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/mws_vpc_endpoint
 // generated from terraform resource schema
 
@@ -236,6 +231,20 @@ export class MwsVpcEndpoint extends cdktf.TerraformResource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "databricks_mws_vpc_endpoint";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a MwsVpcEndpoint resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the MwsVpcEndpoint to import
+  * @param importFromId The id of the existing MwsVpcEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/mws_vpc_endpoint#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the MwsVpcEndpoint to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_mws_vpc_endpoint", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER
