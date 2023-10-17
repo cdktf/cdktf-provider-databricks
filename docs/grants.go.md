@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.grants.Grants.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/grants"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/grants"
 
 grants.NewGrants(scope Construct, id *string, config GrantsConfig) Grants
 ```
@@ -381,7 +381,7 @@ func ResetVolume()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.grants.Grants.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/grants"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/grants"
 
 grants.Grants_IsConstruct(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.grants.Grants.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/grants"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/grants"
 
 grants.Grants_IsTerraformElement(x interface{}) *bool
 ```
@@ -427,7 +427,7 @@ grants.Grants_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.grants.Grants.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/grants"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/grants"
 
 grants.Grants_IsTerraformResource(x interface{}) *bool
 ```
@@ -956,7 +956,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.grants.GrantsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/grants"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/grants"
 
 &grants.GrantsConfig {
 	Connection: interface{},
@@ -1273,7 +1273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.grants.GrantsGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/grants"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/grants"
 
 &grants.GrantsGrant {
 	Principal: *string,
@@ -1321,7 +1321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.grants.GrantsGrantList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/grants"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/grants"
 
 grants.NewGrantsGrantList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GrantsGrantList
 ```
@@ -1464,7 +1464,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.grants.GrantsGrantOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v11/grants"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/grants"
 
 grants.NewGrantsGrantOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GrantsGrantOutputReference
 ```
