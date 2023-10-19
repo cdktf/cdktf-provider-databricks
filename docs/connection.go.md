@@ -1,6 +1,6 @@
 # `databricks_connection`
 
-Refer to the Terraform Registory for docs: [`databricks_connection`](https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/connection).
+Refer to the Terraform Registory for docs: [`databricks_connection`](https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/connection).
 
 # `connection` Submodule <a name="`connection` Submodule" id="@cdktf/provider-databricks.connection"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`databricks_connection`](https://reg
 
 ### Connection <a name="Connection" id="@cdktf/provider-databricks.connection.Connection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/connection databricks_connection}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/connection databricks_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.connection.Connection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/connection"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/connection"
 
 connection.NewConnection(scope Construct, id *string, config ConnectionConfig) Connection
 ```
@@ -374,7 +374,7 @@ func ResetReadOnly()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.connection.Connection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/connection"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/connection"
 
 connection.Connection_IsConstruct(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.connection.Connection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/connection"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/connection"
 
 connection.Connection_IsTerraformElement(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ connection.Connection_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.connection.Connection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/connection"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/connection"
 
 connection.Connection_IsTerraformResource(x interface{}) *bool
 ```
@@ -434,7 +434,7 @@ connection.Connection_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.connection.Connection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/connection"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/connection"
 
 connection.Connection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -463,7 +463,7 @@ The construct id used in the generated config for the Connection to import.
 
 The id of the existing Connection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -861,7 +861,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.connection.ConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/connection"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/connection"
 
 &connection.ConnectionConfig {
 	Connection: interface{},
@@ -894,15 +894,15 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/connection"
 | <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.connectionType">ConnectionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/connection#connection_type Connection#connection_type}. |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/connection#name Connection#name}. |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.options">Options</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/connection#options Connection#options}. |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/connection#comment Connection#comment}. |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/connection#id Connection#id}. |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.metastoreId">MetastoreId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/connection#metastore_id Connection#metastore_id}. |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.owner">Owner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/connection#owner Connection#owner}. |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.properties">Properties</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/connection#properties Connection#properties}. |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.readOnly">ReadOnly</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/connection#read_only Connection#read_only}. |
+| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.connectionType">ConnectionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/connection#connection_type Connection#connection_type}. |
+| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/connection#name Connection#name}. |
+| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.options">Options</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/connection#options Connection#options}. |
+| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/connection#comment Connection#comment}. |
+| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/connection#id Connection#id}. |
+| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.metastoreId">MetastoreId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/connection#metastore_id Connection#metastore_id}. |
+| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.owner">Owner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/connection#owner Connection#owner}. |
+| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.properties">Properties</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/connection#properties Connection#properties}. |
+| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.readOnly">ReadOnly</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/connection#read_only Connection#read_only}. |
 
 ---
 
@@ -984,7 +984,7 @@ ConnectionType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/connection#connection_type Connection#connection_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/connection#connection_type Connection#connection_type}.
 
 ---
 
@@ -996,7 +996,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/connection#name Connection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/connection#name Connection#name}.
 
 ---
 
@@ -1008,7 +1008,7 @@ Options *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/connection#options Connection#options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/connection#options Connection#options}.
 
 ---
 
@@ -1020,7 +1020,7 @@ Comment *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/connection#comment Connection#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/connection#comment Connection#comment}.
 
 ---
 
@@ -1032,7 +1032,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/connection#id Connection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/connection#id Connection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1047,7 +1047,7 @@ MetastoreId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/connection#metastore_id Connection#metastore_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/connection#metastore_id Connection#metastore_id}.
 
 ---
 
@@ -1059,7 +1059,7 @@ Owner *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/connection#owner Connection#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/connection#owner Connection#owner}.
 
 ---
 
@@ -1071,7 +1071,7 @@ Properties *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/connection#properties Connection#properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/connection#properties Connection#properties}.
 
 ---
 
@@ -1083,7 +1083,7 @@ ReadOnly interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/connection#read_only Connection#read_only}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/connection#read_only Connection#read_only}.
 
 ---
 

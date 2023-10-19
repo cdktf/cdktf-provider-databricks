@@ -1,6 +1,6 @@
 # `databricks_group_member`
 
-Refer to the Terraform Registory for docs: [`databricks_group_member`](https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/group_member).
+Refer to the Terraform Registory for docs: [`databricks_group_member`](https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/group_member).
 
 # `groupMember` Submodule <a name="`groupMember` Submodule" id="@cdktf/provider-databricks.groupMember"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`databricks_group_member`](https://r
 
 ### GroupMember <a name="GroupMember" id="@cdktf/provider-databricks.groupMember.GroupMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/group_member databricks_group_member}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/group_member databricks_group_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.groupMember.GroupMember.Initializer"></a>
 
@@ -428,7 +428,7 @@ The construct id used in the generated config for the GroupMember to import.
 
 The id of the existing GroupMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/group_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/group_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -721,9 +721,9 @@ new GroupMemberConfig {
 | <code><a href="#@cdktf/provider-databricks.groupMember.GroupMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.groupMember.GroupMemberConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.groupMember.GroupMemberConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.groupMember.GroupMemberConfig.property.groupId">GroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/group_member#group_id GroupMember#group_id}. |
-| <code><a href="#@cdktf/provider-databricks.groupMember.GroupMemberConfig.property.memberId">MemberId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/group_member#member_id GroupMember#member_id}. |
-| <code><a href="#@cdktf/provider-databricks.groupMember.GroupMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/group_member#id GroupMember#id}. |
+| <code><a href="#@cdktf/provider-databricks.groupMember.GroupMemberConfig.property.groupId">GroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/group_member#group_id GroupMember#group_id}. |
+| <code><a href="#@cdktf/provider-databricks.groupMember.GroupMemberConfig.property.memberId">MemberId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/group_member#member_id GroupMember#member_id}. |
+| <code><a href="#@cdktf/provider-databricks.groupMember.GroupMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/group_member#id GroupMember#id}. |
 
 ---
 
@@ -805,7 +805,7 @@ public string GroupId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/group_member#group_id GroupMember#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/group_member#group_id GroupMember#group_id}.
 
 ---
 
@@ -817,7 +817,7 @@ public string MemberId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/group_member#member_id GroupMember#member_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/group_member#member_id GroupMember#member_id}.
 
 ---
 
@@ -829,7 +829,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/group_member#id GroupMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/group_member#id GroupMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

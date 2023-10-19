@@ -1,6 +1,6 @@
 # `databricks_job`
 
-Refer to the Terraform Registory for docs: [`databricks_job`](https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job).
+Refer to the Terraform Registory for docs: [`databricks_job`](https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job).
 
 # `job` Submodule <a name="`job` Submodule" id="@cdktf/provider-databricks.job"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`databricks_job`](https://registry.t
 
 ### Job <a name="Job" id="@cdktf/provider-databricks.job.Job"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job databricks_job}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job databricks_job}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.job.Job.Initializer"></a>
 
@@ -76,23 +76,23 @@ job.Job(
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.alwaysRunning">always_running</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#always_running Job#always_running}. |
+| <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.alwaysRunning">always_running</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#always_running Job#always_running}. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.compute">compute</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.job.JobCompute">JobCompute</a>]]</code> | compute block. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.continuous">continuous</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobContinuous">JobContinuous</a></code> | continuous block. |
-| <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.controlRunState">control_run_state</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#control_run_state Job#control_run_state}. |
+| <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.controlRunState">control_run_state</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#control_run_state Job#control_run_state}. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.dbtTask">dbt_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobDbtTask">JobDbtTask</a></code> | dbt_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.emailNotifications">email_notifications</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobEmailNotifications">JobEmailNotifications</a></code> | email_notifications block. |
-| <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.existingClusterId">existing_cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#existing_cluster_id Job#existing_cluster_id}. |
-| <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.format">format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#format Job#format}. |
+| <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.existingClusterId">existing_cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#existing_cluster_id Job#existing_cluster_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.format">format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#format Job#format}. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.gitSource">git_source</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobGitSource">JobGitSource</a></code> | git_source block. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.health">health</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobHealth">JobHealth</a></code> | health block. |
-| <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#id Job#id}. |
+| <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#id Job#id}. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.jobCluster">job_cluster</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.job.JobJobCluster">JobJobCluster</a>]]</code> | job_cluster block. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.library">library</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.job.JobLibrary">JobLibrary</a>]]</code> | library block. |
-| <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.maxConcurrentRuns">max_concurrent_runs</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#max_concurrent_runs Job#max_concurrent_runs}. |
-| <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#max_retries Job#max_retries}. |
-| <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.minRetryIntervalMillis">min_retry_interval_millis</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#min_retry_interval_millis Job#min_retry_interval_millis}. |
-| <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#name Job#name}. |
+| <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.maxConcurrentRuns">max_concurrent_runs</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#max_concurrent_runs Job#max_concurrent_runs}. |
+| <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#max_retries Job#max_retries}. |
+| <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.minRetryIntervalMillis">min_retry_interval_millis</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#min_retry_interval_millis Job#min_retry_interval_millis}. |
+| <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#name Job#name}. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.newCluster">new_cluster</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNewCluster">JobNewCluster</a></code> | new_cluster block. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.notebookTask">notebook_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNotebookTask">JobNotebookTask</a></code> | notebook_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.notificationSettings">notification_settings</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNotificationSettings">JobNotificationSettings</a></code> | notification_settings block. |
@@ -100,17 +100,17 @@ job.Job(
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.pipelineTask">pipeline_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobPipelineTask">JobPipelineTask</a></code> | pipeline_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.pythonWheelTask">python_wheel_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobPythonWheelTask">JobPythonWheelTask</a></code> | python_wheel_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.queue">queue</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobQueue">JobQueue</a></code> | queue block. |
-| <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.retryOnTimeout">retry_on_timeout</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#retry_on_timeout Job#retry_on_timeout}. |
+| <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.retryOnTimeout">retry_on_timeout</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#retry_on_timeout Job#retry_on_timeout}. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.runAs">run_as</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobRunAs">JobRunAs</a></code> | run_as block. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.runJobTask">run_job_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobRunJobTask">JobRunJobTask</a></code> | run_job_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.schedule">schedule</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobSchedule">JobSchedule</a></code> | schedule block. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.sparkJarTask">spark_jar_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobSparkJarTask">JobSparkJarTask</a></code> | spark_jar_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.sparkPythonTask">spark_python_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTask">JobSparkPythonTask</a></code> | spark_python_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.sparkSubmitTask">spark_submit_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobSparkSubmitTask">JobSparkSubmitTask</a></code> | spark_submit_task block. |
-| <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#tags Job#tags}. |
+| <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#tags Job#tags}. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.task">task</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.job.JobTask">JobTask</a>]]</code> | task block. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTimeouts">JobTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.timeoutSeconds">timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#timeout_seconds Job#timeout_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.timeoutSeconds">timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#timeout_seconds Job#timeout_seconds}. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.trigger">trigger</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTrigger">JobTrigger</a></code> | trigger block. |
 | <code><a href="#@cdktf/provider-databricks.job.Job.Initializer.parameter.webhookNotifications">webhook_notifications</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotifications">JobWebhookNotifications</a></code> | webhook_notifications block. |
 
@@ -180,7 +180,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#always_running Job#always_running}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#always_running Job#always_running}.
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 compute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#compute Job#compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#compute Job#compute}
 
 ---
 
@@ -200,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 continuous block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#continuous Job#continuous}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#continuous Job#continuous}
 
 ---
 
@@ -208,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#control_run_state Job#control_run_state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#control_run_state Job#control_run_state}.
 
 ---
 
@@ -218,7 +218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 dbt_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#dbt_task Job#dbt_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#dbt_task Job#dbt_task}
 
 ---
 
@@ -228,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 email_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#email_notifications Job#email_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#email_notifications Job#email_notifications}
 
 ---
 
@@ -236,7 +236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#existing_cluster_id Job#existing_cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#existing_cluster_id Job#existing_cluster_id}.
 
 ---
 
@@ -244,7 +244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#format Job#format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#format Job#format}.
 
 ---
 
@@ -254,7 +254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 git_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#git_source Job#git_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#git_source Job#git_source}
 
 ---
 
@@ -264,7 +264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 health block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#health Job#health}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#health Job#health}
 
 ---
 
@@ -272,7 +272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#id Job#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#id Job#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -285,7 +285,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 job_cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#job_cluster Job#job_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#job_cluster Job#job_cluster}
 
 ---
 
@@ -295,7 +295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 library block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#library Job#library}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#library Job#library}
 
 ---
 
@@ -303,7 +303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#max_concurrent_runs Job#max_concurrent_runs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#max_concurrent_runs Job#max_concurrent_runs}.
 
 ---
 
@@ -311,7 +311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#max_retries Job#max_retries}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#max_retries Job#max_retries}.
 
 ---
 
@@ -319,7 +319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#min_retry_interval_millis Job#min_retry_interval_millis}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#min_retry_interval_millis Job#min_retry_interval_millis}.
 
 ---
 
@@ -327,7 +327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#name Job#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#name Job#name}.
 
 ---
 
@@ -337,7 +337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 new_cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#new_cluster Job#new_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#new_cluster Job#new_cluster}
 
 ---
 
@@ -347,7 +347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 notebook_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#notebook_task Job#notebook_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#notebook_task Job#notebook_task}
 
 ---
 
@@ -357,7 +357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 notification_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#notification_settings Job#notification_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#notification_settings Job#notification_settings}
 
 ---
 
@@ -367,7 +367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#parameter Job#parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#parameter Job#parameter}
 
 ---
 
@@ -377,7 +377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 pipeline_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#pipeline_task Job#pipeline_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#pipeline_task Job#pipeline_task}
 
 ---
 
@@ -387,7 +387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 python_wheel_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#python_wheel_task Job#python_wheel_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#python_wheel_task Job#python_wheel_task}
 
 ---
 
@@ -397,7 +397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 queue block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#queue Job#queue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#queue Job#queue}
 
 ---
 
@@ -405,7 +405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#retry_on_timeout Job#retry_on_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#retry_on_timeout Job#retry_on_timeout}.
 
 ---
 
@@ -415,7 +415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 run_as block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#run_as Job#run_as}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#run_as Job#run_as}
 
 ---
 
@@ -425,7 +425,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 run_job_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#run_job_task Job#run_job_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#run_job_task Job#run_job_task}
 
 ---
 
@@ -435,7 +435,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#schedule Job#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#schedule Job#schedule}
 
 ---
 
@@ -445,7 +445,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 spark_jar_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_jar_task Job#spark_jar_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_jar_task Job#spark_jar_task}
 
 ---
 
@@ -455,7 +455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 spark_python_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_python_task Job#spark_python_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_python_task Job#spark_python_task}
 
 ---
 
@@ -465,7 +465,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 spark_submit_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_submit_task Job#spark_submit_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_submit_task Job#spark_submit_task}
 
 ---
 
@@ -473,7 +473,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#tags Job#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#tags Job#tags}.
 
 ---
 
@@ -483,7 +483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#task Job#task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#task Job#task}
 
 ---
 
@@ -493,7 +493,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#timeouts Job#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#timeouts Job#timeouts}
 
 ---
 
@@ -501,7 +501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#timeout_seconds Job#timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#timeout_seconds Job#timeout_seconds}.
 
 ---
 
@@ -511,7 +511,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 trigger block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#trigger Job#trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#trigger Job#trigger}
 
 ---
 
@@ -521,7 +521,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 webhook_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#webhook_notifications Job#webhook_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#webhook_notifications Job#webhook_notifications}
 
 ---
 
@@ -914,7 +914,7 @@ def put_continuous(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#pause_status Job#pause_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#pause_status Job#pause_status}.
 
 ---
 
@@ -935,7 +935,7 @@ def put_dbt_task(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#commands Job#commands}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#commands Job#commands}.
 
 ---
 
@@ -943,7 +943,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#catalog Job#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#catalog Job#catalog}.
 
 ---
 
@@ -951,7 +951,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#profiles_directory Job#profiles_directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#profiles_directory Job#profiles_directory}.
 
 ---
 
@@ -959,7 +959,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#project_directory Job#project_directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#project_directory Job#project_directory}.
 
 ---
 
@@ -967,7 +967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#schema Job#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#schema Job#schema}.
 
 ---
 
@@ -975,7 +975,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#warehouse_id Job#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#warehouse_id Job#warehouse_id}.
 
 ---
 
@@ -996,7 +996,7 @@ def put_email_notifications(
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#alert_on_last_attempt Job#alert_on_last_attempt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#alert_on_last_attempt Job#alert_on_last_attempt}.
 
 ---
 
@@ -1004,7 +1004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}.
 
 ---
 
@@ -1012,7 +1012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_duration_warning_threshold_exceeded Job#on_duration_warning_threshold_exceeded}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_duration_warning_threshold_exceeded Job#on_duration_warning_threshold_exceeded}.
 
 ---
 
@@ -1020,7 +1020,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_failure Job#on_failure}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_failure Job#on_failure}.
 
 ---
 
@@ -1028,7 +1028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_start Job#on_start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_start Job#on_start}.
 
 ---
 
@@ -1036,7 +1036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_success Job#on_success}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_success Job#on_success}.
 
 ---
 
@@ -1057,7 +1057,7 @@ def put_git_source(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#url Job#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#url Job#url}.
 
 ---
 
@@ -1065,7 +1065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#branch Job#branch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#branch Job#branch}.
 
 ---
 
@@ -1073,7 +1073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#commit Job#commit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#commit Job#commit}.
 
 ---
 
@@ -1083,7 +1083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 job_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#job_source Job#job_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#job_source Job#job_source}
 
 ---
 
@@ -1091,7 +1091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#provider Job#provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#provider Job#provider}.
 
 ---
 
@@ -1099,7 +1099,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#tag Job#tag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#tag Job#tag}.
 
 ---
 
@@ -1117,7 +1117,7 @@ def put_health(
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#rules Job#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#rules Job#rules}
 
 ---
 
@@ -1190,7 +1190,7 @@ def put_new_cluster(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_version Job#spark_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_version Job#spark_version}.
 
 ---
 
@@ -1198,7 +1198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#apply_policy_default_values Job#apply_policy_default_values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#apply_policy_default_values Job#apply_policy_default_values}.
 
 ---
 
@@ -1208,7 +1208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 autoscale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#autoscale Job#autoscale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#autoscale Job#autoscale}
 
 ---
 
@@ -1216,7 +1216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#autotermination_minutes Job#autotermination_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#autotermination_minutes Job#autotermination_minutes}.
 
 ---
 
@@ -1226,7 +1226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 aws_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#aws_attributes Job#aws_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#aws_attributes Job#aws_attributes}
 
 ---
 
@@ -1236,7 +1236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 azure_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#azure_attributes Job#azure_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#azure_attributes Job#azure_attributes}
 
 ---
 
@@ -1244,7 +1244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cluster_id Job#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cluster_id Job#cluster_id}.
 
 ---
 
@@ -1254,7 +1254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 cluster_log_conf block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cluster_log_conf Job#cluster_log_conf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cluster_log_conf Job#cluster_log_conf}
 
 ---
 
@@ -1264,7 +1264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 cluster_mount_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cluster_mount_info Job#cluster_mount_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cluster_mount_info Job#cluster_mount_info}
 
 ---
 
@@ -1272,7 +1272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cluster_name Job#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cluster_name Job#cluster_name}.
 
 ---
 
@@ -1280,7 +1280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#custom_tags Job#custom_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#custom_tags Job#custom_tags}.
 
 ---
 
@@ -1288,7 +1288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#data_security_mode Job#data_security_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#data_security_mode Job#data_security_mode}.
 
 ---
 
@@ -1298,7 +1298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 docker_image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#docker_image Job#docker_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#docker_image Job#docker_image}
 
 ---
 
@@ -1306,7 +1306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#driver_instance_pool_id Job#driver_instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#driver_instance_pool_id Job#driver_instance_pool_id}.
 
 ---
 
@@ -1314,7 +1314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#driver_node_type_id Job#driver_node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#driver_node_type_id Job#driver_node_type_id}.
 
 ---
 
@@ -1322,7 +1322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_elastic_disk Job#enable_elastic_disk}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_elastic_disk Job#enable_elastic_disk}.
 
 ---
 
@@ -1330,7 +1330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_local_disk_encryption Job#enable_local_disk_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_local_disk_encryption Job#enable_local_disk_encryption}.
 
 ---
 
@@ -1340,7 +1340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 gcp_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#gcp_attributes Job#gcp_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#gcp_attributes Job#gcp_attributes}
 
 ---
 
@@ -1348,7 +1348,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#idempotency_token Job#idempotency_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#idempotency_token Job#idempotency_token}.
 
 ---
 
@@ -1358,7 +1358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 init_scripts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#init_scripts Job#init_scripts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#init_scripts Job#init_scripts}
 
 ---
 
@@ -1366,7 +1366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#instance_pool_id Job#instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#instance_pool_id Job#instance_pool_id}.
 
 ---
 
@@ -1374,7 +1374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#node_type_id Job#node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#node_type_id Job#node_type_id}.
 
 ---
 
@@ -1382,7 +1382,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#num_workers Job#num_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#num_workers Job#num_workers}.
 
 ---
 
@@ -1390,7 +1390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#policy_id Job#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#policy_id Job#policy_id}.
 
 ---
 
@@ -1398,7 +1398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#runtime_engine Job#runtime_engine}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#runtime_engine Job#runtime_engine}.
 
 ---
 
@@ -1406,7 +1406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#single_user_name Job#single_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#single_user_name Job#single_user_name}.
 
 ---
 
@@ -1414,7 +1414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_conf Job#spark_conf}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_conf Job#spark_conf}.
 
 ---
 
@@ -1422,7 +1422,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_env_vars Job#spark_env_vars}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_env_vars Job#spark_env_vars}.
 
 ---
 
@@ -1430,7 +1430,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ssh_public_keys Job#ssh_public_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ssh_public_keys Job#ssh_public_keys}.
 
 ---
 
@@ -1440,7 +1440,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 workload_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#workload_type Job#workload_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#workload_type Job#workload_type}
 
 ---
 
@@ -1458,7 +1458,7 @@ def put_notebook_task(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#notebook_path Job#notebook_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#notebook_path Job#notebook_path}.
 
 ---
 
@@ -1466,7 +1466,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#base_parameters Job#base_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#base_parameters Job#base_parameters}.
 
 ---
 
@@ -1474,7 +1474,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#source Job#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#source Job#source}.
 
 ---
 
@@ -1491,7 +1491,7 @@ def put_notification_settings(
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#no_alert_for_canceled_runs Job#no_alert_for_canceled_runs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#no_alert_for_canceled_runs Job#no_alert_for_canceled_runs}.
 
 ---
 
@@ -1499,7 +1499,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}.
 
 ---
 
@@ -1530,7 +1530,7 @@ def put_pipeline_task(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#pipeline_id Job#pipeline_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#pipeline_id Job#pipeline_id}.
 
 ---
 
@@ -1538,7 +1538,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#full_refresh Job#full_refresh}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#full_refresh Job#full_refresh}.
 
 ---
 
@@ -1557,7 +1557,7 @@ def put_python_wheel_task(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#entry_point Job#entry_point}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#entry_point Job#entry_point}.
 
 ---
 
@@ -1565,7 +1565,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#named_parameters Job#named_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#named_parameters Job#named_parameters}.
 
 ---
 
@@ -1573,7 +1573,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#package_name Job#package_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#package_name Job#package_name}.
 
 ---
 
@@ -1581,7 +1581,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#parameters Job#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#parameters Job#parameters}.
 
 ---
 
@@ -1597,7 +1597,7 @@ def put_queue(
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enabled Job#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enabled Job#enabled}.
 
 ---
 
@@ -1614,7 +1614,7 @@ def put_run_as(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#service_principal_name Job#service_principal_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#service_principal_name Job#service_principal_name}.
 
 ---
 
@@ -1622,7 +1622,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#user_name Job#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#user_name Job#user_name}.
 
 ---
 
@@ -1639,7 +1639,7 @@ def put_run_job_task(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#job_id Job#job_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#job_id Job#job_id}.
 
 ---
 
@@ -1647,7 +1647,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#job_parameters Job#job_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#job_parameters Job#job_parameters}.
 
 ---
 
@@ -1665,7 +1665,7 @@ def put_schedule(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#quartz_cron_expression Job#quartz_cron_expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#quartz_cron_expression Job#quartz_cron_expression}.
 
 ---
 
@@ -1673,7 +1673,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#timezone_id Job#timezone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#timezone_id Job#timezone_id}.
 
 ---
 
@@ -1681,7 +1681,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#pause_status Job#pause_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#pause_status Job#pause_status}.
 
 ---
 
@@ -1699,7 +1699,7 @@ def put_spark_jar_task(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#jar_uri Job#jar_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#jar_uri Job#jar_uri}.
 
 ---
 
@@ -1707,7 +1707,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#main_class_name Job#main_class_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#main_class_name Job#main_class_name}.
 
 ---
 
@@ -1715,7 +1715,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#parameters Job#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#parameters Job#parameters}.
 
 ---
 
@@ -1733,7 +1733,7 @@ def put_spark_python_task(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#python_file Job#python_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#python_file Job#python_file}.
 
 ---
 
@@ -1741,7 +1741,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#parameters Job#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#parameters Job#parameters}.
 
 ---
 
@@ -1749,7 +1749,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#source Job#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#source Job#source}.
 
 ---
 
@@ -1765,7 +1765,7 @@ def put_spark_submit_task(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#parameters Job#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#parameters Job#parameters}.
 
 ---
 
@@ -1796,7 +1796,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#create Job#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#create Job#create}.
 
 ---
 
@@ -1804,7 +1804,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#update Job#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#update Job#update}.
 
 ---
 
@@ -1823,7 +1823,7 @@ def put_trigger(
 
 file_arrival block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#file_arrival Job#file_arrival}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#file_arrival Job#file_arrival}
 
 ---
 
@@ -1831,7 +1831,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#pause_status Job#pause_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#pause_status Job#pause_status}.
 
 ---
 
@@ -1852,7 +1852,7 @@ def put_webhook_notifications(
 
 on_duration_warning_threshold_exceeded block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_duration_warning_threshold_exceeded Job#on_duration_warning_threshold_exceeded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_duration_warning_threshold_exceeded Job#on_duration_warning_threshold_exceeded}
 
 ---
 
@@ -1862,7 +1862,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 on_failure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_failure Job#on_failure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_failure Job#on_failure}
 
 ---
 
@@ -1872,7 +1872,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 on_start block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_start Job#on_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_start Job#on_start}
 
 ---
 
@@ -1882,7 +1882,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 on_success block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_success Job#on_success}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_success Job#on_success}
 
 ---
 
@@ -2222,7 +2222,7 @@ The construct id used in the generated config for the Job to import.
 
 The id of the existing Job that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -3259,7 +3259,7 @@ job.JobCompute(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobCompute.property.computeKey">compute_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#compute_key Job#compute_key}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobCompute.property.computeKey">compute_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#compute_key Job#compute_key}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobCompute.property.spec">spec</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobComputeSpec">JobComputeSpec</a></code> | spec block. |
 
 ---
@@ -3272,7 +3272,7 @@ compute_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#compute_key Job#compute_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#compute_key Job#compute_key}.
 
 ---
 
@@ -3286,7 +3286,7 @@ spec: JobComputeSpec
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spec Job#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spec Job#spec}
 
 ---
 
@@ -3306,7 +3306,7 @@ job.JobComputeSpec(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobComputeSpec.property.kind">kind</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#kind Job#kind}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobComputeSpec.property.kind">kind</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#kind Job#kind}. |
 
 ---
 
@@ -3318,7 +3318,7 @@ kind: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#kind Job#kind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#kind Job#kind}.
 
 ---
 
@@ -3388,23 +3388,23 @@ job.JobConfig(
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.alwaysRunning">always_running</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#always_running Job#always_running}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.alwaysRunning">always_running</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#always_running Job#always_running}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.compute">compute</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.job.JobCompute">JobCompute</a>]]</code> | compute block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.continuous">continuous</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobContinuous">JobContinuous</a></code> | continuous block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.controlRunState">control_run_state</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#control_run_state Job#control_run_state}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.controlRunState">control_run_state</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#control_run_state Job#control_run_state}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.dbtTask">dbt_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobDbtTask">JobDbtTask</a></code> | dbt_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.emailNotifications">email_notifications</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobEmailNotifications">JobEmailNotifications</a></code> | email_notifications block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.existingClusterId">existing_cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#existing_cluster_id Job#existing_cluster_id}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.format">format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#format Job#format}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.existingClusterId">existing_cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#existing_cluster_id Job#existing_cluster_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.format">format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#format Job#format}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.gitSource">git_source</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobGitSource">JobGitSource</a></code> | git_source block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.health">health</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobHealth">JobHealth</a></code> | health block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#id Job#id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#id Job#id}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.jobCluster">job_cluster</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.job.JobJobCluster">JobJobCluster</a>]]</code> | job_cluster block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.library">library</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.job.JobLibrary">JobLibrary</a>]]</code> | library block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.maxConcurrentRuns">max_concurrent_runs</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#max_concurrent_runs Job#max_concurrent_runs}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#max_retries Job#max_retries}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.minRetryIntervalMillis">min_retry_interval_millis</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#min_retry_interval_millis Job#min_retry_interval_millis}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#name Job#name}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.maxConcurrentRuns">max_concurrent_runs</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#max_concurrent_runs Job#max_concurrent_runs}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#max_retries Job#max_retries}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.minRetryIntervalMillis">min_retry_interval_millis</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#min_retry_interval_millis Job#min_retry_interval_millis}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#name Job#name}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.newCluster">new_cluster</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNewCluster">JobNewCluster</a></code> | new_cluster block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.notebookTask">notebook_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNotebookTask">JobNotebookTask</a></code> | notebook_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.notificationSettings">notification_settings</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNotificationSettings">JobNotificationSettings</a></code> | notification_settings block. |
@@ -3412,17 +3412,17 @@ job.JobConfig(
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.pipelineTask">pipeline_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobPipelineTask">JobPipelineTask</a></code> | pipeline_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.pythonWheelTask">python_wheel_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobPythonWheelTask">JobPythonWheelTask</a></code> | python_wheel_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.queue">queue</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobQueue">JobQueue</a></code> | queue block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.retryOnTimeout">retry_on_timeout</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#retry_on_timeout Job#retry_on_timeout}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.retryOnTimeout">retry_on_timeout</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#retry_on_timeout Job#retry_on_timeout}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.runAs">run_as</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobRunAs">JobRunAs</a></code> | run_as block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.runJobTask">run_job_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobRunJobTask">JobRunJobTask</a></code> | run_job_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.schedule">schedule</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobSchedule">JobSchedule</a></code> | schedule block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.sparkJarTask">spark_jar_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobSparkJarTask">JobSparkJarTask</a></code> | spark_jar_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.sparkPythonTask">spark_python_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTask">JobSparkPythonTask</a></code> | spark_python_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.sparkSubmitTask">spark_submit_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobSparkSubmitTask">JobSparkSubmitTask</a></code> | spark_submit_task block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#tags Job#tags}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#tags Job#tags}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.task">task</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.job.JobTask">JobTask</a>]]</code> | task block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTimeouts">JobTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.timeoutSeconds">timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#timeout_seconds Job#timeout_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.timeoutSeconds">timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#timeout_seconds Job#timeout_seconds}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.trigger">trigger</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTrigger">JobTrigger</a></code> | trigger block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobConfig.property.webhookNotifications">webhook_notifications</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotifications">JobWebhookNotifications</a></code> | webhook_notifications block. |
 
@@ -3506,7 +3506,7 @@ always_running: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#always_running Job#always_running}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#always_running Job#always_running}.
 
 ---
 
@@ -3520,7 +3520,7 @@ compute: typing.Union[IResolvable, typing.List[JobCompute]]
 
 compute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#compute Job#compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#compute Job#compute}
 
 ---
 
@@ -3534,7 +3534,7 @@ continuous: JobContinuous
 
 continuous block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#continuous Job#continuous}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#continuous Job#continuous}
 
 ---
 
@@ -3546,7 +3546,7 @@ control_run_state: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#control_run_state Job#control_run_state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#control_run_state Job#control_run_state}.
 
 ---
 
@@ -3560,7 +3560,7 @@ dbt_task: JobDbtTask
 
 dbt_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#dbt_task Job#dbt_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#dbt_task Job#dbt_task}
 
 ---
 
@@ -3574,7 +3574,7 @@ email_notifications: JobEmailNotifications
 
 email_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#email_notifications Job#email_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#email_notifications Job#email_notifications}
 
 ---
 
@@ -3586,7 +3586,7 @@ existing_cluster_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#existing_cluster_id Job#existing_cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#existing_cluster_id Job#existing_cluster_id}.
 
 ---
 
@@ -3598,7 +3598,7 @@ format: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#format Job#format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#format Job#format}.
 
 ---
 
@@ -3612,7 +3612,7 @@ git_source: JobGitSource
 
 git_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#git_source Job#git_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#git_source Job#git_source}
 
 ---
 
@@ -3626,7 +3626,7 @@ health: JobHealth
 
 health block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#health Job#health}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#health Job#health}
 
 ---
 
@@ -3638,7 +3638,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#id Job#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#id Job#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3655,7 +3655,7 @@ job_cluster: typing.Union[IResolvable, typing.List[JobJobCluster]]
 
 job_cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#job_cluster Job#job_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#job_cluster Job#job_cluster}
 
 ---
 
@@ -3669,7 +3669,7 @@ library: typing.Union[IResolvable, typing.List[JobLibrary]]
 
 library block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#library Job#library}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#library Job#library}
 
 ---
 
@@ -3681,7 +3681,7 @@ max_concurrent_runs: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#max_concurrent_runs Job#max_concurrent_runs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#max_concurrent_runs Job#max_concurrent_runs}.
 
 ---
 
@@ -3693,7 +3693,7 @@ max_retries: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#max_retries Job#max_retries}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#max_retries Job#max_retries}.
 
 ---
 
@@ -3705,7 +3705,7 @@ min_retry_interval_millis: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#min_retry_interval_millis Job#min_retry_interval_millis}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#min_retry_interval_millis Job#min_retry_interval_millis}.
 
 ---
 
@@ -3717,7 +3717,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#name Job#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#name Job#name}.
 
 ---
 
@@ -3731,7 +3731,7 @@ new_cluster: JobNewCluster
 
 new_cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#new_cluster Job#new_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#new_cluster Job#new_cluster}
 
 ---
 
@@ -3745,7 +3745,7 @@ notebook_task: JobNotebookTask
 
 notebook_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#notebook_task Job#notebook_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#notebook_task Job#notebook_task}
 
 ---
 
@@ -3759,7 +3759,7 @@ notification_settings: JobNotificationSettings
 
 notification_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#notification_settings Job#notification_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#notification_settings Job#notification_settings}
 
 ---
 
@@ -3773,7 +3773,7 @@ parameter: typing.Union[IResolvable, typing.List[JobParameter]]
 
 parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#parameter Job#parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#parameter Job#parameter}
 
 ---
 
@@ -3787,7 +3787,7 @@ pipeline_task: JobPipelineTask
 
 pipeline_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#pipeline_task Job#pipeline_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#pipeline_task Job#pipeline_task}
 
 ---
 
@@ -3801,7 +3801,7 @@ python_wheel_task: JobPythonWheelTask
 
 python_wheel_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#python_wheel_task Job#python_wheel_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#python_wheel_task Job#python_wheel_task}
 
 ---
 
@@ -3815,7 +3815,7 @@ queue: JobQueue
 
 queue block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#queue Job#queue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#queue Job#queue}
 
 ---
 
@@ -3827,7 +3827,7 @@ retry_on_timeout: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#retry_on_timeout Job#retry_on_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#retry_on_timeout Job#retry_on_timeout}.
 
 ---
 
@@ -3841,7 +3841,7 @@ run_as: JobRunAs
 
 run_as block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#run_as Job#run_as}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#run_as Job#run_as}
 
 ---
 
@@ -3855,7 +3855,7 @@ run_job_task: JobRunJobTask
 
 run_job_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#run_job_task Job#run_job_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#run_job_task Job#run_job_task}
 
 ---
 
@@ -3869,7 +3869,7 @@ schedule: JobSchedule
 
 schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#schedule Job#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#schedule Job#schedule}
 
 ---
 
@@ -3883,7 +3883,7 @@ spark_jar_task: JobSparkJarTask
 
 spark_jar_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_jar_task Job#spark_jar_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_jar_task Job#spark_jar_task}
 
 ---
 
@@ -3897,7 +3897,7 @@ spark_python_task: JobSparkPythonTask
 
 spark_python_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_python_task Job#spark_python_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_python_task Job#spark_python_task}
 
 ---
 
@@ -3911,7 +3911,7 @@ spark_submit_task: JobSparkSubmitTask
 
 spark_submit_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_submit_task Job#spark_submit_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_submit_task Job#spark_submit_task}
 
 ---
 
@@ -3923,7 +3923,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#tags Job#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#tags Job#tags}.
 
 ---
 
@@ -3937,7 +3937,7 @@ task: typing.Union[IResolvable, typing.List[JobTask]]
 
 task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#task Job#task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#task Job#task}
 
 ---
 
@@ -3951,7 +3951,7 @@ timeouts: JobTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#timeouts Job#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#timeouts Job#timeouts}
 
 ---
 
@@ -3963,7 +3963,7 @@ timeout_seconds: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#timeout_seconds Job#timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#timeout_seconds Job#timeout_seconds}.
 
 ---
 
@@ -3977,7 +3977,7 @@ trigger: JobTrigger
 
 trigger block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#trigger Job#trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#trigger Job#trigger}
 
 ---
 
@@ -3991,7 +3991,7 @@ webhook_notifications: JobWebhookNotifications
 
 webhook_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#webhook_notifications Job#webhook_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#webhook_notifications Job#webhook_notifications}
 
 ---
 
@@ -4011,7 +4011,7 @@ job.JobContinuous(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobContinuous.property.pauseStatus">pause_status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#pause_status Job#pause_status}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobContinuous.property.pauseStatus">pause_status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#pause_status Job#pause_status}. |
 
 ---
 
@@ -4023,7 +4023,7 @@ pause_status: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#pause_status Job#pause_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#pause_status Job#pause_status}.
 
 ---
 
@@ -4048,12 +4048,12 @@ job.JobDbtTask(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobDbtTask.property.commands">commands</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#commands Job#commands}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobDbtTask.property.catalog">catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#catalog Job#catalog}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobDbtTask.property.profilesDirectory">profiles_directory</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#profiles_directory Job#profiles_directory}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobDbtTask.property.projectDirectory">project_directory</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#project_directory Job#project_directory}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobDbtTask.property.schema">schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#schema Job#schema}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobDbtTask.property.warehouseId">warehouse_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#warehouse_id Job#warehouse_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobDbtTask.property.commands">commands</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#commands Job#commands}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobDbtTask.property.catalog">catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#catalog Job#catalog}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobDbtTask.property.profilesDirectory">profiles_directory</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#profiles_directory Job#profiles_directory}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobDbtTask.property.projectDirectory">project_directory</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#project_directory Job#project_directory}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobDbtTask.property.schema">schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#schema Job#schema}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobDbtTask.property.warehouseId">warehouse_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#warehouse_id Job#warehouse_id}. |
 
 ---
 
@@ -4065,7 +4065,7 @@ commands: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#commands Job#commands}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#commands Job#commands}.
 
 ---
 
@@ -4077,7 +4077,7 @@ catalog: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#catalog Job#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#catalog Job#catalog}.
 
 ---
 
@@ -4089,7 +4089,7 @@ profiles_directory: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#profiles_directory Job#profiles_directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#profiles_directory Job#profiles_directory}.
 
 ---
 
@@ -4101,7 +4101,7 @@ project_directory: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#project_directory Job#project_directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#project_directory Job#project_directory}.
 
 ---
 
@@ -4113,7 +4113,7 @@ schema: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#schema Job#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#schema Job#schema}.
 
 ---
 
@@ -4125,7 +4125,7 @@ warehouse_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#warehouse_id Job#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#warehouse_id Job#warehouse_id}.
 
 ---
 
@@ -4150,12 +4150,12 @@ job.JobEmailNotifications(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobEmailNotifications.property.alertOnLastAttempt">alert_on_last_attempt</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#alert_on_last_attempt Job#alert_on_last_attempt}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobEmailNotifications.property.noAlertForSkippedRuns">no_alert_for_skipped_runs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobEmailNotifications.property.onDurationWarningThresholdExceeded">on_duration_warning_threshold_exceeded</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_duration_warning_threshold_exceeded Job#on_duration_warning_threshold_exceeded}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobEmailNotifications.property.onFailure">on_failure</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_failure Job#on_failure}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobEmailNotifications.property.onStart">on_start</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_start Job#on_start}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobEmailNotifications.property.onSuccess">on_success</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_success Job#on_success}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobEmailNotifications.property.alertOnLastAttempt">alert_on_last_attempt</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#alert_on_last_attempt Job#alert_on_last_attempt}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobEmailNotifications.property.noAlertForSkippedRuns">no_alert_for_skipped_runs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobEmailNotifications.property.onDurationWarningThresholdExceeded">on_duration_warning_threshold_exceeded</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_duration_warning_threshold_exceeded Job#on_duration_warning_threshold_exceeded}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobEmailNotifications.property.onFailure">on_failure</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_failure Job#on_failure}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobEmailNotifications.property.onStart">on_start</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_start Job#on_start}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobEmailNotifications.property.onSuccess">on_success</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_success Job#on_success}. |
 
 ---
 
@@ -4167,7 +4167,7 @@ alert_on_last_attempt: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#alert_on_last_attempt Job#alert_on_last_attempt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#alert_on_last_attempt Job#alert_on_last_attempt}.
 
 ---
 
@@ -4179,7 +4179,7 @@ no_alert_for_skipped_runs: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}.
 
 ---
 
@@ -4191,7 +4191,7 @@ on_duration_warning_threshold_exceeded: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_duration_warning_threshold_exceeded Job#on_duration_warning_threshold_exceeded}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_duration_warning_threshold_exceeded Job#on_duration_warning_threshold_exceeded}.
 
 ---
 
@@ -4203,7 +4203,7 @@ on_failure: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_failure Job#on_failure}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_failure Job#on_failure}.
 
 ---
 
@@ -4215,7 +4215,7 @@ on_start: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_start Job#on_start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_start Job#on_start}.
 
 ---
 
@@ -4227,7 +4227,7 @@ on_success: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_success Job#on_success}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_success Job#on_success}.
 
 ---
 
@@ -4252,12 +4252,12 @@ job.JobGitSource(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobGitSource.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#url Job#url}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobGitSource.property.branch">branch</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#branch Job#branch}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobGitSource.property.commit">commit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#commit Job#commit}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobGitSource.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#url Job#url}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobGitSource.property.branch">branch</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#branch Job#branch}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobGitSource.property.commit">commit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#commit Job#commit}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobGitSource.property.jobSource">job_source</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobGitSourceJobSource">JobGitSourceJobSource</a></code> | job_source block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobGitSource.property.provider">provider</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#provider Job#provider}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobGitSource.property.tag">tag</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#tag Job#tag}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobGitSource.property.provider">provider</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#provider Job#provider}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobGitSource.property.tag">tag</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#tag Job#tag}. |
 
 ---
 
@@ -4269,7 +4269,7 @@ url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#url Job#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#url Job#url}.
 
 ---
 
@@ -4281,7 +4281,7 @@ branch: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#branch Job#branch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#branch Job#branch}.
 
 ---
 
@@ -4293,7 +4293,7 @@ commit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#commit Job#commit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#commit Job#commit}.
 
 ---
 
@@ -4307,7 +4307,7 @@ job_source: JobGitSourceJobSource
 
 job_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#job_source Job#job_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#job_source Job#job_source}
 
 ---
 
@@ -4319,7 +4319,7 @@ provider: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#provider Job#provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#provider Job#provider}.
 
 ---
 
@@ -4331,7 +4331,7 @@ tag: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#tag Job#tag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#tag Job#tag}.
 
 ---
 
@@ -4353,9 +4353,9 @@ job.JobGitSourceJobSource(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobGitSourceJobSource.property.importFromGitBranch">import_from_git_branch</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#import_from_git_branch Job#import_from_git_branch}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobGitSourceJobSource.property.jobConfigPath">job_config_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#job_config_path Job#job_config_path}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobGitSourceJobSource.property.dirtyState">dirty_state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#dirty_state Job#dirty_state}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobGitSourceJobSource.property.importFromGitBranch">import_from_git_branch</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#import_from_git_branch Job#import_from_git_branch}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobGitSourceJobSource.property.jobConfigPath">job_config_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#job_config_path Job#job_config_path}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobGitSourceJobSource.property.dirtyState">dirty_state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#dirty_state Job#dirty_state}. |
 
 ---
 
@@ -4367,7 +4367,7 @@ import_from_git_branch: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#import_from_git_branch Job#import_from_git_branch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#import_from_git_branch Job#import_from_git_branch}.
 
 ---
 
@@ -4379,7 +4379,7 @@ job_config_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#job_config_path Job#job_config_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#job_config_path Job#job_config_path}.
 
 ---
 
@@ -4391,7 +4391,7 @@ dirty_state: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#dirty_state Job#dirty_state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#dirty_state Job#dirty_state}.
 
 ---
 
@@ -4425,7 +4425,7 @@ rules: typing.Union[IResolvable, typing.List[JobHealthRules]]
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#rules Job#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#rules Job#rules}
 
 ---
 
@@ -4447,9 +4447,9 @@ job.JobHealthRules(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobHealthRules.property.metric">metric</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#metric Job#metric}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobHealthRules.property.op">op</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#op Job#op}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobHealthRules.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#value Job#value}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobHealthRules.property.metric">metric</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#metric Job#metric}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobHealthRules.property.op">op</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#op Job#op}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobHealthRules.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#value Job#value}. |
 
 ---
 
@@ -4461,7 +4461,7 @@ metric: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#metric Job#metric}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#metric Job#metric}.
 
 ---
 
@@ -4473,7 +4473,7 @@ op: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#op Job#op}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#op Job#op}.
 
 ---
 
@@ -4485,7 +4485,7 @@ value: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#value Job#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#value Job#value}.
 
 ---
 
@@ -4506,7 +4506,7 @@ job.JobJobCluster(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobCluster.property.jobClusterKey">job_cluster_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#job_cluster_key Job#job_cluster_key}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobCluster.property.jobClusterKey">job_cluster_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#job_cluster_key Job#job_cluster_key}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobJobCluster.property.newCluster">new_cluster</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster">JobJobClusterNewCluster</a></code> | new_cluster block. |
 
 ---
@@ -4519,7 +4519,7 @@ job_cluster_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#job_cluster_key Job#job_cluster_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#job_cluster_key Job#job_cluster_key}.
 
 ---
 
@@ -4533,7 +4533,7 @@ new_cluster: JobJobClusterNewCluster
 
 new_cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#new_cluster Job#new_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#new_cluster Job#new_cluster}
 
 ---
 
@@ -4582,35 +4582,35 @@ job.JobJobClusterNewCluster(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.sparkVersion">spark_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_version Job#spark_version}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.applyPolicyDefaultValues">apply_policy_default_values</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#apply_policy_default_values Job#apply_policy_default_values}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.sparkVersion">spark_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_version Job#spark_version}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.applyPolicyDefaultValues">apply_policy_default_values</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#apply_policy_default_values Job#apply_policy_default_values}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.autoscale">autoscale</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterAutoscale">JobJobClusterNewClusterAutoscale</a></code> | autoscale block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.autoterminationMinutes">autotermination_minutes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#autotermination_minutes Job#autotermination_minutes}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.autoterminationMinutes">autotermination_minutes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#autotermination_minutes Job#autotermination_minutes}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.awsAttributes">aws_attributes</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterAwsAttributes">JobJobClusterNewClusterAwsAttributes</a></code> | aws_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.azureAttributes">azure_attributes</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterAzureAttributes">JobJobClusterNewClusterAzureAttributes</a></code> | azure_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.clusterId">cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cluster_id Job#cluster_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.clusterId">cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cluster_id Job#cluster_id}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.clusterLogConf">cluster_log_conf</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterLogConf">JobJobClusterNewClusterClusterLogConf</a></code> | cluster_log_conf block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.clusterMountInfo">cluster_mount_info</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfo">JobJobClusterNewClusterClusterMountInfo</a>]]</code> | cluster_mount_info block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.clusterName">cluster_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cluster_name Job#cluster_name}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.customTags">custom_tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#custom_tags Job#custom_tags}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.dataSecurityMode">data_security_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#data_security_mode Job#data_security_mode}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.clusterName">cluster_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cluster_name Job#cluster_name}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.customTags">custom_tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#custom_tags Job#custom_tags}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.dataSecurityMode">data_security_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#data_security_mode Job#data_security_mode}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.dockerImage">docker_image</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterDockerImage">JobJobClusterNewClusterDockerImage</a></code> | docker_image block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.driverInstancePoolId">driver_instance_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#driver_instance_pool_id Job#driver_instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.driverNodeTypeId">driver_node_type_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#driver_node_type_id Job#driver_node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.enableElasticDisk">enable_elastic_disk</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_elastic_disk Job#enable_elastic_disk}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.enableLocalDiskEncryption">enable_local_disk_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_local_disk_encryption Job#enable_local_disk_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.driverInstancePoolId">driver_instance_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#driver_instance_pool_id Job#driver_instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.driverNodeTypeId">driver_node_type_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#driver_node_type_id Job#driver_node_type_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.enableElasticDisk">enable_elastic_disk</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_elastic_disk Job#enable_elastic_disk}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.enableLocalDiskEncryption">enable_local_disk_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_local_disk_encryption Job#enable_local_disk_encryption}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.gcpAttributes">gcp_attributes</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterGcpAttributes">JobJobClusterNewClusterGcpAttributes</a></code> | gcp_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.idempotencyToken">idempotency_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#idempotency_token Job#idempotency_token}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.idempotencyToken">idempotency_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#idempotency_token Job#idempotency_token}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.initScripts">init_scripts</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScripts">JobJobClusterNewClusterInitScripts</a>]]</code> | init_scripts block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.instancePoolId">instance_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#instance_pool_id Job#instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.nodeTypeId">node_type_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#node_type_id Job#node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.numWorkers">num_workers</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#num_workers Job#num_workers}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.policyId">policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#policy_id Job#policy_id}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.runtimeEngine">runtime_engine</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#runtime_engine Job#runtime_engine}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.singleUserName">single_user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#single_user_name Job#single_user_name}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.sparkConf">spark_conf</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_conf Job#spark_conf}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.sparkEnvVars">spark_env_vars</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_env_vars Job#spark_env_vars}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.sshPublicKeys">ssh_public_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ssh_public_keys Job#ssh_public_keys}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.instancePoolId">instance_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#instance_pool_id Job#instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.nodeTypeId">node_type_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#node_type_id Job#node_type_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.numWorkers">num_workers</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#num_workers Job#num_workers}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.policyId">policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#policy_id Job#policy_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.runtimeEngine">runtime_engine</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#runtime_engine Job#runtime_engine}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.singleUserName">single_user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#single_user_name Job#single_user_name}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.sparkConf">spark_conf</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_conf Job#spark_conf}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.sparkEnvVars">spark_env_vars</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_env_vars Job#spark_env_vars}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.sshPublicKeys">ssh_public_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ssh_public_keys Job#ssh_public_keys}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewCluster.property.workloadType">workload_type</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterWorkloadType">JobJobClusterNewClusterWorkloadType</a></code> | workload_type block. |
 
 ---
@@ -4623,7 +4623,7 @@ spark_version: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_version Job#spark_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_version Job#spark_version}.
 
 ---
 
@@ -4635,7 +4635,7 @@ apply_policy_default_values: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#apply_policy_default_values Job#apply_policy_default_values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#apply_policy_default_values Job#apply_policy_default_values}.
 
 ---
 
@@ -4649,7 +4649,7 @@ autoscale: JobJobClusterNewClusterAutoscale
 
 autoscale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#autoscale Job#autoscale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#autoscale Job#autoscale}
 
 ---
 
@@ -4661,7 +4661,7 @@ autotermination_minutes: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#autotermination_minutes Job#autotermination_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#autotermination_minutes Job#autotermination_minutes}.
 
 ---
 
@@ -4675,7 +4675,7 @@ aws_attributes: JobJobClusterNewClusterAwsAttributes
 
 aws_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#aws_attributes Job#aws_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#aws_attributes Job#aws_attributes}
 
 ---
 
@@ -4689,7 +4689,7 @@ azure_attributes: JobJobClusterNewClusterAzureAttributes
 
 azure_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#azure_attributes Job#azure_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#azure_attributes Job#azure_attributes}
 
 ---
 
@@ -4701,7 +4701,7 @@ cluster_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cluster_id Job#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cluster_id Job#cluster_id}.
 
 ---
 
@@ -4715,7 +4715,7 @@ cluster_log_conf: JobJobClusterNewClusterClusterLogConf
 
 cluster_log_conf block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cluster_log_conf Job#cluster_log_conf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cluster_log_conf Job#cluster_log_conf}
 
 ---
 
@@ -4729,7 +4729,7 @@ cluster_mount_info: typing.Union[IResolvable, typing.List[JobJobClusterNewCluste
 
 cluster_mount_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cluster_mount_info Job#cluster_mount_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cluster_mount_info Job#cluster_mount_info}
 
 ---
 
@@ -4741,7 +4741,7 @@ cluster_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cluster_name Job#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cluster_name Job#cluster_name}.
 
 ---
 
@@ -4753,7 +4753,7 @@ custom_tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#custom_tags Job#custom_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#custom_tags Job#custom_tags}.
 
 ---
 
@@ -4765,7 +4765,7 @@ data_security_mode: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#data_security_mode Job#data_security_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#data_security_mode Job#data_security_mode}.
 
 ---
 
@@ -4779,7 +4779,7 @@ docker_image: JobJobClusterNewClusterDockerImage
 
 docker_image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#docker_image Job#docker_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#docker_image Job#docker_image}
 
 ---
 
@@ -4791,7 +4791,7 @@ driver_instance_pool_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#driver_instance_pool_id Job#driver_instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#driver_instance_pool_id Job#driver_instance_pool_id}.
 
 ---
 
@@ -4803,7 +4803,7 @@ driver_node_type_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#driver_node_type_id Job#driver_node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#driver_node_type_id Job#driver_node_type_id}.
 
 ---
 
@@ -4815,7 +4815,7 @@ enable_elastic_disk: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_elastic_disk Job#enable_elastic_disk}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_elastic_disk Job#enable_elastic_disk}.
 
 ---
 
@@ -4827,7 +4827,7 @@ enable_local_disk_encryption: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_local_disk_encryption Job#enable_local_disk_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_local_disk_encryption Job#enable_local_disk_encryption}.
 
 ---
 
@@ -4841,7 +4841,7 @@ gcp_attributes: JobJobClusterNewClusterGcpAttributes
 
 gcp_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#gcp_attributes Job#gcp_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#gcp_attributes Job#gcp_attributes}
 
 ---
 
@@ -4853,7 +4853,7 @@ idempotency_token: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#idempotency_token Job#idempotency_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#idempotency_token Job#idempotency_token}.
 
 ---
 
@@ -4867,7 +4867,7 @@ init_scripts: typing.Union[IResolvable, typing.List[JobJobClusterNewClusterInitS
 
 init_scripts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#init_scripts Job#init_scripts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#init_scripts Job#init_scripts}
 
 ---
 
@@ -4879,7 +4879,7 @@ instance_pool_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#instance_pool_id Job#instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#instance_pool_id Job#instance_pool_id}.
 
 ---
 
@@ -4891,7 +4891,7 @@ node_type_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#node_type_id Job#node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#node_type_id Job#node_type_id}.
 
 ---
 
@@ -4903,7 +4903,7 @@ num_workers: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#num_workers Job#num_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#num_workers Job#num_workers}.
 
 ---
 
@@ -4915,7 +4915,7 @@ policy_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#policy_id Job#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#policy_id Job#policy_id}.
 
 ---
 
@@ -4927,7 +4927,7 @@ runtime_engine: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#runtime_engine Job#runtime_engine}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#runtime_engine Job#runtime_engine}.
 
 ---
 
@@ -4939,7 +4939,7 @@ single_user_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#single_user_name Job#single_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#single_user_name Job#single_user_name}.
 
 ---
 
@@ -4951,7 +4951,7 @@ spark_conf: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_conf Job#spark_conf}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_conf Job#spark_conf}.
 
 ---
 
@@ -4963,7 +4963,7 @@ spark_env_vars: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_env_vars Job#spark_env_vars}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_env_vars Job#spark_env_vars}.
 
 ---
 
@@ -4975,7 +4975,7 @@ ssh_public_keys: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ssh_public_keys Job#ssh_public_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ssh_public_keys Job#ssh_public_keys}.
 
 ---
 
@@ -4989,7 +4989,7 @@ workload_type: JobJobClusterNewClusterWorkloadType
 
 workload_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#workload_type Job#workload_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#workload_type Job#workload_type}
 
 ---
 
@@ -5010,8 +5010,8 @@ job.JobJobClusterNewClusterAutoscale(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterAutoscale.property.maxWorkers">max_workers</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#max_workers Job#max_workers}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterAutoscale.property.minWorkers">min_workers</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#min_workers Job#min_workers}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterAutoscale.property.maxWorkers">max_workers</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#max_workers Job#max_workers}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterAutoscale.property.minWorkers">min_workers</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#min_workers Job#min_workers}. |
 
 ---
 
@@ -5023,7 +5023,7 @@ max_workers: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#max_workers Job#max_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#max_workers Job#max_workers}.
 
 ---
 
@@ -5035,7 +5035,7 @@ min_workers: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#min_workers Job#min_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#min_workers Job#min_workers}.
 
 ---
 
@@ -5062,14 +5062,14 @@ job.JobJobClusterNewClusterAwsAttributes(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterAwsAttributes.property.availability">availability</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#availability Job#availability}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterAwsAttributes.property.ebsVolumeCount">ebs_volume_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ebs_volume_count Job#ebs_volume_count}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterAwsAttributes.property.ebsVolumeSize">ebs_volume_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ebs_volume_size Job#ebs_volume_size}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterAwsAttributes.property.ebsVolumeType">ebs_volume_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ebs_volume_type Job#ebs_volume_type}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterAwsAttributes.property.firstOnDemand">first_on_demand</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#first_on_demand Job#first_on_demand}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterAwsAttributes.property.instanceProfileArn">instance_profile_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#instance_profile_arn Job#instance_profile_arn}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterAwsAttributes.property.spotBidPricePercent">spot_bid_price_percent</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spot_bid_price_percent Job#spot_bid_price_percent}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterAwsAttributes.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#zone_id Job#zone_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterAwsAttributes.property.availability">availability</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#availability Job#availability}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterAwsAttributes.property.ebsVolumeCount">ebs_volume_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ebs_volume_count Job#ebs_volume_count}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterAwsAttributes.property.ebsVolumeSize">ebs_volume_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ebs_volume_size Job#ebs_volume_size}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterAwsAttributes.property.ebsVolumeType">ebs_volume_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ebs_volume_type Job#ebs_volume_type}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterAwsAttributes.property.firstOnDemand">first_on_demand</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#first_on_demand Job#first_on_demand}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterAwsAttributes.property.instanceProfileArn">instance_profile_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#instance_profile_arn Job#instance_profile_arn}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterAwsAttributes.property.spotBidPricePercent">spot_bid_price_percent</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spot_bid_price_percent Job#spot_bid_price_percent}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterAwsAttributes.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#zone_id Job#zone_id}. |
 
 ---
 
@@ -5081,7 +5081,7 @@ availability: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#availability Job#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#availability Job#availability}.
 
 ---
 
@@ -5093,7 +5093,7 @@ ebs_volume_count: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ebs_volume_count Job#ebs_volume_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ebs_volume_count Job#ebs_volume_count}.
 
 ---
 
@@ -5105,7 +5105,7 @@ ebs_volume_size: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ebs_volume_size Job#ebs_volume_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ebs_volume_size Job#ebs_volume_size}.
 
 ---
 
@@ -5117,7 +5117,7 @@ ebs_volume_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ebs_volume_type Job#ebs_volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ebs_volume_type Job#ebs_volume_type}.
 
 ---
 
@@ -5129,7 +5129,7 @@ first_on_demand: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#first_on_demand Job#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#first_on_demand Job#first_on_demand}.
 
 ---
 
@@ -5141,7 +5141,7 @@ instance_profile_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#instance_profile_arn Job#instance_profile_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#instance_profile_arn Job#instance_profile_arn}.
 
 ---
 
@@ -5153,7 +5153,7 @@ spot_bid_price_percent: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spot_bid_price_percent Job#spot_bid_price_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spot_bid_price_percent Job#spot_bid_price_percent}.
 
 ---
 
@@ -5165,7 +5165,7 @@ zone_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#zone_id Job#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#zone_id Job#zone_id}.
 
 ---
 
@@ -5187,9 +5187,9 @@ job.JobJobClusterNewClusterAzureAttributes(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterAzureAttributes.property.availability">availability</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#availability Job#availability}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterAzureAttributes.property.firstOnDemand">first_on_demand</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#first_on_demand Job#first_on_demand}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterAzureAttributes.property.spotBidMaxPrice">spot_bid_max_price</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spot_bid_max_price Job#spot_bid_max_price}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterAzureAttributes.property.availability">availability</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#availability Job#availability}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterAzureAttributes.property.firstOnDemand">first_on_demand</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#first_on_demand Job#first_on_demand}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterAzureAttributes.property.spotBidMaxPrice">spot_bid_max_price</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spot_bid_max_price Job#spot_bid_max_price}. |
 
 ---
 
@@ -5201,7 +5201,7 @@ availability: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#availability Job#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#availability Job#availability}.
 
 ---
 
@@ -5213,7 +5213,7 @@ first_on_demand: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#first_on_demand Job#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#first_on_demand Job#first_on_demand}.
 
 ---
 
@@ -5225,7 +5225,7 @@ spot_bid_max_price: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spot_bid_max_price Job#spot_bid_max_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spot_bid_max_price Job#spot_bid_max_price}.
 
 ---
 
@@ -5261,7 +5261,7 @@ dbfs: JobJobClusterNewClusterClusterLogConfDbfs
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#dbfs Job#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#dbfs Job#dbfs}
 
 ---
 
@@ -5275,7 +5275,7 @@ s3: JobJobClusterNewClusterClusterLogConfS3
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#s3 Job#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#s3 Job#s3}
 
 ---
 
@@ -5295,7 +5295,7 @@ job.JobJobClusterNewClusterClusterLogConfDbfs(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterLogConfDbfs.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterLogConfDbfs.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}. |
 
 ---
 
@@ -5307,7 +5307,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -5333,13 +5333,13 @@ job.JobJobClusterNewClusterClusterLogConfS3(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterLogConfS3.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterLogConfS3.property.cannedAcl">canned_acl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#canned_acl Job#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterLogConfS3.property.enableEncryption">enable_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_encryption Job#enable_encryption}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterLogConfS3.property.encryptionType">encryption_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#encryption_type Job#encryption_type}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterLogConfS3.property.endpoint">endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#endpoint Job#endpoint}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterLogConfS3.property.kmsKey">kms_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#kms_key Job#kms_key}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterLogConfS3.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#region Job#region}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterLogConfS3.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterLogConfS3.property.cannedAcl">canned_acl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#canned_acl Job#canned_acl}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterLogConfS3.property.enableEncryption">enable_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_encryption Job#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterLogConfS3.property.encryptionType">encryption_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#encryption_type Job#encryption_type}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterLogConfS3.property.endpoint">endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#endpoint Job#endpoint}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterLogConfS3.property.kmsKey">kms_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#kms_key Job#kms_key}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterLogConfS3.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#region Job#region}. |
 
 ---
 
@@ -5351,7 +5351,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -5363,7 +5363,7 @@ canned_acl: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#canned_acl Job#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#canned_acl Job#canned_acl}.
 
 ---
 
@@ -5375,7 +5375,7 @@ enable_encryption: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_encryption Job#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_encryption Job#enable_encryption}.
 
 ---
 
@@ -5387,7 +5387,7 @@ encryption_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#encryption_type Job#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#encryption_type Job#encryption_type}.
 
 ---
 
@@ -5399,7 +5399,7 @@ endpoint: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#endpoint Job#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#endpoint Job#endpoint}.
 
 ---
 
@@ -5411,7 +5411,7 @@ kms_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#kms_key Job#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#kms_key Job#kms_key}.
 
 ---
 
@@ -5423,7 +5423,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#region Job#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#region Job#region}.
 
 ---
 
@@ -5445,9 +5445,9 @@ job.JobJobClusterNewClusterClusterMountInfo(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfo.property.localMountDirPath">local_mount_dir_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#local_mount_dir_path Job#local_mount_dir_path}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfo.property.localMountDirPath">local_mount_dir_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#local_mount_dir_path Job#local_mount_dir_path}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfo.property.networkFilesystemInfo">network_filesystem_info</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfoNetworkFilesystemInfo">JobJobClusterNewClusterClusterMountInfoNetworkFilesystemInfo</a></code> | network_filesystem_info block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfo.property.remoteMountDirPath">remote_mount_dir_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#remote_mount_dir_path Job#remote_mount_dir_path}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfo.property.remoteMountDirPath">remote_mount_dir_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#remote_mount_dir_path Job#remote_mount_dir_path}. |
 
 ---
 
@@ -5459,7 +5459,7 @@ local_mount_dir_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#local_mount_dir_path Job#local_mount_dir_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#local_mount_dir_path Job#local_mount_dir_path}.
 
 ---
 
@@ -5473,7 +5473,7 @@ network_filesystem_info: JobJobClusterNewClusterClusterMountInfoNetworkFilesyste
 
 network_filesystem_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#network_filesystem_info Job#network_filesystem_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#network_filesystem_info Job#network_filesystem_info}
 
 ---
 
@@ -5485,7 +5485,7 @@ remote_mount_dir_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#remote_mount_dir_path Job#remote_mount_dir_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#remote_mount_dir_path Job#remote_mount_dir_path}.
 
 ---
 
@@ -5506,8 +5506,8 @@ job.JobJobClusterNewClusterClusterMountInfoNetworkFilesystemInfo(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfoNetworkFilesystemInfo.property.serverAddress">server_address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#server_address Job#server_address}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfoNetworkFilesystemInfo.property.mountOptions">mount_options</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#mount_options Job#mount_options}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfoNetworkFilesystemInfo.property.serverAddress">server_address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#server_address Job#server_address}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterClusterMountInfoNetworkFilesystemInfo.property.mountOptions">mount_options</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#mount_options Job#mount_options}. |
 
 ---
 
@@ -5519,7 +5519,7 @@ server_address: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#server_address Job#server_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#server_address Job#server_address}.
 
 ---
 
@@ -5531,7 +5531,7 @@ mount_options: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#mount_options Job#mount_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#mount_options Job#mount_options}.
 
 ---
 
@@ -5552,7 +5552,7 @@ job.JobJobClusterNewClusterDockerImage(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterDockerImage.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#url Job#url}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterDockerImage.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#url Job#url}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterDockerImage.property.basicAuth">basic_auth</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterDockerImageBasicAuth">JobJobClusterNewClusterDockerImageBasicAuth</a></code> | basic_auth block. |
 
 ---
@@ -5565,7 +5565,7 @@ url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#url Job#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#url Job#url}.
 
 ---
 
@@ -5579,7 +5579,7 @@ basic_auth: JobJobClusterNewClusterDockerImageBasicAuth
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#basic_auth Job#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#basic_auth Job#basic_auth}
 
 ---
 
@@ -5600,8 +5600,8 @@ job.JobJobClusterNewClusterDockerImageBasicAuth(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterDockerImageBasicAuth.property.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#password Job#password}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterDockerImageBasicAuth.property.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#username Job#username}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterDockerImageBasicAuth.property.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#password Job#password}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterDockerImageBasicAuth.property.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#username Job#username}. |
 
 ---
 
@@ -5613,7 +5613,7 @@ password: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#password Job#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#password Job#password}.
 
 ---
 
@@ -5625,7 +5625,7 @@ username: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#username Job#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#username Job#username}.
 
 ---
 
@@ -5650,12 +5650,12 @@ job.JobJobClusterNewClusterGcpAttributes(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterGcpAttributes.property.availability">availability</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#availability Job#availability}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterGcpAttributes.property.bootDiskSize">boot_disk_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#boot_disk_size Job#boot_disk_size}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterGcpAttributes.property.googleServiceAccount">google_service_account</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#google_service_account Job#google_service_account}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterGcpAttributes.property.localSsdCount">local_ssd_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#local_ssd_count Job#local_ssd_count}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterGcpAttributes.property.usePreemptibleExecutors">use_preemptible_executors</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#use_preemptible_executors Job#use_preemptible_executors}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterGcpAttributes.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#zone_id Job#zone_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterGcpAttributes.property.availability">availability</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#availability Job#availability}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterGcpAttributes.property.bootDiskSize">boot_disk_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#boot_disk_size Job#boot_disk_size}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterGcpAttributes.property.googleServiceAccount">google_service_account</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#google_service_account Job#google_service_account}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterGcpAttributes.property.localSsdCount">local_ssd_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#local_ssd_count Job#local_ssd_count}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterGcpAttributes.property.usePreemptibleExecutors">use_preemptible_executors</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#use_preemptible_executors Job#use_preemptible_executors}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterGcpAttributes.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#zone_id Job#zone_id}. |
 
 ---
 
@@ -5667,7 +5667,7 @@ availability: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#availability Job#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#availability Job#availability}.
 
 ---
 
@@ -5679,7 +5679,7 @@ boot_disk_size: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#boot_disk_size Job#boot_disk_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#boot_disk_size Job#boot_disk_size}.
 
 ---
 
@@ -5691,7 +5691,7 @@ google_service_account: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#google_service_account Job#google_service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#google_service_account Job#google_service_account}.
 
 ---
 
@@ -5703,7 +5703,7 @@ local_ssd_count: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#local_ssd_count Job#local_ssd_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#local_ssd_count Job#local_ssd_count}.
 
 ---
 
@@ -5715,7 +5715,7 @@ use_preemptible_executors: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#use_preemptible_executors Job#use_preemptible_executors}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#use_preemptible_executors Job#use_preemptible_executors}.
 
 ---
 
@@ -5727,7 +5727,7 @@ zone_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#zone_id Job#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#zone_id Job#zone_id}.
 
 ---
 
@@ -5773,7 +5773,7 @@ abfss: JobJobClusterNewClusterInitScriptsAbfss
 
 abfss block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#abfss Job#abfss}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#abfss Job#abfss}
 
 ---
 
@@ -5787,7 +5787,7 @@ dbfs: JobJobClusterNewClusterInitScriptsDbfs
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#dbfs Job#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#dbfs Job#dbfs}
 
 ---
 
@@ -5801,7 +5801,7 @@ file: JobJobClusterNewClusterInitScriptsFile
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#file Job#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#file Job#file}
 
 ---
 
@@ -5815,7 +5815,7 @@ gcs: JobJobClusterNewClusterInitScriptsGcs
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#gcs Job#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#gcs Job#gcs}
 
 ---
 
@@ -5829,7 +5829,7 @@ s3: JobJobClusterNewClusterInitScriptsS3
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#s3 Job#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#s3 Job#s3}
 
 ---
 
@@ -5843,7 +5843,7 @@ volumes: JobJobClusterNewClusterInitScriptsVolumes
 
 volumes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#volumes Job#volumes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#volumes Job#volumes}
 
 ---
 
@@ -5857,7 +5857,7 @@ workspace: JobJobClusterNewClusterInitScriptsWorkspace
 
 workspace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#workspace Job#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#workspace Job#workspace}
 
 ---
 
@@ -5877,7 +5877,7 @@ job.JobJobClusterNewClusterInitScriptsAbfss(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsAbfss.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsAbfss.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}. |
 
 ---
 
@@ -5889,7 +5889,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -5909,7 +5909,7 @@ job.JobJobClusterNewClusterInitScriptsDbfs(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsDbfs.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsDbfs.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}. |
 
 ---
 
@@ -5921,7 +5921,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -5941,7 +5941,7 @@ job.JobJobClusterNewClusterInitScriptsFile(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsFile.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsFile.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}. |
 
 ---
 
@@ -5953,7 +5953,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -5973,7 +5973,7 @@ job.JobJobClusterNewClusterInitScriptsGcs(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsGcs.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsGcs.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}. |
 
 ---
 
@@ -5985,7 +5985,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -6011,13 +6011,13 @@ job.JobJobClusterNewClusterInitScriptsS3(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsS3.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsS3.property.cannedAcl">canned_acl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#canned_acl Job#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsS3.property.enableEncryption">enable_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_encryption Job#enable_encryption}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsS3.property.encryptionType">encryption_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#encryption_type Job#encryption_type}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsS3.property.endpoint">endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#endpoint Job#endpoint}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsS3.property.kmsKey">kms_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#kms_key Job#kms_key}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsS3.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#region Job#region}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsS3.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsS3.property.cannedAcl">canned_acl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#canned_acl Job#canned_acl}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsS3.property.enableEncryption">enable_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_encryption Job#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsS3.property.encryptionType">encryption_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#encryption_type Job#encryption_type}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsS3.property.endpoint">endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#endpoint Job#endpoint}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsS3.property.kmsKey">kms_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#kms_key Job#kms_key}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsS3.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#region Job#region}. |
 
 ---
 
@@ -6029,7 +6029,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -6041,7 +6041,7 @@ canned_acl: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#canned_acl Job#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#canned_acl Job#canned_acl}.
 
 ---
 
@@ -6053,7 +6053,7 @@ enable_encryption: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_encryption Job#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_encryption Job#enable_encryption}.
 
 ---
 
@@ -6065,7 +6065,7 @@ encryption_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#encryption_type Job#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#encryption_type Job#encryption_type}.
 
 ---
 
@@ -6077,7 +6077,7 @@ endpoint: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#endpoint Job#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#endpoint Job#endpoint}.
 
 ---
 
@@ -6089,7 +6089,7 @@ kms_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#kms_key Job#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#kms_key Job#kms_key}.
 
 ---
 
@@ -6101,7 +6101,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#region Job#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#region Job#region}.
 
 ---
 
@@ -6121,7 +6121,7 @@ job.JobJobClusterNewClusterInitScriptsVolumes(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsVolumes.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsVolumes.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}. |
 
 ---
 
@@ -6133,7 +6133,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -6153,7 +6153,7 @@ job.JobJobClusterNewClusterInitScriptsWorkspace(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsWorkspace.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterInitScriptsWorkspace.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}. |
 
 ---
 
@@ -6165,7 +6165,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -6199,7 +6199,7 @@ clients: JobJobClusterNewClusterWorkloadTypeClients
 
 clients block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#clients Job#clients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#clients Job#clients}
 
 ---
 
@@ -6220,8 +6220,8 @@ job.JobJobClusterNewClusterWorkloadTypeClients(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterWorkloadTypeClients.property.jobs">jobs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#jobs Job#jobs}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterWorkloadTypeClients.property.notebooks">notebooks</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#notebooks Job#notebooks}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterWorkloadTypeClients.property.jobs">jobs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#jobs Job#jobs}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobJobClusterNewClusterWorkloadTypeClients.property.notebooks">notebooks</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#notebooks Job#notebooks}. |
 
 ---
 
@@ -6233,7 +6233,7 @@ jobs: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#jobs Job#jobs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#jobs Job#jobs}.
 
 ---
 
@@ -6245,7 +6245,7 @@ notebooks: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#notebooks Job#notebooks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#notebooks Job#notebooks}.
 
 ---
 
@@ -6271,11 +6271,11 @@ job.JobLibrary(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.job.JobLibrary.property.cran">cran</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobLibraryCran">JobLibraryCran</a></code> | cran block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobLibrary.property.egg">egg</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#egg Job#egg}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobLibrary.property.jar">jar</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#jar Job#jar}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobLibrary.property.egg">egg</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#egg Job#egg}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobLibrary.property.jar">jar</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#jar Job#jar}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobLibrary.property.maven">maven</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobLibraryMaven">JobLibraryMaven</a></code> | maven block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobLibrary.property.pypi">pypi</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobLibraryPypi">JobLibraryPypi</a></code> | pypi block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobLibrary.property.whl">whl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#whl Job#whl}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobLibrary.property.whl">whl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#whl Job#whl}. |
 
 ---
 
@@ -6289,7 +6289,7 @@ cran: JobLibraryCran
 
 cran block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cran Job#cran}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cran Job#cran}
 
 ---
 
@@ -6301,7 +6301,7 @@ egg: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#egg Job#egg}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#egg Job#egg}.
 
 ---
 
@@ -6313,7 +6313,7 @@ jar: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#jar Job#jar}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#jar Job#jar}.
 
 ---
 
@@ -6327,7 +6327,7 @@ maven: JobLibraryMaven
 
 maven block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#maven Job#maven}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#maven Job#maven}
 
 ---
 
@@ -6341,7 +6341,7 @@ pypi: JobLibraryPypi
 
 pypi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#pypi Job#pypi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#pypi Job#pypi}
 
 ---
 
@@ -6353,7 +6353,7 @@ whl: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#whl Job#whl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#whl Job#whl}.
 
 ---
 
@@ -6374,8 +6374,8 @@ job.JobLibraryCran(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobLibraryCran.property.package">package</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#package Job#package}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobLibraryCran.property.repo">repo</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#repo Job#repo}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobLibraryCran.property.package">package</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#package Job#package}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobLibraryCran.property.repo">repo</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#repo Job#repo}. |
 
 ---
 
@@ -6387,7 +6387,7 @@ package: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#package Job#package}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#package Job#package}.
 
 ---
 
@@ -6399,7 +6399,7 @@ repo: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#repo Job#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#repo Job#repo}.
 
 ---
 
@@ -6421,9 +6421,9 @@ job.JobLibraryMaven(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobLibraryMaven.property.coordinates">coordinates</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#coordinates Job#coordinates}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobLibraryMaven.property.exclusions">exclusions</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#exclusions Job#exclusions}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobLibraryMaven.property.repo">repo</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#repo Job#repo}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobLibraryMaven.property.coordinates">coordinates</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#coordinates Job#coordinates}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobLibraryMaven.property.exclusions">exclusions</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#exclusions Job#exclusions}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobLibraryMaven.property.repo">repo</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#repo Job#repo}. |
 
 ---
 
@@ -6435,7 +6435,7 @@ coordinates: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#coordinates Job#coordinates}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#coordinates Job#coordinates}.
 
 ---
 
@@ -6447,7 +6447,7 @@ exclusions: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#exclusions Job#exclusions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#exclusions Job#exclusions}.
 
 ---
 
@@ -6459,7 +6459,7 @@ repo: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#repo Job#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#repo Job#repo}.
 
 ---
 
@@ -6480,8 +6480,8 @@ job.JobLibraryPypi(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobLibraryPypi.property.package">package</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#package Job#package}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobLibraryPypi.property.repo">repo</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#repo Job#repo}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobLibraryPypi.property.package">package</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#package Job#package}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobLibraryPypi.property.repo">repo</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#repo Job#repo}. |
 
 ---
 
@@ -6493,7 +6493,7 @@ package: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#package Job#package}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#package Job#package}.
 
 ---
 
@@ -6505,7 +6505,7 @@ repo: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#repo Job#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#repo Job#repo}.
 
 ---
 
@@ -6554,35 +6554,35 @@ job.JobNewCluster(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.sparkVersion">spark_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_version Job#spark_version}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.applyPolicyDefaultValues">apply_policy_default_values</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#apply_policy_default_values Job#apply_policy_default_values}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.sparkVersion">spark_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_version Job#spark_version}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.applyPolicyDefaultValues">apply_policy_default_values</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#apply_policy_default_values Job#apply_policy_default_values}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.autoscale">autoscale</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterAutoscale">JobNewClusterAutoscale</a></code> | autoscale block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.autoterminationMinutes">autotermination_minutes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#autotermination_minutes Job#autotermination_minutes}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.autoterminationMinutes">autotermination_minutes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#autotermination_minutes Job#autotermination_minutes}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.awsAttributes">aws_attributes</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterAwsAttributes">JobNewClusterAwsAttributes</a></code> | aws_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.azureAttributes">azure_attributes</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterAzureAttributes">JobNewClusterAzureAttributes</a></code> | azure_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.clusterId">cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cluster_id Job#cluster_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.clusterId">cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cluster_id Job#cluster_id}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.clusterLogConf">cluster_log_conf</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterLogConf">JobNewClusterClusterLogConf</a></code> | cluster_log_conf block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.clusterMountInfo">cluster_mount_info</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.job.JobNewClusterClusterMountInfo">JobNewClusterClusterMountInfo</a>]]</code> | cluster_mount_info block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.clusterName">cluster_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cluster_name Job#cluster_name}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.customTags">custom_tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#custom_tags Job#custom_tags}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.dataSecurityMode">data_security_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#data_security_mode Job#data_security_mode}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.clusterName">cluster_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cluster_name Job#cluster_name}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.customTags">custom_tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#custom_tags Job#custom_tags}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.dataSecurityMode">data_security_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#data_security_mode Job#data_security_mode}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.dockerImage">docker_image</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterDockerImage">JobNewClusterDockerImage</a></code> | docker_image block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.driverInstancePoolId">driver_instance_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#driver_instance_pool_id Job#driver_instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.driverNodeTypeId">driver_node_type_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#driver_node_type_id Job#driver_node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.enableElasticDisk">enable_elastic_disk</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_elastic_disk Job#enable_elastic_disk}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.enableLocalDiskEncryption">enable_local_disk_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_local_disk_encryption Job#enable_local_disk_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.driverInstancePoolId">driver_instance_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#driver_instance_pool_id Job#driver_instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.driverNodeTypeId">driver_node_type_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#driver_node_type_id Job#driver_node_type_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.enableElasticDisk">enable_elastic_disk</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_elastic_disk Job#enable_elastic_disk}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.enableLocalDiskEncryption">enable_local_disk_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_local_disk_encryption Job#enable_local_disk_encryption}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.gcpAttributes">gcp_attributes</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterGcpAttributes">JobNewClusterGcpAttributes</a></code> | gcp_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.idempotencyToken">idempotency_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#idempotency_token Job#idempotency_token}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.idempotencyToken">idempotency_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#idempotency_token Job#idempotency_token}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.initScripts">init_scripts</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.job.JobNewClusterInitScripts">JobNewClusterInitScripts</a>]]</code> | init_scripts block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.instancePoolId">instance_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#instance_pool_id Job#instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.nodeTypeId">node_type_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#node_type_id Job#node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.numWorkers">num_workers</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#num_workers Job#num_workers}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.policyId">policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#policy_id Job#policy_id}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.runtimeEngine">runtime_engine</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#runtime_engine Job#runtime_engine}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.singleUserName">single_user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#single_user_name Job#single_user_name}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.sparkConf">spark_conf</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_conf Job#spark_conf}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.sparkEnvVars">spark_env_vars</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_env_vars Job#spark_env_vars}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.sshPublicKeys">ssh_public_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ssh_public_keys Job#ssh_public_keys}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.instancePoolId">instance_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#instance_pool_id Job#instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.nodeTypeId">node_type_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#node_type_id Job#node_type_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.numWorkers">num_workers</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#num_workers Job#num_workers}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.policyId">policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#policy_id Job#policy_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.runtimeEngine">runtime_engine</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#runtime_engine Job#runtime_engine}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.singleUserName">single_user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#single_user_name Job#single_user_name}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.sparkConf">spark_conf</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_conf Job#spark_conf}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.sparkEnvVars">spark_env_vars</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_env_vars Job#spark_env_vars}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.sshPublicKeys">ssh_public_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ssh_public_keys Job#ssh_public_keys}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobNewCluster.property.workloadType">workload_type</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterWorkloadType">JobNewClusterWorkloadType</a></code> | workload_type block. |
 
 ---
@@ -6595,7 +6595,7 @@ spark_version: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_version Job#spark_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_version Job#spark_version}.
 
 ---
 
@@ -6607,7 +6607,7 @@ apply_policy_default_values: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#apply_policy_default_values Job#apply_policy_default_values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#apply_policy_default_values Job#apply_policy_default_values}.
 
 ---
 
@@ -6621,7 +6621,7 @@ autoscale: JobNewClusterAutoscale
 
 autoscale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#autoscale Job#autoscale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#autoscale Job#autoscale}
 
 ---
 
@@ -6633,7 +6633,7 @@ autotermination_minutes: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#autotermination_minutes Job#autotermination_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#autotermination_minutes Job#autotermination_minutes}.
 
 ---
 
@@ -6647,7 +6647,7 @@ aws_attributes: JobNewClusterAwsAttributes
 
 aws_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#aws_attributes Job#aws_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#aws_attributes Job#aws_attributes}
 
 ---
 
@@ -6661,7 +6661,7 @@ azure_attributes: JobNewClusterAzureAttributes
 
 azure_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#azure_attributes Job#azure_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#azure_attributes Job#azure_attributes}
 
 ---
 
@@ -6673,7 +6673,7 @@ cluster_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cluster_id Job#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cluster_id Job#cluster_id}.
 
 ---
 
@@ -6687,7 +6687,7 @@ cluster_log_conf: JobNewClusterClusterLogConf
 
 cluster_log_conf block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cluster_log_conf Job#cluster_log_conf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cluster_log_conf Job#cluster_log_conf}
 
 ---
 
@@ -6701,7 +6701,7 @@ cluster_mount_info: typing.Union[IResolvable, typing.List[JobNewClusterClusterMo
 
 cluster_mount_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cluster_mount_info Job#cluster_mount_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cluster_mount_info Job#cluster_mount_info}
 
 ---
 
@@ -6713,7 +6713,7 @@ cluster_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cluster_name Job#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cluster_name Job#cluster_name}.
 
 ---
 
@@ -6725,7 +6725,7 @@ custom_tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#custom_tags Job#custom_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#custom_tags Job#custom_tags}.
 
 ---
 
@@ -6737,7 +6737,7 @@ data_security_mode: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#data_security_mode Job#data_security_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#data_security_mode Job#data_security_mode}.
 
 ---
 
@@ -6751,7 +6751,7 @@ docker_image: JobNewClusterDockerImage
 
 docker_image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#docker_image Job#docker_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#docker_image Job#docker_image}
 
 ---
 
@@ -6763,7 +6763,7 @@ driver_instance_pool_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#driver_instance_pool_id Job#driver_instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#driver_instance_pool_id Job#driver_instance_pool_id}.
 
 ---
 
@@ -6775,7 +6775,7 @@ driver_node_type_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#driver_node_type_id Job#driver_node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#driver_node_type_id Job#driver_node_type_id}.
 
 ---
 
@@ -6787,7 +6787,7 @@ enable_elastic_disk: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_elastic_disk Job#enable_elastic_disk}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_elastic_disk Job#enable_elastic_disk}.
 
 ---
 
@@ -6799,7 +6799,7 @@ enable_local_disk_encryption: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_local_disk_encryption Job#enable_local_disk_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_local_disk_encryption Job#enable_local_disk_encryption}.
 
 ---
 
@@ -6813,7 +6813,7 @@ gcp_attributes: JobNewClusterGcpAttributes
 
 gcp_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#gcp_attributes Job#gcp_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#gcp_attributes Job#gcp_attributes}
 
 ---
 
@@ -6825,7 +6825,7 @@ idempotency_token: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#idempotency_token Job#idempotency_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#idempotency_token Job#idempotency_token}.
 
 ---
 
@@ -6839,7 +6839,7 @@ init_scripts: typing.Union[IResolvable, typing.List[JobNewClusterInitScripts]]
 
 init_scripts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#init_scripts Job#init_scripts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#init_scripts Job#init_scripts}
 
 ---
 
@@ -6851,7 +6851,7 @@ instance_pool_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#instance_pool_id Job#instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#instance_pool_id Job#instance_pool_id}.
 
 ---
 
@@ -6863,7 +6863,7 @@ node_type_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#node_type_id Job#node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#node_type_id Job#node_type_id}.
 
 ---
 
@@ -6875,7 +6875,7 @@ num_workers: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#num_workers Job#num_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#num_workers Job#num_workers}.
 
 ---
 
@@ -6887,7 +6887,7 @@ policy_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#policy_id Job#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#policy_id Job#policy_id}.
 
 ---
 
@@ -6899,7 +6899,7 @@ runtime_engine: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#runtime_engine Job#runtime_engine}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#runtime_engine Job#runtime_engine}.
 
 ---
 
@@ -6911,7 +6911,7 @@ single_user_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#single_user_name Job#single_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#single_user_name Job#single_user_name}.
 
 ---
 
@@ -6923,7 +6923,7 @@ spark_conf: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_conf Job#spark_conf}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_conf Job#spark_conf}.
 
 ---
 
@@ -6935,7 +6935,7 @@ spark_env_vars: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_env_vars Job#spark_env_vars}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_env_vars Job#spark_env_vars}.
 
 ---
 
@@ -6947,7 +6947,7 @@ ssh_public_keys: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ssh_public_keys Job#ssh_public_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ssh_public_keys Job#ssh_public_keys}.
 
 ---
 
@@ -6961,7 +6961,7 @@ workload_type: JobNewClusterWorkloadType
 
 workload_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#workload_type Job#workload_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#workload_type Job#workload_type}
 
 ---
 
@@ -6982,8 +6982,8 @@ job.JobNewClusterAutoscale(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterAutoscale.property.maxWorkers">max_workers</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#max_workers Job#max_workers}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterAutoscale.property.minWorkers">min_workers</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#min_workers Job#min_workers}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterAutoscale.property.maxWorkers">max_workers</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#max_workers Job#max_workers}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterAutoscale.property.minWorkers">min_workers</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#min_workers Job#min_workers}. |
 
 ---
 
@@ -6995,7 +6995,7 @@ max_workers: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#max_workers Job#max_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#max_workers Job#max_workers}.
 
 ---
 
@@ -7007,7 +7007,7 @@ min_workers: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#min_workers Job#min_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#min_workers Job#min_workers}.
 
 ---
 
@@ -7034,14 +7034,14 @@ job.JobNewClusterAwsAttributes(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterAwsAttributes.property.availability">availability</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#availability Job#availability}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterAwsAttributes.property.ebsVolumeCount">ebs_volume_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ebs_volume_count Job#ebs_volume_count}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterAwsAttributes.property.ebsVolumeSize">ebs_volume_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ebs_volume_size Job#ebs_volume_size}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterAwsAttributes.property.ebsVolumeType">ebs_volume_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ebs_volume_type Job#ebs_volume_type}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterAwsAttributes.property.firstOnDemand">first_on_demand</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#first_on_demand Job#first_on_demand}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterAwsAttributes.property.instanceProfileArn">instance_profile_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#instance_profile_arn Job#instance_profile_arn}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterAwsAttributes.property.spotBidPricePercent">spot_bid_price_percent</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spot_bid_price_percent Job#spot_bid_price_percent}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterAwsAttributes.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#zone_id Job#zone_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterAwsAttributes.property.availability">availability</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#availability Job#availability}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterAwsAttributes.property.ebsVolumeCount">ebs_volume_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ebs_volume_count Job#ebs_volume_count}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterAwsAttributes.property.ebsVolumeSize">ebs_volume_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ebs_volume_size Job#ebs_volume_size}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterAwsAttributes.property.ebsVolumeType">ebs_volume_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ebs_volume_type Job#ebs_volume_type}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterAwsAttributes.property.firstOnDemand">first_on_demand</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#first_on_demand Job#first_on_demand}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterAwsAttributes.property.instanceProfileArn">instance_profile_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#instance_profile_arn Job#instance_profile_arn}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterAwsAttributes.property.spotBidPricePercent">spot_bid_price_percent</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spot_bid_price_percent Job#spot_bid_price_percent}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterAwsAttributes.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#zone_id Job#zone_id}. |
 
 ---
 
@@ -7053,7 +7053,7 @@ availability: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#availability Job#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#availability Job#availability}.
 
 ---
 
@@ -7065,7 +7065,7 @@ ebs_volume_count: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ebs_volume_count Job#ebs_volume_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ebs_volume_count Job#ebs_volume_count}.
 
 ---
 
@@ -7077,7 +7077,7 @@ ebs_volume_size: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ebs_volume_size Job#ebs_volume_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ebs_volume_size Job#ebs_volume_size}.
 
 ---
 
@@ -7089,7 +7089,7 @@ ebs_volume_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ebs_volume_type Job#ebs_volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ebs_volume_type Job#ebs_volume_type}.
 
 ---
 
@@ -7101,7 +7101,7 @@ first_on_demand: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#first_on_demand Job#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#first_on_demand Job#first_on_demand}.
 
 ---
 
@@ -7113,7 +7113,7 @@ instance_profile_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#instance_profile_arn Job#instance_profile_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#instance_profile_arn Job#instance_profile_arn}.
 
 ---
 
@@ -7125,7 +7125,7 @@ spot_bid_price_percent: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spot_bid_price_percent Job#spot_bid_price_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spot_bid_price_percent Job#spot_bid_price_percent}.
 
 ---
 
@@ -7137,7 +7137,7 @@ zone_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#zone_id Job#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#zone_id Job#zone_id}.
 
 ---
 
@@ -7159,9 +7159,9 @@ job.JobNewClusterAzureAttributes(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterAzureAttributes.property.availability">availability</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#availability Job#availability}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterAzureAttributes.property.firstOnDemand">first_on_demand</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#first_on_demand Job#first_on_demand}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterAzureAttributes.property.spotBidMaxPrice">spot_bid_max_price</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spot_bid_max_price Job#spot_bid_max_price}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterAzureAttributes.property.availability">availability</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#availability Job#availability}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterAzureAttributes.property.firstOnDemand">first_on_demand</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#first_on_demand Job#first_on_demand}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterAzureAttributes.property.spotBidMaxPrice">spot_bid_max_price</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spot_bid_max_price Job#spot_bid_max_price}. |
 
 ---
 
@@ -7173,7 +7173,7 @@ availability: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#availability Job#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#availability Job#availability}.
 
 ---
 
@@ -7185,7 +7185,7 @@ first_on_demand: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#first_on_demand Job#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#first_on_demand Job#first_on_demand}.
 
 ---
 
@@ -7197,7 +7197,7 @@ spot_bid_max_price: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spot_bid_max_price Job#spot_bid_max_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spot_bid_max_price Job#spot_bid_max_price}.
 
 ---
 
@@ -7233,7 +7233,7 @@ dbfs: JobNewClusterClusterLogConfDbfs
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#dbfs Job#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#dbfs Job#dbfs}
 
 ---
 
@@ -7247,7 +7247,7 @@ s3: JobNewClusterClusterLogConfS3
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#s3 Job#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#s3 Job#s3}
 
 ---
 
@@ -7267,7 +7267,7 @@ job.JobNewClusterClusterLogConfDbfs(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterLogConfDbfs.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterLogConfDbfs.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}. |
 
 ---
 
@@ -7279,7 +7279,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -7305,13 +7305,13 @@ job.JobNewClusterClusterLogConfS3(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterLogConfS3.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterLogConfS3.property.cannedAcl">canned_acl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#canned_acl Job#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterLogConfS3.property.enableEncryption">enable_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_encryption Job#enable_encryption}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterLogConfS3.property.encryptionType">encryption_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#encryption_type Job#encryption_type}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterLogConfS3.property.endpoint">endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#endpoint Job#endpoint}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterLogConfS3.property.kmsKey">kms_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#kms_key Job#kms_key}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterLogConfS3.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#region Job#region}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterLogConfS3.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterLogConfS3.property.cannedAcl">canned_acl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#canned_acl Job#canned_acl}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterLogConfS3.property.enableEncryption">enable_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_encryption Job#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterLogConfS3.property.encryptionType">encryption_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#encryption_type Job#encryption_type}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterLogConfS3.property.endpoint">endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#endpoint Job#endpoint}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterLogConfS3.property.kmsKey">kms_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#kms_key Job#kms_key}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterLogConfS3.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#region Job#region}. |
 
 ---
 
@@ -7323,7 +7323,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -7335,7 +7335,7 @@ canned_acl: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#canned_acl Job#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#canned_acl Job#canned_acl}.
 
 ---
 
@@ -7347,7 +7347,7 @@ enable_encryption: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_encryption Job#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_encryption Job#enable_encryption}.
 
 ---
 
@@ -7359,7 +7359,7 @@ encryption_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#encryption_type Job#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#encryption_type Job#encryption_type}.
 
 ---
 
@@ -7371,7 +7371,7 @@ endpoint: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#endpoint Job#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#endpoint Job#endpoint}.
 
 ---
 
@@ -7383,7 +7383,7 @@ kms_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#kms_key Job#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#kms_key Job#kms_key}.
 
 ---
 
@@ -7395,7 +7395,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#region Job#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#region Job#region}.
 
 ---
 
@@ -7417,9 +7417,9 @@ job.JobNewClusterClusterMountInfo(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterMountInfo.property.localMountDirPath">local_mount_dir_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#local_mount_dir_path Job#local_mount_dir_path}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterMountInfo.property.localMountDirPath">local_mount_dir_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#local_mount_dir_path Job#local_mount_dir_path}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterMountInfo.property.networkFilesystemInfo">network_filesystem_info</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterMountInfoNetworkFilesystemInfo">JobNewClusterClusterMountInfoNetworkFilesystemInfo</a></code> | network_filesystem_info block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterMountInfo.property.remoteMountDirPath">remote_mount_dir_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#remote_mount_dir_path Job#remote_mount_dir_path}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterMountInfo.property.remoteMountDirPath">remote_mount_dir_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#remote_mount_dir_path Job#remote_mount_dir_path}. |
 
 ---
 
@@ -7431,7 +7431,7 @@ local_mount_dir_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#local_mount_dir_path Job#local_mount_dir_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#local_mount_dir_path Job#local_mount_dir_path}.
 
 ---
 
@@ -7445,7 +7445,7 @@ network_filesystem_info: JobNewClusterClusterMountInfoNetworkFilesystemInfo
 
 network_filesystem_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#network_filesystem_info Job#network_filesystem_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#network_filesystem_info Job#network_filesystem_info}
 
 ---
 
@@ -7457,7 +7457,7 @@ remote_mount_dir_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#remote_mount_dir_path Job#remote_mount_dir_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#remote_mount_dir_path Job#remote_mount_dir_path}.
 
 ---
 
@@ -7478,8 +7478,8 @@ job.JobNewClusterClusterMountInfoNetworkFilesystemInfo(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterMountInfoNetworkFilesystemInfo.property.serverAddress">server_address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#server_address Job#server_address}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterMountInfoNetworkFilesystemInfo.property.mountOptions">mount_options</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#mount_options Job#mount_options}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterMountInfoNetworkFilesystemInfo.property.serverAddress">server_address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#server_address Job#server_address}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterClusterMountInfoNetworkFilesystemInfo.property.mountOptions">mount_options</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#mount_options Job#mount_options}. |
 
 ---
 
@@ -7491,7 +7491,7 @@ server_address: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#server_address Job#server_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#server_address Job#server_address}.
 
 ---
 
@@ -7503,7 +7503,7 @@ mount_options: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#mount_options Job#mount_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#mount_options Job#mount_options}.
 
 ---
 
@@ -7524,7 +7524,7 @@ job.JobNewClusterDockerImage(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterDockerImage.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#url Job#url}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterDockerImage.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#url Job#url}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterDockerImage.property.basicAuth">basic_auth</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobNewClusterDockerImageBasicAuth">JobNewClusterDockerImageBasicAuth</a></code> | basic_auth block. |
 
 ---
@@ -7537,7 +7537,7 @@ url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#url Job#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#url Job#url}.
 
 ---
 
@@ -7551,7 +7551,7 @@ basic_auth: JobNewClusterDockerImageBasicAuth
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#basic_auth Job#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#basic_auth Job#basic_auth}
 
 ---
 
@@ -7572,8 +7572,8 @@ job.JobNewClusterDockerImageBasicAuth(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterDockerImageBasicAuth.property.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#password Job#password}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterDockerImageBasicAuth.property.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#username Job#username}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterDockerImageBasicAuth.property.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#password Job#password}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterDockerImageBasicAuth.property.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#username Job#username}. |
 
 ---
 
@@ -7585,7 +7585,7 @@ password: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#password Job#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#password Job#password}.
 
 ---
 
@@ -7597,7 +7597,7 @@ username: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#username Job#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#username Job#username}.
 
 ---
 
@@ -7622,12 +7622,12 @@ job.JobNewClusterGcpAttributes(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterGcpAttributes.property.availability">availability</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#availability Job#availability}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterGcpAttributes.property.bootDiskSize">boot_disk_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#boot_disk_size Job#boot_disk_size}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterGcpAttributes.property.googleServiceAccount">google_service_account</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#google_service_account Job#google_service_account}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterGcpAttributes.property.localSsdCount">local_ssd_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#local_ssd_count Job#local_ssd_count}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterGcpAttributes.property.usePreemptibleExecutors">use_preemptible_executors</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#use_preemptible_executors Job#use_preemptible_executors}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterGcpAttributes.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#zone_id Job#zone_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterGcpAttributes.property.availability">availability</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#availability Job#availability}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterGcpAttributes.property.bootDiskSize">boot_disk_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#boot_disk_size Job#boot_disk_size}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterGcpAttributes.property.googleServiceAccount">google_service_account</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#google_service_account Job#google_service_account}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterGcpAttributes.property.localSsdCount">local_ssd_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#local_ssd_count Job#local_ssd_count}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterGcpAttributes.property.usePreemptibleExecutors">use_preemptible_executors</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#use_preemptible_executors Job#use_preemptible_executors}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterGcpAttributes.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#zone_id Job#zone_id}. |
 
 ---
 
@@ -7639,7 +7639,7 @@ availability: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#availability Job#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#availability Job#availability}.
 
 ---
 
@@ -7651,7 +7651,7 @@ boot_disk_size: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#boot_disk_size Job#boot_disk_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#boot_disk_size Job#boot_disk_size}.
 
 ---
 
@@ -7663,7 +7663,7 @@ google_service_account: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#google_service_account Job#google_service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#google_service_account Job#google_service_account}.
 
 ---
 
@@ -7675,7 +7675,7 @@ local_ssd_count: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#local_ssd_count Job#local_ssd_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#local_ssd_count Job#local_ssd_count}.
 
 ---
 
@@ -7687,7 +7687,7 @@ use_preemptible_executors: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#use_preemptible_executors Job#use_preemptible_executors}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#use_preemptible_executors Job#use_preemptible_executors}.
 
 ---
 
@@ -7699,7 +7699,7 @@ zone_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#zone_id Job#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#zone_id Job#zone_id}.
 
 ---
 
@@ -7745,7 +7745,7 @@ abfss: JobNewClusterInitScriptsAbfss
 
 abfss block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#abfss Job#abfss}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#abfss Job#abfss}
 
 ---
 
@@ -7759,7 +7759,7 @@ dbfs: JobNewClusterInitScriptsDbfs
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#dbfs Job#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#dbfs Job#dbfs}
 
 ---
 
@@ -7773,7 +7773,7 @@ file: JobNewClusterInitScriptsFile
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#file Job#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#file Job#file}
 
 ---
 
@@ -7787,7 +7787,7 @@ gcs: JobNewClusterInitScriptsGcs
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#gcs Job#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#gcs Job#gcs}
 
 ---
 
@@ -7801,7 +7801,7 @@ s3: JobNewClusterInitScriptsS3
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#s3 Job#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#s3 Job#s3}
 
 ---
 
@@ -7815,7 +7815,7 @@ volumes: JobNewClusterInitScriptsVolumes
 
 volumes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#volumes Job#volumes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#volumes Job#volumes}
 
 ---
 
@@ -7829,7 +7829,7 @@ workspace: JobNewClusterInitScriptsWorkspace
 
 workspace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#workspace Job#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#workspace Job#workspace}
 
 ---
 
@@ -7849,7 +7849,7 @@ job.JobNewClusterInitScriptsAbfss(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsAbfss.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsAbfss.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}. |
 
 ---
 
@@ -7861,7 +7861,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -7881,7 +7881,7 @@ job.JobNewClusterInitScriptsDbfs(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsDbfs.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsDbfs.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}. |
 
 ---
 
@@ -7893,7 +7893,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -7913,7 +7913,7 @@ job.JobNewClusterInitScriptsFile(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsFile.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsFile.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}. |
 
 ---
 
@@ -7925,7 +7925,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -7945,7 +7945,7 @@ job.JobNewClusterInitScriptsGcs(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsGcs.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsGcs.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}. |
 
 ---
 
@@ -7957,7 +7957,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -7983,13 +7983,13 @@ job.JobNewClusterInitScriptsS3(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsS3.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsS3.property.cannedAcl">canned_acl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#canned_acl Job#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsS3.property.enableEncryption">enable_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_encryption Job#enable_encryption}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsS3.property.encryptionType">encryption_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#encryption_type Job#encryption_type}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsS3.property.endpoint">endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#endpoint Job#endpoint}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsS3.property.kmsKey">kms_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#kms_key Job#kms_key}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsS3.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#region Job#region}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsS3.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsS3.property.cannedAcl">canned_acl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#canned_acl Job#canned_acl}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsS3.property.enableEncryption">enable_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_encryption Job#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsS3.property.encryptionType">encryption_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#encryption_type Job#encryption_type}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsS3.property.endpoint">endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#endpoint Job#endpoint}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsS3.property.kmsKey">kms_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#kms_key Job#kms_key}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsS3.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#region Job#region}. |
 
 ---
 
@@ -8001,7 +8001,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -8013,7 +8013,7 @@ canned_acl: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#canned_acl Job#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#canned_acl Job#canned_acl}.
 
 ---
 
@@ -8025,7 +8025,7 @@ enable_encryption: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_encryption Job#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_encryption Job#enable_encryption}.
 
 ---
 
@@ -8037,7 +8037,7 @@ encryption_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#encryption_type Job#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#encryption_type Job#encryption_type}.
 
 ---
 
@@ -8049,7 +8049,7 @@ endpoint: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#endpoint Job#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#endpoint Job#endpoint}.
 
 ---
 
@@ -8061,7 +8061,7 @@ kms_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#kms_key Job#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#kms_key Job#kms_key}.
 
 ---
 
@@ -8073,7 +8073,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#region Job#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#region Job#region}.
 
 ---
 
@@ -8093,7 +8093,7 @@ job.JobNewClusterInitScriptsVolumes(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsVolumes.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsVolumes.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}. |
 
 ---
 
@@ -8105,7 +8105,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -8125,7 +8125,7 @@ job.JobNewClusterInitScriptsWorkspace(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsWorkspace.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterInitScriptsWorkspace.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}. |
 
 ---
 
@@ -8137,7 +8137,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -8171,7 +8171,7 @@ clients: JobNewClusterWorkloadTypeClients
 
 clients block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#clients Job#clients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#clients Job#clients}
 
 ---
 
@@ -8192,8 +8192,8 @@ job.JobNewClusterWorkloadTypeClients(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterWorkloadTypeClients.property.jobs">jobs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#jobs Job#jobs}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterWorkloadTypeClients.property.notebooks">notebooks</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#notebooks Job#notebooks}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterWorkloadTypeClients.property.jobs">jobs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#jobs Job#jobs}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNewClusterWorkloadTypeClients.property.notebooks">notebooks</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#notebooks Job#notebooks}. |
 
 ---
 
@@ -8205,7 +8205,7 @@ jobs: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#jobs Job#jobs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#jobs Job#jobs}.
 
 ---
 
@@ -8217,7 +8217,7 @@ notebooks: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#notebooks Job#notebooks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#notebooks Job#notebooks}.
 
 ---
 
@@ -8239,9 +8239,9 @@ job.JobNotebookTask(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobNotebookTask.property.notebookPath">notebook_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#notebook_path Job#notebook_path}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNotebookTask.property.baseParameters">base_parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#base_parameters Job#base_parameters}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNotebookTask.property.source">source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#source Job#source}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNotebookTask.property.notebookPath">notebook_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#notebook_path Job#notebook_path}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNotebookTask.property.baseParameters">base_parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#base_parameters Job#base_parameters}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNotebookTask.property.source">source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#source Job#source}. |
 
 ---
 
@@ -8253,7 +8253,7 @@ notebook_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#notebook_path Job#notebook_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#notebook_path Job#notebook_path}.
 
 ---
 
@@ -8265,7 +8265,7 @@ base_parameters: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#base_parameters Job#base_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#base_parameters Job#base_parameters}.
 
 ---
 
@@ -8277,7 +8277,7 @@ source: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#source Job#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#source Job#source}.
 
 ---
 
@@ -8298,8 +8298,8 @@ job.JobNotificationSettings(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobNotificationSettings.property.noAlertForCanceledRuns">no_alert_for_canceled_runs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#no_alert_for_canceled_runs Job#no_alert_for_canceled_runs}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobNotificationSettings.property.noAlertForSkippedRuns">no_alert_for_skipped_runs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNotificationSettings.property.noAlertForCanceledRuns">no_alert_for_canceled_runs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#no_alert_for_canceled_runs Job#no_alert_for_canceled_runs}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobNotificationSettings.property.noAlertForSkippedRuns">no_alert_for_skipped_runs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}. |
 
 ---
 
@@ -8311,7 +8311,7 @@ no_alert_for_canceled_runs: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#no_alert_for_canceled_runs Job#no_alert_for_canceled_runs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#no_alert_for_canceled_runs Job#no_alert_for_canceled_runs}.
 
 ---
 
@@ -8323,7 +8323,7 @@ no_alert_for_skipped_runs: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}.
 
 ---
 
@@ -8344,8 +8344,8 @@ job.JobParameter(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobParameter.property.default">default</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#default Job#default}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobParameter.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#name Job#name}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobParameter.property.default">default</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#default Job#default}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobParameter.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#name Job#name}. |
 
 ---
 
@@ -8357,7 +8357,7 @@ default: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#default Job#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#default Job#default}.
 
 ---
 
@@ -8369,7 +8369,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#name Job#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#name Job#name}.
 
 ---
 
@@ -8390,8 +8390,8 @@ job.JobPipelineTask(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobPipelineTask.property.pipelineId">pipeline_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#pipeline_id Job#pipeline_id}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobPipelineTask.property.fullRefresh">full_refresh</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#full_refresh Job#full_refresh}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobPipelineTask.property.pipelineId">pipeline_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#pipeline_id Job#pipeline_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobPipelineTask.property.fullRefresh">full_refresh</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#full_refresh Job#full_refresh}. |
 
 ---
 
@@ -8403,7 +8403,7 @@ pipeline_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#pipeline_id Job#pipeline_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#pipeline_id Job#pipeline_id}.
 
 ---
 
@@ -8415,7 +8415,7 @@ full_refresh: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#full_refresh Job#full_refresh}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#full_refresh Job#full_refresh}.
 
 ---
 
@@ -8438,10 +8438,10 @@ job.JobPythonWheelTask(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobPythonWheelTask.property.entryPoint">entry_point</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#entry_point Job#entry_point}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobPythonWheelTask.property.namedParameters">named_parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#named_parameters Job#named_parameters}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobPythonWheelTask.property.packageName">package_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#package_name Job#package_name}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobPythonWheelTask.property.parameters">parameters</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#parameters Job#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobPythonWheelTask.property.entryPoint">entry_point</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#entry_point Job#entry_point}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobPythonWheelTask.property.namedParameters">named_parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#named_parameters Job#named_parameters}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobPythonWheelTask.property.packageName">package_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#package_name Job#package_name}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobPythonWheelTask.property.parameters">parameters</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#parameters Job#parameters}. |
 
 ---
 
@@ -8453,7 +8453,7 @@ entry_point: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#entry_point Job#entry_point}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#entry_point Job#entry_point}.
 
 ---
 
@@ -8465,7 +8465,7 @@ named_parameters: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#named_parameters Job#named_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#named_parameters Job#named_parameters}.
 
 ---
 
@@ -8477,7 +8477,7 @@ package_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#package_name Job#package_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#package_name Job#package_name}.
 
 ---
 
@@ -8489,7 +8489,7 @@ parameters: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#parameters Job#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#parameters Job#parameters}.
 
 ---
 
@@ -8509,7 +8509,7 @@ job.JobQueue(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobQueue.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enabled Job#enabled}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobQueue.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enabled Job#enabled}. |
 
 ---
 
@@ -8521,7 +8521,7 @@ enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enabled Job#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enabled Job#enabled}.
 
 ---
 
@@ -8542,8 +8542,8 @@ job.JobRunAs(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobRunAs.property.servicePrincipalName">service_principal_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#service_principal_name Job#service_principal_name}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobRunAs.property.userName">user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#user_name Job#user_name}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobRunAs.property.servicePrincipalName">service_principal_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#service_principal_name Job#service_principal_name}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobRunAs.property.userName">user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#user_name Job#user_name}. |
 
 ---
 
@@ -8555,7 +8555,7 @@ service_principal_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#service_principal_name Job#service_principal_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#service_principal_name Job#service_principal_name}.
 
 ---
 
@@ -8567,7 +8567,7 @@ user_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#user_name Job#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#user_name Job#user_name}.
 
 ---
 
@@ -8588,8 +8588,8 @@ job.JobRunJobTask(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobRunJobTask.property.jobId">job_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#job_id Job#job_id}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobRunJobTask.property.jobParameters">job_parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#job_parameters Job#job_parameters}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobRunJobTask.property.jobId">job_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#job_id Job#job_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobRunJobTask.property.jobParameters">job_parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#job_parameters Job#job_parameters}. |
 
 ---
 
@@ -8601,7 +8601,7 @@ job_id: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#job_id Job#job_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#job_id Job#job_id}.
 
 ---
 
@@ -8613,7 +8613,7 @@ job_parameters: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#job_parameters Job#job_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#job_parameters Job#job_parameters}.
 
 ---
 
@@ -8635,9 +8635,9 @@ job.JobSchedule(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobSchedule.property.quartzCronExpression">quartz_cron_expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#quartz_cron_expression Job#quartz_cron_expression}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobSchedule.property.timezoneId">timezone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#timezone_id Job#timezone_id}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobSchedule.property.pauseStatus">pause_status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#pause_status Job#pause_status}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobSchedule.property.quartzCronExpression">quartz_cron_expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#quartz_cron_expression Job#quartz_cron_expression}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobSchedule.property.timezoneId">timezone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#timezone_id Job#timezone_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobSchedule.property.pauseStatus">pause_status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#pause_status Job#pause_status}. |
 
 ---
 
@@ -8649,7 +8649,7 @@ quartz_cron_expression: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#quartz_cron_expression Job#quartz_cron_expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#quartz_cron_expression Job#quartz_cron_expression}.
 
 ---
 
@@ -8661,7 +8661,7 @@ timezone_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#timezone_id Job#timezone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#timezone_id Job#timezone_id}.
 
 ---
 
@@ -8673,7 +8673,7 @@ pause_status: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#pause_status Job#pause_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#pause_status Job#pause_status}.
 
 ---
 
@@ -8695,9 +8695,9 @@ job.JobSparkJarTask(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobSparkJarTask.property.jarUri">jar_uri</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#jar_uri Job#jar_uri}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobSparkJarTask.property.mainClassName">main_class_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#main_class_name Job#main_class_name}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobSparkJarTask.property.parameters">parameters</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#parameters Job#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobSparkJarTask.property.jarUri">jar_uri</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#jar_uri Job#jar_uri}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobSparkJarTask.property.mainClassName">main_class_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#main_class_name Job#main_class_name}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobSparkJarTask.property.parameters">parameters</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#parameters Job#parameters}. |
 
 ---
 
@@ -8709,7 +8709,7 @@ jar_uri: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#jar_uri Job#jar_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#jar_uri Job#jar_uri}.
 
 ---
 
@@ -8721,7 +8721,7 @@ main_class_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#main_class_name Job#main_class_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#main_class_name Job#main_class_name}.
 
 ---
 
@@ -8733,7 +8733,7 @@ parameters: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#parameters Job#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#parameters Job#parameters}.
 
 ---
 
@@ -8755,9 +8755,9 @@ job.JobSparkPythonTask(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTask.property.pythonFile">python_file</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#python_file Job#python_file}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTask.property.parameters">parameters</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#parameters Job#parameters}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTask.property.source">source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#source Job#source}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTask.property.pythonFile">python_file</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#python_file Job#python_file}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTask.property.parameters">parameters</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#parameters Job#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobSparkPythonTask.property.source">source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#source Job#source}. |
 
 ---
 
@@ -8769,7 +8769,7 @@ python_file: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#python_file Job#python_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#python_file Job#python_file}.
 
 ---
 
@@ -8781,7 +8781,7 @@ parameters: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#parameters Job#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#parameters Job#parameters}.
 
 ---
 
@@ -8793,7 +8793,7 @@ source: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#source Job#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#source Job#source}.
 
 ---
 
@@ -8813,7 +8813,7 @@ job.JobSparkSubmitTask(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobSparkSubmitTask.property.parameters">parameters</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#parameters Job#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobSparkSubmitTask.property.parameters">parameters</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#parameters Job#parameters}. |
 
 ---
 
@@ -8825,7 +8825,7 @@ parameters: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#parameters Job#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#parameters Job#parameters}.
 
 ---
 
@@ -8870,32 +8870,32 @@ job.JobTask(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTask.property.computeKey">compute_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#compute_key Job#compute_key}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTask.property.computeKey">compute_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#compute_key Job#compute_key}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTask.property.conditionTask">condition_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskConditionTask">JobTaskConditionTask</a></code> | condition_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTask.property.dbtTask">dbt_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskDbtTask">JobTaskDbtTask</a></code> | dbt_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTask.property.dependsOn">depends_on</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.job.JobTaskDependsOn">JobTaskDependsOn</a>]]</code> | depends_on block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTask.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#description Job#description}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTask.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#description Job#description}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTask.property.emailNotifications">email_notifications</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskEmailNotifications">JobTaskEmailNotifications</a></code> | email_notifications block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTask.property.existingClusterId">existing_cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#existing_cluster_id Job#existing_cluster_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTask.property.existingClusterId">existing_cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#existing_cluster_id Job#existing_cluster_id}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTask.property.health">health</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskHealth">JobTaskHealth</a></code> | health block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTask.property.jobClusterKey">job_cluster_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#job_cluster_key Job#job_cluster_key}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTask.property.jobClusterKey">job_cluster_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#job_cluster_key Job#job_cluster_key}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTask.property.library">library</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.job.JobTaskLibrary">JobTaskLibrary</a>]]</code> | library block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTask.property.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#max_retries Job#max_retries}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTask.property.minRetryIntervalMillis">min_retry_interval_millis</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#min_retry_interval_millis Job#min_retry_interval_millis}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTask.property.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#max_retries Job#max_retries}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTask.property.minRetryIntervalMillis">min_retry_interval_millis</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#min_retry_interval_millis Job#min_retry_interval_millis}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTask.property.newCluster">new_cluster</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster">JobTaskNewCluster</a></code> | new_cluster block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTask.property.notebookTask">notebook_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskNotebookTask">JobTaskNotebookTask</a></code> | notebook_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTask.property.notificationSettings">notification_settings</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskNotificationSettings">JobTaskNotificationSettings</a></code> | notification_settings block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTask.property.pipelineTask">pipeline_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskPipelineTask">JobTaskPipelineTask</a></code> | pipeline_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTask.property.pythonWheelTask">python_wheel_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskPythonWheelTask">JobTaskPythonWheelTask</a></code> | python_wheel_task block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTask.property.retryOnTimeout">retry_on_timeout</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#retry_on_timeout Job#retry_on_timeout}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTask.property.runIf">run_if</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#run_if Job#run_if}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTask.property.retryOnTimeout">retry_on_timeout</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#retry_on_timeout Job#retry_on_timeout}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTask.property.runIf">run_if</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#run_if Job#run_if}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTask.property.runJobTask">run_job_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskRunJobTask">JobTaskRunJobTask</a></code> | run_job_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTask.property.sparkJarTask">spark_jar_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkJarTask">JobTaskSparkJarTask</a></code> | spark_jar_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTask.property.sparkPythonTask">spark_python_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTask">JobTaskSparkPythonTask</a></code> | spark_python_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTask.property.sparkSubmitTask">spark_submit_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkSubmitTask">JobTaskSparkSubmitTask</a></code> | spark_submit_task block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTask.property.sqlTask">sql_task</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTask">JobTaskSqlTask</a></code> | sql_task block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTask.property.taskKey">task_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#task_key Job#task_key}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTask.property.timeoutSeconds">timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#timeout_seconds Job#timeout_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTask.property.taskKey">task_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#task_key Job#task_key}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTask.property.timeoutSeconds">timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#timeout_seconds Job#timeout_seconds}. |
 
 ---
 
@@ -8907,7 +8907,7 @@ compute_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#compute_key Job#compute_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#compute_key Job#compute_key}.
 
 ---
 
@@ -8921,7 +8921,7 @@ condition_task: JobTaskConditionTask
 
 condition_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#condition_task Job#condition_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#condition_task Job#condition_task}
 
 ---
 
@@ -8935,7 +8935,7 @@ dbt_task: JobTaskDbtTask
 
 dbt_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#dbt_task Job#dbt_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#dbt_task Job#dbt_task}
 
 ---
 
@@ -8949,7 +8949,7 @@ depends_on: typing.Union[IResolvable, typing.List[JobTaskDependsOn]]
 
 depends_on block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#depends_on Job#depends_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#depends_on Job#depends_on}
 
 ---
 
@@ -8961,7 +8961,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#description Job#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#description Job#description}.
 
 ---
 
@@ -8975,7 +8975,7 @@ email_notifications: JobTaskEmailNotifications
 
 email_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#email_notifications Job#email_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#email_notifications Job#email_notifications}
 
 ---
 
@@ -8987,7 +8987,7 @@ existing_cluster_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#existing_cluster_id Job#existing_cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#existing_cluster_id Job#existing_cluster_id}.
 
 ---
 
@@ -9001,7 +9001,7 @@ health: JobTaskHealth
 
 health block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#health Job#health}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#health Job#health}
 
 ---
 
@@ -9013,7 +9013,7 @@ job_cluster_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#job_cluster_key Job#job_cluster_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#job_cluster_key Job#job_cluster_key}.
 
 ---
 
@@ -9027,7 +9027,7 @@ library: typing.Union[IResolvable, typing.List[JobTaskLibrary]]
 
 library block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#library Job#library}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#library Job#library}
 
 ---
 
@@ -9039,7 +9039,7 @@ max_retries: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#max_retries Job#max_retries}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#max_retries Job#max_retries}.
 
 ---
 
@@ -9051,7 +9051,7 @@ min_retry_interval_millis: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#min_retry_interval_millis Job#min_retry_interval_millis}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#min_retry_interval_millis Job#min_retry_interval_millis}.
 
 ---
 
@@ -9065,7 +9065,7 @@ new_cluster: JobTaskNewCluster
 
 new_cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#new_cluster Job#new_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#new_cluster Job#new_cluster}
 
 ---
 
@@ -9079,7 +9079,7 @@ notebook_task: JobTaskNotebookTask
 
 notebook_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#notebook_task Job#notebook_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#notebook_task Job#notebook_task}
 
 ---
 
@@ -9093,7 +9093,7 @@ notification_settings: JobTaskNotificationSettings
 
 notification_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#notification_settings Job#notification_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#notification_settings Job#notification_settings}
 
 ---
 
@@ -9107,7 +9107,7 @@ pipeline_task: JobTaskPipelineTask
 
 pipeline_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#pipeline_task Job#pipeline_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#pipeline_task Job#pipeline_task}
 
 ---
 
@@ -9121,7 +9121,7 @@ python_wheel_task: JobTaskPythonWheelTask
 
 python_wheel_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#python_wheel_task Job#python_wheel_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#python_wheel_task Job#python_wheel_task}
 
 ---
 
@@ -9133,7 +9133,7 @@ retry_on_timeout: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#retry_on_timeout Job#retry_on_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#retry_on_timeout Job#retry_on_timeout}.
 
 ---
 
@@ -9145,7 +9145,7 @@ run_if: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#run_if Job#run_if}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#run_if Job#run_if}.
 
 ---
 
@@ -9159,7 +9159,7 @@ run_job_task: JobTaskRunJobTask
 
 run_job_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#run_job_task Job#run_job_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#run_job_task Job#run_job_task}
 
 ---
 
@@ -9173,7 +9173,7 @@ spark_jar_task: JobTaskSparkJarTask
 
 spark_jar_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_jar_task Job#spark_jar_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_jar_task Job#spark_jar_task}
 
 ---
 
@@ -9187,7 +9187,7 @@ spark_python_task: JobTaskSparkPythonTask
 
 spark_python_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_python_task Job#spark_python_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_python_task Job#spark_python_task}
 
 ---
 
@@ -9201,7 +9201,7 @@ spark_submit_task: JobTaskSparkSubmitTask
 
 spark_submit_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_submit_task Job#spark_submit_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_submit_task Job#spark_submit_task}
 
 ---
 
@@ -9215,7 +9215,7 @@ sql_task: JobTaskSqlTask
 
 sql_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#sql_task Job#sql_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#sql_task Job#sql_task}
 
 ---
 
@@ -9227,7 +9227,7 @@ task_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#task_key Job#task_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#task_key Job#task_key}.
 
 ---
 
@@ -9239,7 +9239,7 @@ timeout_seconds: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#timeout_seconds Job#timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#timeout_seconds Job#timeout_seconds}.
 
 ---
 
@@ -9261,9 +9261,9 @@ job.JobTaskConditionTask(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskConditionTask.property.left">left</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#left Job#left}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskConditionTask.property.op">op</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#op Job#op}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskConditionTask.property.right">right</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#right Job#right}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskConditionTask.property.left">left</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#left Job#left}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskConditionTask.property.op">op</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#op Job#op}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskConditionTask.property.right">right</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#right Job#right}. |
 
 ---
 
@@ -9275,7 +9275,7 @@ left: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#left Job#left}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#left Job#left}.
 
 ---
 
@@ -9287,7 +9287,7 @@ op: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#op Job#op}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#op Job#op}.
 
 ---
 
@@ -9299,7 +9299,7 @@ right: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#right Job#right}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#right Job#right}.
 
 ---
 
@@ -9324,12 +9324,12 @@ job.JobTaskDbtTask(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskDbtTask.property.commands">commands</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#commands Job#commands}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskDbtTask.property.catalog">catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#catalog Job#catalog}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskDbtTask.property.profilesDirectory">profiles_directory</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#profiles_directory Job#profiles_directory}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskDbtTask.property.projectDirectory">project_directory</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#project_directory Job#project_directory}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskDbtTask.property.schema">schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#schema Job#schema}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskDbtTask.property.warehouseId">warehouse_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#warehouse_id Job#warehouse_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskDbtTask.property.commands">commands</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#commands Job#commands}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskDbtTask.property.catalog">catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#catalog Job#catalog}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskDbtTask.property.profilesDirectory">profiles_directory</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#profiles_directory Job#profiles_directory}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskDbtTask.property.projectDirectory">project_directory</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#project_directory Job#project_directory}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskDbtTask.property.schema">schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#schema Job#schema}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskDbtTask.property.warehouseId">warehouse_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#warehouse_id Job#warehouse_id}. |
 
 ---
 
@@ -9341,7 +9341,7 @@ commands: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#commands Job#commands}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#commands Job#commands}.
 
 ---
 
@@ -9353,7 +9353,7 @@ catalog: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#catalog Job#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#catalog Job#catalog}.
 
 ---
 
@@ -9365,7 +9365,7 @@ profiles_directory: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#profiles_directory Job#profiles_directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#profiles_directory Job#profiles_directory}.
 
 ---
 
@@ -9377,7 +9377,7 @@ project_directory: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#project_directory Job#project_directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#project_directory Job#project_directory}.
 
 ---
 
@@ -9389,7 +9389,7 @@ schema: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#schema Job#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#schema Job#schema}.
 
 ---
 
@@ -9401,7 +9401,7 @@ warehouse_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#warehouse_id Job#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#warehouse_id Job#warehouse_id}.
 
 ---
 
@@ -9422,8 +9422,8 @@ job.JobTaskDependsOn(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskDependsOn.property.taskKey">task_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#task_key Job#task_key}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskDependsOn.property.outcome">outcome</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#outcome Job#outcome}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskDependsOn.property.taskKey">task_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#task_key Job#task_key}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskDependsOn.property.outcome">outcome</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#outcome Job#outcome}. |
 
 ---
 
@@ -9435,7 +9435,7 @@ task_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#task_key Job#task_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#task_key Job#task_key}.
 
 ---
 
@@ -9447,7 +9447,7 @@ outcome: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#outcome Job#outcome}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#outcome Job#outcome}.
 
 ---
 
@@ -9472,12 +9472,12 @@ job.JobTaskEmailNotifications(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskEmailNotifications.property.alertOnLastAttempt">alert_on_last_attempt</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#alert_on_last_attempt Job#alert_on_last_attempt}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskEmailNotifications.property.noAlertForSkippedRuns">no_alert_for_skipped_runs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskEmailNotifications.property.onDurationWarningThresholdExceeded">on_duration_warning_threshold_exceeded</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_duration_warning_threshold_exceeded Job#on_duration_warning_threshold_exceeded}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskEmailNotifications.property.onFailure">on_failure</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_failure Job#on_failure}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskEmailNotifications.property.onStart">on_start</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_start Job#on_start}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskEmailNotifications.property.onSuccess">on_success</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_success Job#on_success}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskEmailNotifications.property.alertOnLastAttempt">alert_on_last_attempt</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#alert_on_last_attempt Job#alert_on_last_attempt}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskEmailNotifications.property.noAlertForSkippedRuns">no_alert_for_skipped_runs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskEmailNotifications.property.onDurationWarningThresholdExceeded">on_duration_warning_threshold_exceeded</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_duration_warning_threshold_exceeded Job#on_duration_warning_threshold_exceeded}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskEmailNotifications.property.onFailure">on_failure</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_failure Job#on_failure}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskEmailNotifications.property.onStart">on_start</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_start Job#on_start}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskEmailNotifications.property.onSuccess">on_success</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_success Job#on_success}. |
 
 ---
 
@@ -9489,7 +9489,7 @@ alert_on_last_attempt: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#alert_on_last_attempt Job#alert_on_last_attempt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#alert_on_last_attempt Job#alert_on_last_attempt}.
 
 ---
 
@@ -9501,7 +9501,7 @@ no_alert_for_skipped_runs: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}.
 
 ---
 
@@ -9513,7 +9513,7 @@ on_duration_warning_threshold_exceeded: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_duration_warning_threshold_exceeded Job#on_duration_warning_threshold_exceeded}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_duration_warning_threshold_exceeded Job#on_duration_warning_threshold_exceeded}.
 
 ---
 
@@ -9525,7 +9525,7 @@ on_failure: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_failure Job#on_failure}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_failure Job#on_failure}.
 
 ---
 
@@ -9537,7 +9537,7 @@ on_start: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_start Job#on_start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_start Job#on_start}.
 
 ---
 
@@ -9549,7 +9549,7 @@ on_success: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_success Job#on_success}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_success Job#on_success}.
 
 ---
 
@@ -9583,7 +9583,7 @@ rules: typing.Union[IResolvable, typing.List[JobTaskHealthRules]]
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#rules Job#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#rules Job#rules}
 
 ---
 
@@ -9605,9 +9605,9 @@ job.JobTaskHealthRules(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskHealthRules.property.metric">metric</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#metric Job#metric}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskHealthRules.property.op">op</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#op Job#op}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskHealthRules.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#value Job#value}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskHealthRules.property.metric">metric</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#metric Job#metric}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskHealthRules.property.op">op</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#op Job#op}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskHealthRules.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#value Job#value}. |
 
 ---
 
@@ -9619,7 +9619,7 @@ metric: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#metric Job#metric}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#metric Job#metric}.
 
 ---
 
@@ -9631,7 +9631,7 @@ op: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#op Job#op}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#op Job#op}.
 
 ---
 
@@ -9643,7 +9643,7 @@ value: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#value Job#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#value Job#value}.
 
 ---
 
@@ -9669,11 +9669,11 @@ job.JobTaskLibrary(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskLibrary.property.cran">cran</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskLibraryCran">JobTaskLibraryCran</a></code> | cran block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskLibrary.property.egg">egg</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#egg Job#egg}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskLibrary.property.jar">jar</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#jar Job#jar}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskLibrary.property.egg">egg</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#egg Job#egg}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskLibrary.property.jar">jar</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#jar Job#jar}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskLibrary.property.maven">maven</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskLibraryMaven">JobTaskLibraryMaven</a></code> | maven block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskLibrary.property.pypi">pypi</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskLibraryPypi">JobTaskLibraryPypi</a></code> | pypi block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskLibrary.property.whl">whl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#whl Job#whl}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskLibrary.property.whl">whl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#whl Job#whl}. |
 
 ---
 
@@ -9687,7 +9687,7 @@ cran: JobTaskLibraryCran
 
 cran block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cran Job#cran}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cran Job#cran}
 
 ---
 
@@ -9699,7 +9699,7 @@ egg: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#egg Job#egg}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#egg Job#egg}.
 
 ---
 
@@ -9711,7 +9711,7 @@ jar: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#jar Job#jar}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#jar Job#jar}.
 
 ---
 
@@ -9725,7 +9725,7 @@ maven: JobTaskLibraryMaven
 
 maven block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#maven Job#maven}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#maven Job#maven}
 
 ---
 
@@ -9739,7 +9739,7 @@ pypi: JobTaskLibraryPypi
 
 pypi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#pypi Job#pypi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#pypi Job#pypi}
 
 ---
 
@@ -9751,7 +9751,7 @@ whl: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#whl Job#whl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#whl Job#whl}.
 
 ---
 
@@ -9772,8 +9772,8 @@ job.JobTaskLibraryCran(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskLibraryCran.property.package">package</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#package Job#package}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskLibraryCran.property.repo">repo</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#repo Job#repo}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskLibraryCran.property.package">package</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#package Job#package}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskLibraryCran.property.repo">repo</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#repo Job#repo}. |
 
 ---
 
@@ -9785,7 +9785,7 @@ package: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#package Job#package}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#package Job#package}.
 
 ---
 
@@ -9797,7 +9797,7 @@ repo: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#repo Job#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#repo Job#repo}.
 
 ---
 
@@ -9819,9 +9819,9 @@ job.JobTaskLibraryMaven(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskLibraryMaven.property.coordinates">coordinates</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#coordinates Job#coordinates}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskLibraryMaven.property.exclusions">exclusions</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#exclusions Job#exclusions}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskLibraryMaven.property.repo">repo</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#repo Job#repo}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskLibraryMaven.property.coordinates">coordinates</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#coordinates Job#coordinates}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskLibraryMaven.property.exclusions">exclusions</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#exclusions Job#exclusions}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskLibraryMaven.property.repo">repo</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#repo Job#repo}. |
 
 ---
 
@@ -9833,7 +9833,7 @@ coordinates: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#coordinates Job#coordinates}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#coordinates Job#coordinates}.
 
 ---
 
@@ -9845,7 +9845,7 @@ exclusions: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#exclusions Job#exclusions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#exclusions Job#exclusions}.
 
 ---
 
@@ -9857,7 +9857,7 @@ repo: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#repo Job#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#repo Job#repo}.
 
 ---
 
@@ -9878,8 +9878,8 @@ job.JobTaskLibraryPypi(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskLibraryPypi.property.package">package</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#package Job#package}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskLibraryPypi.property.repo">repo</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#repo Job#repo}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskLibraryPypi.property.package">package</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#package Job#package}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskLibraryPypi.property.repo">repo</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#repo Job#repo}. |
 
 ---
 
@@ -9891,7 +9891,7 @@ package: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#package Job#package}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#package Job#package}.
 
 ---
 
@@ -9903,7 +9903,7 @@ repo: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#repo Job#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#repo Job#repo}.
 
 ---
 
@@ -9952,35 +9952,35 @@ job.JobTaskNewCluster(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.sparkVersion">spark_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_version Job#spark_version}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.applyPolicyDefaultValues">apply_policy_default_values</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#apply_policy_default_values Job#apply_policy_default_values}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.sparkVersion">spark_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_version Job#spark_version}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.applyPolicyDefaultValues">apply_policy_default_values</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#apply_policy_default_values Job#apply_policy_default_values}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.autoscale">autoscale</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterAutoscale">JobTaskNewClusterAutoscale</a></code> | autoscale block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.autoterminationMinutes">autotermination_minutes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#autotermination_minutes Job#autotermination_minutes}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.autoterminationMinutes">autotermination_minutes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#autotermination_minutes Job#autotermination_minutes}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.awsAttributes">aws_attributes</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterAwsAttributes">JobTaskNewClusterAwsAttributes</a></code> | aws_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.azureAttributes">azure_attributes</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterAzureAttributes">JobTaskNewClusterAzureAttributes</a></code> | azure_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.clusterId">cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cluster_id Job#cluster_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.clusterId">cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cluster_id Job#cluster_id}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.clusterLogConf">cluster_log_conf</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterLogConf">JobTaskNewClusterClusterLogConf</a></code> | cluster_log_conf block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.clusterMountInfo">cluster_mount_info</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfo">JobTaskNewClusterClusterMountInfo</a>]]</code> | cluster_mount_info block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.clusterName">cluster_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cluster_name Job#cluster_name}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.customTags">custom_tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#custom_tags Job#custom_tags}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.dataSecurityMode">data_security_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#data_security_mode Job#data_security_mode}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.clusterName">cluster_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cluster_name Job#cluster_name}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.customTags">custom_tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#custom_tags Job#custom_tags}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.dataSecurityMode">data_security_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#data_security_mode Job#data_security_mode}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.dockerImage">docker_image</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterDockerImage">JobTaskNewClusterDockerImage</a></code> | docker_image block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.driverInstancePoolId">driver_instance_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#driver_instance_pool_id Job#driver_instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.driverNodeTypeId">driver_node_type_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#driver_node_type_id Job#driver_node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.enableElasticDisk">enable_elastic_disk</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_elastic_disk Job#enable_elastic_disk}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.enableLocalDiskEncryption">enable_local_disk_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_local_disk_encryption Job#enable_local_disk_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.driverInstancePoolId">driver_instance_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#driver_instance_pool_id Job#driver_instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.driverNodeTypeId">driver_node_type_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#driver_node_type_id Job#driver_node_type_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.enableElasticDisk">enable_elastic_disk</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_elastic_disk Job#enable_elastic_disk}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.enableLocalDiskEncryption">enable_local_disk_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_local_disk_encryption Job#enable_local_disk_encryption}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.gcpAttributes">gcp_attributes</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterGcpAttributes">JobTaskNewClusterGcpAttributes</a></code> | gcp_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.idempotencyToken">idempotency_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#idempotency_token Job#idempotency_token}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.idempotencyToken">idempotency_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#idempotency_token Job#idempotency_token}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.initScripts">init_scripts</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScripts">JobTaskNewClusterInitScripts</a>]]</code> | init_scripts block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.instancePoolId">instance_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#instance_pool_id Job#instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.nodeTypeId">node_type_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#node_type_id Job#node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.numWorkers">num_workers</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#num_workers Job#num_workers}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.policyId">policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#policy_id Job#policy_id}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.runtimeEngine">runtime_engine</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#runtime_engine Job#runtime_engine}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.singleUserName">single_user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#single_user_name Job#single_user_name}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.sparkConf">spark_conf</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_conf Job#spark_conf}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.sparkEnvVars">spark_env_vars</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_env_vars Job#spark_env_vars}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.sshPublicKeys">ssh_public_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ssh_public_keys Job#ssh_public_keys}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.instancePoolId">instance_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#instance_pool_id Job#instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.nodeTypeId">node_type_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#node_type_id Job#node_type_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.numWorkers">num_workers</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#num_workers Job#num_workers}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.policyId">policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#policy_id Job#policy_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.runtimeEngine">runtime_engine</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#runtime_engine Job#runtime_engine}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.singleUserName">single_user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#single_user_name Job#single_user_name}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.sparkConf">spark_conf</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_conf Job#spark_conf}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.sparkEnvVars">spark_env_vars</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_env_vars Job#spark_env_vars}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.sshPublicKeys">ssh_public_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ssh_public_keys Job#ssh_public_keys}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewCluster.property.workloadType">workload_type</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterWorkloadType">JobTaskNewClusterWorkloadType</a></code> | workload_type block. |
 
 ---
@@ -9993,7 +9993,7 @@ spark_version: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_version Job#spark_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_version Job#spark_version}.
 
 ---
 
@@ -10005,7 +10005,7 @@ apply_policy_default_values: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#apply_policy_default_values Job#apply_policy_default_values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#apply_policy_default_values Job#apply_policy_default_values}.
 
 ---
 
@@ -10019,7 +10019,7 @@ autoscale: JobTaskNewClusterAutoscale
 
 autoscale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#autoscale Job#autoscale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#autoscale Job#autoscale}
 
 ---
 
@@ -10031,7 +10031,7 @@ autotermination_minutes: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#autotermination_minutes Job#autotermination_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#autotermination_minutes Job#autotermination_minutes}.
 
 ---
 
@@ -10045,7 +10045,7 @@ aws_attributes: JobTaskNewClusterAwsAttributes
 
 aws_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#aws_attributes Job#aws_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#aws_attributes Job#aws_attributes}
 
 ---
 
@@ -10059,7 +10059,7 @@ azure_attributes: JobTaskNewClusterAzureAttributes
 
 azure_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#azure_attributes Job#azure_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#azure_attributes Job#azure_attributes}
 
 ---
 
@@ -10071,7 +10071,7 @@ cluster_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cluster_id Job#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cluster_id Job#cluster_id}.
 
 ---
 
@@ -10085,7 +10085,7 @@ cluster_log_conf: JobTaskNewClusterClusterLogConf
 
 cluster_log_conf block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cluster_log_conf Job#cluster_log_conf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cluster_log_conf Job#cluster_log_conf}
 
 ---
 
@@ -10099,7 +10099,7 @@ cluster_mount_info: typing.Union[IResolvable, typing.List[JobTaskNewClusterClust
 
 cluster_mount_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cluster_mount_info Job#cluster_mount_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cluster_mount_info Job#cluster_mount_info}
 
 ---
 
@@ -10111,7 +10111,7 @@ cluster_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cluster_name Job#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cluster_name Job#cluster_name}.
 
 ---
 
@@ -10123,7 +10123,7 @@ custom_tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#custom_tags Job#custom_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#custom_tags Job#custom_tags}.
 
 ---
 
@@ -10135,7 +10135,7 @@ data_security_mode: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#data_security_mode Job#data_security_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#data_security_mode Job#data_security_mode}.
 
 ---
 
@@ -10149,7 +10149,7 @@ docker_image: JobTaskNewClusterDockerImage
 
 docker_image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#docker_image Job#docker_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#docker_image Job#docker_image}
 
 ---
 
@@ -10161,7 +10161,7 @@ driver_instance_pool_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#driver_instance_pool_id Job#driver_instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#driver_instance_pool_id Job#driver_instance_pool_id}.
 
 ---
 
@@ -10173,7 +10173,7 @@ driver_node_type_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#driver_node_type_id Job#driver_node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#driver_node_type_id Job#driver_node_type_id}.
 
 ---
 
@@ -10185,7 +10185,7 @@ enable_elastic_disk: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_elastic_disk Job#enable_elastic_disk}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_elastic_disk Job#enable_elastic_disk}.
 
 ---
 
@@ -10197,7 +10197,7 @@ enable_local_disk_encryption: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_local_disk_encryption Job#enable_local_disk_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_local_disk_encryption Job#enable_local_disk_encryption}.
 
 ---
 
@@ -10211,7 +10211,7 @@ gcp_attributes: JobTaskNewClusterGcpAttributes
 
 gcp_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#gcp_attributes Job#gcp_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#gcp_attributes Job#gcp_attributes}
 
 ---
 
@@ -10223,7 +10223,7 @@ idempotency_token: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#idempotency_token Job#idempotency_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#idempotency_token Job#idempotency_token}.
 
 ---
 
@@ -10237,7 +10237,7 @@ init_scripts: typing.Union[IResolvable, typing.List[JobTaskNewClusterInitScripts
 
 init_scripts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#init_scripts Job#init_scripts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#init_scripts Job#init_scripts}
 
 ---
 
@@ -10249,7 +10249,7 @@ instance_pool_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#instance_pool_id Job#instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#instance_pool_id Job#instance_pool_id}.
 
 ---
 
@@ -10261,7 +10261,7 @@ node_type_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#node_type_id Job#node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#node_type_id Job#node_type_id}.
 
 ---
 
@@ -10273,7 +10273,7 @@ num_workers: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#num_workers Job#num_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#num_workers Job#num_workers}.
 
 ---
 
@@ -10285,7 +10285,7 @@ policy_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#policy_id Job#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#policy_id Job#policy_id}.
 
 ---
 
@@ -10297,7 +10297,7 @@ runtime_engine: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#runtime_engine Job#runtime_engine}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#runtime_engine Job#runtime_engine}.
 
 ---
 
@@ -10309,7 +10309,7 @@ single_user_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#single_user_name Job#single_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#single_user_name Job#single_user_name}.
 
 ---
 
@@ -10321,7 +10321,7 @@ spark_conf: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_conf Job#spark_conf}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_conf Job#spark_conf}.
 
 ---
 
@@ -10333,7 +10333,7 @@ spark_env_vars: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_env_vars Job#spark_env_vars}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_env_vars Job#spark_env_vars}.
 
 ---
 
@@ -10345,7 +10345,7 @@ ssh_public_keys: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ssh_public_keys Job#ssh_public_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ssh_public_keys Job#ssh_public_keys}.
 
 ---
 
@@ -10359,7 +10359,7 @@ workload_type: JobTaskNewClusterWorkloadType
 
 workload_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#workload_type Job#workload_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#workload_type Job#workload_type}
 
 ---
 
@@ -10380,8 +10380,8 @@ job.JobTaskNewClusterAutoscale(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterAutoscale.property.maxWorkers">max_workers</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#max_workers Job#max_workers}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterAutoscale.property.minWorkers">min_workers</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#min_workers Job#min_workers}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterAutoscale.property.maxWorkers">max_workers</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#max_workers Job#max_workers}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterAutoscale.property.minWorkers">min_workers</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#min_workers Job#min_workers}. |
 
 ---
 
@@ -10393,7 +10393,7 @@ max_workers: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#max_workers Job#max_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#max_workers Job#max_workers}.
 
 ---
 
@@ -10405,7 +10405,7 @@ min_workers: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#min_workers Job#min_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#min_workers Job#min_workers}.
 
 ---
 
@@ -10432,14 +10432,14 @@ job.JobTaskNewClusterAwsAttributes(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterAwsAttributes.property.availability">availability</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#availability Job#availability}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterAwsAttributes.property.ebsVolumeCount">ebs_volume_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ebs_volume_count Job#ebs_volume_count}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterAwsAttributes.property.ebsVolumeSize">ebs_volume_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ebs_volume_size Job#ebs_volume_size}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterAwsAttributes.property.ebsVolumeType">ebs_volume_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ebs_volume_type Job#ebs_volume_type}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterAwsAttributes.property.firstOnDemand">first_on_demand</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#first_on_demand Job#first_on_demand}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterAwsAttributes.property.instanceProfileArn">instance_profile_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#instance_profile_arn Job#instance_profile_arn}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterAwsAttributes.property.spotBidPricePercent">spot_bid_price_percent</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spot_bid_price_percent Job#spot_bid_price_percent}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterAwsAttributes.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#zone_id Job#zone_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterAwsAttributes.property.availability">availability</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#availability Job#availability}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterAwsAttributes.property.ebsVolumeCount">ebs_volume_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ebs_volume_count Job#ebs_volume_count}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterAwsAttributes.property.ebsVolumeSize">ebs_volume_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ebs_volume_size Job#ebs_volume_size}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterAwsAttributes.property.ebsVolumeType">ebs_volume_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ebs_volume_type Job#ebs_volume_type}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterAwsAttributes.property.firstOnDemand">first_on_demand</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#first_on_demand Job#first_on_demand}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterAwsAttributes.property.instanceProfileArn">instance_profile_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#instance_profile_arn Job#instance_profile_arn}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterAwsAttributes.property.spotBidPricePercent">spot_bid_price_percent</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spot_bid_price_percent Job#spot_bid_price_percent}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterAwsAttributes.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#zone_id Job#zone_id}. |
 
 ---
 
@@ -10451,7 +10451,7 @@ availability: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#availability Job#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#availability Job#availability}.
 
 ---
 
@@ -10463,7 +10463,7 @@ ebs_volume_count: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ebs_volume_count Job#ebs_volume_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ebs_volume_count Job#ebs_volume_count}.
 
 ---
 
@@ -10475,7 +10475,7 @@ ebs_volume_size: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ebs_volume_size Job#ebs_volume_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ebs_volume_size Job#ebs_volume_size}.
 
 ---
 
@@ -10487,7 +10487,7 @@ ebs_volume_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ebs_volume_type Job#ebs_volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ebs_volume_type Job#ebs_volume_type}.
 
 ---
 
@@ -10499,7 +10499,7 @@ first_on_demand: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#first_on_demand Job#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#first_on_demand Job#first_on_demand}.
 
 ---
 
@@ -10511,7 +10511,7 @@ instance_profile_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#instance_profile_arn Job#instance_profile_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#instance_profile_arn Job#instance_profile_arn}.
 
 ---
 
@@ -10523,7 +10523,7 @@ spot_bid_price_percent: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spot_bid_price_percent Job#spot_bid_price_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spot_bid_price_percent Job#spot_bid_price_percent}.
 
 ---
 
@@ -10535,7 +10535,7 @@ zone_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#zone_id Job#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#zone_id Job#zone_id}.
 
 ---
 
@@ -10557,9 +10557,9 @@ job.JobTaskNewClusterAzureAttributes(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterAzureAttributes.property.availability">availability</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#availability Job#availability}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterAzureAttributes.property.firstOnDemand">first_on_demand</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#first_on_demand Job#first_on_demand}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterAzureAttributes.property.spotBidMaxPrice">spot_bid_max_price</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spot_bid_max_price Job#spot_bid_max_price}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterAzureAttributes.property.availability">availability</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#availability Job#availability}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterAzureAttributes.property.firstOnDemand">first_on_demand</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#first_on_demand Job#first_on_demand}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterAzureAttributes.property.spotBidMaxPrice">spot_bid_max_price</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spot_bid_max_price Job#spot_bid_max_price}. |
 
 ---
 
@@ -10571,7 +10571,7 @@ availability: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#availability Job#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#availability Job#availability}.
 
 ---
 
@@ -10583,7 +10583,7 @@ first_on_demand: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#first_on_demand Job#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#first_on_demand Job#first_on_demand}.
 
 ---
 
@@ -10595,7 +10595,7 @@ spot_bid_max_price: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spot_bid_max_price Job#spot_bid_max_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spot_bid_max_price Job#spot_bid_max_price}.
 
 ---
 
@@ -10631,7 +10631,7 @@ dbfs: JobTaskNewClusterClusterLogConfDbfs
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#dbfs Job#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#dbfs Job#dbfs}
 
 ---
 
@@ -10645,7 +10645,7 @@ s3: JobTaskNewClusterClusterLogConfS3
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#s3 Job#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#s3 Job#s3}
 
 ---
 
@@ -10665,7 +10665,7 @@ job.JobTaskNewClusterClusterLogConfDbfs(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterLogConfDbfs.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterLogConfDbfs.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}. |
 
 ---
 
@@ -10677,7 +10677,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -10703,13 +10703,13 @@ job.JobTaskNewClusterClusterLogConfS3(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterLogConfS3.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterLogConfS3.property.cannedAcl">canned_acl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#canned_acl Job#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterLogConfS3.property.enableEncryption">enable_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_encryption Job#enable_encryption}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterLogConfS3.property.encryptionType">encryption_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#encryption_type Job#encryption_type}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterLogConfS3.property.endpoint">endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#endpoint Job#endpoint}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterLogConfS3.property.kmsKey">kms_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#kms_key Job#kms_key}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterLogConfS3.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#region Job#region}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterLogConfS3.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterLogConfS3.property.cannedAcl">canned_acl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#canned_acl Job#canned_acl}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterLogConfS3.property.enableEncryption">enable_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_encryption Job#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterLogConfS3.property.encryptionType">encryption_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#encryption_type Job#encryption_type}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterLogConfS3.property.endpoint">endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#endpoint Job#endpoint}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterLogConfS3.property.kmsKey">kms_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#kms_key Job#kms_key}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterLogConfS3.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#region Job#region}. |
 
 ---
 
@@ -10721,7 +10721,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -10733,7 +10733,7 @@ canned_acl: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#canned_acl Job#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#canned_acl Job#canned_acl}.
 
 ---
 
@@ -10745,7 +10745,7 @@ enable_encryption: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_encryption Job#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_encryption Job#enable_encryption}.
 
 ---
 
@@ -10757,7 +10757,7 @@ encryption_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#encryption_type Job#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#encryption_type Job#encryption_type}.
 
 ---
 
@@ -10769,7 +10769,7 @@ endpoint: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#endpoint Job#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#endpoint Job#endpoint}.
 
 ---
 
@@ -10781,7 +10781,7 @@ kms_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#kms_key Job#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#kms_key Job#kms_key}.
 
 ---
 
@@ -10793,7 +10793,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#region Job#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#region Job#region}.
 
 ---
 
@@ -10815,9 +10815,9 @@ job.JobTaskNewClusterClusterMountInfo(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfo.property.localMountDirPath">local_mount_dir_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#local_mount_dir_path Job#local_mount_dir_path}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfo.property.localMountDirPath">local_mount_dir_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#local_mount_dir_path Job#local_mount_dir_path}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfo.property.networkFilesystemInfo">network_filesystem_info</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfoNetworkFilesystemInfo">JobTaskNewClusterClusterMountInfoNetworkFilesystemInfo</a></code> | network_filesystem_info block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfo.property.remoteMountDirPath">remote_mount_dir_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#remote_mount_dir_path Job#remote_mount_dir_path}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfo.property.remoteMountDirPath">remote_mount_dir_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#remote_mount_dir_path Job#remote_mount_dir_path}. |
 
 ---
 
@@ -10829,7 +10829,7 @@ local_mount_dir_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#local_mount_dir_path Job#local_mount_dir_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#local_mount_dir_path Job#local_mount_dir_path}.
 
 ---
 
@@ -10843,7 +10843,7 @@ network_filesystem_info: JobTaskNewClusterClusterMountInfoNetworkFilesystemInfo
 
 network_filesystem_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#network_filesystem_info Job#network_filesystem_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#network_filesystem_info Job#network_filesystem_info}
 
 ---
 
@@ -10855,7 +10855,7 @@ remote_mount_dir_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#remote_mount_dir_path Job#remote_mount_dir_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#remote_mount_dir_path Job#remote_mount_dir_path}.
 
 ---
 
@@ -10876,8 +10876,8 @@ job.JobTaskNewClusterClusterMountInfoNetworkFilesystemInfo(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfoNetworkFilesystemInfo.property.serverAddress">server_address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#server_address Job#server_address}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfoNetworkFilesystemInfo.property.mountOptions">mount_options</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#mount_options Job#mount_options}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfoNetworkFilesystemInfo.property.serverAddress">server_address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#server_address Job#server_address}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterClusterMountInfoNetworkFilesystemInfo.property.mountOptions">mount_options</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#mount_options Job#mount_options}. |
 
 ---
 
@@ -10889,7 +10889,7 @@ server_address: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#server_address Job#server_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#server_address Job#server_address}.
 
 ---
 
@@ -10901,7 +10901,7 @@ mount_options: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#mount_options Job#mount_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#mount_options Job#mount_options}.
 
 ---
 
@@ -10922,7 +10922,7 @@ job.JobTaskNewClusterDockerImage(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterDockerImage.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#url Job#url}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterDockerImage.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#url Job#url}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterDockerImage.property.basicAuth">basic_auth</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterDockerImageBasicAuth">JobTaskNewClusterDockerImageBasicAuth</a></code> | basic_auth block. |
 
 ---
@@ -10935,7 +10935,7 @@ url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#url Job#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#url Job#url}.
 
 ---
 
@@ -10949,7 +10949,7 @@ basic_auth: JobTaskNewClusterDockerImageBasicAuth
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#basic_auth Job#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#basic_auth Job#basic_auth}
 
 ---
 
@@ -10970,8 +10970,8 @@ job.JobTaskNewClusterDockerImageBasicAuth(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterDockerImageBasicAuth.property.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#password Job#password}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterDockerImageBasicAuth.property.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#username Job#username}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterDockerImageBasicAuth.property.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#password Job#password}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterDockerImageBasicAuth.property.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#username Job#username}. |
 
 ---
 
@@ -10983,7 +10983,7 @@ password: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#password Job#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#password Job#password}.
 
 ---
 
@@ -10995,7 +10995,7 @@ username: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#username Job#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#username Job#username}.
 
 ---
 
@@ -11020,12 +11020,12 @@ job.JobTaskNewClusterGcpAttributes(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterGcpAttributes.property.availability">availability</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#availability Job#availability}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterGcpAttributes.property.bootDiskSize">boot_disk_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#boot_disk_size Job#boot_disk_size}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterGcpAttributes.property.googleServiceAccount">google_service_account</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#google_service_account Job#google_service_account}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterGcpAttributes.property.localSsdCount">local_ssd_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#local_ssd_count Job#local_ssd_count}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterGcpAttributes.property.usePreemptibleExecutors">use_preemptible_executors</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#use_preemptible_executors Job#use_preemptible_executors}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterGcpAttributes.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#zone_id Job#zone_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterGcpAttributes.property.availability">availability</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#availability Job#availability}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterGcpAttributes.property.bootDiskSize">boot_disk_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#boot_disk_size Job#boot_disk_size}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterGcpAttributes.property.googleServiceAccount">google_service_account</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#google_service_account Job#google_service_account}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterGcpAttributes.property.localSsdCount">local_ssd_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#local_ssd_count Job#local_ssd_count}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterGcpAttributes.property.usePreemptibleExecutors">use_preemptible_executors</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#use_preemptible_executors Job#use_preemptible_executors}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterGcpAttributes.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#zone_id Job#zone_id}. |
 
 ---
 
@@ -11037,7 +11037,7 @@ availability: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#availability Job#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#availability Job#availability}.
 
 ---
 
@@ -11049,7 +11049,7 @@ boot_disk_size: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#boot_disk_size Job#boot_disk_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#boot_disk_size Job#boot_disk_size}.
 
 ---
 
@@ -11061,7 +11061,7 @@ google_service_account: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#google_service_account Job#google_service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#google_service_account Job#google_service_account}.
 
 ---
 
@@ -11073,7 +11073,7 @@ local_ssd_count: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#local_ssd_count Job#local_ssd_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#local_ssd_count Job#local_ssd_count}.
 
 ---
 
@@ -11085,7 +11085,7 @@ use_preemptible_executors: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#use_preemptible_executors Job#use_preemptible_executors}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#use_preemptible_executors Job#use_preemptible_executors}.
 
 ---
 
@@ -11097,7 +11097,7 @@ zone_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#zone_id Job#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#zone_id Job#zone_id}.
 
 ---
 
@@ -11143,7 +11143,7 @@ abfss: JobTaskNewClusterInitScriptsAbfss
 
 abfss block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#abfss Job#abfss}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#abfss Job#abfss}
 
 ---
 
@@ -11157,7 +11157,7 @@ dbfs: JobTaskNewClusterInitScriptsDbfs
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#dbfs Job#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#dbfs Job#dbfs}
 
 ---
 
@@ -11171,7 +11171,7 @@ file: JobTaskNewClusterInitScriptsFile
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#file Job#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#file Job#file}
 
 ---
 
@@ -11185,7 +11185,7 @@ gcs: JobTaskNewClusterInitScriptsGcs
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#gcs Job#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#gcs Job#gcs}
 
 ---
 
@@ -11199,7 +11199,7 @@ s3: JobTaskNewClusterInitScriptsS3
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#s3 Job#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#s3 Job#s3}
 
 ---
 
@@ -11213,7 +11213,7 @@ volumes: JobTaskNewClusterInitScriptsVolumes
 
 volumes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#volumes Job#volumes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#volumes Job#volumes}
 
 ---
 
@@ -11227,7 +11227,7 @@ workspace: JobTaskNewClusterInitScriptsWorkspace
 
 workspace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#workspace Job#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#workspace Job#workspace}
 
 ---
 
@@ -11247,7 +11247,7 @@ job.JobTaskNewClusterInitScriptsAbfss(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsAbfss.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsAbfss.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}. |
 
 ---
 
@@ -11259,7 +11259,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -11279,7 +11279,7 @@ job.JobTaskNewClusterInitScriptsDbfs(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsDbfs.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsDbfs.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}. |
 
 ---
 
@@ -11291,7 +11291,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -11311,7 +11311,7 @@ job.JobTaskNewClusterInitScriptsFile(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsFile.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsFile.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}. |
 
 ---
 
@@ -11323,7 +11323,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -11343,7 +11343,7 @@ job.JobTaskNewClusterInitScriptsGcs(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsGcs.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsGcs.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}. |
 
 ---
 
@@ -11355,7 +11355,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -11381,13 +11381,13 @@ job.JobTaskNewClusterInitScriptsS3(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsS3.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsS3.property.cannedAcl">canned_acl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#canned_acl Job#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsS3.property.enableEncryption">enable_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_encryption Job#enable_encryption}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsS3.property.encryptionType">encryption_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#encryption_type Job#encryption_type}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsS3.property.endpoint">endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#endpoint Job#endpoint}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsS3.property.kmsKey">kms_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#kms_key Job#kms_key}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsS3.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#region Job#region}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsS3.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsS3.property.cannedAcl">canned_acl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#canned_acl Job#canned_acl}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsS3.property.enableEncryption">enable_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_encryption Job#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsS3.property.encryptionType">encryption_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#encryption_type Job#encryption_type}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsS3.property.endpoint">endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#endpoint Job#endpoint}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsS3.property.kmsKey">kms_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#kms_key Job#kms_key}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsS3.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#region Job#region}. |
 
 ---
 
@@ -11399,7 +11399,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -11411,7 +11411,7 @@ canned_acl: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#canned_acl Job#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#canned_acl Job#canned_acl}.
 
 ---
 
@@ -11423,7 +11423,7 @@ enable_encryption: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_encryption Job#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_encryption Job#enable_encryption}.
 
 ---
 
@@ -11435,7 +11435,7 @@ encryption_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#encryption_type Job#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#encryption_type Job#encryption_type}.
 
 ---
 
@@ -11447,7 +11447,7 @@ endpoint: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#endpoint Job#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#endpoint Job#endpoint}.
 
 ---
 
@@ -11459,7 +11459,7 @@ kms_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#kms_key Job#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#kms_key Job#kms_key}.
 
 ---
 
@@ -11471,7 +11471,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#region Job#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#region Job#region}.
 
 ---
 
@@ -11491,7 +11491,7 @@ job.JobTaskNewClusterInitScriptsVolumes(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsVolumes.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsVolumes.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}. |
 
 ---
 
@@ -11503,7 +11503,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -11523,7 +11523,7 @@ job.JobTaskNewClusterInitScriptsWorkspace(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsWorkspace.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterInitScriptsWorkspace.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}. |
 
 ---
 
@@ -11535,7 +11535,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -11569,7 +11569,7 @@ clients: JobTaskNewClusterWorkloadTypeClients
 
 clients block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#clients Job#clients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#clients Job#clients}
 
 ---
 
@@ -11590,8 +11590,8 @@ job.JobTaskNewClusterWorkloadTypeClients(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterWorkloadTypeClients.property.jobs">jobs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#jobs Job#jobs}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterWorkloadTypeClients.property.notebooks">notebooks</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#notebooks Job#notebooks}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterWorkloadTypeClients.property.jobs">jobs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#jobs Job#jobs}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNewClusterWorkloadTypeClients.property.notebooks">notebooks</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#notebooks Job#notebooks}. |
 
 ---
 
@@ -11603,7 +11603,7 @@ jobs: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#jobs Job#jobs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#jobs Job#jobs}.
 
 ---
 
@@ -11615,7 +11615,7 @@ notebooks: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#notebooks Job#notebooks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#notebooks Job#notebooks}.
 
 ---
 
@@ -11637,9 +11637,9 @@ job.JobTaskNotebookTask(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNotebookTask.property.notebookPath">notebook_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#notebook_path Job#notebook_path}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNotebookTask.property.baseParameters">base_parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#base_parameters Job#base_parameters}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNotebookTask.property.source">source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#source Job#source}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNotebookTask.property.notebookPath">notebook_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#notebook_path Job#notebook_path}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNotebookTask.property.baseParameters">base_parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#base_parameters Job#base_parameters}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNotebookTask.property.source">source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#source Job#source}. |
 
 ---
 
@@ -11651,7 +11651,7 @@ notebook_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#notebook_path Job#notebook_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#notebook_path Job#notebook_path}.
 
 ---
 
@@ -11663,7 +11663,7 @@ base_parameters: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#base_parameters Job#base_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#base_parameters Job#base_parameters}.
 
 ---
 
@@ -11675,7 +11675,7 @@ source: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#source Job#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#source Job#source}.
 
 ---
 
@@ -11697,9 +11697,9 @@ job.JobTaskNotificationSettings(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNotificationSettings.property.alertOnLastAttempt">alert_on_last_attempt</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#alert_on_last_attempt Job#alert_on_last_attempt}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNotificationSettings.property.noAlertForCanceledRuns">no_alert_for_canceled_runs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#no_alert_for_canceled_runs Job#no_alert_for_canceled_runs}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskNotificationSettings.property.noAlertForSkippedRuns">no_alert_for_skipped_runs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNotificationSettings.property.alertOnLastAttempt">alert_on_last_attempt</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#alert_on_last_attempt Job#alert_on_last_attempt}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNotificationSettings.property.noAlertForCanceledRuns">no_alert_for_canceled_runs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#no_alert_for_canceled_runs Job#no_alert_for_canceled_runs}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskNotificationSettings.property.noAlertForSkippedRuns">no_alert_for_skipped_runs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}. |
 
 ---
 
@@ -11711,7 +11711,7 @@ alert_on_last_attempt: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#alert_on_last_attempt Job#alert_on_last_attempt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#alert_on_last_attempt Job#alert_on_last_attempt}.
 
 ---
 
@@ -11723,7 +11723,7 @@ no_alert_for_canceled_runs: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#no_alert_for_canceled_runs Job#no_alert_for_canceled_runs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#no_alert_for_canceled_runs Job#no_alert_for_canceled_runs}.
 
 ---
 
@@ -11735,7 +11735,7 @@ no_alert_for_skipped_runs: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}.
 
 ---
 
@@ -11756,8 +11756,8 @@ job.JobTaskPipelineTask(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskPipelineTask.property.pipelineId">pipeline_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#pipeline_id Job#pipeline_id}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskPipelineTask.property.fullRefresh">full_refresh</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#full_refresh Job#full_refresh}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskPipelineTask.property.pipelineId">pipeline_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#pipeline_id Job#pipeline_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskPipelineTask.property.fullRefresh">full_refresh</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#full_refresh Job#full_refresh}. |
 
 ---
 
@@ -11769,7 +11769,7 @@ pipeline_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#pipeline_id Job#pipeline_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#pipeline_id Job#pipeline_id}.
 
 ---
 
@@ -11781,7 +11781,7 @@ full_refresh: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#full_refresh Job#full_refresh}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#full_refresh Job#full_refresh}.
 
 ---
 
@@ -11804,10 +11804,10 @@ job.JobTaskPythonWheelTask(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskPythonWheelTask.property.entryPoint">entry_point</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#entry_point Job#entry_point}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskPythonWheelTask.property.namedParameters">named_parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#named_parameters Job#named_parameters}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskPythonWheelTask.property.packageName">package_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#package_name Job#package_name}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskPythonWheelTask.property.parameters">parameters</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#parameters Job#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskPythonWheelTask.property.entryPoint">entry_point</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#entry_point Job#entry_point}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskPythonWheelTask.property.namedParameters">named_parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#named_parameters Job#named_parameters}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskPythonWheelTask.property.packageName">package_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#package_name Job#package_name}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskPythonWheelTask.property.parameters">parameters</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#parameters Job#parameters}. |
 
 ---
 
@@ -11819,7 +11819,7 @@ entry_point: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#entry_point Job#entry_point}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#entry_point Job#entry_point}.
 
 ---
 
@@ -11831,7 +11831,7 @@ named_parameters: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#named_parameters Job#named_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#named_parameters Job#named_parameters}.
 
 ---
 
@@ -11843,7 +11843,7 @@ package_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#package_name Job#package_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#package_name Job#package_name}.
 
 ---
 
@@ -11855,7 +11855,7 @@ parameters: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#parameters Job#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#parameters Job#parameters}.
 
 ---
 
@@ -11876,8 +11876,8 @@ job.JobTaskRunJobTask(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskRunJobTask.property.jobId">job_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#job_id Job#job_id}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskRunJobTask.property.jobParameters">job_parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#job_parameters Job#job_parameters}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskRunJobTask.property.jobId">job_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#job_id Job#job_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskRunJobTask.property.jobParameters">job_parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#job_parameters Job#job_parameters}. |
 
 ---
 
@@ -11889,7 +11889,7 @@ job_id: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#job_id Job#job_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#job_id Job#job_id}.
 
 ---
 
@@ -11901,7 +11901,7 @@ job_parameters: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#job_parameters Job#job_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#job_parameters Job#job_parameters}.
 
 ---
 
@@ -11923,9 +11923,9 @@ job.JobTaskSparkJarTask(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkJarTask.property.jarUri">jar_uri</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#jar_uri Job#jar_uri}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkJarTask.property.mainClassName">main_class_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#main_class_name Job#main_class_name}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkJarTask.property.parameters">parameters</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#parameters Job#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkJarTask.property.jarUri">jar_uri</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#jar_uri Job#jar_uri}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkJarTask.property.mainClassName">main_class_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#main_class_name Job#main_class_name}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkJarTask.property.parameters">parameters</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#parameters Job#parameters}. |
 
 ---
 
@@ -11937,7 +11937,7 @@ jar_uri: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#jar_uri Job#jar_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#jar_uri Job#jar_uri}.
 
 ---
 
@@ -11949,7 +11949,7 @@ main_class_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#main_class_name Job#main_class_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#main_class_name Job#main_class_name}.
 
 ---
 
@@ -11961,7 +11961,7 @@ parameters: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#parameters Job#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#parameters Job#parameters}.
 
 ---
 
@@ -11983,9 +11983,9 @@ job.JobTaskSparkPythonTask(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTask.property.pythonFile">python_file</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#python_file Job#python_file}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTask.property.parameters">parameters</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#parameters Job#parameters}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTask.property.source">source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#source Job#source}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTask.property.pythonFile">python_file</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#python_file Job#python_file}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTask.property.parameters">parameters</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#parameters Job#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkPythonTask.property.source">source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#source Job#source}. |
 
 ---
 
@@ -11997,7 +11997,7 @@ python_file: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#python_file Job#python_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#python_file Job#python_file}.
 
 ---
 
@@ -12009,7 +12009,7 @@ parameters: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#parameters Job#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#parameters Job#parameters}.
 
 ---
 
@@ -12021,7 +12021,7 @@ source: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#source Job#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#source Job#source}.
 
 ---
 
@@ -12041,7 +12041,7 @@ job.JobTaskSparkSubmitTask(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkSubmitTask.property.parameters">parameters</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#parameters Job#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSparkSubmitTask.property.parameters">parameters</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#parameters Job#parameters}. |
 
 ---
 
@@ -12053,7 +12053,7 @@ parameters: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#parameters Job#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#parameters Job#parameters}.
 
 ---
 
@@ -12081,9 +12081,9 @@ job.JobTaskSqlTask(
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTask.property.alert">alert</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskAlert">JobTaskSqlTaskAlert</a></code> | alert block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTask.property.dashboard">dashboard</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskDashboard">JobTaskSqlTaskDashboard</a></code> | dashboard block. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTask.property.file">file</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFile">JobTaskSqlTaskFile</a></code> | file block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTask.property.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#parameters Job#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTask.property.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#parameters Job#parameters}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTask.property.query">query</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskQuery">JobTaskSqlTaskQuery</a></code> | query block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTask.property.warehouseId">warehouse_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#warehouse_id Job#warehouse_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTask.property.warehouseId">warehouse_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#warehouse_id Job#warehouse_id}. |
 
 ---
 
@@ -12097,7 +12097,7 @@ alert: JobTaskSqlTaskAlert
 
 alert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#alert Job#alert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#alert Job#alert}
 
 ---
 
@@ -12111,7 +12111,7 @@ dashboard: JobTaskSqlTaskDashboard
 
 dashboard block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#dashboard Job#dashboard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#dashboard Job#dashboard}
 
 ---
 
@@ -12125,7 +12125,7 @@ file: JobTaskSqlTaskFile
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#file Job#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#file Job#file}
 
 ---
 
@@ -12137,7 +12137,7 @@ parameters: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#parameters Job#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#parameters Job#parameters}.
 
 ---
 
@@ -12151,7 +12151,7 @@ query: JobTaskSqlTaskQuery
 
 query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#query Job#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#query Job#query}
 
 ---
 
@@ -12163,7 +12163,7 @@ warehouse_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#warehouse_id Job#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#warehouse_id Job#warehouse_id}.
 
 ---
 
@@ -12185,9 +12185,9 @@ job.JobTaskSqlTaskAlert(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskAlert.property.alertId">alert_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#alert_id Job#alert_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskAlert.property.alertId">alert_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#alert_id Job#alert_id}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskAlert.property.subscriptions">subscriptions</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskAlertSubscriptions">JobTaskSqlTaskAlertSubscriptions</a>]]</code> | subscriptions block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskAlert.property.pauseSubscriptions">pause_subscriptions</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#pause_subscriptions Job#pause_subscriptions}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskAlert.property.pauseSubscriptions">pause_subscriptions</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#pause_subscriptions Job#pause_subscriptions}. |
 
 ---
 
@@ -12199,7 +12199,7 @@ alert_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#alert_id Job#alert_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#alert_id Job#alert_id}.
 
 ---
 
@@ -12213,7 +12213,7 @@ subscriptions: typing.Union[IResolvable, typing.List[JobTaskSqlTaskAlertSubscrip
 
 subscriptions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#subscriptions Job#subscriptions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#subscriptions Job#subscriptions}
 
 ---
 
@@ -12225,7 +12225,7 @@ pause_subscriptions: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#pause_subscriptions Job#pause_subscriptions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#pause_subscriptions Job#pause_subscriptions}.
 
 ---
 
@@ -12246,8 +12246,8 @@ job.JobTaskSqlTaskAlertSubscriptions(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskAlertSubscriptions.property.destinationId">destination_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination_id Job#destination_id}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskAlertSubscriptions.property.userName">user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#user_name Job#user_name}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskAlertSubscriptions.property.destinationId">destination_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination_id Job#destination_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskAlertSubscriptions.property.userName">user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#user_name Job#user_name}. |
 
 ---
 
@@ -12259,7 +12259,7 @@ destination_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination_id Job#destination_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination_id Job#destination_id}.
 
 ---
 
@@ -12271,7 +12271,7 @@ user_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#user_name Job#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#user_name Job#user_name}.
 
 ---
 
@@ -12294,9 +12294,9 @@ job.JobTaskSqlTaskDashboard(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskDashboard.property.dashboardId">dashboard_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#dashboard_id Job#dashboard_id}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskDashboard.property.customSubject">custom_subject</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#custom_subject Job#custom_subject}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskDashboard.property.pauseSubscriptions">pause_subscriptions</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#pause_subscriptions Job#pause_subscriptions}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskDashboard.property.dashboardId">dashboard_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#dashboard_id Job#dashboard_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskDashboard.property.customSubject">custom_subject</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#custom_subject Job#custom_subject}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskDashboard.property.pauseSubscriptions">pause_subscriptions</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#pause_subscriptions Job#pause_subscriptions}. |
 | <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskDashboard.property.subscriptions">subscriptions</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskDashboardSubscriptions">JobTaskSqlTaskDashboardSubscriptions</a>]]</code> | subscriptions block. |
 
 ---
@@ -12309,7 +12309,7 @@ dashboard_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#dashboard_id Job#dashboard_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#dashboard_id Job#dashboard_id}.
 
 ---
 
@@ -12321,7 +12321,7 @@ custom_subject: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#custom_subject Job#custom_subject}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#custom_subject Job#custom_subject}.
 
 ---
 
@@ -12333,7 +12333,7 @@ pause_subscriptions: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#pause_subscriptions Job#pause_subscriptions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#pause_subscriptions Job#pause_subscriptions}.
 
 ---
 
@@ -12347,7 +12347,7 @@ subscriptions: typing.Union[IResolvable, typing.List[JobTaskSqlTaskDashboardSubs
 
 subscriptions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#subscriptions Job#subscriptions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#subscriptions Job#subscriptions}
 
 ---
 
@@ -12368,8 +12368,8 @@ job.JobTaskSqlTaskDashboardSubscriptions(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskDashboardSubscriptions.property.destinationId">destination_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination_id Job#destination_id}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskDashboardSubscriptions.property.userName">user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#user_name Job#user_name}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskDashboardSubscriptions.property.destinationId">destination_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination_id Job#destination_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskDashboardSubscriptions.property.userName">user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#user_name Job#user_name}. |
 
 ---
 
@@ -12381,7 +12381,7 @@ destination_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination_id Job#destination_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination_id Job#destination_id}.
 
 ---
 
@@ -12393,7 +12393,7 @@ user_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#user_name Job#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#user_name Job#user_name}.
 
 ---
 
@@ -12413,7 +12413,7 @@ job.JobTaskSqlTaskFile(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFile.property.path">path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#path Job#path}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskFile.property.path">path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#path Job#path}. |
 
 ---
 
@@ -12425,7 +12425,7 @@ path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#path Job#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#path Job#path}.
 
 ---
 
@@ -12445,7 +12445,7 @@ job.JobTaskSqlTaskQuery(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskQuery.property.queryId">query_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#query_id Job#query_id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTaskSqlTaskQuery.property.queryId">query_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#query_id Job#query_id}. |
 
 ---
 
@@ -12457,7 +12457,7 @@ query_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#query_id Job#query_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#query_id Job#query_id}.
 
 ---
 
@@ -12478,8 +12478,8 @@ job.JobTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#create Job#create}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#update Job#update}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#create Job#create}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#update Job#update}. |
 
 ---
 
@@ -12491,7 +12491,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#create Job#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#create Job#create}.
 
 ---
 
@@ -12503,7 +12503,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#update Job#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#update Job#update}.
 
 ---
 
@@ -12525,7 +12525,7 @@ job.JobTrigger(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.job.JobTrigger.property.fileArrival">file_arrival</a></code> | <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrival">JobTriggerFileArrival</a></code> | file_arrival block. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTrigger.property.pauseStatus">pause_status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#pause_status Job#pause_status}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTrigger.property.pauseStatus">pause_status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#pause_status Job#pause_status}. |
 
 ---
 
@@ -12539,7 +12539,7 @@ file_arrival: JobTriggerFileArrival
 
 file_arrival block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#file_arrival Job#file_arrival}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#file_arrival Job#file_arrival}
 
 ---
 
@@ -12551,7 +12551,7 @@ pause_status: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#pause_status Job#pause_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#pause_status Job#pause_status}.
 
 ---
 
@@ -12573,9 +12573,9 @@ job.JobTriggerFileArrival(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrival.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#url Job#url}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrival.property.minTimeBetweenTriggersSeconds">min_time_between_triggers_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#min_time_between_triggers_seconds Job#min_time_between_triggers_seconds}. |
-| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrival.property.waitAfterLastChangeSeconds">wait_after_last_change_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#wait_after_last_change_seconds Job#wait_after_last_change_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrival.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#url Job#url}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrival.property.minTimeBetweenTriggersSeconds">min_time_between_triggers_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#min_time_between_triggers_seconds Job#min_time_between_triggers_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobTriggerFileArrival.property.waitAfterLastChangeSeconds">wait_after_last_change_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#wait_after_last_change_seconds Job#wait_after_last_change_seconds}. |
 
 ---
 
@@ -12587,7 +12587,7 @@ url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#url Job#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#url Job#url}.
 
 ---
 
@@ -12599,7 +12599,7 @@ min_time_between_triggers_seconds: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#min_time_between_triggers_seconds Job#min_time_between_triggers_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#min_time_between_triggers_seconds Job#min_time_between_triggers_seconds}.
 
 ---
 
@@ -12611,7 +12611,7 @@ wait_after_last_change_seconds: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#wait_after_last_change_seconds Job#wait_after_last_change_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#wait_after_last_change_seconds Job#wait_after_last_change_seconds}.
 
 ---
 
@@ -12651,7 +12651,7 @@ on_duration_warning_threshold_exceeded: typing.Union[IResolvable, typing.List[Jo
 
 on_duration_warning_threshold_exceeded block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_duration_warning_threshold_exceeded Job#on_duration_warning_threshold_exceeded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_duration_warning_threshold_exceeded Job#on_duration_warning_threshold_exceeded}
 
 ---
 
@@ -12665,7 +12665,7 @@ on_failure: typing.Union[IResolvable, typing.List[JobWebhookNotificationsOnFailu
 
 on_failure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_failure Job#on_failure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_failure Job#on_failure}
 
 ---
 
@@ -12679,7 +12679,7 @@ on_start: typing.Union[IResolvable, typing.List[JobWebhookNotificationsOnStart]]
 
 on_start block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_start Job#on_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_start Job#on_start}
 
 ---
 
@@ -12693,7 +12693,7 @@ on_success: typing.Union[IResolvable, typing.List[JobWebhookNotificationsOnSucce
 
 on_success block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_success Job#on_success}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_success Job#on_success}
 
 ---
 
@@ -12713,7 +12713,7 @@ job.JobWebhookNotificationsOnDurationWarningThresholdExceeded(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnDurationWarningThresholdExceeded.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#id Job#id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnDurationWarningThresholdExceeded.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#id Job#id}. |
 
 ---
 
@@ -12725,7 +12725,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#id Job#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#id Job#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -12748,7 +12748,7 @@ job.JobWebhookNotificationsOnFailure(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnFailure.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#id Job#id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnFailure.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#id Job#id}. |
 
 ---
 
@@ -12760,7 +12760,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#id Job#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#id Job#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -12783,7 +12783,7 @@ job.JobWebhookNotificationsOnStart(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnStart.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#id Job#id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnStart.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#id Job#id}. |
 
 ---
 
@@ -12795,7 +12795,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#id Job#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#id Job#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -12818,7 +12818,7 @@ job.JobWebhookNotificationsOnSuccess(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnSuccess.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#id Job#id}. |
+| <code><a href="#@cdktf/provider-databricks.job.JobWebhookNotificationsOnSuccess.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#id Job#id}. |
 
 ---
 
@@ -12830,7 +12830,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#id Job#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#id Job#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -13253,7 +13253,7 @@ def put_spec(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#kind Job#kind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#kind Job#kind}.
 
 ---
 
@@ -15449,7 +15449,7 @@ def put_job_source(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#import_from_git_branch Job#import_from_git_branch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#import_from_git_branch Job#import_from_git_branch}.
 
 ---
 
@@ -15457,7 +15457,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#job_config_path Job#job_config_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#job_config_path Job#job_config_path}.
 
 ---
 
@@ -15465,7 +15465,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#dirty_state Job#dirty_state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#dirty_state Job#dirty_state}.
 
 ---
 
@@ -18410,7 +18410,7 @@ def put_dbfs(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -18432,7 +18432,7 @@ def put_s3(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -18440,7 +18440,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#canned_acl Job#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#canned_acl Job#canned_acl}.
 
 ---
 
@@ -18448,7 +18448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_encryption Job#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_encryption Job#enable_encryption}.
 
 ---
 
@@ -18456,7 +18456,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#encryption_type Job#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#encryption_type Job#encryption_type}.
 
 ---
 
@@ -18464,7 +18464,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#endpoint Job#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#endpoint Job#endpoint}.
 
 ---
 
@@ -18472,7 +18472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#kms_key Job#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#kms_key Job#kms_key}.
 
 ---
 
@@ -18480,7 +18480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#region Job#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#region Job#region}.
 
 ---
 
@@ -19795,7 +19795,7 @@ def put_network_filesystem_info(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#server_address Job#server_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#server_address Job#server_address}.
 
 ---
 
@@ -19803,7 +19803,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#mount_options Job#mount_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#mount_options Job#mount_options}.
 
 ---
 
@@ -20486,7 +20486,7 @@ def put_basic_auth(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#password Job#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#password Job#password}.
 
 ---
 
@@ -20494,7 +20494,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#username Job#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#username Job#username}.
 
 ---
 
@@ -22672,7 +22672,7 @@ def put_abfss(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -22688,7 +22688,7 @@ def put_dbfs(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -22704,7 +22704,7 @@ def put_file(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -22720,7 +22720,7 @@ def put_gcs(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -22742,7 +22742,7 @@ def put_s3(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -22750,7 +22750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#canned_acl Job#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#canned_acl Job#canned_acl}.
 
 ---
 
@@ -22758,7 +22758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_encryption Job#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_encryption Job#enable_encryption}.
 
 ---
 
@@ -22766,7 +22766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#encryption_type Job#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#encryption_type Job#encryption_type}.
 
 ---
 
@@ -22774,7 +22774,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#endpoint Job#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#endpoint Job#endpoint}.
 
 ---
 
@@ -22782,7 +22782,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#kms_key Job#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#kms_key Job#kms_key}.
 
 ---
 
@@ -22790,7 +22790,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#region Job#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#region Job#region}.
 
 ---
 
@@ -22806,7 +22806,7 @@ def put_volumes(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -22822,7 +22822,7 @@ def put_workspace(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -24423,7 +24423,7 @@ def put_autoscale(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#max_workers Job#max_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#max_workers Job#max_workers}.
 
 ---
 
@@ -24431,7 +24431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#min_workers Job#min_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#min_workers Job#min_workers}.
 
 ---
 
@@ -24454,7 +24454,7 @@ def put_aws_attributes(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#availability Job#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#availability Job#availability}.
 
 ---
 
@@ -24462,7 +24462,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ebs_volume_count Job#ebs_volume_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ebs_volume_count Job#ebs_volume_count}.
 
 ---
 
@@ -24470,7 +24470,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ebs_volume_size Job#ebs_volume_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ebs_volume_size Job#ebs_volume_size}.
 
 ---
 
@@ -24478,7 +24478,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ebs_volume_type Job#ebs_volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ebs_volume_type Job#ebs_volume_type}.
 
 ---
 
@@ -24486,7 +24486,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#first_on_demand Job#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#first_on_demand Job#first_on_demand}.
 
 ---
 
@@ -24494,7 +24494,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#instance_profile_arn Job#instance_profile_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#instance_profile_arn Job#instance_profile_arn}.
 
 ---
 
@@ -24502,7 +24502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spot_bid_price_percent Job#spot_bid_price_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spot_bid_price_percent Job#spot_bid_price_percent}.
 
 ---
 
@@ -24510,7 +24510,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#zone_id Job#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#zone_id Job#zone_id}.
 
 ---
 
@@ -24528,7 +24528,7 @@ def put_azure_attributes(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#availability Job#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#availability Job#availability}.
 
 ---
 
@@ -24536,7 +24536,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#first_on_demand Job#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#first_on_demand Job#first_on_demand}.
 
 ---
 
@@ -24544,7 +24544,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spot_bid_max_price Job#spot_bid_max_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spot_bid_max_price Job#spot_bid_max_price}.
 
 ---
 
@@ -24563,7 +24563,7 @@ def put_cluster_log_conf(
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#dbfs Job#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#dbfs Job#dbfs}
 
 ---
 
@@ -24573,7 +24573,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#s3 Job#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#s3 Job#s3}
 
 ---
 
@@ -24604,7 +24604,7 @@ def put_docker_image(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#url Job#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#url Job#url}.
 
 ---
 
@@ -24614,7 +24614,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#basic_auth Job#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#basic_auth Job#basic_auth}
 
 ---
 
@@ -24635,7 +24635,7 @@ def put_gcp_attributes(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#availability Job#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#availability Job#availability}.
 
 ---
 
@@ -24643,7 +24643,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#boot_disk_size Job#boot_disk_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#boot_disk_size Job#boot_disk_size}.
 
 ---
 
@@ -24651,7 +24651,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#google_service_account Job#google_service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#google_service_account Job#google_service_account}.
 
 ---
 
@@ -24659,7 +24659,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#local_ssd_count Job#local_ssd_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#local_ssd_count Job#local_ssd_count}.
 
 ---
 
@@ -24667,7 +24667,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#use_preemptible_executors Job#use_preemptible_executors}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#use_preemptible_executors Job#use_preemptible_executors}.
 
 ---
 
@@ -24675,7 +24675,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#zone_id Job#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#zone_id Job#zone_id}.
 
 ---
 
@@ -24707,7 +24707,7 @@ def put_workload_type(
 
 clients block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#clients Job#clients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#clients Job#clients}
 
 ---
 
@@ -26165,7 +26165,7 @@ def put_clients(
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#jobs Job#jobs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#jobs Job#jobs}.
 
 ---
 
@@ -26173,7 +26173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#notebooks Job#notebooks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#notebooks Job#notebooks}.
 
 ---
 
@@ -26537,7 +26537,7 @@ def put_new_cluster(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_version Job#spark_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_version Job#spark_version}.
 
 ---
 
@@ -26545,7 +26545,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#apply_policy_default_values Job#apply_policy_default_values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#apply_policy_default_values Job#apply_policy_default_values}.
 
 ---
 
@@ -26555,7 +26555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 autoscale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#autoscale Job#autoscale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#autoscale Job#autoscale}
 
 ---
 
@@ -26563,7 +26563,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#autotermination_minutes Job#autotermination_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#autotermination_minutes Job#autotermination_minutes}.
 
 ---
 
@@ -26573,7 +26573,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 aws_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#aws_attributes Job#aws_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#aws_attributes Job#aws_attributes}
 
 ---
 
@@ -26583,7 +26583,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 azure_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#azure_attributes Job#azure_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#azure_attributes Job#azure_attributes}
 
 ---
 
@@ -26591,7 +26591,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cluster_id Job#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cluster_id Job#cluster_id}.
 
 ---
 
@@ -26601,7 +26601,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 cluster_log_conf block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cluster_log_conf Job#cluster_log_conf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cluster_log_conf Job#cluster_log_conf}
 
 ---
 
@@ -26611,7 +26611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 cluster_mount_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cluster_mount_info Job#cluster_mount_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cluster_mount_info Job#cluster_mount_info}
 
 ---
 
@@ -26619,7 +26619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cluster_name Job#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cluster_name Job#cluster_name}.
 
 ---
 
@@ -26627,7 +26627,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#custom_tags Job#custom_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#custom_tags Job#custom_tags}.
 
 ---
 
@@ -26635,7 +26635,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#data_security_mode Job#data_security_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#data_security_mode Job#data_security_mode}.
 
 ---
 
@@ -26645,7 +26645,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 docker_image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#docker_image Job#docker_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#docker_image Job#docker_image}
 
 ---
 
@@ -26653,7 +26653,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#driver_instance_pool_id Job#driver_instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#driver_instance_pool_id Job#driver_instance_pool_id}.
 
 ---
 
@@ -26661,7 +26661,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#driver_node_type_id Job#driver_node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#driver_node_type_id Job#driver_node_type_id}.
 
 ---
 
@@ -26669,7 +26669,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_elastic_disk Job#enable_elastic_disk}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_elastic_disk Job#enable_elastic_disk}.
 
 ---
 
@@ -26677,7 +26677,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_local_disk_encryption Job#enable_local_disk_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_local_disk_encryption Job#enable_local_disk_encryption}.
 
 ---
 
@@ -26687,7 +26687,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 gcp_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#gcp_attributes Job#gcp_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#gcp_attributes Job#gcp_attributes}
 
 ---
 
@@ -26695,7 +26695,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#idempotency_token Job#idempotency_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#idempotency_token Job#idempotency_token}.
 
 ---
 
@@ -26705,7 +26705,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 init_scripts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#init_scripts Job#init_scripts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#init_scripts Job#init_scripts}
 
 ---
 
@@ -26713,7 +26713,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#instance_pool_id Job#instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#instance_pool_id Job#instance_pool_id}.
 
 ---
 
@@ -26721,7 +26721,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#node_type_id Job#node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#node_type_id Job#node_type_id}.
 
 ---
 
@@ -26729,7 +26729,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#num_workers Job#num_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#num_workers Job#num_workers}.
 
 ---
 
@@ -26737,7 +26737,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#policy_id Job#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#policy_id Job#policy_id}.
 
 ---
 
@@ -26745,7 +26745,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#runtime_engine Job#runtime_engine}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#runtime_engine Job#runtime_engine}.
 
 ---
 
@@ -26753,7 +26753,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#single_user_name Job#single_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#single_user_name Job#single_user_name}.
 
 ---
 
@@ -26761,7 +26761,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_conf Job#spark_conf}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_conf Job#spark_conf}.
 
 ---
 
@@ -26769,7 +26769,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_env_vars Job#spark_env_vars}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_env_vars Job#spark_env_vars}.
 
 ---
 
@@ -26777,7 +26777,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ssh_public_keys Job#ssh_public_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ssh_public_keys Job#ssh_public_keys}.
 
 ---
 
@@ -26787,7 +26787,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 workload_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#workload_type Job#workload_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#workload_type Job#workload_type}
 
 ---
 
@@ -27993,7 +27993,7 @@ def put_cran(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#package Job#package}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#package Job#package}.
 
 ---
 
@@ -28001,7 +28001,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#repo Job#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#repo Job#repo}.
 
 ---
 
@@ -28019,7 +28019,7 @@ def put_maven(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#coordinates Job#coordinates}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#coordinates Job#coordinates}.
 
 ---
 
@@ -28027,7 +28027,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#exclusions Job#exclusions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#exclusions Job#exclusions}.
 
 ---
 
@@ -28035,7 +28035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#repo Job#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#repo Job#repo}.
 
 ---
 
@@ -28052,7 +28052,7 @@ def put_pypi(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#package Job#package}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#package Job#package}.
 
 ---
 
@@ -28060,7 +28060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#repo Job#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#repo Job#repo}.
 
 ---
 
@@ -30342,7 +30342,7 @@ def put_dbfs(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -30364,7 +30364,7 @@ def put_s3(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -30372,7 +30372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#canned_acl Job#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#canned_acl Job#canned_acl}.
 
 ---
 
@@ -30380,7 +30380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_encryption Job#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_encryption Job#enable_encryption}.
 
 ---
 
@@ -30388,7 +30388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#encryption_type Job#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#encryption_type Job#encryption_type}.
 
 ---
 
@@ -30396,7 +30396,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#endpoint Job#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#endpoint Job#endpoint}.
 
 ---
 
@@ -30404,7 +30404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#kms_key Job#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#kms_key Job#kms_key}.
 
 ---
 
@@ -30412,7 +30412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#region Job#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#region Job#region}.
 
 ---
 
@@ -31727,7 +31727,7 @@ def put_network_filesystem_info(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#server_address Job#server_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#server_address Job#server_address}.
 
 ---
 
@@ -31735,7 +31735,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#mount_options Job#mount_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#mount_options Job#mount_options}.
 
 ---
 
@@ -32418,7 +32418,7 @@ def put_basic_auth(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#password Job#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#password Job#password}.
 
 ---
 
@@ -32426,7 +32426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#username Job#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#username Job#username}.
 
 ---
 
@@ -34604,7 +34604,7 @@ def put_abfss(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -34620,7 +34620,7 @@ def put_dbfs(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -34636,7 +34636,7 @@ def put_file(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -34652,7 +34652,7 @@ def put_gcs(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -34674,7 +34674,7 @@ def put_s3(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -34682,7 +34682,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#canned_acl Job#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#canned_acl Job#canned_acl}.
 
 ---
 
@@ -34690,7 +34690,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_encryption Job#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_encryption Job#enable_encryption}.
 
 ---
 
@@ -34698,7 +34698,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#encryption_type Job#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#encryption_type Job#encryption_type}.
 
 ---
 
@@ -34706,7 +34706,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#endpoint Job#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#endpoint Job#endpoint}.
 
 ---
 
@@ -34714,7 +34714,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#kms_key Job#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#kms_key Job#kms_key}.
 
 ---
 
@@ -34722,7 +34722,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#region Job#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#region Job#region}.
 
 ---
 
@@ -34738,7 +34738,7 @@ def put_volumes(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -34754,7 +34754,7 @@ def put_workspace(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -36355,7 +36355,7 @@ def put_autoscale(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#max_workers Job#max_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#max_workers Job#max_workers}.
 
 ---
 
@@ -36363,7 +36363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#min_workers Job#min_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#min_workers Job#min_workers}.
 
 ---
 
@@ -36386,7 +36386,7 @@ def put_aws_attributes(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#availability Job#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#availability Job#availability}.
 
 ---
 
@@ -36394,7 +36394,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ebs_volume_count Job#ebs_volume_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ebs_volume_count Job#ebs_volume_count}.
 
 ---
 
@@ -36402,7 +36402,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ebs_volume_size Job#ebs_volume_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ebs_volume_size Job#ebs_volume_size}.
 
 ---
 
@@ -36410,7 +36410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ebs_volume_type Job#ebs_volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ebs_volume_type Job#ebs_volume_type}.
 
 ---
 
@@ -36418,7 +36418,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#first_on_demand Job#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#first_on_demand Job#first_on_demand}.
 
 ---
 
@@ -36426,7 +36426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#instance_profile_arn Job#instance_profile_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#instance_profile_arn Job#instance_profile_arn}.
 
 ---
 
@@ -36434,7 +36434,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spot_bid_price_percent Job#spot_bid_price_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spot_bid_price_percent Job#spot_bid_price_percent}.
 
 ---
 
@@ -36442,7 +36442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#zone_id Job#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#zone_id Job#zone_id}.
 
 ---
 
@@ -36460,7 +36460,7 @@ def put_azure_attributes(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#availability Job#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#availability Job#availability}.
 
 ---
 
@@ -36468,7 +36468,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#first_on_demand Job#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#first_on_demand Job#first_on_demand}.
 
 ---
 
@@ -36476,7 +36476,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spot_bid_max_price Job#spot_bid_max_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spot_bid_max_price Job#spot_bid_max_price}.
 
 ---
 
@@ -36495,7 +36495,7 @@ def put_cluster_log_conf(
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#dbfs Job#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#dbfs Job#dbfs}
 
 ---
 
@@ -36505,7 +36505,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#s3 Job#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#s3 Job#s3}
 
 ---
 
@@ -36536,7 +36536,7 @@ def put_docker_image(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#url Job#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#url Job#url}.
 
 ---
 
@@ -36546,7 +36546,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#basic_auth Job#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#basic_auth Job#basic_auth}
 
 ---
 
@@ -36567,7 +36567,7 @@ def put_gcp_attributes(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#availability Job#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#availability Job#availability}.
 
 ---
 
@@ -36575,7 +36575,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#boot_disk_size Job#boot_disk_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#boot_disk_size Job#boot_disk_size}.
 
 ---
 
@@ -36583,7 +36583,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#google_service_account Job#google_service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#google_service_account Job#google_service_account}.
 
 ---
 
@@ -36591,7 +36591,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#local_ssd_count Job#local_ssd_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#local_ssd_count Job#local_ssd_count}.
 
 ---
 
@@ -36599,7 +36599,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#use_preemptible_executors Job#use_preemptible_executors}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#use_preemptible_executors Job#use_preemptible_executors}.
 
 ---
 
@@ -36607,7 +36607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#zone_id Job#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#zone_id Job#zone_id}.
 
 ---
 
@@ -36639,7 +36639,7 @@ def put_workload_type(
 
 clients block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#clients Job#clients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#clients Job#clients}
 
 ---
 
@@ -38097,7 +38097,7 @@ def put_clients(
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#jobs Job#jobs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#jobs Job#jobs}.
 
 ---
 
@@ -38105,7 +38105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#notebooks Job#notebooks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#notebooks Job#notebooks}.
 
 ---
 
@@ -46088,7 +46088,7 @@ def put_cran(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#package Job#package}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#package Job#package}.
 
 ---
 
@@ -46096,7 +46096,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#repo Job#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#repo Job#repo}.
 
 ---
 
@@ -46114,7 +46114,7 @@ def put_maven(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#coordinates Job#coordinates}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#coordinates Job#coordinates}.
 
 ---
 
@@ -46122,7 +46122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#exclusions Job#exclusions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#exclusions Job#exclusions}.
 
 ---
 
@@ -46130,7 +46130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#repo Job#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#repo Job#repo}.
 
 ---
 
@@ -46147,7 +46147,7 @@ def put_pypi(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#package Job#package}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#package Job#package}.
 
 ---
 
@@ -46155,7 +46155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#repo Job#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#repo Job#repo}.
 
 ---
 
@@ -48588,7 +48588,7 @@ def put_dbfs(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -48610,7 +48610,7 @@ def put_s3(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -48618,7 +48618,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#canned_acl Job#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#canned_acl Job#canned_acl}.
 
 ---
 
@@ -48626,7 +48626,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_encryption Job#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_encryption Job#enable_encryption}.
 
 ---
 
@@ -48634,7 +48634,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#encryption_type Job#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#encryption_type Job#encryption_type}.
 
 ---
 
@@ -48642,7 +48642,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#endpoint Job#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#endpoint Job#endpoint}.
 
 ---
 
@@ -48650,7 +48650,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#kms_key Job#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#kms_key Job#kms_key}.
 
 ---
 
@@ -48658,7 +48658,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#region Job#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#region Job#region}.
 
 ---
 
@@ -49973,7 +49973,7 @@ def put_network_filesystem_info(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#server_address Job#server_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#server_address Job#server_address}.
 
 ---
 
@@ -49981,7 +49981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#mount_options Job#mount_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#mount_options Job#mount_options}.
 
 ---
 
@@ -50664,7 +50664,7 @@ def put_basic_auth(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#password Job#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#password Job#password}.
 
 ---
 
@@ -50672,7 +50672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#username Job#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#username Job#username}.
 
 ---
 
@@ -52850,7 +52850,7 @@ def put_abfss(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -52866,7 +52866,7 @@ def put_dbfs(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -52882,7 +52882,7 @@ def put_file(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -52898,7 +52898,7 @@ def put_gcs(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -52920,7 +52920,7 @@ def put_s3(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -52928,7 +52928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#canned_acl Job#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#canned_acl Job#canned_acl}.
 
 ---
 
@@ -52936,7 +52936,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_encryption Job#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_encryption Job#enable_encryption}.
 
 ---
 
@@ -52944,7 +52944,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#encryption_type Job#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#encryption_type Job#encryption_type}.
 
 ---
 
@@ -52952,7 +52952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#endpoint Job#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#endpoint Job#endpoint}.
 
 ---
 
@@ -52960,7 +52960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#kms_key Job#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#kms_key Job#kms_key}.
 
 ---
 
@@ -52968,7 +52968,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#region Job#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#region Job#region}.
 
 ---
 
@@ -52984,7 +52984,7 @@ def put_volumes(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -53000,7 +53000,7 @@ def put_workspace(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#destination Job#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#destination Job#destination}.
 
 ---
 
@@ -54601,7 +54601,7 @@ def put_autoscale(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#max_workers Job#max_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#max_workers Job#max_workers}.
 
 ---
 
@@ -54609,7 +54609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#min_workers Job#min_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#min_workers Job#min_workers}.
 
 ---
 
@@ -54632,7 +54632,7 @@ def put_aws_attributes(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#availability Job#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#availability Job#availability}.
 
 ---
 
@@ -54640,7 +54640,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ebs_volume_count Job#ebs_volume_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ebs_volume_count Job#ebs_volume_count}.
 
 ---
 
@@ -54648,7 +54648,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ebs_volume_size Job#ebs_volume_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ebs_volume_size Job#ebs_volume_size}.
 
 ---
 
@@ -54656,7 +54656,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ebs_volume_type Job#ebs_volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ebs_volume_type Job#ebs_volume_type}.
 
 ---
 
@@ -54664,7 +54664,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#first_on_demand Job#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#first_on_demand Job#first_on_demand}.
 
 ---
 
@@ -54672,7 +54672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#instance_profile_arn Job#instance_profile_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#instance_profile_arn Job#instance_profile_arn}.
 
 ---
 
@@ -54680,7 +54680,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spot_bid_price_percent Job#spot_bid_price_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spot_bid_price_percent Job#spot_bid_price_percent}.
 
 ---
 
@@ -54688,7 +54688,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#zone_id Job#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#zone_id Job#zone_id}.
 
 ---
 
@@ -54706,7 +54706,7 @@ def put_azure_attributes(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#availability Job#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#availability Job#availability}.
 
 ---
 
@@ -54714,7 +54714,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#first_on_demand Job#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#first_on_demand Job#first_on_demand}.
 
 ---
 
@@ -54722,7 +54722,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spot_bid_max_price Job#spot_bid_max_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spot_bid_max_price Job#spot_bid_max_price}.
 
 ---
 
@@ -54741,7 +54741,7 @@ def put_cluster_log_conf(
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#dbfs Job#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#dbfs Job#dbfs}
 
 ---
 
@@ -54751,7 +54751,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#s3 Job#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#s3 Job#s3}
 
 ---
 
@@ -54782,7 +54782,7 @@ def put_docker_image(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#url Job#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#url Job#url}.
 
 ---
 
@@ -54792,7 +54792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#basic_auth Job#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#basic_auth Job#basic_auth}
 
 ---
 
@@ -54813,7 +54813,7 @@ def put_gcp_attributes(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#availability Job#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#availability Job#availability}.
 
 ---
 
@@ -54821,7 +54821,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#boot_disk_size Job#boot_disk_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#boot_disk_size Job#boot_disk_size}.
 
 ---
 
@@ -54829,7 +54829,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#google_service_account Job#google_service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#google_service_account Job#google_service_account}.
 
 ---
 
@@ -54837,7 +54837,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#local_ssd_count Job#local_ssd_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#local_ssd_count Job#local_ssd_count}.
 
 ---
 
@@ -54845,7 +54845,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#use_preemptible_executors Job#use_preemptible_executors}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#use_preemptible_executors Job#use_preemptible_executors}.
 
 ---
 
@@ -54853,7 +54853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#zone_id Job#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#zone_id Job#zone_id}.
 
 ---
 
@@ -54885,7 +54885,7 @@ def put_workload_type(
 
 clients block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#clients Job#clients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#clients Job#clients}
 
 ---
 
@@ -56343,7 +56343,7 @@ def put_clients(
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#jobs Job#jobs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#jobs Job#jobs}.
 
 ---
 
@@ -56351,7 +56351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#notebooks Job#notebooks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#notebooks Job#notebooks}.
 
 ---
 
@@ -57442,7 +57442,7 @@ def put_condition_task(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#left Job#left}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#left Job#left}.
 
 ---
 
@@ -57450,7 +57450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#op Job#op}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#op Job#op}.
 
 ---
 
@@ -57458,7 +57458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#right Job#right}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#right Job#right}.
 
 ---
 
@@ -57479,7 +57479,7 @@ def put_dbt_task(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#commands Job#commands}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#commands Job#commands}.
 
 ---
 
@@ -57487,7 +57487,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#catalog Job#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#catalog Job#catalog}.
 
 ---
 
@@ -57495,7 +57495,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#profiles_directory Job#profiles_directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#profiles_directory Job#profiles_directory}.
 
 ---
 
@@ -57503,7 +57503,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#project_directory Job#project_directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#project_directory Job#project_directory}.
 
 ---
 
@@ -57511,7 +57511,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#schema Job#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#schema Job#schema}.
 
 ---
 
@@ -57519,7 +57519,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#warehouse_id Job#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#warehouse_id Job#warehouse_id}.
 
 ---
 
@@ -57554,7 +57554,7 @@ def put_email_notifications(
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#alert_on_last_attempt Job#alert_on_last_attempt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#alert_on_last_attempt Job#alert_on_last_attempt}.
 
 ---
 
@@ -57562,7 +57562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}.
 
 ---
 
@@ -57570,7 +57570,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_duration_warning_threshold_exceeded Job#on_duration_warning_threshold_exceeded}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_duration_warning_threshold_exceeded Job#on_duration_warning_threshold_exceeded}.
 
 ---
 
@@ -57578,7 +57578,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_failure Job#on_failure}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_failure Job#on_failure}.
 
 ---
 
@@ -57586,7 +57586,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_start Job#on_start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_start Job#on_start}.
 
 ---
 
@@ -57594,7 +57594,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#on_success Job#on_success}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#on_success Job#on_success}.
 
 ---
 
@@ -57612,7 +57612,7 @@ def put_health(
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#rules Job#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#rules Job#rules}
 
 ---
 
@@ -57671,7 +57671,7 @@ def put_new_cluster(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_version Job#spark_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_version Job#spark_version}.
 
 ---
 
@@ -57679,7 +57679,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#apply_policy_default_values Job#apply_policy_default_values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#apply_policy_default_values Job#apply_policy_default_values}.
 
 ---
 
@@ -57689,7 +57689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 autoscale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#autoscale Job#autoscale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#autoscale Job#autoscale}
 
 ---
 
@@ -57697,7 +57697,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#autotermination_minutes Job#autotermination_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#autotermination_minutes Job#autotermination_minutes}.
 
 ---
 
@@ -57707,7 +57707,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 aws_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#aws_attributes Job#aws_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#aws_attributes Job#aws_attributes}
 
 ---
 
@@ -57717,7 +57717,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 azure_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#azure_attributes Job#azure_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#azure_attributes Job#azure_attributes}
 
 ---
 
@@ -57725,7 +57725,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cluster_id Job#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cluster_id Job#cluster_id}.
 
 ---
 
@@ -57735,7 +57735,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 cluster_log_conf block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cluster_log_conf Job#cluster_log_conf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cluster_log_conf Job#cluster_log_conf}
 
 ---
 
@@ -57745,7 +57745,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 cluster_mount_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cluster_mount_info Job#cluster_mount_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cluster_mount_info Job#cluster_mount_info}
 
 ---
 
@@ -57753,7 +57753,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#cluster_name Job#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#cluster_name Job#cluster_name}.
 
 ---
 
@@ -57761,7 +57761,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#custom_tags Job#custom_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#custom_tags Job#custom_tags}.
 
 ---
 
@@ -57769,7 +57769,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#data_security_mode Job#data_security_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#data_security_mode Job#data_security_mode}.
 
 ---
 
@@ -57779,7 +57779,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 docker_image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#docker_image Job#docker_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#docker_image Job#docker_image}
 
 ---
 
@@ -57787,7 +57787,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#driver_instance_pool_id Job#driver_instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#driver_instance_pool_id Job#driver_instance_pool_id}.
 
 ---
 
@@ -57795,7 +57795,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#driver_node_type_id Job#driver_node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#driver_node_type_id Job#driver_node_type_id}.
 
 ---
 
@@ -57803,7 +57803,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_elastic_disk Job#enable_elastic_disk}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_elastic_disk Job#enable_elastic_disk}.
 
 ---
 
@@ -57811,7 +57811,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#enable_local_disk_encryption Job#enable_local_disk_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#enable_local_disk_encryption Job#enable_local_disk_encryption}.
 
 ---
 
@@ -57821,7 +57821,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 gcp_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#gcp_attributes Job#gcp_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#gcp_attributes Job#gcp_attributes}
 
 ---
 
@@ -57829,7 +57829,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#idempotency_token Job#idempotency_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#idempotency_token Job#idempotency_token}.
 
 ---
 
@@ -57839,7 +57839,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 init_scripts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#init_scripts Job#init_scripts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#init_scripts Job#init_scripts}
 
 ---
 
@@ -57847,7 +57847,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#instance_pool_id Job#instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#instance_pool_id Job#instance_pool_id}.
 
 ---
 
@@ -57855,7 +57855,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#node_type_id Job#node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#node_type_id Job#node_type_id}.
 
 ---
 
@@ -57863,7 +57863,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#num_workers Job#num_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#num_workers Job#num_workers}.
 
 ---
 
@@ -57871,7 +57871,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#policy_id Job#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#policy_id Job#policy_id}.
 
 ---
 
@@ -57879,7 +57879,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#runtime_engine Job#runtime_engine}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#runtime_engine Job#runtime_engine}.
 
 ---
 
@@ -57887,7 +57887,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#single_user_name Job#single_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#single_user_name Job#single_user_name}.
 
 ---
 
@@ -57895,7 +57895,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_conf Job#spark_conf}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_conf Job#spark_conf}.
 
 ---
 
@@ -57903,7 +57903,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#spark_env_vars Job#spark_env_vars}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#spark_env_vars Job#spark_env_vars}.
 
 ---
 
@@ -57911,7 +57911,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#ssh_public_keys Job#ssh_public_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#ssh_public_keys Job#ssh_public_keys}.
 
 ---
 
@@ -57921,7 +57921,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 workload_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#workload_type Job#workload_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#workload_type Job#workload_type}
 
 ---
 
@@ -57939,7 +57939,7 @@ def put_notebook_task(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#notebook_path Job#notebook_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#notebook_path Job#notebook_path}.
 
 ---
 
@@ -57947,7 +57947,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#base_parameters Job#base_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#base_parameters Job#base_parameters}.
 
 ---
 
@@ -57955,7 +57955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#source Job#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#source Job#source}.
 
 ---
 
@@ -57973,7 +57973,7 @@ def put_notification_settings(
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#alert_on_last_attempt Job#alert_on_last_attempt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#alert_on_last_attempt Job#alert_on_last_attempt}.
 
 ---
 
@@ -57981,7 +57981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#no_alert_for_canceled_runs Job#no_alert_for_canceled_runs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#no_alert_for_canceled_runs Job#no_alert_for_canceled_runs}.
 
 ---
 
@@ -57989,7 +57989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}.
 
 ---
 
@@ -58006,7 +58006,7 @@ def put_pipeline_task(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#pipeline_id Job#pipeline_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#pipeline_id Job#pipeline_id}.
 
 ---
 
@@ -58014,7 +58014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#full_refresh Job#full_refresh}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#full_refresh Job#full_refresh}.
 
 ---
 
@@ -58033,7 +58033,7 @@ def put_python_wheel_task(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#entry_point Job#entry_point}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#entry_point Job#entry_point}.
 
 ---
 
@@ -58041,7 +58041,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#named_parameters Job#named_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#named_parameters Job#named_parameters}.
 
 ---
 
@@ -58049,7 +58049,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#package_name Job#package_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#package_name Job#package_name}.
 
 ---
 
@@ -58057,7 +58057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#parameters Job#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#parameters Job#parameters}.
 
 ---
 
@@ -58074,7 +58074,7 @@ def put_run_job_task(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#job_id Job#job_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#job_id Job#job_id}.
 
 ---
 
@@ -58082,7 +58082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#job_parameters Job#job_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#job_parameters Job#job_parameters}.
 
 ---
 
@@ -58100,7 +58100,7 @@ def put_spark_jar_task(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#jar_uri Job#jar_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#jar_uri Job#jar_uri}.
 
 ---
 
@@ -58108,7 +58108,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#main_class_name Job#main_class_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#main_class_name Job#main_class_name}.
 
 ---
 
@@ -58116,7 +58116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#parameters Job#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#parameters Job#parameters}.
 
 ---
 
@@ -58134,7 +58134,7 @@ def put_spark_python_task(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#python_file Job#python_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#python_file Job#python_file}.
 
 ---
 
@@ -58142,7 +58142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#parameters Job#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#parameters Job#parameters}.
 
 ---
 
@@ -58150,7 +58150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#source Job#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#source Job#source}.
 
 ---
 
@@ -58166,7 +58166,7 @@ def put_spark_submit_task(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#parameters Job#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#parameters Job#parameters}.
 
 ---
 
@@ -58189,7 +58189,7 @@ def put_sql_task(
 
 alert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#alert Job#alert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#alert Job#alert}
 
 ---
 
@@ -58199,7 +58199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 dashboard block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#dashboard Job#dashboard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#dashboard Job#dashboard}
 
 ---
 
@@ -58209,7 +58209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#file Job#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#file Job#file}
 
 ---
 
@@ -58217,7 +58217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#parameters Job#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#parameters Job#parameters}.
 
 ---
 
@@ -58227,7 +58227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#query Job#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#query Job#query}
 
 ---
 
@@ -58235,7 +58235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#warehouse_id Job#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#warehouse_id Job#warehouse_id}.
 
 ---
 
@@ -63385,7 +63385,7 @@ def put_alert(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#alert_id Job#alert_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#alert_id Job#alert_id}.
 
 ---
 
@@ -63395,7 +63395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 subscriptions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#subscriptions Job#subscriptions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#subscriptions Job#subscriptions}
 
 ---
 
@@ -63403,7 +63403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#pause_subscriptions Job#pause_subscriptions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#pause_subscriptions Job#pause_subscriptions}.
 
 ---
 
@@ -63422,7 +63422,7 @@ def put_dashboard(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#dashboard_id Job#dashboard_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#dashboard_id Job#dashboard_id}.
 
 ---
 
@@ -63430,7 +63430,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#custom_subject Job#custom_subject}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#custom_subject Job#custom_subject}.
 
 ---
 
@@ -63438,7 +63438,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#pause_subscriptions Job#pause_subscriptions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#pause_subscriptions Job#pause_subscriptions}.
 
 ---
 
@@ -63448,7 +63448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 subscriptions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#subscriptions Job#subscriptions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#subscriptions Job#subscriptions}
 
 ---
 
@@ -63464,7 +63464,7 @@ def put_file(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#path Job#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#path Job#path}.
 
 ---
 
@@ -63480,7 +63480,7 @@ def put_query(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#query_id Job#query_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#query_id Job#query_id}.
 
 ---
 
@@ -64924,7 +64924,7 @@ def put_file_arrival(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#url Job#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#url Job#url}.
 
 ---
 
@@ -64932,7 +64932,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#min_time_between_triggers_seconds Job#min_time_between_triggers_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#min_time_between_triggers_seconds Job#min_time_between_triggers_seconds}.
 
 ---
 
@@ -64940,7 +64940,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/job#wait_after_last_change_seconds Job#wait_after_last_change_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/job#wait_after_last_change_seconds Job#wait_after_last_change_seconds}.
 
 ---
 

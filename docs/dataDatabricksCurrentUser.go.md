@@ -1,6 +1,6 @@
 # `data_databricks_current_user`
 
-Refer to the Terraform Registory for docs: [`data_databricks_current_user`](https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/data-sources/current_user).
+Refer to the Terraform Registory for docs: [`data_databricks_current_user`](https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/data-sources/current_user).
 
 # `dataDatabricksCurrentUser` Submodule <a name="`dataDatabricksCurrentUser` Submodule" id="@cdktf/provider-databricks.dataDatabricksCurrentUser"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_databricks_current_user`](http
 
 ### DataDatabricksCurrentUser <a name="DataDatabricksCurrentUser" id="@cdktf/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/data-sources/current_user databricks_current_user}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/data-sources/current_user databricks_current_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickscurrentuser"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscurrentuser"
 
 datadatabrickscurrentuser.NewDataDatabricksCurrentUser(scope Construct, id *string, config DataDatabricksCurrentUserConfig) DataDatabricksCurrentUser
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickscurrentuser"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscurrentuser"
 
 datadatabrickscurrentuser.DataDatabricksCurrentUser_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickscurrentuser"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscurrentuser"
 
 datadatabrickscurrentuser.DataDatabricksCurrentUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ datadatabrickscurrentuser.DataDatabricksCurrentUser_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickscurrentuser"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscurrentuser"
 
 datadatabrickscurrentuser.DataDatabricksCurrentUser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datadatabrickscurrentuser.DataDatabricksCurrentUser_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickscurrentuser"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscurrentuser"
 
 datadatabrickscurrentuser.DataDatabricksCurrentUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataDatabricksCurrentUser 
 
 The id of the existing DataDatabricksCurrentUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/data-sources/current_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/data-sources/current_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -644,7 +644,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickscurrentuser"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscurrentuser"
 
 &datadatabrickscurrentuser.DataDatabricksCurrentUserConfig {
 	Connection: interface{},
@@ -669,7 +669,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabri
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/data-sources/current_user#id DataDatabricksCurrentUser#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/data-sources/current_user#id DataDatabricksCurrentUser#id}. |
 
 ---
 
@@ -751,7 +751,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/data-sources/current_user#id DataDatabricksCurrentUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/data-sources/current_user#id DataDatabricksCurrentUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

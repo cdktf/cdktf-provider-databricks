@@ -1,6 +1,6 @@
 # `databricks_token`
 
-Refer to the Terraform Registory for docs: [`databricks_token`](https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/token).
+Refer to the Terraform Registory for docs: [`databricks_token`](https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/token).
 
 # `token` Submodule <a name="`token` Submodule" id="@cdktf/provider-databricks.token"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`databricks_token`](https://registry
 
 ### Token <a name="Token" id="@cdktf/provider-databricks.token.Token"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/token databricks_token}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/token databricks_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.token.Token.Initializer"></a>
 
@@ -463,7 +463,7 @@ The construct id used in the generated config for the Token to import.
 
 The id of the existing Token that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -822,12 +822,12 @@ const tokenConfig: token.TokenConfig = { ... }
 | <code><a href="#@cdktf/provider-databricks.token.TokenConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.token.TokenConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.token.TokenConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.token.TokenConfig.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/token#comment Token#comment}. |
-| <code><a href="#@cdktf/provider-databricks.token.TokenConfig.property.creationTime">creationTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/token#creation_time Token#creation_time}. |
-| <code><a href="#@cdktf/provider-databricks.token.TokenConfig.property.expiryTime">expiryTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/token#expiry_time Token#expiry_time}. |
-| <code><a href="#@cdktf/provider-databricks.token.TokenConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/token#id Token#id}. |
-| <code><a href="#@cdktf/provider-databricks.token.TokenConfig.property.lifetimeSeconds">lifetimeSeconds</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/token#lifetime_seconds Token#lifetime_seconds}. |
-| <code><a href="#@cdktf/provider-databricks.token.TokenConfig.property.tokenId">tokenId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/token#token_id Token#token_id}. |
+| <code><a href="#@cdktf/provider-databricks.token.TokenConfig.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/token#comment Token#comment}. |
+| <code><a href="#@cdktf/provider-databricks.token.TokenConfig.property.creationTime">creationTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/token#creation_time Token#creation_time}. |
+| <code><a href="#@cdktf/provider-databricks.token.TokenConfig.property.expiryTime">expiryTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/token#expiry_time Token#expiry_time}. |
+| <code><a href="#@cdktf/provider-databricks.token.TokenConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/token#id Token#id}. |
+| <code><a href="#@cdktf/provider-databricks.token.TokenConfig.property.lifetimeSeconds">lifetimeSeconds</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/token#lifetime_seconds Token#lifetime_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.token.TokenConfig.property.tokenId">tokenId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/token#token_id Token#token_id}. |
 
 ---
 
@@ -909,7 +909,7 @@ public readonly comment: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/token#comment Token#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/token#comment Token#comment}.
 
 ---
 
@@ -921,7 +921,7 @@ public readonly creationTime: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/token#creation_time Token#creation_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/token#creation_time Token#creation_time}.
 
 ---
 
@@ -933,7 +933,7 @@ public readonly expiryTime: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/token#expiry_time Token#expiry_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/token#expiry_time Token#expiry_time}.
 
 ---
 
@@ -945,7 +945,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/token#id Token#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/token#id Token#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -960,7 +960,7 @@ public readonly lifetimeSeconds: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/token#lifetime_seconds Token#lifetime_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/token#lifetime_seconds Token#lifetime_seconds}.
 
 ---
 
@@ -972,7 +972,7 @@ public readonly tokenId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.0/docs/resources/token#token_id Token#token_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/token#token_id Token#token_id}.
 
 ---
 
