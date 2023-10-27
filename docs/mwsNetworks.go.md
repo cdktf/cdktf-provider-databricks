@@ -1,6 +1,6 @@
 # `databricks_mws_networks`
 
-Refer to the Terraform Registory for docs: [`databricks_mws_networks`](https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks).
+Refer to the Terraform Registory for docs: [`databricks_mws_networks`](https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks).
 
 # `mwsNetworks` Submodule <a name="`mwsNetworks` Submodule" id="@cdktf/provider-databricks.mwsNetworks"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`databricks_mws_networks`](https://r
 
 ### MwsNetworks <a name="MwsNetworks" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworks"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks databricks_mws_networks}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks databricks_mws_networks}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsnetworks"
 
 mwsnetworks.NewMwsNetworks(scope Construct, id *string, config MwsNetworksConfig) MwsNetworks
 ```
@@ -448,7 +448,7 @@ func ResetWorkspaceId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworks.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsnetworks"
 
 mwsnetworks.MwsNetworks_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsnetworks"
 
 mwsnetworks.MwsNetworks_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ mwsnetworks.MwsNetworks_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworks.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsnetworks"
 
 mwsnetworks.MwsNetworks_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ mwsnetworks.MwsNetworks_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworks.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsnetworks"
 
 mwsnetworks.MwsNetworks_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -537,7 +537,7 @@ The construct id used in the generated config for the MwsNetworks to import.
 
 The id of the existing MwsNetworks that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1023,7 +1023,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsnetworks"
 
 &mwsnetworks.MwsNetworksConfig {
 	Connection: interface{},
@@ -1037,12 +1037,12 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks
 	NetworkName: *string,
 	CreationTime: *f64,
 	ErrorMessages: interface{},
-	GcpNetworkInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.mwsNetworks.MwsNetworksGcpNetworkInfo,
+	GcpNetworkInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks.mwsNetworks.MwsNetworksGcpNetworkInfo,
 	Id: *string,
 	NetworkId: *string,
 	SecurityGroupIds: *[]*string,
 	SubnetIds: *[]*string,
-	VpcEndpoints: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.mwsNetworks.MwsNetworksVpcEndpoints,
+	VpcEndpoints: github.com/cdktf/cdktf-provider-databricks-go/databricks.mwsNetworks.MwsNetworksVpcEndpoints,
 	VpcId: *string,
 	VpcStatus: *string,
 	WorkspaceId: *f64,
@@ -1060,19 +1060,19 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks
 | <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#account_id MwsNetworks#account_id}. |
-| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksConfig.property.networkName">NetworkName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#network_name MwsNetworks#network_name}. |
-| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksConfig.property.creationTime">CreationTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#creation_time MwsNetworks#creation_time}. |
+| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#account_id MwsNetworks#account_id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksConfig.property.networkName">NetworkName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#network_name MwsNetworks#network_name}. |
+| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksConfig.property.creationTime">CreationTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#creation_time MwsNetworks#creation_time}. |
 | <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksConfig.property.errorMessages">ErrorMessages</a></code> | <code>interface{}</code> | error_messages block. |
 | <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksConfig.property.gcpNetworkInfo">GcpNetworkInfo</a></code> | <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksGcpNetworkInfo">MwsNetworksGcpNetworkInfo</a></code> | gcp_network_info block. |
-| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#id MwsNetworks#id}. |
-| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksConfig.property.networkId">NetworkId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#network_id MwsNetworks#network_id}. |
-| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksConfig.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#security_group_ids MwsNetworks#security_group_ids}. |
-| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksConfig.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#subnet_ids MwsNetworks#subnet_ids}. |
+| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#id MwsNetworks#id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksConfig.property.networkId">NetworkId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#network_id MwsNetworks#network_id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksConfig.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#security_group_ids MwsNetworks#security_group_ids}. |
+| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksConfig.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#subnet_ids MwsNetworks#subnet_ids}. |
 | <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksConfig.property.vpcEndpoints">VpcEndpoints</a></code> | <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksVpcEndpoints">MwsNetworksVpcEndpoints</a></code> | vpc_endpoints block. |
-| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#vpc_id MwsNetworks#vpc_id}. |
-| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksConfig.property.vpcStatus">VpcStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#vpc_status MwsNetworks#vpc_status}. |
-| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksConfig.property.workspaceId">WorkspaceId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#workspace_id MwsNetworks#workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#vpc_id MwsNetworks#vpc_id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksConfig.property.vpcStatus">VpcStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#vpc_status MwsNetworks#vpc_status}. |
+| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksConfig.property.workspaceId">WorkspaceId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#workspace_id MwsNetworks#workspace_id}. |
 
 ---
 
@@ -1154,7 +1154,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#account_id MwsNetworks#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#account_id MwsNetworks#account_id}.
 
 ---
 
@@ -1166,7 +1166,7 @@ NetworkName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#network_name MwsNetworks#network_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#network_name MwsNetworks#network_name}.
 
 ---
 
@@ -1178,7 +1178,7 @@ CreationTime *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#creation_time MwsNetworks#creation_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#creation_time MwsNetworks#creation_time}.
 
 ---
 
@@ -1192,7 +1192,7 @@ ErrorMessages interface{}
 
 error_messages block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#error_messages MwsNetworks#error_messages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#error_messages MwsNetworks#error_messages}
 
 ---
 
@@ -1206,7 +1206,7 @@ GcpNetworkInfo MwsNetworksGcpNetworkInfo
 
 gcp_network_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#gcp_network_info MwsNetworks#gcp_network_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#gcp_network_info MwsNetworks#gcp_network_info}
 
 ---
 
@@ -1218,7 +1218,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#id MwsNetworks#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#id MwsNetworks#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1233,7 +1233,7 @@ NetworkId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#network_id MwsNetworks#network_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#network_id MwsNetworks#network_id}.
 
 ---
 
@@ -1245,7 +1245,7 @@ SecurityGroupIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#security_group_ids MwsNetworks#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#security_group_ids MwsNetworks#security_group_ids}.
 
 ---
 
@@ -1257,7 +1257,7 @@ SubnetIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#subnet_ids MwsNetworks#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#subnet_ids MwsNetworks#subnet_ids}.
 
 ---
 
@@ -1271,7 +1271,7 @@ VpcEndpoints MwsNetworksVpcEndpoints
 
 vpc_endpoints block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#vpc_endpoints MwsNetworks#vpc_endpoints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#vpc_endpoints MwsNetworks#vpc_endpoints}
 
 ---
 
@@ -1283,7 +1283,7 @@ VpcId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#vpc_id MwsNetworks#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#vpc_id MwsNetworks#vpc_id}.
 
 ---
 
@@ -1295,7 +1295,7 @@ VpcStatus *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#vpc_status MwsNetworks#vpc_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#vpc_status MwsNetworks#vpc_status}.
 
 ---
 
@@ -1307,7 +1307,7 @@ WorkspaceId *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#workspace_id MwsNetworks#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#workspace_id MwsNetworks#workspace_id}.
 
 ---
 
@@ -1316,7 +1316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworksErrorMessages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsnetworks"
 
 &mwsnetworks.MwsNetworksErrorMessages {
 	ErrorMessage: *string,
@@ -1328,8 +1328,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksErrorMessages.property.errorMessage">ErrorMessage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#error_message MwsNetworks#error_message}. |
-| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksErrorMessages.property.errorType">ErrorType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#error_type MwsNetworks#error_type}. |
+| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksErrorMessages.property.errorMessage">ErrorMessage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#error_message MwsNetworks#error_message}. |
+| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksErrorMessages.property.errorType">ErrorType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#error_type MwsNetworks#error_type}. |
 
 ---
 
@@ -1341,7 +1341,7 @@ ErrorMessage *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#error_message MwsNetworks#error_message}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#error_message MwsNetworks#error_message}.
 
 ---
 
@@ -1353,7 +1353,7 @@ ErrorType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#error_type MwsNetworks#error_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#error_type MwsNetworks#error_type}.
 
 ---
 
@@ -1362,7 +1362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworksGcpNetworkInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsnetworks"
 
 &mwsnetworks.MwsNetworksGcpNetworkInfo {
 	NetworkProjectId: *string,
@@ -1378,12 +1378,12 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksGcpNetworkInfo.property.networkProjectId">NetworkProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#network_project_id MwsNetworks#network_project_id}. |
-| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksGcpNetworkInfo.property.podIpRangeName">PodIpRangeName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#pod_ip_range_name MwsNetworks#pod_ip_range_name}. |
-| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksGcpNetworkInfo.property.serviceIpRangeName">ServiceIpRangeName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#service_ip_range_name MwsNetworks#service_ip_range_name}. |
-| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksGcpNetworkInfo.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#subnet_id MwsNetworks#subnet_id}. |
-| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksGcpNetworkInfo.property.subnetRegion">SubnetRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#subnet_region MwsNetworks#subnet_region}. |
-| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksGcpNetworkInfo.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#vpc_id MwsNetworks#vpc_id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksGcpNetworkInfo.property.networkProjectId">NetworkProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#network_project_id MwsNetworks#network_project_id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksGcpNetworkInfo.property.podIpRangeName">PodIpRangeName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#pod_ip_range_name MwsNetworks#pod_ip_range_name}. |
+| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksGcpNetworkInfo.property.serviceIpRangeName">ServiceIpRangeName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#service_ip_range_name MwsNetworks#service_ip_range_name}. |
+| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksGcpNetworkInfo.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#subnet_id MwsNetworks#subnet_id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksGcpNetworkInfo.property.subnetRegion">SubnetRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#subnet_region MwsNetworks#subnet_region}. |
+| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksGcpNetworkInfo.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#vpc_id MwsNetworks#vpc_id}. |
 
 ---
 
@@ -1395,7 +1395,7 @@ NetworkProjectId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#network_project_id MwsNetworks#network_project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#network_project_id MwsNetworks#network_project_id}.
 
 ---
 
@@ -1407,7 +1407,7 @@ PodIpRangeName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#pod_ip_range_name MwsNetworks#pod_ip_range_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#pod_ip_range_name MwsNetworks#pod_ip_range_name}.
 
 ---
 
@@ -1419,7 +1419,7 @@ ServiceIpRangeName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#service_ip_range_name MwsNetworks#service_ip_range_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#service_ip_range_name MwsNetworks#service_ip_range_name}.
 
 ---
 
@@ -1431,7 +1431,7 @@ SubnetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#subnet_id MwsNetworks#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#subnet_id MwsNetworks#subnet_id}.
 
 ---
 
@@ -1443,7 +1443,7 @@ SubnetRegion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#subnet_region MwsNetworks#subnet_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#subnet_region MwsNetworks#subnet_region}.
 
 ---
 
@@ -1455,7 +1455,7 @@ VpcId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#vpc_id MwsNetworks#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#vpc_id MwsNetworks#vpc_id}.
 
 ---
 
@@ -1464,7 +1464,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworksVpcEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsnetworks"
 
 &mwsnetworks.MwsNetworksVpcEndpoints {
 	DataplaneRelay: *[]*string,
@@ -1476,8 +1476,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksVpcEndpoints.property.dataplaneRelay">DataplaneRelay</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#dataplane_relay MwsNetworks#dataplane_relay}. |
-| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksVpcEndpoints.property.restApi">RestApi</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#rest_api MwsNetworks#rest_api}. |
+| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksVpcEndpoints.property.dataplaneRelay">DataplaneRelay</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#dataplane_relay MwsNetworks#dataplane_relay}. |
+| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksVpcEndpoints.property.restApi">RestApi</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#rest_api MwsNetworks#rest_api}. |
 
 ---
 
@@ -1489,7 +1489,7 @@ DataplaneRelay *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#dataplane_relay MwsNetworks#dataplane_relay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#dataplane_relay MwsNetworks#dataplane_relay}.
 
 ---
 
@@ -1501,7 +1501,7 @@ RestApi *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/mws_networks#rest_api MwsNetworks#rest_api}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#rest_api MwsNetworks#rest_api}.
 
 ---
 
@@ -1512,7 +1512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworksErrorMessagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsnetworks"
 
 mwsnetworks.NewMwsNetworksErrorMessagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MwsNetworksErrorMessagesList
 ```
@@ -1655,7 +1655,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworksErrorMessagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsnetworks"
 
 mwsnetworks.NewMwsNetworksErrorMessagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MwsNetworksErrorMessagesOutputReference
 ```
@@ -1980,7 +1980,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworksGcpNetworkInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsnetworks"
 
 mwsnetworks.NewMwsNetworksGcpNetworkInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MwsNetworksGcpNetworkInfoOutputReference
 ```
@@ -2361,7 +2361,7 @@ func InternalValue() MwsNetworksGcpNetworkInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworksVpcEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsnetworks"
 
 mwsnetworks.NewMwsNetworksVpcEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MwsNetworksVpcEndpointsOutputReference
 ```

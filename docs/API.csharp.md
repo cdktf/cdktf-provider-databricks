@@ -2,6 +2,7 @@
 
 The following submodules are available:
 - [accessControlRuleSet](./accessControlRuleSet.csharp.md)
+- [artifactAllowlist](./artifactAllowlist.csharp.md)
 - [awsS3Mount](./awsS3Mount.csharp.md)
 - [azureAdlsGen1Mount](./azureAdlsGen1Mount.csharp.md)
 - [azureAdlsGen2Mount](./azureAdlsGen2Mount.csharp.md)

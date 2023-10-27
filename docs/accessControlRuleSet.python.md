@@ -1,6 +1,6 @@
 # `databricks_access_control_rule_set`
 
-Refer to the Terraform Registory for docs: [`databricks_access_control_rule_set`](https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/access_control_rule_set).
+Refer to the Terraform Registory for docs: [`databricks_access_control_rule_set`](https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/access_control_rule_set).
 
 # `accessControlRuleSet` Submodule <a name="`accessControlRuleSet` Submodule" id="@cdktf/provider-databricks.accessControlRuleSet"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`databricks_access_control_rule_set`
 
 ### AccessControlRuleSet <a name="AccessControlRuleSet" id="@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/access_control_rule_set databricks_access_control_rule_set}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/access_control_rule_set databricks_access_control_rule_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSet.Initializer"></a>
 
@@ -42,9 +42,9 @@ accessControlRuleSet.AccessControlRuleSet(
 | <code><a href="#@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSet.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSet.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSet.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSet.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/access_control_rule_set#name AccessControlRuleSet#name}. |
+| <code><a href="#@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSet.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/access_control_rule_set#name AccessControlRuleSet#name}. |
 | <code><a href="#@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSet.Initializer.parameter.grantRules">grant_rules</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSetGrantRules">AccessControlRuleSetGrantRules</a>]]</code> | grant_rules block. |
-| <code><a href="#@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSet.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/access_control_rule_set#id AccessControlRuleSet#id}. |
+| <code><a href="#@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSet.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/access_control_rule_set#id AccessControlRuleSet#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/access_control_rule_set#name AccessControlRuleSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/access_control_rule_set#name AccessControlRuleSet#name}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 grant_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/access_control_rule_set#grant_rules AccessControlRuleSet#grant_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/access_control_rule_set#grant_rules AccessControlRuleSet#grant_rules}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/access_control_rule_set#id AccessControlRuleSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/access_control_rule_set#id AccessControlRuleSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -581,7 +581,7 @@ The construct id used in the generated config for the AccessControlRuleSet to im
 
 The id of the existing AccessControlRuleSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/access_control_rule_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/access_control_rule_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -885,9 +885,9 @@ accessControlRuleSet.AccessControlRuleSetConfig(
 | <code><a href="#@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSetConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSetConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/access_control_rule_set#name AccessControlRuleSet#name}. |
+| <code><a href="#@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSetConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/access_control_rule_set#name AccessControlRuleSet#name}. |
 | <code><a href="#@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSetConfig.property.grantRules">grant_rules</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSetGrantRules">AccessControlRuleSetGrantRules</a>]]</code> | grant_rules block. |
-| <code><a href="#@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/access_control_rule_set#id AccessControlRuleSet#id}. |
+| <code><a href="#@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/access_control_rule_set#id AccessControlRuleSet#id}. |
 
 ---
 
@@ -969,7 +969,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/access_control_rule_set#name AccessControlRuleSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/access_control_rule_set#name AccessControlRuleSet#name}.
 
 ---
 
@@ -983,7 +983,7 @@ grant_rules: typing.Union[IResolvable, typing.List[AccessControlRuleSetGrantRule
 
 grant_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/access_control_rule_set#grant_rules AccessControlRuleSet#grant_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/access_control_rule_set#grant_rules AccessControlRuleSet#grant_rules}
 
 ---
 
@@ -995,7 +995,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/access_control_rule_set#id AccessControlRuleSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/access_control_rule_set#id AccessControlRuleSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1019,8 +1019,8 @@ accessControlRuleSet.AccessControlRuleSetGrantRules(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSetGrantRules.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/access_control_rule_set#role AccessControlRuleSet#role}. |
-| <code><a href="#@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSetGrantRules.property.principals">principals</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/access_control_rule_set#principals AccessControlRuleSet#principals}. |
+| <code><a href="#@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSetGrantRules.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/access_control_rule_set#role AccessControlRuleSet#role}. |
+| <code><a href="#@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSetGrantRules.property.principals">principals</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/access_control_rule_set#principals AccessControlRuleSet#principals}. |
 
 ---
 
@@ -1032,7 +1032,7 @@ role: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/access_control_rule_set#role AccessControlRuleSet#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/access_control_rule_set#role AccessControlRuleSet#role}.
 
 ---
 
@@ -1044,7 +1044,7 @@ principals: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/access_control_rule_set#principals AccessControlRuleSet#principals}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/access_control_rule_set#principals AccessControlRuleSet#principals}.
 
 ---
 

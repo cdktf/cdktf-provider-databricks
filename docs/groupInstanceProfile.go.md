@@ -1,6 +1,6 @@
 # `databricks_group_instance_profile`
 
-Refer to the Terraform Registory for docs: [`databricks_group_instance_profile`](https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/group_instance_profile).
+Refer to the Terraform Registory for docs: [`databricks_group_instance_profile`](https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/group_instance_profile).
 
 # `groupInstanceProfile` Submodule <a name="`groupInstanceProfile` Submodule" id="@cdktf/provider-databricks.groupInstanceProfile"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`databricks_group_instance_profile`]
 
 ### GroupInstanceProfile <a name="GroupInstanceProfile" id="@cdktf/provider-databricks.groupInstanceProfile.GroupInstanceProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/group_instance_profile databricks_group_instance_profile}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/group_instance_profile databricks_group_instance_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.groupInstanceProfile.GroupInstanceProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/groupinstanceprofile"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/groupinstanceprofile"
 
 groupinstanceprofile.NewGroupInstanceProfile(scope Construct, id *string, config GroupInstanceProfileConfig) GroupInstanceProfile
 ```
@@ -339,7 +339,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.groupInstanceProfile.GroupInstanceProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/groupinstanceprofile"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/groupinstanceprofile"
 
 groupinstanceprofile.GroupInstanceProfile_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.groupInstanceProfile.GroupInstanceProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/groupinstanceprofile"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/groupinstanceprofile"
 
 groupinstanceprofile.GroupInstanceProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ groupinstanceprofile.GroupInstanceProfile_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.groupInstanceProfile.GroupInstanceProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/groupinstanceprofile"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/groupinstanceprofile"
 
 groupinstanceprofile.GroupInstanceProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ groupinstanceprofile.GroupInstanceProfile_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.groupInstanceProfile.GroupInstanceProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/groupinstanceprofile"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/groupinstanceprofile"
 
 groupinstanceprofile.GroupInstanceProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -428,7 +428,7 @@ The construct id used in the generated config for the GroupInstanceProfile to im
 
 The id of the existing GroupInstanceProfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/group_instance_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/group_instance_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -694,7 +694,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.groupInstanceProfile.GroupInstanceProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/groupinstanceprofile"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/groupinstanceprofile"
 
 &groupinstanceprofile.GroupInstanceProfileConfig {
 	Connection: interface{},
@@ -721,9 +721,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/groupinstan
 | <code><a href="#@cdktf/provider-databricks.groupInstanceProfile.GroupInstanceProfileConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.groupInstanceProfile.GroupInstanceProfileConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.groupInstanceProfile.GroupInstanceProfileConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.groupInstanceProfile.GroupInstanceProfileConfig.property.groupId">GroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/group_instance_profile#group_id GroupInstanceProfile#group_id}. |
-| <code><a href="#@cdktf/provider-databricks.groupInstanceProfile.GroupInstanceProfileConfig.property.instanceProfileId">InstanceProfileId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/group_instance_profile#instance_profile_id GroupInstanceProfile#instance_profile_id}. |
-| <code><a href="#@cdktf/provider-databricks.groupInstanceProfile.GroupInstanceProfileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/group_instance_profile#id GroupInstanceProfile#id}. |
+| <code><a href="#@cdktf/provider-databricks.groupInstanceProfile.GroupInstanceProfileConfig.property.groupId">GroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/group_instance_profile#group_id GroupInstanceProfile#group_id}. |
+| <code><a href="#@cdktf/provider-databricks.groupInstanceProfile.GroupInstanceProfileConfig.property.instanceProfileId">InstanceProfileId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/group_instance_profile#instance_profile_id GroupInstanceProfile#instance_profile_id}. |
+| <code><a href="#@cdktf/provider-databricks.groupInstanceProfile.GroupInstanceProfileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/group_instance_profile#id GroupInstanceProfile#id}. |
 
 ---
 
@@ -805,7 +805,7 @@ GroupId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/group_instance_profile#group_id GroupInstanceProfile#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/group_instance_profile#group_id GroupInstanceProfile#group_id}.
 
 ---
 
@@ -817,7 +817,7 @@ InstanceProfileId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/group_instance_profile#instance_profile_id GroupInstanceProfile#instance_profile_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/group_instance_profile#instance_profile_id GroupInstanceProfile#instance_profile_id}.
 
 ---
 
@@ -829,7 +829,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.28.1/docs/resources/group_instance_profile#id GroupInstanceProfile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/group_instance_profile#id GroupInstanceProfile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
