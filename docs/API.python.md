@@ -2,6 +2,7 @@
 
 The following submodules are available:
 - [accessControlRuleSet](./accessControlRuleSet.python.md)
+- [artifactAllowlist](./artifactAllowlist.python.md)
 - [awsS3Mount](./awsS3Mount.python.md)
 - [azureAdlsGen1Mount](./azureAdlsGen1Mount.python.md)
 - [azureAdlsGen2Mount](./azureAdlsGen2Mount.python.md)

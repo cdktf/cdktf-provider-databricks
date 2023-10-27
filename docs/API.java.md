@@ -2,6 +2,7 @@
 
 The following submodules are available:
 - [accessControlRuleSet](./accessControlRuleSet.java.md)
+- [artifactAllowlist](./artifactAllowlist.java.md)
 - [awsS3Mount](./awsS3Mount.java.md)
 - [azureAdlsGen1Mount](./azureAdlsGen1Mount.java.md)
 - [azureAdlsGen2Mount](./azureAdlsGen2Mount.java.md)

@@ -2,6 +2,7 @@
 
 The following submodules are available:
 - [accessControlRuleSet](./accessControlRuleSet.go.md)
+- [artifactAllowlist](./artifactAllowlist.go.md)
 - [awsS3Mount](./awsS3Mount.go.md)
 - [azureAdlsGen1Mount](./azureAdlsGen1Mount.go.md)
 - [azureAdlsGen2Mount](./azureAdlsGen2Mount.go.md)

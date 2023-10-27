@@ -2,6 +2,7 @@
 
 The following submodules are available:
 - [accessControlRuleSet](./accessControlRuleSet.typescript.md)
+- [artifactAllowlist](./artifactAllowlist.typescript.md)
 - [awsS3Mount](./awsS3Mount.typescript.md)
 - [azureAdlsGen1Mount](./azureAdlsGen1Mount.typescript.md)
 - [azureAdlsGen2Mount](./azureAdlsGen2Mount.typescript.md)
