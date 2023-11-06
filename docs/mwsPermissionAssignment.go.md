@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mwsPermissionAssignment.MwsPermissionAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwspermissionassignment"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwspermissionassignment"
 
 mwspermissionassignment.NewMwsPermissionAssignment(scope Construct, id *string, config MwsPermissionAssignmentConfig) MwsPermissionAssignment
 ```
@@ -339,7 +339,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.mwsPermissionAssignment.MwsPermissionAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwspermissionassignment"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwspermissionassignment"
 
 mwspermissionassignment.MwsPermissionAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.mwsPermissionAssignment.MwsPermissionAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwspermissionassignment"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwspermissionassignment"
 
 mwspermissionassignment.MwsPermissionAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ mwspermissionassignment.MwsPermissionAssignment_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.mwsPermissionAssignment.MwsPermissionAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwspermissionassignment"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwspermissionassignment"
 
 mwspermissionassignment.MwsPermissionAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ mwspermissionassignment.MwsPermissionAssignment_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.mwsPermissionAssignment.MwsPermissionAssignment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwspermissionassignment"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwspermissionassignment"
 
 mwspermissionassignment.MwsPermissionAssignment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -716,7 +716,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mwsPermissionAssignment.MwsPermissionAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwspermissionassignment"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwspermissionassignment"
 
 &mwspermissionassignment.MwsPermissionAssignmentConfig {
 	Connection: interface{},
