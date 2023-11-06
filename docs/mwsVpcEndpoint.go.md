@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mwsVpcEndpoint.MwsVpcEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsvpcendpoint"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsvpcendpoint"
 
 mwsvpcendpoint.NewMwsVpcEndpoint(scope Construct, id *string, config MwsVpcEndpointConfig) MwsVpcEndpoint
 ```
@@ -415,7 +415,7 @@ func ResetVpcEndpointId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.mwsVpcEndpoint.MwsVpcEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsvpcendpoint"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsvpcendpoint"
 
 mwsvpcendpoint.MwsVpcEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -447,7 +447,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.mwsVpcEndpoint.MwsVpcEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsvpcendpoint"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsvpcendpoint"
 
 mwsvpcendpoint.MwsVpcEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -461,7 +461,7 @@ mwsvpcendpoint.MwsVpcEndpoint_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.mwsVpcEndpoint.MwsVpcEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsvpcendpoint"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsvpcendpoint"
 
 mwsvpcendpoint.MwsVpcEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -475,7 +475,7 @@ mwsvpcendpoint.MwsVpcEndpoint_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.mwsVpcEndpoint.MwsVpcEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsvpcendpoint"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsvpcendpoint"
 
 mwsvpcendpoint.MwsVpcEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -946,7 +946,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mwsVpcEndpoint.MwsVpcEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsvpcendpoint"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsvpcendpoint"
 
 &mwsvpcendpoint.MwsVpcEndpointConfig {
 	Connection: interface{},
@@ -961,7 +961,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsvpcendpoint"
 	AwsAccountId: *string,
 	AwsEndpointServiceId: *string,
 	AwsVpcEndpointId: *string,
-	GcpVpcEndpointInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks.mwsVpcEndpoint.MwsVpcEndpointGcpVpcEndpointInfo,
+	GcpVpcEndpointInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.mwsVpcEndpoint.MwsVpcEndpointGcpVpcEndpointInfo,
 	Id: *string,
 	Region: *string,
 	State: *string,
@@ -1207,7 +1207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mwsVpcEndpoint.MwsVpcEndpointGcpVpcEndpointInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsvpcendpoint"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsvpcendpoint"
 
 &mwsvpcendpoint.MwsVpcEndpointGcpVpcEndpointInfo {
 	EndpointRegion: *string,
@@ -1297,7 +1297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mwsVpcEndpoint.MwsVpcEndpointGcpVpcEndpointInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsvpcendpoint"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsvpcendpoint"
 
 mwsvpcendpoint.NewMwsVpcEndpointGcpVpcEndpointInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MwsVpcEndpointGcpVpcEndpointInfoOutputReference
 ```
