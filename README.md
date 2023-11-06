@@ -1,7 +1,9 @@
 
-# Terraform CDK databricks Provider ~> 1.0
+# Terraform CDK databricks Provider tracks ~> 1.0
 
 This repo builds and publishes the Terraform databricks Provider bindings for [CDK for Terraform](https://cdk.tf).
+
+Is based directly on databricks 1.29.0
 
 ## Available Packages
 
@@ -61,7 +63,7 @@ This project is explicitly not tracking the Terraform databricks Provider versio
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform databricks Provider](https://registry.terraform.io/providers/databricks/databricks/1.0.0)
+- [Terraform databricks Provider](https://registry.terraform.io/providers/databricks/databricks/1.29.0)
     - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-databricks/releases)
 - [Terraform Engine](https://terraform.io)
 
