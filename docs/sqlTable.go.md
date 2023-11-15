@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlTable.SqlTable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqltable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqltable"
 
 sqltable.NewSqlTable(scope Construct, id *string, config SqlTableConfig) SqlTable
 ```
@@ -436,7 +436,7 @@ func ResetWarehouseId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.sqlTable.SqlTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqltable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqltable"
 
 sqltable.SqlTable_IsConstruct(x interface{}) *bool
 ```
@@ -468,7 +468,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.sqlTable.SqlTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqltable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqltable"
 
 sqltable.SqlTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -482,7 +482,7 @@ sqltable.SqlTable_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.sqlTable.SqlTable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqltable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqltable"
 
 sqltable.SqlTable_IsTerraformResource(x interface{}) *bool
 ```
@@ -496,7 +496,7 @@ sqltable.SqlTable_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.sqlTable.SqlTable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqltable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqltable"
 
 sqltable.SqlTable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1099,7 +1099,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlTable.SqlTableColumn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqltable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqltable"
 
 &sqltable.SqlTableColumn {
 	Name: *string,
@@ -1173,7 +1173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlTable.SqlTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqltable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqltable"
 
 &sqltable.SqlTableConfig {
 	Connection: interface{},
@@ -1520,7 +1520,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlTable.SqlTableColumnList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqltable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqltable"
 
 sqltable.NewSqlTableColumnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SqlTableColumnList
 ```
@@ -1663,7 +1663,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlTable.SqlTableColumnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqltable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqltable"
 
 sqltable.NewSqlTableColumnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SqlTableColumnOutputReference
 ```
