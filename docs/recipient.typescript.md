@@ -1,6 +1,6 @@
 # `databricks_recipient`
 
-Refer to the Terraform Registory for docs: [`databricks_recipient`](https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient).
+Refer to the Terraform Registory for docs: [`databricks_recipient`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient).
 
 # `recipient` Submodule <a name="`recipient` Submodule" id="@cdktf/provider-databricks.recipient"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`databricks_recipient`](https://regi
 
 ### Recipient <a name="Recipient" id="@cdktf/provider-databricks.recipient.Recipient"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient databricks_recipient}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient databricks_recipient}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.recipient.Recipient.Initializer"></a>
 
@@ -79,6 +79,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.recipient.Recipient.resetDataRecipientGlobalMetastoreId">resetDataRecipientGlobalMetastoreId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.recipient.Recipient.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.recipient.Recipient.resetIpAccessList">resetIpAccessList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.recipient.Recipient.resetOwner">resetOwner</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.recipient.Recipient.resetSharingCode">resetSharingCode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.recipient.Recipient.resetTokens">resetTokens</a></code> | *No description.* |
 
@@ -374,6 +375,12 @@ public resetId(): void
 public resetIpAccessList(): void
 ```
 
+##### `resetOwner` <a name="resetOwner" id="@cdktf/provider-databricks.recipient.Recipient.resetOwner"></a>
+
+```typescript
+public resetOwner(): void
+```
+
 ##### `resetSharingCode` <a name="resetSharingCode" id="@cdktf/provider-databricks.recipient.Recipient.resetSharingCode"></a>
 
 ```typescript
@@ -489,7 +496,7 @@ The construct id used in the generated config for the Recipient to import.
 
 The id of the existing Recipient that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -527,6 +534,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.recipient.Recipient.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.recipient.Recipient.property.ipAccessListInput">ipAccessListInput</a></code> | <code><a href="#@cdktf/provider-databricks.recipient.RecipientIpAccessListStruct">RecipientIpAccessListStruct</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.recipient.Recipient.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.recipient.Recipient.property.ownerInput">ownerInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.recipient.Recipient.property.sharingCodeInput">sharingCodeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.recipient.Recipient.property.tokensInput">tokensInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.recipient.RecipientTokens">RecipientTokens</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.recipient.Recipient.property.authenticationType">authenticationType</a></code> | <code>string</code> | *No description.* |
@@ -534,6 +542,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.recipient.Recipient.property.dataRecipientGlobalMetastoreId">dataRecipientGlobalMetastoreId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.recipient.Recipient.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.recipient.Recipient.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.recipient.Recipient.property.owner">owner</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.recipient.Recipient.property.sharingCode">sharingCode</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -760,6 +769,16 @@ public readonly nameInput: string;
 
 ---
 
+##### `ownerInput`<sup>Optional</sup> <a name="ownerInput" id="@cdktf/provider-databricks.recipient.Recipient.property.ownerInput"></a>
+
+```typescript
+public readonly ownerInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `sharingCodeInput`<sup>Optional</sup> <a name="sharingCodeInput" id="@cdktf/provider-databricks.recipient.Recipient.property.sharingCodeInput"></a>
 
 ```typescript
@@ -830,6 +849,16 @@ public readonly name: string;
 
 ---
 
+##### `owner`<sup>Required</sup> <a name="owner" id="@cdktf/provider-databricks.recipient.Recipient.property.owner"></a>
+
+```typescript
+public readonly owner: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `sharingCode`<sup>Required</sup> <a name="sharingCode" id="@cdktf/provider-databricks.recipient.Recipient.property.sharingCode"></a>
 
 ```typescript
@@ -881,13 +910,14 @@ const recipientConfig: recipient.RecipientConfig = { ... }
 | <code><a href="#@cdktf/provider-databricks.recipient.RecipientConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.recipient.RecipientConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.recipient.RecipientConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.recipient.RecipientConfig.property.authenticationType">authenticationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#authentication_type Recipient#authentication_type}. |
-| <code><a href="#@cdktf/provider-databricks.recipient.RecipientConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#name Recipient#name}. |
-| <code><a href="#@cdktf/provider-databricks.recipient.RecipientConfig.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#comment Recipient#comment}. |
-| <code><a href="#@cdktf/provider-databricks.recipient.RecipientConfig.property.dataRecipientGlobalMetastoreId">dataRecipientGlobalMetastoreId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#data_recipient_global_metastore_id Recipient#data_recipient_global_metastore_id}. |
-| <code><a href="#@cdktf/provider-databricks.recipient.RecipientConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#id Recipient#id}. |
+| <code><a href="#@cdktf/provider-databricks.recipient.RecipientConfig.property.authenticationType">authenticationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#authentication_type Recipient#authentication_type}. |
+| <code><a href="#@cdktf/provider-databricks.recipient.RecipientConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#name Recipient#name}. |
+| <code><a href="#@cdktf/provider-databricks.recipient.RecipientConfig.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#comment Recipient#comment}. |
+| <code><a href="#@cdktf/provider-databricks.recipient.RecipientConfig.property.dataRecipientGlobalMetastoreId">dataRecipientGlobalMetastoreId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#data_recipient_global_metastore_id Recipient#data_recipient_global_metastore_id}. |
+| <code><a href="#@cdktf/provider-databricks.recipient.RecipientConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#id Recipient#id}. |
 | <code><a href="#@cdktf/provider-databricks.recipient.RecipientConfig.property.ipAccessList">ipAccessList</a></code> | <code><a href="#@cdktf/provider-databricks.recipient.RecipientIpAccessListStruct">RecipientIpAccessListStruct</a></code> | ip_access_list block. |
-| <code><a href="#@cdktf/provider-databricks.recipient.RecipientConfig.property.sharingCode">sharingCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#sharing_code Recipient#sharing_code}. |
+| <code><a href="#@cdktf/provider-databricks.recipient.RecipientConfig.property.owner">owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#owner Recipient#owner}. |
+| <code><a href="#@cdktf/provider-databricks.recipient.RecipientConfig.property.sharingCode">sharingCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#sharing_code Recipient#sharing_code}. |
 | <code><a href="#@cdktf/provider-databricks.recipient.RecipientConfig.property.tokens">tokens</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.recipient.RecipientTokens">RecipientTokens</a>[]</code> | tokens block. |
 
 ---
@@ -970,7 +1000,7 @@ public readonly authenticationType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#authentication_type Recipient#authentication_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#authentication_type Recipient#authentication_type}.
 
 ---
 
@@ -982,7 +1012,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#name Recipient#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#name Recipient#name}.
 
 ---
 
@@ -994,7 +1024,7 @@ public readonly comment: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#comment Recipient#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#comment Recipient#comment}.
 
 ---
 
@@ -1006,7 +1036,7 @@ public readonly dataRecipientGlobalMetastoreId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#data_recipient_global_metastore_id Recipient#data_recipient_global_metastore_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#data_recipient_global_metastore_id Recipient#data_recipient_global_metastore_id}.
 
 ---
 
@@ -1018,7 +1048,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#id Recipient#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#id Recipient#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1035,7 +1065,19 @@ public readonly ipAccessList: RecipientIpAccessListStruct;
 
 ip_access_list block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#ip_access_list Recipient#ip_access_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#ip_access_list Recipient#ip_access_list}
+
+---
+
+##### `owner`<sup>Optional</sup> <a name="owner" id="@cdktf/provider-databricks.recipient.RecipientConfig.property.owner"></a>
+
+```typescript
+public readonly owner: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#owner Recipient#owner}.
 
 ---
 
@@ -1047,7 +1089,7 @@ public readonly sharingCode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#sharing_code Recipient#sharing_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#sharing_code Recipient#sharing_code}.
 
 ---
 
@@ -1061,7 +1103,7 @@ public readonly tokens: IResolvable | RecipientTokens[];
 
 tokens block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#tokens Recipient#tokens}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#tokens Recipient#tokens}
 
 ---
 
@@ -1079,7 +1121,7 @@ const recipientIpAccessListStruct: recipient.RecipientIpAccessListStruct = { ...
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.recipient.RecipientIpAccessListStruct.property.allowedIpAddresses">allowedIpAddresses</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#allowed_ip_addresses Recipient#allowed_ip_addresses}. |
+| <code><a href="#@cdktf/provider-databricks.recipient.RecipientIpAccessListStruct.property.allowedIpAddresses">allowedIpAddresses</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#allowed_ip_addresses Recipient#allowed_ip_addresses}. |
 
 ---
 
@@ -1091,7 +1133,7 @@ public readonly allowedIpAddresses: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#allowed_ip_addresses Recipient#allowed_ip_addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#allowed_ip_addresses Recipient#allowed_ip_addresses}.
 
 ---
 
@@ -1109,13 +1151,13 @@ const recipientTokens: recipient.RecipientTokens = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.recipient.RecipientTokens.property.activationUrl">activationUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#activation_url Recipient#activation_url}. |
-| <code><a href="#@cdktf/provider-databricks.recipient.RecipientTokens.property.createdAt">createdAt</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#created_at Recipient#created_at}. |
-| <code><a href="#@cdktf/provider-databricks.recipient.RecipientTokens.property.createdBy">createdBy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#created_by Recipient#created_by}. |
-| <code><a href="#@cdktf/provider-databricks.recipient.RecipientTokens.property.expirationTime">expirationTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#expiration_time Recipient#expiration_time}. |
-| <code><a href="#@cdktf/provider-databricks.recipient.RecipientTokens.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#id Recipient#id}. |
-| <code><a href="#@cdktf/provider-databricks.recipient.RecipientTokens.property.updatedAt">updatedAt</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#updated_at Recipient#updated_at}. |
-| <code><a href="#@cdktf/provider-databricks.recipient.RecipientTokens.property.updatedBy">updatedBy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#updated_by Recipient#updated_by}. |
+| <code><a href="#@cdktf/provider-databricks.recipient.RecipientTokens.property.activationUrl">activationUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#activation_url Recipient#activation_url}. |
+| <code><a href="#@cdktf/provider-databricks.recipient.RecipientTokens.property.createdAt">createdAt</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#created_at Recipient#created_at}. |
+| <code><a href="#@cdktf/provider-databricks.recipient.RecipientTokens.property.createdBy">createdBy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#created_by Recipient#created_by}. |
+| <code><a href="#@cdktf/provider-databricks.recipient.RecipientTokens.property.expirationTime">expirationTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#expiration_time Recipient#expiration_time}. |
+| <code><a href="#@cdktf/provider-databricks.recipient.RecipientTokens.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#id Recipient#id}. |
+| <code><a href="#@cdktf/provider-databricks.recipient.RecipientTokens.property.updatedAt">updatedAt</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#updated_at Recipient#updated_at}. |
+| <code><a href="#@cdktf/provider-databricks.recipient.RecipientTokens.property.updatedBy">updatedBy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#updated_by Recipient#updated_by}. |
 
 ---
 
@@ -1127,7 +1169,7 @@ public readonly activationUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#activation_url Recipient#activation_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#activation_url Recipient#activation_url}.
 
 ---
 
@@ -1139,7 +1181,7 @@ public readonly createdAt: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#created_at Recipient#created_at}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#created_at Recipient#created_at}.
 
 ---
 
@@ -1151,7 +1193,7 @@ public readonly createdBy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#created_by Recipient#created_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#created_by Recipient#created_by}.
 
 ---
 
@@ -1163,7 +1205,7 @@ public readonly expirationTime: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#expiration_time Recipient#expiration_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#expiration_time Recipient#expiration_time}.
 
 ---
 
@@ -1175,7 +1217,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#id Recipient#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#id Recipient#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1190,7 +1232,7 @@ public readonly updatedAt: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#updated_at Recipient#updated_at}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#updated_at Recipient#updated_at}.
 
 ---
 
@@ -1202,7 +1244,7 @@ public readonly updatedBy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/recipient#updated_by Recipient#updated_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient#updated_by Recipient#updated_by}.
 
 ---
 
