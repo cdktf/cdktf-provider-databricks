@@ -1,6 +1,6 @@
 # `databricks_mlflow_model`
 
-Refer to the Terraform Registory for docs: [`databricks_mlflow_model`](https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mlflow_model).
+Refer to the Terraform Registory for docs: [`databricks_mlflow_model`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mlflow_model).
 
 # `mlflowModel` Submodule <a name="`mlflowModel` Submodule" id="@cdktf/provider-databricks.mlflowModel"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`databricks_mlflow_model`](https://r
 
 ### MlflowModel <a name="MlflowModel" id="@cdktf/provider-databricks.mlflowModel.MlflowModel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mlflow_model databricks_mlflow_model}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mlflow_model databricks_mlflow_model}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mlflowModel.MlflowModel.Initializer"></a>
 
@@ -74,12 +74,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModel.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModel.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModel.putTags">putTags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModel.resetCreationTimestamp">resetCreationTimestamp</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModel.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModel.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModel.resetLastUpdatedTimestamp">resetLastUpdatedTimestamp</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModel.resetTags">resetTags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModel.resetUserId">resetUserId</a></code> | *No description.* |
 
 ---
 
@@ -337,12 +334,6 @@ public putTags(value: IResolvable | MlflowModelTags[]): void
 
 ---
 
-##### `resetCreationTimestamp` <a name="resetCreationTimestamp" id="@cdktf/provider-databricks.mlflowModel.MlflowModel.resetCreationTimestamp"></a>
-
-```typescript
-public resetCreationTimestamp(): void
-```
-
 ##### `resetDescription` <a name="resetDescription" id="@cdktf/provider-databricks.mlflowModel.MlflowModel.resetDescription"></a>
 
 ```typescript
@@ -355,22 +346,10 @@ public resetDescription(): void
 public resetId(): void
 ```
 
-##### `resetLastUpdatedTimestamp` <a name="resetLastUpdatedTimestamp" id="@cdktf/provider-databricks.mlflowModel.MlflowModel.resetLastUpdatedTimestamp"></a>
-
-```typescript
-public resetLastUpdatedTimestamp(): void
-```
-
 ##### `resetTags` <a name="resetTags" id="@cdktf/provider-databricks.mlflowModel.MlflowModel.resetTags"></a>
 
 ```typescript
 public resetTags(): void
-```
-
-##### `resetUserId` <a name="resetUserId" id="@cdktf/provider-databricks.mlflowModel.MlflowModel.resetUserId"></a>
-
-```typescript
-public resetUserId(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -476,7 +455,7 @@ The construct id used in the generated config for the MlflowModel to import.
 
 The id of the existing MlflowModel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mlflow_model#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mlflow_model#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -508,19 +487,13 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModel.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModel.property.registeredModelId">registeredModelId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModel.property.tags">tags</a></code> | <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModelTagsList">MlflowModelTagsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModel.property.creationTimestampInput">creationTimestampInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModel.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModel.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModel.property.lastUpdatedTimestampInput">lastUpdatedTimestampInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModel.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModel.property.tagsInput">tagsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.mlflowModel.MlflowModelTags">MlflowModelTags</a>[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModel.property.userIdInput">userIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModel.property.creationTimestamp">creationTimestamp</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModel.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModel.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModel.property.lastUpdatedTimestamp">lastUpdatedTimestamp</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModel.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModel.property.userId">userId</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -686,16 +659,6 @@ public readonly tags: MlflowModelTagsList;
 
 ---
 
-##### `creationTimestampInput`<sup>Optional</sup> <a name="creationTimestampInput" id="@cdktf/provider-databricks.mlflowModel.MlflowModel.property.creationTimestampInput"></a>
-
-```typescript
-public readonly creationTimestampInput: number;
-```
-
-- *Type:* number
-
----
-
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktf/provider-databricks.mlflowModel.MlflowModel.property.descriptionInput"></a>
 
 ```typescript
@@ -713,16 +676,6 @@ public readonly idInput: string;
 ```
 
 - *Type:* string
-
----
-
-##### `lastUpdatedTimestampInput`<sup>Optional</sup> <a name="lastUpdatedTimestampInput" id="@cdktf/provider-databricks.mlflowModel.MlflowModel.property.lastUpdatedTimestampInput"></a>
-
-```typescript
-public readonly lastUpdatedTimestampInput: number;
-```
-
-- *Type:* number
 
 ---
 
@@ -746,26 +699,6 @@ public readonly tagsInput: IResolvable | MlflowModelTags[];
 
 ---
 
-##### `userIdInput`<sup>Optional</sup> <a name="userIdInput" id="@cdktf/provider-databricks.mlflowModel.MlflowModel.property.userIdInput"></a>
-
-```typescript
-public readonly userIdInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `creationTimestamp`<sup>Required</sup> <a name="creationTimestamp" id="@cdktf/provider-databricks.mlflowModel.MlflowModel.property.creationTimestamp"></a>
-
-```typescript
-public readonly creationTimestamp: number;
-```
-
-- *Type:* number
-
----
-
 ##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-databricks.mlflowModel.MlflowModel.property.description"></a>
 
 ```typescript
@@ -786,30 +719,10 @@ public readonly id: string;
 
 ---
 
-##### `lastUpdatedTimestamp`<sup>Required</sup> <a name="lastUpdatedTimestamp" id="@cdktf/provider-databricks.mlflowModel.MlflowModel.property.lastUpdatedTimestamp"></a>
-
-```typescript
-public readonly lastUpdatedTimestamp: number;
-```
-
-- *Type:* number
-
----
-
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-databricks.mlflowModel.MlflowModel.property.name"></a>
 
 ```typescript
 public readonly name: string;
-```
-
-- *Type:* string
-
----
-
-##### `userId`<sup>Required</sup> <a name="userId" id="@cdktf/provider-databricks.mlflowModel.MlflowModel.property.userId"></a>
-
-```typescript
-public readonly userId: string;
 ```
 
 - *Type:* string
@@ -857,13 +770,10 @@ const mlflowModelConfig: mlflowModel.MlflowModelConfig = { ... }
 | <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModelConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModelConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModelConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModelConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mlflow_model#name MlflowModel#name}. |
-| <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModelConfig.property.creationTimestamp">creationTimestamp</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mlflow_model#creation_timestamp MlflowModel#creation_timestamp}. |
-| <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModelConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mlflow_model#description MlflowModel#description}. |
-| <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModelConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mlflow_model#id MlflowModel#id}. |
-| <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModelConfig.property.lastUpdatedTimestamp">lastUpdatedTimestamp</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mlflow_model#last_updated_timestamp MlflowModel#last_updated_timestamp}. |
+| <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModelConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mlflow_model#name MlflowModel#name}. |
+| <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModelConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mlflow_model#description MlflowModel#description}. |
+| <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModelConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mlflow_model#id MlflowModel#id}. |
 | <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModelConfig.property.tags">tags</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.mlflowModel.MlflowModelTags">MlflowModelTags</a>[]</code> | tags block. |
-| <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModelConfig.property.userId">userId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mlflow_model#user_id MlflowModel#user_id}. |
 
 ---
 
@@ -945,19 +855,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mlflow_model#name MlflowModel#name}.
-
----
-
-##### `creationTimestamp`<sup>Optional</sup> <a name="creationTimestamp" id="@cdktf/provider-databricks.mlflowModel.MlflowModelConfig.property.creationTimestamp"></a>
-
-```typescript
-public readonly creationTimestamp: number;
-```
-
-- *Type:* number
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mlflow_model#creation_timestamp MlflowModel#creation_timestamp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mlflow_model#name MlflowModel#name}.
 
 ---
 
@@ -969,7 +867,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mlflow_model#description MlflowModel#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mlflow_model#description MlflowModel#description}.
 
 ---
 
@@ -981,22 +879,10 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mlflow_model#id MlflowModel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mlflow_model#id MlflowModel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `lastUpdatedTimestamp`<sup>Optional</sup> <a name="lastUpdatedTimestamp" id="@cdktf/provider-databricks.mlflowModel.MlflowModelConfig.property.lastUpdatedTimestamp"></a>
-
-```typescript
-public readonly lastUpdatedTimestamp: number;
-```
-
-- *Type:* number
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mlflow_model#last_updated_timestamp MlflowModel#last_updated_timestamp}.
 
 ---
 
@@ -1010,19 +896,7 @@ public readonly tags: IResolvable | MlflowModelTags[];
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mlflow_model#tags MlflowModel#tags}
-
----
-
-##### `userId`<sup>Optional</sup> <a name="userId" id="@cdktf/provider-databricks.mlflowModel.MlflowModelConfig.property.userId"></a>
-
-```typescript
-public readonly userId: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mlflow_model#user_id MlflowModel#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mlflow_model#tags MlflowModel#tags}
 
 ---
 
@@ -1040,8 +914,8 @@ const mlflowModelTags: mlflowModel.MlflowModelTags = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModelTags.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mlflow_model#key MlflowModel#key}. |
-| <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModelTags.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mlflow_model#value MlflowModel#value}. |
+| <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModelTags.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mlflow_model#key MlflowModel#key}. |
+| <code><a href="#@cdktf/provider-databricks.mlflowModel.MlflowModelTags.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mlflow_model#value MlflowModel#value}. |
 
 ---
 
@@ -1053,7 +927,7 @@ public readonly key: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mlflow_model#key MlflowModel#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mlflow_model#key MlflowModel#key}.
 
 ---
 
@@ -1065,7 +939,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mlflow_model#value MlflowModel#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mlflow_model#value MlflowModel#value}.
 
 ---
 

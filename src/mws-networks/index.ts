@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks
+// https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_networks
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,74 +8,74 @@ import * as cdktf from 'cdktf';
 
 export interface MwsNetworksConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#account_id MwsNetworks#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_networks#account_id MwsNetworks#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#creation_time MwsNetworks#creation_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_networks#creation_time MwsNetworks#creation_time}
   */
   readonly creationTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#id MwsNetworks#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_networks#id MwsNetworks#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#network_id MwsNetworks#network_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_networks#network_id MwsNetworks#network_id}
   */
   readonly networkId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#network_name MwsNetworks#network_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_networks#network_name MwsNetworks#network_name}
   */
   readonly networkName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#security_group_ids MwsNetworks#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_networks#security_group_ids MwsNetworks#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#subnet_ids MwsNetworks#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_networks#subnet_ids MwsNetworks#subnet_ids}
   */
   readonly subnetIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#vpc_id MwsNetworks#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_networks#vpc_id MwsNetworks#vpc_id}
   */
   readonly vpcId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#vpc_status MwsNetworks#vpc_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_networks#vpc_status MwsNetworks#vpc_status}
   */
   readonly vpcStatus?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#workspace_id MwsNetworks#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_networks#workspace_id MwsNetworks#workspace_id}
   */
   readonly workspaceId?: number;
   /**
   * error_messages block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#error_messages MwsNetworks#error_messages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_networks#error_messages MwsNetworks#error_messages}
   */
   readonly errorMessages?: MwsNetworksErrorMessages[] | cdktf.IResolvable;
   /**
   * gcp_network_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#gcp_network_info MwsNetworks#gcp_network_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_networks#gcp_network_info MwsNetworks#gcp_network_info}
   */
   readonly gcpNetworkInfo?: MwsNetworksGcpNetworkInfo;
   /**
   * vpc_endpoints block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#vpc_endpoints MwsNetworks#vpc_endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_networks#vpc_endpoints MwsNetworks#vpc_endpoints}
   */
   readonly vpcEndpoints?: MwsNetworksVpcEndpoints;
 }
 export interface MwsNetworksErrorMessages {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#error_message MwsNetworks#error_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_networks#error_message MwsNetworks#error_message}
   */
   readonly errorMessage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#error_type MwsNetworks#error_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_networks#error_type MwsNetworks#error_type}
   */
   readonly errorType?: string;
 }
@@ -200,27 +195,27 @@ export class MwsNetworksErrorMessagesList extends cdktf.ComplexList {
 }
 export interface MwsNetworksGcpNetworkInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#network_project_id MwsNetworks#network_project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_networks#network_project_id MwsNetworks#network_project_id}
   */
   readonly networkProjectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#pod_ip_range_name MwsNetworks#pod_ip_range_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_networks#pod_ip_range_name MwsNetworks#pod_ip_range_name}
   */
   readonly podIpRangeName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#service_ip_range_name MwsNetworks#service_ip_range_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_networks#service_ip_range_name MwsNetworks#service_ip_range_name}
   */
   readonly serviceIpRangeName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#subnet_id MwsNetworks#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_networks#subnet_id MwsNetworks#subnet_id}
   */
   readonly subnetId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#subnet_region MwsNetworks#subnet_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_networks#subnet_region MwsNetworks#subnet_region}
   */
   readonly subnetRegion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#vpc_id MwsNetworks#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_networks#vpc_id MwsNetworks#vpc_id}
   */
   readonly vpcId: string;
 }
@@ -382,11 +377,11 @@ export class MwsNetworksGcpNetworkInfoOutputReference extends cdktf.ComplexObjec
 }
 export interface MwsNetworksVpcEndpoints {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#dataplane_relay MwsNetworks#dataplane_relay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_networks#dataplane_relay MwsNetworks#dataplane_relay}
   */
   readonly dataplaneRelay: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#rest_api MwsNetworks#rest_api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_networks#rest_api MwsNetworks#rest_api}
   */
   readonly restApi: string[];
 }
@@ -468,7 +463,7 @@ export class MwsNetworksVpcEndpointsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks databricks_mws_networks}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_networks databricks_mws_networks}
 */
 export class MwsNetworks extends cdktf.TerraformResource {
 
@@ -484,7 +479,7 @@ export class MwsNetworks extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a MwsNetworks resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MwsNetworks to import
-  * @param importFromId The id of the existing MwsNetworks that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MwsNetworks that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_networks#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MwsNetworks to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -496,7 +491,7 @@ export class MwsNetworks extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/mws_networks databricks_mws_networks} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_networks databricks_mws_networks} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -507,7 +502,7 @@ export class MwsNetworks extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_mws_networks',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.29.0',
+        providerVersion: '1.30.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `databricks_sql_dashboard`
 
-Refer to the Terraform Registory for docs: [`databricks_sql_dashboard`](https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard).
+Refer to the Terraform Registory for docs: [`databricks_sql_dashboard`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard).
 
 # `sqlDashboard` Submodule <a name="`sqlDashboard` Submodule" id="@cdktf/provider-databricks.sqlDashboard"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`databricks_sql_dashboard`](https://
 
 ### SqlDashboard <a name="SqlDashboard" id="@cdktf/provider-databricks.sqlDashboard.SqlDashboard"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard databricks_sql_dashboard}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard databricks_sql_dashboard}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlDashboard.SqlDashboard.Initializer"></a>
 
@@ -30,6 +30,7 @@ sqlDashboard.SqlDashboard(
   dashboard_filters_enabled: typing.Union[bool, IResolvable] = None,
   id: str = None,
   parent: str = None,
+  run_as_role: str = None,
   tags: typing.List[str] = None,
   updated_at: str = None
 )
@@ -46,13 +47,14 @@ sqlDashboard.SqlDashboard(
 | <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard#name SqlDashboard#name}. |
-| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.Initializer.parameter.createdAt">created_at</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard#created_at SqlDashboard#created_at}. |
-| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.Initializer.parameter.dashboardFiltersEnabled">dashboard_filters_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard#dashboard_filters_enabled SqlDashboard#dashboard_filters_enabled}. |
-| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard#id SqlDashboard#id}. |
-| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.Initializer.parameter.parent">parent</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard#parent SqlDashboard#parent}. |
-| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard#tags SqlDashboard#tags}. |
-| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.Initializer.parameter.updatedAt">updated_at</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard#updated_at SqlDashboard#updated_at}. |
+| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#name SqlDashboard#name}. |
+| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.Initializer.parameter.createdAt">created_at</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#created_at SqlDashboard#created_at}. |
+| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.Initializer.parameter.dashboardFiltersEnabled">dashboard_filters_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#dashboard_filters_enabled SqlDashboard#dashboard_filters_enabled}. |
+| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#id SqlDashboard#id}. |
+| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.Initializer.parameter.parent">parent</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#parent SqlDashboard#parent}. |
+| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.Initializer.parameter.runAsRole">run_as_role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#run_as_role SqlDashboard#run_as_role}. |
+| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#tags SqlDashboard#tags}. |
+| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.Initializer.parameter.updatedAt">updated_at</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#updated_at SqlDashboard#updated_at}. |
 
 ---
 
@@ -120,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard#name SqlDashboard#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#name SqlDashboard#name}.
 
 ---
 
@@ -128,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard#created_at SqlDashboard#created_at}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#created_at SqlDashboard#created_at}.
 
 ---
 
@@ -136,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard#dashboard_filters_enabled SqlDashboard#dashboard_filters_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#dashboard_filters_enabled SqlDashboard#dashboard_filters_enabled}.
 
 ---
 
@@ -144,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard#id SqlDashboard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#id SqlDashboard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,7 +157,15 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard#parent SqlDashboard#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#parent SqlDashboard#parent}.
+
+---
+
+##### `run_as_role`<sup>Optional</sup> <a name="run_as_role" id="@cdktf/provider-databricks.sqlDashboard.SqlDashboard.Initializer.parameter.runAsRole"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#run_as_role SqlDashboard#run_as_role}.
 
 ---
 
@@ -163,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard#tags SqlDashboard#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#tags SqlDashboard#tags}.
 
 ---
 
@@ -171,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard#updated_at SqlDashboard#updated_at}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#updated_at SqlDashboard#updated_at}.
 
 ---
 
@@ -202,6 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.resetDashboardFiltersEnabled">reset_dashboard_filters_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.resetParent">reset_parent</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.resetRunAsRole">reset_run_as_role</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.resetTags">reset_tags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.resetUpdatedAt">reset_updated_at</a></code> | *No description.* |
 
@@ -506,6 +517,12 @@ def reset_id() -> None
 def reset_parent() -> None
 ```
 
+##### `reset_run_as_role` <a name="reset_run_as_role" id="@cdktf/provider-databricks.sqlDashboard.SqlDashboard.resetRunAsRole"></a>
+
+```python
+def reset_run_as_role() -> None
+```
+
 ##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-databricks.sqlDashboard.SqlDashboard.resetTags"></a>
 
 ```python
@@ -632,7 +649,7 @@ The construct id used in the generated config for the SqlDashboard to import.
 
 The id of the existing SqlDashboard that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -667,6 +684,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.property.parentInput">parent_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.property.runAsRoleInput">run_as_role_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.property.tagsInput">tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.property.updatedAtInput">updated_at_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.property.createdAt">created_at</a></code> | <code>str</code> | *No description.* |
@@ -674,6 +692,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.property.parent">parent</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.property.runAsRole">run_as_role</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.property.tags">tags</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboard.property.updatedAt">updated_at</a></code> | <code>str</code> | *No description.* |
 
@@ -871,6 +890,16 @@ parent_input: str
 
 ---
 
+##### `run_as_role_input`<sup>Optional</sup> <a name="run_as_role_input" id="@cdktf/provider-databricks.sqlDashboard.SqlDashboard.property.runAsRoleInput"></a>
+
+```python
+run_as_role_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-databricks.sqlDashboard.SqlDashboard.property.tagsInput"></a>
 
 ```python
@@ -941,6 +970,16 @@ parent: str
 
 ---
 
+##### `run_as_role`<sup>Required</sup> <a name="run_as_role" id="@cdktf/provider-databricks.sqlDashboard.SqlDashboard.property.runAsRole"></a>
+
+```python
+run_as_role: str
+```
+
+- *Type:* str
+
+---
+
 ##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-databricks.sqlDashboard.SqlDashboard.property.tags"></a>
 
 ```python
@@ -1001,6 +1040,7 @@ sqlDashboard.SqlDashboardConfig(
   dashboard_filters_enabled: typing.Union[bool, IResolvable] = None,
   id: str = None,
   parent: str = None,
+  run_as_role: str = None,
   tags: typing.List[str] = None,
   updated_at: str = None
 )
@@ -1017,13 +1057,14 @@ sqlDashboard.SqlDashboardConfig(
 | <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboardConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboardConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboardConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboardConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard#name SqlDashboard#name}. |
-| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboardConfig.property.createdAt">created_at</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard#created_at SqlDashboard#created_at}. |
-| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboardConfig.property.dashboardFiltersEnabled">dashboard_filters_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard#dashboard_filters_enabled SqlDashboard#dashboard_filters_enabled}. |
-| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboardConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard#id SqlDashboard#id}. |
-| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboardConfig.property.parent">parent</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard#parent SqlDashboard#parent}. |
-| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboardConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard#tags SqlDashboard#tags}. |
-| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboardConfig.property.updatedAt">updated_at</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard#updated_at SqlDashboard#updated_at}. |
+| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboardConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#name SqlDashboard#name}. |
+| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboardConfig.property.createdAt">created_at</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#created_at SqlDashboard#created_at}. |
+| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboardConfig.property.dashboardFiltersEnabled">dashboard_filters_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#dashboard_filters_enabled SqlDashboard#dashboard_filters_enabled}. |
+| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboardConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#id SqlDashboard#id}. |
+| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboardConfig.property.parent">parent</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#parent SqlDashboard#parent}. |
+| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboardConfig.property.runAsRole">run_as_role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#run_as_role SqlDashboard#run_as_role}. |
+| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboardConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#tags SqlDashboard#tags}. |
+| <code><a href="#@cdktf/provider-databricks.sqlDashboard.SqlDashboardConfig.property.updatedAt">updated_at</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#updated_at SqlDashboard#updated_at}. |
 
 ---
 
@@ -1105,7 +1146,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard#name SqlDashboard#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#name SqlDashboard#name}.
 
 ---
 
@@ -1117,7 +1158,7 @@ created_at: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard#created_at SqlDashboard#created_at}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#created_at SqlDashboard#created_at}.
 
 ---
 
@@ -1129,7 +1170,7 @@ dashboard_filters_enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard#dashboard_filters_enabled SqlDashboard#dashboard_filters_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#dashboard_filters_enabled SqlDashboard#dashboard_filters_enabled}.
 
 ---
 
@@ -1141,7 +1182,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard#id SqlDashboard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#id SqlDashboard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1156,7 +1197,19 @@ parent: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard#parent SqlDashboard#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#parent SqlDashboard#parent}.
+
+---
+
+##### `run_as_role`<sup>Optional</sup> <a name="run_as_role" id="@cdktf/provider-databricks.sqlDashboard.SqlDashboardConfig.property.runAsRole"></a>
+
+```python
+run_as_role: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#run_as_role SqlDashboard#run_as_role}.
 
 ---
 
@@ -1168,7 +1221,7 @@ tags: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard#tags SqlDashboard#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#tags SqlDashboard#tags}.
 
 ---
 
@@ -1180,7 +1233,7 @@ updated_at: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.29.0/docs/resources/sql_dashboard#updated_at SqlDashboard#updated_at}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard#updated_at SqlDashboard#updated_at}.
 
 ---
 
