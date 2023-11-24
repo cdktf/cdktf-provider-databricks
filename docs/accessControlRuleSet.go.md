@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/accesscontrolruleset"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/accesscontrolruleset"
 
 accesscontrolruleset.NewAccessControlRuleSet(scope Construct, id *string, config AccessControlRuleSetConfig) AccessControlRuleSet
 ```
@@ -359,7 +359,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/accesscontrolruleset"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/accesscontrolruleset"
 
 accesscontrolruleset.AccessControlRuleSet_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/accesscontrolruleset"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/accesscontrolruleset"
 
 accesscontrolruleset.AccessControlRuleSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ accesscontrolruleset.AccessControlRuleSet_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/accesscontrolruleset"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/accesscontrolruleset"
 
 accesscontrolruleset.AccessControlRuleSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ accesscontrolruleset.AccessControlRuleSet_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/accesscontrolruleset"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/accesscontrolruleset"
 
 accesscontrolruleset.AccessControlRuleSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -725,7 +725,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/accesscontrolruleset"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/accesscontrolruleset"
 
 &accesscontrolruleset.AccessControlRuleSetConfig {
 	Connection: interface{},
@@ -874,7 +874,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSetGrantRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/accesscontrolruleset"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/accesscontrolruleset"
 
 &accesscontrolruleset.AccessControlRuleSetGrantRules {
 	Role: *string,
@@ -922,7 +922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSetGrantRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/accesscontrolruleset"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/accesscontrolruleset"
 
 accesscontrolruleset.NewAccessControlRuleSetGrantRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessControlRuleSetGrantRulesList
 ```
@@ -1065,7 +1065,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.accessControlRuleSet.AccessControlRuleSetGrantRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/accesscontrolruleset"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/accesscontrolruleset"
 
 accesscontrolruleset.NewAccessControlRuleSetGrantRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessControlRuleSetGrantRulesOutputReference
 ```
