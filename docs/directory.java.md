@@ -1,7 +1,3 @@
-# `databricks_directory`
-
-Refer to the Terraform Registory for docs: [`databricks_directory`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/directory).
-
 # `directory` Submodule <a name="`directory` Submodule" id="@cdktf/provider-databricks.directory"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

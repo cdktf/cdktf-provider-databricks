@@ -1,7 +1,3 @@
-# `data_databricks_clusters`
-
-Refer to the Terraform Registory for docs: [`data_databricks_clusters`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/data-sources/clusters).
-
 # `dataDatabricksClusters` Submodule <a name="`dataDatabricksClusters` Submodule" id="@cdktf/provider-databricks.dataDatabricksClusters"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

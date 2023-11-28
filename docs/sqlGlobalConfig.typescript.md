@@ -1,7 +1,3 @@
-# `databricks_sql_global_config`
-
-Refer to the Terraform Registory for docs: [`databricks_sql_global_config`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_global_config).
-
 # `sqlGlobalConfig` Submodule <a name="`sqlGlobalConfig` Submodule" id="@cdktf/provider-databricks.sqlGlobalConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_databricks_mws_workspaces`
-
-Refer to the Terraform Registory for docs: [`data_databricks_mws_workspaces`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/data-sources/mws_workspaces).
-
 # `dataDatabricksMwsWorkspaces` Submodule <a name="`dataDatabricksMwsWorkspaces` Submodule" id="@cdktf/provider-databricks.dataDatabricksMwsWorkspaces"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspaces.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksmwsworkspaces"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwsworkspaces"
 
 datadatabricksmwsworkspaces.NewDataDatabricksMwsWorkspaces(scope Construct, id *string, config DataDatabricksMwsWorkspacesConfig) DataDatabricksMwsWorkspaces
 ```
@@ -285,7 +281,7 @@ func ResetIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspaces.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksmwsworkspaces"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwsworkspaces"
 
 datadatabricksmwsworkspaces.DataDatabricksMwsWorkspaces_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspaces.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksmwsworkspaces"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwsworkspaces"
 
 datadatabricksmwsworkspaces.DataDatabricksMwsWorkspaces_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +327,7 @@ datadatabricksmwsworkspaces.DataDatabricksMwsWorkspaces_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspaces.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksmwsworkspaces"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwsworkspaces"
 
 datadatabricksmwsworkspaces.DataDatabricksMwsWorkspaces_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +341,7 @@ datadatabricksmwsworkspaces.DataDatabricksMwsWorkspaces_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspaces.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksmwsworkspaces"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwsworkspaces"
 
 datadatabricksmwsworkspaces.DataDatabricksMwsWorkspaces_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -596,7 +592,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspacesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksmwsworkspaces"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwsworkspaces"
 
 &datadatabricksmwsworkspaces.DataDatabricksMwsWorkspacesConfig {
 	Connection: interface{},

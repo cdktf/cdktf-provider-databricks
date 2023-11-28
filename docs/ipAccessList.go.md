@@ -1,7 +1,3 @@
-# `databricks_ip_access_list`
-
-Refer to the Terraform Registory for docs: [`databricks_ip_access_list`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/ip_access_list).
-
 # `ipAccessList` Submodule <a name="`ipAccessList` Submodule" id="@cdktf/provider-databricks.ipAccessList"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.ipAccessList.IpAccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/ipaccesslist"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/ipaccesslist"
 
 ipaccesslist.NewIpAccessList(scope Construct, id *string, config IpAccessListConfig) IpAccessList
 ```
@@ -346,7 +342,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.ipAccessList.IpAccessList.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/ipaccesslist"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/ipaccesslist"
 
 ipaccesslist.IpAccessList_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.ipAccessList.IpAccessList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/ipaccesslist"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/ipaccesslist"
 
 ipaccesslist.IpAccessList_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ ipaccesslist.IpAccessList_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.ipAccessList.IpAccessList.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/ipaccesslist"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/ipaccesslist"
 
 ipaccesslist.IpAccessList_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ ipaccesslist.IpAccessList_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.ipAccessList.IpAccessList.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/ipaccesslist"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/ipaccesslist"
 
 ipaccesslist.IpAccessList_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -745,7 +741,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.ipAccessList.IpAccessListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/ipaccesslist"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/ipaccesslist"
 
 &ipaccesslist.IpAccessListConfig {
 	Connection: interface{},

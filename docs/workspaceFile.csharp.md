@@ -1,7 +1,3 @@
-# `databricks_workspace_file`
-
-Refer to the Terraform Registory for docs: [`databricks_workspace_file`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/workspace_file).
-
 # `workspaceFile` Submodule <a name="`workspaceFile` Submodule" id="@cdktf/provider-databricks.workspaceFile"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

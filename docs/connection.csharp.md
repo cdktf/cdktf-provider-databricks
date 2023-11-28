@@ -1,7 +1,3 @@
-# `databricks_connection`
-
-Refer to the Terraform Registory for docs: [`databricks_connection`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/connection).
-
 # `connection` Submodule <a name="`connection` Submodule" id="@cdktf/provider-databricks.connection"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

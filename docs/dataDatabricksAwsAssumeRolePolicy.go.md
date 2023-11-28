@@ -1,7 +1,3 @@
-# `data_databricks_aws_assume_role_policy`
-
-Refer to the Terraform Registory for docs: [`data_databricks_aws_assume_role_policy`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/data-sources/aws_assume_role_policy).
-
 # `dataDatabricksAwsAssumeRolePolicy` Submodule <a name="`dataDatabricksAwsAssumeRolePolicy` Submodule" id="@cdktf/provider-databricks.dataDatabricksAwsAssumeRolePolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksAwsAssumeRolePolicy.DataDatabricksAwsAssumeRolePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksawsassumerolepolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksawsassumerolepolicy"
 
 datadatabricksawsassumerolepolicy.NewDataDatabricksAwsAssumeRolePolicy(scope Construct, id *string, config DataDatabricksAwsAssumeRolePolicyConfig) DataDatabricksAwsAssumeRolePolicy
 ```
@@ -292,7 +288,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksAwsAssumeRolePolicy.DataDatabricksAwsAssumeRolePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksawsassumerolepolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksawsassumerolepolicy"
 
 datadatabricksawsassumerolepolicy.DataDatabricksAwsAssumeRolePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksAwsAssumeRolePolicy.DataDatabricksAwsAssumeRolePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksawsassumerolepolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksawsassumerolepolicy"
 
 datadatabricksawsassumerolepolicy.DataDatabricksAwsAssumeRolePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datadatabricksawsassumerolepolicy.DataDatabricksAwsAssumeRolePolicy_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksAwsAssumeRolePolicy.DataDatabricksAwsAssumeRolePolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksawsassumerolepolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksawsassumerolepolicy"
 
 datadatabricksawsassumerolepolicy.DataDatabricksAwsAssumeRolePolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +348,7 @@ datadatabricksawsassumerolepolicy.DataDatabricksAwsAssumeRolePolicy_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksAwsAssumeRolePolicy.DataDatabricksAwsAssumeRolePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksawsassumerolepolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksawsassumerolepolicy"
 
 datadatabricksawsassumerolepolicy.DataDatabricksAwsAssumeRolePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -658,7 +654,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksAwsAssumeRolePolicy.DataDatabricksAwsAssumeRolePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksawsassumerolepolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksawsassumerolepolicy"
 
 &datadatabricksawsassumerolepolicy.DataDatabricksAwsAssumeRolePolicyConfig {
 	Connection: interface{},

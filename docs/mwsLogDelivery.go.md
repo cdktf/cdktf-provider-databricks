@@ -1,7 +1,3 @@
-# `databricks_mws_log_delivery`
-
-Refer to the Terraform Registory for docs: [`databricks_mws_log_delivery`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_log_delivery).
-
 # `mwsLogDelivery` Submodule <a name="`mwsLogDelivery` Submodule" id="@cdktf/provider-databricks.mwsLogDelivery"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mwsLogDelivery.MwsLogDelivery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwslogdelivery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwslogdelivery"
 
 mwslogdelivery.NewMwsLogDelivery(scope Construct, id *string, config MwsLogDeliveryConfig) MwsLogDelivery
 ```
@@ -381,7 +377,7 @@ func ResetWorkspaceIdsFilter()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.mwsLogDelivery.MwsLogDelivery.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwslogdelivery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwslogdelivery"
 
 mwslogdelivery.MwsLogDelivery_IsConstruct(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.mwsLogDelivery.MwsLogDelivery.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwslogdelivery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwslogdelivery"
 
 mwslogdelivery.MwsLogDelivery_IsTerraformElement(x interface{}) *bool
 ```
@@ -427,7 +423,7 @@ mwslogdelivery.MwsLogDelivery_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.mwsLogDelivery.MwsLogDelivery.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwslogdelivery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwslogdelivery"
 
 mwslogdelivery.MwsLogDelivery_IsTerraformResource(x interface{}) *bool
 ```
@@ -441,7 +437,7 @@ mwslogdelivery.MwsLogDelivery_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.mwsLogDelivery.MwsLogDelivery.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwslogdelivery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwslogdelivery"
 
 mwslogdelivery.MwsLogDelivery_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -934,7 +930,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mwsLogDelivery.MwsLogDeliveryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwslogdelivery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwslogdelivery"
 
 &mwslogdelivery.MwsLogDeliveryConfig {
 	Connection: interface{},

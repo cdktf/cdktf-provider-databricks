@@ -1,7 +1,3 @@
-# `data_databricks_metastore`
-
-Refer to the Terraform Registory for docs: [`data_databricks_metastore`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/data-sources/metastore).
-
 # `dataDatabricksMetastore` Submodule <a name="`dataDatabricksMetastore` Submodule" id="@cdktf/provider-databricks.dataDatabricksMetastore"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksMetastore.DataDatabricksMetastore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksmetastore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmetastore"
 
 datadatabricksmetastore.NewDataDatabricksMetastore(scope Construct, id *string, config DataDatabricksMetastoreConfig) DataDatabricksMetastore
 ```
@@ -298,7 +294,7 @@ func ResetMetastoreInfo()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksMetastore.DataDatabricksMetastore.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksmetastore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmetastore"
 
 datadatabricksmetastore.DataDatabricksMetastore_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksMetastore.DataDatabricksMetastore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksmetastore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmetastore"
 
 datadatabricksmetastore.DataDatabricksMetastore_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +340,7 @@ datadatabricksmetastore.DataDatabricksMetastore_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksMetastore.DataDatabricksMetastore.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksmetastore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmetastore"
 
 datadatabricksmetastore.DataDatabricksMetastore_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +354,7 @@ datadatabricksmetastore.DataDatabricksMetastore_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksMetastore.DataDatabricksMetastore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksmetastore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmetastore"
 
 datadatabricksmetastore.DataDatabricksMetastore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -631,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksMetastore.DataDatabricksMetastoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksmetastore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmetastore"
 
 &datadatabricksmetastore.DataDatabricksMetastoreConfig {
 	Connection: interface{},
@@ -643,7 +639,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabri
 	Provisioners: *[]interface{},
 	MetastoreId: *string,
 	Id: *string,
-	MetastoreInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.dataDatabricksMetastore.DataDatabricksMetastoreMetastoreInfo,
+	MetastoreInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksMetastore.DataDatabricksMetastoreMetastoreInfo,
 }
 ```
 
@@ -780,7 +776,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksMetastore.DataDatabricksMetastoreMetastoreInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksmetastore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmetastore"
 
 &datadatabricksmetastore.DataDatabricksMetastoreMetastoreInfo {
 	Cloud: *string,
@@ -1052,7 +1048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksMetastore.DataDatabricksMetastoreMetastoreInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksmetastore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmetastore"
 
 datadatabricksmetastore.NewDataDatabricksMetastoreMetastoreInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksMetastoreMetastoreInfoOutputReference
 ```

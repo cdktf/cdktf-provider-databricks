@@ -1,7 +1,3 @@
-# `data_databricks_sql_warehouse`
-
-Refer to the Terraform Registory for docs: [`data_databricks_sql_warehouse`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/data-sources/sql_warehouse).
-
 # `dataDatabricksSqlWarehouse` Submodule <a name="`dataDatabricksSqlWarehouse` Submodule" id="@cdktf/provider-databricks.dataDatabricksSqlWarehouse"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

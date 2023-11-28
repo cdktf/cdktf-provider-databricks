@@ -1,7 +1,3 @@
-# `databricks_sql_query`
-
-Refer to the Terraform Registory for docs: [`databricks_sql_query`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_query).
-
 # `sqlQuery` Submodule <a name="`sqlQuery` Submodule" id="@cdktf/provider-databricks.sqlQuery"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

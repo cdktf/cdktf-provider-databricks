@@ -1,7 +1,3 @@
-# `data_databricks_spark_version`
-
-Refer to the Terraform Registory for docs: [`data_databricks_spark_version`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/data-sources/spark_version).
-
 # `dataDatabricksSparkVersion` Submodule <a name="`dataDatabricksSparkVersion` Submodule" id="@cdktf/provider-databricks.dataDatabricksSparkVersion"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksSparkVersion.DataDatabricksSparkVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickssparkversion"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickssparkversion"
 
 datadatabrickssparkversion.NewDataDatabricksSparkVersion(scope Construct, id *string, config DataDatabricksSparkVersionConfig) DataDatabricksSparkVersion
 ```
@@ -348,7 +344,7 @@ func ResetSparkVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksSparkVersion.DataDatabricksSparkVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickssparkversion"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickssparkversion"
 
 datadatabrickssparkversion.DataDatabricksSparkVersion_IsConstruct(x interface{}) *bool
 ```
@@ -380,7 +376,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksSparkVersion.DataDatabricksSparkVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickssparkversion"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickssparkversion"
 
 datadatabrickssparkversion.DataDatabricksSparkVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -394,7 +390,7 @@ datadatabrickssparkversion.DataDatabricksSparkVersion_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksSparkVersion.DataDatabricksSparkVersion.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickssparkversion"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickssparkversion"
 
 datadatabrickssparkversion.DataDatabricksSparkVersion_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -408,7 +404,7 @@ datadatabrickssparkversion.DataDatabricksSparkVersion_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksSparkVersion.DataDatabricksSparkVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickssparkversion"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickssparkversion"
 
 datadatabrickssparkversion.DataDatabricksSparkVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -857,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksSparkVersion.DataDatabricksSparkVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickssparkversion"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickssparkversion"
 
 &datadatabrickssparkversion.DataDatabricksSparkVersionConfig {
 	Connection: interface{},

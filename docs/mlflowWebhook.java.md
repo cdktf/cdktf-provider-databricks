@@ -1,7 +1,3 @@
-# `databricks_mlflow_webhook`
-
-Refer to the Terraform Registory for docs: [`databricks_mlflow_webhook`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mlflow_webhook).
-
 # `mlflowWebhook` Submodule <a name="`mlflowWebhook` Submodule" id="@cdktf/provider-databricks.mlflowWebhook"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

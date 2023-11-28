@@ -1,7 +1,3 @@
-# `databricks_default_namespace_settings`
-
-Refer to the Terraform Registory for docs: [`databricks_default_namespace_settings`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/default_namespace_settings).
-
 # `defaultNamespaceSettings` Submodule <a name="`defaultNamespaceSettings` Submodule" id="@cdktf/provider-databricks.defaultNamespaceSettings"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.defaultNamespaceSettings.DefaultNamespaceSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/defaultnamespacesettings"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/defaultnamespacesettings"
 
 defaultnamespacesettings.NewDefaultNamespaceSettings(scope Construct, id *string, config DefaultNamespaceSettingsConfig) DefaultNamespaceSettings
 ```
@@ -366,7 +362,7 @@ func ResetSettingName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.defaultNamespaceSettings.DefaultNamespaceSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/defaultnamespacesettings"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/defaultnamespacesettings"
 
 defaultnamespacesettings.DefaultNamespaceSettings_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +394,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.defaultNamespaceSettings.DefaultNamespaceSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/defaultnamespacesettings"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/defaultnamespacesettings"
 
 defaultnamespacesettings.DefaultNamespaceSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +408,7 @@ defaultnamespacesettings.DefaultNamespaceSettings_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.defaultNamespaceSettings.DefaultNamespaceSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/defaultnamespacesettings"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/defaultnamespacesettings"
 
 defaultnamespacesettings.DefaultNamespaceSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -426,7 +422,7 @@ defaultnamespacesettings.DefaultNamespaceSettings_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.defaultNamespaceSettings.DefaultNamespaceSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/defaultnamespacesettings"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/defaultnamespacesettings"
 
 defaultnamespacesettings.DefaultNamespaceSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -743,7 +739,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.defaultNamespaceSettings.DefaultNamespaceSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/defaultnamespacesettings"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/defaultnamespacesettings"
 
 &defaultnamespacesettings.DefaultNamespaceSettingsConfig {
 	Connection: interface{},
@@ -753,7 +749,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/defaultname
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Namespace: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.defaultNamespaceSettings.DefaultNamespaceSettingsNamespace,
+	Namespace: github.com/cdktf/cdktf-provider-databricks-go/databricks.defaultNamespaceSettings.DefaultNamespaceSettingsNamespace,
 	Etag: *string,
 	Id: *string,
 	SettingName: *string,
@@ -906,7 +902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.defaultNamespaceSettings.DefaultNamespaceSettingsNamespace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/defaultnamespacesettings"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/defaultnamespacesettings"
 
 &defaultnamespacesettings.DefaultNamespaceSettingsNamespace {
 	Value: *string,
@@ -940,7 +936,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.defaultNamespaceSettings.DefaultNamespaceSettingsNamespaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/defaultnamespacesettings"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/defaultnamespacesettings"
 
 defaultnamespacesettings.NewDefaultNamespaceSettingsNamespaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DefaultNamespaceSettingsNamespaceOutputReference
 ```

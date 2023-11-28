@@ -1,7 +1,3 @@
-# `data_databricks_service_principals`
-
-Refer to the Terraform Registory for docs: [`data_databricks_service_principals`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/data-sources/service_principals).
-
 # `dataDatabricksServicePrincipals` Submodule <a name="`dataDatabricksServicePrincipals` Submodule" id="@cdktf/provider-databricks.dataDatabricksServicePrincipals"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

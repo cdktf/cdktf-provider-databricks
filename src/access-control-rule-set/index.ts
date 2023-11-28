@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/access_control_rule_set
 // generated from terraform resource schema
 
