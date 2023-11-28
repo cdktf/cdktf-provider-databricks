@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServing.ModelServing.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/modelserving"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/modelserving"
 
 modelserving.NewModelServing(scope Construct, id *string, config ModelServingConfig) ModelServing
 ```
@@ -388,7 +388,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.modelServing.ModelServing.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/modelserving"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/modelserving"
 
 modelserving.ModelServing_IsConstruct(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.modelServing.ModelServing.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/modelserving"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/modelserving"
 
 modelserving.ModelServing_IsTerraformElement(x interface{}) *bool
 ```
@@ -434,7 +434,7 @@ modelserving.ModelServing_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.modelServing.ModelServing.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/modelserving"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/modelserving"
 
 modelserving.ModelServing_IsTerraformResource(x interface{}) *bool
 ```
@@ -448,7 +448,7 @@ modelserving.ModelServing_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.modelServing.ModelServing.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/modelserving"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/modelserving"
 
 modelserving.ModelServing_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -798,7 +798,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.modelServing.ModelServingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/modelserving"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/modelserving"
 
 &modelserving.ModelServingConfig {
 	Connection: interface{},
@@ -808,11 +808,11 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/modelserving"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Config: github.com/cdktf/cdktf-provider-databricks-go/databricks.modelServing.ModelServingConfigA,
+	Config: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.modelServing.ModelServingConfigA,
 	Name: *string,
 	Id: *string,
 	Tags: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-databricks-go/databricks.modelServing.ModelServingTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.modelServing.ModelServingTimeouts,
 }
 ```
 
@@ -979,11 +979,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.modelServing.ModelServingConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/modelserving"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/modelserving"
 
 &modelserving.ModelServingConfigA {
 	ServedModels: interface{},
-	TrafficConfig: github.com/cdktf/cdktf-provider-databricks-go/databricks.modelServing.ModelServingConfigTrafficConfig,
+	TrafficConfig: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.modelServing.ModelServingConfigTrafficConfig,
 }
 ```
 
@@ -1029,7 +1029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.modelServing.ModelServingConfigServedModels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/modelserving"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/modelserving"
 
 &modelserving.ModelServingConfigServedModels {
 	ModelName: *string,
@@ -1159,7 +1159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.modelServing.ModelServingConfigTrafficConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/modelserving"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/modelserving"
 
 &modelserving.ModelServingConfigTrafficConfig {
 	Routes: interface{},
@@ -1193,7 +1193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.modelServing.ModelServingConfigTrafficConfigRoutes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/modelserving"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/modelserving"
 
 &modelserving.ModelServingConfigTrafficConfigRoutes {
 	ServedModelName: *string,
@@ -1239,7 +1239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.modelServing.ModelServingTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/modelserving"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/modelserving"
 
 &modelserving.ModelServingTags {
 	Key: *string,
@@ -1285,7 +1285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.modelServing.ModelServingTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/modelserving"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/modelserving"
 
 &modelserving.ModelServingTimeouts {
 	Create: *string,
@@ -1333,7 +1333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServing.ModelServingConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/modelserving"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/modelserving"
 
 modelserving.NewModelServingConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ModelServingConfigAOutputReference
 ```
@@ -1659,7 +1659,7 @@ func InternalValue() ModelServingConfigA
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServing.ModelServingConfigServedModelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/modelserving"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/modelserving"
 
 modelserving.NewModelServingConfigServedModelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ModelServingConfigServedModelsList
 ```
@@ -1802,7 +1802,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServing.ModelServingConfigServedModelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/modelserving"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/modelserving"
 
 modelserving.NewModelServingConfigServedModelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ModelServingConfigServedModelsOutputReference
 ```
@@ -2280,7 +2280,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServing.ModelServingConfigTrafficConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/modelserving"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/modelserving"
 
 modelserving.NewModelServingConfigTrafficConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ModelServingConfigTrafficConfigOutputReference
 ```
@@ -2571,7 +2571,7 @@ func InternalValue() ModelServingConfigTrafficConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServing.ModelServingConfigTrafficConfigRoutesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/modelserving"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/modelserving"
 
 modelserving.NewModelServingConfigTrafficConfigRoutesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ModelServingConfigTrafficConfigRoutesList
 ```
@@ -2714,7 +2714,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServing.ModelServingConfigTrafficConfigRoutesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/modelserving"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/modelserving"
 
 modelserving.NewModelServingConfigTrafficConfigRoutesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ModelServingConfigTrafficConfigRoutesOutputReference
 ```
@@ -3025,7 +3025,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServing.ModelServingTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/modelserving"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/modelserving"
 
 modelserving.NewModelServingTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ModelServingTagsList
 ```
@@ -3168,7 +3168,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServing.ModelServingTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/modelserving"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/modelserving"
 
 modelserving.NewModelServingTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ModelServingTagsOutputReference
 ```
@@ -3486,7 +3486,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServing.ModelServingTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/modelserving"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/modelserving"
 
 modelserving.NewModelServingTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ModelServingTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.userInstanceProfile.UserInstanceProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/userinstanceprofile"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/userinstanceprofile"
 
 userinstanceprofile.NewUserInstanceProfile(scope Construct, id *string, config UserInstanceProfileConfig) UserInstanceProfile
 ```
@@ -335,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.userInstanceProfile.UserInstanceProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/userinstanceprofile"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/userinstanceprofile"
 
 userinstanceprofile.UserInstanceProfile_IsConstruct(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.userInstanceProfile.UserInstanceProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/userinstanceprofile"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/userinstanceprofile"
 
 userinstanceprofile.UserInstanceProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ userinstanceprofile.UserInstanceProfile_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.userInstanceProfile.UserInstanceProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/userinstanceprofile"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/userinstanceprofile"
 
 userinstanceprofile.UserInstanceProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ userinstanceprofile.UserInstanceProfile_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.userInstanceProfile.UserInstanceProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/userinstanceprofile"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/userinstanceprofile"
 
 userinstanceprofile.UserInstanceProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -690,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.userInstanceProfile.UserInstanceProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/userinstanceprofile"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/userinstanceprofile"
 
 &userinstanceprofile.UserInstanceProfileConfig {
 	Connection: interface{},

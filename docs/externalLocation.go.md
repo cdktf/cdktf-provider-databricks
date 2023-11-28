@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/externallocation"
 
 externallocation.NewExternalLocation(scope Construct, id *string, config ExternalLocationConfig) ExternalLocation
 ```
@@ -411,7 +411,7 @@ func ResetSkipValidation()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.externalLocation.ExternalLocation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/externallocation"
 
 externallocation.ExternalLocation_IsConstruct(x interface{}) *bool
 ```
@@ -443,7 +443,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.externalLocation.ExternalLocation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/externallocation"
 
 externallocation.ExternalLocation_IsTerraformElement(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ externallocation.ExternalLocation_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.externalLocation.ExternalLocation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/externallocation"
 
 externallocation.ExternalLocation_IsTerraformResource(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ externallocation.ExternalLocation_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.externalLocation.ExternalLocation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/externallocation"
 
 externallocation.ExternalLocation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -986,7 +986,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.externalLocation.ExternalLocationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/externallocation"
 
 &externallocation.ExternalLocationConfig {
 	Connection: interface{},
@@ -1001,7 +1001,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/externallocatio
 	Url: *string,
 	AccessPoint: *string,
 	Comment: *string,
-	EncryptionDetails: github.com/cdktf/cdktf-provider-databricks-go/databricks.externalLocation.ExternalLocationEncryptionDetails,
+	EncryptionDetails: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.externalLocation.ExternalLocationEncryptionDetails,
 	ForceDestroy: interface{},
 	ForceUpdate: interface{},
 	Id: *string,
@@ -1275,10 +1275,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.externalLocation.ExternalLocationEncryptionDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/externallocation"
 
 &externallocation.ExternalLocationEncryptionDetails {
-	SseEncryptionDetails: github.com/cdktf/cdktf-provider-databricks-go/databricks.externalLocation.ExternalLocationEncryptionDetailsSseEncryptionDetails,
+	SseEncryptionDetails: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.externalLocation.ExternalLocationEncryptionDetailsSseEncryptionDetails,
 }
 ```
 
@@ -1309,7 +1309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.externalLocation.ExternalLocationEncryptionDetailsSseEncryptionDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/externallocation"
 
 &externallocation.ExternalLocationEncryptionDetailsSseEncryptionDetails {
 	Algorithm: *string,
@@ -1357,7 +1357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.externalLocation.ExternalLocationEncryptionDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/externallocation"
 
 externallocation.NewExternalLocationEncryptionDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExternalLocationEncryptionDetailsOutputReference
 ```
@@ -1648,7 +1648,7 @@ func InternalValue() ExternalLocationEncryptionDetails
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.externalLocation.ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/externallocation"
 
 externallocation.NewExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference
 ```

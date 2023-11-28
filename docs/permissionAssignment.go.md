@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/permissionassignment"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/permissionassignment"
 
 permissionassignment.NewPermissionAssignment(scope Construct, id *string, config PermissionAssignmentConfig) PermissionAssignment
 ```
@@ -335,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/permissionassignment"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/permissionassignment"
 
 permissionassignment.PermissionAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/permissionassignment"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/permissionassignment"
 
 permissionassignment.PermissionAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ permissionassignment.PermissionAssignment_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/permissionassignment"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/permissionassignment"
 
 permissionassignment.PermissionAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ permissionassignment.PermissionAssignment_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/permissionassignment"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/permissionassignment"
 
 permissionassignment.PermissionAssignment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -690,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/permissionassignment"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/permissionassignment"
 
 &permissionassignment.PermissionAssignmentConfig {
 	Connection: interface{},
