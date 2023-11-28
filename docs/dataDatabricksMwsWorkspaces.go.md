@@ -1,7 +1,3 @@
-# `data_databricks_mws_workspaces`
-
-Refer to the Terraform Registory for docs: [`data_databricks_mws_workspaces`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/data-sources/mws_workspaces).
-
 # `dataDatabricksMwsWorkspaces` Submodule <a name="`dataDatabricksMwsWorkspaces` Submodule" id="@cdktf/provider-databricks.dataDatabricksMwsWorkspaces"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

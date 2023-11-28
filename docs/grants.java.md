@@ -1,7 +1,3 @@
-# `databricks_grants`
-
-Refer to the Terraform Registory for docs: [`databricks_grants`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/grants).
-
 # `grants` Submodule <a name="`grants` Submodule" id="@cdktf/provider-databricks.grants"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `databricks_external_location`
-
-Refer to the Terraform Registory for docs: [`databricks_external_location`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/external_location).
-
 # `externalLocation` Submodule <a name="`externalLocation` Submodule" id="@cdktf/provider-databricks.externalLocation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

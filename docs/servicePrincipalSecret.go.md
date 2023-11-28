@@ -1,7 +1,3 @@
-# `databricks_service_principal_secret`
-
-Refer to the Terraform Registory for docs: [`databricks_service_principal_secret`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/service_principal_secret).
-
 # `servicePrincipalSecret` Submodule <a name="`servicePrincipalSecret` Submodule" id="@cdktf/provider-databricks.servicePrincipalSecret"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

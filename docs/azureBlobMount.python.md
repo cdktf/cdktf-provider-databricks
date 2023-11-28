@@ -1,7 +1,3 @@
-# `databricks_azure_blob_mount`
-
-Refer to the Terraform Registory for docs: [`databricks_azure_blob_mount`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/azure_blob_mount).
-
 # `azureBlobMount` Submodule <a name="`azureBlobMount` Submodule" id="@cdktf/provider-databricks.azureBlobMount"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

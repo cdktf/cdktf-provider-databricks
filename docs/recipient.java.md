@@ -1,7 +1,3 @@
-# `databricks_recipient`
-
-Refer to the Terraform Registory for docs: [`databricks_recipient`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/recipient).
-
 # `recipient` Submodule <a name="`recipient` Submodule" id="@cdktf/provider-databricks.recipient"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

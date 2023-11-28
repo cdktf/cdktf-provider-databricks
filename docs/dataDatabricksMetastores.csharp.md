@@ -1,7 +1,3 @@
-# `data_databricks_metastores`
-
-Refer to the Terraform Registory for docs: [`data_databricks_metastores`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/data-sources/metastores).
-
 # `dataDatabricksMetastores` Submodule <a name="`dataDatabricksMetastores` Submodule" id="@cdktf/provider-databricks.dataDatabricksMetastores"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

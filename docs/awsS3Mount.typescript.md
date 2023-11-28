@@ -1,7 +1,3 @@
-# `databricks_aws_s3_mount`
-
-Refer to the Terraform Registory for docs: [`databricks_aws_s3_mount`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/aws_s3_mount).
-
 # `awsS3Mount` Submodule <a name="`awsS3Mount` Submodule" id="@cdktf/provider-databricks.awsS3Mount"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

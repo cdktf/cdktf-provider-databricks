@@ -1,7 +1,3 @@
-# `provider`
-
-Refer to the Terraform Registory for docs: [`databricks`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs).
-
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-databricks.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_databricks_catalogs`
-
-Refer to the Terraform Registory for docs: [`data_databricks_catalogs`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/data-sources/catalogs).
-
 # `dataDatabricksCatalogs` Submodule <a name="`dataDatabricksCatalogs` Submodule" id="@cdktf/provider-databricks.dataDatabricksCatalogs"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

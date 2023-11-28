@@ -1,7 +1,3 @@
-# `data_databricks_notebook_paths`
-
-Refer to the Terraform Registory for docs: [`data_databricks_notebook_paths`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/data-sources/notebook_paths).
-
 # `dataDatabricksNotebookPaths` Submodule <a name="`dataDatabricksNotebookPaths` Submodule" id="@cdktf/provider-databricks.dataDatabricksNotebookPaths"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

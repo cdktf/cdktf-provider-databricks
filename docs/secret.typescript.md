@@ -1,7 +1,3 @@
-# `databricks_secret`
-
-Refer to the Terraform Registory for docs: [`databricks_secret`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/secret).
-
 # `secret` Submodule <a name="`secret` Submodule" id="@cdktf/provider-databricks.secret"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

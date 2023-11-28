@@ -1,7 +1,3 @@
-# `databricks_schema`
-
-Refer to the Terraform Registory for docs: [`databricks_schema`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/schema).
-
 # `schema` Submodule <a name="`schema` Submodule" id="@cdktf/provider-databricks.schema"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

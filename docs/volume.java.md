@@ -1,7 +1,3 @@
-# `databricks_volume`
-
-Refer to the Terraform Registory for docs: [`databricks_volume`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/volume).
-
 # `volume` Submodule <a name="`volume` Submodule" id="@cdktf/provider-databricks.volume"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

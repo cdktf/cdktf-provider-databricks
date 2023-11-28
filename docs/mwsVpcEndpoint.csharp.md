@@ -1,7 +1,3 @@
-# `databricks_mws_vpc_endpoint`
-
-Refer to the Terraform Registory for docs: [`databricks_mws_vpc_endpoint`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/mws_vpc_endpoint).
-
 # `mwsVpcEndpoint` Submodule <a name="`mwsVpcEndpoint` Submodule" id="@cdktf/provider-databricks.mwsVpcEndpoint"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

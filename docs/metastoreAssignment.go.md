@@ -1,7 +1,3 @@
-# `databricks_metastore_assignment`
-
-Refer to the Terraform Registory for docs: [`databricks_metastore_assignment`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/metastore_assignment).
-
 # `metastoreAssignment` Submodule <a name="`metastoreAssignment` Submodule" id="@cdktf/provider-databricks.metastoreAssignment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

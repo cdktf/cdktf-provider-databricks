@@ -1,7 +1,3 @@
-# `databricks_sql_widget`
-
-Refer to the Terraform Registory for docs: [`databricks_sql_widget`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_widget).
-
 # `sqlWidget` Submodule <a name="`sqlWidget` Submodule" id="@cdktf/provider-databricks.sqlWidget"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

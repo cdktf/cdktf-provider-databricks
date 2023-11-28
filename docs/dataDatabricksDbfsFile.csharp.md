@@ -1,7 +1,3 @@
-# `data_databricks_dbfs_file`
-
-Refer to the Terraform Registory for docs: [`data_databricks_dbfs_file`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/data-sources/dbfs_file).
-
 # `dataDatabricksDbfsFile` Submodule <a name="`dataDatabricksDbfsFile` Submodule" id="@cdktf/provider-databricks.dataDatabricksDbfsFile"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

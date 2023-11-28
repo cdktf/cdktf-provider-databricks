@@ -1,7 +1,3 @@
-# `databricks_cluster_policy`
-
-Refer to the Terraform Registory for docs: [`databricks_cluster_policy`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/cluster_policy).
-
 # `clusterPolicy` Submodule <a name="`clusterPolicy` Submodule" id="@cdktf/provider-databricks.clusterPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

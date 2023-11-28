@@ -1,7 +1,3 @@
-# `databricks_sql_dashboard`
-
-Refer to the Terraform Registory for docs: [`databricks_sql_dashboard`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/sql_dashboard).
-
 # `sqlDashboard` Submodule <a name="`sqlDashboard` Submodule" id="@cdktf/provider-databricks.sqlDashboard"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `databricks_token`
-
-Refer to the Terraform Registory for docs: [`databricks_token`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/token).
-
 # `token` Submodule <a name="`token` Submodule" id="@cdktf/provider-databricks.token"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

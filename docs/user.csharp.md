@@ -1,7 +1,3 @@
-# `databricks_user`
-
-Refer to the Terraform Registory for docs: [`databricks_user`](https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/user).
-
 # `user` Submodule <a name="`user` Submodule" id="@cdktf/provider-databricks.user"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
