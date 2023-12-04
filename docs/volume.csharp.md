@@ -66,9 +66,12 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.volume.Volume.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.volume.Volume.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.volume.Volume.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.volume.Volume.hasResourceMove">HasResourceMove</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.volume.Volume.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.volume.Volume.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.volume.Volume.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-databricks.volume.Volume.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktf/provider-databricks.volume.Volume.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-databricks.volume.Volume.resetComment">ResetComment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.volume.Volume.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.volume.Volume.resetOwner">ResetOwner</a></code> | *No description.* |
@@ -264,6 +267,12 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 
 ---
 
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-databricks.volume.Volume.hasResourceMove"></a>
+
+```csharp
+private object HasResourceMove()
+```
+
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-databricks.volume.Volume.importFrom"></a>
 
 ```csharp
@@ -294,6 +303,24 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 
 ---
 
+##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-databricks.volume.Volume.moveFromId"></a>
+
+```csharp
+private void MoveFromId(string Id)
+```
+
+Move the resource corresponding to "id" to this resource.
+
+Note that the resource being moved from must be marked as moved using it's instance function.
+
+###### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-databricks.volume.Volume.moveFromId.parameter.id"></a>
+
+- *Type:* string
+
+Full id of resource being moved from, e.g. "aws_s3_bucket.example".
+
+---
+
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-databricks.volume.Volume.moveTo"></a>
 
 ```csharp
@@ -315,6 +342,22 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 - *Type:* object
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
+
+---
+
+##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-databricks.volume.Volume.moveToId"></a>
+
+```csharp
+private void MoveToId(string Id)
+```
+
+Moves this resource to the resource corresponding to "id".
+
+###### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-databricks.volume.Volume.moveToId.parameter.id"></a>
+
+- *Type:* string
+
+Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
