@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksTables.DataDatabricksTables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickstables"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickstables"
 
 datadatabrickstables.NewDataDatabricksTables(scope Construct, id *string, config DataDatabricksTablesConfig) DataDatabricksTables
 ```
@@ -281,7 +281,7 @@ func ResetIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksTables.DataDatabricksTables.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickstables"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickstables"
 
 datadatabrickstables.DataDatabricksTables_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksTables.DataDatabricksTables.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickstables"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickstables"
 
 datadatabrickstables.DataDatabricksTables_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ datadatabrickstables.DataDatabricksTables_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksTables.DataDatabricksTables.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickstables"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickstables"
 
 datadatabrickstables.DataDatabricksTables_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ datadatabrickstables.DataDatabricksTables_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksTables.DataDatabricksTables.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickstables"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickstables"
 
 datadatabrickstables.DataDatabricksTables_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -636,7 +636,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksTables.DataDatabricksTablesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickstables"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickstables"
 
 &datadatabrickstables.DataDatabricksTablesConfig {
 	Connection: interface{},
