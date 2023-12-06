@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/default_namespace_settings
+// https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/default_namespace_setting
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -11,37 +6,37 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DefaultNamespaceSettingsConfig extends cdktf.TerraformMetaArguments {
+export interface DefaultNamespaceSettingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/default_namespace_settings#etag DefaultNamespaceSettings#etag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/default_namespace_setting#etag DefaultNamespaceSetting#etag}
   */
   readonly etag?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/default_namespace_settings#id DefaultNamespaceSettings#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/default_namespace_setting#id DefaultNamespaceSetting#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/default_namespace_settings#setting_name DefaultNamespaceSettings#setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/default_namespace_setting#setting_name DefaultNamespaceSetting#setting_name}
   */
   readonly settingName?: string;
   /**
   * namespace block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/default_namespace_settings#namespace DefaultNamespaceSettings#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/default_namespace_setting#namespace DefaultNamespaceSetting#namespace}
   */
-  readonly namespace: DefaultNamespaceSettingsNamespace;
+  readonly namespace: DefaultNamespaceSettingNamespace;
 }
-export interface DefaultNamespaceSettingsNamespace {
+export interface DefaultNamespaceSettingNamespace {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/default_namespace_settings#value DefaultNamespaceSettings#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/default_namespace_setting#value DefaultNamespaceSetting#value}
   */
   readonly value?: string;
 }
 
-export function defaultNamespaceSettingsNamespaceToTerraform(struct?: DefaultNamespaceSettingsNamespaceOutputReference | DefaultNamespaceSettingsNamespace): any {
+export function defaultNamespaceSettingNamespaceToTerraform(struct?: DefaultNamespaceSettingNamespaceOutputReference | DefaultNamespaceSettingNamespace): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -51,7 +46,7 @@ export function defaultNamespaceSettingsNamespaceToTerraform(struct?: DefaultNam
   }
 }
 
-export class DefaultNamespaceSettingsNamespaceOutputReference extends cdktf.ComplexObject {
+export class DefaultNamespaceSettingNamespaceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -62,7 +57,7 @@ export class DefaultNamespaceSettingsNamespaceOutputReference extends cdktf.Comp
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): DefaultNamespaceSettingsNamespace | undefined {
+  public get internalValue(): DefaultNamespaceSettingNamespace | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._value !== undefined) {
@@ -72,7 +67,7 @@ export class DefaultNamespaceSettingsNamespaceOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DefaultNamespaceSettingsNamespace | undefined) {
+  public set internalValue(value: DefaultNamespaceSettingNamespace | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._value = undefined;
@@ -101,27 +96,27 @@ export class DefaultNamespaceSettingsNamespaceOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/default_namespace_settings databricks_default_namespace_settings}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/default_namespace_setting databricks_default_namespace_setting}
 */
-export class DefaultNamespaceSettings extends cdktf.TerraformResource {
+export class DefaultNamespaceSetting extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "databricks_default_namespace_settings";
+  public static readonly tfResourceType = "databricks_default_namespace_setting";
 
   // ==============
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DefaultNamespaceSettings resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTF code for importing a DefaultNamespaceSetting resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
-  * @param importToId The construct id used in the generated config for the DefaultNamespaceSettings to import
-  * @param importFromId The id of the existing DefaultNamespaceSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/default_namespace_settings#import import section} in the documentation of this resource for the id to use
-  * @param provider? Optional instance of the provider where the DefaultNamespaceSettings to import is found
+  * @param importToId The construct id used in the generated config for the DefaultNamespaceSetting to import
+  * @param importFromId The id of the existing DefaultNamespaceSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/default_namespace_setting#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DefaultNamespaceSetting to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_default_namespace_settings", importId: importFromId, provider });
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_default_namespace_setting", importId: importFromId, provider });
       }
 
   // ===========
@@ -129,18 +124,18 @@ export class DefaultNamespaceSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.30.0/docs/resources/default_namespace_settings databricks_default_namespace_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/default_namespace_setting databricks_default_namespace_setting} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DefaultNamespaceSettingsConfig
+  * @param options DefaultNamespaceSettingConfig
   */
-  public constructor(scope: Construct, id: string, config: DefaultNamespaceSettingsConfig) {
+  public constructor(scope: Construct, id: string, config: DefaultNamespaceSettingConfig) {
     super(scope, id, {
-      terraformResourceType: 'databricks_default_namespace_settings',
+      terraformResourceType: 'databricks_default_namespace_setting',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.30.0',
+        providerVersion: '1.31.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -210,11 +205,11 @@ export class DefaultNamespaceSettings extends cdktf.TerraformResource {
   }
 
   // namespace - computed: false, optional: false, required: true
-  private _namespace = new DefaultNamespaceSettingsNamespaceOutputReference(this, "namespace");
+  private _namespace = new DefaultNamespaceSettingNamespaceOutputReference(this, "namespace");
   public get namespace() {
     return this._namespace;
   }
-  public putNamespace(value: DefaultNamespaceSettingsNamespace) {
+  public putNamespace(value: DefaultNamespaceSettingNamespace) {
     this._namespace.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -231,7 +226,7 @@ export class DefaultNamespaceSettings extends cdktf.TerraformResource {
       etag: cdktf.stringToTerraform(this._etag),
       id: cdktf.stringToTerraform(this._id),
       setting_name: cdktf.stringToTerraform(this._settingName),
-      namespace: defaultNamespaceSettingsNamespaceToTerraform(this._namespace.internalValue),
+      namespace: defaultNamespaceSettingNamespaceToTerraform(this._namespace.internalValue),
     };
   }
 }
