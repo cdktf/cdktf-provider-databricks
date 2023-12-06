@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.notebook.Notebook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/notebook"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/notebook"
 
 notebook.NewNotebook(scope Construct, id *string, config NotebookConfig) Notebook
 ```
@@ -427,7 +427,7 @@ func ResetSource()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.notebook.Notebook.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/notebook"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/notebook"
 
 notebook.Notebook_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.notebook.Notebook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/notebook"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/notebook"
 
 notebook.Notebook_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ notebook.Notebook_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.notebook.Notebook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/notebook"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/notebook"
 
 notebook.Notebook_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ notebook.Notebook_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.notebook.Notebook.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/notebook"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/notebook"
 
 notebook.Notebook_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -925,7 +925,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.notebook.NotebookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/notebook"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/notebook"
 
 &notebook.NotebookConfig {
 	Connection: interface{},

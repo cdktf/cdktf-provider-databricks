@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.schema.Schema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/schema"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/schema"
 
 schema.NewSchema(scope Construct, id *string, config SchemaConfig) Schema
 ```
@@ -420,7 +420,7 @@ func ResetStorageRoot()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.schema.Schema.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/schema"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/schema"
 
 schema.Schema_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.schema.Schema.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/schema"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/schema"
 
 schema.Schema_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ schema.Schema_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.schema.Schema.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/schema"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/schema"
 
 schema.Schema_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ schema.Schema_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.schema.Schema.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/schema"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/schema"
 
 schema.Schema_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -907,7 +907,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.schema.SchemaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/schema"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/schema"
 
 &schema.SchemaConfig {
 	Connection: interface{},
