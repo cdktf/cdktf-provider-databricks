@@ -4,12 +4,12 @@
 
 ### DefaultNamespaceSetting <a name="DefaultNamespaceSetting" id="@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/default_namespace_setting databricks_default_namespace_setting}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/default_namespace_setting databricks_default_namespace_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/defaultnamespacesetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/defaultnamespacesetting"
 
 defaultnamespacesetting.NewDefaultNamespaceSetting(scope Construct, id *string, config DefaultNamespaceSettingConfig) DefaultNamespaceSetting
 ```
@@ -405,7 +405,7 @@ func ResetSettingName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/defaultnamespacesetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/defaultnamespacesetting"
 
 defaultnamespacesetting.DefaultNamespaceSetting_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/defaultnamespacesetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/defaultnamespacesetting"
 
 defaultnamespacesetting.DefaultNamespaceSetting_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ defaultnamespacesetting.DefaultNamespaceSetting_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/defaultnamespacesetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/defaultnamespacesetting"
 
 defaultnamespacesetting.DefaultNamespaceSetting_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ defaultnamespacesetting.DefaultNamespaceSetting_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/defaultnamespacesetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/defaultnamespacesetting"
 
 defaultnamespacesetting.DefaultNamespaceSetting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the DefaultNamespaceSetting to
 
 The id of the existing DefaultNamespaceSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/default_namespace_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/default_namespace_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -782,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/defaultnamespacesetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/defaultnamespacesetting"
 
 &defaultnamespacesetting.DefaultNamespaceSettingConfig {
 	Connection: interface{},
@@ -792,7 +792,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/defaultname
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Namespace: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.defaultNamespaceSetting.DefaultNamespaceSettingNamespace,
+	Namespace: github.com/cdktf/cdktf-provider-databricks-go/databricks.defaultNamespaceSetting.DefaultNamespaceSettingNamespace,
 	Etag: *string,
 	Id: *string,
 	SettingName: *string,
@@ -811,9 +811,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/defaultname
 | <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingConfig.property.namespace">Namespace</a></code> | <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingNamespace">DefaultNamespaceSettingNamespace</a></code> | namespace block. |
-| <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingConfig.property.etag">Etag</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/default_namespace_setting#etag DefaultNamespaceSetting#etag}. |
-| <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/default_namespace_setting#id DefaultNamespaceSetting#id}. |
-| <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingConfig.property.settingName">SettingName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/default_namespace_setting#setting_name DefaultNamespaceSetting#setting_name}. |
+| <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingConfig.property.etag">Etag</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/default_namespace_setting#etag DefaultNamespaceSetting#etag}. |
+| <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/default_namespace_setting#id DefaultNamespaceSetting#id}. |
+| <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingConfig.property.settingName">SettingName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/default_namespace_setting#setting_name DefaultNamespaceSetting#setting_name}. |
 
 ---
 
@@ -897,7 +897,7 @@ Namespace DefaultNamespaceSettingNamespace
 
 namespace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/default_namespace_setting#namespace DefaultNamespaceSetting#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/default_namespace_setting#namespace DefaultNamespaceSetting#namespace}
 
 ---
 
@@ -909,7 +909,7 @@ Etag *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/default_namespace_setting#etag DefaultNamespaceSetting#etag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/default_namespace_setting#etag DefaultNamespaceSetting#etag}.
 
 ---
 
@@ -921,7 +921,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/default_namespace_setting#id DefaultNamespaceSetting#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/default_namespace_setting#id DefaultNamespaceSetting#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -936,7 +936,7 @@ SettingName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/default_namespace_setting#setting_name DefaultNamespaceSetting#setting_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/default_namespace_setting#setting_name DefaultNamespaceSetting#setting_name}.
 
 ---
 
@@ -945,7 +945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingNamespace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/defaultnamespacesetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/defaultnamespacesetting"
 
 &defaultnamespacesetting.DefaultNamespaceSettingNamespace {
 	Value: *string,
@@ -956,7 +956,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/defaultname
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingNamespace.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/default_namespace_setting#value DefaultNamespaceSetting#value}. |
+| <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingNamespace.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/default_namespace_setting#value DefaultNamespaceSetting#value}. |
 
 ---
 
@@ -968,7 +968,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.0/docs/resources/default_namespace_setting#value DefaultNamespaceSetting#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/default_namespace_setting#value DefaultNamespaceSetting#value}.
 
 ---
 
@@ -979,7 +979,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingNamespaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/defaultnamespacesetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/defaultnamespacesetting"
 
 defaultnamespacesetting.NewDefaultNamespaceSettingNamespaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DefaultNamespaceSettingNamespaceOutputReference
 ```
