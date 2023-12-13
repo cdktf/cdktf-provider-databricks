@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksCurrentConfig.DataDatabricksCurrentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscurrentconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickscurrentconfig"
 
 datadatabrickscurrentconfig.NewDataDatabricksCurrentConfig(scope Construct, id *string, config DataDatabricksCurrentConfigConfig) DataDatabricksCurrentConfig
 ```
@@ -309,7 +309,7 @@ func ResetIsAccount()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksCurrentConfig.DataDatabricksCurrentConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscurrentconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickscurrentconfig"
 
 datadatabrickscurrentconfig.DataDatabricksCurrentConfig_IsConstruct(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksCurrentConfig.DataDatabricksCurrentConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscurrentconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickscurrentconfig"
 
 datadatabrickscurrentconfig.DataDatabricksCurrentConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ datadatabrickscurrentconfig.DataDatabricksCurrentConfig_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksCurrentConfig.DataDatabricksCurrentConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscurrentconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickscurrentconfig"
 
 datadatabrickscurrentconfig.DataDatabricksCurrentConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ datadatabrickscurrentconfig.DataDatabricksCurrentConfig_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksCurrentConfig.DataDatabricksCurrentConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscurrentconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickscurrentconfig"
 
 datadatabrickscurrentconfig.DataDatabricksCurrentConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -708,7 +708,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksCurrentConfig.DataDatabricksCurrentConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscurrentconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickscurrentconfig"
 
 &datadatabrickscurrentconfig.DataDatabricksCurrentConfigConfig {
 	Connection: interface{},
