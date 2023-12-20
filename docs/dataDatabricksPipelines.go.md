@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelines.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickspipelines"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickspipelines"
 
 datadatabrickspipelines.NewDataDatabricksPipelines(scope Construct, id *string, config DataDatabricksPipelinesConfig) DataDatabricksPipelines
 ```
@@ -288,7 +288,7 @@ func ResetPipelineName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelines.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickspipelines"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickspipelines"
 
 datadatabrickspipelines.DataDatabricksPipelines_IsConstruct(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelines.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickspipelines"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickspipelines"
 
 datadatabrickspipelines.DataDatabricksPipelines_IsTerraformElement(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datadatabrickspipelines.DataDatabricksPipelines_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelines.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickspipelines"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickspipelines"
 
 datadatabrickspipelines.DataDatabricksPipelines_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -348,7 +348,7 @@ datadatabrickspipelines.DataDatabricksPipelines_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelines.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickspipelines"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickspipelines"
 
 datadatabrickspipelines.DataDatabricksPipelines_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -621,7 +621,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelinesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabrickspipelines"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickspipelines"
 
 &datadatabrickspipelines.DataDatabricksPipelinesConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.entitlements.Entitlements.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/entitlements"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/entitlements"
 
 entitlements.NewEntitlements(scope Construct, id *string, config EntitlementsConfig) Entitlements
 ```
@@ -427,7 +427,7 @@ func ResetWorkspaceAccess()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.entitlements.Entitlements.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/entitlements"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/entitlements"
 
 entitlements.Entitlements_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.entitlements.Entitlements.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/entitlements"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/entitlements"
 
 entitlements.Entitlements_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ entitlements.Entitlements_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.entitlements.Entitlements.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/entitlements"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/entitlements"
 
 entitlements.Entitlements_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ entitlements.Entitlements_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.entitlements.Entitlements.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/entitlements"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/entitlements"
 
 entitlements.Entitlements_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -892,7 +892,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.entitlements.EntitlementsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/entitlements"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/entitlements"
 
 &entitlements.EntitlementsConfig {
 	Connection: interface{},
