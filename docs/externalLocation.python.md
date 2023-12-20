@@ -4,7 +4,7 @@
 
 ### ExternalLocation <a name="ExternalLocation" id="@cdktf/provider-databricks.externalLocation.ExternalLocation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location databricks_external_location}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location databricks_external_location}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer"></a>
 
@@ -48,19 +48,19 @@ externalLocation.ExternalLocation(
 | <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer.parameter.credentialName">credential_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#credential_name ExternalLocation#credential_name}. |
-| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#name ExternalLocation#name}. |
-| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer.parameter.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#url ExternalLocation#url}. |
-| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer.parameter.accessPoint">access_point</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#access_point ExternalLocation#access_point}. |
-| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#comment ExternalLocation#comment}. |
+| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer.parameter.credentialName">credential_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#credential_name ExternalLocation#credential_name}. |
+| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#name ExternalLocation#name}. |
+| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer.parameter.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#url ExternalLocation#url}. |
+| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer.parameter.accessPoint">access_point</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#access_point ExternalLocation#access_point}. |
+| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#comment ExternalLocation#comment}. |
 | <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer.parameter.encryptionDetails">encryption_details</a></code> | <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationEncryptionDetails">ExternalLocationEncryptionDetails</a></code> | encryption_details block. |
-| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer.parameter.forceDestroy">force_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#force_destroy ExternalLocation#force_destroy}. |
-| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer.parameter.forceUpdate">force_update</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#force_update ExternalLocation#force_update}. |
-| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#id ExternalLocation#id}. |
-| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer.parameter.metastoreId">metastore_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#metastore_id ExternalLocation#metastore_id}. |
-| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer.parameter.owner">owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#owner ExternalLocation#owner}. |
-| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer.parameter.readOnly">read_only</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#read_only ExternalLocation#read_only}. |
-| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer.parameter.skipValidation">skip_validation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#skip_validation ExternalLocation#skip_validation}. |
+| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer.parameter.forceDestroy">force_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#force_destroy ExternalLocation#force_destroy}. |
+| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer.parameter.forceUpdate">force_update</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#force_update ExternalLocation#force_update}. |
+| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#id ExternalLocation#id}. |
+| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer.parameter.metastoreId">metastore_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#metastore_id ExternalLocation#metastore_id}. |
+| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer.parameter.owner">owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#owner ExternalLocation#owner}. |
+| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer.parameter.readOnly">read_only</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#read_only ExternalLocation#read_only}. |
+| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer.parameter.skipValidation">skip_validation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#skip_validation ExternalLocation#skip_validation}. |
 
 ---
 
@@ -128,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#credential_name ExternalLocation#credential_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#credential_name ExternalLocation#credential_name}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#name ExternalLocation#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#name ExternalLocation#name}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#url ExternalLocation#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#url ExternalLocation#url}.
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#access_point ExternalLocation#access_point}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#access_point ExternalLocation#access_point}.
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#comment ExternalLocation#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#comment ExternalLocation#comment}.
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 encryption_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#encryption_details ExternalLocation#encryption_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#encryption_details ExternalLocation#encryption_details}
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#force_destroy ExternalLocation#force_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#force_destroy ExternalLocation#force_destroy}.
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#force_update ExternalLocation#force_update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#force_update ExternalLocation#force_update}.
 
 ---
 
@@ -194,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#id ExternalLocation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#id ExternalLocation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -205,7 +205,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#metastore_id ExternalLocation#metastore_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#metastore_id ExternalLocation#metastore_id}.
 
 ---
 
@@ -213,7 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#owner ExternalLocation#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#owner ExternalLocation#owner}.
 
 ---
 
@@ -221,7 +221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#read_only ExternalLocation#read_only}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#read_only ExternalLocation#read_only}.
 
 ---
 
@@ -229,7 +229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#skip_validation ExternalLocation#skip_validation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#skip_validation ExternalLocation#skip_validation}.
 
 ---
 
@@ -606,7 +606,7 @@ def put_encryption_details(
 
 sse_encryption_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#sse_encryption_details ExternalLocation#sse_encryption_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#sse_encryption_details ExternalLocation#sse_encryption_details}
 
 ---
 
@@ -784,7 +784,7 @@ The construct id used in the generated config for the ExternalLocation to import
 
 The id of the existing ExternalLocation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1307,19 +1307,19 @@ externalLocation.ExternalLocationConfig(
 | <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationConfig.property.credentialName">credential_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#credential_name ExternalLocation#credential_name}. |
-| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#name ExternalLocation#name}. |
-| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationConfig.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#url ExternalLocation#url}. |
-| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationConfig.property.accessPoint">access_point</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#access_point ExternalLocation#access_point}. |
-| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationConfig.property.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#comment ExternalLocation#comment}. |
+| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationConfig.property.credentialName">credential_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#credential_name ExternalLocation#credential_name}. |
+| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#name ExternalLocation#name}. |
+| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationConfig.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#url ExternalLocation#url}. |
+| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationConfig.property.accessPoint">access_point</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#access_point ExternalLocation#access_point}. |
+| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationConfig.property.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#comment ExternalLocation#comment}. |
 | <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationConfig.property.encryptionDetails">encryption_details</a></code> | <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationEncryptionDetails">ExternalLocationEncryptionDetails</a></code> | encryption_details block. |
-| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationConfig.property.forceDestroy">force_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#force_destroy ExternalLocation#force_destroy}. |
-| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationConfig.property.forceUpdate">force_update</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#force_update ExternalLocation#force_update}. |
-| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#id ExternalLocation#id}. |
-| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationConfig.property.metastoreId">metastore_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#metastore_id ExternalLocation#metastore_id}. |
-| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationConfig.property.owner">owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#owner ExternalLocation#owner}. |
-| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationConfig.property.readOnly">read_only</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#read_only ExternalLocation#read_only}. |
-| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationConfig.property.skipValidation">skip_validation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#skip_validation ExternalLocation#skip_validation}. |
+| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationConfig.property.forceDestroy">force_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#force_destroy ExternalLocation#force_destroy}. |
+| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationConfig.property.forceUpdate">force_update</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#force_update ExternalLocation#force_update}. |
+| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#id ExternalLocation#id}. |
+| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationConfig.property.metastoreId">metastore_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#metastore_id ExternalLocation#metastore_id}. |
+| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationConfig.property.owner">owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#owner ExternalLocation#owner}. |
+| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationConfig.property.readOnly">read_only</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#read_only ExternalLocation#read_only}. |
+| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationConfig.property.skipValidation">skip_validation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#skip_validation ExternalLocation#skip_validation}. |
 
 ---
 
@@ -1401,7 +1401,7 @@ credential_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#credential_name ExternalLocation#credential_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#credential_name ExternalLocation#credential_name}.
 
 ---
 
@@ -1413,7 +1413,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#name ExternalLocation#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#name ExternalLocation#name}.
 
 ---
 
@@ -1425,7 +1425,7 @@ url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#url ExternalLocation#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#url ExternalLocation#url}.
 
 ---
 
@@ -1437,7 +1437,7 @@ access_point: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#access_point ExternalLocation#access_point}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#access_point ExternalLocation#access_point}.
 
 ---
 
@@ -1449,7 +1449,7 @@ comment: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#comment ExternalLocation#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#comment ExternalLocation#comment}.
 
 ---
 
@@ -1463,7 +1463,7 @@ encryption_details: ExternalLocationEncryptionDetails
 
 encryption_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#encryption_details ExternalLocation#encryption_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#encryption_details ExternalLocation#encryption_details}
 
 ---
 
@@ -1475,7 +1475,7 @@ force_destroy: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#force_destroy ExternalLocation#force_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#force_destroy ExternalLocation#force_destroy}.
 
 ---
 
@@ -1487,7 +1487,7 @@ force_update: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#force_update ExternalLocation#force_update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#force_update ExternalLocation#force_update}.
 
 ---
 
@@ -1499,7 +1499,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#id ExternalLocation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#id ExternalLocation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1514,7 +1514,7 @@ metastore_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#metastore_id ExternalLocation#metastore_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#metastore_id ExternalLocation#metastore_id}.
 
 ---
 
@@ -1526,7 +1526,7 @@ owner: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#owner ExternalLocation#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#owner ExternalLocation#owner}.
 
 ---
 
@@ -1538,7 +1538,7 @@ read_only: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#read_only ExternalLocation#read_only}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#read_only ExternalLocation#read_only}.
 
 ---
 
@@ -1550,7 +1550,7 @@ skip_validation: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#skip_validation ExternalLocation#skip_validation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#skip_validation ExternalLocation#skip_validation}.
 
 ---
 
@@ -1584,7 +1584,7 @@ sse_encryption_details: ExternalLocationEncryptionDetailsSseEncryptionDetails
 
 sse_encryption_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#sse_encryption_details ExternalLocation#sse_encryption_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#sse_encryption_details ExternalLocation#sse_encryption_details}
 
 ---
 
@@ -1605,8 +1605,8 @@ externalLocation.ExternalLocationEncryptionDetailsSseEncryptionDetails(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationEncryptionDetailsSseEncryptionDetails.property.algorithm">algorithm</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#algorithm ExternalLocation#algorithm}. |
-| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationEncryptionDetailsSseEncryptionDetails.property.awsKmsKeyArn">aws_kms_key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#aws_kms_key_arn ExternalLocation#aws_kms_key_arn}. |
+| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationEncryptionDetailsSseEncryptionDetails.property.algorithm">algorithm</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#algorithm ExternalLocation#algorithm}. |
+| <code><a href="#@cdktf/provider-databricks.externalLocation.ExternalLocationEncryptionDetailsSseEncryptionDetails.property.awsKmsKeyArn">aws_kms_key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#aws_kms_key_arn ExternalLocation#aws_kms_key_arn}. |
 
 ---
 
@@ -1618,7 +1618,7 @@ algorithm: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#algorithm ExternalLocation#algorithm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#algorithm ExternalLocation#algorithm}.
 
 ---
 
@@ -1630,7 +1630,7 @@ aws_kms_key_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#aws_kms_key_arn ExternalLocation#aws_kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#aws_kms_key_arn ExternalLocation#aws_kms_key_arn}.
 
 ---
 
@@ -1879,7 +1879,7 @@ def put_sse_encryption_details(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#algorithm ExternalLocation#algorithm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#algorithm ExternalLocation#algorithm}.
 
 ---
 
@@ -1887,7 +1887,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/resources/external_location#aws_kms_key_arn ExternalLocation#aws_kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/external_location#aws_kms_key_arn ExternalLocation#aws_kms_key_arn}.
 
 ---
 

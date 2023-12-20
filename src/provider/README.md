@@ -1,3 +1,3 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`databricks`](https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs).
+Refer to the Terraform Registory for docs: [`databricks`](https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs).

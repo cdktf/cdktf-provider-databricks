@@ -4,12 +4,12 @@
 
 ### DataDatabricksShare <a name="DataDatabricksShare" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShare"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share databricks_share}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share databricks_share}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShare.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksshare"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksshare"
 
 datadatabricksshare.NewDataDatabricksShare(scope Construct, id *string, config DataDatabricksShareConfig) DataDatabricksShare
 ```
@@ -315,7 +315,7 @@ func ResetObject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShare.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksshare"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksshare"
 
 datadatabricksshare.DataDatabricksShare_IsConstruct(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShare.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksshare"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksshare"
 
 datadatabricksshare.DataDatabricksShare_IsTerraformElement(x interface{}) *bool
 ```
@@ -361,7 +361,7 @@ datadatabricksshare.DataDatabricksShare_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShare.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksshare"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksshare"
 
 datadatabricksshare.DataDatabricksShare_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -375,7 +375,7 @@ datadatabricksshare.DataDatabricksShare_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShare.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksshare"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksshare"
 
 datadatabricksshare.DataDatabricksShare_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -404,7 +404,7 @@ The construct id used in the generated config for the DataDatabricksShare to imp
 
 The id of the existing DataDatabricksShare that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -692,7 +692,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksshare"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksshare"
 
 &datadatabricksshare.DataDatabricksShareConfig {
 	Connection: interface{},
@@ -721,10 +721,10 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabri
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareConfig.property.createdAt">CreatedAt</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#created_at DataDatabricksShare#created_at}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareConfig.property.createdBy">CreatedBy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#created_by DataDatabricksShare#created_by}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#id DataDatabricksShare#id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#name DataDatabricksShare#name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareConfig.property.createdAt">CreatedAt</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#created_at DataDatabricksShare#created_at}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareConfig.property.createdBy">CreatedBy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#created_by DataDatabricksShare#created_by}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#id DataDatabricksShare#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#name DataDatabricksShare#name}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareConfig.property.object">Object</a></code> | <code>interface{}</code> | object block. |
 
 ---
@@ -807,7 +807,7 @@ CreatedAt *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#created_at DataDatabricksShare#created_at}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#created_at DataDatabricksShare#created_at}.
 
 ---
 
@@ -819,7 +819,7 @@ CreatedBy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#created_by DataDatabricksShare#created_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#created_by DataDatabricksShare#created_by}.
 
 ---
 
@@ -831,7 +831,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#id DataDatabricksShare#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#id DataDatabricksShare#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -846,7 +846,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#name DataDatabricksShare#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#name DataDatabricksShare#name}.
 
 ---
 
@@ -860,7 +860,7 @@ Object interface{}
 
 object block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#object DataDatabricksShare#object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#object DataDatabricksShare#object}
 
 ---
 
@@ -869,7 +869,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksshare"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksshare"
 
 &datadatabricksshare.DataDatabricksShareObject {
 	DataObjectType: *string,
@@ -890,17 +890,17 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObject.property.dataObjectType">DataObjectType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#data_object_type DataDatabricksShare#data_object_type}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObject.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#name DataDatabricksShare#name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObject.property.addedAt">AddedAt</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#added_at DataDatabricksShare#added_at}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObject.property.addedBy">AddedBy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#added_by DataDatabricksShare#added_by}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObject.property.cdfEnabled">CdfEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#cdf_enabled DataDatabricksShare#cdf_enabled}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObject.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#comment DataDatabricksShare#comment}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObject.property.historyDataSharingStatus">HistoryDataSharingStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#history_data_sharing_status DataDatabricksShare#history_data_sharing_status}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObject.property.dataObjectType">DataObjectType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#data_object_type DataDatabricksShare#data_object_type}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObject.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#name DataDatabricksShare#name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObject.property.addedAt">AddedAt</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#added_at DataDatabricksShare#added_at}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObject.property.addedBy">AddedBy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#added_by DataDatabricksShare#added_by}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObject.property.cdfEnabled">CdfEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#cdf_enabled DataDatabricksShare#cdf_enabled}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObject.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#comment DataDatabricksShare#comment}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObject.property.historyDataSharingStatus">HistoryDataSharingStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#history_data_sharing_status DataDatabricksShare#history_data_sharing_status}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObject.property.partition">Partition</a></code> | <code>interface{}</code> | partition block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObject.property.sharedAs">SharedAs</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#shared_as DataDatabricksShare#shared_as}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObject.property.startVersion">StartVersion</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#start_version DataDatabricksShare#start_version}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObject.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#status DataDatabricksShare#status}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObject.property.sharedAs">SharedAs</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#shared_as DataDatabricksShare#shared_as}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObject.property.startVersion">StartVersion</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#start_version DataDatabricksShare#start_version}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObject.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#status DataDatabricksShare#status}. |
 
 ---
 
@@ -912,7 +912,7 @@ DataObjectType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#data_object_type DataDatabricksShare#data_object_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#data_object_type DataDatabricksShare#data_object_type}.
 
 ---
 
@@ -924,7 +924,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#name DataDatabricksShare#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#name DataDatabricksShare#name}.
 
 ---
 
@@ -936,7 +936,7 @@ AddedAt *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#added_at DataDatabricksShare#added_at}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#added_at DataDatabricksShare#added_at}.
 
 ---
 
@@ -948,7 +948,7 @@ AddedBy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#added_by DataDatabricksShare#added_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#added_by DataDatabricksShare#added_by}.
 
 ---
 
@@ -960,7 +960,7 @@ CdfEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#cdf_enabled DataDatabricksShare#cdf_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#cdf_enabled DataDatabricksShare#cdf_enabled}.
 
 ---
 
@@ -972,7 +972,7 @@ Comment *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#comment DataDatabricksShare#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#comment DataDatabricksShare#comment}.
 
 ---
 
@@ -984,7 +984,7 @@ HistoryDataSharingStatus *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#history_data_sharing_status DataDatabricksShare#history_data_sharing_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#history_data_sharing_status DataDatabricksShare#history_data_sharing_status}.
 
 ---
 
@@ -998,7 +998,7 @@ Partition interface{}
 
 partition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#partition DataDatabricksShare#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#partition DataDatabricksShare#partition}
 
 ---
 
@@ -1010,7 +1010,7 @@ SharedAs *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#shared_as DataDatabricksShare#shared_as}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#shared_as DataDatabricksShare#shared_as}.
 
 ---
 
@@ -1022,7 +1022,7 @@ StartVersion *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#start_version DataDatabricksShare#start_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#start_version DataDatabricksShare#start_version}.
 
 ---
 
@@ -1034,7 +1034,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#status DataDatabricksShare#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#status DataDatabricksShare#status}.
 
 ---
 
@@ -1043,7 +1043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksshare"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksshare"
 
 &datadatabricksshare.DataDatabricksShareObjectPartition {
 	Value: interface{},
@@ -1068,7 +1068,7 @@ Value interface{}
 
 value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#value DataDatabricksShare#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#value DataDatabricksShare#value}
 
 ---
 
@@ -1077,7 +1077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartitionValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksshare"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksshare"
 
 &datadatabricksshare.DataDatabricksShareObjectPartitionValue {
 	Name: *string,
@@ -1091,10 +1091,10 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartitionValue.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#name DataDatabricksShare#name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartitionValue.property.op">Op</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#op DataDatabricksShare#op}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartitionValue.property.recipientPropertyKey">RecipientPropertyKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#recipient_property_key DataDatabricksShare#recipient_property_key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartitionValue.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#value DataDatabricksShare#value}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartitionValue.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#name DataDatabricksShare#name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartitionValue.property.op">Op</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#op DataDatabricksShare#op}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartitionValue.property.recipientPropertyKey">RecipientPropertyKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#recipient_property_key DataDatabricksShare#recipient_property_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartitionValue.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#value DataDatabricksShare#value}. |
 
 ---
 
@@ -1106,7 +1106,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#name DataDatabricksShare#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#name DataDatabricksShare#name}.
 
 ---
 
@@ -1118,7 +1118,7 @@ Op *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#op DataDatabricksShare#op}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#op DataDatabricksShare#op}.
 
 ---
 
@@ -1130,7 +1130,7 @@ RecipientPropertyKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#recipient_property_key DataDatabricksShare#recipient_property_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#recipient_property_key DataDatabricksShare#recipient_property_key}.
 
 ---
 
@@ -1142,7 +1142,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/share#value DataDatabricksShare#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/share#value DataDatabricksShare#value}.
 
 ---
 
@@ -1153,7 +1153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksshare"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksshare"
 
 datadatabricksshare.NewDataDatabricksShareObjectList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksShareObjectList
 ```
@@ -1296,7 +1296,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksshare"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksshare"
 
 datadatabricksshare.NewDataDatabricksShareObjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksShareObjectOutputReference
 ```
@@ -1881,7 +1881,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksshare"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksshare"
 
 datadatabricksshare.NewDataDatabricksShareObjectPartitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksShareObjectPartitionList
 ```
@@ -2024,7 +2024,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksshare"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksshare"
 
 datadatabricksshare.NewDataDatabricksShareObjectPartitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksShareObjectPartitionOutputReference
 ```
@@ -2326,7 +2326,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartitionValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksshare"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksshare"
 
 datadatabricksshare.NewDataDatabricksShareObjectPartitionValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksShareObjectPartitionValueList
 ```
@@ -2469,7 +2469,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksShare.DataDatabricksShareObjectPartitionValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksshare"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksshare"
 
 datadatabricksshare.NewDataDatabricksShareObjectPartitionValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksShareObjectPartitionValueOutputReference
 ```

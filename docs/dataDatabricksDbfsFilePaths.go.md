@@ -4,12 +4,12 @@
 
 ### DataDatabricksDbfsFilePaths <a name="DataDatabricksDbfsFilePaths" id="@cdktf/provider-databricks.dataDatabricksDbfsFilePaths.DataDatabricksDbfsFilePaths"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/dbfs_file_paths databricks_dbfs_file_paths}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/dbfs_file_paths databricks_dbfs_file_paths}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksDbfsFilePaths.DataDatabricksDbfsFilePaths.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksdbfsfilepaths"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdbfsfilepaths"
 
 datadatabricksdbfsfilepaths.NewDataDatabricksDbfsFilePaths(scope Construct, id *string, config DataDatabricksDbfsFilePathsConfig) DataDatabricksDbfsFilePaths
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksDbfsFilePaths.DataDatabricksDbfsFilePaths.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksdbfsfilepaths"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdbfsfilepaths"
 
 datadatabricksdbfsfilepaths.DataDatabricksDbfsFilePaths_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksDbfsFilePaths.DataDatabricksDbfsFilePaths.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksdbfsfilepaths"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdbfsfilepaths"
 
 datadatabricksdbfsfilepaths.DataDatabricksDbfsFilePaths_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datadatabricksdbfsfilepaths.DataDatabricksDbfsFilePaths_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksDbfsFilePaths.DataDatabricksDbfsFilePaths.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksdbfsfilepaths"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdbfsfilepaths"
 
 datadatabricksdbfsfilepaths.DataDatabricksDbfsFilePaths_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datadatabricksdbfsfilepaths.DataDatabricksDbfsFilePaths_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksDbfsFilePaths.DataDatabricksDbfsFilePaths.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksdbfsfilepaths"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdbfsfilepaths"
 
 datadatabricksdbfsfilepaths.DataDatabricksDbfsFilePaths_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -363,7 +363,7 @@ The construct id used in the generated config for the DataDatabricksDbfsFilePath
 
 The id of the existing DataDatabricksDbfsFilePaths that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/dbfs_file_paths#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/dbfs_file_paths#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -618,7 +618,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksDbfsFilePaths.DataDatabricksDbfsFilePathsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksdbfsfilepaths"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdbfsfilepaths"
 
 &datadatabricksdbfsfilepaths.DataDatabricksDbfsFilePathsConfig {
 	Connection: interface{},
@@ -645,9 +645,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabri
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksDbfsFilePaths.DataDatabricksDbfsFilePathsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksDbfsFilePaths.DataDatabricksDbfsFilePathsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksDbfsFilePaths.DataDatabricksDbfsFilePathsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksDbfsFilePaths.DataDatabricksDbfsFilePathsConfig.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/dbfs_file_paths#path DataDatabricksDbfsFilePaths#path}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksDbfsFilePaths.DataDatabricksDbfsFilePathsConfig.property.recursive">Recursive</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/dbfs_file_paths#recursive DataDatabricksDbfsFilePaths#recursive}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksDbfsFilePaths.DataDatabricksDbfsFilePathsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/dbfs_file_paths#id DataDatabricksDbfsFilePaths#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksDbfsFilePaths.DataDatabricksDbfsFilePathsConfig.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/dbfs_file_paths#path DataDatabricksDbfsFilePaths#path}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksDbfsFilePaths.DataDatabricksDbfsFilePathsConfig.property.recursive">Recursive</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/dbfs_file_paths#recursive DataDatabricksDbfsFilePaths#recursive}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksDbfsFilePaths.DataDatabricksDbfsFilePathsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/dbfs_file_paths#id DataDatabricksDbfsFilePaths#id}. |
 
 ---
 
@@ -729,7 +729,7 @@ Path *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/dbfs_file_paths#path DataDatabricksDbfsFilePaths#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/dbfs_file_paths#path DataDatabricksDbfsFilePaths#path}.
 
 ---
 
@@ -741,7 +741,7 @@ Recursive interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/dbfs_file_paths#recursive DataDatabricksDbfsFilePaths#recursive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/dbfs_file_paths#recursive DataDatabricksDbfsFilePaths#recursive}.
 
 ---
 
@@ -753,7 +753,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.31.1/docs/data-sources/dbfs_file_paths#id DataDatabricksDbfsFilePaths#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/dbfs_file_paths#id DataDatabricksDbfsFilePaths#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -765,7 +765,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksDbfsFilePaths.DataDatabricksDbfsFilePathsPathListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksdbfsfilepaths"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdbfsfilepaths"
 
 &datadatabricksdbfsfilepaths.DataDatabricksDbfsFilePathsPathListStruct {
 
@@ -780,7 +780,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabri
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksDbfsFilePaths.DataDatabricksDbfsFilePathsPathListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksdbfsfilepaths"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdbfsfilepaths"
 
 datadatabricksdbfsfilepaths.NewDataDatabricksDbfsFilePathsPathListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksDbfsFilePathsPathListStructList
 ```
@@ -912,7 +912,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksDbfsFilePaths.DataDatabricksDbfsFilePathsPathListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/datadatabricksdbfsfilepaths"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdbfsfilepaths"
 
 datadatabricksdbfsfilepaths.NewDataDatabricksDbfsFilePathsPathListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksDbfsFilePathsPathListStructOutputReference
 ```
