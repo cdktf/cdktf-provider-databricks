@@ -1,3 +1,3 @@
 # `databricks_directory`
 
-Refer to the Terraform Registory for docs: [`databricks_directory`](https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/resources/directory).
+Refer to the Terraform Registory for docs: [`databricks_directory`](https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/directory).

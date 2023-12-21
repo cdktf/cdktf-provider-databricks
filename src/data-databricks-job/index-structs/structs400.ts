@@ -78,7 +78,7 @@ dataDatabricksJobJobSettingsSettingsTriggerToTerraform,
 DataDatabricksJobJobSettingsSettingsTriggerOutputReference } from './structs0'
 export interface DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceeded {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#id DataDatabricksJob#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#id DataDatabricksJob#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -178,7 +178,7 @@ export class DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationW
 }
 export interface DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailure {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#id DataDatabricksJob#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#id DataDatabricksJob#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -278,7 +278,7 @@ export class DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureLi
 }
 export interface DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStart {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#id DataDatabricksJob#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#id DataDatabricksJob#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -378,7 +378,7 @@ export class DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStartList
 }
 export interface DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccess {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#id DataDatabricksJob#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#id DataDatabricksJob#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -480,25 +480,25 @@ export interface DataDatabricksJobJobSettingsSettingsWebhookNotifications {
   /**
   * on_duration_warning_threshold_exceeded block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#on_duration_warning_threshold_exceeded DataDatabricksJob#on_duration_warning_threshold_exceeded}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#on_duration_warning_threshold_exceeded DataDatabricksJob#on_duration_warning_threshold_exceeded}
   */
   readonly onDurationWarningThresholdExceeded?: DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceeded[] | cdktf.IResolvable;
   /**
   * on_failure block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#on_failure DataDatabricksJob#on_failure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#on_failure DataDatabricksJob#on_failure}
   */
   readonly onFailure?: DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailure[] | cdktf.IResolvable;
   /**
   * on_start block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#on_start DataDatabricksJob#on_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#on_start DataDatabricksJob#on_start}
   */
   readonly onStart?: DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStart[] | cdktf.IResolvable;
   /**
   * on_success block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#on_success DataDatabricksJob#on_success}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#on_success DataDatabricksJob#on_success}
   */
   readonly onSuccess?: DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccess[] | cdktf.IResolvable;
 }
@@ -632,197 +632,197 @@ export class DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputRefer
 }
 export interface DataDatabricksJobJobSettingsSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#description DataDatabricksJob#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#description DataDatabricksJob#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#edit_mode DataDatabricksJob#edit_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#edit_mode DataDatabricksJob#edit_mode}
   */
   readonly editMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#existing_cluster_id DataDatabricksJob#existing_cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#existing_cluster_id DataDatabricksJob#existing_cluster_id}
   */
   readonly existingClusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#format DataDatabricksJob#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#format DataDatabricksJob#format}
   */
   readonly format?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#max_concurrent_runs DataDatabricksJob#max_concurrent_runs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#max_concurrent_runs DataDatabricksJob#max_concurrent_runs}
   */
   readonly maxConcurrentRuns?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#max_retries DataDatabricksJob#max_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#max_retries DataDatabricksJob#max_retries}
   */
   readonly maxRetries?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#min_retry_interval_millis DataDatabricksJob#min_retry_interval_millis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#min_retry_interval_millis DataDatabricksJob#min_retry_interval_millis}
   */
   readonly minRetryIntervalMillis?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#name DataDatabricksJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#name DataDatabricksJob#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#retry_on_timeout DataDatabricksJob#retry_on_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#retry_on_timeout DataDatabricksJob#retry_on_timeout}
   */
   readonly retryOnTimeout?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#tags DataDatabricksJob#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#tags DataDatabricksJob#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#timeout_seconds DataDatabricksJob#timeout_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#timeout_seconds DataDatabricksJob#timeout_seconds}
   */
   readonly timeoutSeconds?: number;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#compute DataDatabricksJob#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#compute DataDatabricksJob#compute}
   */
   readonly compute?: DataDatabricksJobJobSettingsSettingsCompute[] | cdktf.IResolvable;
   /**
   * continuous block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#continuous DataDatabricksJob#continuous}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#continuous DataDatabricksJob#continuous}
   */
   readonly continuous?: DataDatabricksJobJobSettingsSettingsContinuous;
   /**
   * dbt_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#dbt_task DataDatabricksJob#dbt_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#dbt_task DataDatabricksJob#dbt_task}
   */
   readonly dbtTask?: DataDatabricksJobJobSettingsSettingsDbtTask;
   /**
   * deployment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#deployment DataDatabricksJob#deployment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#deployment DataDatabricksJob#deployment}
   */
   readonly deployment?: DataDatabricksJobJobSettingsSettingsDeployment;
   /**
   * email_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#email_notifications DataDatabricksJob#email_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#email_notifications DataDatabricksJob#email_notifications}
   */
   readonly emailNotifications?: DataDatabricksJobJobSettingsSettingsEmailNotifications;
   /**
   * git_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#git_source DataDatabricksJob#git_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#git_source DataDatabricksJob#git_source}
   */
   readonly gitSource?: DataDatabricksJobJobSettingsSettingsGitSource;
   /**
   * health block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#health DataDatabricksJob#health}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#health DataDatabricksJob#health}
   */
   readonly health?: DataDatabricksJobJobSettingsSettingsHealth;
   /**
   * job_cluster block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#job_cluster DataDatabricksJob#job_cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#job_cluster DataDatabricksJob#job_cluster}
   */
   readonly jobCluster?: DataDatabricksJobJobSettingsSettingsJobCluster[] | cdktf.IResolvable;
   /**
   * library block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#library DataDatabricksJob#library}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#library DataDatabricksJob#library}
   */
   readonly library?: DataDatabricksJobJobSettingsSettingsLibrary[] | cdktf.IResolvable;
   /**
   * new_cluster block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#new_cluster DataDatabricksJob#new_cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#new_cluster DataDatabricksJob#new_cluster}
   */
   readonly newCluster?: DataDatabricksJobJobSettingsSettingsNewCluster;
   /**
   * notebook_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#notebook_task DataDatabricksJob#notebook_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#notebook_task DataDatabricksJob#notebook_task}
   */
   readonly notebookTask?: DataDatabricksJobJobSettingsSettingsNotebookTask;
   /**
   * notification_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#notification_settings DataDatabricksJob#notification_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#notification_settings DataDatabricksJob#notification_settings}
   */
   readonly notificationSettings?: DataDatabricksJobJobSettingsSettingsNotificationSettings;
   /**
   * parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#parameter DataDatabricksJob#parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#parameter DataDatabricksJob#parameter}
   */
   readonly parameter?: DataDatabricksJobJobSettingsSettingsParameter[] | cdktf.IResolvable;
   /**
   * pipeline_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#pipeline_task DataDatabricksJob#pipeline_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#pipeline_task DataDatabricksJob#pipeline_task}
   */
   readonly pipelineTask?: DataDatabricksJobJobSettingsSettingsPipelineTask;
   /**
   * python_wheel_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#python_wheel_task DataDatabricksJob#python_wheel_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#python_wheel_task DataDatabricksJob#python_wheel_task}
   */
   readonly pythonWheelTask?: DataDatabricksJobJobSettingsSettingsPythonWheelTask;
   /**
   * queue block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#queue DataDatabricksJob#queue}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#queue DataDatabricksJob#queue}
   */
   readonly queue?: DataDatabricksJobJobSettingsSettingsQueue;
   /**
   * run_as block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#run_as DataDatabricksJob#run_as}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#run_as DataDatabricksJob#run_as}
   */
   readonly runAs?: DataDatabricksJobJobSettingsSettingsRunAs;
   /**
   * run_job_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#run_job_task DataDatabricksJob#run_job_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#run_job_task DataDatabricksJob#run_job_task}
   */
   readonly runJobTask?: DataDatabricksJobJobSettingsSettingsRunJobTask;
   /**
   * schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#schedule DataDatabricksJob#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#schedule DataDatabricksJob#schedule}
   */
   readonly schedule?: DataDatabricksJobJobSettingsSettingsSchedule;
   /**
   * spark_jar_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#spark_jar_task DataDatabricksJob#spark_jar_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#spark_jar_task DataDatabricksJob#spark_jar_task}
   */
   readonly sparkJarTask?: DataDatabricksJobJobSettingsSettingsSparkJarTask;
   /**
   * spark_python_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#spark_python_task DataDatabricksJob#spark_python_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#spark_python_task DataDatabricksJob#spark_python_task}
   */
   readonly sparkPythonTask?: DataDatabricksJobJobSettingsSettingsSparkPythonTask;
   /**
   * spark_submit_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#spark_submit_task DataDatabricksJob#spark_submit_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#spark_submit_task DataDatabricksJob#spark_submit_task}
   */
   readonly sparkSubmitTask?: DataDatabricksJobJobSettingsSettingsSparkSubmitTask;
   /**
   * task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#task DataDatabricksJob#task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#task DataDatabricksJob#task}
   */
   readonly task?: DataDatabricksJobJobSettingsSettingsTask[] | cdktf.IResolvable;
   /**
   * trigger block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#trigger DataDatabricksJob#trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#trigger DataDatabricksJob#trigger}
   */
   readonly trigger?: DataDatabricksJobJobSettingsSettingsTrigger;
   /**
   * webhook_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#webhook_notifications DataDatabricksJob#webhook_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#webhook_notifications DataDatabricksJob#webhook_notifications}
   */
   readonly webhookNotifications?: DataDatabricksJobJobSettingsSettingsWebhookNotifications;
 }
@@ -1692,25 +1692,25 @@ export class DataDatabricksJobJobSettingsSettingsOutputReference extends cdktf.C
 }
 export interface DataDatabricksJobJobSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#created_time DataDatabricksJob#created_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#created_time DataDatabricksJob#created_time}
   */
   readonly createdTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#creator_user_name DataDatabricksJob#creator_user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#creator_user_name DataDatabricksJob#creator_user_name}
   */
   readonly creatorUserName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}
   */
   readonly jobId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#run_as_user_name DataDatabricksJob#run_as_user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#run_as_user_name DataDatabricksJob#run_as_user_name}
   */
   readonly runAsUserName?: string;
   /**
   * settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.32.0/docs/data-sources/job#settings DataDatabricksJob#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/job#settings DataDatabricksJob#settings}
   */
   readonly settings?: DataDatabricksJobJobSettingsSettings;
 }
