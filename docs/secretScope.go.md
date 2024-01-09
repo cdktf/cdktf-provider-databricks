@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.secretScope.SecretScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/secretscope"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/secretscope"
 
 secretscope.NewSecretScope(scope Construct, id *string, config SecretScopeConfig) SecretScope
 ```
@@ -412,7 +412,7 @@ func ResetKeyvaultMetadata()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.secretScope.SecretScope.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/secretscope"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/secretscope"
 
 secretscope.SecretScope_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.secretScope.SecretScope.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/secretscope"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/secretscope"
 
 secretscope.SecretScope_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ secretscope.SecretScope_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.secretScope.SecretScope.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/secretscope"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/secretscope"
 
 secretscope.SecretScope_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ secretscope.SecretScope_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.secretScope.SecretScope.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/secretscope"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/secretscope"
 
 secretscope.SecretScope_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -811,7 +811,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.secretScope.SecretScopeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/secretscope"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/secretscope"
 
 &secretscope.SecretScopeConfig {
 	Connection: interface{},
@@ -825,7 +825,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/secretscope"
 	BackendType: *string,
 	Id: *string,
 	InitialManagePrincipal: *string,
-	KeyvaultMetadata: github.com/cdktf/cdktf-provider-databricks-go/databricks.secretScope.SecretScopeKeyvaultMetadata,
+	KeyvaultMetadata: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.secretScope.SecretScopeKeyvaultMetadata,
 }
 ```
 
@@ -988,7 +988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.secretScope.SecretScopeKeyvaultMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/secretscope"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/secretscope"
 
 &secretscope.SecretScopeKeyvaultMetadata {
 	DnsName: *string,
@@ -1036,7 +1036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.secretScope.SecretScopeKeyvaultMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/secretscope"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/secretscope"
 
 secretscope.NewSecretScopeKeyvaultMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecretScopeKeyvaultMetadataOutputReference
 ```
