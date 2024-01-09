@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlQuery.SqlQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 sqlquery.NewSqlQuery(scope Construct, id *string, config SqlQueryConfig) SqlQuery
 ```
@@ -460,7 +460,7 @@ func ResetUpdatedAt()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.sqlQuery.SqlQuery.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 sqlquery.SqlQuery_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.sqlQuery.SqlQuery.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 sqlquery.SqlQuery_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ sqlquery.SqlQuery_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.sqlQuery.SqlQuery.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 sqlquery.SqlQuery_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ sqlquery.SqlQuery_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.sqlQuery.SqlQuery.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 sqlquery.SqlQuery_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1013,7 +1013,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlQuery.SqlQueryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 &sqlquery.SqlQueryConfig {
 	Connection: interface{},
@@ -1032,7 +1032,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
 	Parameter: interface{},
 	Parent: *string,
 	RunAsRole: *string,
-	Schedule: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.sqlQuery.SqlQuerySchedule,
+	Schedule: github.com/cdktf/cdktf-provider-databricks-go/databricks.sqlQuery.SqlQuerySchedule,
 	Tags: *[]*string,
 	UpdatedAt: *string,
 }
@@ -1290,20 +1290,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 &sqlquery.SqlQueryParameter {
 	Name: *string,
-	Date: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.sqlQuery.SqlQueryParameterDate,
-	DateRange: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.sqlQuery.SqlQueryParameterDateRange,
-	Datetime: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.sqlQuery.SqlQueryParameterDatetime,
-	DatetimeRange: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.sqlQuery.SqlQueryParameterDatetimeRange,
-	Datetimesec: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.sqlQuery.SqlQueryParameterDatetimesec,
-	DatetimesecRange: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.sqlQuery.SqlQueryParameterDatetimesecRange,
-	Enum: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.sqlQuery.SqlQueryParameterEnum,
-	Number: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.sqlQuery.SqlQueryParameterNumber,
-	Query: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.sqlQuery.SqlQueryParameterQuery,
-	Text: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.sqlQuery.SqlQueryParameterText,
+	Date: github.com/cdktf/cdktf-provider-databricks-go/databricks.sqlQuery.SqlQueryParameterDate,
+	DateRange: github.com/cdktf/cdktf-provider-databricks-go/databricks.sqlQuery.SqlQueryParameterDateRange,
+	Datetime: github.com/cdktf/cdktf-provider-databricks-go/databricks.sqlQuery.SqlQueryParameterDatetime,
+	DatetimeRange: github.com/cdktf/cdktf-provider-databricks-go/databricks.sqlQuery.SqlQueryParameterDatetimeRange,
+	Datetimesec: github.com/cdktf/cdktf-provider-databricks-go/databricks.sqlQuery.SqlQueryParameterDatetimesec,
+	DatetimesecRange: github.com/cdktf/cdktf-provider-databricks-go/databricks.sqlQuery.SqlQueryParameterDatetimesecRange,
+	Enum: github.com/cdktf/cdktf-provider-databricks-go/databricks.sqlQuery.SqlQueryParameterEnum,
+	Number: github.com/cdktf/cdktf-provider-databricks-go/databricks.sqlQuery.SqlQueryParameterNumber,
+	Query: github.com/cdktf/cdktf-provider-databricks-go/databricks.sqlQuery.SqlQueryParameterQuery,
+	Text: github.com/cdktf/cdktf-provider-databricks-go/databricks.sqlQuery.SqlQueryParameterText,
 	Title: *string,
 }
 ```
@@ -1496,7 +1496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 &sqlquery.SqlQueryParameterDate {
 	Value: *string,
@@ -1528,10 +1528,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 &sqlquery.SqlQueryParameterDateRange {
-	Range: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.sqlQuery.SqlQueryParameterDateRangeRange,
+	Range: github.com/cdktf/cdktf-provider-databricks-go/databricks.sqlQuery.SqlQueryParameterDateRangeRange,
 	Value: *string,
 }
 ```
@@ -1576,7 +1576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDateRangeRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 &sqlquery.SqlQueryParameterDateRangeRange {
 	End: *string,
@@ -1622,7 +1622,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetime.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 &sqlquery.SqlQueryParameterDatetime {
 	Value: *string,
@@ -1654,10 +1654,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimeRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 &sqlquery.SqlQueryParameterDatetimeRange {
-	Range: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.sqlQuery.SqlQueryParameterDatetimeRangeRange,
+	Range: github.com/cdktf/cdktf-provider-databricks-go/databricks.sqlQuery.SqlQueryParameterDatetimeRangeRange,
 	Value: *string,
 }
 ```
@@ -1702,7 +1702,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimeRangeRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 &sqlquery.SqlQueryParameterDatetimeRangeRange {
 	End: *string,
@@ -1748,7 +1748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimesec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 &sqlquery.SqlQueryParameterDatetimesec {
 	Value: *string,
@@ -1780,10 +1780,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimesecRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 &sqlquery.SqlQueryParameterDatetimesecRange {
-	Range: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.sqlQuery.SqlQueryParameterDatetimesecRangeRange,
+	Range: github.com/cdktf/cdktf-provider-databricks-go/databricks.sqlQuery.SqlQueryParameterDatetimesecRangeRange,
 	Value: *string,
 }
 ```
@@ -1828,7 +1828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimesecRangeRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 &sqlquery.SqlQueryParameterDatetimesecRangeRange {
 	End: *string,
@@ -1874,11 +1874,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterEnum.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 &sqlquery.SqlQueryParameterEnum {
 	Options: *[]*string,
-	Multiple: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.sqlQuery.SqlQueryParameterEnumMultiple,
+	Multiple: github.com/cdktf/cdktf-provider-databricks-go/databricks.sqlQuery.SqlQueryParameterEnumMultiple,
 	Value: *string,
 	Values: *[]*string,
 }
@@ -1950,7 +1950,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterEnumMultiple.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 &sqlquery.SqlQueryParameterEnumMultiple {
 	Separator: *string,
@@ -2010,7 +2010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterNumber.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 &sqlquery.SqlQueryParameterNumber {
 	Value: *f64,
@@ -2042,11 +2042,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 &sqlquery.SqlQueryParameterQuery {
 	QueryId: *string,
-	Multiple: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.sqlQuery.SqlQueryParameterQueryMultiple,
+	Multiple: github.com/cdktf/cdktf-provider-databricks-go/databricks.sqlQuery.SqlQueryParameterQueryMultiple,
 	Value: *string,
 	Values: *[]*string,
 }
@@ -2118,7 +2118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterQueryMultiple.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 &sqlquery.SqlQueryParameterQueryMultiple {
 	Separator: *string,
@@ -2178,7 +2178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterText.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 &sqlquery.SqlQueryParameterText {
 	Value: *string,
@@ -2210,12 +2210,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlQuery.SqlQuerySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 &sqlquery.SqlQuerySchedule {
-	Continuous: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.sqlQuery.SqlQueryScheduleContinuous,
-	Daily: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.sqlQuery.SqlQueryScheduleDaily,
-	Weekly: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.sqlQuery.SqlQueryScheduleWeekly,
+	Continuous: github.com/cdktf/cdktf-provider-databricks-go/databricks.sqlQuery.SqlQueryScheduleContinuous,
+	Daily: github.com/cdktf/cdktf-provider-databricks-go/databricks.sqlQuery.SqlQueryScheduleDaily,
+	Weekly: github.com/cdktf/cdktf-provider-databricks-go/databricks.sqlQuery.SqlQueryScheduleWeekly,
 }
 ```
 
@@ -2276,7 +2276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleContinuous.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 &sqlquery.SqlQueryScheduleContinuous {
 	IntervalSeconds: *f64,
@@ -2322,7 +2322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleDaily.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 &sqlquery.SqlQueryScheduleDaily {
 	IntervalDays: *f64,
@@ -2382,7 +2382,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleWeekly.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 &sqlquery.SqlQueryScheduleWeekly {
 	DayOfWeek: *string,
@@ -2458,7 +2458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 sqlquery.NewSqlQueryParameterDateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlQueryParameterDateOutputReference
 ```
@@ -2729,7 +2729,7 @@ func InternalValue() SqlQueryParameterDate
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 sqlquery.NewSqlQueryParameterDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlQueryParameterDateRangeOutputReference
 ```
@@ -3049,7 +3049,7 @@ func InternalValue() SqlQueryParameterDateRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDateRangeRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 sqlquery.NewSqlQueryParameterDateRangeRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlQueryParameterDateRangeRangeOutputReference
 ```
@@ -3342,7 +3342,7 @@ func InternalValue() SqlQueryParameterDateRangeRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 sqlquery.NewSqlQueryParameterDatetimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlQueryParameterDatetimeOutputReference
 ```
@@ -3613,7 +3613,7 @@ func InternalValue() SqlQueryParameterDatetime
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimeRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 sqlquery.NewSqlQueryParameterDatetimeRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlQueryParameterDatetimeRangeOutputReference
 ```
@@ -3933,7 +3933,7 @@ func InternalValue() SqlQueryParameterDatetimeRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimeRangeRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 sqlquery.NewSqlQueryParameterDatetimeRangeRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlQueryParameterDatetimeRangeRangeOutputReference
 ```
@@ -4226,7 +4226,7 @@ func InternalValue() SqlQueryParameterDatetimeRangeRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimesecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 sqlquery.NewSqlQueryParameterDatetimesecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlQueryParameterDatetimesecOutputReference
 ```
@@ -4497,7 +4497,7 @@ func InternalValue() SqlQueryParameterDatetimesec
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimesecRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 sqlquery.NewSqlQueryParameterDatetimesecRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlQueryParameterDatetimesecRangeOutputReference
 ```
@@ -4817,7 +4817,7 @@ func InternalValue() SqlQueryParameterDatetimesecRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterDatetimesecRangeRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 sqlquery.NewSqlQueryParameterDatetimesecRangeRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlQueryParameterDatetimesecRangeRangeOutputReference
 ```
@@ -5110,7 +5110,7 @@ func InternalValue() SqlQueryParameterDatetimesecRangeRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterEnumMultipleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 sqlquery.NewSqlQueryParameterEnumMultipleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlQueryParameterEnumMultipleOutputReference
 ```
@@ -5439,7 +5439,7 @@ func InternalValue() SqlQueryParameterEnumMultiple
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterEnumOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 sqlquery.NewSqlQueryParameterEnumOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlQueryParameterEnumOutputReference
 ```
@@ -5810,7 +5810,7 @@ func InternalValue() SqlQueryParameterEnum
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 sqlquery.NewSqlQueryParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SqlQueryParameterList
 ```
@@ -5953,7 +5953,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterNumberOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 sqlquery.NewSqlQueryParameterNumberOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlQueryParameterNumberOutputReference
 ```
@@ -6224,7 +6224,7 @@ func InternalValue() SqlQueryParameterNumber
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 sqlquery.NewSqlQueryParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SqlQueryParameterOutputReference
 ```
@@ -6962,7 +6962,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterQueryMultipleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 sqlquery.NewSqlQueryParameterQueryMultipleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlQueryParameterQueryMultipleOutputReference
 ```
@@ -7291,7 +7291,7 @@ func InternalValue() SqlQueryParameterQueryMultiple
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 sqlquery.NewSqlQueryParameterQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlQueryParameterQueryOutputReference
 ```
@@ -7662,7 +7662,7 @@ func InternalValue() SqlQueryParameterQuery
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlQuery.SqlQueryParameterTextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 sqlquery.NewSqlQueryParameterTextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlQueryParameterTextOutputReference
 ```
@@ -7933,7 +7933,7 @@ func InternalValue() SqlQueryParameterText
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleContinuousOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 sqlquery.NewSqlQueryScheduleContinuousOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlQueryScheduleContinuousOutputReference
 ```
@@ -8233,7 +8233,7 @@ func InternalValue() SqlQueryScheduleContinuous
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleDailyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 sqlquery.NewSqlQueryScheduleDailyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlQueryScheduleDailyOutputReference
 ```
@@ -8555,7 +8555,7 @@ func InternalValue() SqlQueryScheduleDaily
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 sqlquery.NewSqlQueryScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlQueryScheduleOutputReference
 ```
@@ -8930,7 +8930,7 @@ func InternalValue() SqlQuerySchedule
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlQuery.SqlQueryScheduleWeeklyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlquery"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlquery"
 
 sqlquery.NewSqlQueryScheduleWeeklyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlQueryScheduleWeeklyOutputReference
 ```
