@@ -282,4 +282,66 @@ export class Notebook extends cdktf.TerraformResource {
       source: cdktf.stringToTerraform(this._source),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      content_base64: {
+        value: cdktf.stringToHclTerraform(this._contentBase64),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      format: {
+        value: cdktf.stringToHclTerraform(this._format),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      language: {
+        value: cdktf.stringToHclTerraform(this._language),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      md5: {
+        value: cdktf.stringToHclTerraform(this._md5),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      object_id: {
+        value: cdktf.numberToHclTerraform(this._objectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      object_type: {
+        value: cdktf.stringToHclTerraform(this._objectType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      path: {
+        value: cdktf.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      source: {
+        value: cdktf.stringToHclTerraform(this._source),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

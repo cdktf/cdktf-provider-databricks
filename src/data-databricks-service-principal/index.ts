@@ -280,4 +280,66 @@ export class DataDatabricksServicePrincipal extends cdktf.TerraformDataSource {
       sp_id: cdktf.stringToTerraform(this._spId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      acl_principal_id: {
+        value: cdktf.stringToHclTerraform(this._aclPrincipalId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      active: {
+        value: cdktf.booleanToHclTerraform(this._active),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      application_id: {
+        value: cdktf.stringToHclTerraform(this._applicationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      external_id: {
+        value: cdktf.stringToHclTerraform(this._externalId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      home: {
+        value: cdktf.stringToHclTerraform(this._home),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      repos: {
+        value: cdktf.stringToHclTerraform(this._repos),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sp_id: {
+        value: cdktf.stringToHclTerraform(this._spId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -142,4 +142,30 @@ export class PermissionAssignment extends cdktf.TerraformResource {
       principal_id: cdktf.numberToTerraform(this._principalId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      permissions: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._permissions),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      principal_id: {
+        value: cdktf.numberToHclTerraform(this._principalId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

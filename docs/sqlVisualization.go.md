@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlVisualization.SqlVisualization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlvisualization"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sqlvisualization"
 
 sqlvisualization.NewSqlVisualization(scope Construct, id *string, config SqlVisualizationConfig) SqlVisualization
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.sqlVisualization.SqlVisualization.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlVisualization.SqlVisualization.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-databricks.sqlVisualization.SqlVisualization.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-databricks.sqlVisualization.SqlVisualization.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlVisualization.SqlVisualization.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlVisualization.SqlVisualization.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-databricks.sqlVisualization.SqlVisualization.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -128,6 +129,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-databricks.sqlVisualization.SqlVisualization.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-databricks.sqlVisualization.SqlVisualization.toMetadata"></a>
 
@@ -399,7 +406,7 @@ func ResetVisualizationId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.sqlVisualization.SqlVisualization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlvisualization"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sqlvisualization"
 
 sqlvisualization.SqlVisualization_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.sqlVisualization.SqlVisualization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlvisualization"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sqlvisualization"
 
 sqlvisualization.SqlVisualization_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +452,7 @@ sqlvisualization.SqlVisualization_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.sqlVisualization.SqlVisualization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlvisualization"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sqlvisualization"
 
 sqlvisualization.SqlVisualization_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +466,7 @@ sqlvisualization.SqlVisualization_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.sqlVisualization.SqlVisualization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlvisualization"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sqlvisualization"
 
 sqlvisualization.SqlVisualization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -864,7 +871,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlVisualization.SqlVisualizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/sqlvisualization"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sqlvisualization"
 
 &sqlvisualization.SqlVisualizationConfig {
 	Connection: interface{},

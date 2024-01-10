@@ -75,6 +75,37 @@ export function mwsCustomerManagedKeysAwsKeyInfoToTerraform(struct?: MwsCustomer
   }
 }
 
+
+export function mwsCustomerManagedKeysAwsKeyInfoToHclTerraform(struct?: MwsCustomerManagedKeysAwsKeyInfoOutputReference | MwsCustomerManagedKeysAwsKeyInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key_alias: {
+      value: cdktf.stringToHclTerraform(struct!.keyAlias),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key_arn: {
+      value: cdktf.stringToHclTerraform(struct!.keyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key_region: {
+      value: cdktf.stringToHclTerraform(struct!.keyRegion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MwsCustomerManagedKeysAwsKeyInfoOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -179,6 +210,25 @@ export function mwsCustomerManagedKeysGcpKeyInfoToTerraform(struct?: MwsCustomer
   return {
     kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
   }
+}
+
+
+export function mwsCustomerManagedKeysGcpKeyInfoToHclTerraform(struct?: MwsCustomerManagedKeysGcpKeyInfoOutputReference | MwsCustomerManagedKeysGcpKeyInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kms_key_id: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MwsCustomerManagedKeysGcpKeyInfoOutputReference extends cdktf.ComplexObject {
@@ -411,5 +461,55 @@ export class MwsCustomerManagedKeys extends cdktf.TerraformResource {
       aws_key_info: mwsCustomerManagedKeysAwsKeyInfoToTerraform(this._awsKeyInfo.internalValue),
       gcp_key_info: mwsCustomerManagedKeysGcpKeyInfoToTerraform(this._gcpKeyInfo.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      creation_time: {
+        value: cdktf.numberToHclTerraform(this._creationTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      customer_managed_key_id: {
+        value: cdktf.stringToHclTerraform(this._customerManagedKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      use_cases: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._useCases),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      aws_key_info: {
+        value: mwsCustomerManagedKeysAwsKeyInfoToHclTerraform(this._awsKeyInfo.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MwsCustomerManagedKeysAwsKeyInfoList",
+      },
+      gcp_key_info: {
+        value: mwsCustomerManagedKeysGcpKeyInfoToHclTerraform(this._gcpKeyInfo.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MwsCustomerManagedKeysGcpKeyInfoList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

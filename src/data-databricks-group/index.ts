@@ -409,4 +409,102 @@ export class DataDatabricksGroup extends cdktf.TerraformDataSource {
       workspace_access: cdktf.booleanToTerraform(this._workspaceAccess),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      acl_principal_id: {
+        value: cdktf.stringToHclTerraform(this._aclPrincipalId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      allow_cluster_create: {
+        value: cdktf.booleanToHclTerraform(this._allowClusterCreate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      allow_instance_pool_create: {
+        value: cdktf.booleanToHclTerraform(this._allowInstancePoolCreate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      child_groups: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._childGroups),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      databricks_sql_access: {
+        value: cdktf.booleanToHclTerraform(this._databricksSqlAccess),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      external_id: {
+        value: cdktf.stringToHclTerraform(this._externalId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      groups: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._groups),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_profiles: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._instanceProfiles),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      members: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._members),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      recursive: {
+        value: cdktf.booleanToHclTerraform(this._recursive),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      service_principals: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._servicePrincipals),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      users: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._users),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      workspace_access: {
+        value: cdktf.booleanToHclTerraform(this._workspaceAccess),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwsnetworks"
 
 mwsnetworks.NewMwsNetworks(scope Construct, id *string, config MwsNetworksConfig) MwsNetworks
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworks.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworks.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworks.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworks.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworks.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworks.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworks.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -138,6 +139,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworks.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworks.toMetadata"></a>
 
@@ -487,7 +494,7 @@ func ResetWorkspaceId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworks.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwsnetworks"
 
 mwsnetworks.MwsNetworks_IsConstruct(x interface{}) *bool
 ```
@@ -519,7 +526,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwsnetworks"
 
 mwsnetworks.MwsNetworks_IsTerraformElement(x interface{}) *bool
 ```
@@ -533,7 +540,7 @@ mwsnetworks.MwsNetworks_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworks.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwsnetworks"
 
 mwsnetworks.MwsNetworks_IsTerraformResource(x interface{}) *bool
 ```
@@ -547,7 +554,7 @@ mwsnetworks.MwsNetworks_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworks.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwsnetworks"
 
 mwsnetworks.MwsNetworks_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1062,7 +1069,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwsnetworks"
 
 &mwsnetworks.MwsNetworksConfig {
 	Connection: interface{},
@@ -1076,12 +1083,12 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks
 	NetworkName: *string,
 	CreationTime: *f64,
 	ErrorMessages: interface{},
-	GcpNetworkInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.mwsNetworks.MwsNetworksGcpNetworkInfo,
+	GcpNetworkInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.mwsNetworks.MwsNetworksGcpNetworkInfo,
 	Id: *string,
 	NetworkId: *string,
 	SecurityGroupIds: *[]*string,
 	SubnetIds: *[]*string,
-	VpcEndpoints: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.mwsNetworks.MwsNetworksVpcEndpoints,
+	VpcEndpoints: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.mwsNetworks.MwsNetworksVpcEndpoints,
 	VpcId: *string,
 	VpcStatus: *string,
 	WorkspaceId: *f64,
@@ -1355,7 +1362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworksErrorMessages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwsnetworks"
 
 &mwsnetworks.MwsNetworksErrorMessages {
 	ErrorMessage: *string,
@@ -1401,7 +1408,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworksGcpNetworkInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwsnetworks"
 
 &mwsnetworks.MwsNetworksGcpNetworkInfo {
 	NetworkProjectId: *string,
@@ -1503,7 +1510,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworksVpcEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwsnetworks"
 
 &mwsnetworks.MwsNetworksVpcEndpoints {
 	DataplaneRelay: *[]*string,
@@ -1551,7 +1558,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworksErrorMessagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwsnetworks"
 
 mwsnetworks.NewMwsNetworksErrorMessagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MwsNetworksErrorMessagesList
 ```
@@ -1592,10 +1599,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksErrorMessagesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksErrorMessagesList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksErrorMessagesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksErrorMessagesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-databricks.mwsNetworks.MwsNetworksErrorMessagesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworksErrorMessagesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworksErrorMessagesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1694,7 +1718,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworksErrorMessagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwsnetworks"
 
 mwsnetworks.NewMwsNetworksErrorMessagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MwsNetworksErrorMessagesOutputReference
 ```
@@ -2019,7 +2043,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworksGcpNetworkInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwsnetworks"
 
 mwsnetworks.NewMwsNetworksGcpNetworkInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MwsNetworksGcpNetworkInfoOutputReference
 ```
@@ -2400,7 +2424,7 @@ func InternalValue() MwsNetworksGcpNetworkInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mwsNetworks.MwsNetworksVpcEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwsnetworks"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwsnetworks"
 
 mwsnetworks.NewMwsNetworksVpcEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MwsNetworksVpcEndpointsOutputReference
 ```

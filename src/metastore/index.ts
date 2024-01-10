@@ -475,4 +475,120 @@ export class Metastore extends cdktf.TerraformResource {
       updated_by: cdktf.stringToTerraform(this._updatedBy),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cloud: {
+        value: cdktf.stringToHclTerraform(this._cloud),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      created_at: {
+        value: cdktf.numberToHclTerraform(this._createdAt),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      created_by: {
+        value: cdktf.stringToHclTerraform(this._createdBy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_data_access_config_id: {
+        value: cdktf.stringToHclTerraform(this._defaultDataAccessConfigId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      delta_sharing_organization_name: {
+        value: cdktf.stringToHclTerraform(this._deltaSharingOrganizationName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      delta_sharing_recipient_token_lifetime_in_seconds: {
+        value: cdktf.numberToHclTerraform(this._deltaSharingRecipientTokenLifetimeInSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      delta_sharing_scope: {
+        value: cdktf.stringToHclTerraform(this._deltaSharingScope),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      force_destroy: {
+        value: cdktf.booleanToHclTerraform(this._forceDestroy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      global_metastore_id: {
+        value: cdktf.stringToHclTerraform(this._globalMetastoreId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      metastore_id: {
+        value: cdktf.stringToHclTerraform(this._metastoreId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      owner: {
+        value: cdktf.stringToHclTerraform(this._owner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      storage_root: {
+        value: cdktf.stringToHclTerraform(this._storageRoot),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      storage_root_credential_id: {
+        value: cdktf.stringToHclTerraform(this._storageRootCredentialId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      updated_at: {
+        value: cdktf.numberToHclTerraform(this._updatedAt),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      updated_by: {
+        value: cdktf.stringToHclTerraform(this._updatedBy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

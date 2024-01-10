@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/defaultnamespacesetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/defaultnamespacesetting"
 
 defaultnamespacesetting.NewDefaultNamespaceSetting(scope Construct, id *string, config DefaultNamespaceSettingConfig) DefaultNamespaceSetting
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -128,6 +129,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting.toMetadata"></a>
 
@@ -405,7 +412,7 @@ func ResetSettingName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/defaultnamespacesetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/defaultnamespacesetting"
 
 defaultnamespacesetting.DefaultNamespaceSetting_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/defaultnamespacesetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/defaultnamespacesetting"
 
 defaultnamespacesetting.DefaultNamespaceSetting_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ defaultnamespacesetting.DefaultNamespaceSetting_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/defaultnamespacesetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/defaultnamespacesetting"
 
 defaultnamespacesetting.DefaultNamespaceSetting_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +472,7 @@ defaultnamespacesetting.DefaultNamespaceSetting_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/defaultnamespacesetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/defaultnamespacesetting"
 
 defaultnamespacesetting.DefaultNamespaceSetting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -782,7 +789,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/defaultnamespacesetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/defaultnamespacesetting"
 
 &defaultnamespacesetting.DefaultNamespaceSettingConfig {
 	Connection: interface{},
@@ -792,7 +799,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/defaultname
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Namespace: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.defaultNamespaceSetting.DefaultNamespaceSettingNamespace,
+	Namespace: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.defaultNamespaceSetting.DefaultNamespaceSettingNamespace,
 	Etag: *string,
 	Id: *string,
 	SettingName: *string,
@@ -945,7 +952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingNamespace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/defaultnamespacesetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/defaultnamespacesetting"
 
 &defaultnamespacesetting.DefaultNamespaceSettingNamespace {
 	Value: *string,
@@ -979,7 +986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingNamespaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/defaultnamespacesetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/defaultnamespacesetting"
 
 defaultnamespacesetting.NewDefaultNamespaceSettingNamespaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DefaultNamespaceSettingNamespaceOutputReference
 ```

@@ -126,4 +126,24 @@ export class DataDatabricksMetastores extends cdktf.TerraformDataSource {
       ids: cdktf.hashMapper(cdktf.stringToTerraform)(this._ids),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ids: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._ids),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

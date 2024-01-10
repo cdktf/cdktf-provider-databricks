@@ -6,6 +6,7 @@
 import * as cdktf from 'cdktf';
 import { JobTriggerFileArrival,
 jobTriggerFileArrivalToTerraform,
+jobTriggerFileArrivalToHclTerraform,
 JobTriggerFileArrivalOutputReference } from './structs0'
 export interface JobTrigger {
   /**
@@ -29,6 +30,31 @@ export function jobTriggerToTerraform(struct?: JobTriggerOutputReference | JobTr
     pause_status: cdktf.stringToTerraform(struct!.pauseStatus),
     file_arrival: jobTriggerFileArrivalToTerraform(struct!.fileArrival),
   }
+}
+
+
+export function jobTriggerToHclTerraform(struct?: JobTriggerOutputReference | JobTrigger): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    pause_status: {
+      value: cdktf.stringToHclTerraform(struct!.pauseStatus),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    file_arrival: {
+      value: jobTriggerFileArrivalToHclTerraform(struct!.fileArrival),
+      isBlock: true,
+      type: "list",
+      storageClassType: "JobTriggerFileArrivalList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class JobTriggerOutputReference extends cdktf.ComplexObject {
@@ -116,6 +142,25 @@ export function jobWebhookNotificationsOnDurationWarningThresholdExceededToTerra
   return {
     id: cdktf.stringToTerraform(struct!.id),
   }
+}
+
+
+export function jobWebhookNotificationsOnDurationWarningThresholdExceededToHclTerraform(struct?: JobWebhookNotificationsOnDurationWarningThresholdExceeded | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class JobWebhookNotificationsOnDurationWarningThresholdExceededOutputReference extends cdktf.ComplexObject {
@@ -218,6 +263,25 @@ export function jobWebhookNotificationsOnFailureToTerraform(struct?: JobWebhookN
   }
 }
 
+
+export function jobWebhookNotificationsOnFailureToHclTerraform(struct?: JobWebhookNotificationsOnFailure | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class JobWebhookNotificationsOnFailureOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -318,6 +382,25 @@ export function jobWebhookNotificationsOnStartToTerraform(struct?: JobWebhookNot
   }
 }
 
+
+export function jobWebhookNotificationsOnStartToHclTerraform(struct?: JobWebhookNotificationsOnStart | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class JobWebhookNotificationsOnStartOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -416,6 +499,25 @@ export function jobWebhookNotificationsOnSuccessToTerraform(struct?: JobWebhookN
   return {
     id: cdktf.stringToTerraform(struct!.id),
   }
+}
+
+
+export function jobWebhookNotificationsOnSuccessToHclTerraform(struct?: JobWebhookNotificationsOnSuccess | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class JobWebhookNotificationsOnSuccessOutputReference extends cdktf.ComplexObject {
@@ -536,6 +638,43 @@ export function jobWebhookNotificationsToTerraform(struct?: JobWebhookNotificati
     on_start: cdktf.listMapper(jobWebhookNotificationsOnStartToTerraform, true)(struct!.onStart),
     on_success: cdktf.listMapper(jobWebhookNotificationsOnSuccessToTerraform, true)(struct!.onSuccess),
   }
+}
+
+
+export function jobWebhookNotificationsToHclTerraform(struct?: JobWebhookNotificationsOutputReference | JobWebhookNotifications): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    on_duration_warning_threshold_exceeded: {
+      value: cdktf.listMapperHcl(jobWebhookNotificationsOnDurationWarningThresholdExceededToHclTerraform, true)(struct!.onDurationWarningThresholdExceeded),
+      isBlock: true,
+      type: "list",
+      storageClassType: "JobWebhookNotificationsOnDurationWarningThresholdExceededList",
+    },
+    on_failure: {
+      value: cdktf.listMapperHcl(jobWebhookNotificationsOnFailureToHclTerraform, true)(struct!.onFailure),
+      isBlock: true,
+      type: "list",
+      storageClassType: "JobWebhookNotificationsOnFailureList",
+    },
+    on_start: {
+      value: cdktf.listMapperHcl(jobWebhookNotificationsOnStartToHclTerraform, true)(struct!.onStart),
+      isBlock: true,
+      type: "list",
+      storageClassType: "JobWebhookNotificationsOnStartList",
+    },
+    on_success: {
+      value: cdktf.listMapperHcl(jobWebhookNotificationsOnSuccessToHclTerraform, true)(struct!.onSuccess),
+      isBlock: true,
+      type: "list",
+      storageClassType: "JobWebhookNotificationsOnSuccessList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class JobWebhookNotificationsOutputReference extends cdktf.ComplexObject {

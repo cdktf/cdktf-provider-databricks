@@ -85,6 +85,25 @@ export function sqlQueryParameterDateToTerraform(struct?: SqlQueryParameterDateO
   }
 }
 
+
+export function sqlQueryParameterDateToHclTerraform(struct?: SqlQueryParameterDateOutputReference | SqlQueryParameterDate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SqlQueryParameterDateOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -150,6 +169,31 @@ export function sqlQueryParameterDateRangeRangeToTerraform(struct?: SqlQueryPara
     end: cdktf.stringToTerraform(struct!.end),
     start: cdktf.stringToTerraform(struct!.start),
   }
+}
+
+
+export function sqlQueryParameterDateRangeRangeToHclTerraform(struct?: SqlQueryParameterDateRangeRangeOutputReference | SqlQueryParameterDateRangeRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    end: {
+      value: cdktf.stringToHclTerraform(struct!.end),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start: {
+      value: cdktf.stringToHclTerraform(struct!.start),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SqlQueryParameterDateRangeRangeOutputReference extends cdktf.ComplexObject {
@@ -240,6 +284,31 @@ export function sqlQueryParameterDateRangeToTerraform(struct?: SqlQueryParameter
   }
 }
 
+
+export function sqlQueryParameterDateRangeToHclTerraform(struct?: SqlQueryParameterDateRangeOutputReference | SqlQueryParameterDateRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    range: {
+      value: sqlQueryParameterDateRangeRangeToHclTerraform(struct!.range),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SqlQueryParameterDateRangeRangeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SqlQueryParameterDateRangeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -327,6 +396,25 @@ export function sqlQueryParameterDatetimeToTerraform(struct?: SqlQueryParameterD
   }
 }
 
+
+export function sqlQueryParameterDatetimeToHclTerraform(struct?: SqlQueryParameterDatetimeOutputReference | SqlQueryParameterDatetime): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SqlQueryParameterDatetimeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -392,6 +480,31 @@ export function sqlQueryParameterDatetimeRangeRangeToTerraform(struct?: SqlQuery
     end: cdktf.stringToTerraform(struct!.end),
     start: cdktf.stringToTerraform(struct!.start),
   }
+}
+
+
+export function sqlQueryParameterDatetimeRangeRangeToHclTerraform(struct?: SqlQueryParameterDatetimeRangeRangeOutputReference | SqlQueryParameterDatetimeRangeRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    end: {
+      value: cdktf.stringToHclTerraform(struct!.end),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start: {
+      value: cdktf.stringToHclTerraform(struct!.start),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SqlQueryParameterDatetimeRangeRangeOutputReference extends cdktf.ComplexObject {
@@ -482,6 +595,31 @@ export function sqlQueryParameterDatetimeRangeToTerraform(struct?: SqlQueryParam
   }
 }
 
+
+export function sqlQueryParameterDatetimeRangeToHclTerraform(struct?: SqlQueryParameterDatetimeRangeOutputReference | SqlQueryParameterDatetimeRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    range: {
+      value: sqlQueryParameterDatetimeRangeRangeToHclTerraform(struct!.range),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SqlQueryParameterDatetimeRangeRangeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SqlQueryParameterDatetimeRangeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -569,6 +707,25 @@ export function sqlQueryParameterDatetimesecToTerraform(struct?: SqlQueryParamet
   }
 }
 
+
+export function sqlQueryParameterDatetimesecToHclTerraform(struct?: SqlQueryParameterDatetimesecOutputReference | SqlQueryParameterDatetimesec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SqlQueryParameterDatetimesecOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -634,6 +791,31 @@ export function sqlQueryParameterDatetimesecRangeRangeToTerraform(struct?: SqlQu
     end: cdktf.stringToTerraform(struct!.end),
     start: cdktf.stringToTerraform(struct!.start),
   }
+}
+
+
+export function sqlQueryParameterDatetimesecRangeRangeToHclTerraform(struct?: SqlQueryParameterDatetimesecRangeRangeOutputReference | SqlQueryParameterDatetimesecRangeRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    end: {
+      value: cdktf.stringToHclTerraform(struct!.end),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start: {
+      value: cdktf.stringToHclTerraform(struct!.start),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SqlQueryParameterDatetimesecRangeRangeOutputReference extends cdktf.ComplexObject {
@@ -722,6 +904,31 @@ export function sqlQueryParameterDatetimesecRangeToTerraform(struct?: SqlQueryPa
     value: cdktf.stringToTerraform(struct!.value),
     range: sqlQueryParameterDatetimesecRangeRangeToTerraform(struct!.range),
   }
+}
+
+
+export function sqlQueryParameterDatetimesecRangeToHclTerraform(struct?: SqlQueryParameterDatetimesecRangeOutputReference | SqlQueryParameterDatetimesecRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    range: {
+      value: sqlQueryParameterDatetimesecRangeRangeToHclTerraform(struct!.range),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SqlQueryParameterDatetimesecRangeRangeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SqlQueryParameterDatetimesecRangeOutputReference extends cdktf.ComplexObject {
@@ -819,6 +1026,37 @@ export function sqlQueryParameterEnumMultipleToTerraform(struct?: SqlQueryParame
     separator: cdktf.stringToTerraform(struct!.separator),
     suffix: cdktf.stringToTerraform(struct!.suffix),
   }
+}
+
+
+export function sqlQueryParameterEnumMultipleToHclTerraform(struct?: SqlQueryParameterEnumMultipleOutputReference | SqlQueryParameterEnumMultiple): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    separator: {
+      value: cdktf.stringToHclTerraform(struct!.separator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    suffix: {
+      value: cdktf.stringToHclTerraform(struct!.suffix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SqlQueryParameterEnumMultipleOutputReference extends cdktf.ComplexObject {
@@ -942,6 +1180,43 @@ export function sqlQueryParameterEnumToTerraform(struct?: SqlQueryParameterEnumO
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
     multiple: sqlQueryParameterEnumMultipleToTerraform(struct!.multiple),
   }
+}
+
+
+export function sqlQueryParameterEnumToHclTerraform(struct?: SqlQueryParameterEnumOutputReference | SqlQueryParameterEnum): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    options: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.options),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    multiple: {
+      value: sqlQueryParameterEnumMultipleToHclTerraform(struct!.multiple),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SqlQueryParameterEnumMultipleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SqlQueryParameterEnumOutputReference extends cdktf.ComplexObject {
@@ -1072,6 +1347,25 @@ export function sqlQueryParameterNumberToTerraform(struct?: SqlQueryParameterNum
   }
 }
 
+
+export function sqlQueryParameterNumberToHclTerraform(struct?: SqlQueryParameterNumberOutputReference | SqlQueryParameterNumber): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SqlQueryParameterNumberOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1142,6 +1436,37 @@ export function sqlQueryParameterQueryMultipleToTerraform(struct?: SqlQueryParam
     separator: cdktf.stringToTerraform(struct!.separator),
     suffix: cdktf.stringToTerraform(struct!.suffix),
   }
+}
+
+
+export function sqlQueryParameterQueryMultipleToHclTerraform(struct?: SqlQueryParameterQueryMultipleOutputReference | SqlQueryParameterQueryMultiple): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    separator: {
+      value: cdktf.stringToHclTerraform(struct!.separator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    suffix: {
+      value: cdktf.stringToHclTerraform(struct!.suffix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SqlQueryParameterQueryMultipleOutputReference extends cdktf.ComplexObject {
@@ -1265,6 +1590,43 @@ export function sqlQueryParameterQueryToTerraform(struct?: SqlQueryParameterQuer
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
     multiple: sqlQueryParameterQueryMultipleToTerraform(struct!.multiple),
   }
+}
+
+
+export function sqlQueryParameterQueryToHclTerraform(struct?: SqlQueryParameterQueryOutputReference | SqlQueryParameterQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    query_id: {
+      value: cdktf.stringToHclTerraform(struct!.queryId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    multiple: {
+      value: sqlQueryParameterQueryMultipleToHclTerraform(struct!.multiple),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SqlQueryParameterQueryMultipleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SqlQueryParameterQueryOutputReference extends cdktf.ComplexObject {
@@ -1393,6 +1755,25 @@ export function sqlQueryParameterTextToTerraform(struct?: SqlQueryParameterTextO
   return {
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function sqlQueryParameterTextToHclTerraform(struct?: SqlQueryParameterTextOutputReference | SqlQueryParameterText): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SqlQueryParameterTextOutputReference extends cdktf.ComplexObject {
@@ -1530,6 +1911,91 @@ export function sqlQueryParameterToTerraform(struct?: SqlQueryParameter | cdktf.
     query: sqlQueryParameterQueryToTerraform(struct!.query),
     text: sqlQueryParameterTextToTerraform(struct!.text),
   }
+}
+
+
+export function sqlQueryParameterToHclTerraform(struct?: SqlQueryParameter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    date: {
+      value: sqlQueryParameterDateToHclTerraform(struct!.date),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SqlQueryParameterDateList",
+    },
+    date_range: {
+      value: sqlQueryParameterDateRangeToHclTerraform(struct!.dateRange),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SqlQueryParameterDateRangeList",
+    },
+    datetime: {
+      value: sqlQueryParameterDatetimeToHclTerraform(struct!.datetime),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SqlQueryParameterDatetimeList",
+    },
+    datetime_range: {
+      value: sqlQueryParameterDatetimeRangeToHclTerraform(struct!.datetimeRange),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SqlQueryParameterDatetimeRangeList",
+    },
+    datetimesec: {
+      value: sqlQueryParameterDatetimesecToHclTerraform(struct!.datetimesec),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SqlQueryParameterDatetimesecList",
+    },
+    datetimesec_range: {
+      value: sqlQueryParameterDatetimesecRangeToHclTerraform(struct!.datetimesecRange),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SqlQueryParameterDatetimesecRangeList",
+    },
+    enum: {
+      value: sqlQueryParameterEnumToHclTerraform(struct!.enum),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SqlQueryParameterEnumList",
+    },
+    number: {
+      value: sqlQueryParameterNumberToHclTerraform(struct!.number),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SqlQueryParameterNumberList",
+    },
+    query: {
+      value: sqlQueryParameterQueryToHclTerraform(struct!.query),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SqlQueryParameterQueryList",
+    },
+    text: {
+      value: sqlQueryParameterTextToHclTerraform(struct!.text),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SqlQueryParameterTextList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SqlQueryParameterOutputReference extends cdktf.ComplexObject {
@@ -1873,6 +2339,31 @@ export function sqlQueryScheduleContinuousToTerraform(struct?: SqlQueryScheduleC
   }
 }
 
+
+export function sqlQueryScheduleContinuousToHclTerraform(struct?: SqlQueryScheduleContinuousOutputReference | SqlQueryScheduleContinuous): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    interval_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.intervalSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    until_date: {
+      value: cdktf.stringToHclTerraform(struct!.untilDate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SqlQueryScheduleContinuousOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1965,6 +2456,37 @@ export function sqlQueryScheduleDailyToTerraform(struct?: SqlQueryScheduleDailyO
     time_of_day: cdktf.stringToTerraform(struct!.timeOfDay),
     until_date: cdktf.stringToTerraform(struct!.untilDate),
   }
+}
+
+
+export function sqlQueryScheduleDailyToHclTerraform(struct?: SqlQueryScheduleDailyOutputReference | SqlQueryScheduleDaily): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    interval_days: {
+      value: cdktf.numberToHclTerraform(struct!.intervalDays),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    time_of_day: {
+      value: cdktf.stringToHclTerraform(struct!.timeOfDay),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    until_date: {
+      value: cdktf.stringToHclTerraform(struct!.untilDate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SqlQueryScheduleDailyOutputReference extends cdktf.ComplexObject {
@@ -2083,6 +2605,43 @@ export function sqlQueryScheduleWeeklyToTerraform(struct?: SqlQueryScheduleWeekl
     time_of_day: cdktf.stringToTerraform(struct!.timeOfDay),
     until_date: cdktf.stringToTerraform(struct!.untilDate),
   }
+}
+
+
+export function sqlQueryScheduleWeeklyToHclTerraform(struct?: SqlQueryScheduleWeeklyOutputReference | SqlQueryScheduleWeekly): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    day_of_week: {
+      value: cdktf.stringToHclTerraform(struct!.dayOfWeek),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval_weeks: {
+      value: cdktf.numberToHclTerraform(struct!.intervalWeeks),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    time_of_day: {
+      value: cdktf.stringToHclTerraform(struct!.timeOfDay),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    until_date: {
+      value: cdktf.stringToHclTerraform(struct!.untilDate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SqlQueryScheduleWeeklyOutputReference extends cdktf.ComplexObject {
@@ -2221,6 +2780,37 @@ export function sqlQueryScheduleToTerraform(struct?: SqlQueryScheduleOutputRefer
     daily: sqlQueryScheduleDailyToTerraform(struct!.daily),
     weekly: sqlQueryScheduleWeeklyToTerraform(struct!.weekly),
   }
+}
+
+
+export function sqlQueryScheduleToHclTerraform(struct?: SqlQueryScheduleOutputReference | SqlQuerySchedule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    continuous: {
+      value: sqlQueryScheduleContinuousToHclTerraform(struct!.continuous),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SqlQueryScheduleContinuousList",
+    },
+    daily: {
+      value: sqlQueryScheduleDailyToHclTerraform(struct!.daily),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SqlQueryScheduleDailyList",
+    },
+    weekly: {
+      value: sqlQueryScheduleWeeklyToHclTerraform(struct!.weekly),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SqlQueryScheduleWeeklyList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SqlQueryScheduleOutputReference extends cdktf.ComplexObject {
@@ -2587,5 +3177,85 @@ export class SqlQuery extends cdktf.TerraformResource {
       parameter: cdktf.listMapper(sqlQueryParameterToTerraform, true)(this._parameter.internalValue),
       schedule: sqlQueryScheduleToTerraform(this._schedule.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      created_at: {
+        value: cdktf.stringToHclTerraform(this._createdAt),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      data_source_id: {
+        value: cdktf.stringToHclTerraform(this._dataSourceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parent: {
+        value: cdktf.stringToHclTerraform(this._parent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      query: {
+        value: cdktf.stringToHclTerraform(this._query),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      run_as_role: {
+        value: cdktf.stringToHclTerraform(this._runAsRole),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      updated_at: {
+        value: cdktf.stringToHclTerraform(this._updatedAt),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parameter: {
+        value: cdktf.listMapperHcl(sqlQueryParameterToHclTerraform, true)(this._parameter.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SqlQueryParameterList",
+      },
+      schedule: {
+        value: sqlQueryScheduleToHclTerraform(this._schedule.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SqlQueryScheduleList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

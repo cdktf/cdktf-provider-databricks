@@ -117,6 +117,25 @@ export function sqlEndpointChannelToTerraform(struct?: SqlEndpointChannelOutputR
   }
 }
 
+
+export function sqlEndpointChannelToHclTerraform(struct?: SqlEndpointChannelOutputReference | SqlEndpointChannel): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SqlEndpointChannelOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -200,6 +219,49 @@ export function sqlEndpointOdbcParamsToTerraform(struct?: SqlEndpointOdbcParamsO
     port: cdktf.numberToTerraform(struct!.port),
     protocol: cdktf.stringToTerraform(struct!.protocol),
   }
+}
+
+
+export function sqlEndpointOdbcParamsToHclTerraform(struct?: SqlEndpointOdbcParamsOutputReference | SqlEndpointOdbcParams): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    host: {
+      value: cdktf.stringToHclTerraform(struct!.host),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    hostname: {
+      value: cdktf.stringToHclTerraform(struct!.hostname),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    protocol: {
+      value: cdktf.stringToHclTerraform(struct!.protocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SqlEndpointOdbcParamsOutputReference extends cdktf.ComplexObject {
@@ -351,6 +413,31 @@ export function sqlEndpointTagsCustomTagsToTerraform(struct?: SqlEndpointTagsCus
   }
 }
 
+
+export function sqlEndpointTagsCustomTagsToHclTerraform(struct?: SqlEndpointTagsCustomTags | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SqlEndpointTagsCustomTagsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -466,6 +553,25 @@ export function sqlEndpointTagsToTerraform(struct?: SqlEndpointTagsOutputReferen
   }
 }
 
+
+export function sqlEndpointTagsToHclTerraform(struct?: SqlEndpointTagsOutputReference | SqlEndpointTags): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    custom_tags: {
+      value: cdktf.listMapperHcl(sqlEndpointTagsCustomTagsToHclTerraform, true)(struct!.customTags),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SqlEndpointTagsCustomTagsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SqlEndpointTagsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -526,6 +632,25 @@ export function sqlEndpointTimeoutsToTerraform(struct?: SqlEndpointTimeouts | cd
   return {
     create: cdktf.stringToTerraform(struct!.create),
   }
+}
+
+
+export function sqlEndpointTimeoutsToHclTerraform(struct?: SqlEndpointTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SqlEndpointTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -987,5 +1112,127 @@ export class SqlEndpoint extends cdktf.TerraformResource {
       tags: sqlEndpointTagsToTerraform(this._tags.internalValue),
       timeouts: sqlEndpointTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auto_stop_mins: {
+        value: cdktf.numberToHclTerraform(this._autoStopMins),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      cluster_size: {
+        value: cdktf.stringToHclTerraform(this._clusterSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      data_source_id: {
+        value: cdktf.stringToHclTerraform(this._dataSourceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enable_photon: {
+        value: cdktf.booleanToHclTerraform(this._enablePhoton),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_serverless_compute: {
+        value: cdktf.booleanToHclTerraform(this._enableServerlessCompute),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_profile_arn: {
+        value: cdktf.stringToHclTerraform(this._instanceProfileArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      jdbc_url: {
+        value: cdktf.stringToHclTerraform(this._jdbcUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_num_clusters: {
+        value: cdktf.numberToHclTerraform(this._maxNumClusters),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      min_num_clusters: {
+        value: cdktf.numberToHclTerraform(this._minNumClusters),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      num_clusters: {
+        value: cdktf.numberToHclTerraform(this._numClusters),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      spot_instance_policy: {
+        value: cdktf.stringToHclTerraform(this._spotInstancePolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      state: {
+        value: cdktf.stringToHclTerraform(this._state),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      warehouse_type: {
+        value: cdktf.stringToHclTerraform(this._warehouseType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      channel: {
+        value: sqlEndpointChannelToHclTerraform(this._channel.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SqlEndpointChannelList",
+      },
+      odbc_params: {
+        value: sqlEndpointOdbcParamsToHclTerraform(this._odbcParams.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SqlEndpointOdbcParamsList",
+      },
+      tags: {
+        value: sqlEndpointTagsToHclTerraform(this._tags.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SqlEndpointTagsList",
+      },
+      timeouts: {
+        value: sqlEndpointTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "SqlEndpointTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

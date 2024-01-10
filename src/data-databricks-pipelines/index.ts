@@ -148,4 +148,30 @@ export class DataDatabricksPipelines extends cdktf.TerraformDataSource {
       pipeline_name: cdktf.stringToTerraform(this._pipelineName),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ids),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      pipeline_name: {
+        value: cdktf.stringToHclTerraform(this._pipelineName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

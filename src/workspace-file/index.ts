@@ -221,4 +221,48 @@ export class WorkspaceFile extends cdktf.TerraformResource {
       source: cdktf.stringToTerraform(this._source),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      content_base64: {
+        value: cdktf.stringToHclTerraform(this._contentBase64),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      md5: {
+        value: cdktf.stringToHclTerraform(this._md5),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      object_id: {
+        value: cdktf.numberToHclTerraform(this._objectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      path: {
+        value: cdktf.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      source: {
+        value: cdktf.stringToHclTerraform(this._source),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

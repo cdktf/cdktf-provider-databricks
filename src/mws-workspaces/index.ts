@@ -153,6 +153,25 @@ export function mwsWorkspacesCloudResourceContainerGcpToTerraform(struct?: MwsWo
   }
 }
 
+
+export function mwsWorkspacesCloudResourceContainerGcpToHclTerraform(struct?: MwsWorkspacesCloudResourceContainerGcpOutputReference | MwsWorkspacesCloudResourceContainerGcp): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    project_id: {
+      value: cdktf.stringToHclTerraform(struct!.projectId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MwsWorkspacesCloudResourceContainerGcpOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -215,6 +234,25 @@ export function mwsWorkspacesCloudResourceContainerToTerraform(struct?: MwsWorks
   return {
     gcp: mwsWorkspacesCloudResourceContainerGcpToTerraform(struct!.gcp),
   }
+}
+
+
+export function mwsWorkspacesCloudResourceContainerToHclTerraform(struct?: MwsWorkspacesCloudResourceContainerOutputReference | MwsWorkspacesCloudResourceContainer): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    gcp: {
+      value: mwsWorkspacesCloudResourceContainerGcpToHclTerraform(struct!.gcp),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MwsWorkspacesCloudResourceContainerGcpList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MwsWorkspacesCloudResourceContainerOutputReference extends cdktf.ComplexObject {
@@ -287,6 +325,37 @@ export function mwsWorkspacesExternalCustomerInfoToTerraform(struct?: MwsWorkspa
     authoritative_user_full_name: cdktf.stringToTerraform(struct!.authoritativeUserFullName),
     customer_name: cdktf.stringToTerraform(struct!.customerName),
   }
+}
+
+
+export function mwsWorkspacesExternalCustomerInfoToHclTerraform(struct?: MwsWorkspacesExternalCustomerInfoOutputReference | MwsWorkspacesExternalCustomerInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    authoritative_user_email: {
+      value: cdktf.stringToHclTerraform(struct!.authoritativeUserEmail),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    authoritative_user_full_name: {
+      value: cdktf.stringToHclTerraform(struct!.authoritativeUserFullName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    customer_name: {
+      value: cdktf.stringToHclTerraform(struct!.customerName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MwsWorkspacesExternalCustomerInfoOutputReference extends cdktf.ComplexObject {
@@ -399,6 +468,37 @@ export function mwsWorkspacesGcpManagedNetworkConfigToTerraform(struct?: MwsWork
   }
 }
 
+
+export function mwsWorkspacesGcpManagedNetworkConfigToHclTerraform(struct?: MwsWorkspacesGcpManagedNetworkConfigOutputReference | MwsWorkspacesGcpManagedNetworkConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    gke_cluster_pod_ip_range: {
+      value: cdktf.stringToHclTerraform(struct!.gkeClusterPodIpRange),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    gke_cluster_service_ip_range: {
+      value: cdktf.stringToHclTerraform(struct!.gkeClusterServiceIpRange),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subnet_cidr: {
+      value: cdktf.stringToHclTerraform(struct!.subnetCidr),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MwsWorkspacesGcpManagedNetworkConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -504,6 +604,31 @@ export function mwsWorkspacesGkeConfigToTerraform(struct?: MwsWorkspacesGkeConfi
   }
 }
 
+
+export function mwsWorkspacesGkeConfigToHclTerraform(struct?: MwsWorkspacesGkeConfigOutputReference | MwsWorkspacesGkeConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    connectivity_type: {
+      value: cdktf.stringToHclTerraform(struct!.connectivityType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    master_ip_range: {
+      value: cdktf.stringToHclTerraform(struct!.masterIpRange),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MwsWorkspacesGkeConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -593,6 +718,37 @@ export function mwsWorkspacesTimeoutsToTerraform(struct?: MwsWorkspacesTimeouts 
     read: cdktf.stringToTerraform(struct!.read),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function mwsWorkspacesTimeoutsToHclTerraform(struct?: MwsWorkspacesTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MwsWorkspacesTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -727,6 +883,43 @@ export function mwsWorkspacesTokenToTerraform(struct?: MwsWorkspacesTokenOutputR
     token_id: cdktf.stringToTerraform(struct!.tokenId),
     token_value: cdktf.stringToTerraform(struct!.tokenValue),
   }
+}
+
+
+export function mwsWorkspacesTokenToHclTerraform(struct?: MwsWorkspacesTokenOutputReference | MwsWorkspacesToken): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comment: {
+      value: cdktf.stringToHclTerraform(struct!.comment),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lifetime_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.lifetimeSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    token_id: {
+      value: cdktf.stringToHclTerraform(struct!.tokenId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    token_value: {
+      value: cdktf.stringToHclTerraform(struct!.tokenValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MwsWorkspacesTokenOutputReference extends cdktf.ComplexObject {
@@ -1388,5 +1581,175 @@ export class MwsWorkspaces extends cdktf.TerraformResource {
       timeouts: mwsWorkspacesTimeoutsToTerraform(this._timeouts.internalValue),
       token: mwsWorkspacesTokenToTerraform(this._token.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      aws_region: {
+        value: cdktf.stringToHclTerraform(this._awsRegion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cloud: {
+        value: cdktf.stringToHclTerraform(this._cloud),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      creation_time: {
+        value: cdktf.numberToHclTerraform(this._creationTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      credentials_id: {
+        value: cdktf.stringToHclTerraform(this._credentialsId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      customer_managed_key_id: {
+        value: cdktf.stringToHclTerraform(this._customerManagedKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deployment_name: {
+        value: cdktf.stringToHclTerraform(this._deploymentName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      is_no_public_ip_enabled: {
+        value: cdktf.booleanToHclTerraform(this._isNoPublicIpEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      managed_services_customer_managed_key_id: {
+        value: cdktf.stringToHclTerraform(this._managedServicesCustomerManagedKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      network_id: {
+        value: cdktf.stringToHclTerraform(this._networkId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pricing_tier: {
+        value: cdktf.stringToHclTerraform(this._pricingTier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      private_access_settings_id: {
+        value: cdktf.stringToHclTerraform(this._privateAccessSettingsId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      storage_configuration_id: {
+        value: cdktf.stringToHclTerraform(this._storageConfigurationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      storage_customer_managed_key_id: {
+        value: cdktf.stringToHclTerraform(this._storageCustomerManagedKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      workspace_id: {
+        value: cdktf.numberToHclTerraform(this._workspaceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      workspace_name: {
+        value: cdktf.stringToHclTerraform(this._workspaceName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      workspace_status: {
+        value: cdktf.stringToHclTerraform(this._workspaceStatus),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      workspace_status_message: {
+        value: cdktf.stringToHclTerraform(this._workspaceStatusMessage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      workspace_url: {
+        value: cdktf.stringToHclTerraform(this._workspaceUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cloud_resource_container: {
+        value: mwsWorkspacesCloudResourceContainerToHclTerraform(this._cloudResourceContainer.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MwsWorkspacesCloudResourceContainerList",
+      },
+      external_customer_info: {
+        value: mwsWorkspacesExternalCustomerInfoToHclTerraform(this._externalCustomerInfo.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MwsWorkspacesExternalCustomerInfoList",
+      },
+      gcp_managed_network_config: {
+        value: mwsWorkspacesGcpManagedNetworkConfigToHclTerraform(this._gcpManagedNetworkConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MwsWorkspacesGcpManagedNetworkConfigList",
+      },
+      gke_config: {
+        value: mwsWorkspacesGkeConfigToHclTerraform(this._gkeConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MwsWorkspacesGkeConfigList",
+      },
+      timeouts: {
+        value: mwsWorkspacesTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "MwsWorkspacesTimeouts",
+      },
+      token: {
+        value: mwsWorkspacesTokenToHclTerraform(this._token.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MwsWorkspacesTokenList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

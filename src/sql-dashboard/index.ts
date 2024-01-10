@@ -255,4 +255,60 @@ export class SqlDashboard extends cdktf.TerraformResource {
       updated_at: cdktf.stringToTerraform(this._updatedAt),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      created_at: {
+        value: cdktf.stringToHclTerraform(this._createdAt),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dashboard_filters_enabled: {
+        value: cdktf.booleanToHclTerraform(this._dashboardFiltersEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parent: {
+        value: cdktf.stringToHclTerraform(this._parent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      run_as_role: {
+        value: cdktf.stringToHclTerraform(this._runAsRole),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      updated_at: {
+        value: cdktf.stringToHclTerraform(this._updatedAt),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

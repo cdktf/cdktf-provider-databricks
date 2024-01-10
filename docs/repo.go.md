@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.repo.Repo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/repo"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/repo"
 
 repo.NewRepo(scope Construct, id *string, config RepoConfig) Repo
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.repo.Repo.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.repo.Repo.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-databricks.repo.Repo.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-databricks.repo.Repo.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.repo.Repo.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.repo.Repo.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-databricks.repo.Repo.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -132,6 +133,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-databricks.repo.Repo.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-databricks.repo.Repo.toMetadata"></a>
 
@@ -433,7 +440,7 @@ func ResetTag()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.repo.Repo.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/repo"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/repo"
 
 repo.Repo_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.repo.Repo.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/repo"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/repo"
 
 repo.Repo_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +486,7 @@ repo.Repo_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.repo.Repo.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/repo"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/repo"
 
 repo.Repo_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +500,7 @@ repo.Repo_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.repo.Repo.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/repo"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/repo"
 
 repo.Repo_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -898,7 +905,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.repo.RepoConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/repo"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/repo"
 
 &repo.RepoConfig {
 	Connection: interface{},
@@ -914,7 +921,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/repo"
 	GitProvider: *string,
 	Id: *string,
 	Path: *string,
-	SparseCheckout: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.repo.RepoSparseCheckout,
+	SparseCheckout: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.repo.RepoSparseCheckout,
 	Tag: *string,
 }
 ```
@@ -1117,7 +1124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.repo.RepoSparseCheckout.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/repo"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/repo"
 
 &repo.RepoSparseCheckout {
 	Patterns: *[]*string,
@@ -1151,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.repo.RepoSparseCheckoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/repo"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/repo"
 
 repo.NewRepoSparseCheckoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RepoSparseCheckoutOutputReference
 ```

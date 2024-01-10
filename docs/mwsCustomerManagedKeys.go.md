@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwscustomermanagedkeys"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwscustomermanagedkeys"
 
 mwscustomermanagedkeys.NewMwsCustomerManagedKeys(scope Construct, id *string, config MwsCustomerManagedKeysConfig) MwsCustomerManagedKeys
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeys.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeys.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeys.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeys.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeys.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeys.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeys.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -131,6 +132,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeys.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeys.toMetadata"></a>
 
@@ -432,7 +439,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeys.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwscustomermanagedkeys"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwscustomermanagedkeys"
 
 mwscustomermanagedkeys.MwsCustomerManagedKeys_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeys.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwscustomermanagedkeys"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwscustomermanagedkeys"
 
 mwscustomermanagedkeys.MwsCustomerManagedKeys_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +485,7 @@ mwscustomermanagedkeys.MwsCustomerManagedKeys_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeys.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwscustomermanagedkeys"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwscustomermanagedkeys"
 
 mwscustomermanagedkeys.MwsCustomerManagedKeys_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +499,7 @@ mwscustomermanagedkeys.MwsCustomerManagedKeys_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeys.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwscustomermanagedkeys"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwscustomermanagedkeys"
 
 mwscustomermanagedkeys.MwsCustomerManagedKeys_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -875,7 +882,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeysAwsKeyInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwscustomermanagedkeys"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwscustomermanagedkeys"
 
 &mwscustomermanagedkeys.MwsCustomerManagedKeysAwsKeyInfo {
 	KeyArn: *string,
@@ -935,7 +942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeysConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwscustomermanagedkeys"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwscustomermanagedkeys"
 
 &mwscustomermanagedkeys.MwsCustomerManagedKeysConfig {
 	Connection: interface{},
@@ -947,10 +954,10 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwscustomer
 	Provisioners: *[]interface{},
 	AccountId: *string,
 	UseCases: *[]*string,
-	AwsKeyInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.mwsCustomerManagedKeys.MwsCustomerManagedKeysAwsKeyInfo,
+	AwsKeyInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.mwsCustomerManagedKeys.MwsCustomerManagedKeysAwsKeyInfo,
 	CreationTime: *f64,
 	CustomerManagedKeyId: *string,
-	GcpKeyInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.mwsCustomerManagedKeys.MwsCustomerManagedKeysGcpKeyInfo,
+	GcpKeyInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.mwsCustomerManagedKeys.MwsCustomerManagedKeysGcpKeyInfo,
 	Id: *string,
 }
 ```
@@ -1142,7 +1149,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeysGcpKeyInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwscustomermanagedkeys"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwscustomermanagedkeys"
 
 &mwscustomermanagedkeys.MwsCustomerManagedKeysGcpKeyInfo {
 	KmsKeyId: *string,
@@ -1176,7 +1183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeysAwsKeyInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwscustomermanagedkeys"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwscustomermanagedkeys"
 
 mwscustomermanagedkeys.NewMwsCustomerManagedKeysAwsKeyInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MwsCustomerManagedKeysAwsKeyInfoOutputReference
 ```
@@ -1505,7 +1512,7 @@ func InternalValue() MwsCustomerManagedKeysAwsKeyInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mwsCustomerManagedKeys.MwsCustomerManagedKeysGcpKeyInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/mwscustomermanagedkeys"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwscustomermanagedkeys"
 
 mwscustomermanagedkeys.NewMwsCustomerManagedKeysGcpKeyInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MwsCustomerManagedKeysGcpKeyInfoOutputReference
 ```

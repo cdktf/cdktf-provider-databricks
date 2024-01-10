@@ -97,6 +97,61 @@ export function sqlAlertOptionsToTerraform(struct?: SqlAlertOptionsOutputReferen
   }
 }
 
+
+export function sqlAlertOptionsToHclTerraform(struct?: SqlAlertOptionsOutputReference | SqlAlertOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    column: {
+      value: cdktf.stringToHclTerraform(struct!.column),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_body: {
+      value: cdktf.stringToHclTerraform(struct!.customBody),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_subject: {
+      value: cdktf.stringToHclTerraform(struct!.customSubject),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    empty_result_state: {
+      value: cdktf.stringToHclTerraform(struct!.emptyResultState),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    muted: {
+      value: cdktf.booleanToHclTerraform(struct!.muted),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    op: {
+      value: cdktf.stringToHclTerraform(struct!.op),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SqlAlertOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -468,5 +523,61 @@ export class SqlAlert extends cdktf.TerraformResource {
       updated_at: cdktf.stringToTerraform(this._updatedAt),
       options: sqlAlertOptionsToTerraform(this._options.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      created_at: {
+        value: cdktf.stringToHclTerraform(this._createdAt),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parent: {
+        value: cdktf.stringToHclTerraform(this._parent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      query_id: {
+        value: cdktf.stringToHclTerraform(this._queryId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rearm: {
+        value: cdktf.numberToHclTerraform(this._rearm),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      updated_at: {
+        value: cdktf.stringToHclTerraform(this._updatedAt),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      options: {
+        value: sqlAlertOptionsToHclTerraform(this._options.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SqlAlertOptionsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

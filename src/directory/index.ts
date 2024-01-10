@@ -167,4 +167,36 @@ export class Directory extends cdktf.TerraformResource {
       path: cdktf.stringToTerraform(this._path),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      delete_recursive: {
+        value: cdktf.booleanToHclTerraform(this._deleteRecursive),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      object_id: {
+        value: cdktf.numberToHclTerraform(this._objectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      path: {
+        value: cdktf.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

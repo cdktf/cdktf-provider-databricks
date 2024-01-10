@@ -131,4 +131,24 @@ export class DataDatabricksAwsCrossaccountPolicy extends cdktf.TerraformDataSour
       pass_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._passRoles),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pass_roles: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._passRoles),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

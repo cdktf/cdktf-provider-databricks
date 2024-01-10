@@ -132,6 +132,127 @@ export function dataDatabricksMetastoreMetastoreInfoToTerraform(struct?: DataDat
   }
 }
 
+
+export function dataDatabricksMetastoreMetastoreInfoToHclTerraform(struct?: DataDatabricksMetastoreMetastoreInfoOutputReference | DataDatabricksMetastoreMetastoreInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cloud: {
+      value: cdktf.stringToHclTerraform(struct!.cloud),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    created_at: {
+      value: cdktf.numberToHclTerraform(struct!.createdAt),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    created_by: {
+      value: cdktf.stringToHclTerraform(struct!.createdBy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default_data_access_config_id: {
+      value: cdktf.stringToHclTerraform(struct!.defaultDataAccessConfigId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delta_sharing_organization_name: {
+      value: cdktf.stringToHclTerraform(struct!.deltaSharingOrganizationName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delta_sharing_recipient_token_lifetime_in_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.deltaSharingRecipientTokenLifetimeInSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    delta_sharing_scope: {
+      value: cdktf.stringToHclTerraform(struct!.deltaSharingScope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    global_metastore_id: {
+      value: cdktf.stringToHclTerraform(struct!.globalMetastoreId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    metastore_id: {
+      value: cdktf.stringToHclTerraform(struct!.metastoreId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    owner: {
+      value: cdktf.stringToHclTerraform(struct!.owner),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    privilege_model_version: {
+      value: cdktf.stringToHclTerraform(struct!.privilegeModelVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    storage_root: {
+      value: cdktf.stringToHclTerraform(struct!.storageRoot),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    storage_root_credential_id: {
+      value: cdktf.stringToHclTerraform(struct!.storageRootCredentialId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    storage_root_credential_name: {
+      value: cdktf.stringToHclTerraform(struct!.storageRootCredentialName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    updated_at: {
+      value: cdktf.numberToHclTerraform(struct!.updatedAt),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    updated_by: {
+      value: cdktf.stringToHclTerraform(struct!.updatedBy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataDatabricksMetastoreMetastoreInfoOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -670,5 +791,31 @@ export class DataDatabricksMetastore extends cdktf.TerraformDataSource {
       metastore_id: cdktf.stringToTerraform(this._metastoreId),
       metastore_info: dataDatabricksMetastoreMetastoreInfoToTerraform(this._metastoreInfo.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      metastore_id: {
+        value: cdktf.stringToHclTerraform(this._metastoreId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      metastore_info: {
+        value: dataDatabricksMetastoreMetastoreInfoToHclTerraform(this._metastoreInfo.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataDatabricksMetastoreMetastoreInfoList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

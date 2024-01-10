@@ -236,4 +236,54 @@ export class SqlGlobalConfig extends cdktf.TerraformResource {
       sql_config_params: cdktf.hashMapper(cdktf.stringToTerraform)(this._sqlConfigParams),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      data_access_config: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._dataAccessConfig),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      enable_serverless_compute: {
+        value: cdktf.booleanToHclTerraform(this._enableServerlessCompute),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      google_service_account: {
+        value: cdktf.stringToHclTerraform(this._googleServiceAccount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_profile_arn: {
+        value: cdktf.stringToHclTerraform(this._instanceProfileArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      security_policy: {
+        value: cdktf.stringToHclTerraform(this._securityPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sql_config_params: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._sqlConfigParams),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

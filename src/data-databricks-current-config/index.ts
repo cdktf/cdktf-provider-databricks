@@ -214,4 +214,48 @@ export class DataDatabricksCurrentConfig extends cdktf.TerraformDataSource {
       is_account: cdktf.booleanToTerraform(this._isAccount),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      auth_type: {
+        value: cdktf.stringToHclTerraform(this._authType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cloud_type: {
+        value: cdktf.stringToHclTerraform(this._cloudType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      host: {
+        value: cdktf.stringToHclTerraform(this._host),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      is_account: {
+        value: cdktf.booleanToHclTerraform(this._isAccount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }
