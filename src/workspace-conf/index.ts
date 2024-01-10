@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/workspace_conf
 // generated from terraform resource schema
 
@@ -125,5 +120,25 @@ export class WorkspaceConf extends cdktf.TerraformResource {
       custom_config: cdktf.hashMapper(cdktf.stringToTerraform)(this._customConfig),
       id: cdktf.stringToTerraform(this._id),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      custom_config: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._customConfig),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

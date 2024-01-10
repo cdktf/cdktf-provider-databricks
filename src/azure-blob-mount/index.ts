@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/azure_blob_mount
 // generated from terraform resource schema
 
@@ -266,5 +261,67 @@ export class AzureBlobMount extends cdktf.TerraformResource {
       token_secret_key: cdktf.stringToTerraform(this._tokenSecretKey),
       token_secret_scope: cdktf.stringToTerraform(this._tokenSecretScope),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auth_type: {
+        value: cdktf.stringToHclTerraform(this._authType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cluster_id: {
+        value: cdktf.stringToHclTerraform(this._clusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      container_name: {
+        value: cdktf.stringToHclTerraform(this._containerName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      directory: {
+        value: cdktf.stringToHclTerraform(this._directory),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mount_name: {
+        value: cdktf.stringToHclTerraform(this._mountName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      storage_account_name: {
+        value: cdktf.stringToHclTerraform(this._storageAccountName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      token_secret_key: {
+        value: cdktf.stringToHclTerraform(this._tokenSecretKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      token_secret_scope: {
+        value: cdktf.stringToHclTerraform(this._tokenSecretScope),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

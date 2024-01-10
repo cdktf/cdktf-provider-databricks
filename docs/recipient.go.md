@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.recipient.Recipient.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/recipient"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/recipient"
 
 recipient.NewRecipient(scope Construct, id *string, config RecipientConfig) Recipient
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.recipient.Recipient.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.recipient.Recipient.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-databricks.recipient.Recipient.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-databricks.recipient.Recipient.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.recipient.Recipient.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.recipient.Recipient.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-databricks.recipient.Recipient.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -133,6 +134,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-databricks.recipient.Recipient.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-databricks.recipient.Recipient.toMetadata"></a>
 
@@ -446,7 +453,7 @@ func ResetTokens()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.recipient.Recipient.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/recipient"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/recipient"
 
 recipient.Recipient_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.recipient.Recipient.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/recipient"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/recipient"
 
 recipient.Recipient_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +499,7 @@ recipient.Recipient_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.recipient.Recipient.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/recipient"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/recipient"
 
 recipient.Recipient_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +513,7 @@ recipient.Recipient_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.recipient.Recipient.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/recipient"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/recipient"
 
 recipient.Recipient_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -933,7 +940,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.recipient.RecipientConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/recipient"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/recipient"
 
 &recipient.RecipientConfig {
 	Connection: interface{},
@@ -948,7 +955,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/recipient"
 	Comment: *string,
 	DataRecipientGlobalMetastoreId: *string,
 	Id: *string,
-	IpAccessList: github.com/cdktf/cdktf-provider-databricks-go/databricks/v12.recipient.RecipientIpAccessListStruct,
+	IpAccessList: github.com/cdktf/cdktf-provider-databricks-go/databricks.recipient.RecipientIpAccessListStruct,
 	Owner: *string,
 	SharingCode: *string,
 	Tokens: interface{},
@@ -1168,7 +1175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.recipient.RecipientIpAccessListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/recipient"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/recipient"
 
 &recipient.RecipientIpAccessListStruct {
 	AllowedIpAddresses: *[]*string,
@@ -1200,7 +1207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.recipient.RecipientTokens.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/recipient"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/recipient"
 
 &recipient.RecipientTokens {
 	ActivationUrl: *string,
@@ -1321,7 +1328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.recipient.RecipientIpAccessListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/recipient"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/recipient"
 
 recipient.NewRecipientIpAccessListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RecipientIpAccessListStructOutputReference
 ```
@@ -1592,7 +1599,7 @@ func InternalValue() RecipientIpAccessListStruct
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.recipient.RecipientTokensList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/recipient"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/recipient"
 
 recipient.NewRecipientTokensList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RecipientTokensList
 ```
@@ -1633,10 +1640,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.recipient.RecipientTokensList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-databricks.recipient.RecipientTokensList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.recipient.RecipientTokensList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.recipient.RecipientTokensList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-databricks.recipient.RecipientTokensList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-databricks.recipient.RecipientTokensList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-databricks.recipient.RecipientTokensList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1735,7 +1759,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.recipient.RecipientTokensOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v12/recipient"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/recipient"
 
 recipient.NewRecipientTokensOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RecipientTokensOutputReference
 ```

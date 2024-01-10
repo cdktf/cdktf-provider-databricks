@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/catalog_workspace_binding
 // generated from terraform resource schema
 
@@ -213,5 +208,49 @@ export class CatalogWorkspaceBinding extends cdktf.TerraformResource {
       securable_type: cdktf.stringToTerraform(this._securableType),
       workspace_id: cdktf.numberToTerraform(this._workspaceId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      binding_type: {
+        value: cdktf.stringToHclTerraform(this._bindingType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      catalog_name: {
+        value: cdktf.stringToHclTerraform(this._catalogName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      securable_name: {
+        value: cdktf.stringToHclTerraform(this._securableName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      securable_type: {
+        value: cdktf.stringToHclTerraform(this._securableType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      workspace_id: {
+        value: cdktf.numberToHclTerraform(this._workspaceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/aws_bucket_policy
 // generated from terraform resource schema
 
@@ -193,5 +188,43 @@ export class DataDatabricksAwsBucketPolicy extends cdktf.TerraformDataSource {
       full_access_role: cdktf.stringToTerraform(this._fullAccessRole),
       id: cdktf.stringToTerraform(this._id),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bucket: {
+        value: cdktf.stringToHclTerraform(this._bucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      databricks_account_id: {
+        value: cdktf.stringToHclTerraform(this._databricksAccountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      databricks_e2_account_id: {
+        value: cdktf.stringToHclTerraform(this._databricksE2AccountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      full_access_role: {
+        value: cdktf.stringToHclTerraform(this._fullAccessRole),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

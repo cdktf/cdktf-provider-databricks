@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/metastore_data_access
 // generated from terraform resource schema
 
@@ -107,6 +102,37 @@ export function metastoreDataAccessAwsIamRoleToTerraform(struct?: MetastoreDataA
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
     unity_catalog_iam_arn: cdktf.stringToTerraform(struct!.unityCatalogIamArn),
   }
+}
+
+
+export function metastoreDataAccessAwsIamRoleToHclTerraform(struct?: MetastoreDataAccessAwsIamRoleOutputReference | MetastoreDataAccessAwsIamRole): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    external_id: {
+      value: cdktf.stringToHclTerraform(struct!.externalId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    unity_catalog_iam_arn: {
+      value: cdktf.stringToHclTerraform(struct!.unityCatalogIamArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MetastoreDataAccessAwsIamRoleOutputReference extends cdktf.ComplexObject {
@@ -225,6 +251,37 @@ export function metastoreDataAccessAzureManagedIdentityToTerraform(struct?: Meta
   }
 }
 
+
+export function metastoreDataAccessAzureManagedIdentityToHclTerraform(struct?: MetastoreDataAccessAzureManagedIdentityOutputReference | MetastoreDataAccessAzureManagedIdentity): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_connector_id: {
+      value: cdktf.stringToHclTerraform(struct!.accessConnectorId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    credential_id: {
+      value: cdktf.stringToHclTerraform(struct!.credentialId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    managed_identity_id: {
+      value: cdktf.stringToHclTerraform(struct!.managedIdentityId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MetastoreDataAccessAzureManagedIdentityOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -341,6 +398,37 @@ export function metastoreDataAccessAzureServicePrincipalToTerraform(struct?: Met
   }
 }
 
+
+export function metastoreDataAccessAzureServicePrincipalToHclTerraform(struct?: MetastoreDataAccessAzureServicePrincipalOutputReference | MetastoreDataAccessAzureServicePrincipal): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    application_id: {
+      value: cdktf.stringToHclTerraform(struct!.applicationId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_secret: {
+      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    directory_id: {
+      value: cdktf.stringToHclTerraform(struct!.directoryId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MetastoreDataAccessAzureServicePrincipalOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -446,6 +534,31 @@ export function metastoreDataAccessDatabricksGcpServiceAccountToTerraform(struct
   }
 }
 
+
+export function metastoreDataAccessDatabricksGcpServiceAccountToHclTerraform(struct?: MetastoreDataAccessDatabricksGcpServiceAccountOutputReference | MetastoreDataAccessDatabricksGcpServiceAccount): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    credential_id: {
+      value: cdktf.stringToHclTerraform(struct!.credentialId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    email: {
+      value: cdktf.stringToHclTerraform(struct!.email),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MetastoreDataAccessDatabricksGcpServiceAccountOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -541,6 +654,37 @@ export function metastoreDataAccessGcpServiceAccountKeyToTerraform(struct?: Meta
     private_key: cdktf.stringToTerraform(struct!.privateKey),
     private_key_id: cdktf.stringToTerraform(struct!.privateKeyId),
   }
+}
+
+
+export function metastoreDataAccessGcpServiceAccountKeyToHclTerraform(struct?: MetastoreDataAccessGcpServiceAccountKeyOutputReference | MetastoreDataAccessGcpServiceAccountKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    email: {
+      value: cdktf.stringToHclTerraform(struct!.email),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    private_key: {
+      value: cdktf.stringToHclTerraform(struct!.privateKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    private_key_id: {
+      value: cdktf.stringToHclTerraform(struct!.privateKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MetastoreDataAccessGcpServiceAccountKeyOutputReference extends cdktf.ComplexObject {
@@ -940,5 +1084,97 @@ export class MetastoreDataAccess extends cdktf.TerraformResource {
       databricks_gcp_service_account: metastoreDataAccessDatabricksGcpServiceAccountToTerraform(this._databricksGcpServiceAccount.internalValue),
       gcp_service_account_key: metastoreDataAccessGcpServiceAccountKeyToTerraform(this._gcpServiceAccountKey.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      comment: {
+        value: cdktf.stringToHclTerraform(this._comment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      force_destroy: {
+        value: cdktf.booleanToHclTerraform(this._forceDestroy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      force_update: {
+        value: cdktf.booleanToHclTerraform(this._forceUpdate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      is_default: {
+        value: cdktf.booleanToHclTerraform(this._isDefault),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      metastore_id: {
+        value: cdktf.stringToHclTerraform(this._metastoreId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      owner: {
+        value: cdktf.stringToHclTerraform(this._owner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      read_only: {
+        value: cdktf.booleanToHclTerraform(this._readOnly),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      aws_iam_role: {
+        value: metastoreDataAccessAwsIamRoleToHclTerraform(this._awsIamRole.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MetastoreDataAccessAwsIamRoleList",
+      },
+      azure_managed_identity: {
+        value: metastoreDataAccessAzureManagedIdentityToHclTerraform(this._azureManagedIdentity.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MetastoreDataAccessAzureManagedIdentityList",
+      },
+      azure_service_principal: {
+        value: metastoreDataAccessAzureServicePrincipalToHclTerraform(this._azureServicePrincipal.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MetastoreDataAccessAzureServicePrincipalList",
+      },
+      databricks_gcp_service_account: {
+        value: metastoreDataAccessDatabricksGcpServiceAccountToHclTerraform(this._databricksGcpServiceAccount.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MetastoreDataAccessDatabricksGcpServiceAccountList",
+      },
+      gcp_service_account_key: {
+        value: metastoreDataAccessGcpServiceAccountKeyToHclTerraform(this._gcpServiceAccountKey.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MetastoreDataAccessGcpServiceAccountKeyList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

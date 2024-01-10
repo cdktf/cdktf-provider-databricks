@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/aws_crossaccount_policy
 // generated from terraform resource schema
 
@@ -130,5 +125,25 @@ export class DataDatabricksAwsCrossaccountPolicy extends cdktf.TerraformDataSour
       id: cdktf.stringToTerraform(this._id),
       pass_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._passRoles),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pass_roles: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._passRoles),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/default_namespace_setting
 // generated from terraform resource schema
 
@@ -49,6 +44,25 @@ export function defaultNamespaceSettingNamespaceToTerraform(struct?: DefaultName
   return {
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function defaultNamespaceSettingNamespaceToHclTerraform(struct?: DefaultNamespaceSettingNamespaceOutputReference | DefaultNamespaceSettingNamespace): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DefaultNamespaceSettingNamespaceOutputReference extends cdktf.ComplexObject {
@@ -233,5 +247,37 @@ export class DefaultNamespaceSetting extends cdktf.TerraformResource {
       setting_name: cdktf.stringToTerraform(this._settingName),
       namespace: defaultNamespaceSettingNamespaceToTerraform(this._namespace.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      etag: {
+        value: cdktf.stringToHclTerraform(this._etag),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      setting_name: {
+        value: cdktf.stringToHclTerraform(this._settingName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: defaultNamespaceSettingNamespaceToHclTerraform(this._namespace.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DefaultNamespaceSettingNamespaceList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/mlflow_experiment
 // generated from terraform resource schema
 
@@ -64,6 +59,17 @@ export function mlflowExperimentTimeoutsToTerraform(struct?: MlflowExperimentTim
   }
   return {
   }
+}
+
+
+export function mlflowExperimentTimeoutsToHclTerraform(struct?: MlflowExperimentTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class MlflowExperimentTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -323,5 +329,67 @@ export class MlflowExperiment extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       timeouts: mlflowExperimentTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      artifact_location: {
+        value: cdktf.stringToHclTerraform(this._artifactLocation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      creation_time: {
+        value: cdktf.numberToHclTerraform(this._creationTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      experiment_id: {
+        value: cdktf.stringToHclTerraform(this._experimentId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      last_update_time: {
+        value: cdktf.numberToHclTerraform(this._lastUpdateTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      lifecycle_stage: {
+        value: cdktf.stringToHclTerraform(this._lifecycleStage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: mlflowExperimentTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "MlflowExperimentTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

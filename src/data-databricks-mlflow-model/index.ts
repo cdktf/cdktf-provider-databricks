@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/mlflow_model
 // generated from terraform resource schema
 
@@ -61,6 +56,31 @@ export function dataDatabricksMlflowModelLatestVersionsTagsToTerraform(struct?: 
     key: cdktf.stringToTerraform(struct!.key),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function dataDatabricksMlflowModelLatestVersionsTagsToHclTerraform(struct?: DataDatabricksMlflowModelLatestVersionsTags | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataDatabricksMlflowModelLatestVersionsTagsOutputReference extends cdktf.ComplexObject {
@@ -242,6 +262,97 @@ export function dataDatabricksMlflowModelLatestVersionsToTerraform(struct?: Data
     version: cdktf.stringToTerraform(struct!.version),
     tags: cdktf.listMapper(dataDatabricksMlflowModelLatestVersionsTagsToTerraform, true)(struct!.tags),
   }
+}
+
+
+export function dataDatabricksMlflowModelLatestVersionsToHclTerraform(struct?: DataDatabricksMlflowModelLatestVersions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    creation_timestamp: {
+      value: cdktf.numberToHclTerraform(struct!.creationTimestamp),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    current_stage: {
+      value: cdktf.stringToHclTerraform(struct!.currentStage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    last_updated_timestamp: {
+      value: cdktf.numberToHclTerraform(struct!.lastUpdatedTimestamp),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    run_id: {
+      value: cdktf.stringToHclTerraform(struct!.runId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    run_link: {
+      value: cdktf.stringToHclTerraform(struct!.runLink),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source: {
+      value: cdktf.stringToHclTerraform(struct!.source),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    status: {
+      value: cdktf.stringToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    status_message: {
+      value: cdktf.stringToHclTerraform(struct!.statusMessage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user_id: {
+      value: cdktf.stringToHclTerraform(struct!.userId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    version: {
+      value: cdktf.stringToHclTerraform(struct!.version),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tags: {
+      value: cdktf.listMapperHcl(dataDatabricksMlflowModelLatestVersionsTagsToHclTerraform, true)(struct!.tags),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksMlflowModelLatestVersionsTagsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataDatabricksMlflowModelLatestVersionsOutputReference extends cdktf.ComplexObject {
@@ -610,6 +721,31 @@ export function dataDatabricksMlflowModelTagsToTerraform(struct?: DataDatabricks
   }
 }
 
+
+export function dataDatabricksMlflowModelTagsToHclTerraform(struct?: DataDatabricksMlflowModelTags | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataDatabricksMlflowModelTagsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -887,5 +1023,49 @@ export class DataDatabricksMlflowModel extends cdktf.TerraformDataSource {
       latest_versions: cdktf.listMapper(dataDatabricksMlflowModelLatestVersionsToTerraform, true)(this._latestVersions.internalValue),
       tags: cdktf.listMapper(dataDatabricksMlflowModelTagsToTerraform, true)(this._tags.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      permission_level: {
+        value: cdktf.stringToHclTerraform(this._permissionLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_id: {
+        value: cdktf.stringToHclTerraform(this._userId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      latest_versions: {
+        value: cdktf.listMapperHcl(dataDatabricksMlflowModelLatestVersionsToHclTerraform, true)(this._latestVersions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataDatabricksMlflowModelLatestVersionsList",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(dataDatabricksMlflowModelTagsToHclTerraform, true)(this._tags.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataDatabricksMlflowModelTagsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/library
 // generated from terraform resource schema
 
@@ -74,6 +69,31 @@ export function libraryCranToTerraform(struct?: LibraryCranOutputReference | Lib
     package: cdktf.stringToTerraform(struct!.package),
     repo: cdktf.stringToTerraform(struct!.repo),
   }
+}
+
+
+export function libraryCranToHclTerraform(struct?: LibraryCranOutputReference | LibraryCran): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    package: {
+      value: cdktf.stringToHclTerraform(struct!.package),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    repo: {
+      value: cdktf.stringToHclTerraform(struct!.repo),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LibraryCranOutputReference extends cdktf.ComplexObject {
@@ -168,6 +188,37 @@ export function libraryMavenToTerraform(struct?: LibraryMavenOutputReference | L
     exclusions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exclusions),
     repo: cdktf.stringToTerraform(struct!.repo),
   }
+}
+
+
+export function libraryMavenToHclTerraform(struct?: LibraryMavenOutputReference | LibraryMaven): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    coordinates: {
+      value: cdktf.stringToHclTerraform(struct!.coordinates),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    exclusions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exclusions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    repo: {
+      value: cdktf.stringToHclTerraform(struct!.repo),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LibraryMavenOutputReference extends cdktf.ComplexObject {
@@ -279,6 +330,31 @@ export function libraryPypiToTerraform(struct?: LibraryPypiOutputReference | Lib
     package: cdktf.stringToTerraform(struct!.package),
     repo: cdktf.stringToTerraform(struct!.repo),
   }
+}
+
+
+export function libraryPypiToHclTerraform(struct?: LibraryPypiOutputReference | LibraryPypi): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    package: {
+      value: cdktf.stringToHclTerraform(struct!.package),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    repo: {
+      value: cdktf.stringToHclTerraform(struct!.repo),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LibraryPypiOutputReference extends cdktf.ComplexObject {
@@ -554,5 +630,61 @@ export class Library extends cdktf.TerraformResource {
       maven: libraryMavenToTerraform(this._maven.internalValue),
       pypi: libraryPypiToTerraform(this._pypi.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cluster_id: {
+        value: cdktf.stringToHclTerraform(this._clusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      egg: {
+        value: cdktf.stringToHclTerraform(this._egg),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      jar: {
+        value: cdktf.stringToHclTerraform(this._jar),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      whl: {
+        value: cdktf.stringToHclTerraform(this._whl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cran: {
+        value: libraryCranToHclTerraform(this._cran.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LibraryCranList",
+      },
+      maven: {
+        value: libraryMavenToHclTerraform(this._maven.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LibraryMavenList",
+      },
+      pypi: {
+        value: libraryPypiToHclTerraform(this._pypi.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LibraryPypiList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

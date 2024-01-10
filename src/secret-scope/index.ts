@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/secret_scope
 // generated from terraform resource schema
 
@@ -58,6 +53,31 @@ export function secretScopeKeyvaultMetadataToTerraform(struct?: SecretScopeKeyva
     dns_name: cdktf.stringToTerraform(struct!.dnsName),
     resource_id: cdktf.stringToTerraform(struct!.resourceId),
   }
+}
+
+
+export function secretScopeKeyvaultMetadataToHclTerraform(struct?: SecretScopeKeyvaultMetadataOutputReference | SecretScopeKeyvaultMetadata): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dns_name: {
+      value: cdktf.stringToHclTerraform(struct!.dnsName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource_id: {
+      value: cdktf.stringToHclTerraform(struct!.resourceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecretScopeKeyvaultMetadataOutputReference extends cdktf.ComplexObject {
@@ -276,5 +296,43 @@ export class SecretScope extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       keyvault_metadata: secretScopeKeyvaultMetadataToTerraform(this._keyvaultMetadata.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      backend_type: {
+        value: cdktf.stringToHclTerraform(this._backendType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      initial_manage_principal: {
+        value: cdktf.stringToHclTerraform(this._initialManagePrincipal),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      keyvault_metadata: {
+        value: secretScopeKeyvaultMetadataToHclTerraform(this._keyvaultMetadata.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SecretScopeKeyvaultMetadataList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

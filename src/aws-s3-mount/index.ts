@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/aws_s3_mount
 // generated from terraform resource schema
 
@@ -190,5 +185,43 @@ export class AwsS3Mount extends cdktf.TerraformResource {
       mount_name: cdktf.stringToTerraform(this._mountName),
       s3_bucket_name: cdktf.stringToTerraform(this._s3BucketName),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cluster_id: {
+        value: cdktf.stringToHclTerraform(this._clusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_profile: {
+        value: cdktf.stringToHclTerraform(this._instanceProfile),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mount_name: {
+        value: cdktf.stringToHclTerraform(this._mountName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      s3_bucket_name: {
+        value: cdktf.stringToHclTerraform(this._s3BucketName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/recipient
 // generated from terraform resource schema
 
@@ -71,6 +66,25 @@ export function recipientIpAccessListStructToTerraform(struct?: RecipientIpAcces
   return {
     allowed_ip_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedIpAddresses),
   }
+}
+
+
+export function recipientIpAccessListStructToHclTerraform(struct?: RecipientIpAccessListStructOutputReference | RecipientIpAccessListStruct): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allowed_ip_addresses: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedIpAddresses),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RecipientIpAccessListStructOutputReference extends cdktf.ComplexObject {
@@ -166,6 +180,61 @@ export function recipientTokensToTerraform(struct?: RecipientTokens | cdktf.IRes
     updated_at: cdktf.numberToTerraform(struct!.updatedAt),
     updated_by: cdktf.stringToTerraform(struct!.updatedBy),
   }
+}
+
+
+export function recipientTokensToHclTerraform(struct?: RecipientTokens | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    activation_url: {
+      value: cdktf.stringToHclTerraform(struct!.activationUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    created_at: {
+      value: cdktf.numberToHclTerraform(struct!.createdAt),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    created_by: {
+      value: cdktf.stringToHclTerraform(struct!.createdBy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    expiration_time: {
+      value: cdktf.numberToHclTerraform(struct!.expirationTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    updated_at: {
+      value: cdktf.numberToHclTerraform(struct!.updatedAt),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    updated_by: {
+      value: cdktf.stringToHclTerraform(struct!.updatedBy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RecipientTokensOutputReference extends cdktf.ComplexObject {
@@ -601,5 +670,67 @@ export class Recipient extends cdktf.TerraformResource {
       ip_access_list: recipientIpAccessListStructToTerraform(this._ipAccessList.internalValue),
       tokens: cdktf.listMapper(recipientTokensToTerraform, true)(this._tokens.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      authentication_type: {
+        value: cdktf.stringToHclTerraform(this._authenticationType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      comment: {
+        value: cdktf.stringToHclTerraform(this._comment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      data_recipient_global_metastore_id: {
+        value: cdktf.stringToHclTerraform(this._dataRecipientGlobalMetastoreId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      owner: {
+        value: cdktf.stringToHclTerraform(this._owner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sharing_code: {
+        value: cdktf.stringToHclTerraform(this._sharingCode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ip_access_list: {
+        value: recipientIpAccessListStructToHclTerraform(this._ipAccessList.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RecipientIpAccessListStructList",
+      },
+      tokens: {
+        value: cdktf.listMapperHcl(recipientTokensToHclTerraform, true)(this._tokens.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RecipientTokensList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

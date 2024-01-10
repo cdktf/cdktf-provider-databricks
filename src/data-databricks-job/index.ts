@@ -1,12 +1,8 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // generated from terraform resource schema
 
 import { DataDatabricksJobJobSettings, 
 dataDatabricksJobJobSettingsToTerraform, 
+dataDatabricksJobJobSettingsToHclTerraform, 
 DataDatabricksJobJobSettingsOutputReference} from './index-structs'
 export * from './index-structs'
 import { Construct } from 'constructs';
@@ -193,5 +189,43 @@ export class DataDatabricksJob extends cdktf.TerraformDataSource {
       name: cdktf.stringToTerraform(this._name),
       job_settings: dataDatabricksJobJobSettingsToTerraform(this._jobSettings.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      job_id: {
+        value: cdktf.stringToHclTerraform(this._jobId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      job_name: {
+        value: cdktf.stringToHclTerraform(this._jobName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      job_settings: {
+        value: dataDatabricksJobJobSettingsToHclTerraform(this._jobSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataDatabricksJobJobSettingsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

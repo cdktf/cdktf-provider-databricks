@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/dbfs_file
 // generated from terraform resource schema
 
@@ -151,5 +146,31 @@ export class DataDatabricksDbfsFile extends cdktf.TerraformDataSource {
       limit_file_size: cdktf.booleanToTerraform(this._limitFileSize),
       path: cdktf.stringToTerraform(this._path),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      limit_file_size: {
+        value: cdktf.booleanToHclTerraform(this._limitFileSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      path: {
+        value: cdktf.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/instance_profile
 // generated from terraform resource schema
 
@@ -188,5 +183,43 @@ export class InstanceProfile extends cdktf.TerraformResource {
       is_meta_instance_profile: cdktf.booleanToTerraform(this._isMetaInstanceProfile),
       skip_validation: cdktf.booleanToTerraform(this._skipValidation),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      iam_role_arn: {
+        value: cdktf.stringToHclTerraform(this._iamRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_profile_arn: {
+        value: cdktf.stringToHclTerraform(this._instanceProfileArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      is_meta_instance_profile: {
+        value: cdktf.booleanToHclTerraform(this._isMetaInstanceProfile),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      skip_validation: {
+        value: cdktf.booleanToHclTerraform(this._skipValidation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

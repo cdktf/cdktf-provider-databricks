@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/node_type
 // generated from terraform resource schema
 
@@ -389,5 +384,97 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
       photon_worker_capable: cdktf.booleanToTerraform(this._photonWorkerCapable),
       support_port_forwarding: cdktf.booleanToTerraform(this._supportPortForwarding),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      category: {
+        value: cdktf.stringToHclTerraform(this._category),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      fleet: {
+        value: cdktf.booleanToHclTerraform(this._fleet),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      gb_per_core: {
+        value: cdktf.numberToHclTerraform(this._gbPerCore),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      graviton: {
+        value: cdktf.booleanToHclTerraform(this._graviton),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      is_io_cache_enabled: {
+        value: cdktf.booleanToHclTerraform(this._isIoCacheEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      local_disk: {
+        value: cdktf.booleanToHclTerraform(this._localDisk),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      local_disk_min_size: {
+        value: cdktf.numberToHclTerraform(this._localDiskMinSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      min_cores: {
+        value: cdktf.numberToHclTerraform(this._minCores),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      min_gpus: {
+        value: cdktf.numberToHclTerraform(this._minGpus),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      min_memory_gb: {
+        value: cdktf.numberToHclTerraform(this._minMemoryGb),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      photon_driver_capable: {
+        value: cdktf.booleanToHclTerraform(this._photonDriverCapable),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      photon_worker_capable: {
+        value: cdktf.booleanToHclTerraform(this._photonWorkerCapable),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      support_port_forwarding: {
+        value: cdktf.booleanToHclTerraform(this._supportPortForwarding),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/cluster_policy
 // generated from terraform resource schema
 
@@ -70,6 +65,31 @@ export function clusterPolicyLibrariesCranToTerraform(struct?: ClusterPolicyLibr
     package: cdktf.stringToTerraform(struct!.package),
     repo: cdktf.stringToTerraform(struct!.repo),
   }
+}
+
+
+export function clusterPolicyLibrariesCranToHclTerraform(struct?: ClusterPolicyLibrariesCranOutputReference | ClusterPolicyLibrariesCran): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    package: {
+      value: cdktf.stringToHclTerraform(struct!.package),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    repo: {
+      value: cdktf.stringToHclTerraform(struct!.repo),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ClusterPolicyLibrariesCranOutputReference extends cdktf.ComplexObject {
@@ -164,6 +184,37 @@ export function clusterPolicyLibrariesMavenToTerraform(struct?: ClusterPolicyLib
     exclusions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exclusions),
     repo: cdktf.stringToTerraform(struct!.repo),
   }
+}
+
+
+export function clusterPolicyLibrariesMavenToHclTerraform(struct?: ClusterPolicyLibrariesMavenOutputReference | ClusterPolicyLibrariesMaven): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    coordinates: {
+      value: cdktf.stringToHclTerraform(struct!.coordinates),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    exclusions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exclusions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    repo: {
+      value: cdktf.stringToHclTerraform(struct!.repo),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ClusterPolicyLibrariesMavenOutputReference extends cdktf.ComplexObject {
@@ -275,6 +326,31 @@ export function clusterPolicyLibrariesPypiToTerraform(struct?: ClusterPolicyLibr
     package: cdktf.stringToTerraform(struct!.package),
     repo: cdktf.stringToTerraform(struct!.repo),
   }
+}
+
+
+export function clusterPolicyLibrariesPypiToHclTerraform(struct?: ClusterPolicyLibrariesPypiOutputReference | ClusterPolicyLibrariesPypi): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    package: {
+      value: cdktf.stringToHclTerraform(struct!.package),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    repo: {
+      value: cdktf.stringToHclTerraform(struct!.repo),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ClusterPolicyLibrariesPypiOutputReference extends cdktf.ComplexObject {
@@ -390,6 +466,55 @@ export function clusterPolicyLibrariesToTerraform(struct?: ClusterPolicyLibrarie
     maven: clusterPolicyLibrariesMavenToTerraform(struct!.maven),
     pypi: clusterPolicyLibrariesPypiToTerraform(struct!.pypi),
   }
+}
+
+
+export function clusterPolicyLibrariesToHclTerraform(struct?: ClusterPolicyLibraries | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    egg: {
+      value: cdktf.stringToHclTerraform(struct!.egg),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    jar: {
+      value: cdktf.stringToHclTerraform(struct!.jar),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    whl: {
+      value: cdktf.stringToHclTerraform(struct!.whl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cran: {
+      value: clusterPolicyLibrariesCranToHclTerraform(struct!.cran),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ClusterPolicyLibrariesCranList",
+    },
+    maven: {
+      value: clusterPolicyLibrariesMavenToHclTerraform(struct!.maven),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ClusterPolicyLibrariesMavenList",
+    },
+    pypi: {
+      value: clusterPolicyLibrariesPypiToHclTerraform(struct!.pypi),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ClusterPolicyLibrariesPypiList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ClusterPolicyLibrariesOutputReference extends cdktf.ComplexObject {
@@ -793,5 +918,61 @@ export class ClusterPolicy extends cdktf.TerraformResource {
       policy_family_id: cdktf.stringToTerraform(this._policyFamilyId),
       libraries: cdktf.listMapper(clusterPolicyLibrariesToTerraform, true)(this._libraries.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      definition: {
+        value: cdktf.stringToHclTerraform(this._definition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_clusters_per_user: {
+        value: cdktf.numberToHclTerraform(this._maxClustersPerUser),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_family_definition_overrides: {
+        value: cdktf.stringToHclTerraform(this._policyFamilyDefinitionOverrides),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_family_id: {
+        value: cdktf.stringToHclTerraform(this._policyFamilyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      libraries: {
+        value: cdktf.listMapperHcl(clusterPolicyLibrariesToHclTerraform, true)(this._libraries.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ClusterPolicyLibrariesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

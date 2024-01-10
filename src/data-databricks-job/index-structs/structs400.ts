@@ -1,80 +1,99 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 import * as cdktf from 'cdktf';
 import { DataDatabricksJobJobSettingsSettingsCompute,
 dataDatabricksJobJobSettingsSettingsComputeToTerraform,
+dataDatabricksJobJobSettingsSettingsComputeToHclTerraform,
 DataDatabricksJobJobSettingsSettingsComputeList,
 DataDatabricksJobJobSettingsSettingsContinuous,
 dataDatabricksJobJobSettingsSettingsContinuousToTerraform,
+dataDatabricksJobJobSettingsSettingsContinuousToHclTerraform,
 DataDatabricksJobJobSettingsSettingsContinuousOutputReference,
 DataDatabricksJobJobSettingsSettingsDbtTask,
 dataDatabricksJobJobSettingsSettingsDbtTaskToTerraform,
+dataDatabricksJobJobSettingsSettingsDbtTaskToHclTerraform,
 DataDatabricksJobJobSettingsSettingsDbtTaskOutputReference,
 DataDatabricksJobJobSettingsSettingsDeployment,
 dataDatabricksJobJobSettingsSettingsDeploymentToTerraform,
+dataDatabricksJobJobSettingsSettingsDeploymentToHclTerraform,
 DataDatabricksJobJobSettingsSettingsDeploymentOutputReference,
 DataDatabricksJobJobSettingsSettingsEmailNotifications,
 dataDatabricksJobJobSettingsSettingsEmailNotificationsToTerraform,
+dataDatabricksJobJobSettingsSettingsEmailNotificationsToHclTerraform,
 DataDatabricksJobJobSettingsSettingsEmailNotificationsOutputReference,
 DataDatabricksJobJobSettingsSettingsGitSource,
 dataDatabricksJobJobSettingsSettingsGitSourceToTerraform,
+dataDatabricksJobJobSettingsSettingsGitSourceToHclTerraform,
 DataDatabricksJobJobSettingsSettingsGitSourceOutputReference,
 DataDatabricksJobJobSettingsSettingsHealth,
 dataDatabricksJobJobSettingsSettingsHealthToTerraform,
+dataDatabricksJobJobSettingsSettingsHealthToHclTerraform,
 DataDatabricksJobJobSettingsSettingsHealthOutputReference,
 DataDatabricksJobJobSettingsSettingsJobCluster,
 dataDatabricksJobJobSettingsSettingsJobClusterToTerraform,
+dataDatabricksJobJobSettingsSettingsJobClusterToHclTerraform,
 DataDatabricksJobJobSettingsSettingsJobClusterList,
 DataDatabricksJobJobSettingsSettingsLibrary,
 dataDatabricksJobJobSettingsSettingsLibraryToTerraform,
+dataDatabricksJobJobSettingsSettingsLibraryToHclTerraform,
 DataDatabricksJobJobSettingsSettingsLibraryList,
 DataDatabricksJobJobSettingsSettingsNewCluster,
 dataDatabricksJobJobSettingsSettingsNewClusterToTerraform,
+dataDatabricksJobJobSettingsSettingsNewClusterToHclTerraform,
 DataDatabricksJobJobSettingsSettingsNewClusterOutputReference,
 DataDatabricksJobJobSettingsSettingsNotebookTask,
 dataDatabricksJobJobSettingsSettingsNotebookTaskToTerraform,
+dataDatabricksJobJobSettingsSettingsNotebookTaskToHclTerraform,
 DataDatabricksJobJobSettingsSettingsNotebookTaskOutputReference,
 DataDatabricksJobJobSettingsSettingsNotificationSettings,
 dataDatabricksJobJobSettingsSettingsNotificationSettingsToTerraform,
+dataDatabricksJobJobSettingsSettingsNotificationSettingsToHclTerraform,
 DataDatabricksJobJobSettingsSettingsNotificationSettingsOutputReference,
 DataDatabricksJobJobSettingsSettingsParameter,
 dataDatabricksJobJobSettingsSettingsParameterToTerraform,
+dataDatabricksJobJobSettingsSettingsParameterToHclTerraform,
 DataDatabricksJobJobSettingsSettingsParameterList,
 DataDatabricksJobJobSettingsSettingsPipelineTask,
 dataDatabricksJobJobSettingsSettingsPipelineTaskToTerraform,
+dataDatabricksJobJobSettingsSettingsPipelineTaskToHclTerraform,
 DataDatabricksJobJobSettingsSettingsPipelineTaskOutputReference,
 DataDatabricksJobJobSettingsSettingsPythonWheelTask,
 dataDatabricksJobJobSettingsSettingsPythonWheelTaskToTerraform,
+dataDatabricksJobJobSettingsSettingsPythonWheelTaskToHclTerraform,
 DataDatabricksJobJobSettingsSettingsPythonWheelTaskOutputReference,
 DataDatabricksJobJobSettingsSettingsQueue,
 dataDatabricksJobJobSettingsSettingsQueueToTerraform,
+dataDatabricksJobJobSettingsSettingsQueueToHclTerraform,
 DataDatabricksJobJobSettingsSettingsQueueOutputReference,
 DataDatabricksJobJobSettingsSettingsRunAs,
 dataDatabricksJobJobSettingsSettingsRunAsToTerraform,
+dataDatabricksJobJobSettingsSettingsRunAsToHclTerraform,
 DataDatabricksJobJobSettingsSettingsRunAsOutputReference,
 DataDatabricksJobJobSettingsSettingsRunJobTask,
 dataDatabricksJobJobSettingsSettingsRunJobTaskToTerraform,
+dataDatabricksJobJobSettingsSettingsRunJobTaskToHclTerraform,
 DataDatabricksJobJobSettingsSettingsRunJobTaskOutputReference,
 DataDatabricksJobJobSettingsSettingsSchedule,
 dataDatabricksJobJobSettingsSettingsScheduleToTerraform,
+dataDatabricksJobJobSettingsSettingsScheduleToHclTerraform,
 DataDatabricksJobJobSettingsSettingsScheduleOutputReference,
 DataDatabricksJobJobSettingsSettingsSparkJarTask,
 dataDatabricksJobJobSettingsSettingsSparkJarTaskToTerraform,
+dataDatabricksJobJobSettingsSettingsSparkJarTaskToHclTerraform,
 DataDatabricksJobJobSettingsSettingsSparkJarTaskOutputReference,
 DataDatabricksJobJobSettingsSettingsSparkPythonTask,
 dataDatabricksJobJobSettingsSettingsSparkPythonTaskToTerraform,
+dataDatabricksJobJobSettingsSettingsSparkPythonTaskToHclTerraform,
 DataDatabricksJobJobSettingsSettingsSparkPythonTaskOutputReference,
 DataDatabricksJobJobSettingsSettingsSparkSubmitTask,
 dataDatabricksJobJobSettingsSettingsSparkSubmitTaskToTerraform,
+dataDatabricksJobJobSettingsSettingsSparkSubmitTaskToHclTerraform,
 DataDatabricksJobJobSettingsSettingsSparkSubmitTaskOutputReference,
 DataDatabricksJobJobSettingsSettingsTask,
 dataDatabricksJobJobSettingsSettingsTaskToTerraform,
+dataDatabricksJobJobSettingsSettingsTaskToHclTerraform,
 DataDatabricksJobJobSettingsSettingsTaskList,
 DataDatabricksJobJobSettingsSettingsTrigger,
 dataDatabricksJobJobSettingsSettingsTriggerToTerraform,
+dataDatabricksJobJobSettingsSettingsTriggerToHclTerraform,
 DataDatabricksJobJobSettingsSettingsTriggerOutputReference } from './structs0'
 export interface DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceeded {
   /**
@@ -94,6 +113,25 @@ export function dataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurati
   return {
     id: cdktf.stringToTerraform(struct!.id),
   }
+}
+
+
+export function dataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceededToHclTerraform(struct?: DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceeded | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceededOutputReference extends cdktf.ComplexObject {
@@ -196,6 +234,25 @@ export function dataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailur
   }
 }
 
+
+export function dataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureToHclTerraform(struct?: DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailure | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -296,6 +353,25 @@ export function dataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStartT
   }
 }
 
+
+export function dataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStartToHclTerraform(struct?: DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStart | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStartOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -394,6 +470,25 @@ export function dataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSucces
   return {
     id: cdktf.stringToTerraform(struct!.id),
   }
+}
+
+
+export function dataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccessToHclTerraform(struct?: DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccess | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccessOutputReference extends cdktf.ComplexObject {
@@ -514,6 +609,43 @@ export function dataDatabricksJobJobSettingsSettingsWebhookNotificationsToTerraf
     on_start: cdktf.listMapper(dataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStartToTerraform, true)(struct!.onStart),
     on_success: cdktf.listMapper(dataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccessToTerraform, true)(struct!.onSuccess),
   }
+}
+
+
+export function dataDatabricksJobJobSettingsSettingsWebhookNotificationsToHclTerraform(struct?: DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReference | DataDatabricksJobJobSettingsSettingsWebhookNotifications): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    on_duration_warning_threshold_exceeded: {
+      value: cdktf.listMapperHcl(dataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceededToHclTerraform, true)(struct!.onDurationWarningThresholdExceeded),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceededList",
+    },
+    on_failure: {
+      value: cdktf.listMapperHcl(dataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureToHclTerraform, true)(struct!.onFailure),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureList",
+    },
+    on_start: {
+      value: cdktf.listMapperHcl(dataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStartToHclTerraform, true)(struct!.onStart),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStartList",
+    },
+    on_success: {
+      value: cdktf.listMapperHcl(dataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccessToHclTerraform, true)(struct!.onSuccess),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccessList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReference extends cdktf.ComplexObject {
@@ -870,6 +1002,235 @@ export function dataDatabricksJobJobSettingsSettingsToTerraform(struct?: DataDat
     trigger: dataDatabricksJobJobSettingsSettingsTriggerToTerraform(struct!.trigger),
     webhook_notifications: dataDatabricksJobJobSettingsSettingsWebhookNotificationsToTerraform(struct!.webhookNotifications),
   }
+}
+
+
+export function dataDatabricksJobJobSettingsSettingsToHclTerraform(struct?: DataDatabricksJobJobSettingsSettingsOutputReference | DataDatabricksJobJobSettingsSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    edit_mode: {
+      value: cdktf.stringToHclTerraform(struct!.editMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    existing_cluster_id: {
+      value: cdktf.stringToHclTerraform(struct!.existingClusterId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    format: {
+      value: cdktf.stringToHclTerraform(struct!.format),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    max_concurrent_runs: {
+      value: cdktf.numberToHclTerraform(struct!.maxConcurrentRuns),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_retries: {
+      value: cdktf.numberToHclTerraform(struct!.maxRetries),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    min_retry_interval_millis: {
+      value: cdktf.numberToHclTerraform(struct!.minRetryIntervalMillis),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    retry_on_timeout: {
+      value: cdktf.booleanToHclTerraform(struct!.retryOnTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    tags: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.tags),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    timeout_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.timeoutSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    compute: {
+      value: cdktf.listMapperHcl(dataDatabricksJobJobSettingsSettingsComputeToHclTerraform, true)(struct!.compute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksJobJobSettingsSettingsComputeList",
+    },
+    continuous: {
+      value: dataDatabricksJobJobSettingsSettingsContinuousToHclTerraform(struct!.continuous),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksJobJobSettingsSettingsContinuousList",
+    },
+    dbt_task: {
+      value: dataDatabricksJobJobSettingsSettingsDbtTaskToHclTerraform(struct!.dbtTask),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksJobJobSettingsSettingsDbtTaskList",
+    },
+    deployment: {
+      value: dataDatabricksJobJobSettingsSettingsDeploymentToHclTerraform(struct!.deployment),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksJobJobSettingsSettingsDeploymentList",
+    },
+    email_notifications: {
+      value: dataDatabricksJobJobSettingsSettingsEmailNotificationsToHclTerraform(struct!.emailNotifications),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksJobJobSettingsSettingsEmailNotificationsList",
+    },
+    git_source: {
+      value: dataDatabricksJobJobSettingsSettingsGitSourceToHclTerraform(struct!.gitSource),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksJobJobSettingsSettingsGitSourceList",
+    },
+    health: {
+      value: dataDatabricksJobJobSettingsSettingsHealthToHclTerraform(struct!.health),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksJobJobSettingsSettingsHealthList",
+    },
+    job_cluster: {
+      value: cdktf.listMapperHcl(dataDatabricksJobJobSettingsSettingsJobClusterToHclTerraform, true)(struct!.jobCluster),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksJobJobSettingsSettingsJobClusterList",
+    },
+    library: {
+      value: cdktf.listMapperHcl(dataDatabricksJobJobSettingsSettingsLibraryToHclTerraform, true)(struct!.library),
+      isBlock: true,
+      type: "set",
+      storageClassType: "DataDatabricksJobJobSettingsSettingsLibraryList",
+    },
+    new_cluster: {
+      value: dataDatabricksJobJobSettingsSettingsNewClusterToHclTerraform(struct!.newCluster),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksJobJobSettingsSettingsNewClusterList",
+    },
+    notebook_task: {
+      value: dataDatabricksJobJobSettingsSettingsNotebookTaskToHclTerraform(struct!.notebookTask),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksJobJobSettingsSettingsNotebookTaskList",
+    },
+    notification_settings: {
+      value: dataDatabricksJobJobSettingsSettingsNotificationSettingsToHclTerraform(struct!.notificationSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksJobJobSettingsSettingsNotificationSettingsList",
+    },
+    parameter: {
+      value: cdktf.listMapperHcl(dataDatabricksJobJobSettingsSettingsParameterToHclTerraform, true)(struct!.parameter),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksJobJobSettingsSettingsParameterList",
+    },
+    pipeline_task: {
+      value: dataDatabricksJobJobSettingsSettingsPipelineTaskToHclTerraform(struct!.pipelineTask),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksJobJobSettingsSettingsPipelineTaskList",
+    },
+    python_wheel_task: {
+      value: dataDatabricksJobJobSettingsSettingsPythonWheelTaskToHclTerraform(struct!.pythonWheelTask),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksJobJobSettingsSettingsPythonWheelTaskList",
+    },
+    queue: {
+      value: dataDatabricksJobJobSettingsSettingsQueueToHclTerraform(struct!.queue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksJobJobSettingsSettingsQueueList",
+    },
+    run_as: {
+      value: dataDatabricksJobJobSettingsSettingsRunAsToHclTerraform(struct!.runAs),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksJobJobSettingsSettingsRunAsList",
+    },
+    run_job_task: {
+      value: dataDatabricksJobJobSettingsSettingsRunJobTaskToHclTerraform(struct!.runJobTask),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksJobJobSettingsSettingsRunJobTaskList",
+    },
+    schedule: {
+      value: dataDatabricksJobJobSettingsSettingsScheduleToHclTerraform(struct!.schedule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksJobJobSettingsSettingsScheduleList",
+    },
+    spark_jar_task: {
+      value: dataDatabricksJobJobSettingsSettingsSparkJarTaskToHclTerraform(struct!.sparkJarTask),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksJobJobSettingsSettingsSparkJarTaskList",
+    },
+    spark_python_task: {
+      value: dataDatabricksJobJobSettingsSettingsSparkPythonTaskToHclTerraform(struct!.sparkPythonTask),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksJobJobSettingsSettingsSparkPythonTaskList",
+    },
+    spark_submit_task: {
+      value: dataDatabricksJobJobSettingsSettingsSparkSubmitTaskToHclTerraform(struct!.sparkSubmitTask),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksJobJobSettingsSettingsSparkSubmitTaskList",
+    },
+    task: {
+      value: cdktf.listMapperHcl(dataDatabricksJobJobSettingsSettingsTaskToHclTerraform, true)(struct!.task),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksJobJobSettingsSettingsTaskList",
+    },
+    trigger: {
+      value: dataDatabricksJobJobSettingsSettingsTriggerToHclTerraform(struct!.trigger),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksJobJobSettingsSettingsTriggerList",
+    },
+    webhook_notifications: {
+      value: dataDatabricksJobJobSettingsSettingsWebhookNotificationsToHclTerraform(struct!.webhookNotifications),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksJobJobSettingsSettingsWebhookNotificationsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataDatabricksJobJobSettingsSettingsOutputReference extends cdktf.ComplexObject {
@@ -1727,6 +2088,49 @@ export function dataDatabricksJobJobSettingsToTerraform(struct?: DataDatabricksJ
     run_as_user_name: cdktf.stringToTerraform(struct!.runAsUserName),
     settings: dataDatabricksJobJobSettingsSettingsToTerraform(struct!.settings),
   }
+}
+
+
+export function dataDatabricksJobJobSettingsToHclTerraform(struct?: DataDatabricksJobJobSettingsOutputReference | DataDatabricksJobJobSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    created_time: {
+      value: cdktf.numberToHclTerraform(struct!.createdTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    creator_user_name: {
+      value: cdktf.stringToHclTerraform(struct!.creatorUserName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    job_id: {
+      value: cdktf.numberToHclTerraform(struct!.jobId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    run_as_user_name: {
+      value: cdktf.stringToHclTerraform(struct!.runAsUserName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    settings: {
+      value: dataDatabricksJobJobSettingsSettingsToHclTerraform(struct!.settings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksJobJobSettingsSettingsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataDatabricksJobJobSettingsOutputReference extends cdktf.ComplexObject {

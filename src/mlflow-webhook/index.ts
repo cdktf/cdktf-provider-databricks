@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/mlflow_webhook
 // generated from terraform resource schema
 
@@ -78,6 +73,43 @@ export function mlflowWebhookHttpUrlSpecToTerraform(struct?: MlflowWebhookHttpUr
     secret: cdktf.stringToTerraform(struct!.secret),
     url: cdktf.stringToTerraform(struct!.url),
   }
+}
+
+
+export function mlflowWebhookHttpUrlSpecToHclTerraform(struct?: MlflowWebhookHttpUrlSpecOutputReference | MlflowWebhookHttpUrlSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    authorization: {
+      value: cdktf.stringToHclTerraform(struct!.authorization),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    enable_ssl_verification: {
+      value: cdktf.booleanToHclTerraform(struct!.enableSslVerification),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    secret: {
+      value: cdktf.stringToHclTerraform(struct!.secret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    url: {
+      value: cdktf.stringToHclTerraform(struct!.url),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MlflowWebhookHttpUrlSpecOutputReference extends cdktf.ComplexObject {
@@ -216,6 +248,37 @@ export function mlflowWebhookJobSpecToTerraform(struct?: MlflowWebhookJobSpecOut
     job_id: cdktf.stringToTerraform(struct!.jobId),
     workspace_url: cdktf.stringToTerraform(struct!.workspaceUrl),
   }
+}
+
+
+export function mlflowWebhookJobSpecToHclTerraform(struct?: MlflowWebhookJobSpecOutputReference | MlflowWebhookJobSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_token: {
+      value: cdktf.stringToHclTerraform(struct!.accessToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    job_id: {
+      value: cdktf.stringToHclTerraform(struct!.jobId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    workspace_url: {
+      value: cdktf.stringToHclTerraform(struct!.workspaceUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MlflowWebhookJobSpecOutputReference extends cdktf.ComplexObject {
@@ -492,5 +555,55 @@ export class MlflowWebhook extends cdktf.TerraformResource {
       http_url_spec: mlflowWebhookHttpUrlSpecToTerraform(this._httpUrlSpec.internalValue),
       job_spec: mlflowWebhookJobSpecToTerraform(this._jobSpec.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      events: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._events),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      model_name: {
+        value: cdktf.stringToHclTerraform(this._modelName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      http_url_spec: {
+        value: mlflowWebhookHttpUrlSpecToHclTerraform(this._httpUrlSpec.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MlflowWebhookHttpUrlSpecList",
+      },
+      job_spec: {
+        value: mlflowWebhookJobSpecToHclTerraform(this._jobSpec.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MlflowWebhookJobSpecList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

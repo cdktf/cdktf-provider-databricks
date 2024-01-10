@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/share
 // generated from terraform resource schema
 
@@ -68,6 +63,43 @@ export function dataDatabricksShareObjectPartitionValueToTerraform(struct?: Data
     recipient_property_key: cdktf.stringToTerraform(struct!.recipientPropertyKey),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function dataDatabricksShareObjectPartitionValueToHclTerraform(struct?: DataDatabricksShareObjectPartitionValue | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    op: {
+      value: cdktf.stringToHclTerraform(struct!.op),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    recipient_property_key: {
+      value: cdktf.stringToHclTerraform(struct!.recipientPropertyKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataDatabricksShareObjectPartitionValueOutputReference extends cdktf.ComplexObject {
@@ -229,6 +261,25 @@ export function dataDatabricksShareObjectPartitionToTerraform(struct?: DataDatab
   }
 }
 
+
+export function dataDatabricksShareObjectPartitionToHclTerraform(struct?: DataDatabricksShareObjectPartition | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    value: {
+      value: cdktf.listMapperHcl(dataDatabricksShareObjectPartitionValueToHclTerraform, true)(struct!.value),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksShareObjectPartitionValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataDatabricksShareObjectPartitionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -373,6 +424,85 @@ export function dataDatabricksShareObjectToTerraform(struct?: DataDatabricksShar
     status: cdktf.stringToTerraform(struct!.status),
     partition: cdktf.listMapper(dataDatabricksShareObjectPartitionToTerraform, true)(struct!.partition),
   }
+}
+
+
+export function dataDatabricksShareObjectToHclTerraform(struct?: DataDatabricksShareObject | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    added_at: {
+      value: cdktf.numberToHclTerraform(struct!.addedAt),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    added_by: {
+      value: cdktf.stringToHclTerraform(struct!.addedBy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cdf_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.cdfEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    comment: {
+      value: cdktf.stringToHclTerraform(struct!.comment),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    data_object_type: {
+      value: cdktf.stringToHclTerraform(struct!.dataObjectType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    history_data_sharing_status: {
+      value: cdktf.stringToHclTerraform(struct!.historyDataSharingStatus),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    shared_as: {
+      value: cdktf.stringToHclTerraform(struct!.sharedAs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start_version: {
+      value: cdktf.numberToHclTerraform(struct!.startVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    status: {
+      value: cdktf.stringToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    partition: {
+      value: cdktf.listMapperHcl(dataDatabricksShareObjectPartitionToHclTerraform, true)(struct!.partition),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksShareObjectPartitionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataDatabricksShareObjectOutputReference extends cdktf.ComplexObject {
@@ -824,5 +954,43 @@ export class DataDatabricksShare extends cdktf.TerraformDataSource {
       name: cdktf.stringToTerraform(this._name),
       object: cdktf.listMapper(dataDatabricksShareObjectToTerraform, true)(this._object.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      created_at: {
+        value: cdktf.numberToHclTerraform(this._createdAt),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      created_by: {
+        value: cdktf.stringToHclTerraform(this._createdBy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      object: {
+        value: cdktf.listMapperHcl(dataDatabricksShareObjectToHclTerraform, true)(this._object.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataDatabricksShareObjectList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

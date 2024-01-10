@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/azure_adls_gen1_mount
 // generated from terraform resource schema
 
@@ -288,5 +283,73 @@ export class AzureAdlsGen1Mount extends cdktf.TerraformResource {
       storage_resource_name: cdktf.stringToTerraform(this._storageResourceName),
       tenant_id: cdktf.stringToTerraform(this._tenantId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      client_id: {
+        value: cdktf.stringToHclTerraform(this._clientId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_secret_key: {
+        value: cdktf.stringToHclTerraform(this._clientSecretKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_secret_scope: {
+        value: cdktf.stringToHclTerraform(this._clientSecretScope),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cluster_id: {
+        value: cdktf.stringToHclTerraform(this._clusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      directory: {
+        value: cdktf.stringToHclTerraform(this._directory),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mount_name: {
+        value: cdktf.stringToHclTerraform(this._mountName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      spark_conf_prefix: {
+        value: cdktf.stringToHclTerraform(this._sparkConfPrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      storage_resource_name: {
+        value: cdktf.stringToHclTerraform(this._storageResourceName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tenant_id: {
+        value: cdktf.stringToHclTerraform(this._tenantId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

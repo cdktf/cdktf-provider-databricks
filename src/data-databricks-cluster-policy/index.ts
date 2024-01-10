@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/cluster_policy
 // generated from terraform resource schema
 
@@ -257,5 +252,61 @@ export class DataDatabricksClusterPolicy extends cdktf.TerraformDataSource {
       policy_family_definition_overrides: cdktf.stringToTerraform(this._policyFamilyDefinitionOverrides),
       policy_family_id: cdktf.stringToTerraform(this._policyFamilyId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      definition: {
+        value: cdktf.stringToHclTerraform(this._definition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      is_default: {
+        value: cdktf.booleanToHclTerraform(this._isDefault),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      max_clusters_per_user: {
+        value: cdktf.numberToHclTerraform(this._maxClustersPerUser),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_family_definition_overrides: {
+        value: cdktf.stringToHclTerraform(this._policyFamilyDefinitionOverrides),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_family_id: {
+        value: cdktf.stringToHclTerraform(this._policyFamilyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/sql_visualization
 // generated from terraform resource schema
 
@@ -245,5 +240,61 @@ export class SqlVisualization extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       visualization_id: cdktf.stringToTerraform(this._visualizationId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      options: {
+        value: cdktf.stringToHclTerraform(this._options),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      query_id: {
+        value: cdktf.stringToHclTerraform(this._queryId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      query_plan: {
+        value: cdktf.stringToHclTerraform(this._queryPlan),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      visualization_id: {
+        value: cdktf.stringToHclTerraform(this._visualizationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

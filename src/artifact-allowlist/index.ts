@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/artifact_allowlist
 // generated from terraform resource schema
 
@@ -62,6 +57,31 @@ export function artifactAllowlistArtifactMatcherToTerraform(struct?: ArtifactAll
     artifact: cdktf.stringToTerraform(struct!.artifact),
     match_type: cdktf.stringToTerraform(struct!.matchType),
   }
+}
+
+
+export function artifactAllowlistArtifactMatcherToHclTerraform(struct?: ArtifactAllowlistArtifactMatcher | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    artifact: {
+      value: cdktf.stringToHclTerraform(struct!.artifact),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_type: {
+      value: cdktf.stringToHclTerraform(struct!.matchType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ArtifactAllowlistArtifactMatcherOutputReference extends cdktf.ComplexObject {
@@ -327,5 +347,49 @@ export class ArtifactAllowlist extends cdktf.TerraformResource {
       metastore_id: cdktf.stringToTerraform(this._metastoreId),
       artifact_matcher: cdktf.listMapper(artifactAllowlistArtifactMatcherToTerraform, true)(this._artifactMatcher.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      artifact_type: {
+        value: cdktf.stringToHclTerraform(this._artifactType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      created_at: {
+        value: cdktf.numberToHclTerraform(this._createdAt),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      created_by: {
+        value: cdktf.stringToHclTerraform(this._createdBy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      metastore_id: {
+        value: cdktf.stringToHclTerraform(this._metastoreId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      artifact_matcher: {
+        value: cdktf.listMapperHcl(artifactAllowlistArtifactMatcherToHclTerraform, true)(this._artifactMatcher.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ArtifactAllowlistArtifactMatcherList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

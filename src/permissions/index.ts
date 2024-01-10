@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/permissions
 // generated from terraform resource schema
 
@@ -144,6 +139,43 @@ export function permissionsAccessControlToTerraform(struct?: PermissionsAccessCo
     service_principal_name: cdktf.stringToTerraform(struct!.servicePrincipalName),
     user_name: cdktf.stringToTerraform(struct!.userName),
   }
+}
+
+
+export function permissionsAccessControlToHclTerraform(struct?: PermissionsAccessControl | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    group_name: {
+      value: cdktf.stringToHclTerraform(struct!.groupName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    permission_level: {
+      value: cdktf.stringToHclTerraform(struct!.permissionLevel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service_principal_name: {
+      value: cdktf.stringToHclTerraform(struct!.servicePrincipalName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user_name: {
+      value: cdktf.stringToHclTerraform(struct!.userName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PermissionsAccessControlOutputReference extends cdktf.ComplexObject {
@@ -783,5 +815,157 @@ export class Permissions extends cdktf.TerraformResource {
       workspace_file_path: cdktf.stringToTerraform(this._workspaceFilePath),
       access_control: cdktf.listMapper(permissionsAccessControlToTerraform, true)(this._accessControl.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      authorization: {
+        value: cdktf.stringToHclTerraform(this._authorization),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cluster_id: {
+        value: cdktf.stringToHclTerraform(this._clusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cluster_policy_id: {
+        value: cdktf.stringToHclTerraform(this._clusterPolicyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      directory_id: {
+        value: cdktf.stringToHclTerraform(this._directoryId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      directory_path: {
+        value: cdktf.stringToHclTerraform(this._directoryPath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      experiment_id: {
+        value: cdktf.stringToHclTerraform(this._experimentId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_pool_id: {
+        value: cdktf.stringToHclTerraform(this._instancePoolId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      job_id: {
+        value: cdktf.stringToHclTerraform(this._jobId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      notebook_id: {
+        value: cdktf.stringToHclTerraform(this._notebookId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      notebook_path: {
+        value: cdktf.stringToHclTerraform(this._notebookPath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      object_type: {
+        value: cdktf.stringToHclTerraform(this._objectType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pipeline_id: {
+        value: cdktf.stringToHclTerraform(this._pipelineId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      registered_model_id: {
+        value: cdktf.stringToHclTerraform(this._registeredModelId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      repo_id: {
+        value: cdktf.stringToHclTerraform(this._repoId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      repo_path: {
+        value: cdktf.stringToHclTerraform(this._repoPath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      serving_endpoint_id: {
+        value: cdktf.stringToHclTerraform(this._servingEndpointId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sql_alert_id: {
+        value: cdktf.stringToHclTerraform(this._sqlAlertId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sql_dashboard_id: {
+        value: cdktf.stringToHclTerraform(this._sqlDashboardId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sql_endpoint_id: {
+        value: cdktf.stringToHclTerraform(this._sqlEndpointId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sql_query_id: {
+        value: cdktf.stringToHclTerraform(this._sqlQueryId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      workspace_file_id: {
+        value: cdktf.stringToHclTerraform(this._workspaceFileId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      workspace_file_path: {
+        value: cdktf.stringToHclTerraform(this._workspaceFilePath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      access_control: {
+        value: cdktf.listMapperHcl(permissionsAccessControlToHclTerraform, true)(this._accessControl.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "PermissionsAccessControlList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

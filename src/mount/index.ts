@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/mount
 // generated from terraform resource schema
 
@@ -130,6 +125,67 @@ export function mountAbfsToTerraform(struct?: MountAbfsOutputReference | MountAb
     storage_account_name: cdktf.stringToTerraform(struct!.storageAccountName),
     tenant_id: cdktf.stringToTerraform(struct!.tenantId),
   }
+}
+
+
+export function mountAbfsToHclTerraform(struct?: MountAbfsOutputReference | MountAbfs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_secret_key: {
+      value: cdktf.stringToHclTerraform(struct!.clientSecretKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_secret_scope: {
+      value: cdktf.stringToHclTerraform(struct!.clientSecretScope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    container_name: {
+      value: cdktf.stringToHclTerraform(struct!.containerName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    directory: {
+      value: cdktf.stringToHclTerraform(struct!.directory),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    initialize_file_system: {
+      value: cdktf.booleanToHclTerraform(struct!.initializeFileSystem),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    storage_account_name: {
+      value: cdktf.stringToHclTerraform(struct!.storageAccountName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tenant_id: {
+      value: cdktf.stringToHclTerraform(struct!.tenantId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MountAbfsOutputReference extends cdktf.ComplexObject {
@@ -369,6 +425,61 @@ export function mountAdlToTerraform(struct?: MountAdlOutputReference | MountAdl)
   }
 }
 
+
+export function mountAdlToHclTerraform(struct?: MountAdlOutputReference | MountAdl): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_secret_key: {
+      value: cdktf.stringToHclTerraform(struct!.clientSecretKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_secret_scope: {
+      value: cdktf.stringToHclTerraform(struct!.clientSecretScope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    directory: {
+      value: cdktf.stringToHclTerraform(struct!.directory),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    spark_conf_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.sparkConfPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    storage_resource_name: {
+      value: cdktf.stringToHclTerraform(struct!.storageResourceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tenant_id: {
+      value: cdktf.stringToHclTerraform(struct!.tenantId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MountAdlOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -562,6 +673,31 @@ export function mountGsToTerraform(struct?: MountGsOutputReference | MountGs): a
   }
 }
 
+
+export function mountGsToHclTerraform(struct?: MountGsOutputReference | MountGs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_name: {
+      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service_account: {
+      value: cdktf.stringToHclTerraform(struct!.serviceAccount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MountGsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -651,6 +787,31 @@ export function mountS3ToTerraform(struct?: MountS3OutputReference | MountS3): a
   }
 }
 
+
+export function mountS3ToHclTerraform(struct?: MountS3OutputReference | MountS3): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_name: {
+      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    instance_profile: {
+      value: cdktf.stringToHclTerraform(struct!.instanceProfile),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MountS3OutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -733,6 +894,25 @@ export function mountTimeoutsToTerraform(struct?: MountTimeouts | cdktf.IResolva
   return {
     default: cdktf.stringToTerraform(struct!.default),
   }
+}
+
+
+export function mountTimeoutsToHclTerraform(struct?: MountTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MountTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -833,6 +1013,55 @@ export function mountWasbToTerraform(struct?: MountWasbOutputReference | MountWa
     token_secret_key: cdktf.stringToTerraform(struct!.tokenSecretKey),
     token_secret_scope: cdktf.stringToTerraform(struct!.tokenSecretScope),
   }
+}
+
+
+export function mountWasbToHclTerraform(struct?: MountWasbOutputReference | MountWasb): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    auth_type: {
+      value: cdktf.stringToHclTerraform(struct!.authType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    container_name: {
+      value: cdktf.stringToHclTerraform(struct!.containerName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    directory: {
+      value: cdktf.stringToHclTerraform(struct!.directory),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    storage_account_name: {
+      value: cdktf.stringToHclTerraform(struct!.storageAccountName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    token_secret_key: {
+      value: cdktf.stringToHclTerraform(struct!.tokenSecretKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    token_secret_scope: {
+      value: cdktf.stringToHclTerraform(struct!.tokenSecretScope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MountWasbOutputReference extends cdktf.ComplexObject {
@@ -1288,5 +1517,91 @@ export class Mount extends cdktf.TerraformResource {
       timeouts: mountTimeoutsToTerraform(this._timeouts.internalValue),
       wasb: mountWasbToTerraform(this._wasb.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cluster_id: {
+        value: cdktf.stringToHclTerraform(this._clusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      encryption_type: {
+        value: cdktf.stringToHclTerraform(this._encryptionType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      extra_configs: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._extraConfigs),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_id: {
+        value: cdktf.stringToHclTerraform(this._resourceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      uri: {
+        value: cdktf.stringToHclTerraform(this._uri),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      abfs: {
+        value: mountAbfsToHclTerraform(this._abfs.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MountAbfsList",
+      },
+      adl: {
+        value: mountAdlToHclTerraform(this._adl.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MountAdlList",
+      },
+      gs: {
+        value: mountGsToHclTerraform(this._gs.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MountGsList",
+      },
+      s3: {
+        value: mountS3ToHclTerraform(this._s3.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MountS3List",
+      },
+      timeouts: {
+        value: mountTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "MountTimeouts",
+      },
+      wasb: {
+        value: mountWasbToHclTerraform(this._wasb.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MountWasbList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

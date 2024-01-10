@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/service_principal
 // generated from terraform resource schema
 
@@ -433,5 +428,109 @@ export class ServicePrincipal extends cdktf.TerraformResource {
       repos: cdktf.stringToTerraform(this._repos),
       workspace_access: cdktf.booleanToTerraform(this._workspaceAccess),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      acl_principal_id: {
+        value: cdktf.stringToHclTerraform(this._aclPrincipalId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      active: {
+        value: cdktf.booleanToHclTerraform(this._active),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      allow_cluster_create: {
+        value: cdktf.booleanToHclTerraform(this._allowClusterCreate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      allow_instance_pool_create: {
+        value: cdktf.booleanToHclTerraform(this._allowInstancePoolCreate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      application_id: {
+        value: cdktf.stringToHclTerraform(this._applicationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      databricks_sql_access: {
+        value: cdktf.booleanToHclTerraform(this._databricksSqlAccess),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      disable_as_user_deletion: {
+        value: cdktf.booleanToHclTerraform(this._disableAsUserDeletion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      external_id: {
+        value: cdktf.stringToHclTerraform(this._externalId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      force: {
+        value: cdktf.booleanToHclTerraform(this._force),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      force_delete_home_dir: {
+        value: cdktf.booleanToHclTerraform(this._forceDeleteHomeDir),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      force_delete_repos: {
+        value: cdktf.booleanToHclTerraform(this._forceDeleteRepos),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      home: {
+        value: cdktf.stringToHclTerraform(this._home),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      repos: {
+        value: cdktf.stringToHclTerraform(this._repos),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      workspace_access: {
+        value: cdktf.booleanToHclTerraform(this._workspaceAccess),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

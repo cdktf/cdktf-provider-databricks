@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/mws_log_delivery
 // generated from terraform resource schema
 
@@ -330,5 +325,85 @@ export class MwsLogDelivery extends cdktf.TerraformResource {
       storage_configuration_id: cdktf.stringToTerraform(this._storageConfigurationId),
       workspace_ids_filter: cdktf.listMapper(cdktf.numberToTerraform, false)(this._workspaceIdsFilter),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      config_id: {
+        value: cdktf.stringToHclTerraform(this._configId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      config_name: {
+        value: cdktf.stringToHclTerraform(this._configName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      credentials_id: {
+        value: cdktf.stringToHclTerraform(this._credentialsId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      delivery_path_prefix: {
+        value: cdktf.stringToHclTerraform(this._deliveryPathPrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      delivery_start_time: {
+        value: cdktf.stringToHclTerraform(this._deliveryStartTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      log_type: {
+        value: cdktf.stringToHclTerraform(this._logType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      output_format: {
+        value: cdktf.stringToHclTerraform(this._outputFormat),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      storage_configuration_id: {
+        value: cdktf.stringToHclTerraform(this._storageConfigurationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      workspace_ids_filter: {
+        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._workspaceIdsFilter),
+        isBlock: false,
+        type: "list",
+        storageClassType: "numberList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

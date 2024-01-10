@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/storage_credential
 // generated from terraform resource schema
 
@@ -103,6 +98,37 @@ export function storageCredentialAwsIamRoleToTerraform(struct?: StorageCredentia
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
     unity_catalog_iam_arn: cdktf.stringToTerraform(struct!.unityCatalogIamArn),
   }
+}
+
+
+export function storageCredentialAwsIamRoleToHclTerraform(struct?: StorageCredentialAwsIamRoleOutputReference | StorageCredentialAwsIamRole): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    external_id: {
+      value: cdktf.stringToHclTerraform(struct!.externalId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    unity_catalog_iam_arn: {
+      value: cdktf.stringToHclTerraform(struct!.unityCatalogIamArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class StorageCredentialAwsIamRoleOutputReference extends cdktf.ComplexObject {
@@ -221,6 +247,37 @@ export function storageCredentialAzureManagedIdentityToTerraform(struct?: Storag
   }
 }
 
+
+export function storageCredentialAzureManagedIdentityToHclTerraform(struct?: StorageCredentialAzureManagedIdentityOutputReference | StorageCredentialAzureManagedIdentity): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_connector_id: {
+      value: cdktf.stringToHclTerraform(struct!.accessConnectorId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    credential_id: {
+      value: cdktf.stringToHclTerraform(struct!.credentialId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    managed_identity_id: {
+      value: cdktf.stringToHclTerraform(struct!.managedIdentityId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class StorageCredentialAzureManagedIdentityOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -337,6 +394,37 @@ export function storageCredentialAzureServicePrincipalToTerraform(struct?: Stora
   }
 }
 
+
+export function storageCredentialAzureServicePrincipalToHclTerraform(struct?: StorageCredentialAzureServicePrincipalOutputReference | StorageCredentialAzureServicePrincipal): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    application_id: {
+      value: cdktf.stringToHclTerraform(struct!.applicationId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_secret: {
+      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    directory_id: {
+      value: cdktf.stringToHclTerraform(struct!.directoryId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class StorageCredentialAzureServicePrincipalOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -442,6 +530,31 @@ export function storageCredentialDatabricksGcpServiceAccountToTerraform(struct?:
   }
 }
 
+
+export function storageCredentialDatabricksGcpServiceAccountToHclTerraform(struct?: StorageCredentialDatabricksGcpServiceAccountOutputReference | StorageCredentialDatabricksGcpServiceAccount): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    credential_id: {
+      value: cdktf.stringToHclTerraform(struct!.credentialId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    email: {
+      value: cdktf.stringToHclTerraform(struct!.email),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class StorageCredentialDatabricksGcpServiceAccountOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -537,6 +650,37 @@ export function storageCredentialGcpServiceAccountKeyToTerraform(struct?: Storag
     private_key: cdktf.stringToTerraform(struct!.privateKey),
     private_key_id: cdktf.stringToTerraform(struct!.privateKeyId),
   }
+}
+
+
+export function storageCredentialGcpServiceAccountKeyToHclTerraform(struct?: StorageCredentialGcpServiceAccountKeyOutputReference | StorageCredentialGcpServiceAccountKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    email: {
+      value: cdktf.stringToHclTerraform(struct!.email),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    private_key: {
+      value: cdktf.stringToHclTerraform(struct!.privateKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    private_key_id: {
+      value: cdktf.stringToHclTerraform(struct!.privateKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class StorageCredentialGcpServiceAccountKeyOutputReference extends cdktf.ComplexObject {
@@ -918,5 +1062,91 @@ export class StorageCredential extends cdktf.TerraformResource {
       databricks_gcp_service_account: storageCredentialDatabricksGcpServiceAccountToTerraform(this._databricksGcpServiceAccount.internalValue),
       gcp_service_account_key: storageCredentialGcpServiceAccountKeyToTerraform(this._gcpServiceAccountKey.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      comment: {
+        value: cdktf.stringToHclTerraform(this._comment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      force_destroy: {
+        value: cdktf.booleanToHclTerraform(this._forceDestroy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      force_update: {
+        value: cdktf.booleanToHclTerraform(this._forceUpdate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      metastore_id: {
+        value: cdktf.stringToHclTerraform(this._metastoreId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      owner: {
+        value: cdktf.stringToHclTerraform(this._owner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      read_only: {
+        value: cdktf.booleanToHclTerraform(this._readOnly),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      aws_iam_role: {
+        value: storageCredentialAwsIamRoleToHclTerraform(this._awsIamRole.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "StorageCredentialAwsIamRoleList",
+      },
+      azure_managed_identity: {
+        value: storageCredentialAzureManagedIdentityToHclTerraform(this._azureManagedIdentity.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "StorageCredentialAzureManagedIdentityList",
+      },
+      azure_service_principal: {
+        value: storageCredentialAzureServicePrincipalToHclTerraform(this._azureServicePrincipal.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "StorageCredentialAzureServicePrincipalList",
+      },
+      databricks_gcp_service_account: {
+        value: storageCredentialDatabricksGcpServiceAccountToHclTerraform(this._databricksGcpServiceAccount.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "StorageCredentialDatabricksGcpServiceAccountList",
+      },
+      gcp_service_account_key: {
+        value: storageCredentialGcpServiceAccountKeyToHclTerraform(this._gcpServiceAccountKey.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "StorageCredentialGcpServiceAccountKeyList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/spark_version
 // generated from terraform resource schema
 
@@ -323,5 +318,79 @@ export class DataDatabricksSparkVersion extends cdktf.TerraformDataSource {
       scala: cdktf.stringToTerraform(this._scala),
       spark_version: cdktf.stringToTerraform(this._sparkVersion),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      beta: {
+        value: cdktf.booleanToHclTerraform(this._beta),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      genomics: {
+        value: cdktf.booleanToHclTerraform(this._genomics),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      gpu: {
+        value: cdktf.booleanToHclTerraform(this._gpu),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      graviton: {
+        value: cdktf.booleanToHclTerraform(this._graviton),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      latest: {
+        value: cdktf.booleanToHclTerraform(this._latest),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      long_term_support: {
+        value: cdktf.booleanToHclTerraform(this._longTermSupport),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      ml: {
+        value: cdktf.booleanToHclTerraform(this._ml),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      photon: {
+        value: cdktf.booleanToHclTerraform(this._photon),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      scala: {
+        value: cdktf.stringToHclTerraform(this._scala),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      spark_version: {
+        value: cdktf.stringToHclTerraform(this._sparkVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

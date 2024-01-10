@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/mws_permission_assignment
 // generated from terraform resource schema
 
@@ -160,5 +155,37 @@ export class MwsPermissionAssignment extends cdktf.TerraformResource {
       principal_id: cdktf.numberToTerraform(this._principalId),
       workspace_id: cdktf.numberToTerraform(this._workspaceId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      permissions: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._permissions),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      principal_id: {
+        value: cdktf.numberToHclTerraform(this._principalId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      workspace_id: {
+        value: cdktf.numberToHclTerraform(this._workspaceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

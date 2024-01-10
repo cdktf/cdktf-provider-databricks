@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/entitlements
 // generated from terraform resource schema
 
@@ -257,5 +252,61 @@ export class Entitlements extends cdktf.TerraformResource {
       user_id: cdktf.stringToTerraform(this._userId),
       workspace_access: cdktf.booleanToTerraform(this._workspaceAccess),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allow_cluster_create: {
+        value: cdktf.booleanToHclTerraform(this._allowClusterCreate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      allow_instance_pool_create: {
+        value: cdktf.booleanToHclTerraform(this._allowInstancePoolCreate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      databricks_sql_access: {
+        value: cdktf.booleanToHclTerraform(this._databricksSqlAccess),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      group_id: {
+        value: cdktf.stringToHclTerraform(this._groupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_principal_id: {
+        value: cdktf.stringToHclTerraform(this._servicePrincipalId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_id: {
+        value: cdktf.stringToHclTerraform(this._userId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      workspace_access: {
+        value: cdktf.booleanToHclTerraform(this._workspaceAccess),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

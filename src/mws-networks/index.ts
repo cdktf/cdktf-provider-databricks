@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/mws_networks
 // generated from terraform resource schema
 
@@ -94,6 +89,31 @@ export function mwsNetworksErrorMessagesToTerraform(struct?: MwsNetworksErrorMes
     error_message: cdktf.stringToTerraform(struct!.errorMessage),
     error_type: cdktf.stringToTerraform(struct!.errorType),
   }
+}
+
+
+export function mwsNetworksErrorMessagesToHclTerraform(struct?: MwsNetworksErrorMessages | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    error_message: {
+      value: cdktf.stringToHclTerraform(struct!.errorMessage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    error_type: {
+      value: cdktf.stringToHclTerraform(struct!.errorType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MwsNetworksErrorMessagesOutputReference extends cdktf.ComplexObject {
@@ -238,6 +258,55 @@ export function mwsNetworksGcpNetworkInfoToTerraform(struct?: MwsNetworksGcpNetw
     subnet_region: cdktf.stringToTerraform(struct!.subnetRegion),
     vpc_id: cdktf.stringToTerraform(struct!.vpcId),
   }
+}
+
+
+export function mwsNetworksGcpNetworkInfoToHclTerraform(struct?: MwsNetworksGcpNetworkInfoOutputReference | MwsNetworksGcpNetworkInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    network_project_id: {
+      value: cdktf.stringToHclTerraform(struct!.networkProjectId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pod_ip_range_name: {
+      value: cdktf.stringToHclTerraform(struct!.podIpRangeName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service_ip_range_name: {
+      value: cdktf.stringToHclTerraform(struct!.serviceIpRangeName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subnet_id: {
+      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subnet_region: {
+      value: cdktf.stringToHclTerraform(struct!.subnetRegion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    vpc_id: {
+      value: cdktf.stringToHclTerraform(struct!.vpcId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MwsNetworksGcpNetworkInfoOutputReference extends cdktf.ComplexObject {
@@ -400,6 +469,31 @@ export function mwsNetworksVpcEndpointsToTerraform(struct?: MwsNetworksVpcEndpoi
     dataplane_relay: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dataplaneRelay),
     rest_api: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.restApi),
   }
+}
+
+
+export function mwsNetworksVpcEndpointsToHclTerraform(struct?: MwsNetworksVpcEndpointsOutputReference | MwsNetworksVpcEndpoints): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dataplane_relay: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dataplaneRelay),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    rest_api: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.restApi),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MwsNetworksVpcEndpointsOutputReference extends cdktf.ComplexObject {
@@ -759,5 +853,91 @@ export class MwsNetworks extends cdktf.TerraformResource {
       gcp_network_info: mwsNetworksGcpNetworkInfoToTerraform(this._gcpNetworkInfo.internalValue),
       vpc_endpoints: mwsNetworksVpcEndpointsToTerraform(this._vpcEndpoints.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      creation_time: {
+        value: cdktf.numberToHclTerraform(this._creationTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      network_id: {
+        value: cdktf.stringToHclTerraform(this._networkId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      network_name: {
+        value: cdktf.stringToHclTerraform(this._networkName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      security_group_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroupIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      subnet_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subnetIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      vpc_id: {
+        value: cdktf.stringToHclTerraform(this._vpcId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vpc_status: {
+        value: cdktf.stringToHclTerraform(this._vpcStatus),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      workspace_id: {
+        value: cdktf.numberToHclTerraform(this._workspaceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      error_messages: {
+        value: cdktf.listMapperHcl(mwsNetworksErrorMessagesToHclTerraform, true)(this._errorMessages.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MwsNetworksErrorMessagesList",
+      },
+      gcp_network_info: {
+        value: mwsNetworksGcpNetworkInfoToHclTerraform(this._gcpNetworkInfo.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MwsNetworksGcpNetworkInfoList",
+      },
+      vpc_endpoints: {
+        value: mwsNetworksVpcEndpointsToHclTerraform(this._vpcEndpoints.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MwsNetworksVpcEndpointsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

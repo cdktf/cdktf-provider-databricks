@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/token
 // generated from terraform resource schema
 
@@ -218,5 +213,49 @@ export class Token extends cdktf.TerraformResource {
       lifetime_seconds: cdktf.numberToTerraform(this._lifetimeSeconds),
       token_id: cdktf.stringToTerraform(this._tokenId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      comment: {
+        value: cdktf.stringToHclTerraform(this._comment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      creation_time: {
+        value: cdktf.numberToHclTerraform(this._creationTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      expiry_time: {
+        value: cdktf.numberToHclTerraform(this._expiryTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      lifetime_seconds: {
+        value: cdktf.numberToHclTerraform(this._lifetimeSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      token_id: {
+        value: cdktf.stringToHclTerraform(this._tokenId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

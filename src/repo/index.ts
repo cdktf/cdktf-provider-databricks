@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/repo
 // generated from terraform resource schema
 
@@ -65,6 +60,25 @@ export function repoSparseCheckoutToTerraform(struct?: RepoSparseCheckoutOutputR
   return {
     patterns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.patterns),
   }
+}
+
+
+export function repoSparseCheckoutToHclTerraform(struct?: RepoSparseCheckoutOutputReference | RepoSparseCheckout): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    patterns: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.patterns),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RepoSparseCheckoutOutputReference extends cdktf.ComplexObject {
@@ -318,5 +332,61 @@ export class Repo extends cdktf.TerraformResource {
       url: cdktf.stringToTerraform(this._url),
       sparse_checkout: repoSparseCheckoutToTerraform(this._sparseCheckout.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      branch: {
+        value: cdktf.stringToHclTerraform(this._branch),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      commit_hash: {
+        value: cdktf.stringToHclTerraform(this._commitHash),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      git_provider: {
+        value: cdktf.stringToHclTerraform(this._gitProvider),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      path: {
+        value: cdktf.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tag: {
+        value: cdktf.stringToHclTerraform(this._tag),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      url: {
+        value: cdktf.stringToHclTerraform(this._url),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sparse_checkout: {
+        value: repoSparseCheckoutToHclTerraform(this._sparseCheckout.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RepoSparseCheckoutList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

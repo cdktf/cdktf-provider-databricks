@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/data-sources/instance_profiles
 // generated from terraform resource schema
 
@@ -56,6 +51,43 @@ export function dataDatabricksInstanceProfilesInstanceProfilesToTerraform(struct
     name: cdktf.stringToTerraform(struct!.name),
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
   }
+}
+
+
+export function dataDatabricksInstanceProfilesInstanceProfilesToHclTerraform(struct?: DataDatabricksInstanceProfilesInstanceProfiles | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    arn: {
+      value: cdktf.stringToHclTerraform(struct!.arn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    is_meta: {
+      value: cdktf.booleanToHclTerraform(struct!.isMeta),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataDatabricksInstanceProfilesInstanceProfilesOutputReference extends cdktf.ComplexObject {
@@ -305,5 +337,25 @@ export class DataDatabricksInstanceProfiles extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       instance_profiles: cdktf.listMapper(dataDatabricksInstanceProfilesInstanceProfilesToTerraform, true)(this._instanceProfiles.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_profiles: {
+        value: cdktf.listMapperHcl(dataDatabricksInstanceProfilesInstanceProfilesToHclTerraform, true)(this._instanceProfiles.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataDatabricksInstanceProfilesInstanceProfilesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

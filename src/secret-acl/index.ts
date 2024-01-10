@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/secret_acl
 // generated from terraform resource schema
 
@@ -160,5 +155,37 @@ export class SecretAcl extends cdktf.TerraformResource {
       principal: cdktf.stringToTerraform(this._principal),
       scope: cdktf.stringToTerraform(this._scope),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      permission: {
+        value: cdktf.stringToHclTerraform(this._permission),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      principal: {
+        value: cdktf.stringToHclTerraform(this._principal),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scope: {
+        value: cdktf.stringToHclTerraform(this._scope),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/git_credential
 // generated from terraform resource schema
 
@@ -188,5 +183,43 @@ export class GitCredential extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       personal_access_token: cdktf.stringToTerraform(this._personalAccessToken),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      force: {
+        value: cdktf.booleanToHclTerraform(this._force),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      git_provider: {
+        value: cdktf.stringToHclTerraform(this._gitProvider),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      git_username: {
+        value: cdktf.stringToHclTerraform(this._gitUsername),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      personal_access_token: {
+        value: cdktf.stringToHclTerraform(this._personalAccessToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

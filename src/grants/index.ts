@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/grants
 // generated from terraform resource schema
 
@@ -98,6 +93,31 @@ export function grantsGrantToTerraform(struct?: GrantsGrant | cdktf.IResolvable)
     principal: cdktf.stringToTerraform(struct!.principal),
     privileges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.privileges),
   }
+}
+
+
+export function grantsGrantToHclTerraform(struct?: GrantsGrant | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    principal: {
+      value: cdktf.stringToHclTerraform(struct!.principal),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    privileges: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.privileges),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GrantsGrantOutputReference extends cdktf.ComplexObject {
@@ -528,5 +548,103 @@ export class Grants extends cdktf.TerraformResource {
       volume: cdktf.stringToTerraform(this._volume),
       grant: cdktf.listMapper(grantsGrantToTerraform, true)(this._grant.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      catalog: {
+        value: cdktf.stringToHclTerraform(this._catalog),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      external_location: {
+        value: cdktf.stringToHclTerraform(this._externalLocation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      foreign_connection: {
+        value: cdktf.stringToHclTerraform(this._foreignConnection),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      function: {
+        value: cdktf.stringToHclTerraform(this._function),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      materialized_view: {
+        value: cdktf.stringToHclTerraform(this._materializedView),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      metastore: {
+        value: cdktf.stringToHclTerraform(this._metastore),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      model: {
+        value: cdktf.stringToHclTerraform(this._model),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      schema: {
+        value: cdktf.stringToHclTerraform(this._schema),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      share: {
+        value: cdktf.stringToHclTerraform(this._share),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      storage_credential: {
+        value: cdktf.stringToHclTerraform(this._storageCredential),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      table: {
+        value: cdktf.stringToHclTerraform(this._table),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      view: {
+        value: cdktf.stringToHclTerraform(this._view),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      volume: {
+        value: cdktf.stringToHclTerraform(this._volume),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      grant: {
+        value: cdktf.listMapperHcl(grantsGrantToHclTerraform, true)(this._grant.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GrantsGrantList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/mws_vpc_endpoint
 // generated from terraform resource schema
 
@@ -97,6 +92,49 @@ export function mwsVpcEndpointGcpVpcEndpointInfoToTerraform(struct?: MwsVpcEndpo
     psc_endpoint_name: cdktf.stringToTerraform(struct!.pscEndpointName),
     service_attachment_id: cdktf.stringToTerraform(struct!.serviceAttachmentId),
   }
+}
+
+
+export function mwsVpcEndpointGcpVpcEndpointInfoToHclTerraform(struct?: MwsVpcEndpointGcpVpcEndpointInfoOutputReference | MwsVpcEndpointGcpVpcEndpointInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    endpoint_region: {
+      value: cdktf.stringToHclTerraform(struct!.endpointRegion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    project_id: {
+      value: cdktf.stringToHclTerraform(struct!.projectId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    psc_connection_id: {
+      value: cdktf.stringToHclTerraform(struct!.pscConnectionId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    psc_endpoint_name: {
+      value: cdktf.stringToHclTerraform(struct!.pscEndpointName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service_attachment_id: {
+      value: cdktf.stringToHclTerraform(struct!.serviceAttachmentId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MwsVpcEndpointGcpVpcEndpointInfoOutputReference extends cdktf.ComplexObject {
@@ -486,5 +524,79 @@ export class MwsVpcEndpoint extends cdktf.TerraformResource {
       vpc_endpoint_name: cdktf.stringToTerraform(this._vpcEndpointName),
       gcp_vpc_endpoint_info: mwsVpcEndpointGcpVpcEndpointInfoToTerraform(this._gcpVpcEndpointInfo.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      aws_account_id: {
+        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      aws_endpoint_service_id: {
+        value: cdktf.stringToHclTerraform(this._awsEndpointServiceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      aws_vpc_endpoint_id: {
+        value: cdktf.stringToHclTerraform(this._awsVpcEndpointId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      state: {
+        value: cdktf.stringToHclTerraform(this._state),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      use_case: {
+        value: cdktf.stringToHclTerraform(this._useCase),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vpc_endpoint_id: {
+        value: cdktf.stringToHclTerraform(this._vpcEndpointId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vpc_endpoint_name: {
+        value: cdktf.stringToHclTerraform(this._vpcEndpointName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      gcp_vpc_endpoint_info: {
+        value: mwsVpcEndpointGcpVpcEndpointInfoToHclTerraform(this._gcpVpcEndpointInfo.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MwsVpcEndpointGcpVpcEndpointInfoList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
