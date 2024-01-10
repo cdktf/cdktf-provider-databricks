@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mwsPrivateAccessSettings.MwsPrivateAccessSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwsprivateaccesssettings"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsprivateaccesssettings"
 
 mwsprivateaccesssettings.NewMwsPrivateAccessSettings(scope Construct, id *string, config MwsPrivateAccessSettingsConfig) MwsPrivateAccessSettings
 ```
@@ -427,7 +427,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.mwsPrivateAccessSettings.MwsPrivateAccessSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwsprivateaccesssettings"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsprivateaccesssettings"
 
 mwsprivateaccesssettings.MwsPrivateAccessSettings_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.mwsPrivateAccessSettings.MwsPrivateAccessSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwsprivateaccesssettings"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsprivateaccesssettings"
 
 mwsprivateaccesssettings.MwsPrivateAccessSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ mwsprivateaccesssettings.MwsPrivateAccessSettings_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.mwsPrivateAccessSettings.MwsPrivateAccessSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwsprivateaccesssettings"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsprivateaccesssettings"
 
 mwsprivateaccesssettings.MwsPrivateAccessSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ mwsprivateaccesssettings.MwsPrivateAccessSettings_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.mwsPrivateAccessSettings.MwsPrivateAccessSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwsprivateaccesssettings"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsprivateaccesssettings"
 
 mwsprivateaccesssettings.MwsPrivateAccessSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -914,7 +914,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mwsPrivateAccessSettings.MwsPrivateAccessSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/mwsprivateaccesssettings"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/mwsprivateaccesssettings"
 
 &mwsprivateaccesssettings.MwsPrivateAccessSettingsConfig {
 	Connection: interface{},
