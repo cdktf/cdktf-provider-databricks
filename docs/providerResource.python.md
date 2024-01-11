@@ -4,7 +4,7 @@
 
 ### ProviderResource <a name="ProviderResource" id="@cdktf/provider-databricks.providerResource.ProviderResource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/provider databricks_provider}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/provider databricks_provider}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.providerResource.ProviderResource.Initializer"></a>
 
@@ -40,11 +40,11 @@ providerResource.ProviderResource(
 | <code><a href="#@cdktf/provider-databricks.providerResource.ProviderResource.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.providerResource.ProviderResource.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.providerResource.ProviderResource.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.providerResource.ProviderResource.Initializer.parameter.authenticationType">authentication_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/provider#authentication_type ProviderResource#authentication_type}. |
-| <code><a href="#@cdktf/provider-databricks.providerResource.ProviderResource.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/provider#name ProviderResource#name}. |
-| <code><a href="#@cdktf/provider-databricks.providerResource.ProviderResource.Initializer.parameter.recipientProfileStr">recipient_profile_str</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/provider#recipient_profile_str ProviderResource#recipient_profile_str}. |
-| <code><a href="#@cdktf/provider-databricks.providerResource.ProviderResource.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/provider#comment ProviderResource#comment}. |
-| <code><a href="#@cdktf/provider-databricks.providerResource.ProviderResource.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/provider#id ProviderResource#id}. |
+| <code><a href="#@cdktf/provider-databricks.providerResource.ProviderResource.Initializer.parameter.authenticationType">authentication_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/provider#authentication_type ProviderResource#authentication_type}. |
+| <code><a href="#@cdktf/provider-databricks.providerResource.ProviderResource.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/provider#name ProviderResource#name}. |
+| <code><a href="#@cdktf/provider-databricks.providerResource.ProviderResource.Initializer.parameter.recipientProfileStr">recipient_profile_str</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/provider#recipient_profile_str ProviderResource#recipient_profile_str}. |
+| <code><a href="#@cdktf/provider-databricks.providerResource.ProviderResource.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/provider#comment ProviderResource#comment}. |
+| <code><a href="#@cdktf/provider-databricks.providerResource.ProviderResource.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/provider#id ProviderResource#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/provider#authentication_type ProviderResource#authentication_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/provider#authentication_type ProviderResource#authentication_type}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/provider#name ProviderResource#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/provider#name ProviderResource#name}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/provider#recipient_profile_str ProviderResource#recipient_profile_str}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/provider#recipient_profile_str ProviderResource#recipient_profile_str}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/provider#comment ProviderResource#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/provider#comment ProviderResource#comment}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/provider#id ProviderResource#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/provider#id ProviderResource#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -634,7 +634,7 @@ The construct id used in the generated config for the ProviderResource to import
 
 The id of the existing ProviderResource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/provider#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/provider#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -973,11 +973,11 @@ providerResource.ProviderResourceConfig(
 | <code><a href="#@cdktf/provider-databricks.providerResource.ProviderResourceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.providerResource.ProviderResourceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.providerResource.ProviderResourceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.providerResource.ProviderResourceConfig.property.authenticationType">authentication_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/provider#authentication_type ProviderResource#authentication_type}. |
-| <code><a href="#@cdktf/provider-databricks.providerResource.ProviderResourceConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/provider#name ProviderResource#name}. |
-| <code><a href="#@cdktf/provider-databricks.providerResource.ProviderResourceConfig.property.recipientProfileStr">recipient_profile_str</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/provider#recipient_profile_str ProviderResource#recipient_profile_str}. |
-| <code><a href="#@cdktf/provider-databricks.providerResource.ProviderResourceConfig.property.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/provider#comment ProviderResource#comment}. |
-| <code><a href="#@cdktf/provider-databricks.providerResource.ProviderResourceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/provider#id ProviderResource#id}. |
+| <code><a href="#@cdktf/provider-databricks.providerResource.ProviderResourceConfig.property.authenticationType">authentication_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/provider#authentication_type ProviderResource#authentication_type}. |
+| <code><a href="#@cdktf/provider-databricks.providerResource.ProviderResourceConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/provider#name ProviderResource#name}. |
+| <code><a href="#@cdktf/provider-databricks.providerResource.ProviderResourceConfig.property.recipientProfileStr">recipient_profile_str</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/provider#recipient_profile_str ProviderResource#recipient_profile_str}. |
+| <code><a href="#@cdktf/provider-databricks.providerResource.ProviderResourceConfig.property.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/provider#comment ProviderResource#comment}. |
+| <code><a href="#@cdktf/provider-databricks.providerResource.ProviderResourceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/provider#id ProviderResource#id}. |
 
 ---
 
@@ -1059,7 +1059,7 @@ authentication_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/provider#authentication_type ProviderResource#authentication_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/provider#authentication_type ProviderResource#authentication_type}.
 
 ---
 
@@ -1071,7 +1071,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/provider#name ProviderResource#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/provider#name ProviderResource#name}.
 
 ---
 
@@ -1083,7 +1083,7 @@ recipient_profile_str: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/provider#recipient_profile_str ProviderResource#recipient_profile_str}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/provider#recipient_profile_str ProviderResource#recipient_profile_str}.
 
 ---
 
@@ -1095,7 +1095,7 @@ comment: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/provider#comment ProviderResource#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/provider#comment ProviderResource#comment}.
 
 ---
 
@@ -1107,7 +1107,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/provider#id ProviderResource#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/provider#id ProviderResource#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
