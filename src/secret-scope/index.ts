@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/secret_scope
 // generated from terraform resource schema
 
