@@ -4,7 +4,7 @@
 
 ### Volume <a name="Volume" id="@cdktf/provider-databricks.volume.Volume"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/volume databricks_volume}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/volume databricks_volume}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.volume.Volume.Initializer"></a>
 
@@ -495,7 +495,7 @@ The construct id used in the generated config for the Volume to import.
 
 The id of the existing Volume that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/volume#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/volume#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -887,14 +887,14 @@ const volumeConfig: volume.VolumeConfig = { ... }
 | <code><a href="#@cdktf/provider-databricks.volume.VolumeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.volume.VolumeConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.volume.VolumeConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.volume.VolumeConfig.property.catalogName">catalogName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/volume#catalog_name Volume#catalog_name}. |
-| <code><a href="#@cdktf/provider-databricks.volume.VolumeConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/volume#name Volume#name}. |
-| <code><a href="#@cdktf/provider-databricks.volume.VolumeConfig.property.schemaName">schemaName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/volume#schema_name Volume#schema_name}. |
-| <code><a href="#@cdktf/provider-databricks.volume.VolumeConfig.property.volumeType">volumeType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/volume#volume_type Volume#volume_type}. |
-| <code><a href="#@cdktf/provider-databricks.volume.VolumeConfig.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/volume#comment Volume#comment}. |
-| <code><a href="#@cdktf/provider-databricks.volume.VolumeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/volume#id Volume#id}. |
-| <code><a href="#@cdktf/provider-databricks.volume.VolumeConfig.property.owner">owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/volume#owner Volume#owner}. |
-| <code><a href="#@cdktf/provider-databricks.volume.VolumeConfig.property.storageLocation">storageLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/volume#storage_location Volume#storage_location}. |
+| <code><a href="#@cdktf/provider-databricks.volume.VolumeConfig.property.catalogName">catalogName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/volume#catalog_name Volume#catalog_name}. |
+| <code><a href="#@cdktf/provider-databricks.volume.VolumeConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/volume#name Volume#name}. |
+| <code><a href="#@cdktf/provider-databricks.volume.VolumeConfig.property.schemaName">schemaName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/volume#schema_name Volume#schema_name}. |
+| <code><a href="#@cdktf/provider-databricks.volume.VolumeConfig.property.volumeType">volumeType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/volume#volume_type Volume#volume_type}. |
+| <code><a href="#@cdktf/provider-databricks.volume.VolumeConfig.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/volume#comment Volume#comment}. |
+| <code><a href="#@cdktf/provider-databricks.volume.VolumeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/volume#id Volume#id}. |
+| <code><a href="#@cdktf/provider-databricks.volume.VolumeConfig.property.owner">owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/volume#owner Volume#owner}. |
+| <code><a href="#@cdktf/provider-databricks.volume.VolumeConfig.property.storageLocation">storageLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/volume#storage_location Volume#storage_location}. |
 
 ---
 
@@ -976,7 +976,7 @@ public readonly catalogName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/volume#catalog_name Volume#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/volume#catalog_name Volume#catalog_name}.
 
 ---
 
@@ -988,7 +988,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/volume#name Volume#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/volume#name Volume#name}.
 
 ---
 
@@ -1000,7 +1000,7 @@ public readonly schemaName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/volume#schema_name Volume#schema_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/volume#schema_name Volume#schema_name}.
 
 ---
 
@@ -1012,7 +1012,7 @@ public readonly volumeType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/volume#volume_type Volume#volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/volume#volume_type Volume#volume_type}.
 
 ---
 
@@ -1024,7 +1024,7 @@ public readonly comment: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/volume#comment Volume#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/volume#comment Volume#comment}.
 
 ---
 
@@ -1036,7 +1036,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/volume#id Volume#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/volume#id Volume#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1051,7 +1051,7 @@ public readonly owner: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/volume#owner Volume#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/volume#owner Volume#owner}.
 
 ---
 
@@ -1063,7 +1063,7 @@ public readonly storageLocation: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/volume#storage_location Volume#storage_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/volume#storage_location Volume#storage_location}.
 
 ---
 

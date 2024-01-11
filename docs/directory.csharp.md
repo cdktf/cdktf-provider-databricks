@@ -4,7 +4,7 @@
 
 ### Directory <a name="Directory" id="@cdktf/provider-databricks.directory.Directory"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/directory databricks_directory}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/directory databricks_directory}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.directory.Directory.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the Directory to import.
 
 The id of the existing Directory that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/directory#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/directory#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -518,6 +518,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.directory.Directory.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.directory.Directory.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.directory.Directory.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.directory.Directory.property.workspacePath">WorkspacePath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.directory.Directory.property.deleteRecursiveInput">DeleteRecursiveInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.directory.Directory.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.directory.Directory.property.objectIdInput">ObjectIdInput</a></code> | <code>double</code> | *No description.* |
@@ -671,6 +672,16 @@ public object[] Provisioners { get; }
 
 ---
 
+##### `WorkspacePath`<sup>Required</sup> <a name="WorkspacePath" id="@cdktf/provider-databricks.directory.Directory.property.workspacePath"></a>
+
+```csharp
+public string WorkspacePath { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DeleteRecursiveInput`<sup>Optional</sup> <a name="DeleteRecursiveInput" id="@cdktf/provider-databricks.directory.Directory.property.deleteRecursiveInput"></a>
 
 ```csharp
@@ -804,10 +815,10 @@ new DirectoryConfig {
 | <code><a href="#@cdktf/provider-databricks.directory.DirectoryConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.directory.DirectoryConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.directory.DirectoryConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.directory.DirectoryConfig.property.path">Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/directory#path Directory#path}. |
-| <code><a href="#@cdktf/provider-databricks.directory.DirectoryConfig.property.deleteRecursive">DeleteRecursive</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/directory#delete_recursive Directory#delete_recursive}. |
-| <code><a href="#@cdktf/provider-databricks.directory.DirectoryConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/directory#id Directory#id}. |
-| <code><a href="#@cdktf/provider-databricks.directory.DirectoryConfig.property.objectId">ObjectId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/directory#object_id Directory#object_id}. |
+| <code><a href="#@cdktf/provider-databricks.directory.DirectoryConfig.property.path">Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/directory#path Directory#path}. |
+| <code><a href="#@cdktf/provider-databricks.directory.DirectoryConfig.property.deleteRecursive">DeleteRecursive</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/directory#delete_recursive Directory#delete_recursive}. |
+| <code><a href="#@cdktf/provider-databricks.directory.DirectoryConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/directory#id Directory#id}. |
+| <code><a href="#@cdktf/provider-databricks.directory.DirectoryConfig.property.objectId">ObjectId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/directory#object_id Directory#object_id}. |
 
 ---
 
@@ -889,7 +900,7 @@ public string Path { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/directory#path Directory#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/directory#path Directory#path}.
 
 ---
 
@@ -901,7 +912,7 @@ public object DeleteRecursive { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/directory#delete_recursive Directory#delete_recursive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/directory#delete_recursive Directory#delete_recursive}.
 
 ---
 
@@ -913,7 +924,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/directory#id Directory#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/directory#id Directory#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -928,7 +939,7 @@ public double ObjectId { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.33.0/docs/resources/directory#object_id Directory#object_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/directory#object_id Directory#object_id}.
 
 ---
 
