@@ -4,12 +4,12 @@
 
 ### ArtifactAllowlist <a name="ArtifactAllowlist" id="@cdktf/provider-databricks.artifactAllowlist.ArtifactAllowlist"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/artifact_allowlist databricks_artifact_allowlist}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/artifact_allowlist databricks_artifact_allowlist}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.artifactAllowlist.ArtifactAllowlist.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/artifactallowlist"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/artifactallowlist"
 
 artifactallowlist.NewArtifactAllowlist(scope Construct, id *string, config ArtifactAllowlistConfig) ArtifactAllowlist
 ```
@@ -419,7 +419,7 @@ func ResetMetastoreId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.artifactAllowlist.ArtifactAllowlist.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/artifactallowlist"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/artifactallowlist"
 
 artifactallowlist.ArtifactAllowlist_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.artifactAllowlist.ArtifactAllowlist.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/artifactallowlist"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/artifactallowlist"
 
 artifactallowlist.ArtifactAllowlist_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ artifactallowlist.ArtifactAllowlist_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.artifactAllowlist.ArtifactAllowlist.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/artifactallowlist"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/artifactallowlist"
 
 artifactallowlist.ArtifactAllowlist_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ artifactallowlist.ArtifactAllowlist_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.artifactAllowlist.ArtifactAllowlist.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/artifactallowlist"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/artifactallowlist"
 
 artifactallowlist.ArtifactAllowlist_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -508,7 +508,7 @@ The construct id used in the generated config for the ArtifactAllowlist to impor
 
 The id of the existing ArtifactAllowlist that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/artifact_allowlist#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/artifact_allowlist#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -840,7 +840,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.artifactAllowlist.ArtifactAllowlistArtifactMatcher.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/artifactallowlist"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/artifactallowlist"
 
 &artifactallowlist.ArtifactAllowlistArtifactMatcher {
 	Artifact: *string,
@@ -852,8 +852,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/artifactall
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.artifactAllowlist.ArtifactAllowlistArtifactMatcher.property.artifact">Artifact</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/artifact_allowlist#artifact ArtifactAllowlist#artifact}. |
-| <code><a href="#@cdktf/provider-databricks.artifactAllowlist.ArtifactAllowlistArtifactMatcher.property.matchType">MatchType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/artifact_allowlist#match_type ArtifactAllowlist#match_type}. |
+| <code><a href="#@cdktf/provider-databricks.artifactAllowlist.ArtifactAllowlistArtifactMatcher.property.artifact">Artifact</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/artifact_allowlist#artifact ArtifactAllowlist#artifact}. |
+| <code><a href="#@cdktf/provider-databricks.artifactAllowlist.ArtifactAllowlistArtifactMatcher.property.matchType">MatchType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/artifact_allowlist#match_type ArtifactAllowlist#match_type}. |
 
 ---
 
@@ -865,7 +865,7 @@ Artifact *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/artifact_allowlist#artifact ArtifactAllowlist#artifact}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/artifact_allowlist#artifact ArtifactAllowlist#artifact}.
 
 ---
 
@@ -877,7 +877,7 @@ MatchType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/artifact_allowlist#match_type ArtifactAllowlist#match_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/artifact_allowlist#match_type ArtifactAllowlist#match_type}.
 
 ---
 
@@ -886,7 +886,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.artifactAllowlist.ArtifactAllowlistConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/artifactallowlist"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/artifactallowlist"
 
 &artifactallowlist.ArtifactAllowlistConfig {
 	Connection: interface{},
@@ -917,11 +917,11 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/artifactall
 | <code><a href="#@cdktf/provider-databricks.artifactAllowlist.ArtifactAllowlistConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.artifactAllowlist.ArtifactAllowlistConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.artifactAllowlist.ArtifactAllowlistConfig.property.artifactMatcher">ArtifactMatcher</a></code> | <code>interface{}</code> | artifact_matcher block. |
-| <code><a href="#@cdktf/provider-databricks.artifactAllowlist.ArtifactAllowlistConfig.property.artifactType">ArtifactType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/artifact_allowlist#artifact_type ArtifactAllowlist#artifact_type}. |
-| <code><a href="#@cdktf/provider-databricks.artifactAllowlist.ArtifactAllowlistConfig.property.createdAt">CreatedAt</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/artifact_allowlist#created_at ArtifactAllowlist#created_at}. |
-| <code><a href="#@cdktf/provider-databricks.artifactAllowlist.ArtifactAllowlistConfig.property.createdBy">CreatedBy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/artifact_allowlist#created_by ArtifactAllowlist#created_by}. |
-| <code><a href="#@cdktf/provider-databricks.artifactAllowlist.ArtifactAllowlistConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/artifact_allowlist#id ArtifactAllowlist#id}. |
-| <code><a href="#@cdktf/provider-databricks.artifactAllowlist.ArtifactAllowlistConfig.property.metastoreId">MetastoreId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/artifact_allowlist#metastore_id ArtifactAllowlist#metastore_id}. |
+| <code><a href="#@cdktf/provider-databricks.artifactAllowlist.ArtifactAllowlistConfig.property.artifactType">ArtifactType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/artifact_allowlist#artifact_type ArtifactAllowlist#artifact_type}. |
+| <code><a href="#@cdktf/provider-databricks.artifactAllowlist.ArtifactAllowlistConfig.property.createdAt">CreatedAt</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/artifact_allowlist#created_at ArtifactAllowlist#created_at}. |
+| <code><a href="#@cdktf/provider-databricks.artifactAllowlist.ArtifactAllowlistConfig.property.createdBy">CreatedBy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/artifact_allowlist#created_by ArtifactAllowlist#created_by}. |
+| <code><a href="#@cdktf/provider-databricks.artifactAllowlist.ArtifactAllowlistConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/artifact_allowlist#id ArtifactAllowlist#id}. |
+| <code><a href="#@cdktf/provider-databricks.artifactAllowlist.ArtifactAllowlistConfig.property.metastoreId">MetastoreId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/artifact_allowlist#metastore_id ArtifactAllowlist#metastore_id}. |
 
 ---
 
@@ -1005,7 +1005,7 @@ ArtifactMatcher interface{}
 
 artifact_matcher block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/artifact_allowlist#artifact_matcher ArtifactAllowlist#artifact_matcher}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/artifact_allowlist#artifact_matcher ArtifactAllowlist#artifact_matcher}
 
 ---
 
@@ -1017,7 +1017,7 @@ ArtifactType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/artifact_allowlist#artifact_type ArtifactAllowlist#artifact_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/artifact_allowlist#artifact_type ArtifactAllowlist#artifact_type}.
 
 ---
 
@@ -1029,7 +1029,7 @@ CreatedAt *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/artifact_allowlist#created_at ArtifactAllowlist#created_at}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/artifact_allowlist#created_at ArtifactAllowlist#created_at}.
 
 ---
 
@@ -1041,7 +1041,7 @@ CreatedBy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/artifact_allowlist#created_by ArtifactAllowlist#created_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/artifact_allowlist#created_by ArtifactAllowlist#created_by}.
 
 ---
 
@@ -1053,7 +1053,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/artifact_allowlist#id ArtifactAllowlist#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/artifact_allowlist#id ArtifactAllowlist#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1068,7 +1068,7 @@ MetastoreId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/artifact_allowlist#metastore_id ArtifactAllowlist#metastore_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/artifact_allowlist#metastore_id ArtifactAllowlist#metastore_id}.
 
 ---
 
@@ -1079,7 +1079,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.artifactAllowlist.ArtifactAllowlistArtifactMatcherList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/artifactallowlist"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/artifactallowlist"
 
 artifactallowlist.NewArtifactAllowlistArtifactMatcherList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ArtifactAllowlistArtifactMatcherList
 ```
@@ -1239,7 +1239,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.artifactAllowlist.ArtifactAllowlistArtifactMatcherOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/artifactallowlist"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/artifactallowlist"
 
 artifactallowlist.NewArtifactAllowlistArtifactMatcherOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ArtifactAllowlistArtifactMatcherOutputReference
 ```

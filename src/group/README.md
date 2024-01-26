@@ -1,3 +1,3 @@
 # `databricks_group`
 
-Refer to the Terraform Registry for docs: [`databricks_group`](https://registry.terraform.io/providers/databricks/databricks/1.34.0/docs/resources/group).
+Refer to the Terraform Registry for docs: [`databricks_group`](https://registry.terraform.io/providers/databricks/databricks/1.35.0/docs/resources/group).
