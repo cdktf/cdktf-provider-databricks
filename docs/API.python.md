@@ -53,6 +53,7 @@ The following submodules are available:
 - [dataDatabricksTables](./dataDatabricksTables.python.md)
 - [dataDatabricksUser](./dataDatabricksUser.python.md)
 - [dataDatabricksViews](./dataDatabricksViews.python.md)
+- [dataDatabricksVolumes](./dataDatabricksVolumes.python.md)
 - [dataDatabricksZones](./dataDatabricksZones.python.md)
 - [dbfsFile](./dbfsFile.python.md)
 - [defaultNamespaceSetting](./defaultNamespaceSetting.python.md)

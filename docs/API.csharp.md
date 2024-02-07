@@ -53,6 +53,7 @@ The following submodules are available:
 - [dataDatabricksTables](./dataDatabricksTables.csharp.md)
 - [dataDatabricksUser](./dataDatabricksUser.csharp.md)
 - [dataDatabricksViews](./dataDatabricksViews.csharp.md)
+- [dataDatabricksVolumes](./dataDatabricksVolumes.csharp.md)
 - [dataDatabricksZones](./dataDatabricksZones.csharp.md)
 - [dbfsFile](./dbfsFile.csharp.md)
 - [defaultNamespaceSetting](./defaultNamespaceSetting.csharp.md)

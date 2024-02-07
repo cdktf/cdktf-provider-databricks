@@ -53,6 +53,7 @@ The following submodules are available:
 - [dataDatabricksTables](./dataDatabricksTables.go.md)
 - [dataDatabricksUser](./dataDatabricksUser.go.md)
 - [dataDatabricksViews](./dataDatabricksViews.go.md)
+- [dataDatabricksVolumes](./dataDatabricksVolumes.go.md)
 - [dataDatabricksZones](./dataDatabricksZones.go.md)
 - [dbfsFile](./dbfsFile.go.md)
 - [defaultNamespaceSetting](./defaultNamespaceSetting.go.md)

@@ -124,6 +124,7 @@ export * as dataDatabricksSqlWarehouses from './data-databricks-sql-warehouses';
 export * as dataDatabricksTables from './data-databricks-tables';
 export * as dataDatabricksUser from './data-databricks-user';
 export * as dataDatabricksViews from './data-databricks-views';
+export * as dataDatabricksVolumes from './data-databricks-volumes';
 export * as dataDatabricksZones from './data-databricks-zones';
 export * as provider from './provider';
 

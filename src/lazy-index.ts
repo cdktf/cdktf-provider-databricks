@@ -124,6 +124,7 @@ Object.defineProperty(exports, 'dataDatabricksSqlWarehouses', { get: function ()
 Object.defineProperty(exports, 'dataDatabricksTables', { get: function () { return require('./data-databricks-tables'); } });
 Object.defineProperty(exports, 'dataDatabricksUser', { get: function () { return require('./data-databricks-user'); } });
 Object.defineProperty(exports, 'dataDatabricksViews', { get: function () { return require('./data-databricks-views'); } });
+Object.defineProperty(exports, 'dataDatabricksVolumes', { get: function () { return require('./data-databricks-volumes'); } });
 Object.defineProperty(exports, 'dataDatabricksZones', { get: function () { return require('./data-databricks-zones'); } });
 Object.defineProperty(exports, 'provider', { get: function () { return require('./provider'); } });
 
