@@ -53,6 +53,7 @@ The following submodules are available:
 - [dataDatabricksTables](./dataDatabricksTables.typescript.md)
 - [dataDatabricksUser](./dataDatabricksUser.typescript.md)
 - [dataDatabricksViews](./dataDatabricksViews.typescript.md)
+- [dataDatabricksVolumes](./dataDatabricksVolumes.typescript.md)
 - [dataDatabricksZones](./dataDatabricksZones.typescript.md)
 - [dbfsFile](./dbfsFile.typescript.md)
 - [defaultNamespaceSetting](./defaultNamespaceSetting.typescript.md)

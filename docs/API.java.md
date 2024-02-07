@@ -53,6 +53,7 @@ The following submodules are available:
 - [dataDatabricksTables](./dataDatabricksTables.java.md)
 - [dataDatabricksUser](./dataDatabricksUser.java.md)
 - [dataDatabricksViews](./dataDatabricksViews.java.md)
+- [dataDatabricksVolumes](./dataDatabricksVolumes.java.md)
 - [dataDatabricksZones](./dataDatabricksZones.java.md)
 - [dbfsFile](./dbfsFile.java.md)
 - [defaultNamespaceSetting](./defaultNamespaceSetting.java.md)
