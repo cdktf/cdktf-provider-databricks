@@ -18,6 +18,7 @@ The following submodules are available:
 - [dataDatabricksAwsAssumeRolePolicy](./dataDatabricksAwsAssumeRolePolicy.java.md)
 - [dataDatabricksAwsBucketPolicy](./dataDatabricksAwsBucketPolicy.java.md)
 - [dataDatabricksAwsCrossaccountPolicy](./dataDatabricksAwsCrossaccountPolicy.java.md)
+- [dataDatabricksAwsUnityCatalogPolicy](./dataDatabricksAwsUnityCatalogPolicy.java.md)
 - [dataDatabricksCatalogs](./dataDatabricksCatalogs.java.md)
 - [dataDatabricksCluster](./dataDatabricksCluster.java.md)
 - [dataDatabricksClusterPolicy](./dataDatabricksClusterPolicy.java.md)

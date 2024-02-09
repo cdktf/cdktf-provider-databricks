@@ -18,6 +18,7 @@ The following submodules are available:
 - [dataDatabricksAwsAssumeRolePolicy](./dataDatabricksAwsAssumeRolePolicy.python.md)
 - [dataDatabricksAwsBucketPolicy](./dataDatabricksAwsBucketPolicy.python.md)
 - [dataDatabricksAwsCrossaccountPolicy](./dataDatabricksAwsCrossaccountPolicy.python.md)
+- [dataDatabricksAwsUnityCatalogPolicy](./dataDatabricksAwsUnityCatalogPolicy.python.md)
 - [dataDatabricksCatalogs](./dataDatabricksCatalogs.python.md)
 - [dataDatabricksCluster](./dataDatabricksCluster.python.md)
 - [dataDatabricksClusterPolicy](./dataDatabricksClusterPolicy.python.md)
