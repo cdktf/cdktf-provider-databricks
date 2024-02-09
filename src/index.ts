@@ -89,6 +89,7 @@ export * as workspaceFile from './workspace-file';
 export * as dataDatabricksAwsAssumeRolePolicy from './data-databricks-aws-assume-role-policy';
 export * as dataDatabricksAwsBucketPolicy from './data-databricks-aws-bucket-policy';
 export * as dataDatabricksAwsCrossaccountPolicy from './data-databricks-aws-crossaccount-policy';
+export * as dataDatabricksAwsUnityCatalogPolicy from './data-databricks-aws-unity-catalog-policy';
 export * as dataDatabricksCatalogs from './data-databricks-catalogs';
 export * as dataDatabricksCluster from './data-databricks-cluster';
 export * as dataDatabricksClusterPolicy from './data-databricks-cluster-policy';

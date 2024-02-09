@@ -89,6 +89,7 @@ Object.defineProperty(exports, 'workspaceFile', { get: function () { return requ
 Object.defineProperty(exports, 'dataDatabricksAwsAssumeRolePolicy', { get: function () { return require('./data-databricks-aws-assume-role-policy'); } });
 Object.defineProperty(exports, 'dataDatabricksAwsBucketPolicy', { get: function () { return require('./data-databricks-aws-bucket-policy'); } });
 Object.defineProperty(exports, 'dataDatabricksAwsCrossaccountPolicy', { get: function () { return require('./data-databricks-aws-crossaccount-policy'); } });
+Object.defineProperty(exports, 'dataDatabricksAwsUnityCatalogPolicy', { get: function () { return require('./data-databricks-aws-unity-catalog-policy'); } });
 Object.defineProperty(exports, 'dataDatabricksCatalogs', { get: function () { return require('./data-databricks-catalogs'); } });
 Object.defineProperty(exports, 'dataDatabricksCluster', { get: function () { return require('./data-databricks-cluster'); } });
 Object.defineProperty(exports, 'dataDatabricksClusterPolicy', { get: function () { return require('./data-databricks-cluster-policy'); } });
