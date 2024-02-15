@@ -1,3 +1,3 @@
 # `data_databricks_clusters`
 
-Refer to the Terraform Registry for docs: [`data_databricks_clusters`](https://registry.terraform.io/providers/databricks/databricks/1.36.2/docs/data-sources/clusters).
+Refer to the Terraform Registry for docs: [`data_databricks_clusters`](https://registry.terraform.io/providers/databricks/databricks/1.36.3/docs/data-sources/clusters).

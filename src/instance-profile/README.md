@@ -1,3 +1,3 @@
 # `databricks_instance_profile`
 
-Refer to the Terraform Registry for docs: [`databricks_instance_profile`](https://registry.terraform.io/providers/databricks/databricks/1.36.2/docs/resources/instance_profile).
+Refer to the Terraform Registry for docs: [`databricks_instance_profile`](https://registry.terraform.io/providers/databricks/databricks/1.36.3/docs/resources/instance_profile).
