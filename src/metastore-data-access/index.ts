@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/databricks/databricks/1.37.0/docs/resources/metastore_data_access
 // generated from terraform resource schema
 
