@@ -104,6 +104,7 @@ The following submodules are available:
 - [recipient](./recipient.go.md)
 - [registeredModel](./registeredModel.go.md)
 - [repo](./repo.go.md)
+- [restrictWorkspaceAdminsSetting](./restrictWorkspaceAdminsSetting.go.md)
 - [schema](./schema.go.md)
 - [secret](./secret.go.md)
 - [secretAcl](./secretAcl.go.md)

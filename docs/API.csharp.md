@@ -104,6 +104,7 @@ The following submodules are available:
 - [recipient](./recipient.csharp.md)
 - [registeredModel](./registeredModel.csharp.md)
 - [repo](./repo.csharp.md)
+- [restrictWorkspaceAdminsSetting](./restrictWorkspaceAdminsSetting.csharp.md)
 - [schema](./schema.csharp.md)
 - [secret](./secret.csharp.md)
 - [secretAcl](./secretAcl.csharp.md)

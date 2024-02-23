@@ -104,6 +104,7 @@ The following submodules are available:
 - [recipient](./recipient.java.md)
 - [registeredModel](./registeredModel.java.md)
 - [repo](./repo.java.md)
+- [restrictWorkspaceAdminsSetting](./restrictWorkspaceAdminsSetting.java.md)
 - [schema](./schema.java.md)
 - [secret](./secret.java.md)
 - [secretAcl](./secretAcl.java.md)
