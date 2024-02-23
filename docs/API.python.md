@@ -104,6 +104,7 @@ The following submodules are available:
 - [recipient](./recipient.python.md)
 - [registeredModel](./registeredModel.python.md)
 - [repo](./repo.python.md)
+- [restrictWorkspaceAdminsSetting](./restrictWorkspaceAdminsSetting.python.md)
 - [schema](./schema.python.md)
 - [secret](./secret.python.md)
 - [secretAcl](./secretAcl.python.md)

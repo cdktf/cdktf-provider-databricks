@@ -104,6 +104,7 @@ The following submodules are available:
 - [recipient](./recipient.typescript.md)
 - [registeredModel](./registeredModel.typescript.md)
 - [repo](./repo.typescript.md)
+- [restrictWorkspaceAdminsSetting](./restrictWorkspaceAdminsSetting.typescript.md)
 - [schema](./schema.typescript.md)
 - [secret](./secret.typescript.md)
 - [secretAcl](./secretAcl.typescript.md)

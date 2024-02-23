@@ -60,6 +60,7 @@ Object.defineProperty(exports, 'providerResource', { get: function () { return r
 Object.defineProperty(exports, 'recipient', { get: function () { return require('./recipient'); } });
 Object.defineProperty(exports, 'registeredModel', { get: function () { return require('./registered-model'); } });
 Object.defineProperty(exports, 'repo', { get: function () { return require('./repo'); } });
+Object.defineProperty(exports, 'restrictWorkspaceAdminsSetting', { get: function () { return require('./restrict-workspace-admins-setting'); } });
 Object.defineProperty(exports, 'schema', { get: function () { return require('./schema'); } });
 Object.defineProperty(exports, 'secret', { get: function () { return require('./secret'); } });
 Object.defineProperty(exports, 'secretAcl', { get: function () { return require('./secret-acl'); } });

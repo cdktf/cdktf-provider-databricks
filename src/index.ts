@@ -60,6 +60,7 @@ export * as providerResource from './provider-resource';
 export * as recipient from './recipient';
 export * as registeredModel from './registered-model';
 export * as repo from './repo';
+export * as restrictWorkspaceAdminsSetting from './restrict-workspace-admins-setting';
 export * as schema from './schema';
 export * as secret from './secret';
 export * as secretAcl from './secret-acl';
