@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickszones"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickszones"
 
 datadatabrickszones.NewDataDatabricksZones(scope Construct, id *string, config DataDatabricksZonesConfig) DataDatabricksZones
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickszones"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickszones"
 
 datadatabrickszones.DataDatabricksZones_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickszones"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickszones"
 
 datadatabrickszones.DataDatabricksZones_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datadatabrickszones.DataDatabricksZones_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickszones"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickszones"
 
 datadatabrickszones.DataDatabricksZones_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datadatabrickszones.DataDatabricksZones_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickszones"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickszones"
 
 datadatabrickszones.DataDatabricksZones_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -594,7 +594,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZonesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickszones"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickszones"
 
 &datadatabrickszones.DataDatabricksZonesConfig {
 	Connection: interface{},
