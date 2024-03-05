@@ -4,12 +4,12 @@
 
 ### DataDatabricksDirectory <a name="DataDatabricksDirectory" id="@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/data-sources/directory databricks_directory}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/data-sources/directory databricks_directory}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksdirectory"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdirectory"
 
 datadatabricksdirectory.NewDataDatabricksDirectory(scope Construct, id *string, config DataDatabricksDirectoryConfig) DataDatabricksDirectory
 ```
@@ -290,7 +290,7 @@ func ResetObjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksdirectory"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdirectory"
 
 datadatabricksdirectory.DataDatabricksDirectory_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksdirectory"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdirectory"
 
 datadatabricksdirectory.DataDatabricksDirectory_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datadatabricksdirectory.DataDatabricksDirectory_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksdirectory"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdirectory"
 
 datadatabricksdirectory.DataDatabricksDirectory_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datadatabricksdirectory.DataDatabricksDirectory_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksdirectory"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdirectory"
 
 datadatabricksdirectory.DataDatabricksDirectory_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataDatabricksDirectory to
 
 The id of the existing DataDatabricksDirectory that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/data-sources/directory#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/data-sources/directory#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksdirectory"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdirectory"
 
 &datadatabricksdirectory.DataDatabricksDirectoryConfig {
 	Connection: interface{},
@@ -661,9 +661,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabri
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryConfig.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/data-sources/directory#path DataDatabricksDirectory#path}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/data-sources/directory#id DataDatabricksDirectory#id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryConfig.property.objectId">ObjectId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/data-sources/directory#object_id DataDatabricksDirectory#object_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryConfig.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/data-sources/directory#path DataDatabricksDirectory#path}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/data-sources/directory#id DataDatabricksDirectory#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryConfig.property.objectId">ObjectId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/data-sources/directory#object_id DataDatabricksDirectory#object_id}. |
 
 ---
 
@@ -745,7 +745,7 @@ Path *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/data-sources/directory#path DataDatabricksDirectory#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/data-sources/directory#path DataDatabricksDirectory#path}.
 
 ---
 
@@ -757,7 +757,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/data-sources/directory#id DataDatabricksDirectory#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/data-sources/directory#id DataDatabricksDirectory#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -772,7 +772,7 @@ ObjectId *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/data-sources/directory#object_id DataDatabricksDirectory#object_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/data-sources/directory#object_id DataDatabricksDirectory#object_id}.
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### Cluster <a name="Cluster" id="@cdktf/provider-databricks.cluster.Cluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster databricks_cluster}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster databricks_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.Cluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewCluster(scope Construct, id *string, config ClusterConfig) Cluster
 ```
@@ -752,7 +752,7 @@ func ResetWorkloadType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.cluster.Cluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.Cluster_IsConstruct(x interface{}) *bool
 ```
@@ -784,7 +784,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.cluster.Cluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.Cluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -798,7 +798,7 @@ cluster.Cluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.cluster.Cluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.Cluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -812,7 +812,7 @@ cluster.Cluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.cluster.Cluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.Cluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -841,7 +841,7 @@ The construct id used in the generated config for the Cluster to import.
 
 The id of the existing Cluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1833,7 +1833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.cluster.ClusterAutoscale.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 &cluster.ClusterAutoscale {
 	MaxWorkers: *f64,
@@ -1845,8 +1845,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAutoscale.property.maxWorkers">MaxWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#max_workers Cluster#max_workers}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAutoscale.property.minWorkers">MinWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#min_workers Cluster#min_workers}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAutoscale.property.maxWorkers">MaxWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#max_workers Cluster#max_workers}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAutoscale.property.minWorkers">MinWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#min_workers Cluster#min_workers}. |
 
 ---
 
@@ -1858,7 +1858,7 @@ MaxWorkers *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#max_workers Cluster#max_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#max_workers Cluster#max_workers}.
 
 ---
 
@@ -1870,7 +1870,7 @@ MinWorkers *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#min_workers Cluster#min_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#min_workers Cluster#min_workers}.
 
 ---
 
@@ -1879,7 +1879,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.cluster.ClusterAwsAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 &cluster.ClusterAwsAttributes {
 	Availability: *string,
@@ -1899,16 +1899,16 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAwsAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#availability Cluster#availability}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAwsAttributes.property.ebsVolumeCount">EbsVolumeCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#ebs_volume_count Cluster#ebs_volume_count}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAwsAttributes.property.ebsVolumeIops">EbsVolumeIops</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#ebs_volume_iops Cluster#ebs_volume_iops}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAwsAttributes.property.ebsVolumeSize">EbsVolumeSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#ebs_volume_size Cluster#ebs_volume_size}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAwsAttributes.property.ebsVolumeThroughput">EbsVolumeThroughput</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#ebs_volume_throughput Cluster#ebs_volume_throughput}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAwsAttributes.property.ebsVolumeType">EbsVolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#ebs_volume_type Cluster#ebs_volume_type}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAwsAttributes.property.firstOnDemand">FirstOnDemand</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#first_on_demand Cluster#first_on_demand}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAwsAttributes.property.instanceProfileArn">InstanceProfileArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#instance_profile_arn Cluster#instance_profile_arn}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAwsAttributes.property.spotBidPricePercent">SpotBidPricePercent</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#spot_bid_price_percent Cluster#spot_bid_price_percent}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAwsAttributes.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#zone_id Cluster#zone_id}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAwsAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#availability Cluster#availability}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAwsAttributes.property.ebsVolumeCount">EbsVolumeCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#ebs_volume_count Cluster#ebs_volume_count}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAwsAttributes.property.ebsVolumeIops">EbsVolumeIops</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#ebs_volume_iops Cluster#ebs_volume_iops}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAwsAttributes.property.ebsVolumeSize">EbsVolumeSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#ebs_volume_size Cluster#ebs_volume_size}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAwsAttributes.property.ebsVolumeThroughput">EbsVolumeThroughput</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#ebs_volume_throughput Cluster#ebs_volume_throughput}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAwsAttributes.property.ebsVolumeType">EbsVolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#ebs_volume_type Cluster#ebs_volume_type}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAwsAttributes.property.firstOnDemand">FirstOnDemand</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#first_on_demand Cluster#first_on_demand}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAwsAttributes.property.instanceProfileArn">InstanceProfileArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#instance_profile_arn Cluster#instance_profile_arn}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAwsAttributes.property.spotBidPricePercent">SpotBidPricePercent</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#spot_bid_price_percent Cluster#spot_bid_price_percent}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAwsAttributes.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#zone_id Cluster#zone_id}. |
 
 ---
 
@@ -1920,7 +1920,7 @@ Availability *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#availability Cluster#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#availability Cluster#availability}.
 
 ---
 
@@ -1932,7 +1932,7 @@ EbsVolumeCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#ebs_volume_count Cluster#ebs_volume_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#ebs_volume_count Cluster#ebs_volume_count}.
 
 ---
 
@@ -1944,7 +1944,7 @@ EbsVolumeIops *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#ebs_volume_iops Cluster#ebs_volume_iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#ebs_volume_iops Cluster#ebs_volume_iops}.
 
 ---
 
@@ -1956,7 +1956,7 @@ EbsVolumeSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#ebs_volume_size Cluster#ebs_volume_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#ebs_volume_size Cluster#ebs_volume_size}.
 
 ---
 
@@ -1968,7 +1968,7 @@ EbsVolumeThroughput *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#ebs_volume_throughput Cluster#ebs_volume_throughput}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#ebs_volume_throughput Cluster#ebs_volume_throughput}.
 
 ---
 
@@ -1980,7 +1980,7 @@ EbsVolumeType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#ebs_volume_type Cluster#ebs_volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#ebs_volume_type Cluster#ebs_volume_type}.
 
 ---
 
@@ -1992,7 +1992,7 @@ FirstOnDemand *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#first_on_demand Cluster#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#first_on_demand Cluster#first_on_demand}.
 
 ---
 
@@ -2004,7 +2004,7 @@ InstanceProfileArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#instance_profile_arn Cluster#instance_profile_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#instance_profile_arn Cluster#instance_profile_arn}.
 
 ---
 
@@ -2016,7 +2016,7 @@ SpotBidPricePercent *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#spot_bid_price_percent Cluster#spot_bid_price_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#spot_bid_price_percent Cluster#spot_bid_price_percent}.
 
 ---
 
@@ -2028,7 +2028,7 @@ ZoneId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#zone_id Cluster#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#zone_id Cluster#zone_id}.
 
 ---
 
@@ -2037,12 +2037,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.cluster.ClusterAzureAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 &cluster.ClusterAzureAttributes {
 	Availability: *string,
 	FirstOnDemand: *f64,
-	LogAnalyticsInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.cluster.ClusterAzureAttributesLogAnalyticsInfo,
+	LogAnalyticsInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks.cluster.ClusterAzureAttributesLogAnalyticsInfo,
 	SpotBidMaxPrice: *f64,
 }
 ```
@@ -2051,10 +2051,10 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAzureAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#availability Cluster#availability}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAzureAttributes.property.firstOnDemand">FirstOnDemand</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#first_on_demand Cluster#first_on_demand}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAzureAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#availability Cluster#availability}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAzureAttributes.property.firstOnDemand">FirstOnDemand</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#first_on_demand Cluster#first_on_demand}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterAzureAttributes.property.logAnalyticsInfo">LogAnalyticsInfo</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterAzureAttributesLogAnalyticsInfo">ClusterAzureAttributesLogAnalyticsInfo</a></code> | log_analytics_info block. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAzureAttributes.property.spotBidMaxPrice">SpotBidMaxPrice</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#spot_bid_max_price Cluster#spot_bid_max_price}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAzureAttributes.property.spotBidMaxPrice">SpotBidMaxPrice</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#spot_bid_max_price Cluster#spot_bid_max_price}. |
 
 ---
 
@@ -2066,7 +2066,7 @@ Availability *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#availability Cluster#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#availability Cluster#availability}.
 
 ---
 
@@ -2078,7 +2078,7 @@ FirstOnDemand *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#first_on_demand Cluster#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#first_on_demand Cluster#first_on_demand}.
 
 ---
 
@@ -2092,7 +2092,7 @@ LogAnalyticsInfo ClusterAzureAttributesLogAnalyticsInfo
 
 log_analytics_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#log_analytics_info Cluster#log_analytics_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#log_analytics_info Cluster#log_analytics_info}
 
 ---
 
@@ -2104,7 +2104,7 @@ SpotBidMaxPrice *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#spot_bid_max_price Cluster#spot_bid_max_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#spot_bid_max_price Cluster#spot_bid_max_price}.
 
 ---
 
@@ -2113,7 +2113,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.cluster.ClusterAzureAttributesLogAnalyticsInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 &cluster.ClusterAzureAttributesLogAnalyticsInfo {
 	LogAnalyticsPrimaryKey: *string,
@@ -2125,8 +2125,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAzureAttributesLogAnalyticsInfo.property.logAnalyticsPrimaryKey">LogAnalyticsPrimaryKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#log_analytics_primary_key Cluster#log_analytics_primary_key}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAzureAttributesLogAnalyticsInfo.property.logAnalyticsWorkspaceId">LogAnalyticsWorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#log_analytics_workspace_id Cluster#log_analytics_workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAzureAttributesLogAnalyticsInfo.property.logAnalyticsPrimaryKey">LogAnalyticsPrimaryKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#log_analytics_primary_key Cluster#log_analytics_primary_key}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterAzureAttributesLogAnalyticsInfo.property.logAnalyticsWorkspaceId">LogAnalyticsWorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#log_analytics_workspace_id Cluster#log_analytics_workspace_id}. |
 
 ---
 
@@ -2138,7 +2138,7 @@ LogAnalyticsPrimaryKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#log_analytics_primary_key Cluster#log_analytics_primary_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#log_analytics_primary_key Cluster#log_analytics_primary_key}.
 
 ---
 
@@ -2150,7 +2150,7 @@ LogAnalyticsWorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#log_analytics_workspace_id Cluster#log_analytics_workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#log_analytics_workspace_id Cluster#log_analytics_workspace_id}.
 
 ---
 
@@ -2159,11 +2159,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.cluster.ClusterClusterLogConf.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 &cluster.ClusterClusterLogConf {
-	Dbfs: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.cluster.ClusterClusterLogConfDbfs,
-	S3: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.cluster.ClusterClusterLogConfS3,
+	Dbfs: github.com/cdktf/cdktf-provider-databricks-go/databricks.cluster.ClusterClusterLogConfDbfs,
+	S3: github.com/cdktf/cdktf-provider-databricks-go/databricks.cluster.ClusterClusterLogConfS3,
 }
 ```
 
@@ -2186,7 +2186,7 @@ Dbfs ClusterClusterLogConfDbfs
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#dbfs Cluster#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#dbfs Cluster#dbfs}
 
 ---
 
@@ -2200,7 +2200,7 @@ S3 ClusterClusterLogConfS3
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#s3 Cluster#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#s3 Cluster#s3}
 
 ---
 
@@ -2209,7 +2209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.cluster.ClusterClusterLogConfDbfs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 &cluster.ClusterClusterLogConfDbfs {
 	Destination: *string,
@@ -2220,7 +2220,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfDbfs.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#destination Cluster#destination}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfDbfs.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#destination Cluster#destination}. |
 
 ---
 
@@ -2232,7 +2232,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#destination Cluster#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#destination Cluster#destination}.
 
 ---
 
@@ -2241,7 +2241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 &cluster.ClusterClusterLogConfS3 {
 	Destination: *string,
@@ -2258,13 +2258,13 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#destination Cluster#destination}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3.property.cannedAcl">CannedAcl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#canned_acl Cluster#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3.property.enableEncryption">EnableEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#enable_encryption Cluster#enable_encryption}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3.property.encryptionType">EncryptionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#encryption_type Cluster#encryption_type}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#endpoint Cluster#endpoint}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3.property.kmsKey">KmsKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#kms_key Cluster#kms_key}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#region Cluster#region}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#destination Cluster#destination}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3.property.cannedAcl">CannedAcl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#canned_acl Cluster#canned_acl}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3.property.enableEncryption">EnableEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#enable_encryption Cluster#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3.property.encryptionType">EncryptionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#encryption_type Cluster#encryption_type}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#endpoint Cluster#endpoint}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3.property.kmsKey">KmsKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#kms_key Cluster#kms_key}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#region Cluster#region}. |
 
 ---
 
@@ -2276,7 +2276,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#destination Cluster#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#destination Cluster#destination}.
 
 ---
 
@@ -2288,7 +2288,7 @@ CannedAcl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#canned_acl Cluster#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#canned_acl Cluster#canned_acl}.
 
 ---
 
@@ -2300,7 +2300,7 @@ EnableEncryption interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#enable_encryption Cluster#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#enable_encryption Cluster#enable_encryption}.
 
 ---
 
@@ -2312,7 +2312,7 @@ EncryptionType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#encryption_type Cluster#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#encryption_type Cluster#encryption_type}.
 
 ---
 
@@ -2324,7 +2324,7 @@ Endpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#endpoint Cluster#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#endpoint Cluster#endpoint}.
 
 ---
 
@@ -2336,7 +2336,7 @@ KmsKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#kms_key Cluster#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#kms_key Cluster#kms_key}.
 
 ---
 
@@ -2348,7 +2348,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#region Cluster#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#region Cluster#region}.
 
 ---
 
@@ -2357,11 +2357,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.cluster.ClusterClusterMountInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 &cluster.ClusterClusterMountInfo {
 	LocalMountDirPath: *string,
-	NetworkFilesystemInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.cluster.ClusterClusterMountInfoNetworkFilesystemInfo,
+	NetworkFilesystemInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks.cluster.ClusterClusterMountInfoNetworkFilesystemInfo,
 	RemoteMountDirPath: *string,
 }
 ```
@@ -2370,9 +2370,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfo.property.localMountDirPath">LocalMountDirPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#local_mount_dir_path Cluster#local_mount_dir_path}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfo.property.localMountDirPath">LocalMountDirPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#local_mount_dir_path Cluster#local_mount_dir_path}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfo.property.networkFilesystemInfo">NetworkFilesystemInfo</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfoNetworkFilesystemInfo">ClusterClusterMountInfoNetworkFilesystemInfo</a></code> | network_filesystem_info block. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfo.property.remoteMountDirPath">RemoteMountDirPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#remote_mount_dir_path Cluster#remote_mount_dir_path}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfo.property.remoteMountDirPath">RemoteMountDirPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#remote_mount_dir_path Cluster#remote_mount_dir_path}. |
 
 ---
 
@@ -2384,7 +2384,7 @@ LocalMountDirPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#local_mount_dir_path Cluster#local_mount_dir_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#local_mount_dir_path Cluster#local_mount_dir_path}.
 
 ---
 
@@ -2398,7 +2398,7 @@ NetworkFilesystemInfo ClusterClusterMountInfoNetworkFilesystemInfo
 
 network_filesystem_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#network_filesystem_info Cluster#network_filesystem_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#network_filesystem_info Cluster#network_filesystem_info}
 
 ---
 
@@ -2410,7 +2410,7 @@ RemoteMountDirPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#remote_mount_dir_path Cluster#remote_mount_dir_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#remote_mount_dir_path Cluster#remote_mount_dir_path}.
 
 ---
 
@@ -2419,7 +2419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.cluster.ClusterClusterMountInfoNetworkFilesystemInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 &cluster.ClusterClusterMountInfoNetworkFilesystemInfo {
 	ServerAddress: *string,
@@ -2431,8 +2431,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfoNetworkFilesystemInfo.property.serverAddress">ServerAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#server_address Cluster#server_address}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfoNetworkFilesystemInfo.property.mountOptions">MountOptions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#mount_options Cluster#mount_options}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfoNetworkFilesystemInfo.property.serverAddress">ServerAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#server_address Cluster#server_address}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfoNetworkFilesystemInfo.property.mountOptions">MountOptions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#mount_options Cluster#mount_options}. |
 
 ---
 
@@ -2444,7 +2444,7 @@ ServerAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#server_address Cluster#server_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#server_address Cluster#server_address}.
 
 ---
 
@@ -2456,7 +2456,7 @@ MountOptions *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#mount_options Cluster#mount_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#mount_options Cluster#mount_options}.
 
 ---
 
@@ -2465,7 +2465,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.cluster.ClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 &cluster.ClusterConfig {
 	Connection: interface{},
@@ -2477,22 +2477,22 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
 	Provisioners: *[]interface{},
 	SparkVersion: *string,
 	ApplyPolicyDefaultValues: interface{},
-	Autoscale: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.cluster.ClusterAutoscale,
+	Autoscale: github.com/cdktf/cdktf-provider-databricks-go/databricks.cluster.ClusterAutoscale,
 	AutoterminationMinutes: *f64,
-	AwsAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.cluster.ClusterAwsAttributes,
-	AzureAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.cluster.ClusterAzureAttributes,
+	AwsAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks.cluster.ClusterAwsAttributes,
+	AzureAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks.cluster.ClusterAzureAttributes,
 	ClusterId: *string,
-	ClusterLogConf: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.cluster.ClusterClusterLogConf,
+	ClusterLogConf: github.com/cdktf/cdktf-provider-databricks-go/databricks.cluster.ClusterClusterLogConf,
 	ClusterMountInfo: interface{},
 	ClusterName: *string,
 	CustomTags: *map[string]*string,
 	DataSecurityMode: *string,
-	DockerImage: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.cluster.ClusterDockerImage,
+	DockerImage: github.com/cdktf/cdktf-provider-databricks-go/databricks.cluster.ClusterDockerImage,
 	DriverInstancePoolId: *string,
 	DriverNodeTypeId: *string,
 	EnableElasticDisk: interface{},
 	EnableLocalDiskEncryption: interface{},
-	GcpAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.cluster.ClusterGcpAttributes,
+	GcpAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks.cluster.ClusterGcpAttributes,
 	Id: *string,
 	IdempotencyToken: *string,
 	InitScripts: interface{},
@@ -2507,8 +2507,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
 	SparkConf: *map[string]*string,
 	SparkEnvVars: *map[string]*string,
 	SshPublicKeys: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.cluster.ClusterTimeouts,
-	WorkloadType: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.cluster.ClusterWorkloadType,
+	Timeouts: github.com/cdktf/cdktf-provider-databricks-go/databricks.cluster.ClusterTimeouts,
+	WorkloadType: github.com/cdktf/cdktf-provider-databricks-go/databricks.cluster.ClusterWorkloadType,
 }
 ```
 
@@ -2523,38 +2523,38 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.sparkVersion">SparkVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#spark_version Cluster#spark_version}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.applyPolicyDefaultValues">ApplyPolicyDefaultValues</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#apply_policy_default_values Cluster#apply_policy_default_values}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.sparkVersion">SparkVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#spark_version Cluster#spark_version}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.applyPolicyDefaultValues">ApplyPolicyDefaultValues</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#apply_policy_default_values Cluster#apply_policy_default_values}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.autoscale">Autoscale</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterAutoscale">ClusterAutoscale</a></code> | autoscale block. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.autoterminationMinutes">AutoterminationMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#autotermination_minutes Cluster#autotermination_minutes}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.autoterminationMinutes">AutoterminationMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#autotermination_minutes Cluster#autotermination_minutes}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.awsAttributes">AwsAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterAwsAttributes">ClusterAwsAttributes</a></code> | aws_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.azureAttributes">AzureAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterAzureAttributes">ClusterAzureAttributes</a></code> | azure_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#cluster_id Cluster#cluster_id}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#cluster_id Cluster#cluster_id}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.clusterLogConf">ClusterLogConf</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConf">ClusterClusterLogConf</a></code> | cluster_log_conf block. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.clusterMountInfo">ClusterMountInfo</a></code> | <code>interface{}</code> | cluster_mount_info block. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.clusterName">ClusterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#cluster_name Cluster#cluster_name}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.customTags">CustomTags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#custom_tags Cluster#custom_tags}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.dataSecurityMode">DataSecurityMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#data_security_mode Cluster#data_security_mode}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.clusterName">ClusterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#cluster_name Cluster#cluster_name}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.customTags">CustomTags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#custom_tags Cluster#custom_tags}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.dataSecurityMode">DataSecurityMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#data_security_mode Cluster#data_security_mode}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.dockerImage">DockerImage</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterDockerImage">ClusterDockerImage</a></code> | docker_image block. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.driverInstancePoolId">DriverInstancePoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#driver_instance_pool_id Cluster#driver_instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.driverNodeTypeId">DriverNodeTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#driver_node_type_id Cluster#driver_node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.enableElasticDisk">EnableElasticDisk</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#enable_elastic_disk Cluster#enable_elastic_disk}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.enableLocalDiskEncryption">EnableLocalDiskEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#enable_local_disk_encryption Cluster#enable_local_disk_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.driverInstancePoolId">DriverInstancePoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#driver_instance_pool_id Cluster#driver_instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.driverNodeTypeId">DriverNodeTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#driver_node_type_id Cluster#driver_node_type_id}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.enableElasticDisk">EnableElasticDisk</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#enable_elastic_disk Cluster#enable_elastic_disk}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.enableLocalDiskEncryption">EnableLocalDiskEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#enable_local_disk_encryption Cluster#enable_local_disk_encryption}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.gcpAttributes">GcpAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributes">ClusterGcpAttributes</a></code> | gcp_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#id Cluster#id}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.idempotencyToken">IdempotencyToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#idempotency_token Cluster#idempotency_token}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#id Cluster#id}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.idempotencyToken">IdempotencyToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#idempotency_token Cluster#idempotency_token}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.initScripts">InitScripts</a></code> | <code>interface{}</code> | init_scripts block. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.instancePoolId">InstancePoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#instance_pool_id Cluster#instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.isPinned">IsPinned</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#is_pinned Cluster#is_pinned}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.instancePoolId">InstancePoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#instance_pool_id Cluster#instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.isPinned">IsPinned</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#is_pinned Cluster#is_pinned}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.library">Library</a></code> | <code>interface{}</code> | library block. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.nodeTypeId">NodeTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#node_type_id Cluster#node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.numWorkers">NumWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#num_workers Cluster#num_workers}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.policyId">PolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#policy_id Cluster#policy_id}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.runtimeEngine">RuntimeEngine</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#runtime_engine Cluster#runtime_engine}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.singleUserName">SingleUserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#single_user_name Cluster#single_user_name}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.sparkConf">SparkConf</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#spark_conf Cluster#spark_conf}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.sparkEnvVars">SparkEnvVars</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#spark_env_vars Cluster#spark_env_vars}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.sshPublicKeys">SshPublicKeys</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#ssh_public_keys Cluster#ssh_public_keys}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.nodeTypeId">NodeTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#node_type_id Cluster#node_type_id}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.numWorkers">NumWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#num_workers Cluster#num_workers}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.policyId">PolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#policy_id Cluster#policy_id}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.runtimeEngine">RuntimeEngine</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#runtime_engine Cluster#runtime_engine}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.singleUserName">SingleUserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#single_user_name Cluster#single_user_name}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.sparkConf">SparkConf</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#spark_conf Cluster#spark_conf}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.sparkEnvVars">SparkEnvVars</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#spark_env_vars Cluster#spark_env_vars}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.sshPublicKeys">SshPublicKeys</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#ssh_public_keys Cluster#ssh_public_keys}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterTimeouts">ClusterTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.workloadType">WorkloadType</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterWorkloadType">ClusterWorkloadType</a></code> | workload_type block. |
 
@@ -2638,7 +2638,7 @@ SparkVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#spark_version Cluster#spark_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#spark_version Cluster#spark_version}.
 
 ---
 
@@ -2650,7 +2650,7 @@ ApplyPolicyDefaultValues interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#apply_policy_default_values Cluster#apply_policy_default_values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#apply_policy_default_values Cluster#apply_policy_default_values}.
 
 ---
 
@@ -2664,7 +2664,7 @@ Autoscale ClusterAutoscale
 
 autoscale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#autoscale Cluster#autoscale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#autoscale Cluster#autoscale}
 
 ---
 
@@ -2676,7 +2676,7 @@ AutoterminationMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#autotermination_minutes Cluster#autotermination_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#autotermination_minutes Cluster#autotermination_minutes}.
 
 ---
 
@@ -2690,7 +2690,7 @@ AwsAttributes ClusterAwsAttributes
 
 aws_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#aws_attributes Cluster#aws_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#aws_attributes Cluster#aws_attributes}
 
 ---
 
@@ -2704,7 +2704,7 @@ AzureAttributes ClusterAzureAttributes
 
 azure_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#azure_attributes Cluster#azure_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#azure_attributes Cluster#azure_attributes}
 
 ---
 
@@ -2716,7 +2716,7 @@ ClusterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#cluster_id Cluster#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#cluster_id Cluster#cluster_id}.
 
 ---
 
@@ -2730,7 +2730,7 @@ ClusterLogConf ClusterClusterLogConf
 
 cluster_log_conf block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#cluster_log_conf Cluster#cluster_log_conf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#cluster_log_conf Cluster#cluster_log_conf}
 
 ---
 
@@ -2744,7 +2744,7 @@ ClusterMountInfo interface{}
 
 cluster_mount_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#cluster_mount_info Cluster#cluster_mount_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#cluster_mount_info Cluster#cluster_mount_info}
 
 ---
 
@@ -2756,7 +2756,7 @@ ClusterName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#cluster_name Cluster#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#cluster_name Cluster#cluster_name}.
 
 ---
 
@@ -2768,7 +2768,7 @@ CustomTags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#custom_tags Cluster#custom_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#custom_tags Cluster#custom_tags}.
 
 ---
 
@@ -2780,7 +2780,7 @@ DataSecurityMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#data_security_mode Cluster#data_security_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#data_security_mode Cluster#data_security_mode}.
 
 ---
 
@@ -2794,7 +2794,7 @@ DockerImage ClusterDockerImage
 
 docker_image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#docker_image Cluster#docker_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#docker_image Cluster#docker_image}
 
 ---
 
@@ -2806,7 +2806,7 @@ DriverInstancePoolId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#driver_instance_pool_id Cluster#driver_instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#driver_instance_pool_id Cluster#driver_instance_pool_id}.
 
 ---
 
@@ -2818,7 +2818,7 @@ DriverNodeTypeId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#driver_node_type_id Cluster#driver_node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#driver_node_type_id Cluster#driver_node_type_id}.
 
 ---
 
@@ -2830,7 +2830,7 @@ EnableElasticDisk interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#enable_elastic_disk Cluster#enable_elastic_disk}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#enable_elastic_disk Cluster#enable_elastic_disk}.
 
 ---
 
@@ -2842,7 +2842,7 @@ EnableLocalDiskEncryption interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#enable_local_disk_encryption Cluster#enable_local_disk_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#enable_local_disk_encryption Cluster#enable_local_disk_encryption}.
 
 ---
 
@@ -2856,7 +2856,7 @@ GcpAttributes ClusterGcpAttributes
 
 gcp_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#gcp_attributes Cluster#gcp_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#gcp_attributes Cluster#gcp_attributes}
 
 ---
 
@@ -2868,7 +2868,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#id Cluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#id Cluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2883,7 +2883,7 @@ IdempotencyToken *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#idempotency_token Cluster#idempotency_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#idempotency_token Cluster#idempotency_token}.
 
 ---
 
@@ -2897,7 +2897,7 @@ InitScripts interface{}
 
 init_scripts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#init_scripts Cluster#init_scripts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#init_scripts Cluster#init_scripts}
 
 ---
 
@@ -2909,7 +2909,7 @@ InstancePoolId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#instance_pool_id Cluster#instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#instance_pool_id Cluster#instance_pool_id}.
 
 ---
 
@@ -2921,7 +2921,7 @@ IsPinned interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#is_pinned Cluster#is_pinned}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#is_pinned Cluster#is_pinned}.
 
 ---
 
@@ -2935,7 +2935,7 @@ Library interface{}
 
 library block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#library Cluster#library}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#library Cluster#library}
 
 ---
 
@@ -2947,7 +2947,7 @@ NodeTypeId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#node_type_id Cluster#node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#node_type_id Cluster#node_type_id}.
 
 ---
 
@@ -2959,7 +2959,7 @@ NumWorkers *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#num_workers Cluster#num_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#num_workers Cluster#num_workers}.
 
 ---
 
@@ -2971,7 +2971,7 @@ PolicyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#policy_id Cluster#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#policy_id Cluster#policy_id}.
 
 ---
 
@@ -2983,7 +2983,7 @@ RuntimeEngine *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#runtime_engine Cluster#runtime_engine}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#runtime_engine Cluster#runtime_engine}.
 
 ---
 
@@ -2995,7 +2995,7 @@ SingleUserName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#single_user_name Cluster#single_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#single_user_name Cluster#single_user_name}.
 
 ---
 
@@ -3007,7 +3007,7 @@ SparkConf *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#spark_conf Cluster#spark_conf}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#spark_conf Cluster#spark_conf}.
 
 ---
 
@@ -3019,7 +3019,7 @@ SparkEnvVars *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#spark_env_vars Cluster#spark_env_vars}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#spark_env_vars Cluster#spark_env_vars}.
 
 ---
 
@@ -3031,7 +3031,7 @@ SshPublicKeys *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#ssh_public_keys Cluster#ssh_public_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#ssh_public_keys Cluster#ssh_public_keys}.
 
 ---
 
@@ -3045,7 +3045,7 @@ Timeouts ClusterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#timeouts Cluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#timeouts Cluster#timeouts}
 
 ---
 
@@ -3059,7 +3059,7 @@ WorkloadType ClusterWorkloadType
 
 workload_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#workload_type Cluster#workload_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#workload_type Cluster#workload_type}
 
 ---
 
@@ -3068,11 +3068,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.cluster.ClusterDockerImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 &cluster.ClusterDockerImage {
 	Url: *string,
-	BasicAuth: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.cluster.ClusterDockerImageBasicAuth,
+	BasicAuth: github.com/cdktf/cdktf-provider-databricks-go/databricks.cluster.ClusterDockerImageBasicAuth,
 }
 ```
 
@@ -3080,7 +3080,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterDockerImage.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#url Cluster#url}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterDockerImage.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#url Cluster#url}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterDockerImage.property.basicAuth">BasicAuth</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterDockerImageBasicAuth">ClusterDockerImageBasicAuth</a></code> | basic_auth block. |
 
 ---
@@ -3093,7 +3093,7 @@ Url *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#url Cluster#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#url Cluster#url}.
 
 ---
 
@@ -3107,7 +3107,7 @@ BasicAuth ClusterDockerImageBasicAuth
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#basic_auth Cluster#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#basic_auth Cluster#basic_auth}
 
 ---
 
@@ -3116,7 +3116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.cluster.ClusterDockerImageBasicAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 &cluster.ClusterDockerImageBasicAuth {
 	Password: *string,
@@ -3128,8 +3128,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterDockerImageBasicAuth.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#password Cluster#password}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterDockerImageBasicAuth.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#username Cluster#username}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterDockerImageBasicAuth.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#password Cluster#password}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterDockerImageBasicAuth.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#username Cluster#username}. |
 
 ---
 
@@ -3141,7 +3141,7 @@ Password *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#password Cluster#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#password Cluster#password}.
 
 ---
 
@@ -3153,7 +3153,7 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#username Cluster#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#username Cluster#username}.
 
 ---
 
@@ -3162,7 +3162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.cluster.ClusterGcpAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 &cluster.ClusterGcpAttributes {
 	Availability: *string,
@@ -3178,12 +3178,12 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#availability Cluster#availability}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributes.property.bootDiskSize">BootDiskSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#boot_disk_size Cluster#boot_disk_size}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributes.property.googleServiceAccount">GoogleServiceAccount</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#google_service_account Cluster#google_service_account}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributes.property.localSsdCount">LocalSsdCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#local_ssd_count Cluster#local_ssd_count}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributes.property.usePreemptibleExecutors">UsePreemptibleExecutors</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#use_preemptible_executors Cluster#use_preemptible_executors}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributes.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#zone_id Cluster#zone_id}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#availability Cluster#availability}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributes.property.bootDiskSize">BootDiskSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#boot_disk_size Cluster#boot_disk_size}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributes.property.googleServiceAccount">GoogleServiceAccount</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#google_service_account Cluster#google_service_account}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributes.property.localSsdCount">LocalSsdCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#local_ssd_count Cluster#local_ssd_count}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributes.property.usePreemptibleExecutors">UsePreemptibleExecutors</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#use_preemptible_executors Cluster#use_preemptible_executors}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributes.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#zone_id Cluster#zone_id}. |
 
 ---
 
@@ -3195,7 +3195,7 @@ Availability *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#availability Cluster#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#availability Cluster#availability}.
 
 ---
 
@@ -3207,7 +3207,7 @@ BootDiskSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#boot_disk_size Cluster#boot_disk_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#boot_disk_size Cluster#boot_disk_size}.
 
 ---
 
@@ -3219,7 +3219,7 @@ GoogleServiceAccount *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#google_service_account Cluster#google_service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#google_service_account Cluster#google_service_account}.
 
 ---
 
@@ -3231,7 +3231,7 @@ LocalSsdCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#local_ssd_count Cluster#local_ssd_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#local_ssd_count Cluster#local_ssd_count}.
 
 ---
 
@@ -3243,7 +3243,7 @@ UsePreemptibleExecutors interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#use_preemptible_executors Cluster#use_preemptible_executors}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#use_preemptible_executors Cluster#use_preemptible_executors}.
 
 ---
 
@@ -3255,7 +3255,7 @@ ZoneId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#zone_id Cluster#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#zone_id Cluster#zone_id}.
 
 ---
 
@@ -3264,16 +3264,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.cluster.ClusterInitScripts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 &cluster.ClusterInitScripts {
-	Abfss: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.cluster.ClusterInitScriptsAbfss,
-	Dbfs: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.cluster.ClusterInitScriptsDbfs,
-	File: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.cluster.ClusterInitScriptsFile,
-	Gcs: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.cluster.ClusterInitScriptsGcs,
-	S3: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.cluster.ClusterInitScriptsS3,
-	Volumes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.cluster.ClusterInitScriptsVolumes,
-	Workspace: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.cluster.ClusterInitScriptsWorkspace,
+	Abfss: github.com/cdktf/cdktf-provider-databricks-go/databricks.cluster.ClusterInitScriptsAbfss,
+	Dbfs: github.com/cdktf/cdktf-provider-databricks-go/databricks.cluster.ClusterInitScriptsDbfs,
+	File: github.com/cdktf/cdktf-provider-databricks-go/databricks.cluster.ClusterInitScriptsFile,
+	Gcs: github.com/cdktf/cdktf-provider-databricks-go/databricks.cluster.ClusterInitScriptsGcs,
+	S3: github.com/cdktf/cdktf-provider-databricks-go/databricks.cluster.ClusterInitScriptsS3,
+	Volumes: github.com/cdktf/cdktf-provider-databricks-go/databricks.cluster.ClusterInitScriptsVolumes,
+	Workspace: github.com/cdktf/cdktf-provider-databricks-go/databricks.cluster.ClusterInitScriptsWorkspace,
 }
 ```
 
@@ -3301,7 +3301,7 @@ Abfss ClusterInitScriptsAbfss
 
 abfss block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#abfss Cluster#abfss}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#abfss Cluster#abfss}
 
 ---
 
@@ -3315,7 +3315,7 @@ Dbfs ClusterInitScriptsDbfs
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#dbfs Cluster#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#dbfs Cluster#dbfs}
 
 ---
 
@@ -3329,7 +3329,7 @@ File ClusterInitScriptsFile
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#file Cluster#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#file Cluster#file}
 
 ---
 
@@ -3343,7 +3343,7 @@ Gcs ClusterInitScriptsGcs
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#gcs Cluster#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#gcs Cluster#gcs}
 
 ---
 
@@ -3357,7 +3357,7 @@ S3 ClusterInitScriptsS3
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#s3 Cluster#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#s3 Cluster#s3}
 
 ---
 
@@ -3371,7 +3371,7 @@ Volumes ClusterInitScriptsVolumes
 
 volumes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#volumes Cluster#volumes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#volumes Cluster#volumes}
 
 ---
 
@@ -3385,7 +3385,7 @@ Workspace ClusterInitScriptsWorkspace
 
 workspace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#workspace Cluster#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#workspace Cluster#workspace}
 
 ---
 
@@ -3394,7 +3394,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.cluster.ClusterInitScriptsAbfss.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 &cluster.ClusterInitScriptsAbfss {
 	Destination: *string,
@@ -3405,7 +3405,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsAbfss.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#destination Cluster#destination}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsAbfss.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#destination Cluster#destination}. |
 
 ---
 
@@ -3417,7 +3417,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#destination Cluster#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#destination Cluster#destination}.
 
 ---
 
@@ -3426,7 +3426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.cluster.ClusterInitScriptsDbfs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 &cluster.ClusterInitScriptsDbfs {
 	Destination: *string,
@@ -3437,7 +3437,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsDbfs.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#destination Cluster#destination}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsDbfs.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#destination Cluster#destination}. |
 
 ---
 
@@ -3449,7 +3449,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#destination Cluster#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#destination Cluster#destination}.
 
 ---
 
@@ -3458,7 +3458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.cluster.ClusterInitScriptsFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 &cluster.ClusterInitScriptsFile {
 	Destination: *string,
@@ -3469,7 +3469,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsFile.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#destination Cluster#destination}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsFile.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#destination Cluster#destination}. |
 
 ---
 
@@ -3481,7 +3481,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#destination Cluster#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#destination Cluster#destination}.
 
 ---
 
@@ -3490,7 +3490,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.cluster.ClusterInitScriptsGcs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 &cluster.ClusterInitScriptsGcs {
 	Destination: *string,
@@ -3501,7 +3501,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsGcs.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#destination Cluster#destination}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsGcs.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#destination Cluster#destination}. |
 
 ---
 
@@ -3513,7 +3513,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#destination Cluster#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#destination Cluster#destination}.
 
 ---
 
@@ -3522,7 +3522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.cluster.ClusterInitScriptsS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 &cluster.ClusterInitScriptsS3 {
 	Destination: *string,
@@ -3539,13 +3539,13 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#destination Cluster#destination}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3.property.cannedAcl">CannedAcl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#canned_acl Cluster#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3.property.enableEncryption">EnableEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#enable_encryption Cluster#enable_encryption}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3.property.encryptionType">EncryptionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#encryption_type Cluster#encryption_type}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#endpoint Cluster#endpoint}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3.property.kmsKey">KmsKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#kms_key Cluster#kms_key}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#region Cluster#region}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#destination Cluster#destination}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3.property.cannedAcl">CannedAcl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#canned_acl Cluster#canned_acl}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3.property.enableEncryption">EnableEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#enable_encryption Cluster#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3.property.encryptionType">EncryptionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#encryption_type Cluster#encryption_type}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#endpoint Cluster#endpoint}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3.property.kmsKey">KmsKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#kms_key Cluster#kms_key}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#region Cluster#region}. |
 
 ---
 
@@ -3557,7 +3557,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#destination Cluster#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#destination Cluster#destination}.
 
 ---
 
@@ -3569,7 +3569,7 @@ CannedAcl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#canned_acl Cluster#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#canned_acl Cluster#canned_acl}.
 
 ---
 
@@ -3581,7 +3581,7 @@ EnableEncryption interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#enable_encryption Cluster#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#enable_encryption Cluster#enable_encryption}.
 
 ---
 
@@ -3593,7 +3593,7 @@ EncryptionType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#encryption_type Cluster#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#encryption_type Cluster#encryption_type}.
 
 ---
 
@@ -3605,7 +3605,7 @@ Endpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#endpoint Cluster#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#endpoint Cluster#endpoint}.
 
 ---
 
@@ -3617,7 +3617,7 @@ KmsKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#kms_key Cluster#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#kms_key Cluster#kms_key}.
 
 ---
 
@@ -3629,7 +3629,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#region Cluster#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#region Cluster#region}.
 
 ---
 
@@ -3638,7 +3638,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.cluster.ClusterInitScriptsVolumes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 &cluster.ClusterInitScriptsVolumes {
 	Destination: *string,
@@ -3649,7 +3649,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsVolumes.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#destination Cluster#destination}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsVolumes.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#destination Cluster#destination}. |
 
 ---
 
@@ -3661,7 +3661,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#destination Cluster#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#destination Cluster#destination}.
 
 ---
 
@@ -3670,7 +3670,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.cluster.ClusterInitScriptsWorkspace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 &cluster.ClusterInitScriptsWorkspace {
 	Destination: *string,
@@ -3681,7 +3681,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsWorkspace.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#destination Cluster#destination}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsWorkspace.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#destination Cluster#destination}. |
 
 ---
 
@@ -3693,7 +3693,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#destination Cluster#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#destination Cluster#destination}.
 
 ---
 
@@ -3702,14 +3702,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.cluster.ClusterLibrary.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 &cluster.ClusterLibrary {
-	Cran: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.cluster.ClusterLibraryCran,
+	Cran: github.com/cdktf/cdktf-provider-databricks-go/databricks.cluster.ClusterLibraryCran,
 	Egg: *string,
 	Jar: *string,
-	Maven: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.cluster.ClusterLibraryMaven,
-	Pypi: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.cluster.ClusterLibraryPypi,
+	Maven: github.com/cdktf/cdktf-provider-databricks-go/databricks.cluster.ClusterLibraryMaven,
+	Pypi: github.com/cdktf/cdktf-provider-databricks-go/databricks.cluster.ClusterLibraryPypi,
 	Whl: *string,
 }
 ```
@@ -3719,11 +3719,11 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibrary.property.cran">Cran</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryCran">ClusterLibraryCran</a></code> | cran block. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibrary.property.egg">Egg</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#egg Cluster#egg}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibrary.property.jar">Jar</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#jar Cluster#jar}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibrary.property.egg">Egg</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#egg Cluster#egg}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibrary.property.jar">Jar</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#jar Cluster#jar}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibrary.property.maven">Maven</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryMaven">ClusterLibraryMaven</a></code> | maven block. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibrary.property.pypi">Pypi</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryPypi">ClusterLibraryPypi</a></code> | pypi block. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibrary.property.whl">Whl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#whl Cluster#whl}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibrary.property.whl">Whl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#whl Cluster#whl}. |
 
 ---
 
@@ -3737,7 +3737,7 @@ Cran ClusterLibraryCran
 
 cran block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#cran Cluster#cran}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#cran Cluster#cran}
 
 ---
 
@@ -3749,7 +3749,7 @@ Egg *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#egg Cluster#egg}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#egg Cluster#egg}.
 
 ---
 
@@ -3761,7 +3761,7 @@ Jar *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#jar Cluster#jar}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#jar Cluster#jar}.
 
 ---
 
@@ -3775,7 +3775,7 @@ Maven ClusterLibraryMaven
 
 maven block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#maven Cluster#maven}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#maven Cluster#maven}
 
 ---
 
@@ -3789,7 +3789,7 @@ Pypi ClusterLibraryPypi
 
 pypi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#pypi Cluster#pypi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#pypi Cluster#pypi}
 
 ---
 
@@ -3801,7 +3801,7 @@ Whl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#whl Cluster#whl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#whl Cluster#whl}.
 
 ---
 
@@ -3810,7 +3810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.cluster.ClusterLibraryCran.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 &cluster.ClusterLibraryCran {
 	Package: *string,
@@ -3822,8 +3822,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryCran.property.package">Package</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#package Cluster#package}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryCran.property.repo">Repo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#repo Cluster#repo}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryCran.property.package">Package</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#package Cluster#package}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryCran.property.repo">Repo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#repo Cluster#repo}. |
 
 ---
 
@@ -3835,7 +3835,7 @@ Package *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#package Cluster#package}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#package Cluster#package}.
 
 ---
 
@@ -3847,7 +3847,7 @@ Repo *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#repo Cluster#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#repo Cluster#repo}.
 
 ---
 
@@ -3856,7 +3856,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.cluster.ClusterLibraryMaven.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 &cluster.ClusterLibraryMaven {
 	Coordinates: *string,
@@ -3869,9 +3869,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryMaven.property.coordinates">Coordinates</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#coordinates Cluster#coordinates}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryMaven.property.exclusions">Exclusions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#exclusions Cluster#exclusions}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryMaven.property.repo">Repo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#repo Cluster#repo}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryMaven.property.coordinates">Coordinates</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#coordinates Cluster#coordinates}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryMaven.property.exclusions">Exclusions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#exclusions Cluster#exclusions}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryMaven.property.repo">Repo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#repo Cluster#repo}. |
 
 ---
 
@@ -3883,7 +3883,7 @@ Coordinates *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#coordinates Cluster#coordinates}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#coordinates Cluster#coordinates}.
 
 ---
 
@@ -3895,7 +3895,7 @@ Exclusions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#exclusions Cluster#exclusions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#exclusions Cluster#exclusions}.
 
 ---
 
@@ -3907,7 +3907,7 @@ Repo *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#repo Cluster#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#repo Cluster#repo}.
 
 ---
 
@@ -3916,7 +3916,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.cluster.ClusterLibraryPypi.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 &cluster.ClusterLibraryPypi {
 	Package: *string,
@@ -3928,8 +3928,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryPypi.property.package">Package</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#package Cluster#package}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryPypi.property.repo">Repo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#repo Cluster#repo}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryPypi.property.package">Package</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#package Cluster#package}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryPypi.property.repo">Repo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#repo Cluster#repo}. |
 
 ---
 
@@ -3941,7 +3941,7 @@ Package *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#package Cluster#package}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#package Cluster#package}.
 
 ---
 
@@ -3953,7 +3953,7 @@ Repo *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#repo Cluster#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#repo Cluster#repo}.
 
 ---
 
@@ -3962,7 +3962,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.cluster.ClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 &cluster.ClusterTimeouts {
 	Create: *string,
@@ -3975,9 +3975,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#create Cluster#create}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#delete Cluster#delete}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#update Cluster#update}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#create Cluster#create}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#delete Cluster#delete}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#update Cluster#update}. |
 
 ---
 
@@ -3989,7 +3989,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#create Cluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#create Cluster#create}.
 
 ---
 
@@ -4001,7 +4001,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#delete Cluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#delete Cluster#delete}.
 
 ---
 
@@ -4013,7 +4013,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#update Cluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#update Cluster#update}.
 
 ---
 
@@ -4022,10 +4022,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.cluster.ClusterWorkloadType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 &cluster.ClusterWorkloadType {
-	Clients: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.cluster.ClusterWorkloadTypeClients,
+	Clients: github.com/cdktf/cdktf-provider-databricks-go/databricks.cluster.ClusterWorkloadTypeClients,
 }
 ```
 
@@ -4047,7 +4047,7 @@ Clients ClusterWorkloadTypeClients
 
 clients block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#clients Cluster#clients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#clients Cluster#clients}
 
 ---
 
@@ -4056,7 +4056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.cluster.ClusterWorkloadTypeClients.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 &cluster.ClusterWorkloadTypeClients {
 	Jobs: interface{},
@@ -4068,8 +4068,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterWorkloadTypeClients.property.jobs">Jobs</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#jobs Cluster#jobs}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterWorkloadTypeClients.property.notebooks">Notebooks</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#notebooks Cluster#notebooks}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterWorkloadTypeClients.property.jobs">Jobs</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#jobs Cluster#jobs}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterWorkloadTypeClients.property.notebooks">Notebooks</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#notebooks Cluster#notebooks}. |
 
 ---
 
@@ -4081,7 +4081,7 @@ Jobs interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#jobs Cluster#jobs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#jobs Cluster#jobs}.
 
 ---
 
@@ -4093,7 +4093,7 @@ Notebooks interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.37.1/docs/resources/cluster#notebooks Cluster#notebooks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/cluster#notebooks Cluster#notebooks}.
 
 ---
 
@@ -4104,7 +4104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.ClusterAutoscaleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewClusterAutoscaleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterAutoscaleOutputReference
 ```
@@ -4411,7 +4411,7 @@ func InternalValue() ClusterAutoscale
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.ClusterAwsAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewClusterAwsAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterAwsAttributesOutputReference
 ```
@@ -4950,7 +4950,7 @@ func InternalValue() ClusterAwsAttributes
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.ClusterAzureAttributesLogAnalyticsInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewClusterAzureAttributesLogAnalyticsInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterAzureAttributesLogAnalyticsInfoOutputReference
 ```
@@ -5257,7 +5257,7 @@ func InternalValue() ClusterAzureAttributesLogAnalyticsInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.ClusterAzureAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewClusterAzureAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterAzureAttributesOutputReference
 ```
@@ -5635,7 +5635,7 @@ func InternalValue() ClusterAzureAttributes
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.ClusterClusterLogConfDbfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewClusterClusterLogConfDbfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterClusterLogConfDbfsOutputReference
 ```
@@ -5906,7 +5906,7 @@ func InternalValue() ClusterClusterLogConfDbfs
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.ClusterClusterLogConfOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewClusterClusterLogConfOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterClusterLogConfOutputReference
 ```
@@ -6239,7 +6239,7 @@ func InternalValue() ClusterClusterLogConf
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewClusterClusterLogConfS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterClusterLogConfS3OutputReference
 ```
@@ -6684,7 +6684,7 @@ func InternalValue() ClusterClusterLogConfS3
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.ClusterClusterMountInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewClusterClusterMountInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClusterClusterMountInfoList
 ```
@@ -6844,7 +6844,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.ClusterClusterMountInfoNetworkFilesystemInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewClusterClusterMountInfoNetworkFilesystemInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterClusterMountInfoNetworkFilesystemInfoOutputReference
 ```
@@ -7144,7 +7144,7 @@ func InternalValue() ClusterClusterMountInfoNetworkFilesystemInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.ClusterClusterMountInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewClusterClusterMountInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClusterClusterMountInfoOutputReference
 ```
@@ -7497,7 +7497,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.ClusterDockerImageBasicAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewClusterDockerImageBasicAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterDockerImageBasicAuthOutputReference
 ```
@@ -7790,7 +7790,7 @@ func InternalValue() ClusterDockerImageBasicAuth
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.ClusterDockerImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewClusterDockerImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterDockerImageOutputReference
 ```
@@ -8103,7 +8103,7 @@ func InternalValue() ClusterDockerImage
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.ClusterGcpAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewClusterGcpAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterGcpAttributesOutputReference
 ```
@@ -8526,7 +8526,7 @@ func InternalValue() ClusterGcpAttributes
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.ClusterInitScriptsAbfssOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewClusterInitScriptsAbfssOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterInitScriptsAbfssOutputReference
 ```
@@ -8797,7 +8797,7 @@ func InternalValue() ClusterInitScriptsAbfss
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.ClusterInitScriptsDbfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewClusterInitScriptsDbfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterInitScriptsDbfsOutputReference
 ```
@@ -9068,7 +9068,7 @@ func InternalValue() ClusterInitScriptsDbfs
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.ClusterInitScriptsFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewClusterInitScriptsFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterInitScriptsFileOutputReference
 ```
@@ -9339,7 +9339,7 @@ func InternalValue() ClusterInitScriptsFile
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.ClusterInitScriptsGcsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewClusterInitScriptsGcsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterInitScriptsGcsOutputReference
 ```
@@ -9610,7 +9610,7 @@ func InternalValue() ClusterInitScriptsGcs
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.ClusterInitScriptsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewClusterInitScriptsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClusterInitScriptsList
 ```
@@ -9770,7 +9770,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.ClusterInitScriptsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewClusterInitScriptsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClusterInitScriptsOutputReference
 ```
@@ -10331,7 +10331,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.ClusterInitScriptsS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewClusterInitScriptsS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterInitScriptsS3OutputReference
 ```
@@ -10776,7 +10776,7 @@ func InternalValue() ClusterInitScriptsS3
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.ClusterInitScriptsVolumesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewClusterInitScriptsVolumesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterInitScriptsVolumesOutputReference
 ```
@@ -11047,7 +11047,7 @@ func InternalValue() ClusterInitScriptsVolumes
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.ClusterInitScriptsWorkspaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewClusterInitScriptsWorkspaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterInitScriptsWorkspaceOutputReference
 ```
@@ -11318,7 +11318,7 @@ func InternalValue() ClusterInitScriptsWorkspace
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.ClusterLibraryCranOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewClusterLibraryCranOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterLibraryCranOutputReference
 ```
@@ -11618,7 +11618,7 @@ func InternalValue() ClusterLibraryCran
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.ClusterLibraryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewClusterLibraryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClusterLibraryList
 ```
@@ -11778,7 +11778,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.ClusterLibraryMavenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewClusterLibraryMavenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterLibraryMavenOutputReference
 ```
@@ -12107,7 +12107,7 @@ func InternalValue() ClusterLibraryMaven
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.ClusterLibraryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewClusterLibraryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClusterLibraryOutputReference
 ```
@@ -12587,7 +12587,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.ClusterLibraryPypiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewClusterLibraryPypiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterLibraryPypiOutputReference
 ```
@@ -12887,7 +12887,7 @@ func InternalValue() ClusterLibraryPypi
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.ClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterTimeoutsOutputReference
 ```
@@ -13223,7 +13223,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.ClusterWorkloadTypeClientsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewClusterWorkloadTypeClientsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterWorkloadTypeClientsOutputReference
 ```
@@ -13530,7 +13530,7 @@ func InternalValue() ClusterWorkloadTypeClients
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cluster.ClusterWorkloadTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/cluster"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/cluster"
 
 cluster.NewClusterWorkloadTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterWorkloadTypeOutputReference
 ```
