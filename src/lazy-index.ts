@@ -33,6 +33,7 @@ Object.defineProperty(exports, 'instancePool', { get: function () { return requi
 Object.defineProperty(exports, 'instanceProfile', { get: function () { return require('./instance-profile'); } });
 Object.defineProperty(exports, 'ipAccessList', { get: function () { return require('./ip-access-list'); } });
 Object.defineProperty(exports, 'job', { get: function () { return require('./job'); } });
+Object.defineProperty(exports, 'lakehouseMonitor', { get: function () { return require('./lakehouse-monitor'); } });
 Object.defineProperty(exports, 'library', { get: function () { return require('./library'); } });
 Object.defineProperty(exports, 'metastore', { get: function () { return require('./metastore'); } });
 Object.defineProperty(exports, 'metastoreAssignment', { get: function () { return require('./metastore-assignment'); } });
@@ -53,6 +54,7 @@ Object.defineProperty(exports, 'mwsVpcEndpoint', { get: function () { return req
 Object.defineProperty(exports, 'mwsWorkspaces', { get: function () { return require('./mws-workspaces'); } });
 Object.defineProperty(exports, 'notebook', { get: function () { return require('./notebook'); } });
 Object.defineProperty(exports, 'oboToken', { get: function () { return require('./obo-token'); } });
+Object.defineProperty(exports, 'onlineTable', { get: function () { return require('./online-table'); } });
 Object.defineProperty(exports, 'permissionAssignment', { get: function () { return require('./permission-assignment'); } });
 Object.defineProperty(exports, 'permissions', { get: function () { return require('./permissions'); } });
 Object.defineProperty(exports, 'pipeline', { get: function () { return require('./pipeline'); } });
@@ -86,6 +88,7 @@ Object.defineProperty(exports, 'user', { get: function () { return require('./us
 Object.defineProperty(exports, 'userInstanceProfile', { get: function () { return require('./user-instance-profile'); } });
 Object.defineProperty(exports, 'userRole', { get: function () { return require('./user-role'); } });
 Object.defineProperty(exports, 'vectorSearchEndpoint', { get: function () { return require('./vector-search-endpoint'); } });
+Object.defineProperty(exports, 'vectorSearchIndex', { get: function () { return require('./vector-search-index'); } });
 Object.defineProperty(exports, 'volume', { get: function () { return require('./volume'); } });
 Object.defineProperty(exports, 'workspaceConf', { get: function () { return require('./workspace-conf'); } });
 Object.defineProperty(exports, 'workspaceFile', { get: function () { return require('./workspace-file'); } });

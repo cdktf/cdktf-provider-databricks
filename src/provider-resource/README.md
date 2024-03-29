@@ -1,3 +1,3 @@
 # `databricks_provider`
 
-Refer to the Terraform Registry for docs: [`databricks_provider`](https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/provider).
+Refer to the Terraform Registry for docs: [`databricks_provider`](https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/provider).
