@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving
+// https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,56 +8,56 @@ import * as cdktf from 'cdktf';
 
 export interface ModelServingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#id ModelServing#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#id ModelServing#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#name ModelServing#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#name ModelServing#name}
   */
   readonly name: string;
   /**
   * config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#config ModelServing#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#config ModelServing#config}
   */
   readonly config: ModelServingConfigA;
   /**
   * rate_limits block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#rate_limits ModelServing#rate_limits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#rate_limits ModelServing#rate_limits}
   */
   readonly rateLimits?: ModelServingRateLimits[] | cdktf.IResolvable;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#tags ModelServing#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#tags ModelServing#tags}
   */
   readonly tags?: ModelServingTags[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#timeouts ModelServing#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#timeouts ModelServing#timeouts}
   */
   readonly timeouts?: ModelServingTimeouts;
 }
 export interface ModelServingConfigAutoCaptureConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#catalog_name ModelServing#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#catalog_name ModelServing#catalog_name}
   */
   readonly catalogName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#enabled ModelServing#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#enabled ModelServing#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#schema_name ModelServing#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#schema_name ModelServing#schema_name}
   */
   readonly schemaName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#table_name_prefix ModelServing#table_name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#table_name_prefix ModelServing#table_name_prefix}
   */
   readonly tableNamePrefix?: string;
 }
@@ -231,37 +226,1723 @@ export class ModelServingConfigAutoCaptureConfigOutputReference extends cdktf.Co
     return this._tableNamePrefix;
   }
 }
-export interface ModelServingConfigServedModels {
+export interface ModelServingConfigServedEntitiesExternalModelAi21LabsConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#environment_vars ModelServing#environment_vars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#ai21labs_api_key ModelServing#ai21labs_api_key}
+  */
+  readonly ai21LabsApiKey: string;
+}
+
+export function modelServingConfigServedEntitiesExternalModelAi21LabsConfigToTerraform(struct?: ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOutputReference | ModelServingConfigServedEntitiesExternalModelAi21LabsConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    ai21labs_api_key: cdktf.stringToTerraform(struct!.ai21LabsApiKey),
+  }
+}
+
+
+export function modelServingConfigServedEntitiesExternalModelAi21LabsConfigToHclTerraform(struct?: ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOutputReference | ModelServingConfigServedEntitiesExternalModelAi21LabsConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ai21labs_api_key: {
+      value: cdktf.stringToHclTerraform(struct!.ai21LabsApiKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ModelServingConfigServedEntitiesExternalModelAi21LabsConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ai21LabsApiKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ai21LabsApiKey = this._ai21LabsApiKey;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ModelServingConfigServedEntitiesExternalModelAi21LabsConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._ai21LabsApiKey = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._ai21LabsApiKey = value.ai21LabsApiKey;
+    }
+  }
+
+  // ai21labs_api_key - computed: false, optional: false, required: true
+  private _ai21LabsApiKey?: string; 
+  public get ai21LabsApiKey() {
+    return this.getStringAttribute('ai21labs_api_key');
+  }
+  public set ai21LabsApiKey(value: string) {
+    this._ai21LabsApiKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ai21LabsApiKeyInput() {
+    return this._ai21LabsApiKey;
+  }
+}
+export interface ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#aws_access_key_id ModelServing#aws_access_key_id}
+  */
+  readonly awsAccessKeyId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#aws_region ModelServing#aws_region}
+  */
+  readonly awsRegion: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#aws_secret_access_key ModelServing#aws_secret_access_key}
+  */
+  readonly awsSecretAccessKey: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#bedrock_provider ModelServing#bedrock_provider}
+  */
+  readonly bedrockProvider: string;
+}
+
+export function modelServingConfigServedEntitiesExternalModelAmazonBedrockConfigToTerraform(struct?: ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference | ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    aws_access_key_id: cdktf.stringToTerraform(struct!.awsAccessKeyId),
+    aws_region: cdktf.stringToTerraform(struct!.awsRegion),
+    aws_secret_access_key: cdktf.stringToTerraform(struct!.awsSecretAccessKey),
+    bedrock_provider: cdktf.stringToTerraform(struct!.bedrockProvider),
+  }
+}
+
+
+export function modelServingConfigServedEntitiesExternalModelAmazonBedrockConfigToHclTerraform(struct?: ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference | ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aws_access_key_id: {
+      value: cdktf.stringToHclTerraform(struct!.awsAccessKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    aws_region: {
+      value: cdktf.stringToHclTerraform(struct!.awsRegion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    aws_secret_access_key: {
+      value: cdktf.stringToHclTerraform(struct!.awsSecretAccessKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    bedrock_provider: {
+      value: cdktf.stringToHclTerraform(struct!.bedrockProvider),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._awsAccessKeyId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.awsAccessKeyId = this._awsAccessKeyId;
+    }
+    if (this._awsRegion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.awsRegion = this._awsRegion;
+    }
+    if (this._awsSecretAccessKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.awsSecretAccessKey = this._awsSecretAccessKey;
+    }
+    if (this._bedrockProvider !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bedrockProvider = this._bedrockProvider;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._awsAccessKeyId = undefined;
+      this._awsRegion = undefined;
+      this._awsSecretAccessKey = undefined;
+      this._bedrockProvider = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._awsAccessKeyId = value.awsAccessKeyId;
+      this._awsRegion = value.awsRegion;
+      this._awsSecretAccessKey = value.awsSecretAccessKey;
+      this._bedrockProvider = value.bedrockProvider;
+    }
+  }
+
+  // aws_access_key_id - computed: false, optional: false, required: true
+  private _awsAccessKeyId?: string; 
+  public get awsAccessKeyId() {
+    return this.getStringAttribute('aws_access_key_id');
+  }
+  public set awsAccessKeyId(value: string) {
+    this._awsAccessKeyId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get awsAccessKeyIdInput() {
+    return this._awsAccessKeyId;
+  }
+
+  // aws_region - computed: false, optional: false, required: true
+  private _awsRegion?: string; 
+  public get awsRegion() {
+    return this.getStringAttribute('aws_region');
+  }
+  public set awsRegion(value: string) {
+    this._awsRegion = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get awsRegionInput() {
+    return this._awsRegion;
+  }
+
+  // aws_secret_access_key - computed: false, optional: false, required: true
+  private _awsSecretAccessKey?: string; 
+  public get awsSecretAccessKey() {
+    return this.getStringAttribute('aws_secret_access_key');
+  }
+  public set awsSecretAccessKey(value: string) {
+    this._awsSecretAccessKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get awsSecretAccessKeyInput() {
+    return this._awsSecretAccessKey;
+  }
+
+  // bedrock_provider - computed: false, optional: false, required: true
+  private _bedrockProvider?: string; 
+  public get bedrockProvider() {
+    return this.getStringAttribute('bedrock_provider');
+  }
+  public set bedrockProvider(value: string) {
+    this._bedrockProvider = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bedrockProviderInput() {
+    return this._bedrockProvider;
+  }
+}
+export interface ModelServingConfigServedEntitiesExternalModelAnthropicConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#anthropic_api_key ModelServing#anthropic_api_key}
+  */
+  readonly anthropicApiKey: string;
+}
+
+export function modelServingConfigServedEntitiesExternalModelAnthropicConfigToTerraform(struct?: ModelServingConfigServedEntitiesExternalModelAnthropicConfigOutputReference | ModelServingConfigServedEntitiesExternalModelAnthropicConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    anthropic_api_key: cdktf.stringToTerraform(struct!.anthropicApiKey),
+  }
+}
+
+
+export function modelServingConfigServedEntitiesExternalModelAnthropicConfigToHclTerraform(struct?: ModelServingConfigServedEntitiesExternalModelAnthropicConfigOutputReference | ModelServingConfigServedEntitiesExternalModelAnthropicConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    anthropic_api_key: {
+      value: cdktf.stringToHclTerraform(struct!.anthropicApiKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ModelServingConfigServedEntitiesExternalModelAnthropicConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ModelServingConfigServedEntitiesExternalModelAnthropicConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._anthropicApiKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.anthropicApiKey = this._anthropicApiKey;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ModelServingConfigServedEntitiesExternalModelAnthropicConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._anthropicApiKey = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._anthropicApiKey = value.anthropicApiKey;
+    }
+  }
+
+  // anthropic_api_key - computed: false, optional: false, required: true
+  private _anthropicApiKey?: string; 
+  public get anthropicApiKey() {
+    return this.getStringAttribute('anthropic_api_key');
+  }
+  public set anthropicApiKey(value: string) {
+    this._anthropicApiKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get anthropicApiKeyInput() {
+    return this._anthropicApiKey;
+  }
+}
+export interface ModelServingConfigServedEntitiesExternalModelCohereConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#cohere_api_key ModelServing#cohere_api_key}
+  */
+  readonly cohereApiKey: string;
+}
+
+export function modelServingConfigServedEntitiesExternalModelCohereConfigToTerraform(struct?: ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference | ModelServingConfigServedEntitiesExternalModelCohereConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    cohere_api_key: cdktf.stringToTerraform(struct!.cohereApiKey),
+  }
+}
+
+
+export function modelServingConfigServedEntitiesExternalModelCohereConfigToHclTerraform(struct?: ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference | ModelServingConfigServedEntitiesExternalModelCohereConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cohere_api_key: {
+      value: cdktf.stringToHclTerraform(struct!.cohereApiKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ModelServingConfigServedEntitiesExternalModelCohereConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._cohereApiKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cohereApiKey = this._cohereApiKey;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ModelServingConfigServedEntitiesExternalModelCohereConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._cohereApiKey = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._cohereApiKey = value.cohereApiKey;
+    }
+  }
+
+  // cohere_api_key - computed: false, optional: false, required: true
+  private _cohereApiKey?: string; 
+  public get cohereApiKey() {
+    return this.getStringAttribute('cohere_api_key');
+  }
+  public set cohereApiKey(value: string) {
+    this._cohereApiKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cohereApiKeyInput() {
+    return this._cohereApiKey;
+  }
+}
+export interface ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#databricks_api_token ModelServing#databricks_api_token}
+  */
+  readonly databricksApiToken: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#databricks_workspace_url ModelServing#databricks_workspace_url}
+  */
+  readonly databricksWorkspaceUrl: string;
+}
+
+export function modelServingConfigServedEntitiesExternalModelDatabricksModelServingConfigToTerraform(struct?: ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfigOutputReference | ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    databricks_api_token: cdktf.stringToTerraform(struct!.databricksApiToken),
+    databricks_workspace_url: cdktf.stringToTerraform(struct!.databricksWorkspaceUrl),
+  }
+}
+
+
+export function modelServingConfigServedEntitiesExternalModelDatabricksModelServingConfigToHclTerraform(struct?: ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfigOutputReference | ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    databricks_api_token: {
+      value: cdktf.stringToHclTerraform(struct!.databricksApiToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    databricks_workspace_url: {
+      value: cdktf.stringToHclTerraform(struct!.databricksWorkspaceUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._databricksApiToken !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.databricksApiToken = this._databricksApiToken;
+    }
+    if (this._databricksWorkspaceUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.databricksWorkspaceUrl = this._databricksWorkspaceUrl;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._databricksApiToken = undefined;
+      this._databricksWorkspaceUrl = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._databricksApiToken = value.databricksApiToken;
+      this._databricksWorkspaceUrl = value.databricksWorkspaceUrl;
+    }
+  }
+
+  // databricks_api_token - computed: false, optional: false, required: true
+  private _databricksApiToken?: string; 
+  public get databricksApiToken() {
+    return this.getStringAttribute('databricks_api_token');
+  }
+  public set databricksApiToken(value: string) {
+    this._databricksApiToken = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databricksApiTokenInput() {
+    return this._databricksApiToken;
+  }
+
+  // databricks_workspace_url - computed: false, optional: false, required: true
+  private _databricksWorkspaceUrl?: string; 
+  public get databricksWorkspaceUrl() {
+    return this.getStringAttribute('databricks_workspace_url');
+  }
+  public set databricksWorkspaceUrl(value: string) {
+    this._databricksWorkspaceUrl = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databricksWorkspaceUrlInput() {
+    return this._databricksWorkspaceUrl;
+  }
+}
+export interface ModelServingConfigServedEntitiesExternalModelOpenaiConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#openai_api_base ModelServing#openai_api_base}
+  */
+  readonly openaiApiBase?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#openai_api_key ModelServing#openai_api_key}
+  */
+  readonly openaiApiKey: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#openai_api_type ModelServing#openai_api_type}
+  */
+  readonly openaiApiType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#openai_api_version ModelServing#openai_api_version}
+  */
+  readonly openaiApiVersion?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#openai_deployment_name ModelServing#openai_deployment_name}
+  */
+  readonly openaiDeploymentName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#openai_organization ModelServing#openai_organization}
+  */
+  readonly openaiOrganization?: string;
+}
+
+export function modelServingConfigServedEntitiesExternalModelOpenaiConfigToTerraform(struct?: ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputReference | ModelServingConfigServedEntitiesExternalModelOpenaiConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    openai_api_base: cdktf.stringToTerraform(struct!.openaiApiBase),
+    openai_api_key: cdktf.stringToTerraform(struct!.openaiApiKey),
+    openai_api_type: cdktf.stringToTerraform(struct!.openaiApiType),
+    openai_api_version: cdktf.stringToTerraform(struct!.openaiApiVersion),
+    openai_deployment_name: cdktf.stringToTerraform(struct!.openaiDeploymentName),
+    openai_organization: cdktf.stringToTerraform(struct!.openaiOrganization),
+  }
+}
+
+
+export function modelServingConfigServedEntitiesExternalModelOpenaiConfigToHclTerraform(struct?: ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputReference | ModelServingConfigServedEntitiesExternalModelOpenaiConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    openai_api_base: {
+      value: cdktf.stringToHclTerraform(struct!.openaiApiBase),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    openai_api_key: {
+      value: cdktf.stringToHclTerraform(struct!.openaiApiKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    openai_api_type: {
+      value: cdktf.stringToHclTerraform(struct!.openaiApiType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    openai_api_version: {
+      value: cdktf.stringToHclTerraform(struct!.openaiApiVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    openai_deployment_name: {
+      value: cdktf.stringToHclTerraform(struct!.openaiDeploymentName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    openai_organization: {
+      value: cdktf.stringToHclTerraform(struct!.openaiOrganization),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ModelServingConfigServedEntitiesExternalModelOpenaiConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._openaiApiBase !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.openaiApiBase = this._openaiApiBase;
+    }
+    if (this._openaiApiKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.openaiApiKey = this._openaiApiKey;
+    }
+    if (this._openaiApiType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.openaiApiType = this._openaiApiType;
+    }
+    if (this._openaiApiVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.openaiApiVersion = this._openaiApiVersion;
+    }
+    if (this._openaiDeploymentName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.openaiDeploymentName = this._openaiDeploymentName;
+    }
+    if (this._openaiOrganization !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.openaiOrganization = this._openaiOrganization;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ModelServingConfigServedEntitiesExternalModelOpenaiConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._openaiApiBase = undefined;
+      this._openaiApiKey = undefined;
+      this._openaiApiType = undefined;
+      this._openaiApiVersion = undefined;
+      this._openaiDeploymentName = undefined;
+      this._openaiOrganization = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._openaiApiBase = value.openaiApiBase;
+      this._openaiApiKey = value.openaiApiKey;
+      this._openaiApiType = value.openaiApiType;
+      this._openaiApiVersion = value.openaiApiVersion;
+      this._openaiDeploymentName = value.openaiDeploymentName;
+      this._openaiOrganization = value.openaiOrganization;
+    }
+  }
+
+  // openai_api_base - computed: false, optional: true, required: false
+  private _openaiApiBase?: string; 
+  public get openaiApiBase() {
+    return this.getStringAttribute('openai_api_base');
+  }
+  public set openaiApiBase(value: string) {
+    this._openaiApiBase = value;
+  }
+  public resetOpenaiApiBase() {
+    this._openaiApiBase = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get openaiApiBaseInput() {
+    return this._openaiApiBase;
+  }
+
+  // openai_api_key - computed: false, optional: false, required: true
+  private _openaiApiKey?: string; 
+  public get openaiApiKey() {
+    return this.getStringAttribute('openai_api_key');
+  }
+  public set openaiApiKey(value: string) {
+    this._openaiApiKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get openaiApiKeyInput() {
+    return this._openaiApiKey;
+  }
+
+  // openai_api_type - computed: false, optional: true, required: false
+  private _openaiApiType?: string; 
+  public get openaiApiType() {
+    return this.getStringAttribute('openai_api_type');
+  }
+  public set openaiApiType(value: string) {
+    this._openaiApiType = value;
+  }
+  public resetOpenaiApiType() {
+    this._openaiApiType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get openaiApiTypeInput() {
+    return this._openaiApiType;
+  }
+
+  // openai_api_version - computed: false, optional: true, required: false
+  private _openaiApiVersion?: string; 
+  public get openaiApiVersion() {
+    return this.getStringAttribute('openai_api_version');
+  }
+  public set openaiApiVersion(value: string) {
+    this._openaiApiVersion = value;
+  }
+  public resetOpenaiApiVersion() {
+    this._openaiApiVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get openaiApiVersionInput() {
+    return this._openaiApiVersion;
+  }
+
+  // openai_deployment_name - computed: false, optional: true, required: false
+  private _openaiDeploymentName?: string; 
+  public get openaiDeploymentName() {
+    return this.getStringAttribute('openai_deployment_name');
+  }
+  public set openaiDeploymentName(value: string) {
+    this._openaiDeploymentName = value;
+  }
+  public resetOpenaiDeploymentName() {
+    this._openaiDeploymentName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get openaiDeploymentNameInput() {
+    return this._openaiDeploymentName;
+  }
+
+  // openai_organization - computed: false, optional: true, required: false
+  private _openaiOrganization?: string; 
+  public get openaiOrganization() {
+    return this.getStringAttribute('openai_organization');
+  }
+  public set openaiOrganization(value: string) {
+    this._openaiOrganization = value;
+  }
+  public resetOpenaiOrganization() {
+    this._openaiOrganization = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get openaiOrganizationInput() {
+    return this._openaiOrganization;
+  }
+}
+export interface ModelServingConfigServedEntitiesExternalModelPalmConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#palm_api_key ModelServing#palm_api_key}
+  */
+  readonly palmApiKey: string;
+}
+
+export function modelServingConfigServedEntitiesExternalModelPalmConfigToTerraform(struct?: ModelServingConfigServedEntitiesExternalModelPalmConfigOutputReference | ModelServingConfigServedEntitiesExternalModelPalmConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    palm_api_key: cdktf.stringToTerraform(struct!.palmApiKey),
+  }
+}
+
+
+export function modelServingConfigServedEntitiesExternalModelPalmConfigToHclTerraform(struct?: ModelServingConfigServedEntitiesExternalModelPalmConfigOutputReference | ModelServingConfigServedEntitiesExternalModelPalmConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    palm_api_key: {
+      value: cdktf.stringToHclTerraform(struct!.palmApiKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ModelServingConfigServedEntitiesExternalModelPalmConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ModelServingConfigServedEntitiesExternalModelPalmConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._palmApiKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.palmApiKey = this._palmApiKey;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ModelServingConfigServedEntitiesExternalModelPalmConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._palmApiKey = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._palmApiKey = value.palmApiKey;
+    }
+  }
+
+  // palm_api_key - computed: false, optional: false, required: true
+  private _palmApiKey?: string; 
+  public get palmApiKey() {
+    return this.getStringAttribute('palm_api_key');
+  }
+  public set palmApiKey(value: string) {
+    this._palmApiKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get palmApiKeyInput() {
+    return this._palmApiKey;
+  }
+}
+export interface ModelServingConfigServedEntitiesExternalModel {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#name ModelServing#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#provider ModelServing#provider}
+  */
+  readonly provider: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#task ModelServing#task}
+  */
+  readonly task: string;
+  /**
+  * ai21labs_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#ai21labs_config ModelServing#ai21labs_config}
+  */
+  readonly ai21LabsConfig?: ModelServingConfigServedEntitiesExternalModelAi21LabsConfig;
+  /**
+  * amazon_bedrock_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#amazon_bedrock_config ModelServing#amazon_bedrock_config}
+  */
+  readonly amazonBedrockConfig?: ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig;
+  /**
+  * anthropic_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#anthropic_config ModelServing#anthropic_config}
+  */
+  readonly anthropicConfig?: ModelServingConfigServedEntitiesExternalModelAnthropicConfig;
+  /**
+  * cohere_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#cohere_config ModelServing#cohere_config}
+  */
+  readonly cohereConfig?: ModelServingConfigServedEntitiesExternalModelCohereConfig;
+  /**
+  * databricks_model_serving_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#databricks_model_serving_config ModelServing#databricks_model_serving_config}
+  */
+  readonly databricksModelServingConfig?: ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfig;
+  /**
+  * openai_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#openai_config ModelServing#openai_config}
+  */
+  readonly openaiConfig?: ModelServingConfigServedEntitiesExternalModelOpenaiConfig;
+  /**
+  * palm_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#palm_config ModelServing#palm_config}
+  */
+  readonly palmConfig?: ModelServingConfigServedEntitiesExternalModelPalmConfig;
+}
+
+export function modelServingConfigServedEntitiesExternalModelToTerraform(struct?: ModelServingConfigServedEntitiesExternalModelOutputReference | ModelServingConfigServedEntitiesExternalModel): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    provider: cdktf.stringToTerraform(struct!.provider),
+    task: cdktf.stringToTerraform(struct!.task),
+    ai21labs_config: modelServingConfigServedEntitiesExternalModelAi21LabsConfigToTerraform(struct!.ai21LabsConfig),
+    amazon_bedrock_config: modelServingConfigServedEntitiesExternalModelAmazonBedrockConfigToTerraform(struct!.amazonBedrockConfig),
+    anthropic_config: modelServingConfigServedEntitiesExternalModelAnthropicConfigToTerraform(struct!.anthropicConfig),
+    cohere_config: modelServingConfigServedEntitiesExternalModelCohereConfigToTerraform(struct!.cohereConfig),
+    databricks_model_serving_config: modelServingConfigServedEntitiesExternalModelDatabricksModelServingConfigToTerraform(struct!.databricksModelServingConfig),
+    openai_config: modelServingConfigServedEntitiesExternalModelOpenaiConfigToTerraform(struct!.openaiConfig),
+    palm_config: modelServingConfigServedEntitiesExternalModelPalmConfigToTerraform(struct!.palmConfig),
+  }
+}
+
+
+export function modelServingConfigServedEntitiesExternalModelToHclTerraform(struct?: ModelServingConfigServedEntitiesExternalModelOutputReference | ModelServingConfigServedEntitiesExternalModel): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    provider: {
+      value: cdktf.stringToHclTerraform(struct!.provider),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    task: {
+      value: cdktf.stringToHclTerraform(struct!.task),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ai21labs_config: {
+      value: modelServingConfigServedEntitiesExternalModelAi21LabsConfigToHclTerraform(struct!.ai21LabsConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ModelServingConfigServedEntitiesExternalModelAi21LabsConfigList",
+    },
+    amazon_bedrock_config: {
+      value: modelServingConfigServedEntitiesExternalModelAmazonBedrockConfigToHclTerraform(struct!.amazonBedrockConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigList",
+    },
+    anthropic_config: {
+      value: modelServingConfigServedEntitiesExternalModelAnthropicConfigToHclTerraform(struct!.anthropicConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ModelServingConfigServedEntitiesExternalModelAnthropicConfigList",
+    },
+    cohere_config: {
+      value: modelServingConfigServedEntitiesExternalModelCohereConfigToHclTerraform(struct!.cohereConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ModelServingConfigServedEntitiesExternalModelCohereConfigList",
+    },
+    databricks_model_serving_config: {
+      value: modelServingConfigServedEntitiesExternalModelDatabricksModelServingConfigToHclTerraform(struct!.databricksModelServingConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfigList",
+    },
+    openai_config: {
+      value: modelServingConfigServedEntitiesExternalModelOpenaiConfigToHclTerraform(struct!.openaiConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ModelServingConfigServedEntitiesExternalModelOpenaiConfigList",
+    },
+    palm_config: {
+      value: modelServingConfigServedEntitiesExternalModelPalmConfigToHclTerraform(struct!.palmConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ModelServingConfigServedEntitiesExternalModelPalmConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ModelServingConfigServedEntitiesExternalModelOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ModelServingConfigServedEntitiesExternalModel | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._provider !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.provider = this._provider;
+    }
+    if (this._task !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.task = this._task;
+    }
+    if (this._ai21LabsConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ai21LabsConfig = this._ai21LabsConfig?.internalValue;
+    }
+    if (this._amazonBedrockConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.amazonBedrockConfig = this._amazonBedrockConfig?.internalValue;
+    }
+    if (this._anthropicConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.anthropicConfig = this._anthropicConfig?.internalValue;
+    }
+    if (this._cohereConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cohereConfig = this._cohereConfig?.internalValue;
+    }
+    if (this._databricksModelServingConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.databricksModelServingConfig = this._databricksModelServingConfig?.internalValue;
+    }
+    if (this._openaiConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.openaiConfig = this._openaiConfig?.internalValue;
+    }
+    if (this._palmConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.palmConfig = this._palmConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ModelServingConfigServedEntitiesExternalModel | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+      this._provider = undefined;
+      this._task = undefined;
+      this._ai21LabsConfig.internalValue = undefined;
+      this._amazonBedrockConfig.internalValue = undefined;
+      this._anthropicConfig.internalValue = undefined;
+      this._cohereConfig.internalValue = undefined;
+      this._databricksModelServingConfig.internalValue = undefined;
+      this._openaiConfig.internalValue = undefined;
+      this._palmConfig.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+      this._provider = value.provider;
+      this._task = value.task;
+      this._ai21LabsConfig.internalValue = value.ai21LabsConfig;
+      this._amazonBedrockConfig.internalValue = value.amazonBedrockConfig;
+      this._anthropicConfig.internalValue = value.anthropicConfig;
+      this._cohereConfig.internalValue = value.cohereConfig;
+      this._databricksModelServingConfig.internalValue = value.databricksModelServingConfig;
+      this._openaiConfig.internalValue = value.openaiConfig;
+      this._palmConfig.internalValue = value.palmConfig;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // provider - computed: false, optional: false, required: true
+  private _provider?: string; 
+  public get provider() {
+    return this.getStringAttribute('provider');
+  }
+  public set provider(value: string) {
+    this._provider = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerInput() {
+    return this._provider;
+  }
+
+  // task - computed: false, optional: false, required: true
+  private _task?: string; 
+  public get task() {
+    return this.getStringAttribute('task');
+  }
+  public set task(value: string) {
+    this._task = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get taskInput() {
+    return this._task;
+  }
+
+  // ai21labs_config - computed: false, optional: true, required: false
+  private _ai21LabsConfig = new ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOutputReference(this, "ai21labs_config");
+  public get ai21LabsConfig() {
+    return this._ai21LabsConfig;
+  }
+  public putAi21LabsConfig(value: ModelServingConfigServedEntitiesExternalModelAi21LabsConfig) {
+    this._ai21LabsConfig.internalValue = value;
+  }
+  public resetAi21LabsConfig() {
+    this._ai21LabsConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ai21LabsConfigInput() {
+    return this._ai21LabsConfig.internalValue;
+  }
+
+  // amazon_bedrock_config - computed: false, optional: true, required: false
+  private _amazonBedrockConfig = new ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference(this, "amazon_bedrock_config");
+  public get amazonBedrockConfig() {
+    return this._amazonBedrockConfig;
+  }
+  public putAmazonBedrockConfig(value: ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig) {
+    this._amazonBedrockConfig.internalValue = value;
+  }
+  public resetAmazonBedrockConfig() {
+    this._amazonBedrockConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get amazonBedrockConfigInput() {
+    return this._amazonBedrockConfig.internalValue;
+  }
+
+  // anthropic_config - computed: false, optional: true, required: false
+  private _anthropicConfig = new ModelServingConfigServedEntitiesExternalModelAnthropicConfigOutputReference(this, "anthropic_config");
+  public get anthropicConfig() {
+    return this._anthropicConfig;
+  }
+  public putAnthropicConfig(value: ModelServingConfigServedEntitiesExternalModelAnthropicConfig) {
+    this._anthropicConfig.internalValue = value;
+  }
+  public resetAnthropicConfig() {
+    this._anthropicConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get anthropicConfigInput() {
+    return this._anthropicConfig.internalValue;
+  }
+
+  // cohere_config - computed: false, optional: true, required: false
+  private _cohereConfig = new ModelServingConfigServedEntitiesExternalModelCohereConfigOutputReference(this, "cohere_config");
+  public get cohereConfig() {
+    return this._cohereConfig;
+  }
+  public putCohereConfig(value: ModelServingConfigServedEntitiesExternalModelCohereConfig) {
+    this._cohereConfig.internalValue = value;
+  }
+  public resetCohereConfig() {
+    this._cohereConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cohereConfigInput() {
+    return this._cohereConfig.internalValue;
+  }
+
+  // databricks_model_serving_config - computed: false, optional: true, required: false
+  private _databricksModelServingConfig = new ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfigOutputReference(this, "databricks_model_serving_config");
+  public get databricksModelServingConfig() {
+    return this._databricksModelServingConfig;
+  }
+  public putDatabricksModelServingConfig(value: ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfig) {
+    this._databricksModelServingConfig.internalValue = value;
+  }
+  public resetDatabricksModelServingConfig() {
+    this._databricksModelServingConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databricksModelServingConfigInput() {
+    return this._databricksModelServingConfig.internalValue;
+  }
+
+  // openai_config - computed: false, optional: true, required: false
+  private _openaiConfig = new ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputReference(this, "openai_config");
+  public get openaiConfig() {
+    return this._openaiConfig;
+  }
+  public putOpenaiConfig(value: ModelServingConfigServedEntitiesExternalModelOpenaiConfig) {
+    this._openaiConfig.internalValue = value;
+  }
+  public resetOpenaiConfig() {
+    this._openaiConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get openaiConfigInput() {
+    return this._openaiConfig.internalValue;
+  }
+
+  // palm_config - computed: false, optional: true, required: false
+  private _palmConfig = new ModelServingConfigServedEntitiesExternalModelPalmConfigOutputReference(this, "palm_config");
+  public get palmConfig() {
+    return this._palmConfig;
+  }
+  public putPalmConfig(value: ModelServingConfigServedEntitiesExternalModelPalmConfig) {
+    this._palmConfig.internalValue = value;
+  }
+  public resetPalmConfig() {
+    this._palmConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get palmConfigInput() {
+    return this._palmConfig.internalValue;
+  }
+}
+export interface ModelServingConfigServedEntities {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#entity_name ModelServing#entity_name}
+  */
+  readonly entityName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#entity_version ModelServing#entity_version}
+  */
+  readonly entityVersion?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#environment_vars ModelServing#environment_vars}
   */
   readonly environmentVars?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#instance_profile_arn ModelServing#instance_profile_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#instance_profile_arn ModelServing#instance_profile_arn}
   */
   readonly instanceProfileArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#model_name ModelServing#model_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#max_provisioned_throughput ModelServing#max_provisioned_throughput}
   */
-  readonly modelName: string;
+  readonly maxProvisionedThroughput?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#model_version ModelServing#model_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#min_provisioned_throughput ModelServing#min_provisioned_throughput}
   */
-  readonly modelVersion: string;
+  readonly minProvisionedThroughput?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#name ModelServing#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#name ModelServing#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#scale_to_zero_enabled ModelServing#scale_to_zero_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#scale_to_zero_enabled ModelServing#scale_to_zero_enabled}
   */
   readonly scaleToZeroEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#workload_size ModelServing#workload_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#workload_size ModelServing#workload_size}
+  */
+  readonly workloadSize?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#workload_type ModelServing#workload_type}
+  */
+  readonly workloadType?: string;
+  /**
+  * external_model block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#external_model ModelServing#external_model}
+  */
+  readonly externalModel?: ModelServingConfigServedEntitiesExternalModel;
+}
+
+export function modelServingConfigServedEntitiesToTerraform(struct?: ModelServingConfigServedEntities | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    entity_name: cdktf.stringToTerraform(struct!.entityName),
+    entity_version: cdktf.stringToTerraform(struct!.entityVersion),
+    environment_vars: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.environmentVars),
+    instance_profile_arn: cdktf.stringToTerraform(struct!.instanceProfileArn),
+    max_provisioned_throughput: cdktf.numberToTerraform(struct!.maxProvisionedThroughput),
+    min_provisioned_throughput: cdktf.numberToTerraform(struct!.minProvisionedThroughput),
+    name: cdktf.stringToTerraform(struct!.name),
+    scale_to_zero_enabled: cdktf.booleanToTerraform(struct!.scaleToZeroEnabled),
+    workload_size: cdktf.stringToTerraform(struct!.workloadSize),
+    workload_type: cdktf.stringToTerraform(struct!.workloadType),
+    external_model: modelServingConfigServedEntitiesExternalModelToTerraform(struct!.externalModel),
+  }
+}
+
+
+export function modelServingConfigServedEntitiesToHclTerraform(struct?: ModelServingConfigServedEntities | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    entity_name: {
+      value: cdktf.stringToHclTerraform(struct!.entityName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    entity_version: {
+      value: cdktf.stringToHclTerraform(struct!.entityVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    environment_vars: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.environmentVars),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    instance_profile_arn: {
+      value: cdktf.stringToHclTerraform(struct!.instanceProfileArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    max_provisioned_throughput: {
+      value: cdktf.numberToHclTerraform(struct!.maxProvisionedThroughput),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    min_provisioned_throughput: {
+      value: cdktf.numberToHclTerraform(struct!.minProvisionedThroughput),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    scale_to_zero_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.scaleToZeroEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    workload_size: {
+      value: cdktf.stringToHclTerraform(struct!.workloadSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    workload_type: {
+      value: cdktf.stringToHclTerraform(struct!.workloadType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    external_model: {
+      value: modelServingConfigServedEntitiesExternalModelToHclTerraform(struct!.externalModel),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ModelServingConfigServedEntitiesExternalModelList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ModelServingConfigServedEntitiesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ModelServingConfigServedEntities | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._entityName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.entityName = this._entityName;
+    }
+    if (this._entityVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.entityVersion = this._entityVersion;
+    }
+    if (this._environmentVars !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.environmentVars = this._environmentVars;
+    }
+    if (this._instanceProfileArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instanceProfileArn = this._instanceProfileArn;
+    }
+    if (this._maxProvisionedThroughput !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxProvisionedThroughput = this._maxProvisionedThroughput;
+    }
+    if (this._minProvisionedThroughput !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minProvisionedThroughput = this._minProvisionedThroughput;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._scaleToZeroEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scaleToZeroEnabled = this._scaleToZeroEnabled;
+    }
+    if (this._workloadSize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workloadSize = this._workloadSize;
+    }
+    if (this._workloadType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workloadType = this._workloadType;
+    }
+    if (this._externalModel?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.externalModel = this._externalModel?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ModelServingConfigServedEntities | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._entityName = undefined;
+      this._entityVersion = undefined;
+      this._environmentVars = undefined;
+      this._instanceProfileArn = undefined;
+      this._maxProvisionedThroughput = undefined;
+      this._minProvisionedThroughput = undefined;
+      this._name = undefined;
+      this._scaleToZeroEnabled = undefined;
+      this._workloadSize = undefined;
+      this._workloadType = undefined;
+      this._externalModel.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._entityName = value.entityName;
+      this._entityVersion = value.entityVersion;
+      this._environmentVars = value.environmentVars;
+      this._instanceProfileArn = value.instanceProfileArn;
+      this._maxProvisionedThroughput = value.maxProvisionedThroughput;
+      this._minProvisionedThroughput = value.minProvisionedThroughput;
+      this._name = value.name;
+      this._scaleToZeroEnabled = value.scaleToZeroEnabled;
+      this._workloadSize = value.workloadSize;
+      this._workloadType = value.workloadType;
+      this._externalModel.internalValue = value.externalModel;
+    }
+  }
+
+  // entity_name - computed: false, optional: true, required: false
+  private _entityName?: string; 
+  public get entityName() {
+    return this.getStringAttribute('entity_name');
+  }
+  public set entityName(value: string) {
+    this._entityName = value;
+  }
+  public resetEntityName() {
+    this._entityName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get entityNameInput() {
+    return this._entityName;
+  }
+
+  // entity_version - computed: false, optional: true, required: false
+  private _entityVersion?: string; 
+  public get entityVersion() {
+    return this.getStringAttribute('entity_version');
+  }
+  public set entityVersion(value: string) {
+    this._entityVersion = value;
+  }
+  public resetEntityVersion() {
+    this._entityVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get entityVersionInput() {
+    return this._entityVersion;
+  }
+
+  // environment_vars - computed: false, optional: true, required: false
+  private _environmentVars?: { [key: string]: string }; 
+  public get environmentVars() {
+    return this.getStringMapAttribute('environment_vars');
+  }
+  public set environmentVars(value: { [key: string]: string }) {
+    this._environmentVars = value;
+  }
+  public resetEnvironmentVars() {
+    this._environmentVars = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get environmentVarsInput() {
+    return this._environmentVars;
+  }
+
+  // instance_profile_arn - computed: false, optional: true, required: false
+  private _instanceProfileArn?: string; 
+  public get instanceProfileArn() {
+    return this.getStringAttribute('instance_profile_arn');
+  }
+  public set instanceProfileArn(value: string) {
+    this._instanceProfileArn = value;
+  }
+  public resetInstanceProfileArn() {
+    this._instanceProfileArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceProfileArnInput() {
+    return this._instanceProfileArn;
+  }
+
+  // max_provisioned_throughput - computed: false, optional: true, required: false
+  private _maxProvisionedThroughput?: number; 
+  public get maxProvisionedThroughput() {
+    return this.getNumberAttribute('max_provisioned_throughput');
+  }
+  public set maxProvisionedThroughput(value: number) {
+    this._maxProvisionedThroughput = value;
+  }
+  public resetMaxProvisionedThroughput() {
+    this._maxProvisionedThroughput = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxProvisionedThroughputInput() {
+    return this._maxProvisionedThroughput;
+  }
+
+  // min_provisioned_throughput - computed: false, optional: true, required: false
+  private _minProvisionedThroughput?: number; 
+  public get minProvisionedThroughput() {
+    return this.getNumberAttribute('min_provisioned_throughput');
+  }
+  public set minProvisionedThroughput(value: number) {
+    this._minProvisionedThroughput = value;
+  }
+  public resetMinProvisionedThroughput() {
+    this._minProvisionedThroughput = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minProvisionedThroughputInput() {
+    return this._minProvisionedThroughput;
+  }
+
+  // name - computed: true, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // scale_to_zero_enabled - computed: false, optional: true, required: false
+  private _scaleToZeroEnabled?: boolean | cdktf.IResolvable; 
+  public get scaleToZeroEnabled() {
+    return this.getBooleanAttribute('scale_to_zero_enabled');
+  }
+  public set scaleToZeroEnabled(value: boolean | cdktf.IResolvable) {
+    this._scaleToZeroEnabled = value;
+  }
+  public resetScaleToZeroEnabled() {
+    this._scaleToZeroEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scaleToZeroEnabledInput() {
+    return this._scaleToZeroEnabled;
+  }
+
+  // workload_size - computed: false, optional: true, required: false
+  private _workloadSize?: string; 
+  public get workloadSize() {
+    return this.getStringAttribute('workload_size');
+  }
+  public set workloadSize(value: string) {
+    this._workloadSize = value;
+  }
+  public resetWorkloadSize() {
+    this._workloadSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workloadSizeInput() {
+    return this._workloadSize;
+  }
+
+  // workload_type - computed: false, optional: true, required: false
+  private _workloadType?: string; 
+  public get workloadType() {
+    return this.getStringAttribute('workload_type');
+  }
+  public set workloadType(value: string) {
+    this._workloadType = value;
+  }
+  public resetWorkloadType() {
+    this._workloadType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workloadTypeInput() {
+    return this._workloadType;
+  }
+
+  // external_model - computed: false, optional: true, required: false
+  private _externalModel = new ModelServingConfigServedEntitiesExternalModelOutputReference(this, "external_model");
+  public get externalModel() {
+    return this._externalModel;
+  }
+  public putExternalModel(value: ModelServingConfigServedEntitiesExternalModel) {
+    this._externalModel.internalValue = value;
+  }
+  public resetExternalModel() {
+    this._externalModel.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalModelInput() {
+    return this._externalModel.internalValue;
+  }
+}
+
+export class ModelServingConfigServedEntitiesList extends cdktf.ComplexList {
+  public internalValue? : ModelServingConfigServedEntities[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ModelServingConfigServedEntitiesOutputReference {
+    return new ModelServingConfigServedEntitiesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ModelServingConfigServedModels {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#environment_vars ModelServing#environment_vars}
+  */
+  readonly environmentVars?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#instance_profile_arn ModelServing#instance_profile_arn}
+  */
+  readonly instanceProfileArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#model_name ModelServing#model_name}
+  */
+  readonly modelName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#model_version ModelServing#model_version}
+  */
+  readonly modelVersion: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#name ModelServing#name}
+  */
+  readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#scale_to_zero_enabled ModelServing#scale_to_zero_enabled}
+  */
+  readonly scaleToZeroEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#workload_size ModelServing#workload_size}
   */
   readonly workloadSize: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#workload_type ModelServing#workload_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#workload_type ModelServing#workload_type}
   */
   readonly workloadType?: string;
 }
@@ -571,11 +2252,11 @@ export class ModelServingConfigServedModelsList extends cdktf.ComplexList {
 }
 export interface ModelServingConfigTrafficConfigRoutes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#served_model_name ModelServing#served_model_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#served_model_name ModelServing#served_model_name}
   */
   readonly servedModelName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#traffic_percentage ModelServing#traffic_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#traffic_percentage ModelServing#traffic_percentage}
   */
   readonly trafficPercentage: number;
 }
@@ -716,7 +2397,7 @@ export interface ModelServingConfigTrafficConfig {
   /**
   * routes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#routes ModelServing#routes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#routes ModelServing#routes}
   */
   readonly routes?: ModelServingConfigTrafficConfigRoutes[] | cdktf.IResolvable;
 }
@@ -802,19 +2483,25 @@ export interface ModelServingConfigA {
   /**
   * auto_capture_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#auto_capture_config ModelServing#auto_capture_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#auto_capture_config ModelServing#auto_capture_config}
   */
   readonly autoCaptureConfig?: ModelServingConfigAutoCaptureConfig;
   /**
+  * served_entities block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#served_entities ModelServing#served_entities}
+  */
+  readonly servedEntities?: ModelServingConfigServedEntities[] | cdktf.IResolvable;
+  /**
   * served_models block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#served_models ModelServing#served_models}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#served_models ModelServing#served_models}
   */
   readonly servedModels?: ModelServingConfigServedModels[] | cdktf.IResolvable;
   /**
   * traffic_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#traffic_config ModelServing#traffic_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#traffic_config ModelServing#traffic_config}
   */
   readonly trafficConfig?: ModelServingConfigTrafficConfig;
 }
@@ -826,6 +2513,7 @@ export function modelServingConfigAToTerraform(struct?: ModelServingConfigAOutpu
   }
   return {
     auto_capture_config: modelServingConfigAutoCaptureConfigToTerraform(struct!.autoCaptureConfig),
+    served_entities: cdktf.listMapper(modelServingConfigServedEntitiesToTerraform, true)(struct!.servedEntities),
     served_models: cdktf.listMapper(modelServingConfigServedModelsToTerraform, true)(struct!.servedModels),
     traffic_config: modelServingConfigTrafficConfigToTerraform(struct!.trafficConfig),
   }
@@ -843,6 +2531,12 @@ export function modelServingConfigAToHclTerraform(struct?: ModelServingConfigAOu
       isBlock: true,
       type: "list",
       storageClassType: "ModelServingConfigAutoCaptureConfigList",
+    },
+    served_entities: {
+      value: cdktf.listMapperHcl(modelServingConfigServedEntitiesToHclTerraform, true)(struct!.servedEntities),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ModelServingConfigServedEntitiesList",
     },
     served_models: {
       value: cdktf.listMapperHcl(modelServingConfigServedModelsToHclTerraform, true)(struct!.servedModels),
@@ -880,6 +2574,10 @@ export class ModelServingConfigAOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.autoCaptureConfig = this._autoCaptureConfig?.internalValue;
     }
+    if (this._servedEntities?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.servedEntities = this._servedEntities?.internalValue;
+    }
     if (this._servedModels?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.servedModels = this._servedModels?.internalValue;
@@ -895,12 +2593,14 @@ export class ModelServingConfigAOutputReference extends cdktf.ComplexObject {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._autoCaptureConfig.internalValue = undefined;
+      this._servedEntities.internalValue = undefined;
       this._servedModels.internalValue = undefined;
       this._trafficConfig.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._autoCaptureConfig.internalValue = value.autoCaptureConfig;
+      this._servedEntities.internalValue = value.servedEntities;
       this._servedModels.internalValue = value.servedModels;
       this._trafficConfig.internalValue = value.trafficConfig;
     }
@@ -920,6 +2620,22 @@ export class ModelServingConfigAOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get autoCaptureConfigInput() {
     return this._autoCaptureConfig.internalValue;
+  }
+
+  // served_entities - computed: false, optional: true, required: false
+  private _servedEntities = new ModelServingConfigServedEntitiesList(this, "served_entities", false);
+  public get servedEntities() {
+    return this._servedEntities;
+  }
+  public putServedEntities(value: ModelServingConfigServedEntities[] | cdktf.IResolvable) {
+    this._servedEntities.internalValue = value;
+  }
+  public resetServedEntities() {
+    this._servedEntities.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get servedEntitiesInput() {
+    return this._servedEntities.internalValue;
   }
 
   // served_models - computed: false, optional: true, required: false
@@ -956,15 +2672,15 @@ export class ModelServingConfigAOutputReference extends cdktf.ComplexObject {
 }
 export interface ModelServingRateLimits {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#calls ModelServing#calls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#calls ModelServing#calls}
   */
   readonly calls: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#key ModelServing#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#key ModelServing#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#renewal_period ModelServing#renewal_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#renewal_period ModelServing#renewal_period}
   */
   readonly renewalPeriod: string;
 }
@@ -1132,11 +2848,11 @@ export class ModelServingRateLimitsList extends cdktf.ComplexList {
 }
 export interface ModelServingTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#key ModelServing#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#key ModelServing#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#value ModelServing#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#value ModelServing#value}
   */
   readonly value?: string;
 }
@@ -1278,11 +2994,11 @@ export class ModelServingTagsList extends cdktf.ComplexList {
 }
 export interface ModelServingTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#create ModelServing#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#create ModelServing#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#update ModelServing#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#update ModelServing#update}
   */
   readonly update?: string;
 }
@@ -1405,7 +3121,7 @@ export class ModelServingTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving databricks_model_serving}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving databricks_model_serving}
 */
 export class ModelServing extends cdktf.TerraformResource {
 
@@ -1421,7 +3137,7 @@ export class ModelServing extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ModelServing resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ModelServing to import
-  * @param importFromId The id of the existing ModelServing that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ModelServing that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ModelServing to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1433,7 +3149,7 @@ export class ModelServing extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.38.0/docs/resources/model_serving databricks_model_serving} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.39.0/docs/resources/model_serving databricks_model_serving} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1444,7 +3160,7 @@ export class ModelServing extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_model_serving',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.38.0',
+        providerVersion: '1.39.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
