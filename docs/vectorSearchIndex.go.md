@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndex(scope Construct, id *string, config VectorSearchIndexConfig) VectorSearchIndex
 ```
@@ -445,7 +445,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndex.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.VectorSearchIndex_IsConstruct(x interface{}) *bool
 ```
@@ -477,7 +477,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndex.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.VectorSearchIndex_IsTerraformElement(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ vectorsearchindex.VectorSearchIndex_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndex.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.VectorSearchIndex_IsTerraformResource(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ vectorsearchindex.VectorSearchIndex_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndex.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.VectorSearchIndex_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -932,7 +932,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 &vectorsearchindex.VectorSearchIndexConfig {
 	Connection: interface{},
@@ -946,10 +946,10 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearc
 	IndexType: *string,
 	Name: *string,
 	PrimaryKey: *string,
-	DeltaSyncIndexSpec: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpec,
-	DirectAccessIndexSpec: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpec,
+	DeltaSyncIndexSpec: github.com/cdktf/cdktf-provider-databricks-go/databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpec,
+	DirectAccessIndexSpec: github.com/cdktf/cdktf-provider-databricks-go/databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpec,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.vectorSearchIndex.VectorSearchIndexTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-databricks-go/databricks.vectorSearchIndex.VectorSearchIndexTimeouts,
 }
 ```
 
@@ -1155,7 +1155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 &vectorsearchindex.VectorSearchIndexDeltaSyncIndexSpec {
 	EmbeddingSourceColumns: interface{},
@@ -1233,7 +1233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 &vectorsearchindex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns {
 	EmbeddingModelEndpointName: *string,
@@ -1279,7 +1279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 &vectorsearchindex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns {
 	EmbeddingDimension: *f64,
@@ -1325,7 +1325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 &vectorsearchindex.VectorSearchIndexDirectAccessIndexSpec {
 	EmbeddingSourceColumns: interface{},
@@ -1389,7 +1389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 &vectorsearchindex.VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns {
 	EmbeddingModelEndpointName: *string,
@@ -1435,7 +1435,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 &vectorsearchindex.VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns {
 	EmbeddingDimension: *f64,
@@ -1481,7 +1481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 &vectorsearchindex.VectorSearchIndexStatus {
 
@@ -1494,7 +1494,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearc
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 &vectorsearchindex.VectorSearchIndexTimeouts {
 	Create: *string,
@@ -1528,7 +1528,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsList
 ```
@@ -1688,7 +1688,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsOutputReference
 ```
@@ -2013,7 +2013,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsList
 ```
@@ -2173,7 +2173,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsOutputReference
 ```
@@ -2498,7 +2498,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexDeltaSyncIndexSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VectorSearchIndexDeltaSyncIndexSpecOutputReference
 ```
@@ -2900,7 +2900,7 @@ func InternalValue() VectorSearchIndexDeltaSyncIndexSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsList
 ```
@@ -3060,7 +3060,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputReference
 ```
@@ -3385,7 +3385,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsList
 ```
@@ -3545,7 +3545,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsOutputReference
 ```
@@ -3870,7 +3870,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexDirectAccessIndexSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VectorSearchIndexDirectAccessIndexSpecOutputReference
 ```
@@ -4232,7 +4232,7 @@ func InternalValue() VectorSearchIndexDirectAccessIndexSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VectorSearchIndexStatusList
 ```
@@ -4381,7 +4381,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VectorSearchIndexStatusOutputReference
 ```
@@ -4692,7 +4692,7 @@ func InternalValue() VectorSearchIndexStatus
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VectorSearchIndexTimeoutsOutputReference
 ```
