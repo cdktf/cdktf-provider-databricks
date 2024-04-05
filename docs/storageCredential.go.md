@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.storageCredential.StorageCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/storagecredential"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/storagecredential"
 
 storagecredential.NewStorageCredential(scope Construct, id *string, config StorageCredentialConfig) StorageCredential
 ```
@@ -534,7 +534,7 @@ func ResetSkipValidation()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.storageCredential.StorageCredential.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/storagecredential"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/storagecredential"
 
 storagecredential.StorageCredential_IsConstruct(x interface{}) *bool
 ```
@@ -566,7 +566,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.storageCredential.StorageCredential.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/storagecredential"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/storagecredential"
 
 storagecredential.StorageCredential_IsTerraformElement(x interface{}) *bool
 ```
@@ -580,7 +580,7 @@ storagecredential.StorageCredential_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.storageCredential.StorageCredential.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/storagecredential"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/storagecredential"
 
 storagecredential.StorageCredential_IsTerraformResource(x interface{}) *bool
 ```
@@ -594,7 +594,7 @@ storagecredential.StorageCredential_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.storageCredential.StorageCredential.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/storagecredential"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/storagecredential"
 
 storagecredential.StorageCredential_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1131,7 +1131,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.storageCredential.StorageCredentialAwsIamRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/storagecredential"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/storagecredential"
 
 &storagecredential.StorageCredentialAwsIamRole {
 	RoleArn: *string,
@@ -1191,7 +1191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.storageCredential.StorageCredentialAzureManagedIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/storagecredential"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/storagecredential"
 
 &storagecredential.StorageCredentialAzureManagedIdentity {
 	AccessConnectorId: *string,
@@ -1251,7 +1251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.storageCredential.StorageCredentialAzureServicePrincipal.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/storagecredential"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/storagecredential"
 
 &storagecredential.StorageCredentialAzureServicePrincipal {
 	ApplicationId: *string,
@@ -1311,7 +1311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/storagecredential"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/storagecredential"
 
 &storagecredential.StorageCredentialConfig {
 	Connection: interface{},
@@ -1322,14 +1322,14 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/storagecredenti
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	AwsIamRole: github.com/cdktf/cdktf-provider-databricks-go/databricks.storageCredential.StorageCredentialAwsIamRole,
-	AzureManagedIdentity: github.com/cdktf/cdktf-provider-databricks-go/databricks.storageCredential.StorageCredentialAzureManagedIdentity,
-	AzureServicePrincipal: github.com/cdktf/cdktf-provider-databricks-go/databricks.storageCredential.StorageCredentialAzureServicePrincipal,
+	AwsIamRole: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.storageCredential.StorageCredentialAwsIamRole,
+	AzureManagedIdentity: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.storageCredential.StorageCredentialAzureManagedIdentity,
+	AzureServicePrincipal: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.storageCredential.StorageCredentialAzureServicePrincipal,
 	Comment: *string,
-	DatabricksGcpServiceAccount: github.com/cdktf/cdktf-provider-databricks-go/databricks.storageCredential.StorageCredentialDatabricksGcpServiceAccount,
+	DatabricksGcpServiceAccount: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.storageCredential.StorageCredentialDatabricksGcpServiceAccount,
 	ForceDestroy: interface{},
 	ForceUpdate: interface{},
-	GcpServiceAccountKey: github.com/cdktf/cdktf-provider-databricks-go/databricks.storageCredential.StorageCredentialGcpServiceAccountKey,
+	GcpServiceAccountKey: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.storageCredential.StorageCredentialGcpServiceAccountKey,
 	Id: *string,
 	MetastoreId: *string,
 	Owner: *string,
@@ -1622,7 +1622,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.storageCredential.StorageCredentialDatabricksGcpServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/storagecredential"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/storagecredential"
 
 &storagecredential.StorageCredentialDatabricksGcpServiceAccount {
 	CredentialId: *string,
@@ -1668,7 +1668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.storageCredential.StorageCredentialGcpServiceAccountKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/storagecredential"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/storagecredential"
 
 &storagecredential.StorageCredentialGcpServiceAccountKey {
 	Email: *string,
@@ -1730,7 +1730,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.storageCredential.StorageCredentialAwsIamRoleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/storagecredential"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/storagecredential"
 
 storagecredential.NewStorageCredentialAwsIamRoleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageCredentialAwsIamRoleOutputReference
 ```
@@ -2059,7 +2059,7 @@ func InternalValue() StorageCredentialAwsIamRole
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.storageCredential.StorageCredentialAzureManagedIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/storagecredential"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/storagecredential"
 
 storagecredential.NewStorageCredentialAzureManagedIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageCredentialAzureManagedIdentityOutputReference
 ```
@@ -2388,7 +2388,7 @@ func InternalValue() StorageCredentialAzureManagedIdentity
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.storageCredential.StorageCredentialAzureServicePrincipalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/storagecredential"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/storagecredential"
 
 storagecredential.NewStorageCredentialAzureServicePrincipalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageCredentialAzureServicePrincipalOutputReference
 ```
@@ -2703,7 +2703,7 @@ func InternalValue() StorageCredentialAzureServicePrincipal
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.storageCredential.StorageCredentialDatabricksGcpServiceAccountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/storagecredential"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/storagecredential"
 
 storagecredential.NewStorageCredentialDatabricksGcpServiceAccountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageCredentialDatabricksGcpServiceAccountOutputReference
 ```
@@ -3010,7 +3010,7 @@ func InternalValue() StorageCredentialDatabricksGcpServiceAccount
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.storageCredential.StorageCredentialGcpServiceAccountKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/storagecredential"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/storagecredential"
 
 storagecredential.NewStorageCredentialGcpServiceAccountKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageCredentialGcpServiceAccountKeyOutputReference
 ```
