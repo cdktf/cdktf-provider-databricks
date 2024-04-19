@@ -29,6 +29,8 @@ The following submodules are available:
 - [dataDatabricksDbfsFile](./dataDatabricksDbfsFile.csharp.md)
 - [dataDatabricksDbfsFilePaths](./dataDatabricksDbfsFilePaths.csharp.md)
 - [dataDatabricksDirectory](./dataDatabricksDirectory.csharp.md)
+- [dataDatabricksExternalLocation](./dataDatabricksExternalLocation.csharp.md)
+- [dataDatabricksExternalLocations](./dataDatabricksExternalLocations.csharp.md)
 - [dataDatabricksGroup](./dataDatabricksGroup.csharp.md)
 - [dataDatabricksInstancePool](./dataDatabricksInstancePool.csharp.md)
 - [dataDatabricksInstanceProfiles](./dataDatabricksInstanceProfiles.csharp.md)

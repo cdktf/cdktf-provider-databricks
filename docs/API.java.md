@@ -29,6 +29,8 @@ The following submodules are available:
 - [dataDatabricksDbfsFile](./dataDatabricksDbfsFile.java.md)
 - [dataDatabricksDbfsFilePaths](./dataDatabricksDbfsFilePaths.java.md)
 - [dataDatabricksDirectory](./dataDatabricksDirectory.java.md)
+- [dataDatabricksExternalLocation](./dataDatabricksExternalLocation.java.md)
+- [dataDatabricksExternalLocations](./dataDatabricksExternalLocations.java.md)
 - [dataDatabricksGroup](./dataDatabricksGroup.java.md)
 - [dataDatabricksInstancePool](./dataDatabricksInstancePool.java.md)
 - [dataDatabricksInstanceProfiles](./dataDatabricksInstanceProfiles.java.md)

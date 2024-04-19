@@ -29,6 +29,8 @@ The following submodules are available:
 - [dataDatabricksDbfsFile](./dataDatabricksDbfsFile.python.md)
 - [dataDatabricksDbfsFilePaths](./dataDatabricksDbfsFilePaths.python.md)
 - [dataDatabricksDirectory](./dataDatabricksDirectory.python.md)
+- [dataDatabricksExternalLocation](./dataDatabricksExternalLocation.python.md)
+- [dataDatabricksExternalLocations](./dataDatabricksExternalLocations.python.md)
 - [dataDatabricksGroup](./dataDatabricksGroup.python.md)
 - [dataDatabricksInstancePool](./dataDatabricksInstancePool.python.md)
 - [dataDatabricksInstanceProfiles](./dataDatabricksInstanceProfiles.python.md)

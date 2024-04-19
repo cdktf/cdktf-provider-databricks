@@ -29,6 +29,8 @@ The following submodules are available:
 - [dataDatabricksDbfsFile](./dataDatabricksDbfsFile.typescript.md)
 - [dataDatabricksDbfsFilePaths](./dataDatabricksDbfsFilePaths.typescript.md)
 - [dataDatabricksDirectory](./dataDatabricksDirectory.typescript.md)
+- [dataDatabricksExternalLocation](./dataDatabricksExternalLocation.typescript.md)
+- [dataDatabricksExternalLocations](./dataDatabricksExternalLocations.typescript.md)
 - [dataDatabricksGroup](./dataDatabricksGroup.typescript.md)
 - [dataDatabricksInstancePool](./dataDatabricksInstancePool.typescript.md)
 - [dataDatabricksInstanceProfiles](./dataDatabricksInstanceProfiles.typescript.md)
