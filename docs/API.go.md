@@ -29,6 +29,8 @@ The following submodules are available:
 - [dataDatabricksDbfsFile](./dataDatabricksDbfsFile.go.md)
 - [dataDatabricksDbfsFilePaths](./dataDatabricksDbfsFilePaths.go.md)
 - [dataDatabricksDirectory](./dataDatabricksDirectory.go.md)
+- [dataDatabricksExternalLocation](./dataDatabricksExternalLocation.go.md)
+- [dataDatabricksExternalLocations](./dataDatabricksExternalLocations.go.md)
 - [dataDatabricksGroup](./dataDatabricksGroup.go.md)
 - [dataDatabricksInstancePool](./dataDatabricksInstancePool.go.md)
 - [dataDatabricksInstanceProfiles](./dataDatabricksInstanceProfiles.go.md)

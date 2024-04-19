@@ -106,6 +106,8 @@ export * as dataDatabricksCurrentUser from './data-databricks-current-user';
 export * as dataDatabricksDbfsFile from './data-databricks-dbfs-file';
 export * as dataDatabricksDbfsFilePaths from './data-databricks-dbfs-file-paths';
 export * as dataDatabricksDirectory from './data-databricks-directory';
+export * as dataDatabricksExternalLocation from './data-databricks-external-location';
+export * as dataDatabricksExternalLocations from './data-databricks-external-locations';
 export * as dataDatabricksGroup from './data-databricks-group';
 export * as dataDatabricksInstancePool from './data-databricks-instance-pool';
 export * as dataDatabricksInstanceProfiles from './data-databricks-instance-profiles';
