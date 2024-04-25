@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/data-sources/metastores
+// https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/data-sources/metastores
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +8,20 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksMetastoresConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/data-sources/metastores#id DataDatabricksMetastores#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/data-sources/metastores#id DataDatabricksMetastores#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/data-sources/metastores#ids DataDatabricksMetastores#ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/data-sources/metastores#ids DataDatabricksMetastores#ids}
   */
   readonly ids?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/data-sources/metastores databricks_metastores}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/data-sources/metastores databricks_metastores}
 */
 export class DataDatabricksMetastores extends cdktf.TerraformDataSource {
 
@@ -42,7 +37,7 @@ export class DataDatabricksMetastores extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksMetastores resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksMetastores to import
-  * @param importFromId The id of the existing DataDatabricksMetastores that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/data-sources/metastores#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksMetastores that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/data-sources/metastores#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksMetastores to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -54,7 +49,7 @@ export class DataDatabricksMetastores extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.40.0/docs/data-sources/metastores databricks_metastores} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/data-sources/metastores databricks_metastores} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +60,7 @@ export class DataDatabricksMetastores extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_metastores',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.40.0',
+        providerVersion: '1.41.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
