@@ -4,7 +4,7 @@
 
 ### DataDatabricksDirectory <a name="DataDatabricksDirectory" id="@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/data-sources/directory databricks_directory}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/data-sources/directory databricks_directory}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.Initializer"></a>
 
@@ -69,6 +69,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.resetObjectId">ResetObjectId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.resetWorkspacePath">ResetWorkspacePath</a></code> | *No description.* |
 
 ---
 
@@ -276,6 +277,12 @@ private void ResetId()
 private void ResetObjectId()
 ```
 
+##### `ResetWorkspacePath` <a name="ResetWorkspacePath" id="@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.resetWorkspacePath"></a>
+
+```csharp
+private void ResetWorkspacePath()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -379,7 +386,7 @@ The construct id used in the generated config for the DataDatabricksDirectory to
 
 The id of the existing DataDatabricksDirectory that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/data-sources/directory#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/data-sources/directory#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -407,13 +414,14 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.property.workspacePath">WorkspacePath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.property.objectIdInput">ObjectIdInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.property.pathInput">PathInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.property.workspacePathInput">WorkspacePathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.property.objectId">ObjectId</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.property.path">Path</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.property.workspacePath">WorkspacePath</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -539,16 +547,6 @@ public TerraformProvider Provider { get; }
 
 ---
 
-##### `WorkspacePath`<sup>Required</sup> <a name="WorkspacePath" id="@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.property.workspacePath"></a>
-
-```csharp
-public string WorkspacePath { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.property.idInput"></a>
 
 ```csharp
@@ -579,6 +577,16 @@ public string PathInput { get; }
 
 ---
 
+##### `WorkspacePathInput`<sup>Optional</sup> <a name="WorkspacePathInput" id="@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.property.workspacePathInput"></a>
+
+```csharp
+public string WorkspacePathInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.property.id"></a>
 
 ```csharp
@@ -603,6 +611,16 @@ public double ObjectId { get; }
 
 ```csharp
 public string Path { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `WorkspacePath`<sup>Required</sup> <a name="WorkspacePath" id="@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.property.workspacePath"></a>
+
+```csharp
+public string WorkspacePath { get; }
 ```
 
 - *Type:* string
@@ -646,7 +664,8 @@ new DataDatabricksDirectoryConfig {
     object[] Provisioners = null,
     string Path,
     string Id = null,
-    double ObjectId = null
+    double ObjectId = null,
+    string WorkspacePath = null
 };
 ```
 
@@ -661,9 +680,10 @@ new DataDatabricksDirectoryConfig {
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryConfig.property.path">Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/data-sources/directory#path DataDatabricksDirectory#path}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/data-sources/directory#id DataDatabricksDirectory#id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryConfig.property.objectId">ObjectId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/data-sources/directory#object_id DataDatabricksDirectory#object_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryConfig.property.path">Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/data-sources/directory#path DataDatabricksDirectory#path}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/data-sources/directory#id DataDatabricksDirectory#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryConfig.property.objectId">ObjectId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/data-sources/directory#object_id DataDatabricksDirectory#object_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryConfig.property.workspacePath">WorkspacePath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/data-sources/directory#workspace_path DataDatabricksDirectory#workspace_path}. |
 
 ---
 
@@ -745,7 +765,7 @@ public string Path { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/data-sources/directory#path DataDatabricksDirectory#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/data-sources/directory#path DataDatabricksDirectory#path}.
 
 ---
 
@@ -757,7 +777,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/data-sources/directory#id DataDatabricksDirectory#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/data-sources/directory#id DataDatabricksDirectory#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -772,7 +792,19 @@ public double ObjectId { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/data-sources/directory#object_id DataDatabricksDirectory#object_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/data-sources/directory#object_id DataDatabricksDirectory#object_id}.
+
+---
+
+##### `WorkspacePath`<sup>Optional</sup> <a name="WorkspacePath" id="@cdktf/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryConfig.property.workspacePath"></a>
+
+```csharp
+public string WorkspacePath { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/data-sources/directory#workspace_path DataDatabricksDirectory#workspace_path}.
 
 ---
 

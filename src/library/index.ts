@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/resources/library
+// https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/library
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,54 +8,58 @@ import * as cdktf from 'cdktf';
 
 export interface LibraryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/resources/library#cluster_id Library#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/library#cluster_id Library#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/resources/library#egg Library#egg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/library#egg Library#egg}
   */
   readonly egg?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/resources/library#id Library#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/library#id Library#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/resources/library#jar Library#jar}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/library#jar Library#jar}
   */
   readonly jar?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/resources/library#whl Library#whl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/library#requirements Library#requirements}
+  */
+  readonly requirements?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/library#whl Library#whl}
   */
   readonly whl?: string;
   /**
   * cran block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/resources/library#cran Library#cran}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/library#cran Library#cran}
   */
   readonly cran?: LibraryCran;
   /**
   * maven block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/resources/library#maven Library#maven}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/library#maven Library#maven}
   */
   readonly maven?: LibraryMaven;
   /**
   * pypi block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/resources/library#pypi Library#pypi}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/library#pypi Library#pypi}
   */
   readonly pypi?: LibraryPypi;
 }
 export interface LibraryCran {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/resources/library#package Library#package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/library#package Library#package}
   */
   readonly package: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/resources/library#repo Library#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/library#repo Library#repo}
   */
   readonly repo?: string;
 }
@@ -170,15 +169,15 @@ export class LibraryCranOutputReference extends cdktf.ComplexObject {
 }
 export interface LibraryMaven {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/resources/library#coordinates Library#coordinates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/library#coordinates Library#coordinates}
   */
   readonly coordinates: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/resources/library#exclusions Library#exclusions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/library#exclusions Library#exclusions}
   */
   readonly exclusions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/resources/library#repo Library#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/library#repo Library#repo}
   */
   readonly repo?: string;
 }
@@ -317,11 +316,11 @@ export class LibraryMavenOutputReference extends cdktf.ComplexObject {
 }
 export interface LibraryPypi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/resources/library#package Library#package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/library#package Library#package}
   */
   readonly package: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/resources/library#repo Library#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/library#repo Library#repo}
   */
   readonly repo?: string;
 }
@@ -431,7 +430,7 @@ export class LibraryPypiOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/resources/library databricks_library}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/library databricks_library}
 */
 export class Library extends cdktf.TerraformResource {
 
@@ -447,7 +446,7 @@ export class Library extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Library resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Library to import
-  * @param importFromId The id of the existing Library that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/resources/library#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Library that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/library#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Library to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -459,7 +458,7 @@ export class Library extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.41.0/docs/resources/library databricks_library} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/library databricks_library} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -470,7 +469,7 @@ export class Library extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_library',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.41.0',
+        providerVersion: '1.42.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -485,6 +484,7 @@ export class Library extends cdktf.TerraformResource {
     this._egg = config.egg;
     this._id = config.id;
     this._jar = config.jar;
+    this._requirements = config.requirements;
     this._whl = config.whl;
     this._cran.internalValue = config.cran;
     this._maven.internalValue = config.maven;
@@ -554,6 +554,22 @@ export class Library extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get jarInput() {
     return this._jar;
+  }
+
+  // requirements - computed: false, optional: true, required: false
+  private _requirements?: string; 
+  public get requirements() {
+    return this.getStringAttribute('requirements');
+  }
+  public set requirements(value: string) {
+    this._requirements = value;
+  }
+  public resetRequirements() {
+    this._requirements = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requirementsInput() {
+    return this._requirements;
   }
 
   // whl - computed: false, optional: true, required: false
@@ -630,6 +646,7 @@ export class Library extends cdktf.TerraformResource {
       egg: cdktf.stringToTerraform(this._egg),
       id: cdktf.stringToTerraform(this._id),
       jar: cdktf.stringToTerraform(this._jar),
+      requirements: cdktf.stringToTerraform(this._requirements),
       whl: cdktf.stringToTerraform(this._whl),
       cran: libraryCranToTerraform(this._cran.internalValue),
       maven: libraryMavenToTerraform(this._maven.internalValue),
@@ -659,6 +676,12 @@ export class Library extends cdktf.TerraformResource {
       },
       jar: {
         value: cdktf.stringToHclTerraform(this._jar),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      requirements: {
+        value: cdktf.stringToHclTerraform(this._requirements),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
