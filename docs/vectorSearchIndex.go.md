@@ -4,12 +4,12 @@
 
 ### VectorSearchIndex <a name="VectorSearchIndex" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndex"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index databricks_vector_search_index}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index databricks_vector_search_index}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndex(scope Construct, id *string, config VectorSearchIndexConfig) VectorSearchIndex
 ```
@@ -445,7 +445,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndex.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.VectorSearchIndex_IsConstruct(x interface{}) *bool
 ```
@@ -477,7 +477,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndex.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.VectorSearchIndex_IsTerraformElement(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ vectorsearchindex.VectorSearchIndex_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndex.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.VectorSearchIndex_IsTerraformResource(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ vectorsearchindex.VectorSearchIndex_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndex.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.VectorSearchIndex_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -534,7 +534,7 @@ The construct id used in the generated config for the VectorSearchIndex to impor
 
 The id of the existing VectorSearchIndex that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -932,7 +932,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 &vectorsearchindex.VectorSearchIndexConfig {
 	Connection: interface{},
@@ -946,10 +946,10 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearc
 	IndexType: *string,
 	Name: *string,
 	PrimaryKey: *string,
-	DeltaSyncIndexSpec: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpec,
-	DirectAccessIndexSpec: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpec,
+	DeltaSyncIndexSpec: github.com/cdktf/cdktf-provider-databricks-go/databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpec,
+	DirectAccessIndexSpec: github.com/cdktf/cdktf-provider-databricks-go/databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpec,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.vectorSearchIndex.VectorSearchIndexTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-databricks-go/databricks.vectorSearchIndex.VectorSearchIndexTimeouts,
 }
 ```
 
@@ -964,13 +964,13 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearc
 | <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.endpointName">EndpointName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#endpoint_name VectorSearchIndex#endpoint_name}. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.indexType">IndexType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#index_type VectorSearchIndex#index_type}. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#name VectorSearchIndex#name}. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.primaryKey">PrimaryKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#primary_key VectorSearchIndex#primary_key}. |
+| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.endpointName">EndpointName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#endpoint_name VectorSearchIndex#endpoint_name}. |
+| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.indexType">IndexType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#index_type VectorSearchIndex#index_type}. |
+| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#name VectorSearchIndex#name}. |
+| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.primaryKey">PrimaryKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#primary_key VectorSearchIndex#primary_key}. |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.deltaSyncIndexSpec">DeltaSyncIndexSpec</a></code> | <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpec">VectorSearchIndexDeltaSyncIndexSpec</a></code> | delta_sync_index_spec block. |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.directAccessIndexSpec">DirectAccessIndexSpec</a></code> | <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpec">VectorSearchIndexDirectAccessIndexSpec</a></code> | direct_access_index_spec block. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#id VectorSearchIndex#id}. |
+| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#id VectorSearchIndex#id}. |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexTimeouts">VectorSearchIndexTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1053,7 +1053,7 @@ EndpointName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#endpoint_name VectorSearchIndex#endpoint_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#endpoint_name VectorSearchIndex#endpoint_name}.
 
 ---
 
@@ -1065,7 +1065,7 @@ IndexType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#index_type VectorSearchIndex#index_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#index_type VectorSearchIndex#index_type}.
 
 ---
 
@@ -1077,7 +1077,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#name VectorSearchIndex#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#name VectorSearchIndex#name}.
 
 ---
 
@@ -1089,7 +1089,7 @@ PrimaryKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#primary_key VectorSearchIndex#primary_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#primary_key VectorSearchIndex#primary_key}.
 
 ---
 
@@ -1103,7 +1103,7 @@ DeltaSyncIndexSpec VectorSearchIndexDeltaSyncIndexSpec
 
 delta_sync_index_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#delta_sync_index_spec VectorSearchIndex#delta_sync_index_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#delta_sync_index_spec VectorSearchIndex#delta_sync_index_spec}
 
 ---
 
@@ -1117,7 +1117,7 @@ DirectAccessIndexSpec VectorSearchIndexDirectAccessIndexSpec
 
 direct_access_index_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#direct_access_index_spec VectorSearchIndex#direct_access_index_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#direct_access_index_spec VectorSearchIndex#direct_access_index_spec}
 
 ---
 
@@ -1129,7 +1129,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#id VectorSearchIndex#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#id VectorSearchIndex#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1146,7 +1146,7 @@ Timeouts VectorSearchIndexTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#timeouts VectorSearchIndex#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#timeouts VectorSearchIndex#timeouts}
 
 ---
 
@@ -1155,7 +1155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 &vectorsearchindex.VectorSearchIndexDeltaSyncIndexSpec {
 	EmbeddingSourceColumns: interface{},
@@ -1171,8 +1171,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearc
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpec.property.embeddingSourceColumns">EmbeddingSourceColumns</a></code> | <code>interface{}</code> | embedding_source_columns block. |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpec.property.embeddingVectorColumns">EmbeddingVectorColumns</a></code> | <code>interface{}</code> | embedding_vector_columns block. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpec.property.pipelineType">PipelineType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#pipeline_type VectorSearchIndex#pipeline_type}. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpec.property.sourceTable">SourceTable</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#source_table VectorSearchIndex#source_table}. |
+| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpec.property.pipelineType">PipelineType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#pipeline_type VectorSearchIndex#pipeline_type}. |
+| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpec.property.sourceTable">SourceTable</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#source_table VectorSearchIndex#source_table}. |
 
 ---
 
@@ -1186,7 +1186,7 @@ EmbeddingSourceColumns interface{}
 
 embedding_source_columns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#embedding_source_columns VectorSearchIndex#embedding_source_columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#embedding_source_columns VectorSearchIndex#embedding_source_columns}
 
 ---
 
@@ -1200,7 +1200,7 @@ EmbeddingVectorColumns interface{}
 
 embedding_vector_columns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#embedding_vector_columns VectorSearchIndex#embedding_vector_columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#embedding_vector_columns VectorSearchIndex#embedding_vector_columns}
 
 ---
 
@@ -1212,7 +1212,7 @@ PipelineType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#pipeline_type VectorSearchIndex#pipeline_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#pipeline_type VectorSearchIndex#pipeline_type}.
 
 ---
 
@@ -1224,7 +1224,7 @@ SourceTable *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#source_table VectorSearchIndex#source_table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#source_table VectorSearchIndex#source_table}.
 
 ---
 
@@ -1233,7 +1233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 &vectorsearchindex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns {
 	EmbeddingModelEndpointName: *string,
@@ -1245,8 +1245,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns.property.embeddingModelEndpointName">EmbeddingModelEndpointName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#embedding_model_endpoint_name VectorSearchIndex#embedding_model_endpoint_name}. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#name VectorSearchIndex#name}. |
+| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns.property.embeddingModelEndpointName">EmbeddingModelEndpointName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#embedding_model_endpoint_name VectorSearchIndex#embedding_model_endpoint_name}. |
+| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#name VectorSearchIndex#name}. |
 
 ---
 
@@ -1258,7 +1258,7 @@ EmbeddingModelEndpointName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#embedding_model_endpoint_name VectorSearchIndex#embedding_model_endpoint_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#embedding_model_endpoint_name VectorSearchIndex#embedding_model_endpoint_name}.
 
 ---
 
@@ -1270,7 +1270,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#name VectorSearchIndex#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#name VectorSearchIndex#name}.
 
 ---
 
@@ -1279,7 +1279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 &vectorsearchindex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns {
 	EmbeddingDimension: *f64,
@@ -1291,8 +1291,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns.property.embeddingDimension">EmbeddingDimension</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#embedding_dimension VectorSearchIndex#embedding_dimension}. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#name VectorSearchIndex#name}. |
+| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns.property.embeddingDimension">EmbeddingDimension</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#embedding_dimension VectorSearchIndex#embedding_dimension}. |
+| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#name VectorSearchIndex#name}. |
 
 ---
 
@@ -1304,7 +1304,7 @@ EmbeddingDimension *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#embedding_dimension VectorSearchIndex#embedding_dimension}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#embedding_dimension VectorSearchIndex#embedding_dimension}.
 
 ---
 
@@ -1316,7 +1316,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#name VectorSearchIndex#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#name VectorSearchIndex#name}.
 
 ---
 
@@ -1325,7 +1325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 &vectorsearchindex.VectorSearchIndexDirectAccessIndexSpec {
 	EmbeddingSourceColumns: interface{},
@@ -1340,7 +1340,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearc
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpec.property.embeddingSourceColumns">EmbeddingSourceColumns</a></code> | <code>interface{}</code> | embedding_source_columns block. |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpec.property.embeddingVectorColumns">EmbeddingVectorColumns</a></code> | <code>interface{}</code> | embedding_vector_columns block. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpec.property.schemaJson">SchemaJson</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#schema_json VectorSearchIndex#schema_json}. |
+| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpec.property.schemaJson">SchemaJson</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#schema_json VectorSearchIndex#schema_json}. |
 
 ---
 
@@ -1354,7 +1354,7 @@ EmbeddingSourceColumns interface{}
 
 embedding_source_columns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#embedding_source_columns VectorSearchIndex#embedding_source_columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#embedding_source_columns VectorSearchIndex#embedding_source_columns}
 
 ---
 
@@ -1368,7 +1368,7 @@ EmbeddingVectorColumns interface{}
 
 embedding_vector_columns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#embedding_vector_columns VectorSearchIndex#embedding_vector_columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#embedding_vector_columns VectorSearchIndex#embedding_vector_columns}
 
 ---
 
@@ -1380,7 +1380,7 @@ SchemaJson *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#schema_json VectorSearchIndex#schema_json}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#schema_json VectorSearchIndex#schema_json}.
 
 ---
 
@@ -1389,7 +1389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 &vectorsearchindex.VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns {
 	EmbeddingModelEndpointName: *string,
@@ -1401,8 +1401,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns.property.embeddingModelEndpointName">EmbeddingModelEndpointName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#embedding_model_endpoint_name VectorSearchIndex#embedding_model_endpoint_name}. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#name VectorSearchIndex#name}. |
+| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns.property.embeddingModelEndpointName">EmbeddingModelEndpointName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#embedding_model_endpoint_name VectorSearchIndex#embedding_model_endpoint_name}. |
+| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#name VectorSearchIndex#name}. |
 
 ---
 
@@ -1414,7 +1414,7 @@ EmbeddingModelEndpointName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#embedding_model_endpoint_name VectorSearchIndex#embedding_model_endpoint_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#embedding_model_endpoint_name VectorSearchIndex#embedding_model_endpoint_name}.
 
 ---
 
@@ -1426,7 +1426,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#name VectorSearchIndex#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#name VectorSearchIndex#name}.
 
 ---
 
@@ -1435,7 +1435,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 &vectorsearchindex.VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns {
 	EmbeddingDimension: *f64,
@@ -1447,8 +1447,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns.property.embeddingDimension">EmbeddingDimension</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#embedding_dimension VectorSearchIndex#embedding_dimension}. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#name VectorSearchIndex#name}. |
+| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns.property.embeddingDimension">EmbeddingDimension</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#embedding_dimension VectorSearchIndex#embedding_dimension}. |
+| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#name VectorSearchIndex#name}. |
 
 ---
 
@@ -1460,7 +1460,7 @@ EmbeddingDimension *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#embedding_dimension VectorSearchIndex#embedding_dimension}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#embedding_dimension VectorSearchIndex#embedding_dimension}.
 
 ---
 
@@ -1472,7 +1472,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#name VectorSearchIndex#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#name VectorSearchIndex#name}.
 
 ---
 
@@ -1481,7 +1481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 &vectorsearchindex.VectorSearchIndexStatus {
 
@@ -1494,7 +1494,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearc
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 &vectorsearchindex.VectorSearchIndexTimeouts {
 	Create: *string,
@@ -1505,7 +1505,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#create VectorSearchIndex#create}. |
+| <code><a href="#@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#create VectorSearchIndex#create}. |
 
 ---
 
@@ -1517,7 +1517,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.42.0/docs/resources/vector_search_index#create VectorSearchIndex#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.43.0/docs/resources/vector_search_index#create VectorSearchIndex#create}.
 
 ---
 
@@ -1528,7 +1528,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsList
 ```
@@ -1688,7 +1688,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsOutputReference
 ```
@@ -2013,7 +2013,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsList
 ```
@@ -2173,7 +2173,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsOutputReference
 ```
@@ -2498,7 +2498,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexDeltaSyncIndexSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VectorSearchIndexDeltaSyncIndexSpecOutputReference
 ```
@@ -2900,7 +2900,7 @@ func InternalValue() VectorSearchIndexDeltaSyncIndexSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsList
 ```
@@ -3060,7 +3060,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputReference
 ```
@@ -3385,7 +3385,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsList
 ```
@@ -3545,7 +3545,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsOutputReference
 ```
@@ -3870,7 +3870,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexDirectAccessIndexSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VectorSearchIndexDirectAccessIndexSpecOutputReference
 ```
@@ -4232,7 +4232,7 @@ func InternalValue() VectorSearchIndexDirectAccessIndexSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VectorSearchIndexStatusList
 ```
@@ -4381,7 +4381,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VectorSearchIndexStatusOutputReference
 ```
@@ -4692,7 +4692,7 @@ func InternalValue() VectorSearchIndexStatus
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchIndex.VectorSearchIndexTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/vectorsearchindex"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VectorSearchIndexTimeoutsOutputReference
 ```
