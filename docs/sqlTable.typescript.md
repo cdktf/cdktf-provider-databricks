@@ -4,7 +4,7 @@
 
 ### SqlTable <a name="SqlTable" id="@cdktf/provider-databricks.sqlTable.SqlTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table databricks_sql_table}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table databricks_sql_table}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlTable.SqlTable.Initializer"></a>
 
@@ -578,7 +578,7 @@ The construct id used in the generated config for the SqlTable to import.
 
 The id of the existing SqlTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1183,10 +1183,10 @@ const sqlTableColumn: sqlTable.SqlTableColumn = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableColumn.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#name SqlTable#name}. |
-| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableColumn.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#comment SqlTable#comment}. |
-| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableColumn.property.nullable">nullable</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#nullable SqlTable#nullable}. |
-| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableColumn.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#type SqlTable#type}. |
+| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableColumn.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#name SqlTable#name}. |
+| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableColumn.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#comment SqlTable#comment}. |
+| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableColumn.property.nullable">nullable</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#nullable SqlTable#nullable}. |
+| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableColumn.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#type SqlTable#type}. |
 
 ---
 
@@ -1198,7 +1198,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#name SqlTable#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#name SqlTable#name}.
 
 ---
 
@@ -1210,7 +1210,7 @@ public readonly comment: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#comment SqlTable#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#comment SqlTable#comment}.
 
 ---
 
@@ -1222,7 +1222,7 @@ public readonly nullable: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#nullable SqlTable#nullable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#nullable SqlTable#nullable}.
 
 ---
 
@@ -1234,7 +1234,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#type SqlTable#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#type SqlTable#type}.
 
 ---
 
@@ -1259,24 +1259,24 @@ const sqlTableConfig: sqlTable.SqlTableConfig = { ... }
 | <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.catalogName">catalogName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#catalog_name SqlTable#catalog_name}. |
-| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#name SqlTable#name}. |
-| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.schemaName">schemaName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#schema_name SqlTable#schema_name}. |
-| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.tableType">tableType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#table_type SqlTable#table_type}. |
-| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.clusterId">clusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#cluster_id SqlTable#cluster_id}. |
-| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.clusterKeys">clusterKeys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#cluster_keys SqlTable#cluster_keys}. |
+| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.catalogName">catalogName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#catalog_name SqlTable#catalog_name}. |
+| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#name SqlTable#name}. |
+| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.schemaName">schemaName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#schema_name SqlTable#schema_name}. |
+| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.tableType">tableType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#table_type SqlTable#table_type}. |
+| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.clusterId">clusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#cluster_id SqlTable#cluster_id}. |
+| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.clusterKeys">clusterKeys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#cluster_keys SqlTable#cluster_keys}. |
 | <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.column">column</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.sqlTable.SqlTableColumn">SqlTableColumn</a>[]</code> | column block. |
-| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#comment SqlTable#comment}. |
-| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.dataSourceFormat">dataSourceFormat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#data_source_format SqlTable#data_source_format}. |
-| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#id SqlTable#id}. |
-| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.options">options</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#options SqlTable#options}. |
-| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.owner">owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#owner SqlTable#owner}. |
-| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.partitions">partitions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#partitions SqlTable#partitions}. |
-| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.properties">properties</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#properties SqlTable#properties}. |
-| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.storageCredentialName">storageCredentialName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#storage_credential_name SqlTable#storage_credential_name}. |
-| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.storageLocation">storageLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#storage_location SqlTable#storage_location}. |
-| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.viewDefinition">viewDefinition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#view_definition SqlTable#view_definition}. |
-| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.warehouseId">warehouseId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#warehouse_id SqlTable#warehouse_id}. |
+| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#comment SqlTable#comment}. |
+| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.dataSourceFormat">dataSourceFormat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#data_source_format SqlTable#data_source_format}. |
+| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#id SqlTable#id}. |
+| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.options">options</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#options SqlTable#options}. |
+| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.owner">owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#owner SqlTable#owner}. |
+| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.partitions">partitions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#partitions SqlTable#partitions}. |
+| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.properties">properties</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#properties SqlTable#properties}. |
+| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.storageCredentialName">storageCredentialName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#storage_credential_name SqlTable#storage_credential_name}. |
+| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.storageLocation">storageLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#storage_location SqlTable#storage_location}. |
+| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.viewDefinition">viewDefinition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#view_definition SqlTable#view_definition}. |
+| <code><a href="#@cdktf/provider-databricks.sqlTable.SqlTableConfig.property.warehouseId">warehouseId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#warehouse_id SqlTable#warehouse_id}. |
 
 ---
 
@@ -1358,7 +1358,7 @@ public readonly catalogName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#catalog_name SqlTable#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#catalog_name SqlTable#catalog_name}.
 
 ---
 
@@ -1370,7 +1370,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#name SqlTable#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#name SqlTable#name}.
 
 ---
 
@@ -1382,7 +1382,7 @@ public readonly schemaName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#schema_name SqlTable#schema_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#schema_name SqlTable#schema_name}.
 
 ---
 
@@ -1394,7 +1394,7 @@ public readonly tableType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#table_type SqlTable#table_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#table_type SqlTable#table_type}.
 
 ---
 
@@ -1406,7 +1406,7 @@ public readonly clusterId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#cluster_id SqlTable#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#cluster_id SqlTable#cluster_id}.
 
 ---
 
@@ -1418,7 +1418,7 @@ public readonly clusterKeys: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#cluster_keys SqlTable#cluster_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#cluster_keys SqlTable#cluster_keys}.
 
 ---
 
@@ -1432,7 +1432,7 @@ public readonly column: IResolvable | SqlTableColumn[];
 
 column block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#column SqlTable#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#column SqlTable#column}
 
 ---
 
@@ -1444,7 +1444,7 @@ public readonly comment: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#comment SqlTable#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#comment SqlTable#comment}.
 
 ---
 
@@ -1456,7 +1456,7 @@ public readonly dataSourceFormat: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#data_source_format SqlTable#data_source_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#data_source_format SqlTable#data_source_format}.
 
 ---
 
@@ -1468,7 +1468,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#id SqlTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#id SqlTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1483,7 +1483,7 @@ public readonly options: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#options SqlTable#options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#options SqlTable#options}.
 
 ---
 
@@ -1495,7 +1495,7 @@ public readonly owner: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#owner SqlTable#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#owner SqlTable#owner}.
 
 ---
 
@@ -1507,7 +1507,7 @@ public readonly partitions: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#partitions SqlTable#partitions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#partitions SqlTable#partitions}.
 
 ---
 
@@ -1519,7 +1519,7 @@ public readonly properties: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#properties SqlTable#properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#properties SqlTable#properties}.
 
 ---
 
@@ -1531,7 +1531,7 @@ public readonly storageCredentialName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#storage_credential_name SqlTable#storage_credential_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#storage_credential_name SqlTable#storage_credential_name}.
 
 ---
 
@@ -1543,7 +1543,7 @@ public readonly storageLocation: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#storage_location SqlTable#storage_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#storage_location SqlTable#storage_location}.
 
 ---
 
@@ -1555,7 +1555,7 @@ public readonly viewDefinition: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#view_definition SqlTable#view_definition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#view_definition SqlTable#view_definition}.
 
 ---
 
@@ -1567,7 +1567,7 @@ public readonly warehouseId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/resources/sql_table#warehouse_id SqlTable#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/resources/sql_table#warehouse_id SqlTable#warehouse_id}.
 
 ---
 

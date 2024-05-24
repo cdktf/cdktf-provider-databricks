@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table
+// https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,30 +13,30 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksTableConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#id DataDatabricksTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#id DataDatabricksTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#name DataDatabricksTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#name DataDatabricksTable#name}
   */
   readonly name: string;
   /**
   * table_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#table_info DataDatabricksTable#table_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#table_info DataDatabricksTable#table_info}
   */
   readonly tableInfo?: DataDatabricksTableTableInfo;
 }
 export interface DataDatabricksTableTableInfoColumnsMask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#function_name DataDatabricksTable#function_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#function_name DataDatabricksTable#function_name}
   */
   readonly functionName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#using_column_names DataDatabricksTable#using_column_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#using_column_names DataDatabricksTable#using_column_names}
   */
   readonly usingColumnNames?: string[];
 }
@@ -149,53 +149,53 @@ export class DataDatabricksTableTableInfoColumnsMaskOutputReference extends cdkt
 }
 export interface DataDatabricksTableTableInfoColumns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#comment DataDatabricksTable#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#comment DataDatabricksTable#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#name DataDatabricksTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#name DataDatabricksTable#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#nullable DataDatabricksTable#nullable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#nullable DataDatabricksTable#nullable}
   */
   readonly nullable?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#partition_index DataDatabricksTable#partition_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#partition_index DataDatabricksTable#partition_index}
   */
   readonly partitionIndex?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#position DataDatabricksTable#position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#position DataDatabricksTable#position}
   */
   readonly position?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#type_interval_type DataDatabricksTable#type_interval_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#type_interval_type DataDatabricksTable#type_interval_type}
   */
   readonly typeIntervalType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#type_json DataDatabricksTable#type_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#type_json DataDatabricksTable#type_json}
   */
   readonly typeJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#type_name DataDatabricksTable#type_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#type_name DataDatabricksTable#type_name}
   */
   readonly typeName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#type_precision DataDatabricksTable#type_precision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#type_precision DataDatabricksTable#type_precision}
   */
   readonly typePrecision?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#type_scale DataDatabricksTable#type_scale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#type_scale DataDatabricksTable#type_scale}
   */
   readonly typeScale?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#type_text DataDatabricksTable#type_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#type_text DataDatabricksTable#type_text}
   */
   readonly typeText?: string;
   /**
   * mask block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#mask DataDatabricksTable#mask}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#mask DataDatabricksTable#mask}
   */
   readonly mask?: DataDatabricksTableTableInfoColumnsMask;
 }
@@ -630,7 +630,7 @@ export class DataDatabricksTableTableInfoColumnsList extends cdktf.ComplexList {
 }
 export interface DataDatabricksTableTableInfoDeltaRuntimePropertiesKvpairs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#delta_runtime_properties DataDatabricksTable#delta_runtime_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#delta_runtime_properties DataDatabricksTable#delta_runtime_properties}
   */
   readonly deltaRuntimeProperties: { [key: string]: string };
 }
@@ -711,15 +711,15 @@ export class DataDatabricksTableTableInfoDeltaRuntimePropertiesKvpairsOutputRefe
 }
 export interface DataDatabricksTableTableInfoEffectivePredictiveOptimizationFlag {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#inherited_from_name DataDatabricksTable#inherited_from_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#inherited_from_name DataDatabricksTable#inherited_from_name}
   */
   readonly inheritedFromName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#inherited_from_type DataDatabricksTable#inherited_from_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#inherited_from_type DataDatabricksTable#inherited_from_type}
   */
   readonly inheritedFromType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#value DataDatabricksTable#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#value DataDatabricksTable#value}
   */
   readonly value: string;
 }
@@ -858,11 +858,11 @@ export class DataDatabricksTableTableInfoEffectivePredictiveOptimizationFlagOutp
 }
 export interface DataDatabricksTableTableInfoEncryptionDetailsSseEncryptionDetails {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#algorithm DataDatabricksTable#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#algorithm DataDatabricksTable#algorithm}
   */
   readonly algorithm?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#aws_kms_key_arn DataDatabricksTable#aws_kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#aws_kms_key_arn DataDatabricksTable#aws_kms_key_arn}
   */
   readonly awsKmsKeyArn?: string;
 }
@@ -977,7 +977,7 @@ export interface DataDatabricksTableTableInfoEncryptionDetails {
   /**
   * sse_encryption_details block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#sse_encryption_details DataDatabricksTable#sse_encryption_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#sse_encryption_details DataDatabricksTable#sse_encryption_details}
   */
   readonly sseEncryptionDetails?: DataDatabricksTableTableInfoEncryptionDetailsSseEncryptionDetails;
 }
@@ -1061,11 +1061,11 @@ export class DataDatabricksTableTableInfoEncryptionDetailsOutputReference extend
 }
 export interface DataDatabricksTableTableInfoRowFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#function_name DataDatabricksTable#function_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#function_name DataDatabricksTable#function_name}
   */
   readonly functionName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#input_column_names DataDatabricksTable#input_column_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#input_column_names DataDatabricksTable#input_column_names}
   */
   readonly inputColumnNames: string[];
 }
@@ -1172,19 +1172,19 @@ export class DataDatabricksTableTableInfoRowFilterOutputReference extends cdktf.
 }
 export interface DataDatabricksTableTableInfoTableConstraintsForeignKeyConstraint {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#child_columns DataDatabricksTable#child_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#child_columns DataDatabricksTable#child_columns}
   */
   readonly childColumns: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#name DataDatabricksTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#name DataDatabricksTable#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#parent_columns DataDatabricksTable#parent_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#parent_columns DataDatabricksTable#parent_columns}
   */
   readonly parentColumns: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#parent_table DataDatabricksTable#parent_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#parent_table DataDatabricksTable#parent_table}
   */
   readonly parentTable: string;
 }
@@ -1343,7 +1343,7 @@ export class DataDatabricksTableTableInfoTableConstraintsForeignKeyConstraintOut
 }
 export interface DataDatabricksTableTableInfoTableConstraintsNamedTableConstraint {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#name DataDatabricksTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#name DataDatabricksTable#name}
   */
   readonly name: string;
 }
@@ -1424,11 +1424,11 @@ export class DataDatabricksTableTableInfoTableConstraintsNamedTableConstraintOut
 }
 export interface DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstraint {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#child_columns DataDatabricksTable#child_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#child_columns DataDatabricksTable#child_columns}
   */
   readonly childColumns: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#name DataDatabricksTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#name DataDatabricksTable#name}
   */
   readonly name: string;
 }
@@ -1537,19 +1537,19 @@ export interface DataDatabricksTableTableInfoTableConstraints {
   /**
   * foreign_key_constraint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#foreign_key_constraint DataDatabricksTable#foreign_key_constraint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#foreign_key_constraint DataDatabricksTable#foreign_key_constraint}
   */
   readonly foreignKeyConstraint?: DataDatabricksTableTableInfoTableConstraintsForeignKeyConstraint;
   /**
   * named_table_constraint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#named_table_constraint DataDatabricksTable#named_table_constraint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#named_table_constraint DataDatabricksTable#named_table_constraint}
   */
   readonly namedTableConstraint?: DataDatabricksTableTableInfoTableConstraintsNamedTableConstraint;
   /**
   * primary_key_constraint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#primary_key_constraint DataDatabricksTable#primary_key_constraint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#primary_key_constraint DataDatabricksTable#primary_key_constraint}
   */
   readonly primaryKeyConstraint?: DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstraint;
 }
@@ -1723,7 +1723,7 @@ export class DataDatabricksTableTableInfoTableConstraintsList extends cdktf.Comp
 }
 export interface DataDatabricksTableTableInfoViewDependenciesDependenciesFunction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#function_full_name DataDatabricksTable#function_full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#function_full_name DataDatabricksTable#function_full_name}
   */
   readonly functionFullName: string;
 }
@@ -1804,7 +1804,7 @@ export class DataDatabricksTableTableInfoViewDependenciesDependenciesFunctionOut
 }
 export interface DataDatabricksTableTableInfoViewDependenciesDependenciesTable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#table_full_name DataDatabricksTable#table_full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#table_full_name DataDatabricksTable#table_full_name}
   */
   readonly tableFullName: string;
 }
@@ -1887,13 +1887,13 @@ export interface DataDatabricksTableTableInfoViewDependenciesDependencies {
   /**
   * function block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#function DataDatabricksTable#function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#function DataDatabricksTable#function}
   */
   readonly function?: DataDatabricksTableTableInfoViewDependenciesDependenciesFunction;
   /**
   * table block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#table DataDatabricksTable#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#table DataDatabricksTable#table}
   */
   readonly table?: DataDatabricksTableTableInfoViewDependenciesDependenciesTable;
 }
@@ -2040,7 +2040,7 @@ export interface DataDatabricksTableTableInfoViewDependencies {
   /**
   * dependencies block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#dependencies DataDatabricksTable#dependencies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#dependencies DataDatabricksTable#dependencies}
   */
   readonly dependencies?: DataDatabricksTableTableInfoViewDependenciesDependencies[] | cdktf.IResolvable;
 }
@@ -2124,145 +2124,145 @@ export class DataDatabricksTableTableInfoViewDependenciesOutputReference extends
 }
 export interface DataDatabricksTableTableInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#access_point DataDatabricksTable#access_point}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#access_point DataDatabricksTable#access_point}
   */
   readonly accessPoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#browse_only DataDatabricksTable#browse_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#browse_only DataDatabricksTable#browse_only}
   */
   readonly browseOnly?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#catalog_name DataDatabricksTable#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#catalog_name DataDatabricksTable#catalog_name}
   */
   readonly catalogName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#comment DataDatabricksTable#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#comment DataDatabricksTable#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#created_at DataDatabricksTable#created_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#created_at DataDatabricksTable#created_at}
   */
   readonly createdAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#created_by DataDatabricksTable#created_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#created_by DataDatabricksTable#created_by}
   */
   readonly createdBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#data_access_configuration_id DataDatabricksTable#data_access_configuration_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#data_access_configuration_id DataDatabricksTable#data_access_configuration_id}
   */
   readonly dataAccessConfigurationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#data_source_format DataDatabricksTable#data_source_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#data_source_format DataDatabricksTable#data_source_format}
   */
   readonly dataSourceFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#deleted_at DataDatabricksTable#deleted_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#deleted_at DataDatabricksTable#deleted_at}
   */
   readonly deletedAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#enable_predictive_optimization DataDatabricksTable#enable_predictive_optimization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#enable_predictive_optimization DataDatabricksTable#enable_predictive_optimization}
   */
   readonly enablePredictiveOptimization?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#full_name DataDatabricksTable#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#full_name DataDatabricksTable#full_name}
   */
   readonly fullName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#metastore_id DataDatabricksTable#metastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#metastore_id DataDatabricksTable#metastore_id}
   */
   readonly metastoreId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#name DataDatabricksTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#name DataDatabricksTable#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#owner DataDatabricksTable#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#owner DataDatabricksTable#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#pipeline_id DataDatabricksTable#pipeline_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#pipeline_id DataDatabricksTable#pipeline_id}
   */
   readonly pipelineId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#properties DataDatabricksTable#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#properties DataDatabricksTable#properties}
   */
   readonly properties?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#schema_name DataDatabricksTable#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#schema_name DataDatabricksTable#schema_name}
   */
   readonly schemaName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#sql_path DataDatabricksTable#sql_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#sql_path DataDatabricksTable#sql_path}
   */
   readonly sqlPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#storage_credential_name DataDatabricksTable#storage_credential_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#storage_credential_name DataDatabricksTable#storage_credential_name}
   */
   readonly storageCredentialName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#storage_location DataDatabricksTable#storage_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#storage_location DataDatabricksTable#storage_location}
   */
   readonly storageLocation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#table_id DataDatabricksTable#table_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#table_id DataDatabricksTable#table_id}
   */
   readonly tableId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#table_type DataDatabricksTable#table_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#table_type DataDatabricksTable#table_type}
   */
   readonly tableType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#updated_at DataDatabricksTable#updated_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#updated_at DataDatabricksTable#updated_at}
   */
   readonly updatedAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#updated_by DataDatabricksTable#updated_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#updated_by DataDatabricksTable#updated_by}
   */
   readonly updatedBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#view_definition DataDatabricksTable#view_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#view_definition DataDatabricksTable#view_definition}
   */
   readonly viewDefinition?: string;
   /**
   * columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#columns DataDatabricksTable#columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#columns DataDatabricksTable#columns}
   */
   readonly columns?: DataDatabricksTableTableInfoColumns[] | cdktf.IResolvable;
   /**
   * delta_runtime_properties_kvpairs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#delta_runtime_properties_kvpairs DataDatabricksTable#delta_runtime_properties_kvpairs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#delta_runtime_properties_kvpairs DataDatabricksTable#delta_runtime_properties_kvpairs}
   */
   readonly deltaRuntimePropertiesKvpairs?: DataDatabricksTableTableInfoDeltaRuntimePropertiesKvpairs;
   /**
   * effective_predictive_optimization_flag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#effective_predictive_optimization_flag DataDatabricksTable#effective_predictive_optimization_flag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#effective_predictive_optimization_flag DataDatabricksTable#effective_predictive_optimization_flag}
   */
   readonly effectivePredictiveOptimizationFlag?: DataDatabricksTableTableInfoEffectivePredictiveOptimizationFlag;
   /**
   * encryption_details block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#encryption_details DataDatabricksTable#encryption_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#encryption_details DataDatabricksTable#encryption_details}
   */
   readonly encryptionDetails?: DataDatabricksTableTableInfoEncryptionDetails;
   /**
   * row_filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#row_filter DataDatabricksTable#row_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#row_filter DataDatabricksTable#row_filter}
   */
   readonly rowFilter?: DataDatabricksTableTableInfoRowFilter;
   /**
   * table_constraints block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#table_constraints DataDatabricksTable#table_constraints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#table_constraints DataDatabricksTable#table_constraints}
   */
   readonly tableConstraints?: DataDatabricksTableTableInfoTableConstraints[] | cdktf.IResolvable;
   /**
   * view_dependencies block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#view_dependencies DataDatabricksTable#view_dependencies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#view_dependencies DataDatabricksTable#view_dependencies}
   */
   readonly viewDependencies?: DataDatabricksTableTableInfoViewDependencies;
 }
@@ -3245,7 +3245,7 @@ export class DataDatabricksTableTableInfoOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table databricks_table}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table databricks_table}
 */
 export class DataDatabricksTable extends cdktf.TerraformDataSource {
 
@@ -3261,7 +3261,7 @@ export class DataDatabricksTable extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksTable resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksTable to import
-  * @param importFromId The id of the existing DataDatabricksTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksTable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -3273,7 +3273,7 @@ export class DataDatabricksTable extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.44.0/docs/data-sources/table databricks_table} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.45.0/docs/data-sources/table databricks_table} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3284,7 +3284,7 @@ export class DataDatabricksTable extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_table',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.44.0',
+        providerVersion: '1.45.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
