@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.instancePool.InstancePool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.NewInstancePool(scope Construct, id *string, config InstancePoolConfig) InstancePool
 ```
@@ -554,7 +554,7 @@ func ResetPreloadedSparkVersions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.instancePool.InstancePool.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.InstancePool_IsConstruct(x interface{}) *bool
 ```
@@ -586,7 +586,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.instancePool.InstancePool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.InstancePool_IsTerraformElement(x interface{}) *bool
 ```
@@ -600,7 +600,7 @@ instancepool.InstancePool_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.instancePool.InstancePool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.InstancePool_IsTerraformResource(x interface{}) *bool
 ```
@@ -614,7 +614,7 @@ instancepool.InstancePool_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.instancePool.InstancePool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.InstancePool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1195,7 +1195,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.instancePool.InstancePoolAwsAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 &instancepool.InstancePoolAwsAttributes {
 	Availability: *string,
@@ -1255,7 +1255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.instancePool.InstancePoolAzureAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 &instancepool.InstancePoolAzureAttributes {
 	Availability: *string,
@@ -1301,7 +1301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.instancePool.InstancePoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 &instancepool.InstancePoolConfig {
 	Connection: interface{},
@@ -1313,14 +1313,14 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepoo
 	Provisioners: *[]interface{},
 	IdleInstanceAutoterminationMinutes: *f64,
 	InstancePoolName: *string,
-	AwsAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.instancePool.InstancePoolAwsAttributes,
-	AzureAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.instancePool.InstancePoolAzureAttributes,
+	AwsAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks.instancePool.InstancePoolAwsAttributes,
+	AzureAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks.instancePool.InstancePoolAzureAttributes,
 	CustomTags: *map[string]*string,
-	DiskSpec: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.instancePool.InstancePoolDiskSpec,
+	DiskSpec: github.com/cdktf/cdktf-provider-databricks-go/databricks.instancePool.InstancePoolDiskSpec,
 	EnableElasticDisk: interface{},
-	GcpAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.instancePool.InstancePoolGcpAttributes,
+	GcpAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks.instancePool.InstancePoolGcpAttributes,
 	Id: *string,
-	InstancePoolFleetAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.instancePool.InstancePoolInstancePoolFleetAttributes,
+	InstancePoolFleetAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks.instancePool.InstancePoolInstancePoolFleetAttributes,
 	InstancePoolId: *string,
 	MaxCapacity: *f64,
 	MinIdleInstances: *f64,
@@ -1642,12 +1642,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.instancePool.InstancePoolDiskSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 &instancepool.InstancePoolDiskSpec {
 	DiskCount: *f64,
 	DiskSize: *f64,
-	DiskType: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.instancePool.InstancePoolDiskSpecDiskType,
+	DiskType: github.com/cdktf/cdktf-provider-databricks-go/databricks.instancePool.InstancePoolDiskSpecDiskType,
 }
 ```
 
@@ -1704,7 +1704,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.instancePool.InstancePoolDiskSpecDiskType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 &instancepool.InstancePoolDiskSpecDiskType {
 	AzureDiskVolumeType: *string,
@@ -1750,7 +1750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.instancePool.InstancePoolGcpAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 &instancepool.InstancePoolGcpAttributes {
 	GcpAvailability: *string,
@@ -1810,12 +1810,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 &instancepool.InstancePoolInstancePoolFleetAttributes {
 	LaunchTemplateOverride: interface{},
-	FleetOnDemandOption: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.instancePool.InstancePoolInstancePoolFleetAttributesFleetOnDemandOption,
-	FleetSpotOption: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.instancePool.InstancePoolInstancePoolFleetAttributesFleetSpotOption,
+	FleetOnDemandOption: github.com/cdktf/cdktf-provider-databricks-go/databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetOnDemandOption,
+	FleetSpotOption: github.com/cdktf/cdktf-provider-databricks-go/databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetSpotOption,
 }
 ```
 
@@ -1876,7 +1876,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetOnDemandOption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 &instancepool.InstancePoolInstancePoolFleetAttributesFleetOnDemandOption {
 	AllocationStrategy: *string,
@@ -1922,7 +1922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetSpotOption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 &instancepool.InstancePoolInstancePoolFleetAttributesFleetSpotOption {
 	AllocationStrategy: *string,
@@ -1968,7 +1968,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 &instancepool.InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride {
 	AvailabilityZone: *string,
@@ -2014,11 +2014,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 &instancepool.InstancePoolPreloadedDockerImage {
 	Url: *string,
-	BasicAuth: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.instancePool.InstancePoolPreloadedDockerImageBasicAuth,
+	BasicAuth: github.com/cdktf/cdktf-provider-databricks-go/databricks.instancePool.InstancePoolPreloadedDockerImageBasicAuth,
 }
 ```
 
@@ -2062,7 +2062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImageBasicAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 &instancepool.InstancePoolPreloadedDockerImageBasicAuth {
 	Password: *string,
@@ -2110,7 +2110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.instancePool.InstancePoolAwsAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.NewInstancePoolAwsAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstancePoolAwsAttributesOutputReference
 ```
@@ -2446,7 +2446,7 @@ func InternalValue() InstancePoolAwsAttributes
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.instancePool.InstancePoolAzureAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.NewInstancePoolAzureAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstancePoolAzureAttributesOutputReference
 ```
@@ -2753,7 +2753,7 @@ func InternalValue() InstancePoolAzureAttributes
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.instancePool.InstancePoolDiskSpecDiskTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.NewInstancePoolDiskSpecDiskTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstancePoolDiskSpecDiskTypeOutputReference
 ```
@@ -3060,7 +3060,7 @@ func InternalValue() InstancePoolDiskSpecDiskType
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.instancePool.InstancePoolDiskSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.NewInstancePoolDiskSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstancePoolDiskSpecOutputReference
 ```
@@ -3409,7 +3409,7 @@ func InternalValue() InstancePoolDiskSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.instancePool.InstancePoolGcpAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.NewInstancePoolGcpAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstancePoolGcpAttributesOutputReference
 ```
@@ -3745,7 +3745,7 @@ func InternalValue() InstancePoolGcpAttributes
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetOnDemandOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.NewInstancePoolInstancePoolFleetAttributesFleetOnDemandOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstancePoolInstancePoolFleetAttributesFleetOnDemandOptionOutputReference
 ```
@@ -4045,7 +4045,7 @@ func InternalValue() InstancePoolInstancePoolFleetAttributesFleetOnDemandOption
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesFleetSpotOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.NewInstancePoolInstancePoolFleetAttributesFleetSpotOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstancePoolInstancePoolFleetAttributesFleetSpotOptionOutputReference
 ```
@@ -4345,7 +4345,7 @@ func InternalValue() InstancePoolInstancePoolFleetAttributesFleetSpotOption
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.NewInstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideList
 ```
@@ -4505,7 +4505,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.NewInstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference
 ```
@@ -4816,7 +4816,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.instancePool.InstancePoolInstancePoolFleetAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.NewInstancePoolInstancePoolFleetAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstancePoolInstancePoolFleetAttributesOutputReference
 ```
@@ -5184,7 +5184,7 @@ func InternalValue() InstancePoolInstancePoolFleetAttributes
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImageBasicAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.NewInstancePoolPreloadedDockerImageBasicAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstancePoolPreloadedDockerImageBasicAuthOutputReference
 ```
@@ -5477,7 +5477,7 @@ func InternalValue() InstancePoolPreloadedDockerImageBasicAuth
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.NewInstancePoolPreloadedDockerImageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) InstancePoolPreloadedDockerImageList
 ```
@@ -5637,7 +5637,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.instancePool.InstancePoolPreloadedDockerImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/instancepool"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/instancepool"
 
 instancepool.NewInstancePoolPreloadedDockerImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) InstancePoolPreloadedDockerImageOutputReference
 ```
