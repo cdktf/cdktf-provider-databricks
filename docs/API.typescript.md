@@ -20,6 +20,7 @@ The following submodules are available:
 - [dataDatabricksAwsAssumeRolePolicy](./dataDatabricksAwsAssumeRolePolicy.typescript.md)
 - [dataDatabricksAwsBucketPolicy](./dataDatabricksAwsBucketPolicy.typescript.md)
 - [dataDatabricksAwsCrossaccountPolicy](./dataDatabricksAwsCrossaccountPolicy.typescript.md)
+- [dataDatabricksAwsUnityCatalogAssumeRolePolicy](./dataDatabricksAwsUnityCatalogAssumeRolePolicy.typescript.md)
 - [dataDatabricksAwsUnityCatalogPolicy](./dataDatabricksAwsUnityCatalogPolicy.typescript.md)
 - [dataDatabricksCatalog](./dataDatabricksCatalog.typescript.md)
 - [dataDatabricksCatalogs](./dataDatabricksCatalogs.typescript.md)

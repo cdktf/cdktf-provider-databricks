@@ -20,6 +20,7 @@ The following submodules are available:
 - [dataDatabricksAwsAssumeRolePolicy](./dataDatabricksAwsAssumeRolePolicy.csharp.md)
 - [dataDatabricksAwsBucketPolicy](./dataDatabricksAwsBucketPolicy.csharp.md)
 - [dataDatabricksAwsCrossaccountPolicy](./dataDatabricksAwsCrossaccountPolicy.csharp.md)
+- [dataDatabricksAwsUnityCatalogAssumeRolePolicy](./dataDatabricksAwsUnityCatalogAssumeRolePolicy.csharp.md)
 - [dataDatabricksAwsUnityCatalogPolicy](./dataDatabricksAwsUnityCatalogPolicy.csharp.md)
 - [dataDatabricksCatalog](./dataDatabricksCatalog.csharp.md)
 - [dataDatabricksCatalogs](./dataDatabricksCatalogs.csharp.md)
