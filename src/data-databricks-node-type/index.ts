@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.46.0/docs/data-sources/node_type
+// https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/node_type
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,68 +13,68 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksNodeTypeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.46.0/docs/data-sources/node_type#category DataDatabricksNodeType#category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/node_type#category DataDatabricksNodeType#category}
   */
   readonly category?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.46.0/docs/data-sources/node_type#fleet DataDatabricksNodeType#fleet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/node_type#fleet DataDatabricksNodeType#fleet}
   */
   readonly fleet?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.46.0/docs/data-sources/node_type#gb_per_core DataDatabricksNodeType#gb_per_core}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/node_type#gb_per_core DataDatabricksNodeType#gb_per_core}
   */
   readonly gbPerCore?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.46.0/docs/data-sources/node_type#graviton DataDatabricksNodeType#graviton}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/node_type#graviton DataDatabricksNodeType#graviton}
   */
   readonly graviton?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.46.0/docs/data-sources/node_type#id DataDatabricksNodeType#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/node_type#id DataDatabricksNodeType#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.46.0/docs/data-sources/node_type#is_io_cache_enabled DataDatabricksNodeType#is_io_cache_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/node_type#is_io_cache_enabled DataDatabricksNodeType#is_io_cache_enabled}
   */
   readonly isIoCacheEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.46.0/docs/data-sources/node_type#local_disk DataDatabricksNodeType#local_disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/node_type#local_disk DataDatabricksNodeType#local_disk}
   */
   readonly localDisk?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.46.0/docs/data-sources/node_type#local_disk_min_size DataDatabricksNodeType#local_disk_min_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/node_type#local_disk_min_size DataDatabricksNodeType#local_disk_min_size}
   */
   readonly localDiskMinSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.46.0/docs/data-sources/node_type#min_cores DataDatabricksNodeType#min_cores}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/node_type#min_cores DataDatabricksNodeType#min_cores}
   */
   readonly minCores?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.46.0/docs/data-sources/node_type#min_gpus DataDatabricksNodeType#min_gpus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/node_type#min_gpus DataDatabricksNodeType#min_gpus}
   */
   readonly minGpus?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.46.0/docs/data-sources/node_type#min_memory_gb DataDatabricksNodeType#min_memory_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/node_type#min_memory_gb DataDatabricksNodeType#min_memory_gb}
   */
   readonly minMemoryGb?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.46.0/docs/data-sources/node_type#photon_driver_capable DataDatabricksNodeType#photon_driver_capable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/node_type#photon_driver_capable DataDatabricksNodeType#photon_driver_capable}
   */
   readonly photonDriverCapable?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.46.0/docs/data-sources/node_type#photon_worker_capable DataDatabricksNodeType#photon_worker_capable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/node_type#photon_worker_capable DataDatabricksNodeType#photon_worker_capable}
   */
   readonly photonWorkerCapable?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.46.0/docs/data-sources/node_type#support_port_forwarding DataDatabricksNodeType#support_port_forwarding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/node_type#support_port_forwarding DataDatabricksNodeType#support_port_forwarding}
   */
   readonly supportPortForwarding?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.46.0/docs/data-sources/node_type databricks_node_type}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/node_type databricks_node_type}
 */
 export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
 
@@ -90,7 +90,7 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksNodeType resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksNodeType to import
-  * @param importFromId The id of the existing DataDatabricksNodeType that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.46.0/docs/data-sources/node_type#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksNodeType that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/node_type#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksNodeType to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -102,7 +102,7 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.46.0/docs/data-sources/node_type databricks_node_type} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/node_type databricks_node_type} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -113,7 +113,7 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_node_type',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.46.0',
+        providerVersion: '1.47.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
