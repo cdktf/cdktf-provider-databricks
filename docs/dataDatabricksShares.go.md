@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksshares"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksshares"
 
 datadatabricksshares.NewDataDatabricksShares(scope Construct, id *string, config DataDatabricksSharesConfig) DataDatabricksShares
 ```
@@ -290,7 +290,7 @@ func ResetShares()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksshares"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksshares"
 
 datadatabricksshares.DataDatabricksShares_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksshares"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksshares"
 
 datadatabricksshares.DataDatabricksShares_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datadatabricksshares.DataDatabricksShares_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksshares"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksshares"
 
 datadatabricksshares.DataDatabricksShares_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datadatabricksshares.DataDatabricksShares_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksshares"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksshares"
 
 datadatabricksshares.DataDatabricksShares_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -601,7 +601,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksSharesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksshares"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksshares"
 
 &datadatabricksshares.DataDatabricksSharesConfig {
 	Connection: interface{},
