@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.restrictWorkspaceAdminsSetting.RestrictWorkspaceAdminsSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/restrictworkspaceadminssetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/restrictworkspaceadminssetting"
 
 restrictworkspaceadminssetting.NewRestrictWorkspaceAdminsSetting(scope Construct, id *string, config RestrictWorkspaceAdminsSettingConfig) RestrictWorkspaceAdminsSetting
 ```
@@ -412,7 +412,7 @@ func ResetSettingName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.restrictWorkspaceAdminsSetting.RestrictWorkspaceAdminsSetting.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/restrictworkspaceadminssetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/restrictworkspaceadminssetting"
 
 restrictworkspaceadminssetting.RestrictWorkspaceAdminsSetting_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.restrictWorkspaceAdminsSetting.RestrictWorkspaceAdminsSetting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/restrictworkspaceadminssetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/restrictworkspaceadminssetting"
 
 restrictworkspaceadminssetting.RestrictWorkspaceAdminsSetting_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ restrictworkspaceadminssetting.RestrictWorkspaceAdminsSetting_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.restrictWorkspaceAdminsSetting.RestrictWorkspaceAdminsSetting.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/restrictworkspaceadminssetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/restrictworkspaceadminssetting"
 
 restrictworkspaceadminssetting.RestrictWorkspaceAdminsSetting_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ restrictworkspaceadminssetting.RestrictWorkspaceAdminsSetting_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.restrictWorkspaceAdminsSetting.RestrictWorkspaceAdminsSetting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/restrictworkspaceadminssetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/restrictworkspaceadminssetting"
 
 restrictworkspaceadminssetting.RestrictWorkspaceAdminsSetting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -789,7 +789,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.restrictWorkspaceAdminsSetting.RestrictWorkspaceAdminsSettingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/restrictworkspaceadminssetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/restrictworkspaceadminssetting"
 
 &restrictworkspaceadminssetting.RestrictWorkspaceAdminsSettingConfig {
 	Connection: interface{},
@@ -799,7 +799,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/restrictworkspa
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	RestrictWorkspaceAdmins: github.com/cdktf/cdktf-provider-databricks-go/databricks.restrictWorkspaceAdminsSetting.RestrictWorkspaceAdminsSettingRestrictWorkspaceAdmins,
+	RestrictWorkspaceAdmins: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.restrictWorkspaceAdminsSetting.RestrictWorkspaceAdminsSettingRestrictWorkspaceAdmins,
 	Etag: *string,
 	Id: *string,
 	SettingName: *string,
@@ -952,7 +952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.restrictWorkspaceAdminsSetting.RestrictWorkspaceAdminsSettingRestrictWorkspaceAdmins.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/restrictworkspaceadminssetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/restrictworkspaceadminssetting"
 
 &restrictworkspaceadminssetting.RestrictWorkspaceAdminsSettingRestrictWorkspaceAdmins {
 	Status: *string,
@@ -986,7 +986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.restrictWorkspaceAdminsSetting.RestrictWorkspaceAdminsSettingRestrictWorkspaceAdminsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/restrictworkspaceadminssetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/restrictworkspaceadminssetting"
 
 restrictworkspaceadminssetting.NewRestrictWorkspaceAdminsSettingRestrictWorkspaceAdminsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RestrictWorkspaceAdminsSettingRestrictWorkspaceAdminsOutputReference
 ```
