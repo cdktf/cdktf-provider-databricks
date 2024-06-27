@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential
+// https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +13,34 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksStorageCredentialConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#id DataDatabricksStorageCredential#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#id DataDatabricksStorageCredential#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#name DataDatabricksStorageCredential#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#name DataDatabricksStorageCredential#name}
   */
   readonly name: string;
   /**
   * storage_credential_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#storage_credential_info DataDatabricksStorageCredential#storage_credential_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#storage_credential_info DataDatabricksStorageCredential#storage_credential_info}
   */
   readonly storageCredentialInfo?: DataDatabricksStorageCredentialStorageCredentialInfo;
 }
 export interface DataDatabricksStorageCredentialStorageCredentialInfoAwsIamRole {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#external_id DataDatabricksStorageCredential#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#external_id DataDatabricksStorageCredential#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#role_arn DataDatabricksStorageCredential#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#role_arn DataDatabricksStorageCredential#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#unity_catalog_iam_arn DataDatabricksStorageCredential#unity_catalog_iam_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#unity_catalog_iam_arn DataDatabricksStorageCredential#unity_catalog_iam_arn}
   */
   readonly unityCatalogIamArn?: string;
 }
@@ -179,15 +179,15 @@ export class DataDatabricksStorageCredentialStorageCredentialInfoAwsIamRoleOutpu
 }
 export interface DataDatabricksStorageCredentialStorageCredentialInfoAzureManagedIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#access_connector_id DataDatabricksStorageCredential#access_connector_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#access_connector_id DataDatabricksStorageCredential#access_connector_id}
   */
   readonly accessConnectorId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#credential_id DataDatabricksStorageCredential#credential_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#credential_id DataDatabricksStorageCredential#credential_id}
   */
   readonly credentialId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#managed_identity_id DataDatabricksStorageCredential#managed_identity_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#managed_identity_id DataDatabricksStorageCredential#managed_identity_id}
   */
   readonly managedIdentityId?: string;
 }
@@ -326,15 +326,15 @@ export class DataDatabricksStorageCredentialStorageCredentialInfoAzureManagedIde
 }
 export interface DataDatabricksStorageCredentialStorageCredentialInfoAzureServicePrincipal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#application_id DataDatabricksStorageCredential#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#application_id DataDatabricksStorageCredential#application_id}
   */
   readonly applicationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#client_secret DataDatabricksStorageCredential#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#client_secret DataDatabricksStorageCredential#client_secret}
   */
   readonly clientSecret: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#directory_id DataDatabricksStorageCredential#directory_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#directory_id DataDatabricksStorageCredential#directory_id}
   */
   readonly directoryId: string;
 }
@@ -467,15 +467,15 @@ export class DataDatabricksStorageCredentialStorageCredentialInfoAzureServicePri
 }
 export interface DataDatabricksStorageCredentialStorageCredentialInfoCloudflareApiToken {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#access_key_id DataDatabricksStorageCredential#access_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#access_key_id DataDatabricksStorageCredential#access_key_id}
   */
   readonly accessKeyId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#account_id DataDatabricksStorageCredential#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#account_id DataDatabricksStorageCredential#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#secret_access_key DataDatabricksStorageCredential#secret_access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#secret_access_key DataDatabricksStorageCredential#secret_access_key}
   */
   readonly secretAccessKey: string;
 }
@@ -608,11 +608,11 @@ export class DataDatabricksStorageCredentialStorageCredentialInfoCloudflareApiTo
 }
 export interface DataDatabricksStorageCredentialStorageCredentialInfoDatabricksGcpServiceAccount {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#credential_id DataDatabricksStorageCredential#credential_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#credential_id DataDatabricksStorageCredential#credential_id}
   */
   readonly credentialId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#email DataDatabricksStorageCredential#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#email DataDatabricksStorageCredential#email}
   */
   readonly email?: string;
 }
@@ -725,80 +725,84 @@ export class DataDatabricksStorageCredentialStorageCredentialInfoDatabricksGcpSe
 }
 export interface DataDatabricksStorageCredentialStorageCredentialInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#comment DataDatabricksStorageCredential#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#comment DataDatabricksStorageCredential#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#created_at DataDatabricksStorageCredential#created_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#created_at DataDatabricksStorageCredential#created_at}
   */
   readonly createdAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#created_by DataDatabricksStorageCredential#created_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#created_by DataDatabricksStorageCredential#created_by}
   */
   readonly createdBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#id DataDatabricksStorageCredential#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#id DataDatabricksStorageCredential#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#metastore_id DataDatabricksStorageCredential#metastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#isolation_mode DataDatabricksStorageCredential#isolation_mode}
+  */
+  readonly isolationMode?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#metastore_id DataDatabricksStorageCredential#metastore_id}
   */
   readonly metastoreId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#name DataDatabricksStorageCredential#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#name DataDatabricksStorageCredential#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#owner DataDatabricksStorageCredential#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#owner DataDatabricksStorageCredential#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#read_only DataDatabricksStorageCredential#read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#read_only DataDatabricksStorageCredential#read_only}
   */
   readonly readOnly?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#updated_at DataDatabricksStorageCredential#updated_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#updated_at DataDatabricksStorageCredential#updated_at}
   */
   readonly updatedAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#updated_by DataDatabricksStorageCredential#updated_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#updated_by DataDatabricksStorageCredential#updated_by}
   */
   readonly updatedBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#used_for_managed_storage DataDatabricksStorageCredential#used_for_managed_storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#used_for_managed_storage DataDatabricksStorageCredential#used_for_managed_storage}
   */
   readonly usedForManagedStorage?: boolean | cdktf.IResolvable;
   /**
   * aws_iam_role block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#aws_iam_role DataDatabricksStorageCredential#aws_iam_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#aws_iam_role DataDatabricksStorageCredential#aws_iam_role}
   */
   readonly awsIamRole?: DataDatabricksStorageCredentialStorageCredentialInfoAwsIamRole;
   /**
   * azure_managed_identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#azure_managed_identity DataDatabricksStorageCredential#azure_managed_identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#azure_managed_identity DataDatabricksStorageCredential#azure_managed_identity}
   */
   readonly azureManagedIdentity?: DataDatabricksStorageCredentialStorageCredentialInfoAzureManagedIdentity;
   /**
   * azure_service_principal block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#azure_service_principal DataDatabricksStorageCredential#azure_service_principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#azure_service_principal DataDatabricksStorageCredential#azure_service_principal}
   */
   readonly azureServicePrincipal?: DataDatabricksStorageCredentialStorageCredentialInfoAzureServicePrincipal;
   /**
   * cloudflare_api_token block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#cloudflare_api_token DataDatabricksStorageCredential#cloudflare_api_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#cloudflare_api_token DataDatabricksStorageCredential#cloudflare_api_token}
   */
   readonly cloudflareApiToken?: DataDatabricksStorageCredentialStorageCredentialInfoCloudflareApiToken;
   /**
   * databricks_gcp_service_account block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#databricks_gcp_service_account DataDatabricksStorageCredential#databricks_gcp_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#databricks_gcp_service_account DataDatabricksStorageCredential#databricks_gcp_service_account}
   */
   readonly databricksGcpServiceAccount?: DataDatabricksStorageCredentialStorageCredentialInfoDatabricksGcpServiceAccount;
 }
@@ -813,6 +817,7 @@ export function dataDatabricksStorageCredentialStorageCredentialInfoToTerraform(
     created_at: cdktf.numberToTerraform(struct!.createdAt),
     created_by: cdktf.stringToTerraform(struct!.createdBy),
     id: cdktf.stringToTerraform(struct!.id),
+    isolation_mode: cdktf.stringToTerraform(struct!.isolationMode),
     metastore_id: cdktf.stringToTerraform(struct!.metastoreId),
     name: cdktf.stringToTerraform(struct!.name),
     owner: cdktf.stringToTerraform(struct!.owner),
@@ -855,6 +860,12 @@ export function dataDatabricksStorageCredentialStorageCredentialInfoToHclTerrafo
     },
     id: {
       value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    isolation_mode: {
+      value: cdktf.stringToHclTerraform(struct!.isolationMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -967,6 +978,10 @@ export class DataDatabricksStorageCredentialStorageCredentialInfoOutputReference
       hasAnyValues = true;
       internalValueResult.id = this._id;
     }
+    if (this._isolationMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.isolationMode = this._isolationMode;
+    }
     if (this._metastoreId !== undefined) {
       hasAnyValues = true;
       internalValueResult.metastoreId = this._metastoreId;
@@ -1025,6 +1040,7 @@ export class DataDatabricksStorageCredentialStorageCredentialInfoOutputReference
       this._createdAt = undefined;
       this._createdBy = undefined;
       this._id = undefined;
+      this._isolationMode = undefined;
       this._metastoreId = undefined;
       this._name = undefined;
       this._owner = undefined;
@@ -1044,6 +1060,7 @@ export class DataDatabricksStorageCredentialStorageCredentialInfoOutputReference
       this._createdAt = value.createdAt;
       this._createdBy = value.createdBy;
       this._id = value.id;
+      this._isolationMode = value.isolationMode;
       this._metastoreId = value.metastoreId;
       this._name = value.name;
       this._owner = value.owner;
@@ -1121,6 +1138,22 @@ export class DataDatabricksStorageCredentialStorageCredentialInfoOutputReference
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // isolation_mode - computed: false, optional: true, required: false
+  private _isolationMode?: string; 
+  public get isolationMode() {
+    return this.getStringAttribute('isolation_mode');
+  }
+  public set isolationMode(value: string) {
+    this._isolationMode = value;
+  }
+  public resetIsolationMode() {
+    this._isolationMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isolationModeInput() {
+    return this._isolationMode;
   }
 
   // metastore_id - computed: false, optional: true, required: false
@@ -1317,7 +1350,7 @@ export class DataDatabricksStorageCredentialStorageCredentialInfoOutputReference
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential databricks_storage_credential}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential databricks_storage_credential}
 */
 export class DataDatabricksStorageCredential extends cdktf.TerraformDataSource {
 
@@ -1333,7 +1366,7 @@ export class DataDatabricksStorageCredential extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksStorageCredential resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksStorageCredential to import
-  * @param importFromId The id of the existing DataDatabricksStorageCredential that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksStorageCredential that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksStorageCredential to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1345,7 +1378,7 @@ export class DataDatabricksStorageCredential extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/data-sources/storage_credential databricks_storage_credential} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/data-sources/storage_credential databricks_storage_credential} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1356,7 +1389,7 @@ export class DataDatabricksStorageCredential extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_storage_credential',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.47.0',
+        providerVersion: '1.48.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
