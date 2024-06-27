@@ -1,3 +1,3 @@
 # `databricks_metastore`
 
-Refer to the Terraform Registry for docs: [`databricks_metastore`](https://registry.terraform.io/providers/databricks/databricks/1.47.0/docs/resources/metastore).
+Refer to the Terraform Registry for docs: [`databricks_metastore`](https://registry.terraform.io/providers/databricks/databricks/1.48.0/docs/resources/metastore).
