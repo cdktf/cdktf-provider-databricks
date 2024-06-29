@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor
+// https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,112 +8,112 @@ import * as cdktf from 'cdktf';
 
 export interface QualityMonitorConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#assets_dir QualityMonitor#assets_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#assets_dir QualityMonitor#assets_dir}
   */
   readonly assetsDir: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#baseline_table_name QualityMonitor#baseline_table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#baseline_table_name QualityMonitor#baseline_table_name}
   */
   readonly baselineTableName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#id QualityMonitor#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#id QualityMonitor#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#latest_monitor_failure_msg QualityMonitor#latest_monitor_failure_msg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#latest_monitor_failure_msg QualityMonitor#latest_monitor_failure_msg}
   */
   readonly latestMonitorFailureMsg?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#output_schema_name QualityMonitor#output_schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#output_schema_name QualityMonitor#output_schema_name}
   */
   readonly outputSchemaName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#skip_builtin_dashboard QualityMonitor#skip_builtin_dashboard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#skip_builtin_dashboard QualityMonitor#skip_builtin_dashboard}
   */
   readonly skipBuiltinDashboard?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#slicing_exprs QualityMonitor#slicing_exprs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#slicing_exprs QualityMonitor#slicing_exprs}
   */
   readonly slicingExprs?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#table_name QualityMonitor#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#table_name QualityMonitor#table_name}
   */
   readonly tableName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#warehouse_id QualityMonitor#warehouse_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#warehouse_id QualityMonitor#warehouse_id}
   */
   readonly warehouseId?: string;
   /**
   * custom_metrics block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#custom_metrics QualityMonitor#custom_metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#custom_metrics QualityMonitor#custom_metrics}
   */
   readonly customMetrics?: QualityMonitorCustomMetrics[] | cdktf.IResolvable;
   /**
   * data_classification_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#data_classification_config QualityMonitor#data_classification_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#data_classification_config QualityMonitor#data_classification_config}
   */
   readonly dataClassificationConfig?: QualityMonitorDataClassificationConfig;
   /**
   * inference_log block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#inference_log QualityMonitor#inference_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#inference_log QualityMonitor#inference_log}
   */
   readonly inferenceLog?: QualityMonitorInferenceLog;
   /**
   * notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#notifications QualityMonitor#notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#notifications QualityMonitor#notifications}
   */
   readonly notifications?: QualityMonitorNotifications;
   /**
   * schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#schedule QualityMonitor#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#schedule QualityMonitor#schedule}
   */
   readonly schedule?: QualityMonitorSchedule;
   /**
   * snapshot block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#snapshot QualityMonitor#snapshot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#snapshot QualityMonitor#snapshot}
   */
   readonly snapshot?: QualityMonitorSnapshot;
   /**
   * time_series block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#time_series QualityMonitor#time_series}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#time_series QualityMonitor#time_series}
   */
   readonly timeSeries?: QualityMonitorTimeSeries;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#timeouts QualityMonitor#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#timeouts QualityMonitor#timeouts}
   */
   readonly timeouts?: QualityMonitorTimeouts;
 }
 export interface QualityMonitorCustomMetrics {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#definition QualityMonitor#definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#definition QualityMonitor#definition}
   */
   readonly definition: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#input_columns QualityMonitor#input_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#input_columns QualityMonitor#input_columns}
   */
   readonly inputColumns: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#name QualityMonitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#name QualityMonitor#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#output_data_type QualityMonitor#output_data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#output_data_type QualityMonitor#output_data_type}
   */
   readonly outputDataType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#type QualityMonitor#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#type QualityMonitor#type}
   */
   readonly type: string;
 }
@@ -335,7 +330,7 @@ export class QualityMonitorCustomMetricsList extends cdktf.ComplexList {
 }
 export interface QualityMonitorDataClassificationConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#enabled QualityMonitor#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#enabled QualityMonitor#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
 }
@@ -419,31 +414,31 @@ export class QualityMonitorDataClassificationConfigOutputReference extends cdktf
 }
 export interface QualityMonitorInferenceLog {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#granularities QualityMonitor#granularities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#granularities QualityMonitor#granularities}
   */
   readonly granularities: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#label_col QualityMonitor#label_col}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#label_col QualityMonitor#label_col}
   */
   readonly labelCol?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#model_id_col QualityMonitor#model_id_col}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#model_id_col QualityMonitor#model_id_col}
   */
   readonly modelIdCol: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#prediction_col QualityMonitor#prediction_col}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#prediction_col QualityMonitor#prediction_col}
   */
   readonly predictionCol: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#prediction_proba_col QualityMonitor#prediction_proba_col}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#prediction_proba_col QualityMonitor#prediction_proba_col}
   */
   readonly predictionProbaCol?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#problem_type QualityMonitor#problem_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#problem_type QualityMonitor#problem_type}
   */
   readonly problemType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#timestamp_col QualityMonitor#timestamp_col}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#timestamp_col QualityMonitor#timestamp_col}
   */
   readonly timestampCol: string;
 }
@@ -686,7 +681,7 @@ export class QualityMonitorInferenceLogOutputReference extends cdktf.ComplexObje
 }
 export interface QualityMonitorNotificationsOnFailure {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#email_addresses QualityMonitor#email_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#email_addresses QualityMonitor#email_addresses}
   */
   readonly emailAddresses?: string[];
 }
@@ -770,7 +765,7 @@ export class QualityMonitorNotificationsOnFailureOutputReference extends cdktf.C
 }
 export interface QualityMonitorNotificationsOnNewClassificationTagDetected {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#email_addresses QualityMonitor#email_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#email_addresses QualityMonitor#email_addresses}
   */
   readonly emailAddresses?: string[];
 }
@@ -856,13 +851,13 @@ export interface QualityMonitorNotifications {
   /**
   * on_failure block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#on_failure QualityMonitor#on_failure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#on_failure QualityMonitor#on_failure}
   */
   readonly onFailure?: QualityMonitorNotificationsOnFailure;
   /**
   * on_new_classification_tag_detected block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#on_new_classification_tag_detected QualityMonitor#on_new_classification_tag_detected}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#on_new_classification_tag_detected QualityMonitor#on_new_classification_tag_detected}
   */
   readonly onNewClassificationTagDetected?: QualityMonitorNotificationsOnNewClassificationTagDetected;
 }
@@ -975,15 +970,15 @@ export class QualityMonitorNotificationsOutputReference extends cdktf.ComplexObj
 }
 export interface QualityMonitorSchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#pause_status QualityMonitor#pause_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#pause_status QualityMonitor#pause_status}
   */
   readonly pauseStatus?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#quartz_cron_expression QualityMonitor#quartz_cron_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#quartz_cron_expression QualityMonitor#quartz_cron_expression}
   */
   readonly quartzCronExpression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#timezone_id QualityMonitor#timezone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#timezone_id QualityMonitor#timezone_id}
   */
   readonly timezoneId: string;
 }
@@ -1168,11 +1163,11 @@ export class QualityMonitorSnapshotOutputReference extends cdktf.ComplexObject {
 }
 export interface QualityMonitorTimeSeries {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#granularities QualityMonitor#granularities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#granularities QualityMonitor#granularities}
   */
   readonly granularities: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#timestamp_col QualityMonitor#timestamp_col}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#timestamp_col QualityMonitor#timestamp_col}
   */
   readonly timestampCol: string;
 }
@@ -1279,7 +1274,7 @@ export class QualityMonitorTimeSeriesOutputReference extends cdktf.ComplexObject
 }
 export interface QualityMonitorTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#create QualityMonitor#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#create QualityMonitor#create}
   */
   readonly create?: string;
 }
@@ -1373,7 +1368,7 @@ export class QualityMonitorTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor databricks_quality_monitor}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor databricks_quality_monitor}
 */
 export class QualityMonitor extends cdktf.TerraformResource {
 
@@ -1389,7 +1384,7 @@ export class QualityMonitor extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a QualityMonitor resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QualityMonitor to import
-  * @param importFromId The id of the existing QualityMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing QualityMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QualityMonitor to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1401,7 +1396,7 @@ export class QualityMonitor extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.48.1/docs/resources/quality_monitor databricks_quality_monitor} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/quality_monitor databricks_quality_monitor} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1412,7 +1407,7 @@ export class QualityMonitor extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_quality_monitor',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.48.1',
+        providerVersion: '1.48.2',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
