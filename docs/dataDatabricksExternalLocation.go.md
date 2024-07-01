@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksexternallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksexternallocation"
 
 datadatabricksexternallocation.NewDataDatabricksExternalLocation(scope Construct, id *string, config DataDatabricksExternalLocationConfig) DataDatabricksExternalLocation
 ```
@@ -303,7 +303,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksexternallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksexternallocation"
 
 datadatabricksexternallocation.DataDatabricksExternalLocation_IsConstruct(x interface{}) *bool
 ```
@@ -335,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksexternallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksexternallocation"
 
 datadatabricksexternallocation.DataDatabricksExternalLocation_IsTerraformElement(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ datadatabricksexternallocation.DataDatabricksExternalLocation_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocation.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksexternallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksexternallocation"
 
 datadatabricksexternallocation.DataDatabricksExternalLocation_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ datadatabricksexternallocation.DataDatabricksExternalLocation_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksexternallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksexternallocation"
 
 datadatabricksexternallocation.DataDatabricksExternalLocation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -636,7 +636,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksexternallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksexternallocation"
 
 &datadatabricksexternallocation.DataDatabricksExternalLocationConfig {
 	Connection: interface{},
@@ -647,7 +647,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabri
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	ExternalLocationInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfo,
+	ExternalLocationInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfo,
 	Id: *string,
 }
 ```
@@ -785,7 +785,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksexternallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksexternallocation"
 
 &datadatabricksexternallocation.DataDatabricksExternalLocationExternalLocationInfo {
 	AccessPoint: *string,
@@ -795,7 +795,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabri
 	CreatedBy: *string,
 	CredentialId: *string,
 	CredentialName: *string,
-	EncryptionDetails: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoEncryptionDetails,
+	EncryptionDetails: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoEncryptionDetails,
 	IsolationMode: *string,
 	MetastoreId: *string,
 	Name: *string,
@@ -1029,10 +1029,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoEncryptionDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksexternallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksexternallocation"
 
 &datadatabricksexternallocation.DataDatabricksExternalLocationExternalLocationInfoEncryptionDetails {
-	SseEncryptionDetails: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsSseEncryptionDetails,
+	SseEncryptionDetails: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsSseEncryptionDetails,
 }
 ```
 
@@ -1063,7 +1063,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsSseEncryptionDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksexternallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksexternallocation"
 
 &datadatabricksexternallocation.DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsSseEncryptionDetails {
 	Algorithm: *string,
@@ -1111,7 +1111,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksexternallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksexternallocation"
 
 datadatabricksexternallocation.NewDataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsOutputReference
 ```
@@ -1402,7 +1402,7 @@ func InternalValue() DataDatabricksExternalLocationExternalLocationInfoEncryptio
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsSseEncryptionDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksexternallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksexternallocation"
 
 datadatabricksexternallocation.NewDataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsSseEncryptionDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsSseEncryptionDetailsOutputReference
 ```
@@ -1709,7 +1709,7 @@ func InternalValue() DataDatabricksExternalLocationExternalLocationInfoEncryptio
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksExternalLocation.DataDatabricksExternalLocationExternalLocationInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksexternallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksexternallocation"
 
 datadatabricksexternallocation.NewDataDatabricksExternalLocationExternalLocationInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksExternalLocationExternalLocationInfoOutputReference
 ```
