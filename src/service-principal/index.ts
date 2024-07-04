@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/service_principal
 // generated from terraform resource schema
 
