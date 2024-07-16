@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/databricks/databricks/1.48.3/docs/resources/mws_networks
 // generated from terraform resource schema
 
