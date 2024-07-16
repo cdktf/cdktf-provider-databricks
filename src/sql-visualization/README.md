@@ -1,3 +1,3 @@
 # `databricks_sql_visualization`
 
-Refer to the Terraform Registry for docs: [`databricks_sql_visualization`](https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/resources/sql_visualization).
+Refer to the Terraform Registry for docs: [`databricks_sql_visualization`](https://registry.terraform.io/providers/databricks/databricks/1.48.3/docs/resources/sql_visualization).

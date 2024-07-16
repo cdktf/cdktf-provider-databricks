@@ -1,3 +1,3 @@
 # `data_databricks_aws_assume_role_policy`
 
-Refer to the Terraform Registry for docs: [`data_databricks_aws_assume_role_policy`](https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/data-sources/aws_assume_role_policy).
+Refer to the Terraform Registry for docs: [`data_databricks_aws_assume_role_policy`](https://registry.terraform.io/providers/databricks/databricks/1.48.3/docs/data-sources/aws_assume_role_policy).

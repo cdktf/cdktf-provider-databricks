@@ -1,3 +1,3 @@
 # `data_databricks_pipelines`
 
-Refer to the Terraform Registry for docs: [`data_databricks_pipelines`](https://registry.terraform.io/providers/databricks/databricks/1.48.2/docs/data-sources/pipelines).
+Refer to the Terraform Registry for docs: [`data_databricks_pipelines`](https://registry.terraform.io/providers/databricks/databricks/1.48.3/docs/data-sources/pipelines).
