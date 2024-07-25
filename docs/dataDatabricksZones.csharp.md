@@ -4,7 +4,7 @@
 
 ### DataDatabricksZones <a name="DataDatabricksZones" id="@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.49.0/docs/data-sources/zones databricks_zones}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/data-sources/zones databricks_zones}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.Initializer"></a>
 
@@ -67,7 +67,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.resetDefaultZone">ResetDefaultZone</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.resetZones">ResetZones</a></code> | *No description.* |
 
 ---
 
@@ -263,10 +265,22 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 
 ---
 
+##### `ResetDefaultZone` <a name="ResetDefaultZone" id="@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.resetDefaultZone"></a>
+
+```csharp
+private void ResetDefaultZone()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.resetId"></a>
 
 ```csharp
 private void ResetId()
+```
+
+##### `ResetZones` <a name="ResetZones" id="@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.resetZones"></a>
+
+```csharp
+private void ResetZones()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -372,7 +386,7 @@ The construct id used in the generated config for the DataDatabricksZones to imp
 
 The id of the existing DataDatabricksZones that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.49.0/docs/data-sources/zones#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/data-sources/zones#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -400,10 +414,12 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.property.defaultZone">DefaultZone</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.property.zones">Zones</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.property.defaultZoneInput">DefaultZoneInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.property.zonesInput">ZonesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.property.defaultZone">DefaultZone</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.property.zones">Zones</a></code> | <code>string[]</code> | *No description.* |
 
 ---
 
@@ -529,23 +545,13 @@ public TerraformProvider Provider { get; }
 
 ---
 
-##### `DefaultZone`<sup>Required</sup> <a name="DefaultZone" id="@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.property.defaultZone"></a>
+##### `DefaultZoneInput`<sup>Optional</sup> <a name="DefaultZoneInput" id="@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.property.defaultZoneInput"></a>
 
 ```csharp
-public string DefaultZone { get; }
+public string DefaultZoneInput { get; }
 ```
 
 - *Type:* string
-
----
-
-##### `Zones`<sup>Required</sup> <a name="Zones" id="@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.property.zones"></a>
-
-```csharp
-public string[] Zones { get; }
-```
-
-- *Type:* string[]
 
 ---
 
@@ -559,6 +565,26 @@ public string IdInput { get; }
 
 ---
 
+##### `ZonesInput`<sup>Optional</sup> <a name="ZonesInput" id="@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.property.zonesInput"></a>
+
+```csharp
+public string[] ZonesInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `DefaultZone`<sup>Required</sup> <a name="DefaultZone" id="@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.property.defaultZone"></a>
+
+```csharp
+public string DefaultZone { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.property.id"></a>
 
 ```csharp
@@ -566,6 +592,16 @@ public string Id { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `Zones`<sup>Required</sup> <a name="Zones" id="@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZones.property.zones"></a>
+
+```csharp
+public string[] Zones { get; }
+```
+
+- *Type:* string[]
 
 ---
 
@@ -604,7 +640,9 @@ new DataDatabricksZonesConfig {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     object[] Provisioners = null,
-    string Id = null
+    string DefaultZone = null,
+    string Id = null,
+    string[] Zones = null
 };
 ```
 
@@ -619,7 +657,9 @@ new DataDatabricksZonesConfig {
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZonesConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZonesConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZonesConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZonesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.0/docs/data-sources/zones#id DataDatabricksZones#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZonesConfig.property.defaultZone">DefaultZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/data-sources/zones#default_zone DataDatabricksZones#default_zone}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZonesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/data-sources/zones#id DataDatabricksZones#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZonesConfig.property.zones">Zones</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/data-sources/zones#zones DataDatabricksZones#zones}. |
 
 ---
 
@@ -693,6 +733,18 @@ public object[] Provisioners { get; set; }
 
 ---
 
+##### `DefaultZone`<sup>Optional</sup> <a name="DefaultZone" id="@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZonesConfig.property.defaultZone"></a>
+
+```csharp
+public string DefaultZone { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/data-sources/zones#default_zone DataDatabricksZones#default_zone}.
+
+---
+
 ##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZonesConfig.property.id"></a>
 
 ```csharp
@@ -701,10 +753,22 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.0/docs/data-sources/zones#id DataDatabricksZones#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/data-sources/zones#id DataDatabricksZones#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Zones`<sup>Optional</sup> <a name="Zones" id="@cdktf/provider-databricks.dataDatabricksZones.DataDatabricksZonesConfig.property.zones"></a>
+
+```csharp
+public string[] Zones { get; set; }
+```
+
+- *Type:* string[]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/data-sources/zones#zones DataDatabricksZones#zones}.
 
 ---
 
