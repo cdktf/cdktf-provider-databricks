@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential
+// https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,90 +8,96 @@ import * as cdktf from 'cdktf';
 
 export interface StorageCredentialConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#comment StorageCredential#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#comment StorageCredential#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#force_destroy StorageCredential#force_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#force_destroy StorageCredential#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#force_update StorageCredential#force_update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#force_update StorageCredential#force_update}
   */
   readonly forceUpdate?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#id StorageCredential#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#id StorageCredential#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#isolation_mode StorageCredential#isolation_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#isolation_mode StorageCredential#isolation_mode}
   */
   readonly isolationMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#metastore_id StorageCredential#metastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#metastore_id StorageCredential#metastore_id}
   */
   readonly metastoreId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#name StorageCredential#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#name StorageCredential#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#owner StorageCredential#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#owner StorageCredential#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#read_only StorageCredential#read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#read_only StorageCredential#read_only}
   */
   readonly readOnly?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#skip_validation StorageCredential#skip_validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#skip_validation StorageCredential#skip_validation}
   */
   readonly skipValidation?: boolean | cdktf.IResolvable;
   /**
   * aws_iam_role block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#aws_iam_role StorageCredential#aws_iam_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#aws_iam_role StorageCredential#aws_iam_role}
   */
   readonly awsIamRole?: StorageCredentialAwsIamRole;
   /**
   * azure_managed_identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#azure_managed_identity StorageCredential#azure_managed_identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#azure_managed_identity StorageCredential#azure_managed_identity}
   */
   readonly azureManagedIdentity?: StorageCredentialAzureManagedIdentity;
   /**
   * azure_service_principal block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#azure_service_principal StorageCredential#azure_service_principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#azure_service_principal StorageCredential#azure_service_principal}
   */
   readonly azureServicePrincipal?: StorageCredentialAzureServicePrincipal;
   /**
+  * cloudflare_api_token block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#cloudflare_api_token StorageCredential#cloudflare_api_token}
+  */
+  readonly cloudflareApiToken?: StorageCredentialCloudflareApiToken;
+  /**
   * databricks_gcp_service_account block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#databricks_gcp_service_account StorageCredential#databricks_gcp_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#databricks_gcp_service_account StorageCredential#databricks_gcp_service_account}
   */
   readonly databricksGcpServiceAccount?: StorageCredentialDatabricksGcpServiceAccount;
   /**
   * gcp_service_account_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#gcp_service_account_key StorageCredential#gcp_service_account_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#gcp_service_account_key StorageCredential#gcp_service_account_key}
   */
   readonly gcpServiceAccountKey?: StorageCredentialGcpServiceAccountKey;
 }
 export interface StorageCredentialAwsIamRole {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#external_id StorageCredential#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#external_id StorageCredential#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#role_arn StorageCredential#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#role_arn StorageCredential#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#unity_catalog_iam_arn StorageCredential#unity_catalog_iam_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#unity_catalog_iam_arn StorageCredential#unity_catalog_iam_arn}
   */
   readonly unityCatalogIamArn?: string;
 }
@@ -235,15 +236,15 @@ export class StorageCredentialAwsIamRoleOutputReference extends cdktf.ComplexObj
 }
 export interface StorageCredentialAzureManagedIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#access_connector_id StorageCredential#access_connector_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#access_connector_id StorageCredential#access_connector_id}
   */
   readonly accessConnectorId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#credential_id StorageCredential#credential_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#credential_id StorageCredential#credential_id}
   */
   readonly credentialId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#managed_identity_id StorageCredential#managed_identity_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#managed_identity_id StorageCredential#managed_identity_id}
   */
   readonly managedIdentityId?: string;
 }
@@ -382,15 +383,15 @@ export class StorageCredentialAzureManagedIdentityOutputReference extends cdktf.
 }
 export interface StorageCredentialAzureServicePrincipal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#application_id StorageCredential#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#application_id StorageCredential#application_id}
   */
   readonly applicationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#client_secret StorageCredential#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#client_secret StorageCredential#client_secret}
   */
   readonly clientSecret: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#directory_id StorageCredential#directory_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#directory_id StorageCredential#directory_id}
   */
   readonly directoryId: string;
 }
@@ -521,13 +522,154 @@ export class StorageCredentialAzureServicePrincipalOutputReference extends cdktf
     return this._directoryId;
   }
 }
+export interface StorageCredentialCloudflareApiToken {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#access_key_id StorageCredential#access_key_id}
+  */
+  readonly accessKeyId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#account_id StorageCredential#account_id}
+  */
+  readonly accountId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#secret_access_key StorageCredential#secret_access_key}
+  */
+  readonly secretAccessKey: string;
+}
+
+export function storageCredentialCloudflareApiTokenToTerraform(struct?: StorageCredentialCloudflareApiTokenOutputReference | StorageCredentialCloudflareApiToken): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    access_key_id: cdktf.stringToTerraform(struct!.accessKeyId),
+    account_id: cdktf.stringToTerraform(struct!.accountId),
+    secret_access_key: cdktf.stringToTerraform(struct!.secretAccessKey),
+  }
+}
+
+
+export function storageCredentialCloudflareApiTokenToHclTerraform(struct?: StorageCredentialCloudflareApiTokenOutputReference | StorageCredentialCloudflareApiToken): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_key_id: {
+      value: cdktf.stringToHclTerraform(struct!.accessKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    account_id: {
+      value: cdktf.stringToHclTerraform(struct!.accountId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secret_access_key: {
+      value: cdktf.stringToHclTerraform(struct!.secretAccessKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class StorageCredentialCloudflareApiTokenOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): StorageCredentialCloudflareApiToken | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._accessKeyId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accessKeyId = this._accessKeyId;
+    }
+    if (this._accountId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accountId = this._accountId;
+    }
+    if (this._secretAccessKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secretAccessKey = this._secretAccessKey;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: StorageCredentialCloudflareApiToken | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._accessKeyId = undefined;
+      this._accountId = undefined;
+      this._secretAccessKey = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._accessKeyId = value.accessKeyId;
+      this._accountId = value.accountId;
+      this._secretAccessKey = value.secretAccessKey;
+    }
+  }
+
+  // access_key_id - computed: false, optional: false, required: true
+  private _accessKeyId?: string; 
+  public get accessKeyId() {
+    return this.getStringAttribute('access_key_id');
+  }
+  public set accessKeyId(value: string) {
+    this._accessKeyId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessKeyIdInput() {
+    return this._accessKeyId;
+  }
+
+  // account_id - computed: false, optional: false, required: true
+  private _accountId?: string; 
+  public get accountId() {
+    return this.getStringAttribute('account_id');
+  }
+  public set accountId(value: string) {
+    this._accountId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accountIdInput() {
+    return this._accountId;
+  }
+
+  // secret_access_key - computed: false, optional: false, required: true
+  private _secretAccessKey?: string; 
+  public get secretAccessKey() {
+    return this.getStringAttribute('secret_access_key');
+  }
+  public set secretAccessKey(value: string) {
+    this._secretAccessKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretAccessKeyInput() {
+    return this._secretAccessKey;
+  }
+}
 export interface StorageCredentialDatabricksGcpServiceAccount {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#credential_id StorageCredential#credential_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#credential_id StorageCredential#credential_id}
   */
   readonly credentialId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#email StorageCredential#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#email StorageCredential#email}
   */
   readonly email?: string;
 }
@@ -640,15 +782,15 @@ export class StorageCredentialDatabricksGcpServiceAccountOutputReference extends
 }
 export interface StorageCredentialGcpServiceAccountKey {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#email StorageCredential#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#email StorageCredential#email}
   */
   readonly email: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#private_key StorageCredential#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#private_key StorageCredential#private_key}
   */
   readonly privateKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#private_key_id StorageCredential#private_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#private_key_id StorageCredential#private_key_id}
   */
   readonly privateKeyId: string;
 }
@@ -781,7 +923,7 @@ export class StorageCredentialGcpServiceAccountKeyOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential databricks_storage_credential}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential databricks_storage_credential}
 */
 export class StorageCredential extends cdktf.TerraformResource {
 
@@ -797,7 +939,7 @@ export class StorageCredential extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a StorageCredential resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageCredential to import
-  * @param importFromId The id of the existing StorageCredential that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StorageCredential that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageCredential to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -809,7 +951,7 @@ export class StorageCredential extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential databricks_storage_credential} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential databricks_storage_credential} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -820,7 +962,7 @@ export class StorageCredential extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_storage_credential',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.49.1',
+        providerVersion: '1.50.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -844,6 +986,7 @@ export class StorageCredential extends cdktf.TerraformResource {
     this._awsIamRole.internalValue = config.awsIamRole;
     this._azureManagedIdentity.internalValue = config.azureManagedIdentity;
     this._azureServicePrincipal.internalValue = config.azureServicePrincipal;
+    this._cloudflareApiToken.internalValue = config.cloudflareApiToken;
     this._databricksGcpServiceAccount.internalValue = config.databricksGcpServiceAccount;
     this._gcpServiceAccountKey.internalValue = config.gcpServiceAccountKey;
   }
@@ -1062,6 +1205,22 @@ export class StorageCredential extends cdktf.TerraformResource {
     return this._azureServicePrincipal.internalValue;
   }
 
+  // cloudflare_api_token - computed: false, optional: true, required: false
+  private _cloudflareApiToken = new StorageCredentialCloudflareApiTokenOutputReference(this, "cloudflare_api_token");
+  public get cloudflareApiToken() {
+    return this._cloudflareApiToken;
+  }
+  public putCloudflareApiToken(value: StorageCredentialCloudflareApiToken) {
+    this._cloudflareApiToken.internalValue = value;
+  }
+  public resetCloudflareApiToken() {
+    this._cloudflareApiToken.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cloudflareApiTokenInput() {
+    return this._cloudflareApiToken.internalValue;
+  }
+
   // databricks_gcp_service_account - computed: false, optional: true, required: false
   private _databricksGcpServiceAccount = new StorageCredentialDatabricksGcpServiceAccountOutputReference(this, "databricks_gcp_service_account");
   public get databricksGcpServiceAccount() {
@@ -1113,6 +1272,7 @@ export class StorageCredential extends cdktf.TerraformResource {
       aws_iam_role: storageCredentialAwsIamRoleToTerraform(this._awsIamRole.internalValue),
       azure_managed_identity: storageCredentialAzureManagedIdentityToTerraform(this._azureManagedIdentity.internalValue),
       azure_service_principal: storageCredentialAzureServicePrincipalToTerraform(this._azureServicePrincipal.internalValue),
+      cloudflare_api_token: storageCredentialCloudflareApiTokenToTerraform(this._cloudflareApiToken.internalValue),
       databricks_gcp_service_account: storageCredentialDatabricksGcpServiceAccountToTerraform(this._databricksGcpServiceAccount.internalValue),
       gcp_service_account_key: storageCredentialGcpServiceAccountKeyToTerraform(this._gcpServiceAccountKey.internalValue),
     };
@@ -1197,6 +1357,12 @@ export class StorageCredential extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "StorageCredentialAzureServicePrincipalList",
+      },
+      cloudflare_api_token: {
+        value: storageCredentialCloudflareApiTokenToHclTerraform(this._cloudflareApiToken.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "StorageCredentialCloudflareApiTokenList",
       },
       databricks_gcp_service_account: {
         value: storageCredentialDatabricksGcpServiceAccountToHclTerraform(this._databricksGcpServiceAccount.internalValue),

@@ -111,6 +111,7 @@ The following submodules are available:
 - [mwsVpcEndpoint](./mwsVpcEndpoint.python.md)
 - [mwsWorkspaces](./mwsWorkspaces.python.md)
 - [notebook](./notebook.python.md)
+- [notificationDestination](./notificationDestination.python.md)
 - [oboToken](./oboToken.python.md)
 - [onlineTable](./onlineTable.python.md)
 - [permissionAssignment](./permissionAssignment.python.md)

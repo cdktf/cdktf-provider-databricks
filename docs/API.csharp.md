@@ -111,6 +111,7 @@ The following submodules are available:
 - [mwsVpcEndpoint](./mwsVpcEndpoint.csharp.md)
 - [mwsWorkspaces](./mwsWorkspaces.csharp.md)
 - [notebook](./notebook.csharp.md)
+- [notificationDestination](./notificationDestination.csharp.md)
 - [oboToken](./oboToken.csharp.md)
 - [onlineTable](./onlineTable.csharp.md)
 - [permissionAssignment](./permissionAssignment.csharp.md)
