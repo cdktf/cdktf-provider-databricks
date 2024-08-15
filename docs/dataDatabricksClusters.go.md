@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClusters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusters"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusters"
 
 datadatabricksclusters.NewDataDatabricksClusters(scope Construct, id *string, config DataDatabricksClustersConfig) DataDatabricksClusters
 ```
@@ -297,7 +297,7 @@ func ResetIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClusters.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusters"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusters"
 
 datadatabricksclusters.DataDatabricksClusters_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClusters.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusters"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusters"
 
 datadatabricksclusters.DataDatabricksClusters_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datadatabricksclusters.DataDatabricksClusters_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClusters.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusters"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusters"
 
 datadatabricksclusters.DataDatabricksClusters_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datadatabricksclusters.DataDatabricksClusters_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClusters.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusters"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusters"
 
 datadatabricksclusters.DataDatabricksClusters_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -630,7 +630,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClustersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusters"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusters"
 
 &datadatabricksclusters.DataDatabricksClustersConfig {
 	Connection: interface{},
