@@ -4,7 +4,7 @@
 
 ### MetastoreDataAccess <a name="MetastoreDataAccess" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access databricks_metastore_data_access}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access databricks_metastore_data_access}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.Initializer"></a>
 
@@ -76,11 +76,13 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.putAwsIamRole">PutAwsIamRole</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.putAzureManagedIdentity">PutAzureManagedIdentity</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.putAzureServicePrincipal">PutAzureServicePrincipal</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.putCloudflareApiToken">PutCloudflareApiToken</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.putDatabricksGcpServiceAccount">PutDatabricksGcpServiceAccount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.putGcpServiceAccountKey">PutGcpServiceAccountKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.resetAwsIamRole">ResetAwsIamRole</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.resetAzureManagedIdentity">ResetAzureManagedIdentity</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.resetAzureServicePrincipal">ResetAzureServicePrincipal</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.resetCloudflareApiToken">ResetCloudflareApiToken</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.resetComment">ResetComment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.resetDatabricksGcpServiceAccount">ResetDatabricksGcpServiceAccount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.resetForceDestroy">ResetForceDestroy</a></code> | *No description.* |
@@ -420,6 +422,18 @@ func PutAzureServicePrincipal(value MetastoreDataAccessAzureServicePrincipal)
 
 ---
 
+##### `PutCloudflareApiToken` <a name="PutCloudflareApiToken" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.putCloudflareApiToken"></a>
+
+```go
+func PutCloudflareApiToken(value MetastoreDataAccessCloudflareApiToken)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.putCloudflareApiToken.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiToken">MetastoreDataAccessCloudflareApiToken</a>
+
+---
+
 ##### `PutDatabricksGcpServiceAccount` <a name="PutDatabricksGcpServiceAccount" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.putDatabricksGcpServiceAccount"></a>
 
 ```go
@@ -460,6 +474,12 @@ func ResetAzureManagedIdentity()
 
 ```go
 func ResetAzureServicePrincipal()
+```
+
+##### `ResetCloudflareApiToken` <a name="ResetCloudflareApiToken" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.resetCloudflareApiToken"></a>
+
+```go
+func ResetCloudflareApiToken()
 ```
 
 ##### `ResetComment` <a name="ResetComment" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.resetComment"></a>
@@ -637,7 +657,7 @@ The construct id used in the generated config for the MetastoreDataAccess to imp
 
 The id of the existing MetastoreDataAccess that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -670,11 +690,13 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.property.awsIamRole">AwsIamRole</a></code> | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAwsIamRoleOutputReference">MetastoreDataAccessAwsIamRoleOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.property.azureManagedIdentity">AzureManagedIdentity</a></code> | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureManagedIdentityOutputReference">MetastoreDataAccessAzureManagedIdentityOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.property.azureServicePrincipal">AzureServicePrincipal</a></code> | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureServicePrincipalOutputReference">MetastoreDataAccessAzureServicePrincipalOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.property.cloudflareApiToken">CloudflareApiToken</a></code> | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference">MetastoreDataAccessCloudflareApiTokenOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.property.databricksGcpServiceAccount">DatabricksGcpServiceAccount</a></code> | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessDatabricksGcpServiceAccountOutputReference">MetastoreDataAccessDatabricksGcpServiceAccountOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.property.gcpServiceAccountKey">GcpServiceAccountKey</a></code> | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessGcpServiceAccountKeyOutputReference">MetastoreDataAccessGcpServiceAccountKeyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.property.awsIamRoleInput">AwsIamRoleInput</a></code> | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAwsIamRole">MetastoreDataAccessAwsIamRole</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.property.azureManagedIdentityInput">AzureManagedIdentityInput</a></code> | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureManagedIdentity">MetastoreDataAccessAzureManagedIdentity</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.property.azureServicePrincipalInput">AzureServicePrincipalInput</a></code> | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureServicePrincipal">MetastoreDataAccessAzureServicePrincipal</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.property.cloudflareApiTokenInput">CloudflareApiTokenInput</a></code> | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiToken">MetastoreDataAccessCloudflareApiToken</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.property.commentInput">CommentInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.property.databricksGcpServiceAccountInput">DatabricksGcpServiceAccountInput</a></code> | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessDatabricksGcpServiceAccount">MetastoreDataAccessDatabricksGcpServiceAccount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.property.forceDestroyInput">ForceDestroyInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -874,6 +896,16 @@ func AzureServicePrincipal() MetastoreDataAccessAzureServicePrincipalOutputRefer
 
 ---
 
+##### `CloudflareApiToken`<sup>Required</sup> <a name="CloudflareApiToken" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.property.cloudflareApiToken"></a>
+
+```go
+func CloudflareApiToken() MetastoreDataAccessCloudflareApiTokenOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference">MetastoreDataAccessCloudflareApiTokenOutputReference</a>
+
+---
+
 ##### `DatabricksGcpServiceAccount`<sup>Required</sup> <a name="DatabricksGcpServiceAccount" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.property.databricksGcpServiceAccount"></a>
 
 ```go
@@ -921,6 +953,16 @@ func AzureServicePrincipalInput() MetastoreDataAccessAzureServicePrincipal
 ```
 
 - *Type:* <a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureServicePrincipal">MetastoreDataAccessAzureServicePrincipal</a>
+
+---
+
+##### `CloudflareApiTokenInput`<sup>Optional</sup> <a name="CloudflareApiTokenInput" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccess.property.cloudflareApiTokenInput"></a>
+
+```go
+func CloudflareApiTokenInput() MetastoreDataAccessCloudflareApiToken
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiToken">MetastoreDataAccessCloudflareApiToken</a>
 
 ---
 
@@ -1202,9 +1244,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/metastoreda
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAwsIamRole.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#role_arn MetastoreDataAccess#role_arn}. |
-| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAwsIamRole.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#external_id MetastoreDataAccess#external_id}. |
-| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAwsIamRole.property.unityCatalogIamArn">UnityCatalogIamArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#unity_catalog_iam_arn MetastoreDataAccess#unity_catalog_iam_arn}. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAwsIamRole.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#role_arn MetastoreDataAccess#role_arn}. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAwsIamRole.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#external_id MetastoreDataAccess#external_id}. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAwsIamRole.property.unityCatalogIamArn">UnityCatalogIamArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#unity_catalog_iam_arn MetastoreDataAccess#unity_catalog_iam_arn}. |
 
 ---
 
@@ -1216,7 +1258,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#role_arn MetastoreDataAccess#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#role_arn MetastoreDataAccess#role_arn}.
 
 ---
 
@@ -1228,7 +1270,7 @@ ExternalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#external_id MetastoreDataAccess#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#external_id MetastoreDataAccess#external_id}.
 
 ---
 
@@ -1240,7 +1282,7 @@ UnityCatalogIamArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#unity_catalog_iam_arn MetastoreDataAccess#unity_catalog_iam_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#unity_catalog_iam_arn MetastoreDataAccess#unity_catalog_iam_arn}.
 
 ---
 
@@ -1262,9 +1304,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/metastoreda
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureManagedIdentity.property.accessConnectorId">AccessConnectorId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#access_connector_id MetastoreDataAccess#access_connector_id}. |
-| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureManagedIdentity.property.credentialId">CredentialId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#credential_id MetastoreDataAccess#credential_id}. |
-| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureManagedIdentity.property.managedIdentityId">ManagedIdentityId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#managed_identity_id MetastoreDataAccess#managed_identity_id}. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureManagedIdentity.property.accessConnectorId">AccessConnectorId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#access_connector_id MetastoreDataAccess#access_connector_id}. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureManagedIdentity.property.credentialId">CredentialId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#credential_id MetastoreDataAccess#credential_id}. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureManagedIdentity.property.managedIdentityId">ManagedIdentityId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#managed_identity_id MetastoreDataAccess#managed_identity_id}. |
 
 ---
 
@@ -1276,7 +1318,7 @@ AccessConnectorId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#access_connector_id MetastoreDataAccess#access_connector_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#access_connector_id MetastoreDataAccess#access_connector_id}.
 
 ---
 
@@ -1288,7 +1330,7 @@ CredentialId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#credential_id MetastoreDataAccess#credential_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#credential_id MetastoreDataAccess#credential_id}.
 
 ---
 
@@ -1300,7 +1342,7 @@ ManagedIdentityId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#managed_identity_id MetastoreDataAccess#managed_identity_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#managed_identity_id MetastoreDataAccess#managed_identity_id}.
 
 ---
 
@@ -1322,9 +1364,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/metastoreda
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureServicePrincipal.property.applicationId">ApplicationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#application_id MetastoreDataAccess#application_id}. |
-| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureServicePrincipal.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#client_secret MetastoreDataAccess#client_secret}. |
-| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureServicePrincipal.property.directoryId">DirectoryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#directory_id MetastoreDataAccess#directory_id}. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureServicePrincipal.property.applicationId">ApplicationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#application_id MetastoreDataAccess#application_id}. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureServicePrincipal.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#client_secret MetastoreDataAccess#client_secret}. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureServicePrincipal.property.directoryId">DirectoryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#directory_id MetastoreDataAccess#directory_id}. |
 
 ---
 
@@ -1336,7 +1378,7 @@ ApplicationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#application_id MetastoreDataAccess#application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#application_id MetastoreDataAccess#application_id}.
 
 ---
 
@@ -1348,7 +1390,7 @@ ClientSecret *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#client_secret MetastoreDataAccess#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#client_secret MetastoreDataAccess#client_secret}.
 
 ---
 
@@ -1360,7 +1402,67 @@ DirectoryId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#directory_id MetastoreDataAccess#directory_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#directory_id MetastoreDataAccess#directory_id}.
+
+---
+
+### MetastoreDataAccessCloudflareApiToken <a name="MetastoreDataAccessCloudflareApiToken" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiToken"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiToken.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/metastoredataaccess"
+
+&metastoredataaccess.MetastoreDataAccessCloudflareApiToken {
+	AccessKeyId: *string,
+	AccountId: *string,
+	SecretAccessKey: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiToken.property.accessKeyId">AccessKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#access_key_id MetastoreDataAccess#access_key_id}. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiToken.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#account_id MetastoreDataAccess#account_id}. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiToken.property.secretAccessKey">SecretAccessKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#secret_access_key MetastoreDataAccess#secret_access_key}. |
+
+---
+
+##### `AccessKeyId`<sup>Required</sup> <a name="AccessKeyId" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiToken.property.accessKeyId"></a>
+
+```go
+AccessKeyId *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#access_key_id MetastoreDataAccess#access_key_id}.
+
+---
+
+##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiToken.property.accountId"></a>
+
+```go
+AccountId *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#account_id MetastoreDataAccess#account_id}.
+
+---
+
+##### `SecretAccessKey`<sup>Required</sup> <a name="SecretAccessKey" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiToken.property.secretAccessKey"></a>
+
+```go
+SecretAccessKey *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#secret_access_key MetastoreDataAccess#secret_access_key}.
 
 ---
 
@@ -1383,6 +1485,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/metastoreda
 	AwsIamRole: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.metastoreDataAccess.MetastoreDataAccessAwsIamRole,
 	AzureManagedIdentity: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.metastoreDataAccess.MetastoreDataAccessAzureManagedIdentity,
 	AzureServicePrincipal: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.metastoreDataAccess.MetastoreDataAccessAzureServicePrincipal,
+	CloudflareApiToken: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.metastoreDataAccess.MetastoreDataAccessCloudflareApiToken,
 	Comment: *string,
 	DatabricksGcpServiceAccount: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.metastoreDataAccess.MetastoreDataAccessDatabricksGcpServiceAccount,
 	ForceDestroy: interface{},
@@ -1409,22 +1512,23 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/metastoreda
 | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#name MetastoreDataAccess#name}. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#name MetastoreDataAccess#name}. |
 | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.awsIamRole">AwsIamRole</a></code> | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAwsIamRole">MetastoreDataAccessAwsIamRole</a></code> | aws_iam_role block. |
 | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.azureManagedIdentity">AzureManagedIdentity</a></code> | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureManagedIdentity">MetastoreDataAccessAzureManagedIdentity</a></code> | azure_managed_identity block. |
 | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.azureServicePrincipal">AzureServicePrincipal</a></code> | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureServicePrincipal">MetastoreDataAccessAzureServicePrincipal</a></code> | azure_service_principal block. |
-| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#comment MetastoreDataAccess#comment}. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.cloudflareApiToken">CloudflareApiToken</a></code> | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiToken">MetastoreDataAccessCloudflareApiToken</a></code> | cloudflare_api_token block. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#comment MetastoreDataAccess#comment}. |
 | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.databricksGcpServiceAccount">DatabricksGcpServiceAccount</a></code> | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessDatabricksGcpServiceAccount">MetastoreDataAccessDatabricksGcpServiceAccount</a></code> | databricks_gcp_service_account block. |
-| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.forceDestroy">ForceDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#force_destroy MetastoreDataAccess#force_destroy}. |
-| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.forceUpdate">ForceUpdate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#force_update MetastoreDataAccess#force_update}. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.forceDestroy">ForceDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#force_destroy MetastoreDataAccess#force_destroy}. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.forceUpdate">ForceUpdate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#force_update MetastoreDataAccess#force_update}. |
 | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.gcpServiceAccountKey">GcpServiceAccountKey</a></code> | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessGcpServiceAccountKey">MetastoreDataAccessGcpServiceAccountKey</a></code> | gcp_service_account_key block. |
-| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#id MetastoreDataAccess#id}. |
-| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.isDefault">IsDefault</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#is_default MetastoreDataAccess#is_default}. |
-| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.isolationMode">IsolationMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#isolation_mode MetastoreDataAccess#isolation_mode}. |
-| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.metastoreId">MetastoreId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#metastore_id MetastoreDataAccess#metastore_id}. |
-| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.owner">Owner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#owner MetastoreDataAccess#owner}. |
-| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.readOnly">ReadOnly</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#read_only MetastoreDataAccess#read_only}. |
-| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.skipValidation">SkipValidation</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#skip_validation MetastoreDataAccess#skip_validation}. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#id MetastoreDataAccess#id}. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.isDefault">IsDefault</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#is_default MetastoreDataAccess#is_default}. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.isolationMode">IsolationMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#isolation_mode MetastoreDataAccess#isolation_mode}. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.metastoreId">MetastoreId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#metastore_id MetastoreDataAccess#metastore_id}. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.owner">Owner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#owner MetastoreDataAccess#owner}. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.readOnly">ReadOnly</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#read_only MetastoreDataAccess#read_only}. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.skipValidation">SkipValidation</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#skip_validation MetastoreDataAccess#skip_validation}. |
 
 ---
 
@@ -1506,7 +1610,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#name MetastoreDataAccess#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#name MetastoreDataAccess#name}.
 
 ---
 
@@ -1520,7 +1624,7 @@ AwsIamRole MetastoreDataAccessAwsIamRole
 
 aws_iam_role block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#aws_iam_role MetastoreDataAccess#aws_iam_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#aws_iam_role MetastoreDataAccess#aws_iam_role}
 
 ---
 
@@ -1534,7 +1638,7 @@ AzureManagedIdentity MetastoreDataAccessAzureManagedIdentity
 
 azure_managed_identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#azure_managed_identity MetastoreDataAccess#azure_managed_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#azure_managed_identity MetastoreDataAccess#azure_managed_identity}
 
 ---
 
@@ -1548,7 +1652,21 @@ AzureServicePrincipal MetastoreDataAccessAzureServicePrincipal
 
 azure_service_principal block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#azure_service_principal MetastoreDataAccess#azure_service_principal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#azure_service_principal MetastoreDataAccess#azure_service_principal}
+
+---
+
+##### `CloudflareApiToken`<sup>Optional</sup> <a name="CloudflareApiToken" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessConfig.property.cloudflareApiToken"></a>
+
+```go
+CloudflareApiToken MetastoreDataAccessCloudflareApiToken
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiToken">MetastoreDataAccessCloudflareApiToken</a>
+
+cloudflare_api_token block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#cloudflare_api_token MetastoreDataAccess#cloudflare_api_token}
 
 ---
 
@@ -1560,7 +1678,7 @@ Comment *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#comment MetastoreDataAccess#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#comment MetastoreDataAccess#comment}.
 
 ---
 
@@ -1574,7 +1692,7 @@ DatabricksGcpServiceAccount MetastoreDataAccessDatabricksGcpServiceAccount
 
 databricks_gcp_service_account block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#databricks_gcp_service_account MetastoreDataAccess#databricks_gcp_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#databricks_gcp_service_account MetastoreDataAccess#databricks_gcp_service_account}
 
 ---
 
@@ -1586,7 +1704,7 @@ ForceDestroy interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#force_destroy MetastoreDataAccess#force_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#force_destroy MetastoreDataAccess#force_destroy}.
 
 ---
 
@@ -1598,7 +1716,7 @@ ForceUpdate interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#force_update MetastoreDataAccess#force_update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#force_update MetastoreDataAccess#force_update}.
 
 ---
 
@@ -1612,7 +1730,7 @@ GcpServiceAccountKey MetastoreDataAccessGcpServiceAccountKey
 
 gcp_service_account_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#gcp_service_account_key MetastoreDataAccess#gcp_service_account_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#gcp_service_account_key MetastoreDataAccess#gcp_service_account_key}
 
 ---
 
@@ -1624,7 +1742,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#id MetastoreDataAccess#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#id MetastoreDataAccess#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1639,7 +1757,7 @@ IsDefault interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#is_default MetastoreDataAccess#is_default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#is_default MetastoreDataAccess#is_default}.
 
 ---
 
@@ -1651,7 +1769,7 @@ IsolationMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#isolation_mode MetastoreDataAccess#isolation_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#isolation_mode MetastoreDataAccess#isolation_mode}.
 
 ---
 
@@ -1663,7 +1781,7 @@ MetastoreId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#metastore_id MetastoreDataAccess#metastore_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#metastore_id MetastoreDataAccess#metastore_id}.
 
 ---
 
@@ -1675,7 +1793,7 @@ Owner *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#owner MetastoreDataAccess#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#owner MetastoreDataAccess#owner}.
 
 ---
 
@@ -1687,7 +1805,7 @@ ReadOnly interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#read_only MetastoreDataAccess#read_only}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#read_only MetastoreDataAccess#read_only}.
 
 ---
 
@@ -1699,7 +1817,7 @@ SkipValidation interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#skip_validation MetastoreDataAccess#skip_validation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#skip_validation MetastoreDataAccess#skip_validation}.
 
 ---
 
@@ -1720,8 +1838,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/metastoreda
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessDatabricksGcpServiceAccount.property.credentialId">CredentialId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#credential_id MetastoreDataAccess#credential_id}. |
-| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessDatabricksGcpServiceAccount.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#email MetastoreDataAccess#email}. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessDatabricksGcpServiceAccount.property.credentialId">CredentialId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#credential_id MetastoreDataAccess#credential_id}. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessDatabricksGcpServiceAccount.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#email MetastoreDataAccess#email}. |
 
 ---
 
@@ -1733,7 +1851,7 @@ CredentialId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#credential_id MetastoreDataAccess#credential_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#credential_id MetastoreDataAccess#credential_id}.
 
 ---
 
@@ -1745,7 +1863,7 @@ Email *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#email MetastoreDataAccess#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#email MetastoreDataAccess#email}.
 
 ---
 
@@ -1767,9 +1885,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/metastoreda
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessGcpServiceAccountKey.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#email MetastoreDataAccess#email}. |
-| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessGcpServiceAccountKey.property.privateKey">PrivateKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#private_key MetastoreDataAccess#private_key}. |
-| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessGcpServiceAccountKey.property.privateKeyId">PrivateKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#private_key_id MetastoreDataAccess#private_key_id}. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessGcpServiceAccountKey.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#email MetastoreDataAccess#email}. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessGcpServiceAccountKey.property.privateKey">PrivateKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#private_key MetastoreDataAccess#private_key}. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessGcpServiceAccountKey.property.privateKeyId">PrivateKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#private_key_id MetastoreDataAccess#private_key_id}. |
 
 ---
 
@@ -1781,7 +1899,7 @@ Email *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#email MetastoreDataAccess#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#email MetastoreDataAccess#email}.
 
 ---
 
@@ -1793,7 +1911,7 @@ PrivateKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#private_key MetastoreDataAccess#private_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#private_key MetastoreDataAccess#private_key}.
 
 ---
 
@@ -1805,7 +1923,7 @@ PrivateKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/metastore_data_access#private_key_id MetastoreDataAccess#private_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/metastore_data_access#private_key_id MetastoreDataAccess#private_key_id}.
 
 ---
 
@@ -2780,6 +2898,321 @@ func InternalValue() MetastoreDataAccessAzureServicePrincipal
 ```
 
 - *Type:* <a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessAzureServicePrincipal">MetastoreDataAccessAzureServicePrincipal</a>
+
+---
+
+
+### MetastoreDataAccessCloudflareApiTokenOutputReference <a name="MetastoreDataAccessCloudflareApiTokenOutputReference" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/metastoredataaccess"
+
+metastoredataaccess.NewMetastoreDataAccessCloudflareApiTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MetastoreDataAccessCloudflareApiTokenOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.property.accessKeyIdInput">AccessKeyIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.property.secretAccessKeyInput">SecretAccessKeyInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.property.accessKeyId">AccessKeyId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.property.secretAccessKey">SecretAccessKey</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiToken">MetastoreDataAccessCloudflareApiToken</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AccessKeyIdInput`<sup>Optional</sup> <a name="AccessKeyIdInput" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.property.accessKeyIdInput"></a>
+
+```go
+func AccessKeyIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AccountIdInput`<sup>Optional</sup> <a name="AccountIdInput" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.property.accountIdInput"></a>
+
+```go
+func AccountIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SecretAccessKeyInput`<sup>Optional</sup> <a name="SecretAccessKeyInput" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.property.secretAccessKeyInput"></a>
+
+```go
+func SecretAccessKeyInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AccessKeyId`<sup>Required</sup> <a name="AccessKeyId" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.property.accessKeyId"></a>
+
+```go
+func AccessKeyId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.property.accountId"></a>
+
+```go
+func AccountId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SecretAccessKey`<sup>Required</sup> <a name="SecretAccessKey" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.property.secretAccessKey"></a>
+
+```go
+func SecretAccessKey() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiTokenOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() MetastoreDataAccessCloudflareApiToken
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.metastoreDataAccess.MetastoreDataAccessCloudflareApiToken">MetastoreDataAccessCloudflareApiToken</a>
 
 ---
 

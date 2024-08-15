@@ -111,6 +111,7 @@ The following submodules are available:
 - [mwsVpcEndpoint](./mwsVpcEndpoint.java.md)
 - [mwsWorkspaces](./mwsWorkspaces.java.md)
 - [notebook](./notebook.java.md)
+- [notificationDestination](./notificationDestination.java.md)
 - [oboToken](./oboToken.java.md)
 - [onlineTable](./onlineTable.java.md)
 - [permissionAssignment](./permissionAssignment.java.md)

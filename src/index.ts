@@ -60,6 +60,7 @@ export * as mwsStorageConfigurations from './mws-storage-configurations';
 export * as mwsVpcEndpoint from './mws-vpc-endpoint';
 export * as mwsWorkspaces from './mws-workspaces';
 export * as notebook from './notebook';
+export * as notificationDestination from './notification-destination';
 export * as oboToken from './obo-token';
 export * as onlineTable from './online-table';
 export * as permissionAssignment from './permission-assignment';

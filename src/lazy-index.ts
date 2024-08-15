@@ -60,6 +60,7 @@ Object.defineProperty(exports, 'mwsStorageConfigurations', { get: function () { 
 Object.defineProperty(exports, 'mwsVpcEndpoint', { get: function () { return require('./mws-vpc-endpoint'); } });
 Object.defineProperty(exports, 'mwsWorkspaces', { get: function () { return require('./mws-workspaces'); } });
 Object.defineProperty(exports, 'notebook', { get: function () { return require('./notebook'); } });
+Object.defineProperty(exports, 'notificationDestination', { get: function () { return require('./notification-destination'); } });
 Object.defineProperty(exports, 'oboToken', { get: function () { return require('./obo-token'); } });
 Object.defineProperty(exports, 'onlineTable', { get: function () { return require('./online-table'); } });
 Object.defineProperty(exports, 'permissionAssignment', { get: function () { return require('./permission-assignment'); } });

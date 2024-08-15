@@ -111,6 +111,7 @@ The following submodules are available:
 - [mwsVpcEndpoint](./mwsVpcEndpoint.typescript.md)
 - [mwsWorkspaces](./mwsWorkspaces.typescript.md)
 - [notebook](./notebook.typescript.md)
+- [notificationDestination](./notificationDestination.typescript.md)
 - [oboToken](./oboToken.typescript.md)
 - [onlineTable](./onlineTable.typescript.md)
 - [permissionAssignment](./permissionAssignment.typescript.md)

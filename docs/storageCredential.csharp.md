@@ -4,7 +4,7 @@
 
 ### StorageCredential <a name="StorageCredential" id="@cdktf/provider-databricks.storageCredential.StorageCredential"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential databricks_storage_credential}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential databricks_storage_credential}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.storageCredential.StorageCredential.Initializer"></a>
 
@@ -76,11 +76,13 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredential.putAwsIamRole">PutAwsIamRole</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredential.putAzureManagedIdentity">PutAzureManagedIdentity</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredential.putAzureServicePrincipal">PutAzureServicePrincipal</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredential.putCloudflareApiToken">PutCloudflareApiToken</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredential.putDatabricksGcpServiceAccount">PutDatabricksGcpServiceAccount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredential.putGcpServiceAccountKey">PutGcpServiceAccountKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredential.resetAwsIamRole">ResetAwsIamRole</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredential.resetAzureManagedIdentity">ResetAzureManagedIdentity</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredential.resetAzureServicePrincipal">ResetAzureServicePrincipal</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredential.resetCloudflareApiToken">ResetCloudflareApiToken</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredential.resetComment">ResetComment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredential.resetDatabricksGcpServiceAccount">ResetDatabricksGcpServiceAccount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredential.resetForceDestroy">ResetForceDestroy</a></code> | *No description.* |
@@ -419,6 +421,18 @@ private void PutAzureServicePrincipal(StorageCredentialAzureServicePrincipal Val
 
 ---
 
+##### `PutCloudflareApiToken` <a name="PutCloudflareApiToken" id="@cdktf/provider-databricks.storageCredential.StorageCredential.putCloudflareApiToken"></a>
+
+```csharp
+private void PutCloudflareApiToken(StorageCredentialCloudflareApiToken Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.storageCredential.StorageCredential.putCloudflareApiToken.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiToken">StorageCredentialCloudflareApiToken</a>
+
+---
+
 ##### `PutDatabricksGcpServiceAccount` <a name="PutDatabricksGcpServiceAccount" id="@cdktf/provider-databricks.storageCredential.StorageCredential.putDatabricksGcpServiceAccount"></a>
 
 ```csharp
@@ -459,6 +473,12 @@ private void ResetAzureManagedIdentity()
 
 ```csharp
 private void ResetAzureServicePrincipal()
+```
+
+##### `ResetCloudflareApiToken` <a name="ResetCloudflareApiToken" id="@cdktf/provider-databricks.storageCredential.StorageCredential.resetCloudflareApiToken"></a>
+
+```csharp
+private void ResetCloudflareApiToken()
 ```
 
 ##### `ResetComment` <a name="ResetComment" id="@cdktf/provider-databricks.storageCredential.StorageCredential.resetComment"></a>
@@ -630,7 +650,7 @@ The construct id used in the generated config for the StorageCredential to impor
 
 The id of the existing StorageCredential that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -663,12 +683,14 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredential.property.awsIamRole">AwsIamRole</a></code> | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialAwsIamRoleOutputReference">StorageCredentialAwsIamRoleOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredential.property.azureManagedIdentity">AzureManagedIdentity</a></code> | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialAzureManagedIdentityOutputReference">StorageCredentialAzureManagedIdentityOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredential.property.azureServicePrincipal">AzureServicePrincipal</a></code> | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialAzureServicePrincipalOutputReference">StorageCredentialAzureServicePrincipalOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredential.property.cloudflareApiToken">CloudflareApiToken</a></code> | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference">StorageCredentialCloudflareApiTokenOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredential.property.databricksGcpServiceAccount">DatabricksGcpServiceAccount</a></code> | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialDatabricksGcpServiceAccountOutputReference">StorageCredentialDatabricksGcpServiceAccountOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredential.property.gcpServiceAccountKey">GcpServiceAccountKey</a></code> | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialGcpServiceAccountKeyOutputReference">StorageCredentialGcpServiceAccountKeyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredential.property.storageCredentialId">StorageCredentialId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredential.property.awsIamRoleInput">AwsIamRoleInput</a></code> | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialAwsIamRole">StorageCredentialAwsIamRole</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredential.property.azureManagedIdentityInput">AzureManagedIdentityInput</a></code> | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialAzureManagedIdentity">StorageCredentialAzureManagedIdentity</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredential.property.azureServicePrincipalInput">AzureServicePrincipalInput</a></code> | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialAzureServicePrincipal">StorageCredentialAzureServicePrincipal</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredential.property.cloudflareApiTokenInput">CloudflareApiTokenInput</a></code> | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiToken">StorageCredentialCloudflareApiToken</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredential.property.commentInput">CommentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredential.property.databricksGcpServiceAccountInput">DatabricksGcpServiceAccountInput</a></code> | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialDatabricksGcpServiceAccount">StorageCredentialDatabricksGcpServiceAccount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredential.property.forceDestroyInput">ForceDestroyInput</a></code> | <code>object</code> | *No description.* |
@@ -866,6 +888,16 @@ public StorageCredentialAzureServicePrincipalOutputReference AzureServicePrincip
 
 ---
 
+##### `CloudflareApiToken`<sup>Required</sup> <a name="CloudflareApiToken" id="@cdktf/provider-databricks.storageCredential.StorageCredential.property.cloudflareApiToken"></a>
+
+```csharp
+public StorageCredentialCloudflareApiTokenOutputReference CloudflareApiToken { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference">StorageCredentialCloudflareApiTokenOutputReference</a>
+
+---
+
 ##### `DatabricksGcpServiceAccount`<sup>Required</sup> <a name="DatabricksGcpServiceAccount" id="@cdktf/provider-databricks.storageCredential.StorageCredential.property.databricksGcpServiceAccount"></a>
 
 ```csharp
@@ -923,6 +955,16 @@ public StorageCredentialAzureServicePrincipal AzureServicePrincipalInput { get; 
 ```
 
 - *Type:* <a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialAzureServicePrincipal">StorageCredentialAzureServicePrincipal</a>
+
+---
+
+##### `CloudflareApiTokenInput`<sup>Optional</sup> <a name="CloudflareApiTokenInput" id="@cdktf/provider-databricks.storageCredential.StorageCredential.property.cloudflareApiTokenInput"></a>
+
+```csharp
+public StorageCredentialCloudflareApiToken CloudflareApiTokenInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiToken">StorageCredentialCloudflareApiToken</a>
 
 ---
 
@@ -1184,9 +1226,9 @@ new StorageCredentialAwsIamRole {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialAwsIamRole.property.roleArn">RoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#role_arn StorageCredential#role_arn}. |
-| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialAwsIamRole.property.externalId">ExternalId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#external_id StorageCredential#external_id}. |
-| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialAwsIamRole.property.unityCatalogIamArn">UnityCatalogIamArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#unity_catalog_iam_arn StorageCredential#unity_catalog_iam_arn}. |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialAwsIamRole.property.roleArn">RoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#role_arn StorageCredential#role_arn}. |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialAwsIamRole.property.externalId">ExternalId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#external_id StorageCredential#external_id}. |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialAwsIamRole.property.unityCatalogIamArn">UnityCatalogIamArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#unity_catalog_iam_arn StorageCredential#unity_catalog_iam_arn}. |
 
 ---
 
@@ -1198,7 +1240,7 @@ public string RoleArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#role_arn StorageCredential#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#role_arn StorageCredential#role_arn}.
 
 ---
 
@@ -1210,7 +1252,7 @@ public string ExternalId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#external_id StorageCredential#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#external_id StorageCredential#external_id}.
 
 ---
 
@@ -1222,7 +1264,7 @@ public string UnityCatalogIamArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#unity_catalog_iam_arn StorageCredential#unity_catalog_iam_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#unity_catalog_iam_arn StorageCredential#unity_catalog_iam_arn}.
 
 ---
 
@@ -1244,9 +1286,9 @@ new StorageCredentialAzureManagedIdentity {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialAzureManagedIdentity.property.accessConnectorId">AccessConnectorId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#access_connector_id StorageCredential#access_connector_id}. |
-| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialAzureManagedIdentity.property.credentialId">CredentialId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#credential_id StorageCredential#credential_id}. |
-| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialAzureManagedIdentity.property.managedIdentityId">ManagedIdentityId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#managed_identity_id StorageCredential#managed_identity_id}. |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialAzureManagedIdentity.property.accessConnectorId">AccessConnectorId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#access_connector_id StorageCredential#access_connector_id}. |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialAzureManagedIdentity.property.credentialId">CredentialId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#credential_id StorageCredential#credential_id}. |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialAzureManagedIdentity.property.managedIdentityId">ManagedIdentityId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#managed_identity_id StorageCredential#managed_identity_id}. |
 
 ---
 
@@ -1258,7 +1300,7 @@ public string AccessConnectorId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#access_connector_id StorageCredential#access_connector_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#access_connector_id StorageCredential#access_connector_id}.
 
 ---
 
@@ -1270,7 +1312,7 @@ public string CredentialId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#credential_id StorageCredential#credential_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#credential_id StorageCredential#credential_id}.
 
 ---
 
@@ -1282,7 +1324,7 @@ public string ManagedIdentityId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#managed_identity_id StorageCredential#managed_identity_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#managed_identity_id StorageCredential#managed_identity_id}.
 
 ---
 
@@ -1304,9 +1346,9 @@ new StorageCredentialAzureServicePrincipal {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialAzureServicePrincipal.property.applicationId">ApplicationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#application_id StorageCredential#application_id}. |
-| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialAzureServicePrincipal.property.clientSecret">ClientSecret</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#client_secret StorageCredential#client_secret}. |
-| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialAzureServicePrincipal.property.directoryId">DirectoryId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#directory_id StorageCredential#directory_id}. |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialAzureServicePrincipal.property.applicationId">ApplicationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#application_id StorageCredential#application_id}. |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialAzureServicePrincipal.property.clientSecret">ClientSecret</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#client_secret StorageCredential#client_secret}. |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialAzureServicePrincipal.property.directoryId">DirectoryId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#directory_id StorageCredential#directory_id}. |
 
 ---
 
@@ -1318,7 +1360,7 @@ public string ApplicationId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#application_id StorageCredential#application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#application_id StorageCredential#application_id}.
 
 ---
 
@@ -1330,7 +1372,7 @@ public string ClientSecret { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#client_secret StorageCredential#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#client_secret StorageCredential#client_secret}.
 
 ---
 
@@ -1342,7 +1384,67 @@ public string DirectoryId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#directory_id StorageCredential#directory_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#directory_id StorageCredential#directory_id}.
+
+---
+
+### StorageCredentialCloudflareApiToken <a name="StorageCredentialCloudflareApiToken" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiToken"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiToken.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Databricks;
+
+new StorageCredentialCloudflareApiToken {
+    string AccessKeyId,
+    string AccountId,
+    string SecretAccessKey
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiToken.property.accessKeyId">AccessKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#access_key_id StorageCredential#access_key_id}. |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiToken.property.accountId">AccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#account_id StorageCredential#account_id}. |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiToken.property.secretAccessKey">SecretAccessKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#secret_access_key StorageCredential#secret_access_key}. |
+
+---
+
+##### `AccessKeyId`<sup>Required</sup> <a name="AccessKeyId" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiToken.property.accessKeyId"></a>
+
+```csharp
+public string AccessKeyId { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#access_key_id StorageCredential#access_key_id}.
+
+---
+
+##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiToken.property.accountId"></a>
+
+```csharp
+public string AccountId { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#account_id StorageCredential#account_id}.
+
+---
+
+##### `SecretAccessKey`<sup>Required</sup> <a name="SecretAccessKey" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiToken.property.secretAccessKey"></a>
+
+```csharp
+public string SecretAccessKey { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#secret_access_key StorageCredential#secret_access_key}.
 
 ---
 
@@ -1365,6 +1467,7 @@ new StorageCredentialConfig {
     StorageCredentialAwsIamRole AwsIamRole = null,
     StorageCredentialAzureManagedIdentity AzureManagedIdentity = null,
     StorageCredentialAzureServicePrincipal AzureServicePrincipal = null,
+    StorageCredentialCloudflareApiToken CloudflareApiToken = null,
     string Comment = null,
     StorageCredentialDatabricksGcpServiceAccount DatabricksGcpServiceAccount = null,
     object ForceDestroy = null,
@@ -1390,21 +1493,22 @@ new StorageCredentialConfig {
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#name StorageCredential#name}. |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#name StorageCredential#name}. |
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.property.awsIamRole">AwsIamRole</a></code> | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialAwsIamRole">StorageCredentialAwsIamRole</a></code> | aws_iam_role block. |
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.property.azureManagedIdentity">AzureManagedIdentity</a></code> | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialAzureManagedIdentity">StorageCredentialAzureManagedIdentity</a></code> | azure_managed_identity block. |
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.property.azureServicePrincipal">AzureServicePrincipal</a></code> | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialAzureServicePrincipal">StorageCredentialAzureServicePrincipal</a></code> | azure_service_principal block. |
-| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#comment StorageCredential#comment}. |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.property.cloudflareApiToken">CloudflareApiToken</a></code> | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiToken">StorageCredentialCloudflareApiToken</a></code> | cloudflare_api_token block. |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#comment StorageCredential#comment}. |
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.property.databricksGcpServiceAccount">DatabricksGcpServiceAccount</a></code> | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialDatabricksGcpServiceAccount">StorageCredentialDatabricksGcpServiceAccount</a></code> | databricks_gcp_service_account block. |
-| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.property.forceDestroy">ForceDestroy</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#force_destroy StorageCredential#force_destroy}. |
-| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.property.forceUpdate">ForceUpdate</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#force_update StorageCredential#force_update}. |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.property.forceDestroy">ForceDestroy</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#force_destroy StorageCredential#force_destroy}. |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.property.forceUpdate">ForceUpdate</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#force_update StorageCredential#force_update}. |
 | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.property.gcpServiceAccountKey">GcpServiceAccountKey</a></code> | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialGcpServiceAccountKey">StorageCredentialGcpServiceAccountKey</a></code> | gcp_service_account_key block. |
-| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#id StorageCredential#id}. |
-| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.property.isolationMode">IsolationMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#isolation_mode StorageCredential#isolation_mode}. |
-| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.property.metastoreId">MetastoreId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#metastore_id StorageCredential#metastore_id}. |
-| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.property.owner">Owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#owner StorageCredential#owner}. |
-| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.property.readOnly">ReadOnly</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#read_only StorageCredential#read_only}. |
-| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.property.skipValidation">SkipValidation</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#skip_validation StorageCredential#skip_validation}. |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#id StorageCredential#id}. |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.property.isolationMode">IsolationMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#isolation_mode StorageCredential#isolation_mode}. |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.property.metastoreId">MetastoreId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#metastore_id StorageCredential#metastore_id}. |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.property.owner">Owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#owner StorageCredential#owner}. |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.property.readOnly">ReadOnly</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#read_only StorageCredential#read_only}. |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.property.skipValidation">SkipValidation</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#skip_validation StorageCredential#skip_validation}. |
 
 ---
 
@@ -1486,7 +1590,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#name StorageCredential#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#name StorageCredential#name}.
 
 ---
 
@@ -1500,7 +1604,7 @@ public StorageCredentialAwsIamRole AwsIamRole { get; set; }
 
 aws_iam_role block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#aws_iam_role StorageCredential#aws_iam_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#aws_iam_role StorageCredential#aws_iam_role}
 
 ---
 
@@ -1514,7 +1618,7 @@ public StorageCredentialAzureManagedIdentity AzureManagedIdentity { get; set; }
 
 azure_managed_identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#azure_managed_identity StorageCredential#azure_managed_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#azure_managed_identity StorageCredential#azure_managed_identity}
 
 ---
 
@@ -1528,7 +1632,21 @@ public StorageCredentialAzureServicePrincipal AzureServicePrincipal { get; set; 
 
 azure_service_principal block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#azure_service_principal StorageCredential#azure_service_principal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#azure_service_principal StorageCredential#azure_service_principal}
+
+---
+
+##### `CloudflareApiToken`<sup>Optional</sup> <a name="CloudflareApiToken" id="@cdktf/provider-databricks.storageCredential.StorageCredentialConfig.property.cloudflareApiToken"></a>
+
+```csharp
+public StorageCredentialCloudflareApiToken CloudflareApiToken { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiToken">StorageCredentialCloudflareApiToken</a>
+
+cloudflare_api_token block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#cloudflare_api_token StorageCredential#cloudflare_api_token}
 
 ---
 
@@ -1540,7 +1658,7 @@ public string Comment { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#comment StorageCredential#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#comment StorageCredential#comment}.
 
 ---
 
@@ -1554,7 +1672,7 @@ public StorageCredentialDatabricksGcpServiceAccount DatabricksGcpServiceAccount 
 
 databricks_gcp_service_account block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#databricks_gcp_service_account StorageCredential#databricks_gcp_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#databricks_gcp_service_account StorageCredential#databricks_gcp_service_account}
 
 ---
 
@@ -1566,7 +1684,7 @@ public object ForceDestroy { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#force_destroy StorageCredential#force_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#force_destroy StorageCredential#force_destroy}.
 
 ---
 
@@ -1578,7 +1696,7 @@ public object ForceUpdate { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#force_update StorageCredential#force_update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#force_update StorageCredential#force_update}.
 
 ---
 
@@ -1592,7 +1710,7 @@ public StorageCredentialGcpServiceAccountKey GcpServiceAccountKey { get; set; }
 
 gcp_service_account_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#gcp_service_account_key StorageCredential#gcp_service_account_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#gcp_service_account_key StorageCredential#gcp_service_account_key}
 
 ---
 
@@ -1604,7 +1722,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#id StorageCredential#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#id StorageCredential#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1619,7 +1737,7 @@ public string IsolationMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#isolation_mode StorageCredential#isolation_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#isolation_mode StorageCredential#isolation_mode}.
 
 ---
 
@@ -1631,7 +1749,7 @@ public string MetastoreId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#metastore_id StorageCredential#metastore_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#metastore_id StorageCredential#metastore_id}.
 
 ---
 
@@ -1643,7 +1761,7 @@ public string Owner { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#owner StorageCredential#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#owner StorageCredential#owner}.
 
 ---
 
@@ -1655,7 +1773,7 @@ public object ReadOnly { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#read_only StorageCredential#read_only}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#read_only StorageCredential#read_only}.
 
 ---
 
@@ -1667,7 +1785,7 @@ public object SkipValidation { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#skip_validation StorageCredential#skip_validation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#skip_validation StorageCredential#skip_validation}.
 
 ---
 
@@ -1688,8 +1806,8 @@ new StorageCredentialDatabricksGcpServiceAccount {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialDatabricksGcpServiceAccount.property.credentialId">CredentialId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#credential_id StorageCredential#credential_id}. |
-| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialDatabricksGcpServiceAccount.property.email">Email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#email StorageCredential#email}. |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialDatabricksGcpServiceAccount.property.credentialId">CredentialId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#credential_id StorageCredential#credential_id}. |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialDatabricksGcpServiceAccount.property.email">Email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#email StorageCredential#email}. |
 
 ---
 
@@ -1701,7 +1819,7 @@ public string CredentialId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#credential_id StorageCredential#credential_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#credential_id StorageCredential#credential_id}.
 
 ---
 
@@ -1713,7 +1831,7 @@ public string Email { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#email StorageCredential#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#email StorageCredential#email}.
 
 ---
 
@@ -1735,9 +1853,9 @@ new StorageCredentialGcpServiceAccountKey {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialGcpServiceAccountKey.property.email">Email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#email StorageCredential#email}. |
-| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialGcpServiceAccountKey.property.privateKey">PrivateKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#private_key StorageCredential#private_key}. |
-| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialGcpServiceAccountKey.property.privateKeyId">PrivateKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#private_key_id StorageCredential#private_key_id}. |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialGcpServiceAccountKey.property.email">Email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#email StorageCredential#email}. |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialGcpServiceAccountKey.property.privateKey">PrivateKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#private_key StorageCredential#private_key}. |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialGcpServiceAccountKey.property.privateKeyId">PrivateKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#private_key_id StorageCredential#private_key_id}. |
 
 ---
 
@@ -1749,7 +1867,7 @@ public string Email { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#email StorageCredential#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#email StorageCredential#email}.
 
 ---
 
@@ -1761,7 +1879,7 @@ public string PrivateKey { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#private_key StorageCredential#private_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#private_key StorageCredential#private_key}.
 
 ---
 
@@ -1773,7 +1891,7 @@ public string PrivateKeyId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/storage_credential#private_key_id StorageCredential#private_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/storage_credential#private_key_id StorageCredential#private_key_id}.
 
 ---
 
@@ -2748,6 +2866,321 @@ public StorageCredentialAzureServicePrincipal InternalValue { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialAzureServicePrincipal">StorageCredentialAzureServicePrincipal</a>
+
+---
+
+
+### StorageCredentialCloudflareApiTokenOutputReference <a name="StorageCredentialCloudflareApiTokenOutputReference" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Databricks;
+
+new StorageCredentialCloudflareApiTokenOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.property.accessKeyIdInput">AccessKeyIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.property.accountIdInput">AccountIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.property.secretAccessKeyInput">SecretAccessKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.property.accessKeyId">AccessKeyId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.property.accountId">AccountId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.property.secretAccessKey">SecretAccessKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiToken">StorageCredentialCloudflareApiToken</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AccessKeyIdInput`<sup>Optional</sup> <a name="AccessKeyIdInput" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.property.accessKeyIdInput"></a>
+
+```csharp
+public string AccessKeyIdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AccountIdInput`<sup>Optional</sup> <a name="AccountIdInput" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.property.accountIdInput"></a>
+
+```csharp
+public string AccountIdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SecretAccessKeyInput`<sup>Optional</sup> <a name="SecretAccessKeyInput" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.property.secretAccessKeyInput"></a>
+
+```csharp
+public string SecretAccessKeyInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AccessKeyId`<sup>Required</sup> <a name="AccessKeyId" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.property.accessKeyId"></a>
+
+```csharp
+public string AccessKeyId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.property.accountId"></a>
+
+```csharp
+public string AccountId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SecretAccessKey`<sup>Required</sup> <a name="SecretAccessKey" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.property.secretAccessKey"></a>
+
+```csharp
+public string SecretAccessKey { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiTokenOutputReference.property.internalValue"></a>
+
+```csharp
+public StorageCredentialCloudflareApiToken InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.storageCredential.StorageCredentialCloudflareApiToken">StorageCredentialCloudflareApiToken</a>
 
 ---
 

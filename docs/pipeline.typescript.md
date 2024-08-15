@@ -4,7 +4,7 @@
 
 ### Pipeline <a name="Pipeline" id="@cdktf/provider-databricks.pipeline.Pipeline"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline databricks_pipeline}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline databricks_pipeline}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.Pipeline.Initializer"></a>
 
@@ -76,28 +76,45 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.putCluster">putCluster</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.putDeployment">putDeployment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.putFilters">putFilters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.putGatewayDefinition">putGatewayDefinition</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.putIngestionDefinition">putIngestionDefinition</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.putLatestUpdates">putLatestUpdates</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.putLibrary">putLibrary</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.putNotification">putNotification</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.putTrigger">putTrigger</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetAllowDuplicateNames">resetAllowDuplicateNames</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetCatalog">resetCatalog</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetCause">resetCause</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetChannel">resetChannel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetCluster">resetCluster</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetClusterId">resetClusterId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetConfiguration">resetConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetContinuous">resetContinuous</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetCreatorUserName">resetCreatorUserName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetDeployment">resetDeployment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetDevelopment">resetDevelopment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetEdition">resetEdition</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetExpectedLastModified">resetExpectedLastModified</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetFilters">resetFilters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetGatewayDefinition">resetGatewayDefinition</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetHealth">resetHealth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetIngestionDefinition">resetIngestionDefinition</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetLastModified">resetLastModified</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetLatestUpdates">resetLatestUpdates</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetLibrary">resetLibrary</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetName">resetName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetNotification">resetNotification</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetPhoton">resetPhoton</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetRunAsUserName">resetRunAsUserName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetServerless">resetServerless</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetState">resetState</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetStorage">resetStorage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetTarget">resetTarget</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetTimeouts">resetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetTrigger">resetTrigger</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.resetUrl">resetUrl</a></code> | *No description.* |
 
 ---
 
@@ -425,6 +442,42 @@ public putFilters(value: PipelineFilters): void
 
 ---
 
+##### `putGatewayDefinition` <a name="putGatewayDefinition" id="@cdktf/provider-databricks.pipeline.Pipeline.putGatewayDefinition"></a>
+
+```typescript
+public putGatewayDefinition(value: PipelineGatewayDefinition): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.pipeline.Pipeline.putGatewayDefinition.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition">PipelineGatewayDefinition</a>
+
+---
+
+##### `putIngestionDefinition` <a name="putIngestionDefinition" id="@cdktf/provider-databricks.pipeline.Pipeline.putIngestionDefinition"></a>
+
+```typescript
+public putIngestionDefinition(value: PipelineIngestionDefinition): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.pipeline.Pipeline.putIngestionDefinition.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition">PipelineIngestionDefinition</a>
+
+---
+
+##### `putLatestUpdates` <a name="putLatestUpdates" id="@cdktf/provider-databricks.pipeline.Pipeline.putLatestUpdates"></a>
+
+```typescript
+public putLatestUpdates(value: IResolvable | PipelineLatestUpdates[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.pipeline.Pipeline.putLatestUpdates.parameter.value"></a>
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates">PipelineLatestUpdates</a>[]
+
+---
+
 ##### `putLibrary` <a name="putLibrary" id="@cdktf/provider-databricks.pipeline.Pipeline.putLibrary"></a>
 
 ```typescript
@@ -461,6 +514,18 @@ public putTimeouts(value: PipelineTimeouts): void
 
 ---
 
+##### `putTrigger` <a name="putTrigger" id="@cdktf/provider-databricks.pipeline.Pipeline.putTrigger"></a>
+
+```typescript
+public putTrigger(value: PipelineTrigger): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.pipeline.Pipeline.putTrigger.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineTrigger">PipelineTrigger</a>
+
+---
+
 ##### `resetAllowDuplicateNames` <a name="resetAllowDuplicateNames" id="@cdktf/provider-databricks.pipeline.Pipeline.resetAllowDuplicateNames"></a>
 
 ```typescript
@@ -471,6 +536,12 @@ public resetAllowDuplicateNames(): void
 
 ```typescript
 public resetCatalog(): void
+```
+
+##### `resetCause` <a name="resetCause" id="@cdktf/provider-databricks.pipeline.Pipeline.resetCause"></a>
+
+```typescript
+public resetCause(): void
 ```
 
 ##### `resetChannel` <a name="resetChannel" id="@cdktf/provider-databricks.pipeline.Pipeline.resetChannel"></a>
@@ -485,6 +556,12 @@ public resetChannel(): void
 public resetCluster(): void
 ```
 
+##### `resetClusterId` <a name="resetClusterId" id="@cdktf/provider-databricks.pipeline.Pipeline.resetClusterId"></a>
+
+```typescript
+public resetClusterId(): void
+```
+
 ##### `resetConfiguration` <a name="resetConfiguration" id="@cdktf/provider-databricks.pipeline.Pipeline.resetConfiguration"></a>
 
 ```typescript
@@ -495,6 +572,12 @@ public resetConfiguration(): void
 
 ```typescript
 public resetContinuous(): void
+```
+
+##### `resetCreatorUserName` <a name="resetCreatorUserName" id="@cdktf/provider-databricks.pipeline.Pipeline.resetCreatorUserName"></a>
+
+```typescript
+public resetCreatorUserName(): void
 ```
 
 ##### `resetDeployment` <a name="resetDeployment" id="@cdktf/provider-databricks.pipeline.Pipeline.resetDeployment"></a>
@@ -515,16 +598,52 @@ public resetDevelopment(): void
 public resetEdition(): void
 ```
 
+##### `resetExpectedLastModified` <a name="resetExpectedLastModified" id="@cdktf/provider-databricks.pipeline.Pipeline.resetExpectedLastModified"></a>
+
+```typescript
+public resetExpectedLastModified(): void
+```
+
 ##### `resetFilters` <a name="resetFilters" id="@cdktf/provider-databricks.pipeline.Pipeline.resetFilters"></a>
 
 ```typescript
 public resetFilters(): void
 ```
 
+##### `resetGatewayDefinition` <a name="resetGatewayDefinition" id="@cdktf/provider-databricks.pipeline.Pipeline.resetGatewayDefinition"></a>
+
+```typescript
+public resetGatewayDefinition(): void
+```
+
+##### `resetHealth` <a name="resetHealth" id="@cdktf/provider-databricks.pipeline.Pipeline.resetHealth"></a>
+
+```typescript
+public resetHealth(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-databricks.pipeline.Pipeline.resetId"></a>
 
 ```typescript
 public resetId(): void
+```
+
+##### `resetIngestionDefinition` <a name="resetIngestionDefinition" id="@cdktf/provider-databricks.pipeline.Pipeline.resetIngestionDefinition"></a>
+
+```typescript
+public resetIngestionDefinition(): void
+```
+
+##### `resetLastModified` <a name="resetLastModified" id="@cdktf/provider-databricks.pipeline.Pipeline.resetLastModified"></a>
+
+```typescript
+public resetLastModified(): void
+```
+
+##### `resetLatestUpdates` <a name="resetLatestUpdates" id="@cdktf/provider-databricks.pipeline.Pipeline.resetLatestUpdates"></a>
+
+```typescript
+public resetLatestUpdates(): void
 ```
 
 ##### `resetLibrary` <a name="resetLibrary" id="@cdktf/provider-databricks.pipeline.Pipeline.resetLibrary"></a>
@@ -551,10 +670,22 @@ public resetNotification(): void
 public resetPhoton(): void
 ```
 
+##### `resetRunAsUserName` <a name="resetRunAsUserName" id="@cdktf/provider-databricks.pipeline.Pipeline.resetRunAsUserName"></a>
+
+```typescript
+public resetRunAsUserName(): void
+```
+
 ##### `resetServerless` <a name="resetServerless" id="@cdktf/provider-databricks.pipeline.Pipeline.resetServerless"></a>
 
 ```typescript
 public resetServerless(): void
+```
+
+##### `resetState` <a name="resetState" id="@cdktf/provider-databricks.pipeline.Pipeline.resetState"></a>
+
+```typescript
+public resetState(): void
 ```
 
 ##### `resetStorage` <a name="resetStorage" id="@cdktf/provider-databricks.pipeline.Pipeline.resetStorage"></a>
@@ -573,6 +704,18 @@ public resetTarget(): void
 
 ```typescript
 public resetTimeouts(): void
+```
+
+##### `resetTrigger` <a name="resetTrigger" id="@cdktf/provider-databricks.pipeline.Pipeline.resetTrigger"></a>
+
+```typescript
+public resetTrigger(): void
+```
+
+##### `resetUrl` <a name="resetUrl" id="@cdktf/provider-databricks.pipeline.Pipeline.resetUrl"></a>
+
+```typescript
+public resetUrl(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -678,7 +821,7 @@ The construct id used in the generated config for the Pipeline to import.
 
 The id of the existing Pipeline that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -711,42 +854,67 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.cluster">cluster</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterList">PipelineClusterList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.deployment">deployment</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineDeploymentOutputReference">PipelineDeploymentOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.filters">filters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineFiltersOutputReference">PipelineFiltersOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.gatewayDefinition">gatewayDefinition</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference">PipelineGatewayDefinitionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.ingestionDefinition">ingestionDefinition</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference">PipelineIngestionDefinitionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.latestUpdates">latestUpdates</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList">PipelineLatestUpdatesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.library">library</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryList">PipelineLibraryList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.notification">notification</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineNotificationList">PipelineNotificationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTimeoutsOutputReference">PipelineTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.url">url</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.trigger">trigger</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference">PipelineTriggerOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.allowDuplicateNamesInput">allowDuplicateNamesInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.catalogInput">catalogInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.causeInput">causeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.channelInput">channelInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.clusterIdInput">clusterIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.clusterInput">clusterInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.pipeline.PipelineCluster">PipelineCluster</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.configurationInput">configurationInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.continuousInput">continuousInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.creatorUserNameInput">creatorUserNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.deploymentInput">deploymentInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineDeployment">PipelineDeployment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.developmentInput">developmentInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.editionInput">editionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.expectedLastModifiedInput">expectedLastModifiedInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.filtersInput">filtersInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineFilters">PipelineFilters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.gatewayDefinitionInput">gatewayDefinitionInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition">PipelineGatewayDefinition</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.healthInput">healthInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.ingestionDefinitionInput">ingestionDefinitionInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition">PipelineIngestionDefinition</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.lastModifiedInput">lastModifiedInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.latestUpdatesInput">latestUpdatesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates">PipelineLatestUpdates</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.libraryInput">libraryInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary">PipelineLibrary</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.notificationInput">notificationInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.pipeline.PipelineNotification">PipelineNotification</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.photonInput">photonInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.runAsUserNameInput">runAsUserNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.serverlessInput">serverlessInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.stateInput">stateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.storageInput">storageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.targetInput">targetInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.pipeline.PipelineTimeouts">PipelineTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.triggerInput">triggerInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTrigger">PipelineTrigger</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.urlInput">urlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.allowDuplicateNames">allowDuplicateNames</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.catalog">catalog</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.cause">cause</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.channel">channel</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.clusterId">clusterId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.configuration">configuration</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.continuous">continuous</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.creatorUserName">creatorUserName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.development">development</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.edition">edition</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.expectedLastModified">expectedLastModified</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.health">health</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.lastModified">lastModified</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.photon">photon</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.runAsUserName">runAsUserName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.serverless">serverless</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.state">state</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.storage">storage</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.target">target</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.url">url</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -922,6 +1090,36 @@ public readonly filters: PipelineFiltersOutputReference;
 
 ---
 
+##### `gatewayDefinition`<sup>Required</sup> <a name="gatewayDefinition" id="@cdktf/provider-databricks.pipeline.Pipeline.property.gatewayDefinition"></a>
+
+```typescript
+public readonly gatewayDefinition: PipelineGatewayDefinitionOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference">PipelineGatewayDefinitionOutputReference</a>
+
+---
+
+##### `ingestionDefinition`<sup>Required</sup> <a name="ingestionDefinition" id="@cdktf/provider-databricks.pipeline.Pipeline.property.ingestionDefinition"></a>
+
+```typescript
+public readonly ingestionDefinition: PipelineIngestionDefinitionOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference">PipelineIngestionDefinitionOutputReference</a>
+
+---
+
+##### `latestUpdates`<sup>Required</sup> <a name="latestUpdates" id="@cdktf/provider-databricks.pipeline.Pipeline.property.latestUpdates"></a>
+
+```typescript
+public readonly latestUpdates: PipelineLatestUpdatesList;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList">PipelineLatestUpdatesList</a>
+
+---
+
 ##### `library`<sup>Required</sup> <a name="library" id="@cdktf/provider-databricks.pipeline.Pipeline.property.library"></a>
 
 ```typescript
@@ -952,13 +1150,13 @@ public readonly timeouts: PipelineTimeoutsOutputReference;
 
 ---
 
-##### `url`<sup>Required</sup> <a name="url" id="@cdktf/provider-databricks.pipeline.Pipeline.property.url"></a>
+##### `trigger`<sup>Required</sup> <a name="trigger" id="@cdktf/provider-databricks.pipeline.Pipeline.property.trigger"></a>
 
 ```typescript
-public readonly url: string;
+public readonly trigger: PipelineTriggerOutputReference;
 ```
 
-- *Type:* string
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference">PipelineTriggerOutputReference</a>
 
 ---
 
@@ -982,10 +1180,30 @@ public readonly catalogInput: string;
 
 ---
 
+##### `causeInput`<sup>Optional</sup> <a name="causeInput" id="@cdktf/provider-databricks.pipeline.Pipeline.property.causeInput"></a>
+
+```typescript
+public readonly causeInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `channelInput`<sup>Optional</sup> <a name="channelInput" id="@cdktf/provider-databricks.pipeline.Pipeline.property.channelInput"></a>
 
 ```typescript
 public readonly channelInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `clusterIdInput`<sup>Optional</sup> <a name="clusterIdInput" id="@cdktf/provider-databricks.pipeline.Pipeline.property.clusterIdInput"></a>
+
+```typescript
+public readonly clusterIdInput: string;
 ```
 
 - *Type:* string
@@ -1022,6 +1240,16 @@ public readonly continuousInput: boolean | IResolvable;
 
 ---
 
+##### `creatorUserNameInput`<sup>Optional</sup> <a name="creatorUserNameInput" id="@cdktf/provider-databricks.pipeline.Pipeline.property.creatorUserNameInput"></a>
+
+```typescript
+public readonly creatorUserNameInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `deploymentInput`<sup>Optional</sup> <a name="deploymentInput" id="@cdktf/provider-databricks.pipeline.Pipeline.property.deploymentInput"></a>
 
 ```typescript
@@ -1052,6 +1280,16 @@ public readonly editionInput: string;
 
 ---
 
+##### `expectedLastModifiedInput`<sup>Optional</sup> <a name="expectedLastModifiedInput" id="@cdktf/provider-databricks.pipeline.Pipeline.property.expectedLastModifiedInput"></a>
+
+```typescript
+public readonly expectedLastModifiedInput: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `filtersInput`<sup>Optional</sup> <a name="filtersInput" id="@cdktf/provider-databricks.pipeline.Pipeline.property.filtersInput"></a>
 
 ```typescript
@@ -1062,6 +1300,26 @@ public readonly filtersInput: PipelineFilters;
 
 ---
 
+##### `gatewayDefinitionInput`<sup>Optional</sup> <a name="gatewayDefinitionInput" id="@cdktf/provider-databricks.pipeline.Pipeline.property.gatewayDefinitionInput"></a>
+
+```typescript
+public readonly gatewayDefinitionInput: PipelineGatewayDefinition;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition">PipelineGatewayDefinition</a>
+
+---
+
+##### `healthInput`<sup>Optional</sup> <a name="healthInput" id="@cdktf/provider-databricks.pipeline.Pipeline.property.healthInput"></a>
+
+```typescript
+public readonly healthInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-databricks.pipeline.Pipeline.property.idInput"></a>
 
 ```typescript
@@ -1069,6 +1327,36 @@ public readonly idInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `ingestionDefinitionInput`<sup>Optional</sup> <a name="ingestionDefinitionInput" id="@cdktf/provider-databricks.pipeline.Pipeline.property.ingestionDefinitionInput"></a>
+
+```typescript
+public readonly ingestionDefinitionInput: PipelineIngestionDefinition;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition">PipelineIngestionDefinition</a>
+
+---
+
+##### `lastModifiedInput`<sup>Optional</sup> <a name="lastModifiedInput" id="@cdktf/provider-databricks.pipeline.Pipeline.property.lastModifiedInput"></a>
+
+```typescript
+public readonly lastModifiedInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `latestUpdatesInput`<sup>Optional</sup> <a name="latestUpdatesInput" id="@cdktf/provider-databricks.pipeline.Pipeline.property.latestUpdatesInput"></a>
+
+```typescript
+public readonly latestUpdatesInput: IResolvable | PipelineLatestUpdates[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates">PipelineLatestUpdates</a>[]
 
 ---
 
@@ -1112,6 +1400,16 @@ public readonly photonInput: boolean | IResolvable;
 
 ---
 
+##### `runAsUserNameInput`<sup>Optional</sup> <a name="runAsUserNameInput" id="@cdktf/provider-databricks.pipeline.Pipeline.property.runAsUserNameInput"></a>
+
+```typescript
+public readonly runAsUserNameInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `serverlessInput`<sup>Optional</sup> <a name="serverlessInput" id="@cdktf/provider-databricks.pipeline.Pipeline.property.serverlessInput"></a>
 
 ```typescript
@@ -1119,6 +1417,16 @@ public readonly serverlessInput: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `stateInput`<sup>Optional</sup> <a name="stateInput" id="@cdktf/provider-databricks.pipeline.Pipeline.property.stateInput"></a>
+
+```typescript
+public readonly stateInput: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -1152,6 +1460,26 @@ public readonly timeoutsInput: IResolvable | PipelineTimeouts;
 
 ---
 
+##### `triggerInput`<sup>Optional</sup> <a name="triggerInput" id="@cdktf/provider-databricks.pipeline.Pipeline.property.triggerInput"></a>
+
+```typescript
+public readonly triggerInput: PipelineTrigger;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineTrigger">PipelineTrigger</a>
+
+---
+
+##### `urlInput`<sup>Optional</sup> <a name="urlInput" id="@cdktf/provider-databricks.pipeline.Pipeline.property.urlInput"></a>
+
+```typescript
+public readonly urlInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `allowDuplicateNames`<sup>Required</sup> <a name="allowDuplicateNames" id="@cdktf/provider-databricks.pipeline.Pipeline.property.allowDuplicateNames"></a>
 
 ```typescript
@@ -1172,10 +1500,30 @@ public readonly catalog: string;
 
 ---
 
+##### `cause`<sup>Required</sup> <a name="cause" id="@cdktf/provider-databricks.pipeline.Pipeline.property.cause"></a>
+
+```typescript
+public readonly cause: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `channel`<sup>Required</sup> <a name="channel" id="@cdktf/provider-databricks.pipeline.Pipeline.property.channel"></a>
 
 ```typescript
 public readonly channel: string;
+```
+
+- *Type:* string
+
+---
+
+##### `clusterId`<sup>Required</sup> <a name="clusterId" id="@cdktf/provider-databricks.pipeline.Pipeline.property.clusterId"></a>
+
+```typescript
+public readonly clusterId: string;
 ```
 
 - *Type:* string
@@ -1202,6 +1550,16 @@ public readonly continuous: boolean | IResolvable;
 
 ---
 
+##### `creatorUserName`<sup>Required</sup> <a name="creatorUserName" id="@cdktf/provider-databricks.pipeline.Pipeline.property.creatorUserName"></a>
+
+```typescript
+public readonly creatorUserName: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `development`<sup>Required</sup> <a name="development" id="@cdktf/provider-databricks.pipeline.Pipeline.property.development"></a>
 
 ```typescript
@@ -1222,6 +1580,26 @@ public readonly edition: string;
 
 ---
 
+##### `expectedLastModified`<sup>Required</sup> <a name="expectedLastModified" id="@cdktf/provider-databricks.pipeline.Pipeline.property.expectedLastModified"></a>
+
+```typescript
+public readonly expectedLastModified: number;
+```
+
+- *Type:* number
+
+---
+
+##### `health`<sup>Required</sup> <a name="health" id="@cdktf/provider-databricks.pipeline.Pipeline.property.health"></a>
+
+```typescript
+public readonly health: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-databricks.pipeline.Pipeline.property.id"></a>
 
 ```typescript
@@ -1229,6 +1607,16 @@ public readonly id: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `lastModified`<sup>Required</sup> <a name="lastModified" id="@cdktf/provider-databricks.pipeline.Pipeline.property.lastModified"></a>
+
+```typescript
+public readonly lastModified: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -1252,6 +1640,16 @@ public readonly photon: boolean | IResolvable;
 
 ---
 
+##### `runAsUserName`<sup>Required</sup> <a name="runAsUserName" id="@cdktf/provider-databricks.pipeline.Pipeline.property.runAsUserName"></a>
+
+```typescript
+public readonly runAsUserName: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `serverless`<sup>Required</sup> <a name="serverless" id="@cdktf/provider-databricks.pipeline.Pipeline.property.serverless"></a>
 
 ```typescript
@@ -1259,6 +1657,16 @@ public readonly serverless: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `state`<sup>Required</sup> <a name="state" id="@cdktf/provider-databricks.pipeline.Pipeline.property.state"></a>
+
+```typescript
+public readonly state: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -1276,6 +1684,16 @@ public readonly storage: string;
 
 ```typescript
 public readonly target: string;
+```
+
+- *Type:* string
+
+---
+
+##### `url`<sup>Required</sup> <a name="url" id="@cdktf/provider-databricks.pipeline.Pipeline.property.url"></a>
+
+```typescript
+public readonly url: string;
 ```
 
 - *Type:* string
@@ -1316,25 +1734,25 @@ const pipelineCluster: pipeline.PipelineCluster = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.applyPolicyDefaultValues">applyPolicyDefaultValues</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#apply_policy_default_values Pipeline#apply_policy_default_values}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.applyPolicyDefaultValues">applyPolicyDefaultValues</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#apply_policy_default_values Pipeline#apply_policy_default_values}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.autoscale">autoscale</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAutoscale">PipelineClusterAutoscale</a></code> | autoscale block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.awsAttributes">awsAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes">PipelineClusterAwsAttributes</a></code> | aws_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.azureAttributes">azureAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributes">PipelineClusterAzureAttributes</a></code> | azure_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.clusterLogConf">clusterLogConf</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConf">PipelineClusterClusterLogConf</a></code> | cluster_log_conf block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.customTags">customTags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#custom_tags Pipeline#custom_tags}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.driverInstancePoolId">driverInstancePoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#driver_instance_pool_id Pipeline#driver_instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.driverNodeTypeId">driverNodeTypeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#driver_node_type_id Pipeline#driver_node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.enableLocalDiskEncryption">enableLocalDiskEncryption</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#enable_local_disk_encryption Pipeline#enable_local_disk_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.customTags">customTags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#custom_tags Pipeline#custom_tags}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.driverInstancePoolId">driverInstancePoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#driver_instance_pool_id Pipeline#driver_instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.driverNodeTypeId">driverNodeTypeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#driver_node_type_id Pipeline#driver_node_type_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.enableLocalDiskEncryption">enableLocalDiskEncryption</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#enable_local_disk_encryption Pipeline#enable_local_disk_encryption}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.gcpAttributes">gcpAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes">PipelineClusterGcpAttributes</a></code> | gcp_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.initScripts">initScripts</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScripts">PipelineClusterInitScripts</a>[]</code> | init_scripts block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.instancePoolId">instancePoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#instance_pool_id Pipeline#instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.label">label</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#label Pipeline#label}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.nodeTypeId">nodeTypeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#node_type_id Pipeline#node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.numWorkers">numWorkers</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#num_workers Pipeline#num_workers}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.policyId">policyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#policy_id Pipeline#policy_id}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.sparkConf">sparkConf</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#spark_conf Pipeline#spark_conf}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.sparkEnvVars">sparkEnvVars</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#spark_env_vars Pipeline#spark_env_vars}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.sshPublicKeys">sshPublicKeys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#ssh_public_keys Pipeline#ssh_public_keys}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.instancePoolId">instancePoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#instance_pool_id Pipeline#instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.label">label</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#label Pipeline#label}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.nodeTypeId">nodeTypeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#node_type_id Pipeline#node_type_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.numWorkers">numWorkers</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#num_workers Pipeline#num_workers}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.policyId">policyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#policy_id Pipeline#policy_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.sparkConf">sparkConf</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#spark_conf Pipeline#spark_conf}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.sparkEnvVars">sparkEnvVars</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#spark_env_vars Pipeline#spark_env_vars}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.sshPublicKeys">sshPublicKeys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#ssh_public_keys Pipeline#ssh_public_keys}. |
 
 ---
 
@@ -1346,7 +1764,7 @@ public readonly applyPolicyDefaultValues: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#apply_policy_default_values Pipeline#apply_policy_default_values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#apply_policy_default_values Pipeline#apply_policy_default_values}.
 
 ---
 
@@ -1360,7 +1778,7 @@ public readonly autoscale: PipelineClusterAutoscale;
 
 autoscale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#autoscale Pipeline#autoscale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#autoscale Pipeline#autoscale}
 
 ---
 
@@ -1374,7 +1792,7 @@ public readonly awsAttributes: PipelineClusterAwsAttributes;
 
 aws_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#aws_attributes Pipeline#aws_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#aws_attributes Pipeline#aws_attributes}
 
 ---
 
@@ -1388,7 +1806,7 @@ public readonly azureAttributes: PipelineClusterAzureAttributes;
 
 azure_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#azure_attributes Pipeline#azure_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#azure_attributes Pipeline#azure_attributes}
 
 ---
 
@@ -1402,7 +1820,7 @@ public readonly clusterLogConf: PipelineClusterClusterLogConf;
 
 cluster_log_conf block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#cluster_log_conf Pipeline#cluster_log_conf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#cluster_log_conf Pipeline#cluster_log_conf}
 
 ---
 
@@ -1414,7 +1832,7 @@ public readonly customTags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#custom_tags Pipeline#custom_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#custom_tags Pipeline#custom_tags}.
 
 ---
 
@@ -1426,7 +1844,7 @@ public readonly driverInstancePoolId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#driver_instance_pool_id Pipeline#driver_instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#driver_instance_pool_id Pipeline#driver_instance_pool_id}.
 
 ---
 
@@ -1438,7 +1856,7 @@ public readonly driverNodeTypeId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#driver_node_type_id Pipeline#driver_node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#driver_node_type_id Pipeline#driver_node_type_id}.
 
 ---
 
@@ -1450,7 +1868,7 @@ public readonly enableLocalDiskEncryption: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#enable_local_disk_encryption Pipeline#enable_local_disk_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#enable_local_disk_encryption Pipeline#enable_local_disk_encryption}.
 
 ---
 
@@ -1464,7 +1882,7 @@ public readonly gcpAttributes: PipelineClusterGcpAttributes;
 
 gcp_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#gcp_attributes Pipeline#gcp_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#gcp_attributes Pipeline#gcp_attributes}
 
 ---
 
@@ -1478,7 +1896,7 @@ public readonly initScripts: IResolvable | PipelineClusterInitScripts[];
 
 init_scripts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#init_scripts Pipeline#init_scripts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#init_scripts Pipeline#init_scripts}
 
 ---
 
@@ -1490,7 +1908,7 @@ public readonly instancePoolId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#instance_pool_id Pipeline#instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#instance_pool_id Pipeline#instance_pool_id}.
 
 ---
 
@@ -1502,7 +1920,7 @@ public readonly label: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#label Pipeline#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#label Pipeline#label}.
 
 ---
 
@@ -1514,7 +1932,7 @@ public readonly nodeTypeId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#node_type_id Pipeline#node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#node_type_id Pipeline#node_type_id}.
 
 ---
 
@@ -1526,7 +1944,7 @@ public readonly numWorkers: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#num_workers Pipeline#num_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#num_workers Pipeline#num_workers}.
 
 ---
 
@@ -1538,7 +1956,7 @@ public readonly policyId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#policy_id Pipeline#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#policy_id Pipeline#policy_id}.
 
 ---
 
@@ -1550,7 +1968,7 @@ public readonly sparkConf: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#spark_conf Pipeline#spark_conf}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#spark_conf Pipeline#spark_conf}.
 
 ---
 
@@ -1562,7 +1980,7 @@ public readonly sparkEnvVars: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#spark_env_vars Pipeline#spark_env_vars}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#spark_env_vars Pipeline#spark_env_vars}.
 
 ---
 
@@ -1574,7 +1992,7 @@ public readonly sshPublicKeys: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#ssh_public_keys Pipeline#ssh_public_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#ssh_public_keys Pipeline#ssh_public_keys}.
 
 ---
 
@@ -1592,13 +2010,13 @@ const pipelineClusterAutoscale: pipeline.PipelineClusterAutoscale = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAutoscale.property.maxWorkers">maxWorkers</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#max_workers Pipeline#max_workers}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAutoscale.property.minWorkers">minWorkers</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#min_workers Pipeline#min_workers}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAutoscale.property.mode">mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#mode Pipeline#mode}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAutoscale.property.maxWorkers">maxWorkers</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#max_workers Pipeline#max_workers}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAutoscale.property.minWorkers">minWorkers</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#min_workers Pipeline#min_workers}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAutoscale.property.mode">mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#mode Pipeline#mode}. |
 
 ---
 
-##### `maxWorkers`<sup>Optional</sup> <a name="maxWorkers" id="@cdktf/provider-databricks.pipeline.PipelineClusterAutoscale.property.maxWorkers"></a>
+##### `maxWorkers`<sup>Required</sup> <a name="maxWorkers" id="@cdktf/provider-databricks.pipeline.PipelineClusterAutoscale.property.maxWorkers"></a>
 
 ```typescript
 public readonly maxWorkers: number;
@@ -1606,11 +2024,11 @@ public readonly maxWorkers: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#max_workers Pipeline#max_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#max_workers Pipeline#max_workers}.
 
 ---
 
-##### `minWorkers`<sup>Optional</sup> <a name="minWorkers" id="@cdktf/provider-databricks.pipeline.PipelineClusterAutoscale.property.minWorkers"></a>
+##### `minWorkers`<sup>Required</sup> <a name="minWorkers" id="@cdktf/provider-databricks.pipeline.PipelineClusterAutoscale.property.minWorkers"></a>
 
 ```typescript
 public readonly minWorkers: number;
@@ -1618,7 +2036,7 @@ public readonly minWorkers: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#min_workers Pipeline#min_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#min_workers Pipeline#min_workers}.
 
 ---
 
@@ -1630,7 +2048,7 @@ public readonly mode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#mode Pipeline#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#mode Pipeline#mode}.
 
 ---
 
@@ -1648,14 +2066,16 @@ const pipelineClusterAwsAttributes: pipeline.PipelineClusterAwsAttributes = { ..
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.availability">availability</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#availability Pipeline#availability}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeCount">ebsVolumeCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#ebs_volume_count Pipeline#ebs_volume_count}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeSize">ebsVolumeSize</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#ebs_volume_size Pipeline#ebs_volume_size}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeType">ebsVolumeType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#ebs_volume_type Pipeline#ebs_volume_type}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.firstOnDemand">firstOnDemand</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.instanceProfileArn">instanceProfileArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#instance_profile_arn Pipeline#instance_profile_arn}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.spotBidPricePercent">spotBidPricePercent</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#spot_bid_price_percent Pipeline#spot_bid_price_percent}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.zoneId">zoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#zone_id Pipeline#zone_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.availability">availability</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#availability Pipeline#availability}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeCount">ebsVolumeCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#ebs_volume_count Pipeline#ebs_volume_count}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeIops">ebsVolumeIops</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#ebs_volume_iops Pipeline#ebs_volume_iops}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeSize">ebsVolumeSize</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#ebs_volume_size Pipeline#ebs_volume_size}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeThroughput">ebsVolumeThroughput</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#ebs_volume_throughput Pipeline#ebs_volume_throughput}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeType">ebsVolumeType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#ebs_volume_type Pipeline#ebs_volume_type}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.firstOnDemand">firstOnDemand</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.instanceProfileArn">instanceProfileArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#instance_profile_arn Pipeline#instance_profile_arn}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.spotBidPricePercent">spotBidPricePercent</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#spot_bid_price_percent Pipeline#spot_bid_price_percent}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.zoneId">zoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#zone_id Pipeline#zone_id}. |
 
 ---
 
@@ -1667,7 +2087,7 @@ public readonly availability: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#availability Pipeline#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#availability Pipeline#availability}.
 
 ---
 
@@ -1679,7 +2099,19 @@ public readonly ebsVolumeCount: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#ebs_volume_count Pipeline#ebs_volume_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#ebs_volume_count Pipeline#ebs_volume_count}.
+
+---
+
+##### `ebsVolumeIops`<sup>Optional</sup> <a name="ebsVolumeIops" id="@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeIops"></a>
+
+```typescript
+public readonly ebsVolumeIops: number;
+```
+
+- *Type:* number
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#ebs_volume_iops Pipeline#ebs_volume_iops}.
 
 ---
 
@@ -1691,7 +2123,19 @@ public readonly ebsVolumeSize: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#ebs_volume_size Pipeline#ebs_volume_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#ebs_volume_size Pipeline#ebs_volume_size}.
+
+---
+
+##### `ebsVolumeThroughput`<sup>Optional</sup> <a name="ebsVolumeThroughput" id="@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeThroughput"></a>
+
+```typescript
+public readonly ebsVolumeThroughput: number;
+```
+
+- *Type:* number
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#ebs_volume_throughput Pipeline#ebs_volume_throughput}.
 
 ---
 
@@ -1703,7 +2147,7 @@ public readonly ebsVolumeType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#ebs_volume_type Pipeline#ebs_volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#ebs_volume_type Pipeline#ebs_volume_type}.
 
 ---
 
@@ -1715,7 +2159,7 @@ public readonly firstOnDemand: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}.
 
 ---
 
@@ -1727,7 +2171,7 @@ public readonly instanceProfileArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#instance_profile_arn Pipeline#instance_profile_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#instance_profile_arn Pipeline#instance_profile_arn}.
 
 ---
 
@@ -1739,7 +2183,7 @@ public readonly spotBidPricePercent: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#spot_bid_price_percent Pipeline#spot_bid_price_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#spot_bid_price_percent Pipeline#spot_bid_price_percent}.
 
 ---
 
@@ -1751,7 +2195,7 @@ public readonly zoneId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#zone_id Pipeline#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#zone_id Pipeline#zone_id}.
 
 ---
 
@@ -1769,9 +2213,10 @@ const pipelineClusterAzureAttributes: pipeline.PipelineClusterAzureAttributes = 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.availability">availability</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#availability Pipeline#availability}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.firstOnDemand">firstOnDemand</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.spotBidMaxPrice">spotBidMaxPrice</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#spot_bid_max_price Pipeline#spot_bid_max_price}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.availability">availability</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#availability Pipeline#availability}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.firstOnDemand">firstOnDemand</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.logAnalyticsInfo">logAnalyticsInfo</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo">PipelineClusterAzureAttributesLogAnalyticsInfo</a></code> | log_analytics_info block. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.spotBidMaxPrice">spotBidMaxPrice</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#spot_bid_max_price Pipeline#spot_bid_max_price}. |
 
 ---
 
@@ -1783,7 +2228,7 @@ public readonly availability: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#availability Pipeline#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#availability Pipeline#availability}.
 
 ---
 
@@ -1795,7 +2240,21 @@ public readonly firstOnDemand: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}.
+
+---
+
+##### `logAnalyticsInfo`<sup>Optional</sup> <a name="logAnalyticsInfo" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.logAnalyticsInfo"></a>
+
+```typescript
+public readonly logAnalyticsInfo: PipelineClusterAzureAttributesLogAnalyticsInfo;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo">PipelineClusterAzureAttributesLogAnalyticsInfo</a>
+
+log_analytics_info block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#log_analytics_info Pipeline#log_analytics_info}
 
 ---
 
@@ -1807,7 +2266,50 @@ public readonly spotBidMaxPrice: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#spot_bid_max_price Pipeline#spot_bid_max_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#spot_bid_max_price Pipeline#spot_bid_max_price}.
+
+---
+
+### PipelineClusterAzureAttributesLogAnalyticsInfo <a name="PipelineClusterAzureAttributesLogAnalyticsInfo" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo.Initializer"></a>
+
+```typescript
+import { pipeline } from '@cdktf/provider-databricks'
+
+const pipelineClusterAzureAttributesLogAnalyticsInfo: pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo.property.logAnalyticsPrimaryKey">logAnalyticsPrimaryKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#log_analytics_primary_key Pipeline#log_analytics_primary_key}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo.property.logAnalyticsWorkspaceId">logAnalyticsWorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#log_analytics_workspace_id Pipeline#log_analytics_workspace_id}. |
+
+---
+
+##### `logAnalyticsPrimaryKey`<sup>Optional</sup> <a name="logAnalyticsPrimaryKey" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo.property.logAnalyticsPrimaryKey"></a>
+
+```typescript
+public readonly logAnalyticsPrimaryKey: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#log_analytics_primary_key Pipeline#log_analytics_primary_key}.
+
+---
+
+##### `logAnalyticsWorkspaceId`<sup>Optional</sup> <a name="logAnalyticsWorkspaceId" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo.property.logAnalyticsWorkspaceId"></a>
+
+```typescript
+public readonly logAnalyticsWorkspaceId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#log_analytics_workspace_id Pipeline#log_analytics_workspace_id}.
 
 ---
 
@@ -1840,7 +2342,7 @@ public readonly dbfs: PipelineClusterClusterLogConfDbfs;
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#dbfs Pipeline#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#dbfs Pipeline#dbfs}
 
 ---
 
@@ -1854,7 +2356,7 @@ public readonly s3: PipelineClusterClusterLogConfS3;
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#s3 Pipeline#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#s3 Pipeline#s3}
 
 ---
 
@@ -1872,7 +2374,7 @@ const pipelineClusterClusterLogConfDbfs: pipeline.PipelineClusterClusterLogConfD
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfDbfs.property.destination">destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfDbfs.property.destination">destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -1884,7 +2386,7 @@ public readonly destination: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -1902,13 +2404,13 @@ const pipelineClusterClusterLogConfS3: pipeline.PipelineClusterClusterLogConfS3 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.destination">destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#destination Pipeline#destination}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.cannedAcl">cannedAcl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#canned_acl Pipeline#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.enableEncryption">enableEncryption</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.encryptionType">encryptionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#encryption_type Pipeline#encryption_type}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.endpoint">endpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#endpoint Pipeline#endpoint}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.kmsKey">kmsKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#kms_key Pipeline#kms_key}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#region Pipeline#region}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.destination">destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.cannedAcl">cannedAcl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.enableEncryption">enableEncryption</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.encryptionType">encryptionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.endpoint">endpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#endpoint Pipeline#endpoint}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.kmsKey">kmsKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#kms_key Pipeline#kms_key}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#region Pipeline#region}. |
 
 ---
 
@@ -1920,7 +2422,7 @@ public readonly destination: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -1932,7 +2434,7 @@ public readonly cannedAcl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#canned_acl Pipeline#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}.
 
 ---
 
@@ -1944,7 +2446,7 @@ public readonly enableEncryption: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}.
 
 ---
 
@@ -1956,7 +2458,7 @@ public readonly encryptionType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#encryption_type Pipeline#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}.
 
 ---
 
@@ -1968,7 +2470,7 @@ public readonly endpoint: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#endpoint Pipeline#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#endpoint Pipeline#endpoint}.
 
 ---
 
@@ -1980,7 +2482,7 @@ public readonly kmsKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#kms_key Pipeline#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#kms_key Pipeline#kms_key}.
 
 ---
 
@@ -1992,7 +2494,7 @@ public readonly region: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#region Pipeline#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#region Pipeline#region}.
 
 ---
 
@@ -2010,10 +2512,10 @@ const pipelineClusterGcpAttributes: pipeline.PipelineClusterGcpAttributes = { ..
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.availability">availability</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#availability Pipeline#availability}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.googleServiceAccount">googleServiceAccount</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#google_service_account Pipeline#google_service_account}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.localSsdCount">localSsdCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#local_ssd_count Pipeline#local_ssd_count}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.zoneId">zoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#zone_id Pipeline#zone_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.availability">availability</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#availability Pipeline#availability}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.googleServiceAccount">googleServiceAccount</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#google_service_account Pipeline#google_service_account}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.localSsdCount">localSsdCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#local_ssd_count Pipeline#local_ssd_count}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.zoneId">zoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#zone_id Pipeline#zone_id}. |
 
 ---
 
@@ -2025,7 +2527,7 @@ public readonly availability: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#availability Pipeline#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#availability Pipeline#availability}.
 
 ---
 
@@ -2037,7 +2539,7 @@ public readonly googleServiceAccount: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#google_service_account Pipeline#google_service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#google_service_account Pipeline#google_service_account}.
 
 ---
 
@@ -2049,7 +2551,7 @@ public readonly localSsdCount: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#local_ssd_count Pipeline#local_ssd_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#local_ssd_count Pipeline#local_ssd_count}.
 
 ---
 
@@ -2061,7 +2563,7 @@ public readonly zoneId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#zone_id Pipeline#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#zone_id Pipeline#zone_id}.
 
 ---
 
@@ -2099,7 +2601,7 @@ public readonly abfss: PipelineClusterInitScriptsAbfss;
 
 abfss block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#abfss Pipeline#abfss}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#abfss Pipeline#abfss}
 
 ---
 
@@ -2113,7 +2615,7 @@ public readonly dbfs: PipelineClusterInitScriptsDbfs;
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#dbfs Pipeline#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#dbfs Pipeline#dbfs}
 
 ---
 
@@ -2127,7 +2629,7 @@ public readonly file: PipelineClusterInitScriptsFile;
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#file Pipeline#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#file Pipeline#file}
 
 ---
 
@@ -2141,7 +2643,7 @@ public readonly gcs: PipelineClusterInitScriptsGcs;
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#gcs Pipeline#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#gcs Pipeline#gcs}
 
 ---
 
@@ -2155,7 +2657,7 @@ public readonly s3: PipelineClusterInitScriptsS3;
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#s3 Pipeline#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#s3 Pipeline#s3}
 
 ---
 
@@ -2169,7 +2671,7 @@ public readonly volumes: PipelineClusterInitScriptsVolumes;
 
 volumes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#volumes Pipeline#volumes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#volumes Pipeline#volumes}
 
 ---
 
@@ -2183,7 +2685,7 @@ public readonly workspace: PipelineClusterInitScriptsWorkspace;
 
 workspace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#workspace Pipeline#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#workspace Pipeline#workspace}
 
 ---
 
@@ -2201,7 +2703,7 @@ const pipelineClusterInitScriptsAbfss: pipeline.PipelineClusterInitScriptsAbfss 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsAbfss.property.destination">destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsAbfss.property.destination">destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -2213,7 +2715,7 @@ public readonly destination: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -2231,7 +2733,7 @@ const pipelineClusterInitScriptsDbfs: pipeline.PipelineClusterInitScriptsDbfs = 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsDbfs.property.destination">destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsDbfs.property.destination">destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -2243,7 +2745,7 @@ public readonly destination: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -2261,7 +2763,7 @@ const pipelineClusterInitScriptsFile: pipeline.PipelineClusterInitScriptsFile = 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsFile.property.destination">destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsFile.property.destination">destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -2273,7 +2775,7 @@ public readonly destination: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -2291,7 +2793,7 @@ const pipelineClusterInitScriptsGcs: pipeline.PipelineClusterInitScriptsGcs = { 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsGcs.property.destination">destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsGcs.property.destination">destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -2303,7 +2805,7 @@ public readonly destination: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -2321,13 +2823,13 @@ const pipelineClusterInitScriptsS3: pipeline.PipelineClusterInitScriptsS3 = { ..
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.destination">destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#destination Pipeline#destination}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.cannedAcl">cannedAcl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#canned_acl Pipeline#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.enableEncryption">enableEncryption</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.encryptionType">encryptionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#encryption_type Pipeline#encryption_type}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.endpoint">endpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#endpoint Pipeline#endpoint}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.kmsKey">kmsKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#kms_key Pipeline#kms_key}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#region Pipeline#region}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.destination">destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.cannedAcl">cannedAcl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.enableEncryption">enableEncryption</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.encryptionType">encryptionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.endpoint">endpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#endpoint Pipeline#endpoint}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.kmsKey">kmsKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#kms_key Pipeline#kms_key}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#region Pipeline#region}. |
 
 ---
 
@@ -2339,7 +2841,7 @@ public readonly destination: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -2351,7 +2853,7 @@ public readonly cannedAcl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#canned_acl Pipeline#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}.
 
 ---
 
@@ -2363,7 +2865,7 @@ public readonly enableEncryption: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}.
 
 ---
 
@@ -2375,7 +2877,7 @@ public readonly encryptionType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#encryption_type Pipeline#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}.
 
 ---
 
@@ -2387,7 +2889,7 @@ public readonly endpoint: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#endpoint Pipeline#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#endpoint Pipeline#endpoint}.
 
 ---
 
@@ -2399,7 +2901,7 @@ public readonly kmsKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#kms_key Pipeline#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#kms_key Pipeline#kms_key}.
 
 ---
 
@@ -2411,7 +2913,7 @@ public readonly region: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#region Pipeline#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#region Pipeline#region}.
 
 ---
 
@@ -2429,7 +2931,7 @@ const pipelineClusterInitScriptsVolumes: pipeline.PipelineClusterInitScriptsVolu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsVolumes.property.destination">destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsVolumes.property.destination">destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -2441,7 +2943,7 @@ public readonly destination: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -2459,7 +2961,7 @@ const pipelineClusterInitScriptsWorkspace: pipeline.PipelineClusterInitScriptsWo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsWorkspace.property.destination">destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsWorkspace.property.destination">destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -2471,7 +2973,7 @@ public readonly destination: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -2496,25 +2998,38 @@ const pipelineConfig: pipeline.PipelineConfig = { ... }
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.allowDuplicateNames">allowDuplicateNames</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.catalog">catalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#catalog Pipeline#catalog}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.channel">channel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#channel Pipeline#channel}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.allowDuplicateNames">allowDuplicateNames</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.catalog">catalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#catalog Pipeline#catalog}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.cause">cause</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#cause Pipeline#cause}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.channel">channel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#channel Pipeline#channel}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.cluster">cluster</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.pipeline.PipelineCluster">PipelineCluster</a>[]</code> | cluster block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.configuration">configuration</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#configuration Pipeline#configuration}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.continuous">continuous</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#continuous Pipeline#continuous}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.clusterId">clusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#cluster_id Pipeline#cluster_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.configuration">configuration</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#configuration Pipeline#configuration}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.continuous">continuous</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#continuous Pipeline#continuous}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.creatorUserName">creatorUserName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#creator_user_name Pipeline#creator_user_name}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.deployment">deployment</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineDeployment">PipelineDeployment</a></code> | deployment block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.development">development</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#development Pipeline#development}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.edition">edition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#edition Pipeline#edition}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.development">development</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#development Pipeline#development}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.edition">edition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#edition Pipeline#edition}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.expectedLastModified">expectedLastModified</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#expected_last_modified Pipeline#expected_last_modified}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.filters">filters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineFilters">PipelineFilters</a></code> | filters block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#id Pipeline#id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.gatewayDefinition">gatewayDefinition</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition">PipelineGatewayDefinition</a></code> | gateway_definition block. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.health">health</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#health Pipeline#health}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#id Pipeline#id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.ingestionDefinition">ingestionDefinition</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition">PipelineIngestionDefinition</a></code> | ingestion_definition block. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.lastModified">lastModified</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#last_modified Pipeline#last_modified}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.latestUpdates">latestUpdates</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates">PipelineLatestUpdates</a>[]</code> | latest_updates block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.library">library</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary">PipelineLibrary</a>[]</code> | library block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#name Pipeline#name}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#name Pipeline#name}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.notification">notification</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.pipeline.PipelineNotification">PipelineNotification</a>[]</code> | notification block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.photon">photon</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#photon Pipeline#photon}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.serverless">serverless</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#serverless Pipeline#serverless}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.storage">storage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#storage Pipeline#storage}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.target">target</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#target Pipeline#target}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.photon">photon</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#photon Pipeline#photon}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.runAsUserName">runAsUserName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#run_as_user_name Pipeline#run_as_user_name}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.serverless">serverless</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#serverless Pipeline#serverless}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.state">state</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#state Pipeline#state}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.storage">storage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#storage Pipeline#storage}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.target">target</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#target Pipeline#target}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTimeouts">PipelineTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.trigger">trigger</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTrigger">PipelineTrigger</a></code> | trigger block. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.url">url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#url Pipeline#url}. |
 
 ---
 
@@ -2596,7 +3111,7 @@ public readonly allowDuplicateNames: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}.
 
 ---
 
@@ -2608,7 +3123,19 @@ public readonly catalog: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#catalog Pipeline#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#catalog Pipeline#catalog}.
+
+---
+
+##### `cause`<sup>Optional</sup> <a name="cause" id="@cdktf/provider-databricks.pipeline.PipelineConfig.property.cause"></a>
+
+```typescript
+public readonly cause: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#cause Pipeline#cause}.
 
 ---
 
@@ -2620,7 +3147,7 @@ public readonly channel: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#channel Pipeline#channel}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#channel Pipeline#channel}.
 
 ---
 
@@ -2634,7 +3161,19 @@ public readonly cluster: IResolvable | PipelineCluster[];
 
 cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#cluster Pipeline#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#cluster Pipeline#cluster}
+
+---
+
+##### `clusterId`<sup>Optional</sup> <a name="clusterId" id="@cdktf/provider-databricks.pipeline.PipelineConfig.property.clusterId"></a>
+
+```typescript
+public readonly clusterId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#cluster_id Pipeline#cluster_id}.
 
 ---
 
@@ -2646,7 +3185,7 @@ public readonly configuration: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#configuration Pipeline#configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#configuration Pipeline#configuration}.
 
 ---
 
@@ -2658,7 +3197,19 @@ public readonly continuous: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#continuous Pipeline#continuous}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#continuous Pipeline#continuous}.
+
+---
+
+##### `creatorUserName`<sup>Optional</sup> <a name="creatorUserName" id="@cdktf/provider-databricks.pipeline.PipelineConfig.property.creatorUserName"></a>
+
+```typescript
+public readonly creatorUserName: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#creator_user_name Pipeline#creator_user_name}.
 
 ---
 
@@ -2672,7 +3223,7 @@ public readonly deployment: PipelineDeployment;
 
 deployment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#deployment Pipeline#deployment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#deployment Pipeline#deployment}
 
 ---
 
@@ -2684,7 +3235,7 @@ public readonly development: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#development Pipeline#development}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#development Pipeline#development}.
 
 ---
 
@@ -2696,7 +3247,19 @@ public readonly edition: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#edition Pipeline#edition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#edition Pipeline#edition}.
+
+---
+
+##### `expectedLastModified`<sup>Optional</sup> <a name="expectedLastModified" id="@cdktf/provider-databricks.pipeline.PipelineConfig.property.expectedLastModified"></a>
+
+```typescript
+public readonly expectedLastModified: number;
+```
+
+- *Type:* number
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#expected_last_modified Pipeline#expected_last_modified}.
 
 ---
 
@@ -2710,7 +3273,33 @@ public readonly filters: PipelineFilters;
 
 filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#filters Pipeline#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#filters Pipeline#filters}
+
+---
+
+##### `gatewayDefinition`<sup>Optional</sup> <a name="gatewayDefinition" id="@cdktf/provider-databricks.pipeline.PipelineConfig.property.gatewayDefinition"></a>
+
+```typescript
+public readonly gatewayDefinition: PipelineGatewayDefinition;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition">PipelineGatewayDefinition</a>
+
+gateway_definition block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#gateway_definition Pipeline#gateway_definition}
+
+---
+
+##### `health`<sup>Optional</sup> <a name="health" id="@cdktf/provider-databricks.pipeline.PipelineConfig.property.health"></a>
+
+```typescript
+public readonly health: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#health Pipeline#health}.
 
 ---
 
@@ -2722,10 +3311,50 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#id Pipeline#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#id Pipeline#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `ingestionDefinition`<sup>Optional</sup> <a name="ingestionDefinition" id="@cdktf/provider-databricks.pipeline.PipelineConfig.property.ingestionDefinition"></a>
+
+```typescript
+public readonly ingestionDefinition: PipelineIngestionDefinition;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition">PipelineIngestionDefinition</a>
+
+ingestion_definition block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#ingestion_definition Pipeline#ingestion_definition}
+
+---
+
+##### `lastModified`<sup>Optional</sup> <a name="lastModified" id="@cdktf/provider-databricks.pipeline.PipelineConfig.property.lastModified"></a>
+
+```typescript
+public readonly lastModified: number;
+```
+
+- *Type:* number
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#last_modified Pipeline#last_modified}.
+
+---
+
+##### `latestUpdates`<sup>Optional</sup> <a name="latestUpdates" id="@cdktf/provider-databricks.pipeline.PipelineConfig.property.latestUpdates"></a>
+
+```typescript
+public readonly latestUpdates: IResolvable | PipelineLatestUpdates[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates">PipelineLatestUpdates</a>[]
+
+latest_updates block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#latest_updates Pipeline#latest_updates}
 
 ---
 
@@ -2739,7 +3368,7 @@ public readonly library: IResolvable | PipelineLibrary[];
 
 library block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#library Pipeline#library}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#library Pipeline#library}
 
 ---
 
@@ -2751,7 +3380,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#name Pipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#name Pipeline#name}.
 
 ---
 
@@ -2765,7 +3394,7 @@ public readonly notification: IResolvable | PipelineNotification[];
 
 notification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#notification Pipeline#notification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#notification Pipeline#notification}
 
 ---
 
@@ -2777,7 +3406,19 @@ public readonly photon: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#photon Pipeline#photon}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#photon Pipeline#photon}.
+
+---
+
+##### `runAsUserName`<sup>Optional</sup> <a name="runAsUserName" id="@cdktf/provider-databricks.pipeline.PipelineConfig.property.runAsUserName"></a>
+
+```typescript
+public readonly runAsUserName: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#run_as_user_name Pipeline#run_as_user_name}.
 
 ---
 
@@ -2789,7 +3430,19 @@ public readonly serverless: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#serverless Pipeline#serverless}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#serverless Pipeline#serverless}.
+
+---
+
+##### `state`<sup>Optional</sup> <a name="state" id="@cdktf/provider-databricks.pipeline.PipelineConfig.property.state"></a>
+
+```typescript
+public readonly state: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#state Pipeline#state}.
 
 ---
 
@@ -2801,7 +3454,7 @@ public readonly storage: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#storage Pipeline#storage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#storage Pipeline#storage}.
 
 ---
 
@@ -2813,7 +3466,7 @@ public readonly target: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#target Pipeline#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#target Pipeline#target}.
 
 ---
 
@@ -2827,7 +3480,33 @@ public readonly timeouts: PipelineTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#timeouts Pipeline#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#timeouts Pipeline#timeouts}
+
+---
+
+##### `trigger`<sup>Optional</sup> <a name="trigger" id="@cdktf/provider-databricks.pipeline.PipelineConfig.property.trigger"></a>
+
+```typescript
+public readonly trigger: PipelineTrigger;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineTrigger">PipelineTrigger</a>
+
+trigger block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#trigger Pipeline#trigger}
+
+---
+
+##### `url`<sup>Optional</sup> <a name="url" id="@cdktf/provider-databricks.pipeline.PipelineConfig.property.url"></a>
+
+```typescript
+public readonly url: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#url Pipeline#url}.
 
 ---
 
@@ -2845,8 +3524,8 @@ const pipelineDeployment: pipeline.PipelineDeployment = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineDeployment.property.kind">kind</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#kind Pipeline#kind}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineDeployment.property.metadataFilePath">metadataFilePath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#metadata_file_path Pipeline#metadata_file_path}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineDeployment.property.kind">kind</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#kind Pipeline#kind}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineDeployment.property.metadataFilePath">metadataFilePath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#metadata_file_path Pipeline#metadata_file_path}. |
 
 ---
 
@@ -2858,7 +3537,7 @@ public readonly kind: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#kind Pipeline#kind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#kind Pipeline#kind}.
 
 ---
 
@@ -2870,7 +3549,7 @@ public readonly metadataFilePath: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#metadata_file_path Pipeline#metadata_file_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#metadata_file_path Pipeline#metadata_file_path}.
 
 ---
 
@@ -2888,8 +3567,8 @@ const pipelineFilters: pipeline.PipelineFilters = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineFilters.property.exclude">exclude</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#exclude Pipeline#exclude}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineFilters.property.include">include</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#include Pipeline#include}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineFilters.property.exclude">exclude</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#exclude Pipeline#exclude}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineFilters.property.include">include</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#include Pipeline#include}. |
 
 ---
 
@@ -2901,7 +3580,7 @@ public readonly exclude: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#exclude Pipeline#exclude}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#exclude Pipeline#exclude}.
 
 ---
 
@@ -2913,7 +3592,614 @@ public readonly include: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#include Pipeline#include}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#include Pipeline#include}.
+
+---
+
+### PipelineGatewayDefinition <a name="PipelineGatewayDefinition" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition.Initializer"></a>
+
+```typescript
+import { pipeline } from '@cdktf/provider-databricks'
+
+const pipelineGatewayDefinition: pipeline.PipelineGatewayDefinition = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition.property.connectionId">connectionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#connection_id Pipeline#connection_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition.property.gatewayStorageCatalog">gatewayStorageCatalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#gateway_storage_catalog Pipeline#gateway_storage_catalog}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition.property.gatewayStorageName">gatewayStorageName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#gateway_storage_name Pipeline#gateway_storage_name}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition.property.gatewayStorageSchema">gatewayStorageSchema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#gateway_storage_schema Pipeline#gateway_storage_schema}. |
+
+---
+
+##### `connectionId`<sup>Optional</sup> <a name="connectionId" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition.property.connectionId"></a>
+
+```typescript
+public readonly connectionId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#connection_id Pipeline#connection_id}.
+
+---
+
+##### `gatewayStorageCatalog`<sup>Optional</sup> <a name="gatewayStorageCatalog" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition.property.gatewayStorageCatalog"></a>
+
+```typescript
+public readonly gatewayStorageCatalog: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#gateway_storage_catalog Pipeline#gateway_storage_catalog}.
+
+---
+
+##### `gatewayStorageName`<sup>Optional</sup> <a name="gatewayStorageName" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition.property.gatewayStorageName"></a>
+
+```typescript
+public readonly gatewayStorageName: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#gateway_storage_name Pipeline#gateway_storage_name}.
+
+---
+
+##### `gatewayStorageSchema`<sup>Optional</sup> <a name="gatewayStorageSchema" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition.property.gatewayStorageSchema"></a>
+
+```typescript
+public readonly gatewayStorageSchema: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#gateway_storage_schema Pipeline#gateway_storage_schema}.
+
+---
+
+### PipelineIngestionDefinition <a name="PipelineIngestionDefinition" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.Initializer"></a>
+
+```typescript
+import { pipeline } from '@cdktf/provider-databricks'
+
+const pipelineIngestionDefinition: pipeline.PipelineIngestionDefinition = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.connectionName">connectionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#connection_name Pipeline#connection_name}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.ingestionGatewayId">ingestionGatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#ingestion_gateway_id Pipeline#ingestion_gateway_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.objects">objects</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjects">PipelineIngestionDefinitionObjects</a>[]</code> | objects block. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.tableConfiguration">tableConfiguration</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration">PipelineIngestionDefinitionTableConfiguration</a></code> | table_configuration block. |
+
+---
+
+##### `connectionName`<sup>Optional</sup> <a name="connectionName" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.connectionName"></a>
+
+```typescript
+public readonly connectionName: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#connection_name Pipeline#connection_name}.
+
+---
+
+##### `ingestionGatewayId`<sup>Optional</sup> <a name="ingestionGatewayId" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.ingestionGatewayId"></a>
+
+```typescript
+public readonly ingestionGatewayId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#ingestion_gateway_id Pipeline#ingestion_gateway_id}.
+
+---
+
+##### `objects`<sup>Optional</sup> <a name="objects" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.objects"></a>
+
+```typescript
+public readonly objects: IResolvable | PipelineIngestionDefinitionObjects[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjects">PipelineIngestionDefinitionObjects</a>[]
+
+objects block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#objects Pipeline#objects}
+
+---
+
+##### `tableConfiguration`<sup>Optional</sup> <a name="tableConfiguration" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.tableConfiguration"></a>
+
+```typescript
+public readonly tableConfiguration: PipelineIngestionDefinitionTableConfiguration;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration">PipelineIngestionDefinitionTableConfiguration</a>
+
+table_configuration block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
+
+---
+
+### PipelineIngestionDefinitionObjects <a name="PipelineIngestionDefinitionObjects" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjects"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjects.Initializer"></a>
+
+```typescript
+import { pipeline } from '@cdktf/provider-databricks'
+
+const pipelineIngestionDefinitionObjects: pipeline.PipelineIngestionDefinitionObjects = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjects.property.schema">schema</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema">PipelineIngestionDefinitionObjectsSchema</a></code> | schema block. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjects.property.table">table</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable">PipelineIngestionDefinitionObjectsTable</a></code> | table block. |
+
+---
+
+##### `schema`<sup>Optional</sup> <a name="schema" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjects.property.schema"></a>
+
+```typescript
+public readonly schema: PipelineIngestionDefinitionObjectsSchema;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema">PipelineIngestionDefinitionObjectsSchema</a>
+
+schema block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#schema Pipeline#schema}
+
+---
+
+##### `table`<sup>Optional</sup> <a name="table" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjects.property.table"></a>
+
+```typescript
+public readonly table: PipelineIngestionDefinitionObjectsTable;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable">PipelineIngestionDefinitionObjectsTable</a>
+
+table block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#table Pipeline#table}
+
+---
+
+### PipelineIngestionDefinitionObjectsSchema <a name="PipelineIngestionDefinitionObjectsSchema" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.Initializer"></a>
+
+```typescript
+import { pipeline } from '@cdktf/provider-databricks'
+
+const pipelineIngestionDefinitionObjectsSchema: pipeline.PipelineIngestionDefinitionObjectsSchema = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.destinationCatalog">destinationCatalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.destinationSchema">destinationSchema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.sourceCatalog">sourceCatalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.sourceSchema">sourceSchema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#source_schema Pipeline#source_schema}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.tableConfiguration">tableConfiguration</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration">PipelineIngestionDefinitionObjectsSchemaTableConfiguration</a></code> | table_configuration block. |
+
+---
+
+##### `destinationCatalog`<sup>Optional</sup> <a name="destinationCatalog" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.destinationCatalog"></a>
+
+```typescript
+public readonly destinationCatalog: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}.
+
+---
+
+##### `destinationSchema`<sup>Optional</sup> <a name="destinationSchema" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.destinationSchema"></a>
+
+```typescript
+public readonly destinationSchema: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}.
+
+---
+
+##### `sourceCatalog`<sup>Optional</sup> <a name="sourceCatalog" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.sourceCatalog"></a>
+
+```typescript
+public readonly sourceCatalog: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}.
+
+---
+
+##### `sourceSchema`<sup>Optional</sup> <a name="sourceSchema" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.sourceSchema"></a>
+
+```typescript
+public readonly sourceSchema: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#source_schema Pipeline#source_schema}.
+
+---
+
+##### `tableConfiguration`<sup>Optional</sup> <a name="tableConfiguration" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.tableConfiguration"></a>
+
+```typescript
+public readonly tableConfiguration: PipelineIngestionDefinitionObjectsSchemaTableConfiguration;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration">PipelineIngestionDefinitionObjectsSchemaTableConfiguration</a>
+
+table_configuration block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
+
+---
+
+### PipelineIngestionDefinitionObjectsSchemaTableConfiguration <a name="PipelineIngestionDefinitionObjectsSchemaTableConfiguration" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.Initializer"></a>
+
+```typescript
+import { pipeline } from '@cdktf/provider-databricks'
+
+const pipelineIngestionDefinitionObjectsSchemaTableConfiguration: pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.primaryKeys">primaryKeys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.salesforceIncludeFormulaFields">salesforceIncludeFormulaFields</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.scdType">scdType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
+
+---
+
+##### `primaryKeys`<sup>Optional</sup> <a name="primaryKeys" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.primaryKeys"></a>
+
+```typescript
+public readonly primaryKeys: string[];
+```
+
+- *Type:* string[]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
+
+---
+
+##### `salesforceIncludeFormulaFields`<sup>Optional</sup> <a name="salesforceIncludeFormulaFields" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.salesforceIncludeFormulaFields"></a>
+
+```typescript
+public readonly salesforceIncludeFormulaFields: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
+
+---
+
+##### `scdType`<sup>Optional</sup> <a name="scdType" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.scdType"></a>
+
+```typescript
+public readonly scdType: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
+
+---
+
+### PipelineIngestionDefinitionObjectsTable <a name="PipelineIngestionDefinitionObjectsTable" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.Initializer"></a>
+
+```typescript
+import { pipeline } from '@cdktf/provider-databricks'
+
+const pipelineIngestionDefinitionObjectsTable: pipeline.PipelineIngestionDefinitionObjectsTable = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.destinationCatalog">destinationCatalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.destinationSchema">destinationSchema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.destinationTable">destinationTable</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#destination_table Pipeline#destination_table}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.sourceCatalog">sourceCatalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.sourceSchema">sourceSchema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#source_schema Pipeline#source_schema}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.sourceTable">sourceTable</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#source_table Pipeline#source_table}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.tableConfiguration">tableConfiguration</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration">PipelineIngestionDefinitionObjectsTableTableConfiguration</a></code> | table_configuration block. |
+
+---
+
+##### `destinationCatalog`<sup>Optional</sup> <a name="destinationCatalog" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.destinationCatalog"></a>
+
+```typescript
+public readonly destinationCatalog: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}.
+
+---
+
+##### `destinationSchema`<sup>Optional</sup> <a name="destinationSchema" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.destinationSchema"></a>
+
+```typescript
+public readonly destinationSchema: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}.
+
+---
+
+##### `destinationTable`<sup>Optional</sup> <a name="destinationTable" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.destinationTable"></a>
+
+```typescript
+public readonly destinationTable: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#destination_table Pipeline#destination_table}.
+
+---
+
+##### `sourceCatalog`<sup>Optional</sup> <a name="sourceCatalog" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.sourceCatalog"></a>
+
+```typescript
+public readonly sourceCatalog: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}.
+
+---
+
+##### `sourceSchema`<sup>Optional</sup> <a name="sourceSchema" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.sourceSchema"></a>
+
+```typescript
+public readonly sourceSchema: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#source_schema Pipeline#source_schema}.
+
+---
+
+##### `sourceTable`<sup>Optional</sup> <a name="sourceTable" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.sourceTable"></a>
+
+```typescript
+public readonly sourceTable: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#source_table Pipeline#source_table}.
+
+---
+
+##### `tableConfiguration`<sup>Optional</sup> <a name="tableConfiguration" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.tableConfiguration"></a>
+
+```typescript
+public readonly tableConfiguration: PipelineIngestionDefinitionObjectsTableTableConfiguration;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration">PipelineIngestionDefinitionObjectsTableTableConfiguration</a>
+
+table_configuration block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
+
+---
+
+### PipelineIngestionDefinitionObjectsTableTableConfiguration <a name="PipelineIngestionDefinitionObjectsTableTableConfiguration" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.Initializer"></a>
+
+```typescript
+import { pipeline } from '@cdktf/provider-databricks'
+
+const pipelineIngestionDefinitionObjectsTableTableConfiguration: pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.primaryKeys">primaryKeys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.salesforceIncludeFormulaFields">salesforceIncludeFormulaFields</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.scdType">scdType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
+
+---
+
+##### `primaryKeys`<sup>Optional</sup> <a name="primaryKeys" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.primaryKeys"></a>
+
+```typescript
+public readonly primaryKeys: string[];
+```
+
+- *Type:* string[]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
+
+---
+
+##### `salesforceIncludeFormulaFields`<sup>Optional</sup> <a name="salesforceIncludeFormulaFields" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.salesforceIncludeFormulaFields"></a>
+
+```typescript
+public readonly salesforceIncludeFormulaFields: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
+
+---
+
+##### `scdType`<sup>Optional</sup> <a name="scdType" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.scdType"></a>
+
+```typescript
+public readonly scdType: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
+
+---
+
+### PipelineIngestionDefinitionTableConfiguration <a name="PipelineIngestionDefinitionTableConfiguration" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.Initializer"></a>
+
+```typescript
+import { pipeline } from '@cdktf/provider-databricks'
+
+const pipelineIngestionDefinitionTableConfiguration: pipeline.PipelineIngestionDefinitionTableConfiguration = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.primaryKeys">primaryKeys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.salesforceIncludeFormulaFields">salesforceIncludeFormulaFields</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.scdType">scdType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
+
+---
+
+##### `primaryKeys`<sup>Optional</sup> <a name="primaryKeys" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.primaryKeys"></a>
+
+```typescript
+public readonly primaryKeys: string[];
+```
+
+- *Type:* string[]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
+
+---
+
+##### `salesforceIncludeFormulaFields`<sup>Optional</sup> <a name="salesforceIncludeFormulaFields" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.salesforceIncludeFormulaFields"></a>
+
+```typescript
+public readonly salesforceIncludeFormulaFields: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
+
+---
+
+##### `scdType`<sup>Optional</sup> <a name="scdType" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.scdType"></a>
+
+```typescript
+public readonly scdType: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
+
+---
+
+### PipelineLatestUpdates <a name="PipelineLatestUpdates" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdates"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdates.Initializer"></a>
+
+```typescript
+import { pipeline } from '@cdktf/provider-databricks'
+
+const pipelineLatestUpdates: pipeline.PipelineLatestUpdates = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates.property.creationTime">creationTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#creation_time Pipeline#creation_time}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates.property.state">state</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#state Pipeline#state}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates.property.updateId">updateId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#update_id Pipeline#update_id}. |
+
+---
+
+##### `creationTime`<sup>Optional</sup> <a name="creationTime" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdates.property.creationTime"></a>
+
+```typescript
+public readonly creationTime: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#creation_time Pipeline#creation_time}.
+
+---
+
+##### `state`<sup>Optional</sup> <a name="state" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdates.property.state"></a>
+
+```typescript
+public readonly state: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#state Pipeline#state}.
+
+---
+
+##### `updateId`<sup>Optional</sup> <a name="updateId" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdates.property.updateId"></a>
+
+```typescript
+public readonly updateId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#update_id Pipeline#update_id}.
 
 ---
 
@@ -2932,10 +4218,10 @@ const pipelineLibrary: pipeline.PipelineLibrary = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary.property.file">file</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryFile">PipelineLibraryFile</a></code> | file block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary.property.jar">jar</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#jar Pipeline#jar}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary.property.jar">jar</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#jar Pipeline#jar}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary.property.maven">maven</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryMaven">PipelineLibraryMaven</a></code> | maven block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary.property.notebook">notebook</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryNotebook">PipelineLibraryNotebook</a></code> | notebook block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary.property.whl">whl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#whl Pipeline#whl}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary.property.whl">whl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#whl Pipeline#whl}. |
 
 ---
 
@@ -2949,7 +4235,7 @@ public readonly file: PipelineLibraryFile;
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#file Pipeline#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#file Pipeline#file}
 
 ---
 
@@ -2961,7 +4247,7 @@ public readonly jar: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#jar Pipeline#jar}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#jar Pipeline#jar}.
 
 ---
 
@@ -2975,7 +4261,7 @@ public readonly maven: PipelineLibraryMaven;
 
 maven block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#maven Pipeline#maven}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#maven Pipeline#maven}
 
 ---
 
@@ -2989,7 +4275,7 @@ public readonly notebook: PipelineLibraryNotebook;
 
 notebook block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#notebook Pipeline#notebook}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#notebook Pipeline#notebook}
 
 ---
 
@@ -3001,7 +4287,7 @@ public readonly whl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#whl Pipeline#whl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#whl Pipeline#whl}.
 
 ---
 
@@ -3019,11 +4305,11 @@ const pipelineLibraryFile: pipeline.PipelineLibraryFile = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryFile.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#path Pipeline#path}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryFile.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#path Pipeline#path}. |
 
 ---
 
-##### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-databricks.pipeline.PipelineLibraryFile.property.path"></a>
+##### `path`<sup>Optional</sup> <a name="path" id="@cdktf/provider-databricks.pipeline.PipelineLibraryFile.property.path"></a>
 
 ```typescript
 public readonly path: string;
@@ -3031,7 +4317,7 @@ public readonly path: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#path Pipeline#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#path Pipeline#path}.
 
 ---
 
@@ -3049,9 +4335,9 @@ const pipelineLibraryMaven: pipeline.PipelineLibraryMaven = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryMaven.property.coordinates">coordinates</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#coordinates Pipeline#coordinates}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryMaven.property.exclusions">exclusions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#exclusions Pipeline#exclusions}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryMaven.property.repo">repo</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#repo Pipeline#repo}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryMaven.property.coordinates">coordinates</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#coordinates Pipeline#coordinates}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryMaven.property.exclusions">exclusions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#exclusions Pipeline#exclusions}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryMaven.property.repo">repo</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#repo Pipeline#repo}. |
 
 ---
 
@@ -3063,7 +4349,7 @@ public readonly coordinates: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#coordinates Pipeline#coordinates}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#coordinates Pipeline#coordinates}.
 
 ---
 
@@ -3075,7 +4361,7 @@ public readonly exclusions: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#exclusions Pipeline#exclusions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#exclusions Pipeline#exclusions}.
 
 ---
 
@@ -3087,7 +4373,7 @@ public readonly repo: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#repo Pipeline#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#repo Pipeline#repo}.
 
 ---
 
@@ -3105,11 +4391,11 @@ const pipelineLibraryNotebook: pipeline.PipelineLibraryNotebook = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryNotebook.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#path Pipeline#path}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryNotebook.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#path Pipeline#path}. |
 
 ---
 
-##### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-databricks.pipeline.PipelineLibraryNotebook.property.path"></a>
+##### `path`<sup>Optional</sup> <a name="path" id="@cdktf/provider-databricks.pipeline.PipelineLibraryNotebook.property.path"></a>
 
 ```typescript
 public readonly path: string;
@@ -3117,7 +4403,7 @@ public readonly path: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#path Pipeline#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#path Pipeline#path}.
 
 ---
 
@@ -3135,12 +4421,12 @@ const pipelineNotification: pipeline.PipelineNotification = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineNotification.property.alerts">alerts</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#alerts Pipeline#alerts}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineNotification.property.emailRecipients">emailRecipients</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#email_recipients Pipeline#email_recipients}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineNotification.property.alerts">alerts</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#alerts Pipeline#alerts}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineNotification.property.emailRecipients">emailRecipients</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#email_recipients Pipeline#email_recipients}. |
 
 ---
 
-##### `alerts`<sup>Required</sup> <a name="alerts" id="@cdktf/provider-databricks.pipeline.PipelineNotification.property.alerts"></a>
+##### `alerts`<sup>Optional</sup> <a name="alerts" id="@cdktf/provider-databricks.pipeline.PipelineNotification.property.alerts"></a>
 
 ```typescript
 public readonly alerts: string[];
@@ -3148,11 +4434,11 @@ public readonly alerts: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#alerts Pipeline#alerts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#alerts Pipeline#alerts}.
 
 ---
 
-##### `emailRecipients`<sup>Required</sup> <a name="emailRecipients" id="@cdktf/provider-databricks.pipeline.PipelineNotification.property.emailRecipients"></a>
+##### `emailRecipients`<sup>Optional</sup> <a name="emailRecipients" id="@cdktf/provider-databricks.pipeline.PipelineNotification.property.emailRecipients"></a>
 
 ```typescript
 public readonly emailRecipients: string[];
@@ -3160,7 +4446,7 @@ public readonly emailRecipients: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#email_recipients Pipeline#email_recipients}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#email_recipients Pipeline#email_recipients}.
 
 ---
 
@@ -3178,7 +4464,7 @@ const pipelineTimeouts: pipeline.PipelineTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTimeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#default Pipeline#default}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTimeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#default Pipeline#default}. |
 
 ---
 
@@ -3190,9 +4476,110 @@ public readonly default: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.49.1/docs/resources/pipeline#default Pipeline#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#default Pipeline#default}.
 
 ---
+
+### PipelineTrigger <a name="PipelineTrigger" id="@cdktf/provider-databricks.pipeline.PipelineTrigger"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.pipeline.PipelineTrigger.Initializer"></a>
+
+```typescript
+import { pipeline } from '@cdktf/provider-databricks'
+
+const pipelineTrigger: pipeline.PipelineTrigger = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTrigger.property.cron">cron</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCron">PipelineTriggerCron</a></code> | cron block. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTrigger.property.manual">manual</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerManual">PipelineTriggerManual</a></code> | manual block. |
+
+---
+
+##### `cron`<sup>Optional</sup> <a name="cron" id="@cdktf/provider-databricks.pipeline.PipelineTrigger.property.cron"></a>
+
+```typescript
+public readonly cron: PipelineTriggerCron;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCron">PipelineTriggerCron</a>
+
+cron block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#cron Pipeline#cron}
+
+---
+
+##### `manual`<sup>Optional</sup> <a name="manual" id="@cdktf/provider-databricks.pipeline.PipelineTrigger.property.manual"></a>
+
+```typescript
+public readonly manual: PipelineTriggerManual;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerManual">PipelineTriggerManual</a>
+
+manual block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#manual Pipeline#manual}
+
+---
+
+### PipelineTriggerCron <a name="PipelineTriggerCron" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCron"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCron.Initializer"></a>
+
+```typescript
+import { pipeline } from '@cdktf/provider-databricks'
+
+const pipelineTriggerCron: pipeline.PipelineTriggerCron = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCron.property.quartzCronSchedule">quartzCronSchedule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#quartz_cron_schedule Pipeline#quartz_cron_schedule}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCron.property.timezoneId">timezoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#timezone_id Pipeline#timezone_id}. |
+
+---
+
+##### `quartzCronSchedule`<sup>Optional</sup> <a name="quartzCronSchedule" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCron.property.quartzCronSchedule"></a>
+
+```typescript
+public readonly quartzCronSchedule: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#quartz_cron_schedule Pipeline#quartz_cron_schedule}.
+
+---
+
+##### `timezoneId`<sup>Optional</sup> <a name="timezoneId" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCron.property.timezoneId"></a>
+
+```typescript
+public readonly timezoneId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/pipeline#timezone_id Pipeline#timezone_id}.
+
+---
+
+### PipelineTriggerManual <a name="PipelineTriggerManual" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManual"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManual.Initializer"></a>
+
+```typescript
+import { pipeline } from '@cdktf/provider-databricks'
+
+const pipelineTriggerManual: pipeline.PipelineTriggerManual = { ... }
+```
+
 
 ## Classes <a name="Classes" id="Classes"></a>
 
@@ -3246,8 +4633,6 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAutoscaleOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAutoscaleOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAutoscaleOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAutoscaleOutputReference.resetMaxWorkers">resetMaxWorkers</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAutoscaleOutputReference.resetMinWorkers">resetMinWorkers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAutoscaleOutputReference.resetMode">resetMode</a></code> | *No description.* |
 
 ---
@@ -3401,18 +4786,6 @@ public toString(): string
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
-
-##### `resetMaxWorkers` <a name="resetMaxWorkers" id="@cdktf/provider-databricks.pipeline.PipelineClusterAutoscaleOutputReference.resetMaxWorkers"></a>
-
-```typescript
-public resetMaxWorkers(): void
-```
-
-##### `resetMinWorkers` <a name="resetMinWorkers" id="@cdktf/provider-databricks.pipeline.PipelineClusterAutoscaleOutputReference.resetMinWorkers"></a>
-
-```typescript
-public resetMinWorkers(): void
-```
 
 ##### `resetMode` <a name="resetMode" id="@cdktf/provider-databricks.pipeline.PipelineClusterAutoscaleOutputReference.resetMode"></a>
 
@@ -3584,7 +4957,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.resetAvailability">resetAvailability</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.resetEbsVolumeCount">resetEbsVolumeCount</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.resetEbsVolumeIops">resetEbsVolumeIops</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.resetEbsVolumeSize">resetEbsVolumeSize</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.resetEbsVolumeThroughput">resetEbsVolumeThroughput</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.resetEbsVolumeType">resetEbsVolumeType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.resetFirstOnDemand">resetFirstOnDemand</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.resetInstanceProfileArn">resetInstanceProfileArn</a></code> | *No description.* |
@@ -3755,10 +5130,22 @@ public resetAvailability(): void
 public resetEbsVolumeCount(): void
 ```
 
+##### `resetEbsVolumeIops` <a name="resetEbsVolumeIops" id="@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.resetEbsVolumeIops"></a>
+
+```typescript
+public resetEbsVolumeIops(): void
+```
+
 ##### `resetEbsVolumeSize` <a name="resetEbsVolumeSize" id="@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.resetEbsVolumeSize"></a>
 
 ```typescript
 public resetEbsVolumeSize(): void
+```
+
+##### `resetEbsVolumeThroughput` <a name="resetEbsVolumeThroughput" id="@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.resetEbsVolumeThroughput"></a>
+
+```typescript
+public resetEbsVolumeThroughput(): void
 ```
 
 ##### `resetEbsVolumeType` <a name="resetEbsVolumeType" id="@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.resetEbsVolumeType"></a>
@@ -3800,7 +5187,9 @@ public resetZoneId(): void
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.property.availabilityInput">availabilityInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.property.ebsVolumeCountInput">ebsVolumeCountInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.property.ebsVolumeIopsInput">ebsVolumeIopsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.property.ebsVolumeSizeInput">ebsVolumeSizeInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.property.ebsVolumeThroughputInput">ebsVolumeThroughputInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.property.ebsVolumeTypeInput">ebsVolumeTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.property.firstOnDemandInput">firstOnDemandInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.property.instanceProfileArnInput">instanceProfileArnInput</a></code> | <code>string</code> | *No description.* |
@@ -3808,7 +5197,9 @@ public resetZoneId(): void
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.property.zoneIdInput">zoneIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.property.availability">availability</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.property.ebsVolumeCount">ebsVolumeCount</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.property.ebsVolumeIops">ebsVolumeIops</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.property.ebsVolumeSize">ebsVolumeSize</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.property.ebsVolumeThroughput">ebsVolumeThroughput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.property.ebsVolumeType">ebsVolumeType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.property.firstOnDemand">firstOnDemand</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.property.instanceProfileArn">instanceProfileArn</a></code> | <code>string</code> | *No description.* |
@@ -3862,10 +5253,30 @@ public readonly ebsVolumeCountInput: number;
 
 ---
 
+##### `ebsVolumeIopsInput`<sup>Optional</sup> <a name="ebsVolumeIopsInput" id="@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.property.ebsVolumeIopsInput"></a>
+
+```typescript
+public readonly ebsVolumeIopsInput: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `ebsVolumeSizeInput`<sup>Optional</sup> <a name="ebsVolumeSizeInput" id="@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.property.ebsVolumeSizeInput"></a>
 
 ```typescript
 public readonly ebsVolumeSizeInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `ebsVolumeThroughputInput`<sup>Optional</sup> <a name="ebsVolumeThroughputInput" id="@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.property.ebsVolumeThroughputInput"></a>
+
+```typescript
+public readonly ebsVolumeThroughputInput: number;
 ```
 
 - *Type:* number
@@ -3942,10 +5353,30 @@ public readonly ebsVolumeCount: number;
 
 ---
 
+##### `ebsVolumeIops`<sup>Required</sup> <a name="ebsVolumeIops" id="@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.property.ebsVolumeIops"></a>
+
+```typescript
+public readonly ebsVolumeIops: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `ebsVolumeSize`<sup>Required</sup> <a name="ebsVolumeSize" id="@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.property.ebsVolumeSize"></a>
 
 ```typescript
 public readonly ebsVolumeSize: number;
+```
+
+- *Type:* number
+
+---
+
+##### `ebsVolumeThroughput`<sup>Required</sup> <a name="ebsVolumeThroughput" id="@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.property.ebsVolumeThroughput"></a>
+
+```typescript
+public readonly ebsVolumeThroughput: number;
 ```
 
 - *Type:* number
@@ -4013,6 +5444,313 @@ public readonly internalValue: PipelineClusterAwsAttributes;
 ---
 
 
+### PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference <a name="PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.Initializer"></a>
+
+```typescript
+import { pipeline } from '@cdktf/provider-databricks'
+
+new pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.resetLogAnalyticsPrimaryKey">resetLogAnalyticsPrimaryKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.resetLogAnalyticsWorkspaceId">resetLogAnalyticsWorkspaceId</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetLogAnalyticsPrimaryKey` <a name="resetLogAnalyticsPrimaryKey" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.resetLogAnalyticsPrimaryKey"></a>
+
+```typescript
+public resetLogAnalyticsPrimaryKey(): void
+```
+
+##### `resetLogAnalyticsWorkspaceId` <a name="resetLogAnalyticsWorkspaceId" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.resetLogAnalyticsWorkspaceId"></a>
+
+```typescript
+public resetLogAnalyticsWorkspaceId(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.property.logAnalyticsPrimaryKeyInput">logAnalyticsPrimaryKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.property.logAnalyticsWorkspaceIdInput">logAnalyticsWorkspaceIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.property.logAnalyticsPrimaryKey">logAnalyticsPrimaryKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.property.logAnalyticsWorkspaceId">logAnalyticsWorkspaceId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo">PipelineClusterAzureAttributesLogAnalyticsInfo</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `logAnalyticsPrimaryKeyInput`<sup>Optional</sup> <a name="logAnalyticsPrimaryKeyInput" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.property.logAnalyticsPrimaryKeyInput"></a>
+
+```typescript
+public readonly logAnalyticsPrimaryKeyInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `logAnalyticsWorkspaceIdInput`<sup>Optional</sup> <a name="logAnalyticsWorkspaceIdInput" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.property.logAnalyticsWorkspaceIdInput"></a>
+
+```typescript
+public readonly logAnalyticsWorkspaceIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `logAnalyticsPrimaryKey`<sup>Required</sup> <a name="logAnalyticsPrimaryKey" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.property.logAnalyticsPrimaryKey"></a>
+
+```typescript
+public readonly logAnalyticsPrimaryKey: string;
+```
+
+- *Type:* string
+
+---
+
+##### `logAnalyticsWorkspaceId`<sup>Required</sup> <a name="logAnalyticsWorkspaceId" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.property.logAnalyticsWorkspaceId"></a>
+
+```typescript
+public readonly logAnalyticsWorkspaceId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: PipelineClusterAzureAttributesLogAnalyticsInfo;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo">PipelineClusterAzureAttributesLogAnalyticsInfo</a>
+
+---
+
+
 ### PipelineClusterAzureAttributesOutputReference <a name="PipelineClusterAzureAttributesOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesOutputReference.Initializer"></a>
@@ -4063,8 +5801,10 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesOutputReference.putLogAnalyticsInfo">putLogAnalyticsInfo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesOutputReference.resetAvailability">resetAvailability</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesOutputReference.resetFirstOnDemand">resetFirstOnDemand</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesOutputReference.resetLogAnalyticsInfo">resetLogAnalyticsInfo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesOutputReference.resetSpotBidMaxPrice">resetSpotBidMaxPrice</a></code> | *No description.* |
 
 ---
@@ -4219,6 +5959,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `putLogAnalyticsInfo` <a name="putLogAnalyticsInfo" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesOutputReference.putLogAnalyticsInfo"></a>
+
+```typescript
+public putLogAnalyticsInfo(value: PipelineClusterAzureAttributesLogAnalyticsInfo): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesOutputReference.putLogAnalyticsInfo.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo">PipelineClusterAzureAttributesLogAnalyticsInfo</a>
+
+---
+
 ##### `resetAvailability` <a name="resetAvailability" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesOutputReference.resetAvailability"></a>
 
 ```typescript
@@ -4229,6 +5981,12 @@ public resetAvailability(): void
 
 ```typescript
 public resetFirstOnDemand(): void
+```
+
+##### `resetLogAnalyticsInfo` <a name="resetLogAnalyticsInfo" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesOutputReference.resetLogAnalyticsInfo"></a>
+
+```typescript
+public resetLogAnalyticsInfo(): void
 ```
 
 ##### `resetSpotBidMaxPrice` <a name="resetSpotBidMaxPrice" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesOutputReference.resetSpotBidMaxPrice"></a>
@@ -4244,8 +6002,10 @@ public resetSpotBidMaxPrice(): void
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesOutputReference.property.logAnalyticsInfo">logAnalyticsInfo</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference">PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesOutputReference.property.availabilityInput">availabilityInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesOutputReference.property.firstOnDemandInput">firstOnDemandInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesOutputReference.property.logAnalyticsInfoInput">logAnalyticsInfoInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo">PipelineClusterAzureAttributesLogAnalyticsInfo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesOutputReference.property.spotBidMaxPriceInput">spotBidMaxPriceInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesOutputReference.property.availability">availability</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesOutputReference.property.firstOnDemand">firstOnDemand</a></code> | <code>number</code> | *No description.* |
@@ -4278,6 +6038,16 @@ public readonly fqn: string;
 
 ---
 
+##### `logAnalyticsInfo`<sup>Required</sup> <a name="logAnalyticsInfo" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesOutputReference.property.logAnalyticsInfo"></a>
+
+```typescript
+public readonly logAnalyticsInfo: PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference">PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference</a>
+
+---
+
 ##### `availabilityInput`<sup>Optional</sup> <a name="availabilityInput" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesOutputReference.property.availabilityInput"></a>
 
 ```typescript
@@ -4295,6 +6065,16 @@ public readonly firstOnDemandInput: number;
 ```
 
 - *Type:* number
+
+---
+
+##### `logAnalyticsInfoInput`<sup>Optional</sup> <a name="logAnalyticsInfoInput" id="@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesOutputReference.property.logAnalyticsInfoInput"></a>
+
+```typescript
+public readonly logAnalyticsInfoInput: PipelineClusterAzureAttributesLogAnalyticsInfo;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo">PipelineClusterAzureAttributesLogAnalyticsInfo</a>
 
 ---
 
@@ -10225,6 +12005,3667 @@ public readonly internalValue: PipelineFilters;
 ---
 
 
+### PipelineGatewayDefinitionOutputReference <a name="PipelineGatewayDefinitionOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.Initializer"></a>
+
+```typescript
+import { pipeline } from '@cdktf/provider-databricks'
+
+new pipeline.PipelineGatewayDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.resetConnectionId">resetConnectionId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.resetGatewayStorageCatalog">resetGatewayStorageCatalog</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.resetGatewayStorageName">resetGatewayStorageName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.resetGatewayStorageSchema">resetGatewayStorageSchema</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetConnectionId` <a name="resetConnectionId" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.resetConnectionId"></a>
+
+```typescript
+public resetConnectionId(): void
+```
+
+##### `resetGatewayStorageCatalog` <a name="resetGatewayStorageCatalog" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.resetGatewayStorageCatalog"></a>
+
+```typescript
+public resetGatewayStorageCatalog(): void
+```
+
+##### `resetGatewayStorageName` <a name="resetGatewayStorageName" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.resetGatewayStorageName"></a>
+
+```typescript
+public resetGatewayStorageName(): void
+```
+
+##### `resetGatewayStorageSchema` <a name="resetGatewayStorageSchema" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.resetGatewayStorageSchema"></a>
+
+```typescript
+public resetGatewayStorageSchema(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.property.connectionIdInput">connectionIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.property.gatewayStorageCatalogInput">gatewayStorageCatalogInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.property.gatewayStorageNameInput">gatewayStorageNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.property.gatewayStorageSchemaInput">gatewayStorageSchemaInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.property.connectionId">connectionId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.property.gatewayStorageCatalog">gatewayStorageCatalog</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.property.gatewayStorageName">gatewayStorageName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.property.gatewayStorageSchema">gatewayStorageSchema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition">PipelineGatewayDefinition</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `connectionIdInput`<sup>Optional</sup> <a name="connectionIdInput" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.property.connectionIdInput"></a>
+
+```typescript
+public readonly connectionIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `gatewayStorageCatalogInput`<sup>Optional</sup> <a name="gatewayStorageCatalogInput" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.property.gatewayStorageCatalogInput"></a>
+
+```typescript
+public readonly gatewayStorageCatalogInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `gatewayStorageNameInput`<sup>Optional</sup> <a name="gatewayStorageNameInput" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.property.gatewayStorageNameInput"></a>
+
+```typescript
+public readonly gatewayStorageNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `gatewayStorageSchemaInput`<sup>Optional</sup> <a name="gatewayStorageSchemaInput" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.property.gatewayStorageSchemaInput"></a>
+
+```typescript
+public readonly gatewayStorageSchemaInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `connectionId`<sup>Required</sup> <a name="connectionId" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.property.connectionId"></a>
+
+```typescript
+public readonly connectionId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `gatewayStorageCatalog`<sup>Required</sup> <a name="gatewayStorageCatalog" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.property.gatewayStorageCatalog"></a>
+
+```typescript
+public readonly gatewayStorageCatalog: string;
+```
+
+- *Type:* string
+
+---
+
+##### `gatewayStorageName`<sup>Required</sup> <a name="gatewayStorageName" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.property.gatewayStorageName"></a>
+
+```typescript
+public readonly gatewayStorageName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `gatewayStorageSchema`<sup>Required</sup> <a name="gatewayStorageSchema" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.property.gatewayStorageSchema"></a>
+
+```typescript
+public readonly gatewayStorageSchema: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: PipelineGatewayDefinition;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition">PipelineGatewayDefinition</a>
+
+---
+
+
+### PipelineIngestionDefinitionObjectsList <a name="PipelineIngestionDefinitionObjectsList" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.Initializer"></a>
+
+```typescript
+import { pipeline } from '@cdktf/provider-databricks'
+
+new pipeline.PipelineIngestionDefinitionObjectsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.get"></a>
+
+```typescript
+public get(index: number): PipelineIngestionDefinitionObjectsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjects">PipelineIngestionDefinitionObjects</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | PipelineIngestionDefinitionObjects[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjects">PipelineIngestionDefinitionObjects</a>[]
+
+---
+
+
+### PipelineIngestionDefinitionObjectsOutputReference <a name="PipelineIngestionDefinitionObjectsOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.Initializer"></a>
+
+```typescript
+import { pipeline } from '@cdktf/provider-databricks'
+
+new pipeline.PipelineIngestionDefinitionObjectsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.putSchema">putSchema</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.putTable">putTable</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.resetSchema">resetSchema</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.resetTable">resetTable</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putSchema` <a name="putSchema" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.putSchema"></a>
+
+```typescript
+public putSchema(value: PipelineIngestionDefinitionObjectsSchema): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.putSchema.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema">PipelineIngestionDefinitionObjectsSchema</a>
+
+---
+
+##### `putTable` <a name="putTable" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.putTable"></a>
+
+```typescript
+public putTable(value: PipelineIngestionDefinitionObjectsTable): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.putTable.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable">PipelineIngestionDefinitionObjectsTable</a>
+
+---
+
+##### `resetSchema` <a name="resetSchema" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.resetSchema"></a>
+
+```typescript
+public resetSchema(): void
+```
+
+##### `resetTable` <a name="resetTable" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.resetTable"></a>
+
+```typescript
+public resetTable(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.property.schema">schema</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference">PipelineIngestionDefinitionObjectsSchemaOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.property.table">table</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference">PipelineIngestionDefinitionObjectsTableOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.property.schemaInput">schemaInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema">PipelineIngestionDefinitionObjectsSchema</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.property.tableInput">tableInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable">PipelineIngestionDefinitionObjectsTable</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjects">PipelineIngestionDefinitionObjects</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.property.schema"></a>
+
+```typescript
+public readonly schema: PipelineIngestionDefinitionObjectsSchemaOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference">PipelineIngestionDefinitionObjectsSchemaOutputReference</a>
+
+---
+
+##### `table`<sup>Required</sup> <a name="table" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.property.table"></a>
+
+```typescript
+public readonly table: PipelineIngestionDefinitionObjectsTableOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference">PipelineIngestionDefinitionObjectsTableOutputReference</a>
+
+---
+
+##### `schemaInput`<sup>Optional</sup> <a name="schemaInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.property.schemaInput"></a>
+
+```typescript
+public readonly schemaInput: PipelineIngestionDefinitionObjectsSchema;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema">PipelineIngestionDefinitionObjectsSchema</a>
+
+---
+
+##### `tableInput`<sup>Optional</sup> <a name="tableInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.property.tableInput"></a>
+
+```typescript
+public readonly tableInput: PipelineIngestionDefinitionObjectsTable;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable">PipelineIngestionDefinitionObjectsTable</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | PipelineIngestionDefinitionObjects;
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjects">PipelineIngestionDefinitionObjects</a>
+
+---
+
+
+### PipelineIngestionDefinitionObjectsSchemaOutputReference <a name="PipelineIngestionDefinitionObjectsSchemaOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.Initializer"></a>
+
+```typescript
+import { pipeline } from '@cdktf/provider-databricks'
+
+new pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.putTableConfiguration">putTableConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.resetDestinationCatalog">resetDestinationCatalog</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.resetDestinationSchema">resetDestinationSchema</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.resetSourceCatalog">resetSourceCatalog</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.resetSourceSchema">resetSourceSchema</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.resetTableConfiguration">resetTableConfiguration</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putTableConfiguration` <a name="putTableConfiguration" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.putTableConfiguration"></a>
+
+```typescript
+public putTableConfiguration(value: PipelineIngestionDefinitionObjectsSchemaTableConfiguration): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.putTableConfiguration.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration">PipelineIngestionDefinitionObjectsSchemaTableConfiguration</a>
+
+---
+
+##### `resetDestinationCatalog` <a name="resetDestinationCatalog" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.resetDestinationCatalog"></a>
+
+```typescript
+public resetDestinationCatalog(): void
+```
+
+##### `resetDestinationSchema` <a name="resetDestinationSchema" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.resetDestinationSchema"></a>
+
+```typescript
+public resetDestinationSchema(): void
+```
+
+##### `resetSourceCatalog` <a name="resetSourceCatalog" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.resetSourceCatalog"></a>
+
+```typescript
+public resetSourceCatalog(): void
+```
+
+##### `resetSourceSchema` <a name="resetSourceSchema" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.resetSourceSchema"></a>
+
+```typescript
+public resetSourceSchema(): void
+```
+
+##### `resetTableConfiguration` <a name="resetTableConfiguration" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.resetTableConfiguration"></a>
+
+```typescript
+public resetTableConfiguration(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.tableConfiguration">tableConfiguration</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference">PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.destinationCatalogInput">destinationCatalogInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.destinationSchemaInput">destinationSchemaInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.sourceCatalogInput">sourceCatalogInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.sourceSchemaInput">sourceSchemaInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.tableConfigurationInput">tableConfigurationInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration">PipelineIngestionDefinitionObjectsSchemaTableConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.destinationCatalog">destinationCatalog</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.destinationSchema">destinationSchema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.sourceCatalog">sourceCatalog</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.sourceSchema">sourceSchema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema">PipelineIngestionDefinitionObjectsSchema</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tableConfiguration`<sup>Required</sup> <a name="tableConfiguration" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.tableConfiguration"></a>
+
+```typescript
+public readonly tableConfiguration: PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference">PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference</a>
+
+---
+
+##### `destinationCatalogInput`<sup>Optional</sup> <a name="destinationCatalogInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.destinationCatalogInput"></a>
+
+```typescript
+public readonly destinationCatalogInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `destinationSchemaInput`<sup>Optional</sup> <a name="destinationSchemaInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.destinationSchemaInput"></a>
+
+```typescript
+public readonly destinationSchemaInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `sourceCatalogInput`<sup>Optional</sup> <a name="sourceCatalogInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.sourceCatalogInput"></a>
+
+```typescript
+public readonly sourceCatalogInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `sourceSchemaInput`<sup>Optional</sup> <a name="sourceSchemaInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.sourceSchemaInput"></a>
+
+```typescript
+public readonly sourceSchemaInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tableConfigurationInput`<sup>Optional</sup> <a name="tableConfigurationInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.tableConfigurationInput"></a>
+
+```typescript
+public readonly tableConfigurationInput: PipelineIngestionDefinitionObjectsSchemaTableConfiguration;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration">PipelineIngestionDefinitionObjectsSchemaTableConfiguration</a>
+
+---
+
+##### `destinationCatalog`<sup>Required</sup> <a name="destinationCatalog" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.destinationCatalog"></a>
+
+```typescript
+public readonly destinationCatalog: string;
+```
+
+- *Type:* string
+
+---
+
+##### `destinationSchema`<sup>Required</sup> <a name="destinationSchema" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.destinationSchema"></a>
+
+```typescript
+public readonly destinationSchema: string;
+```
+
+- *Type:* string
+
+---
+
+##### `sourceCatalog`<sup>Required</sup> <a name="sourceCatalog" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.sourceCatalog"></a>
+
+```typescript
+public readonly sourceCatalog: string;
+```
+
+- *Type:* string
+
+---
+
+##### `sourceSchema`<sup>Required</sup> <a name="sourceSchema" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.sourceSchema"></a>
+
+```typescript
+public readonly sourceSchema: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: PipelineIngestionDefinitionObjectsSchema;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema">PipelineIngestionDefinitionObjectsSchema</a>
+
+---
+
+
+### PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference <a name="PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.Initializer"></a>
+
+```typescript
+import { pipeline } from '@cdktf/provider-databricks'
+
+new pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.resetPrimaryKeys">resetPrimaryKeys</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.resetSalesforceIncludeFormulaFields">resetSalesforceIncludeFormulaFields</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.resetScdType">resetScdType</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetPrimaryKeys` <a name="resetPrimaryKeys" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.resetPrimaryKeys"></a>
+
+```typescript
+public resetPrimaryKeys(): void
+```
+
+##### `resetSalesforceIncludeFormulaFields` <a name="resetSalesforceIncludeFormulaFields" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.resetSalesforceIncludeFormulaFields"></a>
+
+```typescript
+public resetSalesforceIncludeFormulaFields(): void
+```
+
+##### `resetScdType` <a name="resetScdType" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.resetScdType"></a>
+
+```typescript
+public resetScdType(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.primaryKeysInput">primaryKeysInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.salesforceIncludeFormulaFieldsInput">salesforceIncludeFormulaFieldsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.scdTypeInput">scdTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.primaryKeys">primaryKeys</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.salesforceIncludeFormulaFields">salesforceIncludeFormulaFields</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.scdType">scdType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration">PipelineIngestionDefinitionObjectsSchemaTableConfiguration</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `primaryKeysInput`<sup>Optional</sup> <a name="primaryKeysInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.primaryKeysInput"></a>
+
+```typescript
+public readonly primaryKeysInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `salesforceIncludeFormulaFieldsInput`<sup>Optional</sup> <a name="salesforceIncludeFormulaFieldsInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.salesforceIncludeFormulaFieldsInput"></a>
+
+```typescript
+public readonly salesforceIncludeFormulaFieldsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `scdTypeInput`<sup>Optional</sup> <a name="scdTypeInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.scdTypeInput"></a>
+
+```typescript
+public readonly scdTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `primaryKeys`<sup>Required</sup> <a name="primaryKeys" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.primaryKeys"></a>
+
+```typescript
+public readonly primaryKeys: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `salesforceIncludeFormulaFields`<sup>Required</sup> <a name="salesforceIncludeFormulaFields" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.salesforceIncludeFormulaFields"></a>
+
+```typescript
+public readonly salesforceIncludeFormulaFields: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `scdType`<sup>Required</sup> <a name="scdType" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.scdType"></a>
+
+```typescript
+public readonly scdType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: PipelineIngestionDefinitionObjectsSchemaTableConfiguration;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration">PipelineIngestionDefinitionObjectsSchemaTableConfiguration</a>
+
+---
+
+
+### PipelineIngestionDefinitionObjectsTableOutputReference <a name="PipelineIngestionDefinitionObjectsTableOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.Initializer"></a>
+
+```typescript
+import { pipeline } from '@cdktf/provider-databricks'
+
+new pipeline.PipelineIngestionDefinitionObjectsTableOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.putTableConfiguration">putTableConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.resetDestinationCatalog">resetDestinationCatalog</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.resetDestinationSchema">resetDestinationSchema</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.resetDestinationTable">resetDestinationTable</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.resetSourceCatalog">resetSourceCatalog</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.resetSourceSchema">resetSourceSchema</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.resetSourceTable">resetSourceTable</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.resetTableConfiguration">resetTableConfiguration</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putTableConfiguration` <a name="putTableConfiguration" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.putTableConfiguration"></a>
+
+```typescript
+public putTableConfiguration(value: PipelineIngestionDefinitionObjectsTableTableConfiguration): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.putTableConfiguration.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration">PipelineIngestionDefinitionObjectsTableTableConfiguration</a>
+
+---
+
+##### `resetDestinationCatalog` <a name="resetDestinationCatalog" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.resetDestinationCatalog"></a>
+
+```typescript
+public resetDestinationCatalog(): void
+```
+
+##### `resetDestinationSchema` <a name="resetDestinationSchema" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.resetDestinationSchema"></a>
+
+```typescript
+public resetDestinationSchema(): void
+```
+
+##### `resetDestinationTable` <a name="resetDestinationTable" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.resetDestinationTable"></a>
+
+```typescript
+public resetDestinationTable(): void
+```
+
+##### `resetSourceCatalog` <a name="resetSourceCatalog" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.resetSourceCatalog"></a>
+
+```typescript
+public resetSourceCatalog(): void
+```
+
+##### `resetSourceSchema` <a name="resetSourceSchema" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.resetSourceSchema"></a>
+
+```typescript
+public resetSourceSchema(): void
+```
+
+##### `resetSourceTable` <a name="resetSourceTable" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.resetSourceTable"></a>
+
+```typescript
+public resetSourceTable(): void
+```
+
+##### `resetTableConfiguration` <a name="resetTableConfiguration" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.resetTableConfiguration"></a>
+
+```typescript
+public resetTableConfiguration(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.tableConfiguration">tableConfiguration</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference">PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.destinationCatalogInput">destinationCatalogInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.destinationSchemaInput">destinationSchemaInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.destinationTableInput">destinationTableInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.sourceCatalogInput">sourceCatalogInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.sourceSchemaInput">sourceSchemaInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.sourceTableInput">sourceTableInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.tableConfigurationInput">tableConfigurationInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration">PipelineIngestionDefinitionObjectsTableTableConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.destinationCatalog">destinationCatalog</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.destinationSchema">destinationSchema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.destinationTable">destinationTable</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.sourceCatalog">sourceCatalog</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.sourceSchema">sourceSchema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.sourceTable">sourceTable</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable">PipelineIngestionDefinitionObjectsTable</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tableConfiguration`<sup>Required</sup> <a name="tableConfiguration" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.tableConfiguration"></a>
+
+```typescript
+public readonly tableConfiguration: PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference">PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference</a>
+
+---
+
+##### `destinationCatalogInput`<sup>Optional</sup> <a name="destinationCatalogInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.destinationCatalogInput"></a>
+
+```typescript
+public readonly destinationCatalogInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `destinationSchemaInput`<sup>Optional</sup> <a name="destinationSchemaInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.destinationSchemaInput"></a>
+
+```typescript
+public readonly destinationSchemaInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `destinationTableInput`<sup>Optional</sup> <a name="destinationTableInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.destinationTableInput"></a>
+
+```typescript
+public readonly destinationTableInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `sourceCatalogInput`<sup>Optional</sup> <a name="sourceCatalogInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.sourceCatalogInput"></a>
+
+```typescript
+public readonly sourceCatalogInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `sourceSchemaInput`<sup>Optional</sup> <a name="sourceSchemaInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.sourceSchemaInput"></a>
+
+```typescript
+public readonly sourceSchemaInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `sourceTableInput`<sup>Optional</sup> <a name="sourceTableInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.sourceTableInput"></a>
+
+```typescript
+public readonly sourceTableInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tableConfigurationInput`<sup>Optional</sup> <a name="tableConfigurationInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.tableConfigurationInput"></a>
+
+```typescript
+public readonly tableConfigurationInput: PipelineIngestionDefinitionObjectsTableTableConfiguration;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration">PipelineIngestionDefinitionObjectsTableTableConfiguration</a>
+
+---
+
+##### `destinationCatalog`<sup>Required</sup> <a name="destinationCatalog" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.destinationCatalog"></a>
+
+```typescript
+public readonly destinationCatalog: string;
+```
+
+- *Type:* string
+
+---
+
+##### `destinationSchema`<sup>Required</sup> <a name="destinationSchema" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.destinationSchema"></a>
+
+```typescript
+public readonly destinationSchema: string;
+```
+
+- *Type:* string
+
+---
+
+##### `destinationTable`<sup>Required</sup> <a name="destinationTable" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.destinationTable"></a>
+
+```typescript
+public readonly destinationTable: string;
+```
+
+- *Type:* string
+
+---
+
+##### `sourceCatalog`<sup>Required</sup> <a name="sourceCatalog" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.sourceCatalog"></a>
+
+```typescript
+public readonly sourceCatalog: string;
+```
+
+- *Type:* string
+
+---
+
+##### `sourceSchema`<sup>Required</sup> <a name="sourceSchema" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.sourceSchema"></a>
+
+```typescript
+public readonly sourceSchema: string;
+```
+
+- *Type:* string
+
+---
+
+##### `sourceTable`<sup>Required</sup> <a name="sourceTable" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.sourceTable"></a>
+
+```typescript
+public readonly sourceTable: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: PipelineIngestionDefinitionObjectsTable;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable">PipelineIngestionDefinitionObjectsTable</a>
+
+---
+
+
+### PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference <a name="PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.Initializer"></a>
+
+```typescript
+import { pipeline } from '@cdktf/provider-databricks'
+
+new pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.resetPrimaryKeys">resetPrimaryKeys</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.resetSalesforceIncludeFormulaFields">resetSalesforceIncludeFormulaFields</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.resetScdType">resetScdType</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetPrimaryKeys` <a name="resetPrimaryKeys" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.resetPrimaryKeys"></a>
+
+```typescript
+public resetPrimaryKeys(): void
+```
+
+##### `resetSalesforceIncludeFormulaFields` <a name="resetSalesforceIncludeFormulaFields" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.resetSalesforceIncludeFormulaFields"></a>
+
+```typescript
+public resetSalesforceIncludeFormulaFields(): void
+```
+
+##### `resetScdType` <a name="resetScdType" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.resetScdType"></a>
+
+```typescript
+public resetScdType(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.primaryKeysInput">primaryKeysInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.salesforceIncludeFormulaFieldsInput">salesforceIncludeFormulaFieldsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.scdTypeInput">scdTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.primaryKeys">primaryKeys</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.salesforceIncludeFormulaFields">salesforceIncludeFormulaFields</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.scdType">scdType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration">PipelineIngestionDefinitionObjectsTableTableConfiguration</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `primaryKeysInput`<sup>Optional</sup> <a name="primaryKeysInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.primaryKeysInput"></a>
+
+```typescript
+public readonly primaryKeysInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `salesforceIncludeFormulaFieldsInput`<sup>Optional</sup> <a name="salesforceIncludeFormulaFieldsInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.salesforceIncludeFormulaFieldsInput"></a>
+
+```typescript
+public readonly salesforceIncludeFormulaFieldsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `scdTypeInput`<sup>Optional</sup> <a name="scdTypeInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.scdTypeInput"></a>
+
+```typescript
+public readonly scdTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `primaryKeys`<sup>Required</sup> <a name="primaryKeys" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.primaryKeys"></a>
+
+```typescript
+public readonly primaryKeys: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `salesforceIncludeFormulaFields`<sup>Required</sup> <a name="salesforceIncludeFormulaFields" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.salesforceIncludeFormulaFields"></a>
+
+```typescript
+public readonly salesforceIncludeFormulaFields: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `scdType`<sup>Required</sup> <a name="scdType" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.scdType"></a>
+
+```typescript
+public readonly scdType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: PipelineIngestionDefinitionObjectsTableTableConfiguration;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration">PipelineIngestionDefinitionObjectsTableTableConfiguration</a>
+
+---
+
+
+### PipelineIngestionDefinitionOutputReference <a name="PipelineIngestionDefinitionOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.Initializer"></a>
+
+```typescript
+import { pipeline } from '@cdktf/provider-databricks'
+
+new pipeline.PipelineIngestionDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.putObjects">putObjects</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.putTableConfiguration">putTableConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.resetConnectionName">resetConnectionName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.resetIngestionGatewayId">resetIngestionGatewayId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.resetObjects">resetObjects</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.resetTableConfiguration">resetTableConfiguration</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putObjects` <a name="putObjects" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.putObjects"></a>
+
+```typescript
+public putObjects(value: IResolvable | PipelineIngestionDefinitionObjects[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.putObjects.parameter.value"></a>
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjects">PipelineIngestionDefinitionObjects</a>[]
+
+---
+
+##### `putTableConfiguration` <a name="putTableConfiguration" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.putTableConfiguration"></a>
+
+```typescript
+public putTableConfiguration(value: PipelineIngestionDefinitionTableConfiguration): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.putTableConfiguration.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration">PipelineIngestionDefinitionTableConfiguration</a>
+
+---
+
+##### `resetConnectionName` <a name="resetConnectionName" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.resetConnectionName"></a>
+
+```typescript
+public resetConnectionName(): void
+```
+
+##### `resetIngestionGatewayId` <a name="resetIngestionGatewayId" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.resetIngestionGatewayId"></a>
+
+```typescript
+public resetIngestionGatewayId(): void
+```
+
+##### `resetObjects` <a name="resetObjects" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.resetObjects"></a>
+
+```typescript
+public resetObjects(): void
+```
+
+##### `resetTableConfiguration` <a name="resetTableConfiguration" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.resetTableConfiguration"></a>
+
+```typescript
+public resetTableConfiguration(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.objects">objects</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList">PipelineIngestionDefinitionObjectsList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.tableConfiguration">tableConfiguration</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference">PipelineIngestionDefinitionTableConfigurationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.connectionNameInput">connectionNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.ingestionGatewayIdInput">ingestionGatewayIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.objectsInput">objectsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjects">PipelineIngestionDefinitionObjects</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.tableConfigurationInput">tableConfigurationInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration">PipelineIngestionDefinitionTableConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.connectionName">connectionName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.ingestionGatewayId">ingestionGatewayId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition">PipelineIngestionDefinition</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `objects`<sup>Required</sup> <a name="objects" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.objects"></a>
+
+```typescript
+public readonly objects: PipelineIngestionDefinitionObjectsList;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList">PipelineIngestionDefinitionObjectsList</a>
+
+---
+
+##### `tableConfiguration`<sup>Required</sup> <a name="tableConfiguration" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.tableConfiguration"></a>
+
+```typescript
+public readonly tableConfiguration: PipelineIngestionDefinitionTableConfigurationOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference">PipelineIngestionDefinitionTableConfigurationOutputReference</a>
+
+---
+
+##### `connectionNameInput`<sup>Optional</sup> <a name="connectionNameInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.connectionNameInput"></a>
+
+```typescript
+public readonly connectionNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `ingestionGatewayIdInput`<sup>Optional</sup> <a name="ingestionGatewayIdInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.ingestionGatewayIdInput"></a>
+
+```typescript
+public readonly ingestionGatewayIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `objectsInput`<sup>Optional</sup> <a name="objectsInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.objectsInput"></a>
+
+```typescript
+public readonly objectsInput: IResolvable | PipelineIngestionDefinitionObjects[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjects">PipelineIngestionDefinitionObjects</a>[]
+
+---
+
+##### `tableConfigurationInput`<sup>Optional</sup> <a name="tableConfigurationInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.tableConfigurationInput"></a>
+
+```typescript
+public readonly tableConfigurationInput: PipelineIngestionDefinitionTableConfiguration;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration">PipelineIngestionDefinitionTableConfiguration</a>
+
+---
+
+##### `connectionName`<sup>Required</sup> <a name="connectionName" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.connectionName"></a>
+
+```typescript
+public readonly connectionName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `ingestionGatewayId`<sup>Required</sup> <a name="ingestionGatewayId" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.ingestionGatewayId"></a>
+
+```typescript
+public readonly ingestionGatewayId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: PipelineIngestionDefinition;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition">PipelineIngestionDefinition</a>
+
+---
+
+
+### PipelineIngestionDefinitionTableConfigurationOutputReference <a name="PipelineIngestionDefinitionTableConfigurationOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.Initializer"></a>
+
+```typescript
+import { pipeline } from '@cdktf/provider-databricks'
+
+new pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.resetPrimaryKeys">resetPrimaryKeys</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.resetSalesforceIncludeFormulaFields">resetSalesforceIncludeFormulaFields</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.resetScdType">resetScdType</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetPrimaryKeys` <a name="resetPrimaryKeys" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.resetPrimaryKeys"></a>
+
+```typescript
+public resetPrimaryKeys(): void
+```
+
+##### `resetSalesforceIncludeFormulaFields` <a name="resetSalesforceIncludeFormulaFields" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.resetSalesforceIncludeFormulaFields"></a>
+
+```typescript
+public resetSalesforceIncludeFormulaFields(): void
+```
+
+##### `resetScdType` <a name="resetScdType" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.resetScdType"></a>
+
+```typescript
+public resetScdType(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.primaryKeysInput">primaryKeysInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.salesforceIncludeFormulaFieldsInput">salesforceIncludeFormulaFieldsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.scdTypeInput">scdTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.primaryKeys">primaryKeys</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.salesforceIncludeFormulaFields">salesforceIncludeFormulaFields</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.scdType">scdType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration">PipelineIngestionDefinitionTableConfiguration</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `primaryKeysInput`<sup>Optional</sup> <a name="primaryKeysInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.primaryKeysInput"></a>
+
+```typescript
+public readonly primaryKeysInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `salesforceIncludeFormulaFieldsInput`<sup>Optional</sup> <a name="salesforceIncludeFormulaFieldsInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.salesforceIncludeFormulaFieldsInput"></a>
+
+```typescript
+public readonly salesforceIncludeFormulaFieldsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `scdTypeInput`<sup>Optional</sup> <a name="scdTypeInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.scdTypeInput"></a>
+
+```typescript
+public readonly scdTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `primaryKeys`<sup>Required</sup> <a name="primaryKeys" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.primaryKeys"></a>
+
+```typescript
+public readonly primaryKeys: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `salesforceIncludeFormulaFields`<sup>Required</sup> <a name="salesforceIncludeFormulaFields" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.salesforceIncludeFormulaFields"></a>
+
+```typescript
+public readonly salesforceIncludeFormulaFields: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `scdType`<sup>Required</sup> <a name="scdType" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.scdType"></a>
+
+```typescript
+public readonly scdType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: PipelineIngestionDefinitionTableConfiguration;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration">PipelineIngestionDefinitionTableConfiguration</a>
+
+---
+
+
+### PipelineLatestUpdatesList <a name="PipelineLatestUpdatesList" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.Initializer"></a>
+
+```typescript
+import { pipeline } from '@cdktf/provider-databricks'
+
+new pipeline.PipelineLatestUpdatesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.get"></a>
+
+```typescript
+public get(index: number): PipelineLatestUpdatesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates">PipelineLatestUpdates</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | PipelineLatestUpdates[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates">PipelineLatestUpdates</a>[]
+
+---
+
+
+### PipelineLatestUpdatesOutputReference <a name="PipelineLatestUpdatesOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.Initializer"></a>
+
+```typescript
+import { pipeline } from '@cdktf/provider-databricks'
+
+new pipeline.PipelineLatestUpdatesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.resetCreationTime">resetCreationTime</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.resetState">resetState</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.resetUpdateId">resetUpdateId</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetCreationTime` <a name="resetCreationTime" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.resetCreationTime"></a>
+
+```typescript
+public resetCreationTime(): void
+```
+
+##### `resetState` <a name="resetState" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.resetState"></a>
+
+```typescript
+public resetState(): void
+```
+
+##### `resetUpdateId` <a name="resetUpdateId" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.resetUpdateId"></a>
+
+```typescript
+public resetUpdateId(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.property.creationTimeInput">creationTimeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.property.stateInput">stateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.property.updateIdInput">updateIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.property.creationTime">creationTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.property.state">state</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.property.updateId">updateId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates">PipelineLatestUpdates</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `creationTimeInput`<sup>Optional</sup> <a name="creationTimeInput" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.property.creationTimeInput"></a>
+
+```typescript
+public readonly creationTimeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `stateInput`<sup>Optional</sup> <a name="stateInput" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.property.stateInput"></a>
+
+```typescript
+public readonly stateInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `updateIdInput`<sup>Optional</sup> <a name="updateIdInput" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.property.updateIdInput"></a>
+
+```typescript
+public readonly updateIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `creationTime`<sup>Required</sup> <a name="creationTime" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.property.creationTime"></a>
+
+```typescript
+public readonly creationTime: string;
+```
+
+- *Type:* string
+
+---
+
+##### `state`<sup>Required</sup> <a name="state" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.property.state"></a>
+
+```typescript
+public readonly state: string;
+```
+
+- *Type:* string
+
+---
+
+##### `updateId`<sup>Required</sup> <a name="updateId" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.property.updateId"></a>
+
+```typescript
+public readonly updateId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | PipelineLatestUpdates;
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates">PipelineLatestUpdates</a>
+
+---
+
+
 ### PipelineLibraryFileOutputReference <a name="PipelineLibraryFileOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineLibraryFileOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineLibraryFileOutputReference.Initializer"></a>
@@ -10275,6 +15716,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryFileOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryFileOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryFileOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryFileOutputReference.resetPath">resetPath</a></code> | *No description.* |
 
 ---
 
@@ -10427,6 +15869,12 @@ public toString(): string
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `resetPath` <a name="resetPath" id="@cdktf/provider-databricks.pipeline.PipelineLibraryFileOutputReference.resetPath"></a>
+
+```typescript
+public resetPath(): void
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -11035,6 +16483,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryNotebookOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryNotebookOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryNotebookOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryNotebookOutputReference.resetPath">resetPath</a></code> | *No description.* |
 
 ---
 
@@ -11187,6 +16636,12 @@ public toString(): string
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `resetPath` <a name="resetPath" id="@cdktf/provider-databricks.pipeline.PipelineLibraryNotebookOutputReference.resetPath"></a>
+
+```typescript
+public resetPath(): void
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -11935,6 +17390,8 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineNotificationOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineNotificationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineNotificationOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineNotificationOutputReference.resetAlerts">resetAlerts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineNotificationOutputReference.resetEmailRecipients">resetEmailRecipients</a></code> | *No description.* |
 
 ---
 
@@ -12087,6 +17544,18 @@ public toString(): string
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `resetAlerts` <a name="resetAlerts" id="@cdktf/provider-databricks.pipeline.PipelineNotificationOutputReference.resetAlerts"></a>
+
+```typescript
+public resetAlerts(): void
+```
+
+##### `resetEmailRecipients` <a name="resetEmailRecipients" id="@cdktf/provider-databricks.pipeline.PipelineNotificationOutputReference.resetEmailRecipients"></a>
+
+```typescript
+public resetEmailRecipients(): void
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -12452,6 +17921,895 @@ public readonly internalValue: IResolvable | PipelineTimeouts;
 ```
 
 - *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.pipeline.PipelineTimeouts">PipelineTimeouts</a>
+
+---
+
+
+### PipelineTriggerCronOutputReference <a name="PipelineTriggerCronOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.Initializer"></a>
+
+```typescript
+import { pipeline } from '@cdktf/provider-databricks'
+
+new pipeline.PipelineTriggerCronOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.resetQuartzCronSchedule">resetQuartzCronSchedule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.resetTimezoneId">resetTimezoneId</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetQuartzCronSchedule` <a name="resetQuartzCronSchedule" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.resetQuartzCronSchedule"></a>
+
+```typescript
+public resetQuartzCronSchedule(): void
+```
+
+##### `resetTimezoneId` <a name="resetTimezoneId" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.resetTimezoneId"></a>
+
+```typescript
+public resetTimezoneId(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.property.quartzCronScheduleInput">quartzCronScheduleInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.property.timezoneIdInput">timezoneIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.property.quartzCronSchedule">quartzCronSchedule</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.property.timezoneId">timezoneId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCron">PipelineTriggerCron</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `quartzCronScheduleInput`<sup>Optional</sup> <a name="quartzCronScheduleInput" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.property.quartzCronScheduleInput"></a>
+
+```typescript
+public readonly quartzCronScheduleInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `timezoneIdInput`<sup>Optional</sup> <a name="timezoneIdInput" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.property.timezoneIdInput"></a>
+
+```typescript
+public readonly timezoneIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `quartzCronSchedule`<sup>Required</sup> <a name="quartzCronSchedule" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.property.quartzCronSchedule"></a>
+
+```typescript
+public readonly quartzCronSchedule: string;
+```
+
+- *Type:* string
+
+---
+
+##### `timezoneId`<sup>Required</sup> <a name="timezoneId" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.property.timezoneId"></a>
+
+```typescript
+public readonly timezoneId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: PipelineTriggerCron;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCron">PipelineTriggerCron</a>
+
+---
+
+
+### PipelineTriggerManualOutputReference <a name="PipelineTriggerManualOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.Initializer"></a>
+
+```typescript
+import { pipeline } from '@cdktf/provider-databricks'
+
+new pipeline.PipelineTriggerManualOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerManual">PipelineTriggerManual</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: PipelineTriggerManual;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerManual">PipelineTriggerManual</a>
+
+---
+
+
+### PipelineTriggerOutputReference <a name="PipelineTriggerOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.Initializer"></a>
+
+```typescript
+import { pipeline } from '@cdktf/provider-databricks'
+
+new pipeline.PipelineTriggerOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.putCron">putCron</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.putManual">putManual</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.resetCron">resetCron</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.resetManual">resetManual</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putCron` <a name="putCron" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.putCron"></a>
+
+```typescript
+public putCron(value: PipelineTriggerCron): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.putCron.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCron">PipelineTriggerCron</a>
+
+---
+
+##### `putManual` <a name="putManual" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.putManual"></a>
+
+```typescript
+public putManual(value: PipelineTriggerManual): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.putManual.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerManual">PipelineTriggerManual</a>
+
+---
+
+##### `resetCron` <a name="resetCron" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.resetCron"></a>
+
+```typescript
+public resetCron(): void
+```
+
+##### `resetManual` <a name="resetManual" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.resetManual"></a>
+
+```typescript
+public resetManual(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.property.cron">cron</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference">PipelineTriggerCronOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.property.manual">manual</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference">PipelineTriggerManualOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.property.cronInput">cronInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCron">PipelineTriggerCron</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.property.manualInput">manualInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerManual">PipelineTriggerManual</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTrigger">PipelineTrigger</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `cron`<sup>Required</sup> <a name="cron" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.property.cron"></a>
+
+```typescript
+public readonly cron: PipelineTriggerCronOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCronOutputReference">PipelineTriggerCronOutputReference</a>
+
+---
+
+##### `manual`<sup>Required</sup> <a name="manual" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.property.manual"></a>
+
+```typescript
+public readonly manual: PipelineTriggerManualOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerManualOutputReference">PipelineTriggerManualOutputReference</a>
+
+---
+
+##### `cronInput`<sup>Optional</sup> <a name="cronInput" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.property.cronInput"></a>
+
+```typescript
+public readonly cronInput: PipelineTriggerCron;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCron">PipelineTriggerCron</a>
+
+---
+
+##### `manualInput`<sup>Optional</sup> <a name="manualInput" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.property.manualInput"></a>
+
+```typescript
+public readonly manualInput: PipelineTriggerManual;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerManual">PipelineTriggerManual</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: PipelineTrigger;
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineTrigger">PipelineTrigger</a>
 
 ---
 
