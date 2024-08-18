@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogAssumeRolePolicy.DataDatabricksAwsUnityCatalogAssumeRolePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksawsunitycatalogassumerolepolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksawsunitycatalogassumerolepolicy"
 
 datadatabricksawsunitycatalogassumerolepolicy.NewDataDatabricksAwsUnityCatalogAssumeRolePolicy(scope Construct, id *string, config DataDatabricksAwsUnityCatalogAssumeRolePolicyConfig) DataDatabricksAwsUnityCatalogAssumeRolePolicy
 ```
@@ -283,7 +283,7 @@ func ResetUnityCatalogIamArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogAssumeRolePolicy.DataDatabricksAwsUnityCatalogAssumeRolePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksawsunitycatalogassumerolepolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksawsunitycatalogassumerolepolicy"
 
 datadatabricksawsunitycatalogassumerolepolicy.DataDatabricksAwsUnityCatalogAssumeRolePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogAssumeRolePolicy.DataDatabricksAwsUnityCatalogAssumeRolePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksawsunitycatalogassumerolepolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksawsunitycatalogassumerolepolicy"
 
 datadatabricksawsunitycatalogassumerolepolicy.DataDatabricksAwsUnityCatalogAssumeRolePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datadatabricksawsunitycatalogassumerolepolicy.DataDatabricksAwsUnityCatalogAssum
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogAssumeRolePolicy.DataDatabricksAwsUnityCatalogAssumeRolePolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksawsunitycatalogassumerolepolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksawsunitycatalogassumerolepolicy"
 
 datadatabricksawsunitycatalogassumerolepolicy.DataDatabricksAwsUnityCatalogAssumeRolePolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datadatabricksawsunitycatalogassumerolepolicy.DataDatabricksAwsUnityCatalogAssum
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogAssumeRolePolicy.DataDatabricksAwsUnityCatalogAssumeRolePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksawsunitycatalogassumerolepolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksawsunitycatalogassumerolepolicy"
 
 datadatabricksawsunitycatalogassumerolepolicy.DataDatabricksAwsUnityCatalogAssumeRolePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -660,7 +660,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogAssumeRolePolicy.DataDatabricksAwsUnityCatalogAssumeRolePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksawsunitycatalogassumerolepolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksawsunitycatalogassumerolepolicy"
 
 &datadatabricksawsunitycatalogassumerolepolicy.DataDatabricksAwsUnityCatalogAssumeRolePolicyConfig {
 	Connection: interface{},
