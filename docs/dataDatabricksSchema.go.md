@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksSchema.DataDatabricksSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksschema"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksschema"
 
 datadatabricksschema.NewDataDatabricksSchema(scope Construct, id *string, config DataDatabricksSchemaConfig) DataDatabricksSchema
 ```
@@ -303,7 +303,7 @@ func ResetSchemaInfo()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksSchema.DataDatabricksSchema.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksschema"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksschema"
 
 datadatabricksschema.DataDatabricksSchema_IsConstruct(x interface{}) *bool
 ```
@@ -335,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksSchema.DataDatabricksSchema.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksschema"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksschema"
 
 datadatabricksschema.DataDatabricksSchema_IsTerraformElement(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ datadatabricksschema.DataDatabricksSchema_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksSchema.DataDatabricksSchema.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksschema"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksschema"
 
 datadatabricksschema.DataDatabricksSchema_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ datadatabricksschema.DataDatabricksSchema_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksSchema.DataDatabricksSchema.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksschema"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksschema"
 
 datadatabricksschema.DataDatabricksSchema_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -636,7 +636,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksschema"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksschema"
 
 &datadatabricksschema.DataDatabricksSchemaConfig {
 	Connection: interface{},
@@ -648,7 +648,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabri
 	Provisioners: *[]interface{},
 	Name: *string,
 	Id: *string,
-	SchemaInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo,
+	SchemaInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo,
 }
 ```
 
@@ -785,7 +785,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksschema"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksschema"
 
 &datadatabricksschema.DataDatabricksSchemaSchemaInfo {
 	BrowseOnly: interface{},
@@ -794,7 +794,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabri
 	Comment: *string,
 	CreatedAt: *f64,
 	CreatedBy: *string,
-	EffectivePredictiveOptimizationFlag: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksSchema.DataDatabricksSchemaSchemaInfoEffectivePredictiveOptimizationFlag,
+	EffectivePredictiveOptimizationFlag: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfoEffectivePredictiveOptimizationFlag,
 	EnablePredictiveOptimization: *string,
 	FullName: *string,
 	MetastoreId: *string,
@@ -1057,7 +1057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfoEffectivePredictiveOptimizationFlag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksschema"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksschema"
 
 &datadatabricksschema.DataDatabricksSchemaSchemaInfoEffectivePredictiveOptimizationFlag {
 	Value: *string,
@@ -1119,7 +1119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfoEffectivePredictiveOptimizationFlagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksschema"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksschema"
 
 datadatabricksschema.NewDataDatabricksSchemaSchemaInfoEffectivePredictiveOptimizationFlagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksSchemaSchemaInfoEffectivePredictiveOptimizationFlagOutputReference
 ```
@@ -1448,7 +1448,7 @@ func InternalValue() DataDatabricksSchemaSchemaInfoEffectivePredictiveOptimizati
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksschema"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksschema"
 
 datadatabricksschema.NewDataDatabricksSchemaSchemaInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksSchemaSchemaInfoOutputReference
 ```
