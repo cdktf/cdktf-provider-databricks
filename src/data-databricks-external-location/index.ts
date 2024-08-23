@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/external_location
+// https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/external_location
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,30 +8,30 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksExternalLocationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/external_location#id DataDatabricksExternalLocation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/external_location#id DataDatabricksExternalLocation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/external_location#name DataDatabricksExternalLocation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/external_location#name DataDatabricksExternalLocation#name}
   */
   readonly name: string;
   /**
   * external_location_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/external_location#external_location_info DataDatabricksExternalLocation#external_location_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/external_location#external_location_info DataDatabricksExternalLocation#external_location_info}
   */
   readonly externalLocationInfo?: DataDatabricksExternalLocationExternalLocationInfo;
 }
 export interface DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsSseEncryptionDetails {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/external_location#algorithm DataDatabricksExternalLocation#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/external_location#algorithm DataDatabricksExternalLocation#algorithm}
   */
   readonly algorithm?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/external_location#aws_kms_key_arn DataDatabricksExternalLocation#aws_kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/external_location#aws_kms_key_arn DataDatabricksExternalLocation#aws_kms_key_arn}
   */
   readonly awsKmsKeyArn?: string;
 }
@@ -151,7 +146,7 @@ export interface DataDatabricksExternalLocationExternalLocationInfoEncryptionDet
   /**
   * sse_encryption_details block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/external_location#sse_encryption_details DataDatabricksExternalLocation#sse_encryption_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/external_location#sse_encryption_details DataDatabricksExternalLocation#sse_encryption_details}
   */
   readonly sseEncryptionDetails?: DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsSseEncryptionDetails;
 }
@@ -235,69 +230,73 @@ export class DataDatabricksExternalLocationExternalLocationInfoEncryptionDetails
 }
 export interface DataDatabricksExternalLocationExternalLocationInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/external_location#access_point DataDatabricksExternalLocation#access_point}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/external_location#access_point DataDatabricksExternalLocation#access_point}
   */
   readonly accessPoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/external_location#browse_only DataDatabricksExternalLocation#browse_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/external_location#browse_only DataDatabricksExternalLocation#browse_only}
   */
   readonly browseOnly?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/external_location#comment DataDatabricksExternalLocation#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/external_location#comment DataDatabricksExternalLocation#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/external_location#created_at DataDatabricksExternalLocation#created_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/external_location#created_at DataDatabricksExternalLocation#created_at}
   */
   readonly createdAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/external_location#created_by DataDatabricksExternalLocation#created_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/external_location#created_by DataDatabricksExternalLocation#created_by}
   */
   readonly createdBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/external_location#credential_id DataDatabricksExternalLocation#credential_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/external_location#credential_id DataDatabricksExternalLocation#credential_id}
   */
   readonly credentialId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/external_location#credential_name DataDatabricksExternalLocation#credential_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/external_location#credential_name DataDatabricksExternalLocation#credential_name}
   */
   readonly credentialName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/external_location#isolation_mode DataDatabricksExternalLocation#isolation_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/external_location#fallback DataDatabricksExternalLocation#fallback}
+  */
+  readonly fallback?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/external_location#isolation_mode DataDatabricksExternalLocation#isolation_mode}
   */
   readonly isolationMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/external_location#metastore_id DataDatabricksExternalLocation#metastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/external_location#metastore_id DataDatabricksExternalLocation#metastore_id}
   */
   readonly metastoreId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/external_location#name DataDatabricksExternalLocation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/external_location#name DataDatabricksExternalLocation#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/external_location#owner DataDatabricksExternalLocation#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/external_location#owner DataDatabricksExternalLocation#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/external_location#read_only DataDatabricksExternalLocation#read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/external_location#read_only DataDatabricksExternalLocation#read_only}
   */
   readonly readOnly?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/external_location#updated_at DataDatabricksExternalLocation#updated_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/external_location#updated_at DataDatabricksExternalLocation#updated_at}
   */
   readonly updatedAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/external_location#updated_by DataDatabricksExternalLocation#updated_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/external_location#updated_by DataDatabricksExternalLocation#updated_by}
   */
   readonly updatedBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/external_location#url DataDatabricksExternalLocation#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/external_location#url DataDatabricksExternalLocation#url}
   */
   readonly url?: string;
   /**
   * encryption_details block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/external_location#encryption_details DataDatabricksExternalLocation#encryption_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/external_location#encryption_details DataDatabricksExternalLocation#encryption_details}
   */
   readonly encryptionDetails?: DataDatabricksExternalLocationExternalLocationInfoEncryptionDetails;
 }
@@ -315,6 +314,7 @@ export function dataDatabricksExternalLocationExternalLocationInfoToTerraform(st
     created_by: cdktf.stringToTerraform(struct!.createdBy),
     credential_id: cdktf.stringToTerraform(struct!.credentialId),
     credential_name: cdktf.stringToTerraform(struct!.credentialName),
+    fallback: cdktf.booleanToTerraform(struct!.fallback),
     isolation_mode: cdktf.stringToTerraform(struct!.isolationMode),
     metastore_id: cdktf.stringToTerraform(struct!.metastoreId),
     name: cdktf.stringToTerraform(struct!.name),
@@ -375,6 +375,12 @@ export function dataDatabricksExternalLocationExternalLocationInfoToHclTerraform
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    fallback: {
+      value: cdktf.booleanToHclTerraform(struct!.fallback),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
     },
     isolation_mode: {
       value: cdktf.stringToHclTerraform(struct!.isolationMode),
@@ -478,6 +484,10 @@ export class DataDatabricksExternalLocationExternalLocationInfoOutputReference e
       hasAnyValues = true;
       internalValueResult.credentialName = this._credentialName;
     }
+    if (this._fallback !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fallback = this._fallback;
+    }
     if (this._isolationMode !== undefined) {
       hasAnyValues = true;
       internalValueResult.isolationMode = this._isolationMode;
@@ -527,6 +537,7 @@ export class DataDatabricksExternalLocationExternalLocationInfoOutputReference e
       this._createdBy = undefined;
       this._credentialId = undefined;
       this._credentialName = undefined;
+      this._fallback = undefined;
       this._isolationMode = undefined;
       this._metastoreId = undefined;
       this._name = undefined;
@@ -546,6 +557,7 @@ export class DataDatabricksExternalLocationExternalLocationInfoOutputReference e
       this._createdBy = value.createdBy;
       this._credentialId = value.credentialId;
       this._credentialName = value.credentialName;
+      this._fallback = value.fallback;
       this._isolationMode = value.isolationMode;
       this._metastoreId = value.metastoreId;
       this._name = value.name;
@@ -668,6 +680,22 @@ export class DataDatabricksExternalLocationExternalLocationInfoOutputReference e
   // Temporarily expose input value. Use with caution.
   public get credentialNameInput() {
     return this._credentialName;
+  }
+
+  // fallback - computed: false, optional: true, required: false
+  private _fallback?: boolean | cdktf.IResolvable; 
+  public get fallback() {
+    return this.getBooleanAttribute('fallback');
+  }
+  public set fallback(value: boolean | cdktf.IResolvable) {
+    this._fallback = value;
+  }
+  public resetFallback() {
+    this._fallback = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fallbackInput() {
+    return this._fallback;
   }
 
   // isolation_mode - computed: false, optional: true, required: false
@@ -816,7 +844,7 @@ export class DataDatabricksExternalLocationExternalLocationInfoOutputReference e
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/external_location databricks_external_location}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/external_location databricks_external_location}
 */
 export class DataDatabricksExternalLocation extends cdktf.TerraformDataSource {
 
@@ -832,7 +860,7 @@ export class DataDatabricksExternalLocation extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksExternalLocation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksExternalLocation to import
-  * @param importFromId The id of the existing DataDatabricksExternalLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/external_location#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksExternalLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/external_location#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksExternalLocation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -844,7 +872,7 @@ export class DataDatabricksExternalLocation extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/external_location databricks_external_location} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/external_location databricks_external_location} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -855,7 +883,7 @@ export class DataDatabricksExternalLocation extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_external_location',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.50.0',
+        providerVersion: '1.51.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

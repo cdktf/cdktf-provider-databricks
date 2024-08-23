@@ -4,7 +4,7 @@
 
 ### DataDatabricksPipelines <a name="DataDatabricksPipelines" id="@cdktf/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelines"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/pipelines databricks_pipelines}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/pipelines databricks_pipelines}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelines.Initializer"></a>
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataDatabricksPipelines to
 
 The id of the existing DataDatabricksPipelines that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/pipelines#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/pipelines#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -646,9 +646,9 @@ const dataDatabricksPipelinesConfig: dataDatabricksPipelines.DataDatabricksPipel
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelinesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelinesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelinesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelinesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/pipelines#id DataDatabricksPipelines#id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelinesConfig.property.ids">ids</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/pipelines#ids DataDatabricksPipelines#ids}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelinesConfig.property.pipelineName">pipelineName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/pipelines#pipeline_name DataDatabricksPipelines#pipeline_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelinesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/pipelines#id DataDatabricksPipelines#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelinesConfig.property.ids">ids</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/pipelines#ids DataDatabricksPipelines#ids}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelinesConfig.property.pipelineName">pipelineName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/pipelines#pipeline_name DataDatabricksPipelines#pipeline_name}. |
 
 ---
 
@@ -730,7 +730,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/pipelines#id DataDatabricksPipelines#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/pipelines#id DataDatabricksPipelines#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -745,7 +745,7 @@ public readonly ids: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/pipelines#ids DataDatabricksPipelines#ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/pipelines#ids DataDatabricksPipelines#ids}.
 
 ---
 
@@ -757,7 +757,7 @@ public readonly pipelineName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/data-sources/pipelines#pipeline_name DataDatabricksPipelines#pipeline_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/data-sources/pipelines#pipeline_name DataDatabricksPipelines#pipeline_name}.
 
 ---
 
