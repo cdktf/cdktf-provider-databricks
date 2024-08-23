@@ -1,3 +1,3 @@
 # `databricks_table`
 
-Refer to the Terraform Registry for docs: [`databricks_table`](https://registry.terraform.io/providers/databricks/databricks/1.50.0/docs/resources/table).
+Refer to the Terraform Registry for docs: [`databricks_table`](https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/table).
