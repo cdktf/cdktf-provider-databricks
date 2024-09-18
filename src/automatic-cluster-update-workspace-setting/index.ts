@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/automatic_cluster_update_workspace_setting
+// https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/automatic_cluster_update_workspace_setting
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,83 +8,48 @@ import * as cdktf from 'cdktf';
 
 export interface AutomaticClusterUpdateWorkspaceSettingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/automatic_cluster_update_workspace_setting#etag AutomaticClusterUpdateWorkspaceSetting#etag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/automatic_cluster_update_workspace_setting#etag AutomaticClusterUpdateWorkspaceSetting#etag}
   */
   readonly etag?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/automatic_cluster_update_workspace_setting#id AutomaticClusterUpdateWorkspaceSetting#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/automatic_cluster_update_workspace_setting#id AutomaticClusterUpdateWorkspaceSetting#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/automatic_cluster_update_workspace_setting#setting_name AutomaticClusterUpdateWorkspaceSetting#setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/automatic_cluster_update_workspace_setting#setting_name AutomaticClusterUpdateWorkspaceSetting#setting_name}
   */
   readonly settingName?: string;
   /**
   * automatic_cluster_update_workspace block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/automatic_cluster_update_workspace_setting#automatic_cluster_update_workspace AutomaticClusterUpdateWorkspaceSetting#automatic_cluster_update_workspace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/automatic_cluster_update_workspace_setting#automatic_cluster_update_workspace AutomaticClusterUpdateWorkspaceSetting#automatic_cluster_update_workspace}
   */
   readonly automaticClusterUpdateWorkspace: AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspace;
 }
 export interface AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetails {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/automatic_cluster_update_workspace_setting#forced_for_compliance_mode AutomaticClusterUpdateWorkspaceSetting#forced_for_compliance_mode}
-  */
-  readonly forcedForComplianceMode?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/automatic_cluster_update_workspace_setting#unavailable_for_disabled_entitlement AutomaticClusterUpdateWorkspaceSetting#unavailable_for_disabled_entitlement}
-  */
-  readonly unavailableForDisabledEntitlement?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/automatic_cluster_update_workspace_setting#unavailable_for_non_enterprise_tier AutomaticClusterUpdateWorkspaceSetting#unavailable_for_non_enterprise_tier}
-  */
-  readonly unavailableForNonEnterpriseTier?: boolean | cdktf.IResolvable;
 }
 
-export function automaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetailsToTerraform(struct?: AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetailsOutputReference | AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetails): any {
+export function automaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetailsToTerraform(struct?: AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetails): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    forced_for_compliance_mode: cdktf.booleanToTerraform(struct!.forcedForComplianceMode),
-    unavailable_for_disabled_entitlement: cdktf.booleanToTerraform(struct!.unavailableForDisabledEntitlement),
-    unavailable_for_non_enterprise_tier: cdktf.booleanToTerraform(struct!.unavailableForNonEnterpriseTier),
   }
 }
 
 
-export function automaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetailsToHclTerraform(struct?: AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetailsOutputReference | AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetails): any {
+export function automaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetailsToHclTerraform(struct?: AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetails): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    forced_for_compliance_mode: {
-      value: cdktf.booleanToHclTerraform(struct!.forcedForComplianceMode),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    unavailable_for_disabled_entitlement: {
-      value: cdktf.booleanToHclTerraform(struct!.unavailableForDisabledEntitlement),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    unavailable_for_non_enterprise_tier: {
-      value: cdktf.booleanToHclTerraform(struct!.unavailableForNonEnterpriseTier),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
   };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+  return attrs;
 }
 
 export class AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetailsOutputReference extends cdktf.ComplexObject {
@@ -98,101 +58,71 @@ export class AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspa
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
   public get internalValue(): AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetails | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._forcedForComplianceMode !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.forcedForComplianceMode = this._forcedForComplianceMode;
-    }
-    if (this._unavailableForDisabledEntitlement !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.unavailableForDisabledEntitlement = this._unavailableForDisabledEntitlement;
-    }
-    if (this._unavailableForNonEnterpriseTier !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.unavailableForNonEnterpriseTier = this._unavailableForNonEnterpriseTier;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetails | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._forcedForComplianceMode = undefined;
-      this._unavailableForDisabledEntitlement = undefined;
-      this._unavailableForNonEnterpriseTier = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._forcedForComplianceMode = value.forcedForComplianceMode;
-      this._unavailableForDisabledEntitlement = value.unavailableForDisabledEntitlement;
-      this._unavailableForNonEnterpriseTier = value.unavailableForNonEnterpriseTier;
     }
   }
 
-  // forced_for_compliance_mode - computed: false, optional: true, required: false
-  private _forcedForComplianceMode?: boolean | cdktf.IResolvable; 
+  // forced_for_compliance_mode - computed: true, optional: false, required: false
   public get forcedForComplianceMode() {
     return this.getBooleanAttribute('forced_for_compliance_mode');
   }
-  public set forcedForComplianceMode(value: boolean | cdktf.IResolvable) {
-    this._forcedForComplianceMode = value;
-  }
-  public resetForcedForComplianceMode() {
-    this._forcedForComplianceMode = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get forcedForComplianceModeInput() {
-    return this._forcedForComplianceMode;
-  }
 
-  // unavailable_for_disabled_entitlement - computed: false, optional: true, required: false
-  private _unavailableForDisabledEntitlement?: boolean | cdktf.IResolvable; 
+  // unavailable_for_disabled_entitlement - computed: true, optional: false, required: false
   public get unavailableForDisabledEntitlement() {
     return this.getBooleanAttribute('unavailable_for_disabled_entitlement');
   }
-  public set unavailableForDisabledEntitlement(value: boolean | cdktf.IResolvable) {
-    this._unavailableForDisabledEntitlement = value;
-  }
-  public resetUnavailableForDisabledEntitlement() {
-    this._unavailableForDisabledEntitlement = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get unavailableForDisabledEntitlementInput() {
-    return this._unavailableForDisabledEntitlement;
-  }
 
-  // unavailable_for_non_enterprise_tier - computed: false, optional: true, required: false
-  private _unavailableForNonEnterpriseTier?: boolean | cdktf.IResolvable; 
+  // unavailable_for_non_enterprise_tier - computed: true, optional: false, required: false
   public get unavailableForNonEnterpriseTier() {
     return this.getBooleanAttribute('unavailable_for_non_enterprise_tier');
   }
-  public set unavailableForNonEnterpriseTier(value: boolean | cdktf.IResolvable) {
-    this._unavailableForNonEnterpriseTier = value;
+}
+
+export class AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetailsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
   }
-  public resetUnavailableForNonEnterpriseTier() {
-    this._unavailableForNonEnterpriseTier = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get unavailableForNonEnterpriseTierInput() {
-    return this._unavailableForNonEnterpriseTier;
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetailsOutputReference {
+    return new AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetailsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/automatic_cluster_update_workspace_setting#hours AutomaticClusterUpdateWorkspaceSetting#hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/automatic_cluster_update_workspace_setting#hours AutomaticClusterUpdateWorkspaceSetting#hours}
   */
-  readonly hours?: number;
+  readonly hours: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/automatic_cluster_update_workspace_setting#minutes AutomaticClusterUpdateWorkspaceSetting#minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/automatic_cluster_update_workspace_setting#minutes AutomaticClusterUpdateWorkspaceSetting#minutes}
   */
-  readonly minutes?: number;
+  readonly minutes: number;
 }
 
 export function automaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeToTerraform(struct?: AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeOutputReference | AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime): any {
@@ -269,7 +199,7 @@ export class AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspa
     }
   }
 
-  // hours - computed: false, optional: true, required: false
+  // hours - computed: false, optional: false, required: true
   private _hours?: number; 
   public get hours() {
     return this.getNumberAttribute('hours');
@@ -277,24 +207,18 @@ export class AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspa
   public set hours(value: number) {
     this._hours = value;
   }
-  public resetHours() {
-    this._hours = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get hoursInput() {
     return this._hours;
   }
 
-  // minutes - computed: false, optional: true, required: false
+  // minutes - computed: false, optional: false, required: true
   private _minutes?: number; 
   public get minutes() {
     return this.getNumberAttribute('minutes');
   }
   public set minutes(value: number) {
     this._minutes = value;
-  }
-  public resetMinutes() {
-    this._minutes = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get minutesInput() {
@@ -303,17 +227,17 @@ export class AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspa
 }
 export interface AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/automatic_cluster_update_workspace_setting#day_of_week AutomaticClusterUpdateWorkspaceSetting#day_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/automatic_cluster_update_workspace_setting#day_of_week AutomaticClusterUpdateWorkspaceSetting#day_of_week}
   */
-  readonly dayOfWeek?: string;
+  readonly dayOfWeek: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/automatic_cluster_update_workspace_setting#frequency AutomaticClusterUpdateWorkspaceSetting#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/automatic_cluster_update_workspace_setting#frequency AutomaticClusterUpdateWorkspaceSetting#frequency}
   */
-  readonly frequency?: string;
+  readonly frequency: string;
   /**
   * window_start_time block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/automatic_cluster_update_workspace_setting#window_start_time AutomaticClusterUpdateWorkspaceSetting#window_start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/automatic_cluster_update_workspace_setting#window_start_time AutomaticClusterUpdateWorkspaceSetting#window_start_time}
   */
   readonly windowStartTime?: AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime;
 }
@@ -405,7 +329,7 @@ export class AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspa
     }
   }
 
-  // day_of_week - computed: false, optional: true, required: false
+  // day_of_week - computed: false, optional: false, required: true
   private _dayOfWeek?: string; 
   public get dayOfWeek() {
     return this.getStringAttribute('day_of_week');
@@ -413,24 +337,18 @@ export class AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspa
   public set dayOfWeek(value: string) {
     this._dayOfWeek = value;
   }
-  public resetDayOfWeek() {
-    this._dayOfWeek = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get dayOfWeekInput() {
     return this._dayOfWeek;
   }
 
-  // frequency - computed: false, optional: true, required: false
+  // frequency - computed: false, optional: false, required: true
   private _frequency?: string; 
   public get frequency() {
     return this.getStringAttribute('frequency');
   }
   public set frequency(value: string) {
     this._frequency = value;
-  }
-  public resetFrequency() {
-    this._frequency = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get frequencyInput() {
@@ -457,7 +375,7 @@ export interface AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWor
   /**
   * week_day_based_schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/automatic_cluster_update_workspace_setting#week_day_based_schedule AutomaticClusterUpdateWorkspaceSetting#week_day_based_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/automatic_cluster_update_workspace_setting#week_day_based_schedule AutomaticClusterUpdateWorkspaceSetting#week_day_based_schedule}
   */
   readonly weekDayBasedSchedule?: AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule;
 }
@@ -541,27 +459,21 @@ export class AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspa
 }
 export interface AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspace {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/automatic_cluster_update_workspace_setting#can_toggle AutomaticClusterUpdateWorkspaceSetting#can_toggle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/automatic_cluster_update_workspace_setting#can_toggle AutomaticClusterUpdateWorkspaceSetting#can_toggle}
   */
   readonly canToggle?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/automatic_cluster_update_workspace_setting#enabled AutomaticClusterUpdateWorkspaceSetting#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/automatic_cluster_update_workspace_setting#enabled AutomaticClusterUpdateWorkspaceSetting#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/automatic_cluster_update_workspace_setting#restart_even_if_no_updates_available AutomaticClusterUpdateWorkspaceSetting#restart_even_if_no_updates_available}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/automatic_cluster_update_workspace_setting#restart_even_if_no_updates_available AutomaticClusterUpdateWorkspaceSetting#restart_even_if_no_updates_available}
   */
   readonly restartEvenIfNoUpdatesAvailable?: boolean | cdktf.IResolvable;
   /**
-  * enablement_details block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/automatic_cluster_update_workspace_setting#enablement_details AutomaticClusterUpdateWorkspaceSetting#enablement_details}
-  */
-  readonly enablementDetails?: AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetails;
-  /**
   * maintenance_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/automatic_cluster_update_workspace_setting#maintenance_window AutomaticClusterUpdateWorkspaceSetting#maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/automatic_cluster_update_workspace_setting#maintenance_window AutomaticClusterUpdateWorkspaceSetting#maintenance_window}
   */
   readonly maintenanceWindow?: AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceMaintenanceWindow;
 }
@@ -575,7 +487,6 @@ export function automaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWork
     can_toggle: cdktf.booleanToTerraform(struct!.canToggle),
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     restart_even_if_no_updates_available: cdktf.booleanToTerraform(struct!.restartEvenIfNoUpdatesAvailable),
-    enablement_details: automaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetailsToTerraform(struct!.enablementDetails),
     maintenance_window: automaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceMaintenanceWindowToTerraform(struct!.maintenanceWindow),
   }
 }
@@ -604,12 +515,6 @@ export function automaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWork
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
-    },
-    enablement_details: {
-      value: automaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetailsToHclTerraform(struct!.enablementDetails),
-      isBlock: true,
-      type: "list",
-      storageClassType: "AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetailsList",
     },
     maintenance_window: {
       value: automaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceMaintenanceWindowToHclTerraform(struct!.maintenanceWindow),
@@ -649,10 +554,6 @@ export class AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspa
       hasAnyValues = true;
       internalValueResult.restartEvenIfNoUpdatesAvailable = this._restartEvenIfNoUpdatesAvailable;
     }
-    if (this._enablementDetails?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.enablementDetails = this._enablementDetails?.internalValue;
-    }
     if (this._maintenanceWindow?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.maintenanceWindow = this._maintenanceWindow?.internalValue;
@@ -666,7 +567,6 @@ export class AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspa
       this._canToggle = undefined;
       this._enabled = undefined;
       this._restartEvenIfNoUpdatesAvailable = undefined;
-      this._enablementDetails.internalValue = undefined;
       this._maintenanceWindow.internalValue = undefined;
     }
     else {
@@ -674,7 +574,6 @@ export class AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspa
       this._canToggle = value.canToggle;
       this._enabled = value.enabled;
       this._restartEvenIfNoUpdatesAvailable = value.restartEvenIfNoUpdatesAvailable;
-      this._enablementDetails.internalValue = value.enablementDetails;
       this._maintenanceWindow.internalValue = value.maintenanceWindow;
     }
   }
@@ -695,7 +594,7 @@ export class AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspa
     return this._canToggle;
   }
 
-  // enabled - computed: false, optional: true, required: false
+  // enabled - computed: false, optional: false, required: true
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
@@ -703,12 +602,15 @@ export class AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspa
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
   }
-  public resetEnabled() {
-    this._enabled = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
     return this._enabled;
+  }
+
+  // enablement_details - computed: true, optional: false, required: false
+  private _enablementDetails = new AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetailsList(this, "enablement_details", false);
+  public get enablementDetails() {
+    return this._enablementDetails;
   }
 
   // restart_even_if_no_updates_available - computed: false, optional: true, required: false
@@ -725,22 +627,6 @@ export class AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspa
   // Temporarily expose input value. Use with caution.
   public get restartEvenIfNoUpdatesAvailableInput() {
     return this._restartEvenIfNoUpdatesAvailable;
-  }
-
-  // enablement_details - computed: false, optional: true, required: false
-  private _enablementDetails = new AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetailsOutputReference(this, "enablement_details");
-  public get enablementDetails() {
-    return this._enablementDetails;
-  }
-  public putEnablementDetails(value: AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspaceEnablementDetails) {
-    this._enablementDetails.internalValue = value;
-  }
-  public resetEnablementDetails() {
-    this._enablementDetails.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enablementDetailsInput() {
-    return this._enablementDetails.internalValue;
   }
 
   // maintenance_window - computed: false, optional: true, required: false
@@ -761,7 +647,7 @@ export class AutomaticClusterUpdateWorkspaceSettingAutomaticClusterUpdateWorkspa
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/automatic_cluster_update_workspace_setting databricks_automatic_cluster_update_workspace_setting}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/automatic_cluster_update_workspace_setting databricks_automatic_cluster_update_workspace_setting}
 */
 export class AutomaticClusterUpdateWorkspaceSetting extends cdktf.TerraformResource {
 
@@ -777,7 +663,7 @@ export class AutomaticClusterUpdateWorkspaceSetting extends cdktf.TerraformResou
   * Generates CDKTF code for importing a AutomaticClusterUpdateWorkspaceSetting resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AutomaticClusterUpdateWorkspaceSetting to import
-  * @param importFromId The id of the existing AutomaticClusterUpdateWorkspaceSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/automatic_cluster_update_workspace_setting#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AutomaticClusterUpdateWorkspaceSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/automatic_cluster_update_workspace_setting#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AutomaticClusterUpdateWorkspaceSetting to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -789,7 +675,7 @@ export class AutomaticClusterUpdateWorkspaceSetting extends cdktf.TerraformResou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.51.0/docs/resources/automatic_cluster_update_workspace_setting databricks_automatic_cluster_update_workspace_setting} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/automatic_cluster_update_workspace_setting databricks_automatic_cluster_update_workspace_setting} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -800,7 +686,7 @@ export class AutomaticClusterUpdateWorkspaceSetting extends cdktf.TerraformResou
       terraformResourceType: 'databricks_automatic_cluster_update_workspace_setting',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.51.0',
+        providerVersion: '1.52.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
