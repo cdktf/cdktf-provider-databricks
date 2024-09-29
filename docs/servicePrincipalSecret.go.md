@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/serviceprincipalsecret"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/serviceprincipalsecret"
 
 serviceprincipalsecret.NewServicePrincipalSecret(scope Construct, id *string, config ServicePrincipalSecretConfig) ServicePrincipalSecret
 ```
@@ -399,7 +399,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/serviceprincipalsecret"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/serviceprincipalsecret"
 
 serviceprincipalsecret.ServicePrincipalSecret_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/serviceprincipalsecret"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/serviceprincipalsecret"
 
 serviceprincipalsecret.ServicePrincipalSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ serviceprincipalsecret.ServicePrincipalSecret_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/serviceprincipalsecret"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/serviceprincipalsecret"
 
 serviceprincipalsecret.ServicePrincipalSecret_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ serviceprincipalsecret.ServicePrincipalSecret_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/serviceprincipalsecret"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/serviceprincipalsecret"
 
 serviceprincipalsecret.ServicePrincipalSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -776,7 +776,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/serviceprincipalsecret"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/serviceprincipalsecret"
 
 &serviceprincipalsecret.ServicePrincipalSecretConfig {
 	Connection: interface{},
