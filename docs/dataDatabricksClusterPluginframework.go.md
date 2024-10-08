@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframework(scope Construct, id *string, config DataDatabricksClusterPluginframeworkConfig) DataDatabricksClusterPluginframework
 ```
@@ -310,7 +310,7 @@ func ResetClusterName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.DataDatabricksClusterPluginframework_IsConstruct(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.DataDatabricksClusterPluginframework_IsTerraformElement(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ datadatabricksclusterpluginframework.DataDatabricksClusterPluginframework_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.DataDatabricksClusterPluginframework_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ datadatabricksclusterpluginframework.DataDatabricksClusterPluginframework_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.DataDatabricksClusterPluginframework_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -643,17 +643,17 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfo {
-	Autoscale: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscale,
+	Autoscale: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscale,
 	AutoterminationMinutes: *f64,
-	AwsAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes,
-	AzureAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes,
+	AwsAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes,
+	AzureAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes,
 	ClusterCores: *f64,
 	ClusterId: *string,
-	ClusterLogConf: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf,
-	ClusterLogStatus: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus,
+	ClusterLogConf: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf,
+	ClusterLogStatus: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus,
 	ClusterMemoryMb: *f64,
 	ClusterName: *string,
 	ClusterSource: *string,
@@ -661,14 +661,14 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksc
 	CustomTags: *map[string]*string,
 	DataSecurityMode: *string,
 	DefaultTags: *map[string]*string,
-	DockerImage: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImage,
-	Driver: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriver,
+	DockerImage: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImage,
+	Driver: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriver,
 	DriverInstancePoolId: *string,
 	DriverNodeTypeId: *string,
 	EnableElasticDisk: interface{},
 	EnableLocalDiskEncryption: interface{},
 	Executors: interface{},
-	GcpAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes,
+	GcpAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes,
 	InitScripts: interface{},
 	InstancePoolId: *string,
 	JdbcPort: *f64,
@@ -683,14 +683,14 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksc
 	SparkContextId: *f64,
 	SparkEnvVars: *map[string]*string,
 	SparkVersion: *string,
-	Spec: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec,
+	Spec: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec,
 	SshPublicKeys: *[]*string,
 	StartTime: *f64,
 	State: *string,
 	StateMessage: *string,
 	TerminatedTime: *f64,
-	TerminationReason: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReason,
-	WorkloadType: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadType,
+	TerminationReason: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReason,
+	WorkloadType: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadType,
 }
 ```
 
@@ -1291,7 +1291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscale.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscale {
 	MaxWorkers: *f64,
@@ -1337,7 +1337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes {
 	Availability: *string,
@@ -1495,12 +1495,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes {
 	Availability: *string,
 	FirstOnDemand: *f64,
-	LogAnalyticsInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo,
+	LogAnalyticsInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo,
 	SpotBidMaxPrice: *f64,
 }
 ```
@@ -1569,7 +1569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo {
 	LogAnalyticsPrimaryKey: *string,
@@ -1615,11 +1615,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf {
-	Dbfs: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs,
-	S3: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3,
+	Dbfs: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs,
+	S3: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3,
 }
 ```
 
@@ -1661,7 +1661,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs {
 	Destination: *string,
@@ -1693,7 +1693,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3 {
 	Destination: *string,
@@ -1809,7 +1809,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus {
 	LastAttempted: *f64,
@@ -1855,10 +1855,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImage {
-	BasicAuth: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth,
+	BasicAuth: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth,
 	Url: *string,
 }
 ```
@@ -1901,7 +1901,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth {
 	Password: *string,
@@ -1947,12 +1947,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriver.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriver {
 	HostPrivateIp: *string,
 	InstanceId: *string,
-	NodeAwsAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes,
+	NodeAwsAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes,
 	NodeId: *string,
 	PrivateIp: *string,
 	PublicDns: *string,
@@ -2063,7 +2063,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes {
 	IsSpot: interface{},
@@ -2095,12 +2095,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutors {
 	HostPrivateIp: *string,
 	InstanceId: *string,
-	NodeAwsAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes,
+	NodeAwsAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes,
 	NodeId: *string,
 	PrivateIp: *string,
 	PublicDns: *string,
@@ -2211,7 +2211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes {
 	IsSpot: interface{},
@@ -2243,7 +2243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes {
 	Availability: *string,
@@ -2345,16 +2345,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts {
-	Abfss: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss,
-	Dbfs: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs,
-	File: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile,
-	Gcs: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs,
-	S3: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3,
-	Volumes: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes,
-	Workspace: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace,
+	Abfss: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss,
+	Dbfs: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs,
+	File: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile,
+	Gcs: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs,
+	S3: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3,
+	Volumes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes,
+	Workspace: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace,
 }
 ```
 
@@ -2461,7 +2461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss {
 	Destination: *string,
@@ -2493,7 +2493,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs {
 	Destination: *string,
@@ -2525,7 +2525,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile {
 	Destination: *string,
@@ -2557,7 +2557,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs {
 	Destination: *string,
@@ -2589,7 +2589,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3 {
 	Destination: *string,
@@ -2705,7 +2705,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes {
 	Destination: *string,
@@ -2737,7 +2737,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace {
 	Destination: *string,
@@ -2769,24 +2769,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec {
 	ApplyPolicyDefaultValues: interface{},
-	Autoscale: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale,
+	Autoscale: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale,
 	AutoterminationMinutes: *f64,
-	AwsAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes,
-	AzureAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes,
-	ClusterLogConf: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf,
+	AwsAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes,
+	AzureAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes,
+	ClusterLogConf: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf,
 	ClusterName: *string,
 	CustomTags: *map[string]*string,
 	DataSecurityMode: *string,
-	DockerImage: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage,
+	DockerImage: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage,
 	DriverInstancePoolId: *string,
 	DriverNodeTypeId: *string,
 	EnableElasticDisk: interface{},
 	EnableLocalDiskEncryption: interface{},
-	GcpAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes,
+	GcpAttributes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes,
 	InitScripts: interface{},
 	InstancePoolId: *string,
 	NodeTypeId: *string,
@@ -2798,7 +2798,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksc
 	SparkEnvVars: *map[string]*string,
 	SparkVersion: *string,
 	SshPublicKeys: *[]*string,
-	WorkloadType: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType,
+	WorkloadType: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType,
 }
 ```
 
@@ -3165,7 +3165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale {
 	MaxWorkers: *f64,
@@ -3211,7 +3211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes {
 	Availability: *string,
@@ -3369,12 +3369,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes {
 	Availability: *string,
 	FirstOnDemand: *f64,
-	LogAnalyticsInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo,
+	LogAnalyticsInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo,
 	SpotBidMaxPrice: *f64,
 }
 ```
@@ -3443,7 +3443,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo {
 	LogAnalyticsPrimaryKey: *string,
@@ -3489,11 +3489,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf {
-	Dbfs: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs,
-	S3: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3,
+	Dbfs: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs,
+	S3: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3,
 }
 ```
 
@@ -3535,7 +3535,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs {
 	Destination: *string,
@@ -3567,7 +3567,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3 {
 	Destination: *string,
@@ -3683,10 +3683,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage {
-	BasicAuth: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth,
+	BasicAuth: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth,
 	Url: *string,
 }
 ```
@@ -3729,7 +3729,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth {
 	Password: *string,
@@ -3775,7 +3775,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes {
 	Availability: *string,
@@ -3877,16 +3877,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts {
-	Abfss: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss,
-	Dbfs: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs,
-	File: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile,
-	Gcs: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs,
-	S3: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3,
-	Volumes: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes,
-	Workspace: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace,
+	Abfss: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss,
+	Dbfs: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs,
+	File: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile,
+	Gcs: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs,
+	S3: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3,
+	Volumes: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes,
+	Workspace: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace,
 }
 ```
 
@@ -3993,7 +3993,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss {
 	Destination: *string,
@@ -4025,7 +4025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs {
 	Destination: *string,
@@ -4057,7 +4057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile {
 	Destination: *string,
@@ -4089,7 +4089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs {
 	Destination: *string,
@@ -4121,7 +4121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3 {
 	Destination: *string,
@@ -4237,7 +4237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes {
 	Destination: *string,
@@ -4269,7 +4269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace {
 	Destination: *string,
@@ -4301,10 +4301,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType {
-	Clients: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients,
+	Clients: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients,
 }
 ```
 
@@ -4333,7 +4333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients {
 	Jobs: interface{},
@@ -4379,7 +4379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReason.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReason {
 	Code: *string,
@@ -4439,10 +4439,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadType {
-	Clients: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients,
+	Clients: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients,
 }
 ```
 
@@ -4471,7 +4471,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients {
 	Jobs: interface{},
@@ -4517,7 +4517,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 &datadatabricksclusterpluginframework.DataDatabricksClusterPluginframeworkConfig {
 	Connection: interface{},
@@ -4528,7 +4528,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksc
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	ClusterId: *string,
-	ClusterInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo,
+	ClusterInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo,
 	ClusterName: *string,
 }
 ```
@@ -4663,7 +4663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscaleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoAutoscaleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoAutoscaleOutputReference
 ```
@@ -4970,7 +4970,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoAwsAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesOutputReference
 ```
@@ -5509,7 +5509,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfoOutputReference
 ```
@@ -5816,7 +5816,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReference
 ```
@@ -6194,7 +6194,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfsOutputReference
 ```
@@ -6465,7 +6465,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference
 ```
@@ -6798,7 +6798,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3OutputReference
 ```
@@ -7243,7 +7243,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusOutputReference
 ```
@@ -7550,7 +7550,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuthOutputReference
 ```
@@ -7857,7 +7857,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoDockerImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoDockerImageOutputReference
 ```
@@ -8177,7 +8177,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesOutputReference
 ```
@@ -8455,7 +8455,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference
 ```
@@ -8920,7 +8920,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoExecutorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksClusterPluginframeworkClusterInfoExecutorsList
 ```
@@ -9080,7 +9080,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesOutputReference
 ```
@@ -9358,7 +9358,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputReference
 ```
@@ -9841,7 +9841,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputReference
 ```
@@ -10264,7 +10264,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfssOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfssOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfssOutputReference
 ```
@@ -10535,7 +10535,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfsOutputReference
 ```
@@ -10806,7 +10806,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoInitScriptsFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFileOutputReference
 ```
@@ -11077,7 +11077,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcsOutputReference
 ```
@@ -11348,7 +11348,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoInitScriptsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksClusterPluginframeworkClusterInfoInitScriptsList
 ```
@@ -11508,7 +11508,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference
 ```
@@ -12069,7 +12069,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputReference
 ```
@@ -12514,7 +12514,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumesOutputReference
 ```
@@ -12785,7 +12785,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspaceOutputReference
 ```
@@ -13056,7 +13056,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoOutputReference
 ```
@@ -14779,7 +14779,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleOutputReference
 ```
@@ -15086,7 +15086,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesOutputReference
 ```
@@ -15625,7 +15625,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfoOutputReference
 ```
@@ -15932,7 +15932,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference
 ```
@@ -16310,7 +16310,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfsOutputReference
 ```
@@ -16581,7 +16581,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference
 ```
@@ -16914,7 +16914,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3OutputReference
 ```
@@ -17359,7 +17359,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthOutputReference
 ```
@@ -17666,7 +17666,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference
 ```
@@ -17986,7 +17986,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesOutputReference
 ```
@@ -18409,7 +18409,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfssOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfssOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfssOutputReference
 ```
@@ -18680,7 +18680,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfsOutputReference
 ```
@@ -18951,7 +18951,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFileOutputReference
 ```
@@ -19222,7 +19222,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcsOutputReference
 ```
@@ -19493,7 +19493,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsList
 ```
@@ -19653,7 +19653,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference
 ```
@@ -20214,7 +20214,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference
 ```
@@ -20659,7 +20659,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumesOutputReference
 ```
@@ -20930,7 +20930,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspaceOutputReference
 ```
@@ -21201,7 +21201,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference
 ```
@@ -22337,7 +22337,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference
 ```
@@ -22644,7 +22644,7 @@ func InternalValue() DataDatabricksClusterPluginframeworkClusterInfoSpecWorkload
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeOutputReference
 ```
@@ -22928,7 +22928,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReasonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoTerminationReasonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoTerminationReasonOutputReference
 ```
@@ -23264,7 +23264,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsOutputReference
 ```
@@ -23571,7 +23571,7 @@ func InternalValue() DataDatabricksClusterPluginframeworkClusterInfoWorkloadType
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusterpluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusterpluginframework"
 
 datadatabricksclusterpluginframework.NewDataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference
 ```
