@@ -4,7 +4,7 @@
 
 ### OnlineTable <a name="OnlineTable" id="@cdktf/provider-databricks.onlineTable.OnlineTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table databricks_online_table}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table databricks_online_table}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.onlineTable.OnlineTable.Initializer"></a>
 
@@ -26,7 +26,6 @@ OnlineTable.Builder.create(Construct scope, java.lang.String id)
     .name(java.lang.String)
 //  .id(java.lang.String)
 //  .spec(OnlineTableSpec)
-//  .tableServingUrl(java.lang.String)
 //  .timeouts(OnlineTableTimeouts)
     .build();
 ```
@@ -42,10 +41,9 @@ OnlineTable.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTable.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTable.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTable.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTable.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table#name OnlineTable#name}. |
-| <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTable.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table#id OnlineTable#id}. |
+| <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTable.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table#name OnlineTable#name}. |
+| <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTable.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table#id OnlineTable#id}. |
 | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTable.Initializer.parameter.spec">spec</a></code> | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableSpec">OnlineTableSpec</a></code> | spec block. |
-| <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTable.Initializer.parameter.tableServingUrl">tableServingUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table#table_serving_url OnlineTable#table_serving_url}. |
 | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTable.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableTimeouts">OnlineTableTimeouts</a></code> | timeouts block. |
 
 ---
@@ -114,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table#name OnlineTable#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table#name OnlineTable#name}.
 
 ---
 
@@ -122,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table#id OnlineTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table#id OnlineTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -135,15 +133,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table#spec OnlineTable#spec}
-
----
-
-##### `tableServingUrl`<sup>Optional</sup> <a name="tableServingUrl" id="@cdktf/provider-databricks.onlineTable.OnlineTable.Initializer.parameter.tableServingUrl"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table#table_serving_url OnlineTable#table_serving_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table#spec OnlineTable#spec}
 
 ---
 
@@ -153,7 +143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table#timeouts OnlineTable#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table#timeouts OnlineTable#timeouts}
 
 ---
 
@@ -188,7 +178,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTable.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTable.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTable.resetSpec">resetSpec</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTable.resetTableServingUrl">resetTableServingUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTable.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
@@ -519,12 +508,6 @@ public void resetId()
 public void resetSpec()
 ```
 
-##### `resetTableServingUrl` <a name="resetTableServingUrl" id="@cdktf/provider-databricks.onlineTable.OnlineTable.resetTableServingUrl"></a>
-
-```java
-public void resetTableServingUrl()
-```
-
 ##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-databricks.onlineTable.OnlineTable.resetTimeouts"></a>
 
 ```java
@@ -634,7 +617,7 @@ The construct id used in the generated config for the OnlineTable to import.
 
 The id of the existing OnlineTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -666,15 +649,14 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTable.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTable.property.spec">spec</a></code> | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableSpecOutputReference">OnlineTableSpecOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTable.property.status">status</a></code> | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableStatusList">OnlineTableStatusList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTable.property.tableServingUrl">tableServingUrl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTable.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableTimeoutsOutputReference">OnlineTableTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTable.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTable.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTable.property.specInput">specInput</a></code> | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableSpec">OnlineTableSpec</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTable.property.tableServingUrlInput">tableServingUrlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTable.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.onlineTable.OnlineTableTimeouts">OnlineTableTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTable.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTable.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTable.property.tableServingUrl">tableServingUrl</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
 
@@ -840,6 +822,16 @@ public OnlineTableStatusList getStatus();
 
 ---
 
+##### `tableServingUrl`<sup>Required</sup> <a name="tableServingUrl" id="@cdktf/provider-databricks.onlineTable.OnlineTable.property.tableServingUrl"></a>
+
+```java
+public java.lang.String getTableServingUrl();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-databricks.onlineTable.OnlineTable.property.timeouts"></a>
 
 ```java
@@ -880,16 +872,6 @@ public OnlineTableSpec getSpecInput();
 
 ---
 
-##### `tableServingUrlInput`<sup>Optional</sup> <a name="tableServingUrlInput" id="@cdktf/provider-databricks.onlineTable.OnlineTable.property.tableServingUrlInput"></a>
-
-```java
-public java.lang.String getTableServingUrlInput();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-databricks.onlineTable.OnlineTable.property.timeoutsInput"></a>
 
 ```java
@@ -914,16 +896,6 @@ public java.lang.String getId();
 
 ```java
 public java.lang.String getName();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `tableServingUrl`<sup>Required</sup> <a name="tableServingUrl" id="@cdktf/provider-databricks.onlineTable.OnlineTable.property.tableServingUrl"></a>
-
-```java
-public java.lang.String getTableServingUrl();
 ```
 
 - *Type:* java.lang.String
@@ -972,7 +944,6 @@ OnlineTableConfig.builder()
     .name(java.lang.String)
 //  .id(java.lang.String)
 //  .spec(OnlineTableSpec)
-//  .tableServingUrl(java.lang.String)
 //  .timeouts(OnlineTableTimeouts)
     .build();
 ```
@@ -988,10 +959,9 @@ OnlineTableConfig.builder()
 | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table#name OnlineTable#name}. |
-| <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table#id OnlineTable#id}. |
+| <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table#name OnlineTable#name}. |
+| <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table#id OnlineTable#id}. |
 | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableConfig.property.spec">spec</a></code> | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableSpec">OnlineTableSpec</a></code> | spec block. |
-| <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableConfig.property.tableServingUrl">tableServingUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table#table_serving_url OnlineTable#table_serving_url}. |
 | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableTimeouts">OnlineTableTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1074,7 +1044,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table#name OnlineTable#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table#name OnlineTable#name}.
 
 ---
 
@@ -1086,7 +1056,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table#id OnlineTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table#id OnlineTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1103,19 +1073,7 @@ public OnlineTableSpec getSpec();
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table#spec OnlineTable#spec}
-
----
-
-##### `tableServingUrl`<sup>Optional</sup> <a name="tableServingUrl" id="@cdktf/provider-databricks.onlineTable.OnlineTableConfig.property.tableServingUrl"></a>
-
-```java
-public java.lang.String getTableServingUrl();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table#table_serving_url OnlineTable#table_serving_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table#spec OnlineTable#spec}
 
 ---
 
@@ -1129,7 +1087,7 @@ public OnlineTableTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table#timeouts OnlineTable#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table#timeouts OnlineTable#timeouts}
 
 ---
 
@@ -1155,12 +1113,12 @@ OnlineTableSpec.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableSpec.property.performFullCopy">performFullCopy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table#perform_full_copy OnlineTable#perform_full_copy}. |
-| <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableSpec.property.primaryKeyColumns">primaryKeyColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table#primary_key_columns OnlineTable#primary_key_columns}. |
+| <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableSpec.property.performFullCopy">performFullCopy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table#perform_full_copy OnlineTable#perform_full_copy}. |
+| <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableSpec.property.primaryKeyColumns">primaryKeyColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table#primary_key_columns OnlineTable#primary_key_columns}. |
 | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableSpec.property.runContinuously">runContinuously</a></code> | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableSpecRunContinuously">OnlineTableSpecRunContinuously</a></code> | run_continuously block. |
 | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableSpec.property.runTriggered">runTriggered</a></code> | <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableSpecRunTriggered">OnlineTableSpecRunTriggered</a></code> | run_triggered block. |
-| <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableSpec.property.sourceTableFullName">sourceTableFullName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table#source_table_full_name OnlineTable#source_table_full_name}. |
-| <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableSpec.property.timeseriesKey">timeseriesKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table#timeseries_key OnlineTable#timeseries_key}. |
+| <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableSpec.property.sourceTableFullName">sourceTableFullName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table#source_table_full_name OnlineTable#source_table_full_name}. |
+| <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableSpec.property.timeseriesKey">timeseriesKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table#timeseries_key OnlineTable#timeseries_key}. |
 
 ---
 
@@ -1172,7 +1130,7 @@ public java.lang.Object getPerformFullCopy();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table#perform_full_copy OnlineTable#perform_full_copy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table#perform_full_copy OnlineTable#perform_full_copy}.
 
 ---
 
@@ -1184,7 +1142,7 @@ public java.util.List<java.lang.String> getPrimaryKeyColumns();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table#primary_key_columns OnlineTable#primary_key_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table#primary_key_columns OnlineTable#primary_key_columns}.
 
 ---
 
@@ -1198,7 +1156,7 @@ public OnlineTableSpecRunContinuously getRunContinuously();
 
 run_continuously block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table#run_continuously OnlineTable#run_continuously}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table#run_continuously OnlineTable#run_continuously}
 
 ---
 
@@ -1212,7 +1170,7 @@ public OnlineTableSpecRunTriggered getRunTriggered();
 
 run_triggered block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table#run_triggered OnlineTable#run_triggered}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table#run_triggered OnlineTable#run_triggered}
 
 ---
 
@@ -1224,7 +1182,7 @@ public java.lang.String getSourceTableFullName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table#source_table_full_name OnlineTable#source_table_full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table#source_table_full_name OnlineTable#source_table_full_name}.
 
 ---
 
@@ -1236,7 +1194,7 @@ public java.lang.String getTimeseriesKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table#timeseries_key OnlineTable#timeseries_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table#timeseries_key OnlineTable#timeseries_key}.
 
 ---
 
@@ -1376,7 +1334,7 @@ OnlineTableTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table#create OnlineTable#create}. |
+| <code><a href="#@cdktf/provider-databricks.onlineTable.OnlineTableTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table#create OnlineTable#create}. |
 
 ---
 
@@ -1388,7 +1346,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/online_table#create OnlineTable#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/online_table#create OnlineTable#create}.
 
 ---
 

@@ -1,3 +1,3 @@
 # `databricks_group_role`
 
-Refer to the Terraform Registry for docs: [`databricks_group_role`](https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/group_role).
+Refer to the Terraform Registry for docs: [`databricks_group_role`](https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/group_role).

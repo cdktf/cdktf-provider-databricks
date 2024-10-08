@@ -11,6 +11,7 @@ Object.defineProperty(exports, 'awsS3Mount', { get: function () { return require
 Object.defineProperty(exports, 'azureAdlsGen1Mount', { get: function () { return require('./azure-adls-gen1-mount'); } });
 Object.defineProperty(exports, 'azureAdlsGen2Mount', { get: function () { return require('./azure-adls-gen2-mount'); } });
 Object.defineProperty(exports, 'azureBlobMount', { get: function () { return require('./azure-blob-mount'); } });
+Object.defineProperty(exports, 'budget', { get: function () { return require('./budget'); } });
 Object.defineProperty(exports, 'catalog', { get: function () { return require('./catalog'); } });
 Object.defineProperty(exports, 'catalogWorkspaceBinding', { get: function () { return require('./catalog-workspace-binding'); } });
 Object.defineProperty(exports, 'cluster', { get: function () { return require('./cluster'); } });
@@ -132,6 +133,7 @@ Object.defineProperty(exports, 'dataDatabricksMetastore', { get: function () { r
 Object.defineProperty(exports, 'dataDatabricksMetastores', { get: function () { return require('./data-databricks-metastores'); } });
 Object.defineProperty(exports, 'dataDatabricksMlflowExperiment', { get: function () { return require('./data-databricks-mlflow-experiment'); } });
 Object.defineProperty(exports, 'dataDatabricksMlflowModel', { get: function () { return require('./data-databricks-mlflow-model'); } });
+Object.defineProperty(exports, 'dataDatabricksMlflowModels', { get: function () { return require('./data-databricks-mlflow-models'); } });
 Object.defineProperty(exports, 'dataDatabricksMwsCredentials', { get: function () { return require('./data-databricks-mws-credentials'); } });
 Object.defineProperty(exports, 'dataDatabricksMwsWorkspaces', { get: function () { return require('./data-databricks-mws-workspaces'); } });
 Object.defineProperty(exports, 'dataDatabricksNodeType', { get: function () { return require('./data-databricks-node-type'); } });
