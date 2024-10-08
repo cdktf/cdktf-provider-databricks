@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving
+// https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,60 +8,1353 @@ import * as cdktf from 'cdktf';
 
 export interface ModelServingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#id ModelServing#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#id ModelServing#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#name ModelServing#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#name ModelServing#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#route_optimized ModelServing#route_optimized}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#route_optimized ModelServing#route_optimized}
   */
   readonly routeOptimized?: boolean | cdktf.IResolvable;
   /**
+  * ai_gateway block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#ai_gateway ModelServing#ai_gateway}
+  */
+  readonly aiGateway?: ModelServingAiGateway;
+  /**
   * config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#config ModelServing#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#config ModelServing#config}
   */
   readonly config: ModelServingConfigA;
   /**
   * rate_limits block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#rate_limits ModelServing#rate_limits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#rate_limits ModelServing#rate_limits}
   */
   readonly rateLimits?: ModelServingRateLimits[] | cdktf.IResolvable;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#tags ModelServing#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#tags ModelServing#tags}
   */
   readonly tags?: ModelServingTags[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#timeouts ModelServing#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#timeouts ModelServing#timeouts}
   */
   readonly timeouts?: ModelServingTimeouts;
 }
-export interface ModelServingConfigAutoCaptureConfig {
+export interface ModelServingAiGatewayGuardrailsInputPii {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#catalog_name ModelServing#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#behavior ModelServing#behavior}
+  */
+  readonly behavior: string;
+}
+
+export function modelServingAiGatewayGuardrailsInputPiiToTerraform(struct?: ModelServingAiGatewayGuardrailsInputPiiOutputReference | ModelServingAiGatewayGuardrailsInputPii): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    behavior: cdktf.stringToTerraform(struct!.behavior),
+  }
+}
+
+
+export function modelServingAiGatewayGuardrailsInputPiiToHclTerraform(struct?: ModelServingAiGatewayGuardrailsInputPiiOutputReference | ModelServingAiGatewayGuardrailsInputPii): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    behavior: {
+      value: cdktf.stringToHclTerraform(struct!.behavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ModelServingAiGatewayGuardrailsInputPiiOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ModelServingAiGatewayGuardrailsInputPii | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._behavior !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.behavior = this._behavior;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ModelServingAiGatewayGuardrailsInputPii | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._behavior = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._behavior = value.behavior;
+    }
+  }
+
+  // behavior - computed: false, optional: false, required: true
+  private _behavior?: string; 
+  public get behavior() {
+    return this.getStringAttribute('behavior');
+  }
+  public set behavior(value: string) {
+    this._behavior = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get behaviorInput() {
+    return this._behavior;
+  }
+}
+export interface ModelServingAiGatewayGuardrailsInput {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#invalid_keywords ModelServing#invalid_keywords}
+  */
+  readonly invalidKeywords?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#safety ModelServing#safety}
+  */
+  readonly safety?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#valid_topics ModelServing#valid_topics}
+  */
+  readonly validTopics?: string[];
+  /**
+  * pii block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#pii ModelServing#pii}
+  */
+  readonly pii?: ModelServingAiGatewayGuardrailsInputPii;
+}
+
+export function modelServingAiGatewayGuardrailsInputToTerraform(struct?: ModelServingAiGatewayGuardrailsInputOutputReference | ModelServingAiGatewayGuardrailsInput): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    invalid_keywords: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.invalidKeywords),
+    safety: cdktf.booleanToTerraform(struct!.safety),
+    valid_topics: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.validTopics),
+    pii: modelServingAiGatewayGuardrailsInputPiiToTerraform(struct!.pii),
+  }
+}
+
+
+export function modelServingAiGatewayGuardrailsInputToHclTerraform(struct?: ModelServingAiGatewayGuardrailsInputOutputReference | ModelServingAiGatewayGuardrailsInput): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    invalid_keywords: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.invalidKeywords),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    safety: {
+      value: cdktf.booleanToHclTerraform(struct!.safety),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    valid_topics: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.validTopics),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    pii: {
+      value: modelServingAiGatewayGuardrailsInputPiiToHclTerraform(struct!.pii),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ModelServingAiGatewayGuardrailsInputPiiList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ModelServingAiGatewayGuardrailsInputOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ModelServingAiGatewayGuardrailsInput | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._invalidKeywords !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.invalidKeywords = this._invalidKeywords;
+    }
+    if (this._safety !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.safety = this._safety;
+    }
+    if (this._validTopics !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.validTopics = this._validTopics;
+    }
+    if (this._pii?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pii = this._pii?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ModelServingAiGatewayGuardrailsInput | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._invalidKeywords = undefined;
+      this._safety = undefined;
+      this._validTopics = undefined;
+      this._pii.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._invalidKeywords = value.invalidKeywords;
+      this._safety = value.safety;
+      this._validTopics = value.validTopics;
+      this._pii.internalValue = value.pii;
+    }
+  }
+
+  // invalid_keywords - computed: false, optional: true, required: false
+  private _invalidKeywords?: string[]; 
+  public get invalidKeywords() {
+    return this.getListAttribute('invalid_keywords');
+  }
+  public set invalidKeywords(value: string[]) {
+    this._invalidKeywords = value;
+  }
+  public resetInvalidKeywords() {
+    this._invalidKeywords = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get invalidKeywordsInput() {
+    return this._invalidKeywords;
+  }
+
+  // safety - computed: false, optional: true, required: false
+  private _safety?: boolean | cdktf.IResolvable; 
+  public get safety() {
+    return this.getBooleanAttribute('safety');
+  }
+  public set safety(value: boolean | cdktf.IResolvable) {
+    this._safety = value;
+  }
+  public resetSafety() {
+    this._safety = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get safetyInput() {
+    return this._safety;
+  }
+
+  // valid_topics - computed: false, optional: true, required: false
+  private _validTopics?: string[]; 
+  public get validTopics() {
+    return this.getListAttribute('valid_topics');
+  }
+  public set validTopics(value: string[]) {
+    this._validTopics = value;
+  }
+  public resetValidTopics() {
+    this._validTopics = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get validTopicsInput() {
+    return this._validTopics;
+  }
+
+  // pii - computed: false, optional: true, required: false
+  private _pii = new ModelServingAiGatewayGuardrailsInputPiiOutputReference(this, "pii");
+  public get pii() {
+    return this._pii;
+  }
+  public putPii(value: ModelServingAiGatewayGuardrailsInputPii) {
+    this._pii.internalValue = value;
+  }
+  public resetPii() {
+    this._pii.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get piiInput() {
+    return this._pii.internalValue;
+  }
+}
+export interface ModelServingAiGatewayGuardrailsOutputPii {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#behavior ModelServing#behavior}
+  */
+  readonly behavior: string;
+}
+
+export function modelServingAiGatewayGuardrailsOutputPiiToTerraform(struct?: ModelServingAiGatewayGuardrailsOutputPiiOutputReference | ModelServingAiGatewayGuardrailsOutputPii): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    behavior: cdktf.stringToTerraform(struct!.behavior),
+  }
+}
+
+
+export function modelServingAiGatewayGuardrailsOutputPiiToHclTerraform(struct?: ModelServingAiGatewayGuardrailsOutputPiiOutputReference | ModelServingAiGatewayGuardrailsOutputPii): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    behavior: {
+      value: cdktf.stringToHclTerraform(struct!.behavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ModelServingAiGatewayGuardrailsOutputPiiOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ModelServingAiGatewayGuardrailsOutputPii | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._behavior !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.behavior = this._behavior;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ModelServingAiGatewayGuardrailsOutputPii | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._behavior = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._behavior = value.behavior;
+    }
+  }
+
+  // behavior - computed: false, optional: false, required: true
+  private _behavior?: string; 
+  public get behavior() {
+    return this.getStringAttribute('behavior');
+  }
+  public set behavior(value: string) {
+    this._behavior = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get behaviorInput() {
+    return this._behavior;
+  }
+}
+export interface ModelServingAiGatewayGuardrailsOutput {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#invalid_keywords ModelServing#invalid_keywords}
+  */
+  readonly invalidKeywords?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#safety ModelServing#safety}
+  */
+  readonly safety?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#valid_topics ModelServing#valid_topics}
+  */
+  readonly validTopics?: string[];
+  /**
+  * pii block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#pii ModelServing#pii}
+  */
+  readonly pii?: ModelServingAiGatewayGuardrailsOutputPii;
+}
+
+export function modelServingAiGatewayGuardrailsOutputToTerraform(struct?: ModelServingAiGatewayGuardrailsOutputOutputReference | ModelServingAiGatewayGuardrailsOutput): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    invalid_keywords: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.invalidKeywords),
+    safety: cdktf.booleanToTerraform(struct!.safety),
+    valid_topics: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.validTopics),
+    pii: modelServingAiGatewayGuardrailsOutputPiiToTerraform(struct!.pii),
+  }
+}
+
+
+export function modelServingAiGatewayGuardrailsOutputToHclTerraform(struct?: ModelServingAiGatewayGuardrailsOutputOutputReference | ModelServingAiGatewayGuardrailsOutput): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    invalid_keywords: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.invalidKeywords),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    safety: {
+      value: cdktf.booleanToHclTerraform(struct!.safety),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    valid_topics: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.validTopics),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    pii: {
+      value: modelServingAiGatewayGuardrailsOutputPiiToHclTerraform(struct!.pii),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ModelServingAiGatewayGuardrailsOutputPiiList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ModelServingAiGatewayGuardrailsOutputOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ModelServingAiGatewayGuardrailsOutput | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._invalidKeywords !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.invalidKeywords = this._invalidKeywords;
+    }
+    if (this._safety !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.safety = this._safety;
+    }
+    if (this._validTopics !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.validTopics = this._validTopics;
+    }
+    if (this._pii?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pii = this._pii?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ModelServingAiGatewayGuardrailsOutput | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._invalidKeywords = undefined;
+      this._safety = undefined;
+      this._validTopics = undefined;
+      this._pii.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._invalidKeywords = value.invalidKeywords;
+      this._safety = value.safety;
+      this._validTopics = value.validTopics;
+      this._pii.internalValue = value.pii;
+    }
+  }
+
+  // invalid_keywords - computed: false, optional: true, required: false
+  private _invalidKeywords?: string[]; 
+  public get invalidKeywords() {
+    return this.getListAttribute('invalid_keywords');
+  }
+  public set invalidKeywords(value: string[]) {
+    this._invalidKeywords = value;
+  }
+  public resetInvalidKeywords() {
+    this._invalidKeywords = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get invalidKeywordsInput() {
+    return this._invalidKeywords;
+  }
+
+  // safety - computed: false, optional: true, required: false
+  private _safety?: boolean | cdktf.IResolvable; 
+  public get safety() {
+    return this.getBooleanAttribute('safety');
+  }
+  public set safety(value: boolean | cdktf.IResolvable) {
+    this._safety = value;
+  }
+  public resetSafety() {
+    this._safety = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get safetyInput() {
+    return this._safety;
+  }
+
+  // valid_topics - computed: false, optional: true, required: false
+  private _validTopics?: string[]; 
+  public get validTopics() {
+    return this.getListAttribute('valid_topics');
+  }
+  public set validTopics(value: string[]) {
+    this._validTopics = value;
+  }
+  public resetValidTopics() {
+    this._validTopics = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get validTopicsInput() {
+    return this._validTopics;
+  }
+
+  // pii - computed: false, optional: true, required: false
+  private _pii = new ModelServingAiGatewayGuardrailsOutputPiiOutputReference(this, "pii");
+  public get pii() {
+    return this._pii;
+  }
+  public putPii(value: ModelServingAiGatewayGuardrailsOutputPii) {
+    this._pii.internalValue = value;
+  }
+  public resetPii() {
+    this._pii.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get piiInput() {
+    return this._pii.internalValue;
+  }
+}
+export interface ModelServingAiGatewayGuardrails {
+  /**
+  * input block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#input ModelServing#input}
+  */
+  readonly input?: ModelServingAiGatewayGuardrailsInput;
+  /**
+  * output block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#output ModelServing#output}
+  */
+  readonly output?: ModelServingAiGatewayGuardrailsOutput;
+}
+
+export function modelServingAiGatewayGuardrailsToTerraform(struct?: ModelServingAiGatewayGuardrailsOutputReference | ModelServingAiGatewayGuardrails): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    input: modelServingAiGatewayGuardrailsInputToTerraform(struct!.input),
+    output: modelServingAiGatewayGuardrailsOutputToTerraform(struct!.output),
+  }
+}
+
+
+export function modelServingAiGatewayGuardrailsToHclTerraform(struct?: ModelServingAiGatewayGuardrailsOutputReference | ModelServingAiGatewayGuardrails): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    input: {
+      value: modelServingAiGatewayGuardrailsInputToHclTerraform(struct!.input),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ModelServingAiGatewayGuardrailsInputList",
+    },
+    output: {
+      value: modelServingAiGatewayGuardrailsOutputToHclTerraform(struct!.output),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ModelServingAiGatewayGuardrailsOutputList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ModelServingAiGatewayGuardrailsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ModelServingAiGatewayGuardrails | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._input?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.input = this._input?.internalValue;
+    }
+    if (this._output?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.output = this._output?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ModelServingAiGatewayGuardrails | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._input.internalValue = undefined;
+      this._output.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._input.internalValue = value.input;
+      this._output.internalValue = value.output;
+    }
+  }
+
+  // input - computed: false, optional: true, required: false
+  private _input = new ModelServingAiGatewayGuardrailsInputOutputReference(this, "input");
+  public get input() {
+    return this._input;
+  }
+  public putInput(value: ModelServingAiGatewayGuardrailsInput) {
+    this._input.internalValue = value;
+  }
+  public resetInput() {
+    this._input.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputInput() {
+    return this._input.internalValue;
+  }
+
+  // output - computed: false, optional: true, required: false
+  private _output = new ModelServingAiGatewayGuardrailsOutputOutputReference(this, "output");
+  public get output() {
+    return this._output;
+  }
+  public putOutput(value: ModelServingAiGatewayGuardrailsOutput) {
+    this._output.internalValue = value;
+  }
+  public resetOutput() {
+    this._output.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get outputInput() {
+    return this._output.internalValue;
+  }
+}
+export interface ModelServingAiGatewayInferenceTableConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#catalog_name ModelServing#catalog_name}
   */
   readonly catalogName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#enabled ModelServing#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#enabled ModelServing#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#schema_name ModelServing#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#schema_name ModelServing#schema_name}
   */
   readonly schemaName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#table_name_prefix ModelServing#table_name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#table_name_prefix ModelServing#table_name_prefix}
+  */
+  readonly tableNamePrefix?: string;
+}
+
+export function modelServingAiGatewayInferenceTableConfigToTerraform(struct?: ModelServingAiGatewayInferenceTableConfigOutputReference | ModelServingAiGatewayInferenceTableConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    catalog_name: cdktf.stringToTerraform(struct!.catalogName),
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    schema_name: cdktf.stringToTerraform(struct!.schemaName),
+    table_name_prefix: cdktf.stringToTerraform(struct!.tableNamePrefix),
+  }
+}
+
+
+export function modelServingAiGatewayInferenceTableConfigToHclTerraform(struct?: ModelServingAiGatewayInferenceTableConfigOutputReference | ModelServingAiGatewayInferenceTableConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    catalog_name: {
+      value: cdktf.stringToHclTerraform(struct!.catalogName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    schema_name: {
+      value: cdktf.stringToHclTerraform(struct!.schemaName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    table_name_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.tableNamePrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ModelServingAiGatewayInferenceTableConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ModelServingAiGatewayInferenceTableConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._catalogName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.catalogName = this._catalogName;
+    }
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._schemaName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.schemaName = this._schemaName;
+    }
+    if (this._tableNamePrefix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tableNamePrefix = this._tableNamePrefix;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ModelServingAiGatewayInferenceTableConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._catalogName = undefined;
+      this._enabled = undefined;
+      this._schemaName = undefined;
+      this._tableNamePrefix = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._catalogName = value.catalogName;
+      this._enabled = value.enabled;
+      this._schemaName = value.schemaName;
+      this._tableNamePrefix = value.tableNamePrefix;
+    }
+  }
+
+  // catalog_name - computed: false, optional: true, required: false
+  private _catalogName?: string; 
+  public get catalogName() {
+    return this.getStringAttribute('catalog_name');
+  }
+  public set catalogName(value: string) {
+    this._catalogName = value;
+  }
+  public resetCatalogName() {
+    this._catalogName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get catalogNameInput() {
+    return this._catalogName;
+  }
+
+  // enabled - computed: false, optional: true, required: false
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // schema_name - computed: false, optional: true, required: false
+  private _schemaName?: string; 
+  public get schemaName() {
+    return this.getStringAttribute('schema_name');
+  }
+  public set schemaName(value: string) {
+    this._schemaName = value;
+  }
+  public resetSchemaName() {
+    this._schemaName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaNameInput() {
+    return this._schemaName;
+  }
+
+  // table_name_prefix - computed: false, optional: true, required: false
+  private _tableNamePrefix?: string; 
+  public get tableNamePrefix() {
+    return this.getStringAttribute('table_name_prefix');
+  }
+  public set tableNamePrefix(value: string) {
+    this._tableNamePrefix = value;
+  }
+  public resetTableNamePrefix() {
+    this._tableNamePrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tableNamePrefixInput() {
+    return this._tableNamePrefix;
+  }
+}
+export interface ModelServingAiGatewayRateLimits {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#calls ModelServing#calls}
+  */
+  readonly calls: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#key ModelServing#key}
+  */
+  readonly key?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#renewal_period ModelServing#renewal_period}
+  */
+  readonly renewalPeriod: string;
+}
+
+export function modelServingAiGatewayRateLimitsToTerraform(struct?: ModelServingAiGatewayRateLimits | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    calls: cdktf.numberToTerraform(struct!.calls),
+    key: cdktf.stringToTerraform(struct!.key),
+    renewal_period: cdktf.stringToTerraform(struct!.renewalPeriod),
+  }
+}
+
+
+export function modelServingAiGatewayRateLimitsToHclTerraform(struct?: ModelServingAiGatewayRateLimits | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    calls: {
+      value: cdktf.numberToHclTerraform(struct!.calls),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    renewal_period: {
+      value: cdktf.stringToHclTerraform(struct!.renewalPeriod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ModelServingAiGatewayRateLimitsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ModelServingAiGatewayRateLimits | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._calls !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.calls = this._calls;
+    }
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._renewalPeriod !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.renewalPeriod = this._renewalPeriod;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ModelServingAiGatewayRateLimits | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._calls = undefined;
+      this._key = undefined;
+      this._renewalPeriod = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._calls = value.calls;
+      this._key = value.key;
+      this._renewalPeriod = value.renewalPeriod;
+    }
+  }
+
+  // calls - computed: false, optional: false, required: true
+  private _calls?: number; 
+  public get calls() {
+    return this.getNumberAttribute('calls');
+  }
+  public set calls(value: number) {
+    this._calls = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get callsInput() {
+    return this._calls;
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // renewal_period - computed: false, optional: false, required: true
+  private _renewalPeriod?: string; 
+  public get renewalPeriod() {
+    return this.getStringAttribute('renewal_period');
+  }
+  public set renewalPeriod(value: string) {
+    this._renewalPeriod = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get renewalPeriodInput() {
+    return this._renewalPeriod;
+  }
+}
+
+export class ModelServingAiGatewayRateLimitsList extends cdktf.ComplexList {
+  public internalValue? : ModelServingAiGatewayRateLimits[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ModelServingAiGatewayRateLimitsOutputReference {
+    return new ModelServingAiGatewayRateLimitsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ModelServingAiGatewayUsageTrackingConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#enabled ModelServing#enabled}
+  */
+  readonly enabled?: boolean | cdktf.IResolvable;
+}
+
+export function modelServingAiGatewayUsageTrackingConfigToTerraform(struct?: ModelServingAiGatewayUsageTrackingConfigOutputReference | ModelServingAiGatewayUsageTrackingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+  }
+}
+
+
+export function modelServingAiGatewayUsageTrackingConfigToHclTerraform(struct?: ModelServingAiGatewayUsageTrackingConfigOutputReference | ModelServingAiGatewayUsageTrackingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ModelServingAiGatewayUsageTrackingConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ModelServingAiGatewayUsageTrackingConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ModelServingAiGatewayUsageTrackingConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+    }
+  }
+
+  // enabled - computed: false, optional: true, required: false
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+}
+export interface ModelServingAiGateway {
+  /**
+  * guardrails block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#guardrails ModelServing#guardrails}
+  */
+  readonly guardrails?: ModelServingAiGatewayGuardrails;
+  /**
+  * inference_table_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#inference_table_config ModelServing#inference_table_config}
+  */
+  readonly inferenceTableConfig?: ModelServingAiGatewayInferenceTableConfig;
+  /**
+  * rate_limits block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#rate_limits ModelServing#rate_limits}
+  */
+  readonly rateLimits?: ModelServingAiGatewayRateLimits[] | cdktf.IResolvable;
+  /**
+  * usage_tracking_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#usage_tracking_config ModelServing#usage_tracking_config}
+  */
+  readonly usageTrackingConfig?: ModelServingAiGatewayUsageTrackingConfig;
+}
+
+export function modelServingAiGatewayToTerraform(struct?: ModelServingAiGatewayOutputReference | ModelServingAiGateway): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    guardrails: modelServingAiGatewayGuardrailsToTerraform(struct!.guardrails),
+    inference_table_config: modelServingAiGatewayInferenceTableConfigToTerraform(struct!.inferenceTableConfig),
+    rate_limits: cdktf.listMapper(modelServingAiGatewayRateLimitsToTerraform, true)(struct!.rateLimits),
+    usage_tracking_config: modelServingAiGatewayUsageTrackingConfigToTerraform(struct!.usageTrackingConfig),
+  }
+}
+
+
+export function modelServingAiGatewayToHclTerraform(struct?: ModelServingAiGatewayOutputReference | ModelServingAiGateway): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    guardrails: {
+      value: modelServingAiGatewayGuardrailsToHclTerraform(struct!.guardrails),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ModelServingAiGatewayGuardrailsList",
+    },
+    inference_table_config: {
+      value: modelServingAiGatewayInferenceTableConfigToHclTerraform(struct!.inferenceTableConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ModelServingAiGatewayInferenceTableConfigList",
+    },
+    rate_limits: {
+      value: cdktf.listMapperHcl(modelServingAiGatewayRateLimitsToHclTerraform, true)(struct!.rateLimits),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ModelServingAiGatewayRateLimitsList",
+    },
+    usage_tracking_config: {
+      value: modelServingAiGatewayUsageTrackingConfigToHclTerraform(struct!.usageTrackingConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ModelServingAiGatewayUsageTrackingConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ModelServingAiGatewayOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ModelServingAiGateway | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._guardrails?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.guardrails = this._guardrails?.internalValue;
+    }
+    if (this._inferenceTableConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inferenceTableConfig = this._inferenceTableConfig?.internalValue;
+    }
+    if (this._rateLimits?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rateLimits = this._rateLimits?.internalValue;
+    }
+    if (this._usageTrackingConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.usageTrackingConfig = this._usageTrackingConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ModelServingAiGateway | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._guardrails.internalValue = undefined;
+      this._inferenceTableConfig.internalValue = undefined;
+      this._rateLimits.internalValue = undefined;
+      this._usageTrackingConfig.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._guardrails.internalValue = value.guardrails;
+      this._inferenceTableConfig.internalValue = value.inferenceTableConfig;
+      this._rateLimits.internalValue = value.rateLimits;
+      this._usageTrackingConfig.internalValue = value.usageTrackingConfig;
+    }
+  }
+
+  // guardrails - computed: false, optional: true, required: false
+  private _guardrails = new ModelServingAiGatewayGuardrailsOutputReference(this, "guardrails");
+  public get guardrails() {
+    return this._guardrails;
+  }
+  public putGuardrails(value: ModelServingAiGatewayGuardrails) {
+    this._guardrails.internalValue = value;
+  }
+  public resetGuardrails() {
+    this._guardrails.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get guardrailsInput() {
+    return this._guardrails.internalValue;
+  }
+
+  // inference_table_config - computed: false, optional: true, required: false
+  private _inferenceTableConfig = new ModelServingAiGatewayInferenceTableConfigOutputReference(this, "inference_table_config");
+  public get inferenceTableConfig() {
+    return this._inferenceTableConfig;
+  }
+  public putInferenceTableConfig(value: ModelServingAiGatewayInferenceTableConfig) {
+    this._inferenceTableConfig.internalValue = value;
+  }
+  public resetInferenceTableConfig() {
+    this._inferenceTableConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inferenceTableConfigInput() {
+    return this._inferenceTableConfig.internalValue;
+  }
+
+  // rate_limits - computed: false, optional: true, required: false
+  private _rateLimits = new ModelServingAiGatewayRateLimitsList(this, "rate_limits", false);
+  public get rateLimits() {
+    return this._rateLimits;
+  }
+  public putRateLimits(value: ModelServingAiGatewayRateLimits[] | cdktf.IResolvable) {
+    this._rateLimits.internalValue = value;
+  }
+  public resetRateLimits() {
+    this._rateLimits.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rateLimitsInput() {
+    return this._rateLimits.internalValue;
+  }
+
+  // usage_tracking_config - computed: false, optional: true, required: false
+  private _usageTrackingConfig = new ModelServingAiGatewayUsageTrackingConfigOutputReference(this, "usage_tracking_config");
+  public get usageTrackingConfig() {
+    return this._usageTrackingConfig;
+  }
+  public putUsageTrackingConfig(value: ModelServingAiGatewayUsageTrackingConfig) {
+    this._usageTrackingConfig.internalValue = value;
+  }
+  public resetUsageTrackingConfig() {
+    this._usageTrackingConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usageTrackingConfigInput() {
+    return this._usageTrackingConfig.internalValue;
+  }
+}
+export interface ModelServingConfigAutoCaptureConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#catalog_name ModelServing#catalog_name}
+  */
+  readonly catalogName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#enabled ModelServing#enabled}
+  */
+  readonly enabled?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#schema_name ModelServing#schema_name}
+  */
+  readonly schemaName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#table_name_prefix ModelServing#table_name_prefix}
   */
   readonly tableNamePrefix?: string;
 }
@@ -237,11 +1525,11 @@ export class ModelServingConfigAutoCaptureConfigOutputReference extends cdktf.Co
 }
 export interface ModelServingConfigServedEntitiesExternalModelAi21LabsConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#ai21labs_api_key ModelServing#ai21labs_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#ai21labs_api_key ModelServing#ai21labs_api_key}
   */
   readonly ai21LabsApiKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#ai21labs_api_key_plaintext ModelServing#ai21labs_api_key_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#ai21labs_api_key_plaintext ModelServing#ai21labs_api_key_plaintext}
   */
   readonly ai21LabsApiKeyPlaintext?: string;
 }
@@ -354,27 +1642,27 @@ export class ModelServingConfigServedEntitiesExternalModelAi21LabsConfigOutputRe
 }
 export interface ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#aws_access_key_id ModelServing#aws_access_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#aws_access_key_id ModelServing#aws_access_key_id}
   */
   readonly awsAccessKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#aws_access_key_id_plaintext ModelServing#aws_access_key_id_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#aws_access_key_id_plaintext ModelServing#aws_access_key_id_plaintext}
   */
   readonly awsAccessKeyIdPlaintext?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#aws_region ModelServing#aws_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#aws_region ModelServing#aws_region}
   */
   readonly awsRegion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#aws_secret_access_key ModelServing#aws_secret_access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#aws_secret_access_key ModelServing#aws_secret_access_key}
   */
   readonly awsSecretAccessKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#aws_secret_access_key_plaintext ModelServing#aws_secret_access_key_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#aws_secret_access_key_plaintext ModelServing#aws_secret_access_key_plaintext}
   */
   readonly awsSecretAccessKeyPlaintext?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#bedrock_provider ModelServing#bedrock_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#bedrock_provider ModelServing#bedrock_provider}
   */
   readonly bedrockProvider: string;
 }
@@ -597,11 +1885,11 @@ export class ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfigOut
 }
 export interface ModelServingConfigServedEntitiesExternalModelAnthropicConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#anthropic_api_key ModelServing#anthropic_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#anthropic_api_key ModelServing#anthropic_api_key}
   */
   readonly anthropicApiKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#anthropic_api_key_plaintext ModelServing#anthropic_api_key_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#anthropic_api_key_plaintext ModelServing#anthropic_api_key_plaintext}
   */
   readonly anthropicApiKeyPlaintext?: string;
 }
@@ -714,15 +2002,15 @@ export class ModelServingConfigServedEntitiesExternalModelAnthropicConfigOutputR
 }
 export interface ModelServingConfigServedEntitiesExternalModelCohereConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#cohere_api_base ModelServing#cohere_api_base}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#cohere_api_base ModelServing#cohere_api_base}
   */
   readonly cohereApiBase?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#cohere_api_key ModelServing#cohere_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#cohere_api_key ModelServing#cohere_api_key}
   */
   readonly cohereApiKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#cohere_api_key_plaintext ModelServing#cohere_api_key_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#cohere_api_key_plaintext ModelServing#cohere_api_key_plaintext}
   */
   readonly cohereApiKeyPlaintext?: string;
 }
@@ -864,15 +2152,15 @@ export class ModelServingConfigServedEntitiesExternalModelCohereConfigOutputRefe
 }
 export interface ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#databricks_api_token ModelServing#databricks_api_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#databricks_api_token ModelServing#databricks_api_token}
   */
   readonly databricksApiToken?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#databricks_api_token_plaintext ModelServing#databricks_api_token_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#databricks_api_token_plaintext ModelServing#databricks_api_token_plaintext}
   */
   readonly databricksApiTokenPlaintext?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#databricks_workspace_url ModelServing#databricks_workspace_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#databricks_workspace_url ModelServing#databricks_workspace_url}
   */
   readonly databricksWorkspaceUrl: string;
 }
@@ -1011,19 +2299,19 @@ export class ModelServingConfigServedEntitiesExternalModelDatabricksModelServing
 }
 export interface ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#private_key ModelServing#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#private_key ModelServing#private_key}
   */
   readonly privateKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#private_key_plaintext ModelServing#private_key_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#private_key_plaintext ModelServing#private_key_plaintext}
   */
   readonly privateKeyPlaintext?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#project_id ModelServing#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#project_id ModelServing#project_id}
   */
   readonly projectId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#region ModelServing#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#region ModelServing#region}
   */
   readonly region?: string;
 }
@@ -1194,47 +2482,47 @@ export class ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiCon
 }
 export interface ModelServingConfigServedEntitiesExternalModelOpenaiConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#microsoft_entra_client_id ModelServing#microsoft_entra_client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#microsoft_entra_client_id ModelServing#microsoft_entra_client_id}
   */
   readonly microsoftEntraClientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#microsoft_entra_client_secret ModelServing#microsoft_entra_client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#microsoft_entra_client_secret ModelServing#microsoft_entra_client_secret}
   */
   readonly microsoftEntraClientSecret?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#microsoft_entra_client_secret_plaintext ModelServing#microsoft_entra_client_secret_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#microsoft_entra_client_secret_plaintext ModelServing#microsoft_entra_client_secret_plaintext}
   */
   readonly microsoftEntraClientSecretPlaintext?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#microsoft_entra_tenant_id ModelServing#microsoft_entra_tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#microsoft_entra_tenant_id ModelServing#microsoft_entra_tenant_id}
   */
   readonly microsoftEntraTenantId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#openai_api_base ModelServing#openai_api_base}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#openai_api_base ModelServing#openai_api_base}
   */
   readonly openaiApiBase?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#openai_api_key ModelServing#openai_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#openai_api_key ModelServing#openai_api_key}
   */
   readonly openaiApiKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#openai_api_key_plaintext ModelServing#openai_api_key_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#openai_api_key_plaintext ModelServing#openai_api_key_plaintext}
   */
   readonly openaiApiKeyPlaintext?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#openai_api_type ModelServing#openai_api_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#openai_api_type ModelServing#openai_api_type}
   */
   readonly openaiApiType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#openai_api_version ModelServing#openai_api_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#openai_api_version ModelServing#openai_api_version}
   */
   readonly openaiApiVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#openai_deployment_name ModelServing#openai_deployment_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#openai_deployment_name ModelServing#openai_deployment_name}
   */
   readonly openaiDeploymentName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#openai_organization ModelServing#openai_organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#openai_organization ModelServing#openai_organization}
   */
   readonly openaiOrganization?: string;
 }
@@ -1608,11 +2896,11 @@ export class ModelServingConfigServedEntitiesExternalModelOpenaiConfigOutputRefe
 }
 export interface ModelServingConfigServedEntitiesExternalModelPalmConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#palm_api_key ModelServing#palm_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#palm_api_key ModelServing#palm_api_key}
   */
   readonly palmApiKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#palm_api_key_plaintext ModelServing#palm_api_key_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#palm_api_key_plaintext ModelServing#palm_api_key_plaintext}
   */
   readonly palmApiKeyPlaintext?: string;
 }
@@ -1725,63 +3013,63 @@ export class ModelServingConfigServedEntitiesExternalModelPalmConfigOutputRefere
 }
 export interface ModelServingConfigServedEntitiesExternalModel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#name ModelServing#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#name ModelServing#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#provider ModelServing#provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#provider ModelServing#provider}
   */
   readonly provider: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#task ModelServing#task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#task ModelServing#task}
   */
   readonly task: string;
   /**
   * ai21labs_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#ai21labs_config ModelServing#ai21labs_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#ai21labs_config ModelServing#ai21labs_config}
   */
   readonly ai21LabsConfig?: ModelServingConfigServedEntitiesExternalModelAi21LabsConfig;
   /**
   * amazon_bedrock_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#amazon_bedrock_config ModelServing#amazon_bedrock_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#amazon_bedrock_config ModelServing#amazon_bedrock_config}
   */
   readonly amazonBedrockConfig?: ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig;
   /**
   * anthropic_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#anthropic_config ModelServing#anthropic_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#anthropic_config ModelServing#anthropic_config}
   */
   readonly anthropicConfig?: ModelServingConfigServedEntitiesExternalModelAnthropicConfig;
   /**
   * cohere_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#cohere_config ModelServing#cohere_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#cohere_config ModelServing#cohere_config}
   */
   readonly cohereConfig?: ModelServingConfigServedEntitiesExternalModelCohereConfig;
   /**
   * databricks_model_serving_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#databricks_model_serving_config ModelServing#databricks_model_serving_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#databricks_model_serving_config ModelServing#databricks_model_serving_config}
   */
   readonly databricksModelServingConfig?: ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfig;
   /**
   * google_cloud_vertex_ai_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#google_cloud_vertex_ai_config ModelServing#google_cloud_vertex_ai_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#google_cloud_vertex_ai_config ModelServing#google_cloud_vertex_ai_config}
   */
   readonly googleCloudVertexAiConfig?: ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig;
   /**
   * openai_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#openai_config ModelServing#openai_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#openai_config ModelServing#openai_config}
   */
   readonly openaiConfig?: ModelServingConfigServedEntitiesExternalModelOpenaiConfig;
   /**
   * palm_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#palm_config ModelServing#palm_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#palm_config ModelServing#palm_config}
   */
   readonly palmConfig?: ModelServingConfigServedEntitiesExternalModelPalmConfig;
 }
@@ -2146,49 +3434,49 @@ export class ModelServingConfigServedEntitiesExternalModelOutputReference extend
 }
 export interface ModelServingConfigServedEntities {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#entity_name ModelServing#entity_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#entity_name ModelServing#entity_name}
   */
   readonly entityName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#entity_version ModelServing#entity_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#entity_version ModelServing#entity_version}
   */
   readonly entityVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#environment_vars ModelServing#environment_vars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#environment_vars ModelServing#environment_vars}
   */
   readonly environmentVars?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#instance_profile_arn ModelServing#instance_profile_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#instance_profile_arn ModelServing#instance_profile_arn}
   */
   readonly instanceProfileArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#max_provisioned_throughput ModelServing#max_provisioned_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#max_provisioned_throughput ModelServing#max_provisioned_throughput}
   */
   readonly maxProvisionedThroughput?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#min_provisioned_throughput ModelServing#min_provisioned_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#min_provisioned_throughput ModelServing#min_provisioned_throughput}
   */
   readonly minProvisionedThroughput?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#name ModelServing#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#name ModelServing#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#scale_to_zero_enabled ModelServing#scale_to_zero_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#scale_to_zero_enabled ModelServing#scale_to_zero_enabled}
   */
   readonly scaleToZeroEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#workload_size ModelServing#workload_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#workload_size ModelServing#workload_size}
   */
   readonly workloadSize?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#workload_type ModelServing#workload_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#workload_type ModelServing#workload_type}
   */
   readonly workloadType?: string;
   /**
   * external_model block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#external_model ModelServing#external_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#external_model ModelServing#external_model}
   */
   readonly externalModel?: ModelServingConfigServedEntitiesExternalModel;
 }
@@ -2594,43 +3882,43 @@ export class ModelServingConfigServedEntitiesList extends cdktf.ComplexList {
 }
 export interface ModelServingConfigServedModels {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#environment_vars ModelServing#environment_vars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#environment_vars ModelServing#environment_vars}
   */
   readonly environmentVars?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#instance_profile_arn ModelServing#instance_profile_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#instance_profile_arn ModelServing#instance_profile_arn}
   */
   readonly instanceProfileArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#max_provisioned_throughput ModelServing#max_provisioned_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#max_provisioned_throughput ModelServing#max_provisioned_throughput}
   */
   readonly maxProvisionedThroughput?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#min_provisioned_throughput ModelServing#min_provisioned_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#min_provisioned_throughput ModelServing#min_provisioned_throughput}
   */
   readonly minProvisionedThroughput?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#model_name ModelServing#model_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#model_name ModelServing#model_name}
   */
   readonly modelName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#model_version ModelServing#model_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#model_version ModelServing#model_version}
   */
   readonly modelVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#name ModelServing#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#name ModelServing#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#scale_to_zero_enabled ModelServing#scale_to_zero_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#scale_to_zero_enabled ModelServing#scale_to_zero_enabled}
   */
   readonly scaleToZeroEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#workload_size ModelServing#workload_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#workload_size ModelServing#workload_size}
   */
   readonly workloadSize?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#workload_type ModelServing#workload_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#workload_type ModelServing#workload_type}
   */
   readonly workloadType?: string;
 }
@@ -3001,11 +4289,11 @@ export class ModelServingConfigServedModelsList extends cdktf.ComplexList {
 }
 export interface ModelServingConfigTrafficConfigRoutes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#served_model_name ModelServing#served_model_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#served_model_name ModelServing#served_model_name}
   */
   readonly servedModelName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#traffic_percentage ModelServing#traffic_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#traffic_percentage ModelServing#traffic_percentage}
   */
   readonly trafficPercentage: number;
 }
@@ -3146,7 +4434,7 @@ export interface ModelServingConfigTrafficConfig {
   /**
   * routes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#routes ModelServing#routes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#routes ModelServing#routes}
   */
   readonly routes?: ModelServingConfigTrafficConfigRoutes[] | cdktf.IResolvable;
 }
@@ -3232,25 +4520,25 @@ export interface ModelServingConfigA {
   /**
   * auto_capture_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#auto_capture_config ModelServing#auto_capture_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#auto_capture_config ModelServing#auto_capture_config}
   */
   readonly autoCaptureConfig?: ModelServingConfigAutoCaptureConfig;
   /**
   * served_entities block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#served_entities ModelServing#served_entities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#served_entities ModelServing#served_entities}
   */
   readonly servedEntities?: ModelServingConfigServedEntities[] | cdktf.IResolvable;
   /**
   * served_models block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#served_models ModelServing#served_models}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#served_models ModelServing#served_models}
   */
   readonly servedModels?: ModelServingConfigServedModels[] | cdktf.IResolvable;
   /**
   * traffic_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#traffic_config ModelServing#traffic_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#traffic_config ModelServing#traffic_config}
   */
   readonly trafficConfig?: ModelServingConfigTrafficConfig;
 }
@@ -3421,15 +4709,15 @@ export class ModelServingConfigAOutputReference extends cdktf.ComplexObject {
 }
 export interface ModelServingRateLimits {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#calls ModelServing#calls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#calls ModelServing#calls}
   */
   readonly calls: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#key ModelServing#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#key ModelServing#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#renewal_period ModelServing#renewal_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#renewal_period ModelServing#renewal_period}
   */
   readonly renewalPeriod: string;
 }
@@ -3597,11 +4885,11 @@ export class ModelServingRateLimitsList extends cdktf.ComplexList {
 }
 export interface ModelServingTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#key ModelServing#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#key ModelServing#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#value ModelServing#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#value ModelServing#value}
   */
   readonly value?: string;
 }
@@ -3743,11 +5031,11 @@ export class ModelServingTagsList extends cdktf.ComplexList {
 }
 export interface ModelServingTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#create ModelServing#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#create ModelServing#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#update ModelServing#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#update ModelServing#update}
   */
   readonly update?: string;
 }
@@ -3870,7 +5158,7 @@ export class ModelServingTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving databricks_model_serving}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving databricks_model_serving}
 */
 export class ModelServing extends cdktf.TerraformResource {
 
@@ -3886,7 +5174,7 @@ export class ModelServing extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ModelServing resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ModelServing to import
-  * @param importFromId The id of the existing ModelServing that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ModelServing that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ModelServing to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -3898,7 +5186,7 @@ export class ModelServing extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/resources/model_serving databricks_model_serving} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/model_serving databricks_model_serving} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3909,7 +5197,7 @@ export class ModelServing extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_model_serving',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.52.0',
+        providerVersion: '1.53.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -3923,6 +5211,7 @@ export class ModelServing extends cdktf.TerraformResource {
     this._id = config.id;
     this._name = config.name;
     this._routeOptimized = config.routeOptimized;
+    this._aiGateway.internalValue = config.aiGateway;
     this._config.internalValue = config.config;
     this._rateLimits.internalValue = config.rateLimits;
     this._tags.internalValue = config.tags;
@@ -3981,6 +5270,22 @@ export class ModelServing extends cdktf.TerraformResource {
   // serving_endpoint_id - computed: true, optional: false, required: false
   public get servingEndpointId() {
     return this.getStringAttribute('serving_endpoint_id');
+  }
+
+  // ai_gateway - computed: false, optional: true, required: false
+  private _aiGateway = new ModelServingAiGatewayOutputReference(this, "ai_gateway");
+  public get aiGateway() {
+    return this._aiGateway;
+  }
+  public putAiGateway(value: ModelServingAiGateway) {
+    this._aiGateway.internalValue = value;
+  }
+  public resetAiGateway() {
+    this._aiGateway.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get aiGatewayInput() {
+    return this._aiGateway.internalValue;
   }
 
   // config - computed: false, optional: false, required: true
@@ -4053,6 +5358,7 @@ export class ModelServing extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       route_optimized: cdktf.booleanToTerraform(this._routeOptimized),
+      ai_gateway: modelServingAiGatewayToTerraform(this._aiGateway.internalValue),
       config: modelServingConfigAToTerraform(this._config.internalValue),
       rate_limits: cdktf.listMapper(modelServingRateLimitsToTerraform, true)(this._rateLimits.internalValue),
       tags: cdktf.listMapper(modelServingTagsToTerraform, true)(this._tags.internalValue),
@@ -4079,6 +5385,12 @@ export class ModelServing extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      ai_gateway: {
+        value: modelServingAiGatewayToHclTerraform(this._aiGateway.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ModelServingAiGatewayList",
       },
       config: {
         value: modelServingConfigAToHclTerraform(this._config.internalValue),

@@ -4,7 +4,7 @@
 
 ### DataDatabricksVolumesPluginframework <a name="DataDatabricksVolumesPluginframework" id="@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframework"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/data-sources/volumes_pluginframework databricks_volumes_pluginframework}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework databricks_volumes_pluginframework}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframework.Initializer"></a>
 
@@ -40,9 +40,9 @@ DataDatabricksVolumesPluginframework.Builder.create(Construct scope, java.lang.S
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframework.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframework.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframework.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframework.Initializer.parameter.catalogName">catalogName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/data-sources/volumes_pluginframework#catalog_name DataDatabricksVolumesPluginframework#catalog_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframework.Initializer.parameter.schemaName">schemaName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/data-sources/volumes_pluginframework#schema_name DataDatabricksVolumesPluginframework#schema_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframework.Initializer.parameter.ids">ids</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/data-sources/volumes_pluginframework#ids DataDatabricksVolumesPluginframework#ids}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframework.Initializer.parameter.catalogName">catalogName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework#catalog_name DataDatabricksVolumesPluginframework#catalog_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframework.Initializer.parameter.schemaName">schemaName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework#schema_name DataDatabricksVolumesPluginframework#schema_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframework.Initializer.parameter.ids">ids</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework#ids DataDatabricksVolumesPluginframework#ids}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/data-sources/volumes_pluginframework#catalog_name DataDatabricksVolumesPluginframework#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework#catalog_name DataDatabricksVolumesPluginframework#catalog_name}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/data-sources/volumes_pluginframework#schema_name DataDatabricksVolumesPluginframework#schema_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework#schema_name DataDatabricksVolumesPluginframework#schema_name}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/data-sources/volumes_pluginframework#ids DataDatabricksVolumesPluginframework#ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework#ids DataDatabricksVolumesPluginframework#ids}.
 
 ---
 
@@ -456,7 +456,7 @@ The construct id used in the generated config for the DataDatabricksVolumesPlugi
 
 The id of the existing DataDatabricksVolumesPluginframework that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/data-sources/volumes_pluginframework#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -731,9 +731,9 @@ DataDatabricksVolumesPluginframeworkConfig.builder()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframeworkConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframeworkConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframeworkConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframeworkConfig.property.catalogName">catalogName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/data-sources/volumes_pluginframework#catalog_name DataDatabricksVolumesPluginframework#catalog_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframeworkConfig.property.schemaName">schemaName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/data-sources/volumes_pluginframework#schema_name DataDatabricksVolumesPluginframework#schema_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframeworkConfig.property.ids">ids</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/data-sources/volumes_pluginframework#ids DataDatabricksVolumesPluginframework#ids}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframeworkConfig.property.catalogName">catalogName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework#catalog_name DataDatabricksVolumesPluginframework#catalog_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframeworkConfig.property.schemaName">schemaName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework#schema_name DataDatabricksVolumesPluginframework#schema_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframeworkConfig.property.ids">ids</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework#ids DataDatabricksVolumesPluginframework#ids}. |
 
 ---
 
@@ -815,7 +815,7 @@ public java.lang.String getCatalogName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/data-sources/volumes_pluginframework#catalog_name DataDatabricksVolumesPluginframework#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework#catalog_name DataDatabricksVolumesPluginframework#catalog_name}.
 
 ---
 
@@ -827,7 +827,7 @@ public java.lang.String getSchemaName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/data-sources/volumes_pluginframework#schema_name DataDatabricksVolumesPluginframework#schema_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework#schema_name DataDatabricksVolumesPluginframework#schema_name}.
 
 ---
 
@@ -839,7 +839,7 @@ public java.util.List<java.lang.String> getIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.52.0/docs/data-sources/volumes_pluginframework#ids DataDatabricksVolumesPluginframework#ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework#ids DataDatabricksVolumesPluginframework#ids}.
 
 ---
 
