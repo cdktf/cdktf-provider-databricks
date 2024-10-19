@@ -139,7 +139,9 @@ Object.defineProperty(exports, 'dataDatabricksMwsWorkspaces', { get: function ()
 Object.defineProperty(exports, 'dataDatabricksNodeType', { get: function () { return require('./data-databricks-node-type'); } });
 Object.defineProperty(exports, 'dataDatabricksNotebook', { get: function () { return require('./data-databricks-notebook'); } });
 Object.defineProperty(exports, 'dataDatabricksNotebookPaths', { get: function () { return require('./data-databricks-notebook-paths'); } });
+Object.defineProperty(exports, 'dataDatabricksNotificationDestinations', { get: function () { return require('./data-databricks-notification-destinations'); } });
 Object.defineProperty(exports, 'dataDatabricksPipelines', { get: function () { return require('./data-databricks-pipelines'); } });
+Object.defineProperty(exports, 'dataDatabricksRegisteredModel', { get: function () { return require('./data-databricks-registered-model'); } });
 Object.defineProperty(exports, 'dataDatabricksSchema', { get: function () { return require('./data-databricks-schema'); } });
 Object.defineProperty(exports, 'dataDatabricksSchemas', { get: function () { return require('./data-databricks-schemas'); } });
 Object.defineProperty(exports, 'dataDatabricksServicePrincipal', { get: function () { return require('./data-databricks-service-principal'); } });
