@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/library_pluginframework
+// https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/library_pluginframework
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,45 +8,51 @@ import * as cdktf from 'cdktf';
 
 export interface LibraryPluginframeworkConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/library_pluginframework#cluster_id LibraryPluginframework#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/library_pluginframework#cluster_id LibraryPluginframework#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/library_pluginframework#cran LibraryPluginframework#cran}
-  */
-  readonly cran?: LibraryPluginframeworkCran;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/library_pluginframework#egg LibraryPluginframework#egg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/library_pluginframework#egg LibraryPluginframework#egg}
   */
   readonly egg?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/library_pluginframework#jar LibraryPluginframework#jar}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/library_pluginframework#jar LibraryPluginframework#jar}
   */
   readonly jar?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/library_pluginframework#maven LibraryPluginframework#maven}
-  */
-  readonly maven?: LibraryPluginframeworkMaven;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/library_pluginframework#pypi LibraryPluginframework#pypi}
-  */
-  readonly pypi?: LibraryPluginframeworkPypi;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/library_pluginframework#requirements LibraryPluginframework#requirements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/library_pluginframework#requirements LibraryPluginframework#requirements}
   */
   readonly requirements?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/library_pluginframework#whl LibraryPluginframework#whl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/library_pluginframework#whl LibraryPluginframework#whl}
   */
   readonly whl?: string;
+  /**
+  * cran block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/library_pluginframework#cran LibraryPluginframework#cran}
+  */
+  readonly cran?: LibraryPluginframeworkCran[] | cdktf.IResolvable;
+  /**
+  * maven block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/library_pluginframework#maven LibraryPluginframework#maven}
+  */
+  readonly maven?: LibraryPluginframeworkMaven[] | cdktf.IResolvable;
+  /**
+  * pypi block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/library_pluginframework#pypi LibraryPluginframework#pypi}
+  */
+  readonly pypi?: LibraryPluginframeworkPypi[] | cdktf.IResolvable;
 }
 export interface LibraryPluginframeworkCran {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/library_pluginframework#package LibraryPluginframework#package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/library_pluginframework#package LibraryPluginframework#package}
   */
   readonly package: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/library_pluginframework#repo LibraryPluginframework#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/library_pluginframework#repo LibraryPluginframework#repo}
   */
   readonly repo?: string;
 }
@@ -99,9 +100,11 @@ export class LibraryPluginframeworkCranOutputReference extends cdktf.ComplexObje
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
   public get internalValue(): LibraryPluginframeworkCran | cdktf.IResolvable | undefined {
@@ -169,17 +172,37 @@ export class LibraryPluginframeworkCranOutputReference extends cdktf.ComplexObje
     return this._repo;
   }
 }
+
+export class LibraryPluginframeworkCranList extends cdktf.ComplexList {
+  public internalValue? : LibraryPluginframeworkCran[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LibraryPluginframeworkCranOutputReference {
+    return new LibraryPluginframeworkCranOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LibraryPluginframeworkMaven {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/library_pluginframework#coordinates LibraryPluginframework#coordinates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/library_pluginframework#coordinates LibraryPluginframework#coordinates}
   */
   readonly coordinates: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/library_pluginframework#exclusions LibraryPluginframework#exclusions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/library_pluginframework#exclusions LibraryPluginframework#exclusions}
   */
   readonly exclusions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/library_pluginframework#repo LibraryPluginframework#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/library_pluginframework#repo LibraryPluginframework#repo}
   */
   readonly repo?: string;
 }
@@ -234,9 +257,11 @@ export class LibraryPluginframeworkMavenOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
   public get internalValue(): LibraryPluginframeworkMaven | cdktf.IResolvable | undefined {
@@ -326,13 +351,33 @@ export class LibraryPluginframeworkMavenOutputReference extends cdktf.ComplexObj
     return this._repo;
   }
 }
+
+export class LibraryPluginframeworkMavenList extends cdktf.ComplexList {
+  public internalValue? : LibraryPluginframeworkMaven[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LibraryPluginframeworkMavenOutputReference {
+    return new LibraryPluginframeworkMavenOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LibraryPluginframeworkPypi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/library_pluginframework#package LibraryPluginframework#package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/library_pluginframework#package LibraryPluginframework#package}
   */
   readonly package: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/library_pluginframework#repo LibraryPluginframework#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/library_pluginframework#repo LibraryPluginframework#repo}
   */
   readonly repo?: string;
 }
@@ -380,9 +425,11 @@ export class LibraryPluginframeworkPypiOutputReference extends cdktf.ComplexObje
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
   public get internalValue(): LibraryPluginframeworkPypi | cdktf.IResolvable | undefined {
@@ -451,8 +498,28 @@ export class LibraryPluginframeworkPypiOutputReference extends cdktf.ComplexObje
   }
 }
 
+export class LibraryPluginframeworkPypiList extends cdktf.ComplexList {
+  public internalValue? : LibraryPluginframeworkPypi[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LibraryPluginframeworkPypiOutputReference {
+    return new LibraryPluginframeworkPypiOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/library_pluginframework databricks_library_pluginframework}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/library_pluginframework databricks_library_pluginframework}
 */
 export class LibraryPluginframework extends cdktf.TerraformResource {
 
@@ -468,7 +535,7 @@ export class LibraryPluginframework extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LibraryPluginframework resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LibraryPluginframework to import
-  * @param importFromId The id of the existing LibraryPluginframework that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/library_pluginframework#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LibraryPluginframework that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/library_pluginframework#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LibraryPluginframework to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -480,7 +547,7 @@ export class LibraryPluginframework extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/resources/library_pluginframework databricks_library_pluginframework} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/resources/library_pluginframework databricks_library_pluginframework} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -491,7 +558,7 @@ export class LibraryPluginframework extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_library_pluginframework',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.53.0',
+        providerVersion: '1.54.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -503,13 +570,13 @@ export class LibraryPluginframework extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._clusterId = config.clusterId;
-    this._cran.internalValue = config.cran;
     this._egg = config.egg;
     this._jar = config.jar;
-    this._maven.internalValue = config.maven;
-    this._pypi.internalValue = config.pypi;
     this._requirements = config.requirements;
     this._whl = config.whl;
+    this._cran.internalValue = config.cran;
+    this._maven.internalValue = config.maven;
+    this._pypi.internalValue = config.pypi;
   }
 
   // ==========
@@ -527,22 +594,6 @@ export class LibraryPluginframework extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get clusterIdInput() {
     return this._clusterId;
-  }
-
-  // cran - computed: false, optional: true, required: false
-  private _cran = new LibraryPluginframeworkCranOutputReference(this, "cran");
-  public get cran() {
-    return this._cran;
-  }
-  public putCran(value: LibraryPluginframeworkCran) {
-    this._cran.internalValue = value;
-  }
-  public resetCran() {
-    this._cran.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get cranInput() {
-    return this._cran.internalValue;
   }
 
   // egg - computed: false, optional: true, required: false
@@ -577,38 +628,6 @@ export class LibraryPluginframework extends cdktf.TerraformResource {
     return this._jar;
   }
 
-  // maven - computed: false, optional: true, required: false
-  private _maven = new LibraryPluginframeworkMavenOutputReference(this, "maven");
-  public get maven() {
-    return this._maven;
-  }
-  public putMaven(value: LibraryPluginframeworkMaven) {
-    this._maven.internalValue = value;
-  }
-  public resetMaven() {
-    this._maven.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get mavenInput() {
-    return this._maven.internalValue;
-  }
-
-  // pypi - computed: false, optional: true, required: false
-  private _pypi = new LibraryPluginframeworkPypiOutputReference(this, "pypi");
-  public get pypi() {
-    return this._pypi;
-  }
-  public putPypi(value: LibraryPluginframeworkPypi) {
-    this._pypi.internalValue = value;
-  }
-  public resetPypi() {
-    this._pypi.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get pypiInput() {
-    return this._pypi.internalValue;
-  }
-
   // requirements - computed: false, optional: true, required: false
   private _requirements?: string; 
   public get requirements() {
@@ -641,6 +660,54 @@ export class LibraryPluginframework extends cdktf.TerraformResource {
     return this._whl;
   }
 
+  // cran - computed: false, optional: true, required: false
+  private _cran = new LibraryPluginframeworkCranList(this, "cran", false);
+  public get cran() {
+    return this._cran;
+  }
+  public putCran(value: LibraryPluginframeworkCran[] | cdktf.IResolvable) {
+    this._cran.internalValue = value;
+  }
+  public resetCran() {
+    this._cran.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cranInput() {
+    return this._cran.internalValue;
+  }
+
+  // maven - computed: false, optional: true, required: false
+  private _maven = new LibraryPluginframeworkMavenList(this, "maven", false);
+  public get maven() {
+    return this._maven;
+  }
+  public putMaven(value: LibraryPluginframeworkMaven[] | cdktf.IResolvable) {
+    this._maven.internalValue = value;
+  }
+  public resetMaven() {
+    this._maven.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mavenInput() {
+    return this._maven.internalValue;
+  }
+
+  // pypi - computed: false, optional: true, required: false
+  private _pypi = new LibraryPluginframeworkPypiList(this, "pypi", false);
+  public get pypi() {
+    return this._pypi;
+  }
+  public putPypi(value: LibraryPluginframeworkPypi[] | cdktf.IResolvable) {
+    this._pypi.internalValue = value;
+  }
+  public resetPypi() {
+    this._pypi.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pypiInput() {
+    return this._pypi.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -648,13 +715,13 @@ export class LibraryPluginframework extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cluster_id: cdktf.stringToTerraform(this._clusterId),
-      cran: libraryPluginframeworkCranToTerraform(this._cran.internalValue),
       egg: cdktf.stringToTerraform(this._egg),
       jar: cdktf.stringToTerraform(this._jar),
-      maven: libraryPluginframeworkMavenToTerraform(this._maven.internalValue),
-      pypi: libraryPluginframeworkPypiToTerraform(this._pypi.internalValue),
       requirements: cdktf.stringToTerraform(this._requirements),
       whl: cdktf.stringToTerraform(this._whl),
+      cran: cdktf.listMapper(libraryPluginframeworkCranToTerraform, true)(this._cran.internalValue),
+      maven: cdktf.listMapper(libraryPluginframeworkMavenToTerraform, true)(this._maven.internalValue),
+      pypi: cdktf.listMapper(libraryPluginframeworkPypiToTerraform, true)(this._pypi.internalValue),
     };
   }
 
@@ -665,12 +732,6 @@ export class LibraryPluginframework extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      cran: {
-        value: libraryPluginframeworkCranToHclTerraform(this._cran.internalValue),
-        isBlock: true,
-        type: "struct",
-        storageClassType: "LibraryPluginframeworkCran",
       },
       egg: {
         value: cdktf.stringToHclTerraform(this._egg),
@@ -684,18 +745,6 @@ export class LibraryPluginframework extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
-      maven: {
-        value: libraryPluginframeworkMavenToHclTerraform(this._maven.internalValue),
-        isBlock: true,
-        type: "struct",
-        storageClassType: "LibraryPluginframeworkMaven",
-      },
-      pypi: {
-        value: libraryPluginframeworkPypiToHclTerraform(this._pypi.internalValue),
-        isBlock: true,
-        type: "struct",
-        storageClassType: "LibraryPluginframeworkPypi",
-      },
       requirements: {
         value: cdktf.stringToHclTerraform(this._requirements),
         isBlock: false,
@@ -707,6 +756,24 @@ export class LibraryPluginframework extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      cran: {
+        value: cdktf.listMapperHcl(libraryPluginframeworkCranToHclTerraform, true)(this._cran.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LibraryPluginframeworkCranList",
+      },
+      maven: {
+        value: cdktf.listMapperHcl(libraryPluginframeworkMavenToHclTerraform, true)(this._maven.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LibraryPluginframeworkMavenList",
+      },
+      pypi: {
+        value: cdktf.listMapperHcl(libraryPluginframeworkPypiToHclTerraform, true)(this._pypi.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LibraryPluginframeworkPypiList",
       },
     };
 

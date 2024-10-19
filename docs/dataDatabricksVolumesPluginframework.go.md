@@ -4,12 +4,12 @@
 
 ### DataDatabricksVolumesPluginframework <a name="DataDatabricksVolumesPluginframework" id="@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframework"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework databricks_volumes_pluginframework}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/data-sources/volumes_pluginframework databricks_volumes_pluginframework}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframework.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksvolumespluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksvolumespluginframework"
 
 datadatabricksvolumespluginframework.NewDataDatabricksVolumesPluginframework(scope Construct, id *string, config DataDatabricksVolumesPluginframeworkConfig) DataDatabricksVolumesPluginframework
 ```
@@ -283,7 +283,7 @@ func ResetIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframework.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksvolumespluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksvolumespluginframework"
 
 datadatabricksvolumespluginframework.DataDatabricksVolumesPluginframework_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframework.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksvolumespluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksvolumespluginframework"
 
 datadatabricksvolumespluginframework.DataDatabricksVolumesPluginframework_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datadatabricksvolumespluginframework.DataDatabricksVolumesPluginframework_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframework.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksvolumespluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksvolumespluginframework"
 
 datadatabricksvolumespluginframework.DataDatabricksVolumesPluginframework_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datadatabricksvolumespluginframework.DataDatabricksVolumesPluginframework_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframework.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksvolumespluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksvolumespluginframework"
 
 datadatabricksvolumespluginframework.DataDatabricksVolumesPluginframework_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataDatabricksVolumesPlugi
 
 The id of the existing DataDatabricksVolumesPluginframework that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/data-sources/volumes_pluginframework#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -616,7 +616,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframeworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksvolumespluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksvolumespluginframework"
 
 &datadatabricksvolumespluginframework.DataDatabricksVolumesPluginframeworkConfig {
 	Connection: interface{},
@@ -643,9 +643,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabri
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframeworkConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframeworkConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframeworkConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframeworkConfig.property.catalogName">CatalogName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework#catalog_name DataDatabricksVolumesPluginframework#catalog_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframeworkConfig.property.schemaName">SchemaName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework#schema_name DataDatabricksVolumesPluginframework#schema_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframeworkConfig.property.ids">Ids</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework#ids DataDatabricksVolumesPluginframework#ids}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframeworkConfig.property.catalogName">CatalogName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/data-sources/volumes_pluginframework#catalog_name DataDatabricksVolumesPluginframework#catalog_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframeworkConfig.property.schemaName">SchemaName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/data-sources/volumes_pluginframework#schema_name DataDatabricksVolumesPluginframework#schema_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumesPluginframework.DataDatabricksVolumesPluginframeworkConfig.property.ids">Ids</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/data-sources/volumes_pluginframework#ids DataDatabricksVolumesPluginframework#ids}. |
 
 ---
 
@@ -727,7 +727,7 @@ CatalogName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework#catalog_name DataDatabricksVolumesPluginframework#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/data-sources/volumes_pluginframework#catalog_name DataDatabricksVolumesPluginframework#catalog_name}.
 
 ---
 
@@ -739,7 +739,7 @@ SchemaName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework#schema_name DataDatabricksVolumesPluginframework#schema_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/data-sources/volumes_pluginframework#schema_name DataDatabricksVolumesPluginframework#schema_name}.
 
 ---
 
@@ -751,7 +751,7 @@ Ids *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework#ids DataDatabricksVolumesPluginframework#ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/data-sources/volumes_pluginframework#ids DataDatabricksVolumesPluginframework#ids}.
 
 ---
 

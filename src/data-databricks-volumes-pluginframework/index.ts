@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework
+// https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/data-sources/volumes_pluginframework
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +8,21 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksVolumesPluginframeworkConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework#catalog_name DataDatabricksVolumesPluginframework#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/data-sources/volumes_pluginframework#catalog_name DataDatabricksVolumesPluginframework#catalog_name}
   */
   readonly catalogName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework#ids DataDatabricksVolumesPluginframework#ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/data-sources/volumes_pluginframework#ids DataDatabricksVolumesPluginframework#ids}
   */
   readonly ids?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework#schema_name DataDatabricksVolumesPluginframework#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/data-sources/volumes_pluginframework#schema_name DataDatabricksVolumesPluginframework#schema_name}
   */
   readonly schemaName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework databricks_volumes_pluginframework}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/data-sources/volumes_pluginframework databricks_volumes_pluginframework}
 */
 export class DataDatabricksVolumesPluginframework extends cdktf.TerraformDataSource {
 
@@ -43,7 +38,7 @@ export class DataDatabricksVolumesPluginframework extends cdktf.TerraformDataSou
   * Generates CDKTF code for importing a DataDatabricksVolumesPluginframework resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksVolumesPluginframework to import
-  * @param importFromId The id of the existing DataDatabricksVolumesPluginframework that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksVolumesPluginframework that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/data-sources/volumes_pluginframework#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksVolumesPluginframework to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +50,7 @@ export class DataDatabricksVolumesPluginframework extends cdktf.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.53.0/docs/data-sources/volumes_pluginframework databricks_volumes_pluginframework} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/data-sources/volumes_pluginframework databricks_volumes_pluginframework} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +61,7 @@ export class DataDatabricksVolumesPluginframework extends cdktf.TerraformDataSou
       terraformResourceType: 'databricks_volumes_pluginframework',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.53.0',
+        providerVersion: '1.54.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
