@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.onlineTable.OnlineTable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 onlinetable.NewOnlineTable(scope Construct, id *string, config OnlineTableConfig) OnlineTable
 ```
@@ -425,7 +425,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.onlineTable.OnlineTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 onlinetable.OnlineTable_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.onlineTable.OnlineTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 onlinetable.OnlineTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ onlinetable.OnlineTable_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.onlineTable.OnlineTable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 onlinetable.OnlineTable_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ onlinetable.OnlineTable_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.onlineTable.OnlineTable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 onlinetable.OnlineTable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -835,7 +835,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.onlineTable.OnlineTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 &onlinetable.OnlineTableConfig {
 	Connection: interface{},
@@ -847,8 +847,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
 	Provisioners: *[]interface{},
 	Name: *string,
 	Id: *string,
-	Spec: github.com/cdktf/cdktf-provider-databricks-go/databricks.onlineTable.OnlineTableSpec,
-	Timeouts: github.com/cdktf/cdktf-provider-databricks-go/databricks.onlineTable.OnlineTableTimeouts,
+	Spec: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.onlineTable.OnlineTableSpec,
+	Timeouts: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.onlineTable.OnlineTableTimeouts,
 }
 ```
 
@@ -1000,13 +1000,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.onlineTable.OnlineTableSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 &onlinetable.OnlineTableSpec {
 	PerformFullCopy: interface{},
 	PrimaryKeyColumns: *[]*string,
-	RunContinuously: github.com/cdktf/cdktf-provider-databricks-go/databricks.onlineTable.OnlineTableSpecRunContinuously,
-	RunTriggered: github.com/cdktf/cdktf-provider-databricks-go/databricks.onlineTable.OnlineTableSpecRunTriggered,
+	RunContinuously: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.onlineTable.OnlineTableSpecRunContinuously,
+	RunTriggered: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.onlineTable.OnlineTableSpecRunTriggered,
 	SourceTableFullName: *string,
 	TimeseriesKey: *string,
 }
@@ -1106,7 +1106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.onlineTable.OnlineTableSpecRunContinuously.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 &onlinetable.OnlineTableSpecRunContinuously {
 
@@ -1119,7 +1119,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.onlineTable.OnlineTableSpecRunTriggered.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 &onlinetable.OnlineTableSpecRunTriggered {
 
@@ -1132,7 +1132,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.onlineTable.OnlineTableStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 &onlinetable.OnlineTableStatus {
 
@@ -1145,7 +1145,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.onlineTable.OnlineTableStatusContinuousUpdateStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 &onlinetable.OnlineTableStatusContinuousUpdateStatus {
 
@@ -1158,7 +1158,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.onlineTable.OnlineTableStatusContinuousUpdateStatusInitialPipelineSyncProgress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 &onlinetable.OnlineTableStatusContinuousUpdateStatusInitialPipelineSyncProgress {
 
@@ -1171,7 +1171,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.onlineTable.OnlineTableStatusFailedStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 &onlinetable.OnlineTableStatusFailedStatus {
 
@@ -1184,7 +1184,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.onlineTable.OnlineTableStatusProvisioningStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 &onlinetable.OnlineTableStatusProvisioningStatus {
 
@@ -1197,7 +1197,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.onlineTable.OnlineTableStatusProvisioningStatusInitialPipelineSyncProgress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 &onlinetable.OnlineTableStatusProvisioningStatusInitialPipelineSyncProgress {
 
@@ -1210,7 +1210,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.onlineTable.OnlineTableStatusTriggeredUpdateStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 &onlinetable.OnlineTableStatusTriggeredUpdateStatus {
 
@@ -1223,7 +1223,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.onlineTable.OnlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 &onlinetable.OnlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgress {
 
@@ -1236,7 +1236,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.onlineTable.OnlineTableTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 &onlinetable.OnlineTableTimeouts {
 	Create: *string,
@@ -1270,7 +1270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.onlineTable.OnlineTableSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 onlinetable.NewOnlineTableSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OnlineTableSpecOutputReference
 ```
@@ -1730,7 +1730,7 @@ func InternalValue() OnlineTableSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.onlineTable.OnlineTableSpecRunContinuouslyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 onlinetable.NewOnlineTableSpecRunContinuouslyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OnlineTableSpecRunContinuouslyOutputReference
 ```
@@ -1979,7 +1979,7 @@ func InternalValue() OnlineTableSpecRunContinuously
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.onlineTable.OnlineTableSpecRunTriggeredOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 onlinetable.NewOnlineTableSpecRunTriggeredOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OnlineTableSpecRunTriggeredOutputReference
 ```
@@ -2228,7 +2228,7 @@ func InternalValue() OnlineTableSpecRunTriggered
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.onlineTable.OnlineTableStatusContinuousUpdateStatusInitialPipelineSyncProgressList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 onlinetable.NewOnlineTableStatusContinuousUpdateStatusInitialPipelineSyncProgressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OnlineTableStatusContinuousUpdateStatusInitialPipelineSyncProgressList
 ```
@@ -2377,7 +2377,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.onlineTable.OnlineTableStatusContinuousUpdateStatusInitialPipelineSyncProgressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 onlinetable.NewOnlineTableStatusContinuousUpdateStatusInitialPipelineSyncProgressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OnlineTableStatusContinuousUpdateStatusInitialPipelineSyncProgressOutputReference
 ```
@@ -2699,7 +2699,7 @@ func InternalValue() OnlineTableStatusContinuousUpdateStatusInitialPipelineSyncP
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.onlineTable.OnlineTableStatusContinuousUpdateStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 onlinetable.NewOnlineTableStatusContinuousUpdateStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OnlineTableStatusContinuousUpdateStatusList
 ```
@@ -2848,7 +2848,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.onlineTable.OnlineTableStatusContinuousUpdateStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 onlinetable.NewOnlineTableStatusContinuousUpdateStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OnlineTableStatusContinuousUpdateStatusOutputReference
 ```
@@ -3148,7 +3148,7 @@ func InternalValue() OnlineTableStatusContinuousUpdateStatus
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.onlineTable.OnlineTableStatusFailedStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 onlinetable.NewOnlineTableStatusFailedStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OnlineTableStatusFailedStatusList
 ```
@@ -3297,7 +3297,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.onlineTable.OnlineTableStatusFailedStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 onlinetable.NewOnlineTableStatusFailedStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OnlineTableStatusFailedStatusOutputReference
 ```
@@ -3586,7 +3586,7 @@ func InternalValue() OnlineTableStatusFailedStatus
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.onlineTable.OnlineTableStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 onlinetable.NewOnlineTableStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OnlineTableStatusList
 ```
@@ -3735,7 +3735,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.onlineTable.OnlineTableStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 onlinetable.NewOnlineTableStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OnlineTableStatusOutputReference
 ```
@@ -4068,7 +4068,7 @@ func InternalValue() OnlineTableStatus
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.onlineTable.OnlineTableStatusProvisioningStatusInitialPipelineSyncProgressList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 onlinetable.NewOnlineTableStatusProvisioningStatusInitialPipelineSyncProgressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OnlineTableStatusProvisioningStatusInitialPipelineSyncProgressList
 ```
@@ -4217,7 +4217,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.onlineTable.OnlineTableStatusProvisioningStatusInitialPipelineSyncProgressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 onlinetable.NewOnlineTableStatusProvisioningStatusInitialPipelineSyncProgressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OnlineTableStatusProvisioningStatusInitialPipelineSyncProgressOutputReference
 ```
@@ -4539,7 +4539,7 @@ func InternalValue() OnlineTableStatusProvisioningStatusInitialPipelineSyncProgr
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.onlineTable.OnlineTableStatusProvisioningStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 onlinetable.NewOnlineTableStatusProvisioningStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OnlineTableStatusProvisioningStatusList
 ```
@@ -4688,7 +4688,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.onlineTable.OnlineTableStatusProvisioningStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 onlinetable.NewOnlineTableStatusProvisioningStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OnlineTableStatusProvisioningStatusOutputReference
 ```
@@ -4966,7 +4966,7 @@ func InternalValue() OnlineTableStatusProvisioningStatus
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.onlineTable.OnlineTableStatusTriggeredUpdateStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 onlinetable.NewOnlineTableStatusTriggeredUpdateStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OnlineTableStatusTriggeredUpdateStatusList
 ```
@@ -5115,7 +5115,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.onlineTable.OnlineTableStatusTriggeredUpdateStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 onlinetable.NewOnlineTableStatusTriggeredUpdateStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OnlineTableStatusTriggeredUpdateStatusOutputReference
 ```
@@ -5415,7 +5415,7 @@ func InternalValue() OnlineTableStatusTriggeredUpdateStatus
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.onlineTable.OnlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgressList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 onlinetable.NewOnlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OnlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgressList
 ```
@@ -5564,7 +5564,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.onlineTable.OnlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 onlinetable.NewOnlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OnlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgressOutputReference
 ```
@@ -5886,7 +5886,7 @@ func InternalValue() OnlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgre
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.onlineTable.OnlineTableTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/onlinetable"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/onlinetable"
 
 onlinetable.NewOnlineTableTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OnlineTableTimeoutsOutputReference
 ```
