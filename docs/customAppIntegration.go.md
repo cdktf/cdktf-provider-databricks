@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.customAppIntegration.CustomAppIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/customappintegration"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/customappintegration"
 
 customappintegration.NewCustomAppIntegration(scope Construct, id *string, config CustomAppIntegrationConfig) CustomAppIntegration
 ```
@@ -475,7 +475,7 @@ func ResetTokenAccessPolicy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.customAppIntegration.CustomAppIntegration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/customappintegration"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/customappintegration"
 
 customappintegration.CustomAppIntegration_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.customAppIntegration.CustomAppIntegration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/customappintegration"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/customappintegration"
 
 customappintegration.CustomAppIntegration_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ customappintegration.CustomAppIntegration_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.customAppIntegration.CustomAppIntegration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/customappintegration"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/customappintegration"
 
 customappintegration.CustomAppIntegration_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ customappintegration.CustomAppIntegration_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.customAppIntegration.CustomAppIntegration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/customappintegration"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/customappintegration"
 
 customappintegration.CustomAppIntegration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1028,7 +1028,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/customappintegration"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/customappintegration"
 
 &customappintegration.CustomAppIntegrationConfig {
 	Connection: interface{},
@@ -1049,7 +1049,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/customappintegr
 	Name: *string,
 	RedirectUrls: *[]*string,
 	Scopes: *[]*string,
-	TokenAccessPolicy: github.com/cdktf/cdktf-provider-databricks-go/databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicy,
+	TokenAccessPolicy: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.customAppIntegration.CustomAppIntegrationTokenAccessPolicy,
 }
 ```
 
@@ -1303,7 +1303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/customappintegration"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/customappintegration"
 
 &customappintegration.CustomAppIntegrationTokenAccessPolicy {
 	AccessTokenTtlInMinutes: *f64,
@@ -1351,7 +1351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/customappintegration"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/customappintegration"
 
 customappintegration.NewCustomAppIntegrationTokenAccessPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomAppIntegrationTokenAccessPolicyOutputReference
 ```
