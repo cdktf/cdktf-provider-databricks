@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/data-sources/current_user
+// https://registry.terraform.io/providers/databricks/databricks/1.55.0/docs/data-sources/current_user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksCurrentUserConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/data-sources/current_user#id DataDatabricksCurrentUser#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.55.0/docs/data-sources/current_user#id DataDatabricksCurrentUser#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,7 +17,7 @@ export interface DataDatabricksCurrentUserConfig extends cdktf.TerraformMetaArgu
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/data-sources/current_user databricks_current_user}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.55.0/docs/data-sources/current_user databricks_current_user}
 */
 export class DataDatabricksCurrentUser extends cdktf.TerraformDataSource {
 
@@ -38,7 +33,7 @@ export class DataDatabricksCurrentUser extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksCurrentUser resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksCurrentUser to import
-  * @param importFromId The id of the existing DataDatabricksCurrentUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/data-sources/current_user#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksCurrentUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.55.0/docs/data-sources/current_user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksCurrentUser to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -50,7 +45,7 @@ export class DataDatabricksCurrentUser extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.54.0/docs/data-sources/current_user databricks_current_user} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.55.0/docs/data-sources/current_user databricks_current_user} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -61,7 +56,7 @@ export class DataDatabricksCurrentUser extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_current_user',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.54.0',
+        providerVersion: '1.55.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

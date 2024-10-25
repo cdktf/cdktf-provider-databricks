@@ -5,6 +5,7 @@
 The following submodules are available:
 
 - [accessControlRuleSet](./accessControlRuleSet.typescript.md)
+- [alert](./alert.typescript.md)
 - [artifactAllowlist](./artifactAllowlist.typescript.md)
 - [automaticClusterUpdateWorkspaceSetting](./automaticClusterUpdateWorkspaceSetting.typescript.md)
 - [awsS3Mount](./awsS3Mount.typescript.md)
@@ -18,6 +19,7 @@ The following submodules are available:
 - [clusterPolicy](./clusterPolicy.typescript.md)
 - [complianceSecurityProfileWorkspaceSetting](./complianceSecurityProfileWorkspaceSetting.typescript.md)
 - [connection](./connection.typescript.md)
+- [customAppIntegration](./customAppIntegration.typescript.md)
 - [dashboard](./dashboard.typescript.md)
 - [dataDatabricksAwsAssumeRolePolicy](./dataDatabricksAwsAssumeRolePolicy.typescript.md)
 - [dataDatabricksAwsBucketPolicy](./dataDatabricksAwsBucketPolicy.typescript.md)
@@ -128,6 +130,7 @@ The following submodules are available:
 - [providerResource](./providerResource.typescript.md)
 - [qualityMonitor](./qualityMonitor.typescript.md)
 - [qualityMonitorPluginframework](./qualityMonitorPluginframework.typescript.md)
+- [query](./query.typescript.md)
 - [recipient](./recipient.typescript.md)
 - [registeredModel](./registeredModel.typescript.md)
 - [repo](./repo.typescript.md)

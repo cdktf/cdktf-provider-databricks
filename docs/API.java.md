@@ -5,6 +5,7 @@
 The following submodules are available:
 
 - [accessControlRuleSet](./accessControlRuleSet.java.md)
+- [alert](./alert.java.md)
 - [artifactAllowlist](./artifactAllowlist.java.md)
 - [automaticClusterUpdateWorkspaceSetting](./automaticClusterUpdateWorkspaceSetting.java.md)
 - [awsS3Mount](./awsS3Mount.java.md)
@@ -18,6 +19,7 @@ The following submodules are available:
 - [clusterPolicy](./clusterPolicy.java.md)
 - [complianceSecurityProfileWorkspaceSetting](./complianceSecurityProfileWorkspaceSetting.java.md)
 - [connection](./connection.java.md)
+- [customAppIntegration](./customAppIntegration.java.md)
 - [dashboard](./dashboard.java.md)
 - [dataDatabricksAwsAssumeRolePolicy](./dataDatabricksAwsAssumeRolePolicy.java.md)
 - [dataDatabricksAwsBucketPolicy](./dataDatabricksAwsBucketPolicy.java.md)
@@ -128,6 +130,7 @@ The following submodules are available:
 - [providerResource](./providerResource.java.md)
 - [qualityMonitor](./qualityMonitor.java.md)
 - [qualityMonitorPluginframework](./qualityMonitorPluginframework.java.md)
+- [query](./query.java.md)
 - [recipient](./recipient.java.md)
 - [registeredModel](./registeredModel.java.md)
 - [repo](./repo.java.md)
