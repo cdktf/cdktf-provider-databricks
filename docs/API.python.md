@@ -5,6 +5,7 @@
 The following submodules are available:
 
 - [accessControlRuleSet](./accessControlRuleSet.python.md)
+- [alert](./alert.python.md)
 - [artifactAllowlist](./artifactAllowlist.python.md)
 - [automaticClusterUpdateWorkspaceSetting](./automaticClusterUpdateWorkspaceSetting.python.md)
 - [awsS3Mount](./awsS3Mount.python.md)
@@ -18,6 +19,7 @@ The following submodules are available:
 - [clusterPolicy](./clusterPolicy.python.md)
 - [complianceSecurityProfileWorkspaceSetting](./complianceSecurityProfileWorkspaceSetting.python.md)
 - [connection](./connection.python.md)
+- [customAppIntegration](./customAppIntegration.python.md)
 - [dashboard](./dashboard.python.md)
 - [dataDatabricksAwsAssumeRolePolicy](./dataDatabricksAwsAssumeRolePolicy.python.md)
 - [dataDatabricksAwsBucketPolicy](./dataDatabricksAwsBucketPolicy.python.md)
@@ -128,6 +130,7 @@ The following submodules are available:
 - [providerResource](./providerResource.python.md)
 - [qualityMonitor](./qualityMonitor.python.md)
 - [qualityMonitorPluginframework](./qualityMonitorPluginframework.python.md)
+- [query](./query.python.md)
 - [recipient](./recipient.python.md)
 - [registeredModel](./registeredModel.python.md)
 - [repo](./repo.python.md)

@@ -5,6 +5,7 @@
 The following submodules are available:
 
 - [accessControlRuleSet](./accessControlRuleSet.go.md)
+- [alert](./alert.go.md)
 - [artifactAllowlist](./artifactAllowlist.go.md)
 - [automaticClusterUpdateWorkspaceSetting](./automaticClusterUpdateWorkspaceSetting.go.md)
 - [awsS3Mount](./awsS3Mount.go.md)
@@ -18,6 +19,7 @@ The following submodules are available:
 - [clusterPolicy](./clusterPolicy.go.md)
 - [complianceSecurityProfileWorkspaceSetting](./complianceSecurityProfileWorkspaceSetting.go.md)
 - [connection](./connection.go.md)
+- [customAppIntegration](./customAppIntegration.go.md)
 - [dashboard](./dashboard.go.md)
 - [dataDatabricksAwsAssumeRolePolicy](./dataDatabricksAwsAssumeRolePolicy.go.md)
 - [dataDatabricksAwsBucketPolicy](./dataDatabricksAwsBucketPolicy.go.md)
@@ -128,6 +130,7 @@ The following submodules are available:
 - [providerResource](./providerResource.go.md)
 - [qualityMonitor](./qualityMonitor.go.md)
 - [qualityMonitorPluginframework](./qualityMonitorPluginframework.go.md)
+- [query](./query.go.md)
 - [recipient](./recipient.go.md)
 - [registeredModel](./registeredModel.go.md)
 - [repo](./repo.go.md)

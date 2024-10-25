@@ -5,6 +5,7 @@
 The following submodules are available:
 
 - [accessControlRuleSet](./accessControlRuleSet.csharp.md)
+- [alert](./alert.csharp.md)
 - [artifactAllowlist](./artifactAllowlist.csharp.md)
 - [automaticClusterUpdateWorkspaceSetting](./automaticClusterUpdateWorkspaceSetting.csharp.md)
 - [awsS3Mount](./awsS3Mount.csharp.md)
@@ -18,6 +19,7 @@ The following submodules are available:
 - [clusterPolicy](./clusterPolicy.csharp.md)
 - [complianceSecurityProfileWorkspaceSetting](./complianceSecurityProfileWorkspaceSetting.csharp.md)
 - [connection](./connection.csharp.md)
+- [customAppIntegration](./customAppIntegration.csharp.md)
 - [dashboard](./dashboard.csharp.md)
 - [dataDatabricksAwsAssumeRolePolicy](./dataDatabricksAwsAssumeRolePolicy.csharp.md)
 - [dataDatabricksAwsBucketPolicy](./dataDatabricksAwsBucketPolicy.csharp.md)
@@ -128,6 +130,7 @@ The following submodules are available:
 - [providerResource](./providerResource.csharp.md)
 - [qualityMonitor](./qualityMonitor.csharp.md)
 - [qualityMonitorPluginframework](./qualityMonitorPluginframework.csharp.md)
+- [query](./query.csharp.md)
 - [recipient](./recipient.csharp.md)
 - [registeredModel](./registeredModel.csharp.md)
 - [repo](./repo.csharp.md)
