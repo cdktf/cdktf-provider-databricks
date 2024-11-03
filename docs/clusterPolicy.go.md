@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.clusterPolicy.ClusterPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/clusterpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/clusterpolicy"
 
 clusterpolicy.NewClusterPolicy(scope Construct, id *string, config ClusterPolicyConfig) ClusterPolicy
 ```
@@ -447,7 +447,7 @@ func ResetPolicyFamilyId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.clusterPolicy.ClusterPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/clusterpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/clusterpolicy"
 
 clusterpolicy.ClusterPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.clusterPolicy.ClusterPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/clusterpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/clusterpolicy"
 
 clusterpolicy.ClusterPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ clusterpolicy.ClusterPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.clusterPolicy.ClusterPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/clusterpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/clusterpolicy"
 
 clusterpolicy.ClusterPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ clusterpolicy.ClusterPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.clusterPolicy.ClusterPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/clusterpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/clusterpolicy"
 
 clusterpolicy.ClusterPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -923,7 +923,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.clusterPolicy.ClusterPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/clusterpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/clusterpolicy"
 
 &clusterpolicy.ClusterPolicyConfig {
 	Connection: interface{},
@@ -1142,14 +1142,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.clusterPolicy.ClusterPolicyLibraries.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/clusterpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/clusterpolicy"
 
 &clusterpolicy.ClusterPolicyLibraries {
-	Cran: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.clusterPolicy.ClusterPolicyLibrariesCran,
+	Cran: github.com/cdktf/cdktf-provider-databricks-go/databricks.clusterPolicy.ClusterPolicyLibrariesCran,
 	Egg: *string,
 	Jar: *string,
-	Maven: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.clusterPolicy.ClusterPolicyLibrariesMaven,
-	Pypi: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.clusterPolicy.ClusterPolicyLibrariesPypi,
+	Maven: github.com/cdktf/cdktf-provider-databricks-go/databricks.clusterPolicy.ClusterPolicyLibrariesMaven,
+	Pypi: github.com/cdktf/cdktf-provider-databricks-go/databricks.clusterPolicy.ClusterPolicyLibrariesPypi,
 	Requirements: *string,
 	Whl: *string,
 }
@@ -1264,7 +1264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.clusterPolicy.ClusterPolicyLibrariesCran.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/clusterpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/clusterpolicy"
 
 &clusterpolicy.ClusterPolicyLibrariesCran {
 	Package: *string,
@@ -1310,7 +1310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.clusterPolicy.ClusterPolicyLibrariesMaven.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/clusterpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/clusterpolicy"
 
 &clusterpolicy.ClusterPolicyLibrariesMaven {
 	Coordinates: *string,
@@ -1370,7 +1370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.clusterPolicy.ClusterPolicyLibrariesPypi.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/clusterpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/clusterpolicy"
 
 &clusterpolicy.ClusterPolicyLibrariesPypi {
 	Package: *string,
@@ -1418,7 +1418,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.clusterPolicy.ClusterPolicyLibrariesCranOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/clusterpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/clusterpolicy"
 
 clusterpolicy.NewClusterPolicyLibrariesCranOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterPolicyLibrariesCranOutputReference
 ```
@@ -1718,7 +1718,7 @@ func InternalValue() ClusterPolicyLibrariesCran
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.clusterPolicy.ClusterPolicyLibrariesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/clusterpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/clusterpolicy"
 
 clusterpolicy.NewClusterPolicyLibrariesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClusterPolicyLibrariesList
 ```
@@ -1878,7 +1878,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.clusterPolicy.ClusterPolicyLibrariesMavenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/clusterpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/clusterpolicy"
 
 clusterpolicy.NewClusterPolicyLibrariesMavenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterPolicyLibrariesMavenOutputReference
 ```
@@ -2207,7 +2207,7 @@ func InternalValue() ClusterPolicyLibrariesMaven
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.clusterPolicy.ClusterPolicyLibrariesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/clusterpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/clusterpolicy"
 
 clusterpolicy.NewClusterPolicyLibrariesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClusterPolicyLibrariesOutputReference
 ```
@@ -2716,7 +2716,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.clusterPolicy.ClusterPolicyLibrariesPypiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/clusterpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/clusterpolicy"
 
 clusterpolicy.NewClusterPolicyLibrariesPypiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterPolicyLibrariesPypiOutputReference
 ```
