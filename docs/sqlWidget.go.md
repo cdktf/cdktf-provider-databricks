@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlWidget.SqlWidget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlwidget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sqlwidget"
 
 sqlwidget.NewSqlWidget(scope Construct, id *string, config SqlWidgetConfig) SqlWidget
 ```
@@ -460,7 +460,7 @@ func ResetWidgetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.sqlWidget.SqlWidget.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlwidget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sqlwidget"
 
 sqlwidget.SqlWidget_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.sqlWidget.SqlWidget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlwidget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sqlwidget"
 
 sqlwidget.SqlWidget_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ sqlwidget.SqlWidget_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.sqlWidget.SqlWidget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlwidget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sqlwidget"
 
 sqlwidget.SqlWidget_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ sqlwidget.SqlWidget_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.sqlWidget.SqlWidget.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlwidget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sqlwidget"
 
 sqlwidget.SqlWidget_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -947,7 +947,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlWidget.SqlWidgetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlwidget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sqlwidget"
 
 &sqlwidget.SqlWidgetConfig {
 	Connection: interface{},
@@ -961,7 +961,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlwidget"
 	Description: *string,
 	Id: *string,
 	Parameter: interface{},
-	Position: github.com/cdktf/cdktf-provider-databricks-go/databricks.sqlWidget.SqlWidgetPosition,
+	Position: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.sqlWidget.SqlWidgetPosition,
 	Text: *string,
 	Title: *string,
 	VisualizationId: *string,
@@ -1182,7 +1182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlWidget.SqlWidgetParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlwidget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sqlwidget"
 
 &sqlwidget.SqlWidgetParameter {
 	Name: *string,
@@ -1284,7 +1284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlWidget.SqlWidgetPosition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlwidget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sqlwidget"
 
 &sqlwidget.SqlWidgetPosition {
 	SizeX: *f64,
@@ -1374,7 +1374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlWidget.SqlWidgetParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlwidget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sqlwidget"
 
 sqlwidget.NewSqlWidgetParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SqlWidgetParameterList
 ```
@@ -1534,7 +1534,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlWidget.SqlWidgetParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlwidget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sqlwidget"
 
 sqlwidget.NewSqlWidgetParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SqlWidgetParameterOutputReference
 ```
@@ -1961,7 +1961,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlWidget.SqlWidgetPositionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlwidget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sqlwidget"
 
 sqlwidget.NewSqlWidgetPositionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlWidgetPositionOutputReference
 ```
