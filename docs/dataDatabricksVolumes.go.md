@@ -4,12 +4,12 @@
 
 ### DataDatabricksVolumes <a name="DataDatabricksVolumes" id="@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/data-sources/volumes databricks_volumes}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/volumes databricks_volumes}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksvolumes"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksvolumes"
 
 datadatabricksvolumes.NewDataDatabricksVolumes(scope Construct, id *string, config DataDatabricksVolumesConfig) DataDatabricksVolumes
 ```
@@ -67,7 +67,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes.resetIds">ResetIds</a></code> | *No description.* |
 
 ---
@@ -264,12 +263,6 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes.resetId"></a>
-
-```go
-func ResetId()
-```
-
 ##### `ResetIds` <a name="ResetIds" id="@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes.resetIds"></a>
 
 ```go
@@ -290,7 +283,7 @@ func ResetIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksvolumes"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksvolumes"
 
 datadatabricksvolumes.DataDatabricksVolumes_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksvolumes"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksvolumes"
 
 datadatabricksvolumes.DataDatabricksVolumes_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +329,7 @@ datadatabricksvolumes.DataDatabricksVolumes_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksvolumes"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksvolumes"
 
 datadatabricksvolumes.DataDatabricksVolumes_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +343,7 @@ datadatabricksvolumes.DataDatabricksVolumes_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksvolumes"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksvolumes"
 
 datadatabricksvolumes.DataDatabricksVolumes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +372,7 @@ The construct id used in the generated config for the DataDatabricksVolumes to i
 
 The id of the existing DataDatabricksVolumes that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/data-sources/volumes#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/volumes#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -408,11 +401,9 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes.property.catalogNameInput">CatalogNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes.property.idsInput">IdsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes.property.schemaNameInput">SchemaNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes.property.catalogName">CatalogName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes.property.ids">Ids</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes.property.schemaName">SchemaName</a></code> | <code>*string</code> | *No description.* |
 
@@ -550,16 +541,6 @@ func CatalogNameInput() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes.property.idInput"></a>
-
-```go
-func IdInput() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `IdsInput`<sup>Optional</sup> <a name="IdsInput" id="@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes.property.idsInput"></a>
 
 ```go
@@ -584,16 +565,6 @@ func SchemaNameInput() *string
 
 ```go
 func CatalogName() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes.property.id"></a>
-
-```go
-func Id() *string
 ```
 
 - *Type:* *string
@@ -645,7 +616,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksvolumes"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksvolumes"
 
 &datadatabricksvolumes.DataDatabricksVolumesConfig {
 	Connection: interface{},
@@ -657,7 +628,6 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabri
 	Provisioners: *[]interface{},
 	CatalogName: *string,
 	SchemaName: *string,
-	Id: *string,
 	Ids: *[]*string,
 }
 ```
@@ -673,10 +643,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabri
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumesConfig.property.catalogName">CatalogName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/data-sources/volumes#catalog_name DataDatabricksVolumes#catalog_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumesConfig.property.schemaName">SchemaName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/data-sources/volumes#schema_name DataDatabricksVolumes#schema_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/data-sources/volumes#id DataDatabricksVolumes#id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumesConfig.property.ids">Ids</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/data-sources/volumes#ids DataDatabricksVolumes#ids}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumesConfig.property.catalogName">CatalogName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/volumes#catalog_name DataDatabricksVolumes#catalog_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumesConfig.property.schemaName">SchemaName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/volumes#schema_name DataDatabricksVolumes#schema_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumesConfig.property.ids">Ids</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/volumes#ids DataDatabricksVolumes#ids}. |
 
 ---
 
@@ -758,7 +727,7 @@ CatalogName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/data-sources/volumes#catalog_name DataDatabricksVolumes#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/volumes#catalog_name DataDatabricksVolumes#catalog_name}.
 
 ---
 
@@ -770,22 +739,7 @@ SchemaName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/data-sources/volumes#schema_name DataDatabricksVolumes#schema_name}.
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumesConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/data-sources/volumes#id DataDatabricksVolumes#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/volumes#schema_name DataDatabricksVolumes#schema_name}.
 
 ---
 
@@ -797,7 +751,7 @@ Ids *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/data-sources/volumes#ids DataDatabricksVolumes#ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/volumes#ids DataDatabricksVolumes#ids}.
 
 ---
 

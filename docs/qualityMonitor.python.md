@@ -4,7 +4,7 @@
 
 ### QualityMonitor <a name="QualityMonitor" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor databricks_quality_monitor}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor databricks_quality_monitor}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer"></a>
 
@@ -26,17 +26,16 @@ qualityMonitor.QualityMonitor(
   table_name: str,
   baseline_table_name: str = None,
   custom_metrics: typing.Union[IResolvable, typing.List[QualityMonitorCustomMetrics]] = None,
-  data_classification_config: QualityMonitorDataClassificationConfig = None,
+  data_classification_config: typing.Union[IResolvable, typing.List[QualityMonitorDataClassificationConfig]] = None,
   id: str = None,
-  inference_log: QualityMonitorInferenceLog = None,
+  inference_log: typing.Union[IResolvable, typing.List[QualityMonitorInferenceLog]] = None,
   latest_monitor_failure_msg: str = None,
-  notifications: QualityMonitorNotifications = None,
-  schedule: QualityMonitorSchedule = None,
+  notifications: typing.Union[IResolvable, typing.List[QualityMonitorNotifications]] = None,
+  schedule: typing.Union[IResolvable, typing.List[QualityMonitorSchedule]] = None,
   skip_builtin_dashboard: typing.Union[bool, IResolvable] = None,
   slicing_exprs: typing.List[str] = None,
-  snapshot: QualityMonitorSnapshot = None,
-  timeouts: QualityMonitorTimeouts = None,
-  time_series: QualityMonitorTimeSeries = None,
+  snapshot: typing.Union[IResolvable, typing.List[QualityMonitorSnapshot]] = None,
+  time_series: typing.Union[IResolvable, typing.List[QualityMonitorTimeSeries]] = None,
   warehouse_id: str = None
 )
 ```
@@ -52,23 +51,22 @@ qualityMonitor.QualityMonitor(
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.assetsDir">assets_dir</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#assets_dir QualityMonitor#assets_dir}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.outputSchemaName">output_schema_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#output_schema_name QualityMonitor#output_schema_name}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.tableName">table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#table_name QualityMonitor#table_name}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.baselineTableName">baseline_table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#baseline_table_name QualityMonitor#baseline_table_name}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.assetsDir">assets_dir</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#assets_dir QualityMonitor#assets_dir}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.outputSchemaName">output_schema_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#output_schema_name QualityMonitor#output_schema_name}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.tableName">table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#table_name QualityMonitor#table_name}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.baselineTableName">baseline_table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#baseline_table_name QualityMonitor#baseline_table_name}. |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.customMetrics">custom_metrics</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorCustomMetrics">QualityMonitorCustomMetrics</a>]]</code> | custom_metrics block. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.dataClassificationConfig">data_classification_config</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfig">QualityMonitorDataClassificationConfig</a></code> | data_classification_config block. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#id QualityMonitor#id}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.inferenceLog">inference_log</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog">QualityMonitorInferenceLog</a></code> | inference_log block. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.latestMonitorFailureMsg">latest_monitor_failure_msg</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#latest_monitor_failure_msg QualityMonitor#latest_monitor_failure_msg}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.notifications">notifications</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotifications">QualityMonitorNotifications</a></code> | notifications block. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.schedule">schedule</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSchedule">QualityMonitorSchedule</a></code> | schedule block. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.skipBuiltinDashboard">skip_builtin_dashboard</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#skip_builtin_dashboard QualityMonitor#skip_builtin_dashboard}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.slicingExprs">slicing_exprs</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#slicing_exprs QualityMonitor#slicing_exprs}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.snapshot">snapshot</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshot">QualityMonitorSnapshot</a></code> | snapshot block. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeouts">QualityMonitorTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.timeSeries">time_series</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeries">QualityMonitorTimeSeries</a></code> | time_series block. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.warehouseId">warehouse_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#warehouse_id QualityMonitor#warehouse_id}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.dataClassificationConfig">data_classification_config</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfig">QualityMonitorDataClassificationConfig</a>]]</code> | data_classification_config block. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#id QualityMonitor#id}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.inferenceLog">inference_log</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog">QualityMonitorInferenceLog</a>]]</code> | inference_log block. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.latestMonitorFailureMsg">latest_monitor_failure_msg</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#latest_monitor_failure_msg QualityMonitor#latest_monitor_failure_msg}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.notifications">notifications</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotifications">QualityMonitorNotifications</a>]]</code> | notifications block. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.schedule">schedule</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSchedule">QualityMonitorSchedule</a>]]</code> | schedule block. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.skipBuiltinDashboard">skip_builtin_dashboard</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#skip_builtin_dashboard QualityMonitor#skip_builtin_dashboard}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.slicingExprs">slicing_exprs</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#slicing_exprs QualityMonitor#slicing_exprs}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.snapshot">snapshot</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshot">QualityMonitorSnapshot</a>]]</code> | snapshot block. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.timeSeries">time_series</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeries">QualityMonitorTimeSeries</a>]]</code> | time_series block. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.warehouseId">warehouse_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#warehouse_id QualityMonitor#warehouse_id}. |
 
 ---
 
@@ -136,7 +134,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#assets_dir QualityMonitor#assets_dir}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#assets_dir QualityMonitor#assets_dir}.
 
 ---
 
@@ -144,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#output_schema_name QualityMonitor#output_schema_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#output_schema_name QualityMonitor#output_schema_name}.
 
 ---
 
@@ -152,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#table_name QualityMonitor#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#table_name QualityMonitor#table_name}.
 
 ---
 
@@ -160,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#baseline_table_name QualityMonitor#baseline_table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#baseline_table_name QualityMonitor#baseline_table_name}.
 
 ---
 
@@ -170,17 +168,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 custom_metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#custom_metrics QualityMonitor#custom_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#custom_metrics QualityMonitor#custom_metrics}
 
 ---
 
 ##### `data_classification_config`<sup>Optional</sup> <a name="data_classification_config" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.dataClassificationConfig"></a>
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfig">QualityMonitorDataClassificationConfig</a>
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfig">QualityMonitorDataClassificationConfig</a>]]
 
 data_classification_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#data_classification_config QualityMonitor#data_classification_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#data_classification_config QualityMonitor#data_classification_config}
 
 ---
 
@@ -188,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#id QualityMonitor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#id QualityMonitor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -197,11 +195,11 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `inference_log`<sup>Optional</sup> <a name="inference_log" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.inferenceLog"></a>
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog">QualityMonitorInferenceLog</a>
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog">QualityMonitorInferenceLog</a>]]
 
 inference_log block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#inference_log QualityMonitor#inference_log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#inference_log QualityMonitor#inference_log}
 
 ---
 
@@ -209,27 +207,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#latest_monitor_failure_msg QualityMonitor#latest_monitor_failure_msg}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#latest_monitor_failure_msg QualityMonitor#latest_monitor_failure_msg}.
 
 ---
 
 ##### `notifications`<sup>Optional</sup> <a name="notifications" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.notifications"></a>
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotifications">QualityMonitorNotifications</a>
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotifications">QualityMonitorNotifications</a>]]
 
 notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#notifications QualityMonitor#notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#notifications QualityMonitor#notifications}
 
 ---
 
 ##### `schedule`<sup>Optional</sup> <a name="schedule" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.schedule"></a>
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSchedule">QualityMonitorSchedule</a>
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSchedule">QualityMonitorSchedule</a>]]
 
 schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#schedule QualityMonitor#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#schedule QualityMonitor#schedule}
 
 ---
 
@@ -237,7 +235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#skip_builtin_dashboard QualityMonitor#skip_builtin_dashboard}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#skip_builtin_dashboard QualityMonitor#skip_builtin_dashboard}.
 
 ---
 
@@ -245,37 +243,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#slicing_exprs QualityMonitor#slicing_exprs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#slicing_exprs QualityMonitor#slicing_exprs}.
 
 ---
 
 ##### `snapshot`<sup>Optional</sup> <a name="snapshot" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.snapshot"></a>
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshot">QualityMonitorSnapshot</a>
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshot">QualityMonitorSnapshot</a>]]
 
 snapshot block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#snapshot QualityMonitor#snapshot}
-
----
-
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.timeouts"></a>
-
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeouts">QualityMonitorTimeouts</a>
-
-timeouts block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#timeouts QualityMonitor#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#snapshot QualityMonitor#snapshot}
 
 ---
 
 ##### `time_series`<sup>Optional</sup> <a name="time_series" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer.parameter.timeSeries"></a>
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeries">QualityMonitorTimeSeries</a>
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeries">QualityMonitorTimeSeries</a>]]
 
 time_series block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#time_series QualityMonitor#time_series}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#time_series QualityMonitor#time_series}
 
 ---
 
@@ -283,7 +271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#warehouse_id QualityMonitor#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#warehouse_id QualityMonitor#warehouse_id}.
 
 ---
 
@@ -320,7 +308,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.putNotifications">put_notifications</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.putSchedule">put_schedule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.putSnapshot">put_snapshot</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.putTimeSeries">put_time_series</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.resetBaselineTableName">reset_baseline_table_name</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.resetCustomMetrics">reset_custom_metrics</a></code> | *No description.* |
@@ -333,7 +320,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.resetSkipBuiltinDashboard">reset_skip_builtin_dashboard</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.resetSlicingExprs">reset_slicing_exprs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.resetSnapshot">reset_snapshot</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.resetTimeSeries">reset_time_series</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.resetWarehouseId">reset_warehouse_id</a></code> | *No description.* |
 
@@ -682,15 +668,13 @@ def put_custom_metrics(
 
 ```python
 def put_data_classification_config(
-  enabled: typing.Union[bool, IResolvable] = None
+  value: typing.Union[IResolvable, typing.List[QualityMonitorDataClassificationConfig]]
 ) -> None
 ```
 
-###### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.putDataClassificationConfig.parameter.enabled"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.putDataClassificationConfig.parameter.value"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#enabled QualityMonitor#enabled}.
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfig">QualityMonitorDataClassificationConfig</a>]]
 
 ---
 
@@ -698,69 +682,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ```python
 def put_inference_log(
-  granularities: typing.List[str],
-  model_id_col: str,
-  prediction_col: str,
-  problem_type: str,
-  timestamp_col: str,
-  label_col: str = None,
-  prediction_proba_col: str = None
+  value: typing.Union[IResolvable, typing.List[QualityMonitorInferenceLog]]
 ) -> None
 ```
 
-###### `granularities`<sup>Required</sup> <a name="granularities" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.putInferenceLog.parameter.granularities"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.putInferenceLog.parameter.value"></a>
 
-- *Type:* typing.List[str]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#granularities QualityMonitor#granularities}.
-
----
-
-###### `model_id_col`<sup>Required</sup> <a name="model_id_col" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.putInferenceLog.parameter.modelIdCol"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#model_id_col QualityMonitor#model_id_col}.
-
----
-
-###### `prediction_col`<sup>Required</sup> <a name="prediction_col" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.putInferenceLog.parameter.predictionCol"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#prediction_col QualityMonitor#prediction_col}.
-
----
-
-###### `problem_type`<sup>Required</sup> <a name="problem_type" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.putInferenceLog.parameter.problemType"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#problem_type QualityMonitor#problem_type}.
-
----
-
-###### `timestamp_col`<sup>Required</sup> <a name="timestamp_col" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.putInferenceLog.parameter.timestampCol"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#timestamp_col QualityMonitor#timestamp_col}.
-
----
-
-###### `label_col`<sup>Optional</sup> <a name="label_col" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.putInferenceLog.parameter.labelCol"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#label_col QualityMonitor#label_col}.
-
----
-
-###### `prediction_proba_col`<sup>Optional</sup> <a name="prediction_proba_col" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.putInferenceLog.parameter.predictionProbaCol"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#prediction_proba_col QualityMonitor#prediction_proba_col}.
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog">QualityMonitorInferenceLog</a>]]
 
 ---
 
@@ -768,28 +696,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ```python
 def put_notifications(
-  on_failure: QualityMonitorNotificationsOnFailure = None,
-  on_new_classification_tag_detected: QualityMonitorNotificationsOnNewClassificationTagDetected = None
+  value: typing.Union[IResolvable, typing.List[QualityMonitorNotifications]]
 ) -> None
 ```
 
-###### `on_failure`<sup>Optional</sup> <a name="on_failure" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.putNotifications.parameter.onFailure"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.putNotifications.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailure">QualityMonitorNotificationsOnFailure</a>
-
-on_failure block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#on_failure QualityMonitor#on_failure}
-
----
-
-###### `on_new_classification_tag_detected`<sup>Optional</sup> <a name="on_new_classification_tag_detected" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.putNotifications.parameter.onNewClassificationTagDetected"></a>
-
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetected">QualityMonitorNotificationsOnNewClassificationTagDetected</a>
-
-on_new_classification_tag_detected block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#on_new_classification_tag_detected QualityMonitor#on_new_classification_tag_detected}
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotifications">QualityMonitorNotifications</a>]]
 
 ---
 
@@ -797,46 +710,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ```python
 def put_schedule(
-  quartz_cron_expression: str,
-  timezone_id: str
+  value: typing.Union[IResolvable, typing.List[QualityMonitorSchedule]]
 ) -> None
 ```
 
-###### `quartz_cron_expression`<sup>Required</sup> <a name="quartz_cron_expression" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.putSchedule.parameter.quartzCronExpression"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.putSchedule.parameter.value"></a>
 
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#quartz_cron_expression QualityMonitor#quartz_cron_expression}.
-
----
-
-###### `timezone_id`<sup>Required</sup> <a name="timezone_id" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.putSchedule.parameter.timezoneId"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#timezone_id QualityMonitor#timezone_id}.
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSchedule">QualityMonitorSchedule</a>]]
 
 ---
 
 ##### `put_snapshot` <a name="put_snapshot" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.putSnapshot"></a>
 
 ```python
-def put_snapshot() -> None
-```
-
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.putTimeouts"></a>
-
-```python
-def put_timeouts(
-  create: str = None
+def put_snapshot(
+  value: typing.Union[IResolvable, typing.List[QualityMonitorSnapshot]]
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.putTimeouts.parameter.create"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.putSnapshot.parameter.value"></a>
 
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#create QualityMonitor#create}.
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshot">QualityMonitorSnapshot</a>]]
 
 ---
 
@@ -844,24 +738,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ```python
 def put_time_series(
-  granularities: typing.List[str],
-  timestamp_col: str
+  value: typing.Union[IResolvable, typing.List[QualityMonitorTimeSeries]]
 ) -> None
 ```
 
-###### `granularities`<sup>Required</sup> <a name="granularities" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.putTimeSeries.parameter.granularities"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.putTimeSeries.parameter.value"></a>
 
-- *Type:* typing.List[str]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#granularities QualityMonitor#granularities}.
-
----
-
-###### `timestamp_col`<sup>Required</sup> <a name="timestamp_col" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.putTimeSeries.parameter.timestampCol"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#timestamp_col QualityMonitor#timestamp_col}.
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeries">QualityMonitorTimeSeries</a>]]
 
 ---
 
@@ -929,12 +812,6 @@ def reset_slicing_exprs() -> None
 
 ```python
 def reset_snapshot() -> None
-```
-
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.resetTimeouts"></a>
-
-```python
-def reset_timeouts() -> None
 ```
 
 ##### `reset_time_series` <a name="reset_time_series" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.resetTimeSeries"></a>
@@ -1063,7 +940,7 @@ The construct id used in the generated config for the QualityMonitor to import.
 
 The id of the existing QualityMonitor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1095,33 +972,31 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.customMetrics">custom_metrics</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorCustomMetricsList">QualityMonitorCustomMetricsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.dashboardId">dashboard_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.dataClassificationConfig">data_classification_config</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigOutputReference">QualityMonitorDataClassificationConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.dataClassificationConfig">data_classification_config</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList">QualityMonitorDataClassificationConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.driftMetricsTableName">drift_metrics_table_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.inferenceLog">inference_log</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogOutputReference">QualityMonitorInferenceLogOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.inferenceLog">inference_log</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList">QualityMonitorInferenceLogList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.monitorVersion">monitor_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.notifications">notifications</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference">QualityMonitorNotificationsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.notifications">notifications</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList">QualityMonitorNotificationsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.profileMetricsTableName">profile_metrics_table_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.schedule">schedule</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleOutputReference">QualityMonitorScheduleOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.snapshot">snapshot</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotOutputReference">QualityMonitorSnapshotOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.schedule">schedule</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList">QualityMonitorScheduleList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.snapshot">snapshot</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList">QualityMonitorSnapshotList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.status">status</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference">QualityMonitorTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.timeSeries">time_series</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesOutputReference">QualityMonitorTimeSeriesOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.timeSeries">time_series</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList">QualityMonitorTimeSeriesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.assetsDirInput">assets_dir_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.baselineTableNameInput">baseline_table_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.customMetricsInput">custom_metrics_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorCustomMetrics">QualityMonitorCustomMetrics</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.dataClassificationConfigInput">data_classification_config_input</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfig">QualityMonitorDataClassificationConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.dataClassificationConfigInput">data_classification_config_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfig">QualityMonitorDataClassificationConfig</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.inferenceLogInput">inference_log_input</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog">QualityMonitorInferenceLog</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.inferenceLogInput">inference_log_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog">QualityMonitorInferenceLog</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.latestMonitorFailureMsgInput">latest_monitor_failure_msg_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.notificationsInput">notifications_input</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotifications">QualityMonitorNotifications</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.notificationsInput">notifications_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotifications">QualityMonitorNotifications</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.outputSchemaNameInput">output_schema_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.scheduleInput">schedule_input</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSchedule">QualityMonitorSchedule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.scheduleInput">schedule_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSchedule">QualityMonitorSchedule</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.skipBuiltinDashboardInput">skip_builtin_dashboard_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.slicingExprsInput">slicing_exprs_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.snapshotInput">snapshot_input</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshot">QualityMonitorSnapshot</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.snapshotInput">snapshot_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshot">QualityMonitorSnapshot</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.tableNameInput">table_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeouts">QualityMonitorTimeouts</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.timeSeriesInput">time_series_input</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeries">QualityMonitorTimeSeries</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.timeSeriesInput">time_series_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeries">QualityMonitorTimeSeries</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.warehouseIdInput">warehouse_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.assetsDir">assets_dir</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.baselineTableName">baseline_table_name</a></code> | <code>str</code> | *No description.* |
@@ -1300,10 +1175,10 @@ dashboard_id: str
 ##### `data_classification_config`<sup>Required</sup> <a name="data_classification_config" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.dataClassificationConfig"></a>
 
 ```python
-data_classification_config: QualityMonitorDataClassificationConfigOutputReference
+data_classification_config: QualityMonitorDataClassificationConfigList
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigOutputReference">QualityMonitorDataClassificationConfigOutputReference</a>
+- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList">QualityMonitorDataClassificationConfigList</a>
 
 ---
 
@@ -1320,10 +1195,10 @@ drift_metrics_table_name: str
 ##### `inference_log`<sup>Required</sup> <a name="inference_log" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.inferenceLog"></a>
 
 ```python
-inference_log: QualityMonitorInferenceLogOutputReference
+inference_log: QualityMonitorInferenceLogList
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogOutputReference">QualityMonitorInferenceLogOutputReference</a>
+- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList">QualityMonitorInferenceLogList</a>
 
 ---
 
@@ -1340,10 +1215,10 @@ monitor_version: str
 ##### `notifications`<sup>Required</sup> <a name="notifications" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.notifications"></a>
 
 ```python
-notifications: QualityMonitorNotificationsOutputReference
+notifications: QualityMonitorNotificationsList
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference">QualityMonitorNotificationsOutputReference</a>
+- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList">QualityMonitorNotificationsList</a>
 
 ---
 
@@ -1360,20 +1235,20 @@ profile_metrics_table_name: str
 ##### `schedule`<sup>Required</sup> <a name="schedule" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.schedule"></a>
 
 ```python
-schedule: QualityMonitorScheduleOutputReference
+schedule: QualityMonitorScheduleList
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleOutputReference">QualityMonitorScheduleOutputReference</a>
+- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList">QualityMonitorScheduleList</a>
 
 ---
 
 ##### `snapshot`<sup>Required</sup> <a name="snapshot" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.snapshot"></a>
 
 ```python
-snapshot: QualityMonitorSnapshotOutputReference
+snapshot: QualityMonitorSnapshotList
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotOutputReference">QualityMonitorSnapshotOutputReference</a>
+- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList">QualityMonitorSnapshotList</a>
 
 ---
 
@@ -1387,23 +1262,13 @@ status: str
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.timeouts"></a>
-
-```python
-timeouts: QualityMonitorTimeoutsOutputReference
-```
-
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference">QualityMonitorTimeoutsOutputReference</a>
-
----
-
 ##### `time_series`<sup>Required</sup> <a name="time_series" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.timeSeries"></a>
 
 ```python
-time_series: QualityMonitorTimeSeriesOutputReference
+time_series: QualityMonitorTimeSeriesList
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesOutputReference">QualityMonitorTimeSeriesOutputReference</a>
+- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList">QualityMonitorTimeSeriesList</a>
 
 ---
 
@@ -1440,10 +1305,10 @@ custom_metrics_input: typing.Union[IResolvable, typing.List[QualityMonitorCustom
 ##### `data_classification_config_input`<sup>Optional</sup> <a name="data_classification_config_input" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.dataClassificationConfigInput"></a>
 
 ```python
-data_classification_config_input: QualityMonitorDataClassificationConfig
+data_classification_config_input: typing.Union[IResolvable, typing.List[QualityMonitorDataClassificationConfig]]
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfig">QualityMonitorDataClassificationConfig</a>
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfig">QualityMonitorDataClassificationConfig</a>]]
 
 ---
 
@@ -1460,10 +1325,10 @@ id_input: str
 ##### `inference_log_input`<sup>Optional</sup> <a name="inference_log_input" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.inferenceLogInput"></a>
 
 ```python
-inference_log_input: QualityMonitorInferenceLog
+inference_log_input: typing.Union[IResolvable, typing.List[QualityMonitorInferenceLog]]
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog">QualityMonitorInferenceLog</a>
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog">QualityMonitorInferenceLog</a>]]
 
 ---
 
@@ -1480,10 +1345,10 @@ latest_monitor_failure_msg_input: str
 ##### `notifications_input`<sup>Optional</sup> <a name="notifications_input" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.notificationsInput"></a>
 
 ```python
-notifications_input: QualityMonitorNotifications
+notifications_input: typing.Union[IResolvable, typing.List[QualityMonitorNotifications]]
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotifications">QualityMonitorNotifications</a>
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotifications">QualityMonitorNotifications</a>]]
 
 ---
 
@@ -1500,10 +1365,10 @@ output_schema_name_input: str
 ##### `schedule_input`<sup>Optional</sup> <a name="schedule_input" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.scheduleInput"></a>
 
 ```python
-schedule_input: QualityMonitorSchedule
+schedule_input: typing.Union[IResolvable, typing.List[QualityMonitorSchedule]]
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSchedule">QualityMonitorSchedule</a>
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSchedule">QualityMonitorSchedule</a>]]
 
 ---
 
@@ -1530,10 +1395,10 @@ slicing_exprs_input: typing.List[str]
 ##### `snapshot_input`<sup>Optional</sup> <a name="snapshot_input" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.snapshotInput"></a>
 
 ```python
-snapshot_input: QualityMonitorSnapshot
+snapshot_input: typing.Union[IResolvable, typing.List[QualityMonitorSnapshot]]
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshot">QualityMonitorSnapshot</a>
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshot">QualityMonitorSnapshot</a>]]
 
 ---
 
@@ -1547,23 +1412,13 @@ table_name_input: str
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.timeoutsInput"></a>
-
-```python
-timeouts_input: typing.Union[IResolvable, QualityMonitorTimeouts]
-```
-
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeouts">QualityMonitorTimeouts</a>]
-
----
-
 ##### `time_series_input`<sup>Optional</sup> <a name="time_series_input" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.property.timeSeriesInput"></a>
 
 ```python
-time_series_input: QualityMonitorTimeSeries
+time_series_input: typing.Union[IResolvable, typing.List[QualityMonitorTimeSeries]]
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeries">QualityMonitorTimeSeries</a>
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeries">QualityMonitorTimeSeries</a>]]
 
 ---
 
@@ -1707,17 +1562,16 @@ qualityMonitor.QualityMonitorConfig(
   table_name: str,
   baseline_table_name: str = None,
   custom_metrics: typing.Union[IResolvable, typing.List[QualityMonitorCustomMetrics]] = None,
-  data_classification_config: QualityMonitorDataClassificationConfig = None,
+  data_classification_config: typing.Union[IResolvable, typing.List[QualityMonitorDataClassificationConfig]] = None,
   id: str = None,
-  inference_log: QualityMonitorInferenceLog = None,
+  inference_log: typing.Union[IResolvable, typing.List[QualityMonitorInferenceLog]] = None,
   latest_monitor_failure_msg: str = None,
-  notifications: QualityMonitorNotifications = None,
-  schedule: QualityMonitorSchedule = None,
+  notifications: typing.Union[IResolvable, typing.List[QualityMonitorNotifications]] = None,
+  schedule: typing.Union[IResolvable, typing.List[QualityMonitorSchedule]] = None,
   skip_builtin_dashboard: typing.Union[bool, IResolvable] = None,
   slicing_exprs: typing.List[str] = None,
-  snapshot: QualityMonitorSnapshot = None,
-  timeouts: QualityMonitorTimeouts = None,
-  time_series: QualityMonitorTimeSeries = None,
+  snapshot: typing.Union[IResolvable, typing.List[QualityMonitorSnapshot]] = None,
+  time_series: typing.Union[IResolvable, typing.List[QualityMonitorTimeSeries]] = None,
   warehouse_id: str = None
 )
 ```
@@ -1733,23 +1587,22 @@ qualityMonitor.QualityMonitorConfig(
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.assetsDir">assets_dir</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#assets_dir QualityMonitor#assets_dir}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.outputSchemaName">output_schema_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#output_schema_name QualityMonitor#output_schema_name}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.tableName">table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#table_name QualityMonitor#table_name}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.baselineTableName">baseline_table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#baseline_table_name QualityMonitor#baseline_table_name}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.assetsDir">assets_dir</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#assets_dir QualityMonitor#assets_dir}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.outputSchemaName">output_schema_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#output_schema_name QualityMonitor#output_schema_name}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.tableName">table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#table_name QualityMonitor#table_name}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.baselineTableName">baseline_table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#baseline_table_name QualityMonitor#baseline_table_name}. |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.customMetrics">custom_metrics</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorCustomMetrics">QualityMonitorCustomMetrics</a>]]</code> | custom_metrics block. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.dataClassificationConfig">data_classification_config</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfig">QualityMonitorDataClassificationConfig</a></code> | data_classification_config block. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#id QualityMonitor#id}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.inferenceLog">inference_log</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog">QualityMonitorInferenceLog</a></code> | inference_log block. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.latestMonitorFailureMsg">latest_monitor_failure_msg</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#latest_monitor_failure_msg QualityMonitor#latest_monitor_failure_msg}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.notifications">notifications</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotifications">QualityMonitorNotifications</a></code> | notifications block. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.schedule">schedule</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSchedule">QualityMonitorSchedule</a></code> | schedule block. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.skipBuiltinDashboard">skip_builtin_dashboard</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#skip_builtin_dashboard QualityMonitor#skip_builtin_dashboard}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.slicingExprs">slicing_exprs</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#slicing_exprs QualityMonitor#slicing_exprs}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.snapshot">snapshot</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshot">QualityMonitorSnapshot</a></code> | snapshot block. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeouts">QualityMonitorTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.timeSeries">time_series</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeries">QualityMonitorTimeSeries</a></code> | time_series block. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.warehouseId">warehouse_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#warehouse_id QualityMonitor#warehouse_id}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.dataClassificationConfig">data_classification_config</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfig">QualityMonitorDataClassificationConfig</a>]]</code> | data_classification_config block. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#id QualityMonitor#id}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.inferenceLog">inference_log</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog">QualityMonitorInferenceLog</a>]]</code> | inference_log block. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.latestMonitorFailureMsg">latest_monitor_failure_msg</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#latest_monitor_failure_msg QualityMonitor#latest_monitor_failure_msg}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.notifications">notifications</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotifications">QualityMonitorNotifications</a>]]</code> | notifications block. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.schedule">schedule</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSchedule">QualityMonitorSchedule</a>]]</code> | schedule block. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.skipBuiltinDashboard">skip_builtin_dashboard</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#skip_builtin_dashboard QualityMonitor#skip_builtin_dashboard}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.slicingExprs">slicing_exprs</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#slicing_exprs QualityMonitor#slicing_exprs}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.snapshot">snapshot</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshot">QualityMonitorSnapshot</a>]]</code> | snapshot block. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.timeSeries">time_series</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeries">QualityMonitorTimeSeries</a>]]</code> | time_series block. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.warehouseId">warehouse_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#warehouse_id QualityMonitor#warehouse_id}. |
 
 ---
 
@@ -1831,7 +1684,7 @@ assets_dir: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#assets_dir QualityMonitor#assets_dir}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#assets_dir QualityMonitor#assets_dir}.
 
 ---
 
@@ -1843,7 +1696,7 @@ output_schema_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#output_schema_name QualityMonitor#output_schema_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#output_schema_name QualityMonitor#output_schema_name}.
 
 ---
 
@@ -1855,7 +1708,7 @@ table_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#table_name QualityMonitor#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#table_name QualityMonitor#table_name}.
 
 ---
 
@@ -1867,7 +1720,7 @@ baseline_table_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#baseline_table_name QualityMonitor#baseline_table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#baseline_table_name QualityMonitor#baseline_table_name}.
 
 ---
 
@@ -1881,21 +1734,21 @@ custom_metrics: typing.Union[IResolvable, typing.List[QualityMonitorCustomMetric
 
 custom_metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#custom_metrics QualityMonitor#custom_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#custom_metrics QualityMonitor#custom_metrics}
 
 ---
 
 ##### `data_classification_config`<sup>Optional</sup> <a name="data_classification_config" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.dataClassificationConfig"></a>
 
 ```python
-data_classification_config: QualityMonitorDataClassificationConfig
+data_classification_config: typing.Union[IResolvable, typing.List[QualityMonitorDataClassificationConfig]]
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfig">QualityMonitorDataClassificationConfig</a>
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfig">QualityMonitorDataClassificationConfig</a>]]
 
 data_classification_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#data_classification_config QualityMonitor#data_classification_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#data_classification_config QualityMonitor#data_classification_config}
 
 ---
 
@@ -1907,7 +1760,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#id QualityMonitor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#id QualityMonitor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1917,14 +1770,14 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `inference_log`<sup>Optional</sup> <a name="inference_log" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.inferenceLog"></a>
 
 ```python
-inference_log: QualityMonitorInferenceLog
+inference_log: typing.Union[IResolvable, typing.List[QualityMonitorInferenceLog]]
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog">QualityMonitorInferenceLog</a>
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog">QualityMonitorInferenceLog</a>]]
 
 inference_log block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#inference_log QualityMonitor#inference_log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#inference_log QualityMonitor#inference_log}
 
 ---
 
@@ -1936,35 +1789,35 @@ latest_monitor_failure_msg: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#latest_monitor_failure_msg QualityMonitor#latest_monitor_failure_msg}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#latest_monitor_failure_msg QualityMonitor#latest_monitor_failure_msg}.
 
 ---
 
 ##### `notifications`<sup>Optional</sup> <a name="notifications" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.notifications"></a>
 
 ```python
-notifications: QualityMonitorNotifications
+notifications: typing.Union[IResolvable, typing.List[QualityMonitorNotifications]]
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotifications">QualityMonitorNotifications</a>
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotifications">QualityMonitorNotifications</a>]]
 
 notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#notifications QualityMonitor#notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#notifications QualityMonitor#notifications}
 
 ---
 
 ##### `schedule`<sup>Optional</sup> <a name="schedule" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.schedule"></a>
 
 ```python
-schedule: QualityMonitorSchedule
+schedule: typing.Union[IResolvable, typing.List[QualityMonitorSchedule]]
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSchedule">QualityMonitorSchedule</a>
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSchedule">QualityMonitorSchedule</a>]]
 
 schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#schedule QualityMonitor#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#schedule QualityMonitor#schedule}
 
 ---
 
@@ -1976,7 +1829,7 @@ skip_builtin_dashboard: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#skip_builtin_dashboard QualityMonitor#skip_builtin_dashboard}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#skip_builtin_dashboard QualityMonitor#skip_builtin_dashboard}.
 
 ---
 
@@ -1988,49 +1841,35 @@ slicing_exprs: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#slicing_exprs QualityMonitor#slicing_exprs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#slicing_exprs QualityMonitor#slicing_exprs}.
 
 ---
 
 ##### `snapshot`<sup>Optional</sup> <a name="snapshot" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.snapshot"></a>
 
 ```python
-snapshot: QualityMonitorSnapshot
+snapshot: typing.Union[IResolvable, typing.List[QualityMonitorSnapshot]]
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshot">QualityMonitorSnapshot</a>
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshot">QualityMonitorSnapshot</a>]]
 
 snapshot block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#snapshot QualityMonitor#snapshot}
-
----
-
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.timeouts"></a>
-
-```python
-timeouts: QualityMonitorTimeouts
-```
-
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeouts">QualityMonitorTimeouts</a>
-
-timeouts block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#timeouts QualityMonitor#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#snapshot QualityMonitor#snapshot}
 
 ---
 
 ##### `time_series`<sup>Optional</sup> <a name="time_series" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.property.timeSeries"></a>
 
 ```python
-time_series: QualityMonitorTimeSeries
+time_series: typing.Union[IResolvable, typing.List[QualityMonitorTimeSeries]]
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeries">QualityMonitorTimeSeries</a>
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeries">QualityMonitorTimeSeries</a>]]
 
 time_series block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#time_series QualityMonitor#time_series}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#time_series QualityMonitor#time_series}
 
 ---
 
@@ -2042,7 +1881,7 @@ warehouse_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#warehouse_id QualityMonitor#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#warehouse_id QualityMonitor#warehouse_id}.
 
 ---
 
@@ -2066,11 +1905,11 @@ qualityMonitor.QualityMonitorCustomMetrics(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorCustomMetrics.property.definition">definition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#definition QualityMonitor#definition}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorCustomMetrics.property.inputColumns">input_columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#input_columns QualityMonitor#input_columns}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorCustomMetrics.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#name QualityMonitor#name}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorCustomMetrics.property.outputDataType">output_data_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#output_data_type QualityMonitor#output_data_type}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorCustomMetrics.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#type QualityMonitor#type}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorCustomMetrics.property.definition">definition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#definition QualityMonitor#definition}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorCustomMetrics.property.inputColumns">input_columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#input_columns QualityMonitor#input_columns}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorCustomMetrics.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#name QualityMonitor#name}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorCustomMetrics.property.outputDataType">output_data_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#output_data_type QualityMonitor#output_data_type}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorCustomMetrics.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#type QualityMonitor#type}. |
 
 ---
 
@@ -2082,7 +1921,7 @@ definition: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#definition QualityMonitor#definition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#definition QualityMonitor#definition}.
 
 ---
 
@@ -2094,7 +1933,7 @@ input_columns: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#input_columns QualityMonitor#input_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#input_columns QualityMonitor#input_columns}.
 
 ---
 
@@ -2106,7 +1945,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#name QualityMonitor#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#name QualityMonitor#name}.
 
 ---
 
@@ -2118,7 +1957,7 @@ output_data_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#output_data_type QualityMonitor#output_data_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#output_data_type QualityMonitor#output_data_type}.
 
 ---
 
@@ -2130,7 +1969,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#type QualityMonitor#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#type QualityMonitor#type}.
 
 ---
 
@@ -2150,7 +1989,7 @@ qualityMonitor.QualityMonitorDataClassificationConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfig.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#enabled QualityMonitor#enabled}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfig.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#enabled QualityMonitor#enabled}. |
 
 ---
 
@@ -2162,7 +2001,7 @@ enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#enabled QualityMonitor#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#enabled QualityMonitor#enabled}.
 
 ---
 
@@ -2188,13 +2027,13 @@ qualityMonitor.QualityMonitorInferenceLog(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog.property.granularities">granularities</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#granularities QualityMonitor#granularities}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog.property.modelIdCol">model_id_col</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#model_id_col QualityMonitor#model_id_col}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog.property.predictionCol">prediction_col</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#prediction_col QualityMonitor#prediction_col}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog.property.problemType">problem_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#problem_type QualityMonitor#problem_type}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog.property.timestampCol">timestamp_col</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#timestamp_col QualityMonitor#timestamp_col}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog.property.labelCol">label_col</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#label_col QualityMonitor#label_col}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog.property.predictionProbaCol">prediction_proba_col</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#prediction_proba_col QualityMonitor#prediction_proba_col}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog.property.granularities">granularities</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#granularities QualityMonitor#granularities}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog.property.modelIdCol">model_id_col</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#model_id_col QualityMonitor#model_id_col}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog.property.predictionCol">prediction_col</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#prediction_col QualityMonitor#prediction_col}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog.property.problemType">problem_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#problem_type QualityMonitor#problem_type}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog.property.timestampCol">timestamp_col</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#timestamp_col QualityMonitor#timestamp_col}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog.property.labelCol">label_col</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#label_col QualityMonitor#label_col}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog.property.predictionProbaCol">prediction_proba_col</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#prediction_proba_col QualityMonitor#prediction_proba_col}. |
 
 ---
 
@@ -2206,7 +2045,7 @@ granularities: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#granularities QualityMonitor#granularities}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#granularities QualityMonitor#granularities}.
 
 ---
 
@@ -2218,7 +2057,7 @@ model_id_col: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#model_id_col QualityMonitor#model_id_col}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#model_id_col QualityMonitor#model_id_col}.
 
 ---
 
@@ -2230,7 +2069,7 @@ prediction_col: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#prediction_col QualityMonitor#prediction_col}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#prediction_col QualityMonitor#prediction_col}.
 
 ---
 
@@ -2242,7 +2081,7 @@ problem_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#problem_type QualityMonitor#problem_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#problem_type QualityMonitor#problem_type}.
 
 ---
 
@@ -2254,7 +2093,7 @@ timestamp_col: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#timestamp_col QualityMonitor#timestamp_col}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#timestamp_col QualityMonitor#timestamp_col}.
 
 ---
 
@@ -2266,7 +2105,7 @@ label_col: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#label_col QualityMonitor#label_col}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#label_col QualityMonitor#label_col}.
 
 ---
 
@@ -2278,7 +2117,7 @@ prediction_proba_col: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#prediction_proba_col QualityMonitor#prediction_proba_col}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#prediction_proba_col QualityMonitor#prediction_proba_col}.
 
 ---
 
@@ -2290,8 +2129,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 from cdktf_cdktf_provider_databricks import quality_monitor
 
 qualityMonitor.QualityMonitorNotifications(
-  on_failure: QualityMonitorNotificationsOnFailure = None,
-  on_new_classification_tag_detected: QualityMonitorNotificationsOnNewClassificationTagDetected = None
+  on_failure: typing.Union[IResolvable, typing.List[QualityMonitorNotificationsOnFailure]] = None,
+  on_new_classification_tag_detected: typing.Union[IResolvable, typing.List[QualityMonitorNotificationsOnNewClassificationTagDetected]] = None
 )
 ```
 
@@ -2299,36 +2138,36 @@ qualityMonitor.QualityMonitorNotifications(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotifications.property.onFailure">on_failure</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailure">QualityMonitorNotificationsOnFailure</a></code> | on_failure block. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotifications.property.onNewClassificationTagDetected">on_new_classification_tag_detected</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetected">QualityMonitorNotificationsOnNewClassificationTagDetected</a></code> | on_new_classification_tag_detected block. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotifications.property.onFailure">on_failure</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailure">QualityMonitorNotificationsOnFailure</a>]]</code> | on_failure block. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotifications.property.onNewClassificationTagDetected">on_new_classification_tag_detected</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetected">QualityMonitorNotificationsOnNewClassificationTagDetected</a>]]</code> | on_new_classification_tag_detected block. |
 
 ---
 
 ##### `on_failure`<sup>Optional</sup> <a name="on_failure" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotifications.property.onFailure"></a>
 
 ```python
-on_failure: QualityMonitorNotificationsOnFailure
+on_failure: typing.Union[IResolvable, typing.List[QualityMonitorNotificationsOnFailure]]
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailure">QualityMonitorNotificationsOnFailure</a>
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailure">QualityMonitorNotificationsOnFailure</a>]]
 
 on_failure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#on_failure QualityMonitor#on_failure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#on_failure QualityMonitor#on_failure}
 
 ---
 
 ##### `on_new_classification_tag_detected`<sup>Optional</sup> <a name="on_new_classification_tag_detected" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotifications.property.onNewClassificationTagDetected"></a>
 
 ```python
-on_new_classification_tag_detected: QualityMonitorNotificationsOnNewClassificationTagDetected
+on_new_classification_tag_detected: typing.Union[IResolvable, typing.List[QualityMonitorNotificationsOnNewClassificationTagDetected]]
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetected">QualityMonitorNotificationsOnNewClassificationTagDetected</a>
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetected">QualityMonitorNotificationsOnNewClassificationTagDetected</a>]]
 
 on_new_classification_tag_detected block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#on_new_classification_tag_detected QualityMonitor#on_new_classification_tag_detected}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#on_new_classification_tag_detected QualityMonitor#on_new_classification_tag_detected}
 
 ---
 
@@ -2348,7 +2187,7 @@ qualityMonitor.QualityMonitorNotificationsOnFailure(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailure.property.emailAddresses">email_addresses</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#email_addresses QualityMonitor#email_addresses}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailure.property.emailAddresses">email_addresses</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#email_addresses QualityMonitor#email_addresses}. |
 
 ---
 
@@ -2360,7 +2199,7 @@ email_addresses: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#email_addresses QualityMonitor#email_addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#email_addresses QualityMonitor#email_addresses}.
 
 ---
 
@@ -2380,7 +2219,7 @@ qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetected(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetected.property.emailAddresses">email_addresses</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#email_addresses QualityMonitor#email_addresses}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetected.property.emailAddresses">email_addresses</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#email_addresses QualityMonitor#email_addresses}. |
 
 ---
 
@@ -2392,7 +2231,7 @@ email_addresses: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#email_addresses QualityMonitor#email_addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#email_addresses QualityMonitor#email_addresses}.
 
 ---
 
@@ -2413,8 +2252,8 @@ qualityMonitor.QualityMonitorSchedule(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSchedule.property.quartzCronExpression">quartz_cron_expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#quartz_cron_expression QualityMonitor#quartz_cron_expression}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSchedule.property.timezoneId">timezone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#timezone_id QualityMonitor#timezone_id}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSchedule.property.quartzCronExpression">quartz_cron_expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#quartz_cron_expression QualityMonitor#quartz_cron_expression}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSchedule.property.timezoneId">timezone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#timezone_id QualityMonitor#timezone_id}. |
 
 ---
 
@@ -2426,7 +2265,7 @@ quartz_cron_expression: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#quartz_cron_expression QualityMonitor#quartz_cron_expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#quartz_cron_expression QualityMonitor#quartz_cron_expression}.
 
 ---
 
@@ -2438,7 +2277,7 @@ timezone_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#timezone_id QualityMonitor#timezone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#timezone_id QualityMonitor#timezone_id}.
 
 ---
 
@@ -2452,38 +2291,6 @@ from cdktf_cdktf_provider_databricks import quality_monitor
 qualityMonitor.QualityMonitorSnapshot()
 ```
 
-
-### QualityMonitorTimeouts <a name="QualityMonitorTimeouts" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeouts"></a>
-
-#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeouts.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_databricks import quality_monitor
-
-qualityMonitor.QualityMonitorTimeouts(
-  create: str = None
-)
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#create QualityMonitor#create}. |
-
----
-
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeouts.property.create"></a>
-
-```python
-create: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#create QualityMonitor#create}.
-
----
 
 ### QualityMonitorTimeSeries <a name="QualityMonitorTimeSeries" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeries"></a>
 
@@ -2502,8 +2309,8 @@ qualityMonitor.QualityMonitorTimeSeries(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeries.property.granularities">granularities</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#granularities QualityMonitor#granularities}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeries.property.timestampCol">timestamp_col</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#timestamp_col QualityMonitor#timestamp_col}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeries.property.granularities">granularities</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#granularities QualityMonitor#granularities}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeries.property.timestampCol">timestamp_col</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#timestamp_col QualityMonitor#timestamp_col}. |
 
 ---
 
@@ -2515,7 +2322,7 @@ granularities: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#granularities QualityMonitor#granularities}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#granularities QualityMonitor#granularities}.
 
 ---
 
@@ -2527,7 +2334,7 @@ timestamp_col: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#timestamp_col QualityMonitor#timestamp_col}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/quality_monitor#timestamp_col QualityMonitor#timestamp_col}.
 
 ---
 
@@ -3107,6 +2914,176 @@ internal_value: typing.Union[IResolvable, QualityMonitorCustomMetrics]
 ---
 
 
+### QualityMonitorDataClassificationConfigList <a name="QualityMonitorDataClassificationConfigList" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import quality_monitor
+
+qualityMonitor.QualityMonitorDataClassificationConfigList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> QualityMonitorDataClassificationConfigOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfig">QualityMonitorDataClassificationConfig</a>]]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[QualityMonitorDataClassificationConfig]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfig">QualityMonitorDataClassificationConfig</a>]]
+
+---
+
+
 ### QualityMonitorDataClassificationConfigOutputReference <a name="QualityMonitorDataClassificationConfigOutputReference" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigOutputReference.Initializer"></a>
@@ -3116,7 +3093,9 @@ from cdktf_cdktf_provider_databricks import quality_monitor
 
 qualityMonitor.QualityMonitorDataClassificationConfigOutputReference(
   terraform_resource: IInterpolatingParent,
-  terraform_attribute: str
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
 )
 ```
 
@@ -3124,6 +3103,8 @@ qualityMonitor.QualityMonitorDataClassificationConfigOutputReference(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -3140,6 +3121,22 @@ The parent resource.
 - *Type:* str
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -3351,7 +3348,7 @@ def reset_enabled() -> None
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigOutputReference.property.enabledInput">enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigOutputReference.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfig">QualityMonitorDataClassificationConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfig">QualityMonitorDataClassificationConfig</a>]</code> | *No description.* |
 
 ---
 
@@ -3402,10 +3399,180 @@ enabled: typing.Union[bool, IResolvable]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: QualityMonitorDataClassificationConfig
+internal_value: typing.Union[IResolvable, QualityMonitorDataClassificationConfig]
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfig">QualityMonitorDataClassificationConfig</a>
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfig">QualityMonitorDataClassificationConfig</a>]
+
+---
+
+
+### QualityMonitorInferenceLogList <a name="QualityMonitorInferenceLogList" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import quality_monitor
+
+qualityMonitor.QualityMonitorInferenceLogList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> QualityMonitorInferenceLogOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog">QualityMonitorInferenceLog</a>]]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[QualityMonitorInferenceLog]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog">QualityMonitorInferenceLog</a>]]
 
 ---
 
@@ -3419,7 +3586,9 @@ from cdktf_cdktf_provider_databricks import quality_monitor
 
 qualityMonitor.QualityMonitorInferenceLogOutputReference(
   terraform_resource: IInterpolatingParent,
-  terraform_attribute: str
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
 )
 ```
 
@@ -3427,6 +3596,8 @@ qualityMonitor.QualityMonitorInferenceLogOutputReference(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -3443,6 +3614,22 @@ The parent resource.
 - *Type:* str
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -3673,7 +3860,7 @@ def reset_prediction_proba_col() -> None
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogOutputReference.property.predictionProbaCol">prediction_proba_col</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogOutputReference.property.problemType">problem_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogOutputReference.property.timestampCol">timestamp_col</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog">QualityMonitorInferenceLog</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog">QualityMonitorInferenceLog</a>]</code> | *No description.* |
 
 ---
 
@@ -3844,10 +4031,350 @@ timestamp_col: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: QualityMonitorInferenceLog
+internal_value: typing.Union[IResolvable, QualityMonitorInferenceLog]
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog">QualityMonitorInferenceLog</a>
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog">QualityMonitorInferenceLog</a>]
+
+---
+
+
+### QualityMonitorNotificationsList <a name="QualityMonitorNotificationsList" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import quality_monitor
+
+qualityMonitor.QualityMonitorNotificationsList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> QualityMonitorNotificationsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotifications">QualityMonitorNotifications</a>]]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[QualityMonitorNotifications]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotifications">QualityMonitorNotifications</a>]]
+
+---
+
+
+### QualityMonitorNotificationsOnFailureList <a name="QualityMonitorNotificationsOnFailureList" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import quality_monitor
+
+qualityMonitor.QualityMonitorNotificationsOnFailureList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> QualityMonitorNotificationsOnFailureOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailure">QualityMonitorNotificationsOnFailure</a>]]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[QualityMonitorNotificationsOnFailure]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailure">QualityMonitorNotificationsOnFailure</a>]]
 
 ---
 
@@ -3861,7 +4388,9 @@ from cdktf_cdktf_provider_databricks import quality_monitor
 
 qualityMonitor.QualityMonitorNotificationsOnFailureOutputReference(
   terraform_resource: IInterpolatingParent,
-  terraform_attribute: str
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
 )
 ```
 
@@ -3869,6 +4398,8 @@ qualityMonitor.QualityMonitorNotificationsOnFailureOutputReference(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -3885,6 +4416,22 @@ The parent resource.
 - *Type:* str
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -4096,7 +4643,7 @@ def reset_email_addresses() -> None
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureOutputReference.property.emailAddressesInput">email_addresses_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureOutputReference.property.emailAddresses">email_addresses</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailure">QualityMonitorNotificationsOnFailure</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailure">QualityMonitorNotificationsOnFailure</a>]</code> | *No description.* |
 
 ---
 
@@ -4147,10 +4694,180 @@ email_addresses: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: QualityMonitorNotificationsOnFailure
+internal_value: typing.Union[IResolvable, QualityMonitorNotificationsOnFailure]
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailure">QualityMonitorNotificationsOnFailure</a>
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailure">QualityMonitorNotificationsOnFailure</a>]
+
+---
+
+
+### QualityMonitorNotificationsOnNewClassificationTagDetectedList <a name="QualityMonitorNotificationsOnNewClassificationTagDetectedList" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import quality_monitor
+
+qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetected">QualityMonitorNotificationsOnNewClassificationTagDetected</a>]]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[QualityMonitorNotificationsOnNewClassificationTagDetected]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetected">QualityMonitorNotificationsOnNewClassificationTagDetected</a>]]
 
 ---
 
@@ -4164,7 +4881,9 @@ from cdktf_cdktf_provider_databricks import quality_monitor
 
 qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference(
   terraform_resource: IInterpolatingParent,
-  terraform_attribute: str
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
 )
 ```
 
@@ -4172,6 +4891,8 @@ qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedOutputRe
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -4188,6 +4909,22 @@ The parent resource.
 - *Type:* str
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -4399,7 +5136,7 @@ def reset_email_addresses() -> None
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference.property.emailAddressesInput">email_addresses_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference.property.emailAddresses">email_addresses</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetected">QualityMonitorNotificationsOnNewClassificationTagDetected</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetected">QualityMonitorNotificationsOnNewClassificationTagDetected</a>]</code> | *No description.* |
 
 ---
 
@@ -4450,10 +5187,10 @@ email_addresses: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: QualityMonitorNotificationsOnNewClassificationTagDetected
+internal_value: typing.Union[IResolvable, QualityMonitorNotificationsOnNewClassificationTagDetected]
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetected">QualityMonitorNotificationsOnNewClassificationTagDetected</a>
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetected">QualityMonitorNotificationsOnNewClassificationTagDetected</a>]
 
 ---
 
@@ -4467,7 +5204,9 @@ from cdktf_cdktf_provider_databricks import quality_monitor
 
 qualityMonitor.QualityMonitorNotificationsOutputReference(
   terraform_resource: IInterpolatingParent,
-  terraform_attribute: str
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
 )
 ```
 
@@ -4475,6 +5214,8 @@ qualityMonitor.QualityMonitorNotificationsOutputReference(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -4491,6 +5232,22 @@ The parent resource.
 - *Type:* str
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -4694,15 +5451,13 @@ Returns a reversible string representation.
 
 ```python
 def put_on_failure(
-  email_addresses: typing.List[str] = None
+  value: typing.Union[IResolvable, typing.List[QualityMonitorNotificationsOnFailure]]
 ) -> None
 ```
 
-###### `email_addresses`<sup>Optional</sup> <a name="email_addresses" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference.putOnFailure.parameter.emailAddresses"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference.putOnFailure.parameter.value"></a>
 
-- *Type:* typing.List[str]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#email_addresses QualityMonitor#email_addresses}.
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailure">QualityMonitorNotificationsOnFailure</a>]]
 
 ---
 
@@ -4710,15 +5465,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ```python
 def put_on_new_classification_tag_detected(
-  email_addresses: typing.List[str] = None
+  value: typing.Union[IResolvable, typing.List[QualityMonitorNotificationsOnNewClassificationTagDetected]]
 ) -> None
 ```
 
-###### `email_addresses`<sup>Optional</sup> <a name="email_addresses" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference.putOnNewClassificationTagDetected.parameter.emailAddresses"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference.putOnNewClassificationTagDetected.parameter.value"></a>
 
-- *Type:* typing.List[str]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/quality_monitor#email_addresses QualityMonitor#email_addresses}.
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetected">QualityMonitorNotificationsOnNewClassificationTagDetected</a>]]
 
 ---
 
@@ -4741,11 +5494,11 @@ def reset_on_new_classification_tag_detected() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference.property.onFailure">on_failure</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureOutputReference">QualityMonitorNotificationsOnFailureOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference.property.onNewClassificationTagDetected">on_new_classification_tag_detected</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference">QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference.property.onFailureInput">on_failure_input</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailure">QualityMonitorNotificationsOnFailure</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference.property.onNewClassificationTagDetectedInput">on_new_classification_tag_detected_input</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetected">QualityMonitorNotificationsOnNewClassificationTagDetected</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotifications">QualityMonitorNotifications</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference.property.onFailure">on_failure</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList">QualityMonitorNotificationsOnFailureList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference.property.onNewClassificationTagDetected">on_new_classification_tag_detected</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList">QualityMonitorNotificationsOnNewClassificationTagDetectedList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference.property.onFailureInput">on_failure_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailure">QualityMonitorNotificationsOnFailure</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference.property.onNewClassificationTagDetectedInput">on_new_classification_tag_detected_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetected">QualityMonitorNotificationsOnNewClassificationTagDetected</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotifications">QualityMonitorNotifications</a>]</code> | *No description.* |
 
 ---
 
@@ -4776,50 +5529,220 @@ fqn: str
 ##### `on_failure`<sup>Required</sup> <a name="on_failure" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference.property.onFailure"></a>
 
 ```python
-on_failure: QualityMonitorNotificationsOnFailureOutputReference
+on_failure: QualityMonitorNotificationsOnFailureList
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureOutputReference">QualityMonitorNotificationsOnFailureOutputReference</a>
+- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList">QualityMonitorNotificationsOnFailureList</a>
 
 ---
 
 ##### `on_new_classification_tag_detected`<sup>Required</sup> <a name="on_new_classification_tag_detected" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference.property.onNewClassificationTagDetected"></a>
 
 ```python
-on_new_classification_tag_detected: QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference
+on_new_classification_tag_detected: QualityMonitorNotificationsOnNewClassificationTagDetectedList
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference">QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference</a>
+- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList">QualityMonitorNotificationsOnNewClassificationTagDetectedList</a>
 
 ---
 
 ##### `on_failure_input`<sup>Optional</sup> <a name="on_failure_input" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference.property.onFailureInput"></a>
 
 ```python
-on_failure_input: QualityMonitorNotificationsOnFailure
+on_failure_input: typing.Union[IResolvable, typing.List[QualityMonitorNotificationsOnFailure]]
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailure">QualityMonitorNotificationsOnFailure</a>
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailure">QualityMonitorNotificationsOnFailure</a>]]
 
 ---
 
 ##### `on_new_classification_tag_detected_input`<sup>Optional</sup> <a name="on_new_classification_tag_detected_input" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference.property.onNewClassificationTagDetectedInput"></a>
 
 ```python
-on_new_classification_tag_detected_input: QualityMonitorNotificationsOnNewClassificationTagDetected
+on_new_classification_tag_detected_input: typing.Union[IResolvable, typing.List[QualityMonitorNotificationsOnNewClassificationTagDetected]]
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetected">QualityMonitorNotificationsOnNewClassificationTagDetected</a>
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetected">QualityMonitorNotificationsOnNewClassificationTagDetected</a>]]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: QualityMonitorNotifications
+internal_value: typing.Union[IResolvable, QualityMonitorNotifications]
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotifications">QualityMonitorNotifications</a>
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotifications">QualityMonitorNotifications</a>]
+
+---
+
+
+### QualityMonitorScheduleList <a name="QualityMonitorScheduleList" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import quality_monitor
+
+qualityMonitor.QualityMonitorScheduleList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> QualityMonitorScheduleOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSchedule">QualityMonitorSchedule</a>]]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[QualityMonitorSchedule]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSchedule">QualityMonitorSchedule</a>]]
 
 ---
 
@@ -4833,7 +5756,9 @@ from cdktf_cdktf_provider_databricks import quality_monitor
 
 qualityMonitor.QualityMonitorScheduleOutputReference(
   terraform_resource: IInterpolatingParent,
-  terraform_attribute: str
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
 )
 ```
 
@@ -4841,6 +5766,8 @@ qualityMonitor.QualityMonitorScheduleOutputReference(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -4857,6 +5784,22 @@ The parent resource.
 - *Type:* str
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -5064,7 +6007,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleOutputReference.property.timezoneIdInput">timezone_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleOutputReference.property.quartzCronExpression">quartz_cron_expression</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleOutputReference.property.timezoneId">timezone_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSchedule">QualityMonitorSchedule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSchedule">QualityMonitorSchedule</a>]</code> | *No description.* |
 
 ---
 
@@ -5145,10 +6088,180 @@ timezone_id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: QualityMonitorSchedule
+internal_value: typing.Union[IResolvable, QualityMonitorSchedule]
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSchedule">QualityMonitorSchedule</a>
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSchedule">QualityMonitorSchedule</a>]
+
+---
+
+
+### QualityMonitorSnapshotList <a name="QualityMonitorSnapshotList" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import quality_monitor
+
+qualityMonitor.QualityMonitorSnapshotList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> QualityMonitorSnapshotOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshot">QualityMonitorSnapshot</a>]]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[QualityMonitorSnapshot]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshot">QualityMonitorSnapshot</a>]]
 
 ---
 
@@ -5162,7 +6275,9 @@ from cdktf_cdktf_provider_databricks import quality_monitor
 
 qualityMonitor.QualityMonitorSnapshotOutputReference(
   terraform_resource: IInterpolatingParent,
-  terraform_attribute: str
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
 )
 ```
 
@@ -5170,6 +6285,8 @@ qualityMonitor.QualityMonitorSnapshotOutputReference(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -5186,6 +6303,22 @@ The parent resource.
 - *Type:* str
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -5388,7 +6521,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshot">QualityMonitorSnapshot</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshot">QualityMonitorSnapshot</a>]</code> | *No description.* |
 
 ---
 
@@ -5419,35 +6552,37 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: QualityMonitorSnapshot
+internal_value: typing.Union[IResolvable, QualityMonitorSnapshot]
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshot">QualityMonitorSnapshot</a>
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshot">QualityMonitorSnapshot</a>]
 
 ---
 
 
-### QualityMonitorTimeoutsOutputReference <a name="QualityMonitorTimeoutsOutputReference" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference"></a>
+### QualityMonitorTimeSeriesList <a name="QualityMonitorTimeSeriesList" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList.Initializer"></a>
 
 ```python
 from cdktf_cdktf_provider_databricks import quality_monitor
 
-qualityMonitor.QualityMonitorTimeoutsOutputReference(
+qualityMonitor.QualityMonitorTimeSeriesList(
   terraform_resource: IInterpolatingParent,
-  terraform_attribute: str
+  terraform_attribute: str,
+  wraps_set: bool
 )
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -5455,7 +6590,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -5463,174 +6598,51 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
 #### Methods <a name="Methods" id="Methods"></a>
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.computeFqn"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.getAnyMapAttribute"></a>
-
-```python
-def get_any_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Any]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.getBooleanAttribute"></a>
-
-```python
-def get_boolean_attribute(
-  terraform_attribute: str
-) -> IResolvable
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.getBooleanMapAttribute"></a>
-
-```python
-def get_boolean_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[bool]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.getListAttribute"></a>
-
-```python
-def get_list_attribute(
-  terraform_attribute: str
-) -> typing.List[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.getNumberAttribute"></a>
-
-```python
-def get_number_attribute(
-  terraform_attribute: str
-) -> typing.Union[int, float]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.getNumberListAttribute"></a>
-
-```python
-def get_number_list_attribute(
-  terraform_attribute: str
-) -> typing.List[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.getNumberMapAttribute"></a>
-
-```python
-def get_number_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.getStringAttribute"></a>
-
-```python
-def get_string_attribute(
-  terraform_attribute: str
-) -> str
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.getStringMapAttribute"></a>
-
-```python
-def get_string_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.interpolationForAttribute"></a>
-
-```python
-def interpolation_for_attribute(
-  property: str
-) -> IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* str
-
----
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList.resolve"></a>
 
 ```python
 def resolve(
@@ -5640,13 +6652,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -5656,26 +6668,34 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.resetCreate"></a>
+##### `get` <a name="get" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList.get"></a>
 
 ```python
-def reset_create() -> None
+def get(
+  index: typing.Union[int, float]
+) -> QualityMonitorTimeSeriesOutputReference
 ```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
 
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeouts">QualityMonitorTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeries">QualityMonitorTimeSeries</a>]]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -5689,7 +6709,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -5699,33 +6719,13 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.property.createInput"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList.property.internalValue"></a>
 
 ```python
-create_input: str
+internal_value: typing.Union[IResolvable, typing.List[QualityMonitorTimeSeries]]
 ```
 
-- *Type:* str
-
----
-
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.property.create"></a>
-
-```python
-create: str
-```
-
-- *Type:* str
-
----
-
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeoutsOutputReference.property.internalValue"></a>
-
-```python
-internal_value: typing.Union[IResolvable, QualityMonitorTimeouts]
-```
-
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeouts">QualityMonitorTimeouts</a>]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeries">QualityMonitorTimeSeries</a>]]
 
 ---
 
@@ -5739,7 +6739,9 @@ from cdktf_cdktf_provider_databricks import quality_monitor
 
 qualityMonitor.QualityMonitorTimeSeriesOutputReference(
   terraform_resource: IInterpolatingParent,
-  terraform_attribute: str
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
 )
 ```
 
@@ -5747,6 +6749,8 @@ qualityMonitor.QualityMonitorTimeSeriesOutputReference(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -5763,6 +6767,22 @@ The parent resource.
 - *Type:* str
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -5969,7 +6989,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesOutputReference.property.timestampColInput">timestamp_col_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesOutputReference.property.granularities">granularities</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesOutputReference.property.timestampCol">timestamp_col</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeries">QualityMonitorTimeSeries</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeries">QualityMonitorTimeSeries</a>]</code> | *No description.* |
 
 ---
 
@@ -6040,10 +7060,10 @@ timestamp_col: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: QualityMonitorTimeSeries
+internal_value: typing.Union[IResolvable, QualityMonitorTimeSeries]
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeries">QualityMonitorTimeSeries</a>
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeries">QualityMonitorTimeSeries</a>]
 
 ---
 

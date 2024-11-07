@@ -4,12 +4,12 @@
 
 ### Library <a name="Library" id="@cdktf/provider-databricks.library.Library"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library databricks_library}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library databricks_library}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.library.Library.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/library"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/library"
 
 library.NewLibrary(scope Construct, id *string, config LibraryConfig) Library
 ```
@@ -378,36 +378,36 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutCran` <a name="PutCran" id="@cdktf/provider-databricks.library.Library.putCran"></a>
 
 ```go
-func PutCran(value LibraryCran)
+func PutCran(value interface{})
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.library.Library.putCran.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-databricks.library.LibraryCran">LibraryCran</a>
+- *Type:* interface{}
 
 ---
 
 ##### `PutMaven` <a name="PutMaven" id="@cdktf/provider-databricks.library.Library.putMaven"></a>
 
 ```go
-func PutMaven(value LibraryMaven)
+func PutMaven(value interface{})
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.library.Library.putMaven.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-databricks.library.LibraryMaven">LibraryMaven</a>
+- *Type:* interface{}
 
 ---
 
 ##### `PutPypi` <a name="PutPypi" id="@cdktf/provider-databricks.library.Library.putPypi"></a>
 
 ```go
-func PutPypi(value LibraryPypi)
+func PutPypi(value interface{})
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.library.Library.putPypi.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-databricks.library.LibraryPypi">LibraryPypi</a>
+- *Type:* interface{}
 
 ---
 
@@ -473,7 +473,7 @@ func ResetWhl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.library.Library.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/library"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/library"
 
 library.Library_IsConstruct(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.library.Library.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/library"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/library"
 
 library.Library_IsTerraformElement(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ library.Library_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.library.Library.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/library"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/library"
 
 library.Library_IsTerraformResource(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ library.Library_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.library.Library.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/library"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/library"
 
 library.Library_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -562,7 +562,7 @@ The construct id used in the generated config for the Library to import.
 
 The id of the existing Library that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -592,16 +592,16 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.library.Library.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.library.Library.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.library.Library.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.library.Library.property.cran">Cran</a></code> | <code><a href="#@cdktf/provider-databricks.library.LibraryCranOutputReference">LibraryCranOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.library.Library.property.maven">Maven</a></code> | <code><a href="#@cdktf/provider-databricks.library.LibraryMavenOutputReference">LibraryMavenOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.library.Library.property.pypi">Pypi</a></code> | <code><a href="#@cdktf/provider-databricks.library.LibraryPypiOutputReference">LibraryPypiOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.library.Library.property.cran">Cran</a></code> | <code><a href="#@cdktf/provider-databricks.library.LibraryCranList">LibraryCranList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.library.Library.property.maven">Maven</a></code> | <code><a href="#@cdktf/provider-databricks.library.LibraryMavenList">LibraryMavenList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.library.Library.property.pypi">Pypi</a></code> | <code><a href="#@cdktf/provider-databricks.library.LibraryPypiList">LibraryPypiList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.library.Library.property.clusterIdInput">ClusterIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.library.Library.property.cranInput">CranInput</a></code> | <code><a href="#@cdktf/provider-databricks.library.LibraryCran">LibraryCran</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.library.Library.property.cranInput">CranInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.library.Library.property.eggInput">EggInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.library.Library.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.library.Library.property.jarInput">JarInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.library.Library.property.mavenInput">MavenInput</a></code> | <code><a href="#@cdktf/provider-databricks.library.LibraryMaven">LibraryMaven</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.library.Library.property.pypiInput">PypiInput</a></code> | <code><a href="#@cdktf/provider-databricks.library.LibraryPypi">LibraryPypi</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.library.Library.property.mavenInput">MavenInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.library.Library.property.pypiInput">PypiInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.library.Library.property.requirementsInput">RequirementsInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.library.Library.property.whlInput">WhlInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.library.Library.property.clusterId">ClusterId</a></code> | <code>*string</code> | *No description.* |
@@ -758,30 +758,30 @@ func Provisioners() *[]interface{}
 ##### `Cran`<sup>Required</sup> <a name="Cran" id="@cdktf/provider-databricks.library.Library.property.cran"></a>
 
 ```go
-func Cran() LibraryCranOutputReference
+func Cran() LibraryCranList
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.library.LibraryCranOutputReference">LibraryCranOutputReference</a>
+- *Type:* <a href="#@cdktf/provider-databricks.library.LibraryCranList">LibraryCranList</a>
 
 ---
 
 ##### `Maven`<sup>Required</sup> <a name="Maven" id="@cdktf/provider-databricks.library.Library.property.maven"></a>
 
 ```go
-func Maven() LibraryMavenOutputReference
+func Maven() LibraryMavenList
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.library.LibraryMavenOutputReference">LibraryMavenOutputReference</a>
+- *Type:* <a href="#@cdktf/provider-databricks.library.LibraryMavenList">LibraryMavenList</a>
 
 ---
 
 ##### `Pypi`<sup>Required</sup> <a name="Pypi" id="@cdktf/provider-databricks.library.Library.property.pypi"></a>
 
 ```go
-func Pypi() LibraryPypiOutputReference
+func Pypi() LibraryPypiList
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.library.LibraryPypiOutputReference">LibraryPypiOutputReference</a>
+- *Type:* <a href="#@cdktf/provider-databricks.library.LibraryPypiList">LibraryPypiList</a>
 
 ---
 
@@ -798,10 +798,10 @@ func ClusterIdInput() *string
 ##### `CranInput`<sup>Optional</sup> <a name="CranInput" id="@cdktf/provider-databricks.library.Library.property.cranInput"></a>
 
 ```go
-func CranInput() LibraryCran
+func CranInput() interface{}
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.library.LibraryCran">LibraryCran</a>
+- *Type:* interface{}
 
 ---
 
@@ -838,20 +838,20 @@ func JarInput() *string
 ##### `MavenInput`<sup>Optional</sup> <a name="MavenInput" id="@cdktf/provider-databricks.library.Library.property.mavenInput"></a>
 
 ```go
-func MavenInput() LibraryMaven
+func MavenInput() interface{}
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.library.LibraryMaven">LibraryMaven</a>
+- *Type:* interface{}
 
 ---
 
 ##### `PypiInput`<sup>Optional</sup> <a name="PypiInput" id="@cdktf/provider-databricks.library.Library.property.pypiInput"></a>
 
 ```go
-func PypiInput() LibraryPypi
+func PypiInput() interface{}
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.library.LibraryPypi">LibraryPypi</a>
+- *Type:* interface{}
 
 ---
 
@@ -960,7 +960,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.library.LibraryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/library"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/library"
 
 &library.LibraryConfig {
 	Connection: interface{},
@@ -971,12 +971,12 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/library"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	ClusterId: *string,
-	Cran: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.library.LibraryCran,
+	Cran: interface{},
 	Egg: *string,
 	Id: *string,
 	Jar: *string,
-	Maven: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.library.LibraryMaven,
-	Pypi: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.library.LibraryPypi,
+	Maven: interface{},
+	Pypi: interface{},
 	Requirements: *string,
 	Whl: *string,
 }
@@ -993,15 +993,15 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/library"
 | <code><a href="#@cdktf/provider-databricks.library.LibraryConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.library.LibraryConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.library.LibraryConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.library.LibraryConfig.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library#cluster_id Library#cluster_id}. |
-| <code><a href="#@cdktf/provider-databricks.library.LibraryConfig.property.cran">Cran</a></code> | <code><a href="#@cdktf/provider-databricks.library.LibraryCran">LibraryCran</a></code> | cran block. |
-| <code><a href="#@cdktf/provider-databricks.library.LibraryConfig.property.egg">Egg</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library#egg Library#egg}. |
-| <code><a href="#@cdktf/provider-databricks.library.LibraryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library#id Library#id}. |
-| <code><a href="#@cdktf/provider-databricks.library.LibraryConfig.property.jar">Jar</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library#jar Library#jar}. |
-| <code><a href="#@cdktf/provider-databricks.library.LibraryConfig.property.maven">Maven</a></code> | <code><a href="#@cdktf/provider-databricks.library.LibraryMaven">LibraryMaven</a></code> | maven block. |
-| <code><a href="#@cdktf/provider-databricks.library.LibraryConfig.property.pypi">Pypi</a></code> | <code><a href="#@cdktf/provider-databricks.library.LibraryPypi">LibraryPypi</a></code> | pypi block. |
-| <code><a href="#@cdktf/provider-databricks.library.LibraryConfig.property.requirements">Requirements</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library#requirements Library#requirements}. |
-| <code><a href="#@cdktf/provider-databricks.library.LibraryConfig.property.whl">Whl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library#whl Library#whl}. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryConfig.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library#cluster_id Library#cluster_id}. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryConfig.property.cran">Cran</a></code> | <code>interface{}</code> | cran block. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryConfig.property.egg">Egg</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library#egg Library#egg}. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library#id Library#id}. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryConfig.property.jar">Jar</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library#jar Library#jar}. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryConfig.property.maven">Maven</a></code> | <code>interface{}</code> | maven block. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryConfig.property.pypi">Pypi</a></code> | <code>interface{}</code> | pypi block. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryConfig.property.requirements">Requirements</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library#requirements Library#requirements}. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryConfig.property.whl">Whl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library#whl Library#whl}. |
 
 ---
 
@@ -1083,21 +1083,21 @@ ClusterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library#cluster_id Library#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library#cluster_id Library#cluster_id}.
 
 ---
 
 ##### `Cran`<sup>Optional</sup> <a name="Cran" id="@cdktf/provider-databricks.library.LibraryConfig.property.cran"></a>
 
 ```go
-Cran LibraryCran
+Cran interface{}
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.library.LibraryCran">LibraryCran</a>
+- *Type:* interface{}
 
 cran block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library#cran Library#cran}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library#cran Library#cran}
 
 ---
 
@@ -1109,7 +1109,7 @@ Egg *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library#egg Library#egg}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library#egg Library#egg}.
 
 ---
 
@@ -1121,7 +1121,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library#id Library#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library#id Library#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1136,35 +1136,35 @@ Jar *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library#jar Library#jar}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library#jar Library#jar}.
 
 ---
 
 ##### `Maven`<sup>Optional</sup> <a name="Maven" id="@cdktf/provider-databricks.library.LibraryConfig.property.maven"></a>
 
 ```go
-Maven LibraryMaven
+Maven interface{}
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.library.LibraryMaven">LibraryMaven</a>
+- *Type:* interface{}
 
 maven block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library#maven Library#maven}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library#maven Library#maven}
 
 ---
 
 ##### `Pypi`<sup>Optional</sup> <a name="Pypi" id="@cdktf/provider-databricks.library.LibraryConfig.property.pypi"></a>
 
 ```go
-Pypi LibraryPypi
+Pypi interface{}
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.library.LibraryPypi">LibraryPypi</a>
+- *Type:* interface{}
 
 pypi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library#pypi Library#pypi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library#pypi Library#pypi}
 
 ---
 
@@ -1176,7 +1176,7 @@ Requirements *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library#requirements Library#requirements}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library#requirements Library#requirements}.
 
 ---
 
@@ -1188,7 +1188,7 @@ Whl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library#whl Library#whl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library#whl Library#whl}.
 
 ---
 
@@ -1197,7 +1197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.library.LibraryCran.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/library"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/library"
 
 &library.LibraryCran {
 	Package: *string,
@@ -1209,8 +1209,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/library"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.library.LibraryCran.property.package">Package</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library#package Library#package}. |
-| <code><a href="#@cdktf/provider-databricks.library.LibraryCran.property.repo">Repo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library#repo Library#repo}. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryCran.property.package">Package</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library#package Library#package}. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryCran.property.repo">Repo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library#repo Library#repo}. |
 
 ---
 
@@ -1222,7 +1222,7 @@ Package *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library#package Library#package}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library#package Library#package}.
 
 ---
 
@@ -1234,7 +1234,7 @@ Repo *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library#repo Library#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library#repo Library#repo}.
 
 ---
 
@@ -1243,7 +1243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.library.LibraryMaven.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/library"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/library"
 
 &library.LibraryMaven {
 	Coordinates: *string,
@@ -1256,9 +1256,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/library"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.library.LibraryMaven.property.coordinates">Coordinates</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library#coordinates Library#coordinates}. |
-| <code><a href="#@cdktf/provider-databricks.library.LibraryMaven.property.exclusions">Exclusions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library#exclusions Library#exclusions}. |
-| <code><a href="#@cdktf/provider-databricks.library.LibraryMaven.property.repo">Repo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library#repo Library#repo}. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryMaven.property.coordinates">Coordinates</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library#coordinates Library#coordinates}. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryMaven.property.exclusions">Exclusions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library#exclusions Library#exclusions}. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryMaven.property.repo">Repo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library#repo Library#repo}. |
 
 ---
 
@@ -1270,7 +1270,7 @@ Coordinates *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library#coordinates Library#coordinates}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library#coordinates Library#coordinates}.
 
 ---
 
@@ -1282,7 +1282,7 @@ Exclusions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library#exclusions Library#exclusions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library#exclusions Library#exclusions}.
 
 ---
 
@@ -1294,7 +1294,7 @@ Repo *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library#repo Library#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library#repo Library#repo}.
 
 ---
 
@@ -1303,7 +1303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.library.LibraryPypi.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/library"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/library"
 
 &library.LibraryPypi {
 	Package: *string,
@@ -1315,8 +1315,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/library"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.library.LibraryPypi.property.package">Package</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library#package Library#package}. |
-| <code><a href="#@cdktf/provider-databricks.library.LibraryPypi.property.repo">Repo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library#repo Library#repo}. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryPypi.property.package">Package</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library#package Library#package}. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryPypi.property.repo">Repo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library#repo Library#repo}. |
 
 ---
 
@@ -1328,7 +1328,7 @@ Package *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library#package Library#package}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library#package Library#package}.
 
 ---
 
@@ -1340,26 +1340,188 @@ Repo *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.56.0/docs/resources/library#repo Library#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/library#repo Library#repo}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### LibraryCranList <a name="LibraryCranList" id="@cdktf/provider-databricks.library.LibraryCranList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.library.LibraryCranList.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/library"
+
+library.NewLibraryCranList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LibraryCranList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryCranList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryCranList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryCranList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-databricks.library.LibraryCranList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.library.LibraryCranList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-databricks.library.LibraryCranList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryCranList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryCranList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryCranList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryCranList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryCranList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-databricks.library.LibraryCranList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-databricks.library.LibraryCranList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-databricks.library.LibraryCranList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-databricks.library.LibraryCranList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.library.LibraryCranList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-databricks.library.LibraryCranList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-databricks.library.LibraryCranList.get"></a>
+
+```go
+func Get(index *f64) LibraryCranOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-databricks.library.LibraryCranList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryCranList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryCranList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryCranList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-databricks.library.LibraryCranList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-databricks.library.LibraryCranList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.library.LibraryCranList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 
 ### LibraryCranOutputReference <a name="LibraryCranOutputReference" id="@cdktf/provider-databricks.library.LibraryCranOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.library.LibraryCranOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/library"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/library"
 
-library.NewLibraryCranOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LibraryCranOutputReference
+library.NewLibraryCranOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LibraryCranOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.library.LibraryCranOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-databricks.library.LibraryCranOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryCranOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryCranOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -1376,6 +1538,22 @@ The parent resource.
 - *Type:* *string
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-databricks.library.LibraryCranOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-databricks.library.LibraryCranOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -1567,7 +1745,7 @@ func ResetRepo()
 | <code><a href="#@cdktf/provider-databricks.library.LibraryCranOutputReference.property.repoInput">RepoInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.library.LibraryCranOutputReference.property.package">Package</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.library.LibraryCranOutputReference.property.repo">Repo</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.library.LibraryCranOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-databricks.library.LibraryCran">LibraryCran</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryCranOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
@@ -1638,10 +1816,170 @@ func Repo() *string
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.library.LibraryCranOutputReference.property.internalValue"></a>
 
 ```go
-func InternalValue() LibraryCran
+func InternalValue() interface{}
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.library.LibraryCran">LibraryCran</a>
+- *Type:* interface{}
+
+---
+
+
+### LibraryMavenList <a name="LibraryMavenList" id="@cdktf/provider-databricks.library.LibraryMavenList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.library.LibraryMavenList.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/library"
+
+library.NewLibraryMavenList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LibraryMavenList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryMavenList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryMavenList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryMavenList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-databricks.library.LibraryMavenList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.library.LibraryMavenList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-databricks.library.LibraryMavenList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryMavenList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryMavenList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryMavenList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryMavenList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryMavenList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-databricks.library.LibraryMavenList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-databricks.library.LibraryMavenList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-databricks.library.LibraryMavenList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-databricks.library.LibraryMavenList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.library.LibraryMavenList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-databricks.library.LibraryMavenList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-databricks.library.LibraryMavenList.get"></a>
+
+```go
+func Get(index *f64) LibraryMavenOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-databricks.library.LibraryMavenList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryMavenList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryMavenList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryMavenList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-databricks.library.LibraryMavenList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-databricks.library.LibraryMavenList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.library.LibraryMavenList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -1651,15 +1989,17 @@ func InternalValue() LibraryCran
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.library.LibraryMavenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/library"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/library"
 
-library.NewLibraryMavenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LibraryMavenOutputReference
+library.NewLibraryMavenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LibraryMavenOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.library.LibraryMavenOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-databricks.library.LibraryMavenOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryMavenOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryMavenOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -1676,6 +2016,22 @@ The parent resource.
 - *Type:* *string
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-databricks.library.LibraryMavenOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-databricks.library.LibraryMavenOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -1876,7 +2232,7 @@ func ResetRepo()
 | <code><a href="#@cdktf/provider-databricks.library.LibraryMavenOutputReference.property.coordinates">Coordinates</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.library.LibraryMavenOutputReference.property.exclusions">Exclusions</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.library.LibraryMavenOutputReference.property.repo">Repo</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.library.LibraryMavenOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-databricks.library.LibraryMaven">LibraryMaven</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryMavenOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
@@ -1967,10 +2323,170 @@ func Repo() *string
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.library.LibraryMavenOutputReference.property.internalValue"></a>
 
 ```go
-func InternalValue() LibraryMaven
+func InternalValue() interface{}
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.library.LibraryMaven">LibraryMaven</a>
+- *Type:* interface{}
+
+---
+
+
+### LibraryPypiList <a name="LibraryPypiList" id="@cdktf/provider-databricks.library.LibraryPypiList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.library.LibraryPypiList.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/library"
+
+library.NewLibraryPypiList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LibraryPypiList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryPypiList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryPypiList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryPypiList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-databricks.library.LibraryPypiList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.library.LibraryPypiList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-databricks.library.LibraryPypiList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryPypiList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryPypiList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryPypiList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryPypiList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryPypiList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-databricks.library.LibraryPypiList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-databricks.library.LibraryPypiList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-databricks.library.LibraryPypiList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-databricks.library.LibraryPypiList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.library.LibraryPypiList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-databricks.library.LibraryPypiList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-databricks.library.LibraryPypiList.get"></a>
+
+```go
+func Get(index *f64) LibraryPypiOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-databricks.library.LibraryPypiList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryPypiList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryPypiList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryPypiList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-databricks.library.LibraryPypiList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-databricks.library.LibraryPypiList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.library.LibraryPypiList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -1980,15 +2496,17 @@ func InternalValue() LibraryMaven
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.library.LibraryPypiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/library"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/library"
 
-library.NewLibraryPypiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LibraryPypiOutputReference
+library.NewLibraryPypiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LibraryPypiOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.library.LibraryPypiOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-databricks.library.LibraryPypiOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryPypiOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryPypiOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -2005,6 +2523,22 @@ The parent resource.
 - *Type:* *string
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-databricks.library.LibraryPypiOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-databricks.library.LibraryPypiOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -2196,7 +2730,7 @@ func ResetRepo()
 | <code><a href="#@cdktf/provider-databricks.library.LibraryPypiOutputReference.property.repoInput">RepoInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.library.LibraryPypiOutputReference.property.package">Package</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.library.LibraryPypiOutputReference.property.repo">Repo</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.library.LibraryPypiOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-databricks.library.LibraryPypi">LibraryPypi</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.library.LibraryPypiOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
@@ -2267,10 +2801,10 @@ func Repo() *string
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.library.LibraryPypiOutputReference.property.internalValue"></a>
 
 ```go
-func InternalValue() LibraryPypi
+func InternalValue() interface{}
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.library.LibraryPypi">LibraryPypi</a>
+- *Type:* interface{}
 
 ---
 
