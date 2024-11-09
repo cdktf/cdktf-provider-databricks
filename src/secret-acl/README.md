@@ -1,3 +1,3 @@
 # `databricks_secret_acl`
 
-Refer to the Terraform Registry for docs: [`databricks_secret_acl`](https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/secret_acl).
+Refer to the Terraform Registry for docs: [`databricks_secret_acl`](https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/secret_acl).

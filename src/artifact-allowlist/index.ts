@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/artifact_allowlist
+// https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/artifact_allowlist
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,42 +13,42 @@ import * as cdktf from 'cdktf';
 
 export interface ArtifactAllowlistConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/artifact_allowlist#artifact_type ArtifactAllowlist#artifact_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/artifact_allowlist#artifact_type ArtifactAllowlist#artifact_type}
   */
   readonly artifactType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/artifact_allowlist#created_at ArtifactAllowlist#created_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/artifact_allowlist#created_at ArtifactAllowlist#created_at}
   */
   readonly createdAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/artifact_allowlist#created_by ArtifactAllowlist#created_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/artifact_allowlist#created_by ArtifactAllowlist#created_by}
   */
   readonly createdBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/artifact_allowlist#id ArtifactAllowlist#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/artifact_allowlist#id ArtifactAllowlist#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/artifact_allowlist#metastore_id ArtifactAllowlist#metastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/artifact_allowlist#metastore_id ArtifactAllowlist#metastore_id}
   */
   readonly metastoreId?: string;
   /**
   * artifact_matcher block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/artifact_allowlist#artifact_matcher ArtifactAllowlist#artifact_matcher}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/artifact_allowlist#artifact_matcher ArtifactAllowlist#artifact_matcher}
   */
   readonly artifactMatcher: ArtifactAllowlistArtifactMatcher[] | cdktf.IResolvable;
 }
 export interface ArtifactAllowlistArtifactMatcher {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/artifact_allowlist#artifact ArtifactAllowlist#artifact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/artifact_allowlist#artifact ArtifactAllowlist#artifact}
   */
   readonly artifact: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/artifact_allowlist#match_type ArtifactAllowlist#match_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/artifact_allowlist#match_type ArtifactAllowlist#match_type}
   */
   readonly matchType: string;
 }
@@ -187,7 +187,7 @@ export class ArtifactAllowlistArtifactMatcherList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/artifact_allowlist databricks_artifact_allowlist}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/artifact_allowlist databricks_artifact_allowlist}
 */
 export class ArtifactAllowlist extends cdktf.TerraformResource {
 
@@ -203,7 +203,7 @@ export class ArtifactAllowlist extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ArtifactAllowlist resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ArtifactAllowlist to import
-  * @param importFromId The id of the existing ArtifactAllowlist that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/artifact_allowlist#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ArtifactAllowlist that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/artifact_allowlist#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ArtifactAllowlist to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -215,7 +215,7 @@ export class ArtifactAllowlist extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/artifact_allowlist databricks_artifact_allowlist} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/artifact_allowlist databricks_artifact_allowlist} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -226,7 +226,7 @@ export class ArtifactAllowlist extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_artifact_allowlist',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.57.0',
+        providerVersion: '1.58.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
