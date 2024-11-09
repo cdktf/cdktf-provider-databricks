@@ -4,12 +4,12 @@
 
 ### LakehouseMonitor <a name="LakehouseMonitor" id="@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/lakehousemonitor"
 
 lakehousemonitor.NewLakehouseMonitor(scope Construct, id *string, config LakehouseMonitorConfig) LakehouseMonitor
 ```
@@ -580,7 +580,7 @@ func ResetWarehouseId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitor.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/lakehousemonitor"
 
 lakehousemonitor.LakehouseMonitor_IsConstruct(x interface{}) *bool
 ```
@@ -612,7 +612,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/lakehousemonitor"
 
 lakehousemonitor.LakehouseMonitor_IsTerraformElement(x interface{}) *bool
 ```
@@ -626,7 +626,7 @@ lakehousemonitor.LakehouseMonitor_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitor.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/lakehousemonitor"
 
 lakehousemonitor.LakehouseMonitor_IsTerraformResource(x interface{}) *bool
 ```
@@ -640,7 +640,7 @@ lakehousemonitor.LakehouseMonitor_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/lakehousemonitor"
 
 lakehousemonitor.LakehouseMonitor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -669,7 +669,7 @@ The construct id used in the generated config for the LakehouseMonitor to import
 
 The id of the existing LakehouseMonitor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1298,7 +1298,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/lakehousemonitor"
 
 &lakehousemonitor.LakehouseMonitorConfig {
 	Connection: interface{},
@@ -1313,17 +1313,17 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemo
 	TableName: *string,
 	BaselineTableName: *string,
 	CustomMetrics: interface{},
-	DataClassificationConfig: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.lakehouseMonitor.LakehouseMonitorDataClassificationConfig,
+	DataClassificationConfig: github.com/cdktf/cdktf-provider-databricks-go/databricks.lakehouseMonitor.LakehouseMonitorDataClassificationConfig,
 	Id: *string,
-	InferenceLog: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.lakehouseMonitor.LakehouseMonitorInferenceLog,
+	InferenceLog: github.com/cdktf/cdktf-provider-databricks-go/databricks.lakehouseMonitor.LakehouseMonitorInferenceLog,
 	LatestMonitorFailureMsg: *string,
-	Notifications: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.lakehouseMonitor.LakehouseMonitorNotifications,
-	Schedule: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.lakehouseMonitor.LakehouseMonitorSchedule,
+	Notifications: github.com/cdktf/cdktf-provider-databricks-go/databricks.lakehouseMonitor.LakehouseMonitorNotifications,
+	Schedule: github.com/cdktf/cdktf-provider-databricks-go/databricks.lakehouseMonitor.LakehouseMonitorSchedule,
 	SkipBuiltinDashboard: interface{},
 	SlicingExprs: *[]*string,
-	Snapshot: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.lakehouseMonitor.LakehouseMonitorSnapshot,
-	Timeouts: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.lakehouseMonitor.LakehouseMonitorTimeouts,
-	TimeSeries: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.lakehouseMonitor.LakehouseMonitorTimeSeries,
+	Snapshot: github.com/cdktf/cdktf-provider-databricks-go/databricks.lakehouseMonitor.LakehouseMonitorSnapshot,
+	Timeouts: github.com/cdktf/cdktf-provider-databricks-go/databricks.lakehouseMonitor.LakehouseMonitorTimeouts,
+	TimeSeries: github.com/cdktf/cdktf-provider-databricks-go/databricks.lakehouseMonitor.LakehouseMonitorTimeSeries,
 	WarehouseId: *string,
 }
 ```
@@ -1339,23 +1339,23 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemo
 | <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.property.assetsDir">AssetsDir</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#assets_dir LakehouseMonitor#assets_dir}. |
-| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.property.outputSchemaName">OutputSchemaName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#output_schema_name LakehouseMonitor#output_schema_name}. |
-| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.property.tableName">TableName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#table_name LakehouseMonitor#table_name}. |
-| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.property.baselineTableName">BaselineTableName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#baseline_table_name LakehouseMonitor#baseline_table_name}. |
+| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.property.assetsDir">AssetsDir</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#assets_dir LakehouseMonitor#assets_dir}. |
+| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.property.outputSchemaName">OutputSchemaName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#output_schema_name LakehouseMonitor#output_schema_name}. |
+| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.property.tableName">TableName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#table_name LakehouseMonitor#table_name}. |
+| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.property.baselineTableName">BaselineTableName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#baseline_table_name LakehouseMonitor#baseline_table_name}. |
 | <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.property.customMetrics">CustomMetrics</a></code> | <code>interface{}</code> | custom_metrics block. |
 | <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.property.dataClassificationConfig">DataClassificationConfig</a></code> | <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorDataClassificationConfig">LakehouseMonitorDataClassificationConfig</a></code> | data_classification_config block. |
-| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#id LakehouseMonitor#id}. |
+| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#id LakehouseMonitor#id}. |
 | <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.property.inferenceLog">InferenceLog</a></code> | <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorInferenceLog">LakehouseMonitorInferenceLog</a></code> | inference_log block. |
-| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.property.latestMonitorFailureMsg">LatestMonitorFailureMsg</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#latest_monitor_failure_msg LakehouseMonitor#latest_monitor_failure_msg}. |
+| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.property.latestMonitorFailureMsg">LatestMonitorFailureMsg</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#latest_monitor_failure_msg LakehouseMonitor#latest_monitor_failure_msg}. |
 | <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.property.notifications">Notifications</a></code> | <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorNotifications">LakehouseMonitorNotifications</a></code> | notifications block. |
 | <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.property.schedule">Schedule</a></code> | <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorSchedule">LakehouseMonitorSchedule</a></code> | schedule block. |
-| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.property.skipBuiltinDashboard">SkipBuiltinDashboard</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#skip_builtin_dashboard LakehouseMonitor#skip_builtin_dashboard}. |
-| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.property.slicingExprs">SlicingExprs</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#slicing_exprs LakehouseMonitor#slicing_exprs}. |
+| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.property.skipBuiltinDashboard">SkipBuiltinDashboard</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#skip_builtin_dashboard LakehouseMonitor#skip_builtin_dashboard}. |
+| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.property.slicingExprs">SlicingExprs</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#slicing_exprs LakehouseMonitor#slicing_exprs}. |
 | <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.property.snapshot">Snapshot</a></code> | <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorSnapshot">LakehouseMonitorSnapshot</a></code> | snapshot block. |
 | <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorTimeouts">LakehouseMonitorTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.property.timeSeries">TimeSeries</a></code> | <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorTimeSeries">LakehouseMonitorTimeSeries</a></code> | time_series block. |
-| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#warehouse_id LakehouseMonitor#warehouse_id}. |
+| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#warehouse_id LakehouseMonitor#warehouse_id}. |
 
 ---
 
@@ -1437,7 +1437,7 @@ AssetsDir *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#assets_dir LakehouseMonitor#assets_dir}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#assets_dir LakehouseMonitor#assets_dir}.
 
 ---
 
@@ -1449,7 +1449,7 @@ OutputSchemaName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#output_schema_name LakehouseMonitor#output_schema_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#output_schema_name LakehouseMonitor#output_schema_name}.
 
 ---
 
@@ -1461,7 +1461,7 @@ TableName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#table_name LakehouseMonitor#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#table_name LakehouseMonitor#table_name}.
 
 ---
 
@@ -1473,7 +1473,7 @@ BaselineTableName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#baseline_table_name LakehouseMonitor#baseline_table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#baseline_table_name LakehouseMonitor#baseline_table_name}.
 
 ---
 
@@ -1487,7 +1487,7 @@ CustomMetrics interface{}
 
 custom_metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#custom_metrics LakehouseMonitor#custom_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#custom_metrics LakehouseMonitor#custom_metrics}
 
 ---
 
@@ -1501,7 +1501,7 @@ DataClassificationConfig LakehouseMonitorDataClassificationConfig
 
 data_classification_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#data_classification_config LakehouseMonitor#data_classification_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#data_classification_config LakehouseMonitor#data_classification_config}
 
 ---
 
@@ -1513,7 +1513,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#id LakehouseMonitor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#id LakehouseMonitor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1530,7 +1530,7 @@ InferenceLog LakehouseMonitorInferenceLog
 
 inference_log block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#inference_log LakehouseMonitor#inference_log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#inference_log LakehouseMonitor#inference_log}
 
 ---
 
@@ -1542,7 +1542,7 @@ LatestMonitorFailureMsg *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#latest_monitor_failure_msg LakehouseMonitor#latest_monitor_failure_msg}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#latest_monitor_failure_msg LakehouseMonitor#latest_monitor_failure_msg}.
 
 ---
 
@@ -1556,7 +1556,7 @@ Notifications LakehouseMonitorNotifications
 
 notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#notifications LakehouseMonitor#notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#notifications LakehouseMonitor#notifications}
 
 ---
 
@@ -1570,7 +1570,7 @@ Schedule LakehouseMonitorSchedule
 
 schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#schedule LakehouseMonitor#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#schedule LakehouseMonitor#schedule}
 
 ---
 
@@ -1582,7 +1582,7 @@ SkipBuiltinDashboard interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#skip_builtin_dashboard LakehouseMonitor#skip_builtin_dashboard}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#skip_builtin_dashboard LakehouseMonitor#skip_builtin_dashboard}.
 
 ---
 
@@ -1594,7 +1594,7 @@ SlicingExprs *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#slicing_exprs LakehouseMonitor#slicing_exprs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#slicing_exprs LakehouseMonitor#slicing_exprs}.
 
 ---
 
@@ -1608,7 +1608,7 @@ Snapshot LakehouseMonitorSnapshot
 
 snapshot block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#snapshot LakehouseMonitor#snapshot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#snapshot LakehouseMonitor#snapshot}
 
 ---
 
@@ -1622,7 +1622,7 @@ Timeouts LakehouseMonitorTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#timeouts LakehouseMonitor#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#timeouts LakehouseMonitor#timeouts}
 
 ---
 
@@ -1636,7 +1636,7 @@ TimeSeries LakehouseMonitorTimeSeries
 
 time_series block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#time_series LakehouseMonitor#time_series}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#time_series LakehouseMonitor#time_series}
 
 ---
 
@@ -1648,7 +1648,7 @@ WarehouseId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#warehouse_id LakehouseMonitor#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#warehouse_id LakehouseMonitor#warehouse_id}.
 
 ---
 
@@ -1657,7 +1657,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorCustomMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/lakehousemonitor"
 
 &lakehousemonitor.LakehouseMonitorCustomMetrics {
 	Definition: *string,
@@ -1672,11 +1672,11 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorCustomMetrics.property.definition">Definition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#definition LakehouseMonitor#definition}. |
-| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorCustomMetrics.property.inputColumns">InputColumns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#input_columns LakehouseMonitor#input_columns}. |
-| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorCustomMetrics.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#name LakehouseMonitor#name}. |
-| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorCustomMetrics.property.outputDataType">OutputDataType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#output_data_type LakehouseMonitor#output_data_type}. |
-| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorCustomMetrics.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#type LakehouseMonitor#type}. |
+| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorCustomMetrics.property.definition">Definition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#definition LakehouseMonitor#definition}. |
+| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorCustomMetrics.property.inputColumns">InputColumns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#input_columns LakehouseMonitor#input_columns}. |
+| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorCustomMetrics.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#name LakehouseMonitor#name}. |
+| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorCustomMetrics.property.outputDataType">OutputDataType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#output_data_type LakehouseMonitor#output_data_type}. |
+| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorCustomMetrics.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#type LakehouseMonitor#type}. |
 
 ---
 
@@ -1688,7 +1688,7 @@ Definition *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#definition LakehouseMonitor#definition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#definition LakehouseMonitor#definition}.
 
 ---
 
@@ -1700,7 +1700,7 @@ InputColumns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#input_columns LakehouseMonitor#input_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#input_columns LakehouseMonitor#input_columns}.
 
 ---
 
@@ -1712,7 +1712,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#name LakehouseMonitor#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#name LakehouseMonitor#name}.
 
 ---
 
@@ -1724,7 +1724,7 @@ OutputDataType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#output_data_type LakehouseMonitor#output_data_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#output_data_type LakehouseMonitor#output_data_type}.
 
 ---
 
@@ -1736,7 +1736,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#type LakehouseMonitor#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#type LakehouseMonitor#type}.
 
 ---
 
@@ -1745,7 +1745,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorDataClassificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/lakehousemonitor"
 
 &lakehousemonitor.LakehouseMonitorDataClassificationConfig {
 	Enabled: interface{},
@@ -1756,7 +1756,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorDataClassificationConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#enabled LakehouseMonitor#enabled}. |
+| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorDataClassificationConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#enabled LakehouseMonitor#enabled}. |
 
 ---
 
@@ -1768,7 +1768,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#enabled LakehouseMonitor#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#enabled LakehouseMonitor#enabled}.
 
 ---
 
@@ -1777,7 +1777,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorInferenceLog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/lakehousemonitor"
 
 &lakehousemonitor.LakehouseMonitorInferenceLog {
 	Granularities: *[]*string,
@@ -1794,13 +1794,13 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorInferenceLog.property.granularities">Granularities</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#granularities LakehouseMonitor#granularities}. |
-| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorInferenceLog.property.modelIdCol">ModelIdCol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#model_id_col LakehouseMonitor#model_id_col}. |
-| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorInferenceLog.property.predictionCol">PredictionCol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#prediction_col LakehouseMonitor#prediction_col}. |
-| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorInferenceLog.property.problemType">ProblemType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#problem_type LakehouseMonitor#problem_type}. |
-| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorInferenceLog.property.timestampCol">TimestampCol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#timestamp_col LakehouseMonitor#timestamp_col}. |
-| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorInferenceLog.property.labelCol">LabelCol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#label_col LakehouseMonitor#label_col}. |
-| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorInferenceLog.property.predictionProbaCol">PredictionProbaCol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#prediction_proba_col LakehouseMonitor#prediction_proba_col}. |
+| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorInferenceLog.property.granularities">Granularities</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#granularities LakehouseMonitor#granularities}. |
+| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorInferenceLog.property.modelIdCol">ModelIdCol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#model_id_col LakehouseMonitor#model_id_col}. |
+| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorInferenceLog.property.predictionCol">PredictionCol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#prediction_col LakehouseMonitor#prediction_col}. |
+| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorInferenceLog.property.problemType">ProblemType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#problem_type LakehouseMonitor#problem_type}. |
+| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorInferenceLog.property.timestampCol">TimestampCol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#timestamp_col LakehouseMonitor#timestamp_col}. |
+| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorInferenceLog.property.labelCol">LabelCol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#label_col LakehouseMonitor#label_col}. |
+| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorInferenceLog.property.predictionProbaCol">PredictionProbaCol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#prediction_proba_col LakehouseMonitor#prediction_proba_col}. |
 
 ---
 
@@ -1812,7 +1812,7 @@ Granularities *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#granularities LakehouseMonitor#granularities}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#granularities LakehouseMonitor#granularities}.
 
 ---
 
@@ -1824,7 +1824,7 @@ ModelIdCol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#model_id_col LakehouseMonitor#model_id_col}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#model_id_col LakehouseMonitor#model_id_col}.
 
 ---
 
@@ -1836,7 +1836,7 @@ PredictionCol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#prediction_col LakehouseMonitor#prediction_col}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#prediction_col LakehouseMonitor#prediction_col}.
 
 ---
 
@@ -1848,7 +1848,7 @@ ProblemType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#problem_type LakehouseMonitor#problem_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#problem_type LakehouseMonitor#problem_type}.
 
 ---
 
@@ -1860,7 +1860,7 @@ TimestampCol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#timestamp_col LakehouseMonitor#timestamp_col}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#timestamp_col LakehouseMonitor#timestamp_col}.
 
 ---
 
@@ -1872,7 +1872,7 @@ LabelCol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#label_col LakehouseMonitor#label_col}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#label_col LakehouseMonitor#label_col}.
 
 ---
 
@@ -1884,7 +1884,7 @@ PredictionProbaCol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#prediction_proba_col LakehouseMonitor#prediction_proba_col}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#prediction_proba_col LakehouseMonitor#prediction_proba_col}.
 
 ---
 
@@ -1893,11 +1893,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/lakehousemonitor"
 
 &lakehousemonitor.LakehouseMonitorNotifications {
-	OnFailure: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.lakehouseMonitor.LakehouseMonitorNotificationsOnFailure,
-	OnNewClassificationTagDetected: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.lakehouseMonitor.LakehouseMonitorNotificationsOnNewClassificationTagDetected,
+	OnFailure: github.com/cdktf/cdktf-provider-databricks-go/databricks.lakehouseMonitor.LakehouseMonitorNotificationsOnFailure,
+	OnNewClassificationTagDetected: github.com/cdktf/cdktf-provider-databricks-go/databricks.lakehouseMonitor.LakehouseMonitorNotificationsOnNewClassificationTagDetected,
 }
 ```
 
@@ -1920,7 +1920,7 @@ OnFailure LakehouseMonitorNotificationsOnFailure
 
 on_failure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#on_failure LakehouseMonitor#on_failure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#on_failure LakehouseMonitor#on_failure}
 
 ---
 
@@ -1934,7 +1934,7 @@ OnNewClassificationTagDetected LakehouseMonitorNotificationsOnNewClassificationT
 
 on_new_classification_tag_detected block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#on_new_classification_tag_detected LakehouseMonitor#on_new_classification_tag_detected}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#on_new_classification_tag_detected LakehouseMonitor#on_new_classification_tag_detected}
 
 ---
 
@@ -1943,7 +1943,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorNotificationsOnFailure.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/lakehousemonitor"
 
 &lakehousemonitor.LakehouseMonitorNotificationsOnFailure {
 	EmailAddresses: *[]*string,
@@ -1954,7 +1954,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorNotificationsOnFailure.property.emailAddresses">EmailAddresses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#email_addresses LakehouseMonitor#email_addresses}. |
+| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorNotificationsOnFailure.property.emailAddresses">EmailAddresses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#email_addresses LakehouseMonitor#email_addresses}. |
 
 ---
 
@@ -1966,7 +1966,7 @@ EmailAddresses *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#email_addresses LakehouseMonitor#email_addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#email_addresses LakehouseMonitor#email_addresses}.
 
 ---
 
@@ -1975,7 +1975,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorNotificationsOnNewClassificationTagDetected.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/lakehousemonitor"
 
 &lakehousemonitor.LakehouseMonitorNotificationsOnNewClassificationTagDetected {
 	EmailAddresses: *[]*string,
@@ -1986,7 +1986,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorNotificationsOnNewClassificationTagDetected.property.emailAddresses">EmailAddresses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#email_addresses LakehouseMonitor#email_addresses}. |
+| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorNotificationsOnNewClassificationTagDetected.property.emailAddresses">EmailAddresses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#email_addresses LakehouseMonitor#email_addresses}. |
 
 ---
 
@@ -1998,7 +1998,7 @@ EmailAddresses *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#email_addresses LakehouseMonitor#email_addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#email_addresses LakehouseMonitor#email_addresses}.
 
 ---
 
@@ -2007,7 +2007,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/lakehousemonitor"
 
 &lakehousemonitor.LakehouseMonitorSchedule {
 	QuartzCronExpression: *string,
@@ -2019,8 +2019,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorSchedule.property.quartzCronExpression">QuartzCronExpression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#quartz_cron_expression LakehouseMonitor#quartz_cron_expression}. |
-| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorSchedule.property.timezoneId">TimezoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#timezone_id LakehouseMonitor#timezone_id}. |
+| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorSchedule.property.quartzCronExpression">QuartzCronExpression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#quartz_cron_expression LakehouseMonitor#quartz_cron_expression}. |
+| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorSchedule.property.timezoneId">TimezoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#timezone_id LakehouseMonitor#timezone_id}. |
 
 ---
 
@@ -2032,7 +2032,7 @@ QuartzCronExpression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#quartz_cron_expression LakehouseMonitor#quartz_cron_expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#quartz_cron_expression LakehouseMonitor#quartz_cron_expression}.
 
 ---
 
@@ -2044,7 +2044,7 @@ TimezoneId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#timezone_id LakehouseMonitor#timezone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#timezone_id LakehouseMonitor#timezone_id}.
 
 ---
 
@@ -2053,7 +2053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/lakehousemonitor"
 
 &lakehousemonitor.LakehouseMonitorSnapshot {
 
@@ -2066,7 +2066,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemo
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/lakehousemonitor"
 
 &lakehousemonitor.LakehouseMonitorTimeouts {
 	Create: *string,
@@ -2077,7 +2077,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#create LakehouseMonitor#create}. |
+| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#create LakehouseMonitor#create}. |
 
 ---
 
@@ -2089,7 +2089,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#create LakehouseMonitor#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#create LakehouseMonitor#create}.
 
 ---
 
@@ -2098,7 +2098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorTimeSeries.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/lakehousemonitor"
 
 &lakehousemonitor.LakehouseMonitorTimeSeries {
 	Granularities: *[]*string,
@@ -2110,8 +2110,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorTimeSeries.property.granularities">Granularities</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#granularities LakehouseMonitor#granularities}. |
-| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorTimeSeries.property.timestampCol">TimestampCol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#timestamp_col LakehouseMonitor#timestamp_col}. |
+| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorTimeSeries.property.granularities">Granularities</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#granularities LakehouseMonitor#granularities}. |
+| <code><a href="#@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorTimeSeries.property.timestampCol">TimestampCol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#timestamp_col LakehouseMonitor#timestamp_col}. |
 
 ---
 
@@ -2123,7 +2123,7 @@ Granularities *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#granularities LakehouseMonitor#granularities}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#granularities LakehouseMonitor#granularities}.
 
 ---
 
@@ -2135,7 +2135,7 @@ TimestampCol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/resources/lakehouse_monitor#timestamp_col LakehouseMonitor#timestamp_col}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/resources/lakehouse_monitor#timestamp_col LakehouseMonitor#timestamp_col}.
 
 ---
 
@@ -2146,7 +2146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorCustomMetricsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/lakehousemonitor"
 
 lakehousemonitor.NewLakehouseMonitorCustomMetricsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LakehouseMonitorCustomMetricsList
 ```
@@ -2306,7 +2306,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorCustomMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/lakehousemonitor"
 
 lakehousemonitor.NewLakehouseMonitorCustomMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LakehouseMonitorCustomMetricsOutputReference
 ```
@@ -2683,7 +2683,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorDataClassificationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/lakehousemonitor"
 
 lakehousemonitor.NewLakehouseMonitorDataClassificationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LakehouseMonitorDataClassificationConfigOutputReference
 ```
@@ -2961,7 +2961,7 @@ func InternalValue() LakehouseMonitorDataClassificationConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorInferenceLogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/lakehousemonitor"
 
 lakehousemonitor.NewLakehouseMonitorInferenceLogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LakehouseMonitorInferenceLogOutputReference
 ```
@@ -3378,7 +3378,7 @@ func InternalValue() LakehouseMonitorInferenceLog
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorNotificationsOnFailureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/lakehousemonitor"
 
 lakehousemonitor.NewLakehouseMonitorNotificationsOnFailureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LakehouseMonitorNotificationsOnFailureOutputReference
 ```
@@ -3656,7 +3656,7 @@ func InternalValue() LakehouseMonitorNotificationsOnFailure
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorNotificationsOnNewClassificationTagDetectedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/lakehousemonitor"
 
 lakehousemonitor.NewLakehouseMonitorNotificationsOnNewClassificationTagDetectedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LakehouseMonitorNotificationsOnNewClassificationTagDetectedOutputReference
 ```
@@ -3934,7 +3934,7 @@ func InternalValue() LakehouseMonitorNotificationsOnNewClassificationTagDetected
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/lakehousemonitor"
 
 lakehousemonitor.NewLakehouseMonitorNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LakehouseMonitorNotificationsOutputReference
 ```
@@ -4267,7 +4267,7 @@ func InternalValue() LakehouseMonitorNotifications
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/lakehousemonitor"
 
 lakehousemonitor.NewLakehouseMonitorScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LakehouseMonitorScheduleOutputReference
 ```
@@ -4571,7 +4571,7 @@ func InternalValue() LakehouseMonitorSchedule
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorSnapshotOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/lakehousemonitor"
 
 lakehousemonitor.NewLakehouseMonitorSnapshotOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LakehouseMonitorSnapshotOutputReference
 ```
@@ -4820,7 +4820,7 @@ func InternalValue() LakehouseMonitorSnapshot
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/lakehousemonitor"
 
 lakehousemonitor.NewLakehouseMonitorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LakehouseMonitorTimeoutsOutputReference
 ```
@@ -5098,7 +5098,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.lakehouseMonitor.LakehouseMonitorTimeSeriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/lakehousemonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/lakehousemonitor"
 
 lakehousemonitor.NewLakehouseMonitorTimeSeriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LakehouseMonitorTimeSeriesOutputReference
 ```

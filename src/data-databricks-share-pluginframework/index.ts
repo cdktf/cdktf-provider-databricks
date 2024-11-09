@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework
+// https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,67 +8,67 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksSharePluginframeworkConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#comment DataDatabricksSharePluginframework#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#comment DataDatabricksSharePluginframework#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#created_at DataDatabricksSharePluginframework#created_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#created_at DataDatabricksSharePluginframework#created_at}
   */
   readonly createdAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#created_by DataDatabricksSharePluginframework#created_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#created_by DataDatabricksSharePluginframework#created_by}
   */
   readonly createdBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#effective_owner DataDatabricksSharePluginframework#effective_owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#effective_owner DataDatabricksSharePluginframework#effective_owner}
   */
   readonly effectiveOwner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#name DataDatabricksSharePluginframework#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#name DataDatabricksSharePluginframework#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#owner DataDatabricksSharePluginframework#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#owner DataDatabricksSharePluginframework#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#storage_location DataDatabricksSharePluginframework#storage_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#storage_location DataDatabricksSharePluginframework#storage_location}
   */
   readonly storageLocation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#storage_root DataDatabricksSharePluginframework#storage_root}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#storage_root DataDatabricksSharePluginframework#storage_root}
   */
   readonly storageRoot?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#updated_at DataDatabricksSharePluginframework#updated_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#updated_at DataDatabricksSharePluginframework#updated_at}
   */
   readonly updatedAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#updated_by DataDatabricksSharePluginframework#updated_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#updated_by DataDatabricksSharePluginframework#updated_by}
   */
   readonly updatedBy?: string;
   /**
   * object block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#object DataDatabricksSharePluginframework#object}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#object DataDatabricksSharePluginframework#object}
   */
   readonly object?: DataDatabricksSharePluginframeworkObject[] | cdktf.IResolvable;
 }
 export interface DataDatabricksSharePluginframeworkObjectPartitionValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#name DataDatabricksSharePluginframework#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#name DataDatabricksSharePluginframework#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#op DataDatabricksSharePluginframework#op}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#op DataDatabricksSharePluginframework#op}
   */
   readonly op?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#recipient_property_key DataDatabricksSharePluginframework#recipient_property_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#recipient_property_key DataDatabricksSharePluginframework#recipient_property_key}
   */
   readonly recipientPropertyKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#value DataDatabricksSharePluginframework#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#value DataDatabricksSharePluginframework#value}
   */
   readonly value?: string;
 }
@@ -278,7 +273,7 @@ export interface DataDatabricksSharePluginframeworkObjectPartition {
   /**
   * value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#value DataDatabricksSharePluginframework#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#value DataDatabricksSharePluginframework#value}
   */
   readonly value?: DataDatabricksSharePluginframeworkObjectPartitionValue[] | cdktf.IResolvable;
 }
@@ -394,73 +389,73 @@ export class DataDatabricksSharePluginframeworkObjectPartitionList extends cdktf
 }
 export interface DataDatabricksSharePluginframeworkObject {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#added_at DataDatabricksSharePluginframework#added_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#added_at DataDatabricksSharePluginframework#added_at}
   */
   readonly addedAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#added_by DataDatabricksSharePluginframework#added_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#added_by DataDatabricksSharePluginframework#added_by}
   */
   readonly addedBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#cdf_enabled DataDatabricksSharePluginframework#cdf_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#cdf_enabled DataDatabricksSharePluginframework#cdf_enabled}
   */
   readonly cdfEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#comment DataDatabricksSharePluginframework#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#comment DataDatabricksSharePluginframework#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#content DataDatabricksSharePluginframework#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#content DataDatabricksSharePluginframework#content}
   */
   readonly content?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#data_object_type DataDatabricksSharePluginframework#data_object_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#data_object_type DataDatabricksSharePluginframework#data_object_type}
   */
   readonly dataObjectType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#effective_cdf_enabled DataDatabricksSharePluginframework#effective_cdf_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#effective_cdf_enabled DataDatabricksSharePluginframework#effective_cdf_enabled}
   */
   readonly effectiveCdfEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#effective_history_data_sharing_status DataDatabricksSharePluginframework#effective_history_data_sharing_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#effective_history_data_sharing_status DataDatabricksSharePluginframework#effective_history_data_sharing_status}
   */
   readonly effectiveHistoryDataSharingStatus?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#effective_shared_as DataDatabricksSharePluginframework#effective_shared_as}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#effective_shared_as DataDatabricksSharePluginframework#effective_shared_as}
   */
   readonly effectiveSharedAs?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#effective_start_version DataDatabricksSharePluginframework#effective_start_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#effective_start_version DataDatabricksSharePluginframework#effective_start_version}
   */
   readonly effectiveStartVersion?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#history_data_sharing_status DataDatabricksSharePluginframework#history_data_sharing_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#history_data_sharing_status DataDatabricksSharePluginframework#history_data_sharing_status}
   */
   readonly historyDataSharingStatus?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#name DataDatabricksSharePluginframework#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#name DataDatabricksSharePluginframework#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#shared_as DataDatabricksSharePluginframework#shared_as}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#shared_as DataDatabricksSharePluginframework#shared_as}
   */
   readonly sharedAs?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#start_version DataDatabricksSharePluginframework#start_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#start_version DataDatabricksSharePluginframework#start_version}
   */
   readonly startVersion?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#status DataDatabricksSharePluginframework#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#status DataDatabricksSharePluginframework#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#string_shared_as DataDatabricksSharePluginframework#string_shared_as}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#string_shared_as DataDatabricksSharePluginframework#string_shared_as}
   */
   readonly stringSharedAs?: string;
   /**
   * partition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#partition DataDatabricksSharePluginframework#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#partition DataDatabricksSharePluginframework#partition}
   */
   readonly partition?: DataDatabricksSharePluginframeworkObjectPartition[] | cdktf.IResolvable;
 }
@@ -1037,7 +1032,7 @@ export class DataDatabricksSharePluginframeworkObjectList extends cdktf.ComplexL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework databricks_share_pluginframework}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework databricks_share_pluginframework}
 */
 export class DataDatabricksSharePluginframework extends cdktf.TerraformDataSource {
 
@@ -1053,7 +1048,7 @@ export class DataDatabricksSharePluginframework extends cdktf.TerraformDataSourc
   * Generates CDKTF code for importing a DataDatabricksSharePluginframework resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksSharePluginframework to import
-  * @param importFromId The id of the existing DataDatabricksSharePluginframework that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksSharePluginframework that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksSharePluginframework to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1065,7 +1060,7 @@ export class DataDatabricksSharePluginframework extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/share_pluginframework databricks_share_pluginframework} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/share_pluginframework databricks_share_pluginframework} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1076,7 +1071,7 @@ export class DataDatabricksSharePluginframework extends cdktf.TerraformDataSourc
       terraformResourceType: 'databricks_share_pluginframework',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.57.0',
+        providerVersion: '1.58.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

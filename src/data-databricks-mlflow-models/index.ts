@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/mlflow_models
+// https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/mlflow_models
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +8,20 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksMlflowModelsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/mlflow_models#id DataDatabricksMlflowModels#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/mlflow_models#id DataDatabricksMlflowModels#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/mlflow_models#names DataDatabricksMlflowModels#names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/mlflow_models#names DataDatabricksMlflowModels#names}
   */
   readonly names?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/mlflow_models databricks_mlflow_models}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/mlflow_models databricks_mlflow_models}
 */
 export class DataDatabricksMlflowModels extends cdktf.TerraformDataSource {
 
@@ -42,7 +37,7 @@ export class DataDatabricksMlflowModels extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksMlflowModels resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksMlflowModels to import
-  * @param importFromId The id of the existing DataDatabricksMlflowModels that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/mlflow_models#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksMlflowModels that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/mlflow_models#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksMlflowModels to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -54,7 +49,7 @@ export class DataDatabricksMlflowModels extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/mlflow_models databricks_mlflow_models} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/mlflow_models databricks_mlflow_models} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +60,7 @@ export class DataDatabricksMlflowModels extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_mlflow_models',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.57.0',
+        providerVersion: '1.58.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

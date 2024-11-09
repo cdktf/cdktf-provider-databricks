@@ -4,12 +4,12 @@
 
 ### DataDatabricksMlflowModels <a name="DataDatabricksMlflowModels" id="@cdktf/provider-databricks.dataDatabricksMlflowModels.DataDatabricksMlflowModels"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/mlflow_models databricks_mlflow_models}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/mlflow_models databricks_mlflow_models}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksMlflowModels.DataDatabricksMlflowModels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksmlflowmodels"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmlflowmodels"
 
 datadatabricksmlflowmodels.NewDataDatabricksMlflowModels(scope Construct, id *string, config DataDatabricksMlflowModelsConfig) DataDatabricksMlflowModels
 ```
@@ -290,7 +290,7 @@ func ResetNames()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksMlflowModels.DataDatabricksMlflowModels.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksmlflowmodels"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmlflowmodels"
 
 datadatabricksmlflowmodels.DataDatabricksMlflowModels_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksMlflowModels.DataDatabricksMlflowModels.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksmlflowmodels"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmlflowmodels"
 
 datadatabricksmlflowmodels.DataDatabricksMlflowModels_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datadatabricksmlflowmodels.DataDatabricksMlflowModels_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksMlflowModels.DataDatabricksMlflowModels.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksmlflowmodels"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmlflowmodels"
 
 datadatabricksmlflowmodels.DataDatabricksMlflowModels_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datadatabricksmlflowmodels.DataDatabricksMlflowModels_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksMlflowModels.DataDatabricksMlflowModels.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksmlflowmodels"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmlflowmodels"
 
 datadatabricksmlflowmodels.DataDatabricksMlflowModels_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataDatabricksMlflowModels
 
 The id of the existing DataDatabricksMlflowModels that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/mlflow_models#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/mlflow_models#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -601,7 +601,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksMlflowModels.DataDatabricksMlflowModelsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksmlflowmodels"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmlflowmodels"
 
 &datadatabricksmlflowmodels.DataDatabricksMlflowModelsConfig {
 	Connection: interface{},
@@ -627,8 +627,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabri
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksMlflowModels.DataDatabricksMlflowModelsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksMlflowModels.DataDatabricksMlflowModelsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksMlflowModels.DataDatabricksMlflowModelsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksMlflowModels.DataDatabricksMlflowModelsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/mlflow_models#id DataDatabricksMlflowModels#id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksMlflowModels.DataDatabricksMlflowModelsConfig.property.names">Names</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/mlflow_models#names DataDatabricksMlflowModels#names}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksMlflowModels.DataDatabricksMlflowModelsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/mlflow_models#id DataDatabricksMlflowModels#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksMlflowModels.DataDatabricksMlflowModelsConfig.property.names">Names</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/mlflow_models#names DataDatabricksMlflowModels#names}. |
 
 ---
 
@@ -710,7 +710,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/mlflow_models#id DataDatabricksMlflowModels#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/mlflow_models#id DataDatabricksMlflowModels#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -725,7 +725,7 @@ Names *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.57.0/docs/data-sources/mlflow_models#names DataDatabricksMlflowModels#names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/mlflow_models#names DataDatabricksMlflowModels#names}.
 
 ---
 
