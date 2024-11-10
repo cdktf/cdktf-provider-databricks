@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlPermissions.SqlPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sqlpermissions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlpermissions"
 
 sqlpermissions.NewSqlPermissions(scope Construct, id *string, config SqlPermissionsConfig) SqlPermissions
 ```
@@ -454,7 +454,7 @@ func ResetView()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.sqlPermissions.SqlPermissions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sqlpermissions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlpermissions"
 
 sqlpermissions.SqlPermissions_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.sqlPermissions.SqlPermissions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sqlpermissions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlpermissions"
 
 sqlpermissions.SqlPermissions_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ sqlpermissions.SqlPermissions_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.sqlPermissions.SqlPermissions.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sqlpermissions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlpermissions"
 
 sqlpermissions.SqlPermissions_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ sqlpermissions.SqlPermissions_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.sqlPermissions.SqlPermissions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sqlpermissions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlpermissions"
 
 sqlpermissions.SqlPermissions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -941,7 +941,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlPermissions.SqlPermissionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sqlpermissions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlpermissions"
 
 &sqlpermissions.SqlPermissionsConfig {
 	Connection: interface{},
@@ -1174,7 +1174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sqlPermissions.SqlPermissionsPrivilegeAssignments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sqlpermissions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlpermissions"
 
 &sqlpermissions.SqlPermissionsPrivilegeAssignments {
 	Principal: *string,
@@ -1222,7 +1222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlPermissions.SqlPermissionsPrivilegeAssignmentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sqlpermissions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlpermissions"
 
 sqlpermissions.NewSqlPermissionsPrivilegeAssignmentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SqlPermissionsPrivilegeAssignmentsList
 ```
@@ -1382,7 +1382,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlPermissions.SqlPermissionsPrivilegeAssignmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sqlpermissions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sqlpermissions"
 
 sqlpermissions.NewSqlPermissionsPrivilegeAssignmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SqlPermissionsPrivilegeAssignmentsOutputReference
 ```
