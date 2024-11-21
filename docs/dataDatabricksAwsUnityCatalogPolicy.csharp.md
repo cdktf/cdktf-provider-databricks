@@ -4,7 +4,7 @@
 
 ### DataDatabricksAwsUnityCatalogPolicy <a name="DataDatabricksAwsUnityCatalogPolicy" id="@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/aws_unity_catalog_policy databricks_aws_unity_catalog_policy}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/data-sources/aws_unity_catalog_policy databricks_aws_unity_catalog_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy.Initializer"></a>
 
@@ -67,6 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy.resetAwsPartition">ResetAwsPartition</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy.resetKmsName">ResetKmsName</a></code> | *No description.* |
 
@@ -264,6 +265,12 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 
 ---
 
+##### `ResetAwsPartition` <a name="ResetAwsPartition" id="@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy.resetAwsPartition"></a>
+
+```csharp
+private void ResetAwsPartition()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy.resetId"></a>
 
 ```csharp
@@ -379,7 +386,7 @@ The construct id used in the generated config for the DataDatabricksAwsUnityCata
 
 The id of the existing DataDatabricksAwsUnityCatalogPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/aws_unity_catalog_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/data-sources/aws_unity_catalog_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -409,11 +416,13 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy.property.json">Json</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy.property.awsAccountIdInput">AwsAccountIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy.property.awsPartitionInput">AwsPartitionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy.property.bucketNameInput">BucketNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy.property.kmsNameInput">KmsNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy.property.roleNameInput">RoleNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy.property.awsAccountId">AwsAccountId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy.property.awsPartition">AwsPartition</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy.property.bucketName">BucketName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy.property.kmsName">KmsName</a></code> | <code>string</code> | *No description.* |
@@ -563,6 +572,16 @@ public string AwsAccountIdInput { get; }
 
 ---
 
+##### `AwsPartitionInput`<sup>Optional</sup> <a name="AwsPartitionInput" id="@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy.property.awsPartitionInput"></a>
+
+```csharp
+public string AwsPartitionInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `BucketNameInput`<sup>Optional</sup> <a name="BucketNameInput" id="@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy.property.bucketNameInput"></a>
 
 ```csharp
@@ -607,6 +626,16 @@ public string RoleNameInput { get; }
 
 ```csharp
 public string AwsAccountId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AwsPartition`<sup>Required</sup> <a name="AwsPartition" id="@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicy.property.awsPartition"></a>
+
+```csharp
+public string AwsPartition { get; }
 ```
 
 - *Type:* string
@@ -691,6 +720,7 @@ new DataDatabricksAwsUnityCatalogPolicyConfig {
     string AwsAccountId,
     string BucketName,
     string RoleName,
+    string AwsPartition = null,
     string Id = null,
     string KmsName = null
 };
@@ -707,11 +737,12 @@ new DataDatabricksAwsUnityCatalogPolicyConfig {
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicyConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicyConfig.property.awsAccountId">AwsAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/aws_unity_catalog_policy#aws_account_id DataDatabricksAwsUnityCatalogPolicy#aws_account_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicyConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/aws_unity_catalog_policy#bucket_name DataDatabricksAwsUnityCatalogPolicy#bucket_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicyConfig.property.roleName">RoleName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/aws_unity_catalog_policy#role_name DataDatabricksAwsUnityCatalogPolicy#role_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/aws_unity_catalog_policy#id DataDatabricksAwsUnityCatalogPolicy#id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicyConfig.property.kmsName">KmsName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/aws_unity_catalog_policy#kms_name DataDatabricksAwsUnityCatalogPolicy#kms_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicyConfig.property.awsAccountId">AwsAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/data-sources/aws_unity_catalog_policy#aws_account_id DataDatabricksAwsUnityCatalogPolicy#aws_account_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicyConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/data-sources/aws_unity_catalog_policy#bucket_name DataDatabricksAwsUnityCatalogPolicy#bucket_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicyConfig.property.roleName">RoleName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/data-sources/aws_unity_catalog_policy#role_name DataDatabricksAwsUnityCatalogPolicy#role_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicyConfig.property.awsPartition">AwsPartition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/data-sources/aws_unity_catalog_policy#aws_partition DataDatabricksAwsUnityCatalogPolicy#aws_partition}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/data-sources/aws_unity_catalog_policy#id DataDatabricksAwsUnityCatalogPolicy#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicyConfig.property.kmsName">KmsName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/data-sources/aws_unity_catalog_policy#kms_name DataDatabricksAwsUnityCatalogPolicy#kms_name}. |
 
 ---
 
@@ -793,7 +824,7 @@ public string AwsAccountId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/aws_unity_catalog_policy#aws_account_id DataDatabricksAwsUnityCatalogPolicy#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/data-sources/aws_unity_catalog_policy#aws_account_id DataDatabricksAwsUnityCatalogPolicy#aws_account_id}.
 
 ---
 
@@ -805,7 +836,7 @@ public string BucketName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/aws_unity_catalog_policy#bucket_name DataDatabricksAwsUnityCatalogPolicy#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/data-sources/aws_unity_catalog_policy#bucket_name DataDatabricksAwsUnityCatalogPolicy#bucket_name}.
 
 ---
 
@@ -817,7 +848,19 @@ public string RoleName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/aws_unity_catalog_policy#role_name DataDatabricksAwsUnityCatalogPolicy#role_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/data-sources/aws_unity_catalog_policy#role_name DataDatabricksAwsUnityCatalogPolicy#role_name}.
+
+---
+
+##### `AwsPartition`<sup>Optional</sup> <a name="AwsPartition" id="@cdktf/provider-databricks.dataDatabricksAwsUnityCatalogPolicy.DataDatabricksAwsUnityCatalogPolicyConfig.property.awsPartition"></a>
+
+```csharp
+public string AwsPartition { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/data-sources/aws_unity_catalog_policy#aws_partition DataDatabricksAwsUnityCatalogPolicy#aws_partition}.
 
 ---
 
@@ -829,7 +872,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/aws_unity_catalog_policy#id DataDatabricksAwsUnityCatalogPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/data-sources/aws_unity_catalog_policy#id DataDatabricksAwsUnityCatalogPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -844,7 +887,7 @@ public string KmsName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.58.0/docs/data-sources/aws_unity_catalog_policy#kms_name DataDatabricksAwsUnityCatalogPolicy#kms_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/data-sources/aws_unity_catalog_policy#kms_name DataDatabricksAwsUnityCatalogPolicy#kms_name}.
 
 ---
 
