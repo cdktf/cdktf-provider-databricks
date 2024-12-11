@@ -19,6 +19,7 @@ export * as cluster from './cluster';
 export * as clusterPolicy from './cluster-policy';
 export * as complianceSecurityProfileWorkspaceSetting from './compliance-security-profile-workspace-setting';
 export * as connection from './connection';
+export * as credential from './credential';
 export * as customAppIntegration from './custom-app-integration';
 export * as dashboard from './dashboard';
 export * as dbfsFile from './dbfs-file';

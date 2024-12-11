@@ -19,6 +19,7 @@ The following submodules are available:
 - [clusterPolicy](./clusterPolicy.csharp.md)
 - [complianceSecurityProfileWorkspaceSetting](./complianceSecurityProfileWorkspaceSetting.csharp.md)
 - [connection](./connection.csharp.md)
+- [credential](./credential.csharp.md)
 - [customAppIntegration](./customAppIntegration.csharp.md)
 - [dashboard](./dashboard.csharp.md)
 - [dataDatabricksAwsAssumeRolePolicy](./dataDatabricksAwsAssumeRolePolicy.csharp.md)

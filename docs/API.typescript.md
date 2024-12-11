@@ -19,6 +19,7 @@ The following submodules are available:
 - [clusterPolicy](./clusterPolicy.typescript.md)
 - [complianceSecurityProfileWorkspaceSetting](./complianceSecurityProfileWorkspaceSetting.typescript.md)
 - [connection](./connection.typescript.md)
+- [credential](./credential.typescript.md)
 - [customAppIntegration](./customAppIntegration.typescript.md)
 - [dashboard](./dashboard.typescript.md)
 - [dataDatabricksAwsAssumeRolePolicy](./dataDatabricksAwsAssumeRolePolicy.typescript.md)

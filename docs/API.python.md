@@ -19,6 +19,7 @@ The following submodules are available:
 - [clusterPolicy](./clusterPolicy.python.md)
 - [complianceSecurityProfileWorkspaceSetting](./complianceSecurityProfileWorkspaceSetting.python.md)
 - [connection](./connection.python.md)
+- [credential](./credential.python.md)
 - [customAppIntegration](./customAppIntegration.python.md)
 - [dashboard](./dashboard.python.md)
 - [dataDatabricksAwsAssumeRolePolicy](./dataDatabricksAwsAssumeRolePolicy.python.md)

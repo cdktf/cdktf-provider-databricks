@@ -19,6 +19,7 @@ Object.defineProperty(exports, 'cluster', { get: function () { return require('.
 Object.defineProperty(exports, 'clusterPolicy', { get: function () { return require('./cluster-policy'); } });
 Object.defineProperty(exports, 'complianceSecurityProfileWorkspaceSetting', { get: function () { return require('./compliance-security-profile-workspace-setting'); } });
 Object.defineProperty(exports, 'connection', { get: function () { return require('./connection'); } });
+Object.defineProperty(exports, 'credential', { get: function () { return require('./credential'); } });
 Object.defineProperty(exports, 'customAppIntegration', { get: function () { return require('./custom-app-integration'); } });
 Object.defineProperty(exports, 'dashboard', { get: function () { return require('./dashboard'); } });
 Object.defineProperty(exports, 'dbfsFile', { get: function () { return require('./dbfs-file'); } });
