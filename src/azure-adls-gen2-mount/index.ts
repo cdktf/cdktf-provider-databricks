@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/azure_adls_gen2_mount
+// https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/azure_adls_gen2_mount
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,56 +8,60 @@ import * as cdktf from 'cdktf';
 
 export interface AzureAdlsGen2MountConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/azure_adls_gen2_mount#client_id AzureAdlsGen2Mount#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/azure_adls_gen2_mount#client_id AzureAdlsGen2Mount#client_id}
   */
   readonly clientId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/azure_adls_gen2_mount#client_secret_key AzureAdlsGen2Mount#client_secret_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/azure_adls_gen2_mount#client_secret_key AzureAdlsGen2Mount#client_secret_key}
   */
   readonly clientSecretKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/azure_adls_gen2_mount#client_secret_scope AzureAdlsGen2Mount#client_secret_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/azure_adls_gen2_mount#client_secret_scope AzureAdlsGen2Mount#client_secret_scope}
   */
   readonly clientSecretScope: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/azure_adls_gen2_mount#cluster_id AzureAdlsGen2Mount#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/azure_adls_gen2_mount#cluster_id AzureAdlsGen2Mount#cluster_id}
   */
   readonly clusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/azure_adls_gen2_mount#container_name AzureAdlsGen2Mount#container_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/azure_adls_gen2_mount#container_name AzureAdlsGen2Mount#container_name}
   */
   readonly containerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/azure_adls_gen2_mount#directory AzureAdlsGen2Mount#directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/azure_adls_gen2_mount#directory AzureAdlsGen2Mount#directory}
   */
   readonly directory?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/azure_adls_gen2_mount#id AzureAdlsGen2Mount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/azure_adls_gen2_mount#environment AzureAdlsGen2Mount#environment}
+  */
+  readonly environment?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/azure_adls_gen2_mount#id AzureAdlsGen2Mount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/azure_adls_gen2_mount#initialize_file_system AzureAdlsGen2Mount#initialize_file_system}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/azure_adls_gen2_mount#initialize_file_system AzureAdlsGen2Mount#initialize_file_system}
   */
   readonly initializeFileSystem: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/azure_adls_gen2_mount#mount_name AzureAdlsGen2Mount#mount_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/azure_adls_gen2_mount#mount_name AzureAdlsGen2Mount#mount_name}
   */
   readonly mountName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/azure_adls_gen2_mount#storage_account_name AzureAdlsGen2Mount#storage_account_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/azure_adls_gen2_mount#storage_account_name AzureAdlsGen2Mount#storage_account_name}
   */
   readonly storageAccountName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/azure_adls_gen2_mount#tenant_id AzureAdlsGen2Mount#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/azure_adls_gen2_mount#tenant_id AzureAdlsGen2Mount#tenant_id}
   */
   readonly tenantId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/azure_adls_gen2_mount databricks_azure_adls_gen2_mount}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/azure_adls_gen2_mount databricks_azure_adls_gen2_mount}
 */
 export class AzureAdlsGen2Mount extends cdktf.TerraformResource {
 
@@ -78,7 +77,7 @@ export class AzureAdlsGen2Mount extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AzureAdlsGen2Mount resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AzureAdlsGen2Mount to import
-  * @param importFromId The id of the existing AzureAdlsGen2Mount that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/azure_adls_gen2_mount#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AzureAdlsGen2Mount that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/azure_adls_gen2_mount#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AzureAdlsGen2Mount to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -90,7 +89,7 @@ export class AzureAdlsGen2Mount extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.59.0/docs/resources/azure_adls_gen2_mount databricks_azure_adls_gen2_mount} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/azure_adls_gen2_mount databricks_azure_adls_gen2_mount} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -101,7 +100,7 @@ export class AzureAdlsGen2Mount extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_azure_adls_gen2_mount',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.59.0',
+        providerVersion: '1.60.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -118,6 +117,7 @@ export class AzureAdlsGen2Mount extends cdktf.TerraformResource {
     this._clusterId = config.clusterId;
     this._containerName = config.containerName;
     this._directory = config.directory;
+    this._environment = config.environment;
     this._id = config.id;
     this._initializeFileSystem = config.initializeFileSystem;
     this._mountName = config.mountName;
@@ -213,6 +213,22 @@ export class AzureAdlsGen2Mount extends cdktf.TerraformResource {
     return this._directory;
   }
 
+  // environment - computed: false, optional: true, required: false
+  private _environment?: string; 
+  public get environment() {
+    return this.getStringAttribute('environment');
+  }
+  public set environment(value: string) {
+    this._environment = value;
+  }
+  public resetEnvironment() {
+    this._environment = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get environmentInput() {
+    return this._environment;
+  }
+
   // id - computed: true, optional: true, required: false
   private _id?: string; 
   public get id() {
@@ -298,6 +314,7 @@ export class AzureAdlsGen2Mount extends cdktf.TerraformResource {
       cluster_id: cdktf.stringToTerraform(this._clusterId),
       container_name: cdktf.stringToTerraform(this._containerName),
       directory: cdktf.stringToTerraform(this._directory),
+      environment: cdktf.stringToTerraform(this._environment),
       id: cdktf.stringToTerraform(this._id),
       initialize_file_system: cdktf.booleanToTerraform(this._initializeFileSystem),
       mount_name: cdktf.stringToTerraform(this._mountName),
@@ -340,6 +357,12 @@ export class AzureAdlsGen2Mount extends cdktf.TerraformResource {
       },
       directory: {
         value: cdktf.stringToHclTerraform(this._directory),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      environment: {
+        value: cdktf.stringToHclTerraform(this._environment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -19,6 +19,7 @@ The following submodules are available:
 - [clusterPolicy](./clusterPolicy.java.md)
 - [complianceSecurityProfileWorkspaceSetting](./complianceSecurityProfileWorkspaceSetting.java.md)
 - [connection](./connection.java.md)
+- [credential](./credential.java.md)
 - [customAppIntegration](./customAppIntegration.java.md)
 - [dashboard](./dashboard.java.md)
 - [dataDatabricksAwsAssumeRolePolicy](./dataDatabricksAwsAssumeRolePolicy.java.md)

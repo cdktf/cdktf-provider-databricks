@@ -19,6 +19,7 @@ The following submodules are available:
 - [clusterPolicy](./clusterPolicy.go.md)
 - [complianceSecurityProfileWorkspaceSetting](./complianceSecurityProfileWorkspaceSetting.go.md)
 - [connection](./connection.go.md)
+- [credential](./credential.go.md)
 - [customAppIntegration](./customAppIntegration.go.md)
 - [dashboard](./dashboard.go.md)
 - [dataDatabricksAwsAssumeRolePolicy](./dataDatabricksAwsAssumeRolePolicy.go.md)
