@@ -6,6 +6,7 @@ The following submodules are available:
 
 - [accessControlRuleSet](./accessControlRuleSet.java.md)
 - [alert](./alert.java.md)
+- [app](./app.java.md)
 - [artifactAllowlist](./artifactAllowlist.java.md)
 - [automaticClusterUpdateWorkspaceSetting](./automaticClusterUpdateWorkspaceSetting.java.md)
 - [awsS3Mount](./awsS3Mount.java.md)
@@ -22,6 +23,8 @@ The following submodules are available:
 - [credential](./credential.java.md)
 - [customAppIntegration](./customAppIntegration.java.md)
 - [dashboard](./dashboard.java.md)
+- [dataDatabricksApp](./dataDatabricksApp.java.md)
+- [dataDatabricksApps](./dataDatabricksApps.java.md)
 - [dataDatabricksAwsAssumeRolePolicy](./dataDatabricksAwsAssumeRolePolicy.java.md)
 - [dataDatabricksAwsBucketPolicy](./dataDatabricksAwsBucketPolicy.java.md)
 - [dataDatabricksAwsCrossaccountPolicy](./dataDatabricksAwsCrossaccountPolicy.java.md)

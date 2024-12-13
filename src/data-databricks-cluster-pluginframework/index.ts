@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework
+// https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,27 +13,25 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksClusterPluginframeworkConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#cluster_id DataDatabricksClusterPluginframework#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#cluster_id DataDatabricksClusterPluginframework#cluster_id}
   */
   readonly clusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#cluster_name DataDatabricksClusterPluginframework#cluster_name}
-  */
-  readonly clusterName?: string;
-  /**
-  * cluster_info block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#cluster_info DataDatabricksClusterPluginframework#cluster_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#cluster_info DataDatabricksClusterPluginframework#cluster_info}
   */
   readonly clusterInfo?: DataDatabricksClusterPluginframeworkClusterInfo[] | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#cluster_name DataDatabricksClusterPluginframework#cluster_name}
+  */
+  readonly clusterName?: string;
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoAutoscale {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#max_workers DataDatabricksClusterPluginframework#max_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#max_workers DataDatabricksClusterPluginframework#max_workers}
   */
   readonly maxWorkers?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#min_workers DataDatabricksClusterPluginframework#min_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#min_workers DataDatabricksClusterPluginframework#min_workers}
   */
   readonly minWorkers?: number;
 }
@@ -124,7 +122,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoAutoscaleOutputRefer
     }
   }
 
-  // max_workers - computed: false, optional: true, required: false
+  // max_workers - computed: true, optional: true, required: false
   private _maxWorkers?: number; 
   public get maxWorkers() {
     return this.getNumberAttribute('max_workers');
@@ -140,7 +138,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoAutoscaleOutputRefer
     return this._maxWorkers;
   }
 
-  // min_workers - computed: false, optional: true, required: false
+  // min_workers - computed: true, optional: true, required: false
   private _minWorkers?: number; 
   public get minWorkers() {
     return this.getNumberAttribute('min_workers');
@@ -178,43 +176,43 @@ export class DataDatabricksClusterPluginframeworkClusterInfoAutoscaleList extend
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#availability DataDatabricksClusterPluginframework#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#availability DataDatabricksClusterPluginframework#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#ebs_volume_count DataDatabricksClusterPluginframework#ebs_volume_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#ebs_volume_count DataDatabricksClusterPluginframework#ebs_volume_count}
   */
   readonly ebsVolumeCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#ebs_volume_iops DataDatabricksClusterPluginframework#ebs_volume_iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#ebs_volume_iops DataDatabricksClusterPluginframework#ebs_volume_iops}
   */
   readonly ebsVolumeIops?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#ebs_volume_size DataDatabricksClusterPluginframework#ebs_volume_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#ebs_volume_size DataDatabricksClusterPluginframework#ebs_volume_size}
   */
   readonly ebsVolumeSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#ebs_volume_throughput DataDatabricksClusterPluginframework#ebs_volume_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#ebs_volume_throughput DataDatabricksClusterPluginframework#ebs_volume_throughput}
   */
   readonly ebsVolumeThroughput?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#ebs_volume_type DataDatabricksClusterPluginframework#ebs_volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#ebs_volume_type DataDatabricksClusterPluginframework#ebs_volume_type}
   */
   readonly ebsVolumeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#first_on_demand DataDatabricksClusterPluginframework#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#first_on_demand DataDatabricksClusterPluginframework#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#instance_profile_arn DataDatabricksClusterPluginframework#instance_profile_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#instance_profile_arn DataDatabricksClusterPluginframework#instance_profile_arn}
   */
   readonly instanceProfileArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#spot_bid_price_percent DataDatabricksClusterPluginframework#spot_bid_price_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#spot_bid_price_percent DataDatabricksClusterPluginframework#spot_bid_price_percent}
   */
   readonly spotBidPricePercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#zone_id DataDatabricksClusterPluginframework#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#zone_id DataDatabricksClusterPluginframework#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -409,7 +407,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesOutputR
     }
   }
 
-  // availability - computed: false, optional: true, required: false
+  // availability - computed: true, optional: true, required: false
   private _availability?: string; 
   public get availability() {
     return this.getStringAttribute('availability');
@@ -425,7 +423,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesOutputR
     return this._availability;
   }
 
-  // ebs_volume_count - computed: false, optional: true, required: false
+  // ebs_volume_count - computed: true, optional: true, required: false
   private _ebsVolumeCount?: number; 
   public get ebsVolumeCount() {
     return this.getNumberAttribute('ebs_volume_count');
@@ -441,7 +439,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesOutputR
     return this._ebsVolumeCount;
   }
 
-  // ebs_volume_iops - computed: false, optional: true, required: false
+  // ebs_volume_iops - computed: true, optional: true, required: false
   private _ebsVolumeIops?: number; 
   public get ebsVolumeIops() {
     return this.getNumberAttribute('ebs_volume_iops');
@@ -457,7 +455,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesOutputR
     return this._ebsVolumeIops;
   }
 
-  // ebs_volume_size - computed: false, optional: true, required: false
+  // ebs_volume_size - computed: true, optional: true, required: false
   private _ebsVolumeSize?: number; 
   public get ebsVolumeSize() {
     return this.getNumberAttribute('ebs_volume_size');
@@ -473,7 +471,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesOutputR
     return this._ebsVolumeSize;
   }
 
-  // ebs_volume_throughput - computed: false, optional: true, required: false
+  // ebs_volume_throughput - computed: true, optional: true, required: false
   private _ebsVolumeThroughput?: number; 
   public get ebsVolumeThroughput() {
     return this.getNumberAttribute('ebs_volume_throughput');
@@ -489,7 +487,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesOutputR
     return this._ebsVolumeThroughput;
   }
 
-  // ebs_volume_type - computed: false, optional: true, required: false
+  // ebs_volume_type - computed: true, optional: true, required: false
   private _ebsVolumeType?: string; 
   public get ebsVolumeType() {
     return this.getStringAttribute('ebs_volume_type');
@@ -505,7 +503,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesOutputR
     return this._ebsVolumeType;
   }
 
-  // first_on_demand - computed: false, optional: true, required: false
+  // first_on_demand - computed: true, optional: true, required: false
   private _firstOnDemand?: number; 
   public get firstOnDemand() {
     return this.getNumberAttribute('first_on_demand');
@@ -521,7 +519,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesOutputR
     return this._firstOnDemand;
   }
 
-  // instance_profile_arn - computed: false, optional: true, required: false
+  // instance_profile_arn - computed: true, optional: true, required: false
   private _instanceProfileArn?: string; 
   public get instanceProfileArn() {
     return this.getStringAttribute('instance_profile_arn');
@@ -537,7 +535,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesOutputR
     return this._instanceProfileArn;
   }
 
-  // spot_bid_price_percent - computed: false, optional: true, required: false
+  // spot_bid_price_percent - computed: true, optional: true, required: false
   private _spotBidPricePercent?: number; 
   public get spotBidPricePercent() {
     return this.getNumberAttribute('spot_bid_price_percent');
@@ -553,7 +551,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesOutputR
     return this._spotBidPricePercent;
   }
 
-  // zone_id - computed: false, optional: true, required: false
+  // zone_id - computed: true, optional: true, required: false
   private _zoneId?: string; 
   public get zoneId() {
     return this.getStringAttribute('zone_id');
@@ -591,11 +589,11 @@ export class DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesList ex
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#log_analytics_primary_key DataDatabricksClusterPluginframework#log_analytics_primary_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#log_analytics_primary_key DataDatabricksClusterPluginframework#log_analytics_primary_key}
   */
   readonly logAnalyticsPrimaryKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#log_analytics_workspace_id DataDatabricksClusterPluginframework#log_analytics_workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#log_analytics_workspace_id DataDatabricksClusterPluginframework#log_analytics_workspace_id}
   */
   readonly logAnalyticsWorkspaceId?: string;
 }
@@ -686,7 +684,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAn
     }
   }
 
-  // log_analytics_primary_key - computed: false, optional: true, required: false
+  // log_analytics_primary_key - computed: true, optional: true, required: false
   private _logAnalyticsPrimaryKey?: string; 
   public get logAnalyticsPrimaryKey() {
     return this.getStringAttribute('log_analytics_primary_key');
@@ -702,7 +700,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAn
     return this._logAnalyticsPrimaryKey;
   }
 
-  // log_analytics_workspace_id - computed: false, optional: true, required: false
+  // log_analytics_workspace_id - computed: true, optional: true, required: false
   private _logAnalyticsWorkspaceId?: string; 
   public get logAnalyticsWorkspaceId() {
     return this.getStringAttribute('log_analytics_workspace_id');
@@ -740,23 +738,21 @@ export class DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAn
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#availability DataDatabricksClusterPluginframework#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#availability DataDatabricksClusterPluginframework#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#first_on_demand DataDatabricksClusterPluginframework#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#first_on_demand DataDatabricksClusterPluginframework#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#spot_bid_max_price DataDatabricksClusterPluginframework#spot_bid_max_price}
-  */
-  readonly spotBidMaxPrice?: number;
-  /**
-  * log_analytics_info block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#log_analytics_info DataDatabricksClusterPluginframework#log_analytics_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#log_analytics_info DataDatabricksClusterPluginframework#log_analytics_info}
   */
   readonly logAnalyticsInfo?: DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo[] | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#spot_bid_max_price DataDatabricksClusterPluginframework#spot_bid_max_price}
+  */
+  readonly spotBidMaxPrice?: number;
 }
 
 export function dataDatabricksClusterPluginframeworkClusterInfoAzureAttributesToTerraform(struct?: DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes | cdktf.IResolvable): any {
@@ -767,8 +763,8 @@ export function dataDatabricksClusterPluginframeworkClusterInfoAzureAttributesTo
   return {
     availability: cdktf.stringToTerraform(struct!.availability),
     first_on_demand: cdktf.numberToTerraform(struct!.firstOnDemand),
+    log_analytics_info: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfoToTerraform, false)(struct!.logAnalyticsInfo),
     spot_bid_max_price: cdktf.numberToTerraform(struct!.spotBidMaxPrice),
-    log_analytics_info: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfoToTerraform, true)(struct!.logAnalyticsInfo),
   }
 }
 
@@ -791,17 +787,17 @@ export function dataDatabricksClusterPluginframeworkClusterInfoAzureAttributesTo
       type: "simple",
       storageClassType: "number",
     },
+    log_analytics_info: {
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfoToHclTerraform, false)(struct!.logAnalyticsInfo),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfoList",
+    },
     spot_bid_max_price: {
       value: cdktf.numberToHclTerraform(struct!.spotBidMaxPrice),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
-    },
-    log_analytics_info: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfoToHclTerraform, true)(struct!.logAnalyticsInfo),
-      isBlock: true,
-      type: "list",
-      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfoList",
     },
   };
 
@@ -837,13 +833,13 @@ export class DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutpu
       hasAnyValues = true;
       internalValueResult.firstOnDemand = this._firstOnDemand;
     }
-    if (this._spotBidMaxPrice !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.spotBidMaxPrice = this._spotBidMaxPrice;
-    }
     if (this._logAnalyticsInfo?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.logAnalyticsInfo = this._logAnalyticsInfo?.internalValue;
+    }
+    if (this._spotBidMaxPrice !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.spotBidMaxPrice = this._spotBidMaxPrice;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -854,8 +850,8 @@ export class DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutpu
       this.resolvableValue = undefined;
       this._availability = undefined;
       this._firstOnDemand = undefined;
-      this._spotBidMaxPrice = undefined;
       this._logAnalyticsInfo.internalValue = undefined;
+      this._spotBidMaxPrice = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -866,12 +862,12 @@ export class DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutpu
       this.resolvableValue = undefined;
       this._availability = value.availability;
       this._firstOnDemand = value.firstOnDemand;
-      this._spotBidMaxPrice = value.spotBidMaxPrice;
       this._logAnalyticsInfo.internalValue = value.logAnalyticsInfo;
+      this._spotBidMaxPrice = value.spotBidMaxPrice;
     }
   }
 
-  // availability - computed: false, optional: true, required: false
+  // availability - computed: true, optional: true, required: false
   private _availability?: string; 
   public get availability() {
     return this.getStringAttribute('availability');
@@ -887,7 +883,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutpu
     return this._availability;
   }
 
-  // first_on_demand - computed: false, optional: true, required: false
+  // first_on_demand - computed: true, optional: true, required: false
   private _firstOnDemand?: number; 
   public get firstOnDemand() {
     return this.getNumberAttribute('first_on_demand');
@@ -903,23 +899,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutpu
     return this._firstOnDemand;
   }
 
-  // spot_bid_max_price - computed: false, optional: true, required: false
-  private _spotBidMaxPrice?: number; 
-  public get spotBidMaxPrice() {
-    return this.getNumberAttribute('spot_bid_max_price');
-  }
-  public set spotBidMaxPrice(value: number) {
-    this._spotBidMaxPrice = value;
-  }
-  public resetSpotBidMaxPrice() {
-    this._spotBidMaxPrice = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get spotBidMaxPriceInput() {
-    return this._spotBidMaxPrice;
-  }
-
-  // log_analytics_info - computed: false, optional: true, required: false
+  // log_analytics_info - computed: true, optional: true, required: false
   private _logAnalyticsInfo = new DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfoList(this, "log_analytics_info", false);
   public get logAnalyticsInfo() {
     return this._logAnalyticsInfo;
@@ -933,6 +913,22 @@ export class DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutpu
   // Temporarily expose input value. Use with caution.
   public get logAnalyticsInfoInput() {
     return this._logAnalyticsInfo.internalValue;
+  }
+
+  // spot_bid_max_price - computed: true, optional: true, required: false
+  private _spotBidMaxPrice?: number; 
+  public get spotBidMaxPrice() {
+    return this.getNumberAttribute('spot_bid_max_price');
+  }
+  public set spotBidMaxPrice(value: number) {
+    this._spotBidMaxPrice = value;
+  }
+  public resetSpotBidMaxPrice() {
+    this._spotBidMaxPrice = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get spotBidMaxPriceInput() {
+    return this._spotBidMaxPrice;
   }
 }
 
@@ -957,7 +953,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesList 
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
   */
   readonly destination: string;
 }
@@ -1035,7 +1031,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfsOu
     }
   }
 
-  // destination - computed: false, optional: false, required: true
+  // destination - computed: true, optional: false, required: true
   private _destination?: string; 
   public get destination() {
     return this.getStringAttribute('destination');
@@ -1070,31 +1066,31 @@ export class DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfsLi
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#canned_acl DataDatabricksClusterPluginframework#canned_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#canned_acl DataDatabricksClusterPluginframework#canned_acl}
   */
   readonly cannedAcl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#enable_encryption DataDatabricksClusterPluginframework#enable_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#enable_encryption DataDatabricksClusterPluginframework#enable_encryption}
   */
   readonly enableEncryption?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#encryption_type DataDatabricksClusterPluginframework#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#encryption_type DataDatabricksClusterPluginframework#encryption_type}
   */
   readonly encryptionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#endpoint DataDatabricksClusterPluginframework#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#endpoint DataDatabricksClusterPluginframework#endpoint}
   */
   readonly endpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#kms_key DataDatabricksClusterPluginframework#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#kms_key DataDatabricksClusterPluginframework#kms_key}
   */
   readonly kmsKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#region DataDatabricksClusterPluginframework#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#region DataDatabricksClusterPluginframework#region}
   */
   readonly region?: string;
 }
@@ -1250,7 +1246,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3Outp
     }
   }
 
-  // canned_acl - computed: false, optional: true, required: false
+  // canned_acl - computed: true, optional: true, required: false
   private _cannedAcl?: string; 
   public get cannedAcl() {
     return this.getStringAttribute('canned_acl');
@@ -1266,7 +1262,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3Outp
     return this._cannedAcl;
   }
 
-  // destination - computed: false, optional: false, required: true
+  // destination - computed: true, optional: false, required: true
   private _destination?: string; 
   public get destination() {
     return this.getStringAttribute('destination');
@@ -1279,7 +1275,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3Outp
     return this._destination;
   }
 
-  // enable_encryption - computed: false, optional: true, required: false
+  // enable_encryption - computed: true, optional: true, required: false
   private _enableEncryption?: boolean | cdktf.IResolvable; 
   public get enableEncryption() {
     return this.getBooleanAttribute('enable_encryption');
@@ -1295,7 +1291,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3Outp
     return this._enableEncryption;
   }
 
-  // encryption_type - computed: false, optional: true, required: false
+  // encryption_type - computed: true, optional: true, required: false
   private _encryptionType?: string; 
   public get encryptionType() {
     return this.getStringAttribute('encryption_type');
@@ -1311,7 +1307,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3Outp
     return this._encryptionType;
   }
 
-  // endpoint - computed: false, optional: true, required: false
+  // endpoint - computed: true, optional: true, required: false
   private _endpoint?: string; 
   public get endpoint() {
     return this.getStringAttribute('endpoint');
@@ -1327,7 +1323,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3Outp
     return this._endpoint;
   }
 
-  // kms_key - computed: false, optional: true, required: false
+  // kms_key - computed: true, optional: true, required: false
   private _kmsKey?: string; 
   public get kmsKey() {
     return this.getStringAttribute('kms_key');
@@ -1343,7 +1339,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3Outp
     return this._kmsKey;
   }
 
-  // region - computed: false, optional: true, required: false
+  // region - computed: true, optional: true, required: false
   private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
@@ -1381,15 +1377,11 @@ export class DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3List
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf {
   /**
-  * dbfs block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#dbfs DataDatabricksClusterPluginframework#dbfs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#dbfs DataDatabricksClusterPluginframework#dbfs}
   */
   readonly dbfs?: DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs[] | cdktf.IResolvable;
   /**
-  * s3 block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#s3 DataDatabricksClusterPluginframework#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#s3 DataDatabricksClusterPluginframework#s3}
   */
   readonly s3?: DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3[] | cdktf.IResolvable;
 }
@@ -1400,8 +1392,8 @@ export function dataDatabricksClusterPluginframeworkClusterInfoClusterLogConfToT
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dbfs: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfsToTerraform, true)(struct!.dbfs),
-    s3: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3ToTerraform, true)(struct!.s3),
+    dbfs: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfsToTerraform, false)(struct!.dbfs),
+    s3: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3ToTerraform, false)(struct!.s3),
   }
 }
 
@@ -1413,13 +1405,13 @@ export function dataDatabricksClusterPluginframeworkClusterInfoClusterLogConfToH
   }
   const attrs = {
     dbfs: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfsToHclTerraform, true)(struct!.dbfs),
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfsToHclTerraform, false)(struct!.dbfs),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfsList",
     },
     s3: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3ToHclTerraform, true)(struct!.s3),
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3ToHclTerraform, false)(struct!.s3),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3List",
@@ -1480,7 +1472,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutput
     }
   }
 
-  // dbfs - computed: false, optional: true, required: false
+  // dbfs - computed: true, optional: true, required: false
   private _dbfs = new DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfsList(this, "dbfs", false);
   public get dbfs() {
     return this._dbfs;
@@ -1496,7 +1488,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutput
     return this._dbfs.internalValue;
   }
 
-  // s3 - computed: false, optional: true, required: false
+  // s3 - computed: true, optional: true, required: false
   private _s3 = new DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3List(this, "s3", false);
   public get s3() {
     return this._s3;
@@ -1534,11 +1526,11 @@ export class DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfList e
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#last_attempted DataDatabricksClusterPluginframework#last_attempted}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#last_attempted DataDatabricksClusterPluginframework#last_attempted}
   */
   readonly lastAttempted?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#last_exception DataDatabricksClusterPluginframework#last_exception}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#last_exception DataDatabricksClusterPluginframework#last_exception}
   */
   readonly lastException?: string;
 }
@@ -1629,7 +1621,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusOutp
     }
   }
 
-  // last_attempted - computed: false, optional: true, required: false
+  // last_attempted - computed: true, optional: true, required: false
   private _lastAttempted?: number; 
   public get lastAttempted() {
     return this.getNumberAttribute('last_attempted');
@@ -1645,7 +1637,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusOutp
     return this._lastAttempted;
   }
 
-  // last_exception - computed: false, optional: true, required: false
+  // last_exception - computed: true, optional: true, required: false
   private _lastException?: string; 
   public get lastException() {
     return this.getStringAttribute('last_exception');
@@ -1683,11 +1675,11 @@ export class DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusList
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#password DataDatabricksClusterPluginframework#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#password DataDatabricksClusterPluginframework#password}
   */
   readonly password?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#username DataDatabricksClusterPluginframework#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#username DataDatabricksClusterPluginframework#username}
   */
   readonly username?: string;
 }
@@ -1778,7 +1770,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth
     }
   }
 
-  // password - computed: false, optional: true, required: false
+  // password - computed: true, optional: true, required: false
   private _password?: string; 
   public get password() {
     return this.getStringAttribute('password');
@@ -1794,7 +1786,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth
     return this._password;
   }
 
-  // username - computed: false, optional: true, required: false
+  // username - computed: true, optional: true, required: false
   private _username?: string; 
   public get username() {
     return this.getStringAttribute('username');
@@ -1832,15 +1824,13 @@ export class DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoDockerImage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#url DataDatabricksClusterPluginframework#url}
-  */
-  readonly url?: string;
-  /**
-  * basic_auth block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#basic_auth DataDatabricksClusterPluginframework#basic_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#basic_auth DataDatabricksClusterPluginframework#basic_auth}
   */
   readonly basicAuth?: DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth[] | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#url DataDatabricksClusterPluginframework#url}
+  */
+  readonly url?: string;
 }
 
 export function dataDatabricksClusterPluginframeworkClusterInfoDockerImageToTerraform(struct?: DataDatabricksClusterPluginframeworkClusterInfoDockerImage | cdktf.IResolvable): any {
@@ -1849,8 +1839,8 @@ export function dataDatabricksClusterPluginframeworkClusterInfoDockerImageToTerr
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    basic_auth: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuthToTerraform, false)(struct!.basicAuth),
     url: cdktf.stringToTerraform(struct!.url),
-    basic_auth: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuthToTerraform, true)(struct!.basicAuth),
   }
 }
 
@@ -1861,17 +1851,17 @@ export function dataDatabricksClusterPluginframeworkClusterInfoDockerImageToHclT
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    basic_auth: {
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuthToHclTerraform, false)(struct!.basicAuth),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuthList",
+    },
     url: {
       value: cdktf.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
-    },
-    basic_auth: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuthToHclTerraform, true)(struct!.basicAuth),
-      isBlock: true,
-      type: "list",
-      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuthList",
     },
   };
 
@@ -1899,13 +1889,13 @@ export class DataDatabricksClusterPluginframeworkClusterInfoDockerImageOutputRef
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._url !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.url = this._url;
-    }
     if (this._basicAuth?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.basicAuth = this._basicAuth?.internalValue;
+    }
+    if (this._url !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.url = this._url;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -1914,8 +1904,8 @@ export class DataDatabricksClusterPluginframeworkClusterInfoDockerImageOutputRef
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._url = undefined;
       this._basicAuth.internalValue = undefined;
+      this._url = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -1924,28 +1914,12 @@ export class DataDatabricksClusterPluginframeworkClusterInfoDockerImageOutputRef
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._url = value.url;
       this._basicAuth.internalValue = value.basicAuth;
+      this._url = value.url;
     }
   }
 
-  // url - computed: false, optional: true, required: false
-  private _url?: string; 
-  public get url() {
-    return this.getStringAttribute('url');
-  }
-  public set url(value: string) {
-    this._url = value;
-  }
-  public resetUrl() {
-    this._url = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get urlInput() {
-    return this._url;
-  }
-
-  // basic_auth - computed: false, optional: true, required: false
+  // basic_auth - computed: true, optional: true, required: false
   private _basicAuth = new DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuthList(this, "basic_auth", false);
   public get basicAuth() {
     return this._basicAuth;
@@ -1959,6 +1933,22 @@ export class DataDatabricksClusterPluginframeworkClusterInfoDockerImageOutputRef
   // Temporarily expose input value. Use with caution.
   public get basicAuthInput() {
     return this._basicAuth.internalValue;
+  }
+
+  // url - computed: true, optional: true, required: false
+  private _url?: string; 
+  public get url() {
+    return this.getStringAttribute('url');
+  }
+  public set url(value: string) {
+    this._url = value;
+  }
+  public resetUrl() {
+    this._url = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urlInput() {
+    return this._url;
   }
 }
 
@@ -1983,7 +1973,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoDockerImageList exte
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#is_spot DataDatabricksClusterPluginframework#is_spot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#is_spot DataDatabricksClusterPluginframework#is_spot}
   */
   readonly isSpot?: boolean | cdktf.IResolvable;
 }
@@ -2061,7 +2051,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttribu
     }
   }
 
-  // is_spot - computed: false, optional: true, required: false
+  // is_spot - computed: true, optional: true, required: false
   private _isSpot?: boolean | cdktf.IResolvable; 
   public get isSpot() {
     return this.getBooleanAttribute('is_spot');
@@ -2099,35 +2089,33 @@ export class DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttribu
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoDriver {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#host_private_ip DataDatabricksClusterPluginframework#host_private_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#host_private_ip DataDatabricksClusterPluginframework#host_private_ip}
   */
   readonly hostPrivateIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#instance_id DataDatabricksClusterPluginframework#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#instance_id DataDatabricksClusterPluginframework#instance_id}
   */
   readonly instanceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#node_id DataDatabricksClusterPluginframework#node_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#node_aws_attributes DataDatabricksClusterPluginframework#node_aws_attributes}
+  */
+  readonly nodeAwsAttributes?: DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes[] | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#node_id DataDatabricksClusterPluginframework#node_id}
   */
   readonly nodeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#private_ip DataDatabricksClusterPluginframework#private_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#private_ip DataDatabricksClusterPluginframework#private_ip}
   */
   readonly privateIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#public_dns DataDatabricksClusterPluginframework#public_dns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#public_dns DataDatabricksClusterPluginframework#public_dns}
   */
   readonly publicDns?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#start_timestamp DataDatabricksClusterPluginframework#start_timestamp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#start_timestamp DataDatabricksClusterPluginframework#start_timestamp}
   */
   readonly startTimestamp?: number;
-  /**
-  * node_aws_attributes block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#node_aws_attributes DataDatabricksClusterPluginframework#node_aws_attributes}
-  */
-  readonly nodeAwsAttributes?: DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes[] | cdktf.IResolvable;
 }
 
 export function dataDatabricksClusterPluginframeworkClusterInfoDriverToTerraform(struct?: DataDatabricksClusterPluginframeworkClusterInfoDriver | cdktf.IResolvable): any {
@@ -2138,11 +2126,11 @@ export function dataDatabricksClusterPluginframeworkClusterInfoDriverToTerraform
   return {
     host_private_ip: cdktf.stringToTerraform(struct!.hostPrivateIp),
     instance_id: cdktf.stringToTerraform(struct!.instanceId),
+    node_aws_attributes: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesToTerraform, false)(struct!.nodeAwsAttributes),
     node_id: cdktf.stringToTerraform(struct!.nodeId),
     private_ip: cdktf.stringToTerraform(struct!.privateIp),
     public_dns: cdktf.stringToTerraform(struct!.publicDns),
     start_timestamp: cdktf.numberToTerraform(struct!.startTimestamp),
-    node_aws_attributes: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesToTerraform, true)(struct!.nodeAwsAttributes),
   }
 }
 
@@ -2164,6 +2152,12 @@ export function dataDatabricksClusterPluginframeworkClusterInfoDriverToHclTerraf
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    node_aws_attributes: {
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesToHclTerraform, false)(struct!.nodeAwsAttributes),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesList",
     },
     node_id: {
       value: cdktf.stringToHclTerraform(struct!.nodeId),
@@ -2188,12 +2182,6 @@ export function dataDatabricksClusterPluginframeworkClusterInfoDriverToHclTerraf
       isBlock: false,
       type: "simple",
       storageClassType: "number",
-    },
-    node_aws_attributes: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesToHclTerraform, true)(struct!.nodeAwsAttributes),
-      isBlock: true,
-      type: "list",
-      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesList",
     },
   };
 
@@ -2229,6 +2217,10 @@ export class DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReferenc
       hasAnyValues = true;
       internalValueResult.instanceId = this._instanceId;
     }
+    if (this._nodeAwsAttributes?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nodeAwsAttributes = this._nodeAwsAttributes?.internalValue;
+    }
     if (this._nodeId !== undefined) {
       hasAnyValues = true;
       internalValueResult.nodeId = this._nodeId;
@@ -2245,10 +2237,6 @@ export class DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReferenc
       hasAnyValues = true;
       internalValueResult.startTimestamp = this._startTimestamp;
     }
-    if (this._nodeAwsAttributes?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.nodeAwsAttributes = this._nodeAwsAttributes?.internalValue;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -2258,11 +2246,11 @@ export class DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReferenc
       this.resolvableValue = undefined;
       this._hostPrivateIp = undefined;
       this._instanceId = undefined;
+      this._nodeAwsAttributes.internalValue = undefined;
       this._nodeId = undefined;
       this._privateIp = undefined;
       this._publicDns = undefined;
       this._startTimestamp = undefined;
-      this._nodeAwsAttributes.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -2273,15 +2261,15 @@ export class DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReferenc
       this.resolvableValue = undefined;
       this._hostPrivateIp = value.hostPrivateIp;
       this._instanceId = value.instanceId;
+      this._nodeAwsAttributes.internalValue = value.nodeAwsAttributes;
       this._nodeId = value.nodeId;
       this._privateIp = value.privateIp;
       this._publicDns = value.publicDns;
       this._startTimestamp = value.startTimestamp;
-      this._nodeAwsAttributes.internalValue = value.nodeAwsAttributes;
     }
   }
 
-  // host_private_ip - computed: false, optional: true, required: false
+  // host_private_ip - computed: true, optional: true, required: false
   private _hostPrivateIp?: string; 
   public get hostPrivateIp() {
     return this.getStringAttribute('host_private_ip');
@@ -2297,7 +2285,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReferenc
     return this._hostPrivateIp;
   }
 
-  // instance_id - computed: false, optional: true, required: false
+  // instance_id - computed: true, optional: true, required: false
   private _instanceId?: string; 
   public get instanceId() {
     return this.getStringAttribute('instance_id');
@@ -2313,7 +2301,23 @@ export class DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReferenc
     return this._instanceId;
   }
 
-  // node_id - computed: false, optional: true, required: false
+  // node_aws_attributes - computed: true, optional: true, required: false
+  private _nodeAwsAttributes = new DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesList(this, "node_aws_attributes", false);
+  public get nodeAwsAttributes() {
+    return this._nodeAwsAttributes;
+  }
+  public putNodeAwsAttributes(value: DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes[] | cdktf.IResolvable) {
+    this._nodeAwsAttributes.internalValue = value;
+  }
+  public resetNodeAwsAttributes() {
+    this._nodeAwsAttributes.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodeAwsAttributesInput() {
+    return this._nodeAwsAttributes.internalValue;
+  }
+
+  // node_id - computed: true, optional: true, required: false
   private _nodeId?: string; 
   public get nodeId() {
     return this.getStringAttribute('node_id');
@@ -2329,7 +2333,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReferenc
     return this._nodeId;
   }
 
-  // private_ip - computed: false, optional: true, required: false
+  // private_ip - computed: true, optional: true, required: false
   private _privateIp?: string; 
   public get privateIp() {
     return this.getStringAttribute('private_ip');
@@ -2345,7 +2349,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReferenc
     return this._privateIp;
   }
 
-  // public_dns - computed: false, optional: true, required: false
+  // public_dns - computed: true, optional: true, required: false
   private _publicDns?: string; 
   public get publicDns() {
     return this.getStringAttribute('public_dns');
@@ -2361,7 +2365,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReferenc
     return this._publicDns;
   }
 
-  // start_timestamp - computed: false, optional: true, required: false
+  // start_timestamp - computed: true, optional: true, required: false
   private _startTimestamp?: number; 
   public get startTimestamp() {
     return this.getNumberAttribute('start_timestamp');
@@ -2375,22 +2379,6 @@ export class DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReferenc
   // Temporarily expose input value. Use with caution.
   public get startTimestampInput() {
     return this._startTimestamp;
-  }
-
-  // node_aws_attributes - computed: false, optional: true, required: false
-  private _nodeAwsAttributes = new DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesList(this, "node_aws_attributes", false);
-  public get nodeAwsAttributes() {
-    return this._nodeAwsAttributes;
-  }
-  public putNodeAwsAttributes(value: DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes[] | cdktf.IResolvable) {
-    this._nodeAwsAttributes.internalValue = value;
-  }
-  public resetNodeAwsAttributes() {
-    this._nodeAwsAttributes.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nodeAwsAttributesInput() {
-    return this._nodeAwsAttributes.internalValue;
   }
 }
 
@@ -2415,7 +2403,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoDriverList extends c
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#is_spot DataDatabricksClusterPluginframework#is_spot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#is_spot DataDatabricksClusterPluginframework#is_spot}
   */
   readonly isSpot?: boolean | cdktf.IResolvable;
 }
@@ -2493,7 +2481,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttr
     }
   }
 
-  // is_spot - computed: false, optional: true, required: false
+  // is_spot - computed: true, optional: true, required: false
   private _isSpot?: boolean | cdktf.IResolvable; 
   public get isSpot() {
     return this.getBooleanAttribute('is_spot');
@@ -2531,35 +2519,33 @@ export class DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttr
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoExecutors {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#host_private_ip DataDatabricksClusterPluginframework#host_private_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#host_private_ip DataDatabricksClusterPluginframework#host_private_ip}
   */
   readonly hostPrivateIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#instance_id DataDatabricksClusterPluginframework#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#instance_id DataDatabricksClusterPluginframework#instance_id}
   */
   readonly instanceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#node_id DataDatabricksClusterPluginframework#node_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#node_aws_attributes DataDatabricksClusterPluginframework#node_aws_attributes}
+  */
+  readonly nodeAwsAttributes?: DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes[] | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#node_id DataDatabricksClusterPluginframework#node_id}
   */
   readonly nodeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#private_ip DataDatabricksClusterPluginframework#private_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#private_ip DataDatabricksClusterPluginframework#private_ip}
   */
   readonly privateIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#public_dns DataDatabricksClusterPluginframework#public_dns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#public_dns DataDatabricksClusterPluginframework#public_dns}
   */
   readonly publicDns?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#start_timestamp DataDatabricksClusterPluginframework#start_timestamp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#start_timestamp DataDatabricksClusterPluginframework#start_timestamp}
   */
   readonly startTimestamp?: number;
-  /**
-  * node_aws_attributes block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#node_aws_attributes DataDatabricksClusterPluginframework#node_aws_attributes}
-  */
-  readonly nodeAwsAttributes?: DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes[] | cdktf.IResolvable;
 }
 
 export function dataDatabricksClusterPluginframeworkClusterInfoExecutorsToTerraform(struct?: DataDatabricksClusterPluginframeworkClusterInfoExecutors | cdktf.IResolvable): any {
@@ -2570,11 +2556,11 @@ export function dataDatabricksClusterPluginframeworkClusterInfoExecutorsToTerraf
   return {
     host_private_ip: cdktf.stringToTerraform(struct!.hostPrivateIp),
     instance_id: cdktf.stringToTerraform(struct!.instanceId),
+    node_aws_attributes: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesToTerraform, false)(struct!.nodeAwsAttributes),
     node_id: cdktf.stringToTerraform(struct!.nodeId),
     private_ip: cdktf.stringToTerraform(struct!.privateIp),
     public_dns: cdktf.stringToTerraform(struct!.publicDns),
     start_timestamp: cdktf.numberToTerraform(struct!.startTimestamp),
-    node_aws_attributes: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesToTerraform, true)(struct!.nodeAwsAttributes),
   }
 }
 
@@ -2596,6 +2582,12 @@ export function dataDatabricksClusterPluginframeworkClusterInfoExecutorsToHclTer
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    node_aws_attributes: {
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesToHclTerraform, false)(struct!.nodeAwsAttributes),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesList",
     },
     node_id: {
       value: cdktf.stringToHclTerraform(struct!.nodeId),
@@ -2620,12 +2612,6 @@ export function dataDatabricksClusterPluginframeworkClusterInfoExecutorsToHclTer
       isBlock: false,
       type: "simple",
       storageClassType: "number",
-    },
-    node_aws_attributes: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesToHclTerraform, true)(struct!.nodeAwsAttributes),
-      isBlock: true,
-      type: "list",
-      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesList",
     },
   };
 
@@ -2661,6 +2647,10 @@ export class DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputRefer
       hasAnyValues = true;
       internalValueResult.instanceId = this._instanceId;
     }
+    if (this._nodeAwsAttributes?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nodeAwsAttributes = this._nodeAwsAttributes?.internalValue;
+    }
     if (this._nodeId !== undefined) {
       hasAnyValues = true;
       internalValueResult.nodeId = this._nodeId;
@@ -2677,10 +2667,6 @@ export class DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputRefer
       hasAnyValues = true;
       internalValueResult.startTimestamp = this._startTimestamp;
     }
-    if (this._nodeAwsAttributes?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.nodeAwsAttributes = this._nodeAwsAttributes?.internalValue;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -2690,11 +2676,11 @@ export class DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputRefer
       this.resolvableValue = undefined;
       this._hostPrivateIp = undefined;
       this._instanceId = undefined;
+      this._nodeAwsAttributes.internalValue = undefined;
       this._nodeId = undefined;
       this._privateIp = undefined;
       this._publicDns = undefined;
       this._startTimestamp = undefined;
-      this._nodeAwsAttributes.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -2705,15 +2691,15 @@ export class DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputRefer
       this.resolvableValue = undefined;
       this._hostPrivateIp = value.hostPrivateIp;
       this._instanceId = value.instanceId;
+      this._nodeAwsAttributes.internalValue = value.nodeAwsAttributes;
       this._nodeId = value.nodeId;
       this._privateIp = value.privateIp;
       this._publicDns = value.publicDns;
       this._startTimestamp = value.startTimestamp;
-      this._nodeAwsAttributes.internalValue = value.nodeAwsAttributes;
     }
   }
 
-  // host_private_ip - computed: false, optional: true, required: false
+  // host_private_ip - computed: true, optional: true, required: false
   private _hostPrivateIp?: string; 
   public get hostPrivateIp() {
     return this.getStringAttribute('host_private_ip');
@@ -2729,7 +2715,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputRefer
     return this._hostPrivateIp;
   }
 
-  // instance_id - computed: false, optional: true, required: false
+  // instance_id - computed: true, optional: true, required: false
   private _instanceId?: string; 
   public get instanceId() {
     return this.getStringAttribute('instance_id');
@@ -2745,7 +2731,23 @@ export class DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputRefer
     return this._instanceId;
   }
 
-  // node_id - computed: false, optional: true, required: false
+  // node_aws_attributes - computed: true, optional: true, required: false
+  private _nodeAwsAttributes = new DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesList(this, "node_aws_attributes", false);
+  public get nodeAwsAttributes() {
+    return this._nodeAwsAttributes;
+  }
+  public putNodeAwsAttributes(value: DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes[] | cdktf.IResolvable) {
+    this._nodeAwsAttributes.internalValue = value;
+  }
+  public resetNodeAwsAttributes() {
+    this._nodeAwsAttributes.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodeAwsAttributesInput() {
+    return this._nodeAwsAttributes.internalValue;
+  }
+
+  // node_id - computed: true, optional: true, required: false
   private _nodeId?: string; 
   public get nodeId() {
     return this.getStringAttribute('node_id');
@@ -2761,7 +2763,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputRefer
     return this._nodeId;
   }
 
-  // private_ip - computed: false, optional: true, required: false
+  // private_ip - computed: true, optional: true, required: false
   private _privateIp?: string; 
   public get privateIp() {
     return this.getStringAttribute('private_ip');
@@ -2777,7 +2779,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputRefer
     return this._privateIp;
   }
 
-  // public_dns - computed: false, optional: true, required: false
+  // public_dns - computed: true, optional: true, required: false
   private _publicDns?: string; 
   public get publicDns() {
     return this.getStringAttribute('public_dns');
@@ -2793,7 +2795,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputRefer
     return this._publicDns;
   }
 
-  // start_timestamp - computed: false, optional: true, required: false
+  // start_timestamp - computed: true, optional: true, required: false
   private _startTimestamp?: number; 
   public get startTimestamp() {
     return this.getNumberAttribute('start_timestamp');
@@ -2807,22 +2809,6 @@ export class DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputRefer
   // Temporarily expose input value. Use with caution.
   public get startTimestampInput() {
     return this._startTimestamp;
-  }
-
-  // node_aws_attributes - computed: false, optional: true, required: false
-  private _nodeAwsAttributes = new DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesList(this, "node_aws_attributes", false);
-  public get nodeAwsAttributes() {
-    return this._nodeAwsAttributes;
-  }
-  public putNodeAwsAttributes(value: DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes[] | cdktf.IResolvable) {
-    this._nodeAwsAttributes.internalValue = value;
-  }
-  public resetNodeAwsAttributes() {
-    this._nodeAwsAttributes.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nodeAwsAttributesInput() {
-    return this._nodeAwsAttributes.internalValue;
   }
 }
 
@@ -2847,27 +2833,27 @@ export class DataDatabricksClusterPluginframeworkClusterInfoExecutorsList extend
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#availability DataDatabricksClusterPluginframework#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#availability DataDatabricksClusterPluginframework#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#boot_disk_size DataDatabricksClusterPluginframework#boot_disk_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#boot_disk_size DataDatabricksClusterPluginframework#boot_disk_size}
   */
   readonly bootDiskSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#google_service_account DataDatabricksClusterPluginframework#google_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#google_service_account DataDatabricksClusterPluginframework#google_service_account}
   */
   readonly googleServiceAccount?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#local_ssd_count DataDatabricksClusterPluginframework#local_ssd_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#local_ssd_count DataDatabricksClusterPluginframework#local_ssd_count}
   */
   readonly localSsdCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#use_preemptible_executors DataDatabricksClusterPluginframework#use_preemptible_executors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#use_preemptible_executors DataDatabricksClusterPluginframework#use_preemptible_executors}
   */
   readonly usePreemptibleExecutors?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#zone_id DataDatabricksClusterPluginframework#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#zone_id DataDatabricksClusterPluginframework#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -3010,7 +2996,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputR
     }
   }
 
-  // availability - computed: false, optional: true, required: false
+  // availability - computed: true, optional: true, required: false
   private _availability?: string; 
   public get availability() {
     return this.getStringAttribute('availability');
@@ -3026,7 +3012,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputR
     return this._availability;
   }
 
-  // boot_disk_size - computed: false, optional: true, required: false
+  // boot_disk_size - computed: true, optional: true, required: false
   private _bootDiskSize?: number; 
   public get bootDiskSize() {
     return this.getNumberAttribute('boot_disk_size');
@@ -3042,7 +3028,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputR
     return this._bootDiskSize;
   }
 
-  // google_service_account - computed: false, optional: true, required: false
+  // google_service_account - computed: true, optional: true, required: false
   private _googleServiceAccount?: string; 
   public get googleServiceAccount() {
     return this.getStringAttribute('google_service_account');
@@ -3058,7 +3044,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputR
     return this._googleServiceAccount;
   }
 
-  // local_ssd_count - computed: false, optional: true, required: false
+  // local_ssd_count - computed: true, optional: true, required: false
   private _localSsdCount?: number; 
   public get localSsdCount() {
     return this.getNumberAttribute('local_ssd_count');
@@ -3074,7 +3060,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputR
     return this._localSsdCount;
   }
 
-  // use_preemptible_executors - computed: false, optional: true, required: false
+  // use_preemptible_executors - computed: true, optional: true, required: false
   private _usePreemptibleExecutors?: boolean | cdktf.IResolvable; 
   public get usePreemptibleExecutors() {
     return this.getBooleanAttribute('use_preemptible_executors');
@@ -3090,7 +3076,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputR
     return this._usePreemptibleExecutors;
   }
 
-  // zone_id - computed: false, optional: true, required: false
+  // zone_id - computed: true, optional: true, required: false
   private _zoneId?: string; 
   public get zoneId() {
     return this.getStringAttribute('zone_id');
@@ -3128,7 +3114,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesList ex
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
   */
   readonly destination: string;
 }
@@ -3206,7 +3192,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfssOutp
     }
   }
 
-  // destination - computed: false, optional: false, required: true
+  // destination - computed: true, optional: false, required: true
   private _destination?: string; 
   public get destination() {
     return this.getStringAttribute('destination');
@@ -3241,7 +3227,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfssList
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
   */
   readonly destination: string;
 }
@@ -3319,7 +3305,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfsOutpu
     }
   }
 
-  // destination - computed: false, optional: false, required: true
+  // destination - computed: true, optional: false, required: true
   private _destination?: string; 
   public get destination() {
     return this.getStringAttribute('destination');
@@ -3354,7 +3340,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfsList 
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
   */
   readonly destination: string;
 }
@@ -3432,7 +3418,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFileOutpu
     }
   }
 
-  // destination - computed: false, optional: false, required: true
+  // destination - computed: true, optional: false, required: true
   private _destination?: string; 
   public get destination() {
     return this.getStringAttribute('destination');
@@ -3467,7 +3453,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFileList 
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
   */
   readonly destination: string;
 }
@@ -3545,7 +3531,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcsOutput
     }
   }
 
-  // destination - computed: false, optional: false, required: true
+  // destination - computed: true, optional: false, required: true
   private _destination?: string; 
   public get destination() {
     return this.getStringAttribute('destination');
@@ -3580,31 +3566,31 @@ export class DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcsList e
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#canned_acl DataDatabricksClusterPluginframework#canned_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#canned_acl DataDatabricksClusterPluginframework#canned_acl}
   */
   readonly cannedAcl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#enable_encryption DataDatabricksClusterPluginframework#enable_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#enable_encryption DataDatabricksClusterPluginframework#enable_encryption}
   */
   readonly enableEncryption?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#encryption_type DataDatabricksClusterPluginframework#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#encryption_type DataDatabricksClusterPluginframework#encryption_type}
   */
   readonly encryptionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#endpoint DataDatabricksClusterPluginframework#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#endpoint DataDatabricksClusterPluginframework#endpoint}
   */
   readonly endpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#kms_key DataDatabricksClusterPluginframework#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#kms_key DataDatabricksClusterPluginframework#kms_key}
   */
   readonly kmsKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#region DataDatabricksClusterPluginframework#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#region DataDatabricksClusterPluginframework#region}
   */
   readonly region?: string;
 }
@@ -3760,7 +3746,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputR
     }
   }
 
-  // canned_acl - computed: false, optional: true, required: false
+  // canned_acl - computed: true, optional: true, required: false
   private _cannedAcl?: string; 
   public get cannedAcl() {
     return this.getStringAttribute('canned_acl');
@@ -3776,7 +3762,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputR
     return this._cannedAcl;
   }
 
-  // destination - computed: false, optional: false, required: true
+  // destination - computed: true, optional: false, required: true
   private _destination?: string; 
   public get destination() {
     return this.getStringAttribute('destination');
@@ -3789,7 +3775,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputR
     return this._destination;
   }
 
-  // enable_encryption - computed: false, optional: true, required: false
+  // enable_encryption - computed: true, optional: true, required: false
   private _enableEncryption?: boolean | cdktf.IResolvable; 
   public get enableEncryption() {
     return this.getBooleanAttribute('enable_encryption');
@@ -3805,7 +3791,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputR
     return this._enableEncryption;
   }
 
-  // encryption_type - computed: false, optional: true, required: false
+  // encryption_type - computed: true, optional: true, required: false
   private _encryptionType?: string; 
   public get encryptionType() {
     return this.getStringAttribute('encryption_type');
@@ -3821,7 +3807,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputR
     return this._encryptionType;
   }
 
-  // endpoint - computed: false, optional: true, required: false
+  // endpoint - computed: true, optional: true, required: false
   private _endpoint?: string; 
   public get endpoint() {
     return this.getStringAttribute('endpoint');
@@ -3837,7 +3823,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputR
     return this._endpoint;
   }
 
-  // kms_key - computed: false, optional: true, required: false
+  // kms_key - computed: true, optional: true, required: false
   private _kmsKey?: string; 
   public get kmsKey() {
     return this.getStringAttribute('kms_key');
@@ -3853,7 +3839,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputR
     return this._kmsKey;
   }
 
-  // region - computed: false, optional: true, required: false
+  // region - computed: true, optional: true, required: false
   private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
@@ -3891,7 +3877,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3List ex
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
   */
   readonly destination: string;
 }
@@ -3969,7 +3955,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumesOu
     }
   }
 
-  // destination - computed: false, optional: false, required: true
+  // destination - computed: true, optional: false, required: true
   private _destination?: string; 
   public get destination() {
     return this.getStringAttribute('destination');
@@ -4004,7 +3990,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumesLi
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
   */
   readonly destination: string;
 }
@@ -4082,7 +4068,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace
     }
   }
 
-  // destination - computed: false, optional: false, required: true
+  // destination - computed: true, optional: false, required: true
   private _destination?: string; 
   public get destination() {
     return this.getStringAttribute('destination');
@@ -4117,45 +4103,31 @@ export class DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoInitScripts {
   /**
-  * abfss block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#abfss DataDatabricksClusterPluginframework#abfss}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#abfss DataDatabricksClusterPluginframework#abfss}
   */
   readonly abfss?: DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss[] | cdktf.IResolvable;
   /**
-  * dbfs block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#dbfs DataDatabricksClusterPluginframework#dbfs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#dbfs DataDatabricksClusterPluginframework#dbfs}
   */
   readonly dbfs?: DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs[] | cdktf.IResolvable;
   /**
-  * file block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#file DataDatabricksClusterPluginframework#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#file DataDatabricksClusterPluginframework#file}
   */
   readonly file?: DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile[] | cdktf.IResolvable;
   /**
-  * gcs block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#gcs DataDatabricksClusterPluginframework#gcs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#gcs DataDatabricksClusterPluginframework#gcs}
   */
   readonly gcs?: DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs[] | cdktf.IResolvable;
   /**
-  * s3 block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#s3 DataDatabricksClusterPluginframework#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#s3 DataDatabricksClusterPluginframework#s3}
   */
   readonly s3?: DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3[] | cdktf.IResolvable;
   /**
-  * volumes block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#volumes DataDatabricksClusterPluginframework#volumes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#volumes DataDatabricksClusterPluginframework#volumes}
   */
   readonly volumes?: DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes[] | cdktf.IResolvable;
   /**
-  * workspace block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#workspace DataDatabricksClusterPluginframework#workspace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#workspace DataDatabricksClusterPluginframework#workspace}
   */
   readonly workspace?: DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace[] | cdktf.IResolvable;
 }
@@ -4166,13 +4138,13 @@ export function dataDatabricksClusterPluginframeworkClusterInfoInitScriptsToTerr
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    abfss: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfssToTerraform, true)(struct!.abfss),
-    dbfs: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfsToTerraform, true)(struct!.dbfs),
-    file: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsFileToTerraform, true)(struct!.file),
-    gcs: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcsToTerraform, true)(struct!.gcs),
-    s3: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3ToTerraform, true)(struct!.s3),
-    volumes: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumesToTerraform, true)(struct!.volumes),
-    workspace: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspaceToTerraform, true)(struct!.workspace),
+    abfss: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfssToTerraform, false)(struct!.abfss),
+    dbfs: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfsToTerraform, false)(struct!.dbfs),
+    file: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsFileToTerraform, false)(struct!.file),
+    gcs: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcsToTerraform, false)(struct!.gcs),
+    s3: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3ToTerraform, false)(struct!.s3),
+    volumes: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumesToTerraform, false)(struct!.volumes),
+    workspace: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspaceToTerraform, false)(struct!.workspace),
   }
 }
 
@@ -4184,43 +4156,43 @@ export function dataDatabricksClusterPluginframeworkClusterInfoInitScriptsToHclT
   }
   const attrs = {
     abfss: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfssToHclTerraform, true)(struct!.abfss),
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfssToHclTerraform, false)(struct!.abfss),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfssList",
     },
     dbfs: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfsToHclTerraform, true)(struct!.dbfs),
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfsToHclTerraform, false)(struct!.dbfs),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfsList",
     },
     file: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsFileToHclTerraform, true)(struct!.file),
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsFileToHclTerraform, false)(struct!.file),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFileList",
     },
     gcs: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcsToHclTerraform, true)(struct!.gcs),
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcsToHclTerraform, false)(struct!.gcs),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcsList",
     },
     s3: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3ToHclTerraform, true)(struct!.s3),
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3ToHclTerraform, false)(struct!.s3),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3List",
     },
     volumes: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumesToHclTerraform, true)(struct!.volumes),
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumesToHclTerraform, false)(struct!.volumes),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumesList",
     },
     workspace: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspaceToHclTerraform, true)(struct!.workspace),
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspaceToHclTerraform, false)(struct!.workspace),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspaceList",
@@ -4311,7 +4283,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputRef
     }
   }
 
-  // abfss - computed: false, optional: true, required: false
+  // abfss - computed: true, optional: true, required: false
   private _abfss = new DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfssList(this, "abfss", false);
   public get abfss() {
     return this._abfss;
@@ -4327,7 +4299,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputRef
     return this._abfss.internalValue;
   }
 
-  // dbfs - computed: false, optional: true, required: false
+  // dbfs - computed: true, optional: true, required: false
   private _dbfs = new DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfsList(this, "dbfs", false);
   public get dbfs() {
     return this._dbfs;
@@ -4343,7 +4315,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputRef
     return this._dbfs.internalValue;
   }
 
-  // file - computed: false, optional: true, required: false
+  // file - computed: true, optional: true, required: false
   private _file = new DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFileList(this, "file", false);
   public get file() {
     return this._file;
@@ -4359,7 +4331,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputRef
     return this._file.internalValue;
   }
 
-  // gcs - computed: false, optional: true, required: false
+  // gcs - computed: true, optional: true, required: false
   private _gcs = new DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcsList(this, "gcs", false);
   public get gcs() {
     return this._gcs;
@@ -4375,7 +4347,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputRef
     return this._gcs.internalValue;
   }
 
-  // s3 - computed: false, optional: true, required: false
+  // s3 - computed: true, optional: true, required: false
   private _s3 = new DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3List(this, "s3", false);
   public get s3() {
     return this._s3;
@@ -4391,7 +4363,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputRef
     return this._s3.internalValue;
   }
 
-  // volumes - computed: false, optional: true, required: false
+  // volumes - computed: true, optional: true, required: false
   private _volumes = new DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumesList(this, "volumes", false);
   public get volumes() {
     return this._volumes;
@@ -4407,7 +4379,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputRef
     return this._volumes.internalValue;
   }
 
-  // workspace - computed: false, optional: true, required: false
+  // workspace - computed: true, optional: true, required: false
   private _workspace = new DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspaceList(this, "workspace", false);
   public get workspace() {
     return this._workspace;
@@ -4445,11 +4417,11 @@ export class DataDatabricksClusterPluginframeworkClusterInfoInitScriptsList exte
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#max_workers DataDatabricksClusterPluginframework#max_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#max_workers DataDatabricksClusterPluginframework#max_workers}
   */
   readonly maxWorkers?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#min_workers DataDatabricksClusterPluginframework#min_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#min_workers DataDatabricksClusterPluginframework#min_workers}
   */
   readonly minWorkers?: number;
 }
@@ -4540,7 +4512,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleOutputR
     }
   }
 
-  // max_workers - computed: false, optional: true, required: false
+  // max_workers - computed: true, optional: true, required: false
   private _maxWorkers?: number; 
   public get maxWorkers() {
     return this.getNumberAttribute('max_workers');
@@ -4556,7 +4528,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleOutputR
     return this._maxWorkers;
   }
 
-  // min_workers - computed: false, optional: true, required: false
+  // min_workers - computed: true, optional: true, required: false
   private _minWorkers?: number; 
   public get minWorkers() {
     return this.getNumberAttribute('min_workers');
@@ -4594,43 +4566,43 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleList ex
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#availability DataDatabricksClusterPluginframework#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#availability DataDatabricksClusterPluginframework#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#ebs_volume_count DataDatabricksClusterPluginframework#ebs_volume_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#ebs_volume_count DataDatabricksClusterPluginframework#ebs_volume_count}
   */
   readonly ebsVolumeCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#ebs_volume_iops DataDatabricksClusterPluginframework#ebs_volume_iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#ebs_volume_iops DataDatabricksClusterPluginframework#ebs_volume_iops}
   */
   readonly ebsVolumeIops?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#ebs_volume_size DataDatabricksClusterPluginframework#ebs_volume_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#ebs_volume_size DataDatabricksClusterPluginframework#ebs_volume_size}
   */
   readonly ebsVolumeSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#ebs_volume_throughput DataDatabricksClusterPluginframework#ebs_volume_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#ebs_volume_throughput DataDatabricksClusterPluginframework#ebs_volume_throughput}
   */
   readonly ebsVolumeThroughput?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#ebs_volume_type DataDatabricksClusterPluginframework#ebs_volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#ebs_volume_type DataDatabricksClusterPluginframework#ebs_volume_type}
   */
   readonly ebsVolumeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#first_on_demand DataDatabricksClusterPluginframework#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#first_on_demand DataDatabricksClusterPluginframework#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#instance_profile_arn DataDatabricksClusterPluginframework#instance_profile_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#instance_profile_arn DataDatabricksClusterPluginframework#instance_profile_arn}
   */
   readonly instanceProfileArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#spot_bid_price_percent DataDatabricksClusterPluginframework#spot_bid_price_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#spot_bid_price_percent DataDatabricksClusterPluginframework#spot_bid_price_percent}
   */
   readonly spotBidPricePercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#zone_id DataDatabricksClusterPluginframework#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#zone_id DataDatabricksClusterPluginframework#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -4825,7 +4797,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesOut
     }
   }
 
-  // availability - computed: false, optional: true, required: false
+  // availability - computed: true, optional: true, required: false
   private _availability?: string; 
   public get availability() {
     return this.getStringAttribute('availability');
@@ -4841,7 +4813,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesOut
     return this._availability;
   }
 
-  // ebs_volume_count - computed: false, optional: true, required: false
+  // ebs_volume_count - computed: true, optional: true, required: false
   private _ebsVolumeCount?: number; 
   public get ebsVolumeCount() {
     return this.getNumberAttribute('ebs_volume_count');
@@ -4857,7 +4829,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesOut
     return this._ebsVolumeCount;
   }
 
-  // ebs_volume_iops - computed: false, optional: true, required: false
+  // ebs_volume_iops - computed: true, optional: true, required: false
   private _ebsVolumeIops?: number; 
   public get ebsVolumeIops() {
     return this.getNumberAttribute('ebs_volume_iops');
@@ -4873,7 +4845,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesOut
     return this._ebsVolumeIops;
   }
 
-  // ebs_volume_size - computed: false, optional: true, required: false
+  // ebs_volume_size - computed: true, optional: true, required: false
   private _ebsVolumeSize?: number; 
   public get ebsVolumeSize() {
     return this.getNumberAttribute('ebs_volume_size');
@@ -4889,7 +4861,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesOut
     return this._ebsVolumeSize;
   }
 
-  // ebs_volume_throughput - computed: false, optional: true, required: false
+  // ebs_volume_throughput - computed: true, optional: true, required: false
   private _ebsVolumeThroughput?: number; 
   public get ebsVolumeThroughput() {
     return this.getNumberAttribute('ebs_volume_throughput');
@@ -4905,7 +4877,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesOut
     return this._ebsVolumeThroughput;
   }
 
-  // ebs_volume_type - computed: false, optional: true, required: false
+  // ebs_volume_type - computed: true, optional: true, required: false
   private _ebsVolumeType?: string; 
   public get ebsVolumeType() {
     return this.getStringAttribute('ebs_volume_type');
@@ -4921,7 +4893,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesOut
     return this._ebsVolumeType;
   }
 
-  // first_on_demand - computed: false, optional: true, required: false
+  // first_on_demand - computed: true, optional: true, required: false
   private _firstOnDemand?: number; 
   public get firstOnDemand() {
     return this.getNumberAttribute('first_on_demand');
@@ -4937,7 +4909,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesOut
     return this._firstOnDemand;
   }
 
-  // instance_profile_arn - computed: false, optional: true, required: false
+  // instance_profile_arn - computed: true, optional: true, required: false
   private _instanceProfileArn?: string; 
   public get instanceProfileArn() {
     return this.getStringAttribute('instance_profile_arn');
@@ -4953,7 +4925,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesOut
     return this._instanceProfileArn;
   }
 
-  // spot_bid_price_percent - computed: false, optional: true, required: false
+  // spot_bid_price_percent - computed: true, optional: true, required: false
   private _spotBidPricePercent?: number; 
   public get spotBidPricePercent() {
     return this.getNumberAttribute('spot_bid_price_percent');
@@ -4969,7 +4941,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesOut
     return this._spotBidPricePercent;
   }
 
-  // zone_id - computed: false, optional: true, required: false
+  // zone_id - computed: true, optional: true, required: false
   private _zoneId?: string; 
   public get zoneId() {
     return this.getStringAttribute('zone_id');
@@ -5007,11 +4979,11 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesLis
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#log_analytics_primary_key DataDatabricksClusterPluginframework#log_analytics_primary_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#log_analytics_primary_key DataDatabricksClusterPluginframework#log_analytics_primary_key}
   */
   readonly logAnalyticsPrimaryKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#log_analytics_workspace_id DataDatabricksClusterPluginframework#log_analytics_workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#log_analytics_workspace_id DataDatabricksClusterPluginframework#log_analytics_workspace_id}
   */
   readonly logAnalyticsWorkspaceId?: string;
 }
@@ -5102,7 +5074,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesL
     }
   }
 
-  // log_analytics_primary_key - computed: false, optional: true, required: false
+  // log_analytics_primary_key - computed: true, optional: true, required: false
   private _logAnalyticsPrimaryKey?: string; 
   public get logAnalyticsPrimaryKey() {
     return this.getStringAttribute('log_analytics_primary_key');
@@ -5118,7 +5090,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesL
     return this._logAnalyticsPrimaryKey;
   }
 
-  // log_analytics_workspace_id - computed: false, optional: true, required: false
+  // log_analytics_workspace_id - computed: true, optional: true, required: false
   private _logAnalyticsWorkspaceId?: string; 
   public get logAnalyticsWorkspaceId() {
     return this.getStringAttribute('log_analytics_workspace_id');
@@ -5156,23 +5128,21 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesL
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#availability DataDatabricksClusterPluginframework#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#availability DataDatabricksClusterPluginframework#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#first_on_demand DataDatabricksClusterPluginframework#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#first_on_demand DataDatabricksClusterPluginframework#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#spot_bid_max_price DataDatabricksClusterPluginframework#spot_bid_max_price}
-  */
-  readonly spotBidMaxPrice?: number;
-  /**
-  * log_analytics_info block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#log_analytics_info DataDatabricksClusterPluginframework#log_analytics_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#log_analytics_info DataDatabricksClusterPluginframework#log_analytics_info}
   */
   readonly logAnalyticsInfo?: DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo[] | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#spot_bid_max_price DataDatabricksClusterPluginframework#spot_bid_max_price}
+  */
+  readonly spotBidMaxPrice?: number;
 }
 
 export function dataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesToTerraform(struct?: DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes | cdktf.IResolvable): any {
@@ -5183,8 +5153,8 @@ export function dataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttribut
   return {
     availability: cdktf.stringToTerraform(struct!.availability),
     first_on_demand: cdktf.numberToTerraform(struct!.firstOnDemand),
+    log_analytics_info: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfoToTerraform, false)(struct!.logAnalyticsInfo),
     spot_bid_max_price: cdktf.numberToTerraform(struct!.spotBidMaxPrice),
-    log_analytics_info: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfoToTerraform, true)(struct!.logAnalyticsInfo),
   }
 }
 
@@ -5207,17 +5177,17 @@ export function dataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttribut
       type: "simple",
       storageClassType: "number",
     },
+    log_analytics_info: {
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfoToHclTerraform, false)(struct!.logAnalyticsInfo),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfoList",
+    },
     spot_bid_max_price: {
       value: cdktf.numberToHclTerraform(struct!.spotBidMaxPrice),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
-    },
-    log_analytics_info: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfoToHclTerraform, true)(struct!.logAnalyticsInfo),
-      isBlock: true,
-      type: "list",
-      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfoList",
     },
   };
 
@@ -5253,13 +5223,13 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesO
       hasAnyValues = true;
       internalValueResult.firstOnDemand = this._firstOnDemand;
     }
-    if (this._spotBidMaxPrice !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.spotBidMaxPrice = this._spotBidMaxPrice;
-    }
     if (this._logAnalyticsInfo?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.logAnalyticsInfo = this._logAnalyticsInfo?.internalValue;
+    }
+    if (this._spotBidMaxPrice !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.spotBidMaxPrice = this._spotBidMaxPrice;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -5270,8 +5240,8 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesO
       this.resolvableValue = undefined;
       this._availability = undefined;
       this._firstOnDemand = undefined;
-      this._spotBidMaxPrice = undefined;
       this._logAnalyticsInfo.internalValue = undefined;
+      this._spotBidMaxPrice = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -5282,12 +5252,12 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesO
       this.resolvableValue = undefined;
       this._availability = value.availability;
       this._firstOnDemand = value.firstOnDemand;
-      this._spotBidMaxPrice = value.spotBidMaxPrice;
       this._logAnalyticsInfo.internalValue = value.logAnalyticsInfo;
+      this._spotBidMaxPrice = value.spotBidMaxPrice;
     }
   }
 
-  // availability - computed: false, optional: true, required: false
+  // availability - computed: true, optional: true, required: false
   private _availability?: string; 
   public get availability() {
     return this.getStringAttribute('availability');
@@ -5303,7 +5273,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesO
     return this._availability;
   }
 
-  // first_on_demand - computed: false, optional: true, required: false
+  // first_on_demand - computed: true, optional: true, required: false
   private _firstOnDemand?: number; 
   public get firstOnDemand() {
     return this.getNumberAttribute('first_on_demand');
@@ -5319,23 +5289,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesO
     return this._firstOnDemand;
   }
 
-  // spot_bid_max_price - computed: false, optional: true, required: false
-  private _spotBidMaxPrice?: number; 
-  public get spotBidMaxPrice() {
-    return this.getNumberAttribute('spot_bid_max_price');
-  }
-  public set spotBidMaxPrice(value: number) {
-    this._spotBidMaxPrice = value;
-  }
-  public resetSpotBidMaxPrice() {
-    this._spotBidMaxPrice = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get spotBidMaxPriceInput() {
-    return this._spotBidMaxPrice;
-  }
-
-  // log_analytics_info - computed: false, optional: true, required: false
+  // log_analytics_info - computed: true, optional: true, required: false
   private _logAnalyticsInfo = new DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfoList(this, "log_analytics_info", false);
   public get logAnalyticsInfo() {
     return this._logAnalyticsInfo;
@@ -5349,6 +5303,22 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesO
   // Temporarily expose input value. Use with caution.
   public get logAnalyticsInfoInput() {
     return this._logAnalyticsInfo.internalValue;
+  }
+
+  // spot_bid_max_price - computed: true, optional: true, required: false
+  private _spotBidMaxPrice?: number; 
+  public get spotBidMaxPrice() {
+    return this.getNumberAttribute('spot_bid_max_price');
+  }
+  public set spotBidMaxPrice(value: number) {
+    this._spotBidMaxPrice = value;
+  }
+  public resetSpotBidMaxPrice() {
+    this._spotBidMaxPrice = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get spotBidMaxPriceInput() {
+    return this._spotBidMaxPrice;
   }
 }
 
@@ -5373,7 +5343,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesL
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
   */
   readonly destination: string;
 }
@@ -5451,7 +5421,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDb
     }
   }
 
-  // destination - computed: false, optional: false, required: true
+  // destination - computed: true, optional: false, required: true
   private _destination?: string; 
   public get destination() {
     return this.getStringAttribute('destination');
@@ -5486,31 +5456,31 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDb
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#canned_acl DataDatabricksClusterPluginframework#canned_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#canned_acl DataDatabricksClusterPluginframework#canned_acl}
   */
   readonly cannedAcl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#enable_encryption DataDatabricksClusterPluginframework#enable_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#enable_encryption DataDatabricksClusterPluginframework#enable_encryption}
   */
   readonly enableEncryption?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#encryption_type DataDatabricksClusterPluginframework#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#encryption_type DataDatabricksClusterPluginframework#encryption_type}
   */
   readonly encryptionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#endpoint DataDatabricksClusterPluginframework#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#endpoint DataDatabricksClusterPluginframework#endpoint}
   */
   readonly endpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#kms_key DataDatabricksClusterPluginframework#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#kms_key DataDatabricksClusterPluginframework#kms_key}
   */
   readonly kmsKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#region DataDatabricksClusterPluginframework#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#region DataDatabricksClusterPluginframework#region}
   */
   readonly region?: string;
 }
@@ -5666,7 +5636,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3
     }
   }
 
-  // canned_acl - computed: false, optional: true, required: false
+  // canned_acl - computed: true, optional: true, required: false
   private _cannedAcl?: string; 
   public get cannedAcl() {
     return this.getStringAttribute('canned_acl');
@@ -5682,7 +5652,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3
     return this._cannedAcl;
   }
 
-  // destination - computed: false, optional: false, required: true
+  // destination - computed: true, optional: false, required: true
   private _destination?: string; 
   public get destination() {
     return this.getStringAttribute('destination');
@@ -5695,7 +5665,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3
     return this._destination;
   }
 
-  // enable_encryption - computed: false, optional: true, required: false
+  // enable_encryption - computed: true, optional: true, required: false
   private _enableEncryption?: boolean | cdktf.IResolvable; 
   public get enableEncryption() {
     return this.getBooleanAttribute('enable_encryption');
@@ -5711,7 +5681,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3
     return this._enableEncryption;
   }
 
-  // encryption_type - computed: false, optional: true, required: false
+  // encryption_type - computed: true, optional: true, required: false
   private _encryptionType?: string; 
   public get encryptionType() {
     return this.getStringAttribute('encryption_type');
@@ -5727,7 +5697,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3
     return this._encryptionType;
   }
 
-  // endpoint - computed: false, optional: true, required: false
+  // endpoint - computed: true, optional: true, required: false
   private _endpoint?: string; 
   public get endpoint() {
     return this.getStringAttribute('endpoint');
@@ -5743,7 +5713,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3
     return this._endpoint;
   }
 
-  // kms_key - computed: false, optional: true, required: false
+  // kms_key - computed: true, optional: true, required: false
   private _kmsKey?: string; 
   public get kmsKey() {
     return this.getStringAttribute('kms_key');
@@ -5759,7 +5729,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3
     return this._kmsKey;
   }
 
-  // region - computed: false, optional: true, required: false
+  // region - computed: true, optional: true, required: false
   private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
@@ -5797,15 +5767,11 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf {
   /**
-  * dbfs block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#dbfs DataDatabricksClusterPluginframework#dbfs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#dbfs DataDatabricksClusterPluginframework#dbfs}
   */
   readonly dbfs?: DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs[] | cdktf.IResolvable;
   /**
-  * s3 block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#s3 DataDatabricksClusterPluginframework#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#s3 DataDatabricksClusterPluginframework#s3}
   */
   readonly s3?: DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3[] | cdktf.IResolvable;
 }
@@ -5816,8 +5782,8 @@ export function dataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogCon
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dbfs: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfsToTerraform, true)(struct!.dbfs),
-    s3: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3ToTerraform, true)(struct!.s3),
+    dbfs: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfsToTerraform, false)(struct!.dbfs),
+    s3: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3ToTerraform, false)(struct!.s3),
   }
 }
 
@@ -5829,13 +5795,13 @@ export function dataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogCon
   }
   const attrs = {
     dbfs: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfsToHclTerraform, true)(struct!.dbfs),
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfsToHclTerraform, false)(struct!.dbfs),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfsList",
     },
     s3: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3ToHclTerraform, true)(struct!.s3),
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3ToHclTerraform, false)(struct!.s3),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3List",
@@ -5896,7 +5862,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOu
     }
   }
 
-  // dbfs - computed: false, optional: true, required: false
+  // dbfs - computed: true, optional: true, required: false
   private _dbfs = new DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfsList(this, "dbfs", false);
   public get dbfs() {
     return this._dbfs;
@@ -5912,7 +5878,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOu
     return this._dbfs.internalValue;
   }
 
-  // s3 - computed: false, optional: true, required: false
+  // s3 - computed: true, optional: true, required: false
   private _s3 = new DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3List(this, "s3", false);
   public get s3() {
     return this._s3;
@@ -5950,11 +5916,11 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfLi
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#password DataDatabricksClusterPluginframework#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#password DataDatabricksClusterPluginframework#password}
   */
   readonly password?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#username DataDatabricksClusterPluginframework#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#username DataDatabricksClusterPluginframework#username}
   */
   readonly username?: string;
 }
@@ -6045,7 +6011,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasic
     }
   }
 
-  // password - computed: false, optional: true, required: false
+  // password - computed: true, optional: true, required: false
   private _password?: string; 
   public get password() {
     return this.getStringAttribute('password');
@@ -6061,7 +6027,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasic
     return this._password;
   }
 
-  // username - computed: false, optional: true, required: false
+  // username - computed: true, optional: true, required: false
   private _username?: string; 
   public get username() {
     return this.getStringAttribute('username');
@@ -6099,15 +6065,13 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasic
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#url DataDatabricksClusterPluginframework#url}
-  */
-  readonly url?: string;
-  /**
-  * basic_auth block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#basic_auth DataDatabricksClusterPluginframework#basic_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#basic_auth DataDatabricksClusterPluginframework#basic_auth}
   */
   readonly basicAuth?: DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth[] | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#url DataDatabricksClusterPluginframework#url}
+  */
+  readonly url?: string;
 }
 
 export function dataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageToTerraform(struct?: DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage | cdktf.IResolvable): any {
@@ -6116,8 +6080,8 @@ export function dataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageTo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    basic_auth: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthToTerraform, false)(struct!.basicAuth),
     url: cdktf.stringToTerraform(struct!.url),
-    basic_auth: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthToTerraform, true)(struct!.basicAuth),
   }
 }
 
@@ -6128,17 +6092,17 @@ export function dataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageTo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    basic_auth: {
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthToHclTerraform, false)(struct!.basicAuth),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthList",
+    },
     url: {
       value: cdktf.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
-    },
-    basic_auth: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthToHclTerraform, true)(struct!.basicAuth),
-      isBlock: true,
-      type: "list",
-      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthList",
     },
   };
 
@@ -6166,13 +6130,13 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutpu
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._url !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.url = this._url;
-    }
     if (this._basicAuth?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.basicAuth = this._basicAuth?.internalValue;
+    }
+    if (this._url !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.url = this._url;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -6181,8 +6145,8 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutpu
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._url = undefined;
       this._basicAuth.internalValue = undefined;
+      this._url = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -6191,28 +6155,12 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutpu
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._url = value.url;
       this._basicAuth.internalValue = value.basicAuth;
+      this._url = value.url;
     }
   }
 
-  // url - computed: false, optional: true, required: false
-  private _url?: string; 
-  public get url() {
-    return this.getStringAttribute('url');
-  }
-  public set url(value: string) {
-    this._url = value;
-  }
-  public resetUrl() {
-    this._url = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get urlInput() {
-    return this._url;
-  }
-
-  // basic_auth - computed: false, optional: true, required: false
+  // basic_auth - computed: true, optional: true, required: false
   private _basicAuth = new DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthList(this, "basic_auth", false);
   public get basicAuth() {
     return this._basicAuth;
@@ -6226,6 +6174,22 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutpu
   // Temporarily expose input value. Use with caution.
   public get basicAuthInput() {
     return this._basicAuth.internalValue;
+  }
+
+  // url - computed: true, optional: true, required: false
+  private _url?: string; 
+  public get url() {
+    return this.getStringAttribute('url');
+  }
+  public set url(value: string) {
+    this._url = value;
+  }
+  public resetUrl() {
+    this._url = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urlInput() {
+    return this._url;
   }
 }
 
@@ -6250,27 +6214,27 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageList 
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#availability DataDatabricksClusterPluginframework#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#availability DataDatabricksClusterPluginframework#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#boot_disk_size DataDatabricksClusterPluginframework#boot_disk_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#boot_disk_size DataDatabricksClusterPluginframework#boot_disk_size}
   */
   readonly bootDiskSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#google_service_account DataDatabricksClusterPluginframework#google_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#google_service_account DataDatabricksClusterPluginframework#google_service_account}
   */
   readonly googleServiceAccount?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#local_ssd_count DataDatabricksClusterPluginframework#local_ssd_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#local_ssd_count DataDatabricksClusterPluginframework#local_ssd_count}
   */
   readonly localSsdCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#use_preemptible_executors DataDatabricksClusterPluginframework#use_preemptible_executors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#use_preemptible_executors DataDatabricksClusterPluginframework#use_preemptible_executors}
   */
   readonly usePreemptibleExecutors?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#zone_id DataDatabricksClusterPluginframework#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#zone_id DataDatabricksClusterPluginframework#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -6413,7 +6377,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesOut
     }
   }
 
-  // availability - computed: false, optional: true, required: false
+  // availability - computed: true, optional: true, required: false
   private _availability?: string; 
   public get availability() {
     return this.getStringAttribute('availability');
@@ -6429,7 +6393,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesOut
     return this._availability;
   }
 
-  // boot_disk_size - computed: false, optional: true, required: false
+  // boot_disk_size - computed: true, optional: true, required: false
   private _bootDiskSize?: number; 
   public get bootDiskSize() {
     return this.getNumberAttribute('boot_disk_size');
@@ -6445,7 +6409,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesOut
     return this._bootDiskSize;
   }
 
-  // google_service_account - computed: false, optional: true, required: false
+  // google_service_account - computed: true, optional: true, required: false
   private _googleServiceAccount?: string; 
   public get googleServiceAccount() {
     return this.getStringAttribute('google_service_account');
@@ -6461,7 +6425,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesOut
     return this._googleServiceAccount;
   }
 
-  // local_ssd_count - computed: false, optional: true, required: false
+  // local_ssd_count - computed: true, optional: true, required: false
   private _localSsdCount?: number; 
   public get localSsdCount() {
     return this.getNumberAttribute('local_ssd_count');
@@ -6477,7 +6441,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesOut
     return this._localSsdCount;
   }
 
-  // use_preemptible_executors - computed: false, optional: true, required: false
+  // use_preemptible_executors - computed: true, optional: true, required: false
   private _usePreemptibleExecutors?: boolean | cdktf.IResolvable; 
   public get usePreemptibleExecutors() {
     return this.getBooleanAttribute('use_preemptible_executors');
@@ -6493,7 +6457,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesOut
     return this._usePreemptibleExecutors;
   }
 
-  // zone_id - computed: false, optional: true, required: false
+  // zone_id - computed: true, optional: true, required: false
   private _zoneId?: string; 
   public get zoneId() {
     return this.getStringAttribute('zone_id');
@@ -6531,7 +6495,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesLis
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
   */
   readonly destination: string;
 }
@@ -6609,7 +6573,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss
     }
   }
 
-  // destination - computed: false, optional: false, required: true
+  // destination - computed: true, optional: false, required: true
   private _destination?: string; 
   public get destination() {
     return this.getStringAttribute('destination');
@@ -6644,7 +6608,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
   */
   readonly destination: string;
 }
@@ -6722,7 +6686,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfsO
     }
   }
 
-  // destination - computed: false, optional: false, required: true
+  // destination - computed: true, optional: false, required: true
   private _destination?: string; 
   public get destination() {
     return this.getStringAttribute('destination');
@@ -6757,7 +6721,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfsL
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
   */
   readonly destination: string;
 }
@@ -6835,7 +6799,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFileO
     }
   }
 
-  // destination - computed: false, optional: false, required: true
+  // destination - computed: true, optional: false, required: true
   private _destination?: string; 
   public get destination() {
     return this.getStringAttribute('destination');
@@ -6870,7 +6834,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFileL
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
   */
   readonly destination: string;
 }
@@ -6948,7 +6912,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcsOu
     }
   }
 
-  // destination - computed: false, optional: false, required: true
+  // destination - computed: true, optional: false, required: true
   private _destination?: string; 
   public get destination() {
     return this.getStringAttribute('destination');
@@ -6983,31 +6947,31 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcsLi
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#canned_acl DataDatabricksClusterPluginframework#canned_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#canned_acl DataDatabricksClusterPluginframework#canned_acl}
   */
   readonly cannedAcl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#enable_encryption DataDatabricksClusterPluginframework#enable_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#enable_encryption DataDatabricksClusterPluginframework#enable_encryption}
   */
   readonly enableEncryption?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#encryption_type DataDatabricksClusterPluginframework#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#encryption_type DataDatabricksClusterPluginframework#encryption_type}
   */
   readonly encryptionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#endpoint DataDatabricksClusterPluginframework#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#endpoint DataDatabricksClusterPluginframework#endpoint}
   */
   readonly endpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#kms_key DataDatabricksClusterPluginframework#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#kms_key DataDatabricksClusterPluginframework#kms_key}
   */
   readonly kmsKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#region DataDatabricksClusterPluginframework#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#region DataDatabricksClusterPluginframework#region}
   */
   readonly region?: string;
 }
@@ -7163,7 +7127,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3Out
     }
   }
 
-  // canned_acl - computed: false, optional: true, required: false
+  // canned_acl - computed: true, optional: true, required: false
   private _cannedAcl?: string; 
   public get cannedAcl() {
     return this.getStringAttribute('canned_acl');
@@ -7179,7 +7143,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3Out
     return this._cannedAcl;
   }
 
-  // destination - computed: false, optional: false, required: true
+  // destination - computed: true, optional: false, required: true
   private _destination?: string; 
   public get destination() {
     return this.getStringAttribute('destination');
@@ -7192,7 +7156,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3Out
     return this._destination;
   }
 
-  // enable_encryption - computed: false, optional: true, required: false
+  // enable_encryption - computed: true, optional: true, required: false
   private _enableEncryption?: boolean | cdktf.IResolvable; 
   public get enableEncryption() {
     return this.getBooleanAttribute('enable_encryption');
@@ -7208,7 +7172,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3Out
     return this._enableEncryption;
   }
 
-  // encryption_type - computed: false, optional: true, required: false
+  // encryption_type - computed: true, optional: true, required: false
   private _encryptionType?: string; 
   public get encryptionType() {
     return this.getStringAttribute('encryption_type');
@@ -7224,7 +7188,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3Out
     return this._encryptionType;
   }
 
-  // endpoint - computed: false, optional: true, required: false
+  // endpoint - computed: true, optional: true, required: false
   private _endpoint?: string; 
   public get endpoint() {
     return this.getStringAttribute('endpoint');
@@ -7240,7 +7204,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3Out
     return this._endpoint;
   }
 
-  // kms_key - computed: false, optional: true, required: false
+  // kms_key - computed: true, optional: true, required: false
   private _kmsKey?: string; 
   public get kmsKey() {
     return this.getStringAttribute('kms_key');
@@ -7256,7 +7220,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3Out
     return this._kmsKey;
   }
 
-  // region - computed: false, optional: true, required: false
+  // region - computed: true, optional: true, required: false
   private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
@@ -7294,7 +7258,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3Lis
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
   */
   readonly destination: string;
 }
@@ -7372,7 +7336,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolum
     }
   }
 
-  // destination - computed: false, optional: false, required: true
+  // destination - computed: true, optional: false, required: true
   private _destination?: string; 
   public get destination() {
     return this.getStringAttribute('destination');
@@ -7407,7 +7371,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolum
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}
   */
   readonly destination: string;
 }
@@ -7485,7 +7449,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorks
     }
   }
 
-  // destination - computed: false, optional: false, required: true
+  // destination - computed: true, optional: false, required: true
   private _destination?: string; 
   public get destination() {
     return this.getStringAttribute('destination');
@@ -7520,45 +7484,31 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorks
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts {
   /**
-  * abfss block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#abfss DataDatabricksClusterPluginframework#abfss}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#abfss DataDatabricksClusterPluginframework#abfss}
   */
   readonly abfss?: DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss[] | cdktf.IResolvable;
   /**
-  * dbfs block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#dbfs DataDatabricksClusterPluginframework#dbfs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#dbfs DataDatabricksClusterPluginframework#dbfs}
   */
   readonly dbfs?: DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs[] | cdktf.IResolvable;
   /**
-  * file block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#file DataDatabricksClusterPluginframework#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#file DataDatabricksClusterPluginframework#file}
   */
   readonly file?: DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile[] | cdktf.IResolvable;
   /**
-  * gcs block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#gcs DataDatabricksClusterPluginframework#gcs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#gcs DataDatabricksClusterPluginframework#gcs}
   */
   readonly gcs?: DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs[] | cdktf.IResolvable;
   /**
-  * s3 block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#s3 DataDatabricksClusterPluginframework#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#s3 DataDatabricksClusterPluginframework#s3}
   */
   readonly s3?: DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3[] | cdktf.IResolvable;
   /**
-  * volumes block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#volumes DataDatabricksClusterPluginframework#volumes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#volumes DataDatabricksClusterPluginframework#volumes}
   */
   readonly volumes?: DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes[] | cdktf.IResolvable;
   /**
-  * workspace block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#workspace DataDatabricksClusterPluginframework#workspace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#workspace DataDatabricksClusterPluginframework#workspace}
   */
   readonly workspace?: DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace[] | cdktf.IResolvable;
 }
@@ -7569,13 +7519,13 @@ export function dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsTo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    abfss: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfssToTerraform, true)(struct!.abfss),
-    dbfs: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfsToTerraform, true)(struct!.dbfs),
-    file: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFileToTerraform, true)(struct!.file),
-    gcs: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcsToTerraform, true)(struct!.gcs),
-    s3: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3ToTerraform, true)(struct!.s3),
-    volumes: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumesToTerraform, true)(struct!.volumes),
-    workspace: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspaceToTerraform, true)(struct!.workspace),
+    abfss: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfssToTerraform, false)(struct!.abfss),
+    dbfs: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfsToTerraform, false)(struct!.dbfs),
+    file: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFileToTerraform, false)(struct!.file),
+    gcs: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcsToTerraform, false)(struct!.gcs),
+    s3: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3ToTerraform, false)(struct!.s3),
+    volumes: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumesToTerraform, false)(struct!.volumes),
+    workspace: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspaceToTerraform, false)(struct!.workspace),
   }
 }
 
@@ -7587,43 +7537,43 @@ export function dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsTo
   }
   const attrs = {
     abfss: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfssToHclTerraform, true)(struct!.abfss),
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfssToHclTerraform, false)(struct!.abfss),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfssList",
     },
     dbfs: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfsToHclTerraform, true)(struct!.dbfs),
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfsToHclTerraform, false)(struct!.dbfs),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfsList",
     },
     file: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFileToHclTerraform, true)(struct!.file),
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFileToHclTerraform, false)(struct!.file),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFileList",
     },
     gcs: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcsToHclTerraform, true)(struct!.gcs),
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcsToHclTerraform, false)(struct!.gcs),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcsList",
     },
     s3: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3ToHclTerraform, true)(struct!.s3),
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3ToHclTerraform, false)(struct!.s3),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3List",
     },
     volumes: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumesToHclTerraform, true)(struct!.volumes),
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumesToHclTerraform, false)(struct!.volumes),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumesList",
     },
     workspace: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspaceToHclTerraform, true)(struct!.workspace),
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspaceToHclTerraform, false)(struct!.workspace),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspaceList",
@@ -7714,7 +7664,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutpu
     }
   }
 
-  // abfss - computed: false, optional: true, required: false
+  // abfss - computed: true, optional: true, required: false
   private _abfss = new DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfssList(this, "abfss", false);
   public get abfss() {
     return this._abfss;
@@ -7730,7 +7680,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutpu
     return this._abfss.internalValue;
   }
 
-  // dbfs - computed: false, optional: true, required: false
+  // dbfs - computed: true, optional: true, required: false
   private _dbfs = new DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfsList(this, "dbfs", false);
   public get dbfs() {
     return this._dbfs;
@@ -7746,7 +7696,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutpu
     return this._dbfs.internalValue;
   }
 
-  // file - computed: false, optional: true, required: false
+  // file - computed: true, optional: true, required: false
   private _file = new DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFileList(this, "file", false);
   public get file() {
     return this._file;
@@ -7762,7 +7712,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutpu
     return this._file.internalValue;
   }
 
-  // gcs - computed: false, optional: true, required: false
+  // gcs - computed: true, optional: true, required: false
   private _gcs = new DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcsList(this, "gcs", false);
   public get gcs() {
     return this._gcs;
@@ -7778,7 +7728,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutpu
     return this._gcs.internalValue;
   }
 
-  // s3 - computed: false, optional: true, required: false
+  // s3 - computed: true, optional: true, required: false
   private _s3 = new DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3List(this, "s3", false);
   public get s3() {
     return this._s3;
@@ -7794,7 +7744,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutpu
     return this._s3.internalValue;
   }
 
-  // volumes - computed: false, optional: true, required: false
+  // volumes - computed: true, optional: true, required: false
   private _volumes = new DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumesList(this, "volumes", false);
   public get volumes() {
     return this._volumes;
@@ -7810,7 +7760,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutpu
     return this._volumes.internalValue;
   }
 
-  // workspace - computed: false, optional: true, required: false
+  // workspace - computed: true, optional: true, required: false
   private _workspace = new DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspaceList(this, "workspace", false);
   public get workspace() {
     return this._workspace;
@@ -7848,16 +7798,16 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsList 
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#jobs DataDatabricksClusterPluginframework#jobs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#jobs DataDatabricksClusterPluginframework#jobs}
   */
   readonly jobs?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#notebooks DataDatabricksClusterPluginframework#notebooks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#notebooks DataDatabricksClusterPluginframework#notebooks}
   */
   readonly notebooks?: boolean | cdktf.IResolvable;
 }
 
-export function dataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsToTerraform(struct?: DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients | cdktf.IResolvable): any {
+export function dataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsToTerraform(struct?: DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -7869,7 +7819,7 @@ export function dataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeC
 }
 
 
-export function dataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsToHclTerraform(struct?: DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients | cdktf.IResolvable): any {
+export function dataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsToHclTerraform(struct?: DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -7895,7 +7845,6 @@ export function dataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeC
 
 export class DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7907,10 +7856,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClie
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._jobs !== undefined) {
@@ -7924,26 +7870,20 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClie
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._jobs = undefined;
       this._notebooks = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._jobs = value.jobs;
       this._notebooks = value.notebooks;
     }
   }
 
-  // jobs - computed: false, optional: true, required: false
+  // jobs - computed: true, optional: true, required: false
   private _jobs?: boolean | cdktf.IResolvable; 
   public get jobs() {
     return this.getBooleanAttribute('jobs');
@@ -7959,7 +7899,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClie
     return this._jobs;
   }
 
-  // notebooks - computed: false, optional: true, required: false
+  // notebooks - computed: true, optional: true, required: false
   private _notebooks?: boolean | cdktf.IResolvable; 
   public get notebooks() {
     return this.getBooleanAttribute('notebooks');
@@ -7997,11 +7937,9 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClie
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType {
   /**
-  * clients block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#clients DataDatabricksClusterPluginframework#clients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#clients DataDatabricksClusterPluginframework#clients}
   */
-  readonly clients?: DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients[] | cdktf.IResolvable;
+  readonly clients: DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients[] | cdktf.IResolvable;
 }
 
 export function dataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeToTerraform(struct?: DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType | cdktf.IResolvable): any {
@@ -8010,7 +7948,7 @@ export function dataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeT
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    clients: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsToTerraform, true)(struct!.clients),
+    clients: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsToTerraform, false)(struct!.clients),
   }
 }
 
@@ -8022,7 +7960,7 @@ export function dataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeT
   }
   const attrs = {
     clients: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsToHclTerraform, true)(struct!.clients),
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsToHclTerraform, false)(struct!.clients),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsList",
@@ -8077,16 +8015,13 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeOutp
     }
   }
 
-  // clients - computed: false, optional: true, required: false
+  // clients - computed: true, optional: false, required: true
   private _clients = new DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsList(this, "clients", false);
   public get clients() {
     return this._clients;
   }
   public putClients(value: DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients[] | cdktf.IResolvable) {
     this._clients.internalValue = value;
-  }
-  public resetClients() {
-    this._clients.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get clientsInput() {
@@ -8115,127 +8050,111 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeList
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#apply_policy_default_values DataDatabricksClusterPluginframework#apply_policy_default_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#apply_policy_default_values DataDatabricksClusterPluginframework#apply_policy_default_values}
   */
   readonly applyPolicyDefaultValues?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#autotermination_minutes DataDatabricksClusterPluginframework#autotermination_minutes}
-  */
-  readonly autoterminationMinutes?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#cluster_name DataDatabricksClusterPluginframework#cluster_name}
-  */
-  readonly clusterName?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#custom_tags DataDatabricksClusterPluginframework#custom_tags}
-  */
-  readonly customTags?: { [key: string]: string };
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#data_security_mode DataDatabricksClusterPluginframework#data_security_mode}
-  */
-  readonly dataSecurityMode?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#driver_instance_pool_id DataDatabricksClusterPluginframework#driver_instance_pool_id}
-  */
-  readonly driverInstancePoolId?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#driver_node_type_id DataDatabricksClusterPluginframework#driver_node_type_id}
-  */
-  readonly driverNodeTypeId?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#enable_elastic_disk DataDatabricksClusterPluginframework#enable_elastic_disk}
-  */
-  readonly enableElasticDisk?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#enable_local_disk_encryption DataDatabricksClusterPluginframework#enable_local_disk_encryption}
-  */
-  readonly enableLocalDiskEncryption?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#instance_pool_id DataDatabricksClusterPluginframework#instance_pool_id}
-  */
-  readonly instancePoolId?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#node_type_id DataDatabricksClusterPluginframework#node_type_id}
-  */
-  readonly nodeTypeId?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#num_workers DataDatabricksClusterPluginframework#num_workers}
-  */
-  readonly numWorkers?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#policy_id DataDatabricksClusterPluginframework#policy_id}
-  */
-  readonly policyId?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#runtime_engine DataDatabricksClusterPluginframework#runtime_engine}
-  */
-  readonly runtimeEngine?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#single_user_name DataDatabricksClusterPluginframework#single_user_name}
-  */
-  readonly singleUserName?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#spark_conf DataDatabricksClusterPluginframework#spark_conf}
-  */
-  readonly sparkConf?: { [key: string]: string };
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#spark_env_vars DataDatabricksClusterPluginframework#spark_env_vars}
-  */
-  readonly sparkEnvVars?: { [key: string]: string };
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#spark_version DataDatabricksClusterPluginframework#spark_version}
-  */
-  readonly sparkVersion?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#ssh_public_keys DataDatabricksClusterPluginframework#ssh_public_keys}
-  */
-  readonly sshPublicKeys?: string[];
-  /**
-  * autoscale block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#autoscale DataDatabricksClusterPluginframework#autoscale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#autoscale DataDatabricksClusterPluginframework#autoscale}
   */
   readonly autoscale?: DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale[] | cdktf.IResolvable;
   /**
-  * aws_attributes block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#aws_attributes DataDatabricksClusterPluginframework#aws_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#autotermination_minutes DataDatabricksClusterPluginframework#autotermination_minutes}
+  */
+  readonly autoterminationMinutes?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#aws_attributes DataDatabricksClusterPluginframework#aws_attributes}
   */
   readonly awsAttributes?: DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes[] | cdktf.IResolvable;
   /**
-  * azure_attributes block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#azure_attributes DataDatabricksClusterPluginframework#azure_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#azure_attributes DataDatabricksClusterPluginframework#azure_attributes}
   */
   readonly azureAttributes?: DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes[] | cdktf.IResolvable;
   /**
-  * cluster_log_conf block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#cluster_log_conf DataDatabricksClusterPluginframework#cluster_log_conf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#cluster_log_conf DataDatabricksClusterPluginframework#cluster_log_conf}
   */
   readonly clusterLogConf?: DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf[] | cdktf.IResolvable;
   /**
-  * docker_image block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#docker_image DataDatabricksClusterPluginframework#docker_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#cluster_name DataDatabricksClusterPluginframework#cluster_name}
+  */
+  readonly clusterName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#custom_tags DataDatabricksClusterPluginframework#custom_tags}
+  */
+  readonly customTags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#data_security_mode DataDatabricksClusterPluginframework#data_security_mode}
+  */
+  readonly dataSecurityMode?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#docker_image DataDatabricksClusterPluginframework#docker_image}
   */
   readonly dockerImage?: DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage[] | cdktf.IResolvable;
   /**
-  * gcp_attributes block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#gcp_attributes DataDatabricksClusterPluginframework#gcp_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#driver_instance_pool_id DataDatabricksClusterPluginframework#driver_instance_pool_id}
+  */
+  readonly driverInstancePoolId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#driver_node_type_id DataDatabricksClusterPluginframework#driver_node_type_id}
+  */
+  readonly driverNodeTypeId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#enable_elastic_disk DataDatabricksClusterPluginframework#enable_elastic_disk}
+  */
+  readonly enableElasticDisk?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#enable_local_disk_encryption DataDatabricksClusterPluginframework#enable_local_disk_encryption}
+  */
+  readonly enableLocalDiskEncryption?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#gcp_attributes DataDatabricksClusterPluginframework#gcp_attributes}
   */
   readonly gcpAttributes?: DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes[] | cdktf.IResolvable;
   /**
-  * init_scripts block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#init_scripts DataDatabricksClusterPluginframework#init_scripts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#init_scripts DataDatabricksClusterPluginframework#init_scripts}
   */
   readonly initScripts?: DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts[] | cdktf.IResolvable;
   /**
-  * workload_type block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#workload_type DataDatabricksClusterPluginframework#workload_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#instance_pool_id DataDatabricksClusterPluginframework#instance_pool_id}
+  */
+  readonly instancePoolId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#node_type_id DataDatabricksClusterPluginframework#node_type_id}
+  */
+  readonly nodeTypeId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#num_workers DataDatabricksClusterPluginframework#num_workers}
+  */
+  readonly numWorkers?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#policy_id DataDatabricksClusterPluginframework#policy_id}
+  */
+  readonly policyId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#runtime_engine DataDatabricksClusterPluginframework#runtime_engine}
+  */
+  readonly runtimeEngine?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#single_user_name DataDatabricksClusterPluginframework#single_user_name}
+  */
+  readonly singleUserName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#spark_conf DataDatabricksClusterPluginframework#spark_conf}
+  */
+  readonly sparkConf?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#spark_env_vars DataDatabricksClusterPluginframework#spark_env_vars}
+  */
+  readonly sparkEnvVars?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#spark_version DataDatabricksClusterPluginframework#spark_version}
+  */
+  readonly sparkVersion?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#ssh_public_keys DataDatabricksClusterPluginframework#ssh_public_keys}
+  */
+  readonly sshPublicKeys?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#workload_type DataDatabricksClusterPluginframework#workload_type}
   */
   readonly workloadType?: DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType[] | cdktf.IResolvable;
 }
@@ -8247,14 +8166,21 @@ export function dataDatabricksClusterPluginframeworkClusterInfoSpecToTerraform(s
   }
   return {
     apply_policy_default_values: cdktf.booleanToTerraform(struct!.applyPolicyDefaultValues),
+    autoscale: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleToTerraform, false)(struct!.autoscale),
     autotermination_minutes: cdktf.numberToTerraform(struct!.autoterminationMinutes),
+    aws_attributes: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesToTerraform, false)(struct!.awsAttributes),
+    azure_attributes: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesToTerraform, false)(struct!.azureAttributes),
+    cluster_log_conf: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfToTerraform, false)(struct!.clusterLogConf),
     cluster_name: cdktf.stringToTerraform(struct!.clusterName),
     custom_tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.customTags),
     data_security_mode: cdktf.stringToTerraform(struct!.dataSecurityMode),
+    docker_image: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageToTerraform, false)(struct!.dockerImage),
     driver_instance_pool_id: cdktf.stringToTerraform(struct!.driverInstancePoolId),
     driver_node_type_id: cdktf.stringToTerraform(struct!.driverNodeTypeId),
     enable_elastic_disk: cdktf.booleanToTerraform(struct!.enableElasticDisk),
     enable_local_disk_encryption: cdktf.booleanToTerraform(struct!.enableLocalDiskEncryption),
+    gcp_attributes: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesToTerraform, false)(struct!.gcpAttributes),
+    init_scripts: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsToTerraform, false)(struct!.initScripts),
     instance_pool_id: cdktf.stringToTerraform(struct!.instancePoolId),
     node_type_id: cdktf.stringToTerraform(struct!.nodeTypeId),
     num_workers: cdktf.numberToTerraform(struct!.numWorkers),
@@ -8265,14 +8191,7 @@ export function dataDatabricksClusterPluginframeworkClusterInfoSpecToTerraform(s
     spark_env_vars: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sparkEnvVars),
     spark_version: cdktf.stringToTerraform(struct!.sparkVersion),
     ssh_public_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sshPublicKeys),
-    autoscale: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleToTerraform, true)(struct!.autoscale),
-    aws_attributes: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesToTerraform, true)(struct!.awsAttributes),
-    azure_attributes: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesToTerraform, true)(struct!.azureAttributes),
-    cluster_log_conf: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfToTerraform, true)(struct!.clusterLogConf),
-    docker_image: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageToTerraform, true)(struct!.dockerImage),
-    gcp_attributes: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesToTerraform, true)(struct!.gcpAttributes),
-    init_scripts: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsToTerraform, true)(struct!.initScripts),
-    workload_type: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeToTerraform, true)(struct!.workloadType),
+    workload_type: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeToTerraform, false)(struct!.workloadType),
   }
 }
 
@@ -8289,11 +8208,35 @@ export function dataDatabricksClusterPluginframeworkClusterInfoSpecToHclTerrafor
       type: "simple",
       storageClassType: "boolean",
     },
+    autoscale: {
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleToHclTerraform, false)(struct!.autoscale),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleList",
+    },
     autotermination_minutes: {
       value: cdktf.numberToHclTerraform(struct!.autoterminationMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
+    },
+    aws_attributes: {
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesToHclTerraform, false)(struct!.awsAttributes),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesList",
+    },
+    azure_attributes: {
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesToHclTerraform, false)(struct!.azureAttributes),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesList",
+    },
+    cluster_log_conf: {
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfToHclTerraform, false)(struct!.clusterLogConf),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfList",
     },
     cluster_name: {
       value: cdktf.stringToHclTerraform(struct!.clusterName),
@@ -8312,6 +8255,12 @@ export function dataDatabricksClusterPluginframeworkClusterInfoSpecToHclTerrafor
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    docker_image: {
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageToHclTerraform, false)(struct!.dockerImage),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageList",
     },
     driver_instance_pool_id: {
       value: cdktf.stringToHclTerraform(struct!.driverInstancePoolId),
@@ -8336,6 +8285,18 @@ export function dataDatabricksClusterPluginframeworkClusterInfoSpecToHclTerrafor
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
+    },
+    gcp_attributes: {
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesToHclTerraform, false)(struct!.gcpAttributes),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesList",
+    },
+    init_scripts: {
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsToHclTerraform, false)(struct!.initScripts),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsList",
     },
     instance_pool_id: {
       value: cdktf.stringToHclTerraform(struct!.instancePoolId),
@@ -8397,50 +8358,8 @@ export function dataDatabricksClusterPluginframeworkClusterInfoSpecToHclTerrafor
       type: "list",
       storageClassType: "stringList",
     },
-    autoscale: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleToHclTerraform, true)(struct!.autoscale),
-      isBlock: true,
-      type: "list",
-      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleList",
-    },
-    aws_attributes: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesToHclTerraform, true)(struct!.awsAttributes),
-      isBlock: true,
-      type: "list",
-      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesList",
-    },
-    azure_attributes: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesToHclTerraform, true)(struct!.azureAttributes),
-      isBlock: true,
-      type: "list",
-      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesList",
-    },
-    cluster_log_conf: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfToHclTerraform, true)(struct!.clusterLogConf),
-      isBlock: true,
-      type: "list",
-      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfList",
-    },
-    docker_image: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageToHclTerraform, true)(struct!.dockerImage),
-      isBlock: true,
-      type: "list",
-      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageList",
-    },
-    gcp_attributes: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesToHclTerraform, true)(struct!.gcpAttributes),
-      isBlock: true,
-      type: "list",
-      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesList",
-    },
-    init_scripts: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsToHclTerraform, true)(struct!.initScripts),
-      isBlock: true,
-      type: "list",
-      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsList",
-    },
     workload_type: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeToHclTerraform, true)(struct!.workloadType),
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeToHclTerraform, false)(struct!.workloadType),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeList",
@@ -8475,9 +8394,25 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference 
       hasAnyValues = true;
       internalValueResult.applyPolicyDefaultValues = this._applyPolicyDefaultValues;
     }
+    if (this._autoscale?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.autoscale = this._autoscale?.internalValue;
+    }
     if (this._autoterminationMinutes !== undefined) {
       hasAnyValues = true;
       internalValueResult.autoterminationMinutes = this._autoterminationMinutes;
+    }
+    if (this._awsAttributes?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.awsAttributes = this._awsAttributes?.internalValue;
+    }
+    if (this._azureAttributes?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.azureAttributes = this._azureAttributes?.internalValue;
+    }
+    if (this._clusterLogConf?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clusterLogConf = this._clusterLogConf?.internalValue;
     }
     if (this._clusterName !== undefined) {
       hasAnyValues = true;
@@ -8490,6 +8425,10 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference 
     if (this._dataSecurityMode !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSecurityMode = this._dataSecurityMode;
+    }
+    if (this._dockerImage?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dockerImage = this._dockerImage?.internalValue;
     }
     if (this._driverInstancePoolId !== undefined) {
       hasAnyValues = true;
@@ -8506,6 +8445,14 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference 
     if (this._enableLocalDiskEncryption !== undefined) {
       hasAnyValues = true;
       internalValueResult.enableLocalDiskEncryption = this._enableLocalDiskEncryption;
+    }
+    if (this._gcpAttributes?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gcpAttributes = this._gcpAttributes?.internalValue;
+    }
+    if (this._initScripts?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.initScripts = this._initScripts?.internalValue;
     }
     if (this._instancePoolId !== undefined) {
       hasAnyValues = true;
@@ -8547,34 +8494,6 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference 
       hasAnyValues = true;
       internalValueResult.sshPublicKeys = this._sshPublicKeys;
     }
-    if (this._autoscale?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.autoscale = this._autoscale?.internalValue;
-    }
-    if (this._awsAttributes?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.awsAttributes = this._awsAttributes?.internalValue;
-    }
-    if (this._azureAttributes?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.azureAttributes = this._azureAttributes?.internalValue;
-    }
-    if (this._clusterLogConf?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.clusterLogConf = this._clusterLogConf?.internalValue;
-    }
-    if (this._dockerImage?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.dockerImage = this._dockerImage?.internalValue;
-    }
-    if (this._gcpAttributes?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.gcpAttributes = this._gcpAttributes?.internalValue;
-    }
-    if (this._initScripts?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.initScripts = this._initScripts?.internalValue;
-    }
     if (this._workloadType?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.workloadType = this._workloadType?.internalValue;
@@ -8587,14 +8506,21 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference 
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._applyPolicyDefaultValues = undefined;
+      this._autoscale.internalValue = undefined;
       this._autoterminationMinutes = undefined;
+      this._awsAttributes.internalValue = undefined;
+      this._azureAttributes.internalValue = undefined;
+      this._clusterLogConf.internalValue = undefined;
       this._clusterName = undefined;
       this._customTags = undefined;
       this._dataSecurityMode = undefined;
+      this._dockerImage.internalValue = undefined;
       this._driverInstancePoolId = undefined;
       this._driverNodeTypeId = undefined;
       this._enableElasticDisk = undefined;
       this._enableLocalDiskEncryption = undefined;
+      this._gcpAttributes.internalValue = undefined;
+      this._initScripts.internalValue = undefined;
       this._instancePoolId = undefined;
       this._nodeTypeId = undefined;
       this._numWorkers = undefined;
@@ -8605,13 +8531,6 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference 
       this._sparkEnvVars = undefined;
       this._sparkVersion = undefined;
       this._sshPublicKeys = undefined;
-      this._autoscale.internalValue = undefined;
-      this._awsAttributes.internalValue = undefined;
-      this._azureAttributes.internalValue = undefined;
-      this._clusterLogConf.internalValue = undefined;
-      this._dockerImage.internalValue = undefined;
-      this._gcpAttributes.internalValue = undefined;
-      this._initScripts.internalValue = undefined;
       this._workloadType.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -8622,14 +8541,21 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference 
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._applyPolicyDefaultValues = value.applyPolicyDefaultValues;
+      this._autoscale.internalValue = value.autoscale;
       this._autoterminationMinutes = value.autoterminationMinutes;
+      this._awsAttributes.internalValue = value.awsAttributes;
+      this._azureAttributes.internalValue = value.azureAttributes;
+      this._clusterLogConf.internalValue = value.clusterLogConf;
       this._clusterName = value.clusterName;
       this._customTags = value.customTags;
       this._dataSecurityMode = value.dataSecurityMode;
+      this._dockerImage.internalValue = value.dockerImage;
       this._driverInstancePoolId = value.driverInstancePoolId;
       this._driverNodeTypeId = value.driverNodeTypeId;
       this._enableElasticDisk = value.enableElasticDisk;
       this._enableLocalDiskEncryption = value.enableLocalDiskEncryption;
+      this._gcpAttributes.internalValue = value.gcpAttributes;
+      this._initScripts.internalValue = value.initScripts;
       this._instancePoolId = value.instancePoolId;
       this._nodeTypeId = value.nodeTypeId;
       this._numWorkers = value.numWorkers;
@@ -8640,18 +8566,11 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference 
       this._sparkEnvVars = value.sparkEnvVars;
       this._sparkVersion = value.sparkVersion;
       this._sshPublicKeys = value.sshPublicKeys;
-      this._autoscale.internalValue = value.autoscale;
-      this._awsAttributes.internalValue = value.awsAttributes;
-      this._azureAttributes.internalValue = value.azureAttributes;
-      this._clusterLogConf.internalValue = value.clusterLogConf;
-      this._dockerImage.internalValue = value.dockerImage;
-      this._gcpAttributes.internalValue = value.gcpAttributes;
-      this._initScripts.internalValue = value.initScripts;
       this._workloadType.internalValue = value.workloadType;
     }
   }
 
-  // apply_policy_default_values - computed: false, optional: true, required: false
+  // apply_policy_default_values - computed: true, optional: true, required: false
   private _applyPolicyDefaultValues?: boolean | cdktf.IResolvable; 
   public get applyPolicyDefaultValues() {
     return this.getBooleanAttribute('apply_policy_default_values');
@@ -8667,295 +8586,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference 
     return this._applyPolicyDefaultValues;
   }
 
-  // autotermination_minutes - computed: false, optional: true, required: false
-  private _autoterminationMinutes?: number; 
-  public get autoterminationMinutes() {
-    return this.getNumberAttribute('autotermination_minutes');
-  }
-  public set autoterminationMinutes(value: number) {
-    this._autoterminationMinutes = value;
-  }
-  public resetAutoterminationMinutes() {
-    this._autoterminationMinutes = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get autoterminationMinutesInput() {
-    return this._autoterminationMinutes;
-  }
-
-  // cluster_name - computed: false, optional: true, required: false
-  private _clusterName?: string; 
-  public get clusterName() {
-    return this.getStringAttribute('cluster_name');
-  }
-  public set clusterName(value: string) {
-    this._clusterName = value;
-  }
-  public resetClusterName() {
-    this._clusterName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get clusterNameInput() {
-    return this._clusterName;
-  }
-
-  // custom_tags - computed: false, optional: true, required: false
-  private _customTags?: { [key: string]: string }; 
-  public get customTags() {
-    return this.getStringMapAttribute('custom_tags');
-  }
-  public set customTags(value: { [key: string]: string }) {
-    this._customTags = value;
-  }
-  public resetCustomTags() {
-    this._customTags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get customTagsInput() {
-    return this._customTags;
-  }
-
-  // data_security_mode - computed: false, optional: true, required: false
-  private _dataSecurityMode?: string; 
-  public get dataSecurityMode() {
-    return this.getStringAttribute('data_security_mode');
-  }
-  public set dataSecurityMode(value: string) {
-    this._dataSecurityMode = value;
-  }
-  public resetDataSecurityMode() {
-    this._dataSecurityMode = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get dataSecurityModeInput() {
-    return this._dataSecurityMode;
-  }
-
-  // driver_instance_pool_id - computed: false, optional: true, required: false
-  private _driverInstancePoolId?: string; 
-  public get driverInstancePoolId() {
-    return this.getStringAttribute('driver_instance_pool_id');
-  }
-  public set driverInstancePoolId(value: string) {
-    this._driverInstancePoolId = value;
-  }
-  public resetDriverInstancePoolId() {
-    this._driverInstancePoolId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get driverInstancePoolIdInput() {
-    return this._driverInstancePoolId;
-  }
-
-  // driver_node_type_id - computed: false, optional: true, required: false
-  private _driverNodeTypeId?: string; 
-  public get driverNodeTypeId() {
-    return this.getStringAttribute('driver_node_type_id');
-  }
-  public set driverNodeTypeId(value: string) {
-    this._driverNodeTypeId = value;
-  }
-  public resetDriverNodeTypeId() {
-    this._driverNodeTypeId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get driverNodeTypeIdInput() {
-    return this._driverNodeTypeId;
-  }
-
-  // enable_elastic_disk - computed: false, optional: true, required: false
-  private _enableElasticDisk?: boolean | cdktf.IResolvable; 
-  public get enableElasticDisk() {
-    return this.getBooleanAttribute('enable_elastic_disk');
-  }
-  public set enableElasticDisk(value: boolean | cdktf.IResolvable) {
-    this._enableElasticDisk = value;
-  }
-  public resetEnableElasticDisk() {
-    this._enableElasticDisk = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enableElasticDiskInput() {
-    return this._enableElasticDisk;
-  }
-
-  // enable_local_disk_encryption - computed: false, optional: true, required: false
-  private _enableLocalDiskEncryption?: boolean | cdktf.IResolvable; 
-  public get enableLocalDiskEncryption() {
-    return this.getBooleanAttribute('enable_local_disk_encryption');
-  }
-  public set enableLocalDiskEncryption(value: boolean | cdktf.IResolvable) {
-    this._enableLocalDiskEncryption = value;
-  }
-  public resetEnableLocalDiskEncryption() {
-    this._enableLocalDiskEncryption = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enableLocalDiskEncryptionInput() {
-    return this._enableLocalDiskEncryption;
-  }
-
-  // instance_pool_id - computed: false, optional: true, required: false
-  private _instancePoolId?: string; 
-  public get instancePoolId() {
-    return this.getStringAttribute('instance_pool_id');
-  }
-  public set instancePoolId(value: string) {
-    this._instancePoolId = value;
-  }
-  public resetInstancePoolId() {
-    this._instancePoolId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get instancePoolIdInput() {
-    return this._instancePoolId;
-  }
-
-  // node_type_id - computed: false, optional: true, required: false
-  private _nodeTypeId?: string; 
-  public get nodeTypeId() {
-    return this.getStringAttribute('node_type_id');
-  }
-  public set nodeTypeId(value: string) {
-    this._nodeTypeId = value;
-  }
-  public resetNodeTypeId() {
-    this._nodeTypeId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nodeTypeIdInput() {
-    return this._nodeTypeId;
-  }
-
-  // num_workers - computed: false, optional: true, required: false
-  private _numWorkers?: number; 
-  public get numWorkers() {
-    return this.getNumberAttribute('num_workers');
-  }
-  public set numWorkers(value: number) {
-    this._numWorkers = value;
-  }
-  public resetNumWorkers() {
-    this._numWorkers = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get numWorkersInput() {
-    return this._numWorkers;
-  }
-
-  // policy_id - computed: false, optional: true, required: false
-  private _policyId?: string; 
-  public get policyId() {
-    return this.getStringAttribute('policy_id');
-  }
-  public set policyId(value: string) {
-    this._policyId = value;
-  }
-  public resetPolicyId() {
-    this._policyId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get policyIdInput() {
-    return this._policyId;
-  }
-
-  // runtime_engine - computed: false, optional: true, required: false
-  private _runtimeEngine?: string; 
-  public get runtimeEngine() {
-    return this.getStringAttribute('runtime_engine');
-  }
-  public set runtimeEngine(value: string) {
-    this._runtimeEngine = value;
-  }
-  public resetRuntimeEngine() {
-    this._runtimeEngine = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get runtimeEngineInput() {
-    return this._runtimeEngine;
-  }
-
-  // single_user_name - computed: false, optional: true, required: false
-  private _singleUserName?: string; 
-  public get singleUserName() {
-    return this.getStringAttribute('single_user_name');
-  }
-  public set singleUserName(value: string) {
-    this._singleUserName = value;
-  }
-  public resetSingleUserName() {
-    this._singleUserName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get singleUserNameInput() {
-    return this._singleUserName;
-  }
-
-  // spark_conf - computed: false, optional: true, required: false
-  private _sparkConf?: { [key: string]: string }; 
-  public get sparkConf() {
-    return this.getStringMapAttribute('spark_conf');
-  }
-  public set sparkConf(value: { [key: string]: string }) {
-    this._sparkConf = value;
-  }
-  public resetSparkConf() {
-    this._sparkConf = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sparkConfInput() {
-    return this._sparkConf;
-  }
-
-  // spark_env_vars - computed: false, optional: true, required: false
-  private _sparkEnvVars?: { [key: string]: string }; 
-  public get sparkEnvVars() {
-    return this.getStringMapAttribute('spark_env_vars');
-  }
-  public set sparkEnvVars(value: { [key: string]: string }) {
-    this._sparkEnvVars = value;
-  }
-  public resetSparkEnvVars() {
-    this._sparkEnvVars = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sparkEnvVarsInput() {
-    return this._sparkEnvVars;
-  }
-
-  // spark_version - computed: false, optional: true, required: false
-  private _sparkVersion?: string; 
-  public get sparkVersion() {
-    return this.getStringAttribute('spark_version');
-  }
-  public set sparkVersion(value: string) {
-    this._sparkVersion = value;
-  }
-  public resetSparkVersion() {
-    this._sparkVersion = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sparkVersionInput() {
-    return this._sparkVersion;
-  }
-
-  // ssh_public_keys - computed: false, optional: true, required: false
-  private _sshPublicKeys?: string[]; 
-  public get sshPublicKeys() {
-    return this.getListAttribute('ssh_public_keys');
-  }
-  public set sshPublicKeys(value: string[]) {
-    this._sshPublicKeys = value;
-  }
-  public resetSshPublicKeys() {
-    this._sshPublicKeys = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sshPublicKeysInput() {
-    return this._sshPublicKeys;
-  }
-
-  // autoscale - computed: false, optional: true, required: false
+  // autoscale - computed: true, optional: true, required: false
   private _autoscale = new DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleList(this, "autoscale", false);
   public get autoscale() {
     return this._autoscale;
@@ -8971,7 +8602,23 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference 
     return this._autoscale.internalValue;
   }
 
-  // aws_attributes - computed: false, optional: true, required: false
+  // autotermination_minutes - computed: true, optional: true, required: false
+  private _autoterminationMinutes?: number; 
+  public get autoterminationMinutes() {
+    return this.getNumberAttribute('autotermination_minutes');
+  }
+  public set autoterminationMinutes(value: number) {
+    this._autoterminationMinutes = value;
+  }
+  public resetAutoterminationMinutes() {
+    this._autoterminationMinutes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoterminationMinutesInput() {
+    return this._autoterminationMinutes;
+  }
+
+  // aws_attributes - computed: true, optional: true, required: false
   private _awsAttributes = new DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesList(this, "aws_attributes", false);
   public get awsAttributes() {
     return this._awsAttributes;
@@ -8987,7 +8634,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference 
     return this._awsAttributes.internalValue;
   }
 
-  // azure_attributes - computed: false, optional: true, required: false
+  // azure_attributes - computed: true, optional: true, required: false
   private _azureAttributes = new DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesList(this, "azure_attributes", false);
   public get azureAttributes() {
     return this._azureAttributes;
@@ -9003,7 +8650,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference 
     return this._azureAttributes.internalValue;
   }
 
-  // cluster_log_conf - computed: false, optional: true, required: false
+  // cluster_log_conf - computed: true, optional: true, required: false
   private _clusterLogConf = new DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfList(this, "cluster_log_conf", false);
   public get clusterLogConf() {
     return this._clusterLogConf;
@@ -9019,7 +8666,55 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference 
     return this._clusterLogConf.internalValue;
   }
 
-  // docker_image - computed: false, optional: true, required: false
+  // cluster_name - computed: true, optional: true, required: false
+  private _clusterName?: string; 
+  public get clusterName() {
+    return this.getStringAttribute('cluster_name');
+  }
+  public set clusterName(value: string) {
+    this._clusterName = value;
+  }
+  public resetClusterName() {
+    this._clusterName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterNameInput() {
+    return this._clusterName;
+  }
+
+  // custom_tags - computed: true, optional: true, required: false
+  private _customTags?: { [key: string]: string }; 
+  public get customTags() {
+    return this.getStringMapAttribute('custom_tags');
+  }
+  public set customTags(value: { [key: string]: string }) {
+    this._customTags = value;
+  }
+  public resetCustomTags() {
+    this._customTags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customTagsInput() {
+    return this._customTags;
+  }
+
+  // data_security_mode - computed: true, optional: true, required: false
+  private _dataSecurityMode?: string; 
+  public get dataSecurityMode() {
+    return this.getStringAttribute('data_security_mode');
+  }
+  public set dataSecurityMode(value: string) {
+    this._dataSecurityMode = value;
+  }
+  public resetDataSecurityMode() {
+    this._dataSecurityMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSecurityModeInput() {
+    return this._dataSecurityMode;
+  }
+
+  // docker_image - computed: true, optional: true, required: false
   private _dockerImage = new DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageList(this, "docker_image", false);
   public get dockerImage() {
     return this._dockerImage;
@@ -9035,7 +8730,71 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference 
     return this._dockerImage.internalValue;
   }
 
-  // gcp_attributes - computed: false, optional: true, required: false
+  // driver_instance_pool_id - computed: true, optional: true, required: false
+  private _driverInstancePoolId?: string; 
+  public get driverInstancePoolId() {
+    return this.getStringAttribute('driver_instance_pool_id');
+  }
+  public set driverInstancePoolId(value: string) {
+    this._driverInstancePoolId = value;
+  }
+  public resetDriverInstancePoolId() {
+    this._driverInstancePoolId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get driverInstancePoolIdInput() {
+    return this._driverInstancePoolId;
+  }
+
+  // driver_node_type_id - computed: true, optional: true, required: false
+  private _driverNodeTypeId?: string; 
+  public get driverNodeTypeId() {
+    return this.getStringAttribute('driver_node_type_id');
+  }
+  public set driverNodeTypeId(value: string) {
+    this._driverNodeTypeId = value;
+  }
+  public resetDriverNodeTypeId() {
+    this._driverNodeTypeId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get driverNodeTypeIdInput() {
+    return this._driverNodeTypeId;
+  }
+
+  // enable_elastic_disk - computed: true, optional: true, required: false
+  private _enableElasticDisk?: boolean | cdktf.IResolvable; 
+  public get enableElasticDisk() {
+    return this.getBooleanAttribute('enable_elastic_disk');
+  }
+  public set enableElasticDisk(value: boolean | cdktf.IResolvable) {
+    this._enableElasticDisk = value;
+  }
+  public resetEnableElasticDisk() {
+    this._enableElasticDisk = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableElasticDiskInput() {
+    return this._enableElasticDisk;
+  }
+
+  // enable_local_disk_encryption - computed: true, optional: true, required: false
+  private _enableLocalDiskEncryption?: boolean | cdktf.IResolvable; 
+  public get enableLocalDiskEncryption() {
+    return this.getBooleanAttribute('enable_local_disk_encryption');
+  }
+  public set enableLocalDiskEncryption(value: boolean | cdktf.IResolvable) {
+    this._enableLocalDiskEncryption = value;
+  }
+  public resetEnableLocalDiskEncryption() {
+    this._enableLocalDiskEncryption = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableLocalDiskEncryptionInput() {
+    return this._enableLocalDiskEncryption;
+  }
+
+  // gcp_attributes - computed: true, optional: true, required: false
   private _gcpAttributes = new DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesList(this, "gcp_attributes", false);
   public get gcpAttributes() {
     return this._gcpAttributes;
@@ -9051,7 +8810,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference 
     return this._gcpAttributes.internalValue;
   }
 
-  // init_scripts - computed: false, optional: true, required: false
+  // init_scripts - computed: true, optional: true, required: false
   private _initScripts = new DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsList(this, "init_scripts", false);
   public get initScripts() {
     return this._initScripts;
@@ -9067,7 +8826,167 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference 
     return this._initScripts.internalValue;
   }
 
-  // workload_type - computed: false, optional: true, required: false
+  // instance_pool_id - computed: true, optional: true, required: false
+  private _instancePoolId?: string; 
+  public get instancePoolId() {
+    return this.getStringAttribute('instance_pool_id');
+  }
+  public set instancePoolId(value: string) {
+    this._instancePoolId = value;
+  }
+  public resetInstancePoolId() {
+    this._instancePoolId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instancePoolIdInput() {
+    return this._instancePoolId;
+  }
+
+  // node_type_id - computed: true, optional: true, required: false
+  private _nodeTypeId?: string; 
+  public get nodeTypeId() {
+    return this.getStringAttribute('node_type_id');
+  }
+  public set nodeTypeId(value: string) {
+    this._nodeTypeId = value;
+  }
+  public resetNodeTypeId() {
+    this._nodeTypeId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodeTypeIdInput() {
+    return this._nodeTypeId;
+  }
+
+  // num_workers - computed: true, optional: true, required: false
+  private _numWorkers?: number; 
+  public get numWorkers() {
+    return this.getNumberAttribute('num_workers');
+  }
+  public set numWorkers(value: number) {
+    this._numWorkers = value;
+  }
+  public resetNumWorkers() {
+    this._numWorkers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numWorkersInput() {
+    return this._numWorkers;
+  }
+
+  // policy_id - computed: true, optional: true, required: false
+  private _policyId?: string; 
+  public get policyId() {
+    return this.getStringAttribute('policy_id');
+  }
+  public set policyId(value: string) {
+    this._policyId = value;
+  }
+  public resetPolicyId() {
+    this._policyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyIdInput() {
+    return this._policyId;
+  }
+
+  // runtime_engine - computed: true, optional: true, required: false
+  private _runtimeEngine?: string; 
+  public get runtimeEngine() {
+    return this.getStringAttribute('runtime_engine');
+  }
+  public set runtimeEngine(value: string) {
+    this._runtimeEngine = value;
+  }
+  public resetRuntimeEngine() {
+    this._runtimeEngine = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runtimeEngineInput() {
+    return this._runtimeEngine;
+  }
+
+  // single_user_name - computed: true, optional: true, required: false
+  private _singleUserName?: string; 
+  public get singleUserName() {
+    return this.getStringAttribute('single_user_name');
+  }
+  public set singleUserName(value: string) {
+    this._singleUserName = value;
+  }
+  public resetSingleUserName() {
+    this._singleUserName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get singleUserNameInput() {
+    return this._singleUserName;
+  }
+
+  // spark_conf - computed: true, optional: true, required: false
+  private _sparkConf?: { [key: string]: string }; 
+  public get sparkConf() {
+    return this.getStringMapAttribute('spark_conf');
+  }
+  public set sparkConf(value: { [key: string]: string }) {
+    this._sparkConf = value;
+  }
+  public resetSparkConf() {
+    this._sparkConf = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sparkConfInput() {
+    return this._sparkConf;
+  }
+
+  // spark_env_vars - computed: true, optional: true, required: false
+  private _sparkEnvVars?: { [key: string]: string }; 
+  public get sparkEnvVars() {
+    return this.getStringMapAttribute('spark_env_vars');
+  }
+  public set sparkEnvVars(value: { [key: string]: string }) {
+    this._sparkEnvVars = value;
+  }
+  public resetSparkEnvVars() {
+    this._sparkEnvVars = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sparkEnvVarsInput() {
+    return this._sparkEnvVars;
+  }
+
+  // spark_version - computed: true, optional: true, required: false
+  private _sparkVersion?: string; 
+  public get sparkVersion() {
+    return this.getStringAttribute('spark_version');
+  }
+  public set sparkVersion(value: string) {
+    this._sparkVersion = value;
+  }
+  public resetSparkVersion() {
+    this._sparkVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sparkVersionInput() {
+    return this._sparkVersion;
+  }
+
+  // ssh_public_keys - computed: true, optional: true, required: false
+  private _sshPublicKeys?: string[]; 
+  public get sshPublicKeys() {
+    return this.getListAttribute('ssh_public_keys');
+  }
+  public set sshPublicKeys(value: string[]) {
+    this._sshPublicKeys = value;
+  }
+  public resetSshPublicKeys() {
+    this._sshPublicKeys = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sshPublicKeysInput() {
+    return this._sshPublicKeys;
+  }
+
+  // workload_type - computed: true, optional: true, required: false
   private _workloadType = new DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeList(this, "workload_type", false);
   public get workloadType() {
     return this._workloadType;
@@ -9105,15 +9024,15 @@ export class DataDatabricksClusterPluginframeworkClusterInfoSpecList extends cdk
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoTerminationReason {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#code DataDatabricksClusterPluginframework#code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#code DataDatabricksClusterPluginframework#code}
   */
   readonly code?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#parameters DataDatabricksClusterPluginframework#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#parameters DataDatabricksClusterPluginframework#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#type DataDatabricksClusterPluginframework#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#type DataDatabricksClusterPluginframework#type}
   */
   readonly type?: string;
 }
@@ -9217,7 +9136,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoTerminationReasonOut
     }
   }
 
-  // code - computed: false, optional: true, required: false
+  // code - computed: true, optional: true, required: false
   private _code?: string; 
   public get code() {
     return this.getStringAttribute('code');
@@ -9233,7 +9152,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoTerminationReasonOut
     return this._code;
   }
 
-  // parameters - computed: false, optional: true, required: false
+  // parameters - computed: true, optional: true, required: false
   private _parameters?: { [key: string]: string }; 
   public get parameters() {
     return this.getStringMapAttribute('parameters');
@@ -9249,7 +9168,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoTerminationReasonOut
     return this._parameters;
   }
 
-  // type - computed: false, optional: true, required: false
+  // type - computed: true, optional: true, required: false
   private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
@@ -9287,16 +9206,16 @@ export class DataDatabricksClusterPluginframeworkClusterInfoTerminationReasonLis
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#jobs DataDatabricksClusterPluginframework#jobs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#jobs DataDatabricksClusterPluginframework#jobs}
   */
   readonly jobs?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#notebooks DataDatabricksClusterPluginframework#notebooks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#notebooks DataDatabricksClusterPluginframework#notebooks}
   */
   readonly notebooks?: boolean | cdktf.IResolvable;
 }
 
-export function dataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsToTerraform(struct?: DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients | cdktf.IResolvable): any {
+export function dataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsToTerraform(struct?: DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -9308,7 +9227,7 @@ export function dataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClien
 }
 
 
-export function dataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsToHclTerraform(struct?: DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients | cdktf.IResolvable): any {
+export function dataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsToHclTerraform(struct?: DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -9334,7 +9253,6 @@ export function dataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClien
 
 export class DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9346,10 +9264,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsO
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._jobs !== undefined) {
@@ -9363,26 +9278,20 @@ export class DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._jobs = undefined;
       this._notebooks = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._jobs = value.jobs;
       this._notebooks = value.notebooks;
     }
   }
 
-  // jobs - computed: false, optional: true, required: false
+  // jobs - computed: true, optional: true, required: false
   private _jobs?: boolean | cdktf.IResolvable; 
   public get jobs() {
     return this.getBooleanAttribute('jobs');
@@ -9398,7 +9307,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsO
     return this._jobs;
   }
 
-  // notebooks - computed: false, optional: true, required: false
+  // notebooks - computed: true, optional: true, required: false
   private _notebooks?: boolean | cdktf.IResolvable; 
   public get notebooks() {
     return this.getBooleanAttribute('notebooks');
@@ -9436,11 +9345,9 @@ export class DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsL
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfoWorkloadType {
   /**
-  * clients block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#clients DataDatabricksClusterPluginframework#clients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#clients DataDatabricksClusterPluginframework#clients}
   */
-  readonly clients?: DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients[] | cdktf.IResolvable;
+  readonly clients: DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients[] | cdktf.IResolvable;
 }
 
 export function dataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeToTerraform(struct?: DataDatabricksClusterPluginframeworkClusterInfoWorkloadType | cdktf.IResolvable): any {
@@ -9449,7 +9356,7 @@ export function dataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeToTer
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    clients: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsToTerraform, true)(struct!.clients),
+    clients: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsToTerraform, false)(struct!.clients),
   }
 }
 
@@ -9461,7 +9368,7 @@ export function dataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeToHcl
   }
   const attrs = {
     clients: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsToHclTerraform, true)(struct!.clients),
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsToHclTerraform, false)(struct!.clients),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsList",
@@ -9516,16 +9423,13 @@ export class DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputRe
     }
   }
 
-  // clients - computed: false, optional: true, required: false
+  // clients - computed: true, optional: false, required: true
   private _clients = new DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsList(this, "clients", false);
   public get clients() {
     return this._clients;
   }
   public putClients(value: DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients[] | cdktf.IResolvable) {
     this._clients.internalValue = value;
-  }
-  public resetClients() {
-    this._clients.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get clientsInput() {
@@ -9554,209 +9458,183 @@ export class DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeList ext
 }
 export interface DataDatabricksClusterPluginframeworkClusterInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#autotermination_minutes DataDatabricksClusterPluginframework#autotermination_minutes}
-  */
-  readonly autoterminationMinutes?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#cluster_cores DataDatabricksClusterPluginframework#cluster_cores}
-  */
-  readonly clusterCores?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#cluster_id DataDatabricksClusterPluginframework#cluster_id}
-  */
-  readonly clusterId?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#cluster_memory_mb DataDatabricksClusterPluginframework#cluster_memory_mb}
-  */
-  readonly clusterMemoryMb?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#cluster_name DataDatabricksClusterPluginframework#cluster_name}
-  */
-  readonly clusterName?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#cluster_source DataDatabricksClusterPluginframework#cluster_source}
-  */
-  readonly clusterSource?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#creator_user_name DataDatabricksClusterPluginframework#creator_user_name}
-  */
-  readonly creatorUserName?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#custom_tags DataDatabricksClusterPluginframework#custom_tags}
-  */
-  readonly customTags?: { [key: string]: string };
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#data_security_mode DataDatabricksClusterPluginframework#data_security_mode}
-  */
-  readonly dataSecurityMode?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#default_tags DataDatabricksClusterPluginframework#default_tags}
-  */
-  readonly defaultTags?: { [key: string]: string };
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#driver_instance_pool_id DataDatabricksClusterPluginframework#driver_instance_pool_id}
-  */
-  readonly driverInstancePoolId?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#driver_node_type_id DataDatabricksClusterPluginframework#driver_node_type_id}
-  */
-  readonly driverNodeTypeId?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#enable_elastic_disk DataDatabricksClusterPluginframework#enable_elastic_disk}
-  */
-  readonly enableElasticDisk?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#enable_local_disk_encryption DataDatabricksClusterPluginframework#enable_local_disk_encryption}
-  */
-  readonly enableLocalDiskEncryption?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#instance_pool_id DataDatabricksClusterPluginframework#instance_pool_id}
-  */
-  readonly instancePoolId?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#jdbc_port DataDatabricksClusterPluginframework#jdbc_port}
-  */
-  readonly jdbcPort?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#last_restarted_time DataDatabricksClusterPluginframework#last_restarted_time}
-  */
-  readonly lastRestartedTime?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#last_state_loss_time DataDatabricksClusterPluginframework#last_state_loss_time}
-  */
-  readonly lastStateLossTime?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#node_type_id DataDatabricksClusterPluginframework#node_type_id}
-  */
-  readonly nodeTypeId?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#num_workers DataDatabricksClusterPluginframework#num_workers}
-  */
-  readonly numWorkers?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#policy_id DataDatabricksClusterPluginframework#policy_id}
-  */
-  readonly policyId?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#runtime_engine DataDatabricksClusterPluginframework#runtime_engine}
-  */
-  readonly runtimeEngine?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#single_user_name DataDatabricksClusterPluginframework#single_user_name}
-  */
-  readonly singleUserName?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#spark_conf DataDatabricksClusterPluginframework#spark_conf}
-  */
-  readonly sparkConf?: { [key: string]: string };
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#spark_context_id DataDatabricksClusterPluginframework#spark_context_id}
-  */
-  readonly sparkContextId?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#spark_env_vars DataDatabricksClusterPluginframework#spark_env_vars}
-  */
-  readonly sparkEnvVars?: { [key: string]: string };
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#spark_version DataDatabricksClusterPluginframework#spark_version}
-  */
-  readonly sparkVersion?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#ssh_public_keys DataDatabricksClusterPluginframework#ssh_public_keys}
-  */
-  readonly sshPublicKeys?: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#start_time DataDatabricksClusterPluginframework#start_time}
-  */
-  readonly startTime?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#state DataDatabricksClusterPluginframework#state}
-  */
-  readonly state?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#state_message DataDatabricksClusterPluginframework#state_message}
-  */
-  readonly stateMessage?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#terminated_time DataDatabricksClusterPluginframework#terminated_time}
-  */
-  readonly terminatedTime?: number;
-  /**
-  * autoscale block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#autoscale DataDatabricksClusterPluginframework#autoscale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#autoscale DataDatabricksClusterPluginframework#autoscale}
   */
   readonly autoscale?: DataDatabricksClusterPluginframeworkClusterInfoAutoscale[] | cdktf.IResolvable;
   /**
-  * aws_attributes block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#aws_attributes DataDatabricksClusterPluginframework#aws_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#autotermination_minutes DataDatabricksClusterPluginframework#autotermination_minutes}
+  */
+  readonly autoterminationMinutes?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#aws_attributes DataDatabricksClusterPluginframework#aws_attributes}
   */
   readonly awsAttributes?: DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes[] | cdktf.IResolvable;
   /**
-  * azure_attributes block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#azure_attributes DataDatabricksClusterPluginframework#azure_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#azure_attributes DataDatabricksClusterPluginframework#azure_attributes}
   */
   readonly azureAttributes?: DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes[] | cdktf.IResolvable;
   /**
-  * cluster_log_conf block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#cluster_log_conf DataDatabricksClusterPluginframework#cluster_log_conf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#cluster_cores DataDatabricksClusterPluginframework#cluster_cores}
+  */
+  readonly clusterCores?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#cluster_id DataDatabricksClusterPluginframework#cluster_id}
+  */
+  readonly clusterId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#cluster_log_conf DataDatabricksClusterPluginframework#cluster_log_conf}
   */
   readonly clusterLogConf?: DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf[] | cdktf.IResolvable;
   /**
-  * cluster_log_status block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#cluster_log_status DataDatabricksClusterPluginframework#cluster_log_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#cluster_log_status DataDatabricksClusterPluginframework#cluster_log_status}
   */
   readonly clusterLogStatus?: DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus[] | cdktf.IResolvable;
   /**
-  * docker_image block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#docker_image DataDatabricksClusterPluginframework#docker_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#cluster_memory_mb DataDatabricksClusterPluginframework#cluster_memory_mb}
+  */
+  readonly clusterMemoryMb?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#cluster_name DataDatabricksClusterPluginframework#cluster_name}
+  */
+  readonly clusterName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#cluster_source DataDatabricksClusterPluginframework#cluster_source}
+  */
+  readonly clusterSource?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#creator_user_name DataDatabricksClusterPluginframework#creator_user_name}
+  */
+  readonly creatorUserName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#custom_tags DataDatabricksClusterPluginframework#custom_tags}
+  */
+  readonly customTags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#data_security_mode DataDatabricksClusterPluginframework#data_security_mode}
+  */
+  readonly dataSecurityMode?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#default_tags DataDatabricksClusterPluginframework#default_tags}
+  */
+  readonly defaultTags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#docker_image DataDatabricksClusterPluginframework#docker_image}
   */
   readonly dockerImage?: DataDatabricksClusterPluginframeworkClusterInfoDockerImage[] | cdktf.IResolvable;
   /**
-  * driver block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#driver DataDatabricksClusterPluginframework#driver}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#driver DataDatabricksClusterPluginframework#driver}
   */
   readonly driver?: DataDatabricksClusterPluginframeworkClusterInfoDriver[] | cdktf.IResolvable;
   /**
-  * executors block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#executors DataDatabricksClusterPluginframework#executors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#driver_instance_pool_id DataDatabricksClusterPluginframework#driver_instance_pool_id}
+  */
+  readonly driverInstancePoolId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#driver_node_type_id DataDatabricksClusterPluginframework#driver_node_type_id}
+  */
+  readonly driverNodeTypeId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#enable_elastic_disk DataDatabricksClusterPluginframework#enable_elastic_disk}
+  */
+  readonly enableElasticDisk?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#enable_local_disk_encryption DataDatabricksClusterPluginframework#enable_local_disk_encryption}
+  */
+  readonly enableLocalDiskEncryption?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#executors DataDatabricksClusterPluginframework#executors}
   */
   readonly executors?: DataDatabricksClusterPluginframeworkClusterInfoExecutors[] | cdktf.IResolvable;
   /**
-  * gcp_attributes block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#gcp_attributes DataDatabricksClusterPluginframework#gcp_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#gcp_attributes DataDatabricksClusterPluginframework#gcp_attributes}
   */
   readonly gcpAttributes?: DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes[] | cdktf.IResolvable;
   /**
-  * init_scripts block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#init_scripts DataDatabricksClusterPluginframework#init_scripts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#init_scripts DataDatabricksClusterPluginframework#init_scripts}
   */
   readonly initScripts?: DataDatabricksClusterPluginframeworkClusterInfoInitScripts[] | cdktf.IResolvable;
   /**
-  * spec block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#spec DataDatabricksClusterPluginframework#spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#instance_pool_id DataDatabricksClusterPluginframework#instance_pool_id}
+  */
+  readonly instancePoolId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#jdbc_port DataDatabricksClusterPluginframework#jdbc_port}
+  */
+  readonly jdbcPort?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#last_restarted_time DataDatabricksClusterPluginframework#last_restarted_time}
+  */
+  readonly lastRestartedTime?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#last_state_loss_time DataDatabricksClusterPluginframework#last_state_loss_time}
+  */
+  readonly lastStateLossTime?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#node_type_id DataDatabricksClusterPluginframework#node_type_id}
+  */
+  readonly nodeTypeId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#num_workers DataDatabricksClusterPluginframework#num_workers}
+  */
+  readonly numWorkers?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#policy_id DataDatabricksClusterPluginframework#policy_id}
+  */
+  readonly policyId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#runtime_engine DataDatabricksClusterPluginframework#runtime_engine}
+  */
+  readonly runtimeEngine?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#single_user_name DataDatabricksClusterPluginframework#single_user_name}
+  */
+  readonly singleUserName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#spark_conf DataDatabricksClusterPluginframework#spark_conf}
+  */
+  readonly sparkConf?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#spark_context_id DataDatabricksClusterPluginframework#spark_context_id}
+  */
+  readonly sparkContextId?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#spark_env_vars DataDatabricksClusterPluginframework#spark_env_vars}
+  */
+  readonly sparkEnvVars?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#spark_version DataDatabricksClusterPluginframework#spark_version}
+  */
+  readonly sparkVersion?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#spec DataDatabricksClusterPluginframework#spec}
   */
   readonly spec?: DataDatabricksClusterPluginframeworkClusterInfoSpec[] | cdktf.IResolvable;
   /**
-  * termination_reason block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#termination_reason DataDatabricksClusterPluginframework#termination_reason}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#ssh_public_keys DataDatabricksClusterPluginframework#ssh_public_keys}
+  */
+  readonly sshPublicKeys?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#start_time DataDatabricksClusterPluginframework#start_time}
+  */
+  readonly startTime?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#state DataDatabricksClusterPluginframework#state}
+  */
+  readonly state?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#state_message DataDatabricksClusterPluginframework#state_message}
+  */
+  readonly stateMessage?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#terminated_time DataDatabricksClusterPluginframework#terminated_time}
+  */
+  readonly terminatedTime?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#termination_reason DataDatabricksClusterPluginframework#termination_reason}
   */
   readonly terminationReason?: DataDatabricksClusterPluginframeworkClusterInfoTerminationReason[] | cdktf.IResolvable;
   /**
-  * workload_type block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#workload_type DataDatabricksClusterPluginframework#workload_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#workload_type DataDatabricksClusterPluginframework#workload_type}
   */
   readonly workloadType?: DataDatabricksClusterPluginframeworkClusterInfoWorkloadType[] | cdktf.IResolvable;
 }
@@ -9767,9 +9645,14 @@ export function dataDatabricksClusterPluginframeworkClusterInfoToTerraform(struc
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    autoscale: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoAutoscaleToTerraform, false)(struct!.autoscale),
     autotermination_minutes: cdktf.numberToTerraform(struct!.autoterminationMinutes),
+    aws_attributes: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoAwsAttributesToTerraform, false)(struct!.awsAttributes),
+    azure_attributes: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoAzureAttributesToTerraform, false)(struct!.azureAttributes),
     cluster_cores: cdktf.numberToTerraform(struct!.clusterCores),
     cluster_id: cdktf.stringToTerraform(struct!.clusterId),
+    cluster_log_conf: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoClusterLogConfToTerraform, false)(struct!.clusterLogConf),
+    cluster_log_status: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusToTerraform, false)(struct!.clusterLogStatus),
     cluster_memory_mb: cdktf.numberToTerraform(struct!.clusterMemoryMb),
     cluster_name: cdktf.stringToTerraform(struct!.clusterName),
     cluster_source: cdktf.stringToTerraform(struct!.clusterSource),
@@ -9777,10 +9660,15 @@ export function dataDatabricksClusterPluginframeworkClusterInfoToTerraform(struc
     custom_tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.customTags),
     data_security_mode: cdktf.stringToTerraform(struct!.dataSecurityMode),
     default_tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.defaultTags),
+    docker_image: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoDockerImageToTerraform, false)(struct!.dockerImage),
+    driver: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoDriverToTerraform, false)(struct!.driver),
     driver_instance_pool_id: cdktf.stringToTerraform(struct!.driverInstancePoolId),
     driver_node_type_id: cdktf.stringToTerraform(struct!.driverNodeTypeId),
     enable_elastic_disk: cdktf.booleanToTerraform(struct!.enableElasticDisk),
     enable_local_disk_encryption: cdktf.booleanToTerraform(struct!.enableLocalDiskEncryption),
+    executors: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoExecutorsToTerraform, false)(struct!.executors),
+    gcp_attributes: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoGcpAttributesToTerraform, false)(struct!.gcpAttributes),
+    init_scripts: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsToTerraform, false)(struct!.initScripts),
     instance_pool_id: cdktf.stringToTerraform(struct!.instancePoolId),
     jdbc_port: cdktf.numberToTerraform(struct!.jdbcPort),
     last_restarted_time: cdktf.numberToTerraform(struct!.lastRestartedTime),
@@ -9794,24 +9682,14 @@ export function dataDatabricksClusterPluginframeworkClusterInfoToTerraform(struc
     spark_context_id: cdktf.numberToTerraform(struct!.sparkContextId),
     spark_env_vars: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sparkEnvVars),
     spark_version: cdktf.stringToTerraform(struct!.sparkVersion),
+    spec: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecToTerraform, false)(struct!.spec),
     ssh_public_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sshPublicKeys),
     start_time: cdktf.numberToTerraform(struct!.startTime),
     state: cdktf.stringToTerraform(struct!.state),
     state_message: cdktf.stringToTerraform(struct!.stateMessage),
     terminated_time: cdktf.numberToTerraform(struct!.terminatedTime),
-    autoscale: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoAutoscaleToTerraform, true)(struct!.autoscale),
-    aws_attributes: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoAwsAttributesToTerraform, true)(struct!.awsAttributes),
-    azure_attributes: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoAzureAttributesToTerraform, true)(struct!.azureAttributes),
-    cluster_log_conf: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoClusterLogConfToTerraform, true)(struct!.clusterLogConf),
-    cluster_log_status: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusToTerraform, true)(struct!.clusterLogStatus),
-    docker_image: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoDockerImageToTerraform, true)(struct!.dockerImage),
-    driver: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoDriverToTerraform, true)(struct!.driver),
-    executors: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoExecutorsToTerraform, true)(struct!.executors),
-    gcp_attributes: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoGcpAttributesToTerraform, true)(struct!.gcpAttributes),
-    init_scripts: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsToTerraform, true)(struct!.initScripts),
-    spec: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoSpecToTerraform, true)(struct!.spec),
-    termination_reason: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoTerminationReasonToTerraform, true)(struct!.terminationReason),
-    workload_type: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeToTerraform, true)(struct!.workloadType),
+    termination_reason: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoTerminationReasonToTerraform, false)(struct!.terminationReason),
+    workload_type: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeToTerraform, false)(struct!.workloadType),
   }
 }
 
@@ -9822,11 +9700,29 @@ export function dataDatabricksClusterPluginframeworkClusterInfoToHclTerraform(st
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    autoscale: {
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoAutoscaleToHclTerraform, false)(struct!.autoscale),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoAutoscaleList",
+    },
     autotermination_minutes: {
       value: cdktf.numberToHclTerraform(struct!.autoterminationMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
+    },
+    aws_attributes: {
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoAwsAttributesToHclTerraform, false)(struct!.awsAttributes),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesList",
+    },
+    azure_attributes: {
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoAzureAttributesToHclTerraform, false)(struct!.azureAttributes),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesList",
     },
     cluster_cores: {
       value: cdktf.numberToHclTerraform(struct!.clusterCores),
@@ -9839,6 +9735,18 @@ export function dataDatabricksClusterPluginframeworkClusterInfoToHclTerraform(st
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    cluster_log_conf: {
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoClusterLogConfToHclTerraform, false)(struct!.clusterLogConf),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfList",
+    },
+    cluster_log_status: {
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusToHclTerraform, false)(struct!.clusterLogStatus),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusList",
     },
     cluster_memory_mb: {
       value: cdktf.numberToHclTerraform(struct!.clusterMemoryMb),
@@ -9882,6 +9790,18 @@ export function dataDatabricksClusterPluginframeworkClusterInfoToHclTerraform(st
       type: "map",
       storageClassType: "stringMap",
     },
+    docker_image: {
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoDockerImageToHclTerraform, false)(struct!.dockerImage),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoDockerImageList",
+    },
+    driver: {
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoDriverToHclTerraform, false)(struct!.driver),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoDriverList",
+    },
     driver_instance_pool_id: {
       value: cdktf.stringToHclTerraform(struct!.driverInstancePoolId),
       isBlock: false,
@@ -9905,6 +9825,24 @@ export function dataDatabricksClusterPluginframeworkClusterInfoToHclTerraform(st
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
+    },
+    executors: {
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoExecutorsToHclTerraform, false)(struct!.executors),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoExecutorsList",
+    },
+    gcp_attributes: {
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoGcpAttributesToHclTerraform, false)(struct!.gcpAttributes),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesList",
+    },
+    init_scripts: {
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsToHclTerraform, false)(struct!.initScripts),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoInitScriptsList",
     },
     instance_pool_id: {
       value: cdktf.stringToHclTerraform(struct!.instancePoolId),
@@ -9984,6 +9922,12 @@ export function dataDatabricksClusterPluginframeworkClusterInfoToHclTerraform(st
       type: "simple",
       storageClassType: "string",
     },
+    spec: {
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecToHclTerraform, false)(struct!.spec),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecList",
+    },
     ssh_public_keys: {
       value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sshPublicKeys),
       isBlock: false,
@@ -10014,80 +9958,14 @@ export function dataDatabricksClusterPluginframeworkClusterInfoToHclTerraform(st
       type: "simple",
       storageClassType: "number",
     },
-    autoscale: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoAutoscaleToHclTerraform, true)(struct!.autoscale),
-      isBlock: true,
-      type: "list",
-      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoAutoscaleList",
-    },
-    aws_attributes: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoAwsAttributesToHclTerraform, true)(struct!.awsAttributes),
-      isBlock: true,
-      type: "list",
-      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesList",
-    },
-    azure_attributes: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoAzureAttributesToHclTerraform, true)(struct!.azureAttributes),
-      isBlock: true,
-      type: "list",
-      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesList",
-    },
-    cluster_log_conf: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoClusterLogConfToHclTerraform, true)(struct!.clusterLogConf),
-      isBlock: true,
-      type: "list",
-      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfList",
-    },
-    cluster_log_status: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusToHclTerraform, true)(struct!.clusterLogStatus),
-      isBlock: true,
-      type: "list",
-      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusList",
-    },
-    docker_image: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoDockerImageToHclTerraform, true)(struct!.dockerImage),
-      isBlock: true,
-      type: "list",
-      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoDockerImageList",
-    },
-    driver: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoDriverToHclTerraform, true)(struct!.driver),
-      isBlock: true,
-      type: "list",
-      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoDriverList",
-    },
-    executors: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoExecutorsToHclTerraform, true)(struct!.executors),
-      isBlock: true,
-      type: "list",
-      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoExecutorsList",
-    },
-    gcp_attributes: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoGcpAttributesToHclTerraform, true)(struct!.gcpAttributes),
-      isBlock: true,
-      type: "list",
-      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesList",
-    },
-    init_scripts: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoInitScriptsToHclTerraform, true)(struct!.initScripts),
-      isBlock: true,
-      type: "list",
-      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoInitScriptsList",
-    },
-    spec: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoSpecToHclTerraform, true)(struct!.spec),
-      isBlock: true,
-      type: "list",
-      storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoSpecList",
-    },
     termination_reason: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoTerminationReasonToHclTerraform, true)(struct!.terminationReason),
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoTerminationReasonToHclTerraform, false)(struct!.terminationReason),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoTerminationReasonList",
     },
     workload_type: {
-      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeToHclTerraform, true)(struct!.workloadType),
+      value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeToHclTerraform, false)(struct!.workloadType),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeList",
@@ -10118,9 +9996,21 @@ export class DataDatabricksClusterPluginframeworkClusterInfoOutputReference exte
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._autoscale?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.autoscale = this._autoscale?.internalValue;
+    }
     if (this._autoterminationMinutes !== undefined) {
       hasAnyValues = true;
       internalValueResult.autoterminationMinutes = this._autoterminationMinutes;
+    }
+    if (this._awsAttributes?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.awsAttributes = this._awsAttributes?.internalValue;
+    }
+    if (this._azureAttributes?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.azureAttributes = this._azureAttributes?.internalValue;
     }
     if (this._clusterCores !== undefined) {
       hasAnyValues = true;
@@ -10129,6 +10019,14 @@ export class DataDatabricksClusterPluginframeworkClusterInfoOutputReference exte
     if (this._clusterId !== undefined) {
       hasAnyValues = true;
       internalValueResult.clusterId = this._clusterId;
+    }
+    if (this._clusterLogConf?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clusterLogConf = this._clusterLogConf?.internalValue;
+    }
+    if (this._clusterLogStatus?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clusterLogStatus = this._clusterLogStatus?.internalValue;
     }
     if (this._clusterMemoryMb !== undefined) {
       hasAnyValues = true;
@@ -10158,6 +10056,14 @@ export class DataDatabricksClusterPluginframeworkClusterInfoOutputReference exte
       hasAnyValues = true;
       internalValueResult.defaultTags = this._defaultTags;
     }
+    if (this._dockerImage?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dockerImage = this._dockerImage?.internalValue;
+    }
+    if (this._driver?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.driver = this._driver?.internalValue;
+    }
     if (this._driverInstancePoolId !== undefined) {
       hasAnyValues = true;
       internalValueResult.driverInstancePoolId = this._driverInstancePoolId;
@@ -10173,6 +10079,18 @@ export class DataDatabricksClusterPluginframeworkClusterInfoOutputReference exte
     if (this._enableLocalDiskEncryption !== undefined) {
       hasAnyValues = true;
       internalValueResult.enableLocalDiskEncryption = this._enableLocalDiskEncryption;
+    }
+    if (this._executors?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.executors = this._executors?.internalValue;
+    }
+    if (this._gcpAttributes?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gcpAttributes = this._gcpAttributes?.internalValue;
+    }
+    if (this._initScripts?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.initScripts = this._initScripts?.internalValue;
     }
     if (this._instancePoolId !== undefined) {
       hasAnyValues = true;
@@ -10226,6 +10144,10 @@ export class DataDatabricksClusterPluginframeworkClusterInfoOutputReference exte
       hasAnyValues = true;
       internalValueResult.sparkVersion = this._sparkVersion;
     }
+    if (this._spec?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.spec = this._spec?.internalValue;
+    }
     if (this._sshPublicKeys !== undefined) {
       hasAnyValues = true;
       internalValueResult.sshPublicKeys = this._sshPublicKeys;
@@ -10246,50 +10168,6 @@ export class DataDatabricksClusterPluginframeworkClusterInfoOutputReference exte
       hasAnyValues = true;
       internalValueResult.terminatedTime = this._terminatedTime;
     }
-    if (this._autoscale?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.autoscale = this._autoscale?.internalValue;
-    }
-    if (this._awsAttributes?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.awsAttributes = this._awsAttributes?.internalValue;
-    }
-    if (this._azureAttributes?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.azureAttributes = this._azureAttributes?.internalValue;
-    }
-    if (this._clusterLogConf?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.clusterLogConf = this._clusterLogConf?.internalValue;
-    }
-    if (this._clusterLogStatus?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.clusterLogStatus = this._clusterLogStatus?.internalValue;
-    }
-    if (this._dockerImage?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.dockerImage = this._dockerImage?.internalValue;
-    }
-    if (this._driver?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.driver = this._driver?.internalValue;
-    }
-    if (this._executors?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.executors = this._executors?.internalValue;
-    }
-    if (this._gcpAttributes?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.gcpAttributes = this._gcpAttributes?.internalValue;
-    }
-    if (this._initScripts?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.initScripts = this._initScripts?.internalValue;
-    }
-    if (this._spec?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.spec = this._spec?.internalValue;
-    }
     if (this._terminationReason?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.terminationReason = this._terminationReason?.internalValue;
@@ -10305,9 +10183,14 @@ export class DataDatabricksClusterPluginframeworkClusterInfoOutputReference exte
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._autoscale.internalValue = undefined;
       this._autoterminationMinutes = undefined;
+      this._awsAttributes.internalValue = undefined;
+      this._azureAttributes.internalValue = undefined;
       this._clusterCores = undefined;
       this._clusterId = undefined;
+      this._clusterLogConf.internalValue = undefined;
+      this._clusterLogStatus.internalValue = undefined;
       this._clusterMemoryMb = undefined;
       this._clusterName = undefined;
       this._clusterSource = undefined;
@@ -10315,10 +10198,15 @@ export class DataDatabricksClusterPluginframeworkClusterInfoOutputReference exte
       this._customTags = undefined;
       this._dataSecurityMode = undefined;
       this._defaultTags = undefined;
+      this._dockerImage.internalValue = undefined;
+      this._driver.internalValue = undefined;
       this._driverInstancePoolId = undefined;
       this._driverNodeTypeId = undefined;
       this._enableElasticDisk = undefined;
       this._enableLocalDiskEncryption = undefined;
+      this._executors.internalValue = undefined;
+      this._gcpAttributes.internalValue = undefined;
+      this._initScripts.internalValue = undefined;
       this._instancePoolId = undefined;
       this._jdbcPort = undefined;
       this._lastRestartedTime = undefined;
@@ -10332,22 +10220,12 @@ export class DataDatabricksClusterPluginframeworkClusterInfoOutputReference exte
       this._sparkContextId = undefined;
       this._sparkEnvVars = undefined;
       this._sparkVersion = undefined;
+      this._spec.internalValue = undefined;
       this._sshPublicKeys = undefined;
       this._startTime = undefined;
       this._state = undefined;
       this._stateMessage = undefined;
       this._terminatedTime = undefined;
-      this._autoscale.internalValue = undefined;
-      this._awsAttributes.internalValue = undefined;
-      this._azureAttributes.internalValue = undefined;
-      this._clusterLogConf.internalValue = undefined;
-      this._clusterLogStatus.internalValue = undefined;
-      this._dockerImage.internalValue = undefined;
-      this._driver.internalValue = undefined;
-      this._executors.internalValue = undefined;
-      this._gcpAttributes.internalValue = undefined;
-      this._initScripts.internalValue = undefined;
-      this._spec.internalValue = undefined;
       this._terminationReason.internalValue = undefined;
       this._workloadType.internalValue = undefined;
     }
@@ -10358,9 +10236,14 @@ export class DataDatabricksClusterPluginframeworkClusterInfoOutputReference exte
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._autoscale.internalValue = value.autoscale;
       this._autoterminationMinutes = value.autoterminationMinutes;
+      this._awsAttributes.internalValue = value.awsAttributes;
+      this._azureAttributes.internalValue = value.azureAttributes;
       this._clusterCores = value.clusterCores;
       this._clusterId = value.clusterId;
+      this._clusterLogConf.internalValue = value.clusterLogConf;
+      this._clusterLogStatus.internalValue = value.clusterLogStatus;
       this._clusterMemoryMb = value.clusterMemoryMb;
       this._clusterName = value.clusterName;
       this._clusterSource = value.clusterSource;
@@ -10368,10 +10251,15 @@ export class DataDatabricksClusterPluginframeworkClusterInfoOutputReference exte
       this._customTags = value.customTags;
       this._dataSecurityMode = value.dataSecurityMode;
       this._defaultTags = value.defaultTags;
+      this._dockerImage.internalValue = value.dockerImage;
+      this._driver.internalValue = value.driver;
       this._driverInstancePoolId = value.driverInstancePoolId;
       this._driverNodeTypeId = value.driverNodeTypeId;
       this._enableElasticDisk = value.enableElasticDisk;
       this._enableLocalDiskEncryption = value.enableLocalDiskEncryption;
+      this._executors.internalValue = value.executors;
+      this._gcpAttributes.internalValue = value.gcpAttributes;
+      this._initScripts.internalValue = value.initScripts;
       this._instancePoolId = value.instancePoolId;
       this._jdbcPort = value.jdbcPort;
       this._lastRestartedTime = value.lastRestartedTime;
@@ -10385,540 +10273,18 @@ export class DataDatabricksClusterPluginframeworkClusterInfoOutputReference exte
       this._sparkContextId = value.sparkContextId;
       this._sparkEnvVars = value.sparkEnvVars;
       this._sparkVersion = value.sparkVersion;
+      this._spec.internalValue = value.spec;
       this._sshPublicKeys = value.sshPublicKeys;
       this._startTime = value.startTime;
       this._state = value.state;
       this._stateMessage = value.stateMessage;
       this._terminatedTime = value.terminatedTime;
-      this._autoscale.internalValue = value.autoscale;
-      this._awsAttributes.internalValue = value.awsAttributes;
-      this._azureAttributes.internalValue = value.azureAttributes;
-      this._clusterLogConf.internalValue = value.clusterLogConf;
-      this._clusterLogStatus.internalValue = value.clusterLogStatus;
-      this._dockerImage.internalValue = value.dockerImage;
-      this._driver.internalValue = value.driver;
-      this._executors.internalValue = value.executors;
-      this._gcpAttributes.internalValue = value.gcpAttributes;
-      this._initScripts.internalValue = value.initScripts;
-      this._spec.internalValue = value.spec;
       this._terminationReason.internalValue = value.terminationReason;
       this._workloadType.internalValue = value.workloadType;
     }
   }
 
-  // autotermination_minutes - computed: false, optional: true, required: false
-  private _autoterminationMinutes?: number; 
-  public get autoterminationMinutes() {
-    return this.getNumberAttribute('autotermination_minutes');
-  }
-  public set autoterminationMinutes(value: number) {
-    this._autoterminationMinutes = value;
-  }
-  public resetAutoterminationMinutes() {
-    this._autoterminationMinutes = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get autoterminationMinutesInput() {
-    return this._autoterminationMinutes;
-  }
-
-  // cluster_cores - computed: false, optional: true, required: false
-  private _clusterCores?: number; 
-  public get clusterCores() {
-    return this.getNumberAttribute('cluster_cores');
-  }
-  public set clusterCores(value: number) {
-    this._clusterCores = value;
-  }
-  public resetClusterCores() {
-    this._clusterCores = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get clusterCoresInput() {
-    return this._clusterCores;
-  }
-
-  // cluster_id - computed: false, optional: true, required: false
-  private _clusterId?: string; 
-  public get clusterId() {
-    return this.getStringAttribute('cluster_id');
-  }
-  public set clusterId(value: string) {
-    this._clusterId = value;
-  }
-  public resetClusterId() {
-    this._clusterId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get clusterIdInput() {
-    return this._clusterId;
-  }
-
-  // cluster_memory_mb - computed: false, optional: true, required: false
-  private _clusterMemoryMb?: number; 
-  public get clusterMemoryMb() {
-    return this.getNumberAttribute('cluster_memory_mb');
-  }
-  public set clusterMemoryMb(value: number) {
-    this._clusterMemoryMb = value;
-  }
-  public resetClusterMemoryMb() {
-    this._clusterMemoryMb = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get clusterMemoryMbInput() {
-    return this._clusterMemoryMb;
-  }
-
-  // cluster_name - computed: false, optional: true, required: false
-  private _clusterName?: string; 
-  public get clusterName() {
-    return this.getStringAttribute('cluster_name');
-  }
-  public set clusterName(value: string) {
-    this._clusterName = value;
-  }
-  public resetClusterName() {
-    this._clusterName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get clusterNameInput() {
-    return this._clusterName;
-  }
-
-  // cluster_source - computed: false, optional: true, required: false
-  private _clusterSource?: string; 
-  public get clusterSource() {
-    return this.getStringAttribute('cluster_source');
-  }
-  public set clusterSource(value: string) {
-    this._clusterSource = value;
-  }
-  public resetClusterSource() {
-    this._clusterSource = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get clusterSourceInput() {
-    return this._clusterSource;
-  }
-
-  // creator_user_name - computed: false, optional: true, required: false
-  private _creatorUserName?: string; 
-  public get creatorUserName() {
-    return this.getStringAttribute('creator_user_name');
-  }
-  public set creatorUserName(value: string) {
-    this._creatorUserName = value;
-  }
-  public resetCreatorUserName() {
-    this._creatorUserName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get creatorUserNameInput() {
-    return this._creatorUserName;
-  }
-
-  // custom_tags - computed: false, optional: true, required: false
-  private _customTags?: { [key: string]: string }; 
-  public get customTags() {
-    return this.getStringMapAttribute('custom_tags');
-  }
-  public set customTags(value: { [key: string]: string }) {
-    this._customTags = value;
-  }
-  public resetCustomTags() {
-    this._customTags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get customTagsInput() {
-    return this._customTags;
-  }
-
-  // data_security_mode - computed: false, optional: true, required: false
-  private _dataSecurityMode?: string; 
-  public get dataSecurityMode() {
-    return this.getStringAttribute('data_security_mode');
-  }
-  public set dataSecurityMode(value: string) {
-    this._dataSecurityMode = value;
-  }
-  public resetDataSecurityMode() {
-    this._dataSecurityMode = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get dataSecurityModeInput() {
-    return this._dataSecurityMode;
-  }
-
-  // default_tags - computed: false, optional: true, required: false
-  private _defaultTags?: { [key: string]: string }; 
-  public get defaultTags() {
-    return this.getStringMapAttribute('default_tags');
-  }
-  public set defaultTags(value: { [key: string]: string }) {
-    this._defaultTags = value;
-  }
-  public resetDefaultTags() {
-    this._defaultTags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get defaultTagsInput() {
-    return this._defaultTags;
-  }
-
-  // driver_instance_pool_id - computed: false, optional: true, required: false
-  private _driverInstancePoolId?: string; 
-  public get driverInstancePoolId() {
-    return this.getStringAttribute('driver_instance_pool_id');
-  }
-  public set driverInstancePoolId(value: string) {
-    this._driverInstancePoolId = value;
-  }
-  public resetDriverInstancePoolId() {
-    this._driverInstancePoolId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get driverInstancePoolIdInput() {
-    return this._driverInstancePoolId;
-  }
-
-  // driver_node_type_id - computed: false, optional: true, required: false
-  private _driverNodeTypeId?: string; 
-  public get driverNodeTypeId() {
-    return this.getStringAttribute('driver_node_type_id');
-  }
-  public set driverNodeTypeId(value: string) {
-    this._driverNodeTypeId = value;
-  }
-  public resetDriverNodeTypeId() {
-    this._driverNodeTypeId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get driverNodeTypeIdInput() {
-    return this._driverNodeTypeId;
-  }
-
-  // enable_elastic_disk - computed: false, optional: true, required: false
-  private _enableElasticDisk?: boolean | cdktf.IResolvable; 
-  public get enableElasticDisk() {
-    return this.getBooleanAttribute('enable_elastic_disk');
-  }
-  public set enableElasticDisk(value: boolean | cdktf.IResolvable) {
-    this._enableElasticDisk = value;
-  }
-  public resetEnableElasticDisk() {
-    this._enableElasticDisk = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enableElasticDiskInput() {
-    return this._enableElasticDisk;
-  }
-
-  // enable_local_disk_encryption - computed: false, optional: true, required: false
-  private _enableLocalDiskEncryption?: boolean | cdktf.IResolvable; 
-  public get enableLocalDiskEncryption() {
-    return this.getBooleanAttribute('enable_local_disk_encryption');
-  }
-  public set enableLocalDiskEncryption(value: boolean | cdktf.IResolvable) {
-    this._enableLocalDiskEncryption = value;
-  }
-  public resetEnableLocalDiskEncryption() {
-    this._enableLocalDiskEncryption = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enableLocalDiskEncryptionInput() {
-    return this._enableLocalDiskEncryption;
-  }
-
-  // instance_pool_id - computed: false, optional: true, required: false
-  private _instancePoolId?: string; 
-  public get instancePoolId() {
-    return this.getStringAttribute('instance_pool_id');
-  }
-  public set instancePoolId(value: string) {
-    this._instancePoolId = value;
-  }
-  public resetInstancePoolId() {
-    this._instancePoolId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get instancePoolIdInput() {
-    return this._instancePoolId;
-  }
-
-  // jdbc_port - computed: false, optional: true, required: false
-  private _jdbcPort?: number; 
-  public get jdbcPort() {
-    return this.getNumberAttribute('jdbc_port');
-  }
-  public set jdbcPort(value: number) {
-    this._jdbcPort = value;
-  }
-  public resetJdbcPort() {
-    this._jdbcPort = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get jdbcPortInput() {
-    return this._jdbcPort;
-  }
-
-  // last_restarted_time - computed: false, optional: true, required: false
-  private _lastRestartedTime?: number; 
-  public get lastRestartedTime() {
-    return this.getNumberAttribute('last_restarted_time');
-  }
-  public set lastRestartedTime(value: number) {
-    this._lastRestartedTime = value;
-  }
-  public resetLastRestartedTime() {
-    this._lastRestartedTime = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get lastRestartedTimeInput() {
-    return this._lastRestartedTime;
-  }
-
-  // last_state_loss_time - computed: false, optional: true, required: false
-  private _lastStateLossTime?: number; 
-  public get lastStateLossTime() {
-    return this.getNumberAttribute('last_state_loss_time');
-  }
-  public set lastStateLossTime(value: number) {
-    this._lastStateLossTime = value;
-  }
-  public resetLastStateLossTime() {
-    this._lastStateLossTime = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get lastStateLossTimeInput() {
-    return this._lastStateLossTime;
-  }
-
-  // node_type_id - computed: false, optional: true, required: false
-  private _nodeTypeId?: string; 
-  public get nodeTypeId() {
-    return this.getStringAttribute('node_type_id');
-  }
-  public set nodeTypeId(value: string) {
-    this._nodeTypeId = value;
-  }
-  public resetNodeTypeId() {
-    this._nodeTypeId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nodeTypeIdInput() {
-    return this._nodeTypeId;
-  }
-
-  // num_workers - computed: false, optional: true, required: false
-  private _numWorkers?: number; 
-  public get numWorkers() {
-    return this.getNumberAttribute('num_workers');
-  }
-  public set numWorkers(value: number) {
-    this._numWorkers = value;
-  }
-  public resetNumWorkers() {
-    this._numWorkers = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get numWorkersInput() {
-    return this._numWorkers;
-  }
-
-  // policy_id - computed: false, optional: true, required: false
-  private _policyId?: string; 
-  public get policyId() {
-    return this.getStringAttribute('policy_id');
-  }
-  public set policyId(value: string) {
-    this._policyId = value;
-  }
-  public resetPolicyId() {
-    this._policyId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get policyIdInput() {
-    return this._policyId;
-  }
-
-  // runtime_engine - computed: false, optional: true, required: false
-  private _runtimeEngine?: string; 
-  public get runtimeEngine() {
-    return this.getStringAttribute('runtime_engine');
-  }
-  public set runtimeEngine(value: string) {
-    this._runtimeEngine = value;
-  }
-  public resetRuntimeEngine() {
-    this._runtimeEngine = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get runtimeEngineInput() {
-    return this._runtimeEngine;
-  }
-
-  // single_user_name - computed: false, optional: true, required: false
-  private _singleUserName?: string; 
-  public get singleUserName() {
-    return this.getStringAttribute('single_user_name');
-  }
-  public set singleUserName(value: string) {
-    this._singleUserName = value;
-  }
-  public resetSingleUserName() {
-    this._singleUserName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get singleUserNameInput() {
-    return this._singleUserName;
-  }
-
-  // spark_conf - computed: false, optional: true, required: false
-  private _sparkConf?: { [key: string]: string }; 
-  public get sparkConf() {
-    return this.getStringMapAttribute('spark_conf');
-  }
-  public set sparkConf(value: { [key: string]: string }) {
-    this._sparkConf = value;
-  }
-  public resetSparkConf() {
-    this._sparkConf = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sparkConfInput() {
-    return this._sparkConf;
-  }
-
-  // spark_context_id - computed: false, optional: true, required: false
-  private _sparkContextId?: number; 
-  public get sparkContextId() {
-    return this.getNumberAttribute('spark_context_id');
-  }
-  public set sparkContextId(value: number) {
-    this._sparkContextId = value;
-  }
-  public resetSparkContextId() {
-    this._sparkContextId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sparkContextIdInput() {
-    return this._sparkContextId;
-  }
-
-  // spark_env_vars - computed: false, optional: true, required: false
-  private _sparkEnvVars?: { [key: string]: string }; 
-  public get sparkEnvVars() {
-    return this.getStringMapAttribute('spark_env_vars');
-  }
-  public set sparkEnvVars(value: { [key: string]: string }) {
-    this._sparkEnvVars = value;
-  }
-  public resetSparkEnvVars() {
-    this._sparkEnvVars = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sparkEnvVarsInput() {
-    return this._sparkEnvVars;
-  }
-
-  // spark_version - computed: false, optional: true, required: false
-  private _sparkVersion?: string; 
-  public get sparkVersion() {
-    return this.getStringAttribute('spark_version');
-  }
-  public set sparkVersion(value: string) {
-    this._sparkVersion = value;
-  }
-  public resetSparkVersion() {
-    this._sparkVersion = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sparkVersionInput() {
-    return this._sparkVersion;
-  }
-
-  // ssh_public_keys - computed: false, optional: true, required: false
-  private _sshPublicKeys?: string[]; 
-  public get sshPublicKeys() {
-    return this.getListAttribute('ssh_public_keys');
-  }
-  public set sshPublicKeys(value: string[]) {
-    this._sshPublicKeys = value;
-  }
-  public resetSshPublicKeys() {
-    this._sshPublicKeys = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sshPublicKeysInput() {
-    return this._sshPublicKeys;
-  }
-
-  // start_time - computed: false, optional: true, required: false
-  private _startTime?: number; 
-  public get startTime() {
-    return this.getNumberAttribute('start_time');
-  }
-  public set startTime(value: number) {
-    this._startTime = value;
-  }
-  public resetStartTime() {
-    this._startTime = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get startTimeInput() {
-    return this._startTime;
-  }
-
-  // state - computed: false, optional: true, required: false
-  private _state?: string; 
-  public get state() {
-    return this.getStringAttribute('state');
-  }
-  public set state(value: string) {
-    this._state = value;
-  }
-  public resetState() {
-    this._state = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get stateInput() {
-    return this._state;
-  }
-
-  // state_message - computed: false, optional: true, required: false
-  private _stateMessage?: string; 
-  public get stateMessage() {
-    return this.getStringAttribute('state_message');
-  }
-  public set stateMessage(value: string) {
-    this._stateMessage = value;
-  }
-  public resetStateMessage() {
-    this._stateMessage = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get stateMessageInput() {
-    return this._stateMessage;
-  }
-
-  // terminated_time - computed: false, optional: true, required: false
-  private _terminatedTime?: number; 
-  public get terminatedTime() {
-    return this.getNumberAttribute('terminated_time');
-  }
-  public set terminatedTime(value: number) {
-    this._terminatedTime = value;
-  }
-  public resetTerminatedTime() {
-    this._terminatedTime = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get terminatedTimeInput() {
-    return this._terminatedTime;
-  }
-
-  // autoscale - computed: false, optional: true, required: false
+  // autoscale - computed: true, optional: true, required: false
   private _autoscale = new DataDatabricksClusterPluginframeworkClusterInfoAutoscaleList(this, "autoscale", false);
   public get autoscale() {
     return this._autoscale;
@@ -10934,7 +10300,23 @@ export class DataDatabricksClusterPluginframeworkClusterInfoOutputReference exte
     return this._autoscale.internalValue;
   }
 
-  // aws_attributes - computed: false, optional: true, required: false
+  // autotermination_minutes - computed: true, optional: true, required: false
+  private _autoterminationMinutes?: number; 
+  public get autoterminationMinutes() {
+    return this.getNumberAttribute('autotermination_minutes');
+  }
+  public set autoterminationMinutes(value: number) {
+    this._autoterminationMinutes = value;
+  }
+  public resetAutoterminationMinutes() {
+    this._autoterminationMinutes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoterminationMinutesInput() {
+    return this._autoterminationMinutes;
+  }
+
+  // aws_attributes - computed: true, optional: true, required: false
   private _awsAttributes = new DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesList(this, "aws_attributes", false);
   public get awsAttributes() {
     return this._awsAttributes;
@@ -10950,7 +10332,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoOutputReference exte
     return this._awsAttributes.internalValue;
   }
 
-  // azure_attributes - computed: false, optional: true, required: false
+  // azure_attributes - computed: true, optional: true, required: false
   private _azureAttributes = new DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesList(this, "azure_attributes", false);
   public get azureAttributes() {
     return this._azureAttributes;
@@ -10966,7 +10348,39 @@ export class DataDatabricksClusterPluginframeworkClusterInfoOutputReference exte
     return this._azureAttributes.internalValue;
   }
 
-  // cluster_log_conf - computed: false, optional: true, required: false
+  // cluster_cores - computed: true, optional: true, required: false
+  private _clusterCores?: number; 
+  public get clusterCores() {
+    return this.getNumberAttribute('cluster_cores');
+  }
+  public set clusterCores(value: number) {
+    this._clusterCores = value;
+  }
+  public resetClusterCores() {
+    this._clusterCores = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterCoresInput() {
+    return this._clusterCores;
+  }
+
+  // cluster_id - computed: true, optional: true, required: false
+  private _clusterId?: string; 
+  public get clusterId() {
+    return this.getStringAttribute('cluster_id');
+  }
+  public set clusterId(value: string) {
+    this._clusterId = value;
+  }
+  public resetClusterId() {
+    this._clusterId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterIdInput() {
+    return this._clusterId;
+  }
+
+  // cluster_log_conf - computed: true, optional: true, required: false
   private _clusterLogConf = new DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfList(this, "cluster_log_conf", false);
   public get clusterLogConf() {
     return this._clusterLogConf;
@@ -10982,7 +10396,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoOutputReference exte
     return this._clusterLogConf.internalValue;
   }
 
-  // cluster_log_status - computed: false, optional: true, required: false
+  // cluster_log_status - computed: true, optional: true, required: false
   private _clusterLogStatus = new DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusList(this, "cluster_log_status", false);
   public get clusterLogStatus() {
     return this._clusterLogStatus;
@@ -10998,7 +10412,119 @@ export class DataDatabricksClusterPluginframeworkClusterInfoOutputReference exte
     return this._clusterLogStatus.internalValue;
   }
 
-  // docker_image - computed: false, optional: true, required: false
+  // cluster_memory_mb - computed: true, optional: true, required: false
+  private _clusterMemoryMb?: number; 
+  public get clusterMemoryMb() {
+    return this.getNumberAttribute('cluster_memory_mb');
+  }
+  public set clusterMemoryMb(value: number) {
+    this._clusterMemoryMb = value;
+  }
+  public resetClusterMemoryMb() {
+    this._clusterMemoryMb = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterMemoryMbInput() {
+    return this._clusterMemoryMb;
+  }
+
+  // cluster_name - computed: true, optional: true, required: false
+  private _clusterName?: string; 
+  public get clusterName() {
+    return this.getStringAttribute('cluster_name');
+  }
+  public set clusterName(value: string) {
+    this._clusterName = value;
+  }
+  public resetClusterName() {
+    this._clusterName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterNameInput() {
+    return this._clusterName;
+  }
+
+  // cluster_source - computed: true, optional: true, required: false
+  private _clusterSource?: string; 
+  public get clusterSource() {
+    return this.getStringAttribute('cluster_source');
+  }
+  public set clusterSource(value: string) {
+    this._clusterSource = value;
+  }
+  public resetClusterSource() {
+    this._clusterSource = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterSourceInput() {
+    return this._clusterSource;
+  }
+
+  // creator_user_name - computed: true, optional: true, required: false
+  private _creatorUserName?: string; 
+  public get creatorUserName() {
+    return this.getStringAttribute('creator_user_name');
+  }
+  public set creatorUserName(value: string) {
+    this._creatorUserName = value;
+  }
+  public resetCreatorUserName() {
+    this._creatorUserName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get creatorUserNameInput() {
+    return this._creatorUserName;
+  }
+
+  // custom_tags - computed: true, optional: true, required: false
+  private _customTags?: { [key: string]: string }; 
+  public get customTags() {
+    return this.getStringMapAttribute('custom_tags');
+  }
+  public set customTags(value: { [key: string]: string }) {
+    this._customTags = value;
+  }
+  public resetCustomTags() {
+    this._customTags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customTagsInput() {
+    return this._customTags;
+  }
+
+  // data_security_mode - computed: true, optional: true, required: false
+  private _dataSecurityMode?: string; 
+  public get dataSecurityMode() {
+    return this.getStringAttribute('data_security_mode');
+  }
+  public set dataSecurityMode(value: string) {
+    this._dataSecurityMode = value;
+  }
+  public resetDataSecurityMode() {
+    this._dataSecurityMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSecurityModeInput() {
+    return this._dataSecurityMode;
+  }
+
+  // default_tags - computed: true, optional: true, required: false
+  private _defaultTags?: { [key: string]: string }; 
+  public get defaultTags() {
+    return this.getStringMapAttribute('default_tags');
+  }
+  public set defaultTags(value: { [key: string]: string }) {
+    this._defaultTags = value;
+  }
+  public resetDefaultTags() {
+    this._defaultTags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultTagsInput() {
+    return this._defaultTags;
+  }
+
+  // docker_image - computed: true, optional: true, required: false
   private _dockerImage = new DataDatabricksClusterPluginframeworkClusterInfoDockerImageList(this, "docker_image", false);
   public get dockerImage() {
     return this._dockerImage;
@@ -11014,7 +10540,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoOutputReference exte
     return this._dockerImage.internalValue;
   }
 
-  // driver - computed: false, optional: true, required: false
+  // driver - computed: true, optional: true, required: false
   private _driver = new DataDatabricksClusterPluginframeworkClusterInfoDriverList(this, "driver", false);
   public get driver() {
     return this._driver;
@@ -11030,7 +10556,71 @@ export class DataDatabricksClusterPluginframeworkClusterInfoOutputReference exte
     return this._driver.internalValue;
   }
 
-  // executors - computed: false, optional: true, required: false
+  // driver_instance_pool_id - computed: true, optional: true, required: false
+  private _driverInstancePoolId?: string; 
+  public get driverInstancePoolId() {
+    return this.getStringAttribute('driver_instance_pool_id');
+  }
+  public set driverInstancePoolId(value: string) {
+    this._driverInstancePoolId = value;
+  }
+  public resetDriverInstancePoolId() {
+    this._driverInstancePoolId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get driverInstancePoolIdInput() {
+    return this._driverInstancePoolId;
+  }
+
+  // driver_node_type_id - computed: true, optional: true, required: false
+  private _driverNodeTypeId?: string; 
+  public get driverNodeTypeId() {
+    return this.getStringAttribute('driver_node_type_id');
+  }
+  public set driverNodeTypeId(value: string) {
+    this._driverNodeTypeId = value;
+  }
+  public resetDriverNodeTypeId() {
+    this._driverNodeTypeId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get driverNodeTypeIdInput() {
+    return this._driverNodeTypeId;
+  }
+
+  // enable_elastic_disk - computed: true, optional: true, required: false
+  private _enableElasticDisk?: boolean | cdktf.IResolvable; 
+  public get enableElasticDisk() {
+    return this.getBooleanAttribute('enable_elastic_disk');
+  }
+  public set enableElasticDisk(value: boolean | cdktf.IResolvable) {
+    this._enableElasticDisk = value;
+  }
+  public resetEnableElasticDisk() {
+    this._enableElasticDisk = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableElasticDiskInput() {
+    return this._enableElasticDisk;
+  }
+
+  // enable_local_disk_encryption - computed: true, optional: true, required: false
+  private _enableLocalDiskEncryption?: boolean | cdktf.IResolvable; 
+  public get enableLocalDiskEncryption() {
+    return this.getBooleanAttribute('enable_local_disk_encryption');
+  }
+  public set enableLocalDiskEncryption(value: boolean | cdktf.IResolvable) {
+    this._enableLocalDiskEncryption = value;
+  }
+  public resetEnableLocalDiskEncryption() {
+    this._enableLocalDiskEncryption = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableLocalDiskEncryptionInput() {
+    return this._enableLocalDiskEncryption;
+  }
+
+  // executors - computed: true, optional: true, required: false
   private _executors = new DataDatabricksClusterPluginframeworkClusterInfoExecutorsList(this, "executors", false);
   public get executors() {
     return this._executors;
@@ -11046,7 +10636,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoOutputReference exte
     return this._executors.internalValue;
   }
 
-  // gcp_attributes - computed: false, optional: true, required: false
+  // gcp_attributes - computed: true, optional: true, required: false
   private _gcpAttributes = new DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesList(this, "gcp_attributes", false);
   public get gcpAttributes() {
     return this._gcpAttributes;
@@ -11062,7 +10652,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoOutputReference exte
     return this._gcpAttributes.internalValue;
   }
 
-  // init_scripts - computed: false, optional: true, required: false
+  // init_scripts - computed: true, optional: true, required: false
   private _initScripts = new DataDatabricksClusterPluginframeworkClusterInfoInitScriptsList(this, "init_scripts", false);
   public get initScripts() {
     return this._initScripts;
@@ -11078,7 +10668,215 @@ export class DataDatabricksClusterPluginframeworkClusterInfoOutputReference exte
     return this._initScripts.internalValue;
   }
 
-  // spec - computed: false, optional: true, required: false
+  // instance_pool_id - computed: true, optional: true, required: false
+  private _instancePoolId?: string; 
+  public get instancePoolId() {
+    return this.getStringAttribute('instance_pool_id');
+  }
+  public set instancePoolId(value: string) {
+    this._instancePoolId = value;
+  }
+  public resetInstancePoolId() {
+    this._instancePoolId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instancePoolIdInput() {
+    return this._instancePoolId;
+  }
+
+  // jdbc_port - computed: true, optional: true, required: false
+  private _jdbcPort?: number; 
+  public get jdbcPort() {
+    return this.getNumberAttribute('jdbc_port');
+  }
+  public set jdbcPort(value: number) {
+    this._jdbcPort = value;
+  }
+  public resetJdbcPort() {
+    this._jdbcPort = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jdbcPortInput() {
+    return this._jdbcPort;
+  }
+
+  // last_restarted_time - computed: true, optional: true, required: false
+  private _lastRestartedTime?: number; 
+  public get lastRestartedTime() {
+    return this.getNumberAttribute('last_restarted_time');
+  }
+  public set lastRestartedTime(value: number) {
+    this._lastRestartedTime = value;
+  }
+  public resetLastRestartedTime() {
+    this._lastRestartedTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lastRestartedTimeInput() {
+    return this._lastRestartedTime;
+  }
+
+  // last_state_loss_time - computed: true, optional: true, required: false
+  private _lastStateLossTime?: number; 
+  public get lastStateLossTime() {
+    return this.getNumberAttribute('last_state_loss_time');
+  }
+  public set lastStateLossTime(value: number) {
+    this._lastStateLossTime = value;
+  }
+  public resetLastStateLossTime() {
+    this._lastStateLossTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lastStateLossTimeInput() {
+    return this._lastStateLossTime;
+  }
+
+  // node_type_id - computed: true, optional: true, required: false
+  private _nodeTypeId?: string; 
+  public get nodeTypeId() {
+    return this.getStringAttribute('node_type_id');
+  }
+  public set nodeTypeId(value: string) {
+    this._nodeTypeId = value;
+  }
+  public resetNodeTypeId() {
+    this._nodeTypeId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodeTypeIdInput() {
+    return this._nodeTypeId;
+  }
+
+  // num_workers - computed: true, optional: true, required: false
+  private _numWorkers?: number; 
+  public get numWorkers() {
+    return this.getNumberAttribute('num_workers');
+  }
+  public set numWorkers(value: number) {
+    this._numWorkers = value;
+  }
+  public resetNumWorkers() {
+    this._numWorkers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numWorkersInput() {
+    return this._numWorkers;
+  }
+
+  // policy_id - computed: true, optional: true, required: false
+  private _policyId?: string; 
+  public get policyId() {
+    return this.getStringAttribute('policy_id');
+  }
+  public set policyId(value: string) {
+    this._policyId = value;
+  }
+  public resetPolicyId() {
+    this._policyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyIdInput() {
+    return this._policyId;
+  }
+
+  // runtime_engine - computed: true, optional: true, required: false
+  private _runtimeEngine?: string; 
+  public get runtimeEngine() {
+    return this.getStringAttribute('runtime_engine');
+  }
+  public set runtimeEngine(value: string) {
+    this._runtimeEngine = value;
+  }
+  public resetRuntimeEngine() {
+    this._runtimeEngine = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runtimeEngineInput() {
+    return this._runtimeEngine;
+  }
+
+  // single_user_name - computed: true, optional: true, required: false
+  private _singleUserName?: string; 
+  public get singleUserName() {
+    return this.getStringAttribute('single_user_name');
+  }
+  public set singleUserName(value: string) {
+    this._singleUserName = value;
+  }
+  public resetSingleUserName() {
+    this._singleUserName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get singleUserNameInput() {
+    return this._singleUserName;
+  }
+
+  // spark_conf - computed: true, optional: true, required: false
+  private _sparkConf?: { [key: string]: string }; 
+  public get sparkConf() {
+    return this.getStringMapAttribute('spark_conf');
+  }
+  public set sparkConf(value: { [key: string]: string }) {
+    this._sparkConf = value;
+  }
+  public resetSparkConf() {
+    this._sparkConf = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sparkConfInput() {
+    return this._sparkConf;
+  }
+
+  // spark_context_id - computed: true, optional: true, required: false
+  private _sparkContextId?: number; 
+  public get sparkContextId() {
+    return this.getNumberAttribute('spark_context_id');
+  }
+  public set sparkContextId(value: number) {
+    this._sparkContextId = value;
+  }
+  public resetSparkContextId() {
+    this._sparkContextId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sparkContextIdInput() {
+    return this._sparkContextId;
+  }
+
+  // spark_env_vars - computed: true, optional: true, required: false
+  private _sparkEnvVars?: { [key: string]: string }; 
+  public get sparkEnvVars() {
+    return this.getStringMapAttribute('spark_env_vars');
+  }
+  public set sparkEnvVars(value: { [key: string]: string }) {
+    this._sparkEnvVars = value;
+  }
+  public resetSparkEnvVars() {
+    this._sparkEnvVars = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sparkEnvVarsInput() {
+    return this._sparkEnvVars;
+  }
+
+  // spark_version - computed: true, optional: true, required: false
+  private _sparkVersion?: string; 
+  public get sparkVersion() {
+    return this.getStringAttribute('spark_version');
+  }
+  public set sparkVersion(value: string) {
+    this._sparkVersion = value;
+  }
+  public resetSparkVersion() {
+    this._sparkVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sparkVersionInput() {
+    return this._sparkVersion;
+  }
+
+  // spec - computed: true, optional: true, required: false
   private _spec = new DataDatabricksClusterPluginframeworkClusterInfoSpecList(this, "spec", false);
   public get spec() {
     return this._spec;
@@ -11094,7 +10892,87 @@ export class DataDatabricksClusterPluginframeworkClusterInfoOutputReference exte
     return this._spec.internalValue;
   }
 
-  // termination_reason - computed: false, optional: true, required: false
+  // ssh_public_keys - computed: true, optional: true, required: false
+  private _sshPublicKeys?: string[]; 
+  public get sshPublicKeys() {
+    return this.getListAttribute('ssh_public_keys');
+  }
+  public set sshPublicKeys(value: string[]) {
+    this._sshPublicKeys = value;
+  }
+  public resetSshPublicKeys() {
+    this._sshPublicKeys = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sshPublicKeysInput() {
+    return this._sshPublicKeys;
+  }
+
+  // start_time - computed: true, optional: true, required: false
+  private _startTime?: number; 
+  public get startTime() {
+    return this.getNumberAttribute('start_time');
+  }
+  public set startTime(value: number) {
+    this._startTime = value;
+  }
+  public resetStartTime() {
+    this._startTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startTimeInput() {
+    return this._startTime;
+  }
+
+  // state - computed: true, optional: true, required: false
+  private _state?: string; 
+  public get state() {
+    return this.getStringAttribute('state');
+  }
+  public set state(value: string) {
+    this._state = value;
+  }
+  public resetState() {
+    this._state = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stateInput() {
+    return this._state;
+  }
+
+  // state_message - computed: true, optional: true, required: false
+  private _stateMessage?: string; 
+  public get stateMessage() {
+    return this.getStringAttribute('state_message');
+  }
+  public set stateMessage(value: string) {
+    this._stateMessage = value;
+  }
+  public resetStateMessage() {
+    this._stateMessage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stateMessageInput() {
+    return this._stateMessage;
+  }
+
+  // terminated_time - computed: true, optional: true, required: false
+  private _terminatedTime?: number; 
+  public get terminatedTime() {
+    return this.getNumberAttribute('terminated_time');
+  }
+  public set terminatedTime(value: number) {
+    this._terminatedTime = value;
+  }
+  public resetTerminatedTime() {
+    this._terminatedTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get terminatedTimeInput() {
+    return this._terminatedTime;
+  }
+
+  // termination_reason - computed: true, optional: true, required: false
   private _terminationReason = new DataDatabricksClusterPluginframeworkClusterInfoTerminationReasonList(this, "termination_reason", false);
   public get terminationReason() {
     return this._terminationReason;
@@ -11110,7 +10988,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoOutputReference exte
     return this._terminationReason.internalValue;
   }
 
-  // workload_type - computed: false, optional: true, required: false
+  // workload_type - computed: true, optional: true, required: false
   private _workloadType = new DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeList(this, "workload_type", false);
   public get workloadType() {
     return this._workloadType;
@@ -11148,7 +11026,7 @@ export class DataDatabricksClusterPluginframeworkClusterInfoList extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework databricks_cluster_pluginframework}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework databricks_cluster_pluginframework}
 */
 export class DataDatabricksClusterPluginframework extends cdktf.TerraformDataSource {
 
@@ -11164,7 +11042,7 @@ export class DataDatabricksClusterPluginframework extends cdktf.TerraformDataSou
   * Generates CDKTF code for importing a DataDatabricksClusterPluginframework resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksClusterPluginframework to import
-  * @param importFromId The id of the existing DataDatabricksClusterPluginframework that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksClusterPluginframework that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksClusterPluginframework to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -11176,7 +11054,7 @@ export class DataDatabricksClusterPluginframework extends cdktf.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/cluster_pluginframework databricks_cluster_pluginframework} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/cluster_pluginframework databricks_cluster_pluginframework} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -11187,7 +11065,7 @@ export class DataDatabricksClusterPluginframework extends cdktf.TerraformDataSou
       terraformResourceType: 'databricks_cluster_pluginframework',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.60.0',
+        providerVersion: '1.61.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -11199,8 +11077,8 @@ export class DataDatabricksClusterPluginframework extends cdktf.TerraformDataSou
       forEach: config.forEach
     });
     this._clusterId = config.clusterId;
-    this._clusterName = config.clusterName;
     this._clusterInfo.internalValue = config.clusterInfo;
+    this._clusterName = config.clusterName;
   }
 
   // ==========
@@ -11223,6 +11101,22 @@ export class DataDatabricksClusterPluginframework extends cdktf.TerraformDataSou
     return this._clusterId;
   }
 
+  // cluster_info - computed: true, optional: true, required: false
+  private _clusterInfo = new DataDatabricksClusterPluginframeworkClusterInfoList(this, "cluster_info", false);
+  public get clusterInfo() {
+    return this._clusterInfo;
+  }
+  public putClusterInfo(value: DataDatabricksClusterPluginframeworkClusterInfo[] | cdktf.IResolvable) {
+    this._clusterInfo.internalValue = value;
+  }
+  public resetClusterInfo() {
+    this._clusterInfo.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterInfoInput() {
+    return this._clusterInfo.internalValue;
+  }
+
   // cluster_name - computed: true, optional: true, required: false
   private _clusterName?: string; 
   public get clusterName() {
@@ -11239,22 +11133,6 @@ export class DataDatabricksClusterPluginframework extends cdktf.TerraformDataSou
     return this._clusterName;
   }
 
-  // cluster_info - computed: false, optional: true, required: false
-  private _clusterInfo = new DataDatabricksClusterPluginframeworkClusterInfoList(this, "cluster_info", false);
-  public get clusterInfo() {
-    return this._clusterInfo;
-  }
-  public putClusterInfo(value: DataDatabricksClusterPluginframeworkClusterInfo[] | cdktf.IResolvable) {
-    this._clusterInfo.internalValue = value;
-  }
-  public resetClusterInfo() {
-    this._clusterInfo.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get clusterInfoInput() {
-    return this._clusterInfo.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -11262,8 +11140,8 @@ export class DataDatabricksClusterPluginframework extends cdktf.TerraformDataSou
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cluster_id: cdktf.stringToTerraform(this._clusterId),
+      cluster_info: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoToTerraform, false)(this._clusterInfo.internalValue),
       cluster_name: cdktf.stringToTerraform(this._clusterName),
-      cluster_info: cdktf.listMapper(dataDatabricksClusterPluginframeworkClusterInfoToTerraform, true)(this._clusterInfo.internalValue),
     };
   }
 
@@ -11275,17 +11153,17 @@ export class DataDatabricksClusterPluginframework extends cdktf.TerraformDataSou
         type: "simple",
         storageClassType: "string",
       },
+      cluster_info: {
+        value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoToHclTerraform, false)(this._clusterInfo.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoList",
+      },
       cluster_name: {
         value: cdktf.stringToHclTerraform(this._clusterName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      cluster_info: {
-        value: cdktf.listMapperHcl(dataDatabricksClusterPluginframeworkClusterInfoToHclTerraform, true)(this._clusterInfo.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "DataDatabricksClusterPluginframeworkClusterInfoList",
       },
     };
 

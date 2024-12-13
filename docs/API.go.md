@@ -6,6 +6,7 @@ The following submodules are available:
 
 - [accessControlRuleSet](./accessControlRuleSet.go.md)
 - [alert](./alert.go.md)
+- [app](./app.go.md)
 - [artifactAllowlist](./artifactAllowlist.go.md)
 - [automaticClusterUpdateWorkspaceSetting](./automaticClusterUpdateWorkspaceSetting.go.md)
 - [awsS3Mount](./awsS3Mount.go.md)
@@ -22,6 +23,8 @@ The following submodules are available:
 - [credential](./credential.go.md)
 - [customAppIntegration](./customAppIntegration.go.md)
 - [dashboard](./dashboard.go.md)
+- [dataDatabricksApp](./dataDatabricksApp.go.md)
+- [dataDatabricksApps](./dataDatabricksApps.go.md)
 - [dataDatabricksAwsAssumeRolePolicy](./dataDatabricksAwsAssumeRolePolicy.go.md)
 - [dataDatabricksAwsBucketPolicy](./dataDatabricksAwsBucketPolicy.go.md)
 - [dataDatabricksAwsCrossaccountPolicy](./dataDatabricksAwsCrossaccountPolicy.go.md)
