@@ -4,7 +4,7 @@
 
 ### DataDatabricksNotificationDestinations <a name="DataDatabricksNotificationDestinations" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations databricks_notification_destinations}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations databricks_notification_destinations}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.Initializer"></a>
 
@@ -24,8 +24,6 @@ DataDatabricksNotificationDestinations.Builder.create(Construct scope, java.lang
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
 //  .displayNameContains(java.lang.String)
-//  .notificationDestinations(IResolvable)
-//  .notificationDestinations(java.util.List<DataDatabricksNotificationDestinationsNotificationDestinations>)
 //  .type(java.lang.String)
     .build();
 ```
@@ -41,9 +39,8 @@ DataDatabricksNotificationDestinations.Builder.create(Construct scope, java.lang
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.Initializer.parameter.displayNameContains">displayNameContains</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations#display_name_contains DataDatabricksNotificationDestinations#display_name_contains}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.Initializer.parameter.notificationDestinations">notificationDestinations</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinations">DataDatabricksNotificationDestinationsNotificationDestinations</a>></code> | notification_destinations block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations#type DataDatabricksNotificationDestinations#type}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.Initializer.parameter.displayNameContains">displayNameContains</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations#display_name_contains DataDatabricksNotificationDestinations#display_name_contains}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations#type DataDatabricksNotificationDestinations#type}. |
 
 ---
 
@@ -111,17 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations#display_name_contains DataDatabricksNotificationDestinations#display_name_contains}.
-
----
-
-##### `notificationDestinations`<sup>Optional</sup> <a name="notificationDestinations" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.Initializer.parameter.notificationDestinations"></a>
-
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinations">DataDatabricksNotificationDestinationsNotificationDestinations</a>>
-
-notification_destinations block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations#notification_destinations DataDatabricksNotificationDestinations#notification_destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations#display_name_contains DataDatabricksNotificationDestinations#display_name_contains}.
 
 ---
 
@@ -129,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations#type DataDatabricksNotificationDestinations#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations#type DataDatabricksNotificationDestinations#type}.
 
 ---
 
@@ -154,9 +141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.putNotificationDestinations">putNotificationDestinations</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.resetDisplayNameContains">resetDisplayNameContains</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.resetNotificationDestinations">resetNotificationDestinations</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.resetType">resetType</a></code> | *No description.* |
 
 ---
@@ -353,28 +338,10 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 
 ---
 
-##### `putNotificationDestinations` <a name="putNotificationDestinations" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.putNotificationDestinations"></a>
-
-```java
-public void putNotificationDestinations(IResolvable OR java.util.List<DataDatabricksNotificationDestinationsNotificationDestinations> value)
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.putNotificationDestinations.parameter.value"></a>
-
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinations">DataDatabricksNotificationDestinationsNotificationDestinations</a>>
-
----
-
 ##### `resetDisplayNameContains` <a name="resetDisplayNameContains" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.resetDisplayNameContains"></a>
 
 ```java
 public void resetDisplayNameContains()
-```
-
-##### `resetNotificationDestinations` <a name="resetNotificationDestinations" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.resetNotificationDestinations"></a>
-
-```java
-public void resetNotificationDestinations()
 ```
 
 ##### `resetType` <a name="resetType" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.resetType"></a>
@@ -486,7 +453,7 @@ The construct id used in the generated config for the DataDatabricksNotification
 
 The id of the existing DataDatabricksNotificationDestinations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -516,7 +483,6 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.property.notificationDestinations">notificationDestinations</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinationsList">DataDatabricksNotificationDestinationsNotificationDestinationsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.property.displayNameContainsInput">displayNameContainsInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.property.notificationDestinationsInput">notificationDestinationsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinations">DataDatabricksNotificationDestinationsNotificationDestinations</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.property.displayNameContains">displayNameContains</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -665,16 +631,6 @@ public java.lang.String getDisplayNameContainsInput();
 
 ---
 
-##### `notificationDestinationsInput`<sup>Optional</sup> <a name="notificationDestinationsInput" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.property.notificationDestinationsInput"></a>
-
-```java
-public java.lang.Object getNotificationDestinationsInput();
-```
-
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinations">DataDatabricksNotificationDestinationsNotificationDestinations</a>>
-
----
-
 ##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.property.typeInput"></a>
 
 ```java
@@ -745,8 +701,6 @@ DataDatabricksNotificationDestinationsConfig.builder()
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
 //  .displayNameContains(java.lang.String)
-//  .notificationDestinations(IResolvable)
-//  .notificationDestinations(java.util.List<DataDatabricksNotificationDestinationsNotificationDestinations>)
 //  .type(java.lang.String)
     .build();
 ```
@@ -762,9 +716,8 @@ DataDatabricksNotificationDestinationsConfig.builder()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsConfig.property.displayNameContains">displayNameContains</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations#display_name_contains DataDatabricksNotificationDestinations#display_name_contains}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsConfig.property.notificationDestinations">notificationDestinations</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinations">DataDatabricksNotificationDestinationsNotificationDestinations</a>></code> | notification_destinations block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsConfig.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations#type DataDatabricksNotificationDestinations#type}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsConfig.property.displayNameContains">displayNameContains</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations#display_name_contains DataDatabricksNotificationDestinations#display_name_contains}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsConfig.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations#type DataDatabricksNotificationDestinations#type}. |
 
 ---
 
@@ -846,21 +799,7 @@ public java.lang.String getDisplayNameContains();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations#display_name_contains DataDatabricksNotificationDestinations#display_name_contains}.
-
----
-
-##### `notificationDestinations`<sup>Optional</sup> <a name="notificationDestinations" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsConfig.property.notificationDestinations"></a>
-
-```java
-public java.lang.Object getNotificationDestinations();
-```
-
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinations">DataDatabricksNotificationDestinationsNotificationDestinations</a>>
-
-notification_destinations block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations#notification_destinations DataDatabricksNotificationDestinations#notification_destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations#display_name_contains DataDatabricksNotificationDestinations#display_name_contains}.
 
 ---
 
@@ -872,7 +811,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations#type DataDatabricksNotificationDestinations#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations#type DataDatabricksNotificationDestinations#type}.
 
 ---
 
@@ -894,9 +833,9 @@ DataDatabricksNotificationDestinationsNotificationDestinations.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinations.property.destinationType">destinationType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations#destination_type DataDatabricksNotificationDestinations#destination_type}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinations.property.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations#display_name DataDatabricksNotificationDestinations#display_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinations.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations#id DataDatabricksNotificationDestinations#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinations.property.destinationType">destinationType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations#destination_type DataDatabricksNotificationDestinations#destination_type}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinations.property.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations#display_name DataDatabricksNotificationDestinations#display_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinations.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations#id DataDatabricksNotificationDestinations#id}. |
 
 ---
 
@@ -908,7 +847,7 @@ public java.lang.String getDestinationType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations#destination_type DataDatabricksNotificationDestinations#destination_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations#destination_type DataDatabricksNotificationDestinations#destination_type}.
 
 ---
 
@@ -920,7 +859,7 @@ public java.lang.String getDisplayName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations#display_name DataDatabricksNotificationDestinations#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations#display_name DataDatabricksNotificationDestinations#display_name}.
 
 ---
 
@@ -932,7 +871,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations#id DataDatabricksNotificationDestinations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations#id DataDatabricksNotificationDestinations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1356,7 +1295,7 @@ public void resetId()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinationsOutputReference.property.destinationType">destinationType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinationsOutputReference.property.displayName">displayName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinationsOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinationsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinations">DataDatabricksNotificationDestinationsNotificationDestinations</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinationsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinations">DataDatabricksNotificationDestinationsNotificationDestinations</a></code> | *No description.* |
 
 ---
 
@@ -1447,10 +1386,10 @@ public java.lang.String getId();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinationsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public DataDatabricksNotificationDestinationsNotificationDestinations getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinations">DataDatabricksNotificationDestinationsNotificationDestinations</a>
+- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinations">DataDatabricksNotificationDestinationsNotificationDestinations</a>
 
 ---
 

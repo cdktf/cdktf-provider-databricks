@@ -6,6 +6,7 @@ The following submodules are available:
 
 - [accessControlRuleSet](./accessControlRuleSet.typescript.md)
 - [alert](./alert.typescript.md)
+- [app](./app.typescript.md)
 - [artifactAllowlist](./artifactAllowlist.typescript.md)
 - [automaticClusterUpdateWorkspaceSetting](./automaticClusterUpdateWorkspaceSetting.typescript.md)
 - [awsS3Mount](./awsS3Mount.typescript.md)
@@ -22,6 +23,8 @@ The following submodules are available:
 - [credential](./credential.typescript.md)
 - [customAppIntegration](./customAppIntegration.typescript.md)
 - [dashboard](./dashboard.typescript.md)
+- [dataDatabricksApp](./dataDatabricksApp.typescript.md)
+- [dataDatabricksApps](./dataDatabricksApps.typescript.md)
 - [dataDatabricksAwsAssumeRolePolicy](./dataDatabricksAwsAssumeRolePolicy.typescript.md)
 - [dataDatabricksAwsBucketPolicy](./dataDatabricksAwsBucketPolicy.typescript.md)
 - [dataDatabricksAwsCrossaccountPolicy](./dataDatabricksAwsCrossaccountPolicy.typescript.md)

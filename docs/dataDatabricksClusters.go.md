@@ -4,12 +4,12 @@
 
 ### DataDatabricksClusters <a name="DataDatabricksClusters" id="@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClusters"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/clusters databricks_clusters}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/clusters databricks_clusters}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClusters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusters"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusters"
 
 datadatabricksclusters.NewDataDatabricksClusters(scope Construct, id *string, config DataDatabricksClustersConfig) DataDatabricksClusters
 ```
@@ -317,7 +317,7 @@ func ResetIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClusters.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusters"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusters"
 
 datadatabricksclusters.DataDatabricksClusters_IsConstruct(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClusters.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusters"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusters"
 
 datadatabricksclusters.DataDatabricksClusters_IsTerraformElement(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ datadatabricksclusters.DataDatabricksClusters_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClusters.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusters"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusters"
 
 datadatabricksclusters.DataDatabricksClusters_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ datadatabricksclusters.DataDatabricksClusters_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClusters.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusters"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusters"
 
 datadatabricksclusters.DataDatabricksClusters_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -406,7 +406,7 @@ The construct id used in the generated config for the DataDatabricksClusters to 
 
 The id of the existing DataDatabricksClusters that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/clusters#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/clusters#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -672,7 +672,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClustersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusters"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusters"
 
 &datadatabricksclusters.DataDatabricksClustersConfig {
 	Connection: interface{},
@@ -683,7 +683,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabri
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	ClusterNameContains: *string,
-	FilterBy: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksClusters.DataDatabricksClustersFilterBy,
+	FilterBy: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksClusters.DataDatabricksClustersFilterBy,
 	Id: *string,
 	Ids: *[]*string,
 }
@@ -700,10 +700,10 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabri
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClustersConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClustersConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClustersConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClustersConfig.property.clusterNameContains">ClusterNameContains</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/clusters#cluster_name_contains DataDatabricksClusters#cluster_name_contains}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClustersConfig.property.clusterNameContains">ClusterNameContains</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/clusters#cluster_name_contains DataDatabricksClusters#cluster_name_contains}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClustersConfig.property.filterBy">FilterBy</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClustersFilterBy">DataDatabricksClustersFilterBy</a></code> | filter_by block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClustersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/clusters#id DataDatabricksClusters#id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClustersConfig.property.ids">Ids</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/clusters#ids DataDatabricksClusters#ids}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClustersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/clusters#id DataDatabricksClusters#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClustersConfig.property.ids">Ids</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/clusters#ids DataDatabricksClusters#ids}. |
 
 ---
 
@@ -785,7 +785,7 @@ ClusterNameContains *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/clusters#cluster_name_contains DataDatabricksClusters#cluster_name_contains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/clusters#cluster_name_contains DataDatabricksClusters#cluster_name_contains}.
 
 ---
 
@@ -799,7 +799,7 @@ FilterBy DataDatabricksClustersFilterBy
 
 filter_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/clusters#filter_by DataDatabricksClusters#filter_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/clusters#filter_by DataDatabricksClusters#filter_by}
 
 ---
 
@@ -811,7 +811,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/clusters#id DataDatabricksClusters#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/clusters#id DataDatabricksClusters#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -826,7 +826,7 @@ Ids *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/clusters#ids DataDatabricksClusters#ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/clusters#ids DataDatabricksClusters#ids}.
 
 ---
 
@@ -835,7 +835,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClustersFilterBy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusters"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusters"
 
 &datadatabricksclusters.DataDatabricksClustersFilterBy {
 	ClusterSources: *[]*string,
@@ -849,10 +849,10 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClustersFilterBy.property.clusterSources">ClusterSources</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/clusters#cluster_sources DataDatabricksClusters#cluster_sources}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClustersFilterBy.property.clusterStates">ClusterStates</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/clusters#cluster_states DataDatabricksClusters#cluster_states}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClustersFilterBy.property.isPinned">IsPinned</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/clusters#is_pinned DataDatabricksClusters#is_pinned}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClustersFilterBy.property.policyId">PolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/clusters#policy_id DataDatabricksClusters#policy_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClustersFilterBy.property.clusterSources">ClusterSources</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/clusters#cluster_sources DataDatabricksClusters#cluster_sources}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClustersFilterBy.property.clusterStates">ClusterStates</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/clusters#cluster_states DataDatabricksClusters#cluster_states}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClustersFilterBy.property.isPinned">IsPinned</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/clusters#is_pinned DataDatabricksClusters#is_pinned}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClustersFilterBy.property.policyId">PolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/clusters#policy_id DataDatabricksClusters#policy_id}. |
 
 ---
 
@@ -864,7 +864,7 @@ ClusterSources *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/clusters#cluster_sources DataDatabricksClusters#cluster_sources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/clusters#cluster_sources DataDatabricksClusters#cluster_sources}.
 
 ---
 
@@ -876,7 +876,7 @@ ClusterStates *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/clusters#cluster_states DataDatabricksClusters#cluster_states}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/clusters#cluster_states DataDatabricksClusters#cluster_states}.
 
 ---
 
@@ -888,7 +888,7 @@ IsPinned interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/clusters#is_pinned DataDatabricksClusters#is_pinned}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/clusters#is_pinned DataDatabricksClusters#is_pinned}.
 
 ---
 
@@ -900,7 +900,7 @@ PolicyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/clusters#policy_id DataDatabricksClusters#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/clusters#policy_id DataDatabricksClusters#policy_id}.
 
 ---
 
@@ -911,7 +911,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksClusters.DataDatabricksClustersFilterByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksclusters"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksclusters"
 
 datadatabricksclusters.NewDataDatabricksClustersFilterByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClustersFilterByOutputReference
 ```

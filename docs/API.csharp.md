@@ -6,6 +6,7 @@ The following submodules are available:
 
 - [accessControlRuleSet](./accessControlRuleSet.csharp.md)
 - [alert](./alert.csharp.md)
+- [app](./app.csharp.md)
 - [artifactAllowlist](./artifactAllowlist.csharp.md)
 - [automaticClusterUpdateWorkspaceSetting](./automaticClusterUpdateWorkspaceSetting.csharp.md)
 - [awsS3Mount](./awsS3Mount.csharp.md)
@@ -22,6 +23,8 @@ The following submodules are available:
 - [credential](./credential.csharp.md)
 - [customAppIntegration](./customAppIntegration.csharp.md)
 - [dashboard](./dashboard.csharp.md)
+- [dataDatabricksApp](./dataDatabricksApp.csharp.md)
+- [dataDatabricksApps](./dataDatabricksApps.csharp.md)
 - [dataDatabricksAwsAssumeRolePolicy](./dataDatabricksAwsAssumeRolePolicy.csharp.md)
 - [dataDatabricksAwsBucketPolicy](./dataDatabricksAwsBucketPolicy.csharp.md)
 - [dataDatabricksAwsCrossaccountPolicy](./dataDatabricksAwsCrossaccountPolicy.csharp.md)

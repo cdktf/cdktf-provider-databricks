@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions
+// https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,23 +8,21 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksRegisteredModelVersionsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions#full_name DataDatabricksRegisteredModelVersions#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions#full_name DataDatabricksRegisteredModelVersions#full_name}
   */
   readonly fullName: string;
   /**
-  * model_versions block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions#model_versions DataDatabricksRegisteredModelVersions#model_versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions#model_versions DataDatabricksRegisteredModelVersions#model_versions}
   */
   readonly modelVersions?: DataDatabricksRegisteredModelVersionsModelVersions[] | cdktf.IResolvable;
 }
 export interface DataDatabricksRegisteredModelVersionsModelVersionsAliases {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions#alias_name DataDatabricksRegisteredModelVersions#alias_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions#alias_name DataDatabricksRegisteredModelVersions#alias_name}
   */
   readonly aliasName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions#version_num DataDatabricksRegisteredModelVersions#version_num}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions#version_num DataDatabricksRegisteredModelVersions#version_num}
   */
   readonly versionNum?: number;
 }
@@ -120,7 +113,7 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutputRefe
     }
   }
 
-  // alias_name - computed: false, optional: true, required: false
+  // alias_name - computed: true, optional: true, required: false
   private _aliasName?: string; 
   public get aliasName() {
     return this.getStringAttribute('alias_name');
@@ -136,7 +129,7 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutputRefe
     return this._aliasName;
   }
 
-  // version_num - computed: false, optional: true, required: false
+  // version_num - computed: true, optional: true, required: false
   private _versionNum?: number; 
   public get versionNum() {
     return this.getNumberAttribute('version_num');
@@ -174,7 +167,7 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsAliasesList exten
 }
 export interface DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesFunction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions#function_full_name DataDatabricksRegisteredModelVersions#function_full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions#function_full_name DataDatabricksRegisteredModelVersions#function_full_name}
   */
   readonly functionFullName: string;
 }
@@ -252,7 +245,7 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDepen
     }
   }
 
-  // function_full_name - computed: false, optional: false, required: true
+  // function_full_name - computed: true, optional: false, required: true
   private _functionFullName?: string; 
   public get functionFullName() {
     return this.getStringAttribute('function_full_name');
@@ -287,7 +280,7 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDepen
 }
 export interface DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesTable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions#table_full_name DataDatabricksRegisteredModelVersions#table_full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions#table_full_name DataDatabricksRegisteredModelVersions#table_full_name}
   */
   readonly tableFullName: string;
 }
@@ -365,7 +358,7 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDepen
     }
   }
 
-  // table_full_name - computed: false, optional: false, required: true
+  // table_full_name - computed: true, optional: false, required: true
   private _tableFullName?: string; 
   public get tableFullName() {
     return this.getStringAttribute('table_full_name');
@@ -400,15 +393,11 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDepen
 }
 export interface DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependencies {
   /**
-  * function block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions#function DataDatabricksRegisteredModelVersions#function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions#function DataDatabricksRegisteredModelVersions#function}
   */
   readonly function?: DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesFunction[] | cdktf.IResolvable;
   /**
-  * table block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions#table DataDatabricksRegisteredModelVersions#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions#table DataDatabricksRegisteredModelVersions#table}
   */
   readonly table?: DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesTable[] | cdktf.IResolvable;
 }
@@ -419,8 +408,8 @@ export function dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDe
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    function: cdktf.listMapper(dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesFunctionToTerraform, true)(struct!.function),
-    table: cdktf.listMapper(dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesTableToTerraform, true)(struct!.table),
+    function: cdktf.listMapper(dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesFunctionToTerraform, false)(struct!.function),
+    table: cdktf.listMapper(dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesTableToTerraform, false)(struct!.table),
   }
 }
 
@@ -432,13 +421,13 @@ export function dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDe
   }
   const attrs = {
     function: {
-      value: cdktf.listMapperHcl(dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesFunctionToHclTerraform, true)(struct!.function),
+      value: cdktf.listMapperHcl(dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesFunctionToHclTerraform, false)(struct!.function),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesFunctionList",
     },
     table: {
-      value: cdktf.listMapperHcl(dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesTableToHclTerraform, true)(struct!.table),
+      value: cdktf.listMapperHcl(dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesTableToHclTerraform, false)(struct!.table),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesTableList",
@@ -499,7 +488,7 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDepen
     }
   }
 
-  // function - computed: false, optional: true, required: false
+  // function - computed: true, optional: true, required: false
   private _function = new DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesFunctionList(this, "function", false);
   public get function() {
     return this._function;
@@ -515,7 +504,7 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDepen
     return this._function.internalValue;
   }
 
-  // table - computed: false, optional: true, required: false
+  // table - computed: true, optional: true, required: false
   private _table = new DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesTableList(this, "table", false);
   public get table() {
     return this._table;
@@ -553,9 +542,7 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDepen
 }
 export interface DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependencies {
   /**
-  * dependencies block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions#dependencies DataDatabricksRegisteredModelVersions#dependencies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions#dependencies DataDatabricksRegisteredModelVersions#dependencies}
   */
   readonly dependencies?: DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependencies[] | cdktf.IResolvable;
 }
@@ -566,7 +553,7 @@ export function dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDe
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dependencies: cdktf.listMapper(dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesToTerraform, true)(struct!.dependencies),
+    dependencies: cdktf.listMapper(dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesToTerraform, false)(struct!.dependencies),
   }
 }
 
@@ -578,7 +565,7 @@ export function dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDe
   }
   const attrs = {
     dependencies: {
-      value: cdktf.listMapperHcl(dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesToHclTerraform, true)(struct!.dependencies),
+      value: cdktf.listMapperHcl(dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesToHclTerraform, false)(struct!.dependencies),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesList",
@@ -633,7 +620,7 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDepen
     }
   }
 
-  // dependencies - computed: false, optional: true, required: false
+  // dependencies - computed: true, optional: true, required: false
   private _dependencies = new DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesList(this, "dependencies", false);
   public get dependencies() {
     return this._dependencies;
@@ -671,88 +658,84 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDepen
 }
 export interface DataDatabricksRegisteredModelVersionsModelVersions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions#browse_only DataDatabricksRegisteredModelVersions#browse_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions#aliases DataDatabricksRegisteredModelVersions#aliases}
+  */
+  readonly aliases?: DataDatabricksRegisteredModelVersionsModelVersionsAliases[] | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions#browse_only DataDatabricksRegisteredModelVersions#browse_only}
   */
   readonly browseOnly?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions#catalog_name DataDatabricksRegisteredModelVersions#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions#catalog_name DataDatabricksRegisteredModelVersions#catalog_name}
   */
   readonly catalogName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions#comment DataDatabricksRegisteredModelVersions#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions#comment DataDatabricksRegisteredModelVersions#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions#created_at DataDatabricksRegisteredModelVersions#created_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions#created_at DataDatabricksRegisteredModelVersions#created_at}
   */
   readonly createdAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions#created_by DataDatabricksRegisteredModelVersions#created_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions#created_by DataDatabricksRegisteredModelVersions#created_by}
   */
   readonly createdBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions#id DataDatabricksRegisteredModelVersions#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions#id DataDatabricksRegisteredModelVersions#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions#metastore_id DataDatabricksRegisteredModelVersions#metastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions#metastore_id DataDatabricksRegisteredModelVersions#metastore_id}
   */
   readonly metastoreId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions#model_name DataDatabricksRegisteredModelVersions#model_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions#model_name DataDatabricksRegisteredModelVersions#model_name}
   */
   readonly modelName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions#run_id DataDatabricksRegisteredModelVersions#run_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions#model_version_dependencies DataDatabricksRegisteredModelVersions#model_version_dependencies}
+  */
+  readonly modelVersionDependencies?: DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependencies[] | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions#run_id DataDatabricksRegisteredModelVersions#run_id}
   */
   readonly runId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions#run_workspace_id DataDatabricksRegisteredModelVersions#run_workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions#run_workspace_id DataDatabricksRegisteredModelVersions#run_workspace_id}
   */
   readonly runWorkspaceId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions#schema_name DataDatabricksRegisteredModelVersions#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions#schema_name DataDatabricksRegisteredModelVersions#schema_name}
   */
   readonly schemaName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions#source DataDatabricksRegisteredModelVersions#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions#source DataDatabricksRegisteredModelVersions#source}
   */
   readonly source?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions#status DataDatabricksRegisteredModelVersions#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions#status DataDatabricksRegisteredModelVersions#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions#storage_location DataDatabricksRegisteredModelVersions#storage_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions#storage_location DataDatabricksRegisteredModelVersions#storage_location}
   */
   readonly storageLocation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions#updated_at DataDatabricksRegisteredModelVersions#updated_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions#updated_at DataDatabricksRegisteredModelVersions#updated_at}
   */
   readonly updatedAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions#updated_by DataDatabricksRegisteredModelVersions#updated_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions#updated_by DataDatabricksRegisteredModelVersions#updated_by}
   */
   readonly updatedBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions#version DataDatabricksRegisteredModelVersions#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions#version DataDatabricksRegisteredModelVersions#version}
   */
   readonly version?: number;
-  /**
-  * aliases block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions#aliases DataDatabricksRegisteredModelVersions#aliases}
-  */
-  readonly aliases?: DataDatabricksRegisteredModelVersionsModelVersionsAliases[] | cdktf.IResolvable;
-  /**
-  * model_version_dependencies block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions#model_version_dependencies DataDatabricksRegisteredModelVersions#model_version_dependencies}
-  */
-  readonly modelVersionDependencies?: DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependencies[] | cdktf.IResolvable;
 }
 
 export function dataDatabricksRegisteredModelVersionsModelVersionsToTerraform(struct?: DataDatabricksRegisteredModelVersionsModelVersions | cdktf.IResolvable): any {
@@ -761,6 +744,7 @@ export function dataDatabricksRegisteredModelVersionsModelVersionsToTerraform(st
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    aliases: cdktf.listMapper(dataDatabricksRegisteredModelVersionsModelVersionsAliasesToTerraform, false)(struct!.aliases),
     browse_only: cdktf.booleanToTerraform(struct!.browseOnly),
     catalog_name: cdktf.stringToTerraform(struct!.catalogName),
     comment: cdktf.stringToTerraform(struct!.comment),
@@ -769,6 +753,7 @@ export function dataDatabricksRegisteredModelVersionsModelVersionsToTerraform(st
     id: cdktf.stringToTerraform(struct!.id),
     metastore_id: cdktf.stringToTerraform(struct!.metastoreId),
     model_name: cdktf.stringToTerraform(struct!.modelName),
+    model_version_dependencies: cdktf.listMapper(dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesToTerraform, false)(struct!.modelVersionDependencies),
     run_id: cdktf.stringToTerraform(struct!.runId),
     run_workspace_id: cdktf.numberToTerraform(struct!.runWorkspaceId),
     schema_name: cdktf.stringToTerraform(struct!.schemaName),
@@ -778,8 +763,6 @@ export function dataDatabricksRegisteredModelVersionsModelVersionsToTerraform(st
     updated_at: cdktf.numberToTerraform(struct!.updatedAt),
     updated_by: cdktf.stringToTerraform(struct!.updatedBy),
     version: cdktf.numberToTerraform(struct!.version),
-    aliases: cdktf.listMapper(dataDatabricksRegisteredModelVersionsModelVersionsAliasesToTerraform, true)(struct!.aliases),
-    model_version_dependencies: cdktf.listMapper(dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesToTerraform, true)(struct!.modelVersionDependencies),
   }
 }
 
@@ -790,6 +773,12 @@ export function dataDatabricksRegisteredModelVersionsModelVersionsToHclTerraform
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    aliases: {
+      value: cdktf.listMapperHcl(dataDatabricksRegisteredModelVersionsModelVersionsAliasesToHclTerraform, false)(struct!.aliases),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksRegisteredModelVersionsModelVersionsAliasesList",
+    },
     browse_only: {
       value: cdktf.booleanToHclTerraform(struct!.browseOnly),
       isBlock: false,
@@ -837,6 +826,12 @@ export function dataDatabricksRegisteredModelVersionsModelVersionsToHclTerraform
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    model_version_dependencies: {
+      value: cdktf.listMapperHcl(dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesToHclTerraform, false)(struct!.modelVersionDependencies),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesList",
     },
     run_id: {
       value: cdktf.stringToHclTerraform(struct!.runId),
@@ -892,18 +887,6 @@ export function dataDatabricksRegisteredModelVersionsModelVersionsToHclTerraform
       type: "simple",
       storageClassType: "number",
     },
-    aliases: {
-      value: cdktf.listMapperHcl(dataDatabricksRegisteredModelVersionsModelVersionsAliasesToHclTerraform, true)(struct!.aliases),
-      isBlock: true,
-      type: "list",
-      storageClassType: "DataDatabricksRegisteredModelVersionsModelVersionsAliasesList",
-    },
-    model_version_dependencies: {
-      value: cdktf.listMapperHcl(dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesToHclTerraform, true)(struct!.modelVersionDependencies),
-      isBlock: true,
-      type: "list",
-      storageClassType: "DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesList",
-    },
   };
 
   // remove undefined attributes
@@ -930,6 +913,10 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsOutputReference e
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._aliases?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.aliases = this._aliases?.internalValue;
+    }
     if (this._browseOnly !== undefined) {
       hasAnyValues = true;
       internalValueResult.browseOnly = this._browseOnly;
@@ -961,6 +948,10 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsOutputReference e
     if (this._modelName !== undefined) {
       hasAnyValues = true;
       internalValueResult.modelName = this._modelName;
+    }
+    if (this._modelVersionDependencies?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.modelVersionDependencies = this._modelVersionDependencies?.internalValue;
     }
     if (this._runId !== undefined) {
       hasAnyValues = true;
@@ -998,14 +989,6 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsOutputReference e
       hasAnyValues = true;
       internalValueResult.version = this._version;
     }
-    if (this._aliases?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.aliases = this._aliases?.internalValue;
-    }
-    if (this._modelVersionDependencies?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.modelVersionDependencies = this._modelVersionDependencies?.internalValue;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -1013,6 +996,7 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsOutputReference e
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._aliases.internalValue = undefined;
       this._browseOnly = undefined;
       this._catalogName = undefined;
       this._comment = undefined;
@@ -1021,6 +1005,7 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsOutputReference e
       this._id = undefined;
       this._metastoreId = undefined;
       this._modelName = undefined;
+      this._modelVersionDependencies.internalValue = undefined;
       this._runId = undefined;
       this._runWorkspaceId = undefined;
       this._schemaName = undefined;
@@ -1030,8 +1015,6 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsOutputReference e
       this._updatedAt = undefined;
       this._updatedBy = undefined;
       this._version = undefined;
-      this._aliases.internalValue = undefined;
-      this._modelVersionDependencies.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -1040,6 +1023,7 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsOutputReference e
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._aliases.internalValue = value.aliases;
       this._browseOnly = value.browseOnly;
       this._catalogName = value.catalogName;
       this._comment = value.comment;
@@ -1048,6 +1032,7 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsOutputReference e
       this._id = value.id;
       this._metastoreId = value.metastoreId;
       this._modelName = value.modelName;
+      this._modelVersionDependencies.internalValue = value.modelVersionDependencies;
       this._runId = value.runId;
       this._runWorkspaceId = value.runWorkspaceId;
       this._schemaName = value.schemaName;
@@ -1057,284 +1042,10 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsOutputReference e
       this._updatedAt = value.updatedAt;
       this._updatedBy = value.updatedBy;
       this._version = value.version;
-      this._aliases.internalValue = value.aliases;
-      this._modelVersionDependencies.internalValue = value.modelVersionDependencies;
     }
   }
 
-  // browse_only - computed: false, optional: true, required: false
-  private _browseOnly?: boolean | cdktf.IResolvable; 
-  public get browseOnly() {
-    return this.getBooleanAttribute('browse_only');
-  }
-  public set browseOnly(value: boolean | cdktf.IResolvable) {
-    this._browseOnly = value;
-  }
-  public resetBrowseOnly() {
-    this._browseOnly = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get browseOnlyInput() {
-    return this._browseOnly;
-  }
-
-  // catalog_name - computed: false, optional: true, required: false
-  private _catalogName?: string; 
-  public get catalogName() {
-    return this.getStringAttribute('catalog_name');
-  }
-  public set catalogName(value: string) {
-    this._catalogName = value;
-  }
-  public resetCatalogName() {
-    this._catalogName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get catalogNameInput() {
-    return this._catalogName;
-  }
-
-  // comment - computed: false, optional: true, required: false
-  private _comment?: string; 
-  public get comment() {
-    return this.getStringAttribute('comment');
-  }
-  public set comment(value: string) {
-    this._comment = value;
-  }
-  public resetComment() {
-    this._comment = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get commentInput() {
-    return this._comment;
-  }
-
-  // created_at - computed: false, optional: true, required: false
-  private _createdAt?: number; 
-  public get createdAt() {
-    return this.getNumberAttribute('created_at');
-  }
-  public set createdAt(value: number) {
-    this._createdAt = value;
-  }
-  public resetCreatedAt() {
-    this._createdAt = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get createdAtInput() {
-    return this._createdAt;
-  }
-
-  // created_by - computed: false, optional: true, required: false
-  private _createdBy?: string; 
-  public get createdBy() {
-    return this.getStringAttribute('created_by');
-  }
-  public set createdBy(value: string) {
-    this._createdBy = value;
-  }
-  public resetCreatedBy() {
-    this._createdBy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get createdByInput() {
-    return this._createdBy;
-  }
-
-  // id - computed: false, optional: true, required: false
-  private _id?: string; 
-  public get id() {
-    return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
-  }
-
-  // metastore_id - computed: false, optional: true, required: false
-  private _metastoreId?: string; 
-  public get metastoreId() {
-    return this.getStringAttribute('metastore_id');
-  }
-  public set metastoreId(value: string) {
-    this._metastoreId = value;
-  }
-  public resetMetastoreId() {
-    this._metastoreId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get metastoreIdInput() {
-    return this._metastoreId;
-  }
-
-  // model_name - computed: false, optional: true, required: false
-  private _modelName?: string; 
-  public get modelName() {
-    return this.getStringAttribute('model_name');
-  }
-  public set modelName(value: string) {
-    this._modelName = value;
-  }
-  public resetModelName() {
-    this._modelName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get modelNameInput() {
-    return this._modelName;
-  }
-
-  // run_id - computed: false, optional: true, required: false
-  private _runId?: string; 
-  public get runId() {
-    return this.getStringAttribute('run_id');
-  }
-  public set runId(value: string) {
-    this._runId = value;
-  }
-  public resetRunId() {
-    this._runId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get runIdInput() {
-    return this._runId;
-  }
-
-  // run_workspace_id - computed: false, optional: true, required: false
-  private _runWorkspaceId?: number; 
-  public get runWorkspaceId() {
-    return this.getNumberAttribute('run_workspace_id');
-  }
-  public set runWorkspaceId(value: number) {
-    this._runWorkspaceId = value;
-  }
-  public resetRunWorkspaceId() {
-    this._runWorkspaceId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get runWorkspaceIdInput() {
-    return this._runWorkspaceId;
-  }
-
-  // schema_name - computed: false, optional: true, required: false
-  private _schemaName?: string; 
-  public get schemaName() {
-    return this.getStringAttribute('schema_name');
-  }
-  public set schemaName(value: string) {
-    this._schemaName = value;
-  }
-  public resetSchemaName() {
-    this._schemaName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get schemaNameInput() {
-    return this._schemaName;
-  }
-
-  // source - computed: false, optional: true, required: false
-  private _source?: string; 
-  public get source() {
-    return this.getStringAttribute('source');
-  }
-  public set source(value: string) {
-    this._source = value;
-  }
-  public resetSource() {
-    this._source = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sourceInput() {
-    return this._source;
-  }
-
-  // status - computed: false, optional: true, required: false
-  private _status?: string; 
-  public get status() {
-    return this.getStringAttribute('status');
-  }
-  public set status(value: string) {
-    this._status = value;
-  }
-  public resetStatus() {
-    this._status = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get statusInput() {
-    return this._status;
-  }
-
-  // storage_location - computed: false, optional: true, required: false
-  private _storageLocation?: string; 
-  public get storageLocation() {
-    return this.getStringAttribute('storage_location');
-  }
-  public set storageLocation(value: string) {
-    this._storageLocation = value;
-  }
-  public resetStorageLocation() {
-    this._storageLocation = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get storageLocationInput() {
-    return this._storageLocation;
-  }
-
-  // updated_at - computed: false, optional: true, required: false
-  private _updatedAt?: number; 
-  public get updatedAt() {
-    return this.getNumberAttribute('updated_at');
-  }
-  public set updatedAt(value: number) {
-    this._updatedAt = value;
-  }
-  public resetUpdatedAt() {
-    this._updatedAt = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get updatedAtInput() {
-    return this._updatedAt;
-  }
-
-  // updated_by - computed: false, optional: true, required: false
-  private _updatedBy?: string; 
-  public get updatedBy() {
-    return this.getStringAttribute('updated_by');
-  }
-  public set updatedBy(value: string) {
-    this._updatedBy = value;
-  }
-  public resetUpdatedBy() {
-    this._updatedBy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get updatedByInput() {
-    return this._updatedBy;
-  }
-
-  // version - computed: false, optional: true, required: false
-  private _version?: number; 
-  public get version() {
-    return this.getNumberAttribute('version');
-  }
-  public set version(value: number) {
-    this._version = value;
-  }
-  public resetVersion() {
-    this._version = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get versionInput() {
-    return this._version;
-  }
-
-  // aliases - computed: false, optional: true, required: false
+  // aliases - computed: true, optional: true, required: false
   private _aliases = new DataDatabricksRegisteredModelVersionsModelVersionsAliasesList(this, "aliases", false);
   public get aliases() {
     return this._aliases;
@@ -1350,7 +1061,135 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsOutputReference e
     return this._aliases.internalValue;
   }
 
-  // model_version_dependencies - computed: false, optional: true, required: false
+  // browse_only - computed: true, optional: true, required: false
+  private _browseOnly?: boolean | cdktf.IResolvable; 
+  public get browseOnly() {
+    return this.getBooleanAttribute('browse_only');
+  }
+  public set browseOnly(value: boolean | cdktf.IResolvable) {
+    this._browseOnly = value;
+  }
+  public resetBrowseOnly() {
+    this._browseOnly = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get browseOnlyInput() {
+    return this._browseOnly;
+  }
+
+  // catalog_name - computed: true, optional: true, required: false
+  private _catalogName?: string; 
+  public get catalogName() {
+    return this.getStringAttribute('catalog_name');
+  }
+  public set catalogName(value: string) {
+    this._catalogName = value;
+  }
+  public resetCatalogName() {
+    this._catalogName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get catalogNameInput() {
+    return this._catalogName;
+  }
+
+  // comment - computed: true, optional: true, required: false
+  private _comment?: string; 
+  public get comment() {
+    return this.getStringAttribute('comment');
+  }
+  public set comment(value: string) {
+    this._comment = value;
+  }
+  public resetComment() {
+    this._comment = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commentInput() {
+    return this._comment;
+  }
+
+  // created_at - computed: true, optional: true, required: false
+  private _createdAt?: number; 
+  public get createdAt() {
+    return this.getNumberAttribute('created_at');
+  }
+  public set createdAt(value: number) {
+    this._createdAt = value;
+  }
+  public resetCreatedAt() {
+    this._createdAt = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createdAtInput() {
+    return this._createdAt;
+  }
+
+  // created_by - computed: true, optional: true, required: false
+  private _createdBy?: string; 
+  public get createdBy() {
+    return this.getStringAttribute('created_by');
+  }
+  public set createdBy(value: string) {
+    this._createdBy = value;
+  }
+  public resetCreatedBy() {
+    this._createdBy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createdByInput() {
+    return this._createdBy;
+  }
+
+  // id - computed: true, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // metastore_id - computed: true, optional: true, required: false
+  private _metastoreId?: string; 
+  public get metastoreId() {
+    return this.getStringAttribute('metastore_id');
+  }
+  public set metastoreId(value: string) {
+    this._metastoreId = value;
+  }
+  public resetMetastoreId() {
+    this._metastoreId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metastoreIdInput() {
+    return this._metastoreId;
+  }
+
+  // model_name - computed: true, optional: true, required: false
+  private _modelName?: string; 
+  public get modelName() {
+    return this.getStringAttribute('model_name');
+  }
+  public set modelName(value: string) {
+    this._modelName = value;
+  }
+  public resetModelName() {
+    this._modelName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modelNameInput() {
+    return this._modelName;
+  }
+
+  // model_version_dependencies - computed: true, optional: true, required: false
   private _modelVersionDependencies = new DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesList(this, "model_version_dependencies", false);
   public get modelVersionDependencies() {
     return this._modelVersionDependencies;
@@ -1364,6 +1203,150 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsOutputReference e
   // Temporarily expose input value. Use with caution.
   public get modelVersionDependenciesInput() {
     return this._modelVersionDependencies.internalValue;
+  }
+
+  // run_id - computed: true, optional: true, required: false
+  private _runId?: string; 
+  public get runId() {
+    return this.getStringAttribute('run_id');
+  }
+  public set runId(value: string) {
+    this._runId = value;
+  }
+  public resetRunId() {
+    this._runId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runIdInput() {
+    return this._runId;
+  }
+
+  // run_workspace_id - computed: true, optional: true, required: false
+  private _runWorkspaceId?: number; 
+  public get runWorkspaceId() {
+    return this.getNumberAttribute('run_workspace_id');
+  }
+  public set runWorkspaceId(value: number) {
+    this._runWorkspaceId = value;
+  }
+  public resetRunWorkspaceId() {
+    this._runWorkspaceId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runWorkspaceIdInput() {
+    return this._runWorkspaceId;
+  }
+
+  // schema_name - computed: true, optional: true, required: false
+  private _schemaName?: string; 
+  public get schemaName() {
+    return this.getStringAttribute('schema_name');
+  }
+  public set schemaName(value: string) {
+    this._schemaName = value;
+  }
+  public resetSchemaName() {
+    this._schemaName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaNameInput() {
+    return this._schemaName;
+  }
+
+  // source - computed: true, optional: true, required: false
+  private _source?: string; 
+  public get source() {
+    return this.getStringAttribute('source');
+  }
+  public set source(value: string) {
+    this._source = value;
+  }
+  public resetSource() {
+    this._source = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceInput() {
+    return this._source;
+  }
+
+  // status - computed: true, optional: true, required: false
+  private _status?: string; 
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+  public set status(value: string) {
+    this._status = value;
+  }
+  public resetStatus() {
+    this._status = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusInput() {
+    return this._status;
+  }
+
+  // storage_location - computed: true, optional: true, required: false
+  private _storageLocation?: string; 
+  public get storageLocation() {
+    return this.getStringAttribute('storage_location');
+  }
+  public set storageLocation(value: string) {
+    this._storageLocation = value;
+  }
+  public resetStorageLocation() {
+    this._storageLocation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageLocationInput() {
+    return this._storageLocation;
+  }
+
+  // updated_at - computed: true, optional: true, required: false
+  private _updatedAt?: number; 
+  public get updatedAt() {
+    return this.getNumberAttribute('updated_at');
+  }
+  public set updatedAt(value: number) {
+    this._updatedAt = value;
+  }
+  public resetUpdatedAt() {
+    this._updatedAt = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updatedAtInput() {
+    return this._updatedAt;
+  }
+
+  // updated_by - computed: true, optional: true, required: false
+  private _updatedBy?: string; 
+  public get updatedBy() {
+    return this.getStringAttribute('updated_by');
+  }
+  public set updatedBy(value: string) {
+    this._updatedBy = value;
+  }
+  public resetUpdatedBy() {
+    this._updatedBy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updatedByInput() {
+    return this._updatedBy;
+  }
+
+  // version - computed: true, optional: true, required: false
+  private _version?: number; 
+  public get version() {
+    return this.getNumberAttribute('version');
+  }
+  public set version(value: number) {
+    this._version = value;
+  }
+  public resetVersion() {
+    this._version = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionInput() {
+    return this._version;
   }
 }
 
@@ -1388,7 +1371,7 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsList extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions databricks_registered_model_versions}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions databricks_registered_model_versions}
 */
 export class DataDatabricksRegisteredModelVersions extends cdktf.TerraformDataSource {
 
@@ -1404,7 +1387,7 @@ export class DataDatabricksRegisteredModelVersions extends cdktf.TerraformDataSo
   * Generates CDKTF code for importing a DataDatabricksRegisteredModelVersions resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksRegisteredModelVersions to import
-  * @param importFromId The id of the existing DataDatabricksRegisteredModelVersions that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksRegisteredModelVersions that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksRegisteredModelVersions to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1416,7 +1399,7 @@ export class DataDatabricksRegisteredModelVersions extends cdktf.TerraformDataSo
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/registered_model_versions databricks_registered_model_versions} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/registered_model_versions databricks_registered_model_versions} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1427,7 +1410,7 @@ export class DataDatabricksRegisteredModelVersions extends cdktf.TerraformDataSo
       terraformResourceType: 'databricks_registered_model_versions',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.60.0',
+        providerVersion: '1.61.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1459,7 +1442,7 @@ export class DataDatabricksRegisteredModelVersions extends cdktf.TerraformDataSo
     return this._fullName;
   }
 
-  // model_versions - computed: false, optional: true, required: false
+  // model_versions - computed: true, optional: true, required: false
   private _modelVersions = new DataDatabricksRegisteredModelVersionsModelVersionsList(this, "model_versions", false);
   public get modelVersions() {
     return this._modelVersions;
@@ -1482,7 +1465,7 @@ export class DataDatabricksRegisteredModelVersions extends cdktf.TerraformDataSo
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       full_name: cdktf.stringToTerraform(this._fullName),
-      model_versions: cdktf.listMapper(dataDatabricksRegisteredModelVersionsModelVersionsToTerraform, true)(this._modelVersions.internalValue),
+      model_versions: cdktf.listMapper(dataDatabricksRegisteredModelVersionsModelVersionsToTerraform, false)(this._modelVersions.internalValue),
     };
   }
 
@@ -1495,7 +1478,7 @@ export class DataDatabricksRegisteredModelVersions extends cdktf.TerraformDataSo
         storageClassType: "string",
       },
       model_versions: {
-        value: cdktf.listMapperHcl(dataDatabricksRegisteredModelVersionsModelVersionsToHclTerraform, true)(this._modelVersions.internalValue),
+        value: cdktf.listMapperHcl(dataDatabricksRegisteredModelVersionsModelVersionsToHclTerraform, false)(this._modelVersions.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataDatabricksRegisteredModelVersionsModelVersionsList",

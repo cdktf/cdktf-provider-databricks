@@ -4,12 +4,12 @@
 
 ### DataDatabricksNotificationDestinations <a name="DataDatabricksNotificationDestinations" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations databricks_notification_destinations}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations databricks_notification_destinations}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksnotificationdestinations"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksnotificationdestinations"
 
 datadatabricksnotificationdestinations.NewDataDatabricksNotificationDestinations(scope Construct, id *string, config DataDatabricksNotificationDestinationsConfig) DataDatabricksNotificationDestinations
 ```
@@ -67,9 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.putNotificationDestinations">PutNotificationDestinations</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.resetDisplayNameContains">ResetDisplayNameContains</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.resetNotificationDestinations">ResetNotificationDestinations</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.resetType">ResetType</a></code> | *No description.* |
 
 ---
@@ -266,28 +264,10 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
-##### `PutNotificationDestinations` <a name="PutNotificationDestinations" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.putNotificationDestinations"></a>
-
-```go
-func PutNotificationDestinations(value interface{})
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.putNotificationDestinations.parameter.value"></a>
-
-- *Type:* interface{}
-
----
-
 ##### `ResetDisplayNameContains` <a name="ResetDisplayNameContains" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.resetDisplayNameContains"></a>
 
 ```go
 func ResetDisplayNameContains()
-```
-
-##### `ResetNotificationDestinations` <a name="ResetNotificationDestinations" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.resetNotificationDestinations"></a>
-
-```go
-func ResetNotificationDestinations()
 ```
 
 ##### `ResetType` <a name="ResetType" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.resetType"></a>
@@ -310,7 +290,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksnotificationdestinations"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksnotificationdestinations"
 
 datadatabricksnotificationdestinations.DataDatabricksNotificationDestinations_IsConstruct(x interface{}) *bool
 ```
@@ -342,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksnotificationdestinations"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksnotificationdestinations"
 
 datadatabricksnotificationdestinations.DataDatabricksNotificationDestinations_IsTerraformElement(x interface{}) *bool
 ```
@@ -356,7 +336,7 @@ datadatabricksnotificationdestinations.DataDatabricksNotificationDestinations_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksnotificationdestinations"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksnotificationdestinations"
 
 datadatabricksnotificationdestinations.DataDatabricksNotificationDestinations_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -370,7 +350,7 @@ datadatabricksnotificationdestinations.DataDatabricksNotificationDestinations_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksnotificationdestinations"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksnotificationdestinations"
 
 datadatabricksnotificationdestinations.DataDatabricksNotificationDestinations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -399,7 +379,7 @@ The construct id used in the generated config for the DataDatabricksNotification
 
 The id of the existing DataDatabricksNotificationDestinations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -429,7 +409,6 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.property.notificationDestinations">NotificationDestinations</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinationsList">DataDatabricksNotificationDestinationsNotificationDestinationsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.property.displayNameContainsInput">DisplayNameContainsInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.property.notificationDestinationsInput">NotificationDestinationsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.property.displayNameContains">DisplayNameContains</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.property.type">Type</a></code> | <code>*string</code> | *No description.* |
@@ -578,16 +557,6 @@ func DisplayNameContainsInput() *string
 
 ---
 
-##### `NotificationDestinationsInput`<sup>Optional</sup> <a name="NotificationDestinationsInput" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.property.notificationDestinationsInput"></a>
-
-```go
-func NotificationDestinationsInput() interface{}
-```
-
-- *Type:* interface{}
-
----
-
 ##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.property.typeInput"></a>
 
 ```go
@@ -643,7 +612,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksnotificationdestinations"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksnotificationdestinations"
 
 &datadatabricksnotificationdestinations.DataDatabricksNotificationDestinationsConfig {
 	Connection: interface{},
@@ -654,7 +623,6 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabri
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	DisplayNameContains: *string,
-	NotificationDestinations: interface{},
 	Type: *string,
 }
 ```
@@ -670,9 +638,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabri
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsConfig.property.displayNameContains">DisplayNameContains</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations#display_name_contains DataDatabricksNotificationDestinations#display_name_contains}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsConfig.property.notificationDestinations">NotificationDestinations</a></code> | <code>interface{}</code> | notification_destinations block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations#type DataDatabricksNotificationDestinations#type}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsConfig.property.displayNameContains">DisplayNameContains</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations#display_name_contains DataDatabricksNotificationDestinations#display_name_contains}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations#type DataDatabricksNotificationDestinations#type}. |
 
 ---
 
@@ -754,21 +721,7 @@ DisplayNameContains *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations#display_name_contains DataDatabricksNotificationDestinations#display_name_contains}.
-
----
-
-##### `NotificationDestinations`<sup>Optional</sup> <a name="NotificationDestinations" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsConfig.property.notificationDestinations"></a>
-
-```go
-NotificationDestinations interface{}
-```
-
-- *Type:* interface{}
-
-notification_destinations block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations#notification_destinations DataDatabricksNotificationDestinations#notification_destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations#display_name_contains DataDatabricksNotificationDestinations#display_name_contains}.
 
 ---
 
@@ -780,7 +733,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations#type DataDatabricksNotificationDestinations#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations#type DataDatabricksNotificationDestinations#type}.
 
 ---
 
@@ -789,7 +742,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksnotificationdestinations"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksnotificationdestinations"
 
 &datadatabricksnotificationdestinations.DataDatabricksNotificationDestinationsNotificationDestinations {
 	DestinationType: *string,
@@ -802,9 +755,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinations.property.destinationType">DestinationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations#destination_type DataDatabricksNotificationDestinations#destination_type}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinations.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations#display_name DataDatabricksNotificationDestinations#display_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinations.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations#id DataDatabricksNotificationDestinations#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinations.property.destinationType">DestinationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations#destination_type DataDatabricksNotificationDestinations#destination_type}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinations.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations#display_name DataDatabricksNotificationDestinations#display_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinations.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations#id DataDatabricksNotificationDestinations#id}. |
 
 ---
 
@@ -816,7 +769,7 @@ DestinationType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations#destination_type DataDatabricksNotificationDestinations#destination_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations#destination_type DataDatabricksNotificationDestinations#destination_type}.
 
 ---
 
@@ -828,7 +781,7 @@ DisplayName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations#display_name DataDatabricksNotificationDestinations#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations#display_name DataDatabricksNotificationDestinations#display_name}.
 
 ---
 
@@ -840,7 +793,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/data-sources/notification_destinations#id DataDatabricksNotificationDestinations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/notification_destinations#id DataDatabricksNotificationDestinations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -854,7 +807,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksnotificationdestinations"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksnotificationdestinations"
 
 datadatabricksnotificationdestinations.NewDataDatabricksNotificationDestinationsNotificationDestinationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksNotificationDestinationsNotificationDestinationsList
 ```
@@ -1014,7 +967,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksnotificationdestinations"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksnotificationdestinations"
 
 datadatabricksnotificationdestinations.NewDataDatabricksNotificationDestinationsNotificationDestinationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksNotificationDestinationsNotificationDestinationsOutputReference
 ```
@@ -1264,7 +1217,7 @@ func ResetId()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinationsOutputReference.property.destinationType">DestinationType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinationsOutputReference.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinationsOutputReference.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinationsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinationsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinations">DataDatabricksNotificationDestinationsNotificationDestinations</a></code> | *No description.* |
 
 ---
 
@@ -1355,10 +1308,10 @@ func Id() *string
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinationsOutputReference.property.internalValue"></a>
 
 ```go
-func InternalValue() interface{}
+func InternalValue() DataDatabricksNotificationDestinationsNotificationDestinations
 ```
 
-- *Type:* interface{}
+- *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinations">DataDatabricksNotificationDestinationsNotificationDestinations</a>
 
 ---
 

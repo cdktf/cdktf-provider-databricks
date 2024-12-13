@@ -6,6 +6,7 @@ The following submodules are available:
 
 - [accessControlRuleSet](./accessControlRuleSet.python.md)
 - [alert](./alert.python.md)
+- [app](./app.python.md)
 - [artifactAllowlist](./artifactAllowlist.python.md)
 - [automaticClusterUpdateWorkspaceSetting](./automaticClusterUpdateWorkspaceSetting.python.md)
 - [awsS3Mount](./awsS3Mount.python.md)
@@ -22,6 +23,8 @@ The following submodules are available:
 - [credential](./credential.python.md)
 - [customAppIntegration](./customAppIntegration.python.md)
 - [dashboard](./dashboard.python.md)
+- [dataDatabricksApp](./dataDatabricksApp.python.md)
+- [dataDatabricksApps](./dataDatabricksApps.python.md)
 - [dataDatabricksAwsAssumeRolePolicy](./dataDatabricksAwsAssumeRolePolicy.python.md)
 - [dataDatabricksAwsBucketPolicy](./dataDatabricksAwsBucketPolicy.python.md)
 - [dataDatabricksAwsCrossaccountPolicy](./dataDatabricksAwsCrossaccountPolicy.python.md)

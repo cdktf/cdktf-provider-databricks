@@ -1,3 +1,3 @@
 # `databricks_recipient`
 
-Refer to the Terraform Registry for docs: [`databricks_recipient`](https://registry.terraform.io/providers/databricks/databricks/1.60.0/docs/resources/recipient).
+Refer to the Terraform Registry for docs: [`databricks_recipient`](https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/recipient).
