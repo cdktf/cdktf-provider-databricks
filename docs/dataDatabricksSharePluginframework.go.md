@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksSharePluginframework.DataDatabricksSharePluginframework.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickssharepluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickssharepluginframework"
 
 datadatabrickssharepluginframework.NewDataDatabricksSharePluginframework(scope Construct, id *string, config DataDatabricksSharePluginframeworkConfig) DataDatabricksSharePluginframework
 ```
@@ -359,7 +359,7 @@ func ResetUpdatedBy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksSharePluginframework.DataDatabricksSharePluginframework.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickssharepluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickssharepluginframework"
 
 datadatabrickssharepluginframework.DataDatabricksSharePluginframework_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksSharePluginframework.DataDatabricksSharePluginframework.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickssharepluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickssharepluginframework"
 
 datadatabrickssharepluginframework.DataDatabricksSharePluginframework_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ datadatabrickssharepluginframework.DataDatabricksSharePluginframework_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksSharePluginframework.DataDatabricksSharePluginframework.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickssharepluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickssharepluginframework"
 
 datadatabrickssharepluginframework.DataDatabricksSharePluginframework_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ datadatabrickssharepluginframework.DataDatabricksSharePluginframework_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksSharePluginframework.DataDatabricksSharePluginframework.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickssharepluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickssharepluginframework"
 
 datadatabrickssharepluginframework.DataDatabricksSharePluginframework_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -846,7 +846,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksSharePluginframework.DataDatabricksSharePluginframeworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickssharepluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickssharepluginframework"
 
 &datadatabrickssharepluginframework.DataDatabricksSharePluginframeworkConfig {
 	Connection: interface{},
@@ -1088,7 +1088,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksSharePluginframework.DataDatabricksSharePluginframeworkObject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickssharepluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickssharepluginframework"
 
 &datadatabrickssharepluginframework.DataDatabricksSharePluginframeworkObject {
 	Name: *string,
@@ -1344,7 +1344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksSharePluginframework.DataDatabricksSharePluginframeworkObjectPartition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickssharepluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickssharepluginframework"
 
 &datadatabrickssharepluginframework.DataDatabricksSharePluginframeworkObjectPartition {
 	Value: interface{},
@@ -1376,7 +1376,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksSharePluginframework.DataDatabricksSharePluginframeworkObjectPartitionValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickssharepluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickssharepluginframework"
 
 &datadatabrickssharepluginframework.DataDatabricksSharePluginframeworkObjectPartitionValue {
 	Name: *string,
@@ -1452,7 +1452,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksSharePluginframework.DataDatabricksSharePluginframeworkObjectList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickssharepluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickssharepluginframework"
 
 datadatabrickssharepluginframework.NewDataDatabricksSharePluginframeworkObjectList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksSharePluginframeworkObjectList
 ```
@@ -1612,7 +1612,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksSharePluginframework.DataDatabricksSharePluginframeworkObjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickssharepluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickssharepluginframework"
 
 datadatabrickssharepluginframework.NewDataDatabricksSharePluginframeworkObjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksSharePluginframeworkObjectOutputReference
 ```
@@ -2378,7 +2378,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksSharePluginframework.DataDatabricksSharePluginframeworkObjectPartitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickssharepluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickssharepluginframework"
 
 datadatabrickssharepluginframework.NewDataDatabricksSharePluginframeworkObjectPartitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksSharePluginframeworkObjectPartitionList
 ```
@@ -2538,7 +2538,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksSharePluginframework.DataDatabricksSharePluginframeworkObjectPartitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickssharepluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickssharepluginframework"
 
 datadatabrickssharepluginframework.NewDataDatabricksSharePluginframeworkObjectPartitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksSharePluginframeworkObjectPartitionOutputReference
 ```
@@ -2847,7 +2847,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksSharePluginframework.DataDatabricksSharePluginframeworkObjectPartitionValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickssharepluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickssharepluginframework"
 
 datadatabrickssharepluginframework.NewDataDatabricksSharePluginframeworkObjectPartitionValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksSharePluginframeworkObjectPartitionValueList
 ```
@@ -3007,7 +3007,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksSharePluginframework.DataDatabricksSharePluginframeworkObjectPartitionValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickssharepluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickssharepluginframework"
 
 datadatabrickssharepluginframework.NewDataDatabricksSharePluginframeworkObjectPartitionValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksSharePluginframeworkObjectPartitionValueOutputReference
 ```
