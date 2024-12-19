@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksvolumes"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksvolumes"
 
 datadatabricksvolumes.NewDataDatabricksVolumes(scope Construct, id *string, config DataDatabricksVolumesConfig) DataDatabricksVolumes
 ```
@@ -283,7 +283,7 @@ func ResetIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksvolumes"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksvolumes"
 
 datadatabricksvolumes.DataDatabricksVolumes_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksvolumes"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksvolumes"
 
 datadatabricksvolumes.DataDatabricksVolumes_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datadatabricksvolumes.DataDatabricksVolumes_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksvolumes"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksvolumes"
 
 datadatabricksvolumes.DataDatabricksVolumes_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datadatabricksvolumes.DataDatabricksVolumes_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksvolumes"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksvolumes"
 
 datadatabricksvolumes.DataDatabricksVolumes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -616,7 +616,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksVolumes.DataDatabricksVolumesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksvolumes"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksvolumes"
 
 &datadatabricksvolumes.DataDatabricksVolumesConfig {
 	Connection: interface{},
