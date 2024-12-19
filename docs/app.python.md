@@ -4,7 +4,7 @@
 
 ### App <a name="App" id="@cdktf/provider-databricks.app.App"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app databricks_app}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app databricks_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.app.App.Initializer"></a>
 
@@ -38,9 +38,9 @@ app.App(
 | <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#name App#name}. |
-| <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#description App#description}. |
-| <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.resources">resources</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.app.AppResources">AppResources</a>]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#resources App#resources}. |
+| <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#name App#name}. |
+| <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#description App#description}. |
+| <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.resources">resources</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.app.AppResources">AppResources</a>]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#resources App#resources}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#name App#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#name App#name}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#description App#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#description App#description}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.app.AppResources">AppResources</a>]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#resources App#resources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#resources App#resources}.
 
 ---
 
@@ -626,7 +626,7 @@ The construct id used in the generated config for the App to import.
 
 The id of the existing App that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1038,14 +1038,9 @@ tfResourceType: str
 from cdktf_cdktf_provider_databricks import app
 
 app.AppActiveDeployment(
-  create_time: str = None,
-  creator: str = None,
-  deployment_artifacts: AppActiveDeploymentDeploymentArtifacts = None,
   deployment_id: str = None,
   mode: str = None,
-  source_code_path: str = None,
-  status: AppActiveDeploymentStatus = None,
-  update_time: str = None
+  source_code_path: str = None
 )
 ```
 
@@ -1053,50 +1048,9 @@ app.AppActiveDeployment(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeployment.property.createTime">create_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#create_time App#create_time}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeployment.property.creator">creator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#creator App#creator}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeployment.property.deploymentArtifacts">deployment_artifacts</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifacts">AppActiveDeploymentDeploymentArtifacts</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#deployment_artifacts App#deployment_artifacts}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeployment.property.deploymentId">deployment_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#deployment_id App#deployment_id}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeployment.property.mode">mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#mode App#mode}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeployment.property.sourceCodePath">source_code_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#source_code_path App#source_code_path}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeployment.property.status">status</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatus">AppActiveDeploymentStatus</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#status App#status}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeployment.property.updateTime">update_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#update_time App#update_time}. |
-
----
-
-##### `create_time`<sup>Optional</sup> <a name="create_time" id="@cdktf/provider-databricks.app.AppActiveDeployment.property.createTime"></a>
-
-```python
-create_time: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#create_time App#create_time}.
-
----
-
-##### `creator`<sup>Optional</sup> <a name="creator" id="@cdktf/provider-databricks.app.AppActiveDeployment.property.creator"></a>
-
-```python
-creator: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#creator App#creator}.
-
----
-
-##### `deployment_artifacts`<sup>Optional</sup> <a name="deployment_artifacts" id="@cdktf/provider-databricks.app.AppActiveDeployment.property.deploymentArtifacts"></a>
-
-```python
-deployment_artifacts: AppActiveDeploymentDeploymentArtifacts
-```
-
-- *Type:* <a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifacts">AppActiveDeploymentDeploymentArtifacts</a>
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#deployment_artifacts App#deployment_artifacts}.
+| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeployment.property.deploymentId">deployment_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#deployment_id App#deployment_id}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeployment.property.mode">mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#mode App#mode}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeployment.property.sourceCodePath">source_code_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#source_code_path App#source_code_path}. |
 
 ---
 
@@ -1108,7 +1062,7 @@ deployment_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#deployment_id App#deployment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#deployment_id App#deployment_id}.
 
 ---
 
@@ -1120,7 +1074,7 @@ mode: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#mode App#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#mode App#mode}.
 
 ---
 
@@ -1132,31 +1086,7 @@ source_code_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#source_code_path App#source_code_path}.
-
----
-
-##### `status`<sup>Optional</sup> <a name="status" id="@cdktf/provider-databricks.app.AppActiveDeployment.property.status"></a>
-
-```python
-status: AppActiveDeploymentStatus
-```
-
-- *Type:* <a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatus">AppActiveDeploymentStatus</a>
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#status App#status}.
-
----
-
-##### `update_time`<sup>Optional</sup> <a name="update_time" id="@cdktf/provider-databricks.app.AppActiveDeployment.property.updateTime"></a>
-
-```python
-update_time: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#update_time App#update_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#source_code_path App#source_code_path}.
 
 ---
 
@@ -1176,7 +1106,7 @@ app.AppActiveDeploymentDeploymentArtifacts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifacts.property.sourceCodePath">source_code_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#source_code_path App#source_code_path}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifacts.property.sourceCodePath">source_code_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#source_code_path App#source_code_path}. |
 
 ---
 
@@ -1188,7 +1118,7 @@ source_code_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#source_code_path App#source_code_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#source_code_path App#source_code_path}.
 
 ---
 
@@ -1199,44 +1129,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ```python
 from cdktf_cdktf_provider_databricks import app
 
-app.AppActiveDeploymentStatus(
-  message: str = None,
-  state: str = None
-)
+app.AppActiveDeploymentStatus()
 ```
 
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatus.property.message">message</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#message App#message}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatus.property.state">state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#state App#state}. |
-
----
-
-##### `message`<sup>Optional</sup> <a name="message" id="@cdktf/provider-databricks.app.AppActiveDeploymentStatus.property.message"></a>
-
-```python
-message: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#message App#message}.
-
----
-
-##### `state`<sup>Optional</sup> <a name="state" id="@cdktf/provider-databricks.app.AppActiveDeploymentStatus.property.state"></a>
-
-```python
-state: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#state App#state}.
-
----
 
 ### AppAppStatus <a name="AppAppStatus" id="@cdktf/provider-databricks.app.AppAppStatus"></a>
 
@@ -1245,44 +1140,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ```python
 from cdktf_cdktf_provider_databricks import app
 
-app.AppAppStatus(
-  message: str = None,
-  state: str = None
-)
+app.AppAppStatus()
 ```
 
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppAppStatus.property.message">message</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#message App#message}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppAppStatus.property.state">state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#state App#state}. |
-
----
-
-##### `message`<sup>Optional</sup> <a name="message" id="@cdktf/provider-databricks.app.AppAppStatus.property.message"></a>
-
-```python
-message: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#message App#message}.
-
----
-
-##### `state`<sup>Optional</sup> <a name="state" id="@cdktf/provider-databricks.app.AppAppStatus.property.state"></a>
-
-```python
-state: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#state App#state}.
-
----
 
 ### AppComputeStatus <a name="AppComputeStatus" id="@cdktf/provider-databricks.app.AppComputeStatus"></a>
 
@@ -1291,44 +1151,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ```python
 from cdktf_cdktf_provider_databricks import app
 
-app.AppComputeStatus(
-  message: str = None,
-  state: str = None
-)
+app.AppComputeStatus()
 ```
 
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppComputeStatus.property.message">message</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#message App#message}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppComputeStatus.property.state">state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#state App#state}. |
-
----
-
-##### `message`<sup>Optional</sup> <a name="message" id="@cdktf/provider-databricks.app.AppComputeStatus.property.message"></a>
-
-```python
-message: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#message App#message}.
-
----
-
-##### `state`<sup>Optional</sup> <a name="state" id="@cdktf/provider-databricks.app.AppComputeStatus.property.state"></a>
-
-```python
-state: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#state App#state}.
-
----
 
 ### AppConfig <a name="AppConfig" id="@cdktf/provider-databricks.app.AppConfig"></a>
 
@@ -1362,9 +1187,9 @@ app.AppConfig(
 | <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#name App#name}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#description App#description}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.resources">resources</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.app.AppResources">AppResources</a>]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#resources App#resources}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#name App#name}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#description App#description}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.resources">resources</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.app.AppResources">AppResources</a>]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#resources App#resources}. |
 
 ---
 
@@ -1446,7 +1271,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#name App#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#name App#name}.
 
 ---
 
@@ -1458,7 +1283,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#description App#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#description App#description}.
 
 ---
 
@@ -1470,7 +1295,7 @@ resources: typing.Union[IResolvable, typing.List[AppResources]]
 
 - *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.app.AppResources">AppResources</a>]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#resources App#resources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#resources App#resources}.
 
 ---
 
@@ -1482,14 +1307,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 from cdktf_cdktf_provider_databricks import app
 
 app.AppPendingDeployment(
-  create_time: str = None,
-  creator: str = None,
-  deployment_artifacts: AppPendingDeploymentDeploymentArtifacts = None,
   deployment_id: str = None,
   mode: str = None,
-  source_code_path: str = None,
-  status: AppPendingDeploymentStatus = None,
-  update_time: str = None
+  source_code_path: str = None
 )
 ```
 
@@ -1497,50 +1317,9 @@ app.AppPendingDeployment(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeployment.property.createTime">create_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#create_time App#create_time}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeployment.property.creator">creator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#creator App#creator}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeployment.property.deploymentArtifacts">deployment_artifacts</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifacts">AppPendingDeploymentDeploymentArtifacts</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#deployment_artifacts App#deployment_artifacts}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeployment.property.deploymentId">deployment_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#deployment_id App#deployment_id}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeployment.property.mode">mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#mode App#mode}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeployment.property.sourceCodePath">source_code_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#source_code_path App#source_code_path}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeployment.property.status">status</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatus">AppPendingDeploymentStatus</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#status App#status}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeployment.property.updateTime">update_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#update_time App#update_time}. |
-
----
-
-##### `create_time`<sup>Optional</sup> <a name="create_time" id="@cdktf/provider-databricks.app.AppPendingDeployment.property.createTime"></a>
-
-```python
-create_time: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#create_time App#create_time}.
-
----
-
-##### `creator`<sup>Optional</sup> <a name="creator" id="@cdktf/provider-databricks.app.AppPendingDeployment.property.creator"></a>
-
-```python
-creator: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#creator App#creator}.
-
----
-
-##### `deployment_artifacts`<sup>Optional</sup> <a name="deployment_artifacts" id="@cdktf/provider-databricks.app.AppPendingDeployment.property.deploymentArtifacts"></a>
-
-```python
-deployment_artifacts: AppPendingDeploymentDeploymentArtifacts
-```
-
-- *Type:* <a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifacts">AppPendingDeploymentDeploymentArtifacts</a>
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#deployment_artifacts App#deployment_artifacts}.
+| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeployment.property.deploymentId">deployment_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#deployment_id App#deployment_id}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeployment.property.mode">mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#mode App#mode}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeployment.property.sourceCodePath">source_code_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#source_code_path App#source_code_path}. |
 
 ---
 
@@ -1552,7 +1331,7 @@ deployment_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#deployment_id App#deployment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#deployment_id App#deployment_id}.
 
 ---
 
@@ -1564,7 +1343,7 @@ mode: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#mode App#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#mode App#mode}.
 
 ---
 
@@ -1576,31 +1355,7 @@ source_code_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#source_code_path App#source_code_path}.
-
----
-
-##### `status`<sup>Optional</sup> <a name="status" id="@cdktf/provider-databricks.app.AppPendingDeployment.property.status"></a>
-
-```python
-status: AppPendingDeploymentStatus
-```
-
-- *Type:* <a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatus">AppPendingDeploymentStatus</a>
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#status App#status}.
-
----
-
-##### `update_time`<sup>Optional</sup> <a name="update_time" id="@cdktf/provider-databricks.app.AppPendingDeployment.property.updateTime"></a>
-
-```python
-update_time: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#update_time App#update_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#source_code_path App#source_code_path}.
 
 ---
 
@@ -1620,7 +1375,7 @@ app.AppPendingDeploymentDeploymentArtifacts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifacts.property.sourceCodePath">source_code_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#source_code_path App#source_code_path}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifacts.property.sourceCodePath">source_code_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#source_code_path App#source_code_path}. |
 
 ---
 
@@ -1632,7 +1387,7 @@ source_code_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#source_code_path App#source_code_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#source_code_path App#source_code_path}.
 
 ---
 
@@ -1643,44 +1398,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ```python
 from cdktf_cdktf_provider_databricks import app
 
-app.AppPendingDeploymentStatus(
-  message: str = None,
-  state: str = None
-)
+app.AppPendingDeploymentStatus()
 ```
 
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatus.property.message">message</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#message App#message}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatus.property.state">state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#state App#state}. |
-
----
-
-##### `message`<sup>Optional</sup> <a name="message" id="@cdktf/provider-databricks.app.AppPendingDeploymentStatus.property.message"></a>
-
-```python
-message: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#message App#message}.
-
----
-
-##### `state`<sup>Optional</sup> <a name="state" id="@cdktf/provider-databricks.app.AppPendingDeploymentStatus.property.state"></a>
-
-```python
-state: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#state App#state}.
-
----
 
 ### AppResources <a name="AppResources" id="@cdktf/provider-databricks.app.AppResources"></a>
 
@@ -1703,12 +1423,12 @@ app.AppResources(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#name App#name}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#description App#description}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.job">job</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppResourcesJob">AppResourcesJob</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#job App#job}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.secret">secret</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppResourcesSecret">AppResourcesSecret</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#secret App#secret}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.servingEndpoint">serving_endpoint</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppResourcesServingEndpoint">AppResourcesServingEndpoint</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#serving_endpoint App#serving_endpoint}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.sqlWarehouse">sql_warehouse</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppResourcesSqlWarehouse">AppResourcesSqlWarehouse</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#sql_warehouse App#sql_warehouse}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#name App#name}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#description App#description}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.job">job</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppResourcesJob">AppResourcesJob</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#job App#job}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.secret">secret</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppResourcesSecret">AppResourcesSecret</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#secret App#secret}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.servingEndpoint">serving_endpoint</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppResourcesServingEndpoint">AppResourcesServingEndpoint</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#serving_endpoint App#serving_endpoint}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.sqlWarehouse">sql_warehouse</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppResourcesSqlWarehouse">AppResourcesSqlWarehouse</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#sql_warehouse App#sql_warehouse}. |
 
 ---
 
@@ -1720,7 +1440,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#name App#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#name App#name}.
 
 ---
 
@@ -1732,7 +1452,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#description App#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#description App#description}.
 
 ---
 
@@ -1744,7 +1464,7 @@ job: AppResourcesJob
 
 - *Type:* <a href="#@cdktf/provider-databricks.app.AppResourcesJob">AppResourcesJob</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#job App#job}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#job App#job}.
 
 ---
 
@@ -1756,7 +1476,7 @@ secret: AppResourcesSecret
 
 - *Type:* <a href="#@cdktf/provider-databricks.app.AppResourcesSecret">AppResourcesSecret</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#secret App#secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#secret App#secret}.
 
 ---
 
@@ -1768,7 +1488,7 @@ serving_endpoint: AppResourcesServingEndpoint
 
 - *Type:* <a href="#@cdktf/provider-databricks.app.AppResourcesServingEndpoint">AppResourcesServingEndpoint</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#serving_endpoint App#serving_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#serving_endpoint App#serving_endpoint}.
 
 ---
 
@@ -1780,7 +1500,7 @@ sql_warehouse: AppResourcesSqlWarehouse
 
 - *Type:* <a href="#@cdktf/provider-databricks.app.AppResourcesSqlWarehouse">AppResourcesSqlWarehouse</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#sql_warehouse App#sql_warehouse}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#sql_warehouse App#sql_warehouse}.
 
 ---
 
@@ -1801,8 +1521,8 @@ app.AppResourcesJob(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppResourcesJob.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#id App#id}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppResourcesJob.property.permission">permission</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#permission App#permission}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesJob.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#id App#id}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesJob.property.permission">permission</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#permission App#permission}. |
 
 ---
 
@@ -1814,7 +1534,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#id App#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#id App#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1829,7 +1549,7 @@ permission: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#permission App#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#permission App#permission}.
 
 ---
 
@@ -1851,9 +1571,9 @@ app.AppResourcesSecret(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppResourcesSecret.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#key App#key}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppResourcesSecret.property.permission">permission</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#permission App#permission}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppResourcesSecret.property.scope">scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#scope App#scope}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesSecret.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#key App#key}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesSecret.property.permission">permission</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#permission App#permission}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesSecret.property.scope">scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#scope App#scope}. |
 
 ---
 
@@ -1865,7 +1585,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#key App#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#key App#key}.
 
 ---
 
@@ -1877,7 +1597,7 @@ permission: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#permission App#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#permission App#permission}.
 
 ---
 
@@ -1889,7 +1609,7 @@ scope: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#scope App#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#scope App#scope}.
 
 ---
 
@@ -1910,8 +1630,8 @@ app.AppResourcesServingEndpoint(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppResourcesServingEndpoint.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#name App#name}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppResourcesServingEndpoint.property.permission">permission</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#permission App#permission}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesServingEndpoint.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#name App#name}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesServingEndpoint.property.permission">permission</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#permission App#permission}. |
 
 ---
 
@@ -1923,7 +1643,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#name App#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#name App#name}.
 
 ---
 
@@ -1935,7 +1655,7 @@ permission: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#permission App#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#permission App#permission}.
 
 ---
 
@@ -1956,8 +1676,8 @@ app.AppResourcesSqlWarehouse(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppResourcesSqlWarehouse.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#id App#id}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppResourcesSqlWarehouse.property.permission">permission</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#permission App#permission}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesSqlWarehouse.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#id App#id}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesSqlWarehouse.property.permission">permission</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#permission App#permission}. |
 
 ---
 
@@ -1969,7 +1689,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#id App#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#id App#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1984,7 +1704,7 @@ permission: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#permission App#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#permission App#permission}.
 
 ---
 
@@ -2234,7 +1954,7 @@ def reset_source_code_path() -> None
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifactsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifactsOutputReference.property.sourceCodePathInput">source_code_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifactsOutputReference.property.sourceCodePath">source_code_path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifactsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifacts">AppActiveDeploymentDeploymentArtifacts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifactsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifacts">AppActiveDeploymentDeploymentArtifacts</a></code> | *No description.* |
 
 ---
 
@@ -2285,10 +2005,10 @@ source_code_path: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifactsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppActiveDeploymentDeploymentArtifacts]
+internal_value: AppActiveDeploymentDeploymentArtifacts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifacts">AppActiveDeploymentDeploymentArtifacts</a>]
+- *Type:* <a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifacts">AppActiveDeploymentDeploymentArtifacts</a>
 
 ---
 
@@ -2346,16 +2066,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.putDeploymentArtifacts">put_deployment_artifacts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.putStatus">put_status</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.resetCreateTime">reset_create_time</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.resetCreator">reset_creator</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.resetDeploymentArtifacts">reset_deployment_artifacts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.resetDeploymentId">reset_deployment_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.resetMode">reset_mode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.resetSourceCodePath">reset_source_code_path</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.resetStatus">reset_status</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.resetUpdateTime">reset_update_time</a></code> | *No description.* |
 
 ---
 
@@ -2531,65 +2244,6 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `put_deployment_artifacts` <a name="put_deployment_artifacts" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.putDeploymentArtifacts"></a>
-
-```python
-def put_deployment_artifacts(
-  source_code_path: str = None
-) -> None
-```
-
-###### `source_code_path`<sup>Optional</sup> <a name="source_code_path" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.putDeploymentArtifacts.parameter.sourceCodePath"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#source_code_path App#source_code_path}.
-
----
-
-##### `put_status` <a name="put_status" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.putStatus"></a>
-
-```python
-def put_status(
-  message: str = None,
-  state: str = None
-) -> None
-```
-
-###### `message`<sup>Optional</sup> <a name="message" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.putStatus.parameter.message"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#message App#message}.
-
----
-
-###### `state`<sup>Optional</sup> <a name="state" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.putStatus.parameter.state"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#state App#state}.
-
----
-
-##### `reset_create_time` <a name="reset_create_time" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.resetCreateTime"></a>
-
-```python
-def reset_create_time() -> None
-```
-
-##### `reset_creator` <a name="reset_creator" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.resetCreator"></a>
-
-```python
-def reset_creator() -> None
-```
-
-##### `reset_deployment_artifacts` <a name="reset_deployment_artifacts" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.resetDeploymentArtifacts"></a>
-
-```python
-def reset_deployment_artifacts() -> None
-```
-
 ##### `reset_deployment_id` <a name="reset_deployment_id" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.resetDeploymentId"></a>
 
 ```python
@@ -2608,18 +2262,6 @@ def reset_mode() -> None
 def reset_source_code_path() -> None
 ```
 
-##### `reset_status` <a name="reset_status" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.resetStatus"></a>
-
-```python
-def reset_status() -> None
-```
-
-##### `reset_update_time` <a name="reset_update_time" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.resetUpdateTime"></a>
-
-```python
-def reset_update_time() -> None
-```
-
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2627,22 +2269,17 @@ def reset_update_time() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.creator">creator</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.deploymentArtifacts">deployment_artifacts</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifactsOutputReference">AppActiveDeploymentDeploymentArtifactsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.status">status</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference">AppActiveDeploymentStatusOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.createTimeInput">create_time_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.creatorInput">creator_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.deploymentArtifactsInput">deployment_artifacts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifacts">AppActiveDeploymentDeploymentArtifacts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.deploymentIdInput">deployment_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.modeInput">mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.sourceCodePathInput">source_code_path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.statusInput">status_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatus">AppActiveDeploymentStatus</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.updateTimeInput">update_time_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.creator">creator</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.deploymentId">deployment_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.mode">mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.sourceCodePath">source_code_path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeployment">AppActiveDeployment</a></code> | *No description.* |
 
 ---
@@ -2671,6 +2308,26 @@ fqn: str
 
 ---
 
+##### `create_time`<sup>Required</sup> <a name="create_time" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.createTime"></a>
+
+```python
+create_time: str
+```
+
+- *Type:* str
+
+---
+
+##### `creator`<sup>Required</sup> <a name="creator" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.creator"></a>
+
+```python
+creator: str
+```
+
+- *Type:* str
+
+---
+
 ##### `deployment_artifacts`<sup>Required</sup> <a name="deployment_artifacts" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.deploymentArtifacts"></a>
 
 ```python
@@ -2691,33 +2348,13 @@ status: AppActiveDeploymentStatusOutputReference
 
 ---
 
-##### `create_time_input`<sup>Optional</sup> <a name="create_time_input" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.createTimeInput"></a>
+##### `update_time`<sup>Required</sup> <a name="update_time" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.updateTime"></a>
 
 ```python
-create_time_input: str
+update_time: str
 ```
 
 - *Type:* str
-
----
-
-##### `creator_input`<sup>Optional</sup> <a name="creator_input" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.creatorInput"></a>
-
-```python
-creator_input: str
-```
-
-- *Type:* str
-
----
-
-##### `deployment_artifacts_input`<sup>Optional</sup> <a name="deployment_artifacts_input" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.deploymentArtifactsInput"></a>
-
-```python
-deployment_artifacts_input: typing.Union[IResolvable, AppActiveDeploymentDeploymentArtifacts]
-```
-
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifacts">AppActiveDeploymentDeploymentArtifacts</a>]
 
 ---
 
@@ -2751,46 +2388,6 @@ source_code_path_input: str
 
 ---
 
-##### `status_input`<sup>Optional</sup> <a name="status_input" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.statusInput"></a>
-
-```python
-status_input: typing.Union[IResolvable, AppActiveDeploymentStatus]
-```
-
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatus">AppActiveDeploymentStatus</a>]
-
----
-
-##### `update_time_input`<sup>Optional</sup> <a name="update_time_input" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.updateTimeInput"></a>
-
-```python
-update_time_input: str
-```
-
-- *Type:* str
-
----
-
-##### `create_time`<sup>Required</sup> <a name="create_time" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.createTime"></a>
-
-```python
-create_time: str
-```
-
-- *Type:* str
-
----
-
-##### `creator`<sup>Required</sup> <a name="creator" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.creator"></a>
-
-```python
-creator: str
-```
-
-- *Type:* str
-
----
-
 ##### `deployment_id`<sup>Required</sup> <a name="deployment_id" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.deploymentId"></a>
 
 ```python
@@ -2815,16 +2412,6 @@ mode: str
 
 ```python
 source_code_path: str
-```
-
-- *Type:* str
-
----
-
-##### `update_time`<sup>Required</sup> <a name="update_time" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.updateTime"></a>
-
-```python
-update_time: str
 ```
 
 - *Type:* str
@@ -2895,8 +2482,6 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.resetMessage">reset_message</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.resetState">reset_state</a></code> | *No description.* |
 
 ---
 
@@ -3072,18 +2657,6 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_message` <a name="reset_message" id="@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.resetMessage"></a>
-
-```python
-def reset_message() -> None
-```
-
-##### `reset_state` <a name="reset_state" id="@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.resetState"></a>
-
-```python
-def reset_state() -> None
-```
-
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -3091,11 +2664,9 @@ def reset_state() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.property.messageInput">message_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.property.stateInput">state_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.property.message">message</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.property.state">state</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatus">AppActiveDeploymentStatus</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatus">AppActiveDeploymentStatus</a></code> | *No description.* |
 
 ---
 
@@ -3117,26 +2688,6 @@ If this returns an empty array the stack will not be attached.
 
 ```python
 fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `message_input`<sup>Optional</sup> <a name="message_input" id="@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.property.messageInput"></a>
-
-```python
-message_input: str
-```
-
-- *Type:* str
-
----
-
-##### `state_input`<sup>Optional</sup> <a name="state_input" id="@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.property.stateInput"></a>
-
-```python
-state_input: str
 ```
 
 - *Type:* str
@@ -3166,10 +2717,10 @@ state: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppActiveDeploymentStatus]
+internal_value: AppActiveDeploymentStatus
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatus">AppActiveDeploymentStatus</a>]
+- *Type:* <a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatus">AppActiveDeploymentStatus</a>
 
 ---
 
@@ -3227,8 +2778,6 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.app.AppAppStatusOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppAppStatusOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.app.AppAppStatusOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-databricks.app.AppAppStatusOutputReference.resetMessage">reset_message</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppAppStatusOutputReference.resetState">reset_state</a></code> | *No description.* |
 
 ---
 
@@ -3404,18 +2953,6 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_message` <a name="reset_message" id="@cdktf/provider-databricks.app.AppAppStatusOutputReference.resetMessage"></a>
-
-```python
-def reset_message() -> None
-```
-
-##### `reset_state` <a name="reset_state" id="@cdktf/provider-databricks.app.AppAppStatusOutputReference.resetState"></a>
-
-```python
-def reset_state() -> None
-```
-
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -3423,8 +2960,6 @@ def reset_state() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.app.AppAppStatusOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.app.AppAppStatusOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppAppStatusOutputReference.property.messageInput">message_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppAppStatusOutputReference.property.stateInput">state_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppAppStatusOutputReference.property.message">message</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppAppStatusOutputReference.property.state">state</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppAppStatusOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppAppStatus">AppAppStatus</a></code> | *No description.* |
@@ -3449,26 +2984,6 @@ If this returns an empty array the stack will not be attached.
 
 ```python
 fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `message_input`<sup>Optional</sup> <a name="message_input" id="@cdktf/provider-databricks.app.AppAppStatusOutputReference.property.messageInput"></a>
-
-```python
-message_input: str
-```
-
-- *Type:* str
-
----
-
-##### `state_input`<sup>Optional</sup> <a name="state_input" id="@cdktf/provider-databricks.app.AppAppStatusOutputReference.property.stateInput"></a>
-
-```python
-state_input: str
 ```
 
 - *Type:* str
@@ -3559,8 +3074,6 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.app.AppComputeStatusOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppComputeStatusOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.app.AppComputeStatusOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-databricks.app.AppComputeStatusOutputReference.resetMessage">reset_message</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppComputeStatusOutputReference.resetState">reset_state</a></code> | *No description.* |
 
 ---
 
@@ -3736,18 +3249,6 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_message` <a name="reset_message" id="@cdktf/provider-databricks.app.AppComputeStatusOutputReference.resetMessage"></a>
-
-```python
-def reset_message() -> None
-```
-
-##### `reset_state` <a name="reset_state" id="@cdktf/provider-databricks.app.AppComputeStatusOutputReference.resetState"></a>
-
-```python
-def reset_state() -> None
-```
-
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -3755,8 +3256,6 @@ def reset_state() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.app.AppComputeStatusOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.app.AppComputeStatusOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppComputeStatusOutputReference.property.messageInput">message_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppComputeStatusOutputReference.property.stateInput">state_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppComputeStatusOutputReference.property.message">message</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppComputeStatusOutputReference.property.state">state</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppComputeStatusOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppComputeStatus">AppComputeStatus</a></code> | *No description.* |
@@ -3781,26 +3280,6 @@ If this returns an empty array the stack will not be attached.
 
 ```python
 fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `message_input`<sup>Optional</sup> <a name="message_input" id="@cdktf/provider-databricks.app.AppComputeStatusOutputReference.property.messageInput"></a>
-
-```python
-message_input: str
-```
-
-- *Type:* str
-
----
-
-##### `state_input`<sup>Optional</sup> <a name="state_input" id="@cdktf/provider-databricks.app.AppComputeStatusOutputReference.property.stateInput"></a>
-
-```python
-state_input: str
 ```
 
 - *Type:* str
@@ -4082,7 +3561,7 @@ def reset_source_code_path() -> None
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifactsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifactsOutputReference.property.sourceCodePathInput">source_code_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifactsOutputReference.property.sourceCodePath">source_code_path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifactsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifacts">AppPendingDeploymentDeploymentArtifacts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifactsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifacts">AppPendingDeploymentDeploymentArtifacts</a></code> | *No description.* |
 
 ---
 
@@ -4133,10 +3612,10 @@ source_code_path: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifactsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppPendingDeploymentDeploymentArtifacts]
+internal_value: AppPendingDeploymentDeploymentArtifacts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifacts">AppPendingDeploymentDeploymentArtifacts</a>]
+- *Type:* <a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifacts">AppPendingDeploymentDeploymentArtifacts</a>
 
 ---
 
@@ -4194,16 +3673,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.putDeploymentArtifacts">put_deployment_artifacts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.putStatus">put_status</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.resetCreateTime">reset_create_time</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.resetCreator">reset_creator</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.resetDeploymentArtifacts">reset_deployment_artifacts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.resetDeploymentId">reset_deployment_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.resetMode">reset_mode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.resetSourceCodePath">reset_source_code_path</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.resetStatus">reset_status</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.resetUpdateTime">reset_update_time</a></code> | *No description.* |
 
 ---
 
@@ -4379,65 +3851,6 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `put_deployment_artifacts` <a name="put_deployment_artifacts" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.putDeploymentArtifacts"></a>
-
-```python
-def put_deployment_artifacts(
-  source_code_path: str = None
-) -> None
-```
-
-###### `source_code_path`<sup>Optional</sup> <a name="source_code_path" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.putDeploymentArtifacts.parameter.sourceCodePath"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#source_code_path App#source_code_path}.
-
----
-
-##### `put_status` <a name="put_status" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.putStatus"></a>
-
-```python
-def put_status(
-  message: str = None,
-  state: str = None
-) -> None
-```
-
-###### `message`<sup>Optional</sup> <a name="message" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.putStatus.parameter.message"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#message App#message}.
-
----
-
-###### `state`<sup>Optional</sup> <a name="state" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.putStatus.parameter.state"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#state App#state}.
-
----
-
-##### `reset_create_time` <a name="reset_create_time" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.resetCreateTime"></a>
-
-```python
-def reset_create_time() -> None
-```
-
-##### `reset_creator` <a name="reset_creator" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.resetCreator"></a>
-
-```python
-def reset_creator() -> None
-```
-
-##### `reset_deployment_artifacts` <a name="reset_deployment_artifacts" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.resetDeploymentArtifacts"></a>
-
-```python
-def reset_deployment_artifacts() -> None
-```
-
 ##### `reset_deployment_id` <a name="reset_deployment_id" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.resetDeploymentId"></a>
 
 ```python
@@ -4456,18 +3869,6 @@ def reset_mode() -> None
 def reset_source_code_path() -> None
 ```
 
-##### `reset_status` <a name="reset_status" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.resetStatus"></a>
-
-```python
-def reset_status() -> None
-```
-
-##### `reset_update_time` <a name="reset_update_time" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.resetUpdateTime"></a>
-
-```python
-def reset_update_time() -> None
-```
-
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -4475,22 +3876,17 @@ def reset_update_time() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.creator">creator</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.deploymentArtifacts">deployment_artifacts</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifactsOutputReference">AppPendingDeploymentDeploymentArtifactsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.status">status</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference">AppPendingDeploymentStatusOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.createTimeInput">create_time_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.creatorInput">creator_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.deploymentArtifactsInput">deployment_artifacts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifacts">AppPendingDeploymentDeploymentArtifacts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.deploymentIdInput">deployment_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.modeInput">mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.sourceCodePathInput">source_code_path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.statusInput">status_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatus">AppPendingDeploymentStatus</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.updateTimeInput">update_time_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.creator">creator</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.deploymentId">deployment_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.mode">mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.sourceCodePath">source_code_path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeployment">AppPendingDeployment</a></code> | *No description.* |
 
 ---
@@ -4519,6 +3915,26 @@ fqn: str
 
 ---
 
+##### `create_time`<sup>Required</sup> <a name="create_time" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.createTime"></a>
+
+```python
+create_time: str
+```
+
+- *Type:* str
+
+---
+
+##### `creator`<sup>Required</sup> <a name="creator" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.creator"></a>
+
+```python
+creator: str
+```
+
+- *Type:* str
+
+---
+
 ##### `deployment_artifacts`<sup>Required</sup> <a name="deployment_artifacts" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.deploymentArtifacts"></a>
 
 ```python
@@ -4539,33 +3955,13 @@ status: AppPendingDeploymentStatusOutputReference
 
 ---
 
-##### `create_time_input`<sup>Optional</sup> <a name="create_time_input" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.createTimeInput"></a>
+##### `update_time`<sup>Required</sup> <a name="update_time" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.updateTime"></a>
 
 ```python
-create_time_input: str
+update_time: str
 ```
 
 - *Type:* str
-
----
-
-##### `creator_input`<sup>Optional</sup> <a name="creator_input" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.creatorInput"></a>
-
-```python
-creator_input: str
-```
-
-- *Type:* str
-
----
-
-##### `deployment_artifacts_input`<sup>Optional</sup> <a name="deployment_artifacts_input" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.deploymentArtifactsInput"></a>
-
-```python
-deployment_artifacts_input: typing.Union[IResolvable, AppPendingDeploymentDeploymentArtifacts]
-```
-
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifacts">AppPendingDeploymentDeploymentArtifacts</a>]
 
 ---
 
@@ -4599,46 +3995,6 @@ source_code_path_input: str
 
 ---
 
-##### `status_input`<sup>Optional</sup> <a name="status_input" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.statusInput"></a>
-
-```python
-status_input: typing.Union[IResolvable, AppPendingDeploymentStatus]
-```
-
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatus">AppPendingDeploymentStatus</a>]
-
----
-
-##### `update_time_input`<sup>Optional</sup> <a name="update_time_input" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.updateTimeInput"></a>
-
-```python
-update_time_input: str
-```
-
-- *Type:* str
-
----
-
-##### `create_time`<sup>Required</sup> <a name="create_time" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.createTime"></a>
-
-```python
-create_time: str
-```
-
-- *Type:* str
-
----
-
-##### `creator`<sup>Required</sup> <a name="creator" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.creator"></a>
-
-```python
-creator: str
-```
-
-- *Type:* str
-
----
-
 ##### `deployment_id`<sup>Required</sup> <a name="deployment_id" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.deploymentId"></a>
 
 ```python
@@ -4663,16 +4019,6 @@ mode: str
 
 ```python
 source_code_path: str
-```
-
-- *Type:* str
-
----
-
-##### `update_time`<sup>Required</sup> <a name="update_time" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.updateTime"></a>
-
-```python
-update_time: str
 ```
 
 - *Type:* str
@@ -4743,8 +4089,6 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.resetMessage">reset_message</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.resetState">reset_state</a></code> | *No description.* |
 
 ---
 
@@ -4920,18 +4264,6 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_message` <a name="reset_message" id="@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.resetMessage"></a>
-
-```python
-def reset_message() -> None
-```
-
-##### `reset_state` <a name="reset_state" id="@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.resetState"></a>
-
-```python
-def reset_state() -> None
-```
-
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -4939,11 +4271,9 @@ def reset_state() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.property.messageInput">message_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.property.stateInput">state_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.property.message">message</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.property.state">state</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatus">AppPendingDeploymentStatus</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatus">AppPendingDeploymentStatus</a></code> | *No description.* |
 
 ---
 
@@ -4965,26 +4295,6 @@ If this returns an empty array the stack will not be attached.
 
 ```python
 fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `message_input`<sup>Optional</sup> <a name="message_input" id="@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.property.messageInput"></a>
-
-```python
-message_input: str
-```
-
-- *Type:* str
-
----
-
-##### `state_input`<sup>Optional</sup> <a name="state_input" id="@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.property.stateInput"></a>
-
-```python
-state_input: str
 ```
 
 - *Type:* str
@@ -5014,10 +4324,10 @@ state: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppPendingDeploymentStatus]
+internal_value: AppPendingDeploymentStatus
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatus">AppPendingDeploymentStatus</a>]
+- *Type:* <a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatus">AppPendingDeploymentStatus</a>
 
 ---
 
@@ -5780,7 +5090,7 @@ def put_job(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#id App#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#id App#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -5791,7 +5101,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#permission App#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#permission App#permission}.
 
 ---
 
@@ -5809,7 +5119,7 @@ def put_secret(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#key App#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#key App#key}.
 
 ---
 
@@ -5817,7 +5127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#permission App#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#permission App#permission}.
 
 ---
 
@@ -5825,7 +5135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#scope App#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#scope App#scope}.
 
 ---
 
@@ -5842,7 +5152,7 @@ def put_serving_endpoint(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#name App#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#name App#name}.
 
 ---
 
@@ -5850,7 +5160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#permission App#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#permission App#permission}.
 
 ---
 
@@ -5867,7 +5177,7 @@ def put_sql_warehouse(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#id App#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#id App#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -5878,7 +5188,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#permission App#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#permission App#permission}.
 
 ---
 

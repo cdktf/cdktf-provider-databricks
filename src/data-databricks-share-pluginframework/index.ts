@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework
+// https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,61 +13,45 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksSharePluginframeworkConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#comment DataDatabricksSharePluginframework#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework#comment DataDatabricksSharePluginframework#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#created_at DataDatabricksSharePluginframework#created_at}
-  */
-  readonly createdAt?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#created_by DataDatabricksSharePluginframework#created_by}
-  */
-  readonly createdBy?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#name DataDatabricksSharePluginframework#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework#name DataDatabricksSharePluginframework#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#object DataDatabricksSharePluginframework#object}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework#object DataDatabricksSharePluginframework#object}
   */
   readonly object?: DataDatabricksSharePluginframeworkObject[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#owner DataDatabricksSharePluginframework#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework#owner DataDatabricksSharePluginframework#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#storage_location DataDatabricksSharePluginframework#storage_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework#storage_location DataDatabricksSharePluginframework#storage_location}
   */
   readonly storageLocation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#storage_root DataDatabricksSharePluginframework#storage_root}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework#storage_root DataDatabricksSharePluginframework#storage_root}
   */
   readonly storageRoot?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#updated_at DataDatabricksSharePluginframework#updated_at}
-  */
-  readonly updatedAt?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#updated_by DataDatabricksSharePluginframework#updated_by}
-  */
-  readonly updatedBy?: string;
 }
 export interface DataDatabricksSharePluginframeworkObjectPartitionValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#name DataDatabricksSharePluginframework#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework#name DataDatabricksSharePluginframework#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#op DataDatabricksSharePluginframework#op}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework#op DataDatabricksSharePluginframework#op}
   */
   readonly op?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#recipient_property_key DataDatabricksSharePluginframework#recipient_property_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework#recipient_property_key DataDatabricksSharePluginframework#recipient_property_key}
   */
   readonly recipientPropertyKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#value DataDatabricksSharePluginframework#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework#value DataDatabricksSharePluginframework#value}
   */
   readonly value?: string;
 }
@@ -270,7 +254,7 @@ export class DataDatabricksSharePluginframeworkObjectPartitionValueList extends 
 }
 export interface DataDatabricksSharePluginframeworkObjectPartition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#value DataDatabricksSharePluginframework#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework#value DataDatabricksSharePluginframework#value}
   */
   readonly value?: DataDatabricksSharePluginframeworkObjectPartitionValue[] | cdktf.IResolvable;
 }
@@ -386,71 +370,43 @@ export class DataDatabricksSharePluginframeworkObjectPartitionList extends cdktf
 }
 export interface DataDatabricksSharePluginframeworkObject {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#added_at DataDatabricksSharePluginframework#added_at}
-  */
-  readonly addedAt?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#added_by DataDatabricksSharePluginframework#added_by}
-  */
-  readonly addedBy?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#cdf_enabled DataDatabricksSharePluginframework#cdf_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework#cdf_enabled DataDatabricksSharePluginframework#cdf_enabled}
   */
   readonly cdfEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#comment DataDatabricksSharePluginframework#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework#comment DataDatabricksSharePluginframework#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#content DataDatabricksSharePluginframework#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework#content DataDatabricksSharePluginframework#content}
   */
   readonly content?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#data_object_type DataDatabricksSharePluginframework#data_object_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework#data_object_type DataDatabricksSharePluginframework#data_object_type}
   */
   readonly dataObjectType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#effective_cdf_enabled DataDatabricksSharePluginframework#effective_cdf_enabled}
-  */
-  readonly effectiveCdfEnabled?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#effective_history_data_sharing_status DataDatabricksSharePluginframework#effective_history_data_sharing_status}
-  */
-  readonly effectiveHistoryDataSharingStatus?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#effective_shared_as DataDatabricksSharePluginframework#effective_shared_as}
-  */
-  readonly effectiveSharedAs?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#effective_start_version DataDatabricksSharePluginframework#effective_start_version}
-  */
-  readonly effectiveStartVersion?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#history_data_sharing_status DataDatabricksSharePluginframework#history_data_sharing_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework#history_data_sharing_status DataDatabricksSharePluginframework#history_data_sharing_status}
   */
   readonly historyDataSharingStatus?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#name DataDatabricksSharePluginframework#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework#name DataDatabricksSharePluginframework#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#partition DataDatabricksSharePluginframework#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework#partition DataDatabricksSharePluginframework#partition}
   */
   readonly partition?: DataDatabricksSharePluginframeworkObjectPartition[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#shared_as DataDatabricksSharePluginframework#shared_as}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework#shared_as DataDatabricksSharePluginframework#shared_as}
   */
   readonly sharedAs?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#start_version DataDatabricksSharePluginframework#start_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework#start_version DataDatabricksSharePluginframework#start_version}
   */
   readonly startVersion?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#status DataDatabricksSharePluginframework#status}
-  */
-  readonly status?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#string_shared_as DataDatabricksSharePluginframework#string_shared_as}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework#string_shared_as DataDatabricksSharePluginframework#string_shared_as}
   */
   readonly stringSharedAs?: string;
 }
@@ -461,22 +417,15 @@ export function dataDatabricksSharePluginframeworkObjectToTerraform(struct?: Dat
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    added_at: cdktf.numberToTerraform(struct!.addedAt),
-    added_by: cdktf.stringToTerraform(struct!.addedBy),
     cdf_enabled: cdktf.booleanToTerraform(struct!.cdfEnabled),
     comment: cdktf.stringToTerraform(struct!.comment),
     content: cdktf.stringToTerraform(struct!.content),
     data_object_type: cdktf.stringToTerraform(struct!.dataObjectType),
-    effective_cdf_enabled: cdktf.booleanToTerraform(struct!.effectiveCdfEnabled),
-    effective_history_data_sharing_status: cdktf.stringToTerraform(struct!.effectiveHistoryDataSharingStatus),
-    effective_shared_as: cdktf.stringToTerraform(struct!.effectiveSharedAs),
-    effective_start_version: cdktf.numberToTerraform(struct!.effectiveStartVersion),
     history_data_sharing_status: cdktf.stringToTerraform(struct!.historyDataSharingStatus),
     name: cdktf.stringToTerraform(struct!.name),
     partition: cdktf.listMapper(dataDatabricksSharePluginframeworkObjectPartitionToTerraform, false)(struct!.partition),
     shared_as: cdktf.stringToTerraform(struct!.sharedAs),
     start_version: cdktf.numberToTerraform(struct!.startVersion),
-    status: cdktf.stringToTerraform(struct!.status),
     string_shared_as: cdktf.stringToTerraform(struct!.stringSharedAs),
   }
 }
@@ -488,18 +437,6 @@ export function dataDatabricksSharePluginframeworkObjectToHclTerraform(struct?: 
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    added_at: {
-      value: cdktf.numberToHclTerraform(struct!.addedAt),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    added_by: {
-      value: cdktf.stringToHclTerraform(struct!.addedBy),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
     cdf_enabled: {
       value: cdktf.booleanToHclTerraform(struct!.cdfEnabled),
       isBlock: false,
@@ -523,30 +460,6 @@ export function dataDatabricksSharePluginframeworkObjectToHclTerraform(struct?: 
       isBlock: false,
       type: "simple",
       storageClassType: "string",
-    },
-    effective_cdf_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.effectiveCdfEnabled),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    effective_history_data_sharing_status: {
-      value: cdktf.stringToHclTerraform(struct!.effectiveHistoryDataSharingStatus),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    effective_shared_as: {
-      value: cdktf.stringToHclTerraform(struct!.effectiveSharedAs),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    effective_start_version: {
-      value: cdktf.numberToHclTerraform(struct!.effectiveStartVersion),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
     },
     history_data_sharing_status: {
       value: cdktf.stringToHclTerraform(struct!.historyDataSharingStatus),
@@ -577,12 +490,6 @@ export function dataDatabricksSharePluginframeworkObjectToHclTerraform(struct?: 
       isBlock: false,
       type: "simple",
       storageClassType: "number",
-    },
-    status: {
-      value: cdktf.stringToHclTerraform(struct!.status),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
     },
     string_shared_as: {
       value: cdktf.stringToHclTerraform(struct!.stringSharedAs),
@@ -616,14 +523,6 @@ export class DataDatabricksSharePluginframeworkObjectOutputReference extends cdk
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._addedAt !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.addedAt = this._addedAt;
-    }
-    if (this._addedBy !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.addedBy = this._addedBy;
-    }
     if (this._cdfEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.cdfEnabled = this._cdfEnabled;
@@ -639,22 +538,6 @@ export class DataDatabricksSharePluginframeworkObjectOutputReference extends cdk
     if (this._dataObjectType !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataObjectType = this._dataObjectType;
-    }
-    if (this._effectiveCdfEnabled !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.effectiveCdfEnabled = this._effectiveCdfEnabled;
-    }
-    if (this._effectiveHistoryDataSharingStatus !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.effectiveHistoryDataSharingStatus = this._effectiveHistoryDataSharingStatus;
-    }
-    if (this._effectiveSharedAs !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.effectiveSharedAs = this._effectiveSharedAs;
-    }
-    if (this._effectiveStartVersion !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.effectiveStartVersion = this._effectiveStartVersion;
     }
     if (this._historyDataSharingStatus !== undefined) {
       hasAnyValues = true;
@@ -676,10 +559,6 @@ export class DataDatabricksSharePluginframeworkObjectOutputReference extends cdk
       hasAnyValues = true;
       internalValueResult.startVersion = this._startVersion;
     }
-    if (this._status !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.status = this._status;
-    }
     if (this._stringSharedAs !== undefined) {
       hasAnyValues = true;
       internalValueResult.stringSharedAs = this._stringSharedAs;
@@ -691,22 +570,15 @@ export class DataDatabricksSharePluginframeworkObjectOutputReference extends cdk
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._addedAt = undefined;
-      this._addedBy = undefined;
       this._cdfEnabled = undefined;
       this._comment = undefined;
       this._content = undefined;
       this._dataObjectType = undefined;
-      this._effectiveCdfEnabled = undefined;
-      this._effectiveHistoryDataSharingStatus = undefined;
-      this._effectiveSharedAs = undefined;
-      this._effectiveStartVersion = undefined;
       this._historyDataSharingStatus = undefined;
       this._name = undefined;
       this._partition.internalValue = undefined;
       this._sharedAs = undefined;
       this._startVersion = undefined;
-      this._status = undefined;
       this._stringSharedAs = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -716,56 +588,27 @@ export class DataDatabricksSharePluginframeworkObjectOutputReference extends cdk
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._addedAt = value.addedAt;
-      this._addedBy = value.addedBy;
       this._cdfEnabled = value.cdfEnabled;
       this._comment = value.comment;
       this._content = value.content;
       this._dataObjectType = value.dataObjectType;
-      this._effectiveCdfEnabled = value.effectiveCdfEnabled;
-      this._effectiveHistoryDataSharingStatus = value.effectiveHistoryDataSharingStatus;
-      this._effectiveSharedAs = value.effectiveSharedAs;
-      this._effectiveStartVersion = value.effectiveStartVersion;
       this._historyDataSharingStatus = value.historyDataSharingStatus;
       this._name = value.name;
       this._partition.internalValue = value.partition;
       this._sharedAs = value.sharedAs;
       this._startVersion = value.startVersion;
-      this._status = value.status;
       this._stringSharedAs = value.stringSharedAs;
     }
   }
 
-  // added_at - computed: true, optional: true, required: false
-  private _addedAt?: number; 
+  // added_at - computed: true, optional: false, required: false
   public get addedAt() {
     return this.getNumberAttribute('added_at');
   }
-  public set addedAt(value: number) {
-    this._addedAt = value;
-  }
-  public resetAddedAt() {
-    this._addedAt = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get addedAtInput() {
-    return this._addedAt;
-  }
 
-  // added_by - computed: true, optional: true, required: false
-  private _addedBy?: string; 
+  // added_by - computed: true, optional: false, required: false
   public get addedBy() {
     return this.getStringAttribute('added_by');
-  }
-  public set addedBy(value: string) {
-    this._addedBy = value;
-  }
-  public resetAddedBy() {
-    this._addedBy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get addedByInput() {
-    return this._addedBy;
   }
 
   // cdf_enabled - computed: false, optional: true, required: false
@@ -832,68 +675,24 @@ export class DataDatabricksSharePluginframeworkObjectOutputReference extends cdk
     return this._dataObjectType;
   }
 
-  // effective_cdf_enabled - computed: true, optional: true, required: false
-  private _effectiveCdfEnabled?: boolean | cdktf.IResolvable; 
+  // effective_cdf_enabled - computed: true, optional: false, required: false
   public get effectiveCdfEnabled() {
     return this.getBooleanAttribute('effective_cdf_enabled');
   }
-  public set effectiveCdfEnabled(value: boolean | cdktf.IResolvable) {
-    this._effectiveCdfEnabled = value;
-  }
-  public resetEffectiveCdfEnabled() {
-    this._effectiveCdfEnabled = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get effectiveCdfEnabledInput() {
-    return this._effectiveCdfEnabled;
-  }
 
-  // effective_history_data_sharing_status - computed: true, optional: true, required: false
-  private _effectiveHistoryDataSharingStatus?: string; 
+  // effective_history_data_sharing_status - computed: true, optional: false, required: false
   public get effectiveHistoryDataSharingStatus() {
     return this.getStringAttribute('effective_history_data_sharing_status');
   }
-  public set effectiveHistoryDataSharingStatus(value: string) {
-    this._effectiveHistoryDataSharingStatus = value;
-  }
-  public resetEffectiveHistoryDataSharingStatus() {
-    this._effectiveHistoryDataSharingStatus = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get effectiveHistoryDataSharingStatusInput() {
-    return this._effectiveHistoryDataSharingStatus;
-  }
 
-  // effective_shared_as - computed: true, optional: true, required: false
-  private _effectiveSharedAs?: string; 
+  // effective_shared_as - computed: true, optional: false, required: false
   public get effectiveSharedAs() {
     return this.getStringAttribute('effective_shared_as');
   }
-  public set effectiveSharedAs(value: string) {
-    this._effectiveSharedAs = value;
-  }
-  public resetEffectiveSharedAs() {
-    this._effectiveSharedAs = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get effectiveSharedAsInput() {
-    return this._effectiveSharedAs;
-  }
 
-  // effective_start_version - computed: true, optional: true, required: false
-  private _effectiveStartVersion?: number; 
+  // effective_start_version - computed: true, optional: false, required: false
   public get effectiveStartVersion() {
     return this.getNumberAttribute('effective_start_version');
-  }
-  public set effectiveStartVersion(value: number) {
-    this._effectiveStartVersion = value;
-  }
-  public resetEffectiveStartVersion() {
-    this._effectiveStartVersion = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get effectiveStartVersionInput() {
-    return this._effectiveStartVersion;
   }
 
   // history_data_sharing_status - computed: false, optional: true, required: false
@@ -973,20 +772,9 @@ export class DataDatabricksSharePluginframeworkObjectOutputReference extends cdk
     return this._startVersion;
   }
 
-  // status - computed: true, optional: true, required: false
-  private _status?: string; 
+  // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
-  }
-  public set status(value: string) {
-    this._status = value;
-  }
-  public resetStatus() {
-    this._status = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get statusInput() {
-    return this._status;
   }
 
   // string_shared_as - computed: false, optional: true, required: false
@@ -1027,7 +815,7 @@ export class DataDatabricksSharePluginframeworkObjectList extends cdktf.ComplexL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework databricks_share_pluginframework}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework databricks_share_pluginframework}
 */
 export class DataDatabricksSharePluginframework extends cdktf.TerraformDataSource {
 
@@ -1043,7 +831,7 @@ export class DataDatabricksSharePluginframework extends cdktf.TerraformDataSourc
   * Generates CDKTF code for importing a DataDatabricksSharePluginframework resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksSharePluginframework to import
-  * @param importFromId The id of the existing DataDatabricksSharePluginframework that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksSharePluginframework that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksSharePluginframework to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1055,7 +843,7 @@ export class DataDatabricksSharePluginframework extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/share_pluginframework databricks_share_pluginframework} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/share_pluginframework databricks_share_pluginframework} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1066,7 +854,7 @@ export class DataDatabricksSharePluginframework extends cdktf.TerraformDataSourc
       terraformResourceType: 'databricks_share_pluginframework',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.61.0',
+        providerVersion: '1.62.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1078,15 +866,11 @@ export class DataDatabricksSharePluginframework extends cdktf.TerraformDataSourc
       forEach: config.forEach
     });
     this._comment = config.comment;
-    this._createdAt = config.createdAt;
-    this._createdBy = config.createdBy;
     this._name = config.name;
     this._object.internalValue = config.object;
     this._owner = config.owner;
     this._storageLocation = config.storageLocation;
     this._storageRoot = config.storageRoot;
-    this._updatedAt = config.updatedAt;
-    this._updatedBy = config.updatedBy;
   }
 
   // ==========
@@ -1109,36 +893,14 @@ export class DataDatabricksSharePluginframework extends cdktf.TerraformDataSourc
     return this._comment;
   }
 
-  // created_at - computed: true, optional: true, required: false
-  private _createdAt?: number; 
+  // created_at - computed: true, optional: false, required: false
   public get createdAt() {
     return this.getNumberAttribute('created_at');
   }
-  public set createdAt(value: number) {
-    this._createdAt = value;
-  }
-  public resetCreatedAt() {
-    this._createdAt = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get createdAtInput() {
-    return this._createdAt;
-  }
 
-  // created_by - computed: true, optional: true, required: false
-  private _createdBy?: string; 
+  // created_by - computed: true, optional: false, required: false
   public get createdBy() {
     return this.getStringAttribute('created_by');
-  }
-  public set createdBy(value: string) {
-    this._createdBy = value;
-  }
-  public resetCreatedBy() {
-    this._createdBy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get createdByInput() {
-    return this._createdBy;
   }
 
   // name - computed: false, optional: true, required: false
@@ -1221,36 +983,14 @@ export class DataDatabricksSharePluginframework extends cdktf.TerraformDataSourc
     return this._storageRoot;
   }
 
-  // updated_at - computed: true, optional: true, required: false
-  private _updatedAt?: number; 
+  // updated_at - computed: true, optional: false, required: false
   public get updatedAt() {
     return this.getNumberAttribute('updated_at');
   }
-  public set updatedAt(value: number) {
-    this._updatedAt = value;
-  }
-  public resetUpdatedAt() {
-    this._updatedAt = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get updatedAtInput() {
-    return this._updatedAt;
-  }
 
-  // updated_by - computed: true, optional: true, required: false
-  private _updatedBy?: string; 
+  // updated_by - computed: true, optional: false, required: false
   public get updatedBy() {
     return this.getStringAttribute('updated_by');
-  }
-  public set updatedBy(value: string) {
-    this._updatedBy = value;
-  }
-  public resetUpdatedBy() {
-    this._updatedBy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get updatedByInput() {
-    return this._updatedBy;
   }
 
   // =========
@@ -1260,15 +1000,11 @@ export class DataDatabricksSharePluginframework extends cdktf.TerraformDataSourc
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       comment: cdktf.stringToTerraform(this._comment),
-      created_at: cdktf.numberToTerraform(this._createdAt),
-      created_by: cdktf.stringToTerraform(this._createdBy),
       name: cdktf.stringToTerraform(this._name),
       object: cdktf.listMapper(dataDatabricksSharePluginframeworkObjectToTerraform, false)(this._object.internalValue),
       owner: cdktf.stringToTerraform(this._owner),
       storage_location: cdktf.stringToTerraform(this._storageLocation),
       storage_root: cdktf.stringToTerraform(this._storageRoot),
-      updated_at: cdktf.numberToTerraform(this._updatedAt),
-      updated_by: cdktf.stringToTerraform(this._updatedBy),
     };
   }
 
@@ -1276,18 +1012,6 @@ export class DataDatabricksSharePluginframework extends cdktf.TerraformDataSourc
     const attrs = {
       comment: {
         value: cdktf.stringToHclTerraform(this._comment),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      created_at: {
-        value: cdktf.numberToHclTerraform(this._createdAt),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "number",
-      },
-      created_by: {
-        value: cdktf.stringToHclTerraform(this._createdBy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1318,18 +1042,6 @@ export class DataDatabricksSharePluginframework extends cdktf.TerraformDataSourc
       },
       storage_root: {
         value: cdktf.stringToHclTerraform(this._storageRoot),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      updated_at: {
-        value: cdktf.numberToHclTerraform(this._updatedAt),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "number",
-      },
-      updated_by: {
-        value: cdktf.stringToHclTerraform(this._updatedBy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
