@@ -4,7 +4,7 @@
 
 ### App <a name="App" id="@cdktf/provider-databricks.app.App"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app databricks_app}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app databricks_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.app.App.Initializer"></a>
 
@@ -41,9 +41,9 @@ App.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#name App#name}. |
-| <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#description App#description}. |
-| <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.resources">resources</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.app.AppResources">AppResources</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#resources App#resources}. |
+| <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#name App#name}. |
+| <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#description App#description}. |
+| <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.resources">resources</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.app.AppResources">AppResources</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#resources App#resources}. |
 
 ---
 
@@ -111,7 +111,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#name App#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#name App#name}.
 
 ---
 
@@ -119,7 +119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#description App#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#description App#description}.
 
 ---
 
@@ -127,7 +127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.app.AppResources">AppResources</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#resources App#resources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#resources App#resources}.
 
 ---
 
@@ -581,7 +581,7 @@ The construct id used in the generated config for the App to import.
 
 The id of the existing App that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -993,14 +993,9 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.databricks.app.AppActiveDeployment;
 
 AppActiveDeployment.builder()
-//  .createTime(java.lang.String)
-//  .creator(java.lang.String)
-//  .deploymentArtifacts(AppActiveDeploymentDeploymentArtifacts)
 //  .deploymentId(java.lang.String)
 //  .mode(java.lang.String)
 //  .sourceCodePath(java.lang.String)
-//  .status(AppActiveDeploymentStatus)
-//  .updateTime(java.lang.String)
     .build();
 ```
 
@@ -1008,50 +1003,9 @@ AppActiveDeployment.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeployment.property.createTime">createTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#create_time App#create_time}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeployment.property.creator">creator</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#creator App#creator}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeployment.property.deploymentArtifacts">deploymentArtifacts</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifacts">AppActiveDeploymentDeploymentArtifacts</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#deployment_artifacts App#deployment_artifacts}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeployment.property.deploymentId">deploymentId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#deployment_id App#deployment_id}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeployment.property.mode">mode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#mode App#mode}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeployment.property.sourceCodePath">sourceCodePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#source_code_path App#source_code_path}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeployment.property.status">status</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatus">AppActiveDeploymentStatus</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#status App#status}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeployment.property.updateTime">updateTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#update_time App#update_time}. |
-
----
-
-##### `createTime`<sup>Optional</sup> <a name="createTime" id="@cdktf/provider-databricks.app.AppActiveDeployment.property.createTime"></a>
-
-```java
-public java.lang.String getCreateTime();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#create_time App#create_time}.
-
----
-
-##### `creator`<sup>Optional</sup> <a name="creator" id="@cdktf/provider-databricks.app.AppActiveDeployment.property.creator"></a>
-
-```java
-public java.lang.String getCreator();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#creator App#creator}.
-
----
-
-##### `deploymentArtifacts`<sup>Optional</sup> <a name="deploymentArtifacts" id="@cdktf/provider-databricks.app.AppActiveDeployment.property.deploymentArtifacts"></a>
-
-```java
-public AppActiveDeploymentDeploymentArtifacts getDeploymentArtifacts();
-```
-
-- *Type:* <a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifacts">AppActiveDeploymentDeploymentArtifacts</a>
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#deployment_artifacts App#deployment_artifacts}.
+| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeployment.property.deploymentId">deploymentId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#deployment_id App#deployment_id}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeployment.property.mode">mode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#mode App#mode}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeployment.property.sourceCodePath">sourceCodePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#source_code_path App#source_code_path}. |
 
 ---
 
@@ -1063,7 +1017,7 @@ public java.lang.String getDeploymentId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#deployment_id App#deployment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#deployment_id App#deployment_id}.
 
 ---
 
@@ -1075,7 +1029,7 @@ public java.lang.String getMode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#mode App#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#mode App#mode}.
 
 ---
 
@@ -1087,31 +1041,7 @@ public java.lang.String getSourceCodePath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#source_code_path App#source_code_path}.
-
----
-
-##### `status`<sup>Optional</sup> <a name="status" id="@cdktf/provider-databricks.app.AppActiveDeployment.property.status"></a>
-
-```java
-public AppActiveDeploymentStatus getStatus();
-```
-
-- *Type:* <a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatus">AppActiveDeploymentStatus</a>
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#status App#status}.
-
----
-
-##### `updateTime`<sup>Optional</sup> <a name="updateTime" id="@cdktf/provider-databricks.app.AppActiveDeployment.property.updateTime"></a>
-
-```java
-public java.lang.String getUpdateTime();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#update_time App#update_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#source_code_path App#source_code_path}.
 
 ---
 
@@ -1131,7 +1061,7 @@ AppActiveDeploymentDeploymentArtifacts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifacts.property.sourceCodePath">sourceCodePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#source_code_path App#source_code_path}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifacts.property.sourceCodePath">sourceCodePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#source_code_path App#source_code_path}. |
 
 ---
 
@@ -1143,7 +1073,7 @@ public java.lang.String getSourceCodePath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#source_code_path App#source_code_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#source_code_path App#source_code_path}.
 
 ---
 
@@ -1155,43 +1085,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import com.hashicorp.cdktf.providers.databricks.app.AppActiveDeploymentStatus;
 
 AppActiveDeploymentStatus.builder()
-//  .message(java.lang.String)
-//  .state(java.lang.String)
     .build();
 ```
 
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatus.property.message">message</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#message App#message}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatus.property.state">state</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#state App#state}. |
-
----
-
-##### `message`<sup>Optional</sup> <a name="message" id="@cdktf/provider-databricks.app.AppActiveDeploymentStatus.property.message"></a>
-
-```java
-public java.lang.String getMessage();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#message App#message}.
-
----
-
-##### `state`<sup>Optional</sup> <a name="state" id="@cdktf/provider-databricks.app.AppActiveDeploymentStatus.property.state"></a>
-
-```java
-public java.lang.String getState();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#state App#state}.
-
----
 
 ### AppAppStatus <a name="AppAppStatus" id="@cdktf/provider-databricks.app.AppAppStatus"></a>
 
@@ -1201,43 +1097,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import com.hashicorp.cdktf.providers.databricks.app.AppAppStatus;
 
 AppAppStatus.builder()
-//  .message(java.lang.String)
-//  .state(java.lang.String)
     .build();
 ```
 
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppAppStatus.property.message">message</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#message App#message}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppAppStatus.property.state">state</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#state App#state}. |
-
----
-
-##### `message`<sup>Optional</sup> <a name="message" id="@cdktf/provider-databricks.app.AppAppStatus.property.message"></a>
-
-```java
-public java.lang.String getMessage();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#message App#message}.
-
----
-
-##### `state`<sup>Optional</sup> <a name="state" id="@cdktf/provider-databricks.app.AppAppStatus.property.state"></a>
-
-```java
-public java.lang.String getState();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#state App#state}.
-
----
 
 ### AppComputeStatus <a name="AppComputeStatus" id="@cdktf/provider-databricks.app.AppComputeStatus"></a>
 
@@ -1247,43 +1109,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import com.hashicorp.cdktf.providers.databricks.app.AppComputeStatus;
 
 AppComputeStatus.builder()
-//  .message(java.lang.String)
-//  .state(java.lang.String)
     .build();
 ```
 
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppComputeStatus.property.message">message</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#message App#message}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppComputeStatus.property.state">state</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#state App#state}. |
-
----
-
-##### `message`<sup>Optional</sup> <a name="message" id="@cdktf/provider-databricks.app.AppComputeStatus.property.message"></a>
-
-```java
-public java.lang.String getMessage();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#message App#message}.
-
----
-
-##### `state`<sup>Optional</sup> <a name="state" id="@cdktf/provider-databricks.app.AppComputeStatus.property.state"></a>
-
-```java
-public java.lang.String getState();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#state App#state}.
-
----
 
 ### AppConfig <a name="AppConfig" id="@cdktf/provider-databricks.app.AppConfig"></a>
 
@@ -1322,9 +1150,9 @@ AppConfig.builder()
 | <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#name App#name}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#description App#description}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.resources">resources</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.app.AppResources">AppResources</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#resources App#resources}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#name App#name}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#description App#description}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.resources">resources</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.app.AppResources">AppResources</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#resources App#resources}. |
 
 ---
 
@@ -1406,7 +1234,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#name App#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#name App#name}.
 
 ---
 
@@ -1418,7 +1246,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#description App#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#description App#description}.
 
 ---
 
@@ -1430,7 +1258,7 @@ public java.lang.Object getResources();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.app.AppResources">AppResources</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#resources App#resources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#resources App#resources}.
 
 ---
 
@@ -1442,14 +1270,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import com.hashicorp.cdktf.providers.databricks.app.AppPendingDeployment;
 
 AppPendingDeployment.builder()
-//  .createTime(java.lang.String)
-//  .creator(java.lang.String)
-//  .deploymentArtifacts(AppPendingDeploymentDeploymentArtifacts)
 //  .deploymentId(java.lang.String)
 //  .mode(java.lang.String)
 //  .sourceCodePath(java.lang.String)
-//  .status(AppPendingDeploymentStatus)
-//  .updateTime(java.lang.String)
     .build();
 ```
 
@@ -1457,50 +1280,9 @@ AppPendingDeployment.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeployment.property.createTime">createTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#create_time App#create_time}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeployment.property.creator">creator</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#creator App#creator}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeployment.property.deploymentArtifacts">deploymentArtifacts</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifacts">AppPendingDeploymentDeploymentArtifacts</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#deployment_artifacts App#deployment_artifacts}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeployment.property.deploymentId">deploymentId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#deployment_id App#deployment_id}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeployment.property.mode">mode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#mode App#mode}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeployment.property.sourceCodePath">sourceCodePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#source_code_path App#source_code_path}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeployment.property.status">status</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatus">AppPendingDeploymentStatus</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#status App#status}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeployment.property.updateTime">updateTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#update_time App#update_time}. |
-
----
-
-##### `createTime`<sup>Optional</sup> <a name="createTime" id="@cdktf/provider-databricks.app.AppPendingDeployment.property.createTime"></a>
-
-```java
-public java.lang.String getCreateTime();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#create_time App#create_time}.
-
----
-
-##### `creator`<sup>Optional</sup> <a name="creator" id="@cdktf/provider-databricks.app.AppPendingDeployment.property.creator"></a>
-
-```java
-public java.lang.String getCreator();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#creator App#creator}.
-
----
-
-##### `deploymentArtifacts`<sup>Optional</sup> <a name="deploymentArtifacts" id="@cdktf/provider-databricks.app.AppPendingDeployment.property.deploymentArtifacts"></a>
-
-```java
-public AppPendingDeploymentDeploymentArtifacts getDeploymentArtifacts();
-```
-
-- *Type:* <a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifacts">AppPendingDeploymentDeploymentArtifacts</a>
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#deployment_artifacts App#deployment_artifacts}.
+| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeployment.property.deploymentId">deploymentId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#deployment_id App#deployment_id}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeployment.property.mode">mode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#mode App#mode}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeployment.property.sourceCodePath">sourceCodePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#source_code_path App#source_code_path}. |
 
 ---
 
@@ -1512,7 +1294,7 @@ public java.lang.String getDeploymentId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#deployment_id App#deployment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#deployment_id App#deployment_id}.
 
 ---
 
@@ -1524,7 +1306,7 @@ public java.lang.String getMode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#mode App#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#mode App#mode}.
 
 ---
 
@@ -1536,31 +1318,7 @@ public java.lang.String getSourceCodePath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#source_code_path App#source_code_path}.
-
----
-
-##### `status`<sup>Optional</sup> <a name="status" id="@cdktf/provider-databricks.app.AppPendingDeployment.property.status"></a>
-
-```java
-public AppPendingDeploymentStatus getStatus();
-```
-
-- *Type:* <a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatus">AppPendingDeploymentStatus</a>
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#status App#status}.
-
----
-
-##### `updateTime`<sup>Optional</sup> <a name="updateTime" id="@cdktf/provider-databricks.app.AppPendingDeployment.property.updateTime"></a>
-
-```java
-public java.lang.String getUpdateTime();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#update_time App#update_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#source_code_path App#source_code_path}.
 
 ---
 
@@ -1580,7 +1338,7 @@ AppPendingDeploymentDeploymentArtifacts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifacts.property.sourceCodePath">sourceCodePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#source_code_path App#source_code_path}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifacts.property.sourceCodePath">sourceCodePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#source_code_path App#source_code_path}. |
 
 ---
 
@@ -1592,7 +1350,7 @@ public java.lang.String getSourceCodePath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#source_code_path App#source_code_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#source_code_path App#source_code_path}.
 
 ---
 
@@ -1604,43 +1362,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import com.hashicorp.cdktf.providers.databricks.app.AppPendingDeploymentStatus;
 
 AppPendingDeploymentStatus.builder()
-//  .message(java.lang.String)
-//  .state(java.lang.String)
     .build();
 ```
 
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatus.property.message">message</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#message App#message}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatus.property.state">state</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#state App#state}. |
-
----
-
-##### `message`<sup>Optional</sup> <a name="message" id="@cdktf/provider-databricks.app.AppPendingDeploymentStatus.property.message"></a>
-
-```java
-public java.lang.String getMessage();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#message App#message}.
-
----
-
-##### `state`<sup>Optional</sup> <a name="state" id="@cdktf/provider-databricks.app.AppPendingDeploymentStatus.property.state"></a>
-
-```java
-public java.lang.String getState();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#state App#state}.
-
----
 
 ### AppResources <a name="AppResources" id="@cdktf/provider-databricks.app.AppResources"></a>
 
@@ -1663,12 +1387,12 @@ AppResources.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#name App#name}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#description App#description}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.job">job</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppResourcesJob">AppResourcesJob</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#job App#job}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.secret">secret</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppResourcesSecret">AppResourcesSecret</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#secret App#secret}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.servingEndpoint">servingEndpoint</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppResourcesServingEndpoint">AppResourcesServingEndpoint</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#serving_endpoint App#serving_endpoint}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.sqlWarehouse">sqlWarehouse</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppResourcesSqlWarehouse">AppResourcesSqlWarehouse</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#sql_warehouse App#sql_warehouse}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#name App#name}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#description App#description}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.job">job</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppResourcesJob">AppResourcesJob</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#job App#job}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.secret">secret</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppResourcesSecret">AppResourcesSecret</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#secret App#secret}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.servingEndpoint">servingEndpoint</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppResourcesServingEndpoint">AppResourcesServingEndpoint</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#serving_endpoint App#serving_endpoint}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.sqlWarehouse">sqlWarehouse</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppResourcesSqlWarehouse">AppResourcesSqlWarehouse</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#sql_warehouse App#sql_warehouse}. |
 
 ---
 
@@ -1680,7 +1404,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#name App#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#name App#name}.
 
 ---
 
@@ -1692,7 +1416,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#description App#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#description App#description}.
 
 ---
 
@@ -1704,7 +1428,7 @@ public AppResourcesJob getJob();
 
 - *Type:* <a href="#@cdktf/provider-databricks.app.AppResourcesJob">AppResourcesJob</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#job App#job}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#job App#job}.
 
 ---
 
@@ -1716,7 +1440,7 @@ public AppResourcesSecret getSecret();
 
 - *Type:* <a href="#@cdktf/provider-databricks.app.AppResourcesSecret">AppResourcesSecret</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#secret App#secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#secret App#secret}.
 
 ---
 
@@ -1728,7 +1452,7 @@ public AppResourcesServingEndpoint getServingEndpoint();
 
 - *Type:* <a href="#@cdktf/provider-databricks.app.AppResourcesServingEndpoint">AppResourcesServingEndpoint</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#serving_endpoint App#serving_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#serving_endpoint App#serving_endpoint}.
 
 ---
 
@@ -1740,7 +1464,7 @@ public AppResourcesSqlWarehouse getSqlWarehouse();
 
 - *Type:* <a href="#@cdktf/provider-databricks.app.AppResourcesSqlWarehouse">AppResourcesSqlWarehouse</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#sql_warehouse App#sql_warehouse}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#sql_warehouse App#sql_warehouse}.
 
 ---
 
@@ -1761,8 +1485,8 @@ AppResourcesJob.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppResourcesJob.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#id App#id}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppResourcesJob.property.permission">permission</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#permission App#permission}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesJob.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#id App#id}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesJob.property.permission">permission</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#permission App#permission}. |
 
 ---
 
@@ -1774,7 +1498,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#id App#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#id App#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1789,7 +1513,7 @@ public java.lang.String getPermission();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#permission App#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#permission App#permission}.
 
 ---
 
@@ -1811,9 +1535,9 @@ AppResourcesSecret.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppResourcesSecret.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#key App#key}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppResourcesSecret.property.permission">permission</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#permission App#permission}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppResourcesSecret.property.scope">scope</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#scope App#scope}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesSecret.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#key App#key}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesSecret.property.permission">permission</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#permission App#permission}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesSecret.property.scope">scope</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#scope App#scope}. |
 
 ---
 
@@ -1825,7 +1549,7 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#key App#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#key App#key}.
 
 ---
 
@@ -1837,7 +1561,7 @@ public java.lang.String getPermission();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#permission App#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#permission App#permission}.
 
 ---
 
@@ -1849,7 +1573,7 @@ public java.lang.String getScope();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#scope App#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#scope App#scope}.
 
 ---
 
@@ -1870,8 +1594,8 @@ AppResourcesServingEndpoint.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppResourcesServingEndpoint.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#name App#name}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppResourcesServingEndpoint.property.permission">permission</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#permission App#permission}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesServingEndpoint.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#name App#name}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesServingEndpoint.property.permission">permission</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#permission App#permission}. |
 
 ---
 
@@ -1883,7 +1607,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#name App#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#name App#name}.
 
 ---
 
@@ -1895,7 +1619,7 @@ public java.lang.String getPermission();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#permission App#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#permission App#permission}.
 
 ---
 
@@ -1916,8 +1640,8 @@ AppResourcesSqlWarehouse.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppResourcesSqlWarehouse.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#id App#id}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppResourcesSqlWarehouse.property.permission">permission</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#permission App#permission}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesSqlWarehouse.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#id App#id}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesSqlWarehouse.property.permission">permission</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#permission App#permission}. |
 
 ---
 
@@ -1929,7 +1653,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#id App#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#id App#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1944,7 +1668,7 @@ public java.lang.String getPermission();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/app#permission App#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/app#permission App#permission}.
 
 ---
 
@@ -2169,7 +1893,7 @@ public void resetSourceCodePath()
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifactsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifactsOutputReference.property.sourceCodePathInput">sourceCodePathInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifactsOutputReference.property.sourceCodePath">sourceCodePath</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifactsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifacts">AppActiveDeploymentDeploymentArtifacts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifactsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifacts">AppActiveDeploymentDeploymentArtifacts</a></code> | *No description.* |
 
 ---
 
@@ -2220,10 +1944,10 @@ public java.lang.String getSourceCodePath();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifactsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public AppActiveDeploymentDeploymentArtifacts getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifacts">AppActiveDeploymentDeploymentArtifacts</a>
+- *Type:* <a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifacts">AppActiveDeploymentDeploymentArtifacts</a>
 
 ---
 
@@ -2278,16 +2002,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.putDeploymentArtifacts">putDeploymentArtifacts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.putStatus">putStatus</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.resetCreateTime">resetCreateTime</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.resetCreator">resetCreator</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.resetDeploymentArtifacts">resetDeploymentArtifacts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.resetDeploymentId">resetDeploymentId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.resetMode">resetMode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.resetSourceCodePath">resetSourceCodePath</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.resetStatus">resetStatus</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.resetUpdateTime">resetUpdateTime</a></code> | *No description.* |
 
 ---
 
@@ -2441,48 +2158,6 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `putDeploymentArtifacts` <a name="putDeploymentArtifacts" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.putDeploymentArtifacts"></a>
-
-```java
-public void putDeploymentArtifacts(AppActiveDeploymentDeploymentArtifacts value)
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.putDeploymentArtifacts.parameter.value"></a>
-
-- *Type:* <a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifacts">AppActiveDeploymentDeploymentArtifacts</a>
-
----
-
-##### `putStatus` <a name="putStatus" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.putStatus"></a>
-
-```java
-public void putStatus(AppActiveDeploymentStatus value)
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.putStatus.parameter.value"></a>
-
-- *Type:* <a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatus">AppActiveDeploymentStatus</a>
-
----
-
-##### `resetCreateTime` <a name="resetCreateTime" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.resetCreateTime"></a>
-
-```java
-public void resetCreateTime()
-```
-
-##### `resetCreator` <a name="resetCreator" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.resetCreator"></a>
-
-```java
-public void resetCreator()
-```
-
-##### `resetDeploymentArtifacts` <a name="resetDeploymentArtifacts" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.resetDeploymentArtifacts"></a>
-
-```java
-public void resetDeploymentArtifacts()
-```
-
 ##### `resetDeploymentId` <a name="resetDeploymentId" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.resetDeploymentId"></a>
 
 ```java
@@ -2501,18 +2176,6 @@ public void resetMode()
 public void resetSourceCodePath()
 ```
 
-##### `resetStatus` <a name="resetStatus" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.resetStatus"></a>
-
-```java
-public void resetStatus()
-```
-
-##### `resetUpdateTime` <a name="resetUpdateTime" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.resetUpdateTime"></a>
-
-```java
-public void resetUpdateTime()
-```
-
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2520,22 +2183,17 @@ public void resetUpdateTime()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.createTime">createTime</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.creator">creator</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.deploymentArtifacts">deploymentArtifacts</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifactsOutputReference">AppActiveDeploymentDeploymentArtifactsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.status">status</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference">AppActiveDeploymentStatusOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.createTimeInput">createTimeInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.creatorInput">creatorInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.deploymentArtifactsInput">deploymentArtifactsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifacts">AppActiveDeploymentDeploymentArtifacts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.updateTime">updateTime</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.deploymentIdInput">deploymentIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.modeInput">modeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.sourceCodePathInput">sourceCodePathInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.statusInput">statusInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatus">AppActiveDeploymentStatus</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.updateTimeInput">updateTimeInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.createTime">createTime</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.creator">creator</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.deploymentId">deploymentId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.mode">mode</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.sourceCodePath">sourceCodePath</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.updateTime">updateTime</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeployment">AppActiveDeployment</a></code> | *No description.* |
 
 ---
@@ -2564,6 +2222,26 @@ public java.lang.String getFqn();
 
 ---
 
+##### `createTime`<sup>Required</sup> <a name="createTime" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.createTime"></a>
+
+```java
+public java.lang.String getCreateTime();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `creator`<sup>Required</sup> <a name="creator" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.creator"></a>
+
+```java
+public java.lang.String getCreator();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `deploymentArtifacts`<sup>Required</sup> <a name="deploymentArtifacts" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.deploymentArtifacts"></a>
 
 ```java
@@ -2584,33 +2262,13 @@ public AppActiveDeploymentStatusOutputReference getStatus();
 
 ---
 
-##### `createTimeInput`<sup>Optional</sup> <a name="createTimeInput" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.createTimeInput"></a>
+##### `updateTime`<sup>Required</sup> <a name="updateTime" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.updateTime"></a>
 
 ```java
-public java.lang.String getCreateTimeInput();
+public java.lang.String getUpdateTime();
 ```
 
 - *Type:* java.lang.String
-
----
-
-##### `creatorInput`<sup>Optional</sup> <a name="creatorInput" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.creatorInput"></a>
-
-```java
-public java.lang.String getCreatorInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `deploymentArtifactsInput`<sup>Optional</sup> <a name="deploymentArtifactsInput" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.deploymentArtifactsInput"></a>
-
-```java
-public java.lang.Object getDeploymentArtifactsInput();
-```
-
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifacts">AppActiveDeploymentDeploymentArtifacts</a>
 
 ---
 
@@ -2644,46 +2302,6 @@ public java.lang.String getSourceCodePathInput();
 
 ---
 
-##### `statusInput`<sup>Optional</sup> <a name="statusInput" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.statusInput"></a>
-
-```java
-public java.lang.Object getStatusInput();
-```
-
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatus">AppActiveDeploymentStatus</a>
-
----
-
-##### `updateTimeInput`<sup>Optional</sup> <a name="updateTimeInput" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.updateTimeInput"></a>
-
-```java
-public java.lang.String getUpdateTimeInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `createTime`<sup>Required</sup> <a name="createTime" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.createTime"></a>
-
-```java
-public java.lang.String getCreateTime();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `creator`<sup>Required</sup> <a name="creator" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.creator"></a>
-
-```java
-public java.lang.String getCreator();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `deploymentId`<sup>Required</sup> <a name="deploymentId" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.deploymentId"></a>
 
 ```java
@@ -2708,16 +2326,6 @@ public java.lang.String getMode();
 
 ```java
 public java.lang.String getSourceCodePath();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `updateTime`<sup>Required</sup> <a name="updateTime" id="@cdktf/provider-databricks.app.AppActiveDeploymentOutputReference.property.updateTime"></a>
-
-```java
-public java.lang.String getUpdateTime();
 ```
 
 - *Type:* java.lang.String
@@ -2785,8 +2393,6 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.resetMessage">resetMessage</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.resetState">resetState</a></code> | *No description.* |
 
 ---
 
@@ -2940,18 +2546,6 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetMessage` <a name="resetMessage" id="@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.resetMessage"></a>
-
-```java
-public void resetMessage()
-```
-
-##### `resetState` <a name="resetState" id="@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.resetState"></a>
-
-```java
-public void resetState()
-```
-
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2959,11 +2553,9 @@ public void resetState()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.property.messageInput">messageInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.property.stateInput">stateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.property.message">message</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.property.state">state</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatus">AppActiveDeploymentStatus</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatus">AppActiveDeploymentStatus</a></code> | *No description.* |
 
 ---
 
@@ -2985,26 +2577,6 @@ If this returns an empty array the stack will not be attached.
 
 ```java
 public java.lang.String getFqn();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `messageInput`<sup>Optional</sup> <a name="messageInput" id="@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.property.messageInput"></a>
-
-```java
-public java.lang.String getMessageInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `stateInput`<sup>Optional</sup> <a name="stateInput" id="@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.property.stateInput"></a>
-
-```java
-public java.lang.String getStateInput();
 ```
 
 - *Type:* java.lang.String
@@ -3034,10 +2606,10 @@ public java.lang.String getState();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.app.AppActiveDeploymentStatusOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public AppActiveDeploymentStatus getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatus">AppActiveDeploymentStatus</a>
+- *Type:* <a href="#@cdktf/provider-databricks.app.AppActiveDeploymentStatus">AppActiveDeploymentStatus</a>
 
 ---
 
@@ -3092,8 +2664,6 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.app.AppAppStatusOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppAppStatusOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.app.AppAppStatusOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-databricks.app.AppAppStatusOutputReference.resetMessage">resetMessage</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppAppStatusOutputReference.resetState">resetState</a></code> | *No description.* |
 
 ---
 
@@ -3247,18 +2817,6 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetMessage` <a name="resetMessage" id="@cdktf/provider-databricks.app.AppAppStatusOutputReference.resetMessage"></a>
-
-```java
-public void resetMessage()
-```
-
-##### `resetState` <a name="resetState" id="@cdktf/provider-databricks.app.AppAppStatusOutputReference.resetState"></a>
-
-```java
-public void resetState()
-```
-
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -3266,8 +2824,6 @@ public void resetState()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.app.AppAppStatusOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.app.AppAppStatusOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppAppStatusOutputReference.property.messageInput">messageInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppAppStatusOutputReference.property.stateInput">stateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppAppStatusOutputReference.property.message">message</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppAppStatusOutputReference.property.state">state</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppAppStatusOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppAppStatus">AppAppStatus</a></code> | *No description.* |
@@ -3292,26 +2848,6 @@ If this returns an empty array the stack will not be attached.
 
 ```java
 public java.lang.String getFqn();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `messageInput`<sup>Optional</sup> <a name="messageInput" id="@cdktf/provider-databricks.app.AppAppStatusOutputReference.property.messageInput"></a>
-
-```java
-public java.lang.String getMessageInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `stateInput`<sup>Optional</sup> <a name="stateInput" id="@cdktf/provider-databricks.app.AppAppStatusOutputReference.property.stateInput"></a>
-
-```java
-public java.lang.String getStateInput();
 ```
 
 - *Type:* java.lang.String
@@ -3399,8 +2935,6 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.app.AppComputeStatusOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppComputeStatusOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.app.AppComputeStatusOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-databricks.app.AppComputeStatusOutputReference.resetMessage">resetMessage</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppComputeStatusOutputReference.resetState">resetState</a></code> | *No description.* |
 
 ---
 
@@ -3554,18 +3088,6 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetMessage` <a name="resetMessage" id="@cdktf/provider-databricks.app.AppComputeStatusOutputReference.resetMessage"></a>
-
-```java
-public void resetMessage()
-```
-
-##### `resetState` <a name="resetState" id="@cdktf/provider-databricks.app.AppComputeStatusOutputReference.resetState"></a>
-
-```java
-public void resetState()
-```
-
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -3573,8 +3095,6 @@ public void resetState()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.app.AppComputeStatusOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.app.AppComputeStatusOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppComputeStatusOutputReference.property.messageInput">messageInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppComputeStatusOutputReference.property.stateInput">stateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppComputeStatusOutputReference.property.message">message</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppComputeStatusOutputReference.property.state">state</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppComputeStatusOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppComputeStatus">AppComputeStatus</a></code> | *No description.* |
@@ -3599,26 +3119,6 @@ If this returns an empty array the stack will not be attached.
 
 ```java
 public java.lang.String getFqn();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `messageInput`<sup>Optional</sup> <a name="messageInput" id="@cdktf/provider-databricks.app.AppComputeStatusOutputReference.property.messageInput"></a>
-
-```java
-public java.lang.String getMessageInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `stateInput`<sup>Optional</sup> <a name="stateInput" id="@cdktf/provider-databricks.app.AppComputeStatusOutputReference.property.stateInput"></a>
-
-```java
-public java.lang.String getStateInput();
 ```
 
 - *Type:* java.lang.String
@@ -3875,7 +3375,7 @@ public void resetSourceCodePath()
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifactsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifactsOutputReference.property.sourceCodePathInput">sourceCodePathInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifactsOutputReference.property.sourceCodePath">sourceCodePath</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifactsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifacts">AppPendingDeploymentDeploymentArtifacts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifactsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifacts">AppPendingDeploymentDeploymentArtifacts</a></code> | *No description.* |
 
 ---
 
@@ -3926,10 +3426,10 @@ public java.lang.String getSourceCodePath();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifactsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public AppPendingDeploymentDeploymentArtifacts getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifacts">AppPendingDeploymentDeploymentArtifacts</a>
+- *Type:* <a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifacts">AppPendingDeploymentDeploymentArtifacts</a>
 
 ---
 
@@ -3984,16 +3484,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.putDeploymentArtifacts">putDeploymentArtifacts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.putStatus">putStatus</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.resetCreateTime">resetCreateTime</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.resetCreator">resetCreator</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.resetDeploymentArtifacts">resetDeploymentArtifacts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.resetDeploymentId">resetDeploymentId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.resetMode">resetMode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.resetSourceCodePath">resetSourceCodePath</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.resetStatus">resetStatus</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.resetUpdateTime">resetUpdateTime</a></code> | *No description.* |
 
 ---
 
@@ -4147,48 +3640,6 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `putDeploymentArtifacts` <a name="putDeploymentArtifacts" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.putDeploymentArtifacts"></a>
-
-```java
-public void putDeploymentArtifacts(AppPendingDeploymentDeploymentArtifacts value)
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.putDeploymentArtifacts.parameter.value"></a>
-
-- *Type:* <a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifacts">AppPendingDeploymentDeploymentArtifacts</a>
-
----
-
-##### `putStatus` <a name="putStatus" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.putStatus"></a>
-
-```java
-public void putStatus(AppPendingDeploymentStatus value)
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.putStatus.parameter.value"></a>
-
-- *Type:* <a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatus">AppPendingDeploymentStatus</a>
-
----
-
-##### `resetCreateTime` <a name="resetCreateTime" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.resetCreateTime"></a>
-
-```java
-public void resetCreateTime()
-```
-
-##### `resetCreator` <a name="resetCreator" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.resetCreator"></a>
-
-```java
-public void resetCreator()
-```
-
-##### `resetDeploymentArtifacts` <a name="resetDeploymentArtifacts" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.resetDeploymentArtifacts"></a>
-
-```java
-public void resetDeploymentArtifacts()
-```
-
 ##### `resetDeploymentId` <a name="resetDeploymentId" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.resetDeploymentId"></a>
 
 ```java
@@ -4207,18 +3658,6 @@ public void resetMode()
 public void resetSourceCodePath()
 ```
 
-##### `resetStatus` <a name="resetStatus" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.resetStatus"></a>
-
-```java
-public void resetStatus()
-```
-
-##### `resetUpdateTime` <a name="resetUpdateTime" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.resetUpdateTime"></a>
-
-```java
-public void resetUpdateTime()
-```
-
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -4226,22 +3665,17 @@ public void resetUpdateTime()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.createTime">createTime</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.creator">creator</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.deploymentArtifacts">deploymentArtifacts</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifactsOutputReference">AppPendingDeploymentDeploymentArtifactsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.status">status</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference">AppPendingDeploymentStatusOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.createTimeInput">createTimeInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.creatorInput">creatorInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.deploymentArtifactsInput">deploymentArtifactsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifacts">AppPendingDeploymentDeploymentArtifacts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.updateTime">updateTime</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.deploymentIdInput">deploymentIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.modeInput">modeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.sourceCodePathInput">sourceCodePathInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.statusInput">statusInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatus">AppPendingDeploymentStatus</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.updateTimeInput">updateTimeInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.createTime">createTime</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.creator">creator</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.deploymentId">deploymentId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.mode">mode</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.sourceCodePath">sourceCodePath</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.updateTime">updateTime</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeployment">AppPendingDeployment</a></code> | *No description.* |
 
 ---
@@ -4270,6 +3704,26 @@ public java.lang.String getFqn();
 
 ---
 
+##### `createTime`<sup>Required</sup> <a name="createTime" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.createTime"></a>
+
+```java
+public java.lang.String getCreateTime();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `creator`<sup>Required</sup> <a name="creator" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.creator"></a>
+
+```java
+public java.lang.String getCreator();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `deploymentArtifacts`<sup>Required</sup> <a name="deploymentArtifacts" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.deploymentArtifacts"></a>
 
 ```java
@@ -4290,33 +3744,13 @@ public AppPendingDeploymentStatusOutputReference getStatus();
 
 ---
 
-##### `createTimeInput`<sup>Optional</sup> <a name="createTimeInput" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.createTimeInput"></a>
+##### `updateTime`<sup>Required</sup> <a name="updateTime" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.updateTime"></a>
 
 ```java
-public java.lang.String getCreateTimeInput();
+public java.lang.String getUpdateTime();
 ```
 
 - *Type:* java.lang.String
-
----
-
-##### `creatorInput`<sup>Optional</sup> <a name="creatorInput" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.creatorInput"></a>
-
-```java
-public java.lang.String getCreatorInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `deploymentArtifactsInput`<sup>Optional</sup> <a name="deploymentArtifactsInput" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.deploymentArtifactsInput"></a>
-
-```java
-public java.lang.Object getDeploymentArtifactsInput();
-```
-
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifacts">AppPendingDeploymentDeploymentArtifacts</a>
 
 ---
 
@@ -4350,46 +3784,6 @@ public java.lang.String getSourceCodePathInput();
 
 ---
 
-##### `statusInput`<sup>Optional</sup> <a name="statusInput" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.statusInput"></a>
-
-```java
-public java.lang.Object getStatusInput();
-```
-
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatus">AppPendingDeploymentStatus</a>
-
----
-
-##### `updateTimeInput`<sup>Optional</sup> <a name="updateTimeInput" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.updateTimeInput"></a>
-
-```java
-public java.lang.String getUpdateTimeInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `createTime`<sup>Required</sup> <a name="createTime" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.createTime"></a>
-
-```java
-public java.lang.String getCreateTime();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `creator`<sup>Required</sup> <a name="creator" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.creator"></a>
-
-```java
-public java.lang.String getCreator();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `deploymentId`<sup>Required</sup> <a name="deploymentId" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.deploymentId"></a>
 
 ```java
@@ -4414,16 +3808,6 @@ public java.lang.String getMode();
 
 ```java
 public java.lang.String getSourceCodePath();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `updateTime`<sup>Required</sup> <a name="updateTime" id="@cdktf/provider-databricks.app.AppPendingDeploymentOutputReference.property.updateTime"></a>
-
-```java
-public java.lang.String getUpdateTime();
 ```
 
 - *Type:* java.lang.String
@@ -4491,8 +3875,6 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.resetMessage">resetMessage</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.resetState">resetState</a></code> | *No description.* |
 
 ---
 
@@ -4646,18 +4028,6 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetMessage` <a name="resetMessage" id="@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.resetMessage"></a>
-
-```java
-public void resetMessage()
-```
-
-##### `resetState` <a name="resetState" id="@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.resetState"></a>
-
-```java
-public void resetState()
-```
-
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -4665,11 +4035,9 @@ public void resetState()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.property.messageInput">messageInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.property.stateInput">stateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.property.message">message</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.property.state">state</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatus">AppPendingDeploymentStatus</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatus">AppPendingDeploymentStatus</a></code> | *No description.* |
 
 ---
 
@@ -4691,26 +4059,6 @@ If this returns an empty array the stack will not be attached.
 
 ```java
 public java.lang.String getFqn();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `messageInput`<sup>Optional</sup> <a name="messageInput" id="@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.property.messageInput"></a>
-
-```java
-public java.lang.String getMessageInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `stateInput`<sup>Optional</sup> <a name="stateInput" id="@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.property.stateInput"></a>
-
-```java
-public java.lang.String getStateInput();
 ```
 
 - *Type:* java.lang.String
@@ -4740,10 +4088,10 @@ public java.lang.String getState();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.app.AppPendingDeploymentStatusOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public AppPendingDeploymentStatus getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatus">AppPendingDeploymentStatus</a>
+- *Type:* <a href="#@cdktf/provider-databricks.app.AppPendingDeploymentStatus">AppPendingDeploymentStatus</a>
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### SharePluginframework <a name="SharePluginframework" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework databricks_share_pluginframework}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework databricks_share_pluginframework}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.Initializer"></a>
 
@@ -75,14 +75,10 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.putObject">PutObject</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.resetComment">ResetComment</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.resetCreatedAt">ResetCreatedAt</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.resetCreatedBy">ResetCreatedBy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.resetObject">ResetObject</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.resetOwner">ResetOwner</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.resetStorageLocation">ResetStorageLocation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.resetStorageRoot">ResetStorageRoot</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.resetUpdatedAt">ResetUpdatedAt</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.resetUpdatedBy">ResetUpdatedBy</a></code> | *No description.* |
 
 ---
 
@@ -392,18 +388,6 @@ private void PutObject(object Value)
 private void ResetComment()
 ```
 
-##### `ResetCreatedAt` <a name="ResetCreatedAt" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.resetCreatedAt"></a>
-
-```csharp
-private void ResetCreatedAt()
-```
-
-##### `ResetCreatedBy` <a name="ResetCreatedBy" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.resetCreatedBy"></a>
-
-```csharp
-private void ResetCreatedBy()
-```
-
 ##### `ResetObject` <a name="ResetObject" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.resetObject"></a>
 
 ```csharp
@@ -426,18 +410,6 @@ private void ResetStorageLocation()
 
 ```csharp
 private void ResetStorageRoot()
-```
-
-##### `ResetUpdatedAt` <a name="ResetUpdatedAt" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.resetUpdatedAt"></a>
-
-```csharp
-private void ResetUpdatedAt()
-```
-
-##### `ResetUpdatedBy` <a name="ResetUpdatedBy" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.resetUpdatedBy"></a>
-
-```csharp
-private void ResetUpdatedBy()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -543,7 +515,7 @@ The construct id used in the generated config for the SharePluginframework to im
 
 The id of the existing SharePluginframework that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -573,26 +545,22 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.createdAt">CreatedAt</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.createdBy">CreatedBy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.object">Object</a></code> | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectList">SharePluginframeworkObjectList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.updatedAt">UpdatedAt</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.updatedBy">UpdatedBy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.commentInput">CommentInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.createdAtInput">CreatedAtInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.createdByInput">CreatedByInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.objectInput">ObjectInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.ownerInput">OwnerInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.storageLocationInput">StorageLocationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.storageRootInput">StorageRootInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.updatedAtInput">UpdatedAtInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.updatedByInput">UpdatedByInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.comment">Comment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.createdAt">CreatedAt</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.createdBy">CreatedBy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.owner">Owner</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.storageLocation">StorageLocation</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.storageRoot">StorageRoot</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.updatedAt">UpdatedAt</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.updatedBy">UpdatedBy</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -738,6 +706,26 @@ public object[] Provisioners { get; }
 
 ---
 
+##### `CreatedAt`<sup>Required</sup> <a name="CreatedAt" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.createdAt"></a>
+
+```csharp
+public double CreatedAt { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `CreatedBy`<sup>Required</sup> <a name="CreatedBy" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.createdBy"></a>
+
+```csharp
+public string CreatedBy { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Object`<sup>Required</sup> <a name="Object" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.object"></a>
 
 ```csharp
@@ -748,30 +736,30 @@ public SharePluginframeworkObjectList Object { get; }
 
 ---
 
-##### `CommentInput`<sup>Optional</sup> <a name="CommentInput" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.commentInput"></a>
+##### `UpdatedAt`<sup>Required</sup> <a name="UpdatedAt" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.updatedAt"></a>
 
 ```csharp
-public string CommentInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `CreatedAtInput`<sup>Optional</sup> <a name="CreatedAtInput" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.createdAtInput"></a>
-
-```csharp
-public double CreatedAtInput { get; }
+public double UpdatedAt { get; }
 ```
 
 - *Type:* double
 
 ---
 
-##### `CreatedByInput`<sup>Optional</sup> <a name="CreatedByInput" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.createdByInput"></a>
+##### `UpdatedBy`<sup>Required</sup> <a name="UpdatedBy" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.updatedBy"></a>
 
 ```csharp
-public string CreatedByInput { get; }
+public string UpdatedBy { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CommentInput`<sup>Optional</sup> <a name="CommentInput" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.commentInput"></a>
+
+```csharp
+public string CommentInput { get; }
 ```
 
 - *Type:* string
@@ -828,50 +816,10 @@ public string StorageRootInput { get; }
 
 ---
 
-##### `UpdatedAtInput`<sup>Optional</sup> <a name="UpdatedAtInput" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.updatedAtInput"></a>
-
-```csharp
-public double UpdatedAtInput { get; }
-```
-
-- *Type:* double
-
----
-
-##### `UpdatedByInput`<sup>Optional</sup> <a name="UpdatedByInput" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.updatedByInput"></a>
-
-```csharp
-public string UpdatedByInput { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `Comment`<sup>Required</sup> <a name="Comment" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.comment"></a>
 
 ```csharp
 public string Comment { get; }
-```
-
-- *Type:* string
-
----
-
-##### `CreatedAt`<sup>Required</sup> <a name="CreatedAt" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.createdAt"></a>
-
-```csharp
-public double CreatedAt { get; }
-```
-
-- *Type:* double
-
----
-
-##### `CreatedBy`<sup>Required</sup> <a name="CreatedBy" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.createdBy"></a>
-
-```csharp
-public string CreatedBy { get; }
 ```
 
 - *Type:* string
@@ -918,26 +866,6 @@ public string StorageRoot { get; }
 
 ---
 
-##### `UpdatedAt`<sup>Required</sup> <a name="UpdatedAt" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.updatedAt"></a>
-
-```csharp
-public double UpdatedAt { get; }
-```
-
-- *Type:* double
-
----
-
-##### `UpdatedBy`<sup>Required</sup> <a name="UpdatedBy" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.updatedBy"></a>
-
-```csharp
-public string UpdatedBy { get; }
-```
-
-- *Type:* string
-
----
-
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -975,14 +903,10 @@ new SharePluginframeworkConfig {
     object[] Provisioners = null,
     string Name,
     string Comment = null,
-    double CreatedAt = null,
-    string CreatedBy = null,
     object Object = null,
     string Owner = null,
     string StorageLocation = null,
-    string StorageRoot = null,
-    double UpdatedAt = null,
-    string UpdatedBy = null
+    string StorageRoot = null
 };
 ```
 
@@ -997,16 +921,12 @@ new SharePluginframeworkConfig {
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#name SharePluginframework#name}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#comment SharePluginframework#comment}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.createdAt">CreatedAt</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#created_at SharePluginframework#created_at}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.createdBy">CreatedBy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#created_by SharePluginframework#created_by}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#name SharePluginframework#name}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#comment SharePluginframework#comment}. |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.object">Object</a></code> | <code>object</code> | object block. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.owner">Owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#owner SharePluginframework#owner}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.storageLocation">StorageLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#storage_location SharePluginframework#storage_location}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.storageRoot">StorageRoot</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#storage_root SharePluginframework#storage_root}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.updatedAt">UpdatedAt</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#updated_at SharePluginframework#updated_at}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.updatedBy">UpdatedBy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#updated_by SharePluginframework#updated_by}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.owner">Owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#owner SharePluginframework#owner}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.storageLocation">StorageLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#storage_location SharePluginframework#storage_location}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.storageRoot">StorageRoot</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#storage_root SharePluginframework#storage_root}. |
 
 ---
 
@@ -1088,7 +1008,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#name SharePluginframework#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#name SharePluginframework#name}.
 
 ---
 
@@ -1100,31 +1020,7 @@ public string Comment { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#comment SharePluginframework#comment}.
-
----
-
-##### `CreatedAt`<sup>Optional</sup> <a name="CreatedAt" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.createdAt"></a>
-
-```csharp
-public double CreatedAt { get; set; }
-```
-
-- *Type:* double
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#created_at SharePluginframework#created_at}.
-
----
-
-##### `CreatedBy`<sup>Optional</sup> <a name="CreatedBy" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.createdBy"></a>
-
-```csharp
-public string CreatedBy { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#created_by SharePluginframework#created_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#comment SharePluginframework#comment}.
 
 ---
 
@@ -1138,7 +1034,7 @@ public object Object { get; set; }
 
 object block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#object SharePluginframework#object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#object SharePluginframework#object}
 
 ---
 
@@ -1150,7 +1046,7 @@ public string Owner { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#owner SharePluginframework#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#owner SharePluginframework#owner}.
 
 ---
 
@@ -1162,7 +1058,7 @@ public string StorageLocation { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#storage_location SharePluginframework#storage_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#storage_location SharePluginframework#storage_location}.
 
 ---
 
@@ -1174,31 +1070,7 @@ public string StorageRoot { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#storage_root SharePluginframework#storage_root}.
-
----
-
-##### `UpdatedAt`<sup>Optional</sup> <a name="UpdatedAt" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.updatedAt"></a>
-
-```csharp
-public double UpdatedAt { get; set; }
-```
-
-- *Type:* double
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#updated_at SharePluginframework#updated_at}.
-
----
-
-##### `UpdatedBy`<sup>Optional</sup> <a name="UpdatedBy" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.updatedBy"></a>
-
-```csharp
-public string UpdatedBy { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#updated_by SharePluginframework#updated_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#storage_root SharePluginframework#storage_root}.
 
 ---
 
@@ -1212,20 +1084,13 @@ using HashiCorp.Cdktf.Providers.Databricks;
 new SharePluginframeworkObject {
     string DataObjectType,
     string Name,
-    double AddedAt = null,
-    string AddedBy = null,
     object CdfEnabled = null,
     string Comment = null,
     string Content = null,
-    object EffectiveCdfEnabled = null,
-    string EffectiveHistoryDataSharingStatus = null,
-    string EffectiveSharedAs = null,
-    double EffectiveStartVersion = null,
     string HistoryDataSharingStatus = null,
     object Partition = null,
     string SharedAs = null,
     double StartVersion = null,
-    string Status = null,
     string StringSharedAs = null
 };
 ```
@@ -1234,23 +1099,16 @@ new SharePluginframeworkObject {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.dataObjectType">DataObjectType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#data_object_type SharePluginframework#data_object_type}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#name SharePluginframework#name}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.addedAt">AddedAt</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#added_at SharePluginframework#added_at}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.addedBy">AddedBy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#added_by SharePluginframework#added_by}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.cdfEnabled">CdfEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#cdf_enabled SharePluginframework#cdf_enabled}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#comment SharePluginframework#comment}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.content">Content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#content SharePluginframework#content}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.effectiveCdfEnabled">EffectiveCdfEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#effective_cdf_enabled SharePluginframework#effective_cdf_enabled}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.effectiveHistoryDataSharingStatus">EffectiveHistoryDataSharingStatus</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#effective_history_data_sharing_status SharePluginframework#effective_history_data_sharing_status}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.effectiveSharedAs">EffectiveSharedAs</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#effective_shared_as SharePluginframework#effective_shared_as}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.effectiveStartVersion">EffectiveStartVersion</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#effective_start_version SharePluginframework#effective_start_version}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.historyDataSharingStatus">HistoryDataSharingStatus</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#history_data_sharing_status SharePluginframework#history_data_sharing_status}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.dataObjectType">DataObjectType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#data_object_type SharePluginframework#data_object_type}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#name SharePluginframework#name}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.cdfEnabled">CdfEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#cdf_enabled SharePluginframework#cdf_enabled}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#comment SharePluginframework#comment}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.content">Content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#content SharePluginframework#content}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.historyDataSharingStatus">HistoryDataSharingStatus</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#history_data_sharing_status SharePluginframework#history_data_sharing_status}. |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.partition">Partition</a></code> | <code>object</code> | partition block. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.sharedAs">SharedAs</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#shared_as SharePluginframework#shared_as}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.startVersion">StartVersion</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#start_version SharePluginframework#start_version}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.status">Status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#status SharePluginframework#status}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.stringSharedAs">StringSharedAs</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#string_shared_as SharePluginframework#string_shared_as}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.sharedAs">SharedAs</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#shared_as SharePluginframework#shared_as}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.startVersion">StartVersion</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#start_version SharePluginframework#start_version}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.stringSharedAs">StringSharedAs</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#string_shared_as SharePluginframework#string_shared_as}. |
 
 ---
 
@@ -1262,7 +1120,7 @@ public string DataObjectType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#data_object_type SharePluginframework#data_object_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#data_object_type SharePluginframework#data_object_type}.
 
 ---
 
@@ -1274,31 +1132,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#name SharePluginframework#name}.
-
----
-
-##### `AddedAt`<sup>Optional</sup> <a name="AddedAt" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.addedAt"></a>
-
-```csharp
-public double AddedAt { get; set; }
-```
-
-- *Type:* double
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#added_at SharePluginframework#added_at}.
-
----
-
-##### `AddedBy`<sup>Optional</sup> <a name="AddedBy" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.addedBy"></a>
-
-```csharp
-public string AddedBy { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#added_by SharePluginframework#added_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#name SharePluginframework#name}.
 
 ---
 
@@ -1310,7 +1144,7 @@ public object CdfEnabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#cdf_enabled SharePluginframework#cdf_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#cdf_enabled SharePluginframework#cdf_enabled}.
 
 ---
 
@@ -1322,7 +1156,7 @@ public string Comment { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#comment SharePluginframework#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#comment SharePluginframework#comment}.
 
 ---
 
@@ -1334,55 +1168,7 @@ public string Content { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#content SharePluginframework#content}.
-
----
-
-##### `EffectiveCdfEnabled`<sup>Optional</sup> <a name="EffectiveCdfEnabled" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.effectiveCdfEnabled"></a>
-
-```csharp
-public object EffectiveCdfEnabled { get; set; }
-```
-
-- *Type:* object
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#effective_cdf_enabled SharePluginframework#effective_cdf_enabled}.
-
----
-
-##### `EffectiveHistoryDataSharingStatus`<sup>Optional</sup> <a name="EffectiveHistoryDataSharingStatus" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.effectiveHistoryDataSharingStatus"></a>
-
-```csharp
-public string EffectiveHistoryDataSharingStatus { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#effective_history_data_sharing_status SharePluginframework#effective_history_data_sharing_status}.
-
----
-
-##### `EffectiveSharedAs`<sup>Optional</sup> <a name="EffectiveSharedAs" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.effectiveSharedAs"></a>
-
-```csharp
-public string EffectiveSharedAs { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#effective_shared_as SharePluginframework#effective_shared_as}.
-
----
-
-##### `EffectiveStartVersion`<sup>Optional</sup> <a name="EffectiveStartVersion" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.effectiveStartVersion"></a>
-
-```csharp
-public double EffectiveStartVersion { get; set; }
-```
-
-- *Type:* double
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#effective_start_version SharePluginframework#effective_start_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#content SharePluginframework#content}.
 
 ---
 
@@ -1394,7 +1180,7 @@ public string HistoryDataSharingStatus { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#history_data_sharing_status SharePluginframework#history_data_sharing_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#history_data_sharing_status SharePluginframework#history_data_sharing_status}.
 
 ---
 
@@ -1408,7 +1194,7 @@ public object Partition { get; set; }
 
 partition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#partition SharePluginframework#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#partition SharePluginframework#partition}
 
 ---
 
@@ -1420,7 +1206,7 @@ public string SharedAs { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#shared_as SharePluginframework#shared_as}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#shared_as SharePluginframework#shared_as}.
 
 ---
 
@@ -1432,19 +1218,7 @@ public double StartVersion { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#start_version SharePluginframework#start_version}.
-
----
-
-##### `Status`<sup>Optional</sup> <a name="Status" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.status"></a>
-
-```csharp
-public string Status { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#status SharePluginframework#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#start_version SharePluginframework#start_version}.
 
 ---
 
@@ -1456,7 +1230,7 @@ public string StringSharedAs { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#string_shared_as SharePluginframework#string_shared_as}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#string_shared_as SharePluginframework#string_shared_as}.
 
 ---
 
@@ -1490,7 +1264,7 @@ public object Value { get; set; }
 
 value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#value SharePluginframework#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#value SharePluginframework#value}
 
 ---
 
@@ -1513,10 +1287,10 @@ new SharePluginframeworkObjectPartitionValue {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectPartitionValue.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#name SharePluginframework#name}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectPartitionValue.property.op">Op</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#op SharePluginframework#op}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectPartitionValue.property.recipientPropertyKey">RecipientPropertyKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#recipient_property_key SharePluginframework#recipient_property_key}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectPartitionValue.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#value SharePluginframework#value}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectPartitionValue.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#name SharePluginframework#name}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectPartitionValue.property.op">Op</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#op SharePluginframework#op}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectPartitionValue.property.recipientPropertyKey">RecipientPropertyKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#recipient_property_key SharePluginframework#recipient_property_key}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectPartitionValue.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#value SharePluginframework#value}. |
 
 ---
 
@@ -1528,7 +1302,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#name SharePluginframework#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#name SharePluginframework#name}.
 
 ---
 
@@ -1540,7 +1314,7 @@ public string Op { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#op SharePluginframework#op}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#op SharePluginframework#op}.
 
 ---
 
@@ -1552,7 +1326,7 @@ public string RecipientPropertyKey { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#recipient_property_key SharePluginframework#recipient_property_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#recipient_property_key SharePluginframework#recipient_property_key}.
 
 ---
 
@@ -1564,7 +1338,7 @@ public string Value { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/resources/share_pluginframework#value SharePluginframework#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/resources/share_pluginframework#value SharePluginframework#value}.
 
 ---
 
@@ -1799,20 +1573,13 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.putPartition">PutPartition</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.resetAddedAt">ResetAddedAt</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.resetAddedBy">ResetAddedBy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.resetCdfEnabled">ResetCdfEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.resetComment">ResetComment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.resetContent">ResetContent</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.resetEffectiveCdfEnabled">ResetEffectiveCdfEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.resetEffectiveHistoryDataSharingStatus">ResetEffectiveHistoryDataSharingStatus</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.resetEffectiveSharedAs">ResetEffectiveSharedAs</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.resetEffectiveStartVersion">ResetEffectiveStartVersion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.resetHistoryDataSharingStatus">ResetHistoryDataSharingStatus</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.resetPartition">ResetPartition</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.resetSharedAs">ResetSharedAs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.resetStartVersion">ResetStartVersion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.resetStatus">ResetStatus</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.resetStringSharedAs">ResetStringSharedAs</a></code> | *No description.* |
 
 ---
@@ -1979,18 +1746,6 @@ private void PutPartition(object Value)
 
 ---
 
-##### `ResetAddedAt` <a name="ResetAddedAt" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.resetAddedAt"></a>
-
-```csharp
-private void ResetAddedAt()
-```
-
-##### `ResetAddedBy` <a name="ResetAddedBy" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.resetAddedBy"></a>
-
-```csharp
-private void ResetAddedBy()
-```
-
 ##### `ResetCdfEnabled` <a name="ResetCdfEnabled" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.resetCdfEnabled"></a>
 
 ```csharp
@@ -2007,30 +1762,6 @@ private void ResetComment()
 
 ```csharp
 private void ResetContent()
-```
-
-##### `ResetEffectiveCdfEnabled` <a name="ResetEffectiveCdfEnabled" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.resetEffectiveCdfEnabled"></a>
-
-```csharp
-private void ResetEffectiveCdfEnabled()
-```
-
-##### `ResetEffectiveHistoryDataSharingStatus` <a name="ResetEffectiveHistoryDataSharingStatus" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.resetEffectiveHistoryDataSharingStatus"></a>
-
-```csharp
-private void ResetEffectiveHistoryDataSharingStatus()
-```
-
-##### `ResetEffectiveSharedAs` <a name="ResetEffectiveSharedAs" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.resetEffectiveSharedAs"></a>
-
-```csharp
-private void ResetEffectiveSharedAs()
-```
-
-##### `ResetEffectiveStartVersion` <a name="ResetEffectiveStartVersion" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.resetEffectiveStartVersion"></a>
-
-```csharp
-private void ResetEffectiveStartVersion()
 ```
 
 ##### `ResetHistoryDataSharingStatus` <a name="ResetHistoryDataSharingStatus" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.resetHistoryDataSharingStatus"></a>
@@ -2057,12 +1788,6 @@ private void ResetSharedAs()
 private void ResetStartVersion()
 ```
 
-##### `ResetStatus` <a name="ResetStatus" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.resetStatus"></a>
-
-```csharp
-private void ResetStatus()
-```
-
 ##### `ResetStringSharedAs` <a name="ResetStringSharedAs" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.resetStringSharedAs"></a>
 
 ```csharp
@@ -2076,39 +1801,32 @@ private void ResetStringSharedAs()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.addedAt">AddedAt</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.addedBy">AddedBy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.effectiveCdfEnabled">EffectiveCdfEnabled</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.effectiveHistoryDataSharingStatus">EffectiveHistoryDataSharingStatus</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.effectiveSharedAs">EffectiveSharedAs</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.effectiveStartVersion">EffectiveStartVersion</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.partition">Partition</a></code> | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectPartitionList">SharePluginframeworkObjectPartitionList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.addedAtInput">AddedAtInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.addedByInput">AddedByInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.status">Status</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.cdfEnabledInput">CdfEnabledInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.commentInput">CommentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.contentInput">ContentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.dataObjectTypeInput">DataObjectTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.effectiveCdfEnabledInput">EffectiveCdfEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.effectiveHistoryDataSharingStatusInput">EffectiveHistoryDataSharingStatusInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.effectiveSharedAsInput">EffectiveSharedAsInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.effectiveStartVersionInput">EffectiveStartVersionInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.historyDataSharingStatusInput">HistoryDataSharingStatusInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.partitionInput">PartitionInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.sharedAsInput">SharedAsInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.startVersionInput">StartVersionInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.statusInput">StatusInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.stringSharedAsInput">StringSharedAsInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.addedAt">AddedAt</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.addedBy">AddedBy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.cdfEnabled">CdfEnabled</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.comment">Comment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.content">Content</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.dataObjectType">DataObjectType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.effectiveCdfEnabled">EffectiveCdfEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.effectiveHistoryDataSharingStatus">EffectiveHistoryDataSharingStatus</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.effectiveSharedAs">EffectiveSharedAs</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.effectiveStartVersion">EffectiveStartVersion</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.historyDataSharingStatus">HistoryDataSharingStatus</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.sharedAs">SharedAs</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.startVersion">StartVersion</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.status">Status</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.stringSharedAs">StringSharedAs</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
 
@@ -2138,6 +1856,66 @@ public string Fqn { get; }
 
 ---
 
+##### `AddedAt`<sup>Required</sup> <a name="AddedAt" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.addedAt"></a>
+
+```csharp
+public double AddedAt { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `AddedBy`<sup>Required</sup> <a name="AddedBy" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.addedBy"></a>
+
+```csharp
+public string AddedBy { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `EffectiveCdfEnabled`<sup>Required</sup> <a name="EffectiveCdfEnabled" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.effectiveCdfEnabled"></a>
+
+```csharp
+public IResolvable EffectiveCdfEnabled { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.IResolvable
+
+---
+
+##### `EffectiveHistoryDataSharingStatus`<sup>Required</sup> <a name="EffectiveHistoryDataSharingStatus" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.effectiveHistoryDataSharingStatus"></a>
+
+```csharp
+public string EffectiveHistoryDataSharingStatus { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `EffectiveSharedAs`<sup>Required</sup> <a name="EffectiveSharedAs" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.effectiveSharedAs"></a>
+
+```csharp
+public string EffectiveSharedAs { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `EffectiveStartVersion`<sup>Required</sup> <a name="EffectiveStartVersion" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.effectiveStartVersion"></a>
+
+```csharp
+public double EffectiveStartVersion { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `Partition`<sup>Required</sup> <a name="Partition" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.partition"></a>
 
 ```csharp
@@ -2148,20 +1926,10 @@ public SharePluginframeworkObjectPartitionList Partition { get; }
 
 ---
 
-##### `AddedAtInput`<sup>Optional</sup> <a name="AddedAtInput" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.addedAtInput"></a>
+##### `Status`<sup>Required</sup> <a name="Status" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.status"></a>
 
 ```csharp
-public double AddedAtInput { get; }
-```
-
-- *Type:* double
-
----
-
-##### `AddedByInput`<sup>Optional</sup> <a name="AddedByInput" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.addedByInput"></a>
-
-```csharp
-public string AddedByInput { get; }
+public string Status { get; }
 ```
 
 - *Type:* string
@@ -2205,46 +1973,6 @@ public string DataObjectTypeInput { get; }
 ```
 
 - *Type:* string
-
----
-
-##### `EffectiveCdfEnabledInput`<sup>Optional</sup> <a name="EffectiveCdfEnabledInput" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.effectiveCdfEnabledInput"></a>
-
-```csharp
-public object EffectiveCdfEnabledInput { get; }
-```
-
-- *Type:* object
-
----
-
-##### `EffectiveHistoryDataSharingStatusInput`<sup>Optional</sup> <a name="EffectiveHistoryDataSharingStatusInput" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.effectiveHistoryDataSharingStatusInput"></a>
-
-```csharp
-public string EffectiveHistoryDataSharingStatusInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `EffectiveSharedAsInput`<sup>Optional</sup> <a name="EffectiveSharedAsInput" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.effectiveSharedAsInput"></a>
-
-```csharp
-public string EffectiveSharedAsInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `EffectiveStartVersionInput`<sup>Optional</sup> <a name="EffectiveStartVersionInput" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.effectiveStartVersionInput"></a>
-
-```csharp
-public double EffectiveStartVersionInput { get; }
-```
-
-- *Type:* double
 
 ---
 
@@ -2298,40 +2026,10 @@ public double StartVersionInput { get; }
 
 ---
 
-##### `StatusInput`<sup>Optional</sup> <a name="StatusInput" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.statusInput"></a>
-
-```csharp
-public string StatusInput { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `StringSharedAsInput`<sup>Optional</sup> <a name="StringSharedAsInput" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.stringSharedAsInput"></a>
 
 ```csharp
 public string StringSharedAsInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `AddedAt`<sup>Required</sup> <a name="AddedAt" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.addedAt"></a>
-
-```csharp
-public double AddedAt { get; }
-```
-
-- *Type:* double
-
----
-
-##### `AddedBy`<sup>Required</sup> <a name="AddedBy" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.addedBy"></a>
-
-```csharp
-public string AddedBy { get; }
 ```
 
 - *Type:* string
@@ -2378,46 +2076,6 @@ public string DataObjectType { get; }
 
 ---
 
-##### `EffectiveCdfEnabled`<sup>Required</sup> <a name="EffectiveCdfEnabled" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.effectiveCdfEnabled"></a>
-
-```csharp
-public object EffectiveCdfEnabled { get; }
-```
-
-- *Type:* object
-
----
-
-##### `EffectiveHistoryDataSharingStatus`<sup>Required</sup> <a name="EffectiveHistoryDataSharingStatus" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.effectiveHistoryDataSharingStatus"></a>
-
-```csharp
-public string EffectiveHistoryDataSharingStatus { get; }
-```
-
-- *Type:* string
-
----
-
-##### `EffectiveSharedAs`<sup>Required</sup> <a name="EffectiveSharedAs" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.effectiveSharedAs"></a>
-
-```csharp
-public string EffectiveSharedAs { get; }
-```
-
-- *Type:* string
-
----
-
-##### `EffectiveStartVersion`<sup>Required</sup> <a name="EffectiveStartVersion" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.effectiveStartVersion"></a>
-
-```csharp
-public double EffectiveStartVersion { get; }
-```
-
-- *Type:* double
-
----
-
 ##### `HistoryDataSharingStatus`<sup>Required</sup> <a name="HistoryDataSharingStatus" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.historyDataSharingStatus"></a>
 
 ```csharp
@@ -2455,16 +2113,6 @@ public double StartVersion { get; }
 ```
 
 - *Type:* double
-
----
-
-##### `Status`<sup>Required</sup> <a name="Status" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.property.status"></a>
-
-```csharp
-public string Status { get; }
-```
-
-- *Type:* string
 
 ---
 

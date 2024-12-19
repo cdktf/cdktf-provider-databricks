@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps
+// https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/apps
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,12 +10,12 @@ export interface DataDatabricksAppsConfig extends cdktf.TerraformMetaArguments {
 }
 export interface DataDatabricksAppsAppActiveDeploymentDeploymentArtifacts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#source_code_path DataDatabricksApps#source_code_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/apps#source_code_path DataDatabricksApps#source_code_path}
   */
   readonly sourceCodePath?: string;
 }
 
-export function dataDatabricksAppsAppActiveDeploymentDeploymentArtifactsToTerraform(struct?: DataDatabricksAppsAppActiveDeploymentDeploymentArtifacts | cdktf.IResolvable): any {
+export function dataDatabricksAppsAppActiveDeploymentDeploymentArtifactsToTerraform(struct?: DataDatabricksAppsAppActiveDeploymentDeploymentArtifacts): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -31,7 +26,7 @@ export function dataDatabricksAppsAppActiveDeploymentDeploymentArtifactsToTerraf
 }
 
 
-export function dataDatabricksAppsAppActiveDeploymentDeploymentArtifactsToHclTerraform(struct?: DataDatabricksAppsAppActiveDeploymentDeploymentArtifacts | cdktf.IResolvable): any {
+export function dataDatabricksAppsAppActiveDeploymentDeploymentArtifactsToHclTerraform(struct?: DataDatabricksAppsAppActiveDeploymentDeploymentArtifacts): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -51,7 +46,6 @@ export function dataDatabricksAppsAppActiveDeploymentDeploymentArtifactsToHclTer
 
 export class DataDatabricksAppsAppActiveDeploymentDeploymentArtifactsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -61,10 +55,7 @@ export class DataDatabricksAppsAppActiveDeploymentDeploymentArtifactsOutputRefer
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksAppsAppActiveDeploymentDeploymentArtifacts | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksAppsAppActiveDeploymentDeploymentArtifacts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._sourceCodePath !== undefined) {
@@ -74,19 +65,13 @@ export class DataDatabricksAppsAppActiveDeploymentDeploymentArtifactsOutputRefer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksAppsAppActiveDeploymentDeploymentArtifacts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksAppsAppActiveDeploymentDeploymentArtifacts | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._sourceCodePath = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._sourceCodePath = value.sourceCodePath;
     }
   }
@@ -108,55 +93,30 @@ export class DataDatabricksAppsAppActiveDeploymentDeploymentArtifactsOutputRefer
   }
 }
 export interface DataDatabricksAppsAppActiveDeploymentStatus {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#message DataDatabricksApps#message}
-  */
-  readonly message?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#state DataDatabricksApps#state}
-  */
-  readonly state?: string;
 }
 
-export function dataDatabricksAppsAppActiveDeploymentStatusToTerraform(struct?: DataDatabricksAppsAppActiveDeploymentStatus | cdktf.IResolvable): any {
+export function dataDatabricksAppsAppActiveDeploymentStatusToTerraform(struct?: DataDatabricksAppsAppActiveDeploymentStatus): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    message: cdktf.stringToTerraform(struct!.message),
-    state: cdktf.stringToTerraform(struct!.state),
   }
 }
 
 
-export function dataDatabricksAppsAppActiveDeploymentStatusToHclTerraform(struct?: DataDatabricksAppsAppActiveDeploymentStatus | cdktf.IResolvable): any {
+export function dataDatabricksAppsAppActiveDeploymentStatusToHclTerraform(struct?: DataDatabricksAppsAppActiveDeploymentStatus): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    message: {
-      value: cdktf.stringToHclTerraform(struct!.message),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    state: {
-      value: cdktf.stringToHclTerraform(struct!.state),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
   };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+  return attrs;
 }
 
 export class DataDatabricksAppsAppActiveDeploymentStatusOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -166,151 +126,65 @@ export class DataDatabricksAppsAppActiveDeploymentStatusOutputReference extends 
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksAppsAppActiveDeploymentStatus | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksAppsAppActiveDeploymentStatus | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._message !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.message = this._message;
-    }
-    if (this._state !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.state = this._state;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksAppsAppActiveDeploymentStatus | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksAppsAppActiveDeploymentStatus | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._message = undefined;
-      this._state = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._message = value.message;
-      this._state = value.state;
     }
   }
 
-  // message - computed: true, optional: true, required: false
-  private _message?: string; 
+  // message - computed: true, optional: false, required: false
   public get message() {
     return this.getStringAttribute('message');
   }
-  public set message(value: string) {
-    this._message = value;
-  }
-  public resetMessage() {
-    this._message = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get messageInput() {
-    return this._message;
-  }
 
-  // state - computed: true, optional: true, required: false
-  private _state?: string; 
+  // state - computed: true, optional: false, required: false
   public get state() {
     return this.getStringAttribute('state');
-  }
-  public set state(value: string) {
-    this._state = value;
-  }
-  public resetState() {
-    this._state = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get stateInput() {
-    return this._state;
   }
 }
 export interface DataDatabricksAppsAppActiveDeployment {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#create_time DataDatabricksApps#create_time}
-  */
-  readonly createTime?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#creator DataDatabricksApps#creator}
-  */
-  readonly creator?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#deployment_artifacts DataDatabricksApps#deployment_artifacts}
-  */
-  readonly deploymentArtifacts?: DataDatabricksAppsAppActiveDeploymentDeploymentArtifacts;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#deployment_id DataDatabricksApps#deployment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/apps#deployment_id DataDatabricksApps#deployment_id}
   */
   readonly deploymentId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#mode DataDatabricksApps#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/apps#mode DataDatabricksApps#mode}
   */
   readonly mode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#source_code_path DataDatabricksApps#source_code_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/apps#source_code_path DataDatabricksApps#source_code_path}
   */
   readonly sourceCodePath?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#status DataDatabricksApps#status}
-  */
-  readonly status?: DataDatabricksAppsAppActiveDeploymentStatus;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#update_time DataDatabricksApps#update_time}
-  */
-  readonly updateTime?: string;
 }
 
-export function dataDatabricksAppsAppActiveDeploymentToTerraform(struct?: DataDatabricksAppsAppActiveDeployment | cdktf.IResolvable): any {
+export function dataDatabricksAppsAppActiveDeploymentToTerraform(struct?: DataDatabricksAppsAppActiveDeployment): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create_time: cdktf.stringToTerraform(struct!.createTime),
-    creator: cdktf.stringToTerraform(struct!.creator),
-    deployment_artifacts: dataDatabricksAppsAppActiveDeploymentDeploymentArtifactsToTerraform(struct!.deploymentArtifacts),
     deployment_id: cdktf.stringToTerraform(struct!.deploymentId),
     mode: cdktf.stringToTerraform(struct!.mode),
     source_code_path: cdktf.stringToTerraform(struct!.sourceCodePath),
-    status: dataDatabricksAppsAppActiveDeploymentStatusToTerraform(struct!.status),
-    update_time: cdktf.stringToTerraform(struct!.updateTime),
   }
 }
 
 
-export function dataDatabricksAppsAppActiveDeploymentToHclTerraform(struct?: DataDatabricksAppsAppActiveDeployment | cdktf.IResolvable): any {
+export function dataDatabricksAppsAppActiveDeploymentToHclTerraform(struct?: DataDatabricksAppsAppActiveDeployment): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    create_time: {
-      value: cdktf.stringToHclTerraform(struct!.createTime),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    creator: {
-      value: cdktf.stringToHclTerraform(struct!.creator),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    deployment_artifacts: {
-      value: dataDatabricksAppsAppActiveDeploymentDeploymentArtifactsToHclTerraform(struct!.deploymentArtifacts),
-      isBlock: true,
-      type: "struct",
-      storageClassType: "DataDatabricksAppsAppActiveDeploymentDeploymentArtifacts",
-    },
     deployment_id: {
       value: cdktf.stringToHclTerraform(struct!.deploymentId),
       isBlock: false,
@@ -329,18 +203,6 @@ export function dataDatabricksAppsAppActiveDeploymentToHclTerraform(struct?: Dat
       type: "simple",
       storageClassType: "string",
     },
-    status: {
-      value: dataDatabricksAppsAppActiveDeploymentStatusToHclTerraform(struct!.status),
-      isBlock: true,
-      type: "struct",
-      storageClassType: "DataDatabricksAppsAppActiveDeploymentStatus",
-    },
-    update_time: {
-      value: cdktf.stringToHclTerraform(struct!.updateTime),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
   };
 
   // remove undefined attributes
@@ -349,7 +211,6 @@ export function dataDatabricksAppsAppActiveDeploymentToHclTerraform(struct?: Dat
 
 export class DataDatabricksAppsAppActiveDeploymentOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -359,24 +220,9 @@ export class DataDatabricksAppsAppActiveDeploymentOutputReference extends cdktf.
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksAppsAppActiveDeployment | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksAppsAppActiveDeployment | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._createTime !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.createTime = this._createTime;
-    }
-    if (this._creator !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.creator = this._creator;
-    }
-    if (this._deploymentArtifacts?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.deploymentArtifacts = this._deploymentArtifacts?.internalValue;
-    }
     if (this._deploymentId !== undefined) {
       hasAnyValues = true;
       internalValueResult.deploymentId = this._deploymentId;
@@ -389,94 +235,38 @@ export class DataDatabricksAppsAppActiveDeploymentOutputReference extends cdktf.
       hasAnyValues = true;
       internalValueResult.sourceCodePath = this._sourceCodePath;
     }
-    if (this._status?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.status = this._status?.internalValue;
-    }
-    if (this._updateTime !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.updateTime = this._updateTime;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksAppsAppActiveDeployment | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksAppsAppActiveDeployment | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._createTime = undefined;
-      this._creator = undefined;
-      this._deploymentArtifacts.internalValue = undefined;
       this._deploymentId = undefined;
       this._mode = undefined;
       this._sourceCodePath = undefined;
-      this._status.internalValue = undefined;
-      this._updateTime = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._createTime = value.createTime;
-      this._creator = value.creator;
-      this._deploymentArtifacts.internalValue = value.deploymentArtifacts;
       this._deploymentId = value.deploymentId;
       this._mode = value.mode;
       this._sourceCodePath = value.sourceCodePath;
-      this._status.internalValue = value.status;
-      this._updateTime = value.updateTime;
     }
   }
 
-  // create_time - computed: true, optional: true, required: false
-  private _createTime?: string; 
+  // create_time - computed: true, optional: false, required: false
   public get createTime() {
     return this.getStringAttribute('create_time');
   }
-  public set createTime(value: string) {
-    this._createTime = value;
-  }
-  public resetCreateTime() {
-    this._createTime = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get createTimeInput() {
-    return this._createTime;
-  }
 
-  // creator - computed: true, optional: true, required: false
-  private _creator?: string; 
+  // creator - computed: true, optional: false, required: false
   public get creator() {
     return this.getStringAttribute('creator');
   }
-  public set creator(value: string) {
-    this._creator = value;
-  }
-  public resetCreator() {
-    this._creator = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get creatorInput() {
-    return this._creator;
-  }
 
-  // deployment_artifacts - computed: true, optional: true, required: false
+  // deployment_artifacts - computed: true, optional: false, required: false
   private _deploymentArtifacts = new DataDatabricksAppsAppActiveDeploymentDeploymentArtifactsOutputReference(this, "deployment_artifacts");
   public get deploymentArtifacts() {
     return this._deploymentArtifacts;
-  }
-  public putDeploymentArtifacts(value: DataDatabricksAppsAppActiveDeploymentDeploymentArtifacts) {
-    this._deploymentArtifacts.internalValue = value;
-  }
-  public resetDeploymentArtifacts() {
-    this._deploymentArtifacts.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get deploymentArtifactsInput() {
-    return this._deploymentArtifacts.internalValue;
   }
 
   // deployment_id - computed: true, optional: true, required: false
@@ -527,88 +317,42 @@ export class DataDatabricksAppsAppActiveDeploymentOutputReference extends cdktf.
     return this._sourceCodePath;
   }
 
-  // status - computed: true, optional: true, required: false
+  // status - computed: true, optional: false, required: false
   private _status = new DataDatabricksAppsAppActiveDeploymentStatusOutputReference(this, "status");
   public get status() {
     return this._status;
   }
-  public putStatus(value: DataDatabricksAppsAppActiveDeploymentStatus) {
-    this._status.internalValue = value;
-  }
-  public resetStatus() {
-    this._status.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get statusInput() {
-    return this._status.internalValue;
-  }
 
-  // update_time - computed: true, optional: true, required: false
-  private _updateTime?: string; 
+  // update_time - computed: true, optional: false, required: false
   public get updateTime() {
     return this.getStringAttribute('update_time');
   }
-  public set updateTime(value: string) {
-    this._updateTime = value;
-  }
-  public resetUpdateTime() {
-    this._updateTime = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get updateTimeInput() {
-    return this._updateTime;
-  }
 }
 export interface DataDatabricksAppsAppAppStatus {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#message DataDatabricksApps#message}
-  */
-  readonly message?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#state DataDatabricksApps#state}
-  */
-  readonly state?: string;
 }
 
-export function dataDatabricksAppsAppAppStatusToTerraform(struct?: DataDatabricksAppsAppAppStatus | cdktf.IResolvable): any {
+export function dataDatabricksAppsAppAppStatusToTerraform(struct?: DataDatabricksAppsAppAppStatus): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    message: cdktf.stringToTerraform(struct!.message),
-    state: cdktf.stringToTerraform(struct!.state),
   }
 }
 
 
-export function dataDatabricksAppsAppAppStatusToHclTerraform(struct?: DataDatabricksAppsAppAppStatus | cdktf.IResolvable): any {
+export function dataDatabricksAppsAppAppStatusToHclTerraform(struct?: DataDatabricksAppsAppAppStatus): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    message: {
-      value: cdktf.stringToHclTerraform(struct!.message),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    state: {
-      value: cdktf.stringToHclTerraform(struct!.state),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
   };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+  return attrs;
 }
 
 export class DataDatabricksAppsAppAppStatusOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -618,124 +362,56 @@ export class DataDatabricksAppsAppAppStatusOutputReference extends cdktf.Complex
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksAppsAppAppStatus | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksAppsAppAppStatus | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._message !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.message = this._message;
-    }
-    if (this._state !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.state = this._state;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksAppsAppAppStatus | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksAppsAppAppStatus | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._message = undefined;
-      this._state = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._message = value.message;
-      this._state = value.state;
     }
   }
 
-  // message - computed: true, optional: true, required: false
-  private _message?: string; 
+  // message - computed: true, optional: false, required: false
   public get message() {
     return this.getStringAttribute('message');
   }
-  public set message(value: string) {
-    this._message = value;
-  }
-  public resetMessage() {
-    this._message = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get messageInput() {
-    return this._message;
-  }
 
-  // state - computed: true, optional: true, required: false
-  private _state?: string; 
+  // state - computed: true, optional: false, required: false
   public get state() {
     return this.getStringAttribute('state');
   }
-  public set state(value: string) {
-    this._state = value;
-  }
-  public resetState() {
-    this._state = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get stateInput() {
-    return this._state;
-  }
 }
 export interface DataDatabricksAppsAppComputeStatus {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#message DataDatabricksApps#message}
-  */
-  readonly message?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#state DataDatabricksApps#state}
-  */
-  readonly state?: string;
 }
 
-export function dataDatabricksAppsAppComputeStatusToTerraform(struct?: DataDatabricksAppsAppComputeStatus | cdktf.IResolvable): any {
+export function dataDatabricksAppsAppComputeStatusToTerraform(struct?: DataDatabricksAppsAppComputeStatus): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    message: cdktf.stringToTerraform(struct!.message),
-    state: cdktf.stringToTerraform(struct!.state),
   }
 }
 
 
-export function dataDatabricksAppsAppComputeStatusToHclTerraform(struct?: DataDatabricksAppsAppComputeStatus | cdktf.IResolvable): any {
+export function dataDatabricksAppsAppComputeStatusToHclTerraform(struct?: DataDatabricksAppsAppComputeStatus): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    message: {
-      value: cdktf.stringToHclTerraform(struct!.message),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    state: {
-      value: cdktf.stringToHclTerraform(struct!.state),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
   };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+  return attrs;
 }
 
 export class DataDatabricksAppsAppComputeStatusOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -745,82 +421,39 @@ export class DataDatabricksAppsAppComputeStatusOutputReference extends cdktf.Com
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksAppsAppComputeStatus | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksAppsAppComputeStatus | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._message !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.message = this._message;
-    }
-    if (this._state !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.state = this._state;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksAppsAppComputeStatus | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksAppsAppComputeStatus | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._message = undefined;
-      this._state = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._message = value.message;
-      this._state = value.state;
     }
   }
 
-  // message - computed: true, optional: true, required: false
-  private _message?: string; 
+  // message - computed: true, optional: false, required: false
   public get message() {
     return this.getStringAttribute('message');
   }
-  public set message(value: string) {
-    this._message = value;
-  }
-  public resetMessage() {
-    this._message = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get messageInput() {
-    return this._message;
-  }
 
-  // state - computed: true, optional: true, required: false
-  private _state?: string; 
+  // state - computed: true, optional: false, required: false
   public get state() {
     return this.getStringAttribute('state');
-  }
-  public set state(value: string) {
-    this._state = value;
-  }
-  public resetState() {
-    this._state = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get stateInput() {
-    return this._state;
   }
 }
 export interface DataDatabricksAppsAppPendingDeploymentDeploymentArtifacts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#source_code_path DataDatabricksApps#source_code_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/apps#source_code_path DataDatabricksApps#source_code_path}
   */
   readonly sourceCodePath?: string;
 }
 
-export function dataDatabricksAppsAppPendingDeploymentDeploymentArtifactsToTerraform(struct?: DataDatabricksAppsAppPendingDeploymentDeploymentArtifacts | cdktf.IResolvable): any {
+export function dataDatabricksAppsAppPendingDeploymentDeploymentArtifactsToTerraform(struct?: DataDatabricksAppsAppPendingDeploymentDeploymentArtifacts): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -831,7 +464,7 @@ export function dataDatabricksAppsAppPendingDeploymentDeploymentArtifactsToTerra
 }
 
 
-export function dataDatabricksAppsAppPendingDeploymentDeploymentArtifactsToHclTerraform(struct?: DataDatabricksAppsAppPendingDeploymentDeploymentArtifacts | cdktf.IResolvable): any {
+export function dataDatabricksAppsAppPendingDeploymentDeploymentArtifactsToHclTerraform(struct?: DataDatabricksAppsAppPendingDeploymentDeploymentArtifacts): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -851,7 +484,6 @@ export function dataDatabricksAppsAppPendingDeploymentDeploymentArtifactsToHclTe
 
 export class DataDatabricksAppsAppPendingDeploymentDeploymentArtifactsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -861,10 +493,7 @@ export class DataDatabricksAppsAppPendingDeploymentDeploymentArtifactsOutputRefe
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksAppsAppPendingDeploymentDeploymentArtifacts | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksAppsAppPendingDeploymentDeploymentArtifacts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._sourceCodePath !== undefined) {
@@ -874,19 +503,13 @@ export class DataDatabricksAppsAppPendingDeploymentDeploymentArtifactsOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksAppsAppPendingDeploymentDeploymentArtifacts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksAppsAppPendingDeploymentDeploymentArtifacts | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._sourceCodePath = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._sourceCodePath = value.sourceCodePath;
     }
   }
@@ -908,55 +531,30 @@ export class DataDatabricksAppsAppPendingDeploymentDeploymentArtifactsOutputRefe
   }
 }
 export interface DataDatabricksAppsAppPendingDeploymentStatus {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#message DataDatabricksApps#message}
-  */
-  readonly message?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#state DataDatabricksApps#state}
-  */
-  readonly state?: string;
 }
 
-export function dataDatabricksAppsAppPendingDeploymentStatusToTerraform(struct?: DataDatabricksAppsAppPendingDeploymentStatus | cdktf.IResolvable): any {
+export function dataDatabricksAppsAppPendingDeploymentStatusToTerraform(struct?: DataDatabricksAppsAppPendingDeploymentStatus): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    message: cdktf.stringToTerraform(struct!.message),
-    state: cdktf.stringToTerraform(struct!.state),
   }
 }
 
 
-export function dataDatabricksAppsAppPendingDeploymentStatusToHclTerraform(struct?: DataDatabricksAppsAppPendingDeploymentStatus | cdktf.IResolvable): any {
+export function dataDatabricksAppsAppPendingDeploymentStatusToHclTerraform(struct?: DataDatabricksAppsAppPendingDeploymentStatus): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    message: {
-      value: cdktf.stringToHclTerraform(struct!.message),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    state: {
-      value: cdktf.stringToHclTerraform(struct!.state),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
   };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+  return attrs;
 }
 
 export class DataDatabricksAppsAppPendingDeploymentStatusOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -966,151 +564,65 @@ export class DataDatabricksAppsAppPendingDeploymentStatusOutputReference extends
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksAppsAppPendingDeploymentStatus | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksAppsAppPendingDeploymentStatus | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._message !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.message = this._message;
-    }
-    if (this._state !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.state = this._state;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksAppsAppPendingDeploymentStatus | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksAppsAppPendingDeploymentStatus | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._message = undefined;
-      this._state = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._message = value.message;
-      this._state = value.state;
     }
   }
 
-  // message - computed: true, optional: true, required: false
-  private _message?: string; 
+  // message - computed: true, optional: false, required: false
   public get message() {
     return this.getStringAttribute('message');
   }
-  public set message(value: string) {
-    this._message = value;
-  }
-  public resetMessage() {
-    this._message = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get messageInput() {
-    return this._message;
-  }
 
-  // state - computed: true, optional: true, required: false
-  private _state?: string; 
+  // state - computed: true, optional: false, required: false
   public get state() {
     return this.getStringAttribute('state');
-  }
-  public set state(value: string) {
-    this._state = value;
-  }
-  public resetState() {
-    this._state = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get stateInput() {
-    return this._state;
   }
 }
 export interface DataDatabricksAppsAppPendingDeployment {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#create_time DataDatabricksApps#create_time}
-  */
-  readonly createTime?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#creator DataDatabricksApps#creator}
-  */
-  readonly creator?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#deployment_artifacts DataDatabricksApps#deployment_artifacts}
-  */
-  readonly deploymentArtifacts?: DataDatabricksAppsAppPendingDeploymentDeploymentArtifacts;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#deployment_id DataDatabricksApps#deployment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/apps#deployment_id DataDatabricksApps#deployment_id}
   */
   readonly deploymentId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#mode DataDatabricksApps#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/apps#mode DataDatabricksApps#mode}
   */
   readonly mode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#source_code_path DataDatabricksApps#source_code_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/apps#source_code_path DataDatabricksApps#source_code_path}
   */
   readonly sourceCodePath?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#status DataDatabricksApps#status}
-  */
-  readonly status?: DataDatabricksAppsAppPendingDeploymentStatus;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#update_time DataDatabricksApps#update_time}
-  */
-  readonly updateTime?: string;
 }
 
-export function dataDatabricksAppsAppPendingDeploymentToTerraform(struct?: DataDatabricksAppsAppPendingDeployment | cdktf.IResolvable): any {
+export function dataDatabricksAppsAppPendingDeploymentToTerraform(struct?: DataDatabricksAppsAppPendingDeployment): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create_time: cdktf.stringToTerraform(struct!.createTime),
-    creator: cdktf.stringToTerraform(struct!.creator),
-    deployment_artifacts: dataDatabricksAppsAppPendingDeploymentDeploymentArtifactsToTerraform(struct!.deploymentArtifacts),
     deployment_id: cdktf.stringToTerraform(struct!.deploymentId),
     mode: cdktf.stringToTerraform(struct!.mode),
     source_code_path: cdktf.stringToTerraform(struct!.sourceCodePath),
-    status: dataDatabricksAppsAppPendingDeploymentStatusToTerraform(struct!.status),
-    update_time: cdktf.stringToTerraform(struct!.updateTime),
   }
 }
 
 
-export function dataDatabricksAppsAppPendingDeploymentToHclTerraform(struct?: DataDatabricksAppsAppPendingDeployment | cdktf.IResolvable): any {
+export function dataDatabricksAppsAppPendingDeploymentToHclTerraform(struct?: DataDatabricksAppsAppPendingDeployment): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    create_time: {
-      value: cdktf.stringToHclTerraform(struct!.createTime),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    creator: {
-      value: cdktf.stringToHclTerraform(struct!.creator),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    deployment_artifacts: {
-      value: dataDatabricksAppsAppPendingDeploymentDeploymentArtifactsToHclTerraform(struct!.deploymentArtifacts),
-      isBlock: true,
-      type: "struct",
-      storageClassType: "DataDatabricksAppsAppPendingDeploymentDeploymentArtifacts",
-    },
     deployment_id: {
       value: cdktf.stringToHclTerraform(struct!.deploymentId),
       isBlock: false,
@@ -1129,18 +641,6 @@ export function dataDatabricksAppsAppPendingDeploymentToHclTerraform(struct?: Da
       type: "simple",
       storageClassType: "string",
     },
-    status: {
-      value: dataDatabricksAppsAppPendingDeploymentStatusToHclTerraform(struct!.status),
-      isBlock: true,
-      type: "struct",
-      storageClassType: "DataDatabricksAppsAppPendingDeploymentStatus",
-    },
-    update_time: {
-      value: cdktf.stringToHclTerraform(struct!.updateTime),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
   };
 
   // remove undefined attributes
@@ -1149,7 +649,6 @@ export function dataDatabricksAppsAppPendingDeploymentToHclTerraform(struct?: Da
 
 export class DataDatabricksAppsAppPendingDeploymentOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1159,24 +658,9 @@ export class DataDatabricksAppsAppPendingDeploymentOutputReference extends cdktf
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksAppsAppPendingDeployment | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksAppsAppPendingDeployment | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._createTime !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.createTime = this._createTime;
-    }
-    if (this._creator !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.creator = this._creator;
-    }
-    if (this._deploymentArtifacts?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.deploymentArtifacts = this._deploymentArtifacts?.internalValue;
-    }
     if (this._deploymentId !== undefined) {
       hasAnyValues = true;
       internalValueResult.deploymentId = this._deploymentId;
@@ -1189,94 +673,38 @@ export class DataDatabricksAppsAppPendingDeploymentOutputReference extends cdktf
       hasAnyValues = true;
       internalValueResult.sourceCodePath = this._sourceCodePath;
     }
-    if (this._status?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.status = this._status?.internalValue;
-    }
-    if (this._updateTime !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.updateTime = this._updateTime;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksAppsAppPendingDeployment | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksAppsAppPendingDeployment | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._createTime = undefined;
-      this._creator = undefined;
-      this._deploymentArtifacts.internalValue = undefined;
       this._deploymentId = undefined;
       this._mode = undefined;
       this._sourceCodePath = undefined;
-      this._status.internalValue = undefined;
-      this._updateTime = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._createTime = value.createTime;
-      this._creator = value.creator;
-      this._deploymentArtifacts.internalValue = value.deploymentArtifacts;
       this._deploymentId = value.deploymentId;
       this._mode = value.mode;
       this._sourceCodePath = value.sourceCodePath;
-      this._status.internalValue = value.status;
-      this._updateTime = value.updateTime;
     }
   }
 
-  // create_time - computed: true, optional: true, required: false
-  private _createTime?: string; 
+  // create_time - computed: true, optional: false, required: false
   public get createTime() {
     return this.getStringAttribute('create_time');
   }
-  public set createTime(value: string) {
-    this._createTime = value;
-  }
-  public resetCreateTime() {
-    this._createTime = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get createTimeInput() {
-    return this._createTime;
-  }
 
-  // creator - computed: true, optional: true, required: false
-  private _creator?: string; 
+  // creator - computed: true, optional: false, required: false
   public get creator() {
     return this.getStringAttribute('creator');
   }
-  public set creator(value: string) {
-    this._creator = value;
-  }
-  public resetCreator() {
-    this._creator = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get creatorInput() {
-    return this._creator;
-  }
 
-  // deployment_artifacts - computed: true, optional: true, required: false
+  // deployment_artifacts - computed: true, optional: false, required: false
   private _deploymentArtifacts = new DataDatabricksAppsAppPendingDeploymentDeploymentArtifactsOutputReference(this, "deployment_artifacts");
   public get deploymentArtifacts() {
     return this._deploymentArtifacts;
-  }
-  public putDeploymentArtifacts(value: DataDatabricksAppsAppPendingDeploymentDeploymentArtifacts) {
-    this._deploymentArtifacts.internalValue = value;
-  }
-  public resetDeploymentArtifacts() {
-    this._deploymentArtifacts.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get deploymentArtifactsInput() {
-    return this._deploymentArtifacts.internalValue;
   }
 
   // deployment_id - computed: true, optional: true, required: false
@@ -1327,48 +755,27 @@ export class DataDatabricksAppsAppPendingDeploymentOutputReference extends cdktf
     return this._sourceCodePath;
   }
 
-  // status - computed: true, optional: true, required: false
+  // status - computed: true, optional: false, required: false
   private _status = new DataDatabricksAppsAppPendingDeploymentStatusOutputReference(this, "status");
   public get status() {
     return this._status;
   }
-  public putStatus(value: DataDatabricksAppsAppPendingDeploymentStatus) {
-    this._status.internalValue = value;
-  }
-  public resetStatus() {
-    this._status.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get statusInput() {
-    return this._status.internalValue;
-  }
 
-  // update_time - computed: true, optional: true, required: false
-  private _updateTime?: string; 
+  // update_time - computed: true, optional: false, required: false
   public get updateTime() {
     return this.getStringAttribute('update_time');
-  }
-  public set updateTime(value: string) {
-    this._updateTime = value;
-  }
-  public resetUpdateTime() {
-    this._updateTime = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get updateTimeInput() {
-    return this._updateTime;
   }
 }
 export interface DataDatabricksAppsAppResourcesJob {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#id DataDatabricksApps#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/apps#id DataDatabricksApps#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#permission DataDatabricksApps#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/apps#permission DataDatabricksApps#permission}
   */
   readonly permission: string;
 }
@@ -1485,15 +892,15 @@ export class DataDatabricksAppsAppResourcesJobOutputReference extends cdktf.Comp
 }
 export interface DataDatabricksAppsAppResourcesSecret {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#key DataDatabricksApps#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/apps#key DataDatabricksApps#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#permission DataDatabricksApps#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/apps#permission DataDatabricksApps#permission}
   */
   readonly permission: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#scope DataDatabricksApps#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/apps#scope DataDatabricksApps#scope}
   */
   readonly scope: string;
 }
@@ -1636,11 +1043,11 @@ export class DataDatabricksAppsAppResourcesSecretOutputReference extends cdktf.C
 }
 export interface DataDatabricksAppsAppResourcesServingEndpoint {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#name DataDatabricksApps#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/apps#name DataDatabricksApps#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#permission DataDatabricksApps#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/apps#permission DataDatabricksApps#permission}
   */
   readonly permission: string;
 }
@@ -1757,14 +1164,14 @@ export class DataDatabricksAppsAppResourcesServingEndpointOutputReference extend
 }
 export interface DataDatabricksAppsAppResourcesSqlWarehouse {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#id DataDatabricksApps#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/apps#id DataDatabricksApps#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#permission DataDatabricksApps#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/apps#permission DataDatabricksApps#permission}
   */
   readonly permission: string;
 }
@@ -1881,27 +1288,27 @@ export class DataDatabricksAppsAppResourcesSqlWarehouseOutputReference extends c
 }
 export interface DataDatabricksAppsAppResources {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#description DataDatabricksApps#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/apps#description DataDatabricksApps#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#job DataDatabricksApps#job}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/apps#job DataDatabricksApps#job}
   */
   readonly job?: DataDatabricksAppsAppResourcesJob;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#name DataDatabricksApps#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/apps#name DataDatabricksApps#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#secret DataDatabricksApps#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/apps#secret DataDatabricksApps#secret}
   */
   readonly secret?: DataDatabricksAppsAppResourcesSecret;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#serving_endpoint DataDatabricksApps#serving_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/apps#serving_endpoint DataDatabricksApps#serving_endpoint}
   */
   readonly servingEndpoint?: DataDatabricksAppsAppResourcesServingEndpoint;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#sql_warehouse DataDatabricksApps#sql_warehouse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/apps#sql_warehouse DataDatabricksApps#sql_warehouse}
   */
   readonly sqlWarehouse?: DataDatabricksAppsAppResourcesSqlWarehouse;
 }
@@ -2159,69 +1566,17 @@ export class DataDatabricksAppsAppResourcesList extends cdktf.ComplexList {
 }
 export interface DataDatabricksAppsApp {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#active_deployment DataDatabricksApps#active_deployment}
-  */
-  readonly activeDeployment?: DataDatabricksAppsAppActiveDeployment;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#app_status DataDatabricksApps#app_status}
-  */
-  readonly appStatus?: DataDatabricksAppsAppAppStatus;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#compute_status DataDatabricksApps#compute_status}
-  */
-  readonly computeStatus?: DataDatabricksAppsAppComputeStatus;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#create_time DataDatabricksApps#create_time}
-  */
-  readonly createTime?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#creator DataDatabricksApps#creator}
-  */
-  readonly creator?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#default_source_code_path DataDatabricksApps#default_source_code_path}
-  */
-  readonly defaultSourceCodePath?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#description DataDatabricksApps#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/apps#description DataDatabricksApps#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#name DataDatabricksApps#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/apps#name DataDatabricksApps#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#pending_deployment DataDatabricksApps#pending_deployment}
-  */
-  readonly pendingDeployment?: DataDatabricksAppsAppPendingDeployment;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#resources DataDatabricksApps#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/apps#resources DataDatabricksApps#resources}
   */
   readonly resources?: DataDatabricksAppsAppResources[] | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#service_principal_client_id DataDatabricksApps#service_principal_client_id}
-  */
-  readonly servicePrincipalClientId?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#service_principal_id DataDatabricksApps#service_principal_id}
-  */
-  readonly servicePrincipalId?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#service_principal_name DataDatabricksApps#service_principal_name}
-  */
-  readonly servicePrincipalName?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#update_time DataDatabricksApps#update_time}
-  */
-  readonly updateTime?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#updater DataDatabricksApps#updater}
-  */
-  readonly updater?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#url DataDatabricksApps#url}
-  */
-  readonly url?: string;
 }
 
 export function dataDatabricksAppsAppToTerraform(struct?: DataDatabricksAppsApp): any {
@@ -2230,22 +1585,9 @@ export function dataDatabricksAppsAppToTerraform(struct?: DataDatabricksAppsApp)
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    active_deployment: dataDatabricksAppsAppActiveDeploymentToTerraform(struct!.activeDeployment),
-    app_status: dataDatabricksAppsAppAppStatusToTerraform(struct!.appStatus),
-    compute_status: dataDatabricksAppsAppComputeStatusToTerraform(struct!.computeStatus),
-    create_time: cdktf.stringToTerraform(struct!.createTime),
-    creator: cdktf.stringToTerraform(struct!.creator),
-    default_source_code_path: cdktf.stringToTerraform(struct!.defaultSourceCodePath),
     description: cdktf.stringToTerraform(struct!.description),
     name: cdktf.stringToTerraform(struct!.name),
-    pending_deployment: dataDatabricksAppsAppPendingDeploymentToTerraform(struct!.pendingDeployment),
     resources: cdktf.listMapper(dataDatabricksAppsAppResourcesToTerraform, false)(struct!.resources),
-    service_principal_client_id: cdktf.stringToTerraform(struct!.servicePrincipalClientId),
-    service_principal_id: cdktf.numberToTerraform(struct!.servicePrincipalId),
-    service_principal_name: cdktf.stringToTerraform(struct!.servicePrincipalName),
-    update_time: cdktf.stringToTerraform(struct!.updateTime),
-    updater: cdktf.stringToTerraform(struct!.updater),
-    url: cdktf.stringToTerraform(struct!.url),
   }
 }
 
@@ -2256,42 +1598,6 @@ export function dataDatabricksAppsAppToHclTerraform(struct?: DataDatabricksAppsA
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    active_deployment: {
-      value: dataDatabricksAppsAppActiveDeploymentToHclTerraform(struct!.activeDeployment),
-      isBlock: true,
-      type: "struct",
-      storageClassType: "DataDatabricksAppsAppActiveDeployment",
-    },
-    app_status: {
-      value: dataDatabricksAppsAppAppStatusToHclTerraform(struct!.appStatus),
-      isBlock: true,
-      type: "struct",
-      storageClassType: "DataDatabricksAppsAppAppStatus",
-    },
-    compute_status: {
-      value: dataDatabricksAppsAppComputeStatusToHclTerraform(struct!.computeStatus),
-      isBlock: true,
-      type: "struct",
-      storageClassType: "DataDatabricksAppsAppComputeStatus",
-    },
-    create_time: {
-      value: cdktf.stringToHclTerraform(struct!.createTime),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    creator: {
-      value: cdktf.stringToHclTerraform(struct!.creator),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    default_source_code_path: {
-      value: cdktf.stringToHclTerraform(struct!.defaultSourceCodePath),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
     description: {
       value: cdktf.stringToHclTerraform(struct!.description),
       isBlock: false,
@@ -2304,53 +1610,11 @@ export function dataDatabricksAppsAppToHclTerraform(struct?: DataDatabricksAppsA
       type: "simple",
       storageClassType: "string",
     },
-    pending_deployment: {
-      value: dataDatabricksAppsAppPendingDeploymentToHclTerraform(struct!.pendingDeployment),
-      isBlock: true,
-      type: "struct",
-      storageClassType: "DataDatabricksAppsAppPendingDeployment",
-    },
     resources: {
       value: cdktf.listMapperHcl(dataDatabricksAppsAppResourcesToHclTerraform, false)(struct!.resources),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksAppsAppResourcesList",
-    },
-    service_principal_client_id: {
-      value: cdktf.stringToHclTerraform(struct!.servicePrincipalClientId),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    service_principal_id: {
-      value: cdktf.numberToHclTerraform(struct!.servicePrincipalId),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    service_principal_name: {
-      value: cdktf.stringToHclTerraform(struct!.servicePrincipalName),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    update_time: {
-      value: cdktf.stringToHclTerraform(struct!.updateTime),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    updater: {
-      value: cdktf.stringToHclTerraform(struct!.updater),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
     },
   };
 
@@ -2374,30 +1638,6 @@ export class DataDatabricksAppsAppOutputReference extends cdktf.ComplexObject {
   public get internalValue(): DataDatabricksAppsApp | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._activeDeployment?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.activeDeployment = this._activeDeployment?.internalValue;
-    }
-    if (this._appStatus?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.appStatus = this._appStatus?.internalValue;
-    }
-    if (this._computeStatus?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.computeStatus = this._computeStatus?.internalValue;
-    }
-    if (this._createTime !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.createTime = this._createTime;
-    }
-    if (this._creator !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.creator = this._creator;
-    }
-    if (this._defaultSourceCodePath !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.defaultSourceCodePath = this._defaultSourceCodePath;
-    }
     if (this._description !== undefined) {
       hasAnyValues = true;
       internalValueResult.description = this._description;
@@ -2406,37 +1646,9 @@ export class DataDatabricksAppsAppOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._pendingDeployment?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.pendingDeployment = this._pendingDeployment?.internalValue;
-    }
     if (this._resources?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.resources = this._resources?.internalValue;
-    }
-    if (this._servicePrincipalClientId !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.servicePrincipalClientId = this._servicePrincipalClientId;
-    }
-    if (this._servicePrincipalId !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.servicePrincipalId = this._servicePrincipalId;
-    }
-    if (this._servicePrincipalName !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.servicePrincipalName = this._servicePrincipalName;
-    }
-    if (this._updateTime !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.updateTime = this._updateTime;
-    }
-    if (this._updater !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.updater = this._updater;
-    }
-    if (this._url !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.url = this._url;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -2444,138 +1656,49 @@ export class DataDatabricksAppsAppOutputReference extends cdktf.ComplexObject {
   public set internalValue(value: DataDatabricksAppsApp | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._activeDeployment.internalValue = undefined;
-      this._appStatus.internalValue = undefined;
-      this._computeStatus.internalValue = undefined;
-      this._createTime = undefined;
-      this._creator = undefined;
-      this._defaultSourceCodePath = undefined;
       this._description = undefined;
       this._name = undefined;
-      this._pendingDeployment.internalValue = undefined;
       this._resources.internalValue = undefined;
-      this._servicePrincipalClientId = undefined;
-      this._servicePrincipalId = undefined;
-      this._servicePrincipalName = undefined;
-      this._updateTime = undefined;
-      this._updater = undefined;
-      this._url = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._activeDeployment.internalValue = value.activeDeployment;
-      this._appStatus.internalValue = value.appStatus;
-      this._computeStatus.internalValue = value.computeStatus;
-      this._createTime = value.createTime;
-      this._creator = value.creator;
-      this._defaultSourceCodePath = value.defaultSourceCodePath;
       this._description = value.description;
       this._name = value.name;
-      this._pendingDeployment.internalValue = value.pendingDeployment;
       this._resources.internalValue = value.resources;
-      this._servicePrincipalClientId = value.servicePrincipalClientId;
-      this._servicePrincipalId = value.servicePrincipalId;
-      this._servicePrincipalName = value.servicePrincipalName;
-      this._updateTime = value.updateTime;
-      this._updater = value.updater;
-      this._url = value.url;
     }
   }
 
-  // active_deployment - computed: true, optional: true, required: false
+  // active_deployment - computed: true, optional: false, required: false
   private _activeDeployment = new DataDatabricksAppsAppActiveDeploymentOutputReference(this, "active_deployment");
   public get activeDeployment() {
     return this._activeDeployment;
   }
-  public putActiveDeployment(value: DataDatabricksAppsAppActiveDeployment) {
-    this._activeDeployment.internalValue = value;
-  }
-  public resetActiveDeployment() {
-    this._activeDeployment.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get activeDeploymentInput() {
-    return this._activeDeployment.internalValue;
-  }
 
-  // app_status - computed: true, optional: true, required: false
+  // app_status - computed: true, optional: false, required: false
   private _appStatus = new DataDatabricksAppsAppAppStatusOutputReference(this, "app_status");
   public get appStatus() {
     return this._appStatus;
   }
-  public putAppStatus(value: DataDatabricksAppsAppAppStatus) {
-    this._appStatus.internalValue = value;
-  }
-  public resetAppStatus() {
-    this._appStatus.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get appStatusInput() {
-    return this._appStatus.internalValue;
-  }
 
-  // compute_status - computed: true, optional: true, required: false
+  // compute_status - computed: true, optional: false, required: false
   private _computeStatus = new DataDatabricksAppsAppComputeStatusOutputReference(this, "compute_status");
   public get computeStatus() {
     return this._computeStatus;
   }
-  public putComputeStatus(value: DataDatabricksAppsAppComputeStatus) {
-    this._computeStatus.internalValue = value;
-  }
-  public resetComputeStatus() {
-    this._computeStatus.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get computeStatusInput() {
-    return this._computeStatus.internalValue;
-  }
 
-  // create_time - computed: true, optional: true, required: false
-  private _createTime?: string; 
+  // create_time - computed: true, optional: false, required: false
   public get createTime() {
     return this.getStringAttribute('create_time');
   }
-  public set createTime(value: string) {
-    this._createTime = value;
-  }
-  public resetCreateTime() {
-    this._createTime = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get createTimeInput() {
-    return this._createTime;
-  }
 
-  // creator - computed: true, optional: true, required: false
-  private _creator?: string; 
+  // creator - computed: true, optional: false, required: false
   public get creator() {
     return this.getStringAttribute('creator');
   }
-  public set creator(value: string) {
-    this._creator = value;
-  }
-  public resetCreator() {
-    this._creator = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get creatorInput() {
-    return this._creator;
-  }
 
-  // default_source_code_path - computed: true, optional: true, required: false
-  private _defaultSourceCodePath?: string; 
+  // default_source_code_path - computed: true, optional: false, required: false
   public get defaultSourceCodePath() {
     return this.getStringAttribute('default_source_code_path');
-  }
-  public set defaultSourceCodePath(value: string) {
-    this._defaultSourceCodePath = value;
-  }
-  public resetDefaultSourceCodePath() {
-    this._defaultSourceCodePath = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get defaultSourceCodePathInput() {
-    return this._defaultSourceCodePath;
   }
 
   // description - computed: true, optional: true, required: false
@@ -2607,20 +1730,10 @@ export class DataDatabricksAppsAppOutputReference extends cdktf.ComplexObject {
     return this._name;
   }
 
-  // pending_deployment - computed: true, optional: true, required: false
+  // pending_deployment - computed: true, optional: false, required: false
   private _pendingDeployment = new DataDatabricksAppsAppPendingDeploymentOutputReference(this, "pending_deployment");
   public get pendingDeployment() {
     return this._pendingDeployment;
-  }
-  public putPendingDeployment(value: DataDatabricksAppsAppPendingDeployment) {
-    this._pendingDeployment.internalValue = value;
-  }
-  public resetPendingDeployment() {
-    this._pendingDeployment.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get pendingDeploymentInput() {
-    return this._pendingDeployment.internalValue;
   }
 
   // resources - computed: true, optional: true, required: false
@@ -2639,100 +1752,34 @@ export class DataDatabricksAppsAppOutputReference extends cdktf.ComplexObject {
     return this._resources.internalValue;
   }
 
-  // service_principal_client_id - computed: true, optional: true, required: false
-  private _servicePrincipalClientId?: string; 
+  // service_principal_client_id - computed: true, optional: false, required: false
   public get servicePrincipalClientId() {
     return this.getStringAttribute('service_principal_client_id');
   }
-  public set servicePrincipalClientId(value: string) {
-    this._servicePrincipalClientId = value;
-  }
-  public resetServicePrincipalClientId() {
-    this._servicePrincipalClientId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get servicePrincipalClientIdInput() {
-    return this._servicePrincipalClientId;
-  }
 
-  // service_principal_id - computed: true, optional: true, required: false
-  private _servicePrincipalId?: number; 
+  // service_principal_id - computed: true, optional: false, required: false
   public get servicePrincipalId() {
     return this.getNumberAttribute('service_principal_id');
   }
-  public set servicePrincipalId(value: number) {
-    this._servicePrincipalId = value;
-  }
-  public resetServicePrincipalId() {
-    this._servicePrincipalId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get servicePrincipalIdInput() {
-    return this._servicePrincipalId;
-  }
 
-  // service_principal_name - computed: true, optional: true, required: false
-  private _servicePrincipalName?: string; 
+  // service_principal_name - computed: true, optional: false, required: false
   public get servicePrincipalName() {
     return this.getStringAttribute('service_principal_name');
   }
-  public set servicePrincipalName(value: string) {
-    this._servicePrincipalName = value;
-  }
-  public resetServicePrincipalName() {
-    this._servicePrincipalName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get servicePrincipalNameInput() {
-    return this._servicePrincipalName;
-  }
 
-  // update_time - computed: true, optional: true, required: false
-  private _updateTime?: string; 
+  // update_time - computed: true, optional: false, required: false
   public get updateTime() {
     return this.getStringAttribute('update_time');
   }
-  public set updateTime(value: string) {
-    this._updateTime = value;
-  }
-  public resetUpdateTime() {
-    this._updateTime = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get updateTimeInput() {
-    return this._updateTime;
-  }
 
-  // updater - computed: true, optional: true, required: false
-  private _updater?: string; 
+  // updater - computed: true, optional: false, required: false
   public get updater() {
     return this.getStringAttribute('updater');
   }
-  public set updater(value: string) {
-    this._updater = value;
-  }
-  public resetUpdater() {
-    this._updater = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get updaterInput() {
-    return this._updater;
-  }
 
-  // url - computed: true, optional: true, required: false
-  private _url?: string; 
+  // url - computed: true, optional: false, required: false
   public get url() {
     return this.getStringAttribute('url');
-  }
-  public set url(value: string) {
-    this._url = value;
-  }
-  public resetUrl() {
-    this._url = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get urlInput() {
-    return this._url;
   }
 }
 
@@ -2757,7 +1804,7 @@ export class DataDatabricksAppsAppList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps databricks_apps}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/apps databricks_apps}
 */
 export class DataDatabricksApps extends cdktf.TerraformDataSource {
 
@@ -2773,7 +1820,7 @@ export class DataDatabricksApps extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksApps resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksApps to import
-  * @param importFromId The id of the existing DataDatabricksApps that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksApps that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/apps#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksApps to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2785,7 +1832,7 @@ export class DataDatabricksApps extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.61.0/docs/data-sources/apps databricks_apps} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.62.0/docs/data-sources/apps databricks_apps} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2796,7 +1843,7 @@ export class DataDatabricksApps extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_apps',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.61.0',
+        providerVersion: '1.62.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
