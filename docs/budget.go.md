@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.budget.Budget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
 
 budget.NewBudget(scope Construct, id *string, config BudgetConfig) Budget
 ```
@@ -460,7 +460,7 @@ func ResetUpdateTime()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.budget.Budget.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
 
 budget.Budget_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.budget.Budget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
 
 budget.Budget_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ budget.Budget_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.budget.Budget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
 
 budget.Budget_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ budget.Budget_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.budget.Budget.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
 
 budget.Budget_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -925,7 +925,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.budget.BudgetAlertConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
 
 &budget.BudgetAlertConfigurations {
 	ActionConfigurations: interface{},
@@ -1029,7 +1029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
 
 &budget.BudgetAlertConfigurationsActionConfigurations {
 	ActionConfigurationId: *string,
@@ -1089,7 +1089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.budget.BudgetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
 
 &budget.BudgetConfig {
 	Connection: interface{},
@@ -1104,7 +1104,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
 	BudgetConfigurationId: *string,
 	CreateTime: *f64,
 	DisplayName: *string,
-	Filter: github.com/cdktf/cdktf-provider-databricks-go/databricks.budget.BudgetFilter,
+	Filter: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.budget.BudgetFilter,
 	Id: *string,
 	UpdateTime: *f64,
 }
@@ -1310,11 +1310,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.budget.BudgetFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
 
 &budget.BudgetFilter {
 	Tags: interface{},
-	WorkspaceId: github.com/cdktf/cdktf-provider-databricks-go/databricks.budget.BudgetFilterWorkspaceId,
+	WorkspaceId: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.budget.BudgetFilterWorkspaceId,
 }
 ```
 
@@ -1360,11 +1360,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.budget.BudgetFilterTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
 
 &budget.BudgetFilterTags {
 	Key: *string,
-	Value: github.com/cdktf/cdktf-provider-databricks-go/databricks.budget.BudgetFilterTagsValue,
+	Value: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.budget.BudgetFilterTagsValue,
 }
 ```
 
@@ -1408,7 +1408,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.budget.BudgetFilterTagsValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
 
 &budget.BudgetFilterTagsValue {
 	Operator: *string,
@@ -1454,7 +1454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.budget.BudgetFilterWorkspaceId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
 
 &budget.BudgetFilterWorkspaceId {
 	Operator: *string,
@@ -1502,7 +1502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
 
 budget.NewBudgetAlertConfigurationsActionConfigurationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BudgetAlertConfigurationsActionConfigurationsList
 ```
@@ -1662,7 +1662,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
 
 budget.NewBudgetAlertConfigurationsActionConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BudgetAlertConfigurationsActionConfigurationsOutputReference
 ```
@@ -2016,7 +2016,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.budget.BudgetAlertConfigurationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
 
 budget.NewBudgetAlertConfigurationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BudgetAlertConfigurationsList
 ```
@@ -2176,7 +2176,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
 
 budget.NewBudgetAlertConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BudgetAlertConfigurationsOutputReference
 ```
@@ -2630,7 +2630,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.budget.BudgetFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
 
 budget.NewBudgetFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetFilterOutputReference
 ```
@@ -2963,7 +2963,7 @@ func InternalValue() BudgetFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.budget.BudgetFilterTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
 
 budget.NewBudgetFilterTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BudgetFilterTagsList
 ```
@@ -3123,7 +3123,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.budget.BudgetFilterTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
 
 budget.NewBudgetFilterTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BudgetFilterTagsOutputReference
 ```
@@ -3461,7 +3461,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.budget.BudgetFilterTagsValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
 
 budget.NewBudgetFilterTagsValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetFilterTagsValueOutputReference
 ```
@@ -3768,7 +3768,7 @@ func InternalValue() BudgetFilterTagsValue
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.budget.BudgetFilterWorkspaceIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
 
 budget.NewBudgetFilterWorkspaceIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetFilterWorkspaceIdOutputReference
 ```
