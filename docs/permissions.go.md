@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.permissions.Permissions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/permissions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/permissions"
 
 permissions.NewPermissions(scope Construct, id *string, config PermissionsConfig) Permissions
 ```
@@ -573,7 +573,7 @@ func ResetWorkspaceFilePath()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.permissions.Permissions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/permissions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/permissions"
 
 permissions.Permissions_IsConstruct(x interface{}) *bool
 ```
@@ -605,7 +605,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.permissions.Permissions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/permissions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/permissions"
 
 permissions.Permissions_IsTerraformElement(x interface{}) *bool
 ```
@@ -619,7 +619,7 @@ permissions.Permissions_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.permissions.Permissions.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/permissions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/permissions"
 
 permissions.Permissions_IsTerraformResource(x interface{}) *bool
 ```
@@ -633,7 +633,7 @@ permissions.Permissions_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.permissions.Permissions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/permissions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/permissions"
 
 permissions.Permissions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1456,7 +1456,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.permissions.PermissionsAccessControl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/permissions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/permissions"
 
 &permissions.PermissionsAccessControl {
 	GroupName: *string,
@@ -1530,7 +1530,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.permissions.PermissionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/permissions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/permissions"
 
 &permissions.PermissionsConfig {
 	Connection: interface{},
@@ -2017,7 +2017,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.permissions.PermissionsAccessControlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/permissions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/permissions"
 
 permissions.NewPermissionsAccessControlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PermissionsAccessControlList
 ```
@@ -2177,7 +2177,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.permissions.PermissionsAccessControlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/permissions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/permissions"
 
 permissions.NewPermissionsAccessControlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PermissionsAccessControlOutputReference
 ```
