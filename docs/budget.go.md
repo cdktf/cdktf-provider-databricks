@@ -4,12 +4,12 @@
 
 ### Budget <a name="Budget" id="@cdktf/provider-databricks.budget.Budget"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget databricks_budget}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget databricks_budget}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.budget.Budget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
 
 budget.NewBudget(scope Construct, id *string, config BudgetConfig) Budget
 ```
@@ -460,7 +460,7 @@ func ResetUpdateTime()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.budget.Budget.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
 
 budget.Budget_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.budget.Budget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
 
 budget.Budget_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ budget.Budget_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.budget.Budget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
 
 budget.Budget_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ budget.Budget_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.budget.Budget.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
 
 budget.Budget_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -549,7 +549,7 @@ The construct id used in the generated config for the Budget to import.
 
 The id of the existing Budget that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -925,7 +925,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.budget.BudgetAlertConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
 
 &budget.BudgetAlertConfigurations {
 	ActionConfigurations: interface{},
@@ -942,11 +942,11 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.budget.BudgetAlertConfigurations.property.actionConfigurations">ActionConfigurations</a></code> | <code>interface{}</code> | action_configurations block. |
-| <code><a href="#@cdktf/provider-databricks.budget.BudgetAlertConfigurations.property.alertConfigurationId">AlertConfigurationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#alert_configuration_id Budget#alert_configuration_id}. |
-| <code><a href="#@cdktf/provider-databricks.budget.BudgetAlertConfigurations.property.quantityThreshold">QuantityThreshold</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#quantity_threshold Budget#quantity_threshold}. |
-| <code><a href="#@cdktf/provider-databricks.budget.BudgetAlertConfigurations.property.quantityType">QuantityType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#quantity_type Budget#quantity_type}. |
-| <code><a href="#@cdktf/provider-databricks.budget.BudgetAlertConfigurations.property.timePeriod">TimePeriod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#time_period Budget#time_period}. |
-| <code><a href="#@cdktf/provider-databricks.budget.BudgetAlertConfigurations.property.triggerType">TriggerType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#trigger_type Budget#trigger_type}. |
+| <code><a href="#@cdktf/provider-databricks.budget.BudgetAlertConfigurations.property.alertConfigurationId">AlertConfigurationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#alert_configuration_id Budget#alert_configuration_id}. |
+| <code><a href="#@cdktf/provider-databricks.budget.BudgetAlertConfigurations.property.quantityThreshold">QuantityThreshold</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#quantity_threshold Budget#quantity_threshold}. |
+| <code><a href="#@cdktf/provider-databricks.budget.BudgetAlertConfigurations.property.quantityType">QuantityType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#quantity_type Budget#quantity_type}. |
+| <code><a href="#@cdktf/provider-databricks.budget.BudgetAlertConfigurations.property.timePeriod">TimePeriod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#time_period Budget#time_period}. |
+| <code><a href="#@cdktf/provider-databricks.budget.BudgetAlertConfigurations.property.triggerType">TriggerType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#trigger_type Budget#trigger_type}. |
 
 ---
 
@@ -960,7 +960,7 @@ ActionConfigurations interface{}
 
 action_configurations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#action_configurations Budget#action_configurations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#action_configurations Budget#action_configurations}
 
 ---
 
@@ -972,7 +972,7 @@ AlertConfigurationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#alert_configuration_id Budget#alert_configuration_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#alert_configuration_id Budget#alert_configuration_id}.
 
 ---
 
@@ -984,7 +984,7 @@ QuantityThreshold *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#quantity_threshold Budget#quantity_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#quantity_threshold Budget#quantity_threshold}.
 
 ---
 
@@ -996,7 +996,7 @@ QuantityType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#quantity_type Budget#quantity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#quantity_type Budget#quantity_type}.
 
 ---
 
@@ -1008,7 +1008,7 @@ TimePeriod *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#time_period Budget#time_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#time_period Budget#time_period}.
 
 ---
 
@@ -1020,7 +1020,7 @@ TriggerType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#trigger_type Budget#trigger_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#trigger_type Budget#trigger_type}.
 
 ---
 
@@ -1029,7 +1029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
 
 &budget.BudgetAlertConfigurationsActionConfigurations {
 	ActionConfigurationId: *string,
@@ -1042,9 +1042,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurations.property.actionConfigurationId">ActionConfigurationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#action_configuration_id Budget#action_configuration_id}. |
-| <code><a href="#@cdktf/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurations.property.actionType">ActionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#action_type Budget#action_type}. |
-| <code><a href="#@cdktf/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurations.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#target Budget#target}. |
+| <code><a href="#@cdktf/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurations.property.actionConfigurationId">ActionConfigurationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#action_configuration_id Budget#action_configuration_id}. |
+| <code><a href="#@cdktf/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurations.property.actionType">ActionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#action_type Budget#action_type}. |
+| <code><a href="#@cdktf/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurations.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#target Budget#target}. |
 
 ---
 
@@ -1056,7 +1056,7 @@ ActionConfigurationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#action_configuration_id Budget#action_configuration_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#action_configuration_id Budget#action_configuration_id}.
 
 ---
 
@@ -1068,7 +1068,7 @@ ActionType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#action_type Budget#action_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#action_type Budget#action_type}.
 
 ---
 
@@ -1080,7 +1080,7 @@ Target *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#target Budget#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#target Budget#target}.
 
 ---
 
@@ -1089,7 +1089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.budget.BudgetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
 
 &budget.BudgetConfig {
 	Connection: interface{},
@@ -1104,7 +1104,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
 	BudgetConfigurationId: *string,
 	CreateTime: *f64,
 	DisplayName: *string,
-	Filter: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.budget.BudgetFilter,
+	Filter: github.com/cdktf/cdktf-provider-databricks-go/databricks.budget.BudgetFilter,
 	Id: *string,
 	UpdateTime: *f64,
 }
@@ -1121,14 +1121,14 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
 | <code><a href="#@cdktf/provider-databricks.budget.BudgetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.budget.BudgetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.budget.BudgetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.budget.BudgetConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#account_id Budget#account_id}. |
+| <code><a href="#@cdktf/provider-databricks.budget.BudgetConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#account_id Budget#account_id}. |
 | <code><a href="#@cdktf/provider-databricks.budget.BudgetConfig.property.alertConfigurations">AlertConfigurations</a></code> | <code>interface{}</code> | alert_configurations block. |
-| <code><a href="#@cdktf/provider-databricks.budget.BudgetConfig.property.budgetConfigurationId">BudgetConfigurationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#budget_configuration_id Budget#budget_configuration_id}. |
-| <code><a href="#@cdktf/provider-databricks.budget.BudgetConfig.property.createTime">CreateTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#create_time Budget#create_time}. |
-| <code><a href="#@cdktf/provider-databricks.budget.BudgetConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#display_name Budget#display_name}. |
+| <code><a href="#@cdktf/provider-databricks.budget.BudgetConfig.property.budgetConfigurationId">BudgetConfigurationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#budget_configuration_id Budget#budget_configuration_id}. |
+| <code><a href="#@cdktf/provider-databricks.budget.BudgetConfig.property.createTime">CreateTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#create_time Budget#create_time}. |
+| <code><a href="#@cdktf/provider-databricks.budget.BudgetConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#display_name Budget#display_name}. |
 | <code><a href="#@cdktf/provider-databricks.budget.BudgetConfig.property.filter">Filter</a></code> | <code><a href="#@cdktf/provider-databricks.budget.BudgetFilter">BudgetFilter</a></code> | filter block. |
-| <code><a href="#@cdktf/provider-databricks.budget.BudgetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#id Budget#id}. |
-| <code><a href="#@cdktf/provider-databricks.budget.BudgetConfig.property.updateTime">UpdateTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#update_time Budget#update_time}. |
+| <code><a href="#@cdktf/provider-databricks.budget.BudgetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#id Budget#id}. |
+| <code><a href="#@cdktf/provider-databricks.budget.BudgetConfig.property.updateTime">UpdateTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#update_time Budget#update_time}. |
 
 ---
 
@@ -1210,7 +1210,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#account_id Budget#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#account_id Budget#account_id}.
 
 ---
 
@@ -1224,7 +1224,7 @@ AlertConfigurations interface{}
 
 alert_configurations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#alert_configurations Budget#alert_configurations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#alert_configurations Budget#alert_configurations}
 
 ---
 
@@ -1236,7 +1236,7 @@ BudgetConfigurationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#budget_configuration_id Budget#budget_configuration_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#budget_configuration_id Budget#budget_configuration_id}.
 
 ---
 
@@ -1248,7 +1248,7 @@ CreateTime *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#create_time Budget#create_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#create_time Budget#create_time}.
 
 ---
 
@@ -1260,7 +1260,7 @@ DisplayName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#display_name Budget#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#display_name Budget#display_name}.
 
 ---
 
@@ -1274,7 +1274,7 @@ Filter BudgetFilter
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#filter Budget#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#filter Budget#filter}
 
 ---
 
@@ -1286,7 +1286,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#id Budget#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#id Budget#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1301,7 +1301,7 @@ UpdateTime *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#update_time Budget#update_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#update_time Budget#update_time}.
 
 ---
 
@@ -1310,11 +1310,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.budget.BudgetFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
 
 &budget.BudgetFilter {
 	Tags: interface{},
-	WorkspaceId: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.budget.BudgetFilterWorkspaceId,
+	WorkspaceId: github.com/cdktf/cdktf-provider-databricks-go/databricks.budget.BudgetFilterWorkspaceId,
 }
 ```
 
@@ -1337,7 +1337,7 @@ Tags interface{}
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#tags Budget#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#tags Budget#tags}
 
 ---
 
@@ -1351,7 +1351,7 @@ WorkspaceId BudgetFilterWorkspaceId
 
 workspace_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#workspace_id Budget#workspace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#workspace_id Budget#workspace_id}
 
 ---
 
@@ -1360,11 +1360,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.budget.BudgetFilterTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
 
 &budget.BudgetFilterTags {
 	Key: *string,
-	Value: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.budget.BudgetFilterTagsValue,
+	Value: github.com/cdktf/cdktf-provider-databricks-go/databricks.budget.BudgetFilterTagsValue,
 }
 ```
 
@@ -1372,7 +1372,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.budget.BudgetFilterTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#key Budget#key}. |
+| <code><a href="#@cdktf/provider-databricks.budget.BudgetFilterTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#key Budget#key}. |
 | <code><a href="#@cdktf/provider-databricks.budget.BudgetFilterTags.property.value">Value</a></code> | <code><a href="#@cdktf/provider-databricks.budget.BudgetFilterTagsValue">BudgetFilterTagsValue</a></code> | value block. |
 
 ---
@@ -1385,7 +1385,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#key Budget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#key Budget#key}.
 
 ---
 
@@ -1399,7 +1399,7 @@ Value BudgetFilterTagsValue
 
 value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#value Budget#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#value Budget#value}
 
 ---
 
@@ -1408,7 +1408,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.budget.BudgetFilterTagsValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
 
 &budget.BudgetFilterTagsValue {
 	Operator: *string,
@@ -1420,8 +1420,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.budget.BudgetFilterTagsValue.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#operator Budget#operator}. |
-| <code><a href="#@cdktf/provider-databricks.budget.BudgetFilterTagsValue.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#values Budget#values}. |
+| <code><a href="#@cdktf/provider-databricks.budget.BudgetFilterTagsValue.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#operator Budget#operator}. |
+| <code><a href="#@cdktf/provider-databricks.budget.BudgetFilterTagsValue.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#values Budget#values}. |
 
 ---
 
@@ -1433,7 +1433,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#operator Budget#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#operator Budget#operator}.
 
 ---
 
@@ -1445,7 +1445,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#values Budget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#values Budget#values}.
 
 ---
 
@@ -1454,7 +1454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.budget.BudgetFilterWorkspaceId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
 
 &budget.BudgetFilterWorkspaceId {
 	Operator: *string,
@@ -1466,8 +1466,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.budget.BudgetFilterWorkspaceId.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#operator Budget#operator}. |
-| <code><a href="#@cdktf/provider-databricks.budget.BudgetFilterWorkspaceId.property.values">Values</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#values Budget#values}. |
+| <code><a href="#@cdktf/provider-databricks.budget.BudgetFilterWorkspaceId.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#operator Budget#operator}. |
+| <code><a href="#@cdktf/provider-databricks.budget.BudgetFilterWorkspaceId.property.values">Values</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#values Budget#values}. |
 
 ---
 
@@ -1479,7 +1479,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#operator Budget#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#operator Budget#operator}.
 
 ---
 
@@ -1491,7 +1491,7 @@ Values *[]*f64
 
 - *Type:* *[]*f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget#values Budget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget#values Budget#values}.
 
 ---
 
@@ -1502,7 +1502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
 
 budget.NewBudgetAlertConfigurationsActionConfigurationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BudgetAlertConfigurationsActionConfigurationsList
 ```
@@ -1662,7 +1662,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
 
 budget.NewBudgetAlertConfigurationsActionConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BudgetAlertConfigurationsActionConfigurationsOutputReference
 ```
@@ -2016,7 +2016,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.budget.BudgetAlertConfigurationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
 
 budget.NewBudgetAlertConfigurationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BudgetAlertConfigurationsList
 ```
@@ -2176,7 +2176,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
 
 budget.NewBudgetAlertConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BudgetAlertConfigurationsOutputReference
 ```
@@ -2630,7 +2630,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.budget.BudgetFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
 
 budget.NewBudgetFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetFilterOutputReference
 ```
@@ -2963,7 +2963,7 @@ func InternalValue() BudgetFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.budget.BudgetFilterTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
 
 budget.NewBudgetFilterTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BudgetFilterTagsList
 ```
@@ -3123,7 +3123,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.budget.BudgetFilterTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
 
 budget.NewBudgetFilterTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BudgetFilterTagsOutputReference
 ```
@@ -3461,7 +3461,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.budget.BudgetFilterTagsValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
 
 budget.NewBudgetFilterTagsValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetFilterTagsValueOutputReference
 ```
@@ -3768,7 +3768,7 @@ func InternalValue() BudgetFilterTagsValue
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.budget.BudgetFilterWorkspaceIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budget"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/budget"
 
 budget.NewBudgetFilterWorkspaceIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetFilterWorkspaceIdOutputReference
 ```

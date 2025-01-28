@@ -1,3 +1,3 @@
 # `databricks_budget`
 
-Refer to the Terraform Registry for docs: [`databricks_budget`](https://registry.terraform.io/providers/databricks/databricks/1.63.0/docs/resources/budget).
+Refer to the Terraform Registry for docs: [`databricks_budget`](https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/budget).
