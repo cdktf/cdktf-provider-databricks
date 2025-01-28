@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/databricks/databricks/1.64.0/docs/resources/mws_customer_managed_keys
 // generated from terraform resource schema
 
