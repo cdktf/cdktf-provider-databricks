@@ -5,6 +5,8 @@
 The following submodules are available:
 
 - [accessControlRuleSet](./accessControlRuleSet.csharp.md)
+- [aibiDashboardEmbeddingAccessPolicySetting](./aibiDashboardEmbeddingAccessPolicySetting.csharp.md)
+- [aibiDashboardEmbeddingApprovedDomainsSetting](./aibiDashboardEmbeddingApprovedDomainsSetting.csharp.md)
 - [alert](./alert.csharp.md)
 - [app](./app.csharp.md)
 - [artifactAllowlist](./artifactAllowlist.csharp.md)

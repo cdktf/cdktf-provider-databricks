@@ -5,6 +5,8 @@
 The following submodules are available:
 
 - [accessControlRuleSet](./accessControlRuleSet.python.md)
+- [aibiDashboardEmbeddingAccessPolicySetting](./aibiDashboardEmbeddingAccessPolicySetting.python.md)
+- [aibiDashboardEmbeddingApprovedDomainsSetting](./aibiDashboardEmbeddingApprovedDomainsSetting.python.md)
 - [alert](./alert.python.md)
 - [app](./app.python.md)
 - [artifactAllowlist](./artifactAllowlist.python.md)
