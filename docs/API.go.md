@@ -5,6 +5,8 @@
 The following submodules are available:
 
 - [accessControlRuleSet](./accessControlRuleSet.go.md)
+- [aibiDashboardEmbeddingAccessPolicySetting](./aibiDashboardEmbeddingAccessPolicySetting.go.md)
+- [aibiDashboardEmbeddingApprovedDomainsSetting](./aibiDashboardEmbeddingApprovedDomainsSetting.go.md)
 - [alert](./alert.go.md)
 - [app](./app.go.md)
 - [artifactAllowlist](./artifactAllowlist.go.md)

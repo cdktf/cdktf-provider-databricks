@@ -5,6 +5,8 @@
 The following submodules are available:
 
 - [accessControlRuleSet](./accessControlRuleSet.java.md)
+- [aibiDashboardEmbeddingAccessPolicySetting](./aibiDashboardEmbeddingAccessPolicySetting.java.md)
+- [aibiDashboardEmbeddingApprovedDomainsSetting](./aibiDashboardEmbeddingApprovedDomainsSetting.java.md)
 - [alert](./alert.java.md)
 - [app](./app.java.md)
 - [artifactAllowlist](./artifactAllowlist.java.md)

@@ -5,6 +5,8 @@
 The following submodules are available:
 
 - [accessControlRuleSet](./accessControlRuleSet.typescript.md)
+- [aibiDashboardEmbeddingAccessPolicySetting](./aibiDashboardEmbeddingAccessPolicySetting.typescript.md)
+- [aibiDashboardEmbeddingApprovedDomainsSetting](./aibiDashboardEmbeddingApprovedDomainsSetting.typescript.md)
 - [alert](./alert.typescript.md)
 - [app](./app.typescript.md)
 - [artifactAllowlist](./artifactAllowlist.typescript.md)
