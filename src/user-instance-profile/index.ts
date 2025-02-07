@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/databricks/databricks/1.65.1/docs/resources/user_instance_profile
 // generated from terraform resource schema
 

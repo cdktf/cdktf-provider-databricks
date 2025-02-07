@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctions(scope Construct, id *string, config DataDatabricksFunctionsConfig) DataDatabricksFunctions
 ```
@@ -303,7 +303,7 @@ func ResetIncludeBrowse()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 datadatabricksfunctions.DataDatabricksFunctions_IsConstruct(x interface{}) *bool
 ```
@@ -335,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 datadatabricksfunctions.DataDatabricksFunctions_IsTerraformElement(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ datadatabricksfunctions.DataDatabricksFunctions_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 datadatabricksfunctions.DataDatabricksFunctions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ datadatabricksfunctions.DataDatabricksFunctions_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 datadatabricksfunctions.DataDatabricksFunctions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -658,7 +658,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 &datadatabricksfunctions.DataDatabricksFunctionsConfig {
 	Connection: interface{},
@@ -816,7 +816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 &datadatabricksfunctions.DataDatabricksFunctionsFunctions {
 	BrowseOnly: interface{},
@@ -1254,7 +1254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsInputParams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 &datadatabricksfunctions.DataDatabricksFunctionsFunctionsInputParams {
 	Parameters: interface{},
@@ -1286,7 +1286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsInputParamsParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 &datadatabricksfunctions.DataDatabricksFunctionsFunctionsInputParamsParameters {
 	Name: *string,
@@ -1472,7 +1472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsReturnParams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 &datadatabricksfunctions.DataDatabricksFunctionsFunctionsReturnParams {
 	Parameters: interface{},
@@ -1504,7 +1504,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsReturnParamsParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 &datadatabricksfunctions.DataDatabricksFunctionsFunctionsReturnParamsParameters {
 	Name: *string,
@@ -1690,7 +1690,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependencies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 &datadatabricksfunctions.DataDatabricksFunctionsFunctionsRoutineDependencies {
 	Dependencies: interface{},
@@ -1722,7 +1722,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependencies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 &datadatabricksfunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependencies {
 	Function: interface{},
@@ -1768,7 +1768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 &datadatabricksfunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunction {
 	FunctionFullName: *string,
@@ -1800,7 +1800,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 &datadatabricksfunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTable {
 	TableFullName: *string,
@@ -1834,7 +1834,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsInputParamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsInputParamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksFunctionsFunctionsInputParamsList
 ```
@@ -1994,7 +1994,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsInputParamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsInputParamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksFunctionsFunctionsInputParamsOutputReference
 ```
@@ -2303,7 +2303,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsInputParamsParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsInputParamsParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksFunctionsFunctionsInputParamsParametersList
 ```
@@ -2463,7 +2463,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsInputParamsParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference
 ```
@@ -3050,7 +3050,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksFunctionsFunctionsList
 ```
@@ -3210,7 +3210,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksFunctionsFunctionsOutputReference
 ```
@@ -4386,7 +4386,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsReturnParamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsReturnParamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksFunctionsFunctionsReturnParamsList
 ```
@@ -4546,7 +4546,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsReturnParamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsReturnParamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksFunctionsFunctionsReturnParamsOutputReference
 ```
@@ -4855,7 +4855,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsReturnParamsParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsReturnParamsParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksFunctionsFunctionsReturnParamsParametersList
 ```
@@ -5015,7 +5015,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsReturnParamsParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsReturnParamsParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksFunctionsFunctionsReturnParamsParametersOutputReference
 ```
@@ -5602,7 +5602,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunctionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunctionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunctionList
 ```
@@ -5762,7 +5762,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunctionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunctionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunctionOutputReference
 ```
@@ -6051,7 +6051,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesList
 ```
@@ -6211,7 +6211,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference
 ```
@@ -6562,7 +6562,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTableList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTableList
 ```
@@ -6722,7 +6722,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTableOutputReference
 ```
@@ -7011,7 +7011,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsRoutineDependenciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksFunctionsFunctionsRoutineDependenciesList
 ```
@@ -7171,7 +7171,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksfunctions"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsRoutineDependenciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksFunctionsFunctionsRoutineDependenciesOutputReference
 ```
