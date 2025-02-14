@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.65.1/docs/resources/azure_blob_mount
+// https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/azure_blob_mount
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,48 +13,48 @@ import * as cdktf from 'cdktf';
 
 export interface AzureBlobMountConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.65.1/docs/resources/azure_blob_mount#auth_type AzureBlobMount#auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/azure_blob_mount#auth_type AzureBlobMount#auth_type}
   */
   readonly authType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.65.1/docs/resources/azure_blob_mount#cluster_id AzureBlobMount#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/azure_blob_mount#cluster_id AzureBlobMount#cluster_id}
   */
   readonly clusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.65.1/docs/resources/azure_blob_mount#container_name AzureBlobMount#container_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/azure_blob_mount#container_name AzureBlobMount#container_name}
   */
   readonly containerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.65.1/docs/resources/azure_blob_mount#directory AzureBlobMount#directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/azure_blob_mount#directory AzureBlobMount#directory}
   */
   readonly directory?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.65.1/docs/resources/azure_blob_mount#id AzureBlobMount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/azure_blob_mount#id AzureBlobMount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.65.1/docs/resources/azure_blob_mount#mount_name AzureBlobMount#mount_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/azure_blob_mount#mount_name AzureBlobMount#mount_name}
   */
   readonly mountName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.65.1/docs/resources/azure_blob_mount#storage_account_name AzureBlobMount#storage_account_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/azure_blob_mount#storage_account_name AzureBlobMount#storage_account_name}
   */
   readonly storageAccountName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.65.1/docs/resources/azure_blob_mount#token_secret_key AzureBlobMount#token_secret_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/azure_blob_mount#token_secret_key AzureBlobMount#token_secret_key}
   */
   readonly tokenSecretKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.65.1/docs/resources/azure_blob_mount#token_secret_scope AzureBlobMount#token_secret_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/azure_blob_mount#token_secret_scope AzureBlobMount#token_secret_scope}
   */
   readonly tokenSecretScope: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.65.1/docs/resources/azure_blob_mount databricks_azure_blob_mount}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/azure_blob_mount databricks_azure_blob_mount}
 */
 export class AzureBlobMount extends cdktf.TerraformResource {
 
@@ -70,7 +70,7 @@ export class AzureBlobMount extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AzureBlobMount resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AzureBlobMount to import
-  * @param importFromId The id of the existing AzureBlobMount that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.65.1/docs/resources/azure_blob_mount#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AzureBlobMount that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/azure_blob_mount#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AzureBlobMount to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -82,7 +82,7 @@ export class AzureBlobMount extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.65.1/docs/resources/azure_blob_mount databricks_azure_blob_mount} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/azure_blob_mount databricks_azure_blob_mount} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -93,7 +93,7 @@ export class AzureBlobMount extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_azure_blob_mount',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.65.1',
+        providerVersion: '1.66.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
