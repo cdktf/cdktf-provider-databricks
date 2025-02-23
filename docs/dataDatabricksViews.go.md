@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksViews.DataDatabricksViews.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksviews"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksviews"
 
 datadatabricksviews.NewDataDatabricksViews(scope Construct, id *string, config DataDatabricksViewsConfig) DataDatabricksViews
 ```
@@ -290,7 +290,7 @@ func ResetIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksViews.DataDatabricksViews.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksviews"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksviews"
 
 datadatabricksviews.DataDatabricksViews_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksViews.DataDatabricksViews.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksviews"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksviews"
 
 datadatabricksviews.DataDatabricksViews_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datadatabricksviews.DataDatabricksViews_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksViews.DataDatabricksViews.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksviews"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksviews"
 
 datadatabricksviews.DataDatabricksViews_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datadatabricksviews.DataDatabricksViews_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksViews.DataDatabricksViews.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksviews"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksviews"
 
 datadatabricksviews.DataDatabricksViews_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -645,7 +645,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksViews.DataDatabricksViewsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksviews"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksviews"
 
 &datadatabricksviews.DataDatabricksViewsConfig {
 	Connection: interface{},
