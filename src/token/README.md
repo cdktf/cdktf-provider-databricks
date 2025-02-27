@@ -1,3 +1,3 @@
 # `databricks_token`
 
-Refer to the Terraform Registry for docs: [`databricks_token`](https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/token).
+Refer to the Terraform Registry for docs: [`databricks_token`](https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/token).

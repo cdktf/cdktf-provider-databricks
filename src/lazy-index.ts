@@ -127,6 +127,7 @@ Object.defineProperty(exports, 'dataDatabricksClusters', { get: function () { re
 Object.defineProperty(exports, 'dataDatabricksCurrentConfig', { get: function () { return require('./data-databricks-current-config'); } });
 Object.defineProperty(exports, 'dataDatabricksCurrentMetastore', { get: function () { return require('./data-databricks-current-metastore'); } });
 Object.defineProperty(exports, 'dataDatabricksCurrentUser', { get: function () { return require('./data-databricks-current-user'); } });
+Object.defineProperty(exports, 'dataDatabricksDashboards', { get: function () { return require('./data-databricks-dashboards'); } });
 Object.defineProperty(exports, 'dataDatabricksDbfsFile', { get: function () { return require('./data-databricks-dbfs-file'); } });
 Object.defineProperty(exports, 'dataDatabricksDbfsFilePaths', { get: function () { return require('./data-databricks-dbfs-file-paths'); } });
 Object.defineProperty(exports, 'dataDatabricksDirectory', { get: function () { return require('./data-databricks-directory'); } });

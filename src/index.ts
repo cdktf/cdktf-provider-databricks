@@ -127,6 +127,7 @@ export * as dataDatabricksClusters from './data-databricks-clusters';
 export * as dataDatabricksCurrentConfig from './data-databricks-current-config';
 export * as dataDatabricksCurrentMetastore from './data-databricks-current-metastore';
 export * as dataDatabricksCurrentUser from './data-databricks-current-user';
+export * as dataDatabricksDashboards from './data-databricks-dashboards';
 export * as dataDatabricksDbfsFile from './data-databricks-dbfs-file';
 export * as dataDatabricksDbfsFilePaths from './data-databricks-dbfs-file-paths';
 export * as dataDatabricksDirectory from './data-databricks-directory';

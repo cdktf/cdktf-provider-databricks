@@ -1,3 +1,3 @@
 # `databricks_entitlements`
 
-Refer to the Terraform Registry for docs: [`databricks_entitlements`](https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/entitlements).
+Refer to the Terraform Registry for docs: [`databricks_entitlements`](https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/entitlements).

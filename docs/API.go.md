@@ -41,6 +41,7 @@ The following submodules are available:
 - [dataDatabricksCurrentConfig](./dataDatabricksCurrentConfig.go.md)
 - [dataDatabricksCurrentMetastore](./dataDatabricksCurrentMetastore.go.md)
 - [dataDatabricksCurrentUser](./dataDatabricksCurrentUser.go.md)
+- [dataDatabricksDashboards](./dataDatabricksDashboards.go.md)
 - [dataDatabricksDbfsFile](./dataDatabricksDbfsFile.go.md)
 - [dataDatabricksDbfsFilePaths](./dataDatabricksDbfsFilePaths.go.md)
 - [dataDatabricksDirectory](./dataDatabricksDirectory.go.md)

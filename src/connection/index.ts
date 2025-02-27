@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/connection
+// https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,48 +13,119 @@ import * as cdktf from 'cdktf';
 
 export interface ConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/connection#comment Connection#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/connection#comment Connection#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/connection#connection_type Connection#connection_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/connection#connection_type Connection#connection_type}
   */
-  readonly connectionType: string;
+  readonly connectionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/connection#id Connection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/connection#id Connection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/connection#metastore_id Connection#metastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/connection#name Connection#name}
   */
-  readonly metastoreId?: string;
+  readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/connection#name Connection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/connection#options Connection#options}
   */
-  readonly name: string;
+  readonly options?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/connection#options Connection#options}
-  */
-  readonly options: { [key: string]: string };
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/connection#owner Connection#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/connection#owner Connection#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/connection#properties Connection#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/connection#properties Connection#properties}
   */
   readonly properties?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/connection#read_only Connection#read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/connection#read_only Connection#read_only}
   */
   readonly readOnly?: boolean | cdktf.IResolvable;
 }
+export interface ConnectionProvisioningInfo {
+}
+
+export function connectionProvisioningInfoToTerraform(struct?: ConnectionProvisioningInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function connectionProvisioningInfoToHclTerraform(struct?: ConnectionProvisioningInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ConnectionProvisioningInfoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ConnectionProvisioningInfo | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ConnectionProvisioningInfo | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // state - computed: true, optional: false, required: false
+  public get state() {
+    return this.getStringAttribute('state');
+  }
+}
+
+export class ConnectionProvisioningInfoList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ConnectionProvisioningInfoOutputReference {
+    return new ConnectionProvisioningInfoOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/connection databricks_connection}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/connection databricks_connection}
 */
 export class Connection extends cdktf.TerraformResource {
 
@@ -70,7 +141,7 @@ export class Connection extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Connection resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Connection to import
-  * @param importFromId The id of the existing Connection that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Connection that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Connection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -82,18 +153,18 @@ export class Connection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/connection databricks_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/connection databricks_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options ConnectionConfig
+  * @param options ConnectionConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: ConnectionConfig) {
+  public constructor(scope: Construct, id: string, config: ConnectionConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'databricks_connection',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.66.0',
+        providerVersion: '1.67.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -107,7 +178,6 @@ export class Connection extends cdktf.TerraformResource {
     this._comment = config.comment;
     this._connectionType = config.connectionType;
     this._id = config.id;
-    this._metastoreId = config.metastoreId;
     this._name = config.name;
     this._options = config.options;
     this._owner = config.owner;
@@ -135,7 +205,12 @@ export class Connection extends cdktf.TerraformResource {
     return this._comment;
   }
 
-  // connection_type - computed: false, optional: false, required: true
+  // connection_id - computed: true, optional: false, required: false
+  public get connectionId() {
+    return this.getStringAttribute('connection_id');
+  }
+
+  // connection_type - computed: false, optional: true, required: false
   private _connectionType?: string; 
   public get connectionType() {
     return this.getStringAttribute('connection_type');
@@ -143,9 +218,32 @@ export class Connection extends cdktf.TerraformResource {
   public set connectionType(value: string) {
     this._connectionType = value;
   }
+  public resetConnectionType() {
+    this._connectionType = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get connectionTypeInput() {
     return this._connectionType;
+  }
+
+  // created_at - computed: true, optional: false, required: false
+  public get createdAt() {
+    return this.getNumberAttribute('created_at');
+  }
+
+  // created_by - computed: true, optional: false, required: false
+  public get createdBy() {
+    return this.getStringAttribute('created_by');
+  }
+
+  // credential_type - computed: true, optional: false, required: false
+  public get credentialType() {
+    return this.getStringAttribute('credential_type');
+  }
+
+  // full_name - computed: true, optional: false, required: false
+  public get fullName() {
+    return this.getStringAttribute('full_name');
   }
 
   // id - computed: true, optional: true, required: false
@@ -164,23 +262,12 @@ export class Connection extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // metastore_id - computed: true, optional: true, required: false
-  private _metastoreId?: string; 
+  // metastore_id - computed: true, optional: false, required: false
   public get metastoreId() {
     return this.getStringAttribute('metastore_id');
   }
-  public set metastoreId(value: string) {
-    this._metastoreId = value;
-  }
-  public resetMetastoreId() {
-    this._metastoreId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get metastoreIdInput() {
-    return this._metastoreId;
-  }
 
-  // name - computed: false, optional: false, required: true
+  // name - computed: false, optional: true, required: false
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
@@ -188,18 +275,24 @@ export class Connection extends cdktf.TerraformResource {
   public set name(value: string) {
     this._name = value;
   }
+  public resetName() {
+    this._name = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
   }
 
-  // options - computed: false, optional: false, required: true
+  // options - computed: false, optional: true, required: false
   private _options?: { [key: string]: string }; 
   public get options() {
     return this.getStringMapAttribute('options');
   }
   public set options(value: { [key: string]: string }) {
     this._options = value;
+  }
+  public resetOptions() {
+    this._options = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get optionsInput() {
@@ -238,6 +331,12 @@ export class Connection extends cdktf.TerraformResource {
     return this._properties;
   }
 
+  // provisioning_info - computed: true, optional: false, required: false
+  private _provisioningInfo = new ConnectionProvisioningInfoList(this, "provisioning_info", false);
+  public get provisioningInfo() {
+    return this._provisioningInfo;
+  }
+
   // read_only - computed: true, optional: true, required: false
   private _readOnly?: boolean | cdktf.IResolvable; 
   public get readOnly() {
@@ -254,6 +353,26 @@ export class Connection extends cdktf.TerraformResource {
     return this._readOnly;
   }
 
+  // securable_type - computed: true, optional: false, required: false
+  public get securableType() {
+    return this.getStringAttribute('securable_type');
+  }
+
+  // updated_at - computed: true, optional: false, required: false
+  public get updatedAt() {
+    return this.getNumberAttribute('updated_at');
+  }
+
+  // updated_by - computed: true, optional: false, required: false
+  public get updatedBy() {
+    return this.getStringAttribute('updated_by');
+  }
+
+  // url - computed: true, optional: false, required: false
+  public get url() {
+    return this.getStringAttribute('url');
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -263,7 +382,6 @@ export class Connection extends cdktf.TerraformResource {
       comment: cdktf.stringToTerraform(this._comment),
       connection_type: cdktf.stringToTerraform(this._connectionType),
       id: cdktf.stringToTerraform(this._id),
-      metastore_id: cdktf.stringToTerraform(this._metastoreId),
       name: cdktf.stringToTerraform(this._name),
       options: cdktf.hashMapper(cdktf.stringToTerraform)(this._options),
       owner: cdktf.stringToTerraform(this._owner),
@@ -288,12 +406,6 @@ export class Connection extends cdktf.TerraformResource {
       },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      metastore_id: {
-        value: cdktf.stringToHclTerraform(this._metastoreId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

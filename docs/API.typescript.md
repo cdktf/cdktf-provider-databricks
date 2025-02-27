@@ -41,6 +41,7 @@ The following submodules are available:
 - [dataDatabricksCurrentConfig](./dataDatabricksCurrentConfig.typescript.md)
 - [dataDatabricksCurrentMetastore](./dataDatabricksCurrentMetastore.typescript.md)
 - [dataDatabricksCurrentUser](./dataDatabricksCurrentUser.typescript.md)
+- [dataDatabricksDashboards](./dataDatabricksDashboards.typescript.md)
 - [dataDatabricksDbfsFile](./dataDatabricksDbfsFile.typescript.md)
 - [dataDatabricksDbfsFilePaths](./dataDatabricksDbfsFilePaths.typescript.md)
 - [dataDatabricksDirectory](./dataDatabricksDirectory.typescript.md)

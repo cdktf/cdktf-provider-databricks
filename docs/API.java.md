@@ -41,6 +41,7 @@ The following submodules are available:
 - [dataDatabricksCurrentConfig](./dataDatabricksCurrentConfig.java.md)
 - [dataDatabricksCurrentMetastore](./dataDatabricksCurrentMetastore.java.md)
 - [dataDatabricksCurrentUser](./dataDatabricksCurrentUser.java.md)
+- [dataDatabricksDashboards](./dataDatabricksDashboards.java.md)
 - [dataDatabricksDbfsFile](./dataDatabricksDbfsFile.java.md)
 - [dataDatabricksDbfsFilePaths](./dataDatabricksDbfsFilePaths.java.md)
 - [dataDatabricksDirectory](./dataDatabricksDirectory.java.md)

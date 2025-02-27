@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/notification_destination
+// https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/notification_destination
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +13,15 @@ import * as cdktf from 'cdktf';
 
 export interface NotificationDestinationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/notification_destination#destination_type NotificationDestination#destination_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/notification_destination#destination_type NotificationDestination#destination_type}
   */
   readonly destinationType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/notification_destination#display_name NotificationDestination#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/notification_destination#display_name NotificationDestination#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/notification_destination#id NotificationDestination#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/notification_destination#id NotificationDestination#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,13 +30,13 @@ export interface NotificationDestinationConfig extends cdktf.TerraformMetaArgume
   /**
   * config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/notification_destination#config NotificationDestination#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/notification_destination#config NotificationDestination#config}
   */
   readonly config?: NotificationDestinationConfigA;
 }
 export interface NotificationDestinationConfigEmail {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/notification_destination#addresses NotificationDestination#addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/notification_destination#addresses NotificationDestination#addresses}
   */
   readonly addresses?: string[];
 }
@@ -120,27 +120,27 @@ export class NotificationDestinationConfigEmailOutputReference extends cdktf.Com
 }
 export interface NotificationDestinationConfigGenericWebhook {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/notification_destination#password NotificationDestination#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/notification_destination#password NotificationDestination#password}
   */
   readonly password?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/notification_destination#password_set NotificationDestination#password_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/notification_destination#password_set NotificationDestination#password_set}
   */
   readonly passwordSet?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/notification_destination#url NotificationDestination#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/notification_destination#url NotificationDestination#url}
   */
   readonly url?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}
   */
   readonly urlSet?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/notification_destination#username NotificationDestination#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/notification_destination#username NotificationDestination#username}
   */
   readonly username?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/notification_destination#username_set NotificationDestination#username_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/notification_destination#username_set NotificationDestination#username_set}
   */
   readonly usernameSet?: boolean | cdktf.IResolvable;
 }
@@ -369,11 +369,11 @@ export class NotificationDestinationConfigGenericWebhookOutputReference extends 
 }
 export interface NotificationDestinationConfigMicrosoftTeams {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/notification_destination#url NotificationDestination#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/notification_destination#url NotificationDestination#url}
   */
   readonly url?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}
   */
   readonly urlSet?: boolean | cdktf.IResolvable;
 }
@@ -486,11 +486,11 @@ export class NotificationDestinationConfigMicrosoftTeamsOutputReference extends 
 }
 export interface NotificationDestinationConfigPagerduty {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/notification_destination#integration_key NotificationDestination#integration_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/notification_destination#integration_key NotificationDestination#integration_key}
   */
   readonly integrationKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/notification_destination#integration_key_set NotificationDestination#integration_key_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/notification_destination#integration_key_set NotificationDestination#integration_key_set}
   */
   readonly integrationKeySet?: boolean | cdktf.IResolvable;
 }
@@ -603,11 +603,11 @@ export class NotificationDestinationConfigPagerdutyOutputReference extends cdktf
 }
 export interface NotificationDestinationConfigSlack {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/notification_destination#url NotificationDestination#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/notification_destination#url NotificationDestination#url}
   */
   readonly url?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}
   */
   readonly urlSet?: boolean | cdktf.IResolvable;
 }
@@ -722,31 +722,31 @@ export interface NotificationDestinationConfigA {
   /**
   * email block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/notification_destination#email NotificationDestination#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/notification_destination#email NotificationDestination#email}
   */
   readonly email?: NotificationDestinationConfigEmail;
   /**
   * generic_webhook block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/notification_destination#generic_webhook NotificationDestination#generic_webhook}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/notification_destination#generic_webhook NotificationDestination#generic_webhook}
   */
   readonly genericWebhook?: NotificationDestinationConfigGenericWebhook;
   /**
   * microsoft_teams block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/notification_destination#microsoft_teams NotificationDestination#microsoft_teams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/notification_destination#microsoft_teams NotificationDestination#microsoft_teams}
   */
   readonly microsoftTeams?: NotificationDestinationConfigMicrosoftTeams;
   /**
   * pagerduty block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/notification_destination#pagerduty NotificationDestination#pagerduty}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/notification_destination#pagerduty NotificationDestination#pagerduty}
   */
   readonly pagerduty?: NotificationDestinationConfigPagerduty;
   /**
   * slack block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/notification_destination#slack NotificationDestination#slack}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/notification_destination#slack NotificationDestination#slack}
   */
   readonly slack?: NotificationDestinationConfigSlack;
 }
@@ -946,7 +946,7 @@ export class NotificationDestinationConfigAOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/notification_destination databricks_notification_destination}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/notification_destination databricks_notification_destination}
 */
 export class NotificationDestination extends cdktf.TerraformResource {
 
@@ -962,7 +962,7 @@ export class NotificationDestination extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NotificationDestination resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NotificationDestination to import
-  * @param importFromId The id of the existing NotificationDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/notification_destination#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NotificationDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/notification_destination#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NotificationDestination to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -974,7 +974,7 @@ export class NotificationDestination extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/notification_destination databricks_notification_destination} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/notification_destination databricks_notification_destination} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -985,7 +985,7 @@ export class NotificationDestination extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_notification_destination',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.66.0',
+        providerVersion: '1.67.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
