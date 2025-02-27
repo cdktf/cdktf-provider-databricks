@@ -1,3 +1,3 @@
 # `databricks_app`
 
-Refer to the Terraform Registry for docs: [`databricks_app`](https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/app).
+Refer to the Terraform Registry for docs: [`databricks_app`](https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/app).

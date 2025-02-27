@@ -1,3 +1,3 @@
 # `databricks_azure_blob_mount`
 
-Refer to the Terraform Registry for docs: [`databricks_azure_blob_mount`](https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/azure_blob_mount).
+Refer to the Terraform Registry for docs: [`databricks_azure_blob_mount`](https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/azure_blob_mount).

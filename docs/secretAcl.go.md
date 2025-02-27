@@ -4,12 +4,12 @@
 
 ### SecretAcl <a name="SecretAcl" id="@cdktf/provider-databricks.secretAcl.SecretAcl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/secret_acl databricks_secret_acl}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/secret_acl databricks_secret_acl}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.secretAcl.SecretAcl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/secretacl"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/secretacl"
 
 secretacl.NewSecretAcl(scope Construct, id *string, config SecretAclConfig) SecretAcl
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.secretAcl.SecretAcl.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/secretacl"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/secretacl"
 
 secretacl.SecretAcl_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.secretAcl.SecretAcl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/secretacl"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/secretacl"
 
 secretacl.SecretAcl_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ secretacl.SecretAcl_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.secretAcl.SecretAcl.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/secretacl"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/secretacl"
 
 secretacl.SecretAcl_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ secretacl.SecretAcl_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.secretAcl.SecretAcl.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/secretacl"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/secretacl"
 
 secretacl.SecretAcl_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the SecretAcl to import.
 
 The id of the existing SecretAcl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/secret_acl#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/secret_acl#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.secretAcl.SecretAclConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/secretacl"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/secretacl"
 
 &secretacl.SecretAclConfig {
 	Connection: interface{},
@@ -790,10 +790,10 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/secretacl"
 | <code><a href="#@cdktf/provider-databricks.secretAcl.SecretAclConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.secretAcl.SecretAclConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.secretAcl.SecretAclConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.secretAcl.SecretAclConfig.property.permission">Permission</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/secret_acl#permission SecretAcl#permission}. |
-| <code><a href="#@cdktf/provider-databricks.secretAcl.SecretAclConfig.property.principal">Principal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/secret_acl#principal SecretAcl#principal}. |
-| <code><a href="#@cdktf/provider-databricks.secretAcl.SecretAclConfig.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/secret_acl#scope SecretAcl#scope}. |
-| <code><a href="#@cdktf/provider-databricks.secretAcl.SecretAclConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/secret_acl#id SecretAcl#id}. |
+| <code><a href="#@cdktf/provider-databricks.secretAcl.SecretAclConfig.property.permission">Permission</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/secret_acl#permission SecretAcl#permission}. |
+| <code><a href="#@cdktf/provider-databricks.secretAcl.SecretAclConfig.property.principal">Principal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/secret_acl#principal SecretAcl#principal}. |
+| <code><a href="#@cdktf/provider-databricks.secretAcl.SecretAclConfig.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/secret_acl#scope SecretAcl#scope}. |
+| <code><a href="#@cdktf/provider-databricks.secretAcl.SecretAclConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/secret_acl#id SecretAcl#id}. |
 
 ---
 
@@ -875,7 +875,7 @@ Permission *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/secret_acl#permission SecretAcl#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/secret_acl#permission SecretAcl#permission}.
 
 ---
 
@@ -887,7 +887,7 @@ Principal *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/secret_acl#principal SecretAcl#principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/secret_acl#principal SecretAcl#principal}.
 
 ---
 
@@ -899,7 +899,7 @@ Scope *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/secret_acl#scope SecretAcl#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/secret_acl#scope SecretAcl#scope}.
 
 ---
 
@@ -911,7 +911,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.66.0/docs/resources/secret_acl#id SecretAcl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/secret_acl#id SecretAcl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

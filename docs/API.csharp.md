@@ -41,6 +41,7 @@ The following submodules are available:
 - [dataDatabricksCurrentConfig](./dataDatabricksCurrentConfig.csharp.md)
 - [dataDatabricksCurrentMetastore](./dataDatabricksCurrentMetastore.csharp.md)
 - [dataDatabricksCurrentUser](./dataDatabricksCurrentUser.csharp.md)
+- [dataDatabricksDashboards](./dataDatabricksDashboards.csharp.md)
 - [dataDatabricksDbfsFile](./dataDatabricksDbfsFile.csharp.md)
 - [dataDatabricksDbfsFilePaths](./dataDatabricksDbfsFilePaths.csharp.md)
 - [dataDatabricksDirectory](./dataDatabricksDirectory.csharp.md)
