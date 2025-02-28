@@ -1,3 +1,3 @@
 # `databricks_model_serving`
 
-Refer to the Terraform Registry for docs: [`databricks_model_serving`](https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/model_serving).
+Refer to the Terraform Registry for docs: [`databricks_model_serving`](https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/model_serving).
