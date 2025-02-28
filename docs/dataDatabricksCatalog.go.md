@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscatalog"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickscatalog"
 
 datadatabrickscatalog.NewDataDatabricksCatalog(scope Construct, id *string, config DataDatabricksCatalogConfig) DataDatabricksCatalog
 ```
@@ -303,7 +303,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalog.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscatalog"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickscatalog"
 
 datadatabrickscatalog.DataDatabricksCatalog_IsConstruct(x interface{}) *bool
 ```
@@ -335,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalog.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscatalog"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickscatalog"
 
 datadatabrickscatalog.DataDatabricksCatalog_IsTerraformElement(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ datadatabrickscatalog.DataDatabricksCatalog_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalog.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscatalog"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickscatalog"
 
 datadatabrickscatalog.DataDatabricksCatalog_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ datadatabrickscatalog.DataDatabricksCatalog_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalog.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscatalog"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickscatalog"
 
 datadatabrickscatalog.DataDatabricksCatalog_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -636,7 +636,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscatalog"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickscatalog"
 
 &datadatabrickscatalog.DataDatabricksCatalogCatalogInfo {
 	BrowseOnly: interface{},
@@ -645,7 +645,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksc
 	ConnectionName: *string,
 	CreatedAt: *f64,
 	CreatedBy: *string,
-	EffectivePredictiveOptimizationFlag: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlag,
+	EffectivePredictiveOptimizationFlag: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlag,
 	EnablePredictiveOptimization: *string,
 	FullName: *string,
 	IsolationMode: *string,
@@ -655,7 +655,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksc
 	Owner: *string,
 	Properties: *map[string]*string,
 	ProviderName: *string,
-	ProvisioningInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoProvisioningInfo,
+	ProvisioningInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoProvisioningInfo,
 	SecurableType: *string,
 	ShareName: *string,
 	StorageLocation: *string,
@@ -980,7 +980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscatalog"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickscatalog"
 
 &datadatabrickscatalog.DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlag {
 	Value: *string,
@@ -1040,7 +1040,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoProvisioningInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscatalog"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickscatalog"
 
 &datadatabrickscatalog.DataDatabricksCatalogCatalogInfoProvisioningInfo {
 	State: *string,
@@ -1072,7 +1072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscatalog"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickscatalog"
 
 &datadatabrickscatalog.DataDatabricksCatalogConfig {
 	Connection: interface{},
@@ -1083,7 +1083,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksc
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	CatalogInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo,
+	CatalogInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo,
 	Id: *string,
 }
 ```
@@ -1223,7 +1223,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscatalog"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickscatalog"
 
 datadatabrickscatalog.NewDataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlagOutputReference
 ```
@@ -1552,7 +1552,7 @@ func InternalValue() DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimiza
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscatalog"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickscatalog"
 
 datadatabrickscatalog.NewDataDatabricksCatalogCatalogInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksCatalogCatalogInfoOutputReference
 ```
@@ -2494,7 +2494,7 @@ func InternalValue() DataDatabricksCatalogCatalogInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoProvisioningInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscatalog"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabrickscatalog"
 
 datadatabrickscatalog.NewDataDatabricksCatalogCatalogInfoProvisioningInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksCatalogCatalogInfoProvisioningInfoOutputReference
 ```
