@@ -4,12 +4,12 @@
 
 ### Directory <a name="Directory" id="@cdktf/provider-databricks.directory.Directory"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/directory databricks_directory}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/directory databricks_directory}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.directory.Directory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/directory"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/directory"
 
 directory.NewDirectory(scope Construct, id *string, config DirectoryConfig) Directory
 ```
@@ -399,7 +399,7 @@ func ResetObjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.directory.Directory.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/directory"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/directory"
 
 directory.Directory_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.directory.Directory.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/directory"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/directory"
 
 directory.Directory_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ directory.Directory_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.directory.Directory.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/directory"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/directory"
 
 directory.Directory_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ directory.Directory_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.directory.Directory.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/directory"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/directory"
 
 directory.Directory_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +488,7 @@ The construct id used in the generated config for the Directory to import.
 
 The id of the existing Directory that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/directory#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/directory#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -787,7 +787,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.directory.DirectoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/directory"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/directory"
 
 &directory.DirectoryConfig {
 	Connection: interface{},
@@ -815,10 +815,10 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/directory"
 | <code><a href="#@cdktf/provider-databricks.directory.DirectoryConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.directory.DirectoryConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.directory.DirectoryConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.directory.DirectoryConfig.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/directory#path Directory#path}. |
-| <code><a href="#@cdktf/provider-databricks.directory.DirectoryConfig.property.deleteRecursive">DeleteRecursive</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/directory#delete_recursive Directory#delete_recursive}. |
-| <code><a href="#@cdktf/provider-databricks.directory.DirectoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/directory#id Directory#id}. |
-| <code><a href="#@cdktf/provider-databricks.directory.DirectoryConfig.property.objectId">ObjectId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/directory#object_id Directory#object_id}. |
+| <code><a href="#@cdktf/provider-databricks.directory.DirectoryConfig.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/directory#path Directory#path}. |
+| <code><a href="#@cdktf/provider-databricks.directory.DirectoryConfig.property.deleteRecursive">DeleteRecursive</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/directory#delete_recursive Directory#delete_recursive}. |
+| <code><a href="#@cdktf/provider-databricks.directory.DirectoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/directory#id Directory#id}. |
+| <code><a href="#@cdktf/provider-databricks.directory.DirectoryConfig.property.objectId">ObjectId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/directory#object_id Directory#object_id}. |
 
 ---
 
@@ -900,7 +900,7 @@ Path *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/directory#path Directory#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/directory#path Directory#path}.
 
 ---
 
@@ -912,7 +912,7 @@ DeleteRecursive interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/directory#delete_recursive Directory#delete_recursive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/directory#delete_recursive Directory#delete_recursive}.
 
 ---
 
@@ -924,7 +924,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/directory#id Directory#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/directory#id Directory#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -939,7 +939,7 @@ ObjectId *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.67.0/docs/resources/directory#object_id Directory#object_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/directory#object_id Directory#object_id}.
 
 ---
 
