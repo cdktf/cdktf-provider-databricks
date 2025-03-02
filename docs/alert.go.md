@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.alert.Alert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/alert"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/alert"
 
 alert.NewAlert(scope Construct, id *string, config AlertConfig) Alert
 ```
@@ -433,7 +433,7 @@ func ResetSecondsToRetrigger()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.alert.Alert.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/alert"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/alert"
 
 alert.Alert_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.alert.Alert.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/alert"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/alert"
 
 alert.Alert_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ alert.Alert_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.alert.Alert.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/alert"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/alert"
 
 alert.Alert_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ alert.Alert_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.alert.Alert.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/alert"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/alert"
 
 alert.Alert_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -986,13 +986,13 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.alert.AlertCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/alert"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/alert"
 
 &alert.AlertCondition {
 	Op: *string,
-	Operand: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.alert.AlertConditionOperand,
+	Operand: github.com/cdktf/cdktf-provider-databricks-go/databricks.alert.AlertConditionOperand,
 	EmptyResultState: *string,
-	Threshold: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.alert.AlertConditionThreshold,
+	Threshold: github.com/cdktf/cdktf-provider-databricks-go/databricks.alert.AlertConditionThreshold,
 }
 ```
 
@@ -1064,10 +1064,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.alert.AlertConditionOperand.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/alert"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/alert"
 
 &alert.AlertConditionOperand {
-	Column: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.alert.AlertConditionOperandColumn,
+	Column: github.com/cdktf/cdktf-provider-databricks-go/databricks.alert.AlertConditionOperandColumn,
 }
 ```
 
@@ -1098,7 +1098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.alert.AlertConditionOperandColumn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/alert"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/alert"
 
 &alert.AlertConditionOperandColumn {
 	Name: *string,
@@ -1130,10 +1130,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.alert.AlertConditionThreshold.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/alert"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/alert"
 
 &alert.AlertConditionThreshold {
-	Value: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.alert.AlertConditionThresholdValue,
+	Value: github.com/cdktf/cdktf-provider-databricks-go/databricks.alert.AlertConditionThresholdValue,
 }
 ```
 
@@ -1164,7 +1164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.alert.AlertConditionThresholdValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/alert"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/alert"
 
 &alert.AlertConditionThresholdValue {
 	BoolValue: interface{},
@@ -1224,7 +1224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.alert.AlertConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/alert"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/alert"
 
 &alert.AlertConfig {
 	Connection: interface{},
@@ -1234,7 +1234,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/alert"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Condition: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.alert.AlertCondition,
+	Condition: github.com/cdktf/cdktf-provider-databricks-go/databricks.alert.AlertCondition,
 	DisplayName: *string,
 	QueryId: *string,
 	CustomBody: *string,
@@ -1456,7 +1456,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.alert.AlertConditionOperandColumnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/alert"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/alert"
 
 alert.NewAlertConditionOperandColumnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertConditionOperandColumnOutputReference
 ```
@@ -1727,7 +1727,7 @@ func InternalValue() AlertConditionOperandColumn
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.alert.AlertConditionOperandOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/alert"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/alert"
 
 alert.NewAlertConditionOperandOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertConditionOperandOutputReference
 ```
@@ -2011,7 +2011,7 @@ func InternalValue() AlertConditionOperand
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.alert.AlertConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/alert"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/alert"
 
 alert.NewAlertConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertConditionOutputReference
 ```
@@ -2388,7 +2388,7 @@ func InternalValue() AlertCondition
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.alert.AlertConditionThresholdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/alert"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/alert"
 
 alert.NewAlertConditionThresholdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertConditionThresholdOutputReference
 ```
@@ -2672,7 +2672,7 @@ func InternalValue() AlertConditionThreshold
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.alert.AlertConditionThresholdValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/alert"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/alert"
 
 alert.NewAlertConditionThresholdValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertConditionThresholdValueOutputReference
 ```

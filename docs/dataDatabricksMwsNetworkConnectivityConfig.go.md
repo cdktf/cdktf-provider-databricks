@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksmwsnetworkconnectivityconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwsnetworkconnectivityconfig"
 
 datadatabricksmwsnetworkconnectivityconfig.NewDataDatabricksMwsNetworkConnectivityConfig(scope Construct, id *string, config DataDatabricksMwsNetworkConnectivityConfigConfig) DataDatabricksMwsNetworkConnectivityConfig
 ```
@@ -338,7 +338,7 @@ func ResetUpdatedTime()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksmwsnetworkconnectivityconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwsnetworkconnectivityconfig"
 
 datadatabricksmwsnetworkconnectivityconfig.DataDatabricksMwsNetworkConnectivityConfig_IsConstruct(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksmwsnetworkconnectivityconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwsnetworkconnectivityconfig"
 
 datadatabricksmwsnetworkconnectivityconfig.DataDatabricksMwsNetworkConnectivityConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ datadatabricksmwsnetworkconnectivityconfig.DataDatabricksMwsNetworkConnectivityC
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksmwsnetworkconnectivityconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwsnetworkconnectivityconfig"
 
 datadatabricksmwsnetworkconnectivityconfig.DataDatabricksMwsNetworkConnectivityConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ datadatabricksmwsnetworkconnectivityconfig.DataDatabricksMwsNetworkConnectivityC
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksmwsnetworkconnectivityconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwsnetworkconnectivityconfig"
 
 datadatabricksmwsnetworkconnectivityconfig.DataDatabricksMwsNetworkConnectivityConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -781,7 +781,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksmwsnetworkconnectivityconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwsnetworkconnectivityconfig"
 
 &datadatabricksmwsnetworkconnectivityconfig.DataDatabricksMwsNetworkConnectivityConfigConfig {
 	Connection: interface{},
@@ -794,7 +794,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabri
 	Name: *string,
 	AccountId: *string,
 	CreationTime: *f64,
-	EgressConfig: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfig,
+	EgressConfig: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfig,
 	Id: *string,
 	NetworkConnectivityConfigId: *string,
 	Region: *string,
@@ -1000,11 +1000,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksmwsnetworkconnectivityconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwsnetworkconnectivityconfig"
 
 &datadatabricksmwsnetworkconnectivityconfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfig {
-	DefaultRules: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRules,
-	TargetRules: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRules,
+	DefaultRules: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRules,
+	TargetRules: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRules,
 }
 ```
 
@@ -1050,11 +1050,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksmwsnetworkconnectivityconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwsnetworkconnectivityconfig"
 
 &datadatabricksmwsnetworkconnectivityconfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRules {
-	AwsStableIpRule: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRule,
-	AzureServiceEndpointRule: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesAzureServiceEndpointRule,
+	AwsStableIpRule: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRule,
+	AzureServiceEndpointRule: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesAzureServiceEndpointRule,
 }
 ```
 
@@ -1100,7 +1100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksmwsnetworkconnectivityconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwsnetworkconnectivityconfig"
 
 &datadatabricksmwsnetworkconnectivityconfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRule {
 	CidrBlocks: *[]*string,
@@ -1132,7 +1132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesAzureServiceEndpointRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksmwsnetworkconnectivityconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwsnetworkconnectivityconfig"
 
 &datadatabricksmwsnetworkconnectivityconfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesAzureServiceEndpointRule {
 	Subnets: *[]*string,
@@ -1192,7 +1192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksmwsnetworkconnectivityconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwsnetworkconnectivityconfig"
 
 &datadatabricksmwsnetworkconnectivityconfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRules {
 	AzurePrivateEndpointRules: interface{},
@@ -1226,7 +1226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksmwsnetworkconnectivityconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwsnetworkconnectivityconfig"
 
 &datadatabricksmwsnetworkconnectivityconfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRules {
 	ConnectionState: *string,
@@ -1386,7 +1386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksmwsnetworkconnectivityconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwsnetworkconnectivityconfig"
 
 datadatabricksmwsnetworkconnectivityconfig.NewDataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRuleOutputReference
 ```
@@ -1664,7 +1664,7 @@ func InternalValue() DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefau
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesAzureServiceEndpointRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksmwsnetworkconnectivityconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwsnetworkconnectivityconfig"
 
 datadatabricksmwsnetworkconnectivityconfig.NewDataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesAzureServiceEndpointRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesAzureServiceEndpointRuleOutputReference
 ```
@@ -2000,7 +2000,7 @@ func InternalValue() DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefau
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksmwsnetworkconnectivityconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwsnetworkconnectivityconfig"
 
 datadatabricksmwsnetworkconnectivityconfig.NewDataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference
 ```
@@ -2333,7 +2333,7 @@ func InternalValue() DataDatabricksMwsNetworkConnectivityConfigEgressConfigDefau
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksmwsnetworkconnectivityconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwsnetworkconnectivityconfig"
 
 datadatabricksmwsnetworkconnectivityconfig.NewDataDatabricksMwsNetworkConnectivityConfigEgressConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksMwsNetworkConnectivityConfigEgressConfigOutputReference
 ```
@@ -2666,7 +2666,7 @@ func InternalValue() DataDatabricksMwsNetworkConnectivityConfigEgressConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksmwsnetworkconnectivityconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwsnetworkconnectivityconfig"
 
 datadatabricksmwsnetworkconnectivityconfig.NewDataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesList
 ```
@@ -2826,7 +2826,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksmwsnetworkconnectivityconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwsnetworkconnectivityconfig"
 
 datadatabricksmwsnetworkconnectivityconfig.NewDataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference
 ```
@@ -3383,7 +3383,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksMwsNetworkConnectivityConfig.DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/datadatabricksmwsnetworkconnectivityconfig"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmwsnetworkconnectivityconfig"
 
 datadatabricksmwsnetworkconnectivityconfig.NewDataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksMwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference
 ```
