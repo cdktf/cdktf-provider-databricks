@@ -4,12 +4,12 @@
 
 ### SharePluginframework <a name="SharePluginframework" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework databricks_share_pluginframework}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework databricks_share_pluginframework}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sharepluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sharepluginframework"
 
 sharepluginframework.NewSharePluginframework(scope Construct, id *string, config SharePluginframeworkConfig) SharePluginframework
 ```
@@ -77,7 +77,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.resetComment">ResetComment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.resetObject">ResetObject</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.resetOwner">ResetOwner</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.resetStorageLocation">ResetStorageLocation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.resetStorageRoot">ResetStorageRoot</a></code> | *No description.* |
 
 ---
@@ -400,12 +399,6 @@ func ResetObject()
 func ResetOwner()
 ```
 
-##### `ResetStorageLocation` <a name="ResetStorageLocation" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.resetStorageLocation"></a>
-
-```go
-func ResetStorageLocation()
-```
-
 ##### `ResetStorageRoot` <a name="ResetStorageRoot" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.resetStorageRoot"></a>
 
 ```go
@@ -426,7 +419,7 @@ func ResetStorageRoot()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sharepluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sharepluginframework"
 
 sharepluginframework.SharePluginframework_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sharepluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sharepluginframework"
 
 sharepluginframework.SharePluginframework_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +465,7 @@ sharepluginframework.SharePluginframework_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sharepluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sharepluginframework"
 
 sharepluginframework.SharePluginframework_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +479,7 @@ sharepluginframework.SharePluginframework_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sharepluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sharepluginframework"
 
 sharepluginframework.SharePluginframework_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -515,7 +508,7 @@ The construct id used in the generated config for the SharePluginframework to im
 
 The id of the existing SharePluginframework that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -549,18 +542,17 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.createdBy">CreatedBy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.effectiveOwner">EffectiveOwner</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.object">Object</a></code> | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectList">SharePluginframeworkObjectList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.storageLocation">StorageLocation</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.updatedAt">UpdatedAt</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.updatedBy">UpdatedBy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.commentInput">CommentInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.objectInput">ObjectInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.ownerInput">OwnerInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.storageLocationInput">StorageLocationInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.storageRootInput">StorageRootInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.comment">Comment</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.owner">Owner</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.storageLocation">StorageLocation</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.storageRoot">StorageRoot</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -747,6 +739,16 @@ func Object() SharePluginframeworkObjectList
 
 ---
 
+##### `StorageLocation`<sup>Required</sup> <a name="StorageLocation" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.storageLocation"></a>
+
+```go
+func StorageLocation() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `UpdatedAt`<sup>Required</sup> <a name="UpdatedAt" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.updatedAt"></a>
 
 ```go
@@ -807,16 +809,6 @@ func OwnerInput() *string
 
 ---
 
-##### `StorageLocationInput`<sup>Optional</sup> <a name="StorageLocationInput" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.storageLocationInput"></a>
-
-```go
-func StorageLocationInput() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `StorageRootInput`<sup>Optional</sup> <a name="StorageRootInput" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.storageRootInput"></a>
 
 ```go
@@ -851,16 +843,6 @@ func Name() *string
 
 ```go
 func Owner() *string
-```
-
-- *Type:* *string
-
----
-
-##### `StorageLocation`<sup>Required</sup> <a name="StorageLocation" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframework.property.storageLocation"></a>
-
-```go
-func StorageLocation() *string
 ```
 
 - *Type:* *string
@@ -902,7 +884,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sharepluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sharepluginframework"
 
 &sharepluginframework.SharePluginframeworkConfig {
 	Connection: interface{},
@@ -916,7 +898,6 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/shareplugin
 	Comment: *string,
 	Object: interface{},
 	Owner: *string,
-	StorageLocation: *string,
 	StorageRoot: *string,
 }
 ```
@@ -932,12 +913,11 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/shareplugin
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#name SharePluginframework#name}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#comment SharePluginframework#comment}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#name SharePluginframework#name}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#comment SharePluginframework#comment}. |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.object">Object</a></code> | <code>interface{}</code> | object block. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.owner">Owner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#owner SharePluginframework#owner}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.storageLocation">StorageLocation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#storage_location SharePluginframework#storage_location}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.storageRoot">StorageRoot</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#storage_root SharePluginframework#storage_root}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.owner">Owner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#owner SharePluginframework#owner}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.storageRoot">StorageRoot</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#storage_root SharePluginframework#storage_root}. |
 
 ---
 
@@ -1019,7 +999,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#name SharePluginframework#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#name SharePluginframework#name}.
 
 ---
 
@@ -1031,7 +1011,7 @@ Comment *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#comment SharePluginframework#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#comment SharePluginframework#comment}.
 
 ---
 
@@ -1045,7 +1025,7 @@ Object interface{}
 
 object block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#object SharePluginframework#object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#object SharePluginframework#object}
 
 ---
 
@@ -1057,19 +1037,7 @@ Owner *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#owner SharePluginframework#owner}.
-
----
-
-##### `StorageLocation`<sup>Optional</sup> <a name="StorageLocation" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkConfig.property.storageLocation"></a>
-
-```go
-StorageLocation *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#storage_location SharePluginframework#storage_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#owner SharePluginframework#owner}.
 
 ---
 
@@ -1081,7 +1049,7 @@ StorageRoot *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#storage_root SharePluginframework#storage_root}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#storage_root SharePluginframework#storage_root}.
 
 ---
 
@@ -1090,7 +1058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sharepluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sharepluginframework"
 
 &sharepluginframework.SharePluginframeworkObject {
 	DataObjectType: *string,
@@ -1110,16 +1078,16 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/shareplugin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.dataObjectType">DataObjectType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#data_object_type SharePluginframework#data_object_type}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#name SharePluginframework#name}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.cdfEnabled">CdfEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#cdf_enabled SharePluginframework#cdf_enabled}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#comment SharePluginframework#comment}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.content">Content</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#content SharePluginframework#content}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.historyDataSharingStatus">HistoryDataSharingStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#history_data_sharing_status SharePluginframework#history_data_sharing_status}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.dataObjectType">DataObjectType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#data_object_type SharePluginframework#data_object_type}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#name SharePluginframework#name}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.cdfEnabled">CdfEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#cdf_enabled SharePluginframework#cdf_enabled}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#comment SharePluginframework#comment}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.content">Content</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#content SharePluginframework#content}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.historyDataSharingStatus">HistoryDataSharingStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#history_data_sharing_status SharePluginframework#history_data_sharing_status}. |
 | <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.partition">Partition</a></code> | <code>interface{}</code> | partition block. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.sharedAs">SharedAs</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#shared_as SharePluginframework#shared_as}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.startVersion">StartVersion</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#start_version SharePluginframework#start_version}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.stringSharedAs">StringSharedAs</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#string_shared_as SharePluginframework#string_shared_as}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.sharedAs">SharedAs</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#shared_as SharePluginframework#shared_as}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.startVersion">StartVersion</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#start_version SharePluginframework#start_version}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObject.property.stringSharedAs">StringSharedAs</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#string_shared_as SharePluginframework#string_shared_as}. |
 
 ---
 
@@ -1131,7 +1099,7 @@ DataObjectType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#data_object_type SharePluginframework#data_object_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#data_object_type SharePluginframework#data_object_type}.
 
 ---
 
@@ -1143,7 +1111,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#name SharePluginframework#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#name SharePluginframework#name}.
 
 ---
 
@@ -1155,7 +1123,7 @@ CdfEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#cdf_enabled SharePluginframework#cdf_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#cdf_enabled SharePluginframework#cdf_enabled}.
 
 ---
 
@@ -1167,7 +1135,7 @@ Comment *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#comment SharePluginframework#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#comment SharePluginframework#comment}.
 
 ---
 
@@ -1179,7 +1147,7 @@ Content *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#content SharePluginframework#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#content SharePluginframework#content}.
 
 ---
 
@@ -1191,7 +1159,7 @@ HistoryDataSharingStatus *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#history_data_sharing_status SharePluginframework#history_data_sharing_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#history_data_sharing_status SharePluginframework#history_data_sharing_status}.
 
 ---
 
@@ -1205,7 +1173,7 @@ Partition interface{}
 
 partition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#partition SharePluginframework#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#partition SharePluginframework#partition}
 
 ---
 
@@ -1217,7 +1185,7 @@ SharedAs *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#shared_as SharePluginframework#shared_as}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#shared_as SharePluginframework#shared_as}.
 
 ---
 
@@ -1229,7 +1197,7 @@ StartVersion *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#start_version SharePluginframework#start_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#start_version SharePluginframework#start_version}.
 
 ---
 
@@ -1241,7 +1209,7 @@ StringSharedAs *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#string_shared_as SharePluginframework#string_shared_as}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#string_shared_as SharePluginframework#string_shared_as}.
 
 ---
 
@@ -1250,7 +1218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectPartition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sharepluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sharepluginframework"
 
 &sharepluginframework.SharePluginframeworkObjectPartition {
 	Value: interface{},
@@ -1275,7 +1243,7 @@ Value interface{}
 
 value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#value SharePluginframework#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#value SharePluginframework#value}
 
 ---
 
@@ -1284,7 +1252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectPartitionValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sharepluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sharepluginframework"
 
 &sharepluginframework.SharePluginframeworkObjectPartitionValue {
 	Name: *string,
@@ -1298,10 +1266,10 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/shareplugin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectPartitionValue.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#name SharePluginframework#name}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectPartitionValue.property.op">Op</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#op SharePluginframework#op}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectPartitionValue.property.recipientPropertyKey">RecipientPropertyKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#recipient_property_key SharePluginframework#recipient_property_key}. |
-| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectPartitionValue.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#value SharePluginframework#value}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectPartitionValue.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#name SharePluginframework#name}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectPartitionValue.property.op">Op</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#op SharePluginframework#op}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectPartitionValue.property.recipientPropertyKey">RecipientPropertyKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#recipient_property_key SharePluginframework#recipient_property_key}. |
+| <code><a href="#@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectPartitionValue.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#value SharePluginframework#value}. |
 
 ---
 
@@ -1313,7 +1281,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#name SharePluginframework#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#name SharePluginframework#name}.
 
 ---
 
@@ -1325,7 +1293,7 @@ Op *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#op SharePluginframework#op}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#op SharePluginframework#op}.
 
 ---
 
@@ -1337,7 +1305,7 @@ RecipientPropertyKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#recipient_property_key SharePluginframework#recipient_property_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#recipient_property_key SharePluginframework#recipient_property_key}.
 
 ---
 
@@ -1349,7 +1317,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#value SharePluginframework#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#value SharePluginframework#value}.
 
 ---
 
@@ -1360,7 +1328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sharepluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sharepluginframework"
 
 sharepluginframework.NewSharePluginframeworkObjectList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SharePluginframeworkObjectList
 ```
@@ -1520,7 +1488,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sharepluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sharepluginframework"
 
 sharepluginframework.NewSharePluginframeworkObjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SharePluginframeworkObjectOutputReference
 ```
@@ -2153,7 +2121,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectPartitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sharepluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sharepluginframework"
 
 sharepluginframework.NewSharePluginframeworkObjectPartitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SharePluginframeworkObjectPartitionList
 ```
@@ -2313,7 +2281,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectPartitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sharepluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sharepluginframework"
 
 sharepluginframework.NewSharePluginframeworkObjectPartitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SharePluginframeworkObjectPartitionOutputReference
 ```
@@ -2622,7 +2590,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectPartitionValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sharepluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sharepluginframework"
 
 sharepluginframework.NewSharePluginframeworkObjectPartitionValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SharePluginframeworkObjectPartitionValueList
 ```
@@ -2782,7 +2750,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sharePluginframework.SharePluginframeworkObjectPartitionValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sharepluginframework"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/sharepluginframework"
 
 sharepluginframework.NewSharePluginframeworkObjectPartitionValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SharePluginframeworkObjectPartitionValueOutputReference
 ```
