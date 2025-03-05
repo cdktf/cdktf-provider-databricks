@@ -16,6 +16,7 @@ export * as azureAdlsGen1Mount from './azure-adls-gen1-mount';
 export * as azureAdlsGen2Mount from './azure-adls-gen2-mount';
 export * as azureBlobMount from './azure-blob-mount';
 export * as budget from './budget';
+export * as budgetPolicy from './budget-policy';
 export * as catalog from './catalog';
 export * as catalogWorkspaceBinding from './catalog-workspace-binding';
 export * as cluster from './cluster';
@@ -118,6 +119,8 @@ export * as dataDatabricksAwsBucketPolicy from './data-databricks-aws-bucket-pol
 export * as dataDatabricksAwsCrossaccountPolicy from './data-databricks-aws-crossaccount-policy';
 export * as dataDatabricksAwsUnityCatalogAssumeRolePolicy from './data-databricks-aws-unity-catalog-assume-role-policy';
 export * as dataDatabricksAwsUnityCatalogPolicy from './data-databricks-aws-unity-catalog-policy';
+export * as dataDatabricksBudgetPolicies from './data-databricks-budget-policies';
+export * as dataDatabricksBudgetPolicy from './data-databricks-budget-policy';
 export * as dataDatabricksCatalog from './data-databricks-catalog';
 export * as dataDatabricksCatalogs from './data-databricks-catalogs';
 export * as dataDatabricksCluster from './data-databricks-cluster';

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/azure_adls_gen1_mount
+// https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/azure_adls_gen1_mount
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,52 +13,52 @@ import * as cdktf from 'cdktf';
 
 export interface AzureAdlsGen1MountConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/azure_adls_gen1_mount#client_id AzureAdlsGen1Mount#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/azure_adls_gen1_mount#client_id AzureAdlsGen1Mount#client_id}
   */
   readonly clientId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/azure_adls_gen1_mount#client_secret_key AzureAdlsGen1Mount#client_secret_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/azure_adls_gen1_mount#client_secret_key AzureAdlsGen1Mount#client_secret_key}
   */
   readonly clientSecretKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/azure_adls_gen1_mount#client_secret_scope AzureAdlsGen1Mount#client_secret_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/azure_adls_gen1_mount#client_secret_scope AzureAdlsGen1Mount#client_secret_scope}
   */
   readonly clientSecretScope: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/azure_adls_gen1_mount#cluster_id AzureAdlsGen1Mount#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/azure_adls_gen1_mount#cluster_id AzureAdlsGen1Mount#cluster_id}
   */
   readonly clusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/azure_adls_gen1_mount#directory AzureAdlsGen1Mount#directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/azure_adls_gen1_mount#directory AzureAdlsGen1Mount#directory}
   */
   readonly directory?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/azure_adls_gen1_mount#id AzureAdlsGen1Mount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/azure_adls_gen1_mount#id AzureAdlsGen1Mount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/azure_adls_gen1_mount#mount_name AzureAdlsGen1Mount#mount_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/azure_adls_gen1_mount#mount_name AzureAdlsGen1Mount#mount_name}
   */
   readonly mountName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/azure_adls_gen1_mount#spark_conf_prefix AzureAdlsGen1Mount#spark_conf_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/azure_adls_gen1_mount#spark_conf_prefix AzureAdlsGen1Mount#spark_conf_prefix}
   */
   readonly sparkConfPrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/azure_adls_gen1_mount#storage_resource_name AzureAdlsGen1Mount#storage_resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/azure_adls_gen1_mount#storage_resource_name AzureAdlsGen1Mount#storage_resource_name}
   */
   readonly storageResourceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/azure_adls_gen1_mount#tenant_id AzureAdlsGen1Mount#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/azure_adls_gen1_mount#tenant_id AzureAdlsGen1Mount#tenant_id}
   */
   readonly tenantId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/azure_adls_gen1_mount databricks_azure_adls_gen1_mount}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/azure_adls_gen1_mount databricks_azure_adls_gen1_mount}
 */
 export class AzureAdlsGen1Mount extends cdktf.TerraformResource {
 
@@ -74,7 +74,7 @@ export class AzureAdlsGen1Mount extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AzureAdlsGen1Mount resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AzureAdlsGen1Mount to import
-  * @param importFromId The id of the existing AzureAdlsGen1Mount that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/azure_adls_gen1_mount#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AzureAdlsGen1Mount that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/azure_adls_gen1_mount#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AzureAdlsGen1Mount to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -86,7 +86,7 @@ export class AzureAdlsGen1Mount extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/azure_adls_gen1_mount databricks_azure_adls_gen1_mount} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/azure_adls_gen1_mount databricks_azure_adls_gen1_mount} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +97,7 @@ export class AzureAdlsGen1Mount extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_azure_adls_gen1_mount',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.68.0',
+        providerVersion: '1.69.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

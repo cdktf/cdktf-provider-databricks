@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework
+// https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,47 +13,43 @@ import * as cdktf from 'cdktf';
 
 export interface SharePluginframeworkConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#comment SharePluginframework#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#comment SharePluginframework#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#name SharePluginframework#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#name SharePluginframework#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#owner SharePluginframework#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#owner SharePluginframework#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#storage_location SharePluginframework#storage_location}
-  */
-  readonly storageLocation?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#storage_root SharePluginframework#storage_root}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#storage_root SharePluginframework#storage_root}
   */
   readonly storageRoot?: string;
   /**
   * object block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#object SharePluginframework#object}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#object SharePluginframework#object}
   */
   readonly object?: SharePluginframeworkObject[] | cdktf.IResolvable;
 }
 export interface SharePluginframeworkObjectPartitionValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#name SharePluginframework#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#name SharePluginframework#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#op SharePluginframework#op}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#op SharePluginframework#op}
   */
   readonly op: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#recipient_property_key SharePluginframework#recipient_property_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#recipient_property_key SharePluginframework#recipient_property_key}
   */
   readonly recipientPropertyKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#value SharePluginframework#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#value SharePluginframework#value}
   */
   readonly value?: string;
 }
@@ -252,7 +248,7 @@ export interface SharePluginframeworkObjectPartition {
   /**
   * value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#value SharePluginframework#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#value SharePluginframework#value}
   */
   readonly value?: SharePluginframeworkObjectPartitionValue[] | cdktf.IResolvable;
 }
@@ -368,45 +364,45 @@ export class SharePluginframeworkObjectPartitionList extends cdktf.ComplexList {
 }
 export interface SharePluginframeworkObject {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#cdf_enabled SharePluginframework#cdf_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#cdf_enabled SharePluginframework#cdf_enabled}
   */
   readonly cdfEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#comment SharePluginframework#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#comment SharePluginframework#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#content SharePluginframework#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#content SharePluginframework#content}
   */
   readonly content?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#data_object_type SharePluginframework#data_object_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#data_object_type SharePluginframework#data_object_type}
   */
   readonly dataObjectType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#history_data_sharing_status SharePluginframework#history_data_sharing_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#history_data_sharing_status SharePluginframework#history_data_sharing_status}
   */
   readonly historyDataSharingStatus?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#name SharePluginframework#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#name SharePluginframework#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#shared_as SharePluginframework#shared_as}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#shared_as SharePluginframework#shared_as}
   */
   readonly sharedAs?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#start_version SharePluginframework#start_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#start_version SharePluginframework#start_version}
   */
   readonly startVersion?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#string_shared_as SharePluginframework#string_shared_as}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#string_shared_as SharePluginframework#string_shared_as}
   */
   readonly stringSharedAs?: string;
   /**
   * partition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#partition SharePluginframework#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#partition SharePluginframework#partition}
   */
   readonly partition?: SharePluginframeworkObjectPartition[] | cdktf.IResolvable;
 }
@@ -812,7 +808,7 @@ export class SharePluginframeworkObjectList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework databricks_share_pluginframework}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework databricks_share_pluginframework}
 */
 export class SharePluginframework extends cdktf.TerraformResource {
 
@@ -828,7 +824,7 @@ export class SharePluginframework extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SharePluginframework resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SharePluginframework to import
-  * @param importFromId The id of the existing SharePluginframework that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SharePluginframework that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SharePluginframework to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -840,7 +836,7 @@ export class SharePluginframework extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.68.0/docs/resources/share_pluginframework databricks_share_pluginframework} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/share_pluginframework databricks_share_pluginframework} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -851,7 +847,7 @@ export class SharePluginframework extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_share_pluginframework',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.68.0',
+        providerVersion: '1.69.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -865,7 +861,6 @@ export class SharePluginframework extends cdktf.TerraformResource {
     this._comment = config.comment;
     this._name = config.name;
     this._owner = config.owner;
-    this._storageLocation = config.storageLocation;
     this._storageRoot = config.storageRoot;
     this._object.internalValue = config.object;
   }
@@ -934,20 +929,9 @@ export class SharePluginframework extends cdktf.TerraformResource {
     return this._owner;
   }
 
-  // storage_location - computed: false, optional: true, required: false
-  private _storageLocation?: string; 
+  // storage_location - computed: true, optional: false, required: false
   public get storageLocation() {
     return this.getStringAttribute('storage_location');
-  }
-  public set storageLocation(value: string) {
-    this._storageLocation = value;
-  }
-  public resetStorageLocation() {
-    this._storageLocation = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get storageLocationInput() {
-    return this._storageLocation;
   }
 
   // storage_root - computed: false, optional: true, required: false
@@ -1001,7 +985,6 @@ export class SharePluginframework extends cdktf.TerraformResource {
       comment: cdktf.stringToTerraform(this._comment),
       name: cdktf.stringToTerraform(this._name),
       owner: cdktf.stringToTerraform(this._owner),
-      storage_location: cdktf.stringToTerraform(this._storageLocation),
       storage_root: cdktf.stringToTerraform(this._storageRoot),
       object: cdktf.listMapper(sharePluginframeworkObjectToTerraform, true)(this._object.internalValue),
     };
@@ -1023,12 +1006,6 @@ export class SharePluginframework extends cdktf.TerraformResource {
       },
       owner: {
         value: cdktf.stringToHclTerraform(this._owner),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      storage_location: {
-        value: cdktf.stringToHclTerraform(this._storageLocation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

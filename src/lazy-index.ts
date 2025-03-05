@@ -16,6 +16,7 @@ Object.defineProperty(exports, 'azureAdlsGen1Mount', { get: function () { return
 Object.defineProperty(exports, 'azureAdlsGen2Mount', { get: function () { return require('./azure-adls-gen2-mount'); } });
 Object.defineProperty(exports, 'azureBlobMount', { get: function () { return require('./azure-blob-mount'); } });
 Object.defineProperty(exports, 'budget', { get: function () { return require('./budget'); } });
+Object.defineProperty(exports, 'budgetPolicy', { get: function () { return require('./budget-policy'); } });
 Object.defineProperty(exports, 'catalog', { get: function () { return require('./catalog'); } });
 Object.defineProperty(exports, 'catalogWorkspaceBinding', { get: function () { return require('./catalog-workspace-binding'); } });
 Object.defineProperty(exports, 'cluster', { get: function () { return require('./cluster'); } });
@@ -118,6 +119,8 @@ Object.defineProperty(exports, 'dataDatabricksAwsBucketPolicy', { get: function 
 Object.defineProperty(exports, 'dataDatabricksAwsCrossaccountPolicy', { get: function () { return require('./data-databricks-aws-crossaccount-policy'); } });
 Object.defineProperty(exports, 'dataDatabricksAwsUnityCatalogAssumeRolePolicy', { get: function () { return require('./data-databricks-aws-unity-catalog-assume-role-policy'); } });
 Object.defineProperty(exports, 'dataDatabricksAwsUnityCatalogPolicy', { get: function () { return require('./data-databricks-aws-unity-catalog-policy'); } });
+Object.defineProperty(exports, 'dataDatabricksBudgetPolicies', { get: function () { return require('./data-databricks-budget-policies'); } });
+Object.defineProperty(exports, 'dataDatabricksBudgetPolicy', { get: function () { return require('./data-databricks-budget-policy'); } });
 Object.defineProperty(exports, 'dataDatabricksCatalog', { get: function () { return require('./data-databricks-catalog'); } });
 Object.defineProperty(exports, 'dataDatabricksCatalogs', { get: function () { return require('./data-databricks-catalogs'); } });
 Object.defineProperty(exports, 'dataDatabricksCluster', { get: function () { return require('./data-databricks-cluster'); } });
