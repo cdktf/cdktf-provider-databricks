@@ -4,7 +4,7 @@
 
 ### Schema <a name="Schema" id="@cdktf/provider-databricks.schema.Schema"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/schema databricks_schema}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/schema databricks_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.schema.Schema.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the Schema to import.
 
 The id of the existing Schema that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/schema#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/schema#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -977,16 +977,16 @@ new SchemaConfig {
 | <code><a href="#@cdktf/provider-databricks.schema.SchemaConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.schema.SchemaConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.schema.SchemaConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.schema.SchemaConfig.property.catalogName">CatalogName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/schema#catalog_name Schema#catalog_name}. |
-| <code><a href="#@cdktf/provider-databricks.schema.SchemaConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/schema#name Schema#name}. |
-| <code><a href="#@cdktf/provider-databricks.schema.SchemaConfig.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/schema#comment Schema#comment}. |
-| <code><a href="#@cdktf/provider-databricks.schema.SchemaConfig.property.enablePredictiveOptimization">EnablePredictiveOptimization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/schema#enable_predictive_optimization Schema#enable_predictive_optimization}. |
-| <code><a href="#@cdktf/provider-databricks.schema.SchemaConfig.property.forceDestroy">ForceDestroy</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/schema#force_destroy Schema#force_destroy}. |
-| <code><a href="#@cdktf/provider-databricks.schema.SchemaConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/schema#id Schema#id}. |
-| <code><a href="#@cdktf/provider-databricks.schema.SchemaConfig.property.metastoreId">MetastoreId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/schema#metastore_id Schema#metastore_id}. |
-| <code><a href="#@cdktf/provider-databricks.schema.SchemaConfig.property.owner">Owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/schema#owner Schema#owner}. |
-| <code><a href="#@cdktf/provider-databricks.schema.SchemaConfig.property.properties">Properties</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/schema#properties Schema#properties}. |
-| <code><a href="#@cdktf/provider-databricks.schema.SchemaConfig.property.storageRoot">StorageRoot</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/schema#storage_root Schema#storage_root}. |
+| <code><a href="#@cdktf/provider-databricks.schema.SchemaConfig.property.catalogName">CatalogName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/schema#catalog_name Schema#catalog_name}. |
+| <code><a href="#@cdktf/provider-databricks.schema.SchemaConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/schema#name Schema#name}. |
+| <code><a href="#@cdktf/provider-databricks.schema.SchemaConfig.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/schema#comment Schema#comment}. |
+| <code><a href="#@cdktf/provider-databricks.schema.SchemaConfig.property.enablePredictiveOptimization">EnablePredictiveOptimization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/schema#enable_predictive_optimization Schema#enable_predictive_optimization}. |
+| <code><a href="#@cdktf/provider-databricks.schema.SchemaConfig.property.forceDestroy">ForceDestroy</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/schema#force_destroy Schema#force_destroy}. |
+| <code><a href="#@cdktf/provider-databricks.schema.SchemaConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/schema#id Schema#id}. |
+| <code><a href="#@cdktf/provider-databricks.schema.SchemaConfig.property.metastoreId">MetastoreId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/schema#metastore_id Schema#metastore_id}. |
+| <code><a href="#@cdktf/provider-databricks.schema.SchemaConfig.property.owner">Owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/schema#owner Schema#owner}. |
+| <code><a href="#@cdktf/provider-databricks.schema.SchemaConfig.property.properties">Properties</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/schema#properties Schema#properties}. |
+| <code><a href="#@cdktf/provider-databricks.schema.SchemaConfig.property.storageRoot">StorageRoot</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/schema#storage_root Schema#storage_root}. |
 
 ---
 
@@ -1068,7 +1068,7 @@ public string CatalogName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/schema#catalog_name Schema#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/schema#catalog_name Schema#catalog_name}.
 
 ---
 
@@ -1080,7 +1080,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/schema#name Schema#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/schema#name Schema#name}.
 
 ---
 
@@ -1092,7 +1092,7 @@ public string Comment { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/schema#comment Schema#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/schema#comment Schema#comment}.
 
 ---
 
@@ -1104,7 +1104,7 @@ public string EnablePredictiveOptimization { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/schema#enable_predictive_optimization Schema#enable_predictive_optimization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/schema#enable_predictive_optimization Schema#enable_predictive_optimization}.
 
 ---
 
@@ -1116,7 +1116,7 @@ public object ForceDestroy { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/schema#force_destroy Schema#force_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/schema#force_destroy Schema#force_destroy}.
 
 ---
 
@@ -1128,7 +1128,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/schema#id Schema#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/schema#id Schema#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1143,7 +1143,7 @@ public string MetastoreId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/schema#metastore_id Schema#metastore_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/schema#metastore_id Schema#metastore_id}.
 
 ---
 
@@ -1155,7 +1155,7 @@ public string Owner { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/schema#owner Schema#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/schema#owner Schema#owner}.
 
 ---
 
@@ -1167,7 +1167,7 @@ public System.Collections.Generic.IDictionary<string, string> Properties { get; 
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/schema#properties Schema#properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/schema#properties Schema#properties}.
 
 ---
 
@@ -1179,7 +1179,7 @@ public string StorageRoot { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/resources/schema#storage_root Schema#storage_root}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/schema#storage_root Schema#storage_root}.
 
 ---
 
