@@ -4,7 +4,7 @@
 
 ### DataDatabricksCurrentUser <a name="DataDatabricksCurrentUser" id="@cdktf/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/data-sources/current_user databricks_current_user}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/data-sources/current_user databricks_current_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUser.Initializer"></a>
 
@@ -38,7 +38,7 @@ DataDatabricksCurrentUser.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUser.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUser.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUser.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUser.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/data-sources/current_user#id DataDatabricksCurrentUser#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUser.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/data-sources/current_user#id DataDatabricksCurrentUser#id}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/data-sources/current_user#id DataDatabricksCurrentUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/data-sources/current_user#id DataDatabricksCurrentUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -439,7 +439,7 @@ The construct id used in the generated config for the DataDatabricksCurrentUser 
 
 The id of the existing DataDatabricksCurrentUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/data-sources/current_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/data-sources/current_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -745,7 +745,7 @@ DataDatabricksCurrentUserConfig.builder()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/data-sources/current_user#id DataDatabricksCurrentUser#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/data-sources/current_user#id DataDatabricksCurrentUser#id}. |
 
 ---
 
@@ -827,7 +827,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.69.0/docs/data-sources/current_user#id DataDatabricksCurrentUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/data-sources/current_user#id DataDatabricksCurrentUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
