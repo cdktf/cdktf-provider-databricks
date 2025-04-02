@@ -4,7 +4,7 @@
 
 ### DataDatabricksDashboards <a name="DataDatabricksDashboards" id="@cdktf/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboards"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/data-sources/dashboards databricks_dashboards}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/data-sources/dashboards databricks_dashboards}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboards.Initializer"></a>
 
@@ -38,7 +38,7 @@ DataDatabricksDashboards.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboards.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboards.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboards.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboards.Initializer.parameter.dashboardNameContains">dashboardNameContains</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/data-sources/dashboards#dashboard_name_contains DataDatabricksDashboards#dashboard_name_contains}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboards.Initializer.parameter.dashboardNameContains">dashboardNameContains</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/data-sources/dashboards#dashboard_name_contains DataDatabricksDashboards#dashboard_name_contains}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/data-sources/dashboards#dashboard_name_contains DataDatabricksDashboards#dashboard_name_contains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/data-sources/dashboards#dashboard_name_contains DataDatabricksDashboards#dashboard_name_contains}.
 
 ---
 
@@ -436,7 +436,7 @@ The construct id used in the generated config for the DataDatabricksDashboards t
 
 The id of the existing DataDatabricksDashboards that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/data-sources/dashboards#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/data-sources/dashboards#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -676,7 +676,7 @@ DataDatabricksDashboardsConfig.builder()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsConfig.property.dashboardNameContains">dashboardNameContains</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/data-sources/dashboards#dashboard_name_contains DataDatabricksDashboards#dashboard_name_contains}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsConfig.property.dashboardNameContains">dashboardNameContains</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/data-sources/dashboards#dashboard_name_contains DataDatabricksDashboards#dashboard_name_contains}. |
 
 ---
 
@@ -758,7 +758,7 @@ public java.lang.String getDashboardNameContains();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/data-sources/dashboards#dashboard_name_contains DataDatabricksDashboards#dashboard_name_contains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/data-sources/dashboards#dashboard_name_contains DataDatabricksDashboards#dashboard_name_contains}.
 
 ---
 
@@ -780,9 +780,9 @@ DataDatabricksDashboardsDashboards.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsDashboards.property.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/data-sources/dashboards#display_name DataDatabricksDashboards#display_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsDashboards.property.serializedDashboard">serializedDashboard</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/data-sources/dashboards#serialized_dashboard DataDatabricksDashboards#serialized_dashboard}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsDashboards.property.warehouseId">warehouseId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/data-sources/dashboards#warehouse_id DataDatabricksDashboards#warehouse_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsDashboards.property.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/data-sources/dashboards#display_name DataDatabricksDashboards#display_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsDashboards.property.serializedDashboard">serializedDashboard</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/data-sources/dashboards#serialized_dashboard DataDatabricksDashboards#serialized_dashboard}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsDashboards.property.warehouseId">warehouseId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/data-sources/dashboards#warehouse_id DataDatabricksDashboards#warehouse_id}. |
 
 ---
 
@@ -794,7 +794,7 @@ public java.lang.String getDisplayName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/data-sources/dashboards#display_name DataDatabricksDashboards#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/data-sources/dashboards#display_name DataDatabricksDashboards#display_name}.
 
 ---
 
@@ -806,7 +806,7 @@ public java.lang.String getSerializedDashboard();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/data-sources/dashboards#serialized_dashboard DataDatabricksDashboards#serialized_dashboard}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/data-sources/dashboards#serialized_dashboard DataDatabricksDashboards#serialized_dashboard}.
 
 ---
 
@@ -818,7 +818,7 @@ public java.lang.String getWarehouseId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/data-sources/dashboards#warehouse_id DataDatabricksDashboards#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/data-sources/dashboards#warehouse_id DataDatabricksDashboards#warehouse_id}.
 
 ---
 

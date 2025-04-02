@@ -1,3 +1,3 @@
 # `databricks_quality_monitor`
 
-Refer to the Terraform Registry for docs: [`databricks_quality_monitor`](https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/quality_monitor).
+Refer to the Terraform Registry for docs: [`databricks_quality_monitor`](https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/quality_monitor).

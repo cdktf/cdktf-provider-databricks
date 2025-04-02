@@ -4,7 +4,7 @@
 
 ### SqlWidget <a name="SqlWidget" id="@cdktf/provider-databricks.sqlWidget.SqlWidget"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget databricks_sql_widget}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget databricks_sql_widget}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.sqlWidget.SqlWidget.Initializer"></a>
 
@@ -549,7 +549,7 @@ The construct id used in the generated config for the SqlWidget to import.
 
 The id of the existing SqlWidget that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -980,15 +980,15 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sqlwidget"
 | <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetConfig.property.dashboardId">DashboardId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#dashboard_id SqlWidget#dashboard_id}. |
-| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#description SqlWidget#description}. |
-| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#id SqlWidget#id}. |
+| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetConfig.property.dashboardId">DashboardId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#dashboard_id SqlWidget#dashboard_id}. |
+| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#description SqlWidget#description}. |
+| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#id SqlWidget#id}. |
 | <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetConfig.property.parameter">Parameter</a></code> | <code>interface{}</code> | parameter block. |
 | <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetConfig.property.position">Position</a></code> | <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetPosition">SqlWidgetPosition</a></code> | position block. |
-| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetConfig.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#text SqlWidget#text}. |
-| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetConfig.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#title SqlWidget#title}. |
-| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetConfig.property.visualizationId">VisualizationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#visualization_id SqlWidget#visualization_id}. |
-| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetConfig.property.widgetId">WidgetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#widget_id SqlWidget#widget_id}. |
+| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetConfig.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#text SqlWidget#text}. |
+| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetConfig.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#title SqlWidget#title}. |
+| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetConfig.property.visualizationId">VisualizationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#visualization_id SqlWidget#visualization_id}. |
+| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetConfig.property.widgetId">WidgetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#widget_id SqlWidget#widget_id}. |
 
 ---
 
@@ -1070,7 +1070,7 @@ DashboardId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#dashboard_id SqlWidget#dashboard_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#dashboard_id SqlWidget#dashboard_id}.
 
 ---
 
@@ -1082,7 +1082,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#description SqlWidget#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#description SqlWidget#description}.
 
 ---
 
@@ -1094,7 +1094,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#id SqlWidget#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#id SqlWidget#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1111,7 +1111,7 @@ Parameter interface{}
 
 parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#parameter SqlWidget#parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#parameter SqlWidget#parameter}
 
 ---
 
@@ -1125,7 +1125,7 @@ Position SqlWidgetPosition
 
 position block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#position SqlWidget#position}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#position SqlWidget#position}
 
 ---
 
@@ -1137,7 +1137,7 @@ Text *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#text SqlWidget#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#text SqlWidget#text}.
 
 ---
 
@@ -1149,7 +1149,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#title SqlWidget#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#title SqlWidget#title}.
 
 ---
 
@@ -1161,7 +1161,7 @@ VisualizationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#visualization_id SqlWidget#visualization_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#visualization_id SqlWidget#visualization_id}.
 
 ---
 
@@ -1173,7 +1173,7 @@ WidgetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#widget_id SqlWidget#widget_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#widget_id SqlWidget#widget_id}.
 
 ---
 
@@ -1198,12 +1198,12 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sqlwidget"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetParameter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#name SqlWidget#name}. |
-| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetParameter.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#type SqlWidget#type}. |
-| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetParameter.property.mapTo">MapTo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#map_to SqlWidget#map_to}. |
-| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetParameter.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#title SqlWidget#title}. |
-| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetParameter.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#value SqlWidget#value}. |
-| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetParameter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#values SqlWidget#values}. |
+| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetParameter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#name SqlWidget#name}. |
+| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetParameter.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#type SqlWidget#type}. |
+| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetParameter.property.mapTo">MapTo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#map_to SqlWidget#map_to}. |
+| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetParameter.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#title SqlWidget#title}. |
+| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetParameter.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#value SqlWidget#value}. |
+| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetParameter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#values SqlWidget#values}. |
 
 ---
 
@@ -1215,7 +1215,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#name SqlWidget#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#name SqlWidget#name}.
 
 ---
 
@@ -1227,7 +1227,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#type SqlWidget#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#type SqlWidget#type}.
 
 ---
 
@@ -1239,7 +1239,7 @@ MapTo *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#map_to SqlWidget#map_to}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#map_to SqlWidget#map_to}.
 
 ---
 
@@ -1251,7 +1251,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#title SqlWidget#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#title SqlWidget#title}.
 
 ---
 
@@ -1263,7 +1263,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#value SqlWidget#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#value SqlWidget#value}.
 
 ---
 
@@ -1275,7 +1275,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#values SqlWidget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#values SqlWidget#values}.
 
 ---
 
@@ -1299,11 +1299,11 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/sqlwidget"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetPosition.property.sizeX">SizeX</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#size_x SqlWidget#size_x}. |
-| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetPosition.property.sizeY">SizeY</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#size_y SqlWidget#size_y}. |
-| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetPosition.property.autoHeight">AutoHeight</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#auto_height SqlWidget#auto_height}. |
-| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetPosition.property.posX">PosX</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#pos_x SqlWidget#pos_x}. |
-| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetPosition.property.posY">PosY</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#pos_y SqlWidget#pos_y}. |
+| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetPosition.property.sizeX">SizeX</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#size_x SqlWidget#size_x}. |
+| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetPosition.property.sizeY">SizeY</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#size_y SqlWidget#size_y}. |
+| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetPosition.property.autoHeight">AutoHeight</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#auto_height SqlWidget#auto_height}. |
+| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetPosition.property.posX">PosX</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#pos_x SqlWidget#pos_x}. |
+| <code><a href="#@cdktf/provider-databricks.sqlWidget.SqlWidgetPosition.property.posY">PosY</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#pos_y SqlWidget#pos_y}. |
 
 ---
 
@@ -1315,7 +1315,7 @@ SizeX *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#size_x SqlWidget#size_x}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#size_x SqlWidget#size_x}.
 
 ---
 
@@ -1327,7 +1327,7 @@ SizeY *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#size_y SqlWidget#size_y}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#size_y SqlWidget#size_y}.
 
 ---
 
@@ -1339,7 +1339,7 @@ AutoHeight interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#auto_height SqlWidget#auto_height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#auto_height SqlWidget#auto_height}.
 
 ---
 
@@ -1351,7 +1351,7 @@ PosX *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#pos_x SqlWidget#pos_x}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#pos_x SqlWidget#pos_x}.
 
 ---
 
@@ -1363,7 +1363,7 @@ PosY *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_widget#pos_y SqlWidget#pos_y}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_widget#pos_y SqlWidget#pos_y}.
 
 ---
 
