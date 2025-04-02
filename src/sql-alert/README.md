@@ -1,3 +1,3 @@
 # `databricks_sql_alert`
 
-Refer to the Terraform Registry for docs: [`databricks_sql_alert`](https://registry.terraform.io/providers/databricks/databricks/1.70.0/docs/resources/sql_alert).
+Refer to the Terraform Registry for docs: [`databricks_sql_alert`](https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/sql_alert).
