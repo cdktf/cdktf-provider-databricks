@@ -96,6 +96,7 @@ The following submodules are available:
 - [dbfsFile](./dbfsFile.java.md)
 - [defaultNamespaceSetting](./defaultNamespaceSetting.java.md)
 - [directory](./directory.java.md)
+- [disableLegacyAccessSetting](./disableLegacyAccessSetting.java.md)
 - [enhancedSecurityMonitoringWorkspaceSetting](./enhancedSecurityMonitoringWorkspaceSetting.java.md)
 - [entitlements](./entitlements.java.md)
 - [externalLocation](./externalLocation.java.md)
