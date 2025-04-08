@@ -1,3 +1,3 @@
 # `databricks_permission_assignment`
 
-Refer to the Terraform Registry for docs: [`databricks_permission_assignment`](https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/permission_assignment).
+Refer to the Terraform Registry for docs: [`databricks_permission_assignment`](https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/permission_assignment).

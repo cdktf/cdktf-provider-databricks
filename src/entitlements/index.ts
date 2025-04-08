@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/entitlements
+// https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/entitlements
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,44 +13,44 @@ import * as cdktf from 'cdktf';
 
 export interface EntitlementsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/entitlements#allow_cluster_create Entitlements#allow_cluster_create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/entitlements#allow_cluster_create Entitlements#allow_cluster_create}
   */
   readonly allowClusterCreate?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/entitlements#allow_instance_pool_create Entitlements#allow_instance_pool_create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/entitlements#allow_instance_pool_create Entitlements#allow_instance_pool_create}
   */
   readonly allowInstancePoolCreate?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/entitlements#databricks_sql_access Entitlements#databricks_sql_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/entitlements#databricks_sql_access Entitlements#databricks_sql_access}
   */
   readonly databricksSqlAccess?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/entitlements#group_id Entitlements#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/entitlements#group_id Entitlements#group_id}
   */
   readonly groupId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/entitlements#id Entitlements#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/entitlements#id Entitlements#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/entitlements#service_principal_id Entitlements#service_principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/entitlements#service_principal_id Entitlements#service_principal_id}
   */
   readonly servicePrincipalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/entitlements#user_id Entitlements#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/entitlements#user_id Entitlements#user_id}
   */
   readonly userId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/entitlements#workspace_access Entitlements#workspace_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/entitlements#workspace_access Entitlements#workspace_access}
   */
   readonly workspaceAccess?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/entitlements databricks_entitlements}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/entitlements databricks_entitlements}
 */
 export class Entitlements extends cdktf.TerraformResource {
 
@@ -66,7 +66,7 @@ export class Entitlements extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Entitlements resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Entitlements to import
-  * @param importFromId The id of the existing Entitlements that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/entitlements#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Entitlements that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/entitlements#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Entitlements to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -78,7 +78,7 @@ export class Entitlements extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/resources/entitlements databricks_entitlements} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/entitlements databricks_entitlements} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +89,7 @@ export class Entitlements extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_entitlements',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.71.0',
+        providerVersion: '1.72.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

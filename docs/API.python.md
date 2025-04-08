@@ -96,6 +96,7 @@ The following submodules are available:
 - [dbfsFile](./dbfsFile.python.md)
 - [defaultNamespaceSetting](./defaultNamespaceSetting.python.md)
 - [directory](./directory.python.md)
+- [disableLegacyAccessSetting](./disableLegacyAccessSetting.python.md)
 - [enhancedSecurityMonitoringWorkspaceSetting](./enhancedSecurityMonitoringWorkspaceSetting.python.md)
 - [entitlements](./entitlements.python.md)
 - [externalLocation](./externalLocation.python.md)

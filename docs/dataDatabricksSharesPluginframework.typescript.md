@@ -4,7 +4,7 @@
 
 ### DataDatabricksSharesPluginframework <a name="DataDatabricksSharesPluginframework" id="@cdktf/provider-databricks.dataDatabricksSharesPluginframework.DataDatabricksSharesPluginframework"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/data-sources/shares_pluginframework databricks_shares_pluginframework}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/data-sources/shares_pluginframework databricks_shares_pluginframework}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksSharesPluginframework.DataDatabricksSharesPluginframework.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataDatabricksSharesPlugin
 
 The id of the existing DataDatabricksSharesPluginframework that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/data-sources/shares_pluginframework#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/data-sources/shares_pluginframework#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -588,7 +588,7 @@ const dataDatabricksSharesPluginframeworkConfig: dataDatabricksSharesPluginframe
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksSharesPluginframework.DataDatabricksSharesPluginframeworkConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksSharesPluginframework.DataDatabricksSharesPluginframeworkConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksSharesPluginframework.DataDatabricksSharesPluginframeworkConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksSharesPluginframework.DataDatabricksSharesPluginframeworkConfig.property.shares">shares</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/data-sources/shares_pluginframework#shares DataDatabricksSharesPluginframework#shares}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksSharesPluginframework.DataDatabricksSharesPluginframeworkConfig.property.shares">shares</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/data-sources/shares_pluginframework#shares DataDatabricksSharesPluginframework#shares}. |
 
 ---
 
@@ -670,7 +670,7 @@ public readonly shares: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.71.0/docs/data-sources/shares_pluginframework#shares DataDatabricksSharesPluginframework#shares}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/data-sources/shares_pluginframework#shares DataDatabricksSharesPluginframework#shares}.
 
 ---
 
