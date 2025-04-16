@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/compliance_security_profile_workspace_setting
+// https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/compliance_security_profile_workspace_setting
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +8,34 @@ import * as cdktf from 'cdktf';
 
 export interface ComplianceSecurityProfileWorkspaceSettingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/compliance_security_profile_workspace_setting#etag ComplianceSecurityProfileWorkspaceSetting#etag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/compliance_security_profile_workspace_setting#etag ComplianceSecurityProfileWorkspaceSetting#etag}
   */
   readonly etag?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/compliance_security_profile_workspace_setting#id ComplianceSecurityProfileWorkspaceSetting#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/compliance_security_profile_workspace_setting#id ComplianceSecurityProfileWorkspaceSetting#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/compliance_security_profile_workspace_setting#setting_name ComplianceSecurityProfileWorkspaceSetting#setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/compliance_security_profile_workspace_setting#setting_name ComplianceSecurityProfileWorkspaceSetting#setting_name}
   */
   readonly settingName?: string;
   /**
   * compliance_security_profile_workspace block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/compliance_security_profile_workspace_setting#compliance_security_profile_workspace ComplianceSecurityProfileWorkspaceSetting#compliance_security_profile_workspace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/compliance_security_profile_workspace_setting#compliance_security_profile_workspace ComplianceSecurityProfileWorkspaceSetting#compliance_security_profile_workspace}
   */
   readonly complianceSecurityProfileWorkspace: ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspace;
 }
 export interface ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspace {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/compliance_security_profile_workspace_setting#compliance_standards ComplianceSecurityProfileWorkspaceSetting#compliance_standards}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/compliance_security_profile_workspace_setting#compliance_standards ComplianceSecurityProfileWorkspaceSetting#compliance_standards}
   */
   readonly complianceStandards: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/compliance_security_profile_workspace_setting#is_enabled ComplianceSecurityProfileWorkspaceSetting#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/compliance_security_profile_workspace_setting#is_enabled ComplianceSecurityProfileWorkspaceSetting#is_enabled}
   */
   readonly isEnabled: boolean | cdktf.IResolvable;
 }
@@ -147,7 +142,7 @@ export class ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileW
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/compliance_security_profile_workspace_setting databricks_compliance_security_profile_workspace_setting}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/compliance_security_profile_workspace_setting databricks_compliance_security_profile_workspace_setting}
 */
 export class ComplianceSecurityProfileWorkspaceSetting extends cdktf.TerraformResource {
 
@@ -163,7 +158,7 @@ export class ComplianceSecurityProfileWorkspaceSetting extends cdktf.TerraformRe
   * Generates CDKTF code for importing a ComplianceSecurityProfileWorkspaceSetting resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComplianceSecurityProfileWorkspaceSetting to import
-  * @param importFromId The id of the existing ComplianceSecurityProfileWorkspaceSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/compliance_security_profile_workspace_setting#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComplianceSecurityProfileWorkspaceSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/compliance_security_profile_workspace_setting#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComplianceSecurityProfileWorkspaceSetting to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -175,7 +170,7 @@ export class ComplianceSecurityProfileWorkspaceSetting extends cdktf.TerraformRe
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/compliance_security_profile_workspace_setting databricks_compliance_security_profile_workspace_setting} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/compliance_security_profile_workspace_setting databricks_compliance_security_profile_workspace_setting} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -186,7 +181,7 @@ export class ComplianceSecurityProfileWorkspaceSetting extends cdktf.TerraformRe
       terraformResourceType: 'databricks_compliance_security_profile_workspace_setting',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.72.0',
+        providerVersion: '1.73.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
