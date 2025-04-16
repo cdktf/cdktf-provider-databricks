@@ -4,7 +4,7 @@
 
 ### BudgetPolicy <a name="BudgetPolicy" id="@cdktf/provider-databricks.budgetPolicy.BudgetPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/budget_policy databricks_budget_policy}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/budget_policy databricks_budget_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.putCustomTags">PutCustomTags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.resetBindingWorkspaceIds">ResetBindingWorkspaceIds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.resetCustomTags">ResetCustomTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.resetPolicyName">ResetPolicyName</a></code> | *No description.* |
 
@@ -379,6 +380,12 @@ func PutCustomTags(value interface{})
 
 ---
 
+##### `ResetBindingWorkspaceIds` <a name="ResetBindingWorkspaceIds" id="@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.resetBindingWorkspaceIds"></a>
+
+```go
+func ResetBindingWorkspaceIds()
+```
+
 ##### `ResetCustomTags` <a name="ResetCustomTags" id="@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.resetCustomTags"></a>
 
 ```go
@@ -494,7 +501,7 @@ The construct id used in the generated config for the BudgetPolicy to import.
 
 The id of the existing BudgetPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/budget_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/budget_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -526,8 +533,10 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.property.customTags">CustomTags</a></code> | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyCustomTagsList">BudgetPolicyCustomTagsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.property.policyId">PolicyId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.property.bindingWorkspaceIdsInput">BindingWorkspaceIdsInput</a></code> | <code>*[]*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.property.customTagsInput">CustomTagsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.property.policyNameInput">PolicyNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.property.bindingWorkspaceIds">BindingWorkspaceIds</a></code> | <code>*[]*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.property.policyName">PolicyName</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -694,6 +703,16 @@ func PolicyId() *string
 
 ---
 
+##### `BindingWorkspaceIdsInput`<sup>Optional</sup> <a name="BindingWorkspaceIdsInput" id="@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.property.bindingWorkspaceIdsInput"></a>
+
+```go
+func BindingWorkspaceIdsInput() *[]*f64
+```
+
+- *Type:* *[]*f64
+
+---
+
 ##### `CustomTagsInput`<sup>Optional</sup> <a name="CustomTagsInput" id="@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.property.customTagsInput"></a>
 
 ```go
@@ -711,6 +730,16 @@ func PolicyNameInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `BindingWorkspaceIds`<sup>Required</sup> <a name="BindingWorkspaceIds" id="@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.property.bindingWorkspaceIds"></a>
+
+```go
+func BindingWorkspaceIds() *[]*f64
+```
+
+- *Type:* *[]*f64
 
 ---
 
@@ -759,6 +788,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budgetpolic
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
+	BindingWorkspaceIds: *[]*f64,
 	CustomTags: interface{},
 	PolicyName: *string,
 }
@@ -775,8 +805,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budgetpolic
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyConfig.property.customTags">CustomTags</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/budget_policy#custom_tags BudgetPolicy#custom_tags}. |
-| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyConfig.property.policyName">PolicyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/budget_policy#policy_name BudgetPolicy#policy_name}. |
+| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyConfig.property.bindingWorkspaceIds">BindingWorkspaceIds</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/budget_policy#binding_workspace_ids BudgetPolicy#binding_workspace_ids}. |
+| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyConfig.property.customTags">CustomTags</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/budget_policy#custom_tags BudgetPolicy#custom_tags}. |
+| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyConfig.property.policyName">PolicyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/budget_policy#policy_name BudgetPolicy#policy_name}. |
 
 ---
 
@@ -850,6 +881,18 @@ Provisioners *[]interface{}
 
 ---
 
+##### `BindingWorkspaceIds`<sup>Optional</sup> <a name="BindingWorkspaceIds" id="@cdktf/provider-databricks.budgetPolicy.BudgetPolicyConfig.property.bindingWorkspaceIds"></a>
+
+```go
+BindingWorkspaceIds *[]*f64
+```
+
+- *Type:* *[]*f64
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/budget_policy#binding_workspace_ids BudgetPolicy#binding_workspace_ids}.
+
+---
+
 ##### `CustomTags`<sup>Optional</sup> <a name="CustomTags" id="@cdktf/provider-databricks.budgetPolicy.BudgetPolicyConfig.property.customTags"></a>
 
 ```go
@@ -858,7 +901,7 @@ CustomTags interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/budget_policy#custom_tags BudgetPolicy#custom_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/budget_policy#custom_tags BudgetPolicy#custom_tags}.
 
 ---
 
@@ -870,7 +913,7 @@ PolicyName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/budget_policy#policy_name BudgetPolicy#policy_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/budget_policy#policy_name BudgetPolicy#policy_name}.
 
 ---
 
@@ -891,8 +934,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/budgetpolic
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyCustomTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/budget_policy#key BudgetPolicy#key}. |
-| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyCustomTags.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/budget_policy#value BudgetPolicy#value}. |
+| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyCustomTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/budget_policy#key BudgetPolicy#key}. |
+| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyCustomTags.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/budget_policy#value BudgetPolicy#value}. |
 
 ---
 
@@ -904,7 +947,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/budget_policy#key BudgetPolicy#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/budget_policy#key BudgetPolicy#key}.
 
 ---
 
@@ -916,7 +959,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/budget_policy#value BudgetPolicy#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/budget_policy#value BudgetPolicy#value}.
 
 ---
 

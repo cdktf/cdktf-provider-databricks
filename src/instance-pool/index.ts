@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool
+// https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,96 +13,96 @@ import * as cdktf from 'cdktf';
 
 export interface InstancePoolConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#custom_tags InstancePool#custom_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#custom_tags InstancePool#custom_tags}
   */
   readonly customTags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#enable_elastic_disk InstancePool#enable_elastic_disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#enable_elastic_disk InstancePool#enable_elastic_disk}
   */
   readonly enableElasticDisk?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#id InstancePool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#id InstancePool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#idle_instance_autotermination_minutes InstancePool#idle_instance_autotermination_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#idle_instance_autotermination_minutes InstancePool#idle_instance_autotermination_minutes}
   */
   readonly idleInstanceAutoterminationMinutes: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#instance_pool_id InstancePool#instance_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#instance_pool_id InstancePool#instance_pool_id}
   */
   readonly instancePoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#instance_pool_name InstancePool#instance_pool_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#instance_pool_name InstancePool#instance_pool_name}
   */
   readonly instancePoolName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#max_capacity InstancePool#max_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#max_capacity InstancePool#max_capacity}
   */
   readonly maxCapacity?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#min_idle_instances InstancePool#min_idle_instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#min_idle_instances InstancePool#min_idle_instances}
   */
   readonly minIdleInstances?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#node_type_id InstancePool#node_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#node_type_id InstancePool#node_type_id}
   */
   readonly nodeTypeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#preloaded_spark_versions InstancePool#preloaded_spark_versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#preloaded_spark_versions InstancePool#preloaded_spark_versions}
   */
   readonly preloadedSparkVersions?: string[];
   /**
   * aws_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#aws_attributes InstancePool#aws_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#aws_attributes InstancePool#aws_attributes}
   */
   readonly awsAttributes?: InstancePoolAwsAttributes;
   /**
   * azure_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#azure_attributes InstancePool#azure_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#azure_attributes InstancePool#azure_attributes}
   */
   readonly azureAttributes?: InstancePoolAzureAttributes;
   /**
   * disk_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#disk_spec InstancePool#disk_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#disk_spec InstancePool#disk_spec}
   */
   readonly diskSpec?: InstancePoolDiskSpec;
   /**
   * gcp_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#gcp_attributes InstancePool#gcp_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#gcp_attributes InstancePool#gcp_attributes}
   */
   readonly gcpAttributes?: InstancePoolGcpAttributes;
   /**
   * instance_pool_fleet_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#instance_pool_fleet_attributes InstancePool#instance_pool_fleet_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#instance_pool_fleet_attributes InstancePool#instance_pool_fleet_attributes}
   */
   readonly instancePoolFleetAttributes?: InstancePoolInstancePoolFleetAttributes;
   /**
   * preloaded_docker_image block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#preloaded_docker_image InstancePool#preloaded_docker_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#preloaded_docker_image InstancePool#preloaded_docker_image}
   */
   readonly preloadedDockerImage?: InstancePoolPreloadedDockerImage[] | cdktf.IResolvable;
 }
 export interface InstancePoolAwsAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#availability InstancePool#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#availability InstancePool#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#spot_bid_price_percent InstancePool#spot_bid_price_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#spot_bid_price_percent InstancePool#spot_bid_price_percent}
   */
   readonly spotBidPricePercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#zone_id InstancePool#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#zone_id InstancePool#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -244,11 +244,11 @@ export class InstancePoolAwsAttributesOutputReference extends cdktf.ComplexObjec
 }
 export interface InstancePoolAzureAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#availability InstancePool#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#availability InstancePool#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#spot_bid_max_price InstancePool#spot_bid_max_price}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#spot_bid_max_price InstancePool#spot_bid_max_price}
   */
   readonly spotBidMaxPrice?: number;
 }
@@ -361,11 +361,11 @@ export class InstancePoolAzureAttributesOutputReference extends cdktf.ComplexObj
 }
 export interface InstancePoolDiskSpecDiskType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#azure_disk_volume_type InstancePool#azure_disk_volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#azure_disk_volume_type InstancePool#azure_disk_volume_type}
   */
   readonly azureDiskVolumeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#ebs_volume_type InstancePool#ebs_volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#ebs_volume_type InstancePool#ebs_volume_type}
   */
   readonly ebsVolumeType?: string;
 }
@@ -478,17 +478,17 @@ export class InstancePoolDiskSpecDiskTypeOutputReference extends cdktf.ComplexOb
 }
 export interface InstancePoolDiskSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#disk_count InstancePool#disk_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#disk_count InstancePool#disk_count}
   */
   readonly diskCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#disk_size InstancePool#disk_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#disk_size InstancePool#disk_size}
   */
   readonly diskSize?: number;
   /**
   * disk_type block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#disk_type InstancePool#disk_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#disk_type InstancePool#disk_type}
   */
   readonly diskType?: InstancePoolDiskSpecDiskType;
 }
@@ -630,15 +630,15 @@ export class InstancePoolDiskSpecOutputReference extends cdktf.ComplexObject {
 }
 export interface InstancePoolGcpAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#gcp_availability InstancePool#gcp_availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#gcp_availability InstancePool#gcp_availability}
   */
   readonly gcpAvailability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#local_ssd_count InstancePool#local_ssd_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#local_ssd_count InstancePool#local_ssd_count}
   */
   readonly localSsdCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#zone_id InstancePool#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#zone_id InstancePool#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -780,11 +780,11 @@ export class InstancePoolGcpAttributesOutputReference extends cdktf.ComplexObjec
 }
 export interface InstancePoolInstancePoolFleetAttributesFleetOnDemandOption {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#allocation_strategy InstancePool#allocation_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#allocation_strategy InstancePool#allocation_strategy}
   */
   readonly allocationStrategy: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#instance_pools_to_use_count InstancePool#instance_pools_to_use_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#instance_pools_to_use_count InstancePool#instance_pools_to_use_count}
   */
   readonly instancePoolsToUseCount?: number;
 }
@@ -894,11 +894,11 @@ export class InstancePoolInstancePoolFleetAttributesFleetOnDemandOptionOutputRef
 }
 export interface InstancePoolInstancePoolFleetAttributesFleetSpotOption {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#allocation_strategy InstancePool#allocation_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#allocation_strategy InstancePool#allocation_strategy}
   */
   readonly allocationStrategy: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#instance_pools_to_use_count InstancePool#instance_pools_to_use_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#instance_pools_to_use_count InstancePool#instance_pools_to_use_count}
   */
   readonly instancePoolsToUseCount?: number;
 }
@@ -1008,11 +1008,11 @@ export class InstancePoolInstancePoolFleetAttributesFleetSpotOptionOutputReferen
 }
 export interface InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#availability_zone InstancePool#availability_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#availability_zone InstancePool#availability_zone}
   */
   readonly availabilityZone: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#instance_type InstancePool#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#instance_type InstancePool#instance_type}
   */
   readonly instanceType: string;
 }
@@ -1153,19 +1153,19 @@ export interface InstancePoolInstancePoolFleetAttributes {
   /**
   * fleet_on_demand_option block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#fleet_on_demand_option InstancePool#fleet_on_demand_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#fleet_on_demand_option InstancePool#fleet_on_demand_option}
   */
   readonly fleetOnDemandOption?: InstancePoolInstancePoolFleetAttributesFleetOnDemandOption;
   /**
   * fleet_spot_option block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#fleet_spot_option InstancePool#fleet_spot_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#fleet_spot_option InstancePool#fleet_spot_option}
   */
   readonly fleetSpotOption?: InstancePoolInstancePoolFleetAttributesFleetSpotOption;
   /**
   * launch_template_override block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#launch_template_override InstancePool#launch_template_override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#launch_template_override InstancePool#launch_template_override}
   */
   readonly launchTemplateOverride: InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride[] | cdktf.IResolvable;
 }
@@ -1304,11 +1304,11 @@ export class InstancePoolInstancePoolFleetAttributesOutputReference extends cdkt
 }
 export interface InstancePoolPreloadedDockerImageBasicAuth {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#password InstancePool#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#password InstancePool#password}
   */
   readonly password: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#username InstancePool#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#username InstancePool#username}
   */
   readonly username: string;
 }
@@ -1415,13 +1415,13 @@ export class InstancePoolPreloadedDockerImageBasicAuthOutputReference extends cd
 }
 export interface InstancePoolPreloadedDockerImage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#url InstancePool#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#url InstancePool#url}
   */
   readonly url: string;
   /**
   * basic_auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#basic_auth InstancePool#basic_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#basic_auth InstancePool#basic_auth}
   */
   readonly basicAuth?: InstancePoolPreloadedDockerImageBasicAuth;
 }
@@ -1563,7 +1563,7 @@ export class InstancePoolPreloadedDockerImageList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool databricks_instance_pool}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool databricks_instance_pool}
 */
 export class InstancePool extends cdktf.TerraformResource {
 
@@ -1579,7 +1579,7 @@ export class InstancePool extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a InstancePool resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the InstancePool to import
-  * @param importFromId The id of the existing InstancePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing InstancePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the InstancePool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1591,7 +1591,7 @@ export class InstancePool extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/instance_pool databricks_instance_pool} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/instance_pool databricks_instance_pool} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1602,7 +1602,7 @@ export class InstancePool extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_instance_pool',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.72.0',
+        providerVersion: '1.73.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

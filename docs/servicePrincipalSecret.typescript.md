@@ -4,7 +4,7 @@
 
 ### ServicePrincipalSecret <a name="ServicePrincipalSecret" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/service_principal_secret databricks_service_principal_secret}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/service_principal_secret databricks_service_principal_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer"></a>
 
@@ -73,9 +73,14 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.resetCreateTime">resetCreateTime</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.resetExpireTime">resetExpireTime</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.resetLifetime">resetLifetime</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.resetSecret">resetSecret</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.resetSecretHash">resetSecretHash</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.resetStatus">resetStatus</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.resetUpdateTime">resetUpdateTime</a></code> | *No description.* |
 
 ---
 
@@ -367,10 +372,28 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetCreateTime` <a name="resetCreateTime" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.resetCreateTime"></a>
+
+```typescript
+public resetCreateTime(): void
+```
+
+##### `resetExpireTime` <a name="resetExpireTime" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.resetExpireTime"></a>
+
+```typescript
+public resetExpireTime(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.resetId"></a>
 
 ```typescript
 public resetId(): void
+```
+
+##### `resetLifetime` <a name="resetLifetime" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.resetLifetime"></a>
+
+```typescript
+public resetLifetime(): void
 ```
 
 ##### `resetSecret` <a name="resetSecret" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.resetSecret"></a>
@@ -379,10 +402,22 @@ public resetId(): void
 public resetSecret(): void
 ```
 
+##### `resetSecretHash` <a name="resetSecretHash" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.resetSecretHash"></a>
+
+```typescript
+public resetSecretHash(): void
+```
+
 ##### `resetStatus` <a name="resetStatus" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.resetStatus"></a>
 
 ```typescript
 public resetStatus(): void
+```
+
+##### `resetUpdateTime` <a name="resetUpdateTime" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.resetUpdateTime"></a>
+
+```typescript
+public resetUpdateTime(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -488,7 +523,7 @@ The construct id used in the generated config for the ServicePrincipalSecret to 
 
 The id of the existing ServicePrincipalSecret that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/service_principal_secret#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/service_principal_secret#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -518,14 +553,24 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.createTimeInput">createTimeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.expireTimeInput">expireTimeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.lifetimeInput">lifetimeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.secretHashInput">secretHashInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.secretInput">secretInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.servicePrincipalIdInput">servicePrincipalIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.statusInput">statusInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.updateTimeInput">updateTimeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.createTime">createTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.expireTime">expireTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.lifetime">lifetime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.secret">secret</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.secretHash">secretHash</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.servicePrincipalId">servicePrincipalId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.status">status</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -671,10 +716,50 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
+##### `createTimeInput`<sup>Optional</sup> <a name="createTimeInput" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.createTimeInput"></a>
+
+```typescript
+public readonly createTimeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `expireTimeInput`<sup>Optional</sup> <a name="expireTimeInput" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.expireTimeInput"></a>
+
+```typescript
+public readonly expireTimeInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `lifetimeInput`<sup>Optional</sup> <a name="lifetimeInput" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.lifetimeInput"></a>
+
+```typescript
+public readonly lifetimeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `secretHashInput`<sup>Optional</sup> <a name="secretHashInput" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.secretHashInput"></a>
+
+```typescript
+public readonly secretHashInput: string;
 ```
 
 - *Type:* string
@@ -711,6 +796,36 @@ public readonly statusInput: string;
 
 ---
 
+##### `updateTimeInput`<sup>Optional</sup> <a name="updateTimeInput" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.updateTimeInput"></a>
+
+```typescript
+public readonly updateTimeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `createTime`<sup>Required</sup> <a name="createTime" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.createTime"></a>
+
+```typescript
+public readonly createTime: string;
+```
+
+- *Type:* string
+
+---
+
+##### `expireTime`<sup>Required</sup> <a name="expireTime" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.expireTime"></a>
+
+```typescript
+public readonly expireTime: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.id"></a>
 
 ```typescript
@@ -721,10 +836,30 @@ public readonly id: string;
 
 ---
 
+##### `lifetime`<sup>Required</sup> <a name="lifetime" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.lifetime"></a>
+
+```typescript
+public readonly lifetime: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `secret`<sup>Required</sup> <a name="secret" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.secret"></a>
 
 ```typescript
 public readonly secret: string;
+```
+
+- *Type:* string
+
+---
+
+##### `secretHash`<sup>Required</sup> <a name="secretHash" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.secretHash"></a>
+
+```typescript
+public readonly secretHash: string;
 ```
 
 - *Type:* string
@@ -745,6 +880,16 @@ public readonly servicePrincipalId: string;
 
 ```typescript
 public readonly status: string;
+```
+
+- *Type:* string
+
+---
+
+##### `updateTime`<sup>Required</sup> <a name="updateTime" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.updateTime"></a>
+
+```typescript
+public readonly updateTime: string;
 ```
 
 - *Type:* string
@@ -792,10 +937,15 @@ const servicePrincipalSecretConfig: servicePrincipalSecret.ServicePrincipalSecre
 | <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.servicePrincipalId">servicePrincipalId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/service_principal_secret#service_principal_id ServicePrincipalSecret#service_principal_id}. |
-| <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/service_principal_secret#id ServicePrincipalSecret#id}. |
-| <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.secret">secret</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/service_principal_secret#secret ServicePrincipalSecret#secret}. |
-| <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.status">status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/service_principal_secret#status ServicePrincipalSecret#status}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.servicePrincipalId">servicePrincipalId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/service_principal_secret#service_principal_id ServicePrincipalSecret#service_principal_id}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.createTime">createTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/service_principal_secret#create_time ServicePrincipalSecret#create_time}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.expireTime">expireTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/service_principal_secret#expire_time ServicePrincipalSecret#expire_time}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/service_principal_secret#id ServicePrincipalSecret#id}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.lifetime">lifetime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/service_principal_secret#lifetime ServicePrincipalSecret#lifetime}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.secret">secret</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/service_principal_secret#secret ServicePrincipalSecret#secret}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.secretHash">secretHash</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/service_principal_secret#secret_hash ServicePrincipalSecret#secret_hash}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.status">status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/service_principal_secret#status ServicePrincipalSecret#status}. |
+| <code><a href="#@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.updateTime">updateTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/service_principal_secret#update_time ServicePrincipalSecret#update_time}. |
 
 ---
 
@@ -877,7 +1027,31 @@ public readonly servicePrincipalId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/service_principal_secret#service_principal_id ServicePrincipalSecret#service_principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/service_principal_secret#service_principal_id ServicePrincipalSecret#service_principal_id}.
+
+---
+
+##### `createTime`<sup>Optional</sup> <a name="createTime" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.createTime"></a>
+
+```typescript
+public readonly createTime: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/service_principal_secret#create_time ServicePrincipalSecret#create_time}.
+
+---
+
+##### `expireTime`<sup>Optional</sup> <a name="expireTime" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.expireTime"></a>
+
+```typescript
+public readonly expireTime: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/service_principal_secret#expire_time ServicePrincipalSecret#expire_time}.
 
 ---
 
@@ -889,10 +1063,22 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/service_principal_secret#id ServicePrincipalSecret#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/service_principal_secret#id ServicePrincipalSecret#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `lifetime`<sup>Optional</sup> <a name="lifetime" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.lifetime"></a>
+
+```typescript
+public readonly lifetime: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/service_principal_secret#lifetime ServicePrincipalSecret#lifetime}.
 
 ---
 
@@ -904,7 +1090,19 @@ public readonly secret: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/service_principal_secret#secret ServicePrincipalSecret#secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/service_principal_secret#secret ServicePrincipalSecret#secret}.
+
+---
+
+##### `secretHash`<sup>Optional</sup> <a name="secretHash" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.secretHash"></a>
+
+```typescript
+public readonly secretHash: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/service_principal_secret#secret_hash ServicePrincipalSecret#secret_hash}.
 
 ---
 
@@ -916,7 +1114,19 @@ public readonly status: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/service_principal_secret#status ServicePrincipalSecret#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/service_principal_secret#status ServicePrincipalSecret#status}.
+
+---
+
+##### `updateTime`<sup>Optional</sup> <a name="updateTime" id="@cdktf/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.updateTime"></a>
+
+```typescript
+public readonly updateTime: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/service_principal_secret#update_time ServicePrincipalSecret#update_time}.
 
 ---
 

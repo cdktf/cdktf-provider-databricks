@@ -4,7 +4,7 @@
 
 ### DataDatabricksBudgetPolicies <a name="DataDatabricksBudgetPolicies" id="@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPolicies"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/data-sources/budget_policies databricks_budget_policies}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/data-sources/budget_policies databricks_budget_policies}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPolicies.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataDatabricksBudgetPolici
 
 The id of the existing DataDatabricksBudgetPolicies that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/data-sources/budget_policies#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/data-sources/budget_policies#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -563,8 +563,21 @@ const dataDatabricksBudgetPoliciesBudgetPolicies: dataDatabricksBudgetPolicies.D
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPolicies.property.customTags">customTags</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesCustomTags">DataDatabricksBudgetPoliciesBudgetPoliciesCustomTags</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/data-sources/budget_policies#custom_tags DataDatabricksBudgetPolicies#custom_tags}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPolicies.property.policyName">policyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/data-sources/budget_policies#policy_name DataDatabricksBudgetPolicies#policy_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPolicies.property.bindingWorkspaceIds">bindingWorkspaceIds</a></code> | <code>number[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/data-sources/budget_policies#binding_workspace_ids DataDatabricksBudgetPolicies#binding_workspace_ids}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPolicies.property.customTags">customTags</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesCustomTags">DataDatabricksBudgetPoliciesBudgetPoliciesCustomTags</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/data-sources/budget_policies#custom_tags DataDatabricksBudgetPolicies#custom_tags}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPolicies.property.policyName">policyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/data-sources/budget_policies#policy_name DataDatabricksBudgetPolicies#policy_name}. |
+
+---
+
+##### `bindingWorkspaceIds`<sup>Optional</sup> <a name="bindingWorkspaceIds" id="@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPolicies.property.bindingWorkspaceIds"></a>
+
+```typescript
+public readonly bindingWorkspaceIds: number[];
+```
+
+- *Type:* number[]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/data-sources/budget_policies#binding_workspace_ids DataDatabricksBudgetPolicies#binding_workspace_ids}.
 
 ---
 
@@ -576,7 +589,7 @@ public readonly customTags: IResolvable | DataDatabricksBudgetPoliciesBudgetPoli
 
 - *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesCustomTags">DataDatabricksBudgetPoliciesBudgetPoliciesCustomTags</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/data-sources/budget_policies#custom_tags DataDatabricksBudgetPolicies#custom_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/data-sources/budget_policies#custom_tags DataDatabricksBudgetPolicies#custom_tags}.
 
 ---
 
@@ -588,7 +601,7 @@ public readonly policyName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/data-sources/budget_policies#policy_name DataDatabricksBudgetPolicies#policy_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/data-sources/budget_policies#policy_name DataDatabricksBudgetPolicies#policy_name}.
 
 ---
 
@@ -606,8 +619,8 @@ const dataDatabricksBudgetPoliciesBudgetPoliciesCustomTags: dataDatabricksBudget
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesCustomTags.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/data-sources/budget_policies#key DataDatabricksBudgetPolicies#key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesCustomTags.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/data-sources/budget_policies#value DataDatabricksBudgetPolicies#value}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesCustomTags.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/data-sources/budget_policies#key DataDatabricksBudgetPolicies#key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesCustomTags.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/data-sources/budget_policies#value DataDatabricksBudgetPolicies#value}. |
 
 ---
 
@@ -619,7 +632,7 @@ public readonly key: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/data-sources/budget_policies#key DataDatabricksBudgetPolicies#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/data-sources/budget_policies#key DataDatabricksBudgetPolicies#key}.
 
 ---
 
@@ -631,7 +644,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/data-sources/budget_policies#value DataDatabricksBudgetPolicies#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/data-sources/budget_policies#value DataDatabricksBudgetPolicies#value}.
 
 ---
 
@@ -1438,6 +1451,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference.putCustomTags">putCustomTags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference.resetBindingWorkspaceIds">resetBindingWorkspaceIds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference.resetCustomTags">resetCustomTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference.resetPolicyName">resetPolicyName</a></code> | *No description.* |
 
@@ -1605,6 +1619,12 @@ public putCustomTags(value: IResolvable | DataDatabricksBudgetPoliciesBudgetPoli
 
 ---
 
+##### `resetBindingWorkspaceIds` <a name="resetBindingWorkspaceIds" id="@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference.resetBindingWorkspaceIds"></a>
+
+```typescript
+public resetBindingWorkspaceIds(): void
+```
+
 ##### `resetCustomTags` <a name="resetCustomTags" id="@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference.resetCustomTags"></a>
 
 ```typescript
@@ -1626,8 +1646,10 @@ public resetPolicyName(): void
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference.property.customTags">customTags</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesCustomTagsList">DataDatabricksBudgetPoliciesBudgetPoliciesCustomTagsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference.property.policyId">policyId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference.property.bindingWorkspaceIdsInput">bindingWorkspaceIdsInput</a></code> | <code>number[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference.property.customTagsInput">customTagsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesCustomTags">DataDatabricksBudgetPoliciesBudgetPoliciesCustomTags</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference.property.policyNameInput">policyNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference.property.bindingWorkspaceIds">bindingWorkspaceIds</a></code> | <code>number[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference.property.policyName">policyName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPolicies">DataDatabricksBudgetPoliciesBudgetPolicies</a></code> | *No description.* |
 
@@ -1677,6 +1699,16 @@ public readonly policyId: string;
 
 ---
 
+##### `bindingWorkspaceIdsInput`<sup>Optional</sup> <a name="bindingWorkspaceIdsInput" id="@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference.property.bindingWorkspaceIdsInput"></a>
+
+```typescript
+public readonly bindingWorkspaceIdsInput: number[];
+```
+
+- *Type:* number[]
+
+---
+
 ##### `customTagsInput`<sup>Optional</sup> <a name="customTagsInput" id="@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference.property.customTagsInput"></a>
 
 ```typescript
@@ -1694,6 +1726,16 @@ public readonly policyNameInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `bindingWorkspaceIds`<sup>Required</sup> <a name="bindingWorkspaceIds" id="@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference.property.bindingWorkspaceIds"></a>
+
+```typescript
+public readonly bindingWorkspaceIds: number[];
+```
+
+- *Type:* number[]
 
 ---
 

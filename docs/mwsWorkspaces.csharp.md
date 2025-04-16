@@ -4,7 +4,7 @@
 
 ### MwsWorkspaces <a name="MwsWorkspaces" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces databricks_mws_workspaces}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces databricks_mws_workspaces}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.Initializer"></a>
 
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.putAzureWorkspaceInfo">PutAzureWorkspaceInfo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.putCloudResourceContainer">PutCloudResourceContainer</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.putExternalCustomerInfo">PutExternalCustomerInfo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.putGcpManagedNetworkConfig">PutGcpManagedNetworkConfig</a></code> | *No description.* |
@@ -80,6 +81,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.putToken">PutToken</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.resetAwsRegion">ResetAwsRegion</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.resetAzureWorkspaceInfo">ResetAzureWorkspaceInfo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.resetCloud">ResetCloud</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.resetCloudResourceContainer">ResetCloudResourceContainer</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.resetCreationTime">ResetCreationTime</a></code> | *No description.* |
@@ -396,6 +398,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `PutAzureWorkspaceInfo` <a name="PutAzureWorkspaceInfo" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.putAzureWorkspaceInfo"></a>
+
+```csharp
+private void PutAzureWorkspaceInfo(MwsWorkspacesAzureWorkspaceInfo Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.putAzureWorkspaceInfo.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfo">MwsWorkspacesAzureWorkspaceInfo</a>
+
+---
+
 ##### `PutCloudResourceContainer` <a name="PutCloudResourceContainer" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.putCloudResourceContainer"></a>
 
 ```csharp
@@ -472,6 +486,12 @@ private void PutToken(MwsWorkspacesToken Value)
 
 ```csharp
 private void ResetAwsRegion()
+```
+
+##### `ResetAzureWorkspaceInfo` <a name="ResetAzureWorkspaceInfo" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.resetAzureWorkspaceInfo"></a>
+
+```csharp
+private void ResetAzureWorkspaceInfo()
 ```
 
 ##### `ResetCloud` <a name="ResetCloud" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.resetCloud"></a>
@@ -727,7 +747,7 @@ The construct id used in the generated config for the MwsWorkspaces to import.
 
 The id of the existing MwsWorkspaces that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -757,6 +777,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.property.azureWorkspaceInfo">AzureWorkspaceInfo</a></code> | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference">MwsWorkspacesAzureWorkspaceInfoOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.property.cloudResourceContainer">CloudResourceContainer</a></code> | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesCloudResourceContainerOutputReference">MwsWorkspacesCloudResourceContainerOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.property.externalCustomerInfo">ExternalCustomerInfo</a></code> | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesExternalCustomerInfoOutputReference">MwsWorkspacesExternalCustomerInfoOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.property.gcpManagedNetworkConfig">GcpManagedNetworkConfig</a></code> | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesGcpManagedNetworkConfigOutputReference">MwsWorkspacesGcpManagedNetworkConfigOutputReference</a></code> | *No description.* |
@@ -766,6 +787,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.property.token">Token</a></code> | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesTokenOutputReference">MwsWorkspacesTokenOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.property.accountIdInput">AccountIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.property.awsRegionInput">AwsRegionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.property.azureWorkspaceInfoInput">AzureWorkspaceInfoInput</a></code> | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfo">MwsWorkspacesAzureWorkspaceInfo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.property.cloudInput">CloudInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.property.cloudResourceContainerInput">CloudResourceContainerInput</a></code> | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesCloudResourceContainer">MwsWorkspacesCloudResourceContainer</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.property.creationTimeInput">CreationTimeInput</a></code> | <code>double</code> | *No description.* |
@@ -959,6 +981,16 @@ public object[] Provisioners { get; }
 
 ---
 
+##### `AzureWorkspaceInfo`<sup>Required</sup> <a name="AzureWorkspaceInfo" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.property.azureWorkspaceInfo"></a>
+
+```csharp
+public MwsWorkspacesAzureWorkspaceInfoOutputReference AzureWorkspaceInfo { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference">MwsWorkspacesAzureWorkspaceInfoOutputReference</a>
+
+---
+
 ##### `CloudResourceContainer`<sup>Required</sup> <a name="CloudResourceContainer" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.property.cloudResourceContainer"></a>
 
 ```csharp
@@ -1046,6 +1078,16 @@ public string AwsRegionInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `AzureWorkspaceInfoInput`<sup>Optional</sup> <a name="AzureWorkspaceInfoInput" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspaces.property.azureWorkspaceInfoInput"></a>
+
+```csharp
+public MwsWorkspacesAzureWorkspaceInfo AzureWorkspaceInfoInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfo">MwsWorkspacesAzureWorkspaceInfo</a>
 
 ---
 
@@ -1549,6 +1591,52 @@ public string TfResourceType { get; }
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### MwsWorkspacesAzureWorkspaceInfo <a name="MwsWorkspacesAzureWorkspaceInfo" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfo"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfo.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Databricks;
+
+new MwsWorkspacesAzureWorkspaceInfo {
+    string ResourceGroup = null,
+    string SubscriptionId = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfo.property.resourceGroup">ResourceGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#resource_group MwsWorkspaces#resource_group}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfo.property.subscriptionId">SubscriptionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#subscription_id MwsWorkspaces#subscription_id}. |
+
+---
+
+##### `ResourceGroup`<sup>Optional</sup> <a name="ResourceGroup" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfo.property.resourceGroup"></a>
+
+```csharp
+public string ResourceGroup { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#resource_group MwsWorkspaces#resource_group}.
+
+---
+
+##### `SubscriptionId`<sup>Optional</sup> <a name="SubscriptionId" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfo.property.subscriptionId"></a>
+
+```csharp
+public string SubscriptionId { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#subscription_id MwsWorkspaces#subscription_id}.
+
+---
+
 ### MwsWorkspacesCloudResourceContainer <a name="MwsWorkspacesCloudResourceContainer" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesCloudResourceContainer"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesCloudResourceContainer.Initializer"></a>
@@ -1579,7 +1667,7 @@ public MwsWorkspacesCloudResourceContainerGcp Gcp { get; set; }
 
 gcp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#gcp MwsWorkspaces#gcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#gcp MwsWorkspaces#gcp}
 
 ---
 
@@ -1599,7 +1687,7 @@ new MwsWorkspacesCloudResourceContainerGcp {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesCloudResourceContainerGcp.property.projectId">ProjectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#project_id MwsWorkspaces#project_id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesCloudResourceContainerGcp.property.projectId">ProjectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#project_id MwsWorkspaces#project_id}. |
 
 ---
 
@@ -1611,7 +1699,7 @@ public string ProjectId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#project_id MwsWorkspaces#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#project_id MwsWorkspaces#project_id}.
 
 ---
 
@@ -1633,6 +1721,7 @@ new MwsWorkspacesConfig {
     string AccountId,
     string WorkspaceName,
     string AwsRegion = null,
+    MwsWorkspacesAzureWorkspaceInfo AzureWorkspaceInfo = null,
     string Cloud = null,
     MwsWorkspacesCloudResourceContainer CloudResourceContainer = null,
     double CreationTime = null,
@@ -1672,34 +1761,35 @@ new MwsWorkspacesConfig {
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.accountId">AccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#account_id MwsWorkspaces#account_id}. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.workspaceName">WorkspaceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#workspace_name MwsWorkspaces#workspace_name}. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.awsRegion">AwsRegion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#aws_region MwsWorkspaces#aws_region}. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.cloud">Cloud</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#cloud MwsWorkspaces#cloud}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.accountId">AccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#account_id MwsWorkspaces#account_id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.workspaceName">WorkspaceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#workspace_name MwsWorkspaces#workspace_name}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.awsRegion">AwsRegion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#aws_region MwsWorkspaces#aws_region}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.azureWorkspaceInfo">AzureWorkspaceInfo</a></code> | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfo">MwsWorkspacesAzureWorkspaceInfo</a></code> | azure_workspace_info block. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.cloud">Cloud</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#cloud MwsWorkspaces#cloud}. |
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.cloudResourceContainer">CloudResourceContainer</a></code> | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesCloudResourceContainer">MwsWorkspacesCloudResourceContainer</a></code> | cloud_resource_container block. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.creationTime">CreationTime</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#creation_time MwsWorkspaces#creation_time}. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.credentialsId">CredentialsId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#credentials_id MwsWorkspaces#credentials_id}. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.customerManagedKeyId">CustomerManagedKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#customer_managed_key_id MwsWorkspaces#customer_managed_key_id}. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.customTags">CustomTags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#custom_tags MwsWorkspaces#custom_tags}. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.deploymentName">DeploymentName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#deployment_name MwsWorkspaces#deployment_name}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.creationTime">CreationTime</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#creation_time MwsWorkspaces#creation_time}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.credentialsId">CredentialsId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#credentials_id MwsWorkspaces#credentials_id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.customerManagedKeyId">CustomerManagedKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#customer_managed_key_id MwsWorkspaces#customer_managed_key_id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.customTags">CustomTags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#custom_tags MwsWorkspaces#custom_tags}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.deploymentName">DeploymentName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#deployment_name MwsWorkspaces#deployment_name}. |
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.externalCustomerInfo">ExternalCustomerInfo</a></code> | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesExternalCustomerInfo">MwsWorkspacesExternalCustomerInfo</a></code> | external_customer_info block. |
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.gcpManagedNetworkConfig">GcpManagedNetworkConfig</a></code> | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesGcpManagedNetworkConfig">MwsWorkspacesGcpManagedNetworkConfig</a></code> | gcp_managed_network_config block. |
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.gkeConfig">GkeConfig</a></code> | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesGkeConfig">MwsWorkspacesGkeConfig</a></code> | gke_config block. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#id MwsWorkspaces#id}. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.isNoPublicIpEnabled">IsNoPublicIpEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#is_no_public_ip_enabled MwsWorkspaces#is_no_public_ip_enabled}. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#location MwsWorkspaces#location}. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.managedServicesCustomerManagedKeyId">ManagedServicesCustomerManagedKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#managed_services_customer_managed_key_id MwsWorkspaces#managed_services_customer_managed_key_id}. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.networkId">NetworkId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#network_id MwsWorkspaces#network_id}. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.pricingTier">PricingTier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#pricing_tier MwsWorkspaces#pricing_tier}. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.privateAccessSettingsId">PrivateAccessSettingsId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#private_access_settings_id MwsWorkspaces#private_access_settings_id}. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.storageConfigurationId">StorageConfigurationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#storage_configuration_id MwsWorkspaces#storage_configuration_id}. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.storageCustomerManagedKeyId">StorageCustomerManagedKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#storage_customer_managed_key_id MwsWorkspaces#storage_customer_managed_key_id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#id MwsWorkspaces#id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.isNoPublicIpEnabled">IsNoPublicIpEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#is_no_public_ip_enabled MwsWorkspaces#is_no_public_ip_enabled}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#location MwsWorkspaces#location}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.managedServicesCustomerManagedKeyId">ManagedServicesCustomerManagedKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#managed_services_customer_managed_key_id MwsWorkspaces#managed_services_customer_managed_key_id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.networkId">NetworkId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#network_id MwsWorkspaces#network_id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.pricingTier">PricingTier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#pricing_tier MwsWorkspaces#pricing_tier}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.privateAccessSettingsId">PrivateAccessSettingsId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#private_access_settings_id MwsWorkspaces#private_access_settings_id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.storageConfigurationId">StorageConfigurationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#storage_configuration_id MwsWorkspaces#storage_configuration_id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.storageCustomerManagedKeyId">StorageCustomerManagedKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#storage_customer_managed_key_id MwsWorkspaces#storage_customer_managed_key_id}. |
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesTimeouts">MwsWorkspacesTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.token">Token</a></code> | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesToken">MwsWorkspacesToken</a></code> | token block. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.workspaceId">WorkspaceId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#workspace_id MwsWorkspaces#workspace_id}. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.workspaceStatus">WorkspaceStatus</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#workspace_status MwsWorkspaces#workspace_status}. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.workspaceStatusMessage">WorkspaceStatusMessage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#workspace_status_message MwsWorkspaces#workspace_status_message}. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.workspaceUrl">WorkspaceUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#workspace_url MwsWorkspaces#workspace_url}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.workspaceId">WorkspaceId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#workspace_id MwsWorkspaces#workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.workspaceStatus">WorkspaceStatus</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#workspace_status MwsWorkspaces#workspace_status}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.workspaceStatusMessage">WorkspaceStatusMessage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#workspace_status_message MwsWorkspaces#workspace_status_message}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.workspaceUrl">WorkspaceUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#workspace_url MwsWorkspaces#workspace_url}. |
 
 ---
 
@@ -1781,7 +1871,7 @@ public string AccountId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#account_id MwsWorkspaces#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#account_id MwsWorkspaces#account_id}.
 
 ---
 
@@ -1793,7 +1883,7 @@ public string WorkspaceName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#workspace_name MwsWorkspaces#workspace_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#workspace_name MwsWorkspaces#workspace_name}.
 
 ---
 
@@ -1805,7 +1895,21 @@ public string AwsRegion { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#aws_region MwsWorkspaces#aws_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#aws_region MwsWorkspaces#aws_region}.
+
+---
+
+##### `AzureWorkspaceInfo`<sup>Optional</sup> <a name="AzureWorkspaceInfo" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesConfig.property.azureWorkspaceInfo"></a>
+
+```csharp
+public MwsWorkspacesAzureWorkspaceInfo AzureWorkspaceInfo { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfo">MwsWorkspacesAzureWorkspaceInfo</a>
+
+azure_workspace_info block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#azure_workspace_info MwsWorkspaces#azure_workspace_info}
 
 ---
 
@@ -1817,7 +1921,7 @@ public string Cloud { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#cloud MwsWorkspaces#cloud}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#cloud MwsWorkspaces#cloud}.
 
 ---
 
@@ -1831,7 +1935,7 @@ public MwsWorkspacesCloudResourceContainer CloudResourceContainer { get; set; }
 
 cloud_resource_container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#cloud_resource_container MwsWorkspaces#cloud_resource_container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#cloud_resource_container MwsWorkspaces#cloud_resource_container}
 
 ---
 
@@ -1843,7 +1947,7 @@ public double CreationTime { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#creation_time MwsWorkspaces#creation_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#creation_time MwsWorkspaces#creation_time}.
 
 ---
 
@@ -1855,7 +1959,7 @@ public string CredentialsId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#credentials_id MwsWorkspaces#credentials_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#credentials_id MwsWorkspaces#credentials_id}.
 
 ---
 
@@ -1867,7 +1971,7 @@ public string CustomerManagedKeyId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#customer_managed_key_id MwsWorkspaces#customer_managed_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#customer_managed_key_id MwsWorkspaces#customer_managed_key_id}.
 
 ---
 
@@ -1879,7 +1983,7 @@ public System.Collections.Generic.IDictionary<string, string> CustomTags { get; 
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#custom_tags MwsWorkspaces#custom_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#custom_tags MwsWorkspaces#custom_tags}.
 
 ---
 
@@ -1891,7 +1995,7 @@ public string DeploymentName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#deployment_name MwsWorkspaces#deployment_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#deployment_name MwsWorkspaces#deployment_name}.
 
 ---
 
@@ -1905,7 +2009,7 @@ public MwsWorkspacesExternalCustomerInfo ExternalCustomerInfo { get; set; }
 
 external_customer_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#external_customer_info MwsWorkspaces#external_customer_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#external_customer_info MwsWorkspaces#external_customer_info}
 
 ---
 
@@ -1919,7 +2023,7 @@ public MwsWorkspacesGcpManagedNetworkConfig GcpManagedNetworkConfig { get; set; 
 
 gcp_managed_network_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#gcp_managed_network_config MwsWorkspaces#gcp_managed_network_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#gcp_managed_network_config MwsWorkspaces#gcp_managed_network_config}
 
 ---
 
@@ -1933,7 +2037,7 @@ public MwsWorkspacesGkeConfig GkeConfig { get; set; }
 
 gke_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#gke_config MwsWorkspaces#gke_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#gke_config MwsWorkspaces#gke_config}
 
 ---
 
@@ -1945,7 +2049,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#id MwsWorkspaces#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#id MwsWorkspaces#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1960,7 +2064,7 @@ public object IsNoPublicIpEnabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#is_no_public_ip_enabled MwsWorkspaces#is_no_public_ip_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#is_no_public_ip_enabled MwsWorkspaces#is_no_public_ip_enabled}.
 
 ---
 
@@ -1972,7 +2076,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#location MwsWorkspaces#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#location MwsWorkspaces#location}.
 
 ---
 
@@ -1984,7 +2088,7 @@ public string ManagedServicesCustomerManagedKeyId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#managed_services_customer_managed_key_id MwsWorkspaces#managed_services_customer_managed_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#managed_services_customer_managed_key_id MwsWorkspaces#managed_services_customer_managed_key_id}.
 
 ---
 
@@ -1996,7 +2100,7 @@ public string NetworkId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#network_id MwsWorkspaces#network_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#network_id MwsWorkspaces#network_id}.
 
 ---
 
@@ -2008,7 +2112,7 @@ public string PricingTier { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#pricing_tier MwsWorkspaces#pricing_tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#pricing_tier MwsWorkspaces#pricing_tier}.
 
 ---
 
@@ -2020,7 +2124,7 @@ public string PrivateAccessSettingsId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#private_access_settings_id MwsWorkspaces#private_access_settings_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#private_access_settings_id MwsWorkspaces#private_access_settings_id}.
 
 ---
 
@@ -2032,7 +2136,7 @@ public string StorageConfigurationId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#storage_configuration_id MwsWorkspaces#storage_configuration_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#storage_configuration_id MwsWorkspaces#storage_configuration_id}.
 
 ---
 
@@ -2044,7 +2148,7 @@ public string StorageCustomerManagedKeyId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#storage_customer_managed_key_id MwsWorkspaces#storage_customer_managed_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#storage_customer_managed_key_id MwsWorkspaces#storage_customer_managed_key_id}.
 
 ---
 
@@ -2058,7 +2162,7 @@ public MwsWorkspacesTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#timeouts MwsWorkspaces#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#timeouts MwsWorkspaces#timeouts}
 
 ---
 
@@ -2072,7 +2176,7 @@ public MwsWorkspacesToken Token { get; set; }
 
 token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#token MwsWorkspaces#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#token MwsWorkspaces#token}
 
 ---
 
@@ -2084,7 +2188,7 @@ public double WorkspaceId { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#workspace_id MwsWorkspaces#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#workspace_id MwsWorkspaces#workspace_id}.
 
 ---
 
@@ -2096,7 +2200,7 @@ public string WorkspaceStatus { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#workspace_status MwsWorkspaces#workspace_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#workspace_status MwsWorkspaces#workspace_status}.
 
 ---
 
@@ -2108,7 +2212,7 @@ public string WorkspaceStatusMessage { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#workspace_status_message MwsWorkspaces#workspace_status_message}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#workspace_status_message MwsWorkspaces#workspace_status_message}.
 
 ---
 
@@ -2120,7 +2224,7 @@ public string WorkspaceUrl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#workspace_url MwsWorkspaces#workspace_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#workspace_url MwsWorkspaces#workspace_url}.
 
 ---
 
@@ -2142,9 +2246,9 @@ new MwsWorkspacesExternalCustomerInfo {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesExternalCustomerInfo.property.authoritativeUserEmail">AuthoritativeUserEmail</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#authoritative_user_email MwsWorkspaces#authoritative_user_email}. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesExternalCustomerInfo.property.authoritativeUserFullName">AuthoritativeUserFullName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#authoritative_user_full_name MwsWorkspaces#authoritative_user_full_name}. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesExternalCustomerInfo.property.customerName">CustomerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#customer_name MwsWorkspaces#customer_name}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesExternalCustomerInfo.property.authoritativeUserEmail">AuthoritativeUserEmail</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#authoritative_user_email MwsWorkspaces#authoritative_user_email}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesExternalCustomerInfo.property.authoritativeUserFullName">AuthoritativeUserFullName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#authoritative_user_full_name MwsWorkspaces#authoritative_user_full_name}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesExternalCustomerInfo.property.customerName">CustomerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#customer_name MwsWorkspaces#customer_name}. |
 
 ---
 
@@ -2156,7 +2260,7 @@ public string AuthoritativeUserEmail { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#authoritative_user_email MwsWorkspaces#authoritative_user_email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#authoritative_user_email MwsWorkspaces#authoritative_user_email}.
 
 ---
 
@@ -2168,7 +2272,7 @@ public string AuthoritativeUserFullName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#authoritative_user_full_name MwsWorkspaces#authoritative_user_full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#authoritative_user_full_name MwsWorkspaces#authoritative_user_full_name}.
 
 ---
 
@@ -2180,7 +2284,7 @@ public string CustomerName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#customer_name MwsWorkspaces#customer_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#customer_name MwsWorkspaces#customer_name}.
 
 ---
 
@@ -2202,9 +2306,9 @@ new MwsWorkspacesGcpManagedNetworkConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesGcpManagedNetworkConfig.property.subnetCidr">SubnetCidr</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#subnet_cidr MwsWorkspaces#subnet_cidr}. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesGcpManagedNetworkConfig.property.gkeClusterPodIpRange">GkeClusterPodIpRange</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#gke_cluster_pod_ip_range MwsWorkspaces#gke_cluster_pod_ip_range}. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesGcpManagedNetworkConfig.property.gkeClusterServiceIpRange">GkeClusterServiceIpRange</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#gke_cluster_service_ip_range MwsWorkspaces#gke_cluster_service_ip_range}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesGcpManagedNetworkConfig.property.subnetCidr">SubnetCidr</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#subnet_cidr MwsWorkspaces#subnet_cidr}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesGcpManagedNetworkConfig.property.gkeClusterPodIpRange">GkeClusterPodIpRange</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#gke_cluster_pod_ip_range MwsWorkspaces#gke_cluster_pod_ip_range}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesGcpManagedNetworkConfig.property.gkeClusterServiceIpRange">GkeClusterServiceIpRange</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#gke_cluster_service_ip_range MwsWorkspaces#gke_cluster_service_ip_range}. |
 
 ---
 
@@ -2216,7 +2320,7 @@ public string SubnetCidr { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#subnet_cidr MwsWorkspaces#subnet_cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#subnet_cidr MwsWorkspaces#subnet_cidr}.
 
 ---
 
@@ -2228,7 +2332,7 @@ public string GkeClusterPodIpRange { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#gke_cluster_pod_ip_range MwsWorkspaces#gke_cluster_pod_ip_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#gke_cluster_pod_ip_range MwsWorkspaces#gke_cluster_pod_ip_range}.
 
 ---
 
@@ -2240,7 +2344,7 @@ public string GkeClusterServiceIpRange { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#gke_cluster_service_ip_range MwsWorkspaces#gke_cluster_service_ip_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#gke_cluster_service_ip_range MwsWorkspaces#gke_cluster_service_ip_range}.
 
 ---
 
@@ -2261,8 +2365,8 @@ new MwsWorkspacesGkeConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesGkeConfig.property.connectivityType">ConnectivityType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#connectivity_type MwsWorkspaces#connectivity_type}. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesGkeConfig.property.masterIpRange">MasterIpRange</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#master_ip_range MwsWorkspaces#master_ip_range}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesGkeConfig.property.connectivityType">ConnectivityType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#connectivity_type MwsWorkspaces#connectivity_type}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesGkeConfig.property.masterIpRange">MasterIpRange</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#master_ip_range MwsWorkspaces#master_ip_range}. |
 
 ---
 
@@ -2274,7 +2378,7 @@ public string ConnectivityType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#connectivity_type MwsWorkspaces#connectivity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#connectivity_type MwsWorkspaces#connectivity_type}.
 
 ---
 
@@ -2286,7 +2390,7 @@ public string MasterIpRange { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#master_ip_range MwsWorkspaces#master_ip_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#master_ip_range MwsWorkspaces#master_ip_range}.
 
 ---
 
@@ -2308,9 +2412,9 @@ new MwsWorkspacesTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#create MwsWorkspaces#create}. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#read MwsWorkspaces#read}. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#update MwsWorkspaces#update}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#create MwsWorkspaces#create}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#read MwsWorkspaces#read}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#update MwsWorkspaces#update}. |
 
 ---
 
@@ -2322,7 +2426,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#create MwsWorkspaces#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#create MwsWorkspaces#create}.
 
 ---
 
@@ -2334,7 +2438,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#read MwsWorkspaces#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#read MwsWorkspaces#read}.
 
 ---
 
@@ -2346,7 +2450,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#update MwsWorkspaces#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#update MwsWorkspaces#update}.
 
 ---
 
@@ -2369,10 +2473,10 @@ new MwsWorkspacesToken {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesToken.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#comment MwsWorkspaces#comment}. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesToken.property.lifetimeSeconds">LifetimeSeconds</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#lifetime_seconds MwsWorkspaces#lifetime_seconds}. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesToken.property.tokenId">TokenId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#token_id MwsWorkspaces#token_id}. |
-| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesToken.property.tokenValue">TokenValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#token_value MwsWorkspaces#token_value}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesToken.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#comment MwsWorkspaces#comment}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesToken.property.lifetimeSeconds">LifetimeSeconds</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#lifetime_seconds MwsWorkspaces#lifetime_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesToken.property.tokenId">TokenId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#token_id MwsWorkspaces#token_id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesToken.property.tokenValue">TokenValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#token_value MwsWorkspaces#token_value}. |
 
 ---
 
@@ -2384,7 +2488,7 @@ public string Comment { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#comment MwsWorkspaces#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#comment MwsWorkspaces#comment}.
 
 ---
 
@@ -2396,7 +2500,7 @@ public double LifetimeSeconds { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#lifetime_seconds MwsWorkspaces#lifetime_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#lifetime_seconds MwsWorkspaces#lifetime_seconds}.
 
 ---
 
@@ -2408,7 +2512,7 @@ public string TokenId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#token_id MwsWorkspaces#token_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#token_id MwsWorkspaces#token_id}.
 
 ---
 
@@ -2420,11 +2524,318 @@ public string TokenValue { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.72.0/docs/resources/mws_workspaces#token_value MwsWorkspaces#token_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#token_value MwsWorkspaces#token_value}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### MwsWorkspacesAzureWorkspaceInfoOutputReference <a name="MwsWorkspacesAzureWorkspaceInfoOutputReference" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Databricks;
+
+new MwsWorkspacesAzureWorkspaceInfoOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.resetResourceGroup">ResetResourceGroup</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.resetSubscriptionId">ResetSubscriptionId</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetResourceGroup` <a name="ResetResourceGroup" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.resetResourceGroup"></a>
+
+```csharp
+private void ResetResourceGroup()
+```
+
+##### `ResetSubscriptionId` <a name="ResetSubscriptionId" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.resetSubscriptionId"></a>
+
+```csharp
+private void ResetSubscriptionId()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.property.resourceGroupInput">ResourceGroupInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.property.subscriptionIdInput">SubscriptionIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.property.resourceGroup">ResourceGroup</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.property.subscriptionId">SubscriptionId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfo">MwsWorkspacesAzureWorkspaceInfo</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ResourceGroupInput`<sup>Optional</sup> <a name="ResourceGroupInput" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.property.resourceGroupInput"></a>
+
+```csharp
+public string ResourceGroupInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SubscriptionIdInput`<sup>Optional</sup> <a name="SubscriptionIdInput" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.property.subscriptionIdInput"></a>
+
+```csharp
+public string SubscriptionIdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ResourceGroup`<sup>Required</sup> <a name="ResourceGroup" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.property.resourceGroup"></a>
+
+```csharp
+public string ResourceGroup { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SubscriptionId`<sup>Required</sup> <a name="SubscriptionId" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.property.subscriptionId"></a>
+
+```csharp
+public string SubscriptionId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfoOutputReference.property.internalValue"></a>
+
+```csharp
+public MwsWorkspacesAzureWorkspaceInfo InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesAzureWorkspaceInfo">MwsWorkspacesAzureWorkspaceInfo</a>
+
+---
+
 
 ### MwsWorkspacesCloudResourceContainerGcpOutputReference <a name="MwsWorkspacesCloudResourceContainerGcpOutputReference" id="@cdktf/provider-databricks.mwsWorkspaces.MwsWorkspacesCloudResourceContainerGcpOutputReference"></a>
 

@@ -97,6 +97,7 @@ The following submodules are available:
 - [defaultNamespaceSetting](./defaultNamespaceSetting.go.md)
 - [directory](./directory.go.md)
 - [disableLegacyAccessSetting](./disableLegacyAccessSetting.go.md)
+- [disableLegacyDbfsSetting](./disableLegacyDbfsSetting.go.md)
 - [enhancedSecurityMonitoringWorkspaceSetting](./enhancedSecurityMonitoringWorkspaceSetting.go.md)
 - [entitlements](./entitlements.go.md)
 - [externalLocation](./externalLocation.go.md)
