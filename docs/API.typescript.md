@@ -97,6 +97,7 @@ The following submodules are available:
 - [defaultNamespaceSetting](./defaultNamespaceSetting.typescript.md)
 - [directory](./directory.typescript.md)
 - [disableLegacyAccessSetting](./disableLegacyAccessSetting.typescript.md)
+- [disableLegacyDbfsSetting](./disableLegacyDbfsSetting.typescript.md)
 - [enhancedSecurityMonitoringWorkspaceSetting](./enhancedSecurityMonitoringWorkspaceSetting.typescript.md)
 - [entitlements](./entitlements.typescript.md)
 - [externalLocation](./externalLocation.typescript.md)
