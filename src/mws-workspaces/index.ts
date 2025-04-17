@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces
+// https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,259 +13,136 @@ import * as cdktf from 'cdktf';
 
 export interface MwsWorkspacesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#account_id MwsWorkspaces#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#account_id MwsWorkspaces#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#aws_region MwsWorkspaces#aws_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#aws_region MwsWorkspaces#aws_region}
   */
   readonly awsRegion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#cloud MwsWorkspaces#cloud}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#cloud MwsWorkspaces#cloud}
   */
   readonly cloud?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#creation_time MwsWorkspaces#creation_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#creation_time MwsWorkspaces#creation_time}
   */
   readonly creationTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#credentials_id MwsWorkspaces#credentials_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#credentials_id MwsWorkspaces#credentials_id}
   */
   readonly credentialsId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#custom_tags MwsWorkspaces#custom_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#custom_tags MwsWorkspaces#custom_tags}
   */
   readonly customTags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#customer_managed_key_id MwsWorkspaces#customer_managed_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#customer_managed_key_id MwsWorkspaces#customer_managed_key_id}
   */
   readonly customerManagedKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#deployment_name MwsWorkspaces#deployment_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#deployment_name MwsWorkspaces#deployment_name}
   */
   readonly deploymentName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#id MwsWorkspaces#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#id MwsWorkspaces#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#is_no_public_ip_enabled MwsWorkspaces#is_no_public_ip_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#is_no_public_ip_enabled MwsWorkspaces#is_no_public_ip_enabled}
   */
   readonly isNoPublicIpEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#location MwsWorkspaces#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#location MwsWorkspaces#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#managed_services_customer_managed_key_id MwsWorkspaces#managed_services_customer_managed_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#managed_services_customer_managed_key_id MwsWorkspaces#managed_services_customer_managed_key_id}
   */
   readonly managedServicesCustomerManagedKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#network_id MwsWorkspaces#network_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#network_id MwsWorkspaces#network_id}
   */
   readonly networkId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#pricing_tier MwsWorkspaces#pricing_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#pricing_tier MwsWorkspaces#pricing_tier}
   */
   readonly pricingTier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#private_access_settings_id MwsWorkspaces#private_access_settings_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#private_access_settings_id MwsWorkspaces#private_access_settings_id}
   */
   readonly privateAccessSettingsId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#storage_configuration_id MwsWorkspaces#storage_configuration_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#storage_configuration_id MwsWorkspaces#storage_configuration_id}
   */
   readonly storageConfigurationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#storage_customer_managed_key_id MwsWorkspaces#storage_customer_managed_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#storage_customer_managed_key_id MwsWorkspaces#storage_customer_managed_key_id}
   */
   readonly storageCustomerManagedKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#workspace_id MwsWorkspaces#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#workspace_id MwsWorkspaces#workspace_id}
   */
   readonly workspaceId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#workspace_name MwsWorkspaces#workspace_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#workspace_name MwsWorkspaces#workspace_name}
   */
   readonly workspaceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#workspace_status MwsWorkspaces#workspace_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#workspace_status MwsWorkspaces#workspace_status}
   */
   readonly workspaceStatus?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#workspace_status_message MwsWorkspaces#workspace_status_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#workspace_status_message MwsWorkspaces#workspace_status_message}
   */
   readonly workspaceStatusMessage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#workspace_url MwsWorkspaces#workspace_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#workspace_url MwsWorkspaces#workspace_url}
   */
   readonly workspaceUrl?: string;
   /**
-  * azure_workspace_info block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#azure_workspace_info MwsWorkspaces#azure_workspace_info}
-  */
-  readonly azureWorkspaceInfo?: MwsWorkspacesAzureWorkspaceInfo;
-  /**
   * cloud_resource_container block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#cloud_resource_container MwsWorkspaces#cloud_resource_container}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#cloud_resource_container MwsWorkspaces#cloud_resource_container}
   */
   readonly cloudResourceContainer?: MwsWorkspacesCloudResourceContainer;
   /**
   * external_customer_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#external_customer_info MwsWorkspaces#external_customer_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#external_customer_info MwsWorkspaces#external_customer_info}
   */
   readonly externalCustomerInfo?: MwsWorkspacesExternalCustomerInfo;
   /**
   * gcp_managed_network_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#gcp_managed_network_config MwsWorkspaces#gcp_managed_network_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#gcp_managed_network_config MwsWorkspaces#gcp_managed_network_config}
   */
   readonly gcpManagedNetworkConfig?: MwsWorkspacesGcpManagedNetworkConfig;
   /**
   * gke_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#gke_config MwsWorkspaces#gke_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#gke_config MwsWorkspaces#gke_config}
   */
   readonly gkeConfig?: MwsWorkspacesGkeConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#timeouts MwsWorkspaces#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#timeouts MwsWorkspaces#timeouts}
   */
   readonly timeouts?: MwsWorkspacesTimeouts;
   /**
   * token block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#token MwsWorkspaces#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#token MwsWorkspaces#token}
   */
   readonly token?: MwsWorkspacesToken;
 }
-export interface MwsWorkspacesAzureWorkspaceInfo {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#resource_group MwsWorkspaces#resource_group}
-  */
-  readonly resourceGroup?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#subscription_id MwsWorkspaces#subscription_id}
-  */
-  readonly subscriptionId?: string;
-}
-
-export function mwsWorkspacesAzureWorkspaceInfoToTerraform(struct?: MwsWorkspacesAzureWorkspaceInfoOutputReference | MwsWorkspacesAzureWorkspaceInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    resource_group: cdktf.stringToTerraform(struct!.resourceGroup),
-    subscription_id: cdktf.stringToTerraform(struct!.subscriptionId),
-  }
-}
-
-
-export function mwsWorkspacesAzureWorkspaceInfoToHclTerraform(struct?: MwsWorkspacesAzureWorkspaceInfoOutputReference | MwsWorkspacesAzureWorkspaceInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    resource_group: {
-      value: cdktf.stringToHclTerraform(struct!.resourceGroup),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    subscription_id: {
-      value: cdktf.stringToHclTerraform(struct!.subscriptionId),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class MwsWorkspacesAzureWorkspaceInfoOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): MwsWorkspacesAzureWorkspaceInfo | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._resourceGroup !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.resourceGroup = this._resourceGroup;
-    }
-    if (this._subscriptionId !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.subscriptionId = this._subscriptionId;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MwsWorkspacesAzureWorkspaceInfo | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._resourceGroup = undefined;
-      this._subscriptionId = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._resourceGroup = value.resourceGroup;
-      this._subscriptionId = value.subscriptionId;
-    }
-  }
-
-  // resource_group - computed: false, optional: true, required: false
-  private _resourceGroup?: string; 
-  public get resourceGroup() {
-    return this.getStringAttribute('resource_group');
-  }
-  public set resourceGroup(value: string) {
-    this._resourceGroup = value;
-  }
-  public resetResourceGroup() {
-    this._resourceGroup = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get resourceGroupInput() {
-    return this._resourceGroup;
-  }
-
-  // subscription_id - computed: false, optional: true, required: false
-  private _subscriptionId?: string; 
-  public get subscriptionId() {
-    return this.getStringAttribute('subscription_id');
-  }
-  public set subscriptionId(value: string) {
-    this._subscriptionId = value;
-  }
-  public resetSubscriptionId() {
-    this._subscriptionId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get subscriptionIdInput() {
-    return this._subscriptionId;
-  }
-}
 export interface MwsWorkspacesCloudResourceContainerGcp {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#project_id MwsWorkspaces#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#project_id MwsWorkspaces#project_id}
   */
   readonly projectId: string;
 }
@@ -348,7 +225,7 @@ export interface MwsWorkspacesCloudResourceContainer {
   /**
   * gcp block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#gcp MwsWorkspaces#gcp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#gcp MwsWorkspaces#gcp}
   */
   readonly gcp: MwsWorkspacesCloudResourceContainerGcp;
 }
@@ -429,15 +306,15 @@ export class MwsWorkspacesCloudResourceContainerOutputReference extends cdktf.Co
 }
 export interface MwsWorkspacesExternalCustomerInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#authoritative_user_email MwsWorkspaces#authoritative_user_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#authoritative_user_email MwsWorkspaces#authoritative_user_email}
   */
   readonly authoritativeUserEmail: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#authoritative_user_full_name MwsWorkspaces#authoritative_user_full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#authoritative_user_full_name MwsWorkspaces#authoritative_user_full_name}
   */
   readonly authoritativeUserFullName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#customer_name MwsWorkspaces#customer_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#customer_name MwsWorkspaces#customer_name}
   */
   readonly customerName: string;
 }
@@ -570,15 +447,15 @@ export class MwsWorkspacesExternalCustomerInfoOutputReference extends cdktf.Comp
 }
 export interface MwsWorkspacesGcpManagedNetworkConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#gke_cluster_pod_ip_range MwsWorkspaces#gke_cluster_pod_ip_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#gke_cluster_pod_ip_range MwsWorkspaces#gke_cluster_pod_ip_range}
   */
   readonly gkeClusterPodIpRange?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#gke_cluster_service_ip_range MwsWorkspaces#gke_cluster_service_ip_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#gke_cluster_service_ip_range MwsWorkspaces#gke_cluster_service_ip_range}
   */
   readonly gkeClusterServiceIpRange?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#subnet_cidr MwsWorkspaces#subnet_cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#subnet_cidr MwsWorkspaces#subnet_cidr}
   */
   readonly subnetCidr: string;
 }
@@ -717,11 +594,11 @@ export class MwsWorkspacesGcpManagedNetworkConfigOutputReference extends cdktf.C
 }
 export interface MwsWorkspacesGkeConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#connectivity_type MwsWorkspaces#connectivity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#connectivity_type MwsWorkspaces#connectivity_type}
   */
   readonly connectivityType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#master_ip_range MwsWorkspaces#master_ip_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#master_ip_range MwsWorkspaces#master_ip_range}
   */
   readonly masterIpRange?: string;
 }
@@ -834,15 +711,15 @@ export class MwsWorkspacesGkeConfigOutputReference extends cdktf.ComplexObject {
 }
 export interface MwsWorkspacesTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#create MwsWorkspaces#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#create MwsWorkspaces#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#read MwsWorkspaces#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#read MwsWorkspaces#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#update MwsWorkspaces#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#update MwsWorkspaces#update}
   */
   readonly update?: string;
 }
@@ -994,19 +871,19 @@ export class MwsWorkspacesTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 export interface MwsWorkspacesToken {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#comment MwsWorkspaces#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#comment MwsWorkspaces#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#lifetime_seconds MwsWorkspaces#lifetime_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#lifetime_seconds MwsWorkspaces#lifetime_seconds}
   */
   readonly lifetimeSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#token_id MwsWorkspaces#token_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#token_id MwsWorkspaces#token_id}
   */
   readonly tokenId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#token_value MwsWorkspaces#token_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#token_value MwsWorkspaces#token_value}
   */
   readonly tokenValue?: string;
 }
@@ -1177,7 +1054,7 @@ export class MwsWorkspacesTokenOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces databricks_mws_workspaces}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces databricks_mws_workspaces}
 */
 export class MwsWorkspaces extends cdktf.TerraformResource {
 
@@ -1193,7 +1070,7 @@ export class MwsWorkspaces extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a MwsWorkspaces resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MwsWorkspaces to import
-  * @param importFromId The id of the existing MwsWorkspaces that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MwsWorkspaces that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MwsWorkspaces to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1205,7 +1082,7 @@ export class MwsWorkspaces extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.73.0/docs/resources/mws_workspaces databricks_mws_workspaces} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/mws_workspaces databricks_mws_workspaces} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1216,7 +1093,7 @@ export class MwsWorkspaces extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_mws_workspaces',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.73.0',
+        providerVersion: '1.74.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1249,7 +1126,6 @@ export class MwsWorkspaces extends cdktf.TerraformResource {
     this._workspaceStatus = config.workspaceStatus;
     this._workspaceStatusMessage = config.workspaceStatusMessage;
     this._workspaceUrl = config.workspaceUrl;
-    this._azureWorkspaceInfo.internalValue = config.azureWorkspaceInfo;
     this._cloudResourceContainer.internalValue = config.cloudResourceContainer;
     this._externalCustomerInfo.internalValue = config.externalCustomerInfo;
     this._gcpManagedNetworkConfig.internalValue = config.gcpManagedNetworkConfig;
@@ -1291,7 +1167,7 @@ export class MwsWorkspaces extends cdktf.TerraformResource {
     return this._awsRegion;
   }
 
-  // cloud - computed: false, optional: true, required: false
+  // cloud - computed: true, optional: true, required: false
   private _cloud?: string; 
   public get cloud() {
     return this.getStringAttribute('cloud');
@@ -1613,22 +1489,6 @@ export class MwsWorkspaces extends cdktf.TerraformResource {
     return this._workspaceUrl;
   }
 
-  // azure_workspace_info - computed: false, optional: true, required: false
-  private _azureWorkspaceInfo = new MwsWorkspacesAzureWorkspaceInfoOutputReference(this, "azure_workspace_info");
-  public get azureWorkspaceInfo() {
-    return this._azureWorkspaceInfo;
-  }
-  public putAzureWorkspaceInfo(value: MwsWorkspacesAzureWorkspaceInfo) {
-    this._azureWorkspaceInfo.internalValue = value;
-  }
-  public resetAzureWorkspaceInfo() {
-    this._azureWorkspaceInfo.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get azureWorkspaceInfoInput() {
-    return this._azureWorkspaceInfo.internalValue;
-  }
-
   // cloud_resource_container - computed: false, optional: true, required: false
   private _cloudResourceContainer = new MwsWorkspacesCloudResourceContainerOutputReference(this, "cloud_resource_container");
   public get cloudResourceContainer() {
@@ -1753,7 +1613,6 @@ export class MwsWorkspaces extends cdktf.TerraformResource {
       workspace_status: cdktf.stringToTerraform(this._workspaceStatus),
       workspace_status_message: cdktf.stringToTerraform(this._workspaceStatusMessage),
       workspace_url: cdktf.stringToTerraform(this._workspaceUrl),
-      azure_workspace_info: mwsWorkspacesAzureWorkspaceInfoToTerraform(this._azureWorkspaceInfo.internalValue),
       cloud_resource_container: mwsWorkspacesCloudResourceContainerToTerraform(this._cloudResourceContainer.internalValue),
       external_customer_info: mwsWorkspacesExternalCustomerInfoToTerraform(this._externalCustomerInfo.internalValue),
       gcp_managed_network_config: mwsWorkspacesGcpManagedNetworkConfigToTerraform(this._gcpManagedNetworkConfig.internalValue),
@@ -1896,12 +1755,6 @@ export class MwsWorkspaces extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      azure_workspace_info: {
-        value: mwsWorkspacesAzureWorkspaceInfoToHclTerraform(this._azureWorkspaceInfo.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "MwsWorkspacesAzureWorkspaceInfoList",
       },
       cloud_resource_container: {
         value: mwsWorkspacesCloudResourceContainerToHclTerraform(this._cloudResourceContainer.internalValue),
