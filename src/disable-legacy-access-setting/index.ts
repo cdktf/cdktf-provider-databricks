@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/disable_legacy_access_setting
+// https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/disable_legacy_access_setting
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,30 +8,30 @@ import * as cdktf from 'cdktf';
 
 export interface DisableLegacyAccessSettingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/disable_legacy_access_setting#etag DisableLegacyAccessSetting#etag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/disable_legacy_access_setting#etag DisableLegacyAccessSetting#etag}
   */
   readonly etag?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/disable_legacy_access_setting#id DisableLegacyAccessSetting#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/disable_legacy_access_setting#id DisableLegacyAccessSetting#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/disable_legacy_access_setting#setting_name DisableLegacyAccessSetting#setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/disable_legacy_access_setting#setting_name DisableLegacyAccessSetting#setting_name}
   */
   readonly settingName?: string;
   /**
   * disable_legacy_access block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/disable_legacy_access_setting#disable_legacy_access DisableLegacyAccessSetting#disable_legacy_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/disable_legacy_access_setting#disable_legacy_access DisableLegacyAccessSetting#disable_legacy_access}
   */
   readonly disableLegacyAccess: DisableLegacyAccessSettingDisableLegacyAccess;
 }
 export interface DisableLegacyAccessSettingDisableLegacyAccess {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/disable_legacy_access_setting#value DisableLegacyAccessSetting#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/disable_legacy_access_setting#value DisableLegacyAccessSetting#value}
   */
   readonly value: boolean | cdktf.IResolvable;
 }
@@ -117,7 +112,7 @@ export class DisableLegacyAccessSettingDisableLegacyAccessOutputReference extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/disable_legacy_access_setting databricks_disable_legacy_access_setting}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/disable_legacy_access_setting databricks_disable_legacy_access_setting}
 */
 export class DisableLegacyAccessSetting extends cdktf.TerraformResource {
 
@@ -133,7 +128,7 @@ export class DisableLegacyAccessSetting extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DisableLegacyAccessSetting resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DisableLegacyAccessSetting to import
-  * @param importFromId The id of the existing DisableLegacyAccessSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/disable_legacy_access_setting#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DisableLegacyAccessSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/disable_legacy_access_setting#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DisableLegacyAccessSetting to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -145,7 +140,7 @@ export class DisableLegacyAccessSetting extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/disable_legacy_access_setting databricks_disable_legacy_access_setting} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/disable_legacy_access_setting databricks_disable_legacy_access_setting} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -156,7 +151,7 @@ export class DisableLegacyAccessSetting extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_disable_legacy_access_setting',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.74.0',
+        providerVersion: '1.75.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
