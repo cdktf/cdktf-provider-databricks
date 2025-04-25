@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/sql_visualization
+// https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/sql_visualization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,44 +13,44 @@ import * as cdktf from 'cdktf';
 
 export interface SqlVisualizationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/sql_visualization#description SqlVisualization#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/sql_visualization#description SqlVisualization#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/sql_visualization#id SqlVisualization#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/sql_visualization#id SqlVisualization#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/sql_visualization#name SqlVisualization#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/sql_visualization#name SqlVisualization#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/sql_visualization#options SqlVisualization#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/sql_visualization#options SqlVisualization#options}
   */
   readonly options: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/sql_visualization#query_id SqlVisualization#query_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/sql_visualization#query_id SqlVisualization#query_id}
   */
   readonly queryId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/sql_visualization#query_plan SqlVisualization#query_plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/sql_visualization#query_plan SqlVisualization#query_plan}
   */
   readonly queryPlan?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/sql_visualization#type SqlVisualization#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/sql_visualization#type SqlVisualization#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/sql_visualization#visualization_id SqlVisualization#visualization_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/sql_visualization#visualization_id SqlVisualization#visualization_id}
   */
   readonly visualizationId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/sql_visualization databricks_sql_visualization}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/sql_visualization databricks_sql_visualization}
 */
 export class SqlVisualization extends cdktf.TerraformResource {
 
@@ -66,7 +66,7 @@ export class SqlVisualization extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SqlVisualization resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SqlVisualization to import
-  * @param importFromId The id of the existing SqlVisualization that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/sql_visualization#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SqlVisualization that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/sql_visualization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SqlVisualization to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -78,7 +78,7 @@ export class SqlVisualization extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/resources/sql_visualization databricks_sql_visualization} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/resources/sql_visualization databricks_sql_visualization} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +89,7 @@ export class SqlVisualization extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_sql_visualization',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.74.0',
+        providerVersion: '1.75.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
