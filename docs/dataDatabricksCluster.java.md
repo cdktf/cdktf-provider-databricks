@@ -4,7 +4,7 @@
 
 ### DataDatabricksCluster <a name="DataDatabricksCluster" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster databricks_cluster}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster databricks_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.Initializer"></a>
 
@@ -41,10 +41,10 @@ DataDatabricksCluster.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.Initializer.parameter.clusterId">clusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#cluster_id DataDatabricksCluster#cluster_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.Initializer.parameter.clusterId">clusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#cluster_id DataDatabricksCluster#cluster_id}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.Initializer.parameter.clusterInfo">clusterInfo</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo">DataDatabricksClusterClusterInfo</a></code> | cluster_info block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.Initializer.parameter.clusterName">clusterName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#cluster_name DataDatabricksCluster#cluster_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#id DataDatabricksCluster#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.Initializer.parameter.clusterName">clusterName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#cluster_name DataDatabricksCluster#cluster_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#id DataDatabricksCluster#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#cluster_id DataDatabricksCluster#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#cluster_id DataDatabricksCluster#cluster_id}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 cluster_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#cluster_info DataDatabricksCluster#cluster_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#cluster_info DataDatabricksCluster#cluster_info}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#cluster_name DataDatabricksCluster#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#cluster_name DataDatabricksCluster#cluster_name}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#id DataDatabricksCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#id DataDatabricksCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -505,7 +505,7 @@ The construct id used in the generated config for the DataDatabricksCluster to i
 
 The id of the existing DataDatabricksCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -836,52 +836,52 @@ DataDatabricksClusterClusterInfo.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.autoscale">autoscale</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAutoscale">DataDatabricksClusterClusterInfoAutoscale</a></code> | autoscale block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.autoterminationMinutes">autoterminationMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#autotermination_minutes DataDatabricksCluster#autotermination_minutes}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.autoterminationMinutes">autoterminationMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#autotermination_minutes DataDatabricksCluster#autotermination_minutes}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.awsAttributes">awsAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAwsAttributes">DataDatabricksClusterClusterInfoAwsAttributes</a></code> | aws_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.azureAttributes">azureAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAzureAttributes">DataDatabricksClusterClusterInfoAzureAttributes</a></code> | azure_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.clusterCores">clusterCores</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#cluster_cores DataDatabricksCluster#cluster_cores}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.clusterId">clusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#cluster_id DataDatabricksCluster#cluster_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.clusterCores">clusterCores</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#cluster_cores DataDatabricksCluster#cluster_cores}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.clusterId">clusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#cluster_id DataDatabricksCluster#cluster_id}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.clusterLogConf">clusterLogConf</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConf">DataDatabricksClusterClusterInfoClusterLogConf</a></code> | cluster_log_conf block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.clusterLogStatus">clusterLogStatus</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogStatus">DataDatabricksClusterClusterInfoClusterLogStatus</a></code> | cluster_log_status block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.clusterMemoryMb">clusterMemoryMb</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#cluster_memory_mb DataDatabricksCluster#cluster_memory_mb}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.clusterName">clusterName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#cluster_name DataDatabricksCluster#cluster_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.clusterSource">clusterSource</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#cluster_source DataDatabricksCluster#cluster_source}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.creatorUserName">creatorUserName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#creator_user_name DataDatabricksCluster#creator_user_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.customTags">customTags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#custom_tags DataDatabricksCluster#custom_tags}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.dataSecurityMode">dataSecurityMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#data_security_mode DataDatabricksCluster#data_security_mode}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.defaultTags">defaultTags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#default_tags DataDatabricksCluster#default_tags}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.clusterMemoryMb">clusterMemoryMb</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#cluster_memory_mb DataDatabricksCluster#cluster_memory_mb}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.clusterName">clusterName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#cluster_name DataDatabricksCluster#cluster_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.clusterSource">clusterSource</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#cluster_source DataDatabricksCluster#cluster_source}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.creatorUserName">creatorUserName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#creator_user_name DataDatabricksCluster#creator_user_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.customTags">customTags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#custom_tags DataDatabricksCluster#custom_tags}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.dataSecurityMode">dataSecurityMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#data_security_mode DataDatabricksCluster#data_security_mode}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.defaultTags">defaultTags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#default_tags DataDatabricksCluster#default_tags}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.dockerImage">dockerImage</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDockerImage">DataDatabricksClusterClusterInfoDockerImage</a></code> | docker_image block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.driver">driver</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriver">DataDatabricksClusterClusterInfoDriver</a></code> | driver block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.driverInstancePoolId">driverInstancePoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#driver_instance_pool_id DataDatabricksCluster#driver_instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.driverNodeTypeId">driverNodeTypeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#driver_node_type_id DataDatabricksCluster#driver_node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.enableElasticDisk">enableElasticDisk</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#enable_elastic_disk DataDatabricksCluster#enable_elastic_disk}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.enableLocalDiskEncryption">enableLocalDiskEncryption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#enable_local_disk_encryption DataDatabricksCluster#enable_local_disk_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.driverInstancePoolId">driverInstancePoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#driver_instance_pool_id DataDatabricksCluster#driver_instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.driverNodeTypeId">driverNodeTypeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#driver_node_type_id DataDatabricksCluster#driver_node_type_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.enableElasticDisk">enableElasticDisk</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#enable_elastic_disk DataDatabricksCluster#enable_elastic_disk}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.enableLocalDiskEncryption">enableLocalDiskEncryption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#enable_local_disk_encryption DataDatabricksCluster#enable_local_disk_encryption}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.executors">executors</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors">DataDatabricksClusterClusterInfoExecutors</a>></code> | executors block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.gcpAttributes">gcpAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributes">DataDatabricksClusterClusterInfoGcpAttributes</a></code> | gcp_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.initScripts">initScripts</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScripts">DataDatabricksClusterClusterInfoInitScripts</a>></code> | init_scripts block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.instancePoolId">instancePoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#instance_pool_id DataDatabricksCluster#instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.isSingleNode">isSingleNode</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#is_single_node DataDatabricksCluster#is_single_node}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.jdbcPort">jdbcPort</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#jdbc_port DataDatabricksCluster#jdbc_port}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.kind">kind</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#kind DataDatabricksCluster#kind}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.lastRestartedTime">lastRestartedTime</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#last_restarted_time DataDatabricksCluster#last_restarted_time}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.lastStateLossTime">lastStateLossTime</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#last_state_loss_time DataDatabricksCluster#last_state_loss_time}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.nodeTypeId">nodeTypeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#node_type_id DataDatabricksCluster#node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.numWorkers">numWorkers</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#num_workers DataDatabricksCluster#num_workers}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.policyId">policyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#policy_id DataDatabricksCluster#policy_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.runtimeEngine">runtimeEngine</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#runtime_engine DataDatabricksCluster#runtime_engine}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.singleUserName">singleUserName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#single_user_name DataDatabricksCluster#single_user_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.sparkConf">sparkConf</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#spark_conf DataDatabricksCluster#spark_conf}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.sparkContextId">sparkContextId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#spark_context_id DataDatabricksCluster#spark_context_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.sparkEnvVars">sparkEnvVars</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#spark_env_vars DataDatabricksCluster#spark_env_vars}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.sparkVersion">sparkVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#spark_version DataDatabricksCluster#spark_version}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.instancePoolId">instancePoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#instance_pool_id DataDatabricksCluster#instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.isSingleNode">isSingleNode</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#is_single_node DataDatabricksCluster#is_single_node}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.jdbcPort">jdbcPort</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#jdbc_port DataDatabricksCluster#jdbc_port}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.kind">kind</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#kind DataDatabricksCluster#kind}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.lastRestartedTime">lastRestartedTime</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#last_restarted_time DataDatabricksCluster#last_restarted_time}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.lastStateLossTime">lastStateLossTime</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#last_state_loss_time DataDatabricksCluster#last_state_loss_time}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.nodeTypeId">nodeTypeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#node_type_id DataDatabricksCluster#node_type_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.numWorkers">numWorkers</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#num_workers DataDatabricksCluster#num_workers}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.policyId">policyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#policy_id DataDatabricksCluster#policy_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.runtimeEngine">runtimeEngine</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#runtime_engine DataDatabricksCluster#runtime_engine}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.singleUserName">singleUserName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#single_user_name DataDatabricksCluster#single_user_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.sparkConf">sparkConf</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#spark_conf DataDatabricksCluster#spark_conf}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.sparkContextId">sparkContextId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#spark_context_id DataDatabricksCluster#spark_context_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.sparkEnvVars">sparkEnvVars</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#spark_env_vars DataDatabricksCluster#spark_env_vars}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.sparkVersion">sparkVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#spark_version DataDatabricksCluster#spark_version}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.spec">spec</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec">DataDatabricksClusterClusterInfoSpec</a></code> | spec block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.sshPublicKeys">sshPublicKeys</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#ssh_public_keys DataDatabricksCluster#ssh_public_keys}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.startTime">startTime</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#start_time DataDatabricksCluster#start_time}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.state">state</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#state DataDatabricksCluster#state}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.stateMessage">stateMessage</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#state_message DataDatabricksCluster#state_message}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.terminatedTime">terminatedTime</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#terminated_time DataDatabricksCluster#terminated_time}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.sshPublicKeys">sshPublicKeys</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#ssh_public_keys DataDatabricksCluster#ssh_public_keys}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.startTime">startTime</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#start_time DataDatabricksCluster#start_time}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.state">state</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#state DataDatabricksCluster#state}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.stateMessage">stateMessage</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#state_message DataDatabricksCluster#state_message}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.terminatedTime">terminatedTime</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#terminated_time DataDatabricksCluster#terminated_time}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.terminationReason">terminationReason</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoTerminationReason">DataDatabricksClusterClusterInfoTerminationReason</a></code> | termination_reason block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.useMlRuntime">useMlRuntime</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#use_ml_runtime DataDatabricksCluster#use_ml_runtime}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.useMlRuntime">useMlRuntime</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#use_ml_runtime DataDatabricksCluster#use_ml_runtime}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.workloadType">workloadType</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadType">DataDatabricksClusterClusterInfoWorkloadType</a></code> | workload_type block. |
 
 ---
@@ -896,7 +896,7 @@ public DataDatabricksClusterClusterInfoAutoscale getAutoscale();
 
 autoscale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#autoscale DataDatabricksCluster#autoscale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#autoscale DataDatabricksCluster#autoscale}
 
 ---
 
@@ -908,7 +908,7 @@ public java.lang.Number getAutoterminationMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#autotermination_minutes DataDatabricksCluster#autotermination_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#autotermination_minutes DataDatabricksCluster#autotermination_minutes}.
 
 ---
 
@@ -922,7 +922,7 @@ public DataDatabricksClusterClusterInfoAwsAttributes getAwsAttributes();
 
 aws_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#aws_attributes DataDatabricksCluster#aws_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#aws_attributes DataDatabricksCluster#aws_attributes}
 
 ---
 
@@ -936,7 +936,7 @@ public DataDatabricksClusterClusterInfoAzureAttributes getAzureAttributes();
 
 azure_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#azure_attributes DataDatabricksCluster#azure_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#azure_attributes DataDatabricksCluster#azure_attributes}
 
 ---
 
@@ -948,7 +948,7 @@ public java.lang.Number getClusterCores();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#cluster_cores DataDatabricksCluster#cluster_cores}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#cluster_cores DataDatabricksCluster#cluster_cores}.
 
 ---
 
@@ -960,7 +960,7 @@ public java.lang.String getClusterId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#cluster_id DataDatabricksCluster#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#cluster_id DataDatabricksCluster#cluster_id}.
 
 ---
 
@@ -974,7 +974,7 @@ public DataDatabricksClusterClusterInfoClusterLogConf getClusterLogConf();
 
 cluster_log_conf block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#cluster_log_conf DataDatabricksCluster#cluster_log_conf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#cluster_log_conf DataDatabricksCluster#cluster_log_conf}
 
 ---
 
@@ -988,7 +988,7 @@ public DataDatabricksClusterClusterInfoClusterLogStatus getClusterLogStatus();
 
 cluster_log_status block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#cluster_log_status DataDatabricksCluster#cluster_log_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#cluster_log_status DataDatabricksCluster#cluster_log_status}
 
 ---
 
@@ -1000,7 +1000,7 @@ public java.lang.Number getClusterMemoryMb();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#cluster_memory_mb DataDatabricksCluster#cluster_memory_mb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#cluster_memory_mb DataDatabricksCluster#cluster_memory_mb}.
 
 ---
 
@@ -1012,7 +1012,7 @@ public java.lang.String getClusterName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#cluster_name DataDatabricksCluster#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#cluster_name DataDatabricksCluster#cluster_name}.
 
 ---
 
@@ -1024,7 +1024,7 @@ public java.lang.String getClusterSource();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#cluster_source DataDatabricksCluster#cluster_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#cluster_source DataDatabricksCluster#cluster_source}.
 
 ---
 
@@ -1036,7 +1036,7 @@ public java.lang.String getCreatorUserName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#creator_user_name DataDatabricksCluster#creator_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#creator_user_name DataDatabricksCluster#creator_user_name}.
 
 ---
 
@@ -1048,7 +1048,7 @@ public java.util.Map<java.lang.String, java.lang.String> getCustomTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#custom_tags DataDatabricksCluster#custom_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#custom_tags DataDatabricksCluster#custom_tags}.
 
 ---
 
@@ -1060,7 +1060,7 @@ public java.lang.String getDataSecurityMode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#data_security_mode DataDatabricksCluster#data_security_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#data_security_mode DataDatabricksCluster#data_security_mode}.
 
 ---
 
@@ -1072,7 +1072,7 @@ public java.util.Map<java.lang.String, java.lang.String> getDefaultTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#default_tags DataDatabricksCluster#default_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#default_tags DataDatabricksCluster#default_tags}.
 
 ---
 
@@ -1086,7 +1086,7 @@ public DataDatabricksClusterClusterInfoDockerImage getDockerImage();
 
 docker_image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#docker_image DataDatabricksCluster#docker_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#docker_image DataDatabricksCluster#docker_image}
 
 ---
 
@@ -1100,7 +1100,7 @@ public DataDatabricksClusterClusterInfoDriver getDriver();
 
 driver block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#driver DataDatabricksCluster#driver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#driver DataDatabricksCluster#driver}
 
 ---
 
@@ -1112,7 +1112,7 @@ public java.lang.String getDriverInstancePoolId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#driver_instance_pool_id DataDatabricksCluster#driver_instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#driver_instance_pool_id DataDatabricksCluster#driver_instance_pool_id}.
 
 ---
 
@@ -1124,7 +1124,7 @@ public java.lang.String getDriverNodeTypeId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#driver_node_type_id DataDatabricksCluster#driver_node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#driver_node_type_id DataDatabricksCluster#driver_node_type_id}.
 
 ---
 
@@ -1136,7 +1136,7 @@ public java.lang.Object getEnableElasticDisk();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#enable_elastic_disk DataDatabricksCluster#enable_elastic_disk}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#enable_elastic_disk DataDatabricksCluster#enable_elastic_disk}.
 
 ---
 
@@ -1148,7 +1148,7 @@ public java.lang.Object getEnableLocalDiskEncryption();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#enable_local_disk_encryption DataDatabricksCluster#enable_local_disk_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#enable_local_disk_encryption DataDatabricksCluster#enable_local_disk_encryption}.
 
 ---
 
@@ -1162,7 +1162,7 @@ public java.lang.Object getExecutors();
 
 executors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#executors DataDatabricksCluster#executors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#executors DataDatabricksCluster#executors}
 
 ---
 
@@ -1176,7 +1176,7 @@ public DataDatabricksClusterClusterInfoGcpAttributes getGcpAttributes();
 
 gcp_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#gcp_attributes DataDatabricksCluster#gcp_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#gcp_attributes DataDatabricksCluster#gcp_attributes}
 
 ---
 
@@ -1190,7 +1190,7 @@ public java.lang.Object getInitScripts();
 
 init_scripts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#init_scripts DataDatabricksCluster#init_scripts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#init_scripts DataDatabricksCluster#init_scripts}
 
 ---
 
@@ -1202,7 +1202,7 @@ public java.lang.String getInstancePoolId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#instance_pool_id DataDatabricksCluster#instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#instance_pool_id DataDatabricksCluster#instance_pool_id}.
 
 ---
 
@@ -1214,7 +1214,7 @@ public java.lang.Object getIsSingleNode();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#is_single_node DataDatabricksCluster#is_single_node}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#is_single_node DataDatabricksCluster#is_single_node}.
 
 ---
 
@@ -1226,7 +1226,7 @@ public java.lang.Number getJdbcPort();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#jdbc_port DataDatabricksCluster#jdbc_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#jdbc_port DataDatabricksCluster#jdbc_port}.
 
 ---
 
@@ -1238,7 +1238,7 @@ public java.lang.String getKind();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#kind DataDatabricksCluster#kind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#kind DataDatabricksCluster#kind}.
 
 ---
 
@@ -1250,7 +1250,7 @@ public java.lang.Number getLastRestartedTime();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#last_restarted_time DataDatabricksCluster#last_restarted_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#last_restarted_time DataDatabricksCluster#last_restarted_time}.
 
 ---
 
@@ -1262,7 +1262,7 @@ public java.lang.Number getLastStateLossTime();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#last_state_loss_time DataDatabricksCluster#last_state_loss_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#last_state_loss_time DataDatabricksCluster#last_state_loss_time}.
 
 ---
 
@@ -1274,7 +1274,7 @@ public java.lang.String getNodeTypeId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#node_type_id DataDatabricksCluster#node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#node_type_id DataDatabricksCluster#node_type_id}.
 
 ---
 
@@ -1286,7 +1286,7 @@ public java.lang.Number getNumWorkers();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#num_workers DataDatabricksCluster#num_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#num_workers DataDatabricksCluster#num_workers}.
 
 ---
 
@@ -1298,7 +1298,7 @@ public java.lang.String getPolicyId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#policy_id DataDatabricksCluster#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#policy_id DataDatabricksCluster#policy_id}.
 
 ---
 
@@ -1310,7 +1310,7 @@ public java.lang.String getRuntimeEngine();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#runtime_engine DataDatabricksCluster#runtime_engine}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#runtime_engine DataDatabricksCluster#runtime_engine}.
 
 ---
 
@@ -1322,7 +1322,7 @@ public java.lang.String getSingleUserName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#single_user_name DataDatabricksCluster#single_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#single_user_name DataDatabricksCluster#single_user_name}.
 
 ---
 
@@ -1334,7 +1334,7 @@ public java.util.Map<java.lang.String, java.lang.String> getSparkConf();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#spark_conf DataDatabricksCluster#spark_conf}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#spark_conf DataDatabricksCluster#spark_conf}.
 
 ---
 
@@ -1346,7 +1346,7 @@ public java.lang.Number getSparkContextId();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#spark_context_id DataDatabricksCluster#spark_context_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#spark_context_id DataDatabricksCluster#spark_context_id}.
 
 ---
 
@@ -1358,7 +1358,7 @@ public java.util.Map<java.lang.String, java.lang.String> getSparkEnvVars();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#spark_env_vars DataDatabricksCluster#spark_env_vars}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#spark_env_vars DataDatabricksCluster#spark_env_vars}.
 
 ---
 
@@ -1370,7 +1370,7 @@ public java.lang.String getSparkVersion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#spark_version DataDatabricksCluster#spark_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#spark_version DataDatabricksCluster#spark_version}.
 
 ---
 
@@ -1384,7 +1384,7 @@ public DataDatabricksClusterClusterInfoSpec getSpec();
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#spec DataDatabricksCluster#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#spec DataDatabricksCluster#spec}
 
 ---
 
@@ -1396,7 +1396,7 @@ public java.util.List<java.lang.String> getSshPublicKeys();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#ssh_public_keys DataDatabricksCluster#ssh_public_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#ssh_public_keys DataDatabricksCluster#ssh_public_keys}.
 
 ---
 
@@ -1408,7 +1408,7 @@ public java.lang.Number getStartTime();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#start_time DataDatabricksCluster#start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#start_time DataDatabricksCluster#start_time}.
 
 ---
 
@@ -1420,7 +1420,7 @@ public java.lang.String getState();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#state DataDatabricksCluster#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#state DataDatabricksCluster#state}.
 
 ---
 
@@ -1432,7 +1432,7 @@ public java.lang.String getStateMessage();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#state_message DataDatabricksCluster#state_message}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#state_message DataDatabricksCluster#state_message}.
 
 ---
 
@@ -1444,7 +1444,7 @@ public java.lang.Number getTerminatedTime();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#terminated_time DataDatabricksCluster#terminated_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#terminated_time DataDatabricksCluster#terminated_time}.
 
 ---
 
@@ -1458,7 +1458,7 @@ public DataDatabricksClusterClusterInfoTerminationReason getTerminationReason();
 
 termination_reason block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#termination_reason DataDatabricksCluster#termination_reason}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#termination_reason DataDatabricksCluster#termination_reason}
 
 ---
 
@@ -1470,7 +1470,7 @@ public java.lang.Object getUseMlRuntime();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#use_ml_runtime DataDatabricksCluster#use_ml_runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#use_ml_runtime DataDatabricksCluster#use_ml_runtime}.
 
 ---
 
@@ -1484,7 +1484,7 @@ public DataDatabricksClusterClusterInfoWorkloadType getWorkloadType();
 
 workload_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#workload_type DataDatabricksCluster#workload_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#workload_type DataDatabricksCluster#workload_type}
 
 ---
 
@@ -1505,8 +1505,8 @@ DataDatabricksClusterClusterInfoAutoscale.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAutoscale.property.maxWorkers">maxWorkers</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#max_workers DataDatabricksCluster#max_workers}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAutoscale.property.minWorkers">minWorkers</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#min_workers DataDatabricksCluster#min_workers}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAutoscale.property.maxWorkers">maxWorkers</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#max_workers DataDatabricksCluster#max_workers}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAutoscale.property.minWorkers">minWorkers</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#min_workers DataDatabricksCluster#min_workers}. |
 
 ---
 
@@ -1518,7 +1518,7 @@ public java.lang.Number getMaxWorkers();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#max_workers DataDatabricksCluster#max_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#max_workers DataDatabricksCluster#max_workers}.
 
 ---
 
@@ -1530,7 +1530,7 @@ public java.lang.Number getMinWorkers();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#min_workers DataDatabricksCluster#min_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#min_workers DataDatabricksCluster#min_workers}.
 
 ---
 
@@ -1559,16 +1559,16 @@ DataDatabricksClusterClusterInfoAwsAttributes.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAwsAttributes.property.availability">availability</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#availability DataDatabricksCluster#availability}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAwsAttributes.property.ebsVolumeCount">ebsVolumeCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#ebs_volume_count DataDatabricksCluster#ebs_volume_count}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAwsAttributes.property.ebsVolumeIops">ebsVolumeIops</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#ebs_volume_iops DataDatabricksCluster#ebs_volume_iops}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAwsAttributes.property.ebsVolumeSize">ebsVolumeSize</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#ebs_volume_size DataDatabricksCluster#ebs_volume_size}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAwsAttributes.property.ebsVolumeThroughput">ebsVolumeThroughput</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#ebs_volume_throughput DataDatabricksCluster#ebs_volume_throughput}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAwsAttributes.property.ebsVolumeType">ebsVolumeType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#ebs_volume_type DataDatabricksCluster#ebs_volume_type}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAwsAttributes.property.firstOnDemand">firstOnDemand</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#first_on_demand DataDatabricksCluster#first_on_demand}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAwsAttributes.property.instanceProfileArn">instanceProfileArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#instance_profile_arn DataDatabricksCluster#instance_profile_arn}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAwsAttributes.property.spotBidPricePercent">spotBidPricePercent</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#spot_bid_price_percent DataDatabricksCluster#spot_bid_price_percent}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAwsAttributes.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#zone_id DataDatabricksCluster#zone_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAwsAttributes.property.availability">availability</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#availability DataDatabricksCluster#availability}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAwsAttributes.property.ebsVolumeCount">ebsVolumeCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#ebs_volume_count DataDatabricksCluster#ebs_volume_count}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAwsAttributes.property.ebsVolumeIops">ebsVolumeIops</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#ebs_volume_iops DataDatabricksCluster#ebs_volume_iops}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAwsAttributes.property.ebsVolumeSize">ebsVolumeSize</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#ebs_volume_size DataDatabricksCluster#ebs_volume_size}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAwsAttributes.property.ebsVolumeThroughput">ebsVolumeThroughput</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#ebs_volume_throughput DataDatabricksCluster#ebs_volume_throughput}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAwsAttributes.property.ebsVolumeType">ebsVolumeType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#ebs_volume_type DataDatabricksCluster#ebs_volume_type}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAwsAttributes.property.firstOnDemand">firstOnDemand</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#first_on_demand DataDatabricksCluster#first_on_demand}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAwsAttributes.property.instanceProfileArn">instanceProfileArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#instance_profile_arn DataDatabricksCluster#instance_profile_arn}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAwsAttributes.property.spotBidPricePercent">spotBidPricePercent</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#spot_bid_price_percent DataDatabricksCluster#spot_bid_price_percent}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAwsAttributes.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#zone_id DataDatabricksCluster#zone_id}. |
 
 ---
 
@@ -1580,7 +1580,7 @@ public java.lang.String getAvailability();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#availability DataDatabricksCluster#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#availability DataDatabricksCluster#availability}.
 
 ---
 
@@ -1592,7 +1592,7 @@ public java.lang.Number getEbsVolumeCount();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#ebs_volume_count DataDatabricksCluster#ebs_volume_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#ebs_volume_count DataDatabricksCluster#ebs_volume_count}.
 
 ---
 
@@ -1604,7 +1604,7 @@ public java.lang.Number getEbsVolumeIops();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#ebs_volume_iops DataDatabricksCluster#ebs_volume_iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#ebs_volume_iops DataDatabricksCluster#ebs_volume_iops}.
 
 ---
 
@@ -1616,7 +1616,7 @@ public java.lang.Number getEbsVolumeSize();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#ebs_volume_size DataDatabricksCluster#ebs_volume_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#ebs_volume_size DataDatabricksCluster#ebs_volume_size}.
 
 ---
 
@@ -1628,7 +1628,7 @@ public java.lang.Number getEbsVolumeThroughput();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#ebs_volume_throughput DataDatabricksCluster#ebs_volume_throughput}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#ebs_volume_throughput DataDatabricksCluster#ebs_volume_throughput}.
 
 ---
 
@@ -1640,7 +1640,7 @@ public java.lang.String getEbsVolumeType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#ebs_volume_type DataDatabricksCluster#ebs_volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#ebs_volume_type DataDatabricksCluster#ebs_volume_type}.
 
 ---
 
@@ -1652,7 +1652,7 @@ public java.lang.Number getFirstOnDemand();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#first_on_demand DataDatabricksCluster#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#first_on_demand DataDatabricksCluster#first_on_demand}.
 
 ---
 
@@ -1664,7 +1664,7 @@ public java.lang.String getInstanceProfileArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#instance_profile_arn DataDatabricksCluster#instance_profile_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#instance_profile_arn DataDatabricksCluster#instance_profile_arn}.
 
 ---
 
@@ -1676,7 +1676,7 @@ public java.lang.Number getSpotBidPricePercent();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#spot_bid_price_percent DataDatabricksCluster#spot_bid_price_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#spot_bid_price_percent DataDatabricksCluster#spot_bid_price_percent}.
 
 ---
 
@@ -1688,7 +1688,7 @@ public java.lang.String getZoneId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#zone_id DataDatabricksCluster#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#zone_id DataDatabricksCluster#zone_id}.
 
 ---
 
@@ -1711,10 +1711,10 @@ DataDatabricksClusterClusterInfoAzureAttributes.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAzureAttributes.property.availability">availability</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#availability DataDatabricksCluster#availability}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAzureAttributes.property.firstOnDemand">firstOnDemand</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#first_on_demand DataDatabricksCluster#first_on_demand}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAzureAttributes.property.availability">availability</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#availability DataDatabricksCluster#availability}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAzureAttributes.property.firstOnDemand">firstOnDemand</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#first_on_demand DataDatabricksCluster#first_on_demand}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAzureAttributes.property.logAnalyticsInfo">logAnalyticsInfo</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAzureAttributesLogAnalyticsInfo">DataDatabricksClusterClusterInfoAzureAttributesLogAnalyticsInfo</a></code> | log_analytics_info block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAzureAttributes.property.spotBidMaxPrice">spotBidMaxPrice</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#spot_bid_max_price DataDatabricksCluster#spot_bid_max_price}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAzureAttributes.property.spotBidMaxPrice">spotBidMaxPrice</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#spot_bid_max_price DataDatabricksCluster#spot_bid_max_price}. |
 
 ---
 
@@ -1726,7 +1726,7 @@ public java.lang.String getAvailability();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#availability DataDatabricksCluster#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#availability DataDatabricksCluster#availability}.
 
 ---
 
@@ -1738,7 +1738,7 @@ public java.lang.Number getFirstOnDemand();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#first_on_demand DataDatabricksCluster#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#first_on_demand DataDatabricksCluster#first_on_demand}.
 
 ---
 
@@ -1752,7 +1752,7 @@ public DataDatabricksClusterClusterInfoAzureAttributesLogAnalyticsInfo getLogAna
 
 log_analytics_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#log_analytics_info DataDatabricksCluster#log_analytics_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#log_analytics_info DataDatabricksCluster#log_analytics_info}
 
 ---
 
@@ -1764,7 +1764,7 @@ public java.lang.Number getSpotBidMaxPrice();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#spot_bid_max_price DataDatabricksCluster#spot_bid_max_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#spot_bid_max_price DataDatabricksCluster#spot_bid_max_price}.
 
 ---
 
@@ -1785,8 +1785,8 @@ DataDatabricksClusterClusterInfoAzureAttributesLogAnalyticsInfo.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAzureAttributesLogAnalyticsInfo.property.logAnalyticsPrimaryKey">logAnalyticsPrimaryKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#log_analytics_primary_key DataDatabricksCluster#log_analytics_primary_key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAzureAttributesLogAnalyticsInfo.property.logAnalyticsWorkspaceId">logAnalyticsWorkspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#log_analytics_workspace_id DataDatabricksCluster#log_analytics_workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAzureAttributesLogAnalyticsInfo.property.logAnalyticsPrimaryKey">logAnalyticsPrimaryKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#log_analytics_primary_key DataDatabricksCluster#log_analytics_primary_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoAzureAttributesLogAnalyticsInfo.property.logAnalyticsWorkspaceId">logAnalyticsWorkspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#log_analytics_workspace_id DataDatabricksCluster#log_analytics_workspace_id}. |
 
 ---
 
@@ -1798,7 +1798,7 @@ public java.lang.String getLogAnalyticsPrimaryKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#log_analytics_primary_key DataDatabricksCluster#log_analytics_primary_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#log_analytics_primary_key DataDatabricksCluster#log_analytics_primary_key}.
 
 ---
 
@@ -1810,7 +1810,7 @@ public java.lang.String getLogAnalyticsWorkspaceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#log_analytics_workspace_id DataDatabricksCluster#log_analytics_workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#log_analytics_workspace_id DataDatabricksCluster#log_analytics_workspace_id}.
 
 ---
 
@@ -1848,7 +1848,7 @@ public DataDatabricksClusterClusterInfoClusterLogConfDbfs getDbfs();
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#dbfs DataDatabricksCluster#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#dbfs DataDatabricksCluster#dbfs}
 
 ---
 
@@ -1862,7 +1862,7 @@ public DataDatabricksClusterClusterInfoClusterLogConfS3 getS3();
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#s3 DataDatabricksCluster#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#s3 DataDatabricksCluster#s3}
 
 ---
 
@@ -1876,7 +1876,7 @@ public DataDatabricksClusterClusterInfoClusterLogConfVolumes getVolumes();
 
 volumes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#volumes DataDatabricksCluster#volumes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#volumes DataDatabricksCluster#volumes}
 
 ---
 
@@ -1896,7 +1896,7 @@ DataDatabricksClusterClusterInfoClusterLogConfDbfs.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfDbfs.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfDbfs.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
 
 ---
 
@@ -1908,7 +1908,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
 
 ---
 
@@ -1935,13 +1935,13 @@ DataDatabricksClusterClusterInfoClusterLogConfS3.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3.property.cannedAcl">cannedAcl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#canned_acl DataDatabricksCluster#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3.property.enableEncryption">enableEncryption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3.property.encryptionType">encryptionType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#encryption_type DataDatabricksCluster#encryption_type}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3.property.endpoint">endpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#endpoint DataDatabricksCluster#endpoint}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3.property.kmsKey">kmsKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#kms_key DataDatabricksCluster#kms_key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#region DataDatabricksCluster#region}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3.property.cannedAcl">cannedAcl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#canned_acl DataDatabricksCluster#canned_acl}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3.property.enableEncryption">enableEncryption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3.property.encryptionType">encryptionType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#encryption_type DataDatabricksCluster#encryption_type}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3.property.endpoint">endpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#endpoint DataDatabricksCluster#endpoint}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3.property.kmsKey">kmsKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#kms_key DataDatabricksCluster#kms_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#region DataDatabricksCluster#region}. |
 
 ---
 
@@ -1953,7 +1953,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
 
 ---
 
@@ -1965,7 +1965,7 @@ public java.lang.String getCannedAcl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#canned_acl DataDatabricksCluster#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#canned_acl DataDatabricksCluster#canned_acl}.
 
 ---
 
@@ -1977,7 +1977,7 @@ public java.lang.Object getEnableEncryption();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}.
 
 ---
 
@@ -1989,7 +1989,7 @@ public java.lang.String getEncryptionType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#encryption_type DataDatabricksCluster#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#encryption_type DataDatabricksCluster#encryption_type}.
 
 ---
 
@@ -2001,7 +2001,7 @@ public java.lang.String getEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#endpoint DataDatabricksCluster#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#endpoint DataDatabricksCluster#endpoint}.
 
 ---
 
@@ -2013,7 +2013,7 @@ public java.lang.String getKmsKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#kms_key DataDatabricksCluster#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#kms_key DataDatabricksCluster#kms_key}.
 
 ---
 
@@ -2025,7 +2025,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#region DataDatabricksCluster#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#region DataDatabricksCluster#region}.
 
 ---
 
@@ -2045,7 +2045,7 @@ DataDatabricksClusterClusterInfoClusterLogConfVolumes.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfVolumes.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfVolumes.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
 
 ---
 
@@ -2057,7 +2057,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
 
 ---
 
@@ -2078,8 +2078,8 @@ DataDatabricksClusterClusterInfoClusterLogStatus.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogStatus.property.lastAttempted">lastAttempted</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#last_attempted DataDatabricksCluster#last_attempted}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogStatus.property.lastException">lastException</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#last_exception DataDatabricksCluster#last_exception}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogStatus.property.lastAttempted">lastAttempted</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#last_attempted DataDatabricksCluster#last_attempted}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogStatus.property.lastException">lastException</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#last_exception DataDatabricksCluster#last_exception}. |
 
 ---
 
@@ -2091,7 +2091,7 @@ public java.lang.Number getLastAttempted();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#last_attempted DataDatabricksCluster#last_attempted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#last_attempted DataDatabricksCluster#last_attempted}.
 
 ---
 
@@ -2103,7 +2103,7 @@ public java.lang.String getLastException();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#last_exception DataDatabricksCluster#last_exception}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#last_exception DataDatabricksCluster#last_exception}.
 
 ---
 
@@ -2125,7 +2125,7 @@ DataDatabricksClusterClusterInfoDockerImage.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDockerImage.property.basicAuth">basicAuth</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDockerImageBasicAuth">DataDatabricksClusterClusterInfoDockerImageBasicAuth</a></code> | basic_auth block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDockerImage.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#url DataDatabricksCluster#url}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDockerImage.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#url DataDatabricksCluster#url}. |
 
 ---
 
@@ -2139,7 +2139,7 @@ public DataDatabricksClusterClusterInfoDockerImageBasicAuth getBasicAuth();
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#basic_auth DataDatabricksCluster#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#basic_auth DataDatabricksCluster#basic_auth}
 
 ---
 
@@ -2151,7 +2151,7 @@ public java.lang.String getUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#url DataDatabricksCluster#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#url DataDatabricksCluster#url}.
 
 ---
 
@@ -2172,8 +2172,8 @@ DataDatabricksClusterClusterInfoDockerImageBasicAuth.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDockerImageBasicAuth.property.password">password</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#password DataDatabricksCluster#password}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDockerImageBasicAuth.property.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#username DataDatabricksCluster#username}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDockerImageBasicAuth.property.password">password</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#password DataDatabricksCluster#password}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDockerImageBasicAuth.property.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#username DataDatabricksCluster#username}. |
 
 ---
 
@@ -2185,7 +2185,7 @@ public java.lang.String getPassword();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#password DataDatabricksCluster#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#password DataDatabricksCluster#password}.
 
 ---
 
@@ -2197,7 +2197,7 @@ public java.lang.String getUsername();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#username DataDatabricksCluster#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#username DataDatabricksCluster#username}.
 
 ---
 
@@ -2223,13 +2223,13 @@ DataDatabricksClusterClusterInfoDriver.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriver.property.hostPrivateIp">hostPrivateIp</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#host_private_ip DataDatabricksCluster#host_private_ip}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriver.property.instanceId">instanceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#instance_id DataDatabricksCluster#instance_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriver.property.hostPrivateIp">hostPrivateIp</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#host_private_ip DataDatabricksCluster#host_private_ip}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriver.property.instanceId">instanceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#instance_id DataDatabricksCluster#instance_id}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriver.property.nodeAwsAttributes">nodeAwsAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriverNodeAwsAttributes">DataDatabricksClusterClusterInfoDriverNodeAwsAttributes</a></code> | node_aws_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriver.property.nodeId">nodeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#node_id DataDatabricksCluster#node_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriver.property.privateIp">privateIp</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#private_ip DataDatabricksCluster#private_ip}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriver.property.publicDns">publicDns</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#public_dns DataDatabricksCluster#public_dns}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriver.property.startTimestamp">startTimestamp</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#start_timestamp DataDatabricksCluster#start_timestamp}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriver.property.nodeId">nodeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#node_id DataDatabricksCluster#node_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriver.property.privateIp">privateIp</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#private_ip DataDatabricksCluster#private_ip}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriver.property.publicDns">publicDns</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#public_dns DataDatabricksCluster#public_dns}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriver.property.startTimestamp">startTimestamp</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#start_timestamp DataDatabricksCluster#start_timestamp}. |
 
 ---
 
@@ -2241,7 +2241,7 @@ public java.lang.String getHostPrivateIp();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#host_private_ip DataDatabricksCluster#host_private_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#host_private_ip DataDatabricksCluster#host_private_ip}.
 
 ---
 
@@ -2253,7 +2253,7 @@ public java.lang.String getInstanceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#instance_id DataDatabricksCluster#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#instance_id DataDatabricksCluster#instance_id}.
 
 ---
 
@@ -2267,7 +2267,7 @@ public DataDatabricksClusterClusterInfoDriverNodeAwsAttributes getNodeAwsAttribu
 
 node_aws_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#node_aws_attributes DataDatabricksCluster#node_aws_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#node_aws_attributes DataDatabricksCluster#node_aws_attributes}
 
 ---
 
@@ -2279,7 +2279,7 @@ public java.lang.String getNodeId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#node_id DataDatabricksCluster#node_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#node_id DataDatabricksCluster#node_id}.
 
 ---
 
@@ -2291,7 +2291,7 @@ public java.lang.String getPrivateIp();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#private_ip DataDatabricksCluster#private_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#private_ip DataDatabricksCluster#private_ip}.
 
 ---
 
@@ -2303,7 +2303,7 @@ public java.lang.String getPublicDns();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#public_dns DataDatabricksCluster#public_dns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#public_dns DataDatabricksCluster#public_dns}.
 
 ---
 
@@ -2315,7 +2315,7 @@ public java.lang.Number getStartTimestamp();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#start_timestamp DataDatabricksCluster#start_timestamp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#start_timestamp DataDatabricksCluster#start_timestamp}.
 
 ---
 
@@ -2336,7 +2336,7 @@ DataDatabricksClusterClusterInfoDriverNodeAwsAttributes.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriverNodeAwsAttributes.property.isSpot">isSpot</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#is_spot DataDatabricksCluster#is_spot}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriverNodeAwsAttributes.property.isSpot">isSpot</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#is_spot DataDatabricksCluster#is_spot}. |
 
 ---
 
@@ -2348,7 +2348,7 @@ public java.lang.Object getIsSpot();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#is_spot DataDatabricksCluster#is_spot}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#is_spot DataDatabricksCluster#is_spot}.
 
 ---
 
@@ -2374,13 +2374,13 @@ DataDatabricksClusterClusterInfoExecutors.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors.property.hostPrivateIp">hostPrivateIp</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#host_private_ip DataDatabricksCluster#host_private_ip}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors.property.instanceId">instanceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#instance_id DataDatabricksCluster#instance_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors.property.hostPrivateIp">hostPrivateIp</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#host_private_ip DataDatabricksCluster#host_private_ip}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors.property.instanceId">instanceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#instance_id DataDatabricksCluster#instance_id}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors.property.nodeAwsAttributes">nodeAwsAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributes">DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributes</a></code> | node_aws_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors.property.nodeId">nodeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#node_id DataDatabricksCluster#node_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors.property.privateIp">privateIp</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#private_ip DataDatabricksCluster#private_ip}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors.property.publicDns">publicDns</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#public_dns DataDatabricksCluster#public_dns}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors.property.startTimestamp">startTimestamp</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#start_timestamp DataDatabricksCluster#start_timestamp}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors.property.nodeId">nodeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#node_id DataDatabricksCluster#node_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors.property.privateIp">privateIp</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#private_ip DataDatabricksCluster#private_ip}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors.property.publicDns">publicDns</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#public_dns DataDatabricksCluster#public_dns}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors.property.startTimestamp">startTimestamp</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#start_timestamp DataDatabricksCluster#start_timestamp}. |
 
 ---
 
@@ -2392,7 +2392,7 @@ public java.lang.String getHostPrivateIp();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#host_private_ip DataDatabricksCluster#host_private_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#host_private_ip DataDatabricksCluster#host_private_ip}.
 
 ---
 
@@ -2404,7 +2404,7 @@ public java.lang.String getInstanceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#instance_id DataDatabricksCluster#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#instance_id DataDatabricksCluster#instance_id}.
 
 ---
 
@@ -2418,7 +2418,7 @@ public DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributes getNodeAwsAttr
 
 node_aws_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#node_aws_attributes DataDatabricksCluster#node_aws_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#node_aws_attributes DataDatabricksCluster#node_aws_attributes}
 
 ---
 
@@ -2430,7 +2430,7 @@ public java.lang.String getNodeId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#node_id DataDatabricksCluster#node_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#node_id DataDatabricksCluster#node_id}.
 
 ---
 
@@ -2442,7 +2442,7 @@ public java.lang.String getPrivateIp();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#private_ip DataDatabricksCluster#private_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#private_ip DataDatabricksCluster#private_ip}.
 
 ---
 
@@ -2454,7 +2454,7 @@ public java.lang.String getPublicDns();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#public_dns DataDatabricksCluster#public_dns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#public_dns DataDatabricksCluster#public_dns}.
 
 ---
 
@@ -2466,7 +2466,7 @@ public java.lang.Number getStartTimestamp();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#start_timestamp DataDatabricksCluster#start_timestamp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#start_timestamp DataDatabricksCluster#start_timestamp}.
 
 ---
 
@@ -2487,7 +2487,7 @@ DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributes.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributes.property.isSpot">isSpot</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#is_spot DataDatabricksCluster#is_spot}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributes.property.isSpot">isSpot</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#is_spot DataDatabricksCluster#is_spot}. |
 
 ---
 
@@ -2499,7 +2499,7 @@ public java.lang.Object getIsSpot();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#is_spot DataDatabricksCluster#is_spot}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#is_spot DataDatabricksCluster#is_spot}.
 
 ---
 
@@ -2525,12 +2525,12 @@ DataDatabricksClusterClusterInfoGcpAttributes.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributes.property.availability">availability</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#availability DataDatabricksCluster#availability}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributes.property.bootDiskSize">bootDiskSize</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#boot_disk_size DataDatabricksCluster#boot_disk_size}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributes.property.googleServiceAccount">googleServiceAccount</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#google_service_account DataDatabricksCluster#google_service_account}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributes.property.localSsdCount">localSsdCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#local_ssd_count DataDatabricksCluster#local_ssd_count}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributes.property.usePreemptibleExecutors">usePreemptibleExecutors</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#use_preemptible_executors DataDatabricksCluster#use_preemptible_executors}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributes.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#zone_id DataDatabricksCluster#zone_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributes.property.availability">availability</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#availability DataDatabricksCluster#availability}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributes.property.bootDiskSize">bootDiskSize</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#boot_disk_size DataDatabricksCluster#boot_disk_size}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributes.property.googleServiceAccount">googleServiceAccount</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#google_service_account DataDatabricksCluster#google_service_account}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributes.property.localSsdCount">localSsdCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#local_ssd_count DataDatabricksCluster#local_ssd_count}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributes.property.usePreemptibleExecutors">usePreemptibleExecutors</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#use_preemptible_executors DataDatabricksCluster#use_preemptible_executors}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributes.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#zone_id DataDatabricksCluster#zone_id}. |
 
 ---
 
@@ -2542,7 +2542,7 @@ public java.lang.String getAvailability();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#availability DataDatabricksCluster#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#availability DataDatabricksCluster#availability}.
 
 ---
 
@@ -2554,7 +2554,7 @@ public java.lang.Number getBootDiskSize();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#boot_disk_size DataDatabricksCluster#boot_disk_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#boot_disk_size DataDatabricksCluster#boot_disk_size}.
 
 ---
 
@@ -2566,7 +2566,7 @@ public java.lang.String getGoogleServiceAccount();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#google_service_account DataDatabricksCluster#google_service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#google_service_account DataDatabricksCluster#google_service_account}.
 
 ---
 
@@ -2578,7 +2578,7 @@ public java.lang.Number getLocalSsdCount();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#local_ssd_count DataDatabricksCluster#local_ssd_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#local_ssd_count DataDatabricksCluster#local_ssd_count}.
 
 ---
 
@@ -2590,7 +2590,7 @@ public java.lang.Object getUsePreemptibleExecutors();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#use_preemptible_executors DataDatabricksCluster#use_preemptible_executors}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#use_preemptible_executors DataDatabricksCluster#use_preemptible_executors}.
 
 ---
 
@@ -2602,7 +2602,7 @@ public java.lang.String getZoneId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#zone_id DataDatabricksCluster#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#zone_id DataDatabricksCluster#zone_id}.
 
 ---
 
@@ -2648,7 +2648,7 @@ public DataDatabricksClusterClusterInfoInitScriptsAbfss getAbfss();
 
 abfss block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#abfss DataDatabricksCluster#abfss}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#abfss DataDatabricksCluster#abfss}
 
 ---
 
@@ -2662,7 +2662,7 @@ public DataDatabricksClusterClusterInfoInitScriptsDbfs getDbfs();
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#dbfs DataDatabricksCluster#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#dbfs DataDatabricksCluster#dbfs}
 
 ---
 
@@ -2676,7 +2676,7 @@ public DataDatabricksClusterClusterInfoInitScriptsFile getFile();
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#file DataDatabricksCluster#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#file DataDatabricksCluster#file}
 
 ---
 
@@ -2690,7 +2690,7 @@ public DataDatabricksClusterClusterInfoInitScriptsGcs getGcs();
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#gcs DataDatabricksCluster#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#gcs DataDatabricksCluster#gcs}
 
 ---
 
@@ -2704,7 +2704,7 @@ public DataDatabricksClusterClusterInfoInitScriptsS3 getS3();
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#s3 DataDatabricksCluster#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#s3 DataDatabricksCluster#s3}
 
 ---
 
@@ -2718,7 +2718,7 @@ public DataDatabricksClusterClusterInfoInitScriptsVolumes getVolumes();
 
 volumes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#volumes DataDatabricksCluster#volumes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#volumes DataDatabricksCluster#volumes}
 
 ---
 
@@ -2732,7 +2732,7 @@ public DataDatabricksClusterClusterInfoInitScriptsWorkspace getWorkspace();
 
 workspace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#workspace DataDatabricksCluster#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#workspace DataDatabricksCluster#workspace}
 
 ---
 
@@ -2752,7 +2752,7 @@ DataDatabricksClusterClusterInfoInitScriptsAbfss.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsAbfss.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsAbfss.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
 
 ---
 
@@ -2764,7 +2764,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
 
 ---
 
@@ -2784,7 +2784,7 @@ DataDatabricksClusterClusterInfoInitScriptsDbfs.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsDbfs.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsDbfs.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
 
 ---
 
@@ -2796,7 +2796,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
 
 ---
 
@@ -2816,7 +2816,7 @@ DataDatabricksClusterClusterInfoInitScriptsFile.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsFile.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsFile.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
 
 ---
 
@@ -2828,7 +2828,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
 
 ---
 
@@ -2848,7 +2848,7 @@ DataDatabricksClusterClusterInfoInitScriptsGcs.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsGcs.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsGcs.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
 
 ---
 
@@ -2860,7 +2860,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
 
 ---
 
@@ -2887,13 +2887,13 @@ DataDatabricksClusterClusterInfoInitScriptsS3.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3.property.cannedAcl">cannedAcl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#canned_acl DataDatabricksCluster#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3.property.enableEncryption">enableEncryption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3.property.encryptionType">encryptionType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#encryption_type DataDatabricksCluster#encryption_type}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3.property.endpoint">endpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#endpoint DataDatabricksCluster#endpoint}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3.property.kmsKey">kmsKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#kms_key DataDatabricksCluster#kms_key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#region DataDatabricksCluster#region}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3.property.cannedAcl">cannedAcl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#canned_acl DataDatabricksCluster#canned_acl}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3.property.enableEncryption">enableEncryption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3.property.encryptionType">encryptionType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#encryption_type DataDatabricksCluster#encryption_type}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3.property.endpoint">endpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#endpoint DataDatabricksCluster#endpoint}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3.property.kmsKey">kmsKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#kms_key DataDatabricksCluster#kms_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#region DataDatabricksCluster#region}. |
 
 ---
 
@@ -2905,7 +2905,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
 
 ---
 
@@ -2917,7 +2917,7 @@ public java.lang.String getCannedAcl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#canned_acl DataDatabricksCluster#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#canned_acl DataDatabricksCluster#canned_acl}.
 
 ---
 
@@ -2929,7 +2929,7 @@ public java.lang.Object getEnableEncryption();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}.
 
 ---
 
@@ -2941,7 +2941,7 @@ public java.lang.String getEncryptionType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#encryption_type DataDatabricksCluster#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#encryption_type DataDatabricksCluster#encryption_type}.
 
 ---
 
@@ -2953,7 +2953,7 @@ public java.lang.String getEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#endpoint DataDatabricksCluster#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#endpoint DataDatabricksCluster#endpoint}.
 
 ---
 
@@ -2965,7 +2965,7 @@ public java.lang.String getKmsKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#kms_key DataDatabricksCluster#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#kms_key DataDatabricksCluster#kms_key}.
 
 ---
 
@@ -2977,7 +2977,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#region DataDatabricksCluster#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#region DataDatabricksCluster#region}.
 
 ---
 
@@ -2997,7 +2997,7 @@ DataDatabricksClusterClusterInfoInitScriptsVolumes.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsVolumes.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsVolumes.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
 
 ---
 
@@ -3009,7 +3009,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
 
 ---
 
@@ -3029,7 +3029,7 @@ DataDatabricksClusterClusterInfoInitScriptsWorkspace.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsWorkspace.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsWorkspace.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
 
 ---
 
@@ -3041,7 +3041,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
 
 ---
 
@@ -3053,7 +3053,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import com.hashicorp.cdktf.providers.databricks.data_databricks_cluster.DataDatabricksClusterClusterInfoSpec;
 
 DataDatabricksClusterClusterInfoSpec.builder()
-    .sparkVersion(java.lang.String)
 //  .applyPolicyDefaultValues(java.lang.Boolean)
 //  .applyPolicyDefaultValues(IResolvable)
 //  .autoscale(DataDatabricksClusterClusterInfoSpecAutoscale)
@@ -3089,6 +3088,7 @@ DataDatabricksClusterClusterInfoSpec.builder()
 //  .singleUserName(java.lang.String)
 //  .sparkConf(java.util.Map<java.lang.String, java.lang.String>)
 //  .sparkEnvVars(java.util.Map<java.lang.String, java.lang.String>)
+//  .sparkVersion(java.lang.String)
 //  .sshPublicKeys(java.util.List<java.lang.String>)
 //  .useMlRuntime(java.lang.Boolean)
 //  .useMlRuntime(IResolvable)
@@ -3100,50 +3100,38 @@ DataDatabricksClusterClusterInfoSpec.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.sparkVersion">sparkVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#spark_version DataDatabricksCluster#spark_version}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.applyPolicyDefaultValues">applyPolicyDefaultValues</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#apply_policy_default_values DataDatabricksCluster#apply_policy_default_values}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.applyPolicyDefaultValues">applyPolicyDefaultValues</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#apply_policy_default_values DataDatabricksCluster#apply_policy_default_values}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.autoscale">autoscale</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAutoscale">DataDatabricksClusterClusterInfoSpecAutoscale</a></code> | autoscale block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.awsAttributes">awsAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAwsAttributes">DataDatabricksClusterClusterInfoSpecAwsAttributes</a></code> | aws_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.azureAttributes">azureAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAzureAttributes">DataDatabricksClusterClusterInfoSpecAzureAttributes</a></code> | azure_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.clusterLogConf">clusterLogConf</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConf">DataDatabricksClusterClusterInfoSpecClusterLogConf</a></code> | cluster_log_conf block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.clusterMountInfo">clusterMountInfo</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfo">DataDatabricksClusterClusterInfoSpecClusterMountInfo</a>></code> | cluster_mount_info block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.clusterName">clusterName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#cluster_name DataDatabricksCluster#cluster_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.customTags">customTags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#custom_tags DataDatabricksCluster#custom_tags}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.dataSecurityMode">dataSecurityMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#data_security_mode DataDatabricksCluster#data_security_mode}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.clusterName">clusterName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#cluster_name DataDatabricksCluster#cluster_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.customTags">customTags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#custom_tags DataDatabricksCluster#custom_tags}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.dataSecurityMode">dataSecurityMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#data_security_mode DataDatabricksCluster#data_security_mode}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.dockerImage">dockerImage</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecDockerImage">DataDatabricksClusterClusterInfoSpecDockerImage</a></code> | docker_image block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.driverInstancePoolId">driverInstancePoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#driver_instance_pool_id DataDatabricksCluster#driver_instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.driverNodeTypeId">driverNodeTypeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#driver_node_type_id DataDatabricksCluster#driver_node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.enableElasticDisk">enableElasticDisk</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#enable_elastic_disk DataDatabricksCluster#enable_elastic_disk}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.enableLocalDiskEncryption">enableLocalDiskEncryption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#enable_local_disk_encryption DataDatabricksCluster#enable_local_disk_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.driverInstancePoolId">driverInstancePoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#driver_instance_pool_id DataDatabricksCluster#driver_instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.driverNodeTypeId">driverNodeTypeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#driver_node_type_id DataDatabricksCluster#driver_node_type_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.enableElasticDisk">enableElasticDisk</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#enable_elastic_disk DataDatabricksCluster#enable_elastic_disk}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.enableLocalDiskEncryption">enableLocalDiskEncryption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#enable_local_disk_encryption DataDatabricksCluster#enable_local_disk_encryption}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.gcpAttributes">gcpAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributes">DataDatabricksClusterClusterInfoSpecGcpAttributes</a></code> | gcp_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.idempotencyToken">idempotencyToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#idempotency_token DataDatabricksCluster#idempotency_token}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.idempotencyToken">idempotencyToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#idempotency_token DataDatabricksCluster#idempotency_token}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.initScripts">initScripts</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScripts">DataDatabricksClusterClusterInfoSpecInitScripts</a>></code> | init_scripts block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.instancePoolId">instancePoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#instance_pool_id DataDatabricksCluster#instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.isSingleNode">isSingleNode</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#is_single_node DataDatabricksCluster#is_single_node}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.kind">kind</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#kind DataDatabricksCluster#kind}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.instancePoolId">instancePoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#instance_pool_id DataDatabricksCluster#instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.isSingleNode">isSingleNode</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#is_single_node DataDatabricksCluster#is_single_node}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.kind">kind</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#kind DataDatabricksCluster#kind}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.library">library</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary">DataDatabricksClusterClusterInfoSpecLibrary</a>></code> | library block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.nodeTypeId">nodeTypeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#node_type_id DataDatabricksCluster#node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.numWorkers">numWorkers</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#num_workers DataDatabricksCluster#num_workers}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.policyId">policyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#policy_id DataDatabricksCluster#policy_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.runtimeEngine">runtimeEngine</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#runtime_engine DataDatabricksCluster#runtime_engine}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.singleUserName">singleUserName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#single_user_name DataDatabricksCluster#single_user_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.sparkConf">sparkConf</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#spark_conf DataDatabricksCluster#spark_conf}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.sparkEnvVars">sparkEnvVars</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#spark_env_vars DataDatabricksCluster#spark_env_vars}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.sshPublicKeys">sshPublicKeys</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#ssh_public_keys DataDatabricksCluster#ssh_public_keys}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.useMlRuntime">useMlRuntime</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#use_ml_runtime DataDatabricksCluster#use_ml_runtime}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.nodeTypeId">nodeTypeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#node_type_id DataDatabricksCluster#node_type_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.numWorkers">numWorkers</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#num_workers DataDatabricksCluster#num_workers}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.policyId">policyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#policy_id DataDatabricksCluster#policy_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.runtimeEngine">runtimeEngine</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#runtime_engine DataDatabricksCluster#runtime_engine}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.singleUserName">singleUserName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#single_user_name DataDatabricksCluster#single_user_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.sparkConf">sparkConf</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#spark_conf DataDatabricksCluster#spark_conf}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.sparkEnvVars">sparkEnvVars</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#spark_env_vars DataDatabricksCluster#spark_env_vars}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.sparkVersion">sparkVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#spark_version DataDatabricksCluster#spark_version}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.sshPublicKeys">sshPublicKeys</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#ssh_public_keys DataDatabricksCluster#ssh_public_keys}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.useMlRuntime">useMlRuntime</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#use_ml_runtime DataDatabricksCluster#use_ml_runtime}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.workloadType">workloadType</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadType">DataDatabricksClusterClusterInfoSpecWorkloadType</a></code> | workload_type block. |
-
----
-
-##### `sparkVersion`<sup>Required</sup> <a name="sparkVersion" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.sparkVersion"></a>
-
-```java
-public java.lang.String getSparkVersion();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#spark_version DataDatabricksCluster#spark_version}.
 
 ---
 
@@ -3155,7 +3143,7 @@ public java.lang.Object getApplyPolicyDefaultValues();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#apply_policy_default_values DataDatabricksCluster#apply_policy_default_values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#apply_policy_default_values DataDatabricksCluster#apply_policy_default_values}.
 
 ---
 
@@ -3169,7 +3157,7 @@ public DataDatabricksClusterClusterInfoSpecAutoscale getAutoscale();
 
 autoscale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#autoscale DataDatabricksCluster#autoscale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#autoscale DataDatabricksCluster#autoscale}
 
 ---
 
@@ -3183,7 +3171,7 @@ public DataDatabricksClusterClusterInfoSpecAwsAttributes getAwsAttributes();
 
 aws_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#aws_attributes DataDatabricksCluster#aws_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#aws_attributes DataDatabricksCluster#aws_attributes}
 
 ---
 
@@ -3197,7 +3185,7 @@ public DataDatabricksClusterClusterInfoSpecAzureAttributes getAzureAttributes();
 
 azure_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#azure_attributes DataDatabricksCluster#azure_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#azure_attributes DataDatabricksCluster#azure_attributes}
 
 ---
 
@@ -3211,7 +3199,7 @@ public DataDatabricksClusterClusterInfoSpecClusterLogConf getClusterLogConf();
 
 cluster_log_conf block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#cluster_log_conf DataDatabricksCluster#cluster_log_conf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#cluster_log_conf DataDatabricksCluster#cluster_log_conf}
 
 ---
 
@@ -3225,7 +3213,7 @@ public java.lang.Object getClusterMountInfo();
 
 cluster_mount_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#cluster_mount_info DataDatabricksCluster#cluster_mount_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#cluster_mount_info DataDatabricksCluster#cluster_mount_info}
 
 ---
 
@@ -3237,7 +3225,7 @@ public java.lang.String getClusterName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#cluster_name DataDatabricksCluster#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#cluster_name DataDatabricksCluster#cluster_name}.
 
 ---
 
@@ -3249,7 +3237,7 @@ public java.util.Map<java.lang.String, java.lang.String> getCustomTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#custom_tags DataDatabricksCluster#custom_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#custom_tags DataDatabricksCluster#custom_tags}.
 
 ---
 
@@ -3261,7 +3249,7 @@ public java.lang.String getDataSecurityMode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#data_security_mode DataDatabricksCluster#data_security_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#data_security_mode DataDatabricksCluster#data_security_mode}.
 
 ---
 
@@ -3275,7 +3263,7 @@ public DataDatabricksClusterClusterInfoSpecDockerImage getDockerImage();
 
 docker_image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#docker_image DataDatabricksCluster#docker_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#docker_image DataDatabricksCluster#docker_image}
 
 ---
 
@@ -3287,7 +3275,7 @@ public java.lang.String getDriverInstancePoolId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#driver_instance_pool_id DataDatabricksCluster#driver_instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#driver_instance_pool_id DataDatabricksCluster#driver_instance_pool_id}.
 
 ---
 
@@ -3299,7 +3287,7 @@ public java.lang.String getDriverNodeTypeId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#driver_node_type_id DataDatabricksCluster#driver_node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#driver_node_type_id DataDatabricksCluster#driver_node_type_id}.
 
 ---
 
@@ -3311,7 +3299,7 @@ public java.lang.Object getEnableElasticDisk();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#enable_elastic_disk DataDatabricksCluster#enable_elastic_disk}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#enable_elastic_disk DataDatabricksCluster#enable_elastic_disk}.
 
 ---
 
@@ -3323,7 +3311,7 @@ public java.lang.Object getEnableLocalDiskEncryption();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#enable_local_disk_encryption DataDatabricksCluster#enable_local_disk_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#enable_local_disk_encryption DataDatabricksCluster#enable_local_disk_encryption}.
 
 ---
 
@@ -3337,7 +3325,7 @@ public DataDatabricksClusterClusterInfoSpecGcpAttributes getGcpAttributes();
 
 gcp_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#gcp_attributes DataDatabricksCluster#gcp_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#gcp_attributes DataDatabricksCluster#gcp_attributes}
 
 ---
 
@@ -3349,7 +3337,7 @@ public java.lang.String getIdempotencyToken();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#idempotency_token DataDatabricksCluster#idempotency_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#idempotency_token DataDatabricksCluster#idempotency_token}.
 
 ---
 
@@ -3363,7 +3351,7 @@ public java.lang.Object getInitScripts();
 
 init_scripts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#init_scripts DataDatabricksCluster#init_scripts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#init_scripts DataDatabricksCluster#init_scripts}
 
 ---
 
@@ -3375,7 +3363,7 @@ public java.lang.String getInstancePoolId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#instance_pool_id DataDatabricksCluster#instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#instance_pool_id DataDatabricksCluster#instance_pool_id}.
 
 ---
 
@@ -3387,7 +3375,7 @@ public java.lang.Object getIsSingleNode();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#is_single_node DataDatabricksCluster#is_single_node}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#is_single_node DataDatabricksCluster#is_single_node}.
 
 ---
 
@@ -3399,7 +3387,7 @@ public java.lang.String getKind();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#kind DataDatabricksCluster#kind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#kind DataDatabricksCluster#kind}.
 
 ---
 
@@ -3413,7 +3401,7 @@ public java.lang.Object getLibrary();
 
 library block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#library DataDatabricksCluster#library}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#library DataDatabricksCluster#library}
 
 ---
 
@@ -3425,7 +3413,7 @@ public java.lang.String getNodeTypeId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#node_type_id DataDatabricksCluster#node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#node_type_id DataDatabricksCluster#node_type_id}.
 
 ---
 
@@ -3437,7 +3425,7 @@ public java.lang.Number getNumWorkers();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#num_workers DataDatabricksCluster#num_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#num_workers DataDatabricksCluster#num_workers}.
 
 ---
 
@@ -3449,7 +3437,7 @@ public java.lang.String getPolicyId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#policy_id DataDatabricksCluster#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#policy_id DataDatabricksCluster#policy_id}.
 
 ---
 
@@ -3461,7 +3449,7 @@ public java.lang.String getRuntimeEngine();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#runtime_engine DataDatabricksCluster#runtime_engine}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#runtime_engine DataDatabricksCluster#runtime_engine}.
 
 ---
 
@@ -3473,7 +3461,7 @@ public java.lang.String getSingleUserName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#single_user_name DataDatabricksCluster#single_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#single_user_name DataDatabricksCluster#single_user_name}.
 
 ---
 
@@ -3485,7 +3473,7 @@ public java.util.Map<java.lang.String, java.lang.String> getSparkConf();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#spark_conf DataDatabricksCluster#spark_conf}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#spark_conf DataDatabricksCluster#spark_conf}.
 
 ---
 
@@ -3497,7 +3485,19 @@ public java.util.Map<java.lang.String, java.lang.String> getSparkEnvVars();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#spark_env_vars DataDatabricksCluster#spark_env_vars}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#spark_env_vars DataDatabricksCluster#spark_env_vars}.
+
+---
+
+##### `sparkVersion`<sup>Optional</sup> <a name="sparkVersion" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.sparkVersion"></a>
+
+```java
+public java.lang.String getSparkVersion();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#spark_version DataDatabricksCluster#spark_version}.
 
 ---
 
@@ -3509,7 +3509,7 @@ public java.util.List<java.lang.String> getSshPublicKeys();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#ssh_public_keys DataDatabricksCluster#ssh_public_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#ssh_public_keys DataDatabricksCluster#ssh_public_keys}.
 
 ---
 
@@ -3521,7 +3521,7 @@ public java.lang.Object getUseMlRuntime();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#use_ml_runtime DataDatabricksCluster#use_ml_runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#use_ml_runtime DataDatabricksCluster#use_ml_runtime}.
 
 ---
 
@@ -3535,7 +3535,7 @@ public DataDatabricksClusterClusterInfoSpecWorkloadType getWorkloadType();
 
 workload_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#workload_type DataDatabricksCluster#workload_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#workload_type DataDatabricksCluster#workload_type}
 
 ---
 
@@ -3556,8 +3556,8 @@ DataDatabricksClusterClusterInfoSpecAutoscale.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAutoscale.property.maxWorkers">maxWorkers</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#max_workers DataDatabricksCluster#max_workers}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAutoscale.property.minWorkers">minWorkers</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#min_workers DataDatabricksCluster#min_workers}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAutoscale.property.maxWorkers">maxWorkers</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#max_workers DataDatabricksCluster#max_workers}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAutoscale.property.minWorkers">minWorkers</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#min_workers DataDatabricksCluster#min_workers}. |
 
 ---
 
@@ -3569,7 +3569,7 @@ public java.lang.Number getMaxWorkers();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#max_workers DataDatabricksCluster#max_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#max_workers DataDatabricksCluster#max_workers}.
 
 ---
 
@@ -3581,7 +3581,7 @@ public java.lang.Number getMinWorkers();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#min_workers DataDatabricksCluster#min_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#min_workers DataDatabricksCluster#min_workers}.
 
 ---
 
@@ -3610,16 +3610,16 @@ DataDatabricksClusterClusterInfoSpecAwsAttributes.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAwsAttributes.property.availability">availability</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#availability DataDatabricksCluster#availability}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAwsAttributes.property.ebsVolumeCount">ebsVolumeCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#ebs_volume_count DataDatabricksCluster#ebs_volume_count}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAwsAttributes.property.ebsVolumeIops">ebsVolumeIops</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#ebs_volume_iops DataDatabricksCluster#ebs_volume_iops}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAwsAttributes.property.ebsVolumeSize">ebsVolumeSize</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#ebs_volume_size DataDatabricksCluster#ebs_volume_size}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAwsAttributes.property.ebsVolumeThroughput">ebsVolumeThroughput</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#ebs_volume_throughput DataDatabricksCluster#ebs_volume_throughput}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAwsAttributes.property.ebsVolumeType">ebsVolumeType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#ebs_volume_type DataDatabricksCluster#ebs_volume_type}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAwsAttributes.property.firstOnDemand">firstOnDemand</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#first_on_demand DataDatabricksCluster#first_on_demand}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAwsAttributes.property.instanceProfileArn">instanceProfileArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#instance_profile_arn DataDatabricksCluster#instance_profile_arn}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAwsAttributes.property.spotBidPricePercent">spotBidPricePercent</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#spot_bid_price_percent DataDatabricksCluster#spot_bid_price_percent}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAwsAttributes.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#zone_id DataDatabricksCluster#zone_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAwsAttributes.property.availability">availability</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#availability DataDatabricksCluster#availability}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAwsAttributes.property.ebsVolumeCount">ebsVolumeCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#ebs_volume_count DataDatabricksCluster#ebs_volume_count}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAwsAttributes.property.ebsVolumeIops">ebsVolumeIops</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#ebs_volume_iops DataDatabricksCluster#ebs_volume_iops}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAwsAttributes.property.ebsVolumeSize">ebsVolumeSize</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#ebs_volume_size DataDatabricksCluster#ebs_volume_size}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAwsAttributes.property.ebsVolumeThroughput">ebsVolumeThroughput</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#ebs_volume_throughput DataDatabricksCluster#ebs_volume_throughput}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAwsAttributes.property.ebsVolumeType">ebsVolumeType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#ebs_volume_type DataDatabricksCluster#ebs_volume_type}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAwsAttributes.property.firstOnDemand">firstOnDemand</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#first_on_demand DataDatabricksCluster#first_on_demand}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAwsAttributes.property.instanceProfileArn">instanceProfileArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#instance_profile_arn DataDatabricksCluster#instance_profile_arn}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAwsAttributes.property.spotBidPricePercent">spotBidPricePercent</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#spot_bid_price_percent DataDatabricksCluster#spot_bid_price_percent}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAwsAttributes.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#zone_id DataDatabricksCluster#zone_id}. |
 
 ---
 
@@ -3631,7 +3631,7 @@ public java.lang.String getAvailability();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#availability DataDatabricksCluster#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#availability DataDatabricksCluster#availability}.
 
 ---
 
@@ -3643,7 +3643,7 @@ public java.lang.Number getEbsVolumeCount();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#ebs_volume_count DataDatabricksCluster#ebs_volume_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#ebs_volume_count DataDatabricksCluster#ebs_volume_count}.
 
 ---
 
@@ -3655,7 +3655,7 @@ public java.lang.Number getEbsVolumeIops();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#ebs_volume_iops DataDatabricksCluster#ebs_volume_iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#ebs_volume_iops DataDatabricksCluster#ebs_volume_iops}.
 
 ---
 
@@ -3667,7 +3667,7 @@ public java.lang.Number getEbsVolumeSize();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#ebs_volume_size DataDatabricksCluster#ebs_volume_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#ebs_volume_size DataDatabricksCluster#ebs_volume_size}.
 
 ---
 
@@ -3679,7 +3679,7 @@ public java.lang.Number getEbsVolumeThroughput();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#ebs_volume_throughput DataDatabricksCluster#ebs_volume_throughput}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#ebs_volume_throughput DataDatabricksCluster#ebs_volume_throughput}.
 
 ---
 
@@ -3691,7 +3691,7 @@ public java.lang.String getEbsVolumeType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#ebs_volume_type DataDatabricksCluster#ebs_volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#ebs_volume_type DataDatabricksCluster#ebs_volume_type}.
 
 ---
 
@@ -3703,7 +3703,7 @@ public java.lang.Number getFirstOnDemand();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#first_on_demand DataDatabricksCluster#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#first_on_demand DataDatabricksCluster#first_on_demand}.
 
 ---
 
@@ -3715,7 +3715,7 @@ public java.lang.String getInstanceProfileArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#instance_profile_arn DataDatabricksCluster#instance_profile_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#instance_profile_arn DataDatabricksCluster#instance_profile_arn}.
 
 ---
 
@@ -3727,7 +3727,7 @@ public java.lang.Number getSpotBidPricePercent();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#spot_bid_price_percent DataDatabricksCluster#spot_bid_price_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#spot_bid_price_percent DataDatabricksCluster#spot_bid_price_percent}.
 
 ---
 
@@ -3739,7 +3739,7 @@ public java.lang.String getZoneId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#zone_id DataDatabricksCluster#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#zone_id DataDatabricksCluster#zone_id}.
 
 ---
 
@@ -3762,10 +3762,10 @@ DataDatabricksClusterClusterInfoSpecAzureAttributes.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAzureAttributes.property.availability">availability</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#availability DataDatabricksCluster#availability}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAzureAttributes.property.firstOnDemand">firstOnDemand</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#first_on_demand DataDatabricksCluster#first_on_demand}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAzureAttributes.property.availability">availability</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#availability DataDatabricksCluster#availability}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAzureAttributes.property.firstOnDemand">firstOnDemand</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#first_on_demand DataDatabricksCluster#first_on_demand}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAzureAttributes.property.logAnalyticsInfo">logAnalyticsInfo</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAzureAttributesLogAnalyticsInfo">DataDatabricksClusterClusterInfoSpecAzureAttributesLogAnalyticsInfo</a></code> | log_analytics_info block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAzureAttributes.property.spotBidMaxPrice">spotBidMaxPrice</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#spot_bid_max_price DataDatabricksCluster#spot_bid_max_price}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAzureAttributes.property.spotBidMaxPrice">spotBidMaxPrice</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#spot_bid_max_price DataDatabricksCluster#spot_bid_max_price}. |
 
 ---
 
@@ -3777,7 +3777,7 @@ public java.lang.String getAvailability();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#availability DataDatabricksCluster#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#availability DataDatabricksCluster#availability}.
 
 ---
 
@@ -3789,7 +3789,7 @@ public java.lang.Number getFirstOnDemand();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#first_on_demand DataDatabricksCluster#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#first_on_demand DataDatabricksCluster#first_on_demand}.
 
 ---
 
@@ -3803,7 +3803,7 @@ public DataDatabricksClusterClusterInfoSpecAzureAttributesLogAnalyticsInfo getLo
 
 log_analytics_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#log_analytics_info DataDatabricksCluster#log_analytics_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#log_analytics_info DataDatabricksCluster#log_analytics_info}
 
 ---
 
@@ -3815,7 +3815,7 @@ public java.lang.Number getSpotBidMaxPrice();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#spot_bid_max_price DataDatabricksCluster#spot_bid_max_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#spot_bid_max_price DataDatabricksCluster#spot_bid_max_price}.
 
 ---
 
@@ -3836,8 +3836,8 @@ DataDatabricksClusterClusterInfoSpecAzureAttributesLogAnalyticsInfo.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAzureAttributesLogAnalyticsInfo.property.logAnalyticsPrimaryKey">logAnalyticsPrimaryKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#log_analytics_primary_key DataDatabricksCluster#log_analytics_primary_key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAzureAttributesLogAnalyticsInfo.property.logAnalyticsWorkspaceId">logAnalyticsWorkspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#log_analytics_workspace_id DataDatabricksCluster#log_analytics_workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAzureAttributesLogAnalyticsInfo.property.logAnalyticsPrimaryKey">logAnalyticsPrimaryKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#log_analytics_primary_key DataDatabricksCluster#log_analytics_primary_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAzureAttributesLogAnalyticsInfo.property.logAnalyticsWorkspaceId">logAnalyticsWorkspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#log_analytics_workspace_id DataDatabricksCluster#log_analytics_workspace_id}. |
 
 ---
 
@@ -3849,7 +3849,7 @@ public java.lang.String getLogAnalyticsPrimaryKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#log_analytics_primary_key DataDatabricksCluster#log_analytics_primary_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#log_analytics_primary_key DataDatabricksCluster#log_analytics_primary_key}.
 
 ---
 
@@ -3861,7 +3861,7 @@ public java.lang.String getLogAnalyticsWorkspaceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#log_analytics_workspace_id DataDatabricksCluster#log_analytics_workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#log_analytics_workspace_id DataDatabricksCluster#log_analytics_workspace_id}.
 
 ---
 
@@ -3899,7 +3899,7 @@ public DataDatabricksClusterClusterInfoSpecClusterLogConfDbfs getDbfs();
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#dbfs DataDatabricksCluster#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#dbfs DataDatabricksCluster#dbfs}
 
 ---
 
@@ -3913,7 +3913,7 @@ public DataDatabricksClusterClusterInfoSpecClusterLogConfS3 getS3();
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#s3 DataDatabricksCluster#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#s3 DataDatabricksCluster#s3}
 
 ---
 
@@ -3927,7 +3927,7 @@ public DataDatabricksClusterClusterInfoSpecClusterLogConfVolumes getVolumes();
 
 volumes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#volumes DataDatabricksCluster#volumes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#volumes DataDatabricksCluster#volumes}
 
 ---
 
@@ -3947,7 +3947,7 @@ DataDatabricksClusterClusterInfoSpecClusterLogConfDbfs.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfDbfs.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfDbfs.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
 
 ---
 
@@ -3959,7 +3959,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
 
 ---
 
@@ -3986,13 +3986,13 @@ DataDatabricksClusterClusterInfoSpecClusterLogConfS3.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3.property.cannedAcl">cannedAcl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#canned_acl DataDatabricksCluster#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3.property.enableEncryption">enableEncryption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3.property.encryptionType">encryptionType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#encryption_type DataDatabricksCluster#encryption_type}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3.property.endpoint">endpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#endpoint DataDatabricksCluster#endpoint}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3.property.kmsKey">kmsKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#kms_key DataDatabricksCluster#kms_key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#region DataDatabricksCluster#region}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3.property.cannedAcl">cannedAcl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#canned_acl DataDatabricksCluster#canned_acl}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3.property.enableEncryption">enableEncryption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3.property.encryptionType">encryptionType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#encryption_type DataDatabricksCluster#encryption_type}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3.property.endpoint">endpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#endpoint DataDatabricksCluster#endpoint}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3.property.kmsKey">kmsKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#kms_key DataDatabricksCluster#kms_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#region DataDatabricksCluster#region}. |
 
 ---
 
@@ -4004,7 +4004,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
 
 ---
 
@@ -4016,7 +4016,7 @@ public java.lang.String getCannedAcl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#canned_acl DataDatabricksCluster#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#canned_acl DataDatabricksCluster#canned_acl}.
 
 ---
 
@@ -4028,7 +4028,7 @@ public java.lang.Object getEnableEncryption();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}.
 
 ---
 
@@ -4040,7 +4040,7 @@ public java.lang.String getEncryptionType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#encryption_type DataDatabricksCluster#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#encryption_type DataDatabricksCluster#encryption_type}.
 
 ---
 
@@ -4052,7 +4052,7 @@ public java.lang.String getEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#endpoint DataDatabricksCluster#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#endpoint DataDatabricksCluster#endpoint}.
 
 ---
 
@@ -4064,7 +4064,7 @@ public java.lang.String getKmsKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#kms_key DataDatabricksCluster#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#kms_key DataDatabricksCluster#kms_key}.
 
 ---
 
@@ -4076,7 +4076,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#region DataDatabricksCluster#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#region DataDatabricksCluster#region}.
 
 ---
 
@@ -4096,7 +4096,7 @@ DataDatabricksClusterClusterInfoSpecClusterLogConfVolumes.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfVolumes.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfVolumes.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
 
 ---
 
@@ -4108,7 +4108,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
 
 ---
 
@@ -4130,9 +4130,9 @@ DataDatabricksClusterClusterInfoSpecClusterMountInfo.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfo.property.localMountDirPath">localMountDirPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#local_mount_dir_path DataDatabricksCluster#local_mount_dir_path}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfo.property.localMountDirPath">localMountDirPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#local_mount_dir_path DataDatabricksCluster#local_mount_dir_path}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfo.property.networkFilesystemInfo">networkFilesystemInfo</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfoNetworkFilesystemInfo">DataDatabricksClusterClusterInfoSpecClusterMountInfoNetworkFilesystemInfo</a></code> | network_filesystem_info block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfo.property.remoteMountDirPath">remoteMountDirPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#remote_mount_dir_path DataDatabricksCluster#remote_mount_dir_path}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfo.property.remoteMountDirPath">remoteMountDirPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#remote_mount_dir_path DataDatabricksCluster#remote_mount_dir_path}. |
 
 ---
 
@@ -4144,7 +4144,7 @@ public java.lang.String getLocalMountDirPath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#local_mount_dir_path DataDatabricksCluster#local_mount_dir_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#local_mount_dir_path DataDatabricksCluster#local_mount_dir_path}.
 
 ---
 
@@ -4158,7 +4158,7 @@ public DataDatabricksClusterClusterInfoSpecClusterMountInfoNetworkFilesystemInfo
 
 network_filesystem_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#network_filesystem_info DataDatabricksCluster#network_filesystem_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#network_filesystem_info DataDatabricksCluster#network_filesystem_info}
 
 ---
 
@@ -4170,7 +4170,7 @@ public java.lang.String getRemoteMountDirPath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#remote_mount_dir_path DataDatabricksCluster#remote_mount_dir_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#remote_mount_dir_path DataDatabricksCluster#remote_mount_dir_path}.
 
 ---
 
@@ -4191,8 +4191,8 @@ DataDatabricksClusterClusterInfoSpecClusterMountInfoNetworkFilesystemInfo.builde
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfoNetworkFilesystemInfo.property.serverAddress">serverAddress</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#server_address DataDatabricksCluster#server_address}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfoNetworkFilesystemInfo.property.mountOptions">mountOptions</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#mount_options DataDatabricksCluster#mount_options}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfoNetworkFilesystemInfo.property.serverAddress">serverAddress</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#server_address DataDatabricksCluster#server_address}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfoNetworkFilesystemInfo.property.mountOptions">mountOptions</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#mount_options DataDatabricksCluster#mount_options}. |
 
 ---
 
@@ -4204,7 +4204,7 @@ public java.lang.String getServerAddress();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#server_address DataDatabricksCluster#server_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#server_address DataDatabricksCluster#server_address}.
 
 ---
 
@@ -4216,7 +4216,7 @@ public java.lang.String getMountOptions();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#mount_options DataDatabricksCluster#mount_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#mount_options DataDatabricksCluster#mount_options}.
 
 ---
 
@@ -4237,7 +4237,7 @@ DataDatabricksClusterClusterInfoSpecDockerImage.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecDockerImage.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#url DataDatabricksCluster#url}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecDockerImage.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#url DataDatabricksCluster#url}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecDockerImage.property.basicAuth">basicAuth</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecDockerImageBasicAuth">DataDatabricksClusterClusterInfoSpecDockerImageBasicAuth</a></code> | basic_auth block. |
 
 ---
@@ -4250,7 +4250,7 @@ public java.lang.String getUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#url DataDatabricksCluster#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#url DataDatabricksCluster#url}.
 
 ---
 
@@ -4264,7 +4264,7 @@ public DataDatabricksClusterClusterInfoSpecDockerImageBasicAuth getBasicAuth();
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#basic_auth DataDatabricksCluster#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#basic_auth DataDatabricksCluster#basic_auth}
 
 ---
 
@@ -4285,8 +4285,8 @@ DataDatabricksClusterClusterInfoSpecDockerImageBasicAuth.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecDockerImageBasicAuth.property.password">password</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#password DataDatabricksCluster#password}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecDockerImageBasicAuth.property.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#username DataDatabricksCluster#username}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecDockerImageBasicAuth.property.password">password</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#password DataDatabricksCluster#password}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecDockerImageBasicAuth.property.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#username DataDatabricksCluster#username}. |
 
 ---
 
@@ -4298,7 +4298,7 @@ public java.lang.String getPassword();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#password DataDatabricksCluster#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#password DataDatabricksCluster#password}.
 
 ---
 
@@ -4310,7 +4310,7 @@ public java.lang.String getUsername();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#username DataDatabricksCluster#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#username DataDatabricksCluster#username}.
 
 ---
 
@@ -4336,12 +4336,12 @@ DataDatabricksClusterClusterInfoSpecGcpAttributes.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributes.property.availability">availability</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#availability DataDatabricksCluster#availability}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributes.property.bootDiskSize">bootDiskSize</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#boot_disk_size DataDatabricksCluster#boot_disk_size}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributes.property.googleServiceAccount">googleServiceAccount</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#google_service_account DataDatabricksCluster#google_service_account}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributes.property.localSsdCount">localSsdCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#local_ssd_count DataDatabricksCluster#local_ssd_count}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributes.property.usePreemptibleExecutors">usePreemptibleExecutors</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#use_preemptible_executors DataDatabricksCluster#use_preemptible_executors}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributes.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#zone_id DataDatabricksCluster#zone_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributes.property.availability">availability</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#availability DataDatabricksCluster#availability}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributes.property.bootDiskSize">bootDiskSize</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#boot_disk_size DataDatabricksCluster#boot_disk_size}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributes.property.googleServiceAccount">googleServiceAccount</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#google_service_account DataDatabricksCluster#google_service_account}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributes.property.localSsdCount">localSsdCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#local_ssd_count DataDatabricksCluster#local_ssd_count}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributes.property.usePreemptibleExecutors">usePreemptibleExecutors</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#use_preemptible_executors DataDatabricksCluster#use_preemptible_executors}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributes.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#zone_id DataDatabricksCluster#zone_id}. |
 
 ---
 
@@ -4353,7 +4353,7 @@ public java.lang.String getAvailability();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#availability DataDatabricksCluster#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#availability DataDatabricksCluster#availability}.
 
 ---
 
@@ -4365,7 +4365,7 @@ public java.lang.Number getBootDiskSize();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#boot_disk_size DataDatabricksCluster#boot_disk_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#boot_disk_size DataDatabricksCluster#boot_disk_size}.
 
 ---
 
@@ -4377,7 +4377,7 @@ public java.lang.String getGoogleServiceAccount();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#google_service_account DataDatabricksCluster#google_service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#google_service_account DataDatabricksCluster#google_service_account}.
 
 ---
 
@@ -4389,7 +4389,7 @@ public java.lang.Number getLocalSsdCount();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#local_ssd_count DataDatabricksCluster#local_ssd_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#local_ssd_count DataDatabricksCluster#local_ssd_count}.
 
 ---
 
@@ -4401,7 +4401,7 @@ public java.lang.Object getUsePreemptibleExecutors();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#use_preemptible_executors DataDatabricksCluster#use_preemptible_executors}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#use_preemptible_executors DataDatabricksCluster#use_preemptible_executors}.
 
 ---
 
@@ -4413,7 +4413,7 @@ public java.lang.String getZoneId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#zone_id DataDatabricksCluster#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#zone_id DataDatabricksCluster#zone_id}.
 
 ---
 
@@ -4459,7 +4459,7 @@ public DataDatabricksClusterClusterInfoSpecInitScriptsAbfss getAbfss();
 
 abfss block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#abfss DataDatabricksCluster#abfss}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#abfss DataDatabricksCluster#abfss}
 
 ---
 
@@ -4473,7 +4473,7 @@ public DataDatabricksClusterClusterInfoSpecInitScriptsDbfs getDbfs();
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#dbfs DataDatabricksCluster#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#dbfs DataDatabricksCluster#dbfs}
 
 ---
 
@@ -4487,7 +4487,7 @@ public DataDatabricksClusterClusterInfoSpecInitScriptsFile getFile();
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#file DataDatabricksCluster#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#file DataDatabricksCluster#file}
 
 ---
 
@@ -4501,7 +4501,7 @@ public DataDatabricksClusterClusterInfoSpecInitScriptsGcs getGcs();
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#gcs DataDatabricksCluster#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#gcs DataDatabricksCluster#gcs}
 
 ---
 
@@ -4515,7 +4515,7 @@ public DataDatabricksClusterClusterInfoSpecInitScriptsS3 getS3();
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#s3 DataDatabricksCluster#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#s3 DataDatabricksCluster#s3}
 
 ---
 
@@ -4529,7 +4529,7 @@ public DataDatabricksClusterClusterInfoSpecInitScriptsVolumes getVolumes();
 
 volumes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#volumes DataDatabricksCluster#volumes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#volumes DataDatabricksCluster#volumes}
 
 ---
 
@@ -4543,7 +4543,7 @@ public DataDatabricksClusterClusterInfoSpecInitScriptsWorkspace getWorkspace();
 
 workspace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#workspace DataDatabricksCluster#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#workspace DataDatabricksCluster#workspace}
 
 ---
 
@@ -4563,7 +4563,7 @@ DataDatabricksClusterClusterInfoSpecInitScriptsAbfss.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsAbfss.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsAbfss.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
 
 ---
 
@@ -4575,7 +4575,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
 
 ---
 
@@ -4595,7 +4595,7 @@ DataDatabricksClusterClusterInfoSpecInitScriptsDbfs.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsDbfs.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsDbfs.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
 
 ---
 
@@ -4607,7 +4607,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
 
 ---
 
@@ -4627,7 +4627,7 @@ DataDatabricksClusterClusterInfoSpecInitScriptsFile.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsFile.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsFile.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
 
 ---
 
@@ -4639,7 +4639,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
 
 ---
 
@@ -4659,7 +4659,7 @@ DataDatabricksClusterClusterInfoSpecInitScriptsGcs.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsGcs.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsGcs.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
 
 ---
 
@@ -4671,7 +4671,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
 
 ---
 
@@ -4698,13 +4698,13 @@ DataDatabricksClusterClusterInfoSpecInitScriptsS3.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3.property.cannedAcl">cannedAcl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#canned_acl DataDatabricksCluster#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3.property.enableEncryption">enableEncryption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3.property.encryptionType">encryptionType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#encryption_type DataDatabricksCluster#encryption_type}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3.property.endpoint">endpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#endpoint DataDatabricksCluster#endpoint}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3.property.kmsKey">kmsKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#kms_key DataDatabricksCluster#kms_key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#region DataDatabricksCluster#region}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3.property.cannedAcl">cannedAcl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#canned_acl DataDatabricksCluster#canned_acl}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3.property.enableEncryption">enableEncryption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3.property.encryptionType">encryptionType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#encryption_type DataDatabricksCluster#encryption_type}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3.property.endpoint">endpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#endpoint DataDatabricksCluster#endpoint}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3.property.kmsKey">kmsKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#kms_key DataDatabricksCluster#kms_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#region DataDatabricksCluster#region}. |
 
 ---
 
@@ -4716,7 +4716,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
 
 ---
 
@@ -4728,7 +4728,7 @@ public java.lang.String getCannedAcl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#canned_acl DataDatabricksCluster#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#canned_acl DataDatabricksCluster#canned_acl}.
 
 ---
 
@@ -4740,7 +4740,7 @@ public java.lang.Object getEnableEncryption();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}.
 
 ---
 
@@ -4752,7 +4752,7 @@ public java.lang.String getEncryptionType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#encryption_type DataDatabricksCluster#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#encryption_type DataDatabricksCluster#encryption_type}.
 
 ---
 
@@ -4764,7 +4764,7 @@ public java.lang.String getEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#endpoint DataDatabricksCluster#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#endpoint DataDatabricksCluster#endpoint}.
 
 ---
 
@@ -4776,7 +4776,7 @@ public java.lang.String getKmsKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#kms_key DataDatabricksCluster#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#kms_key DataDatabricksCluster#kms_key}.
 
 ---
 
@@ -4788,7 +4788,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#region DataDatabricksCluster#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#region DataDatabricksCluster#region}.
 
 ---
 
@@ -4808,7 +4808,7 @@ DataDatabricksClusterClusterInfoSpecInitScriptsVolumes.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsVolumes.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsVolumes.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
 
 ---
 
@@ -4820,7 +4820,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
 
 ---
 
@@ -4840,7 +4840,7 @@ DataDatabricksClusterClusterInfoSpecInitScriptsWorkspace.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsWorkspace.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsWorkspace.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
 
 ---
 
@@ -4852,7 +4852,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}.
 
 ---
 
@@ -4879,12 +4879,12 @@ DataDatabricksClusterClusterInfoSpecLibrary.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary.property.cran">cran</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryCran">DataDatabricksClusterClusterInfoSpecLibraryCran</a></code> | cran block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary.property.egg">egg</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#egg DataDatabricksCluster#egg}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary.property.jar">jar</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#jar DataDatabricksCluster#jar}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary.property.egg">egg</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#egg DataDatabricksCluster#egg}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary.property.jar">jar</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#jar DataDatabricksCluster#jar}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary.property.maven">maven</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryMaven">DataDatabricksClusterClusterInfoSpecLibraryMaven</a></code> | maven block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary.property.pypi">pypi</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryPypi">DataDatabricksClusterClusterInfoSpecLibraryPypi</a></code> | pypi block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary.property.requirements">requirements</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#requirements DataDatabricksCluster#requirements}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary.property.whl">whl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#whl DataDatabricksCluster#whl}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary.property.requirements">requirements</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#requirements DataDatabricksCluster#requirements}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary.property.whl">whl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#whl DataDatabricksCluster#whl}. |
 
 ---
 
@@ -4898,7 +4898,7 @@ public DataDatabricksClusterClusterInfoSpecLibraryCran getCran();
 
 cran block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#cran DataDatabricksCluster#cran}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#cran DataDatabricksCluster#cran}
 
 ---
 
@@ -4910,7 +4910,7 @@ public java.lang.String getEgg();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#egg DataDatabricksCluster#egg}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#egg DataDatabricksCluster#egg}.
 
 ---
 
@@ -4922,7 +4922,7 @@ public java.lang.String getJar();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#jar DataDatabricksCluster#jar}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#jar DataDatabricksCluster#jar}.
 
 ---
 
@@ -4936,7 +4936,7 @@ public DataDatabricksClusterClusterInfoSpecLibraryMaven getMaven();
 
 maven block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#maven DataDatabricksCluster#maven}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#maven DataDatabricksCluster#maven}
 
 ---
 
@@ -4950,7 +4950,7 @@ public DataDatabricksClusterClusterInfoSpecLibraryPypi getPypi();
 
 pypi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#pypi DataDatabricksCluster#pypi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#pypi DataDatabricksCluster#pypi}
 
 ---
 
@@ -4962,7 +4962,7 @@ public java.lang.String getRequirements();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#requirements DataDatabricksCluster#requirements}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#requirements DataDatabricksCluster#requirements}.
 
 ---
 
@@ -4974,7 +4974,7 @@ public java.lang.String getWhl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#whl DataDatabricksCluster#whl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#whl DataDatabricksCluster#whl}.
 
 ---
 
@@ -4995,8 +4995,8 @@ DataDatabricksClusterClusterInfoSpecLibraryCran.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryCran.property.package">package</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#package DataDatabricksCluster#package}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryCran.property.repo">repo</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#repo DataDatabricksCluster#repo}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryCran.property.package">package</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#package DataDatabricksCluster#package}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryCran.property.repo">repo</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#repo DataDatabricksCluster#repo}. |
 
 ---
 
@@ -5008,7 +5008,7 @@ public java.lang.String getPackage();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#package DataDatabricksCluster#package}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#package DataDatabricksCluster#package}.
 
 ---
 
@@ -5020,7 +5020,7 @@ public java.lang.String getRepo();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#repo DataDatabricksCluster#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#repo DataDatabricksCluster#repo}.
 
 ---
 
@@ -5042,9 +5042,9 @@ DataDatabricksClusterClusterInfoSpecLibraryMaven.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryMaven.property.coordinates">coordinates</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#coordinates DataDatabricksCluster#coordinates}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryMaven.property.exclusions">exclusions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#exclusions DataDatabricksCluster#exclusions}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryMaven.property.repo">repo</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#repo DataDatabricksCluster#repo}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryMaven.property.coordinates">coordinates</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#coordinates DataDatabricksCluster#coordinates}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryMaven.property.exclusions">exclusions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#exclusions DataDatabricksCluster#exclusions}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryMaven.property.repo">repo</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#repo DataDatabricksCluster#repo}. |
 
 ---
 
@@ -5056,7 +5056,7 @@ public java.lang.String getCoordinates();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#coordinates DataDatabricksCluster#coordinates}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#coordinates DataDatabricksCluster#coordinates}.
 
 ---
 
@@ -5068,7 +5068,7 @@ public java.util.List<java.lang.String> getExclusions();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#exclusions DataDatabricksCluster#exclusions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#exclusions DataDatabricksCluster#exclusions}.
 
 ---
 
@@ -5080,7 +5080,7 @@ public java.lang.String getRepo();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#repo DataDatabricksCluster#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#repo DataDatabricksCluster#repo}.
 
 ---
 
@@ -5101,8 +5101,8 @@ DataDatabricksClusterClusterInfoSpecLibraryPypi.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryPypi.property.package">package</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#package DataDatabricksCluster#package}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryPypi.property.repo">repo</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#repo DataDatabricksCluster#repo}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryPypi.property.package">package</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#package DataDatabricksCluster#package}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryPypi.property.repo">repo</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#repo DataDatabricksCluster#repo}. |
 
 ---
 
@@ -5114,7 +5114,7 @@ public java.lang.String getPackage();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#package DataDatabricksCluster#package}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#package DataDatabricksCluster#package}.
 
 ---
 
@@ -5126,7 +5126,7 @@ public java.lang.String getRepo();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#repo DataDatabricksCluster#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#repo DataDatabricksCluster#repo}.
 
 ---
 
@@ -5160,7 +5160,7 @@ public DataDatabricksClusterClusterInfoSpecWorkloadTypeClients getClients();
 
 clients block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#clients DataDatabricksCluster#clients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#clients DataDatabricksCluster#clients}
 
 ---
 
@@ -5183,8 +5183,8 @@ DataDatabricksClusterClusterInfoSpecWorkloadTypeClients.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClients.property.jobs">jobs</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#jobs DataDatabricksCluster#jobs}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClients.property.notebooks">notebooks</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#notebooks DataDatabricksCluster#notebooks}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClients.property.jobs">jobs</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#jobs DataDatabricksCluster#jobs}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClients.property.notebooks">notebooks</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#notebooks DataDatabricksCluster#notebooks}. |
 
 ---
 
@@ -5196,7 +5196,7 @@ public java.lang.Object getJobs();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#jobs DataDatabricksCluster#jobs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#jobs DataDatabricksCluster#jobs}.
 
 ---
 
@@ -5208,7 +5208,7 @@ public java.lang.Object getNotebooks();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#notebooks DataDatabricksCluster#notebooks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#notebooks DataDatabricksCluster#notebooks}.
 
 ---
 
@@ -5230,9 +5230,9 @@ DataDatabricksClusterClusterInfoTerminationReason.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoTerminationReason.property.code">code</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#code DataDatabricksCluster#code}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoTerminationReason.property.parameters">parameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#parameters DataDatabricksCluster#parameters}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoTerminationReason.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#type DataDatabricksCluster#type}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoTerminationReason.property.code">code</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#code DataDatabricksCluster#code}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoTerminationReason.property.parameters">parameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#parameters DataDatabricksCluster#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoTerminationReason.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#type DataDatabricksCluster#type}. |
 
 ---
 
@@ -5244,7 +5244,7 @@ public java.lang.String getCode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#code DataDatabricksCluster#code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#code DataDatabricksCluster#code}.
 
 ---
 
@@ -5256,7 +5256,7 @@ public java.util.Map<java.lang.String, java.lang.String> getParameters();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#parameters DataDatabricksCluster#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#parameters DataDatabricksCluster#parameters}.
 
 ---
 
@@ -5268,7 +5268,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#type DataDatabricksCluster#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#type DataDatabricksCluster#type}.
 
 ---
 
@@ -5302,7 +5302,7 @@ public DataDatabricksClusterClusterInfoWorkloadTypeClients getClients();
 
 clients block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#clients DataDatabricksCluster#clients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#clients DataDatabricksCluster#clients}
 
 ---
 
@@ -5325,8 +5325,8 @@ DataDatabricksClusterClusterInfoWorkloadTypeClients.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClients.property.jobs">jobs</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#jobs DataDatabricksCluster#jobs}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClients.property.notebooks">notebooks</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#notebooks DataDatabricksCluster#notebooks}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClients.property.jobs">jobs</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#jobs DataDatabricksCluster#jobs}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClients.property.notebooks">notebooks</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#notebooks DataDatabricksCluster#notebooks}. |
 
 ---
 
@@ -5338,7 +5338,7 @@ public java.lang.Object getJobs();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#jobs DataDatabricksCluster#jobs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#jobs DataDatabricksCluster#jobs}.
 
 ---
 
@@ -5350,7 +5350,7 @@ public java.lang.Object getNotebooks();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#notebooks DataDatabricksCluster#notebooks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#notebooks DataDatabricksCluster#notebooks}.
 
 ---
 
@@ -5391,10 +5391,10 @@ DataDatabricksClusterConfig.builder()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterConfig.property.clusterId">clusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#cluster_id DataDatabricksCluster#cluster_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterConfig.property.clusterId">clusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#cluster_id DataDatabricksCluster#cluster_id}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterConfig.property.clusterInfo">clusterInfo</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo">DataDatabricksClusterClusterInfo</a></code> | cluster_info block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterConfig.property.clusterName">clusterName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#cluster_name DataDatabricksCluster#cluster_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#id DataDatabricksCluster#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterConfig.property.clusterName">clusterName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#cluster_name DataDatabricksCluster#cluster_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#id DataDatabricksCluster#id}. |
 
 ---
 
@@ -5476,7 +5476,7 @@ public java.lang.String getClusterId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#cluster_id DataDatabricksCluster#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#cluster_id DataDatabricksCluster#cluster_id}.
 
 ---
 
@@ -5490,7 +5490,7 @@ public DataDatabricksClusterClusterInfo getClusterInfo();
 
 cluster_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#cluster_info DataDatabricksCluster#cluster_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#cluster_info DataDatabricksCluster#cluster_info}
 
 ---
 
@@ -5502,7 +5502,7 @@ public java.lang.String getClusterName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#cluster_name DataDatabricksCluster#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#cluster_name DataDatabricksCluster#cluster_name}.
 
 ---
 
@@ -5514,7 +5514,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.74.0/docs/data-sources/cluster#id DataDatabricksCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/cluster#id DataDatabricksCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -25252,6 +25252,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.resetSingleUserName">resetSingleUserName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.resetSparkConf">resetSparkConf</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.resetSparkEnvVars">resetSparkEnvVars</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.resetSparkVersion">resetSparkVersion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.resetSshPublicKeys">resetSshPublicKeys</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.resetUseMlRuntime">resetUseMlRuntime</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.resetWorkloadType">resetWorkloadType</a></code> | *No description.* |
@@ -25694,6 +25695,12 @@ public void resetSparkConf()
 
 ```java
 public void resetSparkEnvVars()
+```
+
+##### `resetSparkVersion` <a name="resetSparkVersion" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.resetSparkVersion"></a>
+
+```java
+public void resetSparkVersion()
 ```
 
 ##### `resetSshPublicKeys` <a name="resetSshPublicKeys" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.resetSshPublicKeys"></a>
