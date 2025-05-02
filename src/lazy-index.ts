@@ -8,6 +8,7 @@ Object.defineProperty(exports, 'accessControlRuleSet', { get: function () { retu
 Object.defineProperty(exports, 'aibiDashboardEmbeddingAccessPolicySetting', { get: function () { return require('./aibi-dashboard-embedding-access-policy-setting'); } });
 Object.defineProperty(exports, 'aibiDashboardEmbeddingApprovedDomainsSetting', { get: function () { return require('./aibi-dashboard-embedding-approved-domains-setting'); } });
 Object.defineProperty(exports, 'alert', { get: function () { return require('./alert'); } });
+Object.defineProperty(exports, 'alertV2', { get: function () { return require('./alert-v2'); } });
 Object.defineProperty(exports, 'app', { get: function () { return require('./app'); } });
 Object.defineProperty(exports, 'artifactAllowlist', { get: function () { return require('./artifact-allowlist'); } });
 Object.defineProperty(exports, 'automaticClusterUpdateWorkspaceSetting', { get: function () { return require('./automatic-cluster-update-workspace-setting'); } });
@@ -114,6 +115,8 @@ Object.defineProperty(exports, 'volume', { get: function () { return require('./
 Object.defineProperty(exports, 'workspaceBinding', { get: function () { return require('./workspace-binding'); } });
 Object.defineProperty(exports, 'workspaceConf', { get: function () { return require('./workspace-conf'); } });
 Object.defineProperty(exports, 'workspaceFile', { get: function () { return require('./workspace-file'); } });
+Object.defineProperty(exports, 'dataDatabricksAlertV2', { get: function () { return require('./data-databricks-alert-v2'); } });
+Object.defineProperty(exports, 'dataDatabricksAlertsV2', { get: function () { return require('./data-databricks-alerts-v2'); } });
 Object.defineProperty(exports, 'dataDatabricksApp', { get: function () { return require('./data-databricks-app'); } });
 Object.defineProperty(exports, 'dataDatabricksApps', { get: function () { return require('./data-databricks-apps'); } });
 Object.defineProperty(exports, 'dataDatabricksAwsAssumeRolePolicy', { get: function () { return require('./data-databricks-aws-assume-role-policy'); } });
