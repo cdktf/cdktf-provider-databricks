@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/budget_policies
+// https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/data-sources/budget_policies
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,18 +8,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksBudgetPoliciesConfig extends cdktf.TerraformMetaArguments {
 }
-export interface DataDatabricksBudgetPoliciesBudgetPoliciesCustomTags {
+export interface DataDatabricksBudgetPoliciesPoliciesCustomTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/budget_policies#key DataDatabricksBudgetPolicies#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/data-sources/budget_policies#key DataDatabricksBudgetPolicies#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/budget_policies#value DataDatabricksBudgetPolicies#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/data-sources/budget_policies#value DataDatabricksBudgetPolicies#value}
   */
   readonly value?: string;
 }
 
-export function dataDatabricksBudgetPoliciesBudgetPoliciesCustomTagsToTerraform(struct?: DataDatabricksBudgetPoliciesBudgetPoliciesCustomTags | cdktf.IResolvable): any {
+export function dataDatabricksBudgetPoliciesPoliciesCustomTagsToTerraform(struct?: DataDatabricksBudgetPoliciesPoliciesCustomTags | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -36,7 +31,7 @@ export function dataDatabricksBudgetPoliciesBudgetPoliciesCustomTagsToTerraform(
 }
 
 
-export function dataDatabricksBudgetPoliciesBudgetPoliciesCustomTagsToHclTerraform(struct?: DataDatabricksBudgetPoliciesBudgetPoliciesCustomTags | cdktf.IResolvable): any {
+export function dataDatabricksBudgetPoliciesPoliciesCustomTagsToHclTerraform(struct?: DataDatabricksBudgetPoliciesPoliciesCustomTags | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -60,7 +55,7 @@ export function dataDatabricksBudgetPoliciesBudgetPoliciesCustomTagsToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksBudgetPoliciesBudgetPoliciesCustomTagsOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksBudgetPoliciesPoliciesCustomTagsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -74,7 +69,7 @@ export class DataDatabricksBudgetPoliciesBudgetPoliciesCustomTagsOutputReference
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksBudgetPoliciesBudgetPoliciesCustomTags | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksBudgetPoliciesPoliciesCustomTags | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -91,7 +86,7 @@ export class DataDatabricksBudgetPoliciesBudgetPoliciesCustomTagsOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksBudgetPoliciesBudgetPoliciesCustomTags | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksBudgetPoliciesPoliciesCustomTags | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -140,8 +135,8 @@ export class DataDatabricksBudgetPoliciesBudgetPoliciesCustomTagsOutputReference
   }
 }
 
-export class DataDatabricksBudgetPoliciesBudgetPoliciesCustomTagsList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksBudgetPoliciesBudgetPoliciesCustomTags[] | cdktf.IResolvable
+export class DataDatabricksBudgetPoliciesPoliciesCustomTagsList extends cdktf.ComplexList {
+  public internalValue? : DataDatabricksBudgetPoliciesPoliciesCustomTags[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -155,39 +150,39 @@ export class DataDatabricksBudgetPoliciesBudgetPoliciesCustomTagsList extends cd
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataDatabricksBudgetPoliciesBudgetPoliciesCustomTagsOutputReference {
-    return new DataDatabricksBudgetPoliciesBudgetPoliciesCustomTagsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): DataDatabricksBudgetPoliciesPoliciesCustomTagsOutputReference {
+    return new DataDatabricksBudgetPoliciesPoliciesCustomTagsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface DataDatabricksBudgetPoliciesBudgetPolicies {
+export interface DataDatabricksBudgetPoliciesPolicies {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/budget_policies#binding_workspace_ids DataDatabricksBudgetPolicies#binding_workspace_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/data-sources/budget_policies#binding_workspace_ids DataDatabricksBudgetPolicies#binding_workspace_ids}
   */
   readonly bindingWorkspaceIds?: number[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/budget_policies#custom_tags DataDatabricksBudgetPolicies#custom_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/data-sources/budget_policies#custom_tags DataDatabricksBudgetPolicies#custom_tags}
   */
-  readonly customTags?: DataDatabricksBudgetPoliciesBudgetPoliciesCustomTags[] | cdktf.IResolvable;
+  readonly customTags?: DataDatabricksBudgetPoliciesPoliciesCustomTags[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/budget_policies#policy_name DataDatabricksBudgetPolicies#policy_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/data-sources/budget_policies#policy_name DataDatabricksBudgetPolicies#policy_name}
   */
   readonly policyName?: string;
 }
 
-export function dataDatabricksBudgetPoliciesBudgetPoliciesToTerraform(struct?: DataDatabricksBudgetPoliciesBudgetPolicies): any {
+export function dataDatabricksBudgetPoliciesPoliciesToTerraform(struct?: DataDatabricksBudgetPoliciesPolicies): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     binding_workspace_ids: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.bindingWorkspaceIds),
-    custom_tags: cdktf.listMapper(dataDatabricksBudgetPoliciesBudgetPoliciesCustomTagsToTerraform, false)(struct!.customTags),
+    custom_tags: cdktf.listMapper(dataDatabricksBudgetPoliciesPoliciesCustomTagsToTerraform, false)(struct!.customTags),
     policy_name: cdktf.stringToTerraform(struct!.policyName),
   }
 }
 
 
-export function dataDatabricksBudgetPoliciesBudgetPoliciesToHclTerraform(struct?: DataDatabricksBudgetPoliciesBudgetPolicies): any {
+export function dataDatabricksBudgetPoliciesPoliciesToHclTerraform(struct?: DataDatabricksBudgetPoliciesPolicies): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -200,10 +195,10 @@ export function dataDatabricksBudgetPoliciesBudgetPoliciesToHclTerraform(struct?
       storageClassType: "numberList",
     },
     custom_tags: {
-      value: cdktf.listMapperHcl(dataDatabricksBudgetPoliciesBudgetPoliciesCustomTagsToHclTerraform, false)(struct!.customTags),
+      value: cdktf.listMapperHcl(dataDatabricksBudgetPoliciesPoliciesCustomTagsToHclTerraform, false)(struct!.customTags),
       isBlock: true,
       type: "list",
-      storageClassType: "DataDatabricksBudgetPoliciesBudgetPoliciesCustomTagsList",
+      storageClassType: "DataDatabricksBudgetPoliciesPoliciesCustomTagsList",
     },
     policy_name: {
       value: cdktf.stringToHclTerraform(struct!.policyName),
@@ -217,7 +212,7 @@ export function dataDatabricksBudgetPoliciesBudgetPoliciesToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksBudgetPoliciesPoliciesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -230,7 +225,7 @@ export class DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference extends c
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksBudgetPoliciesBudgetPolicies | undefined {
+  public get internalValue(): DataDatabricksBudgetPoliciesPolicies | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bindingWorkspaceIds !== undefined) {
@@ -248,7 +243,7 @@ export class DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksBudgetPoliciesBudgetPolicies | undefined) {
+  public set internalValue(value: DataDatabricksBudgetPoliciesPolicies | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._bindingWorkspaceIds = undefined;
@@ -280,11 +275,11 @@ export class DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference extends c
   }
 
   // custom_tags - computed: true, optional: true, required: false
-  private _customTags = new DataDatabricksBudgetPoliciesBudgetPoliciesCustomTagsList(this, "custom_tags", false);
+  private _customTags = new DataDatabricksBudgetPoliciesPoliciesCustomTagsList(this, "custom_tags", false);
   public get customTags() {
     return this._customTags;
   }
-  public putCustomTags(value: DataDatabricksBudgetPoliciesBudgetPoliciesCustomTags[] | cdktf.IResolvable) {
+  public putCustomTags(value: DataDatabricksBudgetPoliciesPoliciesCustomTags[] | cdktf.IResolvable) {
     this._customTags.internalValue = value;
   }
   public resetCustomTags() {
@@ -317,8 +312,8 @@ export class DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference extends c
   }
 }
 
-export class DataDatabricksBudgetPoliciesBudgetPoliciesList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksBudgetPoliciesBudgetPolicies[] | cdktf.IResolvable
+export class DataDatabricksBudgetPoliciesPoliciesList extends cdktf.ComplexList {
+  public internalValue? : DataDatabricksBudgetPoliciesPolicies[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -332,13 +327,13 @@ export class DataDatabricksBudgetPoliciesBudgetPoliciesList extends cdktf.Comple
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference {
-    return new DataDatabricksBudgetPoliciesBudgetPoliciesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): DataDatabricksBudgetPoliciesPoliciesOutputReference {
+    return new DataDatabricksBudgetPoliciesPoliciesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/budget_policies databricks_budget_policies}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/data-sources/budget_policies databricks_budget_policies}
 */
 export class DataDatabricksBudgetPolicies extends cdktf.TerraformDataSource {
 
@@ -354,7 +349,7 @@ export class DataDatabricksBudgetPolicies extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksBudgetPolicies resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksBudgetPolicies to import
-  * @param importFromId The id of the existing DataDatabricksBudgetPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/budget_policies#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksBudgetPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/data-sources/budget_policies#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksBudgetPolicies to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -366,7 +361,7 @@ export class DataDatabricksBudgetPolicies extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.75.0/docs/data-sources/budget_policies databricks_budget_policies} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/data-sources/budget_policies databricks_budget_policies} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -377,7 +372,7 @@ export class DataDatabricksBudgetPolicies extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_budget_policies',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.75.0',
+        providerVersion: '1.76.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -394,10 +389,10 @@ export class DataDatabricksBudgetPolicies extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // budget_policies - computed: true, optional: false, required: false
-  private _budgetPolicies = new DataDatabricksBudgetPoliciesBudgetPoliciesList(this, "budget_policies", false);
-  public get budgetPolicies() {
-    return this._budgetPolicies;
+  // policies - computed: true, optional: false, required: false
+  private _policies = new DataDatabricksBudgetPoliciesPoliciesList(this, "policies", false);
+  public get policies() {
+    return this._policies;
   }
 
   // =========
