@@ -4,7 +4,7 @@
 
 ### DatabricksProvider <a name="DatabricksProvider" id="@cdktf/provider-databricks.provider.DatabricksProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs databricks}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs databricks}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer"></a>
 
@@ -31,6 +31,7 @@ DatabricksProvider.Builder.create(Construct scope, java.lang.String id)
 //  .clusterId(java.lang.String)
 //  .configFile(java.lang.String)
 //  .databricksCliPath(java.lang.String)
+//  .databricksIdTokenFilepath(java.lang.String)
 //  .debugHeaders(java.lang.Boolean)
 //  .debugHeaders(IResolvable)
 //  .debugTruncateBytes(java.lang.Number)
@@ -39,6 +40,7 @@ DatabricksProvider.Builder.create(Construct scope, java.lang.String id)
 //  .host(java.lang.String)
 //  .httpTimeoutSeconds(java.lang.Number)
 //  .metadataServiceUrl(java.lang.String)
+//  .oidcTokenEnv(java.lang.String)
 //  .password(java.lang.String)
 //  .profile(java.lang.String)
 //  .rateLimit(java.lang.Number)
@@ -56,40 +58,42 @@ DatabricksProvider.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#account_id DatabricksProvider#account_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.actionsIdTokenRequestToken">actionsIdTokenRequestToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#actions_id_token_request_token DatabricksProvider#actions_id_token_request_token}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.actionsIdTokenRequestUrl">actionsIdTokenRequestUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#actions_id_token_request_url DatabricksProvider#actions_id_token_request_url}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#account_id DatabricksProvider#account_id}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.actionsIdTokenRequestToken">actionsIdTokenRequestToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#actions_id_token_request_token DatabricksProvider#actions_id_token_request_token}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.actionsIdTokenRequestUrl">actionsIdTokenRequestUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#actions_id_token_request_url DatabricksProvider#actions_id_token_request_url}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.audience">audience</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#audience DatabricksProvider#audience}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.authType">authType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#auth_type DatabricksProvider#auth_type}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureClientId">azureClientId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#azure_client_id DatabricksProvider#azure_client_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureClientSecret">azureClientSecret</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#azure_client_secret DatabricksProvider#azure_client_secret}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureEnvironment">azureEnvironment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#azure_environment DatabricksProvider#azure_environment}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureLoginAppId">azureLoginAppId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureTenantId">azureTenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureUseMsi">azureUseMsi</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureWorkspaceResourceId">azureWorkspaceResourceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.clientId">clientId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#client_id DatabricksProvider#client_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.clientSecret">clientSecret</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#client_secret DatabricksProvider#client_secret}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.clusterId">clusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#cluster_id DatabricksProvider#cluster_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.configFile">configFile</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#config_file DatabricksProvider#config_file}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.databricksCliPath">databricksCliPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.debugHeaders">debugHeaders</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#debug_headers DatabricksProvider#debug_headers}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.debugTruncateBytes">debugTruncateBytes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.googleCredentials">googleCredentials</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#google_credentials DatabricksProvider#google_credentials}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.googleServiceAccount">googleServiceAccount</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#google_service_account DatabricksProvider#google_service_account}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.host">host</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#host DatabricksProvider#host}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.httpTimeoutSeconds">httpTimeoutSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.metadataServiceUrl">metadataServiceUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#metadata_service_url DatabricksProvider#metadata_service_url}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.password">password</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#password DatabricksProvider#password}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.profile">profile</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#profile DatabricksProvider#profile}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.rateLimit">rateLimit</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#rate_limit DatabricksProvider#rate_limit}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.retryTimeoutSeconds">retryTimeoutSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.serverlessComputeId">serverlessComputeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.skipVerify">skipVerify</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#skip_verify DatabricksProvider#skip_verify}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.token">token</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#token DatabricksProvider#token}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#username DatabricksProvider#username}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.warehouseId">warehouseId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#warehouse_id DatabricksProvider#warehouse_id}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.audience">audience</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#audience DatabricksProvider#audience}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.authType">authType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#auth_type DatabricksProvider#auth_type}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureClientId">azureClientId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#azure_client_id DatabricksProvider#azure_client_id}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureClientSecret">azureClientSecret</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#azure_client_secret DatabricksProvider#azure_client_secret}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureEnvironment">azureEnvironment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#azure_environment DatabricksProvider#azure_environment}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureLoginAppId">azureLoginAppId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureTenantId">azureTenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureUseMsi">azureUseMsi</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureWorkspaceResourceId">azureWorkspaceResourceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.clientId">clientId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#client_id DatabricksProvider#client_id}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.clientSecret">clientSecret</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#client_secret DatabricksProvider#client_secret}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.clusterId">clusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#cluster_id DatabricksProvider#cluster_id}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.configFile">configFile</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#config_file DatabricksProvider#config_file}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.databricksCliPath">databricksCliPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.databricksIdTokenFilepath">databricksIdTokenFilepath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#databricks_id_token_filepath DatabricksProvider#databricks_id_token_filepath}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.debugHeaders">debugHeaders</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#debug_headers DatabricksProvider#debug_headers}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.debugTruncateBytes">debugTruncateBytes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.googleCredentials">googleCredentials</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#google_credentials DatabricksProvider#google_credentials}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.googleServiceAccount">googleServiceAccount</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#google_service_account DatabricksProvider#google_service_account}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.host">host</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#host DatabricksProvider#host}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.httpTimeoutSeconds">httpTimeoutSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.metadataServiceUrl">metadataServiceUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#metadata_service_url DatabricksProvider#metadata_service_url}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.oidcTokenEnv">oidcTokenEnv</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#oidc_token_env DatabricksProvider#oidc_token_env}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.password">password</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#password DatabricksProvider#password}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.profile">profile</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#profile DatabricksProvider#profile}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.rateLimit">rateLimit</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#rate_limit DatabricksProvider#rate_limit}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.retryTimeoutSeconds">retryTimeoutSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.serverlessComputeId">serverlessComputeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.skipVerify">skipVerify</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#skip_verify DatabricksProvider#skip_verify}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.token">token</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#token DatabricksProvider#token}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#username DatabricksProvider#username}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.warehouseId">warehouseId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#warehouse_id DatabricksProvider#warehouse_id}. |
 
 ---
 
@@ -115,7 +119,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#account_id DatabricksProvider#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#account_id DatabricksProvider#account_id}.
 
 ---
 
@@ -123,7 +127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#actions_id_token_request_token DatabricksProvider#actions_id_token_request_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#actions_id_token_request_token DatabricksProvider#actions_id_token_request_token}.
 
 ---
 
@@ -131,7 +135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#actions_id_token_request_url DatabricksProvider#actions_id_token_request_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#actions_id_token_request_url DatabricksProvider#actions_id_token_request_url}.
 
 ---
 
@@ -141,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#alias DatabricksProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#alias DatabricksProvider#alias}
 
 ---
 
@@ -149,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#audience DatabricksProvider#audience}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#audience DatabricksProvider#audience}.
 
 ---
 
@@ -157,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#auth_type DatabricksProvider#auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#auth_type DatabricksProvider#auth_type}.
 
 ---
 
@@ -165,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#azure_client_id DatabricksProvider#azure_client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#azure_client_id DatabricksProvider#azure_client_id}.
 
 ---
 
@@ -173,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#azure_client_secret DatabricksProvider#azure_client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#azure_client_secret DatabricksProvider#azure_client_secret}.
 
 ---
 
@@ -181,7 +185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#azure_environment DatabricksProvider#azure_environment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#azure_environment DatabricksProvider#azure_environment}.
 
 ---
 
@@ -189,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}.
 
 ---
 
@@ -197,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}.
 
 ---
 
@@ -205,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}.
 
 ---
 
@@ -213,7 +217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}.
 
 ---
 
@@ -221,7 +225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#client_id DatabricksProvider#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#client_id DatabricksProvider#client_id}.
 
 ---
 
@@ -229,7 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#client_secret DatabricksProvider#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#client_secret DatabricksProvider#client_secret}.
 
 ---
 
@@ -237,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#cluster_id DatabricksProvider#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#cluster_id DatabricksProvider#cluster_id}.
 
 ---
 
@@ -245,7 +249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#config_file DatabricksProvider#config_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#config_file DatabricksProvider#config_file}.
 
 ---
 
@@ -253,7 +257,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}.
+
+---
+
+##### `databricksIdTokenFilepath`<sup>Optional</sup> <a name="databricksIdTokenFilepath" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.databricksIdTokenFilepath"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#databricks_id_token_filepath DatabricksProvider#databricks_id_token_filepath}.
 
 ---
 
@@ -261,7 +273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#debug_headers DatabricksProvider#debug_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#debug_headers DatabricksProvider#debug_headers}.
 
 ---
 
@@ -269,7 +281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}.
 
 ---
 
@@ -277,7 +289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#google_credentials DatabricksProvider#google_credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#google_credentials DatabricksProvider#google_credentials}.
 
 ---
 
@@ -285,7 +297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#google_service_account DatabricksProvider#google_service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#google_service_account DatabricksProvider#google_service_account}.
 
 ---
 
@@ -293,7 +305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#host DatabricksProvider#host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#host DatabricksProvider#host}.
 
 ---
 
@@ -301,7 +313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}.
 
 ---
 
@@ -309,7 +321,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#metadata_service_url DatabricksProvider#metadata_service_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#metadata_service_url DatabricksProvider#metadata_service_url}.
+
+---
+
+##### `oidcTokenEnv`<sup>Optional</sup> <a name="oidcTokenEnv" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.oidcTokenEnv"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#oidc_token_env DatabricksProvider#oidc_token_env}.
 
 ---
 
@@ -317,7 +337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#password DatabricksProvider#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#password DatabricksProvider#password}.
 
 ---
 
@@ -325,7 +345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#profile DatabricksProvider#profile}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#profile DatabricksProvider#profile}.
 
 ---
 
@@ -333,7 +353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#rate_limit DatabricksProvider#rate_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#rate_limit DatabricksProvider#rate_limit}.
 
 ---
 
@@ -341,7 +361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}.
 
 ---
 
@@ -349,7 +369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}.
 
 ---
 
@@ -357,7 +377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#skip_verify DatabricksProvider#skip_verify}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#skip_verify DatabricksProvider#skip_verify}.
 
 ---
 
@@ -365,7 +385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#token DatabricksProvider#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#token DatabricksProvider#token}.
 
 ---
 
@@ -373,7 +393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#username DatabricksProvider#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#username DatabricksProvider#username}.
 
 ---
 
@@ -381,7 +401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#warehouse_id DatabricksProvider#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#warehouse_id DatabricksProvider#warehouse_id}.
 
 ---
 
@@ -414,6 +434,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetClusterId">resetClusterId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetConfigFile">resetConfigFile</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetDatabricksCliPath">resetDatabricksCliPath</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetDatabricksIdTokenFilepath">resetDatabricksIdTokenFilepath</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetDebugHeaders">resetDebugHeaders</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetDebugTruncateBytes">resetDebugTruncateBytes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetGoogleCredentials">resetGoogleCredentials</a></code> | *No description.* |
@@ -421,6 +442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetHost">resetHost</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetHttpTimeoutSeconds">resetHttpTimeoutSeconds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetMetadataServiceUrl">resetMetadataServiceUrl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetOidcTokenEnv">resetOidcTokenEnv</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetPassword">resetPassword</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetProfile">resetProfile</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetRateLimit">resetRateLimit</a></code> | *No description.* |
@@ -611,6 +633,12 @@ public void resetConfigFile()
 public void resetDatabricksCliPath()
 ```
 
+##### `resetDatabricksIdTokenFilepath` <a name="resetDatabricksIdTokenFilepath" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetDatabricksIdTokenFilepath"></a>
+
+```java
+public void resetDatabricksIdTokenFilepath()
+```
+
 ##### `resetDebugHeaders` <a name="resetDebugHeaders" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetDebugHeaders"></a>
 
 ```java
@@ -651,6 +679,12 @@ public void resetHttpTimeoutSeconds()
 
 ```java
 public void resetMetadataServiceUrl()
+```
+
+##### `resetOidcTokenEnv` <a name="resetOidcTokenEnv" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetOidcTokenEnv"></a>
+
+```java
+public void resetOidcTokenEnv()
 ```
 
 ##### `resetPassword` <a name="resetPassword" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetPassword"></a>
@@ -810,7 +844,7 @@ The construct id used in the generated config for the DatabricksProvider to impo
 
 The id of the existing DatabricksProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -853,6 +887,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.clusterIdInput">clusterIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.configFileInput">configFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.databricksCliPathInput">databricksCliPathInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.databricksIdTokenFilepathInput">databricksIdTokenFilepathInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.debugHeadersInput">debugHeadersInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.debugTruncateBytesInput">debugTruncateBytesInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.googleCredentialsInput">googleCredentialsInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -860,6 +895,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.hostInput">hostInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.httpTimeoutSecondsInput">httpTimeoutSecondsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.metadataServiceUrlInput">metadataServiceUrlInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.oidcTokenEnvInput">oidcTokenEnvInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.passwordInput">passwordInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.profileInput">profileInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.rateLimitInput">rateLimitInput</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -886,6 +922,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.clusterId">clusterId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.configFile">configFile</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.databricksCliPath">databricksCliPath</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.databricksIdTokenFilepath">databricksIdTokenFilepath</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.debugHeaders">debugHeaders</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.debugTruncateBytes">debugTruncateBytes</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.googleCredentials">googleCredentials</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -893,6 +930,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.host">host</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.httpTimeoutSeconds">httpTimeoutSeconds</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.metadataServiceUrl">metadataServiceUrl</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.oidcTokenEnv">oidcTokenEnv</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.password">password</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.profile">profile</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.rateLimit">rateLimit</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -1177,6 +1215,16 @@ public java.lang.String getDatabricksCliPathInput();
 
 ---
 
+##### `databricksIdTokenFilepathInput`<sup>Optional</sup> <a name="databricksIdTokenFilepathInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.databricksIdTokenFilepathInput"></a>
+
+```java
+public java.lang.String getDatabricksIdTokenFilepathInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `debugHeadersInput`<sup>Optional</sup> <a name="debugHeadersInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.debugHeadersInput"></a>
 
 ```java
@@ -1241,6 +1289,16 @@ public java.lang.Number getHttpTimeoutSecondsInput();
 
 ```java
 public java.lang.String getMetadataServiceUrlInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `oidcTokenEnvInput`<sup>Optional</sup> <a name="oidcTokenEnvInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.oidcTokenEnvInput"></a>
+
+```java
+public java.lang.String getOidcTokenEnvInput();
 ```
 
 - *Type:* java.lang.String
@@ -1507,6 +1565,16 @@ public java.lang.String getDatabricksCliPath();
 
 ---
 
+##### `databricksIdTokenFilepath`<sup>Optional</sup> <a name="databricksIdTokenFilepath" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.databricksIdTokenFilepath"></a>
+
+```java
+public java.lang.String getDatabricksIdTokenFilepath();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `debugHeaders`<sup>Optional</sup> <a name="debugHeaders" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.debugHeaders"></a>
 
 ```java
@@ -1571,6 +1639,16 @@ public java.lang.Number getHttpTimeoutSeconds();
 
 ```java
 public java.lang.String getMetadataServiceUrl();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `oidcTokenEnv`<sup>Optional</sup> <a name="oidcTokenEnv" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.oidcTokenEnv"></a>
+
+```java
+public java.lang.String getOidcTokenEnv();
 ```
 
 - *Type:* java.lang.String
@@ -1714,6 +1792,7 @@ DatabricksProviderConfig.builder()
 //  .clusterId(java.lang.String)
 //  .configFile(java.lang.String)
 //  .databricksCliPath(java.lang.String)
+//  .databricksIdTokenFilepath(java.lang.String)
 //  .debugHeaders(java.lang.Boolean)
 //  .debugHeaders(IResolvable)
 //  .debugTruncateBytes(java.lang.Number)
@@ -1722,6 +1801,7 @@ DatabricksProviderConfig.builder()
 //  .host(java.lang.String)
 //  .httpTimeoutSeconds(java.lang.Number)
 //  .metadataServiceUrl(java.lang.String)
+//  .oidcTokenEnv(java.lang.String)
 //  .password(java.lang.String)
 //  .profile(java.lang.String)
 //  .rateLimit(java.lang.Number)
@@ -1739,40 +1819,42 @@ DatabricksProviderConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#account_id DatabricksProvider#account_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.actionsIdTokenRequestToken">actionsIdTokenRequestToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#actions_id_token_request_token DatabricksProvider#actions_id_token_request_token}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.actionsIdTokenRequestUrl">actionsIdTokenRequestUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#actions_id_token_request_url DatabricksProvider#actions_id_token_request_url}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#account_id DatabricksProvider#account_id}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.actionsIdTokenRequestToken">actionsIdTokenRequestToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#actions_id_token_request_token DatabricksProvider#actions_id_token_request_token}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.actionsIdTokenRequestUrl">actionsIdTokenRequestUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#actions_id_token_request_url DatabricksProvider#actions_id_token_request_url}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.audience">audience</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#audience DatabricksProvider#audience}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.authType">authType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#auth_type DatabricksProvider#auth_type}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureClientId">azureClientId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#azure_client_id DatabricksProvider#azure_client_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureClientSecret">azureClientSecret</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#azure_client_secret DatabricksProvider#azure_client_secret}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureEnvironment">azureEnvironment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#azure_environment DatabricksProvider#azure_environment}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureLoginAppId">azureLoginAppId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureTenantId">azureTenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureUseMsi">azureUseMsi</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureWorkspaceResourceId">azureWorkspaceResourceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.clientId">clientId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#client_id DatabricksProvider#client_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.clientSecret">clientSecret</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#client_secret DatabricksProvider#client_secret}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.clusterId">clusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#cluster_id DatabricksProvider#cluster_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.configFile">configFile</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#config_file DatabricksProvider#config_file}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.databricksCliPath">databricksCliPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.debugHeaders">debugHeaders</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#debug_headers DatabricksProvider#debug_headers}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.debugTruncateBytes">debugTruncateBytes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.googleCredentials">googleCredentials</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#google_credentials DatabricksProvider#google_credentials}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.googleServiceAccount">googleServiceAccount</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#google_service_account DatabricksProvider#google_service_account}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.host">host</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#host DatabricksProvider#host}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.httpTimeoutSeconds">httpTimeoutSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.metadataServiceUrl">metadataServiceUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#metadata_service_url DatabricksProvider#metadata_service_url}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.password">password</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#password DatabricksProvider#password}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.profile">profile</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#profile DatabricksProvider#profile}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.rateLimit">rateLimit</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#rate_limit DatabricksProvider#rate_limit}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.retryTimeoutSeconds">retryTimeoutSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.serverlessComputeId">serverlessComputeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.skipVerify">skipVerify</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#skip_verify DatabricksProvider#skip_verify}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.token">token</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#token DatabricksProvider#token}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#username DatabricksProvider#username}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.warehouseId">warehouseId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#warehouse_id DatabricksProvider#warehouse_id}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.audience">audience</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#audience DatabricksProvider#audience}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.authType">authType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#auth_type DatabricksProvider#auth_type}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureClientId">azureClientId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#azure_client_id DatabricksProvider#azure_client_id}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureClientSecret">azureClientSecret</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#azure_client_secret DatabricksProvider#azure_client_secret}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureEnvironment">azureEnvironment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#azure_environment DatabricksProvider#azure_environment}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureLoginAppId">azureLoginAppId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureTenantId">azureTenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureUseMsi">azureUseMsi</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureWorkspaceResourceId">azureWorkspaceResourceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.clientId">clientId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#client_id DatabricksProvider#client_id}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.clientSecret">clientSecret</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#client_secret DatabricksProvider#client_secret}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.clusterId">clusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#cluster_id DatabricksProvider#cluster_id}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.configFile">configFile</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#config_file DatabricksProvider#config_file}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.databricksCliPath">databricksCliPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.databricksIdTokenFilepath">databricksIdTokenFilepath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#databricks_id_token_filepath DatabricksProvider#databricks_id_token_filepath}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.debugHeaders">debugHeaders</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#debug_headers DatabricksProvider#debug_headers}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.debugTruncateBytes">debugTruncateBytes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.googleCredentials">googleCredentials</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#google_credentials DatabricksProvider#google_credentials}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.googleServiceAccount">googleServiceAccount</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#google_service_account DatabricksProvider#google_service_account}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.host">host</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#host DatabricksProvider#host}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.httpTimeoutSeconds">httpTimeoutSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.metadataServiceUrl">metadataServiceUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#metadata_service_url DatabricksProvider#metadata_service_url}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.oidcTokenEnv">oidcTokenEnv</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#oidc_token_env DatabricksProvider#oidc_token_env}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.password">password</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#password DatabricksProvider#password}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.profile">profile</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#profile DatabricksProvider#profile}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.rateLimit">rateLimit</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#rate_limit DatabricksProvider#rate_limit}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.retryTimeoutSeconds">retryTimeoutSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.serverlessComputeId">serverlessComputeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.skipVerify">skipVerify</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#skip_verify DatabricksProvider#skip_verify}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.token">token</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#token DatabricksProvider#token}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#username DatabricksProvider#username}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.warehouseId">warehouseId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#warehouse_id DatabricksProvider#warehouse_id}. |
 
 ---
 
@@ -1784,7 +1866,7 @@ public java.lang.String getAccountId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#account_id DatabricksProvider#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#account_id DatabricksProvider#account_id}.
 
 ---
 
@@ -1796,7 +1878,7 @@ public java.lang.String getActionsIdTokenRequestToken();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#actions_id_token_request_token DatabricksProvider#actions_id_token_request_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#actions_id_token_request_token DatabricksProvider#actions_id_token_request_token}.
 
 ---
 
@@ -1808,7 +1890,7 @@ public java.lang.String getActionsIdTokenRequestUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#actions_id_token_request_url DatabricksProvider#actions_id_token_request_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#actions_id_token_request_url DatabricksProvider#actions_id_token_request_url}.
 
 ---
 
@@ -1822,7 +1904,7 @@ public java.lang.String getAlias();
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#alias DatabricksProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#alias DatabricksProvider#alias}
 
 ---
 
@@ -1834,7 +1916,7 @@ public java.lang.String getAudience();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#audience DatabricksProvider#audience}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#audience DatabricksProvider#audience}.
 
 ---
 
@@ -1846,7 +1928,7 @@ public java.lang.String getAuthType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#auth_type DatabricksProvider#auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#auth_type DatabricksProvider#auth_type}.
 
 ---
 
@@ -1858,7 +1940,7 @@ public java.lang.String getAzureClientId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#azure_client_id DatabricksProvider#azure_client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#azure_client_id DatabricksProvider#azure_client_id}.
 
 ---
 
@@ -1870,7 +1952,7 @@ public java.lang.String getAzureClientSecret();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#azure_client_secret DatabricksProvider#azure_client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#azure_client_secret DatabricksProvider#azure_client_secret}.
 
 ---
 
@@ -1882,7 +1964,7 @@ public java.lang.String getAzureEnvironment();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#azure_environment DatabricksProvider#azure_environment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#azure_environment DatabricksProvider#azure_environment}.
 
 ---
 
@@ -1894,7 +1976,7 @@ public java.lang.String getAzureLoginAppId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}.
 
 ---
 
@@ -1906,7 +1988,7 @@ public java.lang.String getAzureTenantId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}.
 
 ---
 
@@ -1918,7 +2000,7 @@ public java.lang.Object getAzureUseMsi();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}.
 
 ---
 
@@ -1930,7 +2012,7 @@ public java.lang.String getAzureWorkspaceResourceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}.
 
 ---
 
@@ -1942,7 +2024,7 @@ public java.lang.String getClientId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#client_id DatabricksProvider#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#client_id DatabricksProvider#client_id}.
 
 ---
 
@@ -1954,7 +2036,7 @@ public java.lang.String getClientSecret();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#client_secret DatabricksProvider#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#client_secret DatabricksProvider#client_secret}.
 
 ---
 
@@ -1966,7 +2048,7 @@ public java.lang.String getClusterId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#cluster_id DatabricksProvider#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#cluster_id DatabricksProvider#cluster_id}.
 
 ---
 
@@ -1978,7 +2060,7 @@ public java.lang.String getConfigFile();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#config_file DatabricksProvider#config_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#config_file DatabricksProvider#config_file}.
 
 ---
 
@@ -1990,7 +2072,19 @@ public java.lang.String getDatabricksCliPath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}.
+
+---
+
+##### `databricksIdTokenFilepath`<sup>Optional</sup> <a name="databricksIdTokenFilepath" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.databricksIdTokenFilepath"></a>
+
+```java
+public java.lang.String getDatabricksIdTokenFilepath();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#databricks_id_token_filepath DatabricksProvider#databricks_id_token_filepath}.
 
 ---
 
@@ -2002,7 +2096,7 @@ public java.lang.Object getDebugHeaders();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#debug_headers DatabricksProvider#debug_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#debug_headers DatabricksProvider#debug_headers}.
 
 ---
 
@@ -2014,7 +2108,7 @@ public java.lang.Number getDebugTruncateBytes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}.
 
 ---
 
@@ -2026,7 +2120,7 @@ public java.lang.String getGoogleCredentials();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#google_credentials DatabricksProvider#google_credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#google_credentials DatabricksProvider#google_credentials}.
 
 ---
 
@@ -2038,7 +2132,7 @@ public java.lang.String getGoogleServiceAccount();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#google_service_account DatabricksProvider#google_service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#google_service_account DatabricksProvider#google_service_account}.
 
 ---
 
@@ -2050,7 +2144,7 @@ public java.lang.String getHost();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#host DatabricksProvider#host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#host DatabricksProvider#host}.
 
 ---
 
@@ -2062,7 +2156,7 @@ public java.lang.Number getHttpTimeoutSeconds();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}.
 
 ---
 
@@ -2074,7 +2168,19 @@ public java.lang.String getMetadataServiceUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#metadata_service_url DatabricksProvider#metadata_service_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#metadata_service_url DatabricksProvider#metadata_service_url}.
+
+---
+
+##### `oidcTokenEnv`<sup>Optional</sup> <a name="oidcTokenEnv" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.oidcTokenEnv"></a>
+
+```java
+public java.lang.String getOidcTokenEnv();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#oidc_token_env DatabricksProvider#oidc_token_env}.
 
 ---
 
@@ -2086,7 +2192,7 @@ public java.lang.String getPassword();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#password DatabricksProvider#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#password DatabricksProvider#password}.
 
 ---
 
@@ -2098,7 +2204,7 @@ public java.lang.String getProfile();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#profile DatabricksProvider#profile}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#profile DatabricksProvider#profile}.
 
 ---
 
@@ -2110,7 +2216,7 @@ public java.lang.Number getRateLimit();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#rate_limit DatabricksProvider#rate_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#rate_limit DatabricksProvider#rate_limit}.
 
 ---
 
@@ -2122,7 +2228,7 @@ public java.lang.Number getRetryTimeoutSeconds();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}.
 
 ---
 
@@ -2134,7 +2240,7 @@ public java.lang.String getServerlessComputeId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}.
 
 ---
 
@@ -2146,7 +2252,7 @@ public java.lang.Object getSkipVerify();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#skip_verify DatabricksProvider#skip_verify}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#skip_verify DatabricksProvider#skip_verify}.
 
 ---
 
@@ -2158,7 +2264,7 @@ public java.lang.String getToken();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#token DatabricksProvider#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#token DatabricksProvider#token}.
 
 ---
 
@@ -2170,7 +2276,7 @@ public java.lang.String getUsername();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#username DatabricksProvider#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#username DatabricksProvider#username}.
 
 ---
 
@@ -2182,7 +2288,7 @@ public java.lang.String getWarehouseId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs#warehouse_id DatabricksProvider#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs#warehouse_id DatabricksProvider#warehouse_id}.
 
 ---
 

@@ -101,6 +101,7 @@ The following submodules are available:
 - [directory](./directory.go.md)
 - [disableLegacyAccessSetting](./disableLegacyAccessSetting.go.md)
 - [disableLegacyDbfsSetting](./disableLegacyDbfsSetting.go.md)
+- [disableLegacyFeaturesSetting](./disableLegacyFeaturesSetting.go.md)
 - [enhancedSecurityMonitoringWorkspaceSetting](./enhancedSecurityMonitoringWorkspaceSetting.go.md)
 - [entitlements](./entitlements.go.md)
 - [externalLocation](./externalLocation.go.md)

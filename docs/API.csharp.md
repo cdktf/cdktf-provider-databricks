@@ -101,6 +101,7 @@ The following submodules are available:
 - [directory](./directory.csharp.md)
 - [disableLegacyAccessSetting](./disableLegacyAccessSetting.csharp.md)
 - [disableLegacyDbfsSetting](./disableLegacyDbfsSetting.csharp.md)
+- [disableLegacyFeaturesSetting](./disableLegacyFeaturesSetting.csharp.md)
 - [enhancedSecurityMonitoringWorkspaceSetting](./enhancedSecurityMonitoringWorkspaceSetting.csharp.md)
 - [entitlements](./entitlements.csharp.md)
 - [externalLocation](./externalLocation.csharp.md)
