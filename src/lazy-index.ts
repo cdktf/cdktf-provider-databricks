@@ -32,6 +32,7 @@ Object.defineProperty(exports, 'defaultNamespaceSetting', { get: function () { r
 Object.defineProperty(exports, 'directory', { get: function () { return require('./directory'); } });
 Object.defineProperty(exports, 'disableLegacyAccessSetting', { get: function () { return require('./disable-legacy-access-setting'); } });
 Object.defineProperty(exports, 'disableLegacyDbfsSetting', { get: function () { return require('./disable-legacy-dbfs-setting'); } });
+Object.defineProperty(exports, 'disableLegacyFeaturesSetting', { get: function () { return require('./disable-legacy-features-setting'); } });
 Object.defineProperty(exports, 'enhancedSecurityMonitoringWorkspaceSetting', { get: function () { return require('./enhanced-security-monitoring-workspace-setting'); } });
 Object.defineProperty(exports, 'entitlements', { get: function () { return require('./entitlements'); } });
 Object.defineProperty(exports, 'externalLocation', { get: function () { return require('./external-location'); } });

@@ -32,6 +32,7 @@ export * as defaultNamespaceSetting from './default-namespace-setting';
 export * as directory from './directory';
 export * as disableLegacyAccessSetting from './disable-legacy-access-setting';
 export * as disableLegacyDbfsSetting from './disable-legacy-dbfs-setting';
+export * as disableLegacyFeaturesSetting from './disable-legacy-features-setting';
 export * as enhancedSecurityMonitoringWorkspaceSetting from './enhanced-security-monitoring-workspace-setting';
 export * as entitlements from './entitlements';
 export * as externalLocation from './external-location';

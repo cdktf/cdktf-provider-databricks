@@ -101,6 +101,7 @@ The following submodules are available:
 - [directory](./directory.java.md)
 - [disableLegacyAccessSetting](./disableLegacyAccessSetting.java.md)
 - [disableLegacyDbfsSetting](./disableLegacyDbfsSetting.java.md)
+- [disableLegacyFeaturesSetting](./disableLegacyFeaturesSetting.java.md)
 - [enhancedSecurityMonitoringWorkspaceSetting](./enhancedSecurityMonitoringWorkspaceSetting.java.md)
 - [entitlements](./entitlements.java.md)
 - [externalLocation](./externalLocation.java.md)

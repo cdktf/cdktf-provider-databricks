@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor
+// https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,112 +13,112 @@ import * as cdktf from 'cdktf';
 
 export interface LakehouseMonitorConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#assets_dir LakehouseMonitor#assets_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#assets_dir LakehouseMonitor#assets_dir}
   */
   readonly assetsDir: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#baseline_table_name LakehouseMonitor#baseline_table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#baseline_table_name LakehouseMonitor#baseline_table_name}
   */
   readonly baselineTableName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#id LakehouseMonitor#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#id LakehouseMonitor#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#latest_monitor_failure_msg LakehouseMonitor#latest_monitor_failure_msg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#latest_monitor_failure_msg LakehouseMonitor#latest_monitor_failure_msg}
   */
   readonly latestMonitorFailureMsg?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#output_schema_name LakehouseMonitor#output_schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#output_schema_name LakehouseMonitor#output_schema_name}
   */
   readonly outputSchemaName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#skip_builtin_dashboard LakehouseMonitor#skip_builtin_dashboard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#skip_builtin_dashboard LakehouseMonitor#skip_builtin_dashboard}
   */
   readonly skipBuiltinDashboard?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#slicing_exprs LakehouseMonitor#slicing_exprs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#slicing_exprs LakehouseMonitor#slicing_exprs}
   */
   readonly slicingExprs?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#table_name LakehouseMonitor#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#table_name LakehouseMonitor#table_name}
   */
   readonly tableName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#warehouse_id LakehouseMonitor#warehouse_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#warehouse_id LakehouseMonitor#warehouse_id}
   */
   readonly warehouseId?: string;
   /**
   * custom_metrics block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#custom_metrics LakehouseMonitor#custom_metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#custom_metrics LakehouseMonitor#custom_metrics}
   */
   readonly customMetrics?: LakehouseMonitorCustomMetrics[] | cdktf.IResolvable;
   /**
   * data_classification_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#data_classification_config LakehouseMonitor#data_classification_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#data_classification_config LakehouseMonitor#data_classification_config}
   */
   readonly dataClassificationConfig?: LakehouseMonitorDataClassificationConfig;
   /**
   * inference_log block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#inference_log LakehouseMonitor#inference_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#inference_log LakehouseMonitor#inference_log}
   */
   readonly inferenceLog?: LakehouseMonitorInferenceLog;
   /**
   * notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#notifications LakehouseMonitor#notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#notifications LakehouseMonitor#notifications}
   */
   readonly notifications?: LakehouseMonitorNotifications;
   /**
   * schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#schedule LakehouseMonitor#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#schedule LakehouseMonitor#schedule}
   */
   readonly schedule?: LakehouseMonitorSchedule;
   /**
   * snapshot block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#snapshot LakehouseMonitor#snapshot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#snapshot LakehouseMonitor#snapshot}
   */
   readonly snapshot?: LakehouseMonitorSnapshot;
   /**
   * time_series block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#time_series LakehouseMonitor#time_series}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#time_series LakehouseMonitor#time_series}
   */
   readonly timeSeries?: LakehouseMonitorTimeSeries;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#timeouts LakehouseMonitor#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#timeouts LakehouseMonitor#timeouts}
   */
   readonly timeouts?: LakehouseMonitorTimeouts;
 }
 export interface LakehouseMonitorCustomMetrics {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#definition LakehouseMonitor#definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#definition LakehouseMonitor#definition}
   */
   readonly definition: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#input_columns LakehouseMonitor#input_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#input_columns LakehouseMonitor#input_columns}
   */
   readonly inputColumns: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#name LakehouseMonitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#name LakehouseMonitor#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#output_data_type LakehouseMonitor#output_data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#output_data_type LakehouseMonitor#output_data_type}
   */
   readonly outputDataType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#type LakehouseMonitor#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#type LakehouseMonitor#type}
   */
   readonly type: string;
 }
@@ -335,7 +335,7 @@ export class LakehouseMonitorCustomMetricsList extends cdktf.ComplexList {
 }
 export interface LakehouseMonitorDataClassificationConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#enabled LakehouseMonitor#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#enabled LakehouseMonitor#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
 }
@@ -419,31 +419,31 @@ export class LakehouseMonitorDataClassificationConfigOutputReference extends cdk
 }
 export interface LakehouseMonitorInferenceLog {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#granularities LakehouseMonitor#granularities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#granularities LakehouseMonitor#granularities}
   */
   readonly granularities: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#label_col LakehouseMonitor#label_col}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#label_col LakehouseMonitor#label_col}
   */
   readonly labelCol?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#model_id_col LakehouseMonitor#model_id_col}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#model_id_col LakehouseMonitor#model_id_col}
   */
   readonly modelIdCol: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#prediction_col LakehouseMonitor#prediction_col}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#prediction_col LakehouseMonitor#prediction_col}
   */
   readonly predictionCol: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#prediction_proba_col LakehouseMonitor#prediction_proba_col}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#prediction_proba_col LakehouseMonitor#prediction_proba_col}
   */
   readonly predictionProbaCol?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#problem_type LakehouseMonitor#problem_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#problem_type LakehouseMonitor#problem_type}
   */
   readonly problemType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#timestamp_col LakehouseMonitor#timestamp_col}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#timestamp_col LakehouseMonitor#timestamp_col}
   */
   readonly timestampCol: string;
 }
@@ -686,7 +686,7 @@ export class LakehouseMonitorInferenceLogOutputReference extends cdktf.ComplexOb
 }
 export interface LakehouseMonitorNotificationsOnFailure {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#email_addresses LakehouseMonitor#email_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#email_addresses LakehouseMonitor#email_addresses}
   */
   readonly emailAddresses?: string[];
 }
@@ -770,7 +770,7 @@ export class LakehouseMonitorNotificationsOnFailureOutputReference extends cdktf
 }
 export interface LakehouseMonitorNotificationsOnNewClassificationTagDetected {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#email_addresses LakehouseMonitor#email_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#email_addresses LakehouseMonitor#email_addresses}
   */
   readonly emailAddresses?: string[];
 }
@@ -856,13 +856,13 @@ export interface LakehouseMonitorNotifications {
   /**
   * on_failure block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#on_failure LakehouseMonitor#on_failure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#on_failure LakehouseMonitor#on_failure}
   */
   readonly onFailure?: LakehouseMonitorNotificationsOnFailure;
   /**
   * on_new_classification_tag_detected block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#on_new_classification_tag_detected LakehouseMonitor#on_new_classification_tag_detected}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#on_new_classification_tag_detected LakehouseMonitor#on_new_classification_tag_detected}
   */
   readonly onNewClassificationTagDetected?: LakehouseMonitorNotificationsOnNewClassificationTagDetected;
 }
@@ -975,11 +975,11 @@ export class LakehouseMonitorNotificationsOutputReference extends cdktf.ComplexO
 }
 export interface LakehouseMonitorSchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#quartz_cron_expression LakehouseMonitor#quartz_cron_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#quartz_cron_expression LakehouseMonitor#quartz_cron_expression}
   */
   readonly quartzCronExpression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#timezone_id LakehouseMonitor#timezone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#timezone_id LakehouseMonitor#timezone_id}
   */
   readonly timezoneId: string;
 }
@@ -1140,11 +1140,11 @@ export class LakehouseMonitorSnapshotOutputReference extends cdktf.ComplexObject
 }
 export interface LakehouseMonitorTimeSeries {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#granularities LakehouseMonitor#granularities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#granularities LakehouseMonitor#granularities}
   */
   readonly granularities: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#timestamp_col LakehouseMonitor#timestamp_col}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#timestamp_col LakehouseMonitor#timestamp_col}
   */
   readonly timestampCol: string;
 }
@@ -1251,7 +1251,7 @@ export class LakehouseMonitorTimeSeriesOutputReference extends cdktf.ComplexObje
 }
 export interface LakehouseMonitorTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#create LakehouseMonitor#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#create LakehouseMonitor#create}
   */
   readonly create?: string;
 }
@@ -1345,7 +1345,7 @@ export class LakehouseMonitorTimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor}
 */
 export class LakehouseMonitor extends cdktf.TerraformResource {
 
@@ -1361,7 +1361,7 @@ export class LakehouseMonitor extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LakehouseMonitor resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LakehouseMonitor to import
-  * @param importFromId The id of the existing LakehouseMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LakehouseMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LakehouseMonitor to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1373,7 +1373,7 @@ export class LakehouseMonitor extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.76.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1384,7 +1384,7 @@ export class LakehouseMonitor extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_lakehouse_monitor',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.76.0',
+        providerVersion: '1.77.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
