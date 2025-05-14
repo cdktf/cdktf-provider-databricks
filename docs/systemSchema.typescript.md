@@ -4,14 +4,14 @@
 
 ### SystemSchema <a name="SystemSchema" id="@cdktf/provider-databricks.systemSchema.SystemSchema"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/system_schema databricks_system_schema}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/system_schema databricks_system_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.systemSchema.SystemSchema.Initializer"></a>
 
 ```typescript
 import { systemSchema } from '@cdktf/provider-databricks'
 
-new systemSchema.SystemSchema(scope: Construct, id: string, config?: SystemSchemaConfig)
+new systemSchema.SystemSchema(scope: Construct, id: string, config: SystemSchemaConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-databricks.systemSchema.SystemSchema.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-databricks.systemSchema.SystemSchema.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktf/provider-databricks.systemSchema.SystemSchemaConfig">SystemSchemaConfig</a>
 
@@ -74,8 +74,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.systemSchema.SystemSchema.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-databricks.systemSchema.SystemSchema.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-databricks.systemSchema.SystemSchema.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.systemSchema.SystemSchema.resetSchema">resetSchema</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.systemSchema.SystemSchema.resetState">resetState</a></code> | *No description.* |
 
 ---
 
@@ -373,18 +371,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public resetId(): void
 ```
 
-##### `resetSchema` <a name="resetSchema" id="@cdktf/provider-databricks.systemSchema.SystemSchema.resetSchema"></a>
-
-```typescript
-public resetSchema(): void
-```
-
-##### `resetState` <a name="resetState" id="@cdktf/provider-databricks.systemSchema.SystemSchema.resetState"></a>
-
-```typescript
-public resetState(): void
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -488,7 +474,7 @@ The construct id used in the generated config for the SystemSchema to import.
 
 The id of the existing SystemSchema that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/system_schema#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/system_schema#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -521,12 +507,11 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.systemSchema.SystemSchema.property.autoEnabled">autoEnabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.systemSchema.SystemSchema.property.fullName">fullName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.systemSchema.SystemSchema.property.metastoreId">metastoreId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.systemSchema.SystemSchema.property.state">state</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.systemSchema.SystemSchema.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.systemSchema.SystemSchema.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.systemSchema.SystemSchema.property.stateInput">stateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.systemSchema.SystemSchema.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.systemSchema.SystemSchema.property.schema">schema</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.systemSchema.SystemSchema.property.state">state</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -702,6 +687,16 @@ public readonly metastoreId: string;
 
 ---
 
+##### `state`<sup>Required</sup> <a name="state" id="@cdktf/provider-databricks.systemSchema.SystemSchema.property.state"></a>
+
+```typescript
+public readonly state: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-databricks.systemSchema.SystemSchema.property.idInput"></a>
 
 ```typescript
@@ -722,16 +717,6 @@ public readonly schemaInput: string;
 
 ---
 
-##### `stateInput`<sup>Optional</sup> <a name="stateInput" id="@cdktf/provider-databricks.systemSchema.SystemSchema.property.stateInput"></a>
-
-```typescript
-public readonly stateInput: string;
-```
-
-- *Type:* string
-
----
-
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-databricks.systemSchema.SystemSchema.property.id"></a>
 
 ```typescript
@@ -746,16 +731,6 @@ public readonly id: string;
 
 ```typescript
 public readonly schema: string;
-```
-
-- *Type:* string
-
----
-
-##### `state`<sup>Required</sup> <a name="state" id="@cdktf/provider-databricks.systemSchema.SystemSchema.property.state"></a>
-
-```typescript
-public readonly state: string;
 ```
 
 - *Type:* string
@@ -803,9 +778,8 @@ const systemSchemaConfig: systemSchema.SystemSchemaConfig = { ... }
 | <code><a href="#@cdktf/provider-databricks.systemSchema.SystemSchemaConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.systemSchema.SystemSchemaConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.systemSchema.SystemSchemaConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.systemSchema.SystemSchemaConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/system_schema#id SystemSchema#id}. |
-| <code><a href="#@cdktf/provider-databricks.systemSchema.SystemSchemaConfig.property.schema">schema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/system_schema#schema SystemSchema#schema}. |
-| <code><a href="#@cdktf/provider-databricks.systemSchema.SystemSchemaConfig.property.state">state</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/system_schema#state SystemSchema#state}. |
+| <code><a href="#@cdktf/provider-databricks.systemSchema.SystemSchemaConfig.property.schema">schema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/system_schema#schema SystemSchema#schema}. |
+| <code><a href="#@cdktf/provider-databricks.systemSchema.SystemSchemaConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/system_schema#id SystemSchema#id}. |
 
 ---
 
@@ -879,6 +853,18 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
+##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-databricks.systemSchema.SystemSchemaConfig.property.schema"></a>
+
+```typescript
+public readonly schema: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/system_schema#schema SystemSchema#schema}.
+
+---
+
 ##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-databricks.systemSchema.SystemSchemaConfig.property.id"></a>
 
 ```typescript
@@ -887,34 +873,10 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/system_schema#id SystemSchema#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/system_schema#id SystemSchema#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `schema`<sup>Optional</sup> <a name="schema" id="@cdktf/provider-databricks.systemSchema.SystemSchemaConfig.property.schema"></a>
-
-```typescript
-public readonly schema: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/system_schema#schema SystemSchema#schema}.
-
----
-
-##### `state`<sup>Optional</sup> <a name="state" id="@cdktf/provider-databricks.systemSchema.SystemSchemaConfig.property.state"></a>
-
-```typescript
-public readonly state: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/system_schema#state SystemSchema#state}.
 
 ---
 

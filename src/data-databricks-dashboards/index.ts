@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/data-sources/dashboards
+// https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/data-sources/dashboards
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,21 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksDashboardsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/data-sources/dashboards#dashboard_name_contains DataDatabricksDashboards#dashboard_name_contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/data-sources/dashboards#dashboard_name_contains DataDatabricksDashboards#dashboard_name_contains}
   */
   readonly dashboardNameContains?: string;
 }
 export interface DataDatabricksDashboardsDashboards {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/data-sources/dashboards#display_name DataDatabricksDashboards#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/data-sources/dashboards#display_name DataDatabricksDashboards#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/data-sources/dashboards#serialized_dashboard DataDatabricksDashboards#serialized_dashboard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/data-sources/dashboards#serialized_dashboard DataDatabricksDashboards#serialized_dashboard}
   */
   readonly serializedDashboard?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/data-sources/dashboards#warehouse_id DataDatabricksDashboards#warehouse_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/data-sources/dashboards#warehouse_id DataDatabricksDashboards#warehouse_id}
   */
   readonly warehouseId?: string;
 }
@@ -226,7 +226,7 @@ export class DataDatabricksDashboardsDashboardsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/data-sources/dashboards databricks_dashboards}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/data-sources/dashboards databricks_dashboards}
 */
 export class DataDatabricksDashboards extends cdktf.TerraformDataSource {
 
@@ -242,7 +242,7 @@ export class DataDatabricksDashboards extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksDashboards resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksDashboards to import
-  * @param importFromId The id of the existing DataDatabricksDashboards that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/data-sources/dashboards#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksDashboards that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/data-sources/dashboards#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksDashboards to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -254,7 +254,7 @@ export class DataDatabricksDashboards extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/data-sources/dashboards databricks_dashboards} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/data-sources/dashboards databricks_dashboards} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -265,7 +265,7 @@ export class DataDatabricksDashboards extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_dashboards',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.77.0',
+        providerVersion: '1.79.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
