@@ -4,7 +4,7 @@
 
 ### DataDatabricksMlflowModels <a name="DataDatabricksMlflowModels" id="@cdktf/provider-databricks.dataDatabricksMlflowModels.DataDatabricksMlflowModels"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/data-sources/mlflow_models databricks_mlflow_models}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/data-sources/mlflow_models databricks_mlflow_models}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksMlflowModels.DataDatabricksMlflowModels.Initializer"></a>
 
@@ -37,8 +37,8 @@ dataDatabricksMlflowModels.DataDatabricksMlflowModels(
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksMlflowModels.DataDatabricksMlflowModels.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksMlflowModels.DataDatabricksMlflowModels.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksMlflowModels.DataDatabricksMlflowModels.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksMlflowModels.DataDatabricksMlflowModels.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/data-sources/mlflow_models#id DataDatabricksMlflowModels#id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksMlflowModels.DataDatabricksMlflowModels.Initializer.parameter.names">names</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/data-sources/mlflow_models#names DataDatabricksMlflowModels#names}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksMlflowModels.DataDatabricksMlflowModels.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/data-sources/mlflow_models#id DataDatabricksMlflowModels#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksMlflowModels.DataDatabricksMlflowModels.Initializer.parameter.names">names</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/data-sources/mlflow_models#names DataDatabricksMlflowModels#names}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/data-sources/mlflow_models#id DataDatabricksMlflowModels#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/data-sources/mlflow_models#id DataDatabricksMlflowModels#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -117,7 +117,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/data-sources/mlflow_models#names DataDatabricksMlflowModels#names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/data-sources/mlflow_models#names DataDatabricksMlflowModels#names}.
 
 ---
 
@@ -490,7 +490,7 @@ The construct id used in the generated config for the DataDatabricksMlflowModels
 
 The id of the existing DataDatabricksMlflowModels that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/data-sources/mlflow_models#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/data-sources/mlflow_models#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -738,8 +738,8 @@ dataDatabricksMlflowModels.DataDatabricksMlflowModelsConfig(
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksMlflowModels.DataDatabricksMlflowModelsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksMlflowModels.DataDatabricksMlflowModelsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksMlflowModels.DataDatabricksMlflowModelsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksMlflowModels.DataDatabricksMlflowModelsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/data-sources/mlflow_models#id DataDatabricksMlflowModels#id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksMlflowModels.DataDatabricksMlflowModelsConfig.property.names">names</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/data-sources/mlflow_models#names DataDatabricksMlflowModels#names}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksMlflowModels.DataDatabricksMlflowModelsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/data-sources/mlflow_models#id DataDatabricksMlflowModels#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksMlflowModels.DataDatabricksMlflowModelsConfig.property.names">names</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/data-sources/mlflow_models#names DataDatabricksMlflowModels#names}. |
 
 ---
 
@@ -821,7 +821,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/data-sources/mlflow_models#id DataDatabricksMlflowModels#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/data-sources/mlflow_models#id DataDatabricksMlflowModels#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -836,7 +836,7 @@ names: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/data-sources/mlflow_models#names DataDatabricksMlflowModels#names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/data-sources/mlflow_models#names DataDatabricksMlflowModels#names}.
 
 ---
 

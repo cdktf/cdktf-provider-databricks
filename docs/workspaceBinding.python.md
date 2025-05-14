@@ -4,7 +4,7 @@
 
 ### WorkspaceBinding <a name="WorkspaceBinding" id="@cdktf/provider-databricks.workspaceBinding.WorkspaceBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/workspace_binding databricks_workspace_binding}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/workspace_binding databricks_workspace_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.workspaceBinding.WorkspaceBinding.Initializer"></a>
 
@@ -21,12 +21,12 @@ workspaceBinding.WorkspaceBinding(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  workspace_id: typing.Union[int, float],
   binding_type: str = None,
   catalog_name: str = None,
   id: str = None,
   securable_name: str = None,
-  securable_type: str = None,
-  workspace_id: typing.Union[int, float] = None
+  securable_type: str = None
 )
 ```
 
@@ -41,12 +41,12 @@ workspaceBinding.WorkspaceBinding(
 | <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBinding.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBinding.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBinding.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBinding.Initializer.parameter.bindingType">binding_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/workspace_binding#binding_type WorkspaceBinding#binding_type}. |
-| <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBinding.Initializer.parameter.catalogName">catalog_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/workspace_binding#catalog_name WorkspaceBinding#catalog_name}. |
-| <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBinding.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/workspace_binding#id WorkspaceBinding#id}. |
-| <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBinding.Initializer.parameter.securableName">securable_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/workspace_binding#securable_name WorkspaceBinding#securable_name}. |
-| <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBinding.Initializer.parameter.securableType">securable_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/workspace_binding#securable_type WorkspaceBinding#securable_type}. |
-| <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBinding.Initializer.parameter.workspaceId">workspace_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/workspace_binding#workspace_id WorkspaceBinding#workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBinding.Initializer.parameter.workspaceId">workspace_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/workspace_binding#workspace_id WorkspaceBinding#workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBinding.Initializer.parameter.bindingType">binding_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/workspace_binding#binding_type WorkspaceBinding#binding_type}. |
+| <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBinding.Initializer.parameter.catalogName">catalog_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/workspace_binding#catalog_name WorkspaceBinding#catalog_name}. |
+| <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBinding.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/workspace_binding#id WorkspaceBinding#id}. |
+| <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBinding.Initializer.parameter.securableName">securable_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/workspace_binding#securable_name WorkspaceBinding#securable_name}. |
+| <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBinding.Initializer.parameter.securableType">securable_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/workspace_binding#securable_type WorkspaceBinding#securable_type}. |
 
 ---
 
@@ -110,11 +110,19 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktf/provider-databricks.workspaceBinding.WorkspaceBinding.Initializer.parameter.workspaceId"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/workspace_binding#workspace_id WorkspaceBinding#workspace_id}.
+
+---
+
 ##### `binding_type`<sup>Optional</sup> <a name="binding_type" id="@cdktf/provider-databricks.workspaceBinding.WorkspaceBinding.Initializer.parameter.bindingType"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/workspace_binding#binding_type WorkspaceBinding#binding_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/workspace_binding#binding_type WorkspaceBinding#binding_type}.
 
 ---
 
@@ -122,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/workspace_binding#catalog_name WorkspaceBinding#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/workspace_binding#catalog_name WorkspaceBinding#catalog_name}.
 
 ---
 
@@ -130,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/workspace_binding#id WorkspaceBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/workspace_binding#id WorkspaceBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -141,7 +149,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/workspace_binding#securable_name WorkspaceBinding#securable_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/workspace_binding#securable_name WorkspaceBinding#securable_name}.
 
 ---
 
@@ -149,15 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/workspace_binding#securable_type WorkspaceBinding#securable_type}.
-
----
-
-##### `workspace_id`<sup>Optional</sup> <a name="workspace_id" id="@cdktf/provider-databricks.workspaceBinding.WorkspaceBinding.Initializer.parameter.workspaceId"></a>
-
-- *Type:* typing.Union[int, float]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/workspace_binding#workspace_id WorkspaceBinding#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/workspace_binding#securable_type WorkspaceBinding#securable_type}.
 
 ---
 
@@ -193,7 +193,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBinding.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBinding.resetSecurableName">reset_securable_name</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBinding.resetSecurableType">reset_securable_type</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBinding.resetWorkspaceId">reset_workspace_id</a></code> | *No description.* |
 
 ---
 
@@ -552,12 +551,6 @@ def reset_securable_name() -> None
 def reset_securable_type() -> None
 ```
 
-##### `reset_workspace_id` <a name="reset_workspace_id" id="@cdktf/provider-databricks.workspaceBinding.WorkspaceBinding.resetWorkspaceId"></a>
-
-```python
-def reset_workspace_id() -> None
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -672,7 +665,7 @@ The construct id used in the generated config for the WorkspaceBinding to import
 
 The id of the existing WorkspaceBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/workspace_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/workspace_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1014,12 +1007,12 @@ workspaceBinding.WorkspaceBindingConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  workspace_id: typing.Union[int, float],
   binding_type: str = None,
   catalog_name: str = None,
   id: str = None,
   securable_name: str = None,
-  securable_type: str = None,
-  workspace_id: typing.Union[int, float] = None
+  securable_type: str = None
 )
 ```
 
@@ -1034,12 +1027,12 @@ workspaceBinding.WorkspaceBindingConfig(
 | <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBindingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBindingConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBindingConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBindingConfig.property.bindingType">binding_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/workspace_binding#binding_type WorkspaceBinding#binding_type}. |
-| <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBindingConfig.property.catalogName">catalog_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/workspace_binding#catalog_name WorkspaceBinding#catalog_name}. |
-| <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBindingConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/workspace_binding#id WorkspaceBinding#id}. |
-| <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBindingConfig.property.securableName">securable_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/workspace_binding#securable_name WorkspaceBinding#securable_name}. |
-| <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBindingConfig.property.securableType">securable_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/workspace_binding#securable_type WorkspaceBinding#securable_type}. |
-| <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBindingConfig.property.workspaceId">workspace_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/workspace_binding#workspace_id WorkspaceBinding#workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBindingConfig.property.workspaceId">workspace_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/workspace_binding#workspace_id WorkspaceBinding#workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBindingConfig.property.bindingType">binding_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/workspace_binding#binding_type WorkspaceBinding#binding_type}. |
+| <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBindingConfig.property.catalogName">catalog_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/workspace_binding#catalog_name WorkspaceBinding#catalog_name}. |
+| <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBindingConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/workspace_binding#id WorkspaceBinding#id}. |
+| <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBindingConfig.property.securableName">securable_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/workspace_binding#securable_name WorkspaceBinding#securable_name}. |
+| <code><a href="#@cdktf/provider-databricks.workspaceBinding.WorkspaceBindingConfig.property.securableType">securable_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/workspace_binding#securable_type WorkspaceBinding#securable_type}. |
 
 ---
 
@@ -1113,6 +1106,18 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
+##### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktf/provider-databricks.workspaceBinding.WorkspaceBindingConfig.property.workspaceId"></a>
+
+```python
+workspace_id: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/workspace_binding#workspace_id WorkspaceBinding#workspace_id}.
+
+---
+
 ##### `binding_type`<sup>Optional</sup> <a name="binding_type" id="@cdktf/provider-databricks.workspaceBinding.WorkspaceBindingConfig.property.bindingType"></a>
 
 ```python
@@ -1121,7 +1126,7 @@ binding_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/workspace_binding#binding_type WorkspaceBinding#binding_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/workspace_binding#binding_type WorkspaceBinding#binding_type}.
 
 ---
 
@@ -1133,7 +1138,7 @@ catalog_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/workspace_binding#catalog_name WorkspaceBinding#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/workspace_binding#catalog_name WorkspaceBinding#catalog_name}.
 
 ---
 
@@ -1145,7 +1150,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/workspace_binding#id WorkspaceBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/workspace_binding#id WorkspaceBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1160,7 +1165,7 @@ securable_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/workspace_binding#securable_name WorkspaceBinding#securable_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/workspace_binding#securable_name WorkspaceBinding#securable_name}.
 
 ---
 
@@ -1172,19 +1177,7 @@ securable_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/workspace_binding#securable_type WorkspaceBinding#securable_type}.
-
----
-
-##### `workspace_id`<sup>Optional</sup> <a name="workspace_id" id="@cdktf/provider-databricks.workspaceBinding.WorkspaceBindingConfig.property.workspaceId"></a>
-
-```python
-workspace_id: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.77.0/docs/resources/workspace_binding#workspace_id WorkspaceBinding#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.0/docs/resources/workspace_binding#securable_type WorkspaceBinding#securable_type}.
 
 ---
 
