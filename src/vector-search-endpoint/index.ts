@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/vector_search_endpoint
+// https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +8,34 @@ import * as cdktf from 'cdktf';
 
 export interface VectorSearchEndpointConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/vector_search_endpoint#effective_budget_policy_id VectorSearchEndpoint#effective_budget_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#effective_budget_policy_id VectorSearchEndpoint#effective_budget_policy_id}
   */
   readonly effectiveBudgetPolicyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/vector_search_endpoint#endpoint_type VectorSearchEndpoint#endpoint_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#endpoint_type VectorSearchEndpoint#endpoint_type}
   */
   readonly endpointType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/vector_search_endpoint#id VectorSearchEndpoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#id VectorSearchEndpoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/vector_search_endpoint#name VectorSearchEndpoint#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#name VectorSearchEndpoint#name}
   */
   readonly name: string;
   /**
   * custom_tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/vector_search_endpoint#custom_tags VectorSearchEndpoint#custom_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#custom_tags VectorSearchEndpoint#custom_tags}
   */
   readonly customTags?: VectorSearchEndpointCustomTags[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/vector_search_endpoint#timeouts VectorSearchEndpoint#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#timeouts VectorSearchEndpoint#timeouts}
   */
   readonly timeouts?: VectorSearchEndpointTimeouts;
 }
@@ -126,11 +121,11 @@ export class VectorSearchEndpointEndpointStatusList extends cdktf.ComplexList {
 }
 export interface VectorSearchEndpointCustomTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/vector_search_endpoint#key VectorSearchEndpoint#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#key VectorSearchEndpoint#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/vector_search_endpoint#value VectorSearchEndpoint#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#value VectorSearchEndpoint#value}
   */
   readonly value?: string;
 }
@@ -272,7 +267,7 @@ export class VectorSearchEndpointCustomTagsList extends cdktf.ComplexList {
 }
 export interface VectorSearchEndpointTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/vector_search_endpoint#create VectorSearchEndpoint#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#create VectorSearchEndpoint#create}
   */
   readonly create?: string;
 }
@@ -366,7 +361,7 @@ export class VectorSearchEndpointTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/vector_search_endpoint databricks_vector_search_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint}
 */
 export class VectorSearchEndpoint extends cdktf.TerraformResource {
 
@@ -382,7 +377,7 @@ export class VectorSearchEndpoint extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VectorSearchEndpoint resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VectorSearchEndpoint to import
-  * @param importFromId The id of the existing VectorSearchEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/vector_search_endpoint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VectorSearchEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VectorSearchEndpoint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -394,7 +389,7 @@ export class VectorSearchEndpoint extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/vector_search_endpoint databricks_vector_search_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -405,7 +400,7 @@ export class VectorSearchEndpoint extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_vector_search_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.79.1',
+        providerVersion: '1.80.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

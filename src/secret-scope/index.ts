@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/secret_scope
+// https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/secret_scope
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +8,38 @@ import * as cdktf from 'cdktf';
 
 export interface SecretScopeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/secret_scope#backend_type SecretScope#backend_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/secret_scope#backend_type SecretScope#backend_type}
   */
   readonly backendType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/secret_scope#id SecretScope#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/secret_scope#id SecretScope#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/secret_scope#initial_manage_principal SecretScope#initial_manage_principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/secret_scope#initial_manage_principal SecretScope#initial_manage_principal}
   */
   readonly initialManagePrincipal?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/secret_scope#name SecretScope#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/secret_scope#name SecretScope#name}
   */
   readonly name: string;
   /**
   * keyvault_metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/secret_scope#keyvault_metadata SecretScope#keyvault_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/secret_scope#keyvault_metadata SecretScope#keyvault_metadata}
   */
   readonly keyvaultMetadata?: SecretScopeKeyvaultMetadata;
 }
 export interface SecretScopeKeyvaultMetadata {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/secret_scope#dns_name SecretScope#dns_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/secret_scope#dns_name SecretScope#dns_name}
   */
   readonly dnsName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/secret_scope#resource_id SecretScope#resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/secret_scope#resource_id SecretScope#resource_id}
   */
   readonly resourceId: string;
 }
@@ -151,7 +146,7 @@ export class SecretScopeKeyvaultMetadataOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/secret_scope databricks_secret_scope}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/secret_scope databricks_secret_scope}
 */
 export class SecretScope extends cdktf.TerraformResource {
 
@@ -167,7 +162,7 @@ export class SecretScope extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SecretScope resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecretScope to import
-  * @param importFromId The id of the existing SecretScope that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/secret_scope#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecretScope that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/secret_scope#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecretScope to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -179,7 +174,7 @@ export class SecretScope extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/secret_scope databricks_secret_scope} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/secret_scope databricks_secret_scope} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -190,7 +185,7 @@ export class SecretScope extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_secret_scope',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.79.1',
+        providerVersion: '1.80.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

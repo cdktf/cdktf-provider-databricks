@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/aibi_dashboard_embedding_approved_domains_setting
+// https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/aibi_dashboard_embedding_approved_domains_setting
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,30 +8,30 @@ import * as cdktf from 'cdktf';
 
 export interface AibiDashboardEmbeddingApprovedDomainsSettingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/aibi_dashboard_embedding_approved_domains_setting#etag AibiDashboardEmbeddingApprovedDomainsSetting#etag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/aibi_dashboard_embedding_approved_domains_setting#etag AibiDashboardEmbeddingApprovedDomainsSetting#etag}
   */
   readonly etag?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/aibi_dashboard_embedding_approved_domains_setting#id AibiDashboardEmbeddingApprovedDomainsSetting#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/aibi_dashboard_embedding_approved_domains_setting#id AibiDashboardEmbeddingApprovedDomainsSetting#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/aibi_dashboard_embedding_approved_domains_setting#setting_name AibiDashboardEmbeddingApprovedDomainsSetting#setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/aibi_dashboard_embedding_approved_domains_setting#setting_name AibiDashboardEmbeddingApprovedDomainsSetting#setting_name}
   */
   readonly settingName?: string;
   /**
   * aibi_dashboard_embedding_approved_domains block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/aibi_dashboard_embedding_approved_domains_setting#aibi_dashboard_embedding_approved_domains AibiDashboardEmbeddingApprovedDomainsSetting#aibi_dashboard_embedding_approved_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/aibi_dashboard_embedding_approved_domains_setting#aibi_dashboard_embedding_approved_domains AibiDashboardEmbeddingApprovedDomainsSetting#aibi_dashboard_embedding_approved_domains}
   */
   readonly aibiDashboardEmbeddingApprovedDomains: AibiDashboardEmbeddingApprovedDomainsSettingAibiDashboardEmbeddingApprovedDomains;
 }
 export interface AibiDashboardEmbeddingApprovedDomainsSettingAibiDashboardEmbeddingApprovedDomains {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/aibi_dashboard_embedding_approved_domains_setting#approved_domains AibiDashboardEmbeddingApprovedDomainsSetting#approved_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/aibi_dashboard_embedding_approved_domains_setting#approved_domains AibiDashboardEmbeddingApprovedDomainsSetting#approved_domains}
   */
   readonly approvedDomains: string[];
 }
@@ -117,7 +112,7 @@ export class AibiDashboardEmbeddingApprovedDomainsSettingAibiDashboardEmbeddingA
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/aibi_dashboard_embedding_approved_domains_setting databricks_aibi_dashboard_embedding_approved_domains_setting}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/aibi_dashboard_embedding_approved_domains_setting databricks_aibi_dashboard_embedding_approved_domains_setting}
 */
 export class AibiDashboardEmbeddingApprovedDomainsSetting extends cdktf.TerraformResource {
 
@@ -133,7 +128,7 @@ export class AibiDashboardEmbeddingApprovedDomainsSetting extends cdktf.Terrafor
   * Generates CDKTF code for importing a AibiDashboardEmbeddingApprovedDomainsSetting resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AibiDashboardEmbeddingApprovedDomainsSetting to import
-  * @param importFromId The id of the existing AibiDashboardEmbeddingApprovedDomainsSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/aibi_dashboard_embedding_approved_domains_setting#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AibiDashboardEmbeddingApprovedDomainsSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/aibi_dashboard_embedding_approved_domains_setting#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AibiDashboardEmbeddingApprovedDomainsSetting to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -145,7 +140,7 @@ export class AibiDashboardEmbeddingApprovedDomainsSetting extends cdktf.Terrafor
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/aibi_dashboard_embedding_approved_domains_setting databricks_aibi_dashboard_embedding_approved_domains_setting} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/aibi_dashboard_embedding_approved_domains_setting databricks_aibi_dashboard_embedding_approved_domains_setting} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -156,7 +151,7 @@ export class AibiDashboardEmbeddingApprovedDomainsSetting extends cdktf.Terrafor
       terraformResourceType: 'databricks_aibi_dashboard_embedding_approved_domains_setting',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.79.1',
+        providerVersion: '1.80.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
