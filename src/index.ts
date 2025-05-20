@@ -59,6 +59,7 @@ export * as mlflowExperiment from './mlflow-experiment';
 export * as mlflowModel from './mlflow-model';
 export * as mlflowWebhook from './mlflow-webhook';
 export * as modelServing from './model-serving';
+export * as modelServingProvisionedThroughput from './model-serving-provisioned-throughput';
 export * as mount from './mount';
 export * as mwsCredentials from './mws-credentials';
 export * as mwsCustomerManagedKeys from './mws-customer-managed-keys';

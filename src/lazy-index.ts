@@ -59,6 +59,7 @@ Object.defineProperty(exports, 'mlflowExperiment', { get: function () { return r
 Object.defineProperty(exports, 'mlflowModel', { get: function () { return require('./mlflow-model'); } });
 Object.defineProperty(exports, 'mlflowWebhook', { get: function () { return require('./mlflow-webhook'); } });
 Object.defineProperty(exports, 'modelServing', { get: function () { return require('./model-serving'); } });
+Object.defineProperty(exports, 'modelServingProvisionedThroughput', { get: function () { return require('./model-serving-provisioned-throughput'); } });
 Object.defineProperty(exports, 'mount', { get: function () { return require('./mount'); } });
 Object.defineProperty(exports, 'mwsCredentials', { get: function () { return require('./mws-credentials'); } });
 Object.defineProperty(exports, 'mwsCustomerManagedKeys', { get: function () { return require('./mws-customer-managed-keys'); } });

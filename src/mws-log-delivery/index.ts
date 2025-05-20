@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mws_log_delivery
+// https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mws_log_delivery
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,60 +13,60 @@ import * as cdktf from 'cdktf';
 
 export interface MwsLogDeliveryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mws_log_delivery#account_id MwsLogDelivery#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mws_log_delivery#account_id MwsLogDelivery#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mws_log_delivery#config_id MwsLogDelivery#config_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mws_log_delivery#config_id MwsLogDelivery#config_id}
   */
   readonly configId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mws_log_delivery#config_name MwsLogDelivery#config_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mws_log_delivery#config_name MwsLogDelivery#config_name}
   */
   readonly configName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mws_log_delivery#credentials_id MwsLogDelivery#credentials_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mws_log_delivery#credentials_id MwsLogDelivery#credentials_id}
   */
   readonly credentialsId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mws_log_delivery#delivery_path_prefix MwsLogDelivery#delivery_path_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mws_log_delivery#delivery_path_prefix MwsLogDelivery#delivery_path_prefix}
   */
   readonly deliveryPathPrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mws_log_delivery#delivery_start_time MwsLogDelivery#delivery_start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mws_log_delivery#delivery_start_time MwsLogDelivery#delivery_start_time}
   */
   readonly deliveryStartTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mws_log_delivery#id MwsLogDelivery#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mws_log_delivery#id MwsLogDelivery#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mws_log_delivery#log_type MwsLogDelivery#log_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mws_log_delivery#log_type MwsLogDelivery#log_type}
   */
   readonly logType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mws_log_delivery#output_format MwsLogDelivery#output_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mws_log_delivery#output_format MwsLogDelivery#output_format}
   */
   readonly outputFormat: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mws_log_delivery#status MwsLogDelivery#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mws_log_delivery#status MwsLogDelivery#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mws_log_delivery#storage_configuration_id MwsLogDelivery#storage_configuration_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mws_log_delivery#storage_configuration_id MwsLogDelivery#storage_configuration_id}
   */
   readonly storageConfigurationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mws_log_delivery#workspace_ids_filter MwsLogDelivery#workspace_ids_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mws_log_delivery#workspace_ids_filter MwsLogDelivery#workspace_ids_filter}
   */
   readonly workspaceIdsFilter?: number[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mws_log_delivery databricks_mws_log_delivery}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mws_log_delivery databricks_mws_log_delivery}
 */
 export class MwsLogDelivery extends cdktf.TerraformResource {
 
@@ -82,7 +82,7 @@ export class MwsLogDelivery extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a MwsLogDelivery resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MwsLogDelivery to import
-  * @param importFromId The id of the existing MwsLogDelivery that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mws_log_delivery#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MwsLogDelivery that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mws_log_delivery#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MwsLogDelivery to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -94,7 +94,7 @@ export class MwsLogDelivery extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mws_log_delivery databricks_mws_log_delivery} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mws_log_delivery databricks_mws_log_delivery} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -105,7 +105,7 @@ export class MwsLogDelivery extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_mws_log_delivery',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.79.1',
+        providerVersion: '1.80.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

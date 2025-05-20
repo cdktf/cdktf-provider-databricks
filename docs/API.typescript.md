@@ -130,6 +130,7 @@ The following submodules are available:
 - [mlflowModel](./mlflowModel.typescript.md)
 - [mlflowWebhook](./mlflowWebhook.typescript.md)
 - [modelServing](./modelServing.typescript.md)
+- [modelServingProvisionedThroughput](./modelServingProvisionedThroughput.typescript.md)
 - [mount](./mount.typescript.md)
 - [mwsCredentials](./mwsCredentials.typescript.md)
 - [mwsCustomerManagedKeys](./mwsCustomerManagedKeys.typescript.md)
