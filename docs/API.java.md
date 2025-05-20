@@ -130,6 +130,7 @@ The following submodules are available:
 - [mlflowModel](./mlflowModel.java.md)
 - [mlflowWebhook](./mlflowWebhook.java.md)
 - [modelServing](./modelServing.java.md)
+- [modelServingProvisionedThroughput](./modelServingProvisionedThroughput.java.md)
 - [mount](./mount.java.md)
 - [mwsCredentials](./mwsCredentials.java.md)
 - [mwsCustomerManagedKeys](./mwsCustomerManagedKeys.java.md)

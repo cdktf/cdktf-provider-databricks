@@ -4,7 +4,7 @@
 
 ### MwsNccBinding <a name="MwsNccBinding" id="@cdktf/provider-databricks.mwsNccBinding.MwsNccBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mws_ncc_binding databricks_mws_ncc_binding}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mws_ncc_binding databricks_mws_ncc_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.mwsNccBinding.MwsNccBinding.Initializer"></a>
 
@@ -38,9 +38,9 @@ mwsNccBinding.MwsNccBinding(
 | <code><a href="#@cdktf/provider-databricks.mwsNccBinding.MwsNccBinding.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsNccBinding.MwsNccBinding.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsNccBinding.MwsNccBinding.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.mwsNccBinding.MwsNccBinding.Initializer.parameter.networkConnectivityConfigId">network_connectivity_config_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mws_ncc_binding#network_connectivity_config_id MwsNccBinding#network_connectivity_config_id}. |
-| <code><a href="#@cdktf/provider-databricks.mwsNccBinding.MwsNccBinding.Initializer.parameter.workspaceId">workspace_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mws_ncc_binding#workspace_id MwsNccBinding#workspace_id}. |
-| <code><a href="#@cdktf/provider-databricks.mwsNccBinding.MwsNccBinding.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mws_ncc_binding#id MwsNccBinding#id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsNccBinding.MwsNccBinding.Initializer.parameter.networkConnectivityConfigId">network_connectivity_config_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mws_ncc_binding#network_connectivity_config_id MwsNccBinding#network_connectivity_config_id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsNccBinding.MwsNccBinding.Initializer.parameter.workspaceId">workspace_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mws_ncc_binding#workspace_id MwsNccBinding#workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsNccBinding.MwsNccBinding.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mws_ncc_binding#id MwsNccBinding#id}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mws_ncc_binding#network_connectivity_config_id MwsNccBinding#network_connectivity_config_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mws_ncc_binding#network_connectivity_config_id MwsNccBinding#network_connectivity_config_id}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mws_ncc_binding#workspace_id MwsNccBinding#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mws_ncc_binding#workspace_id MwsNccBinding#workspace_id}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mws_ncc_binding#id MwsNccBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mws_ncc_binding#id MwsNccBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -607,7 +607,7 @@ The construct id used in the generated config for the MwsNccBinding to import.
 
 The id of the existing MwsNccBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mws_ncc_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mws_ncc_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -900,9 +900,9 @@ mwsNccBinding.MwsNccBindingConfig(
 | <code><a href="#@cdktf/provider-databricks.mwsNccBinding.MwsNccBindingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsNccBinding.MwsNccBindingConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.mwsNccBinding.MwsNccBindingConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.mwsNccBinding.MwsNccBindingConfig.property.networkConnectivityConfigId">network_connectivity_config_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mws_ncc_binding#network_connectivity_config_id MwsNccBinding#network_connectivity_config_id}. |
-| <code><a href="#@cdktf/provider-databricks.mwsNccBinding.MwsNccBindingConfig.property.workspaceId">workspace_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mws_ncc_binding#workspace_id MwsNccBinding#workspace_id}. |
-| <code><a href="#@cdktf/provider-databricks.mwsNccBinding.MwsNccBindingConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mws_ncc_binding#id MwsNccBinding#id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsNccBinding.MwsNccBindingConfig.property.networkConnectivityConfigId">network_connectivity_config_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mws_ncc_binding#network_connectivity_config_id MwsNccBinding#network_connectivity_config_id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsNccBinding.MwsNccBindingConfig.property.workspaceId">workspace_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mws_ncc_binding#workspace_id MwsNccBinding#workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.mwsNccBinding.MwsNccBindingConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mws_ncc_binding#id MwsNccBinding#id}. |
 
 ---
 
@@ -984,7 +984,7 @@ network_connectivity_config_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mws_ncc_binding#network_connectivity_config_id MwsNccBinding#network_connectivity_config_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mws_ncc_binding#network_connectivity_config_id MwsNccBinding#network_connectivity_config_id}.
 
 ---
 
@@ -996,7 +996,7 @@ workspace_id: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mws_ncc_binding#workspace_id MwsNccBinding#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mws_ncc_binding#workspace_id MwsNccBinding#workspace_id}.
 
 ---
 
@@ -1008,7 +1008,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.79.1/docs/resources/mws_ncc_binding#id MwsNccBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/mws_ncc_binding#id MwsNccBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
