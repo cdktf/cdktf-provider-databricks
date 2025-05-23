@@ -5,6 +5,7 @@
 The following submodules are available:
 
 - [accessControlRuleSet](./accessControlRuleSet.go.md)
+- [accountNetworkPolicy](./accountNetworkPolicy.go.md)
 - [aibiDashboardEmbeddingAccessPolicySetting](./aibiDashboardEmbeddingAccessPolicySetting.go.md)
 - [aibiDashboardEmbeddingApprovedDomainsSetting](./aibiDashboardEmbeddingApprovedDomainsSetting.go.md)
 - [alert](./alert.go.md)
@@ -27,6 +28,8 @@ The following submodules are available:
 - [credential](./credential.go.md)
 - [customAppIntegration](./customAppIntegration.go.md)
 - [dashboard](./dashboard.go.md)
+- [dataDatabricksAccountNetworkPolicies](./dataDatabricksAccountNetworkPolicies.go.md)
+- [dataDatabricksAccountNetworkPolicy](./dataDatabricksAccountNetworkPolicy.go.md)
 - [dataDatabricksAlertV2](./dataDatabricksAlertV2.go.md)
 - [dataDatabricksAlertsV2](./dataDatabricksAlertsV2.go.md)
 - [dataDatabricksApp](./dataDatabricksApp.go.md)
@@ -75,6 +78,8 @@ The following submodules are available:
 - [dataDatabricksNotebookPaths](./dataDatabricksNotebookPaths.go.md)
 - [dataDatabricksNotificationDestinations](./dataDatabricksNotificationDestinations.go.md)
 - [dataDatabricksPipelines](./dataDatabricksPipelines.go.md)
+- [dataDatabricksRecipientFederationPolicies](./dataDatabricksRecipientFederationPolicies.go.md)
+- [dataDatabricksRecipientFederationPolicy](./dataDatabricksRecipientFederationPolicy.go.md)
 - [dataDatabricksRegisteredModel](./dataDatabricksRegisteredModel.go.md)
 - [dataDatabricksRegisteredModelVersions](./dataDatabricksRegisteredModelVersions.go.md)
 - [dataDatabricksSchema](./dataDatabricksSchema.go.md)
@@ -97,6 +102,7 @@ The following submodules are available:
 - [dataDatabricksViews](./dataDatabricksViews.go.md)
 - [dataDatabricksVolume](./dataDatabricksVolume.go.md)
 - [dataDatabricksVolumes](./dataDatabricksVolumes.go.md)
+- [dataDatabricksWorkspaceNetworkOption](./dataDatabricksWorkspaceNetworkOption.go.md)
 - [dataDatabricksZones](./dataDatabricksZones.go.md)
 - [databaseInstance](./databaseInstance.go.md)
 - [dbfsFile](./dbfsFile.go.md)
@@ -156,6 +162,7 @@ The following submodules are available:
 - [qualityMonitor](./qualityMonitor.go.md)
 - [query](./query.go.md)
 - [recipient](./recipient.go.md)
+- [recipientFederationPolicy](./recipientFederationPolicy.go.md)
 - [registeredModel](./registeredModel.go.md)
 - [repo](./repo.go.md)
 - [restrictWorkspaceAdminsSetting](./restrictWorkspaceAdminsSetting.go.md)
@@ -190,6 +197,7 @@ The following submodules are available:
 - [workspaceBinding](./workspaceBinding.go.md)
 - [workspaceConf](./workspaceConf.go.md)
 - [workspaceFile](./workspaceFile.go.md)
+- [workspaceNetworkOption](./workspaceNetworkOption.go.md)
 
 
 

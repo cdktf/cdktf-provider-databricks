@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps
+// https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataDatabricksAppsConfig extends cdktf.TerraformMetaArguments {
 }
 export interface DataDatabricksAppsAppActiveDeploymentDeploymentArtifacts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps#source_code_path DataDatabricksApps#source_code_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#source_code_path DataDatabricksApps#source_code_path}
   */
   readonly sourceCodePath?: string;
 }
@@ -158,15 +158,15 @@ export class DataDatabricksAppsAppActiveDeploymentStatusOutputReference extends 
 }
 export interface DataDatabricksAppsAppActiveDeployment {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps#deployment_id DataDatabricksApps#deployment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#deployment_id DataDatabricksApps#deployment_id}
   */
   readonly deploymentId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps#mode DataDatabricksApps#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#mode DataDatabricksApps#mode}
   */
   readonly mode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps#source_code_path DataDatabricksApps#source_code_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#source_code_path DataDatabricksApps#source_code_path}
   */
   readonly sourceCodePath?: string;
 }
@@ -453,7 +453,7 @@ export class DataDatabricksAppsAppComputeStatusOutputReference extends cdktf.Com
 }
 export interface DataDatabricksAppsAppPendingDeploymentDeploymentArtifacts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps#source_code_path DataDatabricksApps#source_code_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#source_code_path DataDatabricksApps#source_code_path}
   */
   readonly sourceCodePath?: string;
 }
@@ -596,15 +596,15 @@ export class DataDatabricksAppsAppPendingDeploymentStatusOutputReference extends
 }
 export interface DataDatabricksAppsAppPendingDeployment {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps#deployment_id DataDatabricksApps#deployment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#deployment_id DataDatabricksApps#deployment_id}
   */
   readonly deploymentId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps#mode DataDatabricksApps#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#mode DataDatabricksApps#mode}
   */
   readonly mode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps#source_code_path DataDatabricksApps#source_code_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#source_code_path DataDatabricksApps#source_code_path}
   */
   readonly sourceCodePath?: string;
 }
@@ -773,14 +773,14 @@ export class DataDatabricksAppsAppPendingDeploymentOutputReference extends cdktf
 }
 export interface DataDatabricksAppsAppResourcesJob {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps#id DataDatabricksApps#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#id DataDatabricksApps#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps#permission DataDatabricksApps#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#permission DataDatabricksApps#permission}
   */
   readonly permission: string;
 }
@@ -897,15 +897,15 @@ export class DataDatabricksAppsAppResourcesJobOutputReference extends cdktf.Comp
 }
 export interface DataDatabricksAppsAppResourcesSecret {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps#key DataDatabricksApps#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#key DataDatabricksApps#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps#permission DataDatabricksApps#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#permission DataDatabricksApps#permission}
   */
   readonly permission: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps#scope DataDatabricksApps#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#scope DataDatabricksApps#scope}
   */
   readonly scope: string;
 }
@@ -1048,11 +1048,11 @@ export class DataDatabricksAppsAppResourcesSecretOutputReference extends cdktf.C
 }
 export interface DataDatabricksAppsAppResourcesServingEndpoint {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps#name DataDatabricksApps#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#name DataDatabricksApps#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps#permission DataDatabricksApps#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#permission DataDatabricksApps#permission}
   */
   readonly permission: string;
 }
@@ -1169,14 +1169,14 @@ export class DataDatabricksAppsAppResourcesServingEndpointOutputReference extend
 }
 export interface DataDatabricksAppsAppResourcesSqlWarehouse {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps#id DataDatabricksApps#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#id DataDatabricksApps#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps#permission DataDatabricksApps#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#permission DataDatabricksApps#permission}
   */
   readonly permission: string;
 }
@@ -1291,31 +1291,186 @@ export class DataDatabricksAppsAppResourcesSqlWarehouseOutputReference extends c
     return this._permission;
   }
 }
+export interface DataDatabricksAppsAppResourcesUcSecurable {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#permission DataDatabricksApps#permission}
+  */
+  readonly permission: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#securable_full_name DataDatabricksApps#securable_full_name}
+  */
+  readonly securableFullName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#securable_type DataDatabricksApps#securable_type}
+  */
+  readonly securableType: string;
+}
+
+export function dataDatabricksAppsAppResourcesUcSecurableToTerraform(struct?: DataDatabricksAppsAppResourcesUcSecurable | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    permission: cdktf.stringToTerraform(struct!.permission),
+    securable_full_name: cdktf.stringToTerraform(struct!.securableFullName),
+    securable_type: cdktf.stringToTerraform(struct!.securableType),
+  }
+}
+
+
+export function dataDatabricksAppsAppResourcesUcSecurableToHclTerraform(struct?: DataDatabricksAppsAppResourcesUcSecurable | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    permission: {
+      value: cdktf.stringToHclTerraform(struct!.permission),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    securable_full_name: {
+      value: cdktf.stringToHclTerraform(struct!.securableFullName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    securable_type: {
+      value: cdktf.stringToHclTerraform(struct!.securableType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksAppsAppResourcesUcSecurableOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksAppsAppResourcesUcSecurable | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._permission !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.permission = this._permission;
+    }
+    if (this._securableFullName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.securableFullName = this._securableFullName;
+    }
+    if (this._securableType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.securableType = this._securableType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksAppsAppResourcesUcSecurable | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._permission = undefined;
+      this._securableFullName = undefined;
+      this._securableType = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._permission = value.permission;
+      this._securableFullName = value.securableFullName;
+      this._securableType = value.securableType;
+    }
+  }
+
+  // permission - computed: true, optional: false, required: true
+  private _permission?: string; 
+  public get permission() {
+    return this.getStringAttribute('permission');
+  }
+  public set permission(value: string) {
+    this._permission = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get permissionInput() {
+    return this._permission;
+  }
+
+  // securable_full_name - computed: true, optional: false, required: true
+  private _securableFullName?: string; 
+  public get securableFullName() {
+    return this.getStringAttribute('securable_full_name');
+  }
+  public set securableFullName(value: string) {
+    this._securableFullName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securableFullNameInput() {
+    return this._securableFullName;
+  }
+
+  // securable_type - computed: true, optional: false, required: true
+  private _securableType?: string; 
+  public get securableType() {
+    return this.getStringAttribute('securable_type');
+  }
+  public set securableType(value: string) {
+    this._securableType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securableTypeInput() {
+    return this._securableType;
+  }
+}
 export interface DataDatabricksAppsAppResources {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps#description DataDatabricksApps#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#description DataDatabricksApps#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps#job DataDatabricksApps#job}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#job DataDatabricksApps#job}
   */
   readonly job?: DataDatabricksAppsAppResourcesJob;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps#name DataDatabricksApps#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#name DataDatabricksApps#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps#secret DataDatabricksApps#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#secret DataDatabricksApps#secret}
   */
   readonly secret?: DataDatabricksAppsAppResourcesSecret;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps#serving_endpoint DataDatabricksApps#serving_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#serving_endpoint DataDatabricksApps#serving_endpoint}
   */
   readonly servingEndpoint?: DataDatabricksAppsAppResourcesServingEndpoint;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps#sql_warehouse DataDatabricksApps#sql_warehouse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#sql_warehouse DataDatabricksApps#sql_warehouse}
   */
   readonly sqlWarehouse?: DataDatabricksAppsAppResourcesSqlWarehouse;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#uc_securable DataDatabricksApps#uc_securable}
+  */
+  readonly ucSecurable?: DataDatabricksAppsAppResourcesUcSecurable;
 }
 
 export function dataDatabricksAppsAppResourcesToTerraform(struct?: DataDatabricksAppsAppResources | cdktf.IResolvable): any {
@@ -1330,6 +1485,7 @@ export function dataDatabricksAppsAppResourcesToTerraform(struct?: DataDatabrick
     secret: dataDatabricksAppsAppResourcesSecretToTerraform(struct!.secret),
     serving_endpoint: dataDatabricksAppsAppResourcesServingEndpointToTerraform(struct!.servingEndpoint),
     sql_warehouse: dataDatabricksAppsAppResourcesSqlWarehouseToTerraform(struct!.sqlWarehouse),
+    uc_securable: dataDatabricksAppsAppResourcesUcSecurableToTerraform(struct!.ucSecurable),
   }
 }
 
@@ -1375,6 +1531,12 @@ export function dataDatabricksAppsAppResourcesToHclTerraform(struct?: DataDatabr
       isBlock: true,
       type: "struct",
       storageClassType: "DataDatabricksAppsAppResourcesSqlWarehouse",
+    },
+    uc_securable: {
+      value: dataDatabricksAppsAppResourcesUcSecurableToHclTerraform(struct!.ucSecurable),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksAppsAppResourcesUcSecurable",
     },
   };
 
@@ -1426,6 +1588,10 @@ export class DataDatabricksAppsAppResourcesOutputReference extends cdktf.Complex
       hasAnyValues = true;
       internalValueResult.sqlWarehouse = this._sqlWarehouse?.internalValue;
     }
+    if (this._ucSecurable?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ucSecurable = this._ucSecurable?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -1439,6 +1605,7 @@ export class DataDatabricksAppsAppResourcesOutputReference extends cdktf.Complex
       this._secret.internalValue = undefined;
       this._servingEndpoint.internalValue = undefined;
       this._sqlWarehouse.internalValue = undefined;
+      this._ucSecurable.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -1453,6 +1620,7 @@ export class DataDatabricksAppsAppResourcesOutputReference extends cdktf.Complex
       this._secret.internalValue = value.secret;
       this._servingEndpoint.internalValue = value.servingEndpoint;
       this._sqlWarehouse.internalValue = value.sqlWarehouse;
+      this._ucSecurable.internalValue = value.ucSecurable;
     }
   }
 
@@ -1548,6 +1716,22 @@ export class DataDatabricksAppsAppResourcesOutputReference extends cdktf.Complex
   public get sqlWarehouseInput() {
     return this._sqlWarehouse.internalValue;
   }
+
+  // uc_securable - computed: true, optional: true, required: false
+  private _ucSecurable = new DataDatabricksAppsAppResourcesUcSecurableOutputReference(this, "uc_securable");
+  public get ucSecurable() {
+    return this._ucSecurable;
+  }
+  public putUcSecurable(value: DataDatabricksAppsAppResourcesUcSecurable) {
+    this._ucSecurable.internalValue = value;
+  }
+  public resetUcSecurable() {
+    this._ucSecurable.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ucSecurableInput() {
+    return this._ucSecurable.internalValue;
+  }
 }
 
 export class DataDatabricksAppsAppResourcesList extends cdktf.ComplexList {
@@ -1571,23 +1755,23 @@ export class DataDatabricksAppsAppResourcesList extends cdktf.ComplexList {
 }
 export interface DataDatabricksAppsApp {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps#budget_policy_id DataDatabricksApps#budget_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#budget_policy_id DataDatabricksApps#budget_policy_id}
   */
   readonly budgetPolicyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps#description DataDatabricksApps#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#description DataDatabricksApps#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps#name DataDatabricksApps#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#name DataDatabricksApps#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps#resources DataDatabricksApps#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#resources DataDatabricksApps#resources}
   */
   readonly resources?: DataDatabricksAppsAppResources[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps#user_api_scopes DataDatabricksApps#user_api_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#user_api_scopes DataDatabricksApps#user_api_scopes}
   */
   readonly userApiScopes?: string[];
 }
@@ -1900,7 +2084,7 @@ export class DataDatabricksAppsAppList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps databricks_apps}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps databricks_apps}
 */
 export class DataDatabricksApps extends cdktf.TerraformDataSource {
 
@@ -1916,7 +2100,7 @@ export class DataDatabricksApps extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksApps resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksApps to import
-  * @param importFromId The id of the existing DataDatabricksApps that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksApps that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksApps to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1928,7 +2112,7 @@ export class DataDatabricksApps extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/apps databricks_apps} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/apps databricks_apps} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1939,7 +2123,7 @@ export class DataDatabricksApps extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_apps',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.80.0',
+        providerVersion: '1.81.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

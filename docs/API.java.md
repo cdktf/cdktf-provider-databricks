@@ -5,6 +5,7 @@
 The following submodules are available:
 
 - [accessControlRuleSet](./accessControlRuleSet.java.md)
+- [accountNetworkPolicy](./accountNetworkPolicy.java.md)
 - [aibiDashboardEmbeddingAccessPolicySetting](./aibiDashboardEmbeddingAccessPolicySetting.java.md)
 - [aibiDashboardEmbeddingApprovedDomainsSetting](./aibiDashboardEmbeddingApprovedDomainsSetting.java.md)
 - [alert](./alert.java.md)
@@ -27,6 +28,8 @@ The following submodules are available:
 - [credential](./credential.java.md)
 - [customAppIntegration](./customAppIntegration.java.md)
 - [dashboard](./dashboard.java.md)
+- [dataDatabricksAccountNetworkPolicies](./dataDatabricksAccountNetworkPolicies.java.md)
+- [dataDatabricksAccountNetworkPolicy](./dataDatabricksAccountNetworkPolicy.java.md)
 - [dataDatabricksAlertV2](./dataDatabricksAlertV2.java.md)
 - [dataDatabricksAlertsV2](./dataDatabricksAlertsV2.java.md)
 - [dataDatabricksApp](./dataDatabricksApp.java.md)
@@ -75,6 +78,8 @@ The following submodules are available:
 - [dataDatabricksNotebookPaths](./dataDatabricksNotebookPaths.java.md)
 - [dataDatabricksNotificationDestinations](./dataDatabricksNotificationDestinations.java.md)
 - [dataDatabricksPipelines](./dataDatabricksPipelines.java.md)
+- [dataDatabricksRecipientFederationPolicies](./dataDatabricksRecipientFederationPolicies.java.md)
+- [dataDatabricksRecipientFederationPolicy](./dataDatabricksRecipientFederationPolicy.java.md)
 - [dataDatabricksRegisteredModel](./dataDatabricksRegisteredModel.java.md)
 - [dataDatabricksRegisteredModelVersions](./dataDatabricksRegisteredModelVersions.java.md)
 - [dataDatabricksSchema](./dataDatabricksSchema.java.md)
@@ -97,6 +102,7 @@ The following submodules are available:
 - [dataDatabricksViews](./dataDatabricksViews.java.md)
 - [dataDatabricksVolume](./dataDatabricksVolume.java.md)
 - [dataDatabricksVolumes](./dataDatabricksVolumes.java.md)
+- [dataDatabricksWorkspaceNetworkOption](./dataDatabricksWorkspaceNetworkOption.java.md)
 - [dataDatabricksZones](./dataDatabricksZones.java.md)
 - [databaseInstance](./databaseInstance.java.md)
 - [dbfsFile](./dbfsFile.java.md)
@@ -156,6 +162,7 @@ The following submodules are available:
 - [qualityMonitor](./qualityMonitor.java.md)
 - [query](./query.java.md)
 - [recipient](./recipient.java.md)
+- [recipientFederationPolicy](./recipientFederationPolicy.java.md)
 - [registeredModel](./registeredModel.java.md)
 - [repo](./repo.java.md)
 - [restrictWorkspaceAdminsSetting](./restrictWorkspaceAdminsSetting.java.md)
@@ -190,6 +197,7 @@ The following submodules are available:
 - [workspaceBinding](./workspaceBinding.java.md)
 - [workspaceConf](./workspaceConf.java.md)
 - [workspaceFile](./workspaceFile.java.md)
+- [workspaceNetworkOption](./workspaceNetworkOption.java.md)
 
 
 

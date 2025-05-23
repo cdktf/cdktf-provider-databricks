@@ -5,6 +5,7 @@
 The following submodules are available:
 
 - [accessControlRuleSet](./accessControlRuleSet.typescript.md)
+- [accountNetworkPolicy](./accountNetworkPolicy.typescript.md)
 - [aibiDashboardEmbeddingAccessPolicySetting](./aibiDashboardEmbeddingAccessPolicySetting.typescript.md)
 - [aibiDashboardEmbeddingApprovedDomainsSetting](./aibiDashboardEmbeddingApprovedDomainsSetting.typescript.md)
 - [alert](./alert.typescript.md)
@@ -27,6 +28,8 @@ The following submodules are available:
 - [credential](./credential.typescript.md)
 - [customAppIntegration](./customAppIntegration.typescript.md)
 - [dashboard](./dashboard.typescript.md)
+- [dataDatabricksAccountNetworkPolicies](./dataDatabricksAccountNetworkPolicies.typescript.md)
+- [dataDatabricksAccountNetworkPolicy](./dataDatabricksAccountNetworkPolicy.typescript.md)
 - [dataDatabricksAlertV2](./dataDatabricksAlertV2.typescript.md)
 - [dataDatabricksAlertsV2](./dataDatabricksAlertsV2.typescript.md)
 - [dataDatabricksApp](./dataDatabricksApp.typescript.md)
@@ -75,6 +78,8 @@ The following submodules are available:
 - [dataDatabricksNotebookPaths](./dataDatabricksNotebookPaths.typescript.md)
 - [dataDatabricksNotificationDestinations](./dataDatabricksNotificationDestinations.typescript.md)
 - [dataDatabricksPipelines](./dataDatabricksPipelines.typescript.md)
+- [dataDatabricksRecipientFederationPolicies](./dataDatabricksRecipientFederationPolicies.typescript.md)
+- [dataDatabricksRecipientFederationPolicy](./dataDatabricksRecipientFederationPolicy.typescript.md)
 - [dataDatabricksRegisteredModel](./dataDatabricksRegisteredModel.typescript.md)
 - [dataDatabricksRegisteredModelVersions](./dataDatabricksRegisteredModelVersions.typescript.md)
 - [dataDatabricksSchema](./dataDatabricksSchema.typescript.md)
@@ -97,6 +102,7 @@ The following submodules are available:
 - [dataDatabricksViews](./dataDatabricksViews.typescript.md)
 - [dataDatabricksVolume](./dataDatabricksVolume.typescript.md)
 - [dataDatabricksVolumes](./dataDatabricksVolumes.typescript.md)
+- [dataDatabricksWorkspaceNetworkOption](./dataDatabricksWorkspaceNetworkOption.typescript.md)
 - [dataDatabricksZones](./dataDatabricksZones.typescript.md)
 - [databaseInstance](./databaseInstance.typescript.md)
 - [dbfsFile](./dbfsFile.typescript.md)
@@ -156,6 +162,7 @@ The following submodules are available:
 - [qualityMonitor](./qualityMonitor.typescript.md)
 - [query](./query.typescript.md)
 - [recipient](./recipient.typescript.md)
+- [recipientFederationPolicy](./recipientFederationPolicy.typescript.md)
 - [registeredModel](./registeredModel.typescript.md)
 - [repo](./repo.typescript.md)
 - [restrictWorkspaceAdminsSetting](./restrictWorkspaceAdminsSetting.typescript.md)
@@ -190,6 +197,7 @@ The following submodules are available:
 - [workspaceBinding](./workspaceBinding.typescript.md)
 - [workspaceConf](./workspaceConf.typescript.md)
 - [workspaceFile](./workspaceFile.typescript.md)
+- [workspaceNetworkOption](./workspaceNetworkOption.typescript.md)
 
 
 
