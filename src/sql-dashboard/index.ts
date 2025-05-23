@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_dashboard
+// https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_dashboard
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,44 +8,44 @@ import * as cdktf from 'cdktf';
 
 export interface SqlDashboardConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_dashboard#created_at SqlDashboard#created_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_dashboard#created_at SqlDashboard#created_at}
   */
   readonly createdAt?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_dashboard#dashboard_filters_enabled SqlDashboard#dashboard_filters_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_dashboard#dashboard_filters_enabled SqlDashboard#dashboard_filters_enabled}
   */
   readonly dashboardFiltersEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_dashboard#id SqlDashboard#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_dashboard#id SqlDashboard#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_dashboard#name SqlDashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_dashboard#name SqlDashboard#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_dashboard#parent SqlDashboard#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_dashboard#parent SqlDashboard#parent}
   */
   readonly parent?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_dashboard#run_as_role SqlDashboard#run_as_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_dashboard#run_as_role SqlDashboard#run_as_role}
   */
   readonly runAsRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_dashboard#tags SqlDashboard#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_dashboard#tags SqlDashboard#tags}
   */
   readonly tags?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_dashboard#updated_at SqlDashboard#updated_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_dashboard#updated_at SqlDashboard#updated_at}
   */
   readonly updatedAt?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_dashboard databricks_sql_dashboard}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_dashboard databricks_sql_dashboard}
 */
 export class SqlDashboard extends cdktf.TerraformResource {
 
@@ -66,7 +61,7 @@ export class SqlDashboard extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SqlDashboard resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SqlDashboard to import
-  * @param importFromId The id of the existing SqlDashboard that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_dashboard#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SqlDashboard that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_dashboard#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SqlDashboard to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -78,7 +73,7 @@ export class SqlDashboard extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_dashboard databricks_sql_dashboard} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_dashboard databricks_sql_dashboard} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +84,7 @@ export class SqlDashboard extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_sql_dashboard',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.80.0',
+        providerVersion: '1.81.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

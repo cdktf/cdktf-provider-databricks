@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_widget
+// https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_widget
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,72 +8,72 @@ import * as cdktf from 'cdktf';
 
 export interface SqlWidgetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_widget#dashboard_id SqlWidget#dashboard_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_widget#dashboard_id SqlWidget#dashboard_id}
   */
   readonly dashboardId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_widget#description SqlWidget#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_widget#description SqlWidget#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_widget#id SqlWidget#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_widget#id SqlWidget#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_widget#text SqlWidget#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_widget#text SqlWidget#text}
   */
   readonly text?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_widget#title SqlWidget#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_widget#title SqlWidget#title}
   */
   readonly title?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_widget#visualization_id SqlWidget#visualization_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_widget#visualization_id SqlWidget#visualization_id}
   */
   readonly visualizationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_widget#widget_id SqlWidget#widget_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_widget#widget_id SqlWidget#widget_id}
   */
   readonly widgetId?: string;
   /**
   * parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_widget#parameter SqlWidget#parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_widget#parameter SqlWidget#parameter}
   */
   readonly parameter?: SqlWidgetParameter[] | cdktf.IResolvable;
   /**
   * position block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_widget#position SqlWidget#position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_widget#position SqlWidget#position}
   */
   readonly position?: SqlWidgetPosition;
 }
 export interface SqlWidgetParameter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_widget#map_to SqlWidget#map_to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_widget#map_to SqlWidget#map_to}
   */
   readonly mapTo?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_widget#name SqlWidget#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_widget#name SqlWidget#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_widget#title SqlWidget#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_widget#title SqlWidget#title}
   */
   readonly title?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_widget#type SqlWidget#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_widget#type SqlWidget#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_widget#value SqlWidget#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_widget#value SqlWidget#value}
   */
   readonly value?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_widget#values SqlWidget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_widget#values SqlWidget#values}
   */
   readonly values?: string[];
 }
@@ -333,23 +328,23 @@ export class SqlWidgetParameterList extends cdktf.ComplexList {
 }
 export interface SqlWidgetPosition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_widget#auto_height SqlWidget#auto_height}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_widget#auto_height SqlWidget#auto_height}
   */
   readonly autoHeight?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_widget#pos_x SqlWidget#pos_x}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_widget#pos_x SqlWidget#pos_x}
   */
   readonly posX?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_widget#pos_y SqlWidget#pos_y}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_widget#pos_y SqlWidget#pos_y}
   */
   readonly posY?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_widget#size_x SqlWidget#size_x}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_widget#size_x SqlWidget#size_x}
   */
   readonly sizeX: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_widget#size_y SqlWidget#size_y}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_widget#size_y SqlWidget#size_y}
   */
   readonly sizeY: number;
 }
@@ -543,7 +538,7 @@ export class SqlWidgetPositionOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_widget databricks_sql_widget}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_widget databricks_sql_widget}
 */
 export class SqlWidget extends cdktf.TerraformResource {
 
@@ -559,7 +554,7 @@ export class SqlWidget extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SqlWidget resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SqlWidget to import
-  * @param importFromId The id of the existing SqlWidget that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_widget#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SqlWidget that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_widget#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SqlWidget to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -571,7 +566,7 @@ export class SqlWidget extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/sql_widget databricks_sql_widget} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_widget databricks_sql_widget} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -582,7 +577,7 @@ export class SqlWidget extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_sql_widget',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.80.0',
+        providerVersion: '1.81.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
