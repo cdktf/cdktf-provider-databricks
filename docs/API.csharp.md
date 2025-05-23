@@ -5,6 +5,7 @@
 The following submodules are available:
 
 - [accessControlRuleSet](./accessControlRuleSet.csharp.md)
+- [accountNetworkPolicy](./accountNetworkPolicy.csharp.md)
 - [aibiDashboardEmbeddingAccessPolicySetting](./aibiDashboardEmbeddingAccessPolicySetting.csharp.md)
 - [aibiDashboardEmbeddingApprovedDomainsSetting](./aibiDashboardEmbeddingApprovedDomainsSetting.csharp.md)
 - [alert](./alert.csharp.md)
@@ -27,6 +28,8 @@ The following submodules are available:
 - [credential](./credential.csharp.md)
 - [customAppIntegration](./customAppIntegration.csharp.md)
 - [dashboard](./dashboard.csharp.md)
+- [dataDatabricksAccountNetworkPolicies](./dataDatabricksAccountNetworkPolicies.csharp.md)
+- [dataDatabricksAccountNetworkPolicy](./dataDatabricksAccountNetworkPolicy.csharp.md)
 - [dataDatabricksAlertV2](./dataDatabricksAlertV2.csharp.md)
 - [dataDatabricksAlertsV2](./dataDatabricksAlertsV2.csharp.md)
 - [dataDatabricksApp](./dataDatabricksApp.csharp.md)
@@ -75,6 +78,8 @@ The following submodules are available:
 - [dataDatabricksNotebookPaths](./dataDatabricksNotebookPaths.csharp.md)
 - [dataDatabricksNotificationDestinations](./dataDatabricksNotificationDestinations.csharp.md)
 - [dataDatabricksPipelines](./dataDatabricksPipelines.csharp.md)
+- [dataDatabricksRecipientFederationPolicies](./dataDatabricksRecipientFederationPolicies.csharp.md)
+- [dataDatabricksRecipientFederationPolicy](./dataDatabricksRecipientFederationPolicy.csharp.md)
 - [dataDatabricksRegisteredModel](./dataDatabricksRegisteredModel.csharp.md)
 - [dataDatabricksRegisteredModelVersions](./dataDatabricksRegisteredModelVersions.csharp.md)
 - [dataDatabricksSchema](./dataDatabricksSchema.csharp.md)
@@ -97,6 +102,7 @@ The following submodules are available:
 - [dataDatabricksViews](./dataDatabricksViews.csharp.md)
 - [dataDatabricksVolume](./dataDatabricksVolume.csharp.md)
 - [dataDatabricksVolumes](./dataDatabricksVolumes.csharp.md)
+- [dataDatabricksWorkspaceNetworkOption](./dataDatabricksWorkspaceNetworkOption.csharp.md)
 - [dataDatabricksZones](./dataDatabricksZones.csharp.md)
 - [databaseInstance](./databaseInstance.csharp.md)
 - [dbfsFile](./dbfsFile.csharp.md)
@@ -156,6 +162,7 @@ The following submodules are available:
 - [qualityMonitor](./qualityMonitor.csharp.md)
 - [query](./query.csharp.md)
 - [recipient](./recipient.csharp.md)
+- [recipientFederationPolicy](./recipientFederationPolicy.csharp.md)
 - [registeredModel](./registeredModel.csharp.md)
 - [repo](./repo.csharp.md)
 - [restrictWorkspaceAdminsSetting](./restrictWorkspaceAdminsSetting.csharp.md)
@@ -190,6 +197,7 @@ The following submodules are available:
 - [workspaceBinding](./workspaceBinding.csharp.md)
 - [workspaceConf](./workspaceConf.csharp.md)
 - [workspaceFile](./workspaceFile.csharp.md)
+- [workspaceNetworkOption](./workspaceNetworkOption.csharp.md)
 
 
 

@@ -4,7 +4,7 @@
 
 ### VectorSearchEndpoint <a name="VectorSearchEndpoint" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.Initializer"></a>
 
@@ -23,8 +23,7 @@ vectorSearchEndpoint.VectorSearchEndpoint(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   endpoint_type: str,
   name: str,
-  custom_tags: typing.Union[IResolvable, typing.List[VectorSearchEndpointCustomTags]] = None,
-  effective_budget_policy_id: str = None,
+  budget_policy_id: str = None,
   id: str = None,
   timeouts: VectorSearchEndpointTimeouts = None
 )
@@ -41,11 +40,10 @@ vectorSearchEndpoint.VectorSearchEndpoint(
 | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.Initializer.parameter.endpointType">endpoint_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#endpoint_type VectorSearchEndpoint#endpoint_type}. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#name VectorSearchEndpoint#name}. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.Initializer.parameter.customTags">custom_tags</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTags">VectorSearchEndpointCustomTags</a>]]</code> | custom_tags block. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.Initializer.parameter.effectiveBudgetPolicyId">effective_budget_policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#effective_budget_policy_id VectorSearchEndpoint#effective_budget_policy_id}. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#id VectorSearchEndpoint#id}. |
+| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.Initializer.parameter.endpointType">endpoint_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/vector_search_endpoint#endpoint_type VectorSearchEndpoint#endpoint_type}. |
+| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/vector_search_endpoint#name VectorSearchEndpoint#name}. |
+| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.Initializer.parameter.budgetPolicyId">budget_policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/vector_search_endpoint#budget_policy_id VectorSearchEndpoint#budget_policy_id}. |
+| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/vector_search_endpoint#id VectorSearchEndpoint#id}. |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointTimeouts">VectorSearchEndpointTimeouts</a></code> | timeouts block. |
 
 ---
@@ -114,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#endpoint_type VectorSearchEndpoint#endpoint_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/vector_search_endpoint#endpoint_type VectorSearchEndpoint#endpoint_type}.
 
 ---
 
@@ -122,25 +120,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#name VectorSearchEndpoint#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/vector_search_endpoint#name VectorSearchEndpoint#name}.
 
 ---
 
-##### `custom_tags`<sup>Optional</sup> <a name="custom_tags" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.Initializer.parameter.customTags"></a>
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTags">VectorSearchEndpointCustomTags</a>]]
-
-custom_tags block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#custom_tags VectorSearchEndpoint#custom_tags}
-
----
-
-##### `effective_budget_policy_id`<sup>Optional</sup> <a name="effective_budget_policy_id" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.Initializer.parameter.effectiveBudgetPolicyId"></a>
+##### `budget_policy_id`<sup>Optional</sup> <a name="budget_policy_id" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.Initializer.parameter.budgetPolicyId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#effective_budget_policy_id VectorSearchEndpoint#effective_budget_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/vector_search_endpoint#budget_policy_id VectorSearchEndpoint#budget_policy_id}.
 
 ---
 
@@ -148,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#id VectorSearchEndpoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/vector_search_endpoint#id VectorSearchEndpoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -161,7 +149,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#timeouts VectorSearchEndpoint#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/vector_search_endpoint#timeouts VectorSearchEndpoint#timeouts}
 
 ---
 
@@ -192,10 +180,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.putCustomTags">put_custom_tags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.resetCustomTags">reset_custom_tags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.resetEffectiveBudgetPolicyId">reset_effective_budget_policy_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.resetBudgetPolicyId">reset_budget_policy_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
@@ -526,20 +512,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_custom_tags` <a name="put_custom_tags" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.putCustomTags"></a>
-
-```python
-def put_custom_tags(
-  value: typing.Union[IResolvable, typing.List[VectorSearchEndpointCustomTags]]
-) -> None
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.putCustomTags.parameter.value"></a>
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTags">VectorSearchEndpointCustomTags</a>]]
-
----
-
 ##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.putTimeouts"></a>
 
 ```python
@@ -552,20 +524,14 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#create VectorSearchEndpoint#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/vector_search_endpoint#create VectorSearchEndpoint#create}.
 
 ---
 
-##### `reset_custom_tags` <a name="reset_custom_tags" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.resetCustomTags"></a>
+##### `reset_budget_policy_id` <a name="reset_budget_policy_id" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.resetBudgetPolicyId"></a>
 
 ```python
-def reset_custom_tags() -> None
-```
-
-##### `reset_effective_budget_policy_id` <a name="reset_effective_budget_policy_id" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.resetEffectiveBudgetPolicyId"></a>
-
-```python
-def reset_effective_budget_policy_id() -> None
+def reset_budget_policy_id() -> None
 ```
 
 ##### `reset_id` <a name="reset_id" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.resetId"></a>
@@ -694,7 +660,7 @@ The construct id used in the generated config for the VectorSearchEndpoint to im
 
 The id of the existing VectorSearchEndpoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/vector_search_endpoint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -726,20 +692,19 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.property.creationTimestamp">creation_timestamp</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.property.creator">creator</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.property.customTags">custom_tags</a></code> | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsList">VectorSearchEndpointCustomTagsList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.property.effectiveBudgetPolicyId">effective_budget_policy_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.property.endpointId">endpoint_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.property.endpointStatus">endpoint_status</a></code> | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointEndpointStatusList">VectorSearchEndpointEndpointStatusList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.property.lastUpdatedTimestamp">last_updated_timestamp</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.property.lastUpdatedUser">last_updated_user</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.property.numIndexes">num_indexes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointTimeoutsOutputReference">VectorSearchEndpointTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.property.customTagsInput">custom_tags_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTags">VectorSearchEndpointCustomTags</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.property.effectiveBudgetPolicyIdInput">effective_budget_policy_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.property.budgetPolicyIdInput">budget_policy_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.property.endpointTypeInput">endpoint_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointTimeouts">VectorSearchEndpointTimeouts</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.property.effectiveBudgetPolicyId">effective_budget_policy_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.property.budgetPolicyId">budget_policy_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.property.endpointType">endpoint_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -908,13 +873,13 @@ creator: str
 
 ---
 
-##### `custom_tags`<sup>Required</sup> <a name="custom_tags" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.property.customTags"></a>
+##### `effective_budget_policy_id`<sup>Required</sup> <a name="effective_budget_policy_id" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.property.effectiveBudgetPolicyId"></a>
 
 ```python
-custom_tags: VectorSearchEndpointCustomTagsList
+effective_budget_policy_id: str
 ```
 
-- *Type:* <a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsList">VectorSearchEndpointCustomTagsList</a>
+- *Type:* str
 
 ---
 
@@ -978,20 +943,10 @@ timeouts: VectorSearchEndpointTimeoutsOutputReference
 
 ---
 
-##### `custom_tags_input`<sup>Optional</sup> <a name="custom_tags_input" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.property.customTagsInput"></a>
+##### `budget_policy_id_input`<sup>Optional</sup> <a name="budget_policy_id_input" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.property.budgetPolicyIdInput"></a>
 
 ```python
-custom_tags_input: typing.Union[IResolvable, typing.List[VectorSearchEndpointCustomTags]]
-```
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTags">VectorSearchEndpointCustomTags</a>]]
-
----
-
-##### `effective_budget_policy_id_input`<sup>Optional</sup> <a name="effective_budget_policy_id_input" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.property.effectiveBudgetPolicyIdInput"></a>
-
-```python
-effective_budget_policy_id_input: str
+budget_policy_id_input: str
 ```
 
 - *Type:* str
@@ -1038,10 +993,10 @@ timeouts_input: typing.Union[IResolvable, VectorSearchEndpointTimeouts]
 
 ---
 
-##### `effective_budget_policy_id`<sup>Required</sup> <a name="effective_budget_policy_id" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.property.effectiveBudgetPolicyId"></a>
+##### `budget_policy_id`<sup>Required</sup> <a name="budget_policy_id" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.property.budgetPolicyId"></a>
 
 ```python
-effective_budget_policy_id: str
+budget_policy_id: str
 ```
 
 - *Type:* str
@@ -1115,8 +1070,7 @@ vectorSearchEndpoint.VectorSearchEndpointConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   endpoint_type: str,
   name: str,
-  custom_tags: typing.Union[IResolvable, typing.List[VectorSearchEndpointCustomTags]] = None,
-  effective_budget_policy_id: str = None,
+  budget_policy_id: str = None,
   id: str = None,
   timeouts: VectorSearchEndpointTimeouts = None
 )
@@ -1133,11 +1087,10 @@ vectorSearchEndpoint.VectorSearchEndpointConfig(
 | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.property.endpointType">endpoint_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#endpoint_type VectorSearchEndpoint#endpoint_type}. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#name VectorSearchEndpoint#name}. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.property.customTags">custom_tags</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTags">VectorSearchEndpointCustomTags</a>]]</code> | custom_tags block. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.property.effectiveBudgetPolicyId">effective_budget_policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#effective_budget_policy_id VectorSearchEndpoint#effective_budget_policy_id}. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#id VectorSearchEndpoint#id}. |
+| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.property.endpointType">endpoint_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/vector_search_endpoint#endpoint_type VectorSearchEndpoint#endpoint_type}. |
+| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/vector_search_endpoint#name VectorSearchEndpoint#name}. |
+| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.property.budgetPolicyId">budget_policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/vector_search_endpoint#budget_policy_id VectorSearchEndpoint#budget_policy_id}. |
+| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/vector_search_endpoint#id VectorSearchEndpoint#id}. |
 | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointTimeouts">VectorSearchEndpointTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1220,7 +1173,7 @@ endpoint_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#endpoint_type VectorSearchEndpoint#endpoint_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/vector_search_endpoint#endpoint_type VectorSearchEndpoint#endpoint_type}.
 
 ---
 
@@ -1232,33 +1185,19 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#name VectorSearchEndpoint#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/vector_search_endpoint#name VectorSearchEndpoint#name}.
 
 ---
 
-##### `custom_tags`<sup>Optional</sup> <a name="custom_tags" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.property.customTags"></a>
+##### `budget_policy_id`<sup>Optional</sup> <a name="budget_policy_id" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.property.budgetPolicyId"></a>
 
 ```python
-custom_tags: typing.Union[IResolvable, typing.List[VectorSearchEndpointCustomTags]]
-```
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTags">VectorSearchEndpointCustomTags</a>]]
-
-custom_tags block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#custom_tags VectorSearchEndpoint#custom_tags}
-
----
-
-##### `effective_budget_policy_id`<sup>Optional</sup> <a name="effective_budget_policy_id" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.property.effectiveBudgetPolicyId"></a>
-
-```python
-effective_budget_policy_id: str
+budget_policy_id: str
 ```
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#effective_budget_policy_id VectorSearchEndpoint#effective_budget_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/vector_search_endpoint#budget_policy_id VectorSearchEndpoint#budget_policy_id}.
 
 ---
 
@@ -1270,7 +1209,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#id VectorSearchEndpoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/vector_search_endpoint#id VectorSearchEndpoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1287,53 +1226,7 @@ timeouts: VectorSearchEndpointTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#timeouts VectorSearchEndpoint#timeouts}
-
----
-
-### VectorSearchEndpointCustomTags <a name="VectorSearchEndpointCustomTags" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTags"></a>
-
-#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTags.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_databricks import vector_search_endpoint
-
-vectorSearchEndpoint.VectorSearchEndpointCustomTags(
-  key: str,
-  value: str = None
-)
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#key VectorSearchEndpoint#key}. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTags.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#value VectorSearchEndpoint#value}. |
-
----
-
-##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTags.property.key"></a>
-
-```python
-key: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#key VectorSearchEndpoint#key}.
-
----
-
-##### `value`<sup>Optional</sup> <a name="value" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTags.property.value"></a>
-
-```python
-value: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#value VectorSearchEndpoint#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/vector_search_endpoint#timeouts VectorSearchEndpoint#timeouts}
 
 ---
 
@@ -1364,7 +1257,7 @@ vectorSearchEndpoint.VectorSearchEndpointTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#create VectorSearchEndpoint#create}. |
+| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/vector_search_endpoint#create VectorSearchEndpoint#create}. |
 
 ---
 
@@ -1376,526 +1269,11 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/vector_search_endpoint#create VectorSearchEndpoint#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/vector_search_endpoint#create VectorSearchEndpoint#create}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
-
-### VectorSearchEndpointCustomTagsList <a name="VectorSearchEndpointCustomTagsList" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsList.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_databricks import vector_search_endpoint
-
-vectorSearchEndpoint.VectorSearchEndpointCustomTagsList(
-  terraform_resource: IInterpolatingParent,
-  terraform_attribute: str,
-  wraps_set: bool
-)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsList.get">get</a></code> | *No description.* |
-
----
-
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsList.allWithMapKey"></a>
-
-```python
-def all_with_map_key(
-  map_key_attribute_name: str
-) -> DynamicListTerraformIterator
-```
-
-Creating an iterator for this complex list.
-
-The list will be converted into a map with the mapKeyAttributeName as the key.
-
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
-
-- *Type:* str
-
----
-
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsList.computeFqn"></a>
-
-```python
-def compute_fqn() -> str
-```
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsList.resolve"></a>
-
-```python
-def resolve(
-  _context: IResolveContext
-) -> typing.Any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsList.resolve.parameter._context"></a>
-
-- *Type:* cdktf.IResolveContext
-
----
-
-##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsList.toString"></a>
-
-```python
-def to_string() -> str
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `get` <a name="get" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsList.get"></a>
-
-```python
-def get(
-  index: typing.Union[int, float]
-) -> VectorSearchEndpointCustomTagsOutputReference
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsList.get.parameter.index"></a>
-
-- *Type:* typing.Union[int, float]
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTags">VectorSearchEndpointCustomTags</a>]]</code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsList.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsList.property.fqn"></a>
-
-```python
-fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsList.property.internalValue"></a>
-
-```python
-internal_value: typing.Union[IResolvable, typing.List[VectorSearchEndpointCustomTags]]
-```
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTags">VectorSearchEndpointCustomTags</a>]]
-
----
-
-
-### VectorSearchEndpointCustomTagsOutputReference <a name="VectorSearchEndpointCustomTagsOutputReference" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_databricks import vector_search_endpoint
-
-vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference(
-  terraform_resource: IInterpolatingParent,
-  terraform_attribute: str,
-  complex_object_index: typing.Union[int, float],
-  complex_object_is_from_set: bool
-)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* typing.Union[int, float]
-
-the index of this item in the list.
-
----
-
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.resetValue">reset_value</a></code> | *No description.* |
-
----
-
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.computeFqn"></a>
-
-```python
-def compute_fqn() -> str
-```
-
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.getAnyMapAttribute"></a>
-
-```python
-def get_any_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Any]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.getBooleanAttribute"></a>
-
-```python
-def get_boolean_attribute(
-  terraform_attribute: str
-) -> IResolvable
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.getBooleanMapAttribute"></a>
-
-```python
-def get_boolean_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[bool]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.getListAttribute"></a>
-
-```python
-def get_list_attribute(
-  terraform_attribute: str
-) -> typing.List[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.getNumberAttribute"></a>
-
-```python
-def get_number_attribute(
-  terraform_attribute: str
-) -> typing.Union[int, float]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.getNumberListAttribute"></a>
-
-```python
-def get_number_list_attribute(
-  terraform_attribute: str
-) -> typing.List[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.getNumberMapAttribute"></a>
-
-```python
-def get_number_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.getStringAttribute"></a>
-
-```python
-def get_string_attribute(
-  terraform_attribute: str
-) -> str
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.getStringMapAttribute"></a>
-
-```python
-def get_string_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.interpolationForAttribute"></a>
-
-```python
-def interpolation_for_attribute(
-  property: str
-) -> IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* str
-
----
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.resolve"></a>
-
-```python
-def resolve(
-  _context: IResolveContext
-) -> typing.Any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.resolve.parameter._context"></a>
-
-- *Type:* cdktf.IResolveContext
-
----
-
-##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.toString"></a>
-
-```python
-def to_string() -> str
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `reset_value` <a name="reset_value" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.resetValue"></a>
-
-```python
-def reset_value() -> None
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTags">VectorSearchEndpointCustomTags</a>]</code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.property.fqn"></a>
-
-```python
-fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.property.keyInput"></a>
-
-```python
-key_input: str
-```
-
-- *Type:* str
-
----
-
-##### `value_input`<sup>Optional</sup> <a name="value_input" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.property.valueInput"></a>
-
-```python
-value_input: str
-```
-
-- *Type:* str
-
----
-
-##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.property.key"></a>
-
-```python
-key: str
-```
-
-- *Type:* str
-
----
-
-##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.property.value"></a>
-
-```python
-value: str
-```
-
-- *Type:* str
-
----
-
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTagsOutputReference.property.internalValue"></a>
-
-```python
-internal_value: typing.Union[IResolvable, VectorSearchEndpointCustomTags]
-```
-
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointCustomTags">VectorSearchEndpointCustomTags</a>]
-
----
-
 
 ### VectorSearchEndpointEndpointStatusList <a name="VectorSearchEndpointEndpointStatusList" id="@cdktf/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointEndpointStatusList"></a>
 

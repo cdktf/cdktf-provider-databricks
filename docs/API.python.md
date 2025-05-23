@@ -5,6 +5,7 @@
 The following submodules are available:
 
 - [accessControlRuleSet](./accessControlRuleSet.python.md)
+- [accountNetworkPolicy](./accountNetworkPolicy.python.md)
 - [aibiDashboardEmbeddingAccessPolicySetting](./aibiDashboardEmbeddingAccessPolicySetting.python.md)
 - [aibiDashboardEmbeddingApprovedDomainsSetting](./aibiDashboardEmbeddingApprovedDomainsSetting.python.md)
 - [alert](./alert.python.md)
@@ -27,6 +28,8 @@ The following submodules are available:
 - [credential](./credential.python.md)
 - [customAppIntegration](./customAppIntegration.python.md)
 - [dashboard](./dashboard.python.md)
+- [dataDatabricksAccountNetworkPolicies](./dataDatabricksAccountNetworkPolicies.python.md)
+- [dataDatabricksAccountNetworkPolicy](./dataDatabricksAccountNetworkPolicy.python.md)
 - [dataDatabricksAlertV2](./dataDatabricksAlertV2.python.md)
 - [dataDatabricksAlertsV2](./dataDatabricksAlertsV2.python.md)
 - [dataDatabricksApp](./dataDatabricksApp.python.md)
@@ -75,6 +78,8 @@ The following submodules are available:
 - [dataDatabricksNotebookPaths](./dataDatabricksNotebookPaths.python.md)
 - [dataDatabricksNotificationDestinations](./dataDatabricksNotificationDestinations.python.md)
 - [dataDatabricksPipelines](./dataDatabricksPipelines.python.md)
+- [dataDatabricksRecipientFederationPolicies](./dataDatabricksRecipientFederationPolicies.python.md)
+- [dataDatabricksRecipientFederationPolicy](./dataDatabricksRecipientFederationPolicy.python.md)
 - [dataDatabricksRegisteredModel](./dataDatabricksRegisteredModel.python.md)
 - [dataDatabricksRegisteredModelVersions](./dataDatabricksRegisteredModelVersions.python.md)
 - [dataDatabricksSchema](./dataDatabricksSchema.python.md)
@@ -97,6 +102,7 @@ The following submodules are available:
 - [dataDatabricksViews](./dataDatabricksViews.python.md)
 - [dataDatabricksVolume](./dataDatabricksVolume.python.md)
 - [dataDatabricksVolumes](./dataDatabricksVolumes.python.md)
+- [dataDatabricksWorkspaceNetworkOption](./dataDatabricksWorkspaceNetworkOption.python.md)
 - [dataDatabricksZones](./dataDatabricksZones.python.md)
 - [databaseInstance](./databaseInstance.python.md)
 - [dbfsFile](./dbfsFile.python.md)
@@ -156,6 +162,7 @@ The following submodules are available:
 - [qualityMonitor](./qualityMonitor.python.md)
 - [query](./query.python.md)
 - [recipient](./recipient.python.md)
+- [recipientFederationPolicy](./recipientFederationPolicy.python.md)
 - [registeredModel](./registeredModel.python.md)
 - [repo](./repo.python.md)
 - [restrictWorkspaceAdminsSetting](./restrictWorkspaceAdminsSetting.python.md)
@@ -190,6 +197,7 @@ The following submodules are available:
 - [workspaceBinding](./workspaceBinding.python.md)
 - [workspaceConf](./workspaceConf.python.md)
 - [workspaceFile](./workspaceFile.python.md)
+- [workspaceNetworkOption](./workspaceNetworkOption.python.md)
 
 
 

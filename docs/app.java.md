@@ -4,7 +4,7 @@
 
 ### App <a name="App" id="@cdktf/provider-databricks.app.App"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app databricks_app}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app databricks_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.app.App.Initializer"></a>
 
@@ -45,12 +45,12 @@ App.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#name App#name}. |
-| <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.budgetPolicyId">budgetPolicyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#budget_policy_id App#budget_policy_id}. |
-| <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#description App#description}. |
-| <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.noCompute">noCompute</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#no_compute App#no_compute}. |
-| <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.resources">resources</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.app.AppResources">AppResources</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#resources App#resources}. |
-| <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.userApiScopes">userApiScopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#user_api_scopes App#user_api_scopes}. |
+| <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#name App#name}. |
+| <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.budgetPolicyId">budgetPolicyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#budget_policy_id App#budget_policy_id}. |
+| <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#description App#description}. |
+| <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.noCompute">noCompute</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#no_compute App#no_compute}. |
+| <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.resources">resources</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.app.AppResources">AppResources</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#resources App#resources}. |
+| <code><a href="#@cdktf/provider-databricks.app.App.Initializer.parameter.userApiScopes">userApiScopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#user_api_scopes App#user_api_scopes}. |
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#name App#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#name App#name}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#budget_policy_id App#budget_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#budget_policy_id App#budget_policy_id}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#description App#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#description App#description}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#no_compute App#no_compute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#no_compute App#no_compute}.
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.app.AppResources">AppResources</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#resources App#resources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#resources App#resources}.
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#user_api_scopes App#user_api_scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#user_api_scopes App#user_api_scopes}.
 
 ---
 
@@ -633,7 +633,7 @@ The construct id used in the generated config for the App to import.
 
 The id of the existing App that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1176,9 +1176,9 @@ AppActiveDeployment.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeployment.property.deploymentId">deploymentId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#deployment_id App#deployment_id}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeployment.property.mode">mode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#mode App#mode}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeployment.property.sourceCodePath">sourceCodePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#source_code_path App#source_code_path}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeployment.property.deploymentId">deploymentId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#deployment_id App#deployment_id}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeployment.property.mode">mode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#mode App#mode}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeployment.property.sourceCodePath">sourceCodePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#source_code_path App#source_code_path}. |
 
 ---
 
@@ -1190,7 +1190,7 @@ public java.lang.String getDeploymentId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#deployment_id App#deployment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#deployment_id App#deployment_id}.
 
 ---
 
@@ -1202,7 +1202,7 @@ public java.lang.String getMode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#mode App#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#mode App#mode}.
 
 ---
 
@@ -1214,7 +1214,7 @@ public java.lang.String getSourceCodePath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#source_code_path App#source_code_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#source_code_path App#source_code_path}.
 
 ---
 
@@ -1234,7 +1234,7 @@ AppActiveDeploymentDeploymentArtifacts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifacts.property.sourceCodePath">sourceCodePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#source_code_path App#source_code_path}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppActiveDeploymentDeploymentArtifacts.property.sourceCodePath">sourceCodePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#source_code_path App#source_code_path}. |
 
 ---
 
@@ -1246,7 +1246,7 @@ public java.lang.String getSourceCodePath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#source_code_path App#source_code_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#source_code_path App#source_code_path}.
 
 ---
 
@@ -1327,12 +1327,12 @@ AppConfig.builder()
 | <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#name App#name}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.budgetPolicyId">budgetPolicyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#budget_policy_id App#budget_policy_id}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#description App#description}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.noCompute">noCompute</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#no_compute App#no_compute}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.resources">resources</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.app.AppResources">AppResources</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#resources App#resources}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.userApiScopes">userApiScopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#user_api_scopes App#user_api_scopes}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#name App#name}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.budgetPolicyId">budgetPolicyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#budget_policy_id App#budget_policy_id}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#description App#description}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.noCompute">noCompute</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#no_compute App#no_compute}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.resources">resources</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.app.AppResources">AppResources</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#resources App#resources}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppConfig.property.userApiScopes">userApiScopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#user_api_scopes App#user_api_scopes}. |
 
 ---
 
@@ -1414,7 +1414,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#name App#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#name App#name}.
 
 ---
 
@@ -1426,7 +1426,7 @@ public java.lang.String getBudgetPolicyId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#budget_policy_id App#budget_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#budget_policy_id App#budget_policy_id}.
 
 ---
 
@@ -1438,7 +1438,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#description App#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#description App#description}.
 
 ---
 
@@ -1450,7 +1450,7 @@ public java.lang.Object getNoCompute();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#no_compute App#no_compute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#no_compute App#no_compute}.
 
 ---
 
@@ -1462,7 +1462,7 @@ public java.lang.Object getResources();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.app.AppResources">AppResources</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#resources App#resources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#resources App#resources}.
 
 ---
 
@@ -1474,7 +1474,7 @@ public java.util.List<java.lang.String> getUserApiScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#user_api_scopes App#user_api_scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#user_api_scopes App#user_api_scopes}.
 
 ---
 
@@ -1496,9 +1496,9 @@ AppPendingDeployment.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeployment.property.deploymentId">deploymentId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#deployment_id App#deployment_id}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeployment.property.mode">mode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#mode App#mode}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeployment.property.sourceCodePath">sourceCodePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#source_code_path App#source_code_path}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeployment.property.deploymentId">deploymentId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#deployment_id App#deployment_id}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeployment.property.mode">mode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#mode App#mode}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeployment.property.sourceCodePath">sourceCodePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#source_code_path App#source_code_path}. |
 
 ---
 
@@ -1510,7 +1510,7 @@ public java.lang.String getDeploymentId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#deployment_id App#deployment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#deployment_id App#deployment_id}.
 
 ---
 
@@ -1522,7 +1522,7 @@ public java.lang.String getMode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#mode App#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#mode App#mode}.
 
 ---
 
@@ -1534,7 +1534,7 @@ public java.lang.String getSourceCodePath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#source_code_path App#source_code_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#source_code_path App#source_code_path}.
 
 ---
 
@@ -1554,7 +1554,7 @@ AppPendingDeploymentDeploymentArtifacts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifacts.property.sourceCodePath">sourceCodePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#source_code_path App#source_code_path}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppPendingDeploymentDeploymentArtifacts.property.sourceCodePath">sourceCodePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#source_code_path App#source_code_path}. |
 
 ---
 
@@ -1566,7 +1566,7 @@ public java.lang.String getSourceCodePath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#source_code_path App#source_code_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#source_code_path App#source_code_path}.
 
 ---
 
@@ -1596,6 +1596,7 @@ AppResources.builder()
 //  .secret(AppResourcesSecret)
 //  .servingEndpoint(AppResourcesServingEndpoint)
 //  .sqlWarehouse(AppResourcesSqlWarehouse)
+//  .ucSecurable(AppResourcesUcSecurable)
     .build();
 ```
 
@@ -1603,12 +1604,13 @@ AppResources.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#name App#name}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#description App#description}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.job">job</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppResourcesJob">AppResourcesJob</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#job App#job}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.secret">secret</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppResourcesSecret">AppResourcesSecret</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#secret App#secret}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.servingEndpoint">servingEndpoint</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppResourcesServingEndpoint">AppResourcesServingEndpoint</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#serving_endpoint App#serving_endpoint}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.sqlWarehouse">sqlWarehouse</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppResourcesSqlWarehouse">AppResourcesSqlWarehouse</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#sql_warehouse App#sql_warehouse}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#name App#name}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#description App#description}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.job">job</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppResourcesJob">AppResourcesJob</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#job App#job}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.secret">secret</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppResourcesSecret">AppResourcesSecret</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#secret App#secret}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.servingEndpoint">servingEndpoint</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppResourcesServingEndpoint">AppResourcesServingEndpoint</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#serving_endpoint App#serving_endpoint}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.sqlWarehouse">sqlWarehouse</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppResourcesSqlWarehouse">AppResourcesSqlWarehouse</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#sql_warehouse App#sql_warehouse}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResources.property.ucSecurable">ucSecurable</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurable">AppResourcesUcSecurable</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#uc_securable App#uc_securable}. |
 
 ---
 
@@ -1620,7 +1622,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#name App#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#name App#name}.
 
 ---
 
@@ -1632,7 +1634,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#description App#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#description App#description}.
 
 ---
 
@@ -1644,7 +1646,7 @@ public AppResourcesJob getJob();
 
 - *Type:* <a href="#@cdktf/provider-databricks.app.AppResourcesJob">AppResourcesJob</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#job App#job}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#job App#job}.
 
 ---
 
@@ -1656,7 +1658,7 @@ public AppResourcesSecret getSecret();
 
 - *Type:* <a href="#@cdktf/provider-databricks.app.AppResourcesSecret">AppResourcesSecret</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#secret App#secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#secret App#secret}.
 
 ---
 
@@ -1668,7 +1670,7 @@ public AppResourcesServingEndpoint getServingEndpoint();
 
 - *Type:* <a href="#@cdktf/provider-databricks.app.AppResourcesServingEndpoint">AppResourcesServingEndpoint</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#serving_endpoint App#serving_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#serving_endpoint App#serving_endpoint}.
 
 ---
 
@@ -1680,7 +1682,19 @@ public AppResourcesSqlWarehouse getSqlWarehouse();
 
 - *Type:* <a href="#@cdktf/provider-databricks.app.AppResourcesSqlWarehouse">AppResourcesSqlWarehouse</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#sql_warehouse App#sql_warehouse}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#sql_warehouse App#sql_warehouse}.
+
+---
+
+##### `ucSecurable`<sup>Optional</sup> <a name="ucSecurable" id="@cdktf/provider-databricks.app.AppResources.property.ucSecurable"></a>
+
+```java
+public AppResourcesUcSecurable getUcSecurable();
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurable">AppResourcesUcSecurable</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#uc_securable App#uc_securable}.
 
 ---
 
@@ -1701,8 +1715,8 @@ AppResourcesJob.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppResourcesJob.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#id App#id}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppResourcesJob.property.permission">permission</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#permission App#permission}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesJob.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#id App#id}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesJob.property.permission">permission</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#permission App#permission}. |
 
 ---
 
@@ -1714,7 +1728,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#id App#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#id App#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1729,7 +1743,7 @@ public java.lang.String getPermission();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#permission App#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#permission App#permission}.
 
 ---
 
@@ -1751,9 +1765,9 @@ AppResourcesSecret.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppResourcesSecret.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#key App#key}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppResourcesSecret.property.permission">permission</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#permission App#permission}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppResourcesSecret.property.scope">scope</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#scope App#scope}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesSecret.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#key App#key}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesSecret.property.permission">permission</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#permission App#permission}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesSecret.property.scope">scope</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#scope App#scope}. |
 
 ---
 
@@ -1765,7 +1779,7 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#key App#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#key App#key}.
 
 ---
 
@@ -1777,7 +1791,7 @@ public java.lang.String getPermission();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#permission App#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#permission App#permission}.
 
 ---
 
@@ -1789,7 +1803,7 @@ public java.lang.String getScope();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#scope App#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#scope App#scope}.
 
 ---
 
@@ -1810,8 +1824,8 @@ AppResourcesServingEndpoint.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppResourcesServingEndpoint.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#name App#name}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppResourcesServingEndpoint.property.permission">permission</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#permission App#permission}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesServingEndpoint.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#name App#name}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesServingEndpoint.property.permission">permission</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#permission App#permission}. |
 
 ---
 
@@ -1823,7 +1837,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#name App#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#name App#name}.
 
 ---
 
@@ -1835,7 +1849,7 @@ public java.lang.String getPermission();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#permission App#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#permission App#permission}.
 
 ---
 
@@ -1856,8 +1870,8 @@ AppResourcesSqlWarehouse.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.app.AppResourcesSqlWarehouse.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#id App#id}. |
-| <code><a href="#@cdktf/provider-databricks.app.AppResourcesSqlWarehouse.property.permission">permission</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#permission App#permission}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesSqlWarehouse.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#id App#id}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesSqlWarehouse.property.permission">permission</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#permission App#permission}. |
 
 ---
 
@@ -1869,7 +1883,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#id App#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#id App#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1884,7 +1898,67 @@ public java.lang.String getPermission();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/resources/app#permission App#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#permission App#permission}.
+
+---
+
+### AppResourcesUcSecurable <a name="AppResourcesUcSecurable" id="@cdktf/provider-databricks.app.AppResourcesUcSecurable"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.app.AppResourcesUcSecurable.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.databricks.app.AppResourcesUcSecurable;
+
+AppResourcesUcSecurable.builder()
+    .permission(java.lang.String)
+    .securableFullName(java.lang.String)
+    .securableType(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurable.property.permission">permission</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#permission App#permission}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurable.property.securableFullName">securableFullName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#securable_full_name App#securable_full_name}. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurable.property.securableType">securableType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#securable_type App#securable_type}. |
+
+---
+
+##### `permission`<sup>Required</sup> <a name="permission" id="@cdktf/provider-databricks.app.AppResourcesUcSecurable.property.permission"></a>
+
+```java
+public java.lang.String getPermission();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#permission App#permission}.
+
+---
+
+##### `securableFullName`<sup>Required</sup> <a name="securableFullName" id="@cdktf/provider-databricks.app.AppResourcesUcSecurable.property.securableFullName"></a>
+
+```java
+public java.lang.String getSecurableFullName();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#securable_full_name App#securable_full_name}.
+
+---
+
+##### `securableType`<sup>Required</sup> <a name="securableType" id="@cdktf/provider-databricks.app.AppResourcesUcSecurable.property.securableType"></a>
+
+```java
+public java.lang.String getSecurableType();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/app#securable_type App#securable_type}.
 
 ---
 
@@ -4837,11 +4911,13 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-databricks.app.AppResourcesOutputReference.putSecret">putSecret</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppResourcesOutputReference.putServingEndpoint">putServingEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppResourcesOutputReference.putSqlWarehouse">putSqlWarehouse</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesOutputReference.putUcSecurable">putUcSecurable</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppResourcesOutputReference.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppResourcesOutputReference.resetJob">resetJob</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppResourcesOutputReference.resetSecret">resetSecret</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppResourcesOutputReference.resetServingEndpoint">resetServingEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppResourcesOutputReference.resetSqlWarehouse">resetSqlWarehouse</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesOutputReference.resetUcSecurable">resetUcSecurable</a></code> | *No description.* |
 
 ---
 
@@ -5043,6 +5119,18 @@ public void putSqlWarehouse(AppResourcesSqlWarehouse value)
 
 ---
 
+##### `putUcSecurable` <a name="putUcSecurable" id="@cdktf/provider-databricks.app.AppResourcesOutputReference.putUcSecurable"></a>
+
+```java
+public void putUcSecurable(AppResourcesUcSecurable value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.app.AppResourcesOutputReference.putUcSecurable.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurable">AppResourcesUcSecurable</a>
+
+---
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktf/provider-databricks.app.AppResourcesOutputReference.resetDescription"></a>
 
 ```java
@@ -5073,6 +5161,12 @@ public void resetServingEndpoint()
 public void resetSqlWarehouse()
 ```
 
+##### `resetUcSecurable` <a name="resetUcSecurable" id="@cdktf/provider-databricks.app.AppResourcesOutputReference.resetUcSecurable"></a>
+
+```java
+public void resetUcSecurable()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -5084,12 +5178,14 @@ public void resetSqlWarehouse()
 | <code><a href="#@cdktf/provider-databricks.app.AppResourcesOutputReference.property.secret">secret</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppResourcesSecretOutputReference">AppResourcesSecretOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppResourcesOutputReference.property.servingEndpoint">servingEndpoint</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppResourcesServingEndpointOutputReference">AppResourcesServingEndpointOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppResourcesOutputReference.property.sqlWarehouse">sqlWarehouse</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppResourcesSqlWarehouseOutputReference">AppResourcesSqlWarehouseOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesOutputReference.property.ucSecurable">ucSecurable</a></code> | <code><a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference">AppResourcesUcSecurableOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppResourcesOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppResourcesOutputReference.property.jobInput">jobInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.app.AppResourcesJob">AppResourcesJob</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppResourcesOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppResourcesOutputReference.property.secretInput">secretInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.app.AppResourcesSecret">AppResourcesSecret</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppResourcesOutputReference.property.servingEndpointInput">servingEndpointInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.app.AppResourcesServingEndpoint">AppResourcesServingEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppResourcesOutputReference.property.sqlWarehouseInput">sqlWarehouseInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.app.AppResourcesSqlWarehouse">AppResourcesSqlWarehouse</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesOutputReference.property.ucSecurableInput">ucSecurableInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurable">AppResourcesUcSecurable</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppResourcesOutputReference.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppResourcesOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.app.AppResourcesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.app.AppResources">AppResources</a></code> | *No description.* |
@@ -5160,6 +5256,16 @@ public AppResourcesSqlWarehouseOutputReference getSqlWarehouse();
 
 ---
 
+##### `ucSecurable`<sup>Required</sup> <a name="ucSecurable" id="@cdktf/provider-databricks.app.AppResourcesOutputReference.property.ucSecurable"></a>
+
+```java
+public AppResourcesUcSecurableOutputReference getUcSecurable();
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference">AppResourcesUcSecurableOutputReference</a>
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktf/provider-databricks.app.AppResourcesOutputReference.property.descriptionInput"></a>
 
 ```java
@@ -5217,6 +5323,16 @@ public java.lang.Object getSqlWarehouseInput();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.app.AppResourcesSqlWarehouse">AppResourcesSqlWarehouse</a>
+
+---
+
+##### `ucSecurableInput`<sup>Optional</sup> <a name="ucSecurableInput" id="@cdktf/provider-databricks.app.AppResourcesOutputReference.property.ucSecurableInput"></a>
+
+```java
+public java.lang.Object getUcSecurableInput();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurable">AppResourcesUcSecurable</a>
 
 ---
 
@@ -6148,6 +6264,321 @@ public java.lang.Object getInternalValue();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.app.AppResourcesSqlWarehouse">AppResourcesSqlWarehouse</a>
+
+---
+
+
+### AppResourcesUcSecurableOutputReference <a name="AppResourcesUcSecurableOutputReference" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.databricks.app.AppResourcesUcSecurableOutputReference;
+
+new AppResourcesUcSecurableOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.property.permissionInput">permissionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.property.securableFullNameInput">securableFullNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.property.securableTypeInput">securableTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.property.permission">permission</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.property.securableFullName">securableFullName</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.property.securableType">securableType</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurable">AppResourcesUcSecurable</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `permissionInput`<sup>Optional</sup> <a name="permissionInput" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.property.permissionInput"></a>
+
+```java
+public java.lang.String getPermissionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `securableFullNameInput`<sup>Optional</sup> <a name="securableFullNameInput" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.property.securableFullNameInput"></a>
+
+```java
+public java.lang.String getSecurableFullNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `securableTypeInput`<sup>Optional</sup> <a name="securableTypeInput" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.property.securableTypeInput"></a>
+
+```java
+public java.lang.String getSecurableTypeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `permission`<sup>Required</sup> <a name="permission" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.property.permission"></a>
+
+```java
+public java.lang.String getPermission();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `securableFullName`<sup>Required</sup> <a name="securableFullName" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.property.securableFullName"></a>
+
+```java
+public java.lang.String getSecurableFullName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `securableType`<sup>Required</sup> <a name="securableType" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.property.securableType"></a>
+
+```java
+public java.lang.String getSecurableType();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.app.AppResourcesUcSecurableOutputReference.property.internalValue"></a>
+
+```java
+public java.lang.Object getInternalValue();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.app.AppResourcesUcSecurable">AppResourcesUcSecurable</a>
 
 ---
 

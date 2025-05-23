@@ -4,7 +4,7 @@
 
 ### DataDatabricksSharesPluginframework <a name="DataDatabricksSharesPluginframework" id="@cdktf/provider-databricks.dataDatabricksSharesPluginframework.DataDatabricksSharesPluginframework"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/shares_pluginframework databricks_shares_pluginframework}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/shares_pluginframework databricks_shares_pluginframework}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksSharesPluginframework.DataDatabricksSharesPluginframework.Initializer"></a>
 
@@ -38,7 +38,7 @@ DataDatabricksSharesPluginframework.Builder.create(Construct scope, java.lang.St
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksSharesPluginframework.DataDatabricksSharesPluginframework.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksSharesPluginframework.DataDatabricksSharesPluginframework.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksSharesPluginframework.DataDatabricksSharesPluginframework.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksSharesPluginframework.DataDatabricksSharesPluginframework.Initializer.parameter.shares">shares</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/shares_pluginframework#shares DataDatabricksSharesPluginframework#shares}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksSharesPluginframework.DataDatabricksSharesPluginframework.Initializer.parameter.shares">shares</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/shares_pluginframework#shares DataDatabricksSharesPluginframework#shares}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/shares_pluginframework#shares DataDatabricksSharesPluginframework#shares}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/shares_pluginframework#shares DataDatabricksSharesPluginframework#shares}.
 
 ---
 
@@ -436,7 +436,7 @@ The construct id used in the generated config for the DataDatabricksSharesPlugin
 
 The id of the existing DataDatabricksSharesPluginframework that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/shares_pluginframework#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/shares_pluginframework#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -665,7 +665,7 @@ DataDatabricksSharesPluginframeworkConfig.builder()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksSharesPluginframework.DataDatabricksSharesPluginframeworkConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksSharesPluginframework.DataDatabricksSharesPluginframeworkConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksSharesPluginframework.DataDatabricksSharesPluginframeworkConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksSharesPluginframework.DataDatabricksSharesPluginframeworkConfig.property.shares">shares</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/shares_pluginframework#shares DataDatabricksSharesPluginframework#shares}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksSharesPluginframework.DataDatabricksSharesPluginframeworkConfig.property.shares">shares</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/shares_pluginframework#shares DataDatabricksSharesPluginframework#shares}. |
 
 ---
 
@@ -747,7 +747,7 @@ public java.util.List<java.lang.String> getShares();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.80.0/docs/data-sources/shares_pluginframework#shares DataDatabricksSharesPluginframework#shares}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/shares_pluginframework#shares DataDatabricksSharesPluginframework#shares}.
 
 ---
 
