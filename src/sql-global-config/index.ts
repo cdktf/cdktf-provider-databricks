@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_global_config
+// https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/sql_global_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +13,40 @@ import * as cdktf from 'cdktf';
 
 export interface SqlGlobalConfigConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_global_config#data_access_config SqlGlobalConfig#data_access_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/sql_global_config#data_access_config SqlGlobalConfig#data_access_config}
   */
   readonly dataAccessConfig?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_global_config#enable_serverless_compute SqlGlobalConfig#enable_serverless_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/sql_global_config#enable_serverless_compute SqlGlobalConfig#enable_serverless_compute}
   */
   readonly enableServerlessCompute?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_global_config#google_service_account SqlGlobalConfig#google_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/sql_global_config#google_service_account SqlGlobalConfig#google_service_account}
   */
   readonly googleServiceAccount?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_global_config#id SqlGlobalConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/sql_global_config#id SqlGlobalConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_global_config#instance_profile_arn SqlGlobalConfig#instance_profile_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/sql_global_config#instance_profile_arn SqlGlobalConfig#instance_profile_arn}
   */
   readonly instanceProfileArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_global_config#security_policy SqlGlobalConfig#security_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/sql_global_config#security_policy SqlGlobalConfig#security_policy}
   */
   readonly securityPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_global_config#sql_config_params SqlGlobalConfig#sql_config_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/sql_global_config#sql_config_params SqlGlobalConfig#sql_config_params}
   */
   readonly sqlConfigParams?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_global_config databricks_sql_global_config}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/sql_global_config databricks_sql_global_config}
 */
 export class SqlGlobalConfig extends cdktf.TerraformResource {
 
@@ -62,7 +62,7 @@ export class SqlGlobalConfig extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SqlGlobalConfig resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SqlGlobalConfig to import
-  * @param importFromId The id of the existing SqlGlobalConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_global_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SqlGlobalConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/sql_global_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SqlGlobalConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +74,7 @@ export class SqlGlobalConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/sql_global_config databricks_sql_global_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/sql_global_config databricks_sql_global_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class SqlGlobalConfig extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_sql_global_config',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.81.0',
+        providerVersion: '1.81.1',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

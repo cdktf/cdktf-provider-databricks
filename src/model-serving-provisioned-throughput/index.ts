@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput
+// https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,48 +13,48 @@ import * as cdktf from 'cdktf';
 
 export interface ModelServingProvisionedThroughputConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#budget_policy_id ModelServingProvisionedThroughput#budget_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#budget_policy_id ModelServingProvisionedThroughput#budget_policy_id}
   */
   readonly budgetPolicyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#id ModelServingProvisionedThroughput#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#id ModelServingProvisionedThroughput#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#name ModelServingProvisionedThroughput#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#name ModelServingProvisionedThroughput#name}
   */
   readonly name: string;
   /**
   * ai_gateway block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#ai_gateway ModelServingProvisionedThroughput#ai_gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#ai_gateway ModelServingProvisionedThroughput#ai_gateway}
   */
   readonly aiGateway?: ModelServingProvisionedThroughputAiGateway;
   /**
   * config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#config ModelServingProvisionedThroughput#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#config ModelServingProvisionedThroughput#config}
   */
   readonly config: ModelServingProvisionedThroughputConfigA;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#tags ModelServingProvisionedThroughput#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#tags ModelServingProvisionedThroughput#tags}
   */
   readonly tags?: ModelServingProvisionedThroughputTags[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#timeouts ModelServingProvisionedThroughput#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#timeouts ModelServingProvisionedThroughput#timeouts}
   */
   readonly timeouts?: ModelServingProvisionedThroughputTimeouts;
 }
 export interface ModelServingProvisionedThroughputAiGatewayFallbackConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#enabled ModelServingProvisionedThroughput#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#enabled ModelServingProvisionedThroughput#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
 }
@@ -135,7 +135,7 @@ export class ModelServingProvisionedThroughputAiGatewayFallbackConfigOutputRefer
 }
 export interface ModelServingProvisionedThroughputAiGatewayGuardrailsInputPii {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#behavior ModelServingProvisionedThroughput#behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#behavior ModelServingProvisionedThroughput#behavior}
   */
   readonly behavior?: string;
 }
@@ -219,21 +219,21 @@ export class ModelServingProvisionedThroughputAiGatewayGuardrailsInputPiiOutputR
 }
 export interface ModelServingProvisionedThroughputAiGatewayGuardrailsInput {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#invalid_keywords ModelServingProvisionedThroughput#invalid_keywords}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#invalid_keywords ModelServingProvisionedThroughput#invalid_keywords}
   */
   readonly invalidKeywords?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#safety ModelServingProvisionedThroughput#safety}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#safety ModelServingProvisionedThroughput#safety}
   */
   readonly safety?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#valid_topics ModelServingProvisionedThroughput#valid_topics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#valid_topics ModelServingProvisionedThroughput#valid_topics}
   */
   readonly validTopics?: string[];
   /**
   * pii block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#pii ModelServingProvisionedThroughput#pii}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#pii ModelServingProvisionedThroughput#pii}
   */
   readonly pii?: ModelServingProvisionedThroughputAiGatewayGuardrailsInputPii;
 }
@@ -404,7 +404,7 @@ export class ModelServingProvisionedThroughputAiGatewayGuardrailsInputOutputRefe
 }
 export interface ModelServingProvisionedThroughputAiGatewayGuardrailsOutputPii {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#behavior ModelServingProvisionedThroughput#behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#behavior ModelServingProvisionedThroughput#behavior}
   */
   readonly behavior?: string;
 }
@@ -488,21 +488,21 @@ export class ModelServingProvisionedThroughputAiGatewayGuardrailsOutputPiiOutput
 }
 export interface ModelServingProvisionedThroughputAiGatewayGuardrailsOutput {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#invalid_keywords ModelServingProvisionedThroughput#invalid_keywords}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#invalid_keywords ModelServingProvisionedThroughput#invalid_keywords}
   */
   readonly invalidKeywords?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#safety ModelServingProvisionedThroughput#safety}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#safety ModelServingProvisionedThroughput#safety}
   */
   readonly safety?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#valid_topics ModelServingProvisionedThroughput#valid_topics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#valid_topics ModelServingProvisionedThroughput#valid_topics}
   */
   readonly validTopics?: string[];
   /**
   * pii block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#pii ModelServingProvisionedThroughput#pii}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#pii ModelServingProvisionedThroughput#pii}
   */
   readonly pii?: ModelServingProvisionedThroughputAiGatewayGuardrailsOutputPii;
 }
@@ -675,13 +675,13 @@ export interface ModelServingProvisionedThroughputAiGatewayGuardrails {
   /**
   * input block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#input ModelServingProvisionedThroughput#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#input ModelServingProvisionedThroughput#input}
   */
   readonly input?: ModelServingProvisionedThroughputAiGatewayGuardrailsInput;
   /**
   * output block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#output ModelServingProvisionedThroughput#output}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#output ModelServingProvisionedThroughput#output}
   */
   readonly output?: ModelServingProvisionedThroughputAiGatewayGuardrailsOutput;
 }
@@ -794,19 +794,19 @@ export class ModelServingProvisionedThroughputAiGatewayGuardrailsOutputReference
 }
 export interface ModelServingProvisionedThroughputAiGatewayInferenceTableConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#catalog_name ModelServingProvisionedThroughput#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#catalog_name ModelServingProvisionedThroughput#catalog_name}
   */
   readonly catalogName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#enabled ModelServingProvisionedThroughput#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#enabled ModelServingProvisionedThroughput#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#schema_name ModelServingProvisionedThroughput#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#schema_name ModelServingProvisionedThroughput#schema_name}
   */
   readonly schemaName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#table_name_prefix ModelServingProvisionedThroughput#table_name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#table_name_prefix ModelServingProvisionedThroughput#table_name_prefix}
   */
   readonly tableNamePrefix?: string;
 }
@@ -977,15 +977,15 @@ export class ModelServingProvisionedThroughputAiGatewayInferenceTableConfigOutpu
 }
 export interface ModelServingProvisionedThroughputAiGatewayRateLimits {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#calls ModelServingProvisionedThroughput#calls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#calls ModelServingProvisionedThroughput#calls}
   */
   readonly calls: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#key ModelServingProvisionedThroughput#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#key ModelServingProvisionedThroughput#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#renewal_period ModelServingProvisionedThroughput#renewal_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#renewal_period ModelServingProvisionedThroughput#renewal_period}
   */
   readonly renewalPeriod: string;
 }
@@ -1153,7 +1153,7 @@ export class ModelServingProvisionedThroughputAiGatewayRateLimitsList extends cd
 }
 export interface ModelServingProvisionedThroughputAiGatewayUsageTrackingConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#enabled ModelServingProvisionedThroughput#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#enabled ModelServingProvisionedThroughput#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
 }
@@ -1239,31 +1239,31 @@ export interface ModelServingProvisionedThroughputAiGateway {
   /**
   * fallback_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#fallback_config ModelServingProvisionedThroughput#fallback_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#fallback_config ModelServingProvisionedThroughput#fallback_config}
   */
   readonly fallbackConfig?: ModelServingProvisionedThroughputAiGatewayFallbackConfig;
   /**
   * guardrails block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#guardrails ModelServingProvisionedThroughput#guardrails}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#guardrails ModelServingProvisionedThroughput#guardrails}
   */
   readonly guardrails?: ModelServingProvisionedThroughputAiGatewayGuardrails;
   /**
   * inference_table_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#inference_table_config ModelServingProvisionedThroughput#inference_table_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#inference_table_config ModelServingProvisionedThroughput#inference_table_config}
   */
   readonly inferenceTableConfig?: ModelServingProvisionedThroughputAiGatewayInferenceTableConfig;
   /**
   * rate_limits block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#rate_limits ModelServingProvisionedThroughput#rate_limits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#rate_limits ModelServingProvisionedThroughput#rate_limits}
   */
   readonly rateLimits?: ModelServingProvisionedThroughputAiGatewayRateLimits[] | cdktf.IResolvable;
   /**
   * usage_tracking_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#usage_tracking_config ModelServingProvisionedThroughput#usage_tracking_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#usage_tracking_config ModelServingProvisionedThroughput#usage_tracking_config}
   */
   readonly usageTrackingConfig?: ModelServingProvisionedThroughputAiGatewayUsageTrackingConfig;
 }
@@ -1463,19 +1463,19 @@ export class ModelServingProvisionedThroughputAiGatewayOutputReference extends c
 }
 export interface ModelServingProvisionedThroughputConfigServedEntities {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#entity_name ModelServingProvisionedThroughput#entity_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#entity_name ModelServingProvisionedThroughput#entity_name}
   */
   readonly entityName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#entity_version ModelServingProvisionedThroughput#entity_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#entity_version ModelServingProvisionedThroughput#entity_version}
   */
   readonly entityVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#name ModelServingProvisionedThroughput#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#name ModelServingProvisionedThroughput#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#provisioned_model_units ModelServingProvisionedThroughput#provisioned_model_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#provisioned_model_units ModelServingProvisionedThroughput#provisioned_model_units}
   */
   readonly provisionedModelUnits: number;
 }
@@ -1669,11 +1669,11 @@ export class ModelServingProvisionedThroughputConfigServedEntitiesList extends c
 }
 export interface ModelServingProvisionedThroughputConfigTrafficConfigRoutes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#served_model_name ModelServingProvisionedThroughput#served_model_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#served_model_name ModelServingProvisionedThroughput#served_model_name}
   */
   readonly servedModelName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#traffic_percentage ModelServingProvisionedThroughput#traffic_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#traffic_percentage ModelServingProvisionedThroughput#traffic_percentage}
   */
   readonly trafficPercentage: number;
 }
@@ -1814,7 +1814,7 @@ export interface ModelServingProvisionedThroughputConfigTrafficConfig {
   /**
   * routes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#routes ModelServingProvisionedThroughput#routes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#routes ModelServingProvisionedThroughput#routes}
   */
   readonly routes?: ModelServingProvisionedThroughputConfigTrafficConfigRoutes[] | cdktf.IResolvable;
 }
@@ -1900,13 +1900,13 @@ export interface ModelServingProvisionedThroughputConfigA {
   /**
   * served_entities block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#served_entities ModelServingProvisionedThroughput#served_entities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#served_entities ModelServingProvisionedThroughput#served_entities}
   */
   readonly servedEntities?: ModelServingProvisionedThroughputConfigServedEntities[] | cdktf.IResolvable;
   /**
   * traffic_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#traffic_config ModelServingProvisionedThroughput#traffic_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#traffic_config ModelServingProvisionedThroughput#traffic_config}
   */
   readonly trafficConfig?: ModelServingProvisionedThroughputConfigTrafficConfig;
 }
@@ -2019,11 +2019,11 @@ export class ModelServingProvisionedThroughputConfigAOutputReference extends cdk
 }
 export interface ModelServingProvisionedThroughputTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#key ModelServingProvisionedThroughput#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#key ModelServingProvisionedThroughput#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#value ModelServingProvisionedThroughput#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#value ModelServingProvisionedThroughput#value}
   */
   readonly value?: string;
 }
@@ -2165,11 +2165,11 @@ export class ModelServingProvisionedThroughputTagsList extends cdktf.ComplexList
 }
 export interface ModelServingProvisionedThroughputTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#create ModelServingProvisionedThroughput#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#create ModelServingProvisionedThroughput#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#update ModelServingProvisionedThroughput#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#update ModelServingProvisionedThroughput#update}
   */
   readonly update?: string;
 }
@@ -2292,7 +2292,7 @@ export class ModelServingProvisionedThroughputTimeoutsOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput databricks_model_serving_provisioned_throughput}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput databricks_model_serving_provisioned_throughput}
 */
 export class ModelServingProvisionedThroughput extends cdktf.TerraformResource {
 
@@ -2308,7 +2308,7 @@ export class ModelServingProvisionedThroughput extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ModelServingProvisionedThroughput resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ModelServingProvisionedThroughput to import
-  * @param importFromId The id of the existing ModelServingProvisionedThroughput that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ModelServingProvisionedThroughput that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ModelServingProvisionedThroughput to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2320,7 +2320,7 @@ export class ModelServingProvisionedThroughput extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/resources/model_serving_provisioned_throughput databricks_model_serving_provisioned_throughput} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/resources/model_serving_provisioned_throughput databricks_model_serving_provisioned_throughput} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2331,7 +2331,7 @@ export class ModelServingProvisionedThroughput extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_model_serving_provisioned_throughput',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.81.0',
+        providerVersion: '1.81.1',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

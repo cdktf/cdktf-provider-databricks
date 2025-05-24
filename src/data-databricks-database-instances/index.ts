@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/database_instances
+// https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/data-sources/database_instances
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface DataDatabricksDatabaseInstancesConfig extends cdktf.TerraformMe
 }
 export interface DataDatabricksDatabaseInstancesDatabaseInstances {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/database_instances#admin_password DataDatabricksDatabaseInstances#admin_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/data-sources/database_instances#admin_password DataDatabricksDatabaseInstances#admin_password}
   */
   readonly adminPassword?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/database_instances#admin_rolename DataDatabricksDatabaseInstances#admin_rolename}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/data-sources/database_instances#admin_rolename DataDatabricksDatabaseInstances#admin_rolename}
   */
   readonly adminRolename?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/database_instances#capacity DataDatabricksDatabaseInstances#capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/data-sources/database_instances#capacity DataDatabricksDatabaseInstances#capacity}
   */
   readonly capacity?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/database_instances#name DataDatabricksDatabaseInstances#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/data-sources/database_instances#name DataDatabricksDatabaseInstances#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/database_instances#stopped DataDatabricksDatabaseInstances#stopped}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/data-sources/database_instances#stopped DataDatabricksDatabaseInstances#stopped}
   */
   readonly stopped?: boolean | cdktf.IResolvable;
 }
@@ -280,7 +280,7 @@ export class DataDatabricksDatabaseInstancesDatabaseInstancesList extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/database_instances databricks_database_instances}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/data-sources/database_instances databricks_database_instances}
 */
 export class DataDatabricksDatabaseInstances extends cdktf.TerraformDataSource {
 
@@ -296,7 +296,7 @@ export class DataDatabricksDatabaseInstances extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksDatabaseInstances resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksDatabaseInstances to import
-  * @param importFromId The id of the existing DataDatabricksDatabaseInstances that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/database_instances#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksDatabaseInstances that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/data-sources/database_instances#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksDatabaseInstances to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -308,7 +308,7 @@ export class DataDatabricksDatabaseInstances extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.0/docs/data-sources/database_instances databricks_database_instances} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.81.1/docs/data-sources/database_instances databricks_database_instances} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -319,7 +319,7 @@ export class DataDatabricksDatabaseInstances extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_database_instances',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.81.0',
+        providerVersion: '1.81.1',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
