@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 qualitymonitor.NewQualityMonitor(scope Construct, id *string, config QualityMonitorConfig) QualityMonitor
 ```
@@ -560,7 +560,7 @@ func ResetWarehouseId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 qualitymonitor.QualityMonitor_IsConstruct(x interface{}) *bool
 ```
@@ -592,7 +592,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 qualitymonitor.QualityMonitor_IsTerraformElement(x interface{}) *bool
 ```
@@ -606,7 +606,7 @@ qualitymonitor.QualityMonitor_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 qualitymonitor.QualityMonitor_IsTerraformResource(x interface{}) *bool
 ```
@@ -620,7 +620,7 @@ qualitymonitor.QualityMonitor_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 qualitymonitor.QualityMonitor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1256,7 +1256,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 &qualitymonitor.QualityMonitorConfig {
 	Connection: interface{},
@@ -1599,7 +1599,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorCustomMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 &qualitymonitor.QualityMonitorCustomMetrics {
 	Definition: *string,
@@ -1687,7 +1687,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 &qualitymonitor.QualityMonitorDataClassificationConfig {
 	Enabled: interface{},
@@ -1719,7 +1719,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 &qualitymonitor.QualityMonitorInferenceLog {
 	Granularities: *[]*string,
@@ -1835,7 +1835,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 &qualitymonitor.QualityMonitorNotifications {
 	OnFailure: interface{},
@@ -1885,7 +1885,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailure.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 &qualitymonitor.QualityMonitorNotificationsOnFailure {
 	EmailAddresses: *[]*string,
@@ -1917,7 +1917,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetected.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 &qualitymonitor.QualityMonitorNotificationsOnNewClassificationTagDetected {
 	EmailAddresses: *[]*string,
@@ -1949,7 +1949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 &qualitymonitor.QualityMonitorSchedule {
 	QuartzCronExpression: *string,
@@ -1995,7 +1995,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 &qualitymonitor.QualityMonitorSnapshot {
 
@@ -2008,7 +2008,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymoni
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeries.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 &qualitymonitor.QualityMonitorTimeSeries {
 	Granularities: *[]*string,
@@ -2056,7 +2056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorCustomMetricsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 qualitymonitor.NewQualityMonitorCustomMetricsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QualityMonitorCustomMetricsList
 ```
@@ -2216,7 +2216,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorCustomMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 qualitymonitor.NewQualityMonitorCustomMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QualityMonitorCustomMetricsOutputReference
 ```
@@ -2593,7 +2593,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 qualitymonitor.NewQualityMonitorDataClassificationConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QualityMonitorDataClassificationConfigList
 ```
@@ -2753,7 +2753,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorDataClassificationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 qualitymonitor.NewQualityMonitorDataClassificationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QualityMonitorDataClassificationConfigOutputReference
 ```
@@ -3049,7 +3049,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 qualitymonitor.NewQualityMonitorInferenceLogList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QualityMonitorInferenceLogList
 ```
@@ -3209,7 +3209,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorInferenceLogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 qualitymonitor.NewQualityMonitorInferenceLogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QualityMonitorInferenceLogOutputReference
 ```
@@ -3644,7 +3644,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 qualitymonitor.NewQualityMonitorNotificationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QualityMonitorNotificationsList
 ```
@@ -3804,7 +3804,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 qualitymonitor.NewQualityMonitorNotificationsOnFailureList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QualityMonitorNotificationsOnFailureList
 ```
@@ -3964,7 +3964,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnFailureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 qualitymonitor.NewQualityMonitorNotificationsOnFailureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QualityMonitorNotificationsOnFailureOutputReference
 ```
@@ -4260,7 +4260,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 qualitymonitor.NewQualityMonitorNotificationsOnNewClassificationTagDetectedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QualityMonitorNotificationsOnNewClassificationTagDetectedList
 ```
@@ -4420,7 +4420,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 qualitymonitor.NewQualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QualityMonitorNotificationsOnNewClassificationTagDetectedOutputReference
 ```
@@ -4716,7 +4716,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 qualitymonitor.NewQualityMonitorNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QualityMonitorNotificationsOutputReference
 ```
@@ -5067,7 +5067,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 qualitymonitor.NewQualityMonitorScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QualityMonitorScheduleList
 ```
@@ -5227,7 +5227,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 qualitymonitor.NewQualityMonitorScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QualityMonitorScheduleOutputReference
 ```
@@ -5549,7 +5549,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 qualitymonitor.NewQualityMonitorSnapshotList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QualityMonitorSnapshotList
 ```
@@ -5709,7 +5709,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorSnapshotOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 qualitymonitor.NewQualityMonitorSnapshotOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QualityMonitorSnapshotOutputReference
 ```
@@ -5976,7 +5976,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 qualitymonitor.NewQualityMonitorTimeSeriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QualityMonitorTimeSeriesList
 ```
@@ -6136,7 +6136,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitor.QualityMonitorTimeSeriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/qualitymonitor"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/qualitymonitor"
 
 qualitymonitor.NewQualityMonitorTimeSeriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QualityMonitorTimeSeriesOutputReference
 ```
