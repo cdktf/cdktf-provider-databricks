@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.enhancedSecurityMonitoringWorkspaceSetting.EnhancedSecurityMonitoringWorkspaceSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/enhancedsecuritymonitoringworkspacesetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/enhancedsecuritymonitoringworkspacesetting"
 
 enhancedsecuritymonitoringworkspacesetting.NewEnhancedSecurityMonitoringWorkspaceSetting(scope Construct, id *string, config EnhancedSecurityMonitoringWorkspaceSettingConfig) EnhancedSecurityMonitoringWorkspaceSetting
 ```
@@ -412,7 +412,7 @@ func ResetSettingName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.enhancedSecurityMonitoringWorkspaceSetting.EnhancedSecurityMonitoringWorkspaceSetting.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/enhancedsecuritymonitoringworkspacesetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/enhancedsecuritymonitoringworkspacesetting"
 
 enhancedsecuritymonitoringworkspacesetting.EnhancedSecurityMonitoringWorkspaceSetting_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.enhancedSecurityMonitoringWorkspaceSetting.EnhancedSecurityMonitoringWorkspaceSetting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/enhancedsecuritymonitoringworkspacesetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/enhancedsecuritymonitoringworkspacesetting"
 
 enhancedsecuritymonitoringworkspacesetting.EnhancedSecurityMonitoringWorkspaceSetting_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ enhancedsecuritymonitoringworkspacesetting.EnhancedSecurityMonitoringWorkspaceSe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.enhancedSecurityMonitoringWorkspaceSetting.EnhancedSecurityMonitoringWorkspaceSetting.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/enhancedsecuritymonitoringworkspacesetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/enhancedsecuritymonitoringworkspacesetting"
 
 enhancedsecuritymonitoringworkspacesetting.EnhancedSecurityMonitoringWorkspaceSetting_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ enhancedsecuritymonitoringworkspacesetting.EnhancedSecurityMonitoringWorkspaceSe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.enhancedSecurityMonitoringWorkspaceSetting.EnhancedSecurityMonitoringWorkspaceSetting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/enhancedsecuritymonitoringworkspacesetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/enhancedsecuritymonitoringworkspacesetting"
 
 enhancedsecuritymonitoringworkspacesetting.EnhancedSecurityMonitoringWorkspaceSetting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -789,7 +789,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.enhancedSecurityMonitoringWorkspaceSetting.EnhancedSecurityMonitoringWorkspaceSettingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/enhancedsecuritymonitoringworkspacesetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/enhancedsecuritymonitoringworkspacesetting"
 
 &enhancedsecuritymonitoringworkspacesetting.EnhancedSecurityMonitoringWorkspaceSettingConfig {
 	Connection: interface{},
@@ -799,7 +799,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/enhancedsec
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	EnhancedSecurityMonitoringWorkspace: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.enhancedSecurityMonitoringWorkspaceSetting.EnhancedSecurityMonitoringWorkspaceSettingEnhancedSecurityMonitoringWorkspace,
+	EnhancedSecurityMonitoringWorkspace: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.enhancedSecurityMonitoringWorkspaceSetting.EnhancedSecurityMonitoringWorkspaceSettingEnhancedSecurityMonitoringWorkspace,
 	Etag: *string,
 	Id: *string,
 	SettingName: *string,
@@ -952,7 +952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.enhancedSecurityMonitoringWorkspaceSetting.EnhancedSecurityMonitoringWorkspaceSettingEnhancedSecurityMonitoringWorkspace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/enhancedsecuritymonitoringworkspacesetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/enhancedsecuritymonitoringworkspacesetting"
 
 &enhancedsecuritymonitoringworkspacesetting.EnhancedSecurityMonitoringWorkspaceSettingEnhancedSecurityMonitoringWorkspace {
 	IsEnabled: interface{},
@@ -986,7 +986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.enhancedSecurityMonitoringWorkspaceSetting.EnhancedSecurityMonitoringWorkspaceSettingEnhancedSecurityMonitoringWorkspaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/enhancedsecuritymonitoringworkspacesetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/enhancedsecuritymonitoringworkspacesetting"
 
 enhancedsecuritymonitoringworkspacesetting.NewEnhancedSecurityMonitoringWorkspaceSettingEnhancedSecurityMonitoringWorkspaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EnhancedSecurityMonitoringWorkspaceSettingEnhancedSecurityMonitoringWorkspaceOutputReference
 ```

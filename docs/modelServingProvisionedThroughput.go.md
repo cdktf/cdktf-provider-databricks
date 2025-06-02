@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 modelservingprovisionedthroughput.NewModelServingProvisionedThroughput(scope Construct, id *string, config ModelServingProvisionedThroughputConfig) ModelServingProvisionedThroughput
 ```
@@ -465,7 +465,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughput.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 modelservingprovisionedthroughput.ModelServingProvisionedThroughput_IsConstruct(x interface{}) *bool
 ```
@@ -497,7 +497,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughput.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 modelservingprovisionedthroughput.ModelServingProvisionedThroughput_IsTerraformElement(x interface{}) *bool
 ```
@@ -511,7 +511,7 @@ modelservingprovisionedthroughput.ModelServingProvisionedThroughput_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughput.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 modelservingprovisionedthroughput.ModelServingProvisionedThroughput_IsTerraformResource(x interface{}) *bool
 ```
@@ -525,7 +525,7 @@ modelservingprovisionedthroughput.ModelServingProvisionedThroughput_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughput.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 modelservingprovisionedthroughput.ModelServingProvisionedThroughput_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -919,14 +919,14 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 &modelservingprovisionedthroughput.ModelServingProvisionedThroughputAiGateway {
-	FallbackConfig: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayFallbackConfig,
-	Guardrails: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayGuardrails,
-	InferenceTableConfig: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayInferenceTableConfig,
+	FallbackConfig: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayFallbackConfig,
+	Guardrails: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayGuardrails,
+	InferenceTableConfig: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayInferenceTableConfig,
 	RateLimits: interface{},
-	UsageTrackingConfig: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayUsageTrackingConfig,
+	UsageTrackingConfig: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayUsageTrackingConfig,
 }
 ```
 
@@ -1017,7 +1017,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayFallbackConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 &modelservingprovisionedthroughput.ModelServingProvisionedThroughputAiGatewayFallbackConfig {
 	Enabled: interface{},
@@ -1049,11 +1049,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayGuardrails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 &modelservingprovisionedthroughput.ModelServingProvisionedThroughputAiGatewayGuardrails {
-	Input: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayGuardrailsInput,
-	Output: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayGuardrailsOutput,
+	Input: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayGuardrailsInput,
+	Output: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayGuardrailsOutput,
 }
 ```
 
@@ -1099,11 +1099,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayGuardrailsInput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 &modelservingprovisionedthroughput.ModelServingProvisionedThroughputAiGatewayGuardrailsInput {
 	InvalidKeywords: *[]*string,
-	Pii: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayGuardrailsInputPii,
+	Pii: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayGuardrailsInputPii,
 	Safety: interface{},
 	ValidTopics: *[]*string,
 }
@@ -1175,7 +1175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayGuardrailsInputPii.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 &modelservingprovisionedthroughput.ModelServingProvisionedThroughputAiGatewayGuardrailsInputPii {
 	Behavior: *string,
@@ -1207,11 +1207,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayGuardrailsOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 &modelservingprovisionedthroughput.ModelServingProvisionedThroughputAiGatewayGuardrailsOutput {
 	InvalidKeywords: *[]*string,
-	Pii: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayGuardrailsOutputPii,
+	Pii: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayGuardrailsOutputPii,
 	Safety: interface{},
 	ValidTopics: *[]*string,
 }
@@ -1283,7 +1283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayGuardrailsOutputPii.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 &modelservingprovisionedthroughput.ModelServingProvisionedThroughputAiGatewayGuardrailsOutputPii {
 	Behavior: *string,
@@ -1315,7 +1315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayInferenceTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 &modelservingprovisionedthroughput.ModelServingProvisionedThroughputAiGatewayInferenceTableConfig {
 	CatalogName: *string,
@@ -1389,7 +1389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayRateLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 &modelservingprovisionedthroughput.ModelServingProvisionedThroughputAiGatewayRateLimits {
 	Calls: *f64,
@@ -1449,7 +1449,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayUsageTrackingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 &modelservingprovisionedthroughput.ModelServingProvisionedThroughputAiGatewayUsageTrackingConfig {
 	Enabled: interface{},
@@ -1481,7 +1481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 &modelservingprovisionedthroughput.ModelServingProvisionedThroughputConfig {
 	Connection: interface{},
@@ -1491,13 +1491,13 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservin
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Config: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.modelServingProvisionedThroughput.ModelServingProvisionedThroughputConfigA,
+	Config: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.modelServingProvisionedThroughput.ModelServingProvisionedThroughputConfigA,
 	Name: *string,
-	AiGateway: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGateway,
+	AiGateway: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGateway,
 	BudgetPolicyId: *string,
 	Id: *string,
 	Tags: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.modelServingProvisionedThroughput.ModelServingProvisionedThroughputTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.modelServingProvisionedThroughput.ModelServingProvisionedThroughputTimeouts,
 }
 ```
 
@@ -1692,11 +1692,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 &modelservingprovisionedthroughput.ModelServingProvisionedThroughputConfigA {
 	ServedEntities: interface{},
-	TrafficConfig: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.modelServingProvisionedThroughput.ModelServingProvisionedThroughputConfigTrafficConfig,
+	TrafficConfig: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.modelServingProvisionedThroughput.ModelServingProvisionedThroughputConfigTrafficConfig,
 }
 ```
 
@@ -1742,7 +1742,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputConfigServedEntities.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 &modelservingprovisionedthroughput.ModelServingProvisionedThroughputConfigServedEntities {
 	EntityName: *string,
@@ -1816,7 +1816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputConfigTrafficConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 &modelservingprovisionedthroughput.ModelServingProvisionedThroughputConfigTrafficConfig {
 	Routes: interface{},
@@ -1850,7 +1850,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputConfigTrafficConfigRoutes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 &modelservingprovisionedthroughput.ModelServingProvisionedThroughputConfigTrafficConfigRoutes {
 	ServedModelName: *string,
@@ -1896,7 +1896,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 &modelservingprovisionedthroughput.ModelServingProvisionedThroughputTags {
 	Key: *string,
@@ -1942,7 +1942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 &modelservingprovisionedthroughput.ModelServingProvisionedThroughputTimeouts {
 	Create: *string,
@@ -1990,7 +1990,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayFallbackConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 modelservingprovisionedthroughput.NewModelServingProvisionedThroughputAiGatewayFallbackConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ModelServingProvisionedThroughputAiGatewayFallbackConfigOutputReference
 ```
@@ -2261,7 +2261,7 @@ func InternalValue() ModelServingProvisionedThroughputAiGatewayFallbackConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayGuardrailsInputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 modelservingprovisionedthroughput.NewModelServingProvisionedThroughputAiGatewayGuardrailsInputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ModelServingProvisionedThroughputAiGatewayGuardrailsInputOutputReference
 ```
@@ -2639,7 +2639,7 @@ func InternalValue() ModelServingProvisionedThroughputAiGatewayGuardrailsInput
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayGuardrailsInputPiiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 modelservingprovisionedthroughput.NewModelServingProvisionedThroughputAiGatewayGuardrailsInputPiiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ModelServingProvisionedThroughputAiGatewayGuardrailsInputPiiOutputReference
 ```
@@ -2917,7 +2917,7 @@ func InternalValue() ModelServingProvisionedThroughputAiGatewayGuardrailsInputPi
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayGuardrailsOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 modelservingprovisionedthroughput.NewModelServingProvisionedThroughputAiGatewayGuardrailsOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ModelServingProvisionedThroughputAiGatewayGuardrailsOutputOutputReference
 ```
@@ -3295,7 +3295,7 @@ func InternalValue() ModelServingProvisionedThroughputAiGatewayGuardrailsOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayGuardrailsOutputPiiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 modelservingprovisionedthroughput.NewModelServingProvisionedThroughputAiGatewayGuardrailsOutputPiiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ModelServingProvisionedThroughputAiGatewayGuardrailsOutputPiiOutputReference
 ```
@@ -3573,7 +3573,7 @@ func InternalValue() ModelServingProvisionedThroughputAiGatewayGuardrailsOutputP
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayGuardrailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 modelservingprovisionedthroughput.NewModelServingProvisionedThroughputAiGatewayGuardrailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ModelServingProvisionedThroughputAiGatewayGuardrailsOutputReference
 ```
@@ -3906,7 +3906,7 @@ func InternalValue() ModelServingProvisionedThroughputAiGatewayGuardrails
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayInferenceTableConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 modelservingprovisionedthroughput.NewModelServingProvisionedThroughputAiGatewayInferenceTableConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ModelServingProvisionedThroughputAiGatewayInferenceTableConfigOutputReference
 ```
@@ -4271,7 +4271,7 @@ func InternalValue() ModelServingProvisionedThroughputAiGatewayInferenceTableCon
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 modelservingprovisionedthroughput.NewModelServingProvisionedThroughputAiGatewayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ModelServingProvisionedThroughputAiGatewayOutputReference
 ```
@@ -4730,7 +4730,7 @@ func InternalValue() ModelServingProvisionedThroughputAiGateway
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayRateLimitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 modelservingprovisionedthroughput.NewModelServingProvisionedThroughputAiGatewayRateLimitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ModelServingProvisionedThroughputAiGatewayRateLimitsList
 ```
@@ -4890,7 +4890,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayRateLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 modelservingprovisionedthroughput.NewModelServingProvisionedThroughputAiGatewayRateLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ModelServingProvisionedThroughputAiGatewayRateLimitsOutputReference
 ```
@@ -5230,7 +5230,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputAiGatewayUsageTrackingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 modelservingprovisionedthroughput.NewModelServingProvisionedThroughputAiGatewayUsageTrackingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ModelServingProvisionedThroughputAiGatewayUsageTrackingConfigOutputReference
 ```
@@ -5508,7 +5508,7 @@ func InternalValue() ModelServingProvisionedThroughputAiGatewayUsageTrackingConf
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 modelservingprovisionedthroughput.NewModelServingProvisionedThroughputConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ModelServingProvisionedThroughputConfigAOutputReference
 ```
@@ -5841,7 +5841,7 @@ func InternalValue() ModelServingProvisionedThroughputConfigA
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputConfigServedEntitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 modelservingprovisionedthroughput.NewModelServingProvisionedThroughputConfigServedEntitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ModelServingProvisionedThroughputConfigServedEntitiesList
 ```
@@ -6001,7 +6001,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputConfigServedEntitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 modelservingprovisionedthroughput.NewModelServingProvisionedThroughputConfigServedEntitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ModelServingProvisionedThroughputConfigServedEntitiesOutputReference
 ```
@@ -6363,7 +6363,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputConfigTrafficConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 modelservingprovisionedthroughput.NewModelServingProvisionedThroughputConfigTrafficConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ModelServingProvisionedThroughputConfigTrafficConfigOutputReference
 ```
@@ -6654,7 +6654,7 @@ func InternalValue() ModelServingProvisionedThroughputConfigTrafficConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputConfigTrafficConfigRoutesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 modelservingprovisionedthroughput.NewModelServingProvisionedThroughputConfigTrafficConfigRoutesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ModelServingProvisionedThroughputConfigTrafficConfigRoutesList
 ```
@@ -6814,7 +6814,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputConfigTrafficConfigRoutesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 modelservingprovisionedthroughput.NewModelServingProvisionedThroughputConfigTrafficConfigRoutesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ModelServingProvisionedThroughputConfigTrafficConfigRoutesOutputReference
 ```
@@ -7125,7 +7125,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 modelservingprovisionedthroughput.NewModelServingProvisionedThroughputTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ModelServingProvisionedThroughputTagsList
 ```
@@ -7285,7 +7285,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 modelservingprovisionedthroughput.NewModelServingProvisionedThroughputTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ModelServingProvisionedThroughputTagsOutputReference
 ```
@@ -7603,7 +7603,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.modelServingProvisionedThroughput.ModelServingProvisionedThroughputTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/modelservingprovisionedthroughput"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/modelservingprovisionedthroughput"
 
 modelservingprovisionedthroughput.NewModelServingProvisionedThroughputTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ModelServingProvisionedThroughputTimeoutsOutputReference
 ```

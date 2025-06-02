@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/accountnetworkpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicy(scope Construct, id *string, config AccountNetworkPolicyConfig) AccountNetworkPolicy
 ```
@@ -412,7 +412,7 @@ func ResetNetworkPolicyId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/accountnetworkpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/accountnetworkpolicy"
 
 accountnetworkpolicy.AccountNetworkPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/accountnetworkpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/accountnetworkpolicy"
 
 accountnetworkpolicy.AccountNetworkPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ accountnetworkpolicy.AccountNetworkPolicy_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/accountnetworkpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/accountnetworkpolicy"
 
 accountnetworkpolicy.AccountNetworkPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ accountnetworkpolicy.AccountNetworkPolicy_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/accountnetworkpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/accountnetworkpolicy"
 
 accountnetworkpolicy.AccountNetworkPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -767,7 +767,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/accountnetworkpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyConfig {
 	Connection: interface{},
@@ -778,7 +778,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/accountnetw
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AccountId: *string,
-	Egress: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.accountNetworkPolicy.AccountNetworkPolicyEgress,
+	Egress: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.accountNetworkPolicy.AccountNetworkPolicyEgress,
 	NetworkPolicyId: *string,
 }
 ```
@@ -911,10 +911,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/accountnetworkpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyEgress {
-	NetworkAccess: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccess,
+	NetworkAccess: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccess,
 }
 ```
 
@@ -943,13 +943,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/accountnetworkpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyEgressNetworkAccess {
 	RestrictionMode: *string,
 	AllowedInternetDestinations: interface{},
 	AllowedStorageDestinations: interface{},
-	PolicyEnforcement: github.com/cdktf/cdktf-provider-databricks-go/databricks/v13.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessPolicyEnforcement,
+	PolicyEnforcement: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessPolicyEnforcement,
 }
 ```
 
@@ -1017,7 +1017,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/accountnetworkpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinations {
 	Destination: *string,
@@ -1063,7 +1063,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/accountnetworkpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations {
 	AzureStorageAccount: *string,
@@ -1151,7 +1151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessPolicyEnforcement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/accountnetworkpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyEgressNetworkAccessPolicyEnforcement {
 	DryRunModeProductFilter: *[]*string,
@@ -1199,7 +1199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/accountnetworkpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinationsList
 ```
@@ -1359,7 +1359,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/accountnetworkpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinationsOutputReference
 ```
@@ -1684,7 +1684,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/accountnetworkpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinationsList
 ```
@@ -1844,7 +1844,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/accountnetworkpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinationsOutputReference
 ```
@@ -2256,7 +2256,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/accountnetworkpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyEgressNetworkAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyEgressNetworkAccessOutputReference
 ```
@@ -2653,7 +2653,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessPolicyEnforcementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/accountnetworkpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyEgressNetworkAccessPolicyEnforcementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyEgressNetworkAccessPolicyEnforcementOutputReference
 ```
@@ -2960,7 +2960,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v13/accountnetworkpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyEgressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyEgressOutputReference
 ```
