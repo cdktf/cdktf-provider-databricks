@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/budgetpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/budgetpolicy"
 
 budgetpolicy.NewBudgetPolicy(scope Construct, id *string, config BudgetPolicyConfig) BudgetPolicy
 ```
@@ -412,7 +412,7 @@ func ResetPolicyName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/budgetpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/budgetpolicy"
 
 budgetpolicy.BudgetPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/budgetpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/budgetpolicy"
 
 budgetpolicy.BudgetPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ budgetpolicy.BudgetPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/budgetpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/budgetpolicy"
 
 budgetpolicy.BudgetPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ budgetpolicy.BudgetPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/budgetpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/budgetpolicy"
 
 budgetpolicy.BudgetPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -778,7 +778,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.budgetPolicy.BudgetPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/budgetpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/budgetpolicy"
 
 &budgetpolicy.BudgetPolicyConfig {
 	Connection: interface{},
@@ -922,7 +922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.budgetPolicy.BudgetPolicyCustomTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/budgetpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/budgetpolicy"
 
 &budgetpolicy.BudgetPolicyCustomTags {
 	Key: *string,
@@ -970,7 +970,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.budgetPolicy.BudgetPolicyCustomTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/budgetpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/budgetpolicy"
 
 budgetpolicy.NewBudgetPolicyCustomTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BudgetPolicyCustomTagsList
 ```
@@ -1130,7 +1130,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.budgetPolicy.BudgetPolicyCustomTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/budgetpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/budgetpolicy"
 
 budgetpolicy.NewBudgetPolicyCustomTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BudgetPolicyCustomTagsOutputReference
 ```

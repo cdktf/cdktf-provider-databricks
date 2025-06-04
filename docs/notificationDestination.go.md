@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.notificationDestination.NotificationDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/notificationdestination"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/notificationdestination"
 
 notificationdestination.NewNotificationDestination(scope Construct, id *string, config NotificationDestinationConfig) NotificationDestination
 ```
@@ -412,7 +412,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.notificationDestination.NotificationDestination.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/notificationdestination"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/notificationdestination"
 
 notificationdestination.NotificationDestination_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.notificationDestination.NotificationDestination.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/notificationdestination"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/notificationdestination"
 
 notificationdestination.NotificationDestination_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ notificationdestination.NotificationDestination_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.notificationDestination.NotificationDestination.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/notificationdestination"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/notificationdestination"
 
 notificationdestination.NotificationDestination_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ notificationdestination.NotificationDestination_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.notificationDestination.NotificationDestination.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/notificationdestination"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/notificationdestination"
 
 notificationdestination.NotificationDestination_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -789,7 +789,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.notificationDestination.NotificationDestinationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/notificationdestination"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/notificationdestination"
 
 &notificationdestination.NotificationDestinationConfig {
 	Connection: interface{},
@@ -800,7 +800,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/notificatio
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	DisplayName: *string,
-	Config: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.notificationDestination.NotificationDestinationConfigA,
+	Config: github.com/cdktf/cdktf-provider-databricks-go/databricks/v15.notificationDestination.NotificationDestinationConfigA,
 	DestinationType: *string,
 	Id: *string,
 }
@@ -952,14 +952,14 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.notificationDestination.NotificationDestinationConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/notificationdestination"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/notificationdestination"
 
 &notificationdestination.NotificationDestinationConfigA {
-	Email: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.notificationDestination.NotificationDestinationConfigEmail,
-	GenericWebhook: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.notificationDestination.NotificationDestinationConfigGenericWebhook,
-	MicrosoftTeams: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.notificationDestination.NotificationDestinationConfigMicrosoftTeams,
-	Pagerduty: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.notificationDestination.NotificationDestinationConfigPagerduty,
-	Slack: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.notificationDestination.NotificationDestinationConfigSlack,
+	Email: github.com/cdktf/cdktf-provider-databricks-go/databricks/v15.notificationDestination.NotificationDestinationConfigEmail,
+	GenericWebhook: github.com/cdktf/cdktf-provider-databricks-go/databricks/v15.notificationDestination.NotificationDestinationConfigGenericWebhook,
+	MicrosoftTeams: github.com/cdktf/cdktf-provider-databricks-go/databricks/v15.notificationDestination.NotificationDestinationConfigMicrosoftTeams,
+	Pagerduty: github.com/cdktf/cdktf-provider-databricks-go/databricks/v15.notificationDestination.NotificationDestinationConfigPagerduty,
+	Slack: github.com/cdktf/cdktf-provider-databricks-go/databricks/v15.notificationDestination.NotificationDestinationConfigSlack,
 }
 ```
 
@@ -1050,7 +1050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.notificationDestination.NotificationDestinationConfigEmail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/notificationdestination"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/notificationdestination"
 
 &notificationdestination.NotificationDestinationConfigEmail {
 	Addresses: *[]*string,
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.notificationDestination.NotificationDestinationConfigGenericWebhook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/notificationdestination"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/notificationdestination"
 
 &notificationdestination.NotificationDestinationConfigGenericWebhook {
 	Password: *string,
@@ -1184,7 +1184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/notificationdestination"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/notificationdestination"
 
 &notificationdestination.NotificationDestinationConfigMicrosoftTeams {
 	Url: *string,
@@ -1230,7 +1230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.notificationDestination.NotificationDestinationConfigPagerduty.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/notificationdestination"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/notificationdestination"
 
 &notificationdestination.NotificationDestinationConfigPagerduty {
 	IntegrationKey: *string,
@@ -1276,7 +1276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.notificationDestination.NotificationDestinationConfigSlack.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/notificationdestination"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/notificationdestination"
 
 &notificationdestination.NotificationDestinationConfigSlack {
 	Url: *string,
@@ -1324,7 +1324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/notificationdestination"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/notificationdestination"
 
 notificationdestination.NewNotificationDestinationConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NotificationDestinationConfigAOutputReference
 ```
@@ -1783,7 +1783,7 @@ func InternalValue() NotificationDestinationConfigA
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.notificationDestination.NotificationDestinationConfigEmailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/notificationdestination"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/notificationdestination"
 
 notificationdestination.NewNotificationDestinationConfigEmailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NotificationDestinationConfigEmailOutputReference
 ```
@@ -2061,7 +2061,7 @@ func InternalValue() NotificationDestinationConfigEmail
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.notificationDestination.NotificationDestinationConfigGenericWebhookOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/notificationdestination"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/notificationdestination"
 
 notificationdestination.NewNotificationDestinationConfigGenericWebhookOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NotificationDestinationConfigGenericWebhookOutputReference
 ```
@@ -2484,7 +2484,7 @@ func InternalValue() NotificationDestinationConfigGenericWebhook
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/notificationdestination"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/notificationdestination"
 
 notificationdestination.NewNotificationDestinationConfigMicrosoftTeamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NotificationDestinationConfigMicrosoftTeamsOutputReference
 ```
@@ -2791,7 +2791,7 @@ func InternalValue() NotificationDestinationConfigMicrosoftTeams
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.notificationDestination.NotificationDestinationConfigPagerdutyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/notificationdestination"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/notificationdestination"
 
 notificationdestination.NewNotificationDestinationConfigPagerdutyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NotificationDestinationConfigPagerdutyOutputReference
 ```
@@ -3098,7 +3098,7 @@ func InternalValue() NotificationDestinationConfigPagerduty
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.notificationDestination.NotificationDestinationConfigSlackOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/notificationdestination"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/notificationdestination"
 
 notificationdestination.NewNotificationDestinationConfigSlackOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NotificationDestinationConfigSlackOutputReference
 ```

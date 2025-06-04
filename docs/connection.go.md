@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.connection.Connection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/connection"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/connection"
 
 connection.NewConnection(scope Construct, id *string, config ConnectionConfig) Connection
 ```
@@ -434,7 +434,7 @@ func ResetReadOnly()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.connection.Connection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/connection"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/connection"
 
 connection.Connection_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.connection.Connection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/connection"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/connection"
 
 connection.Connection_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ connection.Connection_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.connection.Connection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/connection"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/connection"
 
 connection.Connection_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ connection.Connection_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.connection.Connection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/connection"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/connection"
 
 connection.Connection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1020,7 +1020,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.connection.ConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/connection"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/connection"
 
 &connection.ConnectionConfig {
 	Connection: interface{},
@@ -1237,7 +1237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.connection.ConnectionProvisioningInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/connection"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/connection"
 
 &connection.ConnectionProvisioningInfo {
 
@@ -1252,7 +1252,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/connection"
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.connection.ConnectionProvisioningInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/connection"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/connection"
 
 connection.NewConnectionProvisioningInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConnectionProvisioningInfoList
 ```
@@ -1401,7 +1401,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.connection.ConnectionProvisioningInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/connection"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/connection"
 
 connection.NewConnectionProvisioningInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConnectionProvisioningInfoOutputReference
 ```
