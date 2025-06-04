@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.aibiDashboardEmbeddingApprovedDomainsSetting.AibiDashboardEmbeddingApprovedDomainsSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/aibidashboardembeddingapproveddomainssetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/aibidashboardembeddingapproveddomainssetting"
 
 aibidashboardembeddingapproveddomainssetting.NewAibiDashboardEmbeddingApprovedDomainsSetting(scope Construct, id *string, config AibiDashboardEmbeddingApprovedDomainsSettingConfig) AibiDashboardEmbeddingApprovedDomainsSetting
 ```
@@ -412,7 +412,7 @@ func ResetSettingName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.aibiDashboardEmbeddingApprovedDomainsSetting.AibiDashboardEmbeddingApprovedDomainsSetting.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/aibidashboardembeddingapproveddomainssetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/aibidashboardembeddingapproveddomainssetting"
 
 aibidashboardembeddingapproveddomainssetting.AibiDashboardEmbeddingApprovedDomainsSetting_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.aibiDashboardEmbeddingApprovedDomainsSetting.AibiDashboardEmbeddingApprovedDomainsSetting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/aibidashboardembeddingapproveddomainssetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/aibidashboardembeddingapproveddomainssetting"
 
 aibidashboardembeddingapproveddomainssetting.AibiDashboardEmbeddingApprovedDomainsSetting_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ aibidashboardembeddingapproveddomainssetting.AibiDashboardEmbeddingApprovedDomai
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.aibiDashboardEmbeddingApprovedDomainsSetting.AibiDashboardEmbeddingApprovedDomainsSetting.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/aibidashboardembeddingapproveddomainssetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/aibidashboardembeddingapproveddomainssetting"
 
 aibidashboardembeddingapproveddomainssetting.AibiDashboardEmbeddingApprovedDomainsSetting_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ aibidashboardembeddingapproveddomainssetting.AibiDashboardEmbeddingApprovedDomai
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.aibiDashboardEmbeddingApprovedDomainsSetting.AibiDashboardEmbeddingApprovedDomainsSetting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/aibidashboardembeddingapproveddomainssetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/aibidashboardembeddingapproveddomainssetting"
 
 aibidashboardembeddingapproveddomainssetting.AibiDashboardEmbeddingApprovedDomainsSetting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -789,7 +789,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.aibiDashboardEmbeddingApprovedDomainsSetting.AibiDashboardEmbeddingApprovedDomainsSettingAibiDashboardEmbeddingApprovedDomains.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/aibidashboardembeddingapproveddomainssetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/aibidashboardembeddingapproveddomainssetting"
 
 &aibidashboardembeddingapproveddomainssetting.AibiDashboardEmbeddingApprovedDomainsSettingAibiDashboardEmbeddingApprovedDomains {
 	ApprovedDomains: *[]*string,
@@ -821,7 +821,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.aibiDashboardEmbeddingApprovedDomainsSetting.AibiDashboardEmbeddingApprovedDomainsSettingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/aibidashboardembeddingapproveddomainssetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/aibidashboardembeddingapproveddomainssetting"
 
 &aibidashboardembeddingapproveddomainssetting.AibiDashboardEmbeddingApprovedDomainsSettingConfig {
 	Connection: interface{},
@@ -831,7 +831,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/aibidashboa
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	AibiDashboardEmbeddingApprovedDomains: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.aibiDashboardEmbeddingApprovedDomainsSetting.AibiDashboardEmbeddingApprovedDomainsSettingAibiDashboardEmbeddingApprovedDomains,
+	AibiDashboardEmbeddingApprovedDomains: github.com/cdktf/cdktf-provider-databricks-go/databricks/v15.aibiDashboardEmbeddingApprovedDomainsSetting.AibiDashboardEmbeddingApprovedDomainsSettingAibiDashboardEmbeddingApprovedDomains,
 	Etag: *string,
 	Id: *string,
 	SettingName: *string,
@@ -986,7 +986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.aibiDashboardEmbeddingApprovedDomainsSetting.AibiDashboardEmbeddingApprovedDomainsSettingAibiDashboardEmbeddingApprovedDomainsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/aibidashboardembeddingapproveddomainssetting"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/aibidashboardembeddingapproveddomainssetting"
 
 aibidashboardembeddingapproveddomainssetting.NewAibiDashboardEmbeddingApprovedDomainsSettingAibiDashboardEmbeddingApprovedDomainsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AibiDashboardEmbeddingApprovedDomainsSettingAibiDashboardEmbeddingApprovedDomainsOutputReference
 ```

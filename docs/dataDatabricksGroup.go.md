@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksGroup.DataDatabricksGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/datadatabricksgroup"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksgroup"
 
 datadatabricksgroup.NewDataDatabricksGroup(scope Construct, id *string, config DataDatabricksGroupConfig) DataDatabricksGroup
 ```
@@ -381,7 +381,7 @@ func ResetWorkspaceConsume()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksGroup.DataDatabricksGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/datadatabricksgroup"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksgroup"
 
 datadatabricksgroup.DataDatabricksGroup_IsConstruct(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksGroup.DataDatabricksGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/datadatabricksgroup"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksgroup"
 
 datadatabricksgroup.DataDatabricksGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -427,7 +427,7 @@ datadatabricksgroup.DataDatabricksGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksGroup.DataDatabricksGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/datadatabricksgroup"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksgroup"
 
 datadatabricksgroup.DataDatabricksGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -441,7 +441,7 @@ datadatabricksgroup.DataDatabricksGroup_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksGroup.DataDatabricksGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/datadatabricksgroup"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksgroup"
 
 datadatabricksgroup.DataDatabricksGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1000,7 +1000,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/datadatabricksgroup"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksgroup"
 
 &datadatabricksgroup.DataDatabricksGroupConfig {
 	Connection: interface{},

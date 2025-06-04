@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehouses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/datadatabrickssqlwarehouses"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickssqlwarehouses"
 
 datadatabrickssqlwarehouses.NewDataDatabricksSqlWarehouses(scope Construct, id *string, config DataDatabricksSqlWarehousesConfig) DataDatabricksSqlWarehouses
 ```
@@ -297,7 +297,7 @@ func ResetWarehouseNameContains()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehouses.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/datadatabrickssqlwarehouses"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickssqlwarehouses"
 
 datadatabrickssqlwarehouses.DataDatabricksSqlWarehouses_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehouses.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/datadatabrickssqlwarehouses"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickssqlwarehouses"
 
 datadatabrickssqlwarehouses.DataDatabricksSqlWarehouses_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datadatabrickssqlwarehouses.DataDatabricksSqlWarehouses_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehouses.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/datadatabrickssqlwarehouses"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickssqlwarehouses"
 
 datadatabrickssqlwarehouses.DataDatabricksSqlWarehouses_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datadatabrickssqlwarehouses.DataDatabricksSqlWarehouses_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehouses.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/datadatabrickssqlwarehouses"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickssqlwarehouses"
 
 datadatabrickssqlwarehouses.DataDatabricksSqlWarehouses_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -630,7 +630,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehousesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/datadatabrickssqlwarehouses"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickssqlwarehouses"
 
 &datadatabrickssqlwarehouses.DataDatabricksSqlWarehousesConfig {
 	Connection: interface{},

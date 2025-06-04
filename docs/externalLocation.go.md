@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.externalLocation.ExternalLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/externallocation"
 
 externallocation.NewExternalLocation(scope Construct, id *string, config ExternalLocationConfig) ExternalLocation
 ```
@@ -495,7 +495,7 @@ func ResetSkipValidation()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.externalLocation.ExternalLocation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/externallocation"
 
 externallocation.ExternalLocation_IsConstruct(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.externalLocation.ExternalLocation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/externallocation"
 
 externallocation.ExternalLocation_IsTerraformElement(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ externallocation.ExternalLocation_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.externalLocation.ExternalLocation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/externallocation"
 
 externallocation.ExternalLocation_IsTerraformResource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ externallocation.ExternalLocation_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.externalLocation.ExternalLocation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/externallocation"
 
 externallocation.ExternalLocation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1202,7 +1202,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.externalLocation.ExternalLocationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/externallocation"
 
 &externallocation.ExternalLocationConfig {
 	Connection: interface{},
@@ -1217,9 +1217,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/externalloc
 	Url: *string,
 	Comment: *string,
 	EnableFileEvents: interface{},
-	EncryptionDetails: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.externalLocation.ExternalLocationEncryptionDetails,
+	EncryptionDetails: github.com/cdktf/cdktf-provider-databricks-go/databricks/v15.externalLocation.ExternalLocationEncryptionDetails,
 	Fallback: interface{},
-	FileEventQueue: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.externalLocation.ExternalLocationFileEventQueue,
+	FileEventQueue: github.com/cdktf/cdktf-provider-databricks-go/databricks/v15.externalLocation.ExternalLocationFileEventQueue,
 	ForceDestroy: interface{},
 	ForceUpdate: interface{},
 	Id: *string,
@@ -1535,10 +1535,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.externalLocation.ExternalLocationEncryptionDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/externallocation"
 
 &externallocation.ExternalLocationEncryptionDetails {
-	SseEncryptionDetails: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.externalLocation.ExternalLocationEncryptionDetailsSseEncryptionDetails,
+	SseEncryptionDetails: github.com/cdktf/cdktf-provider-databricks-go/databricks/v15.externalLocation.ExternalLocationEncryptionDetailsSseEncryptionDetails,
 }
 ```
 
@@ -1569,7 +1569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.externalLocation.ExternalLocationEncryptionDetailsSseEncryptionDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/externallocation"
 
 &externallocation.ExternalLocationEncryptionDetailsSseEncryptionDetails {
 	Algorithm: *string,
@@ -1615,15 +1615,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.externalLocation.ExternalLocationFileEventQueue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/externallocation"
 
 &externallocation.ExternalLocationFileEventQueue {
-	ManagedAqs: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.externalLocation.ExternalLocationFileEventQueueManagedAqs,
-	ManagedPubsub: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.externalLocation.ExternalLocationFileEventQueueManagedPubsub,
-	ManagedSqs: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.externalLocation.ExternalLocationFileEventQueueManagedSqs,
-	ProvidedAqs: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.externalLocation.ExternalLocationFileEventQueueProvidedAqs,
-	ProvidedPubsub: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.externalLocation.ExternalLocationFileEventQueueProvidedPubsub,
-	ProvidedSqs: github.com/cdktf/cdktf-provider-databricks-go/databricks/v14.externalLocation.ExternalLocationFileEventQueueProvidedSqs,
+	ManagedAqs: github.com/cdktf/cdktf-provider-databricks-go/databricks/v15.externalLocation.ExternalLocationFileEventQueueManagedAqs,
+	ManagedPubsub: github.com/cdktf/cdktf-provider-databricks-go/databricks/v15.externalLocation.ExternalLocationFileEventQueueManagedPubsub,
+	ManagedSqs: github.com/cdktf/cdktf-provider-databricks-go/databricks/v15.externalLocation.ExternalLocationFileEventQueueManagedSqs,
+	ProvidedAqs: github.com/cdktf/cdktf-provider-databricks-go/databricks/v15.externalLocation.ExternalLocationFileEventQueueProvidedAqs,
+	ProvidedPubsub: github.com/cdktf/cdktf-provider-databricks-go/databricks/v15.externalLocation.ExternalLocationFileEventQueueProvidedPubsub,
+	ProvidedSqs: github.com/cdktf/cdktf-provider-databricks-go/databricks/v15.externalLocation.ExternalLocationFileEventQueueProvidedSqs,
 }
 ```
 
@@ -1729,7 +1729,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.externalLocation.ExternalLocationFileEventQueueManagedAqs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/externallocation"
 
 &externallocation.ExternalLocationFileEventQueueManagedAqs {
 	ResourceGroup: *string,
@@ -1789,7 +1789,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.externalLocation.ExternalLocationFileEventQueueManagedPubsub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/externallocation"
 
 &externallocation.ExternalLocationFileEventQueueManagedPubsub {
 	SubscriptionName: *string,
@@ -1821,7 +1821,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.externalLocation.ExternalLocationFileEventQueueManagedSqs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/externallocation"
 
 &externallocation.ExternalLocationFileEventQueueManagedSqs {
 	QueueUrl: *string,
@@ -1853,7 +1853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.externalLocation.ExternalLocationFileEventQueueProvidedAqs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/externallocation"
 
 &externallocation.ExternalLocationFileEventQueueProvidedAqs {
 	QueueUrl: *string,
@@ -1913,7 +1913,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.externalLocation.ExternalLocationFileEventQueueProvidedPubsub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/externallocation"
 
 &externallocation.ExternalLocationFileEventQueueProvidedPubsub {
 	SubscriptionName: *string,
@@ -1945,7 +1945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.externalLocation.ExternalLocationFileEventQueueProvidedSqs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/externallocation"
 
 &externallocation.ExternalLocationFileEventQueueProvidedSqs {
 	QueueUrl: *string,
@@ -1979,7 +1979,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.externalLocation.ExternalLocationEncryptionDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/externallocation"
 
 externallocation.NewExternalLocationEncryptionDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExternalLocationEncryptionDetailsOutputReference
 ```
@@ -2270,7 +2270,7 @@ func InternalValue() ExternalLocationEncryptionDetails
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.externalLocation.ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/externallocation"
 
 externallocation.NewExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExternalLocationEncryptionDetailsSseEncryptionDetailsOutputReference
 ```
@@ -2577,7 +2577,7 @@ func InternalValue() ExternalLocationEncryptionDetailsSseEncryptionDetails
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.externalLocation.ExternalLocationFileEventQueueManagedAqsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/externallocation"
 
 externallocation.NewExternalLocationFileEventQueueManagedAqsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExternalLocationFileEventQueueManagedAqsOutputReference
 ```
@@ -2910,7 +2910,7 @@ func InternalValue() ExternalLocationFileEventQueueManagedAqs
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.externalLocation.ExternalLocationFileEventQueueManagedPubsubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/externallocation"
 
 externallocation.NewExternalLocationFileEventQueueManagedPubsubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExternalLocationFileEventQueueManagedPubsubOutputReference
 ```
@@ -3199,7 +3199,7 @@ func InternalValue() ExternalLocationFileEventQueueManagedPubsub
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.externalLocation.ExternalLocationFileEventQueueManagedSqsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/externallocation"
 
 externallocation.NewExternalLocationFileEventQueueManagedSqsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExternalLocationFileEventQueueManagedSqsOutputReference
 ```
@@ -3488,7 +3488,7 @@ func InternalValue() ExternalLocationFileEventQueueManagedSqs
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.externalLocation.ExternalLocationFileEventQueueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/externallocation"
 
 externallocation.NewExternalLocationFileEventQueueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExternalLocationFileEventQueueOutputReference
 ```
@@ -3989,7 +3989,7 @@ func InternalValue() ExternalLocationFileEventQueue
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.externalLocation.ExternalLocationFileEventQueueProvidedAqsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/externallocation"
 
 externallocation.NewExternalLocationFileEventQueueProvidedAqsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExternalLocationFileEventQueueProvidedAqsOutputReference
 ```
@@ -4329,7 +4329,7 @@ func InternalValue() ExternalLocationFileEventQueueProvidedAqs
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.externalLocation.ExternalLocationFileEventQueueProvidedPubsubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/externallocation"
 
 externallocation.NewExternalLocationFileEventQueueProvidedPubsubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExternalLocationFileEventQueueProvidedPubsubOutputReference
 ```
@@ -4611,7 +4611,7 @@ func InternalValue() ExternalLocationFileEventQueueProvidedPubsub
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.externalLocation.ExternalLocationFileEventQueueProvidedSqsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v14/externallocation"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/externallocation"
 
 externallocation.NewExternalLocationFileEventQueueProvidedSqsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExternalLocationFileEventQueueProvidedSqsOutputReference
 ```
