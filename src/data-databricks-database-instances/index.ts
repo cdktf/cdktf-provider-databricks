@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/database_instances
+// https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/data-sources/database_instances
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,15 @@ export interface DataDatabricksDatabaseInstancesConfig extends cdktf.TerraformMe
 }
 export interface DataDatabricksDatabaseInstancesDatabaseInstances {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/database_instances#admin_password DataDatabricksDatabaseInstances#admin_password}
-  */
-  readonly adminPassword?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/database_instances#admin_rolename DataDatabricksDatabaseInstances#admin_rolename}
-  */
-  readonly adminRolename?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/database_instances#capacity DataDatabricksDatabaseInstances#capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/data-sources/database_instances#capacity DataDatabricksDatabaseInstances#capacity}
   */
   readonly capacity?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/database_instances#name DataDatabricksDatabaseInstances#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/data-sources/database_instances#name DataDatabricksDatabaseInstances#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/database_instances#stopped DataDatabricksDatabaseInstances#stopped}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/data-sources/database_instances#stopped DataDatabricksDatabaseInstances#stopped}
   */
   readonly stopped?: boolean | cdktf.IResolvable;
 }
@@ -42,8 +34,6 @@ export function dataDatabricksDatabaseInstancesDatabaseInstancesToTerraform(stru
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    admin_password: cdktf.stringToTerraform(struct!.adminPassword),
-    admin_rolename: cdktf.stringToTerraform(struct!.adminRolename),
     capacity: cdktf.stringToTerraform(struct!.capacity),
     name: cdktf.stringToTerraform(struct!.name),
     stopped: cdktf.booleanToTerraform(struct!.stopped),
@@ -57,18 +47,6 @@ export function dataDatabricksDatabaseInstancesDatabaseInstancesToHclTerraform(s
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    admin_password: {
-      value: cdktf.stringToHclTerraform(struct!.adminPassword),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    admin_rolename: {
-      value: cdktf.stringToHclTerraform(struct!.adminRolename),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
     capacity: {
       value: cdktf.stringToHclTerraform(struct!.capacity),
       isBlock: false,
@@ -109,14 +87,6 @@ export class DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference ext
   public get internalValue(): DataDatabricksDatabaseInstancesDatabaseInstances | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._adminPassword !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.adminPassword = this._adminPassword;
-    }
-    if (this._adminRolename !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.adminRolename = this._adminRolename;
-    }
     if (this._capacity !== undefined) {
       hasAnyValues = true;
       internalValueResult.capacity = this._capacity;
@@ -135,52 +105,16 @@ export class DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference ext
   public set internalValue(value: DataDatabricksDatabaseInstancesDatabaseInstances | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._adminPassword = undefined;
-      this._adminRolename = undefined;
       this._capacity = undefined;
       this._name = undefined;
       this._stopped = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._adminPassword = value.adminPassword;
-      this._adminRolename = value.adminRolename;
       this._capacity = value.capacity;
       this._name = value.name;
       this._stopped = value.stopped;
     }
-  }
-
-  // admin_password - computed: true, optional: true, required: false
-  private _adminPassword?: string; 
-  public get adminPassword() {
-    return this.getStringAttribute('admin_password');
-  }
-  public set adminPassword(value: string) {
-    this._adminPassword = value;
-  }
-  public resetAdminPassword() {
-    this._adminPassword = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get adminPasswordInput() {
-    return this._adminPassword;
-  }
-
-  // admin_rolename - computed: true, optional: true, required: false
-  private _adminRolename?: string; 
-  public get adminRolename() {
-    return this.getStringAttribute('admin_rolename');
-  }
-  public set adminRolename(value: string) {
-    this._adminRolename = value;
-  }
-  public resetAdminRolename() {
-    this._adminRolename = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get adminRolenameInput() {
-    return this._adminRolename;
   }
 
   // capacity - computed: true, optional: true, required: false
@@ -280,7 +214,7 @@ export class DataDatabricksDatabaseInstancesDatabaseInstancesList extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/database_instances databricks_database_instances}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/data-sources/database_instances databricks_database_instances}
 */
 export class DataDatabricksDatabaseInstances extends cdktf.TerraformDataSource {
 
@@ -296,7 +230,7 @@ export class DataDatabricksDatabaseInstances extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksDatabaseInstances resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksDatabaseInstances to import
-  * @param importFromId The id of the existing DataDatabricksDatabaseInstances that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/database_instances#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksDatabaseInstances that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/data-sources/database_instances#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksDatabaseInstances to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -308,7 +242,7 @@ export class DataDatabricksDatabaseInstances extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/database_instances databricks_database_instances} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/data-sources/database_instances databricks_database_instances} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -319,7 +253,7 @@ export class DataDatabricksDatabaseInstances extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_database_instances',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.82.0',
+        providerVersion: '1.83.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
