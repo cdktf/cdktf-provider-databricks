@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/database_instance
+// https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/data-sources/database_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,29 +13,21 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksDatabaseInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/database_instance#admin_password DataDatabricksDatabaseInstance#admin_password}
-  */
-  readonly adminPassword?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/database_instance#admin_rolename DataDatabricksDatabaseInstance#admin_rolename}
-  */
-  readonly adminRolename?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/database_instance#capacity DataDatabricksDatabaseInstance#capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/data-sources/database_instance#capacity DataDatabricksDatabaseInstance#capacity}
   */
   readonly capacity?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/database_instance#name DataDatabricksDatabaseInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/data-sources/database_instance#name DataDatabricksDatabaseInstance#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/database_instance#stopped DataDatabricksDatabaseInstance#stopped}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/data-sources/database_instance#stopped DataDatabricksDatabaseInstance#stopped}
   */
   readonly stopped?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/database_instance databricks_database_instance}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/data-sources/database_instance databricks_database_instance}
 */
 export class DataDatabricksDatabaseInstance extends cdktf.TerraformDataSource {
 
@@ -51,7 +43,7 @@ export class DataDatabricksDatabaseInstance extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksDatabaseInstance resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksDatabaseInstance to import
-  * @param importFromId The id of the existing DataDatabricksDatabaseInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/database_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksDatabaseInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/data-sources/database_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksDatabaseInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -63,7 +55,7 @@ export class DataDatabricksDatabaseInstance extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/data-sources/database_instance databricks_database_instance} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/data-sources/database_instance databricks_database_instance} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -74,7 +66,7 @@ export class DataDatabricksDatabaseInstance extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_database_instance',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.82.0',
+        providerVersion: '1.83.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -85,8 +77,6 @@ export class DataDatabricksDatabaseInstance extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._adminPassword = config.adminPassword;
-    this._adminRolename = config.adminRolename;
     this._capacity = config.capacity;
     this._name = config.name;
     this._stopped = config.stopped;
@@ -95,38 +85,6 @@ export class DataDatabricksDatabaseInstance extends cdktf.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
-
-  // admin_password - computed: false, optional: true, required: false
-  private _adminPassword?: string; 
-  public get adminPassword() {
-    return this.getStringAttribute('admin_password');
-  }
-  public set adminPassword(value: string) {
-    this._adminPassword = value;
-  }
-  public resetAdminPassword() {
-    this._adminPassword = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get adminPasswordInput() {
-    return this._adminPassword;
-  }
-
-  // admin_rolename - computed: false, optional: true, required: false
-  private _adminRolename?: string; 
-  public get adminRolename() {
-    return this.getStringAttribute('admin_rolename');
-  }
-  public set adminRolename(value: string) {
-    this._adminRolename = value;
-  }
-  public resetAdminRolename() {
-    this._adminRolename = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get adminRolenameInput() {
-    return this._adminRolename;
-  }
 
   // capacity - computed: false, optional: true, required: false
   private _capacity?: string; 
@@ -209,8 +167,6 @@ export class DataDatabricksDatabaseInstance extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      admin_password: cdktf.stringToTerraform(this._adminPassword),
-      admin_rolename: cdktf.stringToTerraform(this._adminRolename),
       capacity: cdktf.stringToTerraform(this._capacity),
       name: cdktf.stringToTerraform(this._name),
       stopped: cdktf.booleanToTerraform(this._stopped),
@@ -219,18 +175,6 @@ export class DataDatabricksDatabaseInstance extends cdktf.TerraformDataSource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      admin_password: {
-        value: cdktf.stringToHclTerraform(this._adminPassword),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      admin_rolename: {
-        value: cdktf.stringToHclTerraform(this._adminRolename),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       capacity: {
         value: cdktf.stringToHclTerraform(this._capacity),
         isBlock: false,

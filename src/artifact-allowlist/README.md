@@ -1,3 +1,3 @@
 # `databricks_artifact_allowlist`
 
-Refer to the Terraform Registry for docs: [`databricks_artifact_allowlist`](https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/artifact_allowlist).
+Refer to the Terraform Registry for docs: [`databricks_artifact_allowlist`](https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/artifact_allowlist).

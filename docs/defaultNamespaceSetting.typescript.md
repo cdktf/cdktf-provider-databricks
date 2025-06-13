@@ -4,7 +4,7 @@
 
 ### DefaultNamespaceSetting <a name="DefaultNamespaceSetting" id="@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/default_namespace_setting databricks_default_namespace_setting}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/default_namespace_setting databricks_default_namespace_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSetting.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the DefaultNamespaceSetting to
 
 The id of the existing DefaultNamespaceSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/default_namespace_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/default_namespace_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -806,9 +806,9 @@ const defaultNamespaceSettingConfig: defaultNamespaceSetting.DefaultNamespaceSet
 | <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingConfig.property.namespace">namespace</a></code> | <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingNamespace">DefaultNamespaceSettingNamespace</a></code> | namespace block. |
-| <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingConfig.property.etag">etag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/default_namespace_setting#etag DefaultNamespaceSetting#etag}. |
-| <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/default_namespace_setting#id DefaultNamespaceSetting#id}. |
-| <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingConfig.property.settingName">settingName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/default_namespace_setting#setting_name DefaultNamespaceSetting#setting_name}. |
+| <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingConfig.property.etag">etag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/default_namespace_setting#etag DefaultNamespaceSetting#etag}. |
+| <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/default_namespace_setting#id DefaultNamespaceSetting#id}. |
+| <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingConfig.property.settingName">settingName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/default_namespace_setting#setting_name DefaultNamespaceSetting#setting_name}. |
 
 ---
 
@@ -892,7 +892,7 @@ public readonly namespace: DefaultNamespaceSettingNamespace;
 
 namespace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/default_namespace_setting#namespace DefaultNamespaceSetting#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/default_namespace_setting#namespace DefaultNamespaceSetting#namespace}
 
 ---
 
@@ -904,7 +904,7 @@ public readonly etag: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/default_namespace_setting#etag DefaultNamespaceSetting#etag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/default_namespace_setting#etag DefaultNamespaceSetting#etag}.
 
 ---
 
@@ -916,7 +916,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/default_namespace_setting#id DefaultNamespaceSetting#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/default_namespace_setting#id DefaultNamespaceSetting#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -931,7 +931,7 @@ public readonly settingName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/default_namespace_setting#setting_name DefaultNamespaceSetting#setting_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/default_namespace_setting#setting_name DefaultNamespaceSetting#setting_name}.
 
 ---
 
@@ -949,7 +949,7 @@ const defaultNamespaceSettingNamespace: defaultNamespaceSetting.DefaultNamespace
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingNamespace.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/default_namespace_setting#value DefaultNamespaceSetting#value}. |
+| <code><a href="#@cdktf/provider-databricks.defaultNamespaceSetting.DefaultNamespaceSettingNamespace.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/default_namespace_setting#value DefaultNamespaceSetting#value}. |
 
 ---
 
@@ -961,7 +961,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.82.0/docs/resources/default_namespace_setting#value DefaultNamespaceSetting#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/default_namespace_setting#value DefaultNamespaceSetting#value}.
 
 ---
 
