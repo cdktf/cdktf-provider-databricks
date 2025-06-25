@@ -4,7 +4,7 @@
 
 ### QualityMonitorV2 <a name="QualityMonitorV2" id="@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/quality_monitor_v2 databricks_quality_monitor_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/quality_monitor_v2 databricks_quality_monitor_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the QualityMonitorV2 to import
 
 The id of the existing QualityMonitorV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/quality_monitor_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/quality_monitor_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -761,8 +761,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/qualitymoni
 | <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.objectId">ObjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/quality_monitor_v2#object_id QualityMonitorV2#object_id}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.objectType">ObjectType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/quality_monitor_v2#object_type QualityMonitorV2#object_type}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.objectId">ObjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/quality_monitor_v2#object_id QualityMonitorV2#object_id}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.objectType">ObjectType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/quality_monitor_v2#object_type QualityMonitorV2#object_type}. |
 
 ---
 
@@ -844,7 +844,7 @@ ObjectId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/quality_monitor_v2#object_id QualityMonitorV2#object_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/quality_monitor_v2#object_id QualityMonitorV2#object_id}.
 
 ---
 
@@ -856,7 +856,7 @@ ObjectType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/quality_monitor_v2#object_type QualityMonitorV2#object_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/quality_monitor_v2#object_type QualityMonitorV2#object_type}.
 
 ---
 

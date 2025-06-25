@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/data-sources/database_instance
+// https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/database_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,21 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksDatabaseInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/data-sources/database_instance#capacity DataDatabricksDatabaseInstance#capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/database_instance#capacity DataDatabricksDatabaseInstance#capacity}
   */
   readonly capacity?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/data-sources/database_instance#name DataDatabricksDatabaseInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/database_instance#name DataDatabricksDatabaseInstance#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/data-sources/database_instance#stopped DataDatabricksDatabaseInstance#stopped}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/database_instance#stopped DataDatabricksDatabaseInstance#stopped}
   */
   readonly stopped?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/data-sources/database_instance databricks_database_instance}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/database_instance databricks_database_instance}
 */
 export class DataDatabricksDatabaseInstance extends cdktf.TerraformDataSource {
 
@@ -43,7 +43,7 @@ export class DataDatabricksDatabaseInstance extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksDatabaseInstance resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksDatabaseInstance to import
-  * @param importFromId The id of the existing DataDatabricksDatabaseInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/data-sources/database_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksDatabaseInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/database_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksDatabaseInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +55,7 @@ export class DataDatabricksDatabaseInstance extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/data-sources/database_instance databricks_database_instance} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/database_instance databricks_database_instance} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class DataDatabricksDatabaseInstance extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_database_instance',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.83.0',
+        providerVersion: '1.84.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -110,6 +110,11 @@ export class DataDatabricksDatabaseInstance extends cdktf.TerraformDataSource {
   // creator - computed: true, optional: false, required: false
   public get creator() {
     return this.getStringAttribute('creator');
+  }
+
+  // effective_stopped - computed: true, optional: false, required: false
+  public get effectiveStopped() {
+    return this.getBooleanAttribute('effective_stopped');
   }
 
   // name - computed: false, optional: false, required: true

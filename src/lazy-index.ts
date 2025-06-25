@@ -77,6 +77,7 @@ Object.defineProperty(exports, 'mwsWorkspaces', { get: function () { return requ
 Object.defineProperty(exports, 'notebook', { get: function () { return require('./notebook'); } });
 Object.defineProperty(exports, 'notificationDestination', { get: function () { return require('./notification-destination'); } });
 Object.defineProperty(exports, 'oboToken', { get: function () { return require('./obo-token'); } });
+Object.defineProperty(exports, 'onlineStore', { get: function () { return require('./online-store'); } });
 Object.defineProperty(exports, 'onlineTable', { get: function () { return require('./online-table'); } });
 Object.defineProperty(exports, 'permissionAssignment', { get: function () { return require('./permission-assignment'); } });
 Object.defineProperty(exports, 'permissions', { get: function () { return require('./permissions'); } });
@@ -171,6 +172,8 @@ Object.defineProperty(exports, 'dataDatabricksNodeType', { get: function () { re
 Object.defineProperty(exports, 'dataDatabricksNotebook', { get: function () { return require('./data-databricks-notebook'); } });
 Object.defineProperty(exports, 'dataDatabricksNotebookPaths', { get: function () { return require('./data-databricks-notebook-paths'); } });
 Object.defineProperty(exports, 'dataDatabricksNotificationDestinations', { get: function () { return require('./data-databricks-notification-destinations'); } });
+Object.defineProperty(exports, 'dataDatabricksOnlineStore', { get: function () { return require('./data-databricks-online-store'); } });
+Object.defineProperty(exports, 'dataDatabricksOnlineStores', { get: function () { return require('./data-databricks-online-stores'); } });
 Object.defineProperty(exports, 'dataDatabricksPipelines', { get: function () { return require('./data-databricks-pipelines'); } });
 Object.defineProperty(exports, 'dataDatabricksQualityMonitorV2', { get: function () { return require('./data-databricks-quality-monitor-v2'); } });
 Object.defineProperty(exports, 'dataDatabricksQualityMonitorsV2', { get: function () { return require('./data-databricks-quality-monitors-v2'); } });
