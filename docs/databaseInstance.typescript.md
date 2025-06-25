@@ -4,7 +4,7 @@
 
 ### DatabaseInstance <a name="DatabaseInstance" id="@cdktf/provider-databricks.databaseInstance.DatabaseInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/database_instance databricks_database_instance}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/database_instance databricks_database_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.databaseInstance.DatabaseInstance.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the DatabaseInstance to import
 
 The id of the existing DatabaseInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/database_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/database_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -513,6 +513,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.databaseInstance.DatabaseInstance.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.databaseInstance.DatabaseInstance.property.creationTime">creationTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.databaseInstance.DatabaseInstance.property.creator">creator</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.databaseInstance.DatabaseInstance.property.effectiveStopped">effectiveStopped</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.databaseInstance.DatabaseInstance.property.pgVersion">pgVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.databaseInstance.DatabaseInstance.property.readWriteDns">readWriteDns</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.databaseInstance.DatabaseInstance.property.state">state</a></code> | <code>string</code> | *No description.* |
@@ -688,6 +689,16 @@ public readonly creator: string;
 
 ---
 
+##### `effectiveStopped`<sup>Required</sup> <a name="effectiveStopped" id="@cdktf/provider-databricks.databaseInstance.DatabaseInstance.property.effectiveStopped"></a>
+
+```typescript
+public readonly effectiveStopped: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
 ##### `pgVersion`<sup>Required</sup> <a name="pgVersion" id="@cdktf/provider-databricks.databaseInstance.DatabaseInstance.property.pgVersion"></a>
 
 ```typescript
@@ -829,9 +840,9 @@ const databaseInstanceConfig: databaseInstance.DatabaseInstanceConfig = { ... }
 | <code><a href="#@cdktf/provider-databricks.databaseInstance.DatabaseInstanceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.databaseInstance.DatabaseInstanceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.databaseInstance.DatabaseInstanceConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.databaseInstance.DatabaseInstanceConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/database_instance#name DatabaseInstance#name}. |
-| <code><a href="#@cdktf/provider-databricks.databaseInstance.DatabaseInstanceConfig.property.capacity">capacity</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/database_instance#capacity DatabaseInstance#capacity}. |
-| <code><a href="#@cdktf/provider-databricks.databaseInstance.DatabaseInstanceConfig.property.stopped">stopped</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/database_instance#stopped DatabaseInstance#stopped}. |
+| <code><a href="#@cdktf/provider-databricks.databaseInstance.DatabaseInstanceConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/database_instance#name DatabaseInstance#name}. |
+| <code><a href="#@cdktf/provider-databricks.databaseInstance.DatabaseInstanceConfig.property.capacity">capacity</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/database_instance#capacity DatabaseInstance#capacity}. |
+| <code><a href="#@cdktf/provider-databricks.databaseInstance.DatabaseInstanceConfig.property.stopped">stopped</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/database_instance#stopped DatabaseInstance#stopped}. |
 
 ---
 
@@ -913,7 +924,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/database_instance#name DatabaseInstance#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/database_instance#name DatabaseInstance#name}.
 
 ---
 
@@ -925,7 +936,7 @@ public readonly capacity: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/database_instance#capacity DatabaseInstance#capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/database_instance#capacity DatabaseInstance#capacity}.
 
 ---
 
@@ -937,7 +948,7 @@ public readonly stopped: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/database_instance#stopped DatabaseInstance#stopped}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/database_instance#stopped DatabaseInstance#stopped}.
 
 ---
 
