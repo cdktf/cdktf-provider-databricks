@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/service_principal_secret
+// https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/service_principal_secret
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,48 +13,52 @@ import * as cdktf from 'cdktf';
 
 export interface ServicePrincipalSecretConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/service_principal_secret#create_time ServicePrincipalSecret#create_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/service_principal_secret#create_time ServicePrincipalSecret#create_time}
   */
   readonly createTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/service_principal_secret#expire_time ServicePrincipalSecret#expire_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/service_principal_secret#expire_time ServicePrincipalSecret#expire_time}
   */
   readonly expireTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/service_principal_secret#id ServicePrincipalSecret#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/service_principal_secret#id ServicePrincipalSecret#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/service_principal_secret#lifetime ServicePrincipalSecret#lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/service_principal_secret#lifetime ServicePrincipalSecret#lifetime}
   */
   readonly lifetime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/service_principal_secret#secret ServicePrincipalSecret#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/service_principal_secret#secret ServicePrincipalSecret#secret}
   */
   readonly secret?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/service_principal_secret#secret_hash ServicePrincipalSecret#secret_hash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/service_principal_secret#secret_hash ServicePrincipalSecret#secret_hash}
   */
   readonly secretHash?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/service_principal_secret#service_principal_id ServicePrincipalSecret#service_principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/service_principal_secret#service_principal_id ServicePrincipalSecret#service_principal_id}
   */
   readonly servicePrincipalId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/service_principal_secret#status ServicePrincipalSecret#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/service_principal_secret#status ServicePrincipalSecret#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/service_principal_secret#update_time ServicePrincipalSecret#update_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/service_principal_secret#time_rotating ServicePrincipalSecret#time_rotating}
+  */
+  readonly timeRotating?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/service_principal_secret#update_time ServicePrincipalSecret#update_time}
   */
   readonly updateTime?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/service_principal_secret databricks_service_principal_secret}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/service_principal_secret databricks_service_principal_secret}
 */
 export class ServicePrincipalSecret extends cdktf.TerraformResource {
 
@@ -70,7 +74,7 @@ export class ServicePrincipalSecret extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ServicePrincipalSecret resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServicePrincipalSecret to import
-  * @param importFromId The id of the existing ServicePrincipalSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/service_principal_secret#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServicePrincipalSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/service_principal_secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServicePrincipalSecret to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -82,7 +86,7 @@ export class ServicePrincipalSecret extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.83.0/docs/resources/service_principal_secret databricks_service_principal_secret} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/resources/service_principal_secret databricks_service_principal_secret} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -93,7 +97,7 @@ export class ServicePrincipalSecret extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_service_principal_secret',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.83.0',
+        providerVersion: '1.84.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -112,6 +116,7 @@ export class ServicePrincipalSecret extends cdktf.TerraformResource {
     this._secretHash = config.secretHash;
     this._servicePrincipalId = config.servicePrincipalId;
     this._status = config.status;
+    this._timeRotating = config.timeRotating;
     this._updateTime = config.updateTime;
   }
 
@@ -244,6 +249,22 @@ export class ServicePrincipalSecret extends cdktf.TerraformResource {
     return this._status;
   }
 
+  // time_rotating - computed: false, optional: true, required: false
+  private _timeRotating?: string; 
+  public get timeRotating() {
+    return this.getStringAttribute('time_rotating');
+  }
+  public set timeRotating(value: string) {
+    this._timeRotating = value;
+  }
+  public resetTimeRotating() {
+    this._timeRotating = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeRotatingInput() {
+    return this._timeRotating;
+  }
+
   // update_time - computed: true, optional: true, required: false
   private _updateTime?: string; 
   public get updateTime() {
@@ -274,6 +295,7 @@ export class ServicePrincipalSecret extends cdktf.TerraformResource {
       secret_hash: cdktf.stringToTerraform(this._secretHash),
       service_principal_id: cdktf.stringToTerraform(this._servicePrincipalId),
       status: cdktf.stringToTerraform(this._status),
+      time_rotating: cdktf.stringToTerraform(this._timeRotating),
       update_time: cdktf.stringToTerraform(this._updateTime),
     };
   }
@@ -324,6 +346,12 @@ export class ServicePrincipalSecret extends cdktf.TerraformResource {
       },
       status: {
         value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      time_rotating: {
+        value: cdktf.stringToHclTerraform(this._timeRotating),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
