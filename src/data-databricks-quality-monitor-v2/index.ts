@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/quality_monitor_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/quality_monitor_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksQualityMonitorV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/quality_monitor_v2#object_id DataDatabricksQualityMonitorV2#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/quality_monitor_v2#object_id DataDatabricksQualityMonitorV2#object_id}
   */
   readonly objectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/quality_monitor_v2#object_type DataDatabricksQualityMonitorV2#object_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/quality_monitor_v2#object_type DataDatabricksQualityMonitorV2#object_type}
   */
   readonly objectType: string;
 }
@@ -82,7 +82,7 @@ export class DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/quality_monitor_v2 databricks_quality_monitor_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/quality_monitor_v2 databricks_quality_monitor_v2}
 */
 export class DataDatabricksQualityMonitorV2 extends cdktf.TerraformDataSource {
 
@@ -98,7 +98,7 @@ export class DataDatabricksQualityMonitorV2 extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksQualityMonitorV2 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksQualityMonitorV2 to import
-  * @param importFromId The id of the existing DataDatabricksQualityMonitorV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/quality_monitor_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksQualityMonitorV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/quality_monitor_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksQualityMonitorV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -110,7 +110,7 @@ export class DataDatabricksQualityMonitorV2 extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/quality_monitor_v2 databricks_quality_monitor_v2} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/quality_monitor_v2 databricks_quality_monitor_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -121,7 +121,7 @@ export class DataDatabricksQualityMonitorV2 extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_quality_monitor_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.84.0',
+        providerVersion: '1.85.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

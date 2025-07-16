@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/online_stores
+// https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/online_stores
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,17 @@ export interface DataDatabricksOnlineStoresConfig extends cdktf.TerraformMetaArg
 }
 export interface DataDatabricksOnlineStoresOnlineStores {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/online_stores#capacity DataDatabricksOnlineStores#capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/online_stores#capacity DataDatabricksOnlineStores#capacity}
   */
-  readonly capacity?: string;
+  readonly capacity: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/online_stores#name DataDatabricksOnlineStores#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/online_stores#name DataDatabricksOnlineStores#name}
   */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/online_stores#read_replica_count DataDatabricksOnlineStores#read_replica_count}
+  */
+  readonly readReplicaCount?: number;
 }
 
 export function dataDatabricksOnlineStoresOnlineStoresToTerraform(struct?: DataDatabricksOnlineStoresOnlineStores): any {
@@ -32,6 +36,7 @@ export function dataDatabricksOnlineStoresOnlineStoresToTerraform(struct?: DataD
   return {
     capacity: cdktf.stringToTerraform(struct!.capacity),
     name: cdktf.stringToTerraform(struct!.name),
+    read_replica_count: cdktf.numberToTerraform(struct!.readReplicaCount),
   }
 }
 
@@ -53,6 +58,12 @@ export function dataDatabricksOnlineStoresOnlineStoresToHclTerraform(struct?: Da
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    read_replica_count: {
+      value: cdktf.numberToHclTerraform(struct!.readReplicaCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
     },
   };
 
@@ -84,6 +95,10 @@ export class DataDatabricksOnlineStoresOnlineStoresOutputReference extends cdktf
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
+    if (this._readReplicaCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.readReplicaCount = this._readReplicaCount;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -92,24 +107,23 @@ export class DataDatabricksOnlineStoresOnlineStoresOutputReference extends cdktf
       this.isEmptyObject = false;
       this._capacity = undefined;
       this._name = undefined;
+      this._readReplicaCount = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._capacity = value.capacity;
       this._name = value.name;
+      this._readReplicaCount = value.readReplicaCount;
     }
   }
 
-  // capacity - computed: true, optional: true, required: false
+  // capacity - computed: true, optional: false, required: true
   private _capacity?: string; 
   public get capacity() {
     return this.getStringAttribute('capacity');
   }
   public set capacity(value: string) {
     this._capacity = value;
-  }
-  public resetCapacity() {
-    this._capacity = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get capacityInput() {
@@ -139,6 +153,22 @@ export class DataDatabricksOnlineStoresOnlineStoresOutputReference extends cdktf
     return this._name;
   }
 
+  // read_replica_count - computed: true, optional: true, required: false
+  private _readReplicaCount?: number; 
+  public get readReplicaCount() {
+    return this.getNumberAttribute('read_replica_count');
+  }
+  public set readReplicaCount(value: number) {
+    this._readReplicaCount = value;
+  }
+  public resetReadReplicaCount() {
+    this._readReplicaCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readReplicaCountInput() {
+    return this._readReplicaCount;
+  }
+
   // state - computed: true, optional: false, required: false
   public get state() {
     return this.getStringAttribute('state');
@@ -166,7 +196,7 @@ export class DataDatabricksOnlineStoresOnlineStoresList extends cdktf.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/online_stores databricks_online_stores}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/online_stores databricks_online_stores}
 */
 export class DataDatabricksOnlineStores extends cdktf.TerraformDataSource {
 
@@ -182,7 +212,7 @@ export class DataDatabricksOnlineStores extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksOnlineStores resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksOnlineStores to import
-  * @param importFromId The id of the existing DataDatabricksOnlineStores that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/online_stores#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksOnlineStores that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/online_stores#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksOnlineStores to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -194,7 +224,7 @@ export class DataDatabricksOnlineStores extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.84.0/docs/data-sources/online_stores databricks_online_stores} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/online_stores databricks_online_stores} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -205,7 +235,7 @@ export class DataDatabricksOnlineStores extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_online_stores',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.84.0',
+        providerVersion: '1.85.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
