@@ -21,6 +21,8 @@ Object.defineProperty(exports, 'budget', { get: function () { return require('./
 Object.defineProperty(exports, 'budgetPolicy', { get: function () { return require('./budget-policy'); } });
 Object.defineProperty(exports, 'catalog', { get: function () { return require('./catalog'); } });
 Object.defineProperty(exports, 'catalogWorkspaceBinding', { get: function () { return require('./catalog-workspace-binding'); } });
+Object.defineProperty(exports, 'cleanRoomAsset', { get: function () { return require('./clean-room-asset'); } });
+Object.defineProperty(exports, 'cleanRoomAutoApprovalRule', { get: function () { return require('./clean-room-auto-approval-rule'); } });
 Object.defineProperty(exports, 'cleanRoomsCleanRoom', { get: function () { return require('./clean-rooms-clean-room'); } });
 Object.defineProperty(exports, 'cluster', { get: function () { return require('./cluster'); } });
 Object.defineProperty(exports, 'clusterPolicy', { get: function () { return require('./cluster-policy'); } });
@@ -102,7 +104,6 @@ Object.defineProperty(exports, 'servicePrincipal', { get: function () { return r
 Object.defineProperty(exports, 'servicePrincipalRole', { get: function () { return require('./service-principal-role'); } });
 Object.defineProperty(exports, 'servicePrincipalSecret', { get: function () { return require('./service-principal-secret'); } });
 Object.defineProperty(exports, 'share', { get: function () { return require('./share'); } });
-Object.defineProperty(exports, 'sharePluginframework', { get: function () { return require('./share-pluginframework'); } });
 Object.defineProperty(exports, 'sqlAlert', { get: function () { return require('./sql-alert'); } });
 Object.defineProperty(exports, 'sqlDashboard', { get: function () { return require('./sql-dashboard'); } });
 Object.defineProperty(exports, 'sqlEndpoint', { get: function () { return require('./sql-endpoint'); } });
@@ -141,6 +142,12 @@ Object.defineProperty(exports, 'dataDatabricksBudgetPolicies', { get: function (
 Object.defineProperty(exports, 'dataDatabricksBudgetPolicy', { get: function () { return require('./data-databricks-budget-policy'); } });
 Object.defineProperty(exports, 'dataDatabricksCatalog', { get: function () { return require('./data-databricks-catalog'); } });
 Object.defineProperty(exports, 'dataDatabricksCatalogs', { get: function () { return require('./data-databricks-catalogs'); } });
+Object.defineProperty(exports, 'dataDatabricksCleanRoomAsset', { get: function () { return require('./data-databricks-clean-room-asset'); } });
+Object.defineProperty(exports, 'dataDatabricksCleanRoomAssetRevisionsCleanRoomAsset', { get: function () { return require('./data-databricks-clean-room-asset-revisions-clean-room-asset'); } });
+Object.defineProperty(exports, 'dataDatabricksCleanRoomAssetRevisionsCleanRoomAssets', { get: function () { return require('./data-databricks-clean-room-asset-revisions-clean-room-assets'); } });
+Object.defineProperty(exports, 'dataDatabricksCleanRoomAssets', { get: function () { return require('./data-databricks-clean-room-assets'); } });
+Object.defineProperty(exports, 'dataDatabricksCleanRoomAutoApprovalRule', { get: function () { return require('./data-databricks-clean-room-auto-approval-rule'); } });
+Object.defineProperty(exports, 'dataDatabricksCleanRoomAutoApprovalRules', { get: function () { return require('./data-databricks-clean-room-auto-approval-rules'); } });
 Object.defineProperty(exports, 'dataDatabricksCleanRoomsCleanRoom', { get: function () { return require('./data-databricks-clean-rooms-clean-room'); } });
 Object.defineProperty(exports, 'dataDatabricksCleanRoomsCleanRooms', { get: function () { return require('./data-databricks-clean-rooms-clean-rooms'); } });
 Object.defineProperty(exports, 'dataDatabricksCluster', { get: function () { return require('./data-databricks-cluster'); } });
@@ -196,9 +203,7 @@ Object.defineProperty(exports, 'dataDatabricksServicePrincipal', { get: function
 Object.defineProperty(exports, 'dataDatabricksServicePrincipals', { get: function () { return require('./data-databricks-service-principals'); } });
 Object.defineProperty(exports, 'dataDatabricksServingEndpoints', { get: function () { return require('./data-databricks-serving-endpoints'); } });
 Object.defineProperty(exports, 'dataDatabricksShare', { get: function () { return require('./data-databricks-share'); } });
-Object.defineProperty(exports, 'dataDatabricksSharePluginframework', { get: function () { return require('./data-databricks-share-pluginframework'); } });
 Object.defineProperty(exports, 'dataDatabricksShares', { get: function () { return require('./data-databricks-shares'); } });
-Object.defineProperty(exports, 'dataDatabricksSharesPluginframework', { get: function () { return require('./data-databricks-shares-pluginframework'); } });
 Object.defineProperty(exports, 'dataDatabricksSparkVersion', { get: function () { return require('./data-databricks-spark-version'); } });
 Object.defineProperty(exports, 'dataDatabricksSqlWarehouse', { get: function () { return require('./data-databricks-sql-warehouse'); } });
 Object.defineProperty(exports, 'dataDatabricksSqlWarehouses', { get: function () { return require('./data-databricks-sql-warehouses'); } });
