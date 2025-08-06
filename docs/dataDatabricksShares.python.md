@@ -4,7 +4,7 @@
 
 ### DataDatabricksShares <a name="DataDatabricksShares" id="@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/shares databricks_shares}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/shares databricks_shares}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.Initializer"></a>
 
@@ -21,7 +21,6 @@ dataDatabricksShares.DataDatabricksShares(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  id: str = None,
   shares: typing.List[str] = None
 )
 ```
@@ -37,8 +36,7 @@ dataDatabricksShares.DataDatabricksShares(
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/shares#id DataDatabricksShares#id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.Initializer.parameter.shares">shares</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/shares#shares DataDatabricksShares#shares}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.Initializer.parameter.shares">shares</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/shares#shares DataDatabricksShares#shares}. |
 
 ---
 
@@ -102,22 +100,11 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.Initializer.parameter.id"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/shares#id DataDatabricksShares#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
 ##### `shares`<sup>Optional</sup> <a name="shares" id="@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.Initializer.parameter.shares"></a>
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/shares#shares DataDatabricksShares#shares}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/shares#shares DataDatabricksShares#shares}.
 
 ---
 
@@ -142,7 +129,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.resetShares">reset_shares</a></code> | *No description.* |
 
 ---
@@ -364,12 +350,6 @@ def interpolation_for_attribute(
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.resetId"></a>
-
-```python
-def reset_id() -> None
-```
-
 ##### `reset_shares` <a name="reset_shares" id="@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.resetShares"></a>
 
 ```python
@@ -490,7 +470,7 @@ The construct id used in the generated config for the DataDatabricksShares to im
 
 The id of the existing DataDatabricksShares that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/shares#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/shares#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -518,9 +498,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.property.sharesInput">shares_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.property.shares">shares</a></code> | <code>typing.List[str]</code> | *No description.* |
 
 ---
@@ -647,16 +625,6 @@ provider: TerraformProvider
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.property.idInput"></a>
-
-```python
-id_input: str
-```
-
-- *Type:* str
-
----
-
 ##### `shares_input`<sup>Optional</sup> <a name="shares_input" id="@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.property.sharesInput"></a>
 
 ```python
@@ -664,16 +632,6 @@ shares_input: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
 
 ---
 
@@ -722,7 +680,6 @@ dataDatabricksShares.DataDatabricksSharesConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  id: str = None,
   shares: typing.List[str] = None
 )
 ```
@@ -738,8 +695,7 @@ dataDatabricksShares.DataDatabricksSharesConfig(
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksSharesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksSharesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksSharesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksSharesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/shares#id DataDatabricksShares#id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksSharesConfig.property.shares">shares</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/shares#shares DataDatabricksShares#shares}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksSharesConfig.property.shares">shares</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/shares#shares DataDatabricksShares#shares}. |
 
 ---
 
@@ -813,21 +769,6 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksSharesConfig.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/shares#id DataDatabricksShares#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
 ##### `shares`<sup>Optional</sup> <a name="shares" id="@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksSharesConfig.property.shares"></a>
 
 ```python
@@ -836,7 +777,7 @@ shares: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/shares#shares DataDatabricksShares#shares}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/shares#shares DataDatabricksShares#shares}.
 
 ---
 

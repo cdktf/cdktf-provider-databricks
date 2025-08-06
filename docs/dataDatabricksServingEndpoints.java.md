@@ -4,7 +4,7 @@
 
 ### DataDatabricksServingEndpoints <a name="DataDatabricksServingEndpoints" id="@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpoints"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints databricks_serving_endpoints}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints databricks_serving_endpoints}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpoints.Initializer"></a>
 
@@ -39,7 +39,7 @@ DataDatabricksServingEndpoints.Builder.create(Construct scope, java.lang.String 
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpoints.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpoints.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpoints.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpoints.Initializer.parameter.endpoints">endpoints</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpoints">DataDatabricksServingEndpointsEndpoints</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#endpoints DataDatabricksServingEndpoints#endpoints}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpoints.Initializer.parameter.endpoints">endpoints</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpoints">DataDatabricksServingEndpointsEndpoints</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#endpoints DataDatabricksServingEndpoints#endpoints}. |
 
 ---
 
@@ -107,7 +107,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpoints">DataDatabricksServingEndpointsEndpoints</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#endpoints DataDatabricksServingEndpoints#endpoints}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#endpoints DataDatabricksServingEndpoints#endpoints}.
 
 ---
 
@@ -450,7 +450,7 @@ The construct id used in the generated config for the DataDatabricksServingEndpo
 
 The id of the existing DataDatabricksServingEndpoints that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -680,7 +680,7 @@ DataDatabricksServingEndpointsConfig.builder()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsConfig.property.endpoints">endpoints</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpoints">DataDatabricksServingEndpointsEndpoints</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#endpoints DataDatabricksServingEndpoints#endpoints}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsConfig.property.endpoints">endpoints</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpoints">DataDatabricksServingEndpointsEndpoints</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#endpoints DataDatabricksServingEndpoints#endpoints}. |
 
 ---
 
@@ -762,7 +762,7 @@ public java.lang.Object getEndpoints();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpoints">DataDatabricksServingEndpointsEndpoints</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#endpoints DataDatabricksServingEndpoints#endpoints}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#endpoints DataDatabricksServingEndpoints#endpoints}.
 
 ---
 
@@ -797,18 +797,18 @@ DataDatabricksServingEndpointsEndpoints.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpoints.property.aiGateway">aiGateway</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGateway">DataDatabricksServingEndpointsEndpointsAiGateway</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#ai_gateway DataDatabricksServingEndpoints#ai_gateway}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpoints.property.budgetPolicyId">budgetPolicyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#budget_policy_id DataDatabricksServingEndpoints#budget_policy_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpoints.property.config">config</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfig">DataDatabricksServingEndpointsEndpointsConfig</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#config DataDatabricksServingEndpoints#config}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpoints.property.creationTimestamp">creationTimestamp</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#creation_timestamp DataDatabricksServingEndpoints#creation_timestamp}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpoints.property.creator">creator</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#creator DataDatabricksServingEndpoints#creator}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpoints.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#description DataDatabricksServingEndpoints#description}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpoints.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#id DataDatabricksServingEndpoints#id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpoints.property.lastUpdatedTimestamp">lastUpdatedTimestamp</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#last_updated_timestamp DataDatabricksServingEndpoints#last_updated_timestamp}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpoints.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpoints.property.state">state</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsState">DataDatabricksServingEndpointsEndpointsState</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#state DataDatabricksServingEndpoints#state}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpoints.property.tags">tags</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsTags">DataDatabricksServingEndpointsEndpointsTags</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#tags DataDatabricksServingEndpoints#tags}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpoints.property.task">task</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#task DataDatabricksServingEndpoints#task}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpoints.property.aiGateway">aiGateway</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGateway">DataDatabricksServingEndpointsEndpointsAiGateway</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#ai_gateway DataDatabricksServingEndpoints#ai_gateway}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpoints.property.budgetPolicyId">budgetPolicyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#budget_policy_id DataDatabricksServingEndpoints#budget_policy_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpoints.property.config">config</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfig">DataDatabricksServingEndpointsEndpointsConfig</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#config DataDatabricksServingEndpoints#config}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpoints.property.creationTimestamp">creationTimestamp</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#creation_timestamp DataDatabricksServingEndpoints#creation_timestamp}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpoints.property.creator">creator</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#creator DataDatabricksServingEndpoints#creator}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpoints.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#description DataDatabricksServingEndpoints#description}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpoints.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#id DataDatabricksServingEndpoints#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpoints.property.lastUpdatedTimestamp">lastUpdatedTimestamp</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#last_updated_timestamp DataDatabricksServingEndpoints#last_updated_timestamp}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpoints.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpoints.property.state">state</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsState">DataDatabricksServingEndpointsEndpointsState</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#state DataDatabricksServingEndpoints#state}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpoints.property.tags">tags</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsTags">DataDatabricksServingEndpointsEndpointsTags</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#tags DataDatabricksServingEndpoints#tags}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpoints.property.task">task</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#task DataDatabricksServingEndpoints#task}. |
 
 ---
 
@@ -820,7 +820,7 @@ public java.lang.Object getAiGateway();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGateway">DataDatabricksServingEndpointsEndpointsAiGateway</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#ai_gateway DataDatabricksServingEndpoints#ai_gateway}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#ai_gateway DataDatabricksServingEndpoints#ai_gateway}.
 
 ---
 
@@ -832,7 +832,7 @@ public java.lang.String getBudgetPolicyId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#budget_policy_id DataDatabricksServingEndpoints#budget_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#budget_policy_id DataDatabricksServingEndpoints#budget_policy_id}.
 
 ---
 
@@ -844,7 +844,7 @@ public java.lang.Object getConfig();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfig">DataDatabricksServingEndpointsEndpointsConfig</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#config DataDatabricksServingEndpoints#config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#config DataDatabricksServingEndpoints#config}.
 
 ---
 
@@ -856,7 +856,7 @@ public java.lang.Number getCreationTimestamp();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#creation_timestamp DataDatabricksServingEndpoints#creation_timestamp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#creation_timestamp DataDatabricksServingEndpoints#creation_timestamp}.
 
 ---
 
@@ -868,7 +868,7 @@ public java.lang.String getCreator();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#creator DataDatabricksServingEndpoints#creator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#creator DataDatabricksServingEndpoints#creator}.
 
 ---
 
@@ -880,7 +880,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#description DataDatabricksServingEndpoints#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#description DataDatabricksServingEndpoints#description}.
 
 ---
 
@@ -892,7 +892,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#id DataDatabricksServingEndpoints#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#id DataDatabricksServingEndpoints#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -907,7 +907,7 @@ public java.lang.Number getLastUpdatedTimestamp();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#last_updated_timestamp DataDatabricksServingEndpoints#last_updated_timestamp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#last_updated_timestamp DataDatabricksServingEndpoints#last_updated_timestamp}.
 
 ---
 
@@ -919,7 +919,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}.
 
 ---
 
@@ -931,7 +931,7 @@ public java.lang.Object getState();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsState">DataDatabricksServingEndpointsEndpointsState</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#state DataDatabricksServingEndpoints#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#state DataDatabricksServingEndpoints#state}.
 
 ---
 
@@ -943,7 +943,7 @@ public java.lang.Object getTags();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsTags">DataDatabricksServingEndpointsEndpointsTags</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#tags DataDatabricksServingEndpoints#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#tags DataDatabricksServingEndpoints#tags}.
 
 ---
 
@@ -955,7 +955,7 @@ public java.lang.String getTask();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#task DataDatabricksServingEndpoints#task}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#task DataDatabricksServingEndpoints#task}.
 
 ---
 
@@ -984,11 +984,11 @@ DataDatabricksServingEndpointsEndpointsAiGateway.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGateway.property.fallbackConfig">fallbackConfig</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfig">DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfig</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#fallback_config DataDatabricksServingEndpoints#fallback_config}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGateway.property.guardrails">guardrails</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrails">DataDatabricksServingEndpointsEndpointsAiGatewayGuardrails</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#guardrails DataDatabricksServingEndpoints#guardrails}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGateway.property.inferenceTableConfig">inferenceTableConfig</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig">DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#inference_table_config DataDatabricksServingEndpoints#inference_table_config}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGateway.property.rateLimits">rateLimits</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits">DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#rate_limits DataDatabricksServingEndpoints#rate_limits}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGateway.property.usageTrackingConfig">usageTrackingConfig</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig">DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#usage_tracking_config DataDatabricksServingEndpoints#usage_tracking_config}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGateway.property.fallbackConfig">fallbackConfig</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfig">DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfig</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#fallback_config DataDatabricksServingEndpoints#fallback_config}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGateway.property.guardrails">guardrails</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrails">DataDatabricksServingEndpointsEndpointsAiGatewayGuardrails</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#guardrails DataDatabricksServingEndpoints#guardrails}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGateway.property.inferenceTableConfig">inferenceTableConfig</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig">DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#inference_table_config DataDatabricksServingEndpoints#inference_table_config}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGateway.property.rateLimits">rateLimits</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits">DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#rate_limits DataDatabricksServingEndpoints#rate_limits}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGateway.property.usageTrackingConfig">usageTrackingConfig</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig">DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#usage_tracking_config DataDatabricksServingEndpoints#usage_tracking_config}. |
 
 ---
 
@@ -1000,7 +1000,7 @@ public java.lang.Object getFallbackConfig();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfig">DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfig</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#fallback_config DataDatabricksServingEndpoints#fallback_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#fallback_config DataDatabricksServingEndpoints#fallback_config}.
 
 ---
 
@@ -1012,7 +1012,7 @@ public java.lang.Object getGuardrails();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrails">DataDatabricksServingEndpointsEndpointsAiGatewayGuardrails</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#guardrails DataDatabricksServingEndpoints#guardrails}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#guardrails DataDatabricksServingEndpoints#guardrails}.
 
 ---
 
@@ -1024,7 +1024,7 @@ public java.lang.Object getInferenceTableConfig();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig">DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#inference_table_config DataDatabricksServingEndpoints#inference_table_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#inference_table_config DataDatabricksServingEndpoints#inference_table_config}.
 
 ---
 
@@ -1036,7 +1036,7 @@ public java.lang.Object getRateLimits();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits">DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#rate_limits DataDatabricksServingEndpoints#rate_limits}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#rate_limits DataDatabricksServingEndpoints#rate_limits}.
 
 ---
 
@@ -1048,7 +1048,7 @@ public java.lang.Object getUsageTrackingConfig();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig">DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#usage_tracking_config DataDatabricksServingEndpoints#usage_tracking_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#usage_tracking_config DataDatabricksServingEndpoints#usage_tracking_config}.
 
 ---
 
@@ -1069,7 +1069,7 @@ DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#enabled DataDatabricksServingEndpoints#enabled}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#enabled DataDatabricksServingEndpoints#enabled}. |
 
 ---
 
@@ -1081,7 +1081,7 @@ public java.lang.Object getEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#enabled DataDatabricksServingEndpoints#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#enabled DataDatabricksServingEndpoints#enabled}.
 
 ---
 
@@ -1104,8 +1104,8 @@ DataDatabricksServingEndpointsEndpointsAiGatewayGuardrails.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrails.property.input">input</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput">DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#input DataDatabricksServingEndpoints#input}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrails.property.output">output</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput">DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#output DataDatabricksServingEndpoints#output}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrails.property.input">input</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput">DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#input DataDatabricksServingEndpoints#input}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrails.property.output">output</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput">DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#output DataDatabricksServingEndpoints#output}. |
 
 ---
 
@@ -1117,7 +1117,7 @@ public java.lang.Object getInput();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput">DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#input DataDatabricksServingEndpoints#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#input DataDatabricksServingEndpoints#input}.
 
 ---
 
@@ -1129,7 +1129,7 @@ public java.lang.Object getOutput();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput">DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#output DataDatabricksServingEndpoints#output}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#output DataDatabricksServingEndpoints#output}.
 
 ---
 
@@ -1154,10 +1154,10 @@ DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput.property.invalidKeywords">invalidKeywords</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#invalid_keywords DataDatabricksServingEndpoints#invalid_keywords}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput.property.pii">pii</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPii">DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPii</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#pii DataDatabricksServingEndpoints#pii}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput.property.safety">safety</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#safety DataDatabricksServingEndpoints#safety}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput.property.validTopics">validTopics</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#valid_topics DataDatabricksServingEndpoints#valid_topics}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput.property.invalidKeywords">invalidKeywords</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#invalid_keywords DataDatabricksServingEndpoints#invalid_keywords}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput.property.pii">pii</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPii">DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPii</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#pii DataDatabricksServingEndpoints#pii}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput.property.safety">safety</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#safety DataDatabricksServingEndpoints#safety}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput.property.validTopics">validTopics</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#valid_topics DataDatabricksServingEndpoints#valid_topics}. |
 
 ---
 
@@ -1169,7 +1169,7 @@ public java.util.List<java.lang.String> getInvalidKeywords();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#invalid_keywords DataDatabricksServingEndpoints#invalid_keywords}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#invalid_keywords DataDatabricksServingEndpoints#invalid_keywords}.
 
 ---
 
@@ -1181,7 +1181,7 @@ public java.lang.Object getPii();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPii">DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPii</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#pii DataDatabricksServingEndpoints#pii}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#pii DataDatabricksServingEndpoints#pii}.
 
 ---
 
@@ -1193,7 +1193,7 @@ public java.lang.Object getSafety();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#safety DataDatabricksServingEndpoints#safety}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#safety DataDatabricksServingEndpoints#safety}.
 
 ---
 
@@ -1205,7 +1205,7 @@ public java.util.List<java.lang.String> getValidTopics();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#valid_topics DataDatabricksServingEndpoints#valid_topics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#valid_topics DataDatabricksServingEndpoints#valid_topics}.
 
 ---
 
@@ -1225,7 +1225,7 @@ DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPii.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPii.property.behavior">behavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#behavior DataDatabricksServingEndpoints#behavior}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPii.property.behavior">behavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#behavior DataDatabricksServingEndpoints#behavior}. |
 
 ---
 
@@ -1237,7 +1237,7 @@ public java.lang.String getBehavior();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#behavior DataDatabricksServingEndpoints#behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#behavior DataDatabricksServingEndpoints#behavior}.
 
 ---
 
@@ -1262,10 +1262,10 @@ DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput.property.invalidKeywords">invalidKeywords</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#invalid_keywords DataDatabricksServingEndpoints#invalid_keywords}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput.property.pii">pii</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii">DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#pii DataDatabricksServingEndpoints#pii}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput.property.safety">safety</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#safety DataDatabricksServingEndpoints#safety}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput.property.validTopics">validTopics</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#valid_topics DataDatabricksServingEndpoints#valid_topics}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput.property.invalidKeywords">invalidKeywords</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#invalid_keywords DataDatabricksServingEndpoints#invalid_keywords}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput.property.pii">pii</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii">DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#pii DataDatabricksServingEndpoints#pii}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput.property.safety">safety</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#safety DataDatabricksServingEndpoints#safety}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput.property.validTopics">validTopics</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#valid_topics DataDatabricksServingEndpoints#valid_topics}. |
 
 ---
 
@@ -1277,7 +1277,7 @@ public java.util.List<java.lang.String> getInvalidKeywords();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#invalid_keywords DataDatabricksServingEndpoints#invalid_keywords}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#invalid_keywords DataDatabricksServingEndpoints#invalid_keywords}.
 
 ---
 
@@ -1289,7 +1289,7 @@ public java.lang.Object getPii();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii">DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#pii DataDatabricksServingEndpoints#pii}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#pii DataDatabricksServingEndpoints#pii}.
 
 ---
 
@@ -1301,7 +1301,7 @@ public java.lang.Object getSafety();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#safety DataDatabricksServingEndpoints#safety}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#safety DataDatabricksServingEndpoints#safety}.
 
 ---
 
@@ -1313,7 +1313,7 @@ public java.util.List<java.lang.String> getValidTopics();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#valid_topics DataDatabricksServingEndpoints#valid_topics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#valid_topics DataDatabricksServingEndpoints#valid_topics}.
 
 ---
 
@@ -1333,7 +1333,7 @@ DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii.property.behavior">behavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#behavior DataDatabricksServingEndpoints#behavior}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii.property.behavior">behavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#behavior DataDatabricksServingEndpoints#behavior}. |
 
 ---
 
@@ -1345,7 +1345,7 @@ public java.lang.String getBehavior();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#behavior DataDatabricksServingEndpoints#behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#behavior DataDatabricksServingEndpoints#behavior}.
 
 ---
 
@@ -1369,10 +1369,10 @@ DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig.property.catalogName">catalogName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#catalog_name DataDatabricksServingEndpoints#catalog_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#enabled DataDatabricksServingEndpoints#enabled}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig.property.schemaName">schemaName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#schema_name DataDatabricksServingEndpoints#schema_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig.property.tableNamePrefix">tableNamePrefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#table_name_prefix DataDatabricksServingEndpoints#table_name_prefix}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig.property.catalogName">catalogName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#catalog_name DataDatabricksServingEndpoints#catalog_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#enabled DataDatabricksServingEndpoints#enabled}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig.property.schemaName">schemaName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#schema_name DataDatabricksServingEndpoints#schema_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig.property.tableNamePrefix">tableNamePrefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#table_name_prefix DataDatabricksServingEndpoints#table_name_prefix}. |
 
 ---
 
@@ -1384,7 +1384,7 @@ public java.lang.String getCatalogName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#catalog_name DataDatabricksServingEndpoints#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#catalog_name DataDatabricksServingEndpoints#catalog_name}.
 
 ---
 
@@ -1396,7 +1396,7 @@ public java.lang.Object getEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#enabled DataDatabricksServingEndpoints#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#enabled DataDatabricksServingEndpoints#enabled}.
 
 ---
 
@@ -1408,7 +1408,7 @@ public java.lang.String getSchemaName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#schema_name DataDatabricksServingEndpoints#schema_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#schema_name DataDatabricksServingEndpoints#schema_name}.
 
 ---
 
@@ -1420,7 +1420,7 @@ public java.lang.String getTableNamePrefix();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#table_name_prefix DataDatabricksServingEndpoints#table_name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#table_name_prefix DataDatabricksServingEndpoints#table_name_prefix}.
 
 ---
 
@@ -1443,10 +1443,10 @@ DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits.property.renewalPeriod">renewalPeriod</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#renewal_period DataDatabricksServingEndpoints#renewal_period}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits.property.calls">calls</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#calls DataDatabricksServingEndpoints#calls}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#key DataDatabricksServingEndpoints#key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits.property.principal">principal</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#principal DataDatabricksServingEndpoints#principal}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits.property.renewalPeriod">renewalPeriod</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#renewal_period DataDatabricksServingEndpoints#renewal_period}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits.property.calls">calls</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#calls DataDatabricksServingEndpoints#calls}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#key DataDatabricksServingEndpoints#key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits.property.principal">principal</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#principal DataDatabricksServingEndpoints#principal}. |
 
 ---
 
@@ -1458,7 +1458,7 @@ public java.lang.String getRenewalPeriod();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#renewal_period DataDatabricksServingEndpoints#renewal_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#renewal_period DataDatabricksServingEndpoints#renewal_period}.
 
 ---
 
@@ -1470,7 +1470,7 @@ public java.lang.Number getCalls();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#calls DataDatabricksServingEndpoints#calls}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#calls DataDatabricksServingEndpoints#calls}.
 
 ---
 
@@ -1482,7 +1482,7 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#key DataDatabricksServingEndpoints#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#key DataDatabricksServingEndpoints#key}.
 
 ---
 
@@ -1494,7 +1494,7 @@ public java.lang.String getPrincipal();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#principal DataDatabricksServingEndpoints#principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#principal DataDatabricksServingEndpoints#principal}.
 
 ---
 
@@ -1515,7 +1515,7 @@ DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#enabled DataDatabricksServingEndpoints#enabled}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#enabled DataDatabricksServingEndpoints#enabled}. |
 
 ---
 
@@ -1527,7 +1527,7 @@ public java.lang.Object getEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#enabled DataDatabricksServingEndpoints#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#enabled DataDatabricksServingEndpoints#enabled}.
 
 ---
 
@@ -1550,8 +1550,8 @@ DataDatabricksServingEndpointsEndpointsConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfig.property.servedEntities">servedEntities</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntities">DataDatabricksServingEndpointsEndpointsConfigServedEntities</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#served_entities DataDatabricksServingEndpoints#served_entities}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfig.property.servedModels">servedModels</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedModels">DataDatabricksServingEndpointsEndpointsConfigServedModels</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#served_models DataDatabricksServingEndpoints#served_models}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfig.property.servedEntities">servedEntities</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntities">DataDatabricksServingEndpointsEndpointsConfigServedEntities</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#served_entities DataDatabricksServingEndpoints#served_entities}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfig.property.servedModels">servedModels</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedModels">DataDatabricksServingEndpointsEndpointsConfigServedModels</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#served_models DataDatabricksServingEndpoints#served_models}. |
 
 ---
 
@@ -1563,7 +1563,7 @@ public java.lang.Object getServedEntities();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntities">DataDatabricksServingEndpointsEndpointsConfigServedEntities</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#served_entities DataDatabricksServingEndpoints#served_entities}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#served_entities DataDatabricksServingEndpoints#served_entities}.
 
 ---
 
@@ -1575,7 +1575,7 @@ public java.lang.Object getServedModels();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedModels">DataDatabricksServingEndpointsEndpointsConfigServedModels</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#served_models DataDatabricksServingEndpoints#served_models}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#served_models DataDatabricksServingEndpoints#served_models}.
 
 ---
 
@@ -1601,11 +1601,11 @@ DataDatabricksServingEndpointsEndpointsConfigServedEntities.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntities.property.entityName">entityName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#entity_name DataDatabricksServingEndpoints#entity_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntities.property.entityVersion">entityVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#entity_version DataDatabricksServingEndpoints#entity_version}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntities.property.externalModel">externalModel</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#external_model DataDatabricksServingEndpoints#external_model}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntities.property.foundationModel">foundationModel</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#foundation_model DataDatabricksServingEndpoints#foundation_model}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntities.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntities.property.entityName">entityName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#entity_name DataDatabricksServingEndpoints#entity_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntities.property.entityVersion">entityVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#entity_version DataDatabricksServingEndpoints#entity_version}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntities.property.externalModel">externalModel</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#external_model DataDatabricksServingEndpoints#external_model}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntities.property.foundationModel">foundationModel</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#foundation_model DataDatabricksServingEndpoints#foundation_model}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntities.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}. |
 
 ---
 
@@ -1617,7 +1617,7 @@ public java.lang.String getEntityName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#entity_name DataDatabricksServingEndpoints#entity_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#entity_name DataDatabricksServingEndpoints#entity_name}.
 
 ---
 
@@ -1629,7 +1629,7 @@ public java.lang.String getEntityVersion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#entity_version DataDatabricksServingEndpoints#entity_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#entity_version DataDatabricksServingEndpoints#entity_version}.
 
 ---
 
@@ -1641,7 +1641,7 @@ public java.lang.Object getExternalModel();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#external_model DataDatabricksServingEndpoints#external_model}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#external_model DataDatabricksServingEndpoints#external_model}.
 
 ---
 
@@ -1653,7 +1653,7 @@ public java.lang.Object getFoundationModel();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#foundation_model DataDatabricksServingEndpoints#foundation_model}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#foundation_model DataDatabricksServingEndpoints#foundation_model}.
 
 ---
 
@@ -1665,7 +1665,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}.
 
 ---
 
@@ -1705,18 +1705,18 @@ DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel.builder
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel.property.provider">provider</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#provider DataDatabricksServingEndpoints#provider}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel.property.task">task</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#task DataDatabricksServingEndpoints#task}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel.property.ai21LabsConfig">ai21LabsConfig</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfig">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfig</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#ai21labs_config DataDatabricksServingEndpoints#ai21labs_config}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel.property.amazonBedrockConfig">amazonBedrockConfig</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#amazon_bedrock_config DataDatabricksServingEndpoints#amazon_bedrock_config}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel.property.anthropicConfig">anthropicConfig</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfig">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfig</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#anthropic_config DataDatabricksServingEndpoints#anthropic_config}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel.property.cohereConfig">cohereConfig</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfig">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfig</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#cohere_config DataDatabricksServingEndpoints#cohere_config}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel.property.customProviderConfig">customProviderConfig</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfig">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfig</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#custom_provider_config DataDatabricksServingEndpoints#custom_provider_config}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel.property.databricksModelServingConfig">databricksModelServingConfig</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfig">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfig</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#databricks_model_serving_config DataDatabricksServingEndpoints#databricks_model_serving_config}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel.property.googleCloudVertexAiConfig">googleCloudVertexAiConfig</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#google_cloud_vertex_ai_config DataDatabricksServingEndpoints#google_cloud_vertex_ai_config}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel.property.openaiConfig">openaiConfig</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#openai_config DataDatabricksServingEndpoints#openai_config}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel.property.palmConfig">palmConfig</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfig">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfig</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#palm_config DataDatabricksServingEndpoints#palm_config}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel.property.provider">provider</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#provider DataDatabricksServingEndpoints#provider}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel.property.task">task</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#task DataDatabricksServingEndpoints#task}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel.property.ai21LabsConfig">ai21LabsConfig</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfig">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfig</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#ai21labs_config DataDatabricksServingEndpoints#ai21labs_config}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel.property.amazonBedrockConfig">amazonBedrockConfig</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#amazon_bedrock_config DataDatabricksServingEndpoints#amazon_bedrock_config}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel.property.anthropicConfig">anthropicConfig</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfig">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfig</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#anthropic_config DataDatabricksServingEndpoints#anthropic_config}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel.property.cohereConfig">cohereConfig</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfig">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfig</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#cohere_config DataDatabricksServingEndpoints#cohere_config}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel.property.customProviderConfig">customProviderConfig</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfig">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfig</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#custom_provider_config DataDatabricksServingEndpoints#custom_provider_config}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel.property.databricksModelServingConfig">databricksModelServingConfig</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfig">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfig</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#databricks_model_serving_config DataDatabricksServingEndpoints#databricks_model_serving_config}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel.property.googleCloudVertexAiConfig">googleCloudVertexAiConfig</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#google_cloud_vertex_ai_config DataDatabricksServingEndpoints#google_cloud_vertex_ai_config}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel.property.openaiConfig">openaiConfig</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#openai_config DataDatabricksServingEndpoints#openai_config}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel.property.palmConfig">palmConfig</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfig">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfig</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#palm_config DataDatabricksServingEndpoints#palm_config}. |
 
 ---
 
@@ -1728,7 +1728,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}.
 
 ---
 
@@ -1740,7 +1740,7 @@ public java.lang.String getProvider();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#provider DataDatabricksServingEndpoints#provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#provider DataDatabricksServingEndpoints#provider}.
 
 ---
 
@@ -1752,7 +1752,7 @@ public java.lang.String getTask();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#task DataDatabricksServingEndpoints#task}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#task DataDatabricksServingEndpoints#task}.
 
 ---
 
@@ -1764,7 +1764,7 @@ public java.lang.Object getAi21LabsConfig();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfig">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfig</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#ai21labs_config DataDatabricksServingEndpoints#ai21labs_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#ai21labs_config DataDatabricksServingEndpoints#ai21labs_config}.
 
 ---
 
@@ -1776,7 +1776,7 @@ public java.lang.Object getAmazonBedrockConfig();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#amazon_bedrock_config DataDatabricksServingEndpoints#amazon_bedrock_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#amazon_bedrock_config DataDatabricksServingEndpoints#amazon_bedrock_config}.
 
 ---
 
@@ -1788,7 +1788,7 @@ public java.lang.Object getAnthropicConfig();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfig">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfig</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#anthropic_config DataDatabricksServingEndpoints#anthropic_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#anthropic_config DataDatabricksServingEndpoints#anthropic_config}.
 
 ---
 
@@ -1800,7 +1800,7 @@ public java.lang.Object getCohereConfig();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfig">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfig</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#cohere_config DataDatabricksServingEndpoints#cohere_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#cohere_config DataDatabricksServingEndpoints#cohere_config}.
 
 ---
 
@@ -1812,7 +1812,7 @@ public java.lang.Object getCustomProviderConfig();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfig">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfig</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#custom_provider_config DataDatabricksServingEndpoints#custom_provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#custom_provider_config DataDatabricksServingEndpoints#custom_provider_config}.
 
 ---
 
@@ -1824,7 +1824,7 @@ public java.lang.Object getDatabricksModelServingConfig();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfig">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfig</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#databricks_model_serving_config DataDatabricksServingEndpoints#databricks_model_serving_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#databricks_model_serving_config DataDatabricksServingEndpoints#databricks_model_serving_config}.
 
 ---
 
@@ -1836,7 +1836,7 @@ public java.lang.Object getGoogleCloudVertexAiConfig();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#google_cloud_vertex_ai_config DataDatabricksServingEndpoints#google_cloud_vertex_ai_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#google_cloud_vertex_ai_config DataDatabricksServingEndpoints#google_cloud_vertex_ai_config}.
 
 ---
 
@@ -1848,7 +1848,7 @@ public java.lang.Object getOpenaiConfig();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#openai_config DataDatabricksServingEndpoints#openai_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#openai_config DataDatabricksServingEndpoints#openai_config}.
 
 ---
 
@@ -1860,7 +1860,7 @@ public java.lang.Object getPalmConfig();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfig">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfig</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#palm_config DataDatabricksServingEndpoints#palm_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#palm_config DataDatabricksServingEndpoints#palm_config}.
 
 ---
 
@@ -1881,8 +1881,8 @@ DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21Labs
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfig.property.ai21LabsApiKey">ai21LabsApiKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#ai21labs_api_key DataDatabricksServingEndpoints#ai21labs_api_key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfig.property.ai21LabsApiKeyPlaintext">ai21LabsApiKeyPlaintext</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#ai21labs_api_key_plaintext DataDatabricksServingEndpoints#ai21labs_api_key_plaintext}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfig.property.ai21LabsApiKey">ai21LabsApiKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#ai21labs_api_key DataDatabricksServingEndpoints#ai21labs_api_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfig.property.ai21LabsApiKeyPlaintext">ai21LabsApiKeyPlaintext</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#ai21labs_api_key_plaintext DataDatabricksServingEndpoints#ai21labs_api_key_plaintext}. |
 
 ---
 
@@ -1894,7 +1894,7 @@ public java.lang.String getAi21LabsApiKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#ai21labs_api_key DataDatabricksServingEndpoints#ai21labs_api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#ai21labs_api_key DataDatabricksServingEndpoints#ai21labs_api_key}.
 
 ---
 
@@ -1906,7 +1906,7 @@ public java.lang.String getAi21LabsApiKeyPlaintext();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#ai21labs_api_key_plaintext DataDatabricksServingEndpoints#ai21labs_api_key_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#ai21labs_api_key_plaintext DataDatabricksServingEndpoints#ai21labs_api_key_plaintext}.
 
 ---
 
@@ -1932,13 +1932,13 @@ DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig.property.awsRegion">awsRegion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#aws_region DataDatabricksServingEndpoints#aws_region}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig.property.bedrockProvider">bedrockProvider</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#bedrock_provider DataDatabricksServingEndpoints#bedrock_provider}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig.property.awsAccessKeyId">awsAccessKeyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#aws_access_key_id DataDatabricksServingEndpoints#aws_access_key_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig.property.awsAccessKeyIdPlaintext">awsAccessKeyIdPlaintext</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#aws_access_key_id_plaintext DataDatabricksServingEndpoints#aws_access_key_id_plaintext}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig.property.awsSecretAccessKey">awsSecretAccessKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#aws_secret_access_key DataDatabricksServingEndpoints#aws_secret_access_key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig.property.awsSecretAccessKeyPlaintext">awsSecretAccessKeyPlaintext</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#aws_secret_access_key_plaintext DataDatabricksServingEndpoints#aws_secret_access_key_plaintext}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig.property.instanceProfileArn">instanceProfileArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#instance_profile_arn DataDatabricksServingEndpoints#instance_profile_arn}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig.property.awsRegion">awsRegion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#aws_region DataDatabricksServingEndpoints#aws_region}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig.property.bedrockProvider">bedrockProvider</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#bedrock_provider DataDatabricksServingEndpoints#bedrock_provider}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig.property.awsAccessKeyId">awsAccessKeyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#aws_access_key_id DataDatabricksServingEndpoints#aws_access_key_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig.property.awsAccessKeyIdPlaintext">awsAccessKeyIdPlaintext</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#aws_access_key_id_plaintext DataDatabricksServingEndpoints#aws_access_key_id_plaintext}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig.property.awsSecretAccessKey">awsSecretAccessKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#aws_secret_access_key DataDatabricksServingEndpoints#aws_secret_access_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig.property.awsSecretAccessKeyPlaintext">awsSecretAccessKeyPlaintext</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#aws_secret_access_key_plaintext DataDatabricksServingEndpoints#aws_secret_access_key_plaintext}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig.property.instanceProfileArn">instanceProfileArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#instance_profile_arn DataDatabricksServingEndpoints#instance_profile_arn}. |
 
 ---
 
@@ -1950,7 +1950,7 @@ public java.lang.String getAwsRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#aws_region DataDatabricksServingEndpoints#aws_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#aws_region DataDatabricksServingEndpoints#aws_region}.
 
 ---
 
@@ -1962,7 +1962,7 @@ public java.lang.String getBedrockProvider();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#bedrock_provider DataDatabricksServingEndpoints#bedrock_provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#bedrock_provider DataDatabricksServingEndpoints#bedrock_provider}.
 
 ---
 
@@ -1974,7 +1974,7 @@ public java.lang.String getAwsAccessKeyId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#aws_access_key_id DataDatabricksServingEndpoints#aws_access_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#aws_access_key_id DataDatabricksServingEndpoints#aws_access_key_id}.
 
 ---
 
@@ -1986,7 +1986,7 @@ public java.lang.String getAwsAccessKeyIdPlaintext();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#aws_access_key_id_plaintext DataDatabricksServingEndpoints#aws_access_key_id_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#aws_access_key_id_plaintext DataDatabricksServingEndpoints#aws_access_key_id_plaintext}.
 
 ---
 
@@ -1998,7 +1998,7 @@ public java.lang.String getAwsSecretAccessKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#aws_secret_access_key DataDatabricksServingEndpoints#aws_secret_access_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#aws_secret_access_key DataDatabricksServingEndpoints#aws_secret_access_key}.
 
 ---
 
@@ -2010,7 +2010,7 @@ public java.lang.String getAwsSecretAccessKeyPlaintext();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#aws_secret_access_key_plaintext DataDatabricksServingEndpoints#aws_secret_access_key_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#aws_secret_access_key_plaintext DataDatabricksServingEndpoints#aws_secret_access_key_plaintext}.
 
 ---
 
@@ -2022,7 +2022,7 @@ public java.lang.String getInstanceProfileArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#instance_profile_arn DataDatabricksServingEndpoints#instance_profile_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#instance_profile_arn DataDatabricksServingEndpoints#instance_profile_arn}.
 
 ---
 
@@ -2043,8 +2043,8 @@ DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfig.property.anthropicApiKey">anthropicApiKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#anthropic_api_key DataDatabricksServingEndpoints#anthropic_api_key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfig.property.anthropicApiKeyPlaintext">anthropicApiKeyPlaintext</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#anthropic_api_key_plaintext DataDatabricksServingEndpoints#anthropic_api_key_plaintext}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfig.property.anthropicApiKey">anthropicApiKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#anthropic_api_key DataDatabricksServingEndpoints#anthropic_api_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfig.property.anthropicApiKeyPlaintext">anthropicApiKeyPlaintext</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#anthropic_api_key_plaintext DataDatabricksServingEndpoints#anthropic_api_key_plaintext}. |
 
 ---
 
@@ -2056,7 +2056,7 @@ public java.lang.String getAnthropicApiKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#anthropic_api_key DataDatabricksServingEndpoints#anthropic_api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#anthropic_api_key DataDatabricksServingEndpoints#anthropic_api_key}.
 
 ---
 
@@ -2068,7 +2068,7 @@ public java.lang.String getAnthropicApiKeyPlaintext();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#anthropic_api_key_plaintext DataDatabricksServingEndpoints#anthropic_api_key_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#anthropic_api_key_plaintext DataDatabricksServingEndpoints#anthropic_api_key_plaintext}.
 
 ---
 
@@ -2090,9 +2090,9 @@ DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereCo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfig.property.cohereApiBase">cohereApiBase</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#cohere_api_base DataDatabricksServingEndpoints#cohere_api_base}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfig.property.cohereApiKey">cohereApiKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#cohere_api_key DataDatabricksServingEndpoints#cohere_api_key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfig.property.cohereApiKeyPlaintext">cohereApiKeyPlaintext</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#cohere_api_key_plaintext DataDatabricksServingEndpoints#cohere_api_key_plaintext}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfig.property.cohereApiBase">cohereApiBase</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#cohere_api_base DataDatabricksServingEndpoints#cohere_api_base}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfig.property.cohereApiKey">cohereApiKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#cohere_api_key DataDatabricksServingEndpoints#cohere_api_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfig.property.cohereApiKeyPlaintext">cohereApiKeyPlaintext</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#cohere_api_key_plaintext DataDatabricksServingEndpoints#cohere_api_key_plaintext}. |
 
 ---
 
@@ -2104,7 +2104,7 @@ public java.lang.String getCohereApiBase();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#cohere_api_base DataDatabricksServingEndpoints#cohere_api_base}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#cohere_api_base DataDatabricksServingEndpoints#cohere_api_base}.
 
 ---
 
@@ -2116,7 +2116,7 @@ public java.lang.String getCohereApiKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#cohere_api_key DataDatabricksServingEndpoints#cohere_api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#cohere_api_key DataDatabricksServingEndpoints#cohere_api_key}.
 
 ---
 
@@ -2128,7 +2128,7 @@ public java.lang.String getCohereApiKeyPlaintext();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#cohere_api_key_plaintext DataDatabricksServingEndpoints#cohere_api_key_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#cohere_api_key_plaintext DataDatabricksServingEndpoints#cohere_api_key_plaintext}.
 
 ---
 
@@ -2152,9 +2152,9 @@ DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomPr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfig.property.customProviderUrl">customProviderUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#custom_provider_url DataDatabricksServingEndpoints#custom_provider_url}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfig.property.apiKeyAuth">apiKeyAuth</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#api_key_auth DataDatabricksServingEndpoints#api_key_auth}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfig.property.bearerTokenAuth">bearerTokenAuth</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#bearer_token_auth DataDatabricksServingEndpoints#bearer_token_auth}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfig.property.customProviderUrl">customProviderUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#custom_provider_url DataDatabricksServingEndpoints#custom_provider_url}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfig.property.apiKeyAuth">apiKeyAuth</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#api_key_auth DataDatabricksServingEndpoints#api_key_auth}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfig.property.bearerTokenAuth">bearerTokenAuth</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#bearer_token_auth DataDatabricksServingEndpoints#bearer_token_auth}. |
 
 ---
 
@@ -2166,7 +2166,7 @@ public java.lang.String getCustomProviderUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#custom_provider_url DataDatabricksServingEndpoints#custom_provider_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#custom_provider_url DataDatabricksServingEndpoints#custom_provider_url}.
 
 ---
 
@@ -2178,7 +2178,7 @@ public java.lang.Object getApiKeyAuth();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#api_key_auth DataDatabricksServingEndpoints#api_key_auth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#api_key_auth DataDatabricksServingEndpoints#api_key_auth}.
 
 ---
 
@@ -2190,7 +2190,7 @@ public java.lang.Object getBearerTokenAuth();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth">DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#bearer_token_auth DataDatabricksServingEndpoints#bearer_token_auth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#bearer_token_auth DataDatabricksServingEndpoints#bearer_token_auth}.
 
 ---
 
@@ -2212,9 +2212,9 @@ DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomPr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#key DataDatabricksServingEndpoints#key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#value DataDatabricksServingEndpoints#value}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth.property.valuePlaintext">valuePlaintext</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#value_plaintext DataDatabricksServingEndpoints#value_plaintext}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#key DataDatabricksServingEndpoints#key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#value DataDatabricksServingEndpoints#value}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth.property.valuePlaintext">valuePlaintext</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#value_plaintext DataDatabricksServingEndpoints#value_plaintext}. |
 
 ---
 
@@ -2226,7 +2226,7 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#key DataDatabricksServingEndpoints#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#key DataDatabricksServingEndpoints#key}.
 
 ---
 
@@ -2238,7 +2238,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#value DataDatabricksServingEndpoints#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#value DataDatabricksServingEndpoints#value}.
 
 ---
 
@@ -2250,7 +2250,7 @@ public java.lang.String getValuePlaintext();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#value_plaintext DataDatabricksServingEndpoints#value_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#value_plaintext DataDatabricksServingEndpoints#value_plaintext}.
 
 ---
 
@@ -2271,8 +2271,8 @@ DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomPr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth.property.token">token</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#token DataDatabricksServingEndpoints#token}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth.property.tokenPlaintext">tokenPlaintext</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#token_plaintext DataDatabricksServingEndpoints#token_plaintext}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth.property.token">token</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#token DataDatabricksServingEndpoints#token}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth.property.tokenPlaintext">tokenPlaintext</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#token_plaintext DataDatabricksServingEndpoints#token_plaintext}. |
 
 ---
 
@@ -2284,7 +2284,7 @@ public java.lang.String getToken();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#token DataDatabricksServingEndpoints#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#token DataDatabricksServingEndpoints#token}.
 
 ---
 
@@ -2296,7 +2296,7 @@ public java.lang.String getTokenPlaintext();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#token_plaintext DataDatabricksServingEndpoints#token_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#token_plaintext DataDatabricksServingEndpoints#token_plaintext}.
 
 ---
 
@@ -2318,9 +2318,9 @@ DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabric
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfig.property.databricksWorkspaceUrl">databricksWorkspaceUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#databricks_workspace_url DataDatabricksServingEndpoints#databricks_workspace_url}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfig.property.databricksApiToken">databricksApiToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#databricks_api_token DataDatabricksServingEndpoints#databricks_api_token}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfig.property.databricksApiTokenPlaintext">databricksApiTokenPlaintext</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#databricks_api_token_plaintext DataDatabricksServingEndpoints#databricks_api_token_plaintext}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfig.property.databricksWorkspaceUrl">databricksWorkspaceUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#databricks_workspace_url DataDatabricksServingEndpoints#databricks_workspace_url}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfig.property.databricksApiToken">databricksApiToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#databricks_api_token DataDatabricksServingEndpoints#databricks_api_token}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfig.property.databricksApiTokenPlaintext">databricksApiTokenPlaintext</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#databricks_api_token_plaintext DataDatabricksServingEndpoints#databricks_api_token_plaintext}. |
 
 ---
 
@@ -2332,7 +2332,7 @@ public java.lang.String getDatabricksWorkspaceUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#databricks_workspace_url DataDatabricksServingEndpoints#databricks_workspace_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#databricks_workspace_url DataDatabricksServingEndpoints#databricks_workspace_url}.
 
 ---
 
@@ -2344,7 +2344,7 @@ public java.lang.String getDatabricksApiToken();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#databricks_api_token DataDatabricksServingEndpoints#databricks_api_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#databricks_api_token DataDatabricksServingEndpoints#databricks_api_token}.
 
 ---
 
@@ -2356,7 +2356,7 @@ public java.lang.String getDatabricksApiTokenPlaintext();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#databricks_api_token_plaintext DataDatabricksServingEndpoints#databricks_api_token_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#databricks_api_token_plaintext DataDatabricksServingEndpoints#databricks_api_token_plaintext}.
 
 ---
 
@@ -2379,10 +2379,10 @@ DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#project_id DataDatabricksServingEndpoints#project_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#region DataDatabricksServingEndpoints#region}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig.property.privateKey">privateKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#private_key DataDatabricksServingEndpoints#private_key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig.property.privateKeyPlaintext">privateKeyPlaintext</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#private_key_plaintext DataDatabricksServingEndpoints#private_key_plaintext}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#project_id DataDatabricksServingEndpoints#project_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#region DataDatabricksServingEndpoints#region}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig.property.privateKey">privateKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#private_key DataDatabricksServingEndpoints#private_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig.property.privateKeyPlaintext">privateKeyPlaintext</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#private_key_plaintext DataDatabricksServingEndpoints#private_key_plaintext}. |
 
 ---
 
@@ -2394,7 +2394,7 @@ public java.lang.String getProjectId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#project_id DataDatabricksServingEndpoints#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#project_id DataDatabricksServingEndpoints#project_id}.
 
 ---
 
@@ -2406,7 +2406,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#region DataDatabricksServingEndpoints#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#region DataDatabricksServingEndpoints#region}.
 
 ---
 
@@ -2418,7 +2418,7 @@ public java.lang.String getPrivateKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#private_key DataDatabricksServingEndpoints#private_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#private_key DataDatabricksServingEndpoints#private_key}.
 
 ---
 
@@ -2430,7 +2430,7 @@ public java.lang.String getPrivateKeyPlaintext();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#private_key_plaintext DataDatabricksServingEndpoints#private_key_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#private_key_plaintext DataDatabricksServingEndpoints#private_key_plaintext}.
 
 ---
 
@@ -2460,17 +2460,17 @@ DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiCo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig.property.microsoftEntraClientId">microsoftEntraClientId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#microsoft_entra_client_id DataDatabricksServingEndpoints#microsoft_entra_client_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig.property.microsoftEntraClientSecret">microsoftEntraClientSecret</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#microsoft_entra_client_secret DataDatabricksServingEndpoints#microsoft_entra_client_secret}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig.property.microsoftEntraClientSecretPlaintext">microsoftEntraClientSecretPlaintext</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#microsoft_entra_client_secret_plaintext DataDatabricksServingEndpoints#microsoft_entra_client_secret_plaintext}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig.property.microsoftEntraTenantId">microsoftEntraTenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#microsoft_entra_tenant_id DataDatabricksServingEndpoints#microsoft_entra_tenant_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig.property.openaiApiBase">openaiApiBase</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#openai_api_base DataDatabricksServingEndpoints#openai_api_base}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig.property.openaiApiKey">openaiApiKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#openai_api_key DataDatabricksServingEndpoints#openai_api_key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig.property.openaiApiKeyPlaintext">openaiApiKeyPlaintext</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#openai_api_key_plaintext DataDatabricksServingEndpoints#openai_api_key_plaintext}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig.property.openaiApiType">openaiApiType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#openai_api_type DataDatabricksServingEndpoints#openai_api_type}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig.property.openaiApiVersion">openaiApiVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#openai_api_version DataDatabricksServingEndpoints#openai_api_version}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig.property.openaiDeploymentName">openaiDeploymentName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#openai_deployment_name DataDatabricksServingEndpoints#openai_deployment_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig.property.openaiOrganization">openaiOrganization</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#openai_organization DataDatabricksServingEndpoints#openai_organization}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig.property.microsoftEntraClientId">microsoftEntraClientId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#microsoft_entra_client_id DataDatabricksServingEndpoints#microsoft_entra_client_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig.property.microsoftEntraClientSecret">microsoftEntraClientSecret</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#microsoft_entra_client_secret DataDatabricksServingEndpoints#microsoft_entra_client_secret}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig.property.microsoftEntraClientSecretPlaintext">microsoftEntraClientSecretPlaintext</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#microsoft_entra_client_secret_plaintext DataDatabricksServingEndpoints#microsoft_entra_client_secret_plaintext}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig.property.microsoftEntraTenantId">microsoftEntraTenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#microsoft_entra_tenant_id DataDatabricksServingEndpoints#microsoft_entra_tenant_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig.property.openaiApiBase">openaiApiBase</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#openai_api_base DataDatabricksServingEndpoints#openai_api_base}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig.property.openaiApiKey">openaiApiKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#openai_api_key DataDatabricksServingEndpoints#openai_api_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig.property.openaiApiKeyPlaintext">openaiApiKeyPlaintext</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#openai_api_key_plaintext DataDatabricksServingEndpoints#openai_api_key_plaintext}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig.property.openaiApiType">openaiApiType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#openai_api_type DataDatabricksServingEndpoints#openai_api_type}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig.property.openaiApiVersion">openaiApiVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#openai_api_version DataDatabricksServingEndpoints#openai_api_version}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig.property.openaiDeploymentName">openaiDeploymentName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#openai_deployment_name DataDatabricksServingEndpoints#openai_deployment_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig.property.openaiOrganization">openaiOrganization</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#openai_organization DataDatabricksServingEndpoints#openai_organization}. |
 
 ---
 
@@ -2482,7 +2482,7 @@ public java.lang.String getMicrosoftEntraClientId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#microsoft_entra_client_id DataDatabricksServingEndpoints#microsoft_entra_client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#microsoft_entra_client_id DataDatabricksServingEndpoints#microsoft_entra_client_id}.
 
 ---
 
@@ -2494,7 +2494,7 @@ public java.lang.String getMicrosoftEntraClientSecret();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#microsoft_entra_client_secret DataDatabricksServingEndpoints#microsoft_entra_client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#microsoft_entra_client_secret DataDatabricksServingEndpoints#microsoft_entra_client_secret}.
 
 ---
 
@@ -2506,7 +2506,7 @@ public java.lang.String getMicrosoftEntraClientSecretPlaintext();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#microsoft_entra_client_secret_plaintext DataDatabricksServingEndpoints#microsoft_entra_client_secret_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#microsoft_entra_client_secret_plaintext DataDatabricksServingEndpoints#microsoft_entra_client_secret_plaintext}.
 
 ---
 
@@ -2518,7 +2518,7 @@ public java.lang.String getMicrosoftEntraTenantId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#microsoft_entra_tenant_id DataDatabricksServingEndpoints#microsoft_entra_tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#microsoft_entra_tenant_id DataDatabricksServingEndpoints#microsoft_entra_tenant_id}.
 
 ---
 
@@ -2530,7 +2530,7 @@ public java.lang.String getOpenaiApiBase();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#openai_api_base DataDatabricksServingEndpoints#openai_api_base}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#openai_api_base DataDatabricksServingEndpoints#openai_api_base}.
 
 ---
 
@@ -2542,7 +2542,7 @@ public java.lang.String getOpenaiApiKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#openai_api_key DataDatabricksServingEndpoints#openai_api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#openai_api_key DataDatabricksServingEndpoints#openai_api_key}.
 
 ---
 
@@ -2554,7 +2554,7 @@ public java.lang.String getOpenaiApiKeyPlaintext();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#openai_api_key_plaintext DataDatabricksServingEndpoints#openai_api_key_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#openai_api_key_plaintext DataDatabricksServingEndpoints#openai_api_key_plaintext}.
 
 ---
 
@@ -2566,7 +2566,7 @@ public java.lang.String getOpenaiApiType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#openai_api_type DataDatabricksServingEndpoints#openai_api_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#openai_api_type DataDatabricksServingEndpoints#openai_api_type}.
 
 ---
 
@@ -2578,7 +2578,7 @@ public java.lang.String getOpenaiApiVersion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#openai_api_version DataDatabricksServingEndpoints#openai_api_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#openai_api_version DataDatabricksServingEndpoints#openai_api_version}.
 
 ---
 
@@ -2590,7 +2590,7 @@ public java.lang.String getOpenaiDeploymentName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#openai_deployment_name DataDatabricksServingEndpoints#openai_deployment_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#openai_deployment_name DataDatabricksServingEndpoints#openai_deployment_name}.
 
 ---
 
@@ -2602,7 +2602,7 @@ public java.lang.String getOpenaiOrganization();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#openai_organization DataDatabricksServingEndpoints#openai_organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#openai_organization DataDatabricksServingEndpoints#openai_organization}.
 
 ---
 
@@ -2623,8 +2623,8 @@ DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfig.property.palmApiKey">palmApiKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#palm_api_key DataDatabricksServingEndpoints#palm_api_key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfig.property.palmApiKeyPlaintext">palmApiKeyPlaintext</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#palm_api_key_plaintext DataDatabricksServingEndpoints#palm_api_key_plaintext}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfig.property.palmApiKey">palmApiKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#palm_api_key DataDatabricksServingEndpoints#palm_api_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfig.property.palmApiKeyPlaintext">palmApiKeyPlaintext</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#palm_api_key_plaintext DataDatabricksServingEndpoints#palm_api_key_plaintext}. |
 
 ---
 
@@ -2636,7 +2636,7 @@ public java.lang.String getPalmApiKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#palm_api_key DataDatabricksServingEndpoints#palm_api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#palm_api_key DataDatabricksServingEndpoints#palm_api_key}.
 
 ---
 
@@ -2648,7 +2648,7 @@ public java.lang.String getPalmApiKeyPlaintext();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#palm_api_key_plaintext DataDatabricksServingEndpoints#palm_api_key_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#palm_api_key_plaintext DataDatabricksServingEndpoints#palm_api_key_plaintext}.
 
 ---
 
@@ -2671,10 +2671,10 @@ DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel.build
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#description DataDatabricksServingEndpoints#description}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel.property.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#display_name DataDatabricksServingEndpoints#display_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel.property.docs">docs</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#docs DataDatabricksServingEndpoints#docs}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#description DataDatabricksServingEndpoints#description}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel.property.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#display_name DataDatabricksServingEndpoints#display_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel.property.docs">docs</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#docs DataDatabricksServingEndpoints#docs}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}. |
 
 ---
 
@@ -2686,7 +2686,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#description DataDatabricksServingEndpoints#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#description DataDatabricksServingEndpoints#description}.
 
 ---
 
@@ -2698,7 +2698,7 @@ public java.lang.String getDisplayName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#display_name DataDatabricksServingEndpoints#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#display_name DataDatabricksServingEndpoints#display_name}.
 
 ---
 
@@ -2710,7 +2710,7 @@ public java.lang.String getDocs();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#docs DataDatabricksServingEndpoints#docs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#docs DataDatabricksServingEndpoints#docs}.
 
 ---
 
@@ -2722,7 +2722,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}.
 
 ---
 
@@ -2744,9 +2744,9 @@ DataDatabricksServingEndpointsEndpointsConfigServedModels.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedModels.property.modelName">modelName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#model_name DataDatabricksServingEndpoints#model_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedModels.property.modelVersion">modelVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#model_version DataDatabricksServingEndpoints#model_version}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedModels.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedModels.property.modelName">modelName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#model_name DataDatabricksServingEndpoints#model_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedModels.property.modelVersion">modelVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#model_version DataDatabricksServingEndpoints#model_version}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsConfigServedModels.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}. |
 
 ---
 
@@ -2758,7 +2758,7 @@ public java.lang.String getModelName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#model_name DataDatabricksServingEndpoints#model_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#model_name DataDatabricksServingEndpoints#model_name}.
 
 ---
 
@@ -2770,7 +2770,7 @@ public java.lang.String getModelVersion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#model_version DataDatabricksServingEndpoints#model_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#model_version DataDatabricksServingEndpoints#model_version}.
 
 ---
 
@@ -2782,7 +2782,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}.
 
 ---
 
@@ -2803,8 +2803,8 @@ DataDatabricksServingEndpointsEndpointsState.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsState.property.configUpdate">configUpdate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#config_update DataDatabricksServingEndpoints#config_update}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsState.property.ready">ready</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#ready DataDatabricksServingEndpoints#ready}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsState.property.configUpdate">configUpdate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#config_update DataDatabricksServingEndpoints#config_update}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsState.property.ready">ready</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#ready DataDatabricksServingEndpoints#ready}. |
 
 ---
 
@@ -2816,7 +2816,7 @@ public java.lang.String getConfigUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#config_update DataDatabricksServingEndpoints#config_update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#config_update DataDatabricksServingEndpoints#config_update}.
 
 ---
 
@@ -2828,7 +2828,7 @@ public java.lang.String getReady();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#ready DataDatabricksServingEndpoints#ready}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#ready DataDatabricksServingEndpoints#ready}.
 
 ---
 
@@ -2849,8 +2849,8 @@ DataDatabricksServingEndpointsEndpointsTags.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsTags.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#key DataDatabricksServingEndpoints#key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsTags.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#value DataDatabricksServingEndpoints#value}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsTags.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#key DataDatabricksServingEndpoints#key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksServingEndpoints.DataDatabricksServingEndpointsEndpointsTags.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#value DataDatabricksServingEndpoints#value}. |
 
 ---
 
@@ -2862,7 +2862,7 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#key DataDatabricksServingEndpoints#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#key DataDatabricksServingEndpoints#key}.
 
 ---
 
@@ -2874,7 +2874,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.85.0/docs/data-sources/serving_endpoints#value DataDatabricksServingEndpoints#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/data-sources/serving_endpoints#value DataDatabricksServingEndpoints#value}.
 
 ---
 
