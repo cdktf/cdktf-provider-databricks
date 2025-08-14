@@ -1,3 +1,3 @@
 # `databricks_service_principal`
 
-Refer to the Terraform Registry for docs: [`databricks_service_principal`](https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/service_principal).
+Refer to the Terraform Registry for docs: [`databricks_service_principal`](https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/service_principal).
