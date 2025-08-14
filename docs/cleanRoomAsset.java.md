@@ -4,7 +4,7 @@
 
 ### CleanRoomAsset <a name="CleanRoomAsset" id="@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAsset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset databricks_clean_room_asset}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset databricks_clean_room_asset}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAsset.Initializer"></a>
 
@@ -48,17 +48,17 @@ CleanRoomAsset.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAsset.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAsset.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAsset.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAsset.Initializer.parameter.assetType">assetType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#asset_type CleanRoomAsset#asset_type}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAsset.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#name CleanRoomAsset#name}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAsset.Initializer.parameter.cleanRoomName">cleanRoomName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#clean_room_name CleanRoomAsset#clean_room_name}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAsset.Initializer.parameter.foreignTable">foreignTable</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTable">CleanRoomAssetForeignTable</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#foreign_table CleanRoomAsset#foreign_table}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAsset.Initializer.parameter.foreignTableLocalDetails">foreignTableLocalDetails</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableLocalDetails">CleanRoomAssetForeignTableLocalDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#foreign_table_local_details CleanRoomAsset#foreign_table_local_details}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAsset.Initializer.parameter.notebook">notebook</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetNotebook">CleanRoomAssetNotebook</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#notebook CleanRoomAsset#notebook}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAsset.Initializer.parameter.table">table</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTable">CleanRoomAssetTable</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#table CleanRoomAsset#table}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAsset.Initializer.parameter.tableLocalDetails">tableLocalDetails</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableLocalDetails">CleanRoomAssetTableLocalDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#table_local_details CleanRoomAsset#table_local_details}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAsset.Initializer.parameter.view">view</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetView">CleanRoomAssetView</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#view CleanRoomAsset#view}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAsset.Initializer.parameter.viewLocalDetails">viewLocalDetails</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewLocalDetails">CleanRoomAssetViewLocalDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#view_local_details CleanRoomAsset#view_local_details}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAsset.Initializer.parameter.volumeLocalDetails">volumeLocalDetails</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetVolumeLocalDetails">CleanRoomAssetVolumeLocalDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#volume_local_details CleanRoomAsset#volume_local_details}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAsset.Initializer.parameter.assetType">assetType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#asset_type CleanRoomAsset#asset_type}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAsset.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#name CleanRoomAsset#name}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAsset.Initializer.parameter.cleanRoomName">cleanRoomName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#clean_room_name CleanRoomAsset#clean_room_name}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAsset.Initializer.parameter.foreignTable">foreignTable</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTable">CleanRoomAssetForeignTable</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#foreign_table CleanRoomAsset#foreign_table}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAsset.Initializer.parameter.foreignTableLocalDetails">foreignTableLocalDetails</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableLocalDetails">CleanRoomAssetForeignTableLocalDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#foreign_table_local_details CleanRoomAsset#foreign_table_local_details}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAsset.Initializer.parameter.notebook">notebook</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetNotebook">CleanRoomAssetNotebook</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#notebook CleanRoomAsset#notebook}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAsset.Initializer.parameter.table">table</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTable">CleanRoomAssetTable</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#table CleanRoomAsset#table}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAsset.Initializer.parameter.tableLocalDetails">tableLocalDetails</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableLocalDetails">CleanRoomAssetTableLocalDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#table_local_details CleanRoomAsset#table_local_details}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAsset.Initializer.parameter.view">view</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetView">CleanRoomAssetView</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#view CleanRoomAsset#view}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAsset.Initializer.parameter.viewLocalDetails">viewLocalDetails</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewLocalDetails">CleanRoomAssetViewLocalDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#view_local_details CleanRoomAsset#view_local_details}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAsset.Initializer.parameter.volumeLocalDetails">volumeLocalDetails</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetVolumeLocalDetails">CleanRoomAssetVolumeLocalDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#volume_local_details CleanRoomAsset#volume_local_details}. |
 
 ---
 
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#asset_type CleanRoomAsset#asset_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#asset_type CleanRoomAsset#asset_type}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#name CleanRoomAsset#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#name CleanRoomAsset#name}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#clean_room_name CleanRoomAsset#clean_room_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#clean_room_name CleanRoomAsset#clean_room_name}.
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTable">CleanRoomAssetForeignTable</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#foreign_table CleanRoomAsset#foreign_table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#foreign_table CleanRoomAsset#foreign_table}.
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableLocalDetails">CleanRoomAssetForeignTableLocalDetails</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#foreign_table_local_details CleanRoomAsset#foreign_table_local_details}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#foreign_table_local_details CleanRoomAsset#foreign_table_local_details}.
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetNotebook">CleanRoomAssetNotebook</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#notebook CleanRoomAsset#notebook}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#notebook CleanRoomAsset#notebook}.
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTable">CleanRoomAssetTable</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#table CleanRoomAsset#table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#table CleanRoomAsset#table}.
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableLocalDetails">CleanRoomAssetTableLocalDetails</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#table_local_details CleanRoomAsset#table_local_details}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#table_local_details CleanRoomAsset#table_local_details}.
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetView">CleanRoomAssetView</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#view CleanRoomAsset#view}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#view CleanRoomAsset#view}.
 
 ---
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewLocalDetails">CleanRoomAssetViewLocalDetails</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#view_local_details CleanRoomAsset#view_local_details}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#view_local_details CleanRoomAsset#view_local_details}.
 
 ---
 
@@ -206,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetVolumeLocalDetails">CleanRoomAssetVolumeLocalDetails</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#volume_local_details CleanRoomAsset#volume_local_details}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#volume_local_details CleanRoomAsset#volume_local_details}.
 
 ---
 
@@ -800,7 +800,7 @@ The construct id used in the generated config for the CleanRoomAsset to import.
 
 The id of the existing CleanRoomAsset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1314,17 +1314,17 @@ CleanRoomAssetConfig.builder()
 | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetConfig.property.assetType">assetType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#asset_type CleanRoomAsset#asset_type}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#name CleanRoomAsset#name}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetConfig.property.cleanRoomName">cleanRoomName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#clean_room_name CleanRoomAsset#clean_room_name}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetConfig.property.foreignTable">foreignTable</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTable">CleanRoomAssetForeignTable</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#foreign_table CleanRoomAsset#foreign_table}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetConfig.property.foreignTableLocalDetails">foreignTableLocalDetails</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableLocalDetails">CleanRoomAssetForeignTableLocalDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#foreign_table_local_details CleanRoomAsset#foreign_table_local_details}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetConfig.property.notebook">notebook</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetNotebook">CleanRoomAssetNotebook</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#notebook CleanRoomAsset#notebook}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetConfig.property.table">table</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTable">CleanRoomAssetTable</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#table CleanRoomAsset#table}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetConfig.property.tableLocalDetails">tableLocalDetails</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableLocalDetails">CleanRoomAssetTableLocalDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#table_local_details CleanRoomAsset#table_local_details}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetConfig.property.view">view</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetView">CleanRoomAssetView</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#view CleanRoomAsset#view}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetConfig.property.viewLocalDetails">viewLocalDetails</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewLocalDetails">CleanRoomAssetViewLocalDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#view_local_details CleanRoomAsset#view_local_details}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetConfig.property.volumeLocalDetails">volumeLocalDetails</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetVolumeLocalDetails">CleanRoomAssetVolumeLocalDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#volume_local_details CleanRoomAsset#volume_local_details}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetConfig.property.assetType">assetType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#asset_type CleanRoomAsset#asset_type}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#name CleanRoomAsset#name}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetConfig.property.cleanRoomName">cleanRoomName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#clean_room_name CleanRoomAsset#clean_room_name}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetConfig.property.foreignTable">foreignTable</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTable">CleanRoomAssetForeignTable</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#foreign_table CleanRoomAsset#foreign_table}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetConfig.property.foreignTableLocalDetails">foreignTableLocalDetails</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableLocalDetails">CleanRoomAssetForeignTableLocalDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#foreign_table_local_details CleanRoomAsset#foreign_table_local_details}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetConfig.property.notebook">notebook</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetNotebook">CleanRoomAssetNotebook</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#notebook CleanRoomAsset#notebook}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetConfig.property.table">table</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTable">CleanRoomAssetTable</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#table CleanRoomAsset#table}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetConfig.property.tableLocalDetails">tableLocalDetails</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableLocalDetails">CleanRoomAssetTableLocalDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#table_local_details CleanRoomAsset#table_local_details}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetConfig.property.view">view</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetView">CleanRoomAssetView</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#view CleanRoomAsset#view}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetConfig.property.viewLocalDetails">viewLocalDetails</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewLocalDetails">CleanRoomAssetViewLocalDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#view_local_details CleanRoomAsset#view_local_details}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetConfig.property.volumeLocalDetails">volumeLocalDetails</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetVolumeLocalDetails">CleanRoomAssetVolumeLocalDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#volume_local_details CleanRoomAsset#volume_local_details}. |
 
 ---
 
@@ -1406,7 +1406,7 @@ public java.lang.String getAssetType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#asset_type CleanRoomAsset#asset_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#asset_type CleanRoomAsset#asset_type}.
 
 ---
 
@@ -1418,7 +1418,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#name CleanRoomAsset#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#name CleanRoomAsset#name}.
 
 ---
 
@@ -1430,7 +1430,7 @@ public java.lang.String getCleanRoomName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#clean_room_name CleanRoomAsset#clean_room_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#clean_room_name CleanRoomAsset#clean_room_name}.
 
 ---
 
@@ -1442,7 +1442,7 @@ public CleanRoomAssetForeignTable getForeignTable();
 
 - *Type:* <a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTable">CleanRoomAssetForeignTable</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#foreign_table CleanRoomAsset#foreign_table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#foreign_table CleanRoomAsset#foreign_table}.
 
 ---
 
@@ -1454,7 +1454,7 @@ public CleanRoomAssetForeignTableLocalDetails getForeignTableLocalDetails();
 
 - *Type:* <a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableLocalDetails">CleanRoomAssetForeignTableLocalDetails</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#foreign_table_local_details CleanRoomAsset#foreign_table_local_details}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#foreign_table_local_details CleanRoomAsset#foreign_table_local_details}.
 
 ---
 
@@ -1466,7 +1466,7 @@ public CleanRoomAssetNotebook getNotebook();
 
 - *Type:* <a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetNotebook">CleanRoomAssetNotebook</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#notebook CleanRoomAsset#notebook}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#notebook CleanRoomAsset#notebook}.
 
 ---
 
@@ -1478,7 +1478,7 @@ public CleanRoomAssetTable getTable();
 
 - *Type:* <a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTable">CleanRoomAssetTable</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#table CleanRoomAsset#table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#table CleanRoomAsset#table}.
 
 ---
 
@@ -1490,7 +1490,7 @@ public CleanRoomAssetTableLocalDetails getTableLocalDetails();
 
 - *Type:* <a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableLocalDetails">CleanRoomAssetTableLocalDetails</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#table_local_details CleanRoomAsset#table_local_details}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#table_local_details CleanRoomAsset#table_local_details}.
 
 ---
 
@@ -1502,7 +1502,7 @@ public CleanRoomAssetView getView();
 
 - *Type:* <a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetView">CleanRoomAssetView</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#view CleanRoomAsset#view}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#view CleanRoomAsset#view}.
 
 ---
 
@@ -1514,7 +1514,7 @@ public CleanRoomAssetViewLocalDetails getViewLocalDetails();
 
 - *Type:* <a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewLocalDetails">CleanRoomAssetViewLocalDetails</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#view_local_details CleanRoomAsset#view_local_details}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#view_local_details CleanRoomAsset#view_local_details}.
 
 ---
 
@@ -1526,7 +1526,7 @@ public CleanRoomAssetVolumeLocalDetails getVolumeLocalDetails();
 
 - *Type:* <a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetVolumeLocalDetails">CleanRoomAssetVolumeLocalDetails</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#volume_local_details CleanRoomAsset#volume_local_details}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#volume_local_details CleanRoomAsset#volume_local_details}.
 
 ---
 
@@ -1570,18 +1570,18 @@ CleanRoomAssetForeignTableColumns.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumns.property.comment">comment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#comment CleanRoomAsset#comment}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumns.property.mask">mask</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumnsMask">CleanRoomAssetForeignTableColumnsMask</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#mask CleanRoomAsset#mask}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumns.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#name CleanRoomAsset#name}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumns.property.nullable">nullable</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#nullable CleanRoomAsset#nullable}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumns.property.partitionIndex">partitionIndex</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#partition_index CleanRoomAsset#partition_index}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumns.property.position">position</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#position CleanRoomAsset#position}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumns.property.typeIntervalType">typeIntervalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_interval_type CleanRoomAsset#type_interval_type}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumns.property.typeJson">typeJson</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_json CleanRoomAsset#type_json}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumns.property.typeName">typeName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_name CleanRoomAsset#type_name}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumns.property.typePrecision">typePrecision</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_precision CleanRoomAsset#type_precision}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumns.property.typeScale">typeScale</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_scale CleanRoomAsset#type_scale}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumns.property.typeText">typeText</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_text CleanRoomAsset#type_text}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumns.property.comment">comment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#comment CleanRoomAsset#comment}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumns.property.mask">mask</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumnsMask">CleanRoomAssetForeignTableColumnsMask</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#mask CleanRoomAsset#mask}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumns.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#name CleanRoomAsset#name}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumns.property.nullable">nullable</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#nullable CleanRoomAsset#nullable}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumns.property.partitionIndex">partitionIndex</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#partition_index CleanRoomAsset#partition_index}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumns.property.position">position</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#position CleanRoomAsset#position}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumns.property.typeIntervalType">typeIntervalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_interval_type CleanRoomAsset#type_interval_type}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumns.property.typeJson">typeJson</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_json CleanRoomAsset#type_json}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumns.property.typeName">typeName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_name CleanRoomAsset#type_name}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumns.property.typePrecision">typePrecision</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_precision CleanRoomAsset#type_precision}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumns.property.typeScale">typeScale</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_scale CleanRoomAsset#type_scale}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumns.property.typeText">typeText</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_text CleanRoomAsset#type_text}. |
 
 ---
 
@@ -1593,7 +1593,7 @@ public java.lang.String getComment();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#comment CleanRoomAsset#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#comment CleanRoomAsset#comment}.
 
 ---
 
@@ -1605,7 +1605,7 @@ public CleanRoomAssetForeignTableColumnsMask getMask();
 
 - *Type:* <a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumnsMask">CleanRoomAssetForeignTableColumnsMask</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#mask CleanRoomAsset#mask}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#mask CleanRoomAsset#mask}.
 
 ---
 
@@ -1617,7 +1617,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#name CleanRoomAsset#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#name CleanRoomAsset#name}.
 
 ---
 
@@ -1629,7 +1629,7 @@ public java.lang.Object getNullable();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#nullable CleanRoomAsset#nullable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#nullable CleanRoomAsset#nullable}.
 
 ---
 
@@ -1641,7 +1641,7 @@ public java.lang.Number getPartitionIndex();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#partition_index CleanRoomAsset#partition_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#partition_index CleanRoomAsset#partition_index}.
 
 ---
 
@@ -1653,7 +1653,7 @@ public java.lang.Number getPosition();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#position CleanRoomAsset#position}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#position CleanRoomAsset#position}.
 
 ---
 
@@ -1665,7 +1665,7 @@ public java.lang.String getTypeIntervalType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_interval_type CleanRoomAsset#type_interval_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_interval_type CleanRoomAsset#type_interval_type}.
 
 ---
 
@@ -1677,7 +1677,7 @@ public java.lang.String getTypeJson();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_json CleanRoomAsset#type_json}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_json CleanRoomAsset#type_json}.
 
 ---
 
@@ -1689,7 +1689,7 @@ public java.lang.String getTypeName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_name CleanRoomAsset#type_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_name CleanRoomAsset#type_name}.
 
 ---
 
@@ -1701,7 +1701,7 @@ public java.lang.Number getTypePrecision();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_precision CleanRoomAsset#type_precision}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_precision CleanRoomAsset#type_precision}.
 
 ---
 
@@ -1713,7 +1713,7 @@ public java.lang.Number getTypeScale();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_scale CleanRoomAsset#type_scale}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_scale CleanRoomAsset#type_scale}.
 
 ---
 
@@ -1725,7 +1725,7 @@ public java.lang.String getTypeText();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_text CleanRoomAsset#type_text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_text CleanRoomAsset#type_text}.
 
 ---
 
@@ -1746,8 +1746,8 @@ CleanRoomAssetForeignTableColumnsMask.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumnsMask.property.functionName">functionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#function_name CleanRoomAsset#function_name}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumnsMask.property.usingColumnNames">usingColumnNames</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#using_column_names CleanRoomAsset#using_column_names}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumnsMask.property.functionName">functionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#function_name CleanRoomAsset#function_name}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableColumnsMask.property.usingColumnNames">usingColumnNames</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#using_column_names CleanRoomAsset#using_column_names}. |
 
 ---
 
@@ -1759,7 +1759,7 @@ public java.lang.String getFunctionName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#function_name CleanRoomAsset#function_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#function_name CleanRoomAsset#function_name}.
 
 ---
 
@@ -1771,7 +1771,7 @@ public java.util.List<java.lang.String> getUsingColumnNames();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#using_column_names CleanRoomAsset#using_column_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#using_column_names CleanRoomAsset#using_column_names}.
 
 ---
 
@@ -1791,7 +1791,7 @@ CleanRoomAssetForeignTableLocalDetails.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableLocalDetails.property.localName">localName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#local_name CleanRoomAsset#local_name}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetForeignTableLocalDetails.property.localName">localName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#local_name CleanRoomAsset#local_name}. |
 
 ---
 
@@ -1803,7 +1803,7 @@ public java.lang.String getLocalName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#local_name CleanRoomAsset#local_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#local_name CleanRoomAsset#local_name}.
 
 ---
 
@@ -1824,8 +1824,8 @@ CleanRoomAssetNotebook.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetNotebook.property.notebookContent">notebookContent</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#notebook_content CleanRoomAsset#notebook_content}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetNotebook.property.runnerCollaboratorAliases">runnerCollaboratorAliases</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#runner_collaborator_aliases CleanRoomAsset#runner_collaborator_aliases}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetNotebook.property.notebookContent">notebookContent</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#notebook_content CleanRoomAsset#notebook_content}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetNotebook.property.runnerCollaboratorAliases">runnerCollaboratorAliases</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#runner_collaborator_aliases CleanRoomAsset#runner_collaborator_aliases}. |
 
 ---
 
@@ -1837,7 +1837,7 @@ public java.lang.String getNotebookContent();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#notebook_content CleanRoomAsset#notebook_content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#notebook_content CleanRoomAsset#notebook_content}.
 
 ---
 
@@ -1849,7 +1849,7 @@ public java.util.List<java.lang.String> getRunnerCollaboratorAliases();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#runner_collaborator_aliases CleanRoomAsset#runner_collaborator_aliases}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#runner_collaborator_aliases CleanRoomAsset#runner_collaborator_aliases}.
 
 ---
 
@@ -1873,11 +1873,11 @@ CleanRoomAssetNotebookReviews.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetNotebookReviews.property.comment">comment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#comment CleanRoomAsset#comment}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetNotebookReviews.property.createdAtMillis">createdAtMillis</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#created_at_millis CleanRoomAsset#created_at_millis}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetNotebookReviews.property.reviewerCollaboratorAlias">reviewerCollaboratorAlias</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#reviewer_collaborator_alias CleanRoomAsset#reviewer_collaborator_alias}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetNotebookReviews.property.reviewState">reviewState</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#review_state CleanRoomAsset#review_state}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetNotebookReviews.property.reviewSubReason">reviewSubReason</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#review_sub_reason CleanRoomAsset#review_sub_reason}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetNotebookReviews.property.comment">comment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#comment CleanRoomAsset#comment}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetNotebookReviews.property.createdAtMillis">createdAtMillis</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#created_at_millis CleanRoomAsset#created_at_millis}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetNotebookReviews.property.reviewerCollaboratorAlias">reviewerCollaboratorAlias</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#reviewer_collaborator_alias CleanRoomAsset#reviewer_collaborator_alias}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetNotebookReviews.property.reviewState">reviewState</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#review_state CleanRoomAsset#review_state}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetNotebookReviews.property.reviewSubReason">reviewSubReason</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#review_sub_reason CleanRoomAsset#review_sub_reason}. |
 
 ---
 
@@ -1889,7 +1889,7 @@ public java.lang.String getComment();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#comment CleanRoomAsset#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#comment CleanRoomAsset#comment}.
 
 ---
 
@@ -1901,7 +1901,7 @@ public java.lang.Number getCreatedAtMillis();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#created_at_millis CleanRoomAsset#created_at_millis}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#created_at_millis CleanRoomAsset#created_at_millis}.
 
 ---
 
@@ -1913,7 +1913,7 @@ public java.lang.String getReviewerCollaboratorAlias();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#reviewer_collaborator_alias CleanRoomAsset#reviewer_collaborator_alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#reviewer_collaborator_alias CleanRoomAsset#reviewer_collaborator_alias}.
 
 ---
 
@@ -1925,7 +1925,7 @@ public java.lang.String getReviewState();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#review_state CleanRoomAsset#review_state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#review_state CleanRoomAsset#review_state}.
 
 ---
 
@@ -1937,7 +1937,7 @@ public java.lang.String getReviewSubReason();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#review_sub_reason CleanRoomAsset#review_sub_reason}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#review_sub_reason CleanRoomAsset#review_sub_reason}.
 
 ---
 
@@ -1981,18 +1981,18 @@ CleanRoomAssetTableColumns.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumns.property.comment">comment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#comment CleanRoomAsset#comment}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumns.property.mask">mask</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumnsMask">CleanRoomAssetTableColumnsMask</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#mask CleanRoomAsset#mask}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumns.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#name CleanRoomAsset#name}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumns.property.nullable">nullable</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#nullable CleanRoomAsset#nullable}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumns.property.partitionIndex">partitionIndex</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#partition_index CleanRoomAsset#partition_index}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumns.property.position">position</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#position CleanRoomAsset#position}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumns.property.typeIntervalType">typeIntervalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_interval_type CleanRoomAsset#type_interval_type}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumns.property.typeJson">typeJson</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_json CleanRoomAsset#type_json}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumns.property.typeName">typeName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_name CleanRoomAsset#type_name}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumns.property.typePrecision">typePrecision</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_precision CleanRoomAsset#type_precision}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumns.property.typeScale">typeScale</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_scale CleanRoomAsset#type_scale}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumns.property.typeText">typeText</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_text CleanRoomAsset#type_text}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumns.property.comment">comment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#comment CleanRoomAsset#comment}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumns.property.mask">mask</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumnsMask">CleanRoomAssetTableColumnsMask</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#mask CleanRoomAsset#mask}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumns.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#name CleanRoomAsset#name}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumns.property.nullable">nullable</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#nullable CleanRoomAsset#nullable}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumns.property.partitionIndex">partitionIndex</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#partition_index CleanRoomAsset#partition_index}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumns.property.position">position</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#position CleanRoomAsset#position}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumns.property.typeIntervalType">typeIntervalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_interval_type CleanRoomAsset#type_interval_type}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumns.property.typeJson">typeJson</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_json CleanRoomAsset#type_json}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumns.property.typeName">typeName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_name CleanRoomAsset#type_name}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumns.property.typePrecision">typePrecision</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_precision CleanRoomAsset#type_precision}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumns.property.typeScale">typeScale</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_scale CleanRoomAsset#type_scale}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumns.property.typeText">typeText</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_text CleanRoomAsset#type_text}. |
 
 ---
 
@@ -2004,7 +2004,7 @@ public java.lang.String getComment();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#comment CleanRoomAsset#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#comment CleanRoomAsset#comment}.
 
 ---
 
@@ -2016,7 +2016,7 @@ public CleanRoomAssetTableColumnsMask getMask();
 
 - *Type:* <a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumnsMask">CleanRoomAssetTableColumnsMask</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#mask CleanRoomAsset#mask}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#mask CleanRoomAsset#mask}.
 
 ---
 
@@ -2028,7 +2028,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#name CleanRoomAsset#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#name CleanRoomAsset#name}.
 
 ---
 
@@ -2040,7 +2040,7 @@ public java.lang.Object getNullable();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#nullable CleanRoomAsset#nullable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#nullable CleanRoomAsset#nullable}.
 
 ---
 
@@ -2052,7 +2052,7 @@ public java.lang.Number getPartitionIndex();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#partition_index CleanRoomAsset#partition_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#partition_index CleanRoomAsset#partition_index}.
 
 ---
 
@@ -2064,7 +2064,7 @@ public java.lang.Number getPosition();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#position CleanRoomAsset#position}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#position CleanRoomAsset#position}.
 
 ---
 
@@ -2076,7 +2076,7 @@ public java.lang.String getTypeIntervalType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_interval_type CleanRoomAsset#type_interval_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_interval_type CleanRoomAsset#type_interval_type}.
 
 ---
 
@@ -2088,7 +2088,7 @@ public java.lang.String getTypeJson();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_json CleanRoomAsset#type_json}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_json CleanRoomAsset#type_json}.
 
 ---
 
@@ -2100,7 +2100,7 @@ public java.lang.String getTypeName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_name CleanRoomAsset#type_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_name CleanRoomAsset#type_name}.
 
 ---
 
@@ -2112,7 +2112,7 @@ public java.lang.Number getTypePrecision();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_precision CleanRoomAsset#type_precision}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_precision CleanRoomAsset#type_precision}.
 
 ---
 
@@ -2124,7 +2124,7 @@ public java.lang.Number getTypeScale();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_scale CleanRoomAsset#type_scale}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_scale CleanRoomAsset#type_scale}.
 
 ---
 
@@ -2136,7 +2136,7 @@ public java.lang.String getTypeText();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_text CleanRoomAsset#type_text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_text CleanRoomAsset#type_text}.
 
 ---
 
@@ -2157,8 +2157,8 @@ CleanRoomAssetTableColumnsMask.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumnsMask.property.functionName">functionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#function_name CleanRoomAsset#function_name}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumnsMask.property.usingColumnNames">usingColumnNames</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#using_column_names CleanRoomAsset#using_column_names}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumnsMask.property.functionName">functionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#function_name CleanRoomAsset#function_name}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableColumnsMask.property.usingColumnNames">usingColumnNames</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#using_column_names CleanRoomAsset#using_column_names}. |
 
 ---
 
@@ -2170,7 +2170,7 @@ public java.lang.String getFunctionName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#function_name CleanRoomAsset#function_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#function_name CleanRoomAsset#function_name}.
 
 ---
 
@@ -2182,7 +2182,7 @@ public java.util.List<java.lang.String> getUsingColumnNames();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#using_column_names CleanRoomAsset#using_column_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#using_column_names CleanRoomAsset#using_column_names}.
 
 ---
 
@@ -2204,8 +2204,8 @@ CleanRoomAssetTableLocalDetails.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableLocalDetails.property.localName">localName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#local_name CleanRoomAsset#local_name}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableLocalDetails.property.partitions">partitions</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableLocalDetailsPartitions">CleanRoomAssetTableLocalDetailsPartitions</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#partitions CleanRoomAsset#partitions}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableLocalDetails.property.localName">localName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#local_name CleanRoomAsset#local_name}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableLocalDetails.property.partitions">partitions</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableLocalDetailsPartitions">CleanRoomAssetTableLocalDetailsPartitions</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#partitions CleanRoomAsset#partitions}. |
 
 ---
 
@@ -2217,7 +2217,7 @@ public java.lang.String getLocalName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#local_name CleanRoomAsset#local_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#local_name CleanRoomAsset#local_name}.
 
 ---
 
@@ -2229,7 +2229,7 @@ public java.lang.Object getPartitions();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableLocalDetailsPartitions">CleanRoomAssetTableLocalDetailsPartitions</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#partitions CleanRoomAsset#partitions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#partitions CleanRoomAsset#partitions}.
 
 ---
 
@@ -2250,7 +2250,7 @@ CleanRoomAssetTableLocalDetailsPartitions.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableLocalDetailsPartitions.property.value">value</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableLocalDetailsPartitionsValue">CleanRoomAssetTableLocalDetailsPartitionsValue</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#value CleanRoomAsset#value}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableLocalDetailsPartitions.property.value">value</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableLocalDetailsPartitionsValue">CleanRoomAssetTableLocalDetailsPartitionsValue</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#value CleanRoomAsset#value}. |
 
 ---
 
@@ -2262,7 +2262,7 @@ public java.lang.Object getValue();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableLocalDetailsPartitionsValue">CleanRoomAssetTableLocalDetailsPartitionsValue</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#value CleanRoomAsset#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#value CleanRoomAsset#value}.
 
 ---
 
@@ -2285,10 +2285,10 @@ CleanRoomAssetTableLocalDetailsPartitionsValue.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableLocalDetailsPartitionsValue.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#name CleanRoomAsset#name}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableLocalDetailsPartitionsValue.property.op">op</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#op CleanRoomAsset#op}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableLocalDetailsPartitionsValue.property.recipientPropertyKey">recipientPropertyKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#recipient_property_key CleanRoomAsset#recipient_property_key}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableLocalDetailsPartitionsValue.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#value CleanRoomAsset#value}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableLocalDetailsPartitionsValue.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#name CleanRoomAsset#name}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableLocalDetailsPartitionsValue.property.op">op</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#op CleanRoomAsset#op}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableLocalDetailsPartitionsValue.property.recipientPropertyKey">recipientPropertyKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#recipient_property_key CleanRoomAsset#recipient_property_key}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetTableLocalDetailsPartitionsValue.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#value CleanRoomAsset#value}. |
 
 ---
 
@@ -2300,7 +2300,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#name CleanRoomAsset#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#name CleanRoomAsset#name}.
 
 ---
 
@@ -2312,7 +2312,7 @@ public java.lang.String getOp();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#op CleanRoomAsset#op}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#op CleanRoomAsset#op}.
 
 ---
 
@@ -2324,7 +2324,7 @@ public java.lang.String getRecipientPropertyKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#recipient_property_key CleanRoomAsset#recipient_property_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#recipient_property_key CleanRoomAsset#recipient_property_key}.
 
 ---
 
@@ -2336,7 +2336,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#value CleanRoomAsset#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#value CleanRoomAsset#value}.
 
 ---
 
@@ -2380,18 +2380,18 @@ CleanRoomAssetViewColumns.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumns.property.comment">comment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#comment CleanRoomAsset#comment}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumns.property.mask">mask</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumnsMask">CleanRoomAssetViewColumnsMask</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#mask CleanRoomAsset#mask}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumns.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#name CleanRoomAsset#name}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumns.property.nullable">nullable</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#nullable CleanRoomAsset#nullable}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumns.property.partitionIndex">partitionIndex</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#partition_index CleanRoomAsset#partition_index}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumns.property.position">position</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#position CleanRoomAsset#position}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumns.property.typeIntervalType">typeIntervalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_interval_type CleanRoomAsset#type_interval_type}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumns.property.typeJson">typeJson</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_json CleanRoomAsset#type_json}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumns.property.typeName">typeName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_name CleanRoomAsset#type_name}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumns.property.typePrecision">typePrecision</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_precision CleanRoomAsset#type_precision}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumns.property.typeScale">typeScale</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_scale CleanRoomAsset#type_scale}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumns.property.typeText">typeText</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_text CleanRoomAsset#type_text}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumns.property.comment">comment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#comment CleanRoomAsset#comment}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumns.property.mask">mask</a></code> | <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumnsMask">CleanRoomAssetViewColumnsMask</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#mask CleanRoomAsset#mask}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumns.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#name CleanRoomAsset#name}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumns.property.nullable">nullable</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#nullable CleanRoomAsset#nullable}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumns.property.partitionIndex">partitionIndex</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#partition_index CleanRoomAsset#partition_index}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumns.property.position">position</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#position CleanRoomAsset#position}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumns.property.typeIntervalType">typeIntervalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_interval_type CleanRoomAsset#type_interval_type}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumns.property.typeJson">typeJson</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_json CleanRoomAsset#type_json}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumns.property.typeName">typeName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_name CleanRoomAsset#type_name}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumns.property.typePrecision">typePrecision</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_precision CleanRoomAsset#type_precision}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumns.property.typeScale">typeScale</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_scale CleanRoomAsset#type_scale}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumns.property.typeText">typeText</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_text CleanRoomAsset#type_text}. |
 
 ---
 
@@ -2403,7 +2403,7 @@ public java.lang.String getComment();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#comment CleanRoomAsset#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#comment CleanRoomAsset#comment}.
 
 ---
 
@@ -2415,7 +2415,7 @@ public CleanRoomAssetViewColumnsMask getMask();
 
 - *Type:* <a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumnsMask">CleanRoomAssetViewColumnsMask</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#mask CleanRoomAsset#mask}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#mask CleanRoomAsset#mask}.
 
 ---
 
@@ -2427,7 +2427,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#name CleanRoomAsset#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#name CleanRoomAsset#name}.
 
 ---
 
@@ -2439,7 +2439,7 @@ public java.lang.Object getNullable();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#nullable CleanRoomAsset#nullable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#nullable CleanRoomAsset#nullable}.
 
 ---
 
@@ -2451,7 +2451,7 @@ public java.lang.Number getPartitionIndex();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#partition_index CleanRoomAsset#partition_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#partition_index CleanRoomAsset#partition_index}.
 
 ---
 
@@ -2463,7 +2463,7 @@ public java.lang.Number getPosition();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#position CleanRoomAsset#position}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#position CleanRoomAsset#position}.
 
 ---
 
@@ -2475,7 +2475,7 @@ public java.lang.String getTypeIntervalType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_interval_type CleanRoomAsset#type_interval_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_interval_type CleanRoomAsset#type_interval_type}.
 
 ---
 
@@ -2487,7 +2487,7 @@ public java.lang.String getTypeJson();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_json CleanRoomAsset#type_json}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_json CleanRoomAsset#type_json}.
 
 ---
 
@@ -2499,7 +2499,7 @@ public java.lang.String getTypeName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_name CleanRoomAsset#type_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_name CleanRoomAsset#type_name}.
 
 ---
 
@@ -2511,7 +2511,7 @@ public java.lang.Number getTypePrecision();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_precision CleanRoomAsset#type_precision}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_precision CleanRoomAsset#type_precision}.
 
 ---
 
@@ -2523,7 +2523,7 @@ public java.lang.Number getTypeScale();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_scale CleanRoomAsset#type_scale}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_scale CleanRoomAsset#type_scale}.
 
 ---
 
@@ -2535,7 +2535,7 @@ public java.lang.String getTypeText();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_text CleanRoomAsset#type_text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_text CleanRoomAsset#type_text}.
 
 ---
 
@@ -2556,8 +2556,8 @@ CleanRoomAssetViewColumnsMask.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumnsMask.property.functionName">functionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#function_name CleanRoomAsset#function_name}. |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumnsMask.property.usingColumnNames">usingColumnNames</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#using_column_names CleanRoomAsset#using_column_names}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumnsMask.property.functionName">functionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#function_name CleanRoomAsset#function_name}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewColumnsMask.property.usingColumnNames">usingColumnNames</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#using_column_names CleanRoomAsset#using_column_names}. |
 
 ---
 
@@ -2569,7 +2569,7 @@ public java.lang.String getFunctionName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#function_name CleanRoomAsset#function_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#function_name CleanRoomAsset#function_name}.
 
 ---
 
@@ -2581,7 +2581,7 @@ public java.util.List<java.lang.String> getUsingColumnNames();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#using_column_names CleanRoomAsset#using_column_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#using_column_names CleanRoomAsset#using_column_names}.
 
 ---
 
@@ -2601,7 +2601,7 @@ CleanRoomAssetViewLocalDetails.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewLocalDetails.property.localName">localName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#local_name CleanRoomAsset#local_name}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetViewLocalDetails.property.localName">localName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#local_name CleanRoomAsset#local_name}. |
 
 ---
 
@@ -2613,7 +2613,7 @@ public java.lang.String getLocalName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#local_name CleanRoomAsset#local_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#local_name CleanRoomAsset#local_name}.
 
 ---
 
@@ -2633,7 +2633,7 @@ CleanRoomAssetVolumeLocalDetails.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetVolumeLocalDetails.property.localName">localName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#local_name CleanRoomAsset#local_name}. |
+| <code><a href="#@cdktf/provider-databricks.cleanRoomAsset.CleanRoomAssetVolumeLocalDetails.property.localName">localName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#local_name CleanRoomAsset#local_name}. |
 
 ---
 
@@ -2645,7 +2645,7 @@ public java.lang.String getLocalName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#local_name CleanRoomAsset#local_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#local_name CleanRoomAsset#local_name}.
 
 ---
 

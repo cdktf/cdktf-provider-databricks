@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset
+// https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,57 +13,57 @@ import * as cdktf from 'cdktf';
 
 export interface CleanRoomAssetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#asset_type CleanRoomAsset#asset_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#asset_type CleanRoomAsset#asset_type}
   */
   readonly assetType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#clean_room_name CleanRoomAsset#clean_room_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#clean_room_name CleanRoomAsset#clean_room_name}
   */
   readonly cleanRoomName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#foreign_table CleanRoomAsset#foreign_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#foreign_table CleanRoomAsset#foreign_table}
   */
   readonly foreignTable?: CleanRoomAssetForeignTable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#foreign_table_local_details CleanRoomAsset#foreign_table_local_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#foreign_table_local_details CleanRoomAsset#foreign_table_local_details}
   */
   readonly foreignTableLocalDetails?: CleanRoomAssetForeignTableLocalDetails;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#name CleanRoomAsset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#name CleanRoomAsset#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#notebook CleanRoomAsset#notebook}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#notebook CleanRoomAsset#notebook}
   */
   readonly notebook?: CleanRoomAssetNotebook;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#table CleanRoomAsset#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#table CleanRoomAsset#table}
   */
   readonly table?: CleanRoomAssetTable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#table_local_details CleanRoomAsset#table_local_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#table_local_details CleanRoomAsset#table_local_details}
   */
   readonly tableLocalDetails?: CleanRoomAssetTableLocalDetails;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#view CleanRoomAsset#view}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#view CleanRoomAsset#view}
   */
   readonly view?: CleanRoomAssetView;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#view_local_details CleanRoomAsset#view_local_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#view_local_details CleanRoomAsset#view_local_details}
   */
   readonly viewLocalDetails?: CleanRoomAssetViewLocalDetails;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#volume_local_details CleanRoomAsset#volume_local_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#volume_local_details CleanRoomAsset#volume_local_details}
   */
   readonly volumeLocalDetails?: CleanRoomAssetVolumeLocalDetails;
 }
 export interface CleanRoomAssetForeignTableColumnsMask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#function_name CleanRoomAsset#function_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#function_name CleanRoomAsset#function_name}
   */
   readonly functionName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#using_column_names CleanRoomAsset#using_column_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#using_column_names CleanRoomAsset#using_column_names}
   */
   readonly usingColumnNames?: string[];
 }
@@ -186,51 +186,51 @@ export class CleanRoomAssetForeignTableColumnsMaskOutputReference extends cdktf.
 }
 export interface CleanRoomAssetForeignTableColumns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#comment CleanRoomAsset#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#comment CleanRoomAsset#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#mask CleanRoomAsset#mask}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#mask CleanRoomAsset#mask}
   */
   readonly mask?: CleanRoomAssetForeignTableColumnsMask;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#name CleanRoomAsset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#name CleanRoomAsset#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#nullable CleanRoomAsset#nullable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#nullable CleanRoomAsset#nullable}
   */
   readonly nullable?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#partition_index CleanRoomAsset#partition_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#partition_index CleanRoomAsset#partition_index}
   */
   readonly partitionIndex?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#position CleanRoomAsset#position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#position CleanRoomAsset#position}
   */
   readonly position?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_interval_type CleanRoomAsset#type_interval_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_interval_type CleanRoomAsset#type_interval_type}
   */
   readonly typeIntervalType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_json CleanRoomAsset#type_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_json CleanRoomAsset#type_json}
   */
   readonly typeJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_name CleanRoomAsset#type_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_name CleanRoomAsset#type_name}
   */
   readonly typeName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_precision CleanRoomAsset#type_precision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_precision CleanRoomAsset#type_precision}
   */
   readonly typePrecision?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_scale CleanRoomAsset#type_scale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_scale CleanRoomAsset#type_scale}
   */
   readonly typeScale?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_text CleanRoomAsset#type_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_text CleanRoomAsset#type_text}
   */
   readonly typeText?: string;
 }
@@ -720,7 +720,7 @@ export class CleanRoomAssetForeignTableOutputReference extends cdktf.ComplexObje
 }
 export interface CleanRoomAssetForeignTableLocalDetails {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#local_name CleanRoomAsset#local_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#local_name CleanRoomAsset#local_name}
   */
   readonly localName: string;
 }
@@ -811,23 +811,23 @@ export class CleanRoomAssetForeignTableLocalDetailsOutputReference extends cdktf
 }
 export interface CleanRoomAssetNotebookReviews {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#comment CleanRoomAsset#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#comment CleanRoomAsset#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#created_at_millis CleanRoomAsset#created_at_millis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#created_at_millis CleanRoomAsset#created_at_millis}
   */
   readonly createdAtMillis?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#review_state CleanRoomAsset#review_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#review_state CleanRoomAsset#review_state}
   */
   readonly reviewState?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#review_sub_reason CleanRoomAsset#review_sub_reason}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#review_sub_reason CleanRoomAsset#review_sub_reason}
   */
   readonly reviewSubReason?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#reviewer_collaborator_alias CleanRoomAsset#reviewer_collaborator_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#reviewer_collaborator_alias CleanRoomAsset#reviewer_collaborator_alias}
   */
   readonly reviewerCollaboratorAlias?: string;
 }
@@ -1049,11 +1049,11 @@ export class CleanRoomAssetNotebookReviewsList extends cdktf.ComplexList {
 }
 export interface CleanRoomAssetNotebook {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#notebook_content CleanRoomAsset#notebook_content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#notebook_content CleanRoomAsset#notebook_content}
   */
   readonly notebookContent: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#runner_collaborator_aliases CleanRoomAsset#runner_collaborator_aliases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#runner_collaborator_aliases CleanRoomAsset#runner_collaborator_aliases}
   */
   readonly runnerCollaboratorAliases?: string[];
 }
@@ -1189,11 +1189,11 @@ export class CleanRoomAssetNotebookOutputReference extends cdktf.ComplexObject {
 }
 export interface CleanRoomAssetTableColumnsMask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#function_name CleanRoomAsset#function_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#function_name CleanRoomAsset#function_name}
   */
   readonly functionName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#using_column_names CleanRoomAsset#using_column_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#using_column_names CleanRoomAsset#using_column_names}
   */
   readonly usingColumnNames?: string[];
 }
@@ -1316,51 +1316,51 @@ export class CleanRoomAssetTableColumnsMaskOutputReference extends cdktf.Complex
 }
 export interface CleanRoomAssetTableColumns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#comment CleanRoomAsset#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#comment CleanRoomAsset#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#mask CleanRoomAsset#mask}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#mask CleanRoomAsset#mask}
   */
   readonly mask?: CleanRoomAssetTableColumnsMask;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#name CleanRoomAsset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#name CleanRoomAsset#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#nullable CleanRoomAsset#nullable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#nullable CleanRoomAsset#nullable}
   */
   readonly nullable?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#partition_index CleanRoomAsset#partition_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#partition_index CleanRoomAsset#partition_index}
   */
   readonly partitionIndex?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#position CleanRoomAsset#position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#position CleanRoomAsset#position}
   */
   readonly position?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_interval_type CleanRoomAsset#type_interval_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_interval_type CleanRoomAsset#type_interval_type}
   */
   readonly typeIntervalType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_json CleanRoomAsset#type_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_json CleanRoomAsset#type_json}
   */
   readonly typeJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_name CleanRoomAsset#type_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_name CleanRoomAsset#type_name}
   */
   readonly typeName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_precision CleanRoomAsset#type_precision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_precision CleanRoomAsset#type_precision}
   */
   readonly typePrecision?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_scale CleanRoomAsset#type_scale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_scale CleanRoomAsset#type_scale}
   */
   readonly typeScale?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_text CleanRoomAsset#type_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_text CleanRoomAsset#type_text}
   */
   readonly typeText?: string;
 }
@@ -1850,19 +1850,19 @@ export class CleanRoomAssetTableOutputReference extends cdktf.ComplexObject {
 }
 export interface CleanRoomAssetTableLocalDetailsPartitionsValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#name CleanRoomAsset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#name CleanRoomAsset#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#op CleanRoomAsset#op}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#op CleanRoomAsset#op}
   */
   readonly op?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#recipient_property_key CleanRoomAsset#recipient_property_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#recipient_property_key CleanRoomAsset#recipient_property_key}
   */
   readonly recipientPropertyKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#value CleanRoomAsset#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#value CleanRoomAsset#value}
   */
   readonly value?: string;
 }
@@ -2065,7 +2065,7 @@ export class CleanRoomAssetTableLocalDetailsPartitionsValueList extends cdktf.Co
 }
 export interface CleanRoomAssetTableLocalDetailsPartitions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#value CleanRoomAsset#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#value CleanRoomAsset#value}
   */
   readonly value?: CleanRoomAssetTableLocalDetailsPartitionsValue[] | cdktf.IResolvable;
 }
@@ -2181,11 +2181,11 @@ export class CleanRoomAssetTableLocalDetailsPartitionsList extends cdktf.Complex
 }
 export interface CleanRoomAssetTableLocalDetails {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#local_name CleanRoomAsset#local_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#local_name CleanRoomAsset#local_name}
   */
   readonly localName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#partitions CleanRoomAsset#partitions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#partitions CleanRoomAsset#partitions}
   */
   readonly partitions?: CleanRoomAssetTableLocalDetailsPartitions[] | cdktf.IResolvable;
 }
@@ -2305,11 +2305,11 @@ export class CleanRoomAssetTableLocalDetailsOutputReference extends cdktf.Comple
 }
 export interface CleanRoomAssetViewColumnsMask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#function_name CleanRoomAsset#function_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#function_name CleanRoomAsset#function_name}
   */
   readonly functionName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#using_column_names CleanRoomAsset#using_column_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#using_column_names CleanRoomAsset#using_column_names}
   */
   readonly usingColumnNames?: string[];
 }
@@ -2432,51 +2432,51 @@ export class CleanRoomAssetViewColumnsMaskOutputReference extends cdktf.ComplexO
 }
 export interface CleanRoomAssetViewColumns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#comment CleanRoomAsset#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#comment CleanRoomAsset#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#mask CleanRoomAsset#mask}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#mask CleanRoomAsset#mask}
   */
   readonly mask?: CleanRoomAssetViewColumnsMask;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#name CleanRoomAsset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#name CleanRoomAsset#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#nullable CleanRoomAsset#nullable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#nullable CleanRoomAsset#nullable}
   */
   readonly nullable?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#partition_index CleanRoomAsset#partition_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#partition_index CleanRoomAsset#partition_index}
   */
   readonly partitionIndex?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#position CleanRoomAsset#position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#position CleanRoomAsset#position}
   */
   readonly position?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_interval_type CleanRoomAsset#type_interval_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_interval_type CleanRoomAsset#type_interval_type}
   */
   readonly typeIntervalType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_json CleanRoomAsset#type_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_json CleanRoomAsset#type_json}
   */
   readonly typeJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_name CleanRoomAsset#type_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_name CleanRoomAsset#type_name}
   */
   readonly typeName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_precision CleanRoomAsset#type_precision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_precision CleanRoomAsset#type_precision}
   */
   readonly typePrecision?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_scale CleanRoomAsset#type_scale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_scale CleanRoomAsset#type_scale}
   */
   readonly typeScale?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#type_text CleanRoomAsset#type_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#type_text CleanRoomAsset#type_text}
   */
   readonly typeText?: string;
 }
@@ -2966,7 +2966,7 @@ export class CleanRoomAssetViewOutputReference extends cdktf.ComplexObject {
 }
 export interface CleanRoomAssetViewLocalDetails {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#local_name CleanRoomAsset#local_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#local_name CleanRoomAsset#local_name}
   */
   readonly localName: string;
 }
@@ -3057,7 +3057,7 @@ export class CleanRoomAssetViewLocalDetailsOutputReference extends cdktf.Complex
 }
 export interface CleanRoomAssetVolumeLocalDetails {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#local_name CleanRoomAsset#local_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#local_name CleanRoomAsset#local_name}
   */
   readonly localName: string;
 }
@@ -3148,7 +3148,7 @@ export class CleanRoomAssetVolumeLocalDetailsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset databricks_clean_room_asset}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset databricks_clean_room_asset}
 */
 export class CleanRoomAsset extends cdktf.TerraformResource {
 
@@ -3164,7 +3164,7 @@ export class CleanRoomAsset extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CleanRoomAsset resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CleanRoomAsset to import
-  * @param importFromId The id of the existing CleanRoomAsset that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CleanRoomAsset that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CleanRoomAsset to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -3176,7 +3176,7 @@ export class CleanRoomAsset extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.86.0/docs/resources/clean_room_asset databricks_clean_room_asset} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_asset databricks_clean_room_asset} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3187,7 +3187,7 @@ export class CleanRoomAsset extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_clean_room_asset',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.86.0',
+        providerVersion: '1.87.1',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
