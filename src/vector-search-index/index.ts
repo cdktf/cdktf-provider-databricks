@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/vector_search_index
+// https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,44 +13,44 @@ import * as cdktf from 'cdktf';
 
 export interface VectorSearchIndexConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/vector_search_index#endpoint_name VectorSearchIndex#endpoint_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index#endpoint_name VectorSearchIndex#endpoint_name}
   */
   readonly endpointName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/vector_search_index#id VectorSearchIndex#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index#id VectorSearchIndex#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/vector_search_index#index_type VectorSearchIndex#index_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index#index_type VectorSearchIndex#index_type}
   */
   readonly indexType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/vector_search_index#name VectorSearchIndex#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index#name VectorSearchIndex#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/vector_search_index#primary_key VectorSearchIndex#primary_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index#primary_key VectorSearchIndex#primary_key}
   */
   readonly primaryKey: string;
   /**
   * delta_sync_index_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/vector_search_index#delta_sync_index_spec VectorSearchIndex#delta_sync_index_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index#delta_sync_index_spec VectorSearchIndex#delta_sync_index_spec}
   */
   readonly deltaSyncIndexSpec?: VectorSearchIndexDeltaSyncIndexSpec;
   /**
   * direct_access_index_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/vector_search_index#direct_access_index_spec VectorSearchIndex#direct_access_index_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index#direct_access_index_spec VectorSearchIndex#direct_access_index_spec}
   */
   readonly directAccessIndexSpec?: VectorSearchIndexDirectAccessIndexSpec;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/vector_search_index#timeouts VectorSearchIndex#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index#timeouts VectorSearchIndex#timeouts}
   */
   readonly timeouts?: VectorSearchIndexTimeouts;
 }
@@ -146,11 +146,15 @@ export class VectorSearchIndexStatusList extends cdktf.ComplexList {
 }
 export interface VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/vector_search_index#embedding_model_endpoint_name VectorSearchIndex#embedding_model_endpoint_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index#embedding_model_endpoint_name VectorSearchIndex#embedding_model_endpoint_name}
   */
   readonly embeddingModelEndpointName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/vector_search_index#name VectorSearchIndex#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index#model_endpoint_name_for_query VectorSearchIndex#model_endpoint_name_for_query}
+  */
+  readonly modelEndpointNameForQuery?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index#name VectorSearchIndex#name}
   */
   readonly name?: string;
 }
@@ -162,6 +166,7 @@ export function vectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsToTerra
   }
   return {
     embedding_model_endpoint_name: cdktf.stringToTerraform(struct!.embeddingModelEndpointName),
+    model_endpoint_name_for_query: cdktf.stringToTerraform(struct!.modelEndpointNameForQuery),
     name: cdktf.stringToTerraform(struct!.name),
   }
 }
@@ -175,6 +180,12 @@ export function vectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsToHclTe
   const attrs = {
     embedding_model_endpoint_name: {
       value: cdktf.stringToHclTerraform(struct!.embeddingModelEndpointName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    model_endpoint_name_for_query: {
+      value: cdktf.stringToHclTerraform(struct!.modelEndpointNameForQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -215,6 +226,10 @@ export class VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsOutputRefe
       hasAnyValues = true;
       internalValueResult.embeddingModelEndpointName = this._embeddingModelEndpointName;
     }
+    if (this._modelEndpointNameForQuery !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.modelEndpointNameForQuery = this._modelEndpointNameForQuery;
+    }
     if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
@@ -227,6 +242,7 @@ export class VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsOutputRefe
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._embeddingModelEndpointName = undefined;
+      this._modelEndpointNameForQuery = undefined;
       this._name = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -237,6 +253,7 @@ export class VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsOutputRefe
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._embeddingModelEndpointName = value.embeddingModelEndpointName;
+      this._modelEndpointNameForQuery = value.modelEndpointNameForQuery;
       this._name = value.name;
     }
   }
@@ -255,6 +272,22 @@ export class VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsOutputRefe
   // Temporarily expose input value. Use with caution.
   public get embeddingModelEndpointNameInput() {
     return this._embeddingModelEndpointName;
+  }
+
+  // model_endpoint_name_for_query - computed: false, optional: true, required: false
+  private _modelEndpointNameForQuery?: string; 
+  public get modelEndpointNameForQuery() {
+    return this.getStringAttribute('model_endpoint_name_for_query');
+  }
+  public set modelEndpointNameForQuery(value: string) {
+    this._modelEndpointNameForQuery = value;
+  }
+  public resetModelEndpointNameForQuery() {
+    this._modelEndpointNameForQuery = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modelEndpointNameForQueryInput() {
+    return this._modelEndpointNameForQuery;
   }
 
   // name - computed: false, optional: true, required: false
@@ -295,11 +328,11 @@ export class VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsList exten
 }
 export interface VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/vector_search_index#embedding_dimension VectorSearchIndex#embedding_dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index#embedding_dimension VectorSearchIndex#embedding_dimension}
   */
   readonly embeddingDimension?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/vector_search_index#name VectorSearchIndex#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index#name VectorSearchIndex#name}
   */
   readonly name?: string;
 }
@@ -444,27 +477,27 @@ export class VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsList exten
 }
 export interface VectorSearchIndexDeltaSyncIndexSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/vector_search_index#embedding_writeback_table VectorSearchIndex#embedding_writeback_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index#embedding_writeback_table VectorSearchIndex#embedding_writeback_table}
   */
   readonly embeddingWritebackTable?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/vector_search_index#pipeline_type VectorSearchIndex#pipeline_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index#pipeline_type VectorSearchIndex#pipeline_type}
   */
   readonly pipelineType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/vector_search_index#source_table VectorSearchIndex#source_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index#source_table VectorSearchIndex#source_table}
   */
   readonly sourceTable?: string;
   /**
   * embedding_source_columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/vector_search_index#embedding_source_columns VectorSearchIndex#embedding_source_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index#embedding_source_columns VectorSearchIndex#embedding_source_columns}
   */
   readonly embeddingSourceColumns?: VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns[] | cdktf.IResolvable;
   /**
   * embedding_vector_columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/vector_search_index#embedding_vector_columns VectorSearchIndex#embedding_vector_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index#embedding_vector_columns VectorSearchIndex#embedding_vector_columns}
   */
   readonly embeddingVectorColumns?: VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns[] | cdktf.IResolvable;
 }
@@ -669,11 +702,15 @@ export class VectorSearchIndexDeltaSyncIndexSpecOutputReference extends cdktf.Co
 }
 export interface VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/vector_search_index#embedding_model_endpoint_name VectorSearchIndex#embedding_model_endpoint_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index#embedding_model_endpoint_name VectorSearchIndex#embedding_model_endpoint_name}
   */
   readonly embeddingModelEndpointName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/vector_search_index#name VectorSearchIndex#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index#model_endpoint_name_for_query VectorSearchIndex#model_endpoint_name_for_query}
+  */
+  readonly modelEndpointNameForQuery?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index#name VectorSearchIndex#name}
   */
   readonly name?: string;
 }
@@ -685,6 +722,7 @@ export function vectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsToTe
   }
   return {
     embedding_model_endpoint_name: cdktf.stringToTerraform(struct!.embeddingModelEndpointName),
+    model_endpoint_name_for_query: cdktf.stringToTerraform(struct!.modelEndpointNameForQuery),
     name: cdktf.stringToTerraform(struct!.name),
   }
 }
@@ -698,6 +736,12 @@ export function vectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsToHc
   const attrs = {
     embedding_model_endpoint_name: {
       value: cdktf.stringToHclTerraform(struct!.embeddingModelEndpointName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    model_endpoint_name_for_query: {
+      value: cdktf.stringToHclTerraform(struct!.modelEndpointNameForQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -738,6 +782,10 @@ export class VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputR
       hasAnyValues = true;
       internalValueResult.embeddingModelEndpointName = this._embeddingModelEndpointName;
     }
+    if (this._modelEndpointNameForQuery !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.modelEndpointNameForQuery = this._modelEndpointNameForQuery;
+    }
     if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
@@ -750,6 +798,7 @@ export class VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputR
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._embeddingModelEndpointName = undefined;
+      this._modelEndpointNameForQuery = undefined;
       this._name = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -760,6 +809,7 @@ export class VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputR
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._embeddingModelEndpointName = value.embeddingModelEndpointName;
+      this._modelEndpointNameForQuery = value.modelEndpointNameForQuery;
       this._name = value.name;
     }
   }
@@ -778,6 +828,22 @@ export class VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputR
   // Temporarily expose input value. Use with caution.
   public get embeddingModelEndpointNameInput() {
     return this._embeddingModelEndpointName;
+  }
+
+  // model_endpoint_name_for_query - computed: false, optional: true, required: false
+  private _modelEndpointNameForQuery?: string; 
+  public get modelEndpointNameForQuery() {
+    return this.getStringAttribute('model_endpoint_name_for_query');
+  }
+  public set modelEndpointNameForQuery(value: string) {
+    this._modelEndpointNameForQuery = value;
+  }
+  public resetModelEndpointNameForQuery() {
+    this._modelEndpointNameForQuery = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modelEndpointNameForQueryInput() {
+    return this._modelEndpointNameForQuery;
   }
 
   // name - computed: false, optional: true, required: false
@@ -818,11 +884,11 @@ export class VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsList ex
 }
 export interface VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/vector_search_index#embedding_dimension VectorSearchIndex#embedding_dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index#embedding_dimension VectorSearchIndex#embedding_dimension}
   */
   readonly embeddingDimension?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/vector_search_index#name VectorSearchIndex#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index#name VectorSearchIndex#name}
   */
   readonly name?: string;
 }
@@ -967,19 +1033,19 @@ export class VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsList ex
 }
 export interface VectorSearchIndexDirectAccessIndexSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/vector_search_index#schema_json VectorSearchIndex#schema_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index#schema_json VectorSearchIndex#schema_json}
   */
   readonly schemaJson?: string;
   /**
   * embedding_source_columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/vector_search_index#embedding_source_columns VectorSearchIndex#embedding_source_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index#embedding_source_columns VectorSearchIndex#embedding_source_columns}
   */
   readonly embeddingSourceColumns?: VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns[] | cdktf.IResolvable;
   /**
   * embedding_vector_columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/vector_search_index#embedding_vector_columns VectorSearchIndex#embedding_vector_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index#embedding_vector_columns VectorSearchIndex#embedding_vector_columns}
   */
   readonly embeddingVectorColumns?: VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns[] | cdktf.IResolvable;
 }
@@ -1121,7 +1187,7 @@ export class VectorSearchIndexDirectAccessIndexSpecOutputReference extends cdktf
 }
 export interface VectorSearchIndexTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/vector_search_index#create VectorSearchIndex#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index#create VectorSearchIndex#create}
   */
   readonly create?: string;
 }
@@ -1215,7 +1281,7 @@ export class VectorSearchIndexTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/vector_search_index databricks_vector_search_index}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index databricks_vector_search_index}
 */
 export class VectorSearchIndex extends cdktf.TerraformResource {
 
@@ -1231,7 +1297,7 @@ export class VectorSearchIndex extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VectorSearchIndex resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VectorSearchIndex to import
-  * @param importFromId The id of the existing VectorSearchIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/vector_search_index#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VectorSearchIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VectorSearchIndex to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1243,7 +1309,7 @@ export class VectorSearchIndex extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/vector_search_index databricks_vector_search_index} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/vector_search_index databricks_vector_search_index} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1254,7 +1320,7 @@ export class VectorSearchIndex extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_vector_search_index',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.87.1',
+        providerVersion: '1.88.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

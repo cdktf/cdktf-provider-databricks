@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_auto_approval_rule
+// https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/clean_room_auto_approval_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,29 @@ import * as cdktf from 'cdktf';
 
 export interface CleanRoomAutoApprovalRuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_auto_approval_rule#author_collaborator_alias CleanRoomAutoApprovalRule#author_collaborator_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/clean_room_auto_approval_rule#author_collaborator_alias CleanRoomAutoApprovalRule#author_collaborator_alias}
   */
   readonly authorCollaboratorAlias?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_auto_approval_rule#author_scope CleanRoomAutoApprovalRule#author_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/clean_room_auto_approval_rule#author_scope CleanRoomAutoApprovalRule#author_scope}
   */
   readonly authorScope?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_auto_approval_rule#clean_room_name CleanRoomAutoApprovalRule#clean_room_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/clean_room_auto_approval_rule#clean_room_name CleanRoomAutoApprovalRule#clean_room_name}
   */
   readonly cleanRoomName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_auto_approval_rule#runner_collaborator_alias CleanRoomAutoApprovalRule#runner_collaborator_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/clean_room_auto_approval_rule#runner_collaborator_alias CleanRoomAutoApprovalRule#runner_collaborator_alias}
   */
   readonly runnerCollaboratorAlias?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/clean_room_auto_approval_rule#workspace_id CleanRoomAutoApprovalRule#workspace_id}
+  */
+  readonly workspaceId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_auto_approval_rule databricks_clean_room_auto_approval_rule}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/clean_room_auto_approval_rule databricks_clean_room_auto_approval_rule}
 */
 export class CleanRoomAutoApprovalRule extends cdktf.TerraformResource {
 
@@ -47,7 +51,7 @@ export class CleanRoomAutoApprovalRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CleanRoomAutoApprovalRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CleanRoomAutoApprovalRule to import
-  * @param importFromId The id of the existing CleanRoomAutoApprovalRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_auto_approval_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CleanRoomAutoApprovalRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/clean_room_auto_approval_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CleanRoomAutoApprovalRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -59,7 +63,7 @@ export class CleanRoomAutoApprovalRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/clean_room_auto_approval_rule databricks_clean_room_auto_approval_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/clean_room_auto_approval_rule databricks_clean_room_auto_approval_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +74,7 @@ export class CleanRoomAutoApprovalRule extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_clean_room_auto_approval_rule',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.87.1',
+        providerVersion: '1.88.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -85,6 +89,7 @@ export class CleanRoomAutoApprovalRule extends cdktf.TerraformResource {
     this._authorScope = config.authorScope;
     this._cleanRoomName = config.cleanRoomName;
     this._runnerCollaboratorAlias = config.runnerCollaboratorAlias;
+    this._workspaceId = config.workspaceId;
   }
 
   // ==========
@@ -170,6 +175,22 @@ export class CleanRoomAutoApprovalRule extends cdktf.TerraformResource {
     return this._runnerCollaboratorAlias;
   }
 
+  // workspace_id - computed: false, optional: true, required: false
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  public resetWorkspaceId() {
+    this._workspaceId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -180,6 +201,7 @@ export class CleanRoomAutoApprovalRule extends cdktf.TerraformResource {
       author_scope: cdktf.stringToTerraform(this._authorScope),
       clean_room_name: cdktf.stringToTerraform(this._cleanRoomName),
       runner_collaborator_alias: cdktf.stringToTerraform(this._runnerCollaboratorAlias),
+      workspace_id: cdktf.stringToTerraform(this._workspaceId),
     };
   }
 
@@ -205,6 +227,12 @@ export class CleanRoomAutoApprovalRule extends cdktf.TerraformResource {
       },
       runner_collaborator_alias: {
         value: cdktf.stringToHclTerraform(this._runnerCollaboratorAlias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      workspace_id: {
+        value: cdktf.stringToHclTerraform(this._workspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
