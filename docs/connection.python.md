@@ -4,7 +4,7 @@
 
 ### Connection <a name="Connection" id="@cdktf/provider-databricks.connection.Connection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection databricks_connection}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection databricks_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.connection.Connection.Initializer"></a>
 
@@ -23,7 +23,6 @@ connection.Connection(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   comment: str = None,
   connection_type: str = None,
-  environment_settings: ConnectionEnvironmentSettings = None,
   id: str = None,
   name: str = None,
   options: typing.Mapping[str] = None,
@@ -44,15 +43,14 @@ connection.Connection(
 | <code><a href="#@cdktf/provider-databricks.connection.Connection.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.connection.Connection.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.connection.Connection.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.connection.Connection.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#comment Connection#comment}. |
-| <code><a href="#@cdktf/provider-databricks.connection.Connection.Initializer.parameter.connectionType">connection_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#connection_type Connection#connection_type}. |
-| <code><a href="#@cdktf/provider-databricks.connection.Connection.Initializer.parameter.environmentSettings">environment_settings</a></code> | <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettings">ConnectionEnvironmentSettings</a></code> | environment_settings block. |
-| <code><a href="#@cdktf/provider-databricks.connection.Connection.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#id Connection#id}. |
-| <code><a href="#@cdktf/provider-databricks.connection.Connection.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#name Connection#name}. |
-| <code><a href="#@cdktf/provider-databricks.connection.Connection.Initializer.parameter.options">options</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#options Connection#options}. |
-| <code><a href="#@cdktf/provider-databricks.connection.Connection.Initializer.parameter.owner">owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#owner Connection#owner}. |
-| <code><a href="#@cdktf/provider-databricks.connection.Connection.Initializer.parameter.properties">properties</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#properties Connection#properties}. |
-| <code><a href="#@cdktf/provider-databricks.connection.Connection.Initializer.parameter.readOnly">read_only</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#read_only Connection#read_only}. |
+| <code><a href="#@cdktf/provider-databricks.connection.Connection.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#comment Connection#comment}. |
+| <code><a href="#@cdktf/provider-databricks.connection.Connection.Initializer.parameter.connectionType">connection_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#connection_type Connection#connection_type}. |
+| <code><a href="#@cdktf/provider-databricks.connection.Connection.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#id Connection#id}. |
+| <code><a href="#@cdktf/provider-databricks.connection.Connection.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#name Connection#name}. |
+| <code><a href="#@cdktf/provider-databricks.connection.Connection.Initializer.parameter.options">options</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#options Connection#options}. |
+| <code><a href="#@cdktf/provider-databricks.connection.Connection.Initializer.parameter.owner">owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#owner Connection#owner}. |
+| <code><a href="#@cdktf/provider-databricks.connection.Connection.Initializer.parameter.properties">properties</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#properties Connection#properties}. |
+| <code><a href="#@cdktf/provider-databricks.connection.Connection.Initializer.parameter.readOnly">read_only</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#read_only Connection#read_only}. |
 
 ---
 
@@ -120,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#comment Connection#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#comment Connection#comment}.
 
 ---
 
@@ -128,17 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#connection_type Connection#connection_type}.
-
----
-
-##### `environment_settings`<sup>Optional</sup> <a name="environment_settings" id="@cdktf/provider-databricks.connection.Connection.Initializer.parameter.environmentSettings"></a>
-
-- *Type:* <a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettings">ConnectionEnvironmentSettings</a>
-
-environment_settings block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#environment_settings Connection#environment_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#connection_type Connection#connection_type}.
 
 ---
 
@@ -146,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#id Connection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#id Connection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -157,7 +145,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#name Connection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#name Connection#name}.
 
 ---
 
@@ -165,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#options Connection#options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#options Connection#options}.
 
 ---
 
@@ -173,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#owner Connection#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#owner Connection#owner}.
 
 ---
 
@@ -181,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#properties Connection#properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#properties Connection#properties}.
 
 ---
 
@@ -189,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#read_only Connection#read_only}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#read_only Connection#read_only}.
 
 ---
 
@@ -220,10 +208,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktf/provider-databricks.connection.Connection.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-databricks.connection.Connection.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-databricks.connection.Connection.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-databricks.connection.Connection.putEnvironmentSettings">put_environment_settings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.connection.Connection.resetComment">reset_comment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.connection.Connection.resetConnectionType">reset_connection_type</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.connection.Connection.resetEnvironmentSettings">reset_environment_settings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.connection.Connection.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.connection.Connection.resetName">reset_name</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.connection.Connection.resetOptions">reset_options</a></code> | *No description.* |
@@ -558,31 +544,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_environment_settings` <a name="put_environment_settings" id="@cdktf/provider-databricks.connection.Connection.putEnvironmentSettings"></a>
-
-```python
-def put_environment_settings(
-  environment_version: str = None,
-  java_dependencies: typing.List[str] = None
-) -> None
-```
-
-###### `environment_version`<sup>Optional</sup> <a name="environment_version" id="@cdktf/provider-databricks.connection.Connection.putEnvironmentSettings.parameter.environmentVersion"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#environment_version Connection#environment_version}.
-
----
-
-###### `java_dependencies`<sup>Optional</sup> <a name="java_dependencies" id="@cdktf/provider-databricks.connection.Connection.putEnvironmentSettings.parameter.javaDependencies"></a>
-
-- *Type:* typing.List[str]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#java_dependencies Connection#java_dependencies}.
-
----
-
 ##### `reset_comment` <a name="reset_comment" id="@cdktf/provider-databricks.connection.Connection.resetComment"></a>
 
 ```python
@@ -593,12 +554,6 @@ def reset_comment() -> None
 
 ```python
 def reset_connection_type() -> None
-```
-
-##### `reset_environment_settings` <a name="reset_environment_settings" id="@cdktf/provider-databricks.connection.Connection.resetEnvironmentSettings"></a>
-
-```python
-def reset_environment_settings() -> None
 ```
 
 ##### `reset_id` <a name="reset_id" id="@cdktf/provider-databricks.connection.Connection.resetId"></a>
@@ -751,7 +706,7 @@ The construct id used in the generated config for the Connection to import.
 
 The id of the existing Connection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -785,7 +740,6 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.connection.Connection.property.createdAt">created_at</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.connection.Connection.property.createdBy">created_by</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.connection.Connection.property.credentialType">credential_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.connection.Connection.property.environmentSettings">environment_settings</a></code> | <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference">ConnectionEnvironmentSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.connection.Connection.property.fullName">full_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.connection.Connection.property.metastoreId">metastore_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.connection.Connection.property.provisioningInfo">provisioning_info</a></code> | <code><a href="#@cdktf/provider-databricks.connection.ConnectionProvisioningInfoList">ConnectionProvisioningInfoList</a></code> | *No description.* |
@@ -795,7 +749,6 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.connection.Connection.property.url">url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.connection.Connection.property.commentInput">comment_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.connection.Connection.property.connectionTypeInput">connection_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.connection.Connection.property.environmentSettingsInput">environment_settings_input</a></code> | <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettings">ConnectionEnvironmentSettings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.connection.Connection.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.connection.Connection.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.connection.Connection.property.optionsInput">options_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
@@ -995,16 +948,6 @@ credential_type: str
 
 ---
 
-##### `environment_settings`<sup>Required</sup> <a name="environment_settings" id="@cdktf/provider-databricks.connection.Connection.property.environmentSettings"></a>
-
-```python
-environment_settings: ConnectionEnvironmentSettingsOutputReference
-```
-
-- *Type:* <a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference">ConnectionEnvironmentSettingsOutputReference</a>
-
----
-
 ##### `full_name`<sup>Required</sup> <a name="full_name" id="@cdktf/provider-databricks.connection.Connection.property.fullName"></a>
 
 ```python
@@ -1092,16 +1035,6 @@ connection_type_input: str
 ```
 
 - *Type:* str
-
----
-
-##### `environment_settings_input`<sup>Optional</sup> <a name="environment_settings_input" id="@cdktf/provider-databricks.connection.Connection.property.environmentSettingsInput"></a>
-
-```python
-environment_settings_input: ConnectionEnvironmentSettings
-```
-
-- *Type:* <a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettings">ConnectionEnvironmentSettings</a>
 
 ---
 
@@ -1282,7 +1215,6 @@ connection.ConnectionConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   comment: str = None,
   connection_type: str = None,
-  environment_settings: ConnectionEnvironmentSettings = None,
   id: str = None,
   name: str = None,
   options: typing.Mapping[str] = None,
@@ -1303,15 +1235,14 @@ connection.ConnectionConfig(
 | <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#comment Connection#comment}. |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.connectionType">connection_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#connection_type Connection#connection_type}. |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.environmentSettings">environment_settings</a></code> | <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettings">ConnectionEnvironmentSettings</a></code> | environment_settings block. |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#id Connection#id}. |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#name Connection#name}. |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.options">options</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#options Connection#options}. |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.owner">owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#owner Connection#owner}. |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.properties">properties</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#properties Connection#properties}. |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.readOnly">read_only</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#read_only Connection#read_only}. |
+| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#comment Connection#comment}. |
+| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.connectionType">connection_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#connection_type Connection#connection_type}. |
+| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#id Connection#id}. |
+| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#name Connection#name}. |
+| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.options">options</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#options Connection#options}. |
+| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.owner">owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#owner Connection#owner}. |
+| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.properties">properties</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#properties Connection#properties}. |
+| <code><a href="#@cdktf/provider-databricks.connection.ConnectionConfig.property.readOnly">read_only</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#read_only Connection#read_only}. |
 
 ---
 
@@ -1393,7 +1324,7 @@ comment: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#comment Connection#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#comment Connection#comment}.
 
 ---
 
@@ -1405,21 +1336,7 @@ connection_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#connection_type Connection#connection_type}.
-
----
-
-##### `environment_settings`<sup>Optional</sup> <a name="environment_settings" id="@cdktf/provider-databricks.connection.ConnectionConfig.property.environmentSettings"></a>
-
-```python
-environment_settings: ConnectionEnvironmentSettings
-```
-
-- *Type:* <a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettings">ConnectionEnvironmentSettings</a>
-
-environment_settings block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#environment_settings Connection#environment_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#connection_type Connection#connection_type}.
 
 ---
 
@@ -1431,7 +1348,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#id Connection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#id Connection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1446,7 +1363,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#name Connection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#name Connection#name}.
 
 ---
 
@@ -1458,7 +1375,7 @@ options: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#options Connection#options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#options Connection#options}.
 
 ---
 
@@ -1470,7 +1387,7 @@ owner: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#owner Connection#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#owner Connection#owner}.
 
 ---
 
@@ -1482,7 +1399,7 @@ properties: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#properties Connection#properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#properties Connection#properties}.
 
 ---
 
@@ -1494,53 +1411,7 @@ read_only: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#read_only Connection#read_only}.
-
----
-
-### ConnectionEnvironmentSettings <a name="ConnectionEnvironmentSettings" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettings"></a>
-
-#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettings.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_databricks import connection
-
-connection.ConnectionEnvironmentSettings(
-  environment_version: str = None,
-  java_dependencies: typing.List[str] = None
-)
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettings.property.environmentVersion">environment_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#environment_version Connection#environment_version}. |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettings.property.javaDependencies">java_dependencies</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#java_dependencies Connection#java_dependencies}. |
-
----
-
-##### `environment_version`<sup>Optional</sup> <a name="environment_version" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettings.property.environmentVersion"></a>
-
-```python
-environment_version: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#environment_version Connection#environment_version}.
-
----
-
-##### `java_dependencies`<sup>Optional</sup> <a name="java_dependencies" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettings.property.javaDependencies"></a>
-
-```python
-java_dependencies: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#java_dependencies Connection#java_dependencies}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#read_only Connection#read_only}.
 
 ---
 
@@ -1556,338 +1427,6 @@ connection.ConnectionProvisioningInfo()
 
 
 ## Classes <a name="Classes" id="Classes"></a>
-
-### ConnectionEnvironmentSettingsOutputReference <a name="ConnectionEnvironmentSettingsOutputReference" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_databricks import connection
-
-connection.ConnectionEnvironmentSettingsOutputReference(
-  terraform_resource: IInterpolatingParent,
-  terraform_attribute: str
-)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
-The attribute on the parent resource this class is referencing.
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.resetEnvironmentVersion">reset_environment_version</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.resetJavaDependencies">reset_java_dependencies</a></code> | *No description.* |
-
----
-
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.computeFqn"></a>
-
-```python
-def compute_fqn() -> str
-```
-
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getAnyMapAttribute"></a>
-
-```python
-def get_any_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Any]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getBooleanAttribute"></a>
-
-```python
-def get_boolean_attribute(
-  terraform_attribute: str
-) -> IResolvable
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getBooleanMapAttribute"></a>
-
-```python
-def get_boolean_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[bool]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getListAttribute"></a>
-
-```python
-def get_list_attribute(
-  terraform_attribute: str
-) -> typing.List[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getNumberAttribute"></a>
-
-```python
-def get_number_attribute(
-  terraform_attribute: str
-) -> typing.Union[int, float]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getNumberListAttribute"></a>
-
-```python
-def get_number_list_attribute(
-  terraform_attribute: str
-) -> typing.List[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getNumberMapAttribute"></a>
-
-```python
-def get_number_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getStringAttribute"></a>
-
-```python
-def get_string_attribute(
-  terraform_attribute: str
-) -> str
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getStringMapAttribute"></a>
-
-```python
-def get_string_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.interpolationForAttribute"></a>
-
-```python
-def interpolation_for_attribute(
-  property: str
-) -> IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* str
-
----
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.resolve"></a>
-
-```python
-def resolve(
-  _context: IResolveContext
-) -> typing.Any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.resolve.parameter._context"></a>
-
-- *Type:* cdktf.IResolveContext
-
----
-
-##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.toString"></a>
-
-```python
-def to_string() -> str
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `reset_environment_version` <a name="reset_environment_version" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.resetEnvironmentVersion"></a>
-
-```python
-def reset_environment_version() -> None
-```
-
-##### `reset_java_dependencies` <a name="reset_java_dependencies" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.resetJavaDependencies"></a>
-
-```python
-def reset_java_dependencies() -> None
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.property.environmentVersionInput">environment_version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.property.javaDependenciesInput">java_dependencies_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.property.environmentVersion">environment_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.property.javaDependencies">java_dependencies</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettings">ConnectionEnvironmentSettings</a></code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.property.fqn"></a>
-
-```python
-fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `environment_version_input`<sup>Optional</sup> <a name="environment_version_input" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.property.environmentVersionInput"></a>
-
-```python
-environment_version_input: str
-```
-
-- *Type:* str
-
----
-
-##### `java_dependencies_input`<sup>Optional</sup> <a name="java_dependencies_input" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.property.javaDependenciesInput"></a>
-
-```python
-java_dependencies_input: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
----
-
-##### `environment_version`<sup>Required</sup> <a name="environment_version" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.property.environmentVersion"></a>
-
-```python
-environment_version: str
-```
-
-- *Type:* str
-
----
-
-##### `java_dependencies`<sup>Required</sup> <a name="java_dependencies" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.property.javaDependencies"></a>
-
-```python
-java_dependencies: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
----
-
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.property.internalValue"></a>
-
-```python
-internal_value: ConnectionEnvironmentSettings
-```
-
-- *Type:* <a href="#@cdktf/provider-databricks.connection.ConnectionEnvironmentSettings">ConnectionEnvironmentSettings</a>
-
----
-
 
 ### ConnectionProvisioningInfoList <a name="ConnectionProvisioningInfoList" id="@cdktf/provider-databricks.connection.ConnectionProvisioningInfoList"></a>
 

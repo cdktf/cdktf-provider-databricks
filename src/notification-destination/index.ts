@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/notification_destination
+// https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +13,15 @@ import * as cdktf from 'cdktf';
 
 export interface NotificationDestinationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/notification_destination#destination_type NotificationDestination#destination_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#destination_type NotificationDestination#destination_type}
   */
   readonly destinationType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/notification_destination#display_name NotificationDestination#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#display_name NotificationDestination#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/notification_destination#id NotificationDestination#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#id NotificationDestination#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,13 +30,13 @@ export interface NotificationDestinationConfig extends cdktf.TerraformMetaArgume
   /**
   * config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/notification_destination#config NotificationDestination#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#config NotificationDestination#config}
   */
   readonly config?: NotificationDestinationConfigA;
 }
 export interface NotificationDestinationConfigEmail {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/notification_destination#addresses NotificationDestination#addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#addresses NotificationDestination#addresses}
   */
   readonly addresses?: string[];
 }
@@ -120,27 +120,27 @@ export class NotificationDestinationConfigEmailOutputReference extends cdktf.Com
 }
 export interface NotificationDestinationConfigGenericWebhook {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/notification_destination#password NotificationDestination#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#password NotificationDestination#password}
   */
   readonly password?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/notification_destination#password_set NotificationDestination#password_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#password_set NotificationDestination#password_set}
   */
   readonly passwordSet?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/notification_destination#url NotificationDestination#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#url NotificationDestination#url}
   */
   readonly url?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/notification_destination#url_set NotificationDestination#url_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}
   */
   readonly urlSet?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/notification_destination#username NotificationDestination#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#username NotificationDestination#username}
   */
   readonly username?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/notification_destination#username_set NotificationDestination#username_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#username_set NotificationDestination#username_set}
   */
   readonly usernameSet?: boolean | cdktf.IResolvable;
 }
@@ -369,11 +369,43 @@ export class NotificationDestinationConfigGenericWebhookOutputReference extends 
 }
 export interface NotificationDestinationConfigMicrosoftTeams {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/notification_destination#url NotificationDestination#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#app_id NotificationDestination#app_id}
+  */
+  readonly appId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#app_id_set NotificationDestination#app_id_set}
+  */
+  readonly appIdSet?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#auth_secret NotificationDestination#auth_secret}
+  */
+  readonly authSecret?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#auth_secret_set NotificationDestination#auth_secret_set}
+  */
+  readonly authSecretSet?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#channel_url NotificationDestination#channel_url}
+  */
+  readonly channelUrl?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#channel_url_set NotificationDestination#channel_url_set}
+  */
+  readonly channelUrlSet?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#tenant_id NotificationDestination#tenant_id}
+  */
+  readonly tenantId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#tenant_id_set NotificationDestination#tenant_id_set}
+  */
+  readonly tenantIdSet?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#url NotificationDestination#url}
   */
   readonly url?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/notification_destination#url_set NotificationDestination#url_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}
   */
   readonly urlSet?: boolean | cdktf.IResolvable;
 }
@@ -384,6 +416,14 @@ export function notificationDestinationConfigMicrosoftTeamsToTerraform(struct?: 
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    app_id: cdktf.stringToTerraform(struct!.appId),
+    app_id_set: cdktf.booleanToTerraform(struct!.appIdSet),
+    auth_secret: cdktf.stringToTerraform(struct!.authSecret),
+    auth_secret_set: cdktf.booleanToTerraform(struct!.authSecretSet),
+    channel_url: cdktf.stringToTerraform(struct!.channelUrl),
+    channel_url_set: cdktf.booleanToTerraform(struct!.channelUrlSet),
+    tenant_id: cdktf.stringToTerraform(struct!.tenantId),
+    tenant_id_set: cdktf.booleanToTerraform(struct!.tenantIdSet),
     url: cdktf.stringToTerraform(struct!.url),
     url_set: cdktf.booleanToTerraform(struct!.urlSet),
   }
@@ -396,6 +436,54 @@ export function notificationDestinationConfigMicrosoftTeamsToHclTerraform(struct
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    app_id: {
+      value: cdktf.stringToHclTerraform(struct!.appId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    app_id_set: {
+      value: cdktf.booleanToHclTerraform(struct!.appIdSet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    auth_secret: {
+      value: cdktf.stringToHclTerraform(struct!.authSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    auth_secret_set: {
+      value: cdktf.booleanToHclTerraform(struct!.authSecretSet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    channel_url: {
+      value: cdktf.stringToHclTerraform(struct!.channelUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    channel_url_set: {
+      value: cdktf.booleanToHclTerraform(struct!.channelUrlSet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    tenant_id: {
+      value: cdktf.stringToHclTerraform(struct!.tenantId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tenant_id_set: {
+      value: cdktf.booleanToHclTerraform(struct!.tenantIdSet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
     url: {
       value: cdktf.stringToHclTerraform(struct!.url),
       isBlock: false,
@@ -428,6 +516,38 @@ export class NotificationDestinationConfigMicrosoftTeamsOutputReference extends 
   public get internalValue(): NotificationDestinationConfigMicrosoftTeams | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._appId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.appId = this._appId;
+    }
+    if (this._appIdSet !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.appIdSet = this._appIdSet;
+    }
+    if (this._authSecret !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authSecret = this._authSecret;
+    }
+    if (this._authSecretSet !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authSecretSet = this._authSecretSet;
+    }
+    if (this._channelUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.channelUrl = this._channelUrl;
+    }
+    if (this._channelUrlSet !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.channelUrlSet = this._channelUrlSet;
+    }
+    if (this._tenantId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tenantId = this._tenantId;
+    }
+    if (this._tenantIdSet !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tenantIdSet = this._tenantIdSet;
+    }
     if (this._url !== undefined) {
       hasAnyValues = true;
       internalValueResult.url = this._url;
@@ -442,14 +562,158 @@ export class NotificationDestinationConfigMicrosoftTeamsOutputReference extends 
   public set internalValue(value: NotificationDestinationConfigMicrosoftTeams | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._appId = undefined;
+      this._appIdSet = undefined;
+      this._authSecret = undefined;
+      this._authSecretSet = undefined;
+      this._channelUrl = undefined;
+      this._channelUrlSet = undefined;
+      this._tenantId = undefined;
+      this._tenantIdSet = undefined;
       this._url = undefined;
       this._urlSet = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._appId = value.appId;
+      this._appIdSet = value.appIdSet;
+      this._authSecret = value.authSecret;
+      this._authSecretSet = value.authSecretSet;
+      this._channelUrl = value.channelUrl;
+      this._channelUrlSet = value.channelUrlSet;
+      this._tenantId = value.tenantId;
+      this._tenantIdSet = value.tenantIdSet;
       this._url = value.url;
       this._urlSet = value.urlSet;
     }
+  }
+
+  // app_id - computed: false, optional: true, required: false
+  private _appId?: string; 
+  public get appId() {
+    return this.getStringAttribute('app_id');
+  }
+  public set appId(value: string) {
+    this._appId = value;
+  }
+  public resetAppId() {
+    this._appId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get appIdInput() {
+    return this._appId;
+  }
+
+  // app_id_set - computed: false, optional: true, required: false
+  private _appIdSet?: boolean | cdktf.IResolvable; 
+  public get appIdSet() {
+    return this.getBooleanAttribute('app_id_set');
+  }
+  public set appIdSet(value: boolean | cdktf.IResolvable) {
+    this._appIdSet = value;
+  }
+  public resetAppIdSet() {
+    this._appIdSet = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get appIdSetInput() {
+    return this._appIdSet;
+  }
+
+  // auth_secret - computed: false, optional: true, required: false
+  private _authSecret?: string; 
+  public get authSecret() {
+    return this.getStringAttribute('auth_secret');
+  }
+  public set authSecret(value: string) {
+    this._authSecret = value;
+  }
+  public resetAuthSecret() {
+    this._authSecret = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authSecretInput() {
+    return this._authSecret;
+  }
+
+  // auth_secret_set - computed: false, optional: true, required: false
+  private _authSecretSet?: boolean | cdktf.IResolvable; 
+  public get authSecretSet() {
+    return this.getBooleanAttribute('auth_secret_set');
+  }
+  public set authSecretSet(value: boolean | cdktf.IResolvable) {
+    this._authSecretSet = value;
+  }
+  public resetAuthSecretSet() {
+    this._authSecretSet = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authSecretSetInput() {
+    return this._authSecretSet;
+  }
+
+  // channel_url - computed: false, optional: true, required: false
+  private _channelUrl?: string; 
+  public get channelUrl() {
+    return this.getStringAttribute('channel_url');
+  }
+  public set channelUrl(value: string) {
+    this._channelUrl = value;
+  }
+  public resetChannelUrl() {
+    this._channelUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get channelUrlInput() {
+    return this._channelUrl;
+  }
+
+  // channel_url_set - computed: false, optional: true, required: false
+  private _channelUrlSet?: boolean | cdktf.IResolvable; 
+  public get channelUrlSet() {
+    return this.getBooleanAttribute('channel_url_set');
+  }
+  public set channelUrlSet(value: boolean | cdktf.IResolvable) {
+    this._channelUrlSet = value;
+  }
+  public resetChannelUrlSet() {
+    this._channelUrlSet = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get channelUrlSetInput() {
+    return this._channelUrlSet;
+  }
+
+  // tenant_id - computed: false, optional: true, required: false
+  private _tenantId?: string; 
+  public get tenantId() {
+    return this.getStringAttribute('tenant_id');
+  }
+  public set tenantId(value: string) {
+    this._tenantId = value;
+  }
+  public resetTenantId() {
+    this._tenantId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tenantIdInput() {
+    return this._tenantId;
+  }
+
+  // tenant_id_set - computed: false, optional: true, required: false
+  private _tenantIdSet?: boolean | cdktf.IResolvable; 
+  public get tenantIdSet() {
+    return this.getBooleanAttribute('tenant_id_set');
+  }
+  public set tenantIdSet(value: boolean | cdktf.IResolvable) {
+    this._tenantIdSet = value;
+  }
+  public resetTenantIdSet() {
+    this._tenantIdSet = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tenantIdSetInput() {
+    return this._tenantIdSet;
   }
 
   // url - computed: false, optional: true, required: false
@@ -486,11 +750,11 @@ export class NotificationDestinationConfigMicrosoftTeamsOutputReference extends 
 }
 export interface NotificationDestinationConfigPagerduty {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/notification_destination#integration_key NotificationDestination#integration_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#integration_key NotificationDestination#integration_key}
   */
   readonly integrationKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/notification_destination#integration_key_set NotificationDestination#integration_key_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#integration_key_set NotificationDestination#integration_key_set}
   */
   readonly integrationKeySet?: boolean | cdktf.IResolvable;
 }
@@ -603,27 +867,27 @@ export class NotificationDestinationConfigPagerdutyOutputReference extends cdktf
 }
 export interface NotificationDestinationConfigSlack {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/notification_destination#channel_id NotificationDestination#channel_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#channel_id NotificationDestination#channel_id}
   */
   readonly channelId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/notification_destination#channel_id_set NotificationDestination#channel_id_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#channel_id_set NotificationDestination#channel_id_set}
   */
   readonly channelIdSet?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/notification_destination#oauth_token NotificationDestination#oauth_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#oauth_token NotificationDestination#oauth_token}
   */
   readonly oauthToken?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/notification_destination#oauth_token_set NotificationDestination#oauth_token_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#oauth_token_set NotificationDestination#oauth_token_set}
   */
   readonly oauthTokenSet?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/notification_destination#url NotificationDestination#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#url NotificationDestination#url}
   */
   readonly url?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/notification_destination#url_set NotificationDestination#url_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}
   */
   readonly urlSet?: boolean | cdktf.IResolvable;
 }
@@ -770,7 +1034,7 @@ export class NotificationDestinationConfigSlackOutputReference extends cdktf.Com
     return this._channelId;
   }
 
-  // channel_id_set - computed: false, optional: true, required: false
+  // channel_id_set - computed: true, optional: true, required: false
   private _channelIdSet?: boolean | cdktf.IResolvable; 
   public get channelIdSet() {
     return this.getBooleanAttribute('channel_id_set');
@@ -802,7 +1066,7 @@ export class NotificationDestinationConfigSlackOutputReference extends cdktf.Com
     return this._oauthToken;
   }
 
-  // oauth_token_set - computed: false, optional: true, required: false
+  // oauth_token_set - computed: true, optional: true, required: false
   private _oauthTokenSet?: boolean | cdktf.IResolvable; 
   public get oauthTokenSet() {
     return this.getBooleanAttribute('oauth_token_set');
@@ -854,31 +1118,31 @@ export interface NotificationDestinationConfigA {
   /**
   * email block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/notification_destination#email NotificationDestination#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#email NotificationDestination#email}
   */
   readonly email?: NotificationDestinationConfigEmail;
   /**
   * generic_webhook block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/notification_destination#generic_webhook NotificationDestination#generic_webhook}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#generic_webhook NotificationDestination#generic_webhook}
   */
   readonly genericWebhook?: NotificationDestinationConfigGenericWebhook;
   /**
   * microsoft_teams block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/notification_destination#microsoft_teams NotificationDestination#microsoft_teams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#microsoft_teams NotificationDestination#microsoft_teams}
   */
   readonly microsoftTeams?: NotificationDestinationConfigMicrosoftTeams;
   /**
   * pagerduty block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/notification_destination#pagerduty NotificationDestination#pagerduty}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#pagerduty NotificationDestination#pagerduty}
   */
   readonly pagerduty?: NotificationDestinationConfigPagerduty;
   /**
   * slack block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/notification_destination#slack NotificationDestination#slack}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#slack NotificationDestination#slack}
   */
   readonly slack?: NotificationDestinationConfigSlack;
 }
@@ -1078,7 +1342,7 @@ export class NotificationDestinationConfigAOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/notification_destination databricks_notification_destination}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination databricks_notification_destination}
 */
 export class NotificationDestination extends cdktf.TerraformResource {
 
@@ -1094,7 +1358,7 @@ export class NotificationDestination extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NotificationDestination resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NotificationDestination to import
-  * @param importFromId The id of the existing NotificationDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/notification_destination#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NotificationDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NotificationDestination to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1106,7 +1370,7 @@ export class NotificationDestination extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/notification_destination databricks_notification_destination} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/notification_destination databricks_notification_destination} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1117,7 +1381,7 @@ export class NotificationDestination extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_notification_destination',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.87.1',
+        providerVersion: '1.88.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

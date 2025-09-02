@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/database_instances
+// https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/database_instances
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -12,18 +12,22 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataDatabricksDatabaseInstancesConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/database_instances#workspace_id DataDatabricksDatabaseInstances#workspace_id}
+  */
+  readonly workspaceId?: string;
 }
 export interface DataDatabricksDatabaseInstancesDatabaseInstancesChildInstanceRefs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/database_instances#branch_time DataDatabricksDatabaseInstances#branch_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/database_instances#branch_time DataDatabricksDatabaseInstances#branch_time}
   */
   readonly branchTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/database_instances#lsn DataDatabricksDatabaseInstances#lsn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/database_instances#lsn DataDatabricksDatabaseInstances#lsn}
   */
   readonly lsn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/database_instances#name DataDatabricksDatabaseInstances#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/database_instances#name DataDatabricksDatabaseInstances#name}
   */
   readonly name?: string;
 }
@@ -197,15 +201,15 @@ export class DataDatabricksDatabaseInstancesDatabaseInstancesChildInstanceRefsLi
 }
 export interface DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRef {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/database_instances#branch_time DataDatabricksDatabaseInstances#branch_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/database_instances#branch_time DataDatabricksDatabaseInstances#branch_time}
   */
   readonly branchTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/database_instances#lsn DataDatabricksDatabaseInstances#lsn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/database_instances#lsn DataDatabricksDatabaseInstances#lsn}
   */
   readonly lsn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/database_instances#name DataDatabricksDatabaseInstances#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/database_instances#name DataDatabricksDatabaseInstances#name}
   */
   readonly name?: string;
 }
@@ -367,31 +371,35 @@ export class DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRefOu
 }
 export interface DataDatabricksDatabaseInstancesDatabaseInstances {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/database_instances#capacity DataDatabricksDatabaseInstances#capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/database_instances#capacity DataDatabricksDatabaseInstances#capacity}
   */
   readonly capacity?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/database_instances#enable_readable_secondaries DataDatabricksDatabaseInstances#enable_readable_secondaries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/database_instances#enable_pg_native_login DataDatabricksDatabaseInstances#enable_pg_native_login}
+  */
+  readonly enablePgNativeLogin?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/database_instances#enable_readable_secondaries DataDatabricksDatabaseInstances#enable_readable_secondaries}
   */
   readonly enableReadableSecondaries?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/database_instances#name DataDatabricksDatabaseInstances#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/database_instances#name DataDatabricksDatabaseInstances#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/database_instances#node_count DataDatabricksDatabaseInstances#node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/database_instances#node_count DataDatabricksDatabaseInstances#node_count}
   */
   readonly nodeCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/database_instances#parent_instance_ref DataDatabricksDatabaseInstances#parent_instance_ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/database_instances#parent_instance_ref DataDatabricksDatabaseInstances#parent_instance_ref}
   */
   readonly parentInstanceRef?: DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRef;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/database_instances#retention_window_in_days DataDatabricksDatabaseInstances#retention_window_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/database_instances#retention_window_in_days DataDatabricksDatabaseInstances#retention_window_in_days}
   */
   readonly retentionWindowInDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/database_instances#stopped DataDatabricksDatabaseInstances#stopped}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/database_instances#stopped DataDatabricksDatabaseInstances#stopped}
   */
   readonly stopped?: boolean | cdktf.IResolvable;
 }
@@ -403,6 +411,7 @@ export function dataDatabricksDatabaseInstancesDatabaseInstancesToTerraform(stru
   }
   return {
     capacity: cdktf.stringToTerraform(struct!.capacity),
+    enable_pg_native_login: cdktf.booleanToTerraform(struct!.enablePgNativeLogin),
     enable_readable_secondaries: cdktf.booleanToTerraform(struct!.enableReadableSecondaries),
     name: cdktf.stringToTerraform(struct!.name),
     node_count: cdktf.numberToTerraform(struct!.nodeCount),
@@ -424,6 +433,12 @@ export function dataDatabricksDatabaseInstancesDatabaseInstancesToHclTerraform(s
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    enable_pg_native_login: {
+      value: cdktf.booleanToHclTerraform(struct!.enablePgNativeLogin),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
     },
     enable_readable_secondaries: {
       value: cdktf.booleanToHclTerraform(struct!.enableReadableSecondaries),
@@ -487,6 +502,10 @@ export class DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference ext
       hasAnyValues = true;
       internalValueResult.capacity = this._capacity;
     }
+    if (this._enablePgNativeLogin !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enablePgNativeLogin = this._enablePgNativeLogin;
+    }
     if (this._enableReadableSecondaries !== undefined) {
       hasAnyValues = true;
       internalValueResult.enableReadableSecondaries = this._enableReadableSecondaries;
@@ -518,6 +537,7 @@ export class DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference ext
     if (value === undefined) {
       this.isEmptyObject = false;
       this._capacity = undefined;
+      this._enablePgNativeLogin = undefined;
       this._enableReadableSecondaries = undefined;
       this._name = undefined;
       this._nodeCount = undefined;
@@ -528,6 +548,7 @@ export class DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference ext
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._capacity = value.capacity;
+      this._enablePgNativeLogin = value.enablePgNativeLogin;
       this._enableReadableSecondaries = value.enableReadableSecondaries;
       this._name = value.name;
       this._nodeCount = value.nodeCount;
@@ -569,6 +590,11 @@ export class DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference ext
     return this.getStringAttribute('creator');
   }
 
+  // effective_enable_pg_native_login - computed: true, optional: false, required: false
+  public get effectiveEnablePgNativeLogin() {
+    return this.getBooleanAttribute('effective_enable_pg_native_login');
+  }
+
   // effective_enable_readable_secondaries - computed: true, optional: false, required: false
   public get effectiveEnableReadableSecondaries() {
     return this.getBooleanAttribute('effective_enable_readable_secondaries');
@@ -587,6 +613,22 @@ export class DataDatabricksDatabaseInstancesDatabaseInstancesOutputReference ext
   // effective_stopped - computed: true, optional: false, required: false
   public get effectiveStopped() {
     return this.getBooleanAttribute('effective_stopped');
+  }
+
+  // enable_pg_native_login - computed: true, optional: true, required: false
+  private _enablePgNativeLogin?: boolean | cdktf.IResolvable; 
+  public get enablePgNativeLogin() {
+    return this.getBooleanAttribute('enable_pg_native_login');
+  }
+  public set enablePgNativeLogin(value: boolean | cdktf.IResolvable) {
+    this._enablePgNativeLogin = value;
+  }
+  public resetEnablePgNativeLogin() {
+    this._enablePgNativeLogin = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enablePgNativeLoginInput() {
+    return this._enablePgNativeLogin;
   }
 
   // enable_readable_secondaries - computed: true, optional: true, required: false
@@ -729,7 +771,7 @@ export class DataDatabricksDatabaseInstancesDatabaseInstancesList extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/database_instances databricks_database_instances}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/database_instances databricks_database_instances}
 */
 export class DataDatabricksDatabaseInstances extends cdktf.TerraformDataSource {
 
@@ -745,7 +787,7 @@ export class DataDatabricksDatabaseInstances extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksDatabaseInstances resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksDatabaseInstances to import
-  * @param importFromId The id of the existing DataDatabricksDatabaseInstances that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/database_instances#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksDatabaseInstances that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/database_instances#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksDatabaseInstances to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -757,7 +799,7 @@ export class DataDatabricksDatabaseInstances extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/data-sources/database_instances databricks_database_instances} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/database_instances databricks_database_instances} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -768,7 +810,7 @@ export class DataDatabricksDatabaseInstances extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_database_instances',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.87.1',
+        providerVersion: '1.88.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -779,6 +821,7 @@ export class DataDatabricksDatabaseInstances extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._workspaceId = config.workspaceId;
   }
 
   // ==========
@@ -791,18 +834,43 @@ export class DataDatabricksDatabaseInstances extends cdktf.TerraformDataSource {
     return this._databaseInstances;
   }
 
+  // workspace_id - computed: false, optional: true, required: false
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  public resetWorkspaceId() {
+    this._workspaceId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      workspace_id: cdktf.stringToTerraform(this._workspaceId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      workspace_id: {
+        value: cdktf.stringToHclTerraform(this._workspaceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
     };
-    return attrs;
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

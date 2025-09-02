@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection
+// https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +13,40 @@ import * as cdktf from 'cdktf';
 
 export interface ConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#comment Connection#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#comment Connection#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#connection_type Connection#connection_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#connection_type Connection#connection_type}
   */
   readonly connectionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#id Connection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#id Connection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#name Connection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#name Connection#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#options Connection#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#options Connection#options}
   */
   readonly options?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#owner Connection#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#owner Connection#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#properties Connection#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#properties Connection#properties}
   */
   readonly properties?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#read_only Connection#read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#read_only Connection#read_only}
   */
   readonly readOnly?: boolean | cdktf.IResolvable;
-  /**
-  * environment_settings block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#environment_settings Connection#environment_settings}
-  */
-  readonly environmentSettings?: ConnectionEnvironmentSettings;
 }
 export interface ConnectionProvisioningInfo {
 }
@@ -129,126 +123,9 @@ export class ConnectionProvisioningInfoList extends cdktf.ComplexList {
     return new ConnectionProvisioningInfoOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface ConnectionEnvironmentSettings {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#environment_version Connection#environment_version}
-  */
-  readonly environmentVersion?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#java_dependencies Connection#java_dependencies}
-  */
-  readonly javaDependencies?: string[];
-}
-
-export function connectionEnvironmentSettingsToTerraform(struct?: ConnectionEnvironmentSettingsOutputReference | ConnectionEnvironmentSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    environment_version: cdktf.stringToTerraform(struct!.environmentVersion),
-    java_dependencies: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.javaDependencies),
-  }
-}
-
-
-export function connectionEnvironmentSettingsToHclTerraform(struct?: ConnectionEnvironmentSettingsOutputReference | ConnectionEnvironmentSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    environment_version: {
-      value: cdktf.stringToHclTerraform(struct!.environmentVersion),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    java_dependencies: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.javaDependencies),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class ConnectionEnvironmentSettingsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): ConnectionEnvironmentSettings | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._environmentVersion !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.environmentVersion = this._environmentVersion;
-    }
-    if (this._javaDependencies !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.javaDependencies = this._javaDependencies;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: ConnectionEnvironmentSettings | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._environmentVersion = undefined;
-      this._javaDependencies = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._environmentVersion = value.environmentVersion;
-      this._javaDependencies = value.javaDependencies;
-    }
-  }
-
-  // environment_version - computed: false, optional: true, required: false
-  private _environmentVersion?: string; 
-  public get environmentVersion() {
-    return this.getStringAttribute('environment_version');
-  }
-  public set environmentVersion(value: string) {
-    this._environmentVersion = value;
-  }
-  public resetEnvironmentVersion() {
-    this._environmentVersion = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get environmentVersionInput() {
-    return this._environmentVersion;
-  }
-
-  // java_dependencies - computed: false, optional: true, required: false
-  private _javaDependencies?: string[]; 
-  public get javaDependencies() {
-    return this.getListAttribute('java_dependencies');
-  }
-  public set javaDependencies(value: string[]) {
-    this._javaDependencies = value;
-  }
-  public resetJavaDependencies() {
-    this._javaDependencies = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get javaDependenciesInput() {
-    return this._javaDependencies;
-  }
-}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection databricks_connection}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection databricks_connection}
 */
 export class Connection extends cdktf.TerraformResource {
 
@@ -264,7 +141,7 @@ export class Connection extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Connection resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Connection to import
-  * @param importFromId The id of the existing Connection that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Connection that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Connection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -276,7 +153,7 @@ export class Connection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/connection databricks_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/connection databricks_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -287,7 +164,7 @@ export class Connection extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_connection',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.87.1',
+        providerVersion: '1.88.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -306,7 +183,6 @@ export class Connection extends cdktf.TerraformResource {
     this._owner = config.owner;
     this._properties = config.properties;
     this._readOnly = config.readOnly;
-    this._environmentSettings.internalValue = config.environmentSettings;
   }
 
   // ==========
@@ -497,22 +373,6 @@ export class Connection extends cdktf.TerraformResource {
     return this.getStringAttribute('url');
   }
 
-  // environment_settings - computed: false, optional: true, required: false
-  private _environmentSettings = new ConnectionEnvironmentSettingsOutputReference(this, "environment_settings");
-  public get environmentSettings() {
-    return this._environmentSettings;
-  }
-  public putEnvironmentSettings(value: ConnectionEnvironmentSettings) {
-    this._environmentSettings.internalValue = value;
-  }
-  public resetEnvironmentSettings() {
-    this._environmentSettings.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get environmentSettingsInput() {
-    return this._environmentSettings.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -527,7 +387,6 @@ export class Connection extends cdktf.TerraformResource {
       owner: cdktf.stringToTerraform(this._owner),
       properties: cdktf.hashMapper(cdktf.stringToTerraform)(this._properties),
       read_only: cdktf.booleanToTerraform(this._readOnly),
-      environment_settings: connectionEnvironmentSettingsToTerraform(this._environmentSettings.internalValue),
     };
   }
 
@@ -580,12 +439,6 @@ export class Connection extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
-      },
-      environment_settings: {
-        value: connectionEnvironmentSettingsToHclTerraform(this._environmentSettings.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "ConnectionEnvironmentSettingsList",
       },
     };
 
