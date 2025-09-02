@@ -4,7 +4,7 @@
 
 ### AlertV2 <a name="AlertV2" id="@cdktf/provider-databricks.alertV2.AlertV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2 databricks_alert_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2 databricks_alert_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.alertV2.AlertV2.Initializer"></a>
 
@@ -27,9 +27,11 @@ alertV2.AlertV2(
   evaluation: AlertV2Evaluation = None,
   parent_path: str = None,
   query_text: str = None,
+  run_as: AlertV2RunAs = None,
   run_as_user_name: str = None,
   schedule: AlertV2Schedule = None,
-  warehouse_id: str = None
+  warehouse_id: str = None,
+  workspace_id: str = None
 )
 ```
 
@@ -44,15 +46,17 @@ alertV2.AlertV2(
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.customDescription">custom_description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#custom_description AlertV2#custom_description}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.customSummary">custom_summary</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#custom_summary AlertV2#custom_summary}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#display_name AlertV2#display_name}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.evaluation">evaluation</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation">AlertV2Evaluation</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#evaluation AlertV2#evaluation}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.parentPath">parent_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#parent_path AlertV2#parent_path}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.queryText">query_text</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#query_text AlertV2#query_text}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.runAsUserName">run_as_user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#run_as_user_name AlertV2#run_as_user_name}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.schedule">schedule</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Schedule">AlertV2Schedule</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#schedule AlertV2#schedule}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.warehouseId">warehouse_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#warehouse_id AlertV2#warehouse_id}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.customDescription">custom_description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#custom_description AlertV2#custom_description}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.customSummary">custom_summary</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#custom_summary AlertV2#custom_summary}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#display_name AlertV2#display_name}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.evaluation">evaluation</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation">AlertV2Evaluation</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#evaluation AlertV2#evaluation}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.parentPath">parent_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#parent_path AlertV2#parent_path}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.queryText">query_text</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#query_text AlertV2#query_text}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.runAs">run_as</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAs">AlertV2RunAs</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#run_as AlertV2#run_as}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.runAsUserName">run_as_user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#run_as_user_name AlertV2#run_as_user_name}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.schedule">schedule</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Schedule">AlertV2Schedule</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#schedule AlertV2#schedule}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.warehouseId">warehouse_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#warehouse_id AlertV2#warehouse_id}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#workspace_id AlertV2#workspace_id}. |
 
 ---
 
@@ -120,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#custom_description AlertV2#custom_description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#custom_description AlertV2#custom_description}.
 
 ---
 
@@ -128,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#custom_summary AlertV2#custom_summary}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#custom_summary AlertV2#custom_summary}.
 
 ---
 
@@ -136,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#display_name AlertV2#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#display_name AlertV2#display_name}.
 
 ---
 
@@ -144,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation">AlertV2Evaluation</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#evaluation AlertV2#evaluation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#evaluation AlertV2#evaluation}.
 
 ---
 
@@ -152,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#parent_path AlertV2#parent_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#parent_path AlertV2#parent_path}.
 
 ---
 
@@ -160,7 +164,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#query_text AlertV2#query_text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#query_text AlertV2#query_text}.
+
+---
+
+##### `run_as`<sup>Optional</sup> <a name="run_as" id="@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.runAs"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAs">AlertV2RunAs</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#run_as AlertV2#run_as}.
 
 ---
 
@@ -168,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#run_as_user_name AlertV2#run_as_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#run_as_user_name AlertV2#run_as_user_name}.
 
 ---
 
@@ -176,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktf/provider-databricks.alertV2.AlertV2Schedule">AlertV2Schedule</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#schedule AlertV2#schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#schedule AlertV2#schedule}.
 
 ---
 
@@ -184,7 +196,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#warehouse_id AlertV2#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#warehouse_id AlertV2#warehouse_id}.
+
+---
+
+##### `workspace_id`<sup>Optional</sup> <a name="workspace_id" id="@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.workspaceId"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#workspace_id AlertV2#workspace_id}.
 
 ---
 
@@ -216,6 +236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.putEvaluation">put_evaluation</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.putRunAs">put_run_as</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.putSchedule">put_schedule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.resetCustomDescription">reset_custom_description</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.resetCustomSummary">reset_custom_summary</a></code> | *No description.* |
@@ -223,9 +244,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.resetEvaluation">reset_evaluation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.resetParentPath">reset_parent_path</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.resetQueryText">reset_query_text</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.resetRunAs">reset_run_as</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.resetRunAsUserName">reset_run_as_user_name</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.resetSchedule">reset_schedule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.resetWarehouseId">reset_warehouse_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.resetWorkspaceId">reset_workspace_id</a></code> | *No description.* |
 
 ---
 
@@ -570,7 +593,7 @@ def put_evaluation(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#comparison_operator AlertV2#comparison_operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#comparison_operator AlertV2#comparison_operator}.
 
 ---
 
@@ -578,7 +601,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#empty_result_state AlertV2#empty_result_state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#empty_result_state AlertV2#empty_result_state}.
 
 ---
 
@@ -586,7 +609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotification">AlertV2EvaluationNotification</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#notification AlertV2#notification}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#notification AlertV2#notification}.
 
 ---
 
@@ -594,7 +617,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationSource">AlertV2EvaluationSource</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#source AlertV2#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#source AlertV2#source}.
 
 ---
 
@@ -602,7 +625,32 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThreshold">AlertV2EvaluationThreshold</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#threshold AlertV2#threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#threshold AlertV2#threshold}.
+
+---
+
+##### `put_run_as` <a name="put_run_as" id="@cdktf/provider-databricks.alertV2.AlertV2.putRunAs"></a>
+
+```python
+def put_run_as(
+  service_principal_name: str = None,
+  user_name: str = None
+) -> None
+```
+
+###### `service_principal_name`<sup>Optional</sup> <a name="service_principal_name" id="@cdktf/provider-databricks.alertV2.AlertV2.putRunAs.parameter.servicePrincipalName"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#service_principal_name AlertV2#service_principal_name}.
+
+---
+
+###### `user_name`<sup>Optional</sup> <a name="user_name" id="@cdktf/provider-databricks.alertV2.AlertV2.putRunAs.parameter.userName"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#user_name AlertV2#user_name}.
 
 ---
 
@@ -620,7 +668,7 @@ def put_schedule(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#pause_status AlertV2#pause_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#pause_status AlertV2#pause_status}.
 
 ---
 
@@ -628,7 +676,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#quartz_cron_schedule AlertV2#quartz_cron_schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#quartz_cron_schedule AlertV2#quartz_cron_schedule}.
 
 ---
 
@@ -636,7 +684,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#timezone_id AlertV2#timezone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#timezone_id AlertV2#timezone_id}.
 
 ---
 
@@ -676,6 +724,12 @@ def reset_parent_path() -> None
 def reset_query_text() -> None
 ```
 
+##### `reset_run_as` <a name="reset_run_as" id="@cdktf/provider-databricks.alertV2.AlertV2.resetRunAs"></a>
+
+```python
+def reset_run_as() -> None
+```
+
 ##### `reset_run_as_user_name` <a name="reset_run_as_user_name" id="@cdktf/provider-databricks.alertV2.AlertV2.resetRunAsUserName"></a>
 
 ```python
@@ -692,6 +746,12 @@ def reset_schedule() -> None
 
 ```python
 def reset_warehouse_id() -> None
+```
+
+##### `reset_workspace_id` <a name="reset_workspace_id" id="@cdktf/provider-databricks.alertV2.AlertV2.resetWorkspaceId"></a>
+
+```python
+def reset_workspace_id() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -808,7 +868,7 @@ The construct id used in the generated config for the AlertV2 to import.
 
 The id of the existing AlertV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -839,10 +899,12 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.property.effectiveRunAs">effective_run_as</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference">AlertV2EffectiveRunAsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.property.evaluation">evaluation</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationOutputReference">AlertV2EvaluationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.property.lifecycleState">lifecycle_state</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.property.ownerUserName">owner_user_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.property.runAs">run_as</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference">AlertV2RunAsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.property.schedule">schedule</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2ScheduleOutputReference">AlertV2ScheduleOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.property.customDescriptionInput">custom_description_input</a></code> | <code>str</code> | *No description.* |
@@ -851,9 +913,11 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.property.evaluationInput">evaluation_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation">AlertV2Evaluation</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.property.parentPathInput">parent_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.property.queryTextInput">query_text_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.property.runAsInput">run_as_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAs">AlertV2RunAs</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.property.runAsUserNameInput">run_as_user_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.property.scheduleInput">schedule_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.alertV2.AlertV2Schedule">AlertV2Schedule</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.property.warehouseIdInput">warehouse_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.property.workspaceIdInput">workspace_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.property.customDescription">custom_description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.property.customSummary">custom_summary</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
@@ -861,6 +925,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.property.queryText">query_text</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.property.runAsUserName">run_as_user_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.property.warehouseId">warehouse_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.property.workspaceId">workspace_id</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -1016,6 +1081,16 @@ create_time: str
 
 ---
 
+##### `effective_run_as`<sup>Required</sup> <a name="effective_run_as" id="@cdktf/provider-databricks.alertV2.AlertV2.property.effectiveRunAs"></a>
+
+```python
+effective_run_as: AlertV2EffectiveRunAsOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference">AlertV2EffectiveRunAsOutputReference</a>
+
+---
+
 ##### `evaluation`<sup>Required</sup> <a name="evaluation" id="@cdktf/provider-databricks.alertV2.AlertV2.property.evaluation"></a>
 
 ```python
@@ -1053,6 +1128,16 @@ owner_user_name: str
 ```
 
 - *Type:* str
+
+---
+
+##### `run_as`<sup>Required</sup> <a name="run_as" id="@cdktf/provider-databricks.alertV2.AlertV2.property.runAs"></a>
+
+```python
+run_as: AlertV2RunAsOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference">AlertV2RunAsOutputReference</a>
 
 ---
 
@@ -1136,6 +1221,16 @@ query_text_input: str
 
 ---
 
+##### `run_as_input`<sup>Optional</sup> <a name="run_as_input" id="@cdktf/provider-databricks.alertV2.AlertV2.property.runAsInput"></a>
+
+```python
+run_as_input: typing.Union[IResolvable, AlertV2RunAs]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAs">AlertV2RunAs</a>]
+
+---
+
 ##### `run_as_user_name_input`<sup>Optional</sup> <a name="run_as_user_name_input" id="@cdktf/provider-databricks.alertV2.AlertV2.property.runAsUserNameInput"></a>
 
 ```python
@@ -1160,6 +1255,16 @@ schedule_input: typing.Union[IResolvable, AlertV2Schedule]
 
 ```python
 warehouse_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `workspace_id_input`<sup>Optional</sup> <a name="workspace_id_input" id="@cdktf/provider-databricks.alertV2.AlertV2.property.workspaceIdInput"></a>
+
+```python
+workspace_id_input: str
 ```
 
 - *Type:* str
@@ -1236,6 +1341,16 @@ warehouse_id: str
 
 ---
 
+##### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktf/provider-databricks.alertV2.AlertV2.property.workspaceId"></a>
+
+```python
+workspace_id: str
+```
+
+- *Type:* str
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1277,9 +1392,11 @@ alertV2.AlertV2Config(
   evaluation: AlertV2Evaluation = None,
   parent_path: str = None,
   query_text: str = None,
+  run_as: AlertV2RunAs = None,
   run_as_user_name: str = None,
   schedule: AlertV2Schedule = None,
-  warehouse_id: str = None
+  warehouse_id: str = None,
+  workspace_id: str = None
 )
 ```
 
@@ -1294,15 +1411,17 @@ alertV2.AlertV2Config(
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.customDescription">custom_description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#custom_description AlertV2#custom_description}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.customSummary">custom_summary</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#custom_summary AlertV2#custom_summary}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#display_name AlertV2#display_name}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.evaluation">evaluation</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation">AlertV2Evaluation</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#evaluation AlertV2#evaluation}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.parentPath">parent_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#parent_path AlertV2#parent_path}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.queryText">query_text</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#query_text AlertV2#query_text}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.runAsUserName">run_as_user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#run_as_user_name AlertV2#run_as_user_name}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.schedule">schedule</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Schedule">AlertV2Schedule</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#schedule AlertV2#schedule}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.warehouseId">warehouse_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#warehouse_id AlertV2#warehouse_id}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.customDescription">custom_description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#custom_description AlertV2#custom_description}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.customSummary">custom_summary</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#custom_summary AlertV2#custom_summary}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#display_name AlertV2#display_name}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.evaluation">evaluation</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation">AlertV2Evaluation</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#evaluation AlertV2#evaluation}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.parentPath">parent_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#parent_path AlertV2#parent_path}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.queryText">query_text</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#query_text AlertV2#query_text}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.runAs">run_as</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAs">AlertV2RunAs</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#run_as AlertV2#run_as}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.runAsUserName">run_as_user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#run_as_user_name AlertV2#run_as_user_name}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.schedule">schedule</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Schedule">AlertV2Schedule</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#schedule AlertV2#schedule}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.warehouseId">warehouse_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#warehouse_id AlertV2#warehouse_id}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#workspace_id AlertV2#workspace_id}. |
 
 ---
 
@@ -1384,7 +1503,7 @@ custom_description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#custom_description AlertV2#custom_description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#custom_description AlertV2#custom_description}.
 
 ---
 
@@ -1396,7 +1515,7 @@ custom_summary: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#custom_summary AlertV2#custom_summary}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#custom_summary AlertV2#custom_summary}.
 
 ---
 
@@ -1408,7 +1527,7 @@ display_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#display_name AlertV2#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#display_name AlertV2#display_name}.
 
 ---
 
@@ -1420,7 +1539,7 @@ evaluation: AlertV2Evaluation
 
 - *Type:* <a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation">AlertV2Evaluation</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#evaluation AlertV2#evaluation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#evaluation AlertV2#evaluation}.
 
 ---
 
@@ -1432,7 +1551,7 @@ parent_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#parent_path AlertV2#parent_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#parent_path AlertV2#parent_path}.
 
 ---
 
@@ -1444,7 +1563,19 @@ query_text: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#query_text AlertV2#query_text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#query_text AlertV2#query_text}.
+
+---
+
+##### `run_as`<sup>Optional</sup> <a name="run_as" id="@cdktf/provider-databricks.alertV2.AlertV2Config.property.runAs"></a>
+
+```python
+run_as: AlertV2RunAs
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAs">AlertV2RunAs</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#run_as AlertV2#run_as}.
 
 ---
 
@@ -1456,7 +1587,7 @@ run_as_user_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#run_as_user_name AlertV2#run_as_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#run_as_user_name AlertV2#run_as_user_name}.
 
 ---
 
@@ -1468,7 +1599,7 @@ schedule: AlertV2Schedule
 
 - *Type:* <a href="#@cdktf/provider-databricks.alertV2.AlertV2Schedule">AlertV2Schedule</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#schedule AlertV2#schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#schedule AlertV2#schedule}.
 
 ---
 
@@ -1480,7 +1611,65 @@ warehouse_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#warehouse_id AlertV2#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#warehouse_id AlertV2#warehouse_id}.
+
+---
+
+##### `workspace_id`<sup>Optional</sup> <a name="workspace_id" id="@cdktf/provider-databricks.alertV2.AlertV2Config.property.workspaceId"></a>
+
+```python
+workspace_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#workspace_id AlertV2#workspace_id}.
+
+---
+
+### AlertV2EffectiveRunAs <a name="AlertV2EffectiveRunAs" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAs"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAs.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import alert_v2
+
+alertV2.AlertV2EffectiveRunAs(
+  service_principal_name: str = None,
+  user_name: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAs.property.servicePrincipalName">service_principal_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#service_principal_name AlertV2#service_principal_name}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAs.property.userName">user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#user_name AlertV2#user_name}. |
+
+---
+
+##### `service_principal_name`<sup>Optional</sup> <a name="service_principal_name" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAs.property.servicePrincipalName"></a>
+
+```python
+service_principal_name: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#service_principal_name AlertV2#service_principal_name}.
+
+---
+
+##### `user_name`<sup>Optional</sup> <a name="user_name" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAs.property.userName"></a>
+
+```python
+user_name: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#user_name AlertV2#user_name}.
 
 ---
 
@@ -1504,11 +1693,11 @@ alertV2.AlertV2Evaluation(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation.property.comparisonOperator">comparison_operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#comparison_operator AlertV2#comparison_operator}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation.property.emptyResultState">empty_result_state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#empty_result_state AlertV2#empty_result_state}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation.property.notification">notification</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotification">AlertV2EvaluationNotification</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#notification AlertV2#notification}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation.property.source">source</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationSource">AlertV2EvaluationSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#source AlertV2#source}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation.property.threshold">threshold</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThreshold">AlertV2EvaluationThreshold</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#threshold AlertV2#threshold}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation.property.comparisonOperator">comparison_operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#comparison_operator AlertV2#comparison_operator}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation.property.emptyResultState">empty_result_state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#empty_result_state AlertV2#empty_result_state}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation.property.notification">notification</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotification">AlertV2EvaluationNotification</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#notification AlertV2#notification}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation.property.source">source</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationSource">AlertV2EvaluationSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#source AlertV2#source}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation.property.threshold">threshold</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThreshold">AlertV2EvaluationThreshold</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#threshold AlertV2#threshold}. |
 
 ---
 
@@ -1520,7 +1709,7 @@ comparison_operator: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#comparison_operator AlertV2#comparison_operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#comparison_operator AlertV2#comparison_operator}.
 
 ---
 
@@ -1532,7 +1721,7 @@ empty_result_state: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#empty_result_state AlertV2#empty_result_state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#empty_result_state AlertV2#empty_result_state}.
 
 ---
 
@@ -1544,7 +1733,7 @@ notification: AlertV2EvaluationNotification
 
 - *Type:* <a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotification">AlertV2EvaluationNotification</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#notification AlertV2#notification}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#notification AlertV2#notification}.
 
 ---
 
@@ -1556,7 +1745,7 @@ source: AlertV2EvaluationSource
 
 - *Type:* <a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationSource">AlertV2EvaluationSource</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#source AlertV2#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#source AlertV2#source}.
 
 ---
 
@@ -1568,7 +1757,7 @@ threshold: AlertV2EvaluationThreshold
 
 - *Type:* <a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThreshold">AlertV2EvaluationThreshold</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#threshold AlertV2#threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#threshold AlertV2#threshold}.
 
 ---
 
@@ -1590,9 +1779,9 @@ alertV2.AlertV2EvaluationNotification(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotification.property.notifyOnOk">notify_on_ok</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#notify_on_ok AlertV2#notify_on_ok}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotification.property.retriggerSeconds">retrigger_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#retrigger_seconds AlertV2#retrigger_seconds}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotification.property.subscriptions">subscriptions</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotificationSubscriptions">AlertV2EvaluationNotificationSubscriptions</a>]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#subscriptions AlertV2#subscriptions}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotification.property.notifyOnOk">notify_on_ok</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#notify_on_ok AlertV2#notify_on_ok}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotification.property.retriggerSeconds">retrigger_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#retrigger_seconds AlertV2#retrigger_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotification.property.subscriptions">subscriptions</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotificationSubscriptions">AlertV2EvaluationNotificationSubscriptions</a>]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#subscriptions AlertV2#subscriptions}. |
 
 ---
 
@@ -1604,7 +1793,7 @@ notify_on_ok: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#notify_on_ok AlertV2#notify_on_ok}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#notify_on_ok AlertV2#notify_on_ok}.
 
 ---
 
@@ -1616,7 +1805,7 @@ retrigger_seconds: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#retrigger_seconds AlertV2#retrigger_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#retrigger_seconds AlertV2#retrigger_seconds}.
 
 ---
 
@@ -1628,7 +1817,7 @@ subscriptions: typing.Union[IResolvable, typing.List[AlertV2EvaluationNotificati
 
 - *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotificationSubscriptions">AlertV2EvaluationNotificationSubscriptions</a>]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#subscriptions AlertV2#subscriptions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#subscriptions AlertV2#subscriptions}.
 
 ---
 
@@ -1649,8 +1838,8 @@ alertV2.AlertV2EvaluationNotificationSubscriptions(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotificationSubscriptions.property.destinationId">destination_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#destination_id AlertV2#destination_id}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotificationSubscriptions.property.userEmail">user_email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#user_email AlertV2#user_email}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotificationSubscriptions.property.destinationId">destination_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#destination_id AlertV2#destination_id}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotificationSubscriptions.property.userEmail">user_email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#user_email AlertV2#user_email}. |
 
 ---
 
@@ -1662,7 +1851,7 @@ destination_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#destination_id AlertV2#destination_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#destination_id AlertV2#destination_id}.
 
 ---
 
@@ -1674,7 +1863,7 @@ user_email: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#user_email AlertV2#user_email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#user_email AlertV2#user_email}.
 
 ---
 
@@ -1696,9 +1885,9 @@ alertV2.AlertV2EvaluationSource(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationSource.property.aggregation">aggregation</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#aggregation AlertV2#aggregation}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationSource.property.display">display</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#display AlertV2#display}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationSource.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#name AlertV2#name}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationSource.property.aggregation">aggregation</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#aggregation AlertV2#aggregation}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationSource.property.display">display</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#display AlertV2#display}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationSource.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#name AlertV2#name}. |
 
 ---
 
@@ -1710,7 +1899,7 @@ aggregation: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#aggregation AlertV2#aggregation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#aggregation AlertV2#aggregation}.
 
 ---
 
@@ -1722,7 +1911,7 @@ display: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#display AlertV2#display}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#display AlertV2#display}.
 
 ---
 
@@ -1734,7 +1923,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#name AlertV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#name AlertV2#name}.
 
 ---
 
@@ -1755,8 +1944,8 @@ alertV2.AlertV2EvaluationThreshold(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThreshold.property.column">column</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdColumn">AlertV2EvaluationThresholdColumn</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#column AlertV2#column}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThreshold.property.value">value</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdValue">AlertV2EvaluationThresholdValue</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#value AlertV2#value}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThreshold.property.column">column</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdColumn">AlertV2EvaluationThresholdColumn</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#column AlertV2#column}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThreshold.property.value">value</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdValue">AlertV2EvaluationThresholdValue</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#value AlertV2#value}. |
 
 ---
 
@@ -1768,7 +1957,7 @@ column: AlertV2EvaluationThresholdColumn
 
 - *Type:* <a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdColumn">AlertV2EvaluationThresholdColumn</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#column AlertV2#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#column AlertV2#column}.
 
 ---
 
@@ -1780,7 +1969,7 @@ value: AlertV2EvaluationThresholdValue
 
 - *Type:* <a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdValue">AlertV2EvaluationThresholdValue</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#value AlertV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#value AlertV2#value}.
 
 ---
 
@@ -1802,9 +1991,9 @@ alertV2.AlertV2EvaluationThresholdColumn(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdColumn.property.aggregation">aggregation</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#aggregation AlertV2#aggregation}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdColumn.property.display">display</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#display AlertV2#display}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdColumn.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#name AlertV2#name}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdColumn.property.aggregation">aggregation</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#aggregation AlertV2#aggregation}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdColumn.property.display">display</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#display AlertV2#display}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdColumn.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#name AlertV2#name}. |
 
 ---
 
@@ -1816,7 +2005,7 @@ aggregation: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#aggregation AlertV2#aggregation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#aggregation AlertV2#aggregation}.
 
 ---
 
@@ -1828,7 +2017,7 @@ display: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#display AlertV2#display}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#display AlertV2#display}.
 
 ---
 
@@ -1840,7 +2029,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#name AlertV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#name AlertV2#name}.
 
 ---
 
@@ -1862,9 +2051,9 @@ alertV2.AlertV2EvaluationThresholdValue(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdValue.property.boolValue">bool_value</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#bool_value AlertV2#bool_value}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdValue.property.doubleValue">double_value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#double_value AlertV2#double_value}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdValue.property.stringValue">string_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#string_value AlertV2#string_value}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdValue.property.boolValue">bool_value</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#bool_value AlertV2#bool_value}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdValue.property.doubleValue">double_value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#double_value AlertV2#double_value}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdValue.property.stringValue">string_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#string_value AlertV2#string_value}. |
 
 ---
 
@@ -1876,7 +2065,7 @@ bool_value: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#bool_value AlertV2#bool_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#bool_value AlertV2#bool_value}.
 
 ---
 
@@ -1888,7 +2077,7 @@ double_value: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#double_value AlertV2#double_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#double_value AlertV2#double_value}.
 
 ---
 
@@ -1900,7 +2089,53 @@ string_value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#string_value AlertV2#string_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#string_value AlertV2#string_value}.
+
+---
+
+### AlertV2RunAs <a name="AlertV2RunAs" id="@cdktf/provider-databricks.alertV2.AlertV2RunAs"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.alertV2.AlertV2RunAs.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import alert_v2
+
+alertV2.AlertV2RunAs(
+  service_principal_name: str = None,
+  user_name: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAs.property.servicePrincipalName">service_principal_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#service_principal_name AlertV2#service_principal_name}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAs.property.userName">user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#user_name AlertV2#user_name}. |
+
+---
+
+##### `service_principal_name`<sup>Optional</sup> <a name="service_principal_name" id="@cdktf/provider-databricks.alertV2.AlertV2RunAs.property.servicePrincipalName"></a>
+
+```python
+service_principal_name: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#service_principal_name AlertV2#service_principal_name}.
+
+---
+
+##### `user_name`<sup>Optional</sup> <a name="user_name" id="@cdktf/provider-databricks.alertV2.AlertV2RunAs.property.userName"></a>
+
+```python
+user_name: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#user_name AlertV2#user_name}.
 
 ---
 
@@ -1922,9 +2157,9 @@ alertV2.AlertV2Schedule(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Schedule.property.pauseStatus">pause_status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#pause_status AlertV2#pause_status}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Schedule.property.quartzCronSchedule">quartz_cron_schedule</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#quartz_cron_schedule AlertV2#quartz_cron_schedule}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Schedule.property.timezoneId">timezone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#timezone_id AlertV2#timezone_id}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Schedule.property.pauseStatus">pause_status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#pause_status AlertV2#pause_status}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Schedule.property.quartzCronSchedule">quartz_cron_schedule</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#quartz_cron_schedule AlertV2#quartz_cron_schedule}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Schedule.property.timezoneId">timezone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#timezone_id AlertV2#timezone_id}. |
 
 ---
 
@@ -1936,7 +2171,7 @@ pause_status: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#pause_status AlertV2#pause_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#pause_status AlertV2#pause_status}.
 
 ---
 
@@ -1948,7 +2183,7 @@ quartz_cron_schedule: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#quartz_cron_schedule AlertV2#quartz_cron_schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#quartz_cron_schedule AlertV2#quartz_cron_schedule}.
 
 ---
 
@@ -1960,11 +2195,343 @@ timezone_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#timezone_id AlertV2#timezone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#timezone_id AlertV2#timezone_id}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### AlertV2EffectiveRunAsOutputReference <a name="AlertV2EffectiveRunAsOutputReference" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import alert_v2
+
+alertV2.AlertV2EffectiveRunAsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.resetServicePrincipalName">reset_service_principal_name</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.resetUserName">reset_user_name</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_service_principal_name` <a name="reset_service_principal_name" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.resetServicePrincipalName"></a>
+
+```python
+def reset_service_principal_name() -> None
+```
+
+##### `reset_user_name` <a name="reset_user_name" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.resetUserName"></a>
+
+```python
+def reset_user_name() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.property.servicePrincipalNameInput">service_principal_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.property.userNameInput">user_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.property.servicePrincipalName">service_principal_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.property.userName">user_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAs">AlertV2EffectiveRunAs</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `service_principal_name_input`<sup>Optional</sup> <a name="service_principal_name_input" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.property.servicePrincipalNameInput"></a>
+
+```python
+service_principal_name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `user_name_input`<sup>Optional</sup> <a name="user_name_input" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.property.userNameInput"></a>
+
+```python
+user_name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `service_principal_name`<sup>Required</sup> <a name="service_principal_name" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.property.servicePrincipalName"></a>
+
+```python
+service_principal_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `user_name`<sup>Required</sup> <a name="user_name" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.property.userName"></a>
+
+```python
+user_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: AlertV2EffectiveRunAs
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAs">AlertV2EffectiveRunAs</a>
+
+---
+
 
 ### AlertV2EvaluationNotificationOutputReference <a name="AlertV2EvaluationNotificationOutputReference" id="@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotificationOutputReference"></a>
 
@@ -3114,7 +3681,7 @@ def put_notification(
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#notify_on_ok AlertV2#notify_on_ok}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#notify_on_ok AlertV2#notify_on_ok}.
 
 ---
 
@@ -3122,7 +3689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#retrigger_seconds AlertV2#retrigger_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#retrigger_seconds AlertV2#retrigger_seconds}.
 
 ---
 
@@ -3130,7 +3697,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotificationSubscriptions">AlertV2EvaluationNotificationSubscriptions</a>]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#subscriptions AlertV2#subscriptions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#subscriptions AlertV2#subscriptions}.
 
 ---
 
@@ -3148,7 +3715,7 @@ def put_source(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#aggregation AlertV2#aggregation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#aggregation AlertV2#aggregation}.
 
 ---
 
@@ -3156,7 +3723,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#display AlertV2#display}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#display AlertV2#display}.
 
 ---
 
@@ -3164,7 +3731,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#name AlertV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#name AlertV2#name}.
 
 ---
 
@@ -3181,7 +3748,7 @@ def put_threshold(
 
 - *Type:* <a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdColumn">AlertV2EvaluationThresholdColumn</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#column AlertV2#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#column AlertV2#column}.
 
 ---
 
@@ -3189,7 +3756,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdValue">AlertV2EvaluationThresholdValue</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#value AlertV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#value AlertV2#value}.
 
 ---
 
@@ -4369,7 +4936,7 @@ def put_column(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#aggregation AlertV2#aggregation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#aggregation AlertV2#aggregation}.
 
 ---
 
@@ -4377,7 +4944,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#display AlertV2#display}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#display AlertV2#display}.
 
 ---
 
@@ -4385,7 +4952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#name AlertV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#name AlertV2#name}.
 
 ---
 
@@ -4403,7 +4970,7 @@ def put_value(
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#bool_value AlertV2#bool_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#bool_value AlertV2#bool_value}.
 
 ---
 
@@ -4411,7 +4978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#double_value AlertV2#double_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#double_value AlertV2#double_value}.
 
 ---
 
@@ -4419,7 +4986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/alert_v2#string_value AlertV2#string_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#string_value AlertV2#string_value}.
 
 ---
 
@@ -4882,6 +5449,338 @@ internal_value: typing.Union[IResolvable, AlertV2EvaluationThresholdValue]
 ```
 
 - *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdValue">AlertV2EvaluationThresholdValue</a>]
+
+---
+
+
+### AlertV2RunAsOutputReference <a name="AlertV2RunAsOutputReference" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import alert_v2
+
+alertV2.AlertV2RunAsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.resetServicePrincipalName">reset_service_principal_name</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.resetUserName">reset_user_name</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_service_principal_name` <a name="reset_service_principal_name" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.resetServicePrincipalName"></a>
+
+```python
+def reset_service_principal_name() -> None
+```
+
+##### `reset_user_name` <a name="reset_user_name" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.resetUserName"></a>
+
+```python
+def reset_user_name() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.property.servicePrincipalNameInput">service_principal_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.property.userNameInput">user_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.property.servicePrincipalName">service_principal_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.property.userName">user_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAs">AlertV2RunAs</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `service_principal_name_input`<sup>Optional</sup> <a name="service_principal_name_input" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.property.servicePrincipalNameInput"></a>
+
+```python
+service_principal_name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `user_name_input`<sup>Optional</sup> <a name="user_name_input" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.property.userNameInput"></a>
+
+```python
+user_name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `service_principal_name`<sup>Required</sup> <a name="service_principal_name" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.property.servicePrincipalName"></a>
+
+```python
+service_principal_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `user_name`<sup>Required</sup> <a name="user_name" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.property.userName"></a>
+
+```python
+user_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.alertV2.AlertV2RunAsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, AlertV2RunAs]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAs">AlertV2RunAs</a>]
 
 ---
 

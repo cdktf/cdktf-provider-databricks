@@ -4,7 +4,7 @@
 
 ### BudgetPolicy <a name="BudgetPolicy" id="@cdktf/provider-databricks.budgetPolicy.BudgetPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/budget_policy databricks_budget_policy}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/budget_policy databricks_budget_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.Initializer"></a>
 
@@ -26,6 +26,7 @@ BudgetPolicy.Builder.create(Construct scope, java.lang.String id)
 //  .bindingWorkspaceIds(java.util.List<java.lang.Number>)
 //  .customTags(IResolvable)
 //  .customTags(java.util.List<BudgetPolicyCustomTags>)
+//  .policyId(java.lang.String)
 //  .policyName(java.lang.String)
     .build();
 ```
@@ -41,9 +42,10 @@ BudgetPolicy.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.Initializer.parameter.bindingWorkspaceIds">bindingWorkspaceIds</a></code> | <code>java.util.List<java.lang.Number></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/budget_policy#binding_workspace_ids BudgetPolicy#binding_workspace_ids}. |
-| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.Initializer.parameter.customTags">customTags</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyCustomTags">BudgetPolicyCustomTags</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/budget_policy#custom_tags BudgetPolicy#custom_tags}. |
-| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.Initializer.parameter.policyName">policyName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/budget_policy#policy_name BudgetPolicy#policy_name}. |
+| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.Initializer.parameter.bindingWorkspaceIds">bindingWorkspaceIds</a></code> | <code>java.util.List<java.lang.Number></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/budget_policy#binding_workspace_ids BudgetPolicy#binding_workspace_ids}. |
+| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.Initializer.parameter.customTags">customTags</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyCustomTags">BudgetPolicyCustomTags</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/budget_policy#custom_tags BudgetPolicy#custom_tags}. |
+| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.Initializer.parameter.policyId">policyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/budget_policy#policy_id BudgetPolicy#policy_id}. |
+| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.Initializer.parameter.policyName">policyName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/budget_policy#policy_name BudgetPolicy#policy_name}. |
 
 ---
 
@@ -111,7 +113,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.util.List<java.lang.Number>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/budget_policy#binding_workspace_ids BudgetPolicy#binding_workspace_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/budget_policy#binding_workspace_ids BudgetPolicy#binding_workspace_ids}.
 
 ---
 
@@ -119,7 +121,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyCustomTags">BudgetPolicyCustomTags</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/budget_policy#custom_tags BudgetPolicy#custom_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/budget_policy#custom_tags BudgetPolicy#custom_tags}.
+
+---
+
+##### `policyId`<sup>Optional</sup> <a name="policyId" id="@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.Initializer.parameter.policyId"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/budget_policy#policy_id BudgetPolicy#policy_id}.
 
 ---
 
@@ -127,7 +137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/budget_policy#policy_name BudgetPolicy#policy_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/budget_policy#policy_name BudgetPolicy#policy_name}.
 
 ---
 
@@ -161,6 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.putCustomTags">putCustomTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.resetBindingWorkspaceIds">resetBindingWorkspaceIds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.resetCustomTags">resetCustomTags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.resetPolicyId">resetPolicyId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.resetPolicyName">resetPolicyName</a></code> | *No description.* |
 
 ---
@@ -479,6 +490,12 @@ public void resetBindingWorkspaceIds()
 public void resetCustomTags()
 ```
 
+##### `resetPolicyId` <a name="resetPolicyId" id="@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.resetPolicyId"></a>
+
+```java
+public void resetPolicyId()
+```
+
 ##### `resetPolicyName` <a name="resetPolicyName" id="@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.resetPolicyName"></a>
 
 ```java
@@ -588,7 +605,7 @@ The construct id used in the generated config for the BudgetPolicy to import.
 
 The id of the existing BudgetPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/budget_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/budget_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -619,11 +636,12 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.property.customTags">customTags</a></code> | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyCustomTagsList">BudgetPolicyCustomTagsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.property.policyId">policyId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.property.bindingWorkspaceIdsInput">bindingWorkspaceIdsInput</a></code> | <code>java.util.List<java.lang.Number></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.property.customTagsInput">customTagsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyCustomTags">BudgetPolicyCustomTags</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.property.policyIdInput">policyIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.property.policyNameInput">policyNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.property.bindingWorkspaceIds">bindingWorkspaceIds</a></code> | <code>java.util.List<java.lang.Number></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.property.policyId">policyId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.property.policyName">policyName</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -780,16 +798,6 @@ public BudgetPolicyCustomTagsList getCustomTags();
 
 ---
 
-##### `policyId`<sup>Required</sup> <a name="policyId" id="@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.property.policyId"></a>
-
-```java
-public java.lang.String getPolicyId();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `bindingWorkspaceIdsInput`<sup>Optional</sup> <a name="bindingWorkspaceIdsInput" id="@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.property.bindingWorkspaceIdsInput"></a>
 
 ```java
@@ -810,6 +818,16 @@ public java.lang.Object getCustomTagsInput();
 
 ---
 
+##### `policyIdInput`<sup>Optional</sup> <a name="policyIdInput" id="@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.property.policyIdInput"></a>
+
+```java
+public java.lang.String getPolicyIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `policyNameInput`<sup>Optional</sup> <a name="policyNameInput" id="@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.property.policyNameInput"></a>
 
 ```java
@@ -827,6 +845,16 @@ public java.util.List<java.lang.Number> getBindingWorkspaceIds();
 ```
 
 - *Type:* java.util.List<java.lang.Number>
+
+---
+
+##### `policyId`<sup>Required</sup> <a name="policyId" id="@cdktf/provider-databricks.budgetPolicy.BudgetPolicy.property.policyId"></a>
+
+```java
+public java.lang.String getPolicyId();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -882,6 +910,7 @@ BudgetPolicyConfig.builder()
 //  .bindingWorkspaceIds(java.util.List<java.lang.Number>)
 //  .customTags(IResolvable)
 //  .customTags(java.util.List<BudgetPolicyCustomTags>)
+//  .policyId(java.lang.String)
 //  .policyName(java.lang.String)
     .build();
 ```
@@ -897,9 +926,10 @@ BudgetPolicyConfig.builder()
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyConfig.property.bindingWorkspaceIds">bindingWorkspaceIds</a></code> | <code>java.util.List<java.lang.Number></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/budget_policy#binding_workspace_ids BudgetPolicy#binding_workspace_ids}. |
-| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyConfig.property.customTags">customTags</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyCustomTags">BudgetPolicyCustomTags</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/budget_policy#custom_tags BudgetPolicy#custom_tags}. |
-| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyConfig.property.policyName">policyName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/budget_policy#policy_name BudgetPolicy#policy_name}. |
+| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyConfig.property.bindingWorkspaceIds">bindingWorkspaceIds</a></code> | <code>java.util.List<java.lang.Number></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/budget_policy#binding_workspace_ids BudgetPolicy#binding_workspace_ids}. |
+| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyConfig.property.customTags">customTags</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyCustomTags">BudgetPolicyCustomTags</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/budget_policy#custom_tags BudgetPolicy#custom_tags}. |
+| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyConfig.property.policyId">policyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/budget_policy#policy_id BudgetPolicy#policy_id}. |
+| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyConfig.property.policyName">policyName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/budget_policy#policy_name BudgetPolicy#policy_name}. |
 
 ---
 
@@ -981,7 +1011,7 @@ public java.util.List<java.lang.Number> getBindingWorkspaceIds();
 
 - *Type:* java.util.List<java.lang.Number>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/budget_policy#binding_workspace_ids BudgetPolicy#binding_workspace_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/budget_policy#binding_workspace_ids BudgetPolicy#binding_workspace_ids}.
 
 ---
 
@@ -993,7 +1023,19 @@ public java.lang.Object getCustomTags();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyCustomTags">BudgetPolicyCustomTags</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/budget_policy#custom_tags BudgetPolicy#custom_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/budget_policy#custom_tags BudgetPolicy#custom_tags}.
+
+---
+
+##### `policyId`<sup>Optional</sup> <a name="policyId" id="@cdktf/provider-databricks.budgetPolicy.BudgetPolicyConfig.property.policyId"></a>
+
+```java
+public java.lang.String getPolicyId();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/budget_policy#policy_id BudgetPolicy#policy_id}.
 
 ---
 
@@ -1005,7 +1047,7 @@ public java.lang.String getPolicyName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/budget_policy#policy_name BudgetPolicy#policy_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/budget_policy#policy_name BudgetPolicy#policy_name}.
 
 ---
 
@@ -1026,8 +1068,8 @@ BudgetPolicyCustomTags.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyCustomTags.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/budget_policy#key BudgetPolicy#key}. |
-| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyCustomTags.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/budget_policy#value BudgetPolicy#value}. |
+| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyCustomTags.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/budget_policy#key BudgetPolicy#key}. |
+| <code><a href="#@cdktf/provider-databricks.budgetPolicy.BudgetPolicyCustomTags.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/budget_policy#value BudgetPolicy#value}. |
 
 ---
 
@@ -1039,7 +1081,7 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/budget_policy#key BudgetPolicy#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/budget_policy#key BudgetPolicy#key}.
 
 ---
 
@@ -1051,7 +1093,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/budget_policy#value BudgetPolicy#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/budget_policy#value BudgetPolicy#value}.
 
 ---
 

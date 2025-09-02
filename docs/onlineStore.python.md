@@ -4,7 +4,7 @@
 
 ### OnlineStore <a name="OnlineStore" id="@cdktf/provider-databricks.onlineStore.OnlineStore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/online_store databricks_online_store}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/online_store databricks_online_store}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.onlineStore.OnlineStore.Initializer"></a>
 
@@ -23,7 +23,8 @@ onlineStore.OnlineStore(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   capacity: str,
   name: str,
-  read_replica_count: typing.Union[int, float] = None
+  read_replica_count: typing.Union[int, float] = None,
+  workspace_id: str = None
 )
 ```
 
@@ -38,9 +39,10 @@ onlineStore.OnlineStore(
 | <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStore.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStore.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStore.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStore.Initializer.parameter.capacity">capacity</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/online_store#capacity OnlineStore#capacity}. |
-| <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStore.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/online_store#name OnlineStore#name}. |
-| <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStore.Initializer.parameter.readReplicaCount">read_replica_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/online_store#read_replica_count OnlineStore#read_replica_count}. |
+| <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStore.Initializer.parameter.capacity">capacity</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/online_store#capacity OnlineStore#capacity}. |
+| <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStore.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/online_store#name OnlineStore#name}. |
+| <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStore.Initializer.parameter.readReplicaCount">read_replica_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/online_store#read_replica_count OnlineStore#read_replica_count}. |
+| <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStore.Initializer.parameter.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/online_store#workspace_id OnlineStore#workspace_id}. |
 
 ---
 
@@ -108,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/online_store#capacity OnlineStore#capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/online_store#capacity OnlineStore#capacity}.
 
 ---
 
@@ -116,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/online_store#name OnlineStore#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/online_store#name OnlineStore#name}.
 
 ---
 
@@ -124,7 +126,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/online_store#read_replica_count OnlineStore#read_replica_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/online_store#read_replica_count OnlineStore#read_replica_count}.
+
+---
+
+##### `workspace_id`<sup>Optional</sup> <a name="workspace_id" id="@cdktf/provider-databricks.onlineStore.OnlineStore.Initializer.parameter.workspaceId"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/online_store#workspace_id OnlineStore#workspace_id}.
 
 ---
 
@@ -156,6 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStore.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStore.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStore.resetReadReplicaCount">reset_read_replica_count</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStore.resetWorkspaceId">reset_workspace_id</a></code> | *No description.* |
 
 ---
 
@@ -490,6 +501,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def reset_read_replica_count() -> None
 ```
 
+##### `reset_workspace_id` <a name="reset_workspace_id" id="@cdktf/provider-databricks.onlineStore.OnlineStore.resetWorkspaceId"></a>
+
+```python
+def reset_workspace_id() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -604,7 +621,7 @@ The construct id used in the generated config for the OnlineStore to import.
 
 The id of the existing OnlineStore that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/online_store#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/online_store#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -640,9 +657,11 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStore.property.capacityInput">capacity_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStore.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStore.property.readReplicaCountInput">read_replica_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStore.property.workspaceIdInput">workspace_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStore.property.capacity">capacity</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStore.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStore.property.readReplicaCount">read_replica_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStore.property.workspaceId">workspace_id</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -848,6 +867,16 @@ read_replica_count_input: typing.Union[int, float]
 
 ---
 
+##### `workspace_id_input`<sup>Optional</sup> <a name="workspace_id_input" id="@cdktf/provider-databricks.onlineStore.OnlineStore.property.workspaceIdInput"></a>
+
+```python
+workspace_id_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `capacity`<sup>Required</sup> <a name="capacity" id="@cdktf/provider-databricks.onlineStore.OnlineStore.property.capacity"></a>
 
 ```python
@@ -875,6 +904,16 @@ read_replica_count: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktf/provider-databricks.onlineStore.OnlineStore.property.workspaceId"></a>
+
+```python
+workspace_id: str
+```
+
+- *Type:* str
 
 ---
 
@@ -915,7 +954,8 @@ onlineStore.OnlineStoreConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   capacity: str,
   name: str,
-  read_replica_count: typing.Union[int, float] = None
+  read_replica_count: typing.Union[int, float] = None,
+  workspace_id: str = None
 )
 ```
 
@@ -930,9 +970,10 @@ onlineStore.OnlineStoreConfig(
 | <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStoreConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStoreConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStoreConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStoreConfig.property.capacity">capacity</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/online_store#capacity OnlineStore#capacity}. |
-| <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStoreConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/online_store#name OnlineStore#name}. |
-| <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStoreConfig.property.readReplicaCount">read_replica_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/online_store#read_replica_count OnlineStore#read_replica_count}. |
+| <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStoreConfig.property.capacity">capacity</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/online_store#capacity OnlineStore#capacity}. |
+| <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStoreConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/online_store#name OnlineStore#name}. |
+| <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStoreConfig.property.readReplicaCount">read_replica_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/online_store#read_replica_count OnlineStore#read_replica_count}. |
+| <code><a href="#@cdktf/provider-databricks.onlineStore.OnlineStoreConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/online_store#workspace_id OnlineStore#workspace_id}. |
 
 ---
 
@@ -1014,7 +1055,7 @@ capacity: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/online_store#capacity OnlineStore#capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/online_store#capacity OnlineStore#capacity}.
 
 ---
 
@@ -1026,7 +1067,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/online_store#name OnlineStore#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/online_store#name OnlineStore#name}.
 
 ---
 
@@ -1038,7 +1079,19 @@ read_replica_count: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/online_store#read_replica_count OnlineStore#read_replica_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/online_store#read_replica_count OnlineStore#read_replica_count}.
+
+---
+
+##### `workspace_id`<sup>Optional</sup> <a name="workspace_id" id="@cdktf/provider-databricks.onlineStore.OnlineStoreConfig.property.workspaceId"></a>
+
+```python
+workspace_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/online_store#workspace_id OnlineStore#workspace_id}.
 
 ---
 

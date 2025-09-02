@@ -4,7 +4,7 @@
 
 ### QualityMonitorV2 <a name="QualityMonitorV2" id="@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/quality_monitor_v2 databricks_quality_monitor_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/quality_monitor_v2 databricks_quality_monitor_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2.Initializer"></a>
 
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2.resetWorkspaceId">resetWorkspaceId</a></code> | *No description.* |
 
 ---
 
@@ -364,6 +365,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetWorkspaceId` <a name="resetWorkspaceId" id="@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2.resetWorkspaceId"></a>
+
+```typescript
+public resetWorkspaceId(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -467,7 +474,7 @@ The construct id used in the generated config for the QualityMonitorV2 to import
 
 The id of the existing QualityMonitorV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/quality_monitor_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/quality_monitor_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -500,8 +507,10 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2.property.anomalyDetectionConfig">anomalyDetectionConfig</a></code> | <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2AnomalyDetectionConfigOutputReference">QualityMonitorV2AnomalyDetectionConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2.property.objectIdInput">objectIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2.property.objectTypeInput">objectTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2.property.workspaceIdInput">workspaceIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2.property.objectId">objectId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2.property.objectType">objectType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2.property.workspaceId">workspaceId</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -677,6 +686,16 @@ public readonly objectTypeInput: string;
 
 ---
 
+##### `workspaceIdInput`<sup>Optional</sup> <a name="workspaceIdInput" id="@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2.property.workspaceIdInput"></a>
+
+```typescript
+public readonly workspaceIdInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `objectId`<sup>Required</sup> <a name="objectId" id="@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2.property.objectId"></a>
 
 ```typescript
@@ -691,6 +710,16 @@ public readonly objectId: string;
 
 ```typescript
 public readonly objectType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `workspaceId`<sup>Required</sup> <a name="workspaceId" id="@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2.property.workspaceId"></a>
+
+```typescript
+public readonly workspaceId: string;
 ```
 
 - *Type:* string
@@ -749,8 +778,9 @@ const qualityMonitorV2Config: qualityMonitorV2.QualityMonitorV2Config = { ... }
 | <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.objectId">objectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/quality_monitor_v2#object_id QualityMonitorV2#object_id}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.objectType">objectType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/quality_monitor_v2#object_type QualityMonitorV2#object_type}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.objectId">objectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/quality_monitor_v2#object_id QualityMonitorV2#object_id}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.objectType">objectType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/quality_monitor_v2#object_type QualityMonitorV2#object_type}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/quality_monitor_v2#workspace_id QualityMonitorV2#workspace_id}. |
 
 ---
 
@@ -832,7 +862,7 @@ public readonly objectId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/quality_monitor_v2#object_id QualityMonitorV2#object_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/quality_monitor_v2#object_id QualityMonitorV2#object_id}.
 
 ---
 
@@ -844,7 +874,19 @@ public readonly objectType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.87.1/docs/resources/quality_monitor_v2#object_type QualityMonitorV2#object_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/quality_monitor_v2#object_type QualityMonitorV2#object_type}.
+
+---
+
+##### `workspaceId`<sup>Optional</sup> <a name="workspaceId" id="@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.workspaceId"></a>
+
+```typescript
+public readonly workspaceId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/quality_monitor_v2#workspace_id QualityMonitorV2#workspace_id}.
 
 ---
 
