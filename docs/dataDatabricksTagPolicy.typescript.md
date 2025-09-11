@@ -4,7 +4,7 @@
 
 ### DataDatabricksTagPolicy <a name="DataDatabricksTagPolicy" id="@cdktf/provider-databricks.dataDatabricksTagPolicy.DataDatabricksTagPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/tag_policy databricks_tag_policy}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/tag_policy databricks_tag_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksTagPolicy.DataDatabricksTagPolicy.Initializer"></a>
 
@@ -399,7 +399,7 @@ The construct id used in the generated config for the DataDatabricksTagPolicy to
 
 The id of the existing DataDatabricksTagPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/tag_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/tag_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -692,10 +692,10 @@ const dataDatabricksTagPolicyConfig: dataDatabricksTagPolicy.DataDatabricksTagPo
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksTagPolicy.DataDatabricksTagPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksTagPolicy.DataDatabricksTagPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksTagPolicy.DataDatabricksTagPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksTagPolicy.DataDatabricksTagPolicyConfig.property.tagKey">tagKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/tag_policy#tag_key DataDatabricksTagPolicy#tag_key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksTagPolicy.DataDatabricksTagPolicyConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/tag_policy#description DataDatabricksTagPolicy#description}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksTagPolicy.DataDatabricksTagPolicyConfig.property.values">values</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.dataDatabricksTagPolicy.DataDatabricksTagPolicyValues">DataDatabricksTagPolicyValues</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/tag_policy#values DataDatabricksTagPolicy#values}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksTagPolicy.DataDatabricksTagPolicyConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/tag_policy#workspace_id DataDatabricksTagPolicy#workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksTagPolicy.DataDatabricksTagPolicyConfig.property.tagKey">tagKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/tag_policy#tag_key DataDatabricksTagPolicy#tag_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksTagPolicy.DataDatabricksTagPolicyConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/tag_policy#description DataDatabricksTagPolicy#description}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksTagPolicy.DataDatabricksTagPolicyConfig.property.values">values</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.dataDatabricksTagPolicy.DataDatabricksTagPolicyValues">DataDatabricksTagPolicyValues</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/tag_policy#values DataDatabricksTagPolicy#values}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksTagPolicy.DataDatabricksTagPolicyConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/tag_policy#workspace_id DataDatabricksTagPolicy#workspace_id}. |
 
 ---
 
@@ -777,7 +777,7 @@ public readonly tagKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/tag_policy#tag_key DataDatabricksTagPolicy#tag_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/tag_policy#tag_key DataDatabricksTagPolicy#tag_key}.
 
 ---
 
@@ -789,7 +789,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/tag_policy#description DataDatabricksTagPolicy#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/tag_policy#description DataDatabricksTagPolicy#description}.
 
 ---
 
@@ -801,7 +801,7 @@ public readonly values: IResolvable | DataDatabricksTagPolicyValues[];
 
 - *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.dataDatabricksTagPolicy.DataDatabricksTagPolicyValues">DataDatabricksTagPolicyValues</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/tag_policy#values DataDatabricksTagPolicy#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/tag_policy#values DataDatabricksTagPolicy#values}.
 
 ---
 
@@ -813,7 +813,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/tag_policy#workspace_id DataDatabricksTagPolicy#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/tag_policy#workspace_id DataDatabricksTagPolicy#workspace_id}.
 
 ---
 
@@ -831,7 +831,7 @@ const dataDatabricksTagPolicyValues: dataDatabricksTagPolicy.DataDatabricksTagPo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksTagPolicy.DataDatabricksTagPolicyValues.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/tag_policy#name DataDatabricksTagPolicy#name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksTagPolicy.DataDatabricksTagPolicyValues.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/tag_policy#name DataDatabricksTagPolicy#name}. |
 
 ---
 
@@ -843,7 +843,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/tag_policy#name DataDatabricksTagPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/tag_policy#name DataDatabricksTagPolicy#name}.
 
 ---
 

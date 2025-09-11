@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/recipient_federation_policy
+// https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/recipient_federation_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,37 +13,37 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksRecipientFederationPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/recipient_federation_policy#comment DataDatabricksRecipientFederationPolicy#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/recipient_federation_policy#comment DataDatabricksRecipientFederationPolicy#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/recipient_federation_policy#name DataDatabricksRecipientFederationPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/recipient_federation_policy#name DataDatabricksRecipientFederationPolicy#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/recipient_federation_policy#oidc_policy DataDatabricksRecipientFederationPolicy#oidc_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/recipient_federation_policy#oidc_policy DataDatabricksRecipientFederationPolicy#oidc_policy}
   */
   readonly oidcPolicy?: DataDatabricksRecipientFederationPolicyOidcPolicy;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/recipient_federation_policy#workspace_id DataDatabricksRecipientFederationPolicy#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/recipient_federation_policy#workspace_id DataDatabricksRecipientFederationPolicy#workspace_id}
   */
   readonly workspaceId?: string;
 }
 export interface DataDatabricksRecipientFederationPolicyOidcPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/recipient_federation_policy#audiences DataDatabricksRecipientFederationPolicy#audiences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/recipient_federation_policy#audiences DataDatabricksRecipientFederationPolicy#audiences}
   */
   readonly audiences?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/recipient_federation_policy#issuer DataDatabricksRecipientFederationPolicy#issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/recipient_federation_policy#issuer DataDatabricksRecipientFederationPolicy#issuer}
   */
   readonly issuer: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/recipient_federation_policy#subject DataDatabricksRecipientFederationPolicy#subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/recipient_federation_policy#subject DataDatabricksRecipientFederationPolicy#subject}
   */
   readonly subject: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/recipient_federation_policy#subject_claim DataDatabricksRecipientFederationPolicy#subject_claim}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/recipient_federation_policy#subject_claim DataDatabricksRecipientFederationPolicy#subject_claim}
   */
   readonly subjectClaim: string;
 }
@@ -215,7 +215,7 @@ export class DataDatabricksRecipientFederationPolicyOidcPolicyOutputReference ex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/recipient_federation_policy databricks_recipient_federation_policy}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/recipient_federation_policy databricks_recipient_federation_policy}
 */
 export class DataDatabricksRecipientFederationPolicy extends cdktf.TerraformDataSource {
 
@@ -231,7 +231,7 @@ export class DataDatabricksRecipientFederationPolicy extends cdktf.TerraformData
   * Generates CDKTF code for importing a DataDatabricksRecipientFederationPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksRecipientFederationPolicy to import
-  * @param importFromId The id of the existing DataDatabricksRecipientFederationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/recipient_federation_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksRecipientFederationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/recipient_federation_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksRecipientFederationPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -243,7 +243,7 @@ export class DataDatabricksRecipientFederationPolicy extends cdktf.TerraformData
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/recipient_federation_policy databricks_recipient_federation_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/recipient_federation_policy databricks_recipient_federation_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -254,7 +254,7 @@ export class DataDatabricksRecipientFederationPolicy extends cdktf.TerraformData
       terraformResourceType: 'databricks_recipient_federation_policy',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.88.0',
+        providerVersion: '1.89.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

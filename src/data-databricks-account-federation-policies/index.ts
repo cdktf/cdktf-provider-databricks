@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/account_federation_policies
+// https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/account_federation_policies
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,27 +15,27 @@ export interface DataDatabricksAccountFederationPoliciesConfig extends cdktf.Ter
 }
 export interface DataDatabricksAccountFederationPoliciesPoliciesOidcPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/account_federation_policies#audiences DataDatabricksAccountFederationPolicies#audiences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/account_federation_policies#audiences DataDatabricksAccountFederationPolicies#audiences}
   */
   readonly audiences?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/account_federation_policies#issuer DataDatabricksAccountFederationPolicies#issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/account_federation_policies#issuer DataDatabricksAccountFederationPolicies#issuer}
   */
   readonly issuer?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/account_federation_policies#jwks_json DataDatabricksAccountFederationPolicies#jwks_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/account_federation_policies#jwks_json DataDatabricksAccountFederationPolicies#jwks_json}
   */
   readonly jwksJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/account_federation_policies#jwks_uri DataDatabricksAccountFederationPolicies#jwks_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/account_federation_policies#jwks_uri DataDatabricksAccountFederationPolicies#jwks_uri}
   */
   readonly jwksUri?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/account_federation_policies#subject DataDatabricksAccountFederationPolicies#subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/account_federation_policies#subject DataDatabricksAccountFederationPolicies#subject}
   */
   readonly subject?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/account_federation_policies#subject_claim DataDatabricksAccountFederationPolicies#subject_claim}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/account_federation_policies#subject_claim DataDatabricksAccountFederationPolicies#subject_claim}
   */
   readonly subjectClaim?: string;
 }
@@ -274,19 +274,19 @@ export class DataDatabricksAccountFederationPoliciesPoliciesOidcPolicyOutputRefe
 }
 export interface DataDatabricksAccountFederationPoliciesPolicies {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/account_federation_policies#description DataDatabricksAccountFederationPolicies#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/account_federation_policies#description DataDatabricksAccountFederationPolicies#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/account_federation_policies#oidc_policy DataDatabricksAccountFederationPolicies#oidc_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/account_federation_policies#oidc_policy DataDatabricksAccountFederationPolicies#oidc_policy}
   */
   readonly oidcPolicy?: DataDatabricksAccountFederationPoliciesPoliciesOidcPolicy;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/account_federation_policies#policy_id DataDatabricksAccountFederationPolicies#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/account_federation_policies#policy_id DataDatabricksAccountFederationPolicies#policy_id}
   */
   readonly policyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/account_federation_policies#service_principal_id DataDatabricksAccountFederationPolicies#service_principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/account_federation_policies#service_principal_id DataDatabricksAccountFederationPolicies#service_principal_id}
   */
   readonly servicePrincipalId?: number;
 }
@@ -499,7 +499,7 @@ export class DataDatabricksAccountFederationPoliciesPoliciesList extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/account_federation_policies databricks_account_federation_policies}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/account_federation_policies databricks_account_federation_policies}
 */
 export class DataDatabricksAccountFederationPolicies extends cdktf.TerraformDataSource {
 
@@ -515,7 +515,7 @@ export class DataDatabricksAccountFederationPolicies extends cdktf.TerraformData
   * Generates CDKTF code for importing a DataDatabricksAccountFederationPolicies resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksAccountFederationPolicies to import
-  * @param importFromId The id of the existing DataDatabricksAccountFederationPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/account_federation_policies#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksAccountFederationPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/account_federation_policies#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksAccountFederationPolicies to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -527,7 +527,7 @@ export class DataDatabricksAccountFederationPolicies extends cdktf.TerraformData
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/account_federation_policies databricks_account_federation_policies} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/account_federation_policies databricks_account_federation_policies} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -538,7 +538,7 @@ export class DataDatabricksAccountFederationPolicies extends cdktf.TerraformData
       terraformResourceType: 'databricks_account_federation_policies',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.88.0',
+        providerVersion: '1.89.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
