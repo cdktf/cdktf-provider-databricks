@@ -4,7 +4,7 @@
 
 ### QualityMonitorV2 <a name="QualityMonitorV2" id="@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/quality_monitor_v2 databricks_quality_monitor_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/quality_monitor_v2 databricks_quality_monitor_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2.Initializer"></a>
 
@@ -40,9 +40,9 @@ QualityMonitorV2.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2.Initializer.parameter.objectId">objectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/quality_monitor_v2#object_id QualityMonitorV2#object_id}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2.Initializer.parameter.objectType">objectType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/quality_monitor_v2#object_type QualityMonitorV2#object_type}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2.Initializer.parameter.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/quality_monitor_v2#workspace_id QualityMonitorV2#workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2.Initializer.parameter.objectId">objectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/quality_monitor_v2#object_id QualityMonitorV2#object_id}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2.Initializer.parameter.objectType">objectType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/quality_monitor_v2#object_type QualityMonitorV2#object_type}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2.Initializer.parameter.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/quality_monitor_v2#workspace_id QualityMonitorV2#workspace_id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/quality_monitor_v2#object_id QualityMonitorV2#object_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/quality_monitor_v2#object_id QualityMonitorV2#object_id}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/quality_monitor_v2#object_type QualityMonitorV2#object_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/quality_monitor_v2#object_type QualityMonitorV2#object_type}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/quality_monitor_v2#workspace_id QualityMonitorV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/quality_monitor_v2#workspace_id QualityMonitorV2#workspace_id}.
 
 ---
 
@@ -560,7 +560,7 @@ The construct id used in the generated config for the QualityMonitorV2 to import
 
 The id of the existing QualityMonitorV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/quality_monitor_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/quality_monitor_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -880,9 +880,9 @@ QualityMonitorV2Config.builder()
 | <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.objectId">objectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/quality_monitor_v2#object_id QualityMonitorV2#object_id}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.objectType">objectType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/quality_monitor_v2#object_type QualityMonitorV2#object_type}. |
-| <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/quality_monitor_v2#workspace_id QualityMonitorV2#workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.objectId">objectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/quality_monitor_v2#object_id QualityMonitorV2#object_id}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.objectType">objectType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/quality_monitor_v2#object_type QualityMonitorV2#object_type}. |
+| <code><a href="#@cdktf/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/quality_monitor_v2#workspace_id QualityMonitorV2#workspace_id}. |
 
 ---
 
@@ -964,7 +964,7 @@ public java.lang.String getObjectId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/quality_monitor_v2#object_id QualityMonitorV2#object_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/quality_monitor_v2#object_id QualityMonitorV2#object_id}.
 
 ---
 
@@ -976,7 +976,7 @@ public java.lang.String getObjectType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/quality_monitor_v2#object_type QualityMonitorV2#object_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/quality_monitor_v2#object_type QualityMonitorV2#object_type}.
 
 ---
 
@@ -988,7 +988,7 @@ public java.lang.String getWorkspaceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/quality_monitor_v2#workspace_id QualityMonitorV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/quality_monitor_v2#workspace_id QualityMonitorV2#workspace_id}.
 
 ---
 

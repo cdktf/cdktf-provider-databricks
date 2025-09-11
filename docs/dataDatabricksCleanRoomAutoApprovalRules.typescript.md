@@ -4,7 +4,7 @@
 
 ### DataDatabricksCleanRoomAutoApprovalRules <a name="DataDatabricksCleanRoomAutoApprovalRules" id="@cdktf/provider-databricks.dataDatabricksCleanRoomAutoApprovalRules.DataDatabricksCleanRoomAutoApprovalRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/clean_room_auto_approval_rules databricks_clean_room_auto_approval_rules}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/clean_room_auto_approval_rules databricks_clean_room_auto_approval_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksCleanRoomAutoApprovalRules.DataDatabricksCleanRoomAutoApprovalRules.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataDatabricksCleanRoomAut
 
 The id of the existing DataDatabricksCleanRoomAutoApprovalRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/clean_room_auto_approval_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/clean_room_auto_approval_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -599,7 +599,7 @@ const dataDatabricksCleanRoomAutoApprovalRulesConfig: dataDatabricksCleanRoomAut
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCleanRoomAutoApprovalRules.DataDatabricksCleanRoomAutoApprovalRulesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCleanRoomAutoApprovalRules.DataDatabricksCleanRoomAutoApprovalRulesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCleanRoomAutoApprovalRules.DataDatabricksCleanRoomAutoApprovalRulesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCleanRoomAutoApprovalRules.DataDatabricksCleanRoomAutoApprovalRulesConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/clean_room_auto_approval_rules#workspace_id DataDatabricksCleanRoomAutoApprovalRules#workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCleanRoomAutoApprovalRules.DataDatabricksCleanRoomAutoApprovalRulesConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/clean_room_auto_approval_rules#workspace_id DataDatabricksCleanRoomAutoApprovalRules#workspace_id}. |
 
 ---
 
@@ -681,7 +681,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/clean_room_auto_approval_rules#workspace_id DataDatabricksCleanRoomAutoApprovalRules#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/clean_room_auto_approval_rules#workspace_id DataDatabricksCleanRoomAutoApprovalRules#workspace_id}.
 
 ---
 
@@ -699,10 +699,10 @@ const dataDatabricksCleanRoomAutoApprovalRulesRules: dataDatabricksCleanRoomAuto
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCleanRoomAutoApprovalRules.DataDatabricksCleanRoomAutoApprovalRulesRules.property.authorCollaboratorAlias">authorCollaboratorAlias</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/clean_room_auto_approval_rules#author_collaborator_alias DataDatabricksCleanRoomAutoApprovalRules#author_collaborator_alias}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCleanRoomAutoApprovalRules.DataDatabricksCleanRoomAutoApprovalRulesRules.property.authorScope">authorScope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/clean_room_auto_approval_rules#author_scope DataDatabricksCleanRoomAutoApprovalRules#author_scope}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCleanRoomAutoApprovalRules.DataDatabricksCleanRoomAutoApprovalRulesRules.property.cleanRoomName">cleanRoomName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/clean_room_auto_approval_rules#clean_room_name DataDatabricksCleanRoomAutoApprovalRules#clean_room_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCleanRoomAutoApprovalRules.DataDatabricksCleanRoomAutoApprovalRulesRules.property.runnerCollaboratorAlias">runnerCollaboratorAlias</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/clean_room_auto_approval_rules#runner_collaborator_alias DataDatabricksCleanRoomAutoApprovalRules#runner_collaborator_alias}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCleanRoomAutoApprovalRules.DataDatabricksCleanRoomAutoApprovalRulesRules.property.authorCollaboratorAlias">authorCollaboratorAlias</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/clean_room_auto_approval_rules#author_collaborator_alias DataDatabricksCleanRoomAutoApprovalRules#author_collaborator_alias}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCleanRoomAutoApprovalRules.DataDatabricksCleanRoomAutoApprovalRulesRules.property.authorScope">authorScope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/clean_room_auto_approval_rules#author_scope DataDatabricksCleanRoomAutoApprovalRules#author_scope}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCleanRoomAutoApprovalRules.DataDatabricksCleanRoomAutoApprovalRulesRules.property.cleanRoomName">cleanRoomName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/clean_room_auto_approval_rules#clean_room_name DataDatabricksCleanRoomAutoApprovalRules#clean_room_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCleanRoomAutoApprovalRules.DataDatabricksCleanRoomAutoApprovalRulesRules.property.runnerCollaboratorAlias">runnerCollaboratorAlias</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/clean_room_auto_approval_rules#runner_collaborator_alias DataDatabricksCleanRoomAutoApprovalRules#runner_collaborator_alias}. |
 
 ---
 
@@ -714,7 +714,7 @@ public readonly authorCollaboratorAlias: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/clean_room_auto_approval_rules#author_collaborator_alias DataDatabricksCleanRoomAutoApprovalRules#author_collaborator_alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/clean_room_auto_approval_rules#author_collaborator_alias DataDatabricksCleanRoomAutoApprovalRules#author_collaborator_alias}.
 
 ---
 
@@ -726,7 +726,7 @@ public readonly authorScope: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/clean_room_auto_approval_rules#author_scope DataDatabricksCleanRoomAutoApprovalRules#author_scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/clean_room_auto_approval_rules#author_scope DataDatabricksCleanRoomAutoApprovalRules#author_scope}.
 
 ---
 
@@ -738,7 +738,7 @@ public readonly cleanRoomName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/clean_room_auto_approval_rules#clean_room_name DataDatabricksCleanRoomAutoApprovalRules#clean_room_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/clean_room_auto_approval_rules#clean_room_name DataDatabricksCleanRoomAutoApprovalRules#clean_room_name}.
 
 ---
 
@@ -750,7 +750,7 @@ public readonly runnerCollaboratorAlias: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/data-sources/clean_room_auto_approval_rules#runner_collaborator_alias DataDatabricksCleanRoomAutoApprovalRules#runner_collaborator_alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/data-sources/clean_room_auto_approval_rules#runner_collaborator_alias DataDatabricksCleanRoomAutoApprovalRules#runner_collaborator_alias}.
 
 ---
 

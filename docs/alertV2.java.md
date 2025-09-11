@@ -4,7 +4,7 @@
 
 ### AlertV2 <a name="AlertV2" id="@cdktf/provider-databricks.alertV2.AlertV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2 databricks_alert_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2 databricks_alert_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.alertV2.AlertV2.Initializer"></a>
 
@@ -48,17 +48,17 @@ AlertV2.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.customDescription">customDescription</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#custom_description AlertV2#custom_description}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.customSummary">customSummary</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#custom_summary AlertV2#custom_summary}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#display_name AlertV2#display_name}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.evaluation">evaluation</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation">AlertV2Evaluation</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#evaluation AlertV2#evaluation}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.parentPath">parentPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#parent_path AlertV2#parent_path}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.queryText">queryText</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#query_text AlertV2#query_text}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.runAs">runAs</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAs">AlertV2RunAs</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#run_as AlertV2#run_as}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.runAsUserName">runAsUserName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#run_as_user_name AlertV2#run_as_user_name}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.schedule">schedule</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Schedule">AlertV2Schedule</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#schedule AlertV2#schedule}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.warehouseId">warehouseId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#warehouse_id AlertV2#warehouse_id}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#workspace_id AlertV2#workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.customDescription">customDescription</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#custom_description AlertV2#custom_description}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.customSummary">customSummary</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#custom_summary AlertV2#custom_summary}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#display_name AlertV2#display_name}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.evaluation">evaluation</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation">AlertV2Evaluation</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#evaluation AlertV2#evaluation}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.parentPath">parentPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#parent_path AlertV2#parent_path}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.queryText">queryText</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#query_text AlertV2#query_text}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.runAs">runAs</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAs">AlertV2RunAs</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#run_as AlertV2#run_as}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.runAsUserName">runAsUserName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#run_as_user_name AlertV2#run_as_user_name}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.schedule">schedule</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Schedule">AlertV2Schedule</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#schedule AlertV2#schedule}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.warehouseId">warehouseId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#warehouse_id AlertV2#warehouse_id}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2.Initializer.parameter.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#workspace_id AlertV2#workspace_id}. |
 
 ---
 
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#custom_description AlertV2#custom_description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#custom_description AlertV2#custom_description}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#custom_summary AlertV2#custom_summary}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#custom_summary AlertV2#custom_summary}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#display_name AlertV2#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#display_name AlertV2#display_name}.
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation">AlertV2Evaluation</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#evaluation AlertV2#evaluation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#evaluation AlertV2#evaluation}.
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#parent_path AlertV2#parent_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#parent_path AlertV2#parent_path}.
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#query_text AlertV2#query_text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#query_text AlertV2#query_text}.
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAs">AlertV2RunAs</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#run_as AlertV2#run_as}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#run_as AlertV2#run_as}.
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#run_as_user_name AlertV2#run_as_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#run_as_user_name AlertV2#run_as_user_name}.
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktf/provider-databricks.alertV2.AlertV2Schedule">AlertV2Schedule</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#schedule AlertV2#schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#schedule AlertV2#schedule}.
 
 ---
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#warehouse_id AlertV2#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#warehouse_id AlertV2#warehouse_id}.
 
 ---
 
@@ -206,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#workspace_id AlertV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#workspace_id AlertV2#workspace_id}.
 
 ---
 
@@ -749,7 +749,7 @@ The construct id used in the generated config for the AlertV2 to import.
 
 The id of the existing AlertV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1296,17 +1296,17 @@ AlertV2Config.builder()
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.customDescription">customDescription</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#custom_description AlertV2#custom_description}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.customSummary">customSummary</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#custom_summary AlertV2#custom_summary}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#display_name AlertV2#display_name}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.evaluation">evaluation</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation">AlertV2Evaluation</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#evaluation AlertV2#evaluation}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.parentPath">parentPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#parent_path AlertV2#parent_path}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.queryText">queryText</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#query_text AlertV2#query_text}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.runAs">runAs</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAs">AlertV2RunAs</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#run_as AlertV2#run_as}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.runAsUserName">runAsUserName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#run_as_user_name AlertV2#run_as_user_name}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.schedule">schedule</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Schedule">AlertV2Schedule</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#schedule AlertV2#schedule}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.warehouseId">warehouseId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#warehouse_id AlertV2#warehouse_id}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#workspace_id AlertV2#workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.customDescription">customDescription</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#custom_description AlertV2#custom_description}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.customSummary">customSummary</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#custom_summary AlertV2#custom_summary}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#display_name AlertV2#display_name}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.evaluation">evaluation</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation">AlertV2Evaluation</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#evaluation AlertV2#evaluation}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.parentPath">parentPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#parent_path AlertV2#parent_path}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.queryText">queryText</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#query_text AlertV2#query_text}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.runAs">runAs</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAs">AlertV2RunAs</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#run_as AlertV2#run_as}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.runAsUserName">runAsUserName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#run_as_user_name AlertV2#run_as_user_name}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.schedule">schedule</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Schedule">AlertV2Schedule</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#schedule AlertV2#schedule}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.warehouseId">warehouseId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#warehouse_id AlertV2#warehouse_id}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Config.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#workspace_id AlertV2#workspace_id}. |
 
 ---
 
@@ -1388,7 +1388,7 @@ public java.lang.String getCustomDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#custom_description AlertV2#custom_description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#custom_description AlertV2#custom_description}.
 
 ---
 
@@ -1400,7 +1400,7 @@ public java.lang.String getCustomSummary();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#custom_summary AlertV2#custom_summary}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#custom_summary AlertV2#custom_summary}.
 
 ---
 
@@ -1412,7 +1412,7 @@ public java.lang.String getDisplayName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#display_name AlertV2#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#display_name AlertV2#display_name}.
 
 ---
 
@@ -1424,7 +1424,7 @@ public AlertV2Evaluation getEvaluation();
 
 - *Type:* <a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation">AlertV2Evaluation</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#evaluation AlertV2#evaluation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#evaluation AlertV2#evaluation}.
 
 ---
 
@@ -1436,7 +1436,7 @@ public java.lang.String getParentPath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#parent_path AlertV2#parent_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#parent_path AlertV2#parent_path}.
 
 ---
 
@@ -1448,7 +1448,7 @@ public java.lang.String getQueryText();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#query_text AlertV2#query_text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#query_text AlertV2#query_text}.
 
 ---
 
@@ -1460,7 +1460,7 @@ public AlertV2RunAs getRunAs();
 
 - *Type:* <a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAs">AlertV2RunAs</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#run_as AlertV2#run_as}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#run_as AlertV2#run_as}.
 
 ---
 
@@ -1472,7 +1472,7 @@ public java.lang.String getRunAsUserName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#run_as_user_name AlertV2#run_as_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#run_as_user_name AlertV2#run_as_user_name}.
 
 ---
 
@@ -1484,7 +1484,7 @@ public AlertV2Schedule getSchedule();
 
 - *Type:* <a href="#@cdktf/provider-databricks.alertV2.AlertV2Schedule">AlertV2Schedule</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#schedule AlertV2#schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#schedule AlertV2#schedule}.
 
 ---
 
@@ -1496,7 +1496,7 @@ public java.lang.String getWarehouseId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#warehouse_id AlertV2#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#warehouse_id AlertV2#warehouse_id}.
 
 ---
 
@@ -1508,7 +1508,7 @@ public java.lang.String getWorkspaceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#workspace_id AlertV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#workspace_id AlertV2#workspace_id}.
 
 ---
 
@@ -1529,8 +1529,8 @@ AlertV2EffectiveRunAs.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAs.property.servicePrincipalName">servicePrincipalName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#service_principal_name AlertV2#service_principal_name}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAs.property.userName">userName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#user_name AlertV2#user_name}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAs.property.servicePrincipalName">servicePrincipalName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#service_principal_name AlertV2#service_principal_name}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EffectiveRunAs.property.userName">userName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#user_name AlertV2#user_name}. |
 
 ---
 
@@ -1542,7 +1542,7 @@ public java.lang.String getServicePrincipalName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#service_principal_name AlertV2#service_principal_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#service_principal_name AlertV2#service_principal_name}.
 
 ---
 
@@ -1554,7 +1554,7 @@ public java.lang.String getUserName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#user_name AlertV2#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#user_name AlertV2#user_name}.
 
 ---
 
@@ -1578,11 +1578,11 @@ AlertV2Evaluation.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation.property.comparisonOperator">comparisonOperator</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#comparison_operator AlertV2#comparison_operator}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation.property.emptyResultState">emptyResultState</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#empty_result_state AlertV2#empty_result_state}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation.property.notification">notification</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotification">AlertV2EvaluationNotification</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#notification AlertV2#notification}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation.property.source">source</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationSource">AlertV2EvaluationSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#source AlertV2#source}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation.property.threshold">threshold</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThreshold">AlertV2EvaluationThreshold</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#threshold AlertV2#threshold}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation.property.comparisonOperator">comparisonOperator</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#comparison_operator AlertV2#comparison_operator}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation.property.emptyResultState">emptyResultState</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#empty_result_state AlertV2#empty_result_state}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation.property.notification">notification</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotification">AlertV2EvaluationNotification</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#notification AlertV2#notification}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation.property.source">source</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationSource">AlertV2EvaluationSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#source AlertV2#source}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Evaluation.property.threshold">threshold</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThreshold">AlertV2EvaluationThreshold</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#threshold AlertV2#threshold}. |
 
 ---
 
@@ -1594,7 +1594,7 @@ public java.lang.String getComparisonOperator();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#comparison_operator AlertV2#comparison_operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#comparison_operator AlertV2#comparison_operator}.
 
 ---
 
@@ -1606,7 +1606,7 @@ public java.lang.String getEmptyResultState();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#empty_result_state AlertV2#empty_result_state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#empty_result_state AlertV2#empty_result_state}.
 
 ---
 
@@ -1618,7 +1618,7 @@ public AlertV2EvaluationNotification getNotification();
 
 - *Type:* <a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotification">AlertV2EvaluationNotification</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#notification AlertV2#notification}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#notification AlertV2#notification}.
 
 ---
 
@@ -1630,7 +1630,7 @@ public AlertV2EvaluationSource getSource();
 
 - *Type:* <a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationSource">AlertV2EvaluationSource</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#source AlertV2#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#source AlertV2#source}.
 
 ---
 
@@ -1642,7 +1642,7 @@ public AlertV2EvaluationThreshold getThreshold();
 
 - *Type:* <a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThreshold">AlertV2EvaluationThreshold</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#threshold AlertV2#threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#threshold AlertV2#threshold}.
 
 ---
 
@@ -1666,9 +1666,9 @@ AlertV2EvaluationNotification.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotification.property.notifyOnOk">notifyOnOk</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#notify_on_ok AlertV2#notify_on_ok}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotification.property.retriggerSeconds">retriggerSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#retrigger_seconds AlertV2#retrigger_seconds}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotification.property.subscriptions">subscriptions</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotificationSubscriptions">AlertV2EvaluationNotificationSubscriptions</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#subscriptions AlertV2#subscriptions}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotification.property.notifyOnOk">notifyOnOk</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#notify_on_ok AlertV2#notify_on_ok}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotification.property.retriggerSeconds">retriggerSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#retrigger_seconds AlertV2#retrigger_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotification.property.subscriptions">subscriptions</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotificationSubscriptions">AlertV2EvaluationNotificationSubscriptions</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#subscriptions AlertV2#subscriptions}. |
 
 ---
 
@@ -1680,7 +1680,7 @@ public java.lang.Object getNotifyOnOk();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#notify_on_ok AlertV2#notify_on_ok}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#notify_on_ok AlertV2#notify_on_ok}.
 
 ---
 
@@ -1692,7 +1692,7 @@ public java.lang.Number getRetriggerSeconds();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#retrigger_seconds AlertV2#retrigger_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#retrigger_seconds AlertV2#retrigger_seconds}.
 
 ---
 
@@ -1704,7 +1704,7 @@ public java.lang.Object getSubscriptions();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotificationSubscriptions">AlertV2EvaluationNotificationSubscriptions</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#subscriptions AlertV2#subscriptions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#subscriptions AlertV2#subscriptions}.
 
 ---
 
@@ -1725,8 +1725,8 @@ AlertV2EvaluationNotificationSubscriptions.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotificationSubscriptions.property.destinationId">destinationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#destination_id AlertV2#destination_id}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotificationSubscriptions.property.userEmail">userEmail</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#user_email AlertV2#user_email}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotificationSubscriptions.property.destinationId">destinationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#destination_id AlertV2#destination_id}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationNotificationSubscriptions.property.userEmail">userEmail</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#user_email AlertV2#user_email}. |
 
 ---
 
@@ -1738,7 +1738,7 @@ public java.lang.String getDestinationId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#destination_id AlertV2#destination_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#destination_id AlertV2#destination_id}.
 
 ---
 
@@ -1750,7 +1750,7 @@ public java.lang.String getUserEmail();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#user_email AlertV2#user_email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#user_email AlertV2#user_email}.
 
 ---
 
@@ -1772,9 +1772,9 @@ AlertV2EvaluationSource.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationSource.property.aggregation">aggregation</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#aggregation AlertV2#aggregation}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationSource.property.display">display</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#display AlertV2#display}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationSource.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#name AlertV2#name}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationSource.property.aggregation">aggregation</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#aggregation AlertV2#aggregation}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationSource.property.display">display</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#display AlertV2#display}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationSource.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#name AlertV2#name}. |
 
 ---
 
@@ -1786,7 +1786,7 @@ public java.lang.String getAggregation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#aggregation AlertV2#aggregation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#aggregation AlertV2#aggregation}.
 
 ---
 
@@ -1798,7 +1798,7 @@ public java.lang.String getDisplay();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#display AlertV2#display}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#display AlertV2#display}.
 
 ---
 
@@ -1810,7 +1810,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#name AlertV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#name AlertV2#name}.
 
 ---
 
@@ -1831,8 +1831,8 @@ AlertV2EvaluationThreshold.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThreshold.property.column">column</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdColumn">AlertV2EvaluationThresholdColumn</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#column AlertV2#column}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThreshold.property.value">value</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdValue">AlertV2EvaluationThresholdValue</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#value AlertV2#value}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThreshold.property.column">column</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdColumn">AlertV2EvaluationThresholdColumn</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#column AlertV2#column}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThreshold.property.value">value</a></code> | <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdValue">AlertV2EvaluationThresholdValue</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#value AlertV2#value}. |
 
 ---
 
@@ -1844,7 +1844,7 @@ public AlertV2EvaluationThresholdColumn getColumn();
 
 - *Type:* <a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdColumn">AlertV2EvaluationThresholdColumn</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#column AlertV2#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#column AlertV2#column}.
 
 ---
 
@@ -1856,7 +1856,7 @@ public AlertV2EvaluationThresholdValue getValue();
 
 - *Type:* <a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdValue">AlertV2EvaluationThresholdValue</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#value AlertV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#value AlertV2#value}.
 
 ---
 
@@ -1878,9 +1878,9 @@ AlertV2EvaluationThresholdColumn.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdColumn.property.aggregation">aggregation</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#aggregation AlertV2#aggregation}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdColumn.property.display">display</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#display AlertV2#display}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdColumn.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#name AlertV2#name}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdColumn.property.aggregation">aggregation</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#aggregation AlertV2#aggregation}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdColumn.property.display">display</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#display AlertV2#display}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdColumn.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#name AlertV2#name}. |
 
 ---
 
@@ -1892,7 +1892,7 @@ public java.lang.String getAggregation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#aggregation AlertV2#aggregation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#aggregation AlertV2#aggregation}.
 
 ---
 
@@ -1904,7 +1904,7 @@ public java.lang.String getDisplay();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#display AlertV2#display}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#display AlertV2#display}.
 
 ---
 
@@ -1916,7 +1916,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#name AlertV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#name AlertV2#name}.
 
 ---
 
@@ -1939,9 +1939,9 @@ AlertV2EvaluationThresholdValue.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdValue.property.boolValue">boolValue</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#bool_value AlertV2#bool_value}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdValue.property.doubleValue">doubleValue</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#double_value AlertV2#double_value}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdValue.property.stringValue">stringValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#string_value AlertV2#string_value}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdValue.property.boolValue">boolValue</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#bool_value AlertV2#bool_value}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdValue.property.doubleValue">doubleValue</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#double_value AlertV2#double_value}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2EvaluationThresholdValue.property.stringValue">stringValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#string_value AlertV2#string_value}. |
 
 ---
 
@@ -1953,7 +1953,7 @@ public java.lang.Object getBoolValue();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#bool_value AlertV2#bool_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#bool_value AlertV2#bool_value}.
 
 ---
 
@@ -1965,7 +1965,7 @@ public java.lang.Number getDoubleValue();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#double_value AlertV2#double_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#double_value AlertV2#double_value}.
 
 ---
 
@@ -1977,7 +1977,7 @@ public java.lang.String getStringValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#string_value AlertV2#string_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#string_value AlertV2#string_value}.
 
 ---
 
@@ -1998,8 +1998,8 @@ AlertV2RunAs.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAs.property.servicePrincipalName">servicePrincipalName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#service_principal_name AlertV2#service_principal_name}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAs.property.userName">userName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#user_name AlertV2#user_name}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAs.property.servicePrincipalName">servicePrincipalName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#service_principal_name AlertV2#service_principal_name}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2RunAs.property.userName">userName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#user_name AlertV2#user_name}. |
 
 ---
 
@@ -2011,7 +2011,7 @@ public java.lang.String getServicePrincipalName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#service_principal_name AlertV2#service_principal_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#service_principal_name AlertV2#service_principal_name}.
 
 ---
 
@@ -2023,7 +2023,7 @@ public java.lang.String getUserName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#user_name AlertV2#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#user_name AlertV2#user_name}.
 
 ---
 
@@ -2045,9 +2045,9 @@ AlertV2Schedule.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Schedule.property.pauseStatus">pauseStatus</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#pause_status AlertV2#pause_status}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Schedule.property.quartzCronSchedule">quartzCronSchedule</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#quartz_cron_schedule AlertV2#quartz_cron_schedule}. |
-| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Schedule.property.timezoneId">timezoneId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#timezone_id AlertV2#timezone_id}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Schedule.property.pauseStatus">pauseStatus</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#pause_status AlertV2#pause_status}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Schedule.property.quartzCronSchedule">quartzCronSchedule</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#quartz_cron_schedule AlertV2#quartz_cron_schedule}. |
+| <code><a href="#@cdktf/provider-databricks.alertV2.AlertV2Schedule.property.timezoneId">timezoneId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#timezone_id AlertV2#timezone_id}. |
 
 ---
 
@@ -2059,7 +2059,7 @@ public java.lang.String getPauseStatus();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#pause_status AlertV2#pause_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#pause_status AlertV2#pause_status}.
 
 ---
 
@@ -2071,7 +2071,7 @@ public java.lang.String getQuartzCronSchedule();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#quartz_cron_schedule AlertV2#quartz_cron_schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#quartz_cron_schedule AlertV2#quartz_cron_schedule}.
 
 ---
 
@@ -2083,7 +2083,7 @@ public java.lang.String getTimezoneId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.88.0/docs/resources/alert_v2#timezone_id AlertV2#timezone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/alert_v2#timezone_id AlertV2#timezone_id}.
 
 ---
 
