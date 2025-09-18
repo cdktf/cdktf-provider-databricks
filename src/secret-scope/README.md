@@ -1,3 +1,3 @@
 # `databricks_secret_scope`
 
-Refer to the Terraform Registry for docs: [`databricks_secret_scope`](https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/secret_scope).
+Refer to the Terraform Registry for docs: [`databricks_secret_scope`](https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/secret_scope).

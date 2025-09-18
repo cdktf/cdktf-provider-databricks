@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/online_store
+// https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/online_store
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,25 @@ import * as cdktf from 'cdktf';
 
 export interface OnlineStoreConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/online_store#capacity OnlineStore#capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/online_store#capacity OnlineStore#capacity}
   */
   readonly capacity: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/online_store#name OnlineStore#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/online_store#name OnlineStore#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/online_store#read_replica_count OnlineStore#read_replica_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/online_store#read_replica_count OnlineStore#read_replica_count}
   */
   readonly readReplicaCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/online_store#workspace_id OnlineStore#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/online_store#workspace_id OnlineStore#workspace_id}
   */
   readonly workspaceId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/online_store databricks_online_store}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/online_store databricks_online_store}
 */
 export class OnlineStore extends cdktf.TerraformResource {
 
@@ -47,7 +47,7 @@ export class OnlineStore extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OnlineStore resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OnlineStore to import
-  * @param importFromId The id of the existing OnlineStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/online_store#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OnlineStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/online_store#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OnlineStore to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -59,7 +59,7 @@ export class OnlineStore extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.89.0/docs/resources/online_store databricks_online_store} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/online_store databricks_online_store} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +70,7 @@ export class OnlineStore extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_online_store',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.89.0',
+        providerVersion: '1.90.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
