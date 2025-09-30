@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/online_store
+// https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/online_store
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,21 @@ import * as cdktf from 'cdktf';
 
 export interface OnlineStoreConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/online_store#capacity OnlineStore#capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/online_store#capacity OnlineStore#capacity}
   */
   readonly capacity: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/online_store#name OnlineStore#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/online_store#name OnlineStore#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/online_store#read_replica_count OnlineStore#read_replica_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/online_store#read_replica_count OnlineStore#read_replica_count}
   */
   readonly readReplicaCount?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/online_store#workspace_id OnlineStore#workspace_id}
-  */
-  readonly workspaceId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/online_store databricks_online_store}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/online_store databricks_online_store}
 */
 export class OnlineStore extends cdktf.TerraformResource {
 
@@ -47,7 +43,7 @@ export class OnlineStore extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OnlineStore resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OnlineStore to import
-  * @param importFromId The id of the existing OnlineStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/online_store#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OnlineStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/online_store#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OnlineStore to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -59,7 +55,7 @@ export class OnlineStore extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/online_store databricks_online_store} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/online_store databricks_online_store} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +66,7 @@ export class OnlineStore extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_online_store',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.90.0',
+        providerVersion: '1.91.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -84,7 +80,6 @@ export class OnlineStore extends cdktf.TerraformResource {
     this._capacity = config.capacity;
     this._name = config.name;
     this._readReplicaCount = config.readReplicaCount;
-    this._workspaceId = config.workspaceId;
   }
 
   // ==========
@@ -148,22 +143,6 @@ export class OnlineStore extends cdktf.TerraformResource {
     return this.getStringAttribute('state');
   }
 
-  // workspace_id - computed: false, optional: true, required: false
-  private _workspaceId?: string; 
-  public get workspaceId() {
-    return this.getStringAttribute('workspace_id');
-  }
-  public set workspaceId(value: string) {
-    this._workspaceId = value;
-  }
-  public resetWorkspaceId() {
-    this._workspaceId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get workspaceIdInput() {
-    return this._workspaceId;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -173,7 +152,6 @@ export class OnlineStore extends cdktf.TerraformResource {
       capacity: cdktf.stringToTerraform(this._capacity),
       name: cdktf.stringToTerraform(this._name),
       read_replica_count: cdktf.numberToTerraform(this._readReplicaCount),
-      workspace_id: cdktf.stringToTerraform(this._workspaceId),
     };
   }
 
@@ -196,12 +174,6 @@ export class OnlineStore extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "number",
-      },
-      workspace_id: {
-        value: cdktf.stringToHclTerraform(this._workspaceId),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
       },
     };
 

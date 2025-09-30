@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/apps_settings_custom_template
+// https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/apps_settings_custom_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,37 +13,33 @@ import * as cdktf from 'cdktf';
 
 export interface AppsSettingsCustomTemplateConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/apps_settings_custom_template#description AppsSettingsCustomTemplate#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/apps_settings_custom_template#description AppsSettingsCustomTemplate#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/apps_settings_custom_template#git_provider AppsSettingsCustomTemplate#git_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/apps_settings_custom_template#git_provider AppsSettingsCustomTemplate#git_provider}
   */
   readonly gitProvider: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/apps_settings_custom_template#git_repo AppsSettingsCustomTemplate#git_repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/apps_settings_custom_template#git_repo AppsSettingsCustomTemplate#git_repo}
   */
   readonly gitRepo: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/apps_settings_custom_template#manifest AppsSettingsCustomTemplate#manifest}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/apps_settings_custom_template#manifest AppsSettingsCustomTemplate#manifest}
   */
   readonly manifest: AppsSettingsCustomTemplateManifest;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/apps_settings_custom_template#name AppsSettingsCustomTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/apps_settings_custom_template#name AppsSettingsCustomTemplate#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/apps_settings_custom_template#path AppsSettingsCustomTemplate#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/apps_settings_custom_template#path AppsSettingsCustomTemplate#path}
   */
   readonly path: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/apps_settings_custom_template#workspace_id AppsSettingsCustomTemplate#workspace_id}
-  */
-  readonly workspaceId?: string;
 }
 export interface AppsSettingsCustomTemplateManifestResourceSpecsJobSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/apps_settings_custom_template#permission AppsSettingsCustomTemplate#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/apps_settings_custom_template#permission AppsSettingsCustomTemplate#permission}
   */
   readonly permission: string;
 }
@@ -134,7 +130,7 @@ export class AppsSettingsCustomTemplateManifestResourceSpecsJobSpecOutputReferen
 }
 export interface AppsSettingsCustomTemplateManifestResourceSpecsSecretSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/apps_settings_custom_template#permission AppsSettingsCustomTemplate#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/apps_settings_custom_template#permission AppsSettingsCustomTemplate#permission}
   */
   readonly permission: string;
 }
@@ -225,7 +221,7 @@ export class AppsSettingsCustomTemplateManifestResourceSpecsSecretSpecOutputRefe
 }
 export interface AppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/apps_settings_custom_template#permission AppsSettingsCustomTemplate#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/apps_settings_custom_template#permission AppsSettingsCustomTemplate#permission}
   */
   readonly permission: string;
 }
@@ -316,7 +312,7 @@ export class AppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpecO
 }
 export interface AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/apps_settings_custom_template#permission AppsSettingsCustomTemplate#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/apps_settings_custom_template#permission AppsSettingsCustomTemplate#permission}
   */
   readonly permission: string;
 }
@@ -407,11 +403,11 @@ export class AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutp
 }
 export interface AppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/apps_settings_custom_template#permission AppsSettingsCustomTemplate#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/apps_settings_custom_template#permission AppsSettingsCustomTemplate#permission}
   */
   readonly permission: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/apps_settings_custom_template#securable_type AppsSettingsCustomTemplate#securable_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/apps_settings_custom_template#securable_type AppsSettingsCustomTemplate#securable_type}
   */
   readonly securableType: string;
 }
@@ -528,31 +524,31 @@ export class AppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpecOutpu
 }
 export interface AppsSettingsCustomTemplateManifestResourceSpecs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/apps_settings_custom_template#description AppsSettingsCustomTemplate#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/apps_settings_custom_template#description AppsSettingsCustomTemplate#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/apps_settings_custom_template#job_spec AppsSettingsCustomTemplate#job_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/apps_settings_custom_template#job_spec AppsSettingsCustomTemplate#job_spec}
   */
   readonly jobSpec?: AppsSettingsCustomTemplateManifestResourceSpecsJobSpec;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/apps_settings_custom_template#name AppsSettingsCustomTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/apps_settings_custom_template#name AppsSettingsCustomTemplate#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/apps_settings_custom_template#secret_spec AppsSettingsCustomTemplate#secret_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/apps_settings_custom_template#secret_spec AppsSettingsCustomTemplate#secret_spec}
   */
   readonly secretSpec?: AppsSettingsCustomTemplateManifestResourceSpecsSecretSpec;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/apps_settings_custom_template#serving_endpoint_spec AppsSettingsCustomTemplate#serving_endpoint_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/apps_settings_custom_template#serving_endpoint_spec AppsSettingsCustomTemplate#serving_endpoint_spec}
   */
   readonly servingEndpointSpec?: AppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpec;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/apps_settings_custom_template#sql_warehouse_spec AppsSettingsCustomTemplate#sql_warehouse_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/apps_settings_custom_template#sql_warehouse_spec AppsSettingsCustomTemplate#sql_warehouse_spec}
   */
   readonly sqlWarehouseSpec?: AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpec;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/apps_settings_custom_template#uc_securable_spec AppsSettingsCustomTemplate#uc_securable_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/apps_settings_custom_template#uc_securable_spec AppsSettingsCustomTemplate#uc_securable_spec}
   */
   readonly ucSecurableSpec?: AppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpec;
 }
@@ -839,19 +835,19 @@ export class AppsSettingsCustomTemplateManifestResourceSpecsList extends cdktf.C
 }
 export interface AppsSettingsCustomTemplateManifest {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/apps_settings_custom_template#description AppsSettingsCustomTemplate#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/apps_settings_custom_template#description AppsSettingsCustomTemplate#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/apps_settings_custom_template#name AppsSettingsCustomTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/apps_settings_custom_template#name AppsSettingsCustomTemplate#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/apps_settings_custom_template#resource_specs AppsSettingsCustomTemplate#resource_specs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/apps_settings_custom_template#resource_specs AppsSettingsCustomTemplate#resource_specs}
   */
   readonly resourceSpecs?: AppsSettingsCustomTemplateManifestResourceSpecs[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/apps_settings_custom_template#version AppsSettingsCustomTemplate#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/apps_settings_custom_template#version AppsSettingsCustomTemplate#version}
   */
   readonly version: number;
 }
@@ -1026,7 +1022,7 @@ export class AppsSettingsCustomTemplateManifestOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/apps_settings_custom_template databricks_apps_settings_custom_template}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/apps_settings_custom_template databricks_apps_settings_custom_template}
 */
 export class AppsSettingsCustomTemplate extends cdktf.TerraformResource {
 
@@ -1042,7 +1038,7 @@ export class AppsSettingsCustomTemplate extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AppsSettingsCustomTemplate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppsSettingsCustomTemplate to import
-  * @param importFromId The id of the existing AppsSettingsCustomTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/apps_settings_custom_template#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AppsSettingsCustomTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/apps_settings_custom_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppsSettingsCustomTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1054,7 +1050,7 @@ export class AppsSettingsCustomTemplate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/apps_settings_custom_template databricks_apps_settings_custom_template} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/apps_settings_custom_template databricks_apps_settings_custom_template} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1065,7 +1061,7 @@ export class AppsSettingsCustomTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_apps_settings_custom_template',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.90.0',
+        providerVersion: '1.91.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1082,7 +1078,6 @@ export class AppsSettingsCustomTemplate extends cdktf.TerraformResource {
     this._manifest.internalValue = config.manifest;
     this._name = config.name;
     this._path = config.path;
-    this._workspaceId = config.workspaceId;
   }
 
   // ==========
@@ -1175,22 +1170,6 @@ export class AppsSettingsCustomTemplate extends cdktf.TerraformResource {
     return this._path;
   }
 
-  // workspace_id - computed: false, optional: true, required: false
-  private _workspaceId?: string; 
-  public get workspaceId() {
-    return this.getStringAttribute('workspace_id');
-  }
-  public set workspaceId(value: string) {
-    this._workspaceId = value;
-  }
-  public resetWorkspaceId() {
-    this._workspaceId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get workspaceIdInput() {
-    return this._workspaceId;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -1203,7 +1182,6 @@ export class AppsSettingsCustomTemplate extends cdktf.TerraformResource {
       manifest: appsSettingsCustomTemplateManifestToTerraform(this._manifest.internalValue),
       name: cdktf.stringToTerraform(this._name),
       path: cdktf.stringToTerraform(this._path),
-      workspace_id: cdktf.stringToTerraform(this._workspaceId),
     };
   }
 
@@ -1241,12 +1219,6 @@ export class AppsSettingsCustomTemplate extends cdktf.TerraformResource {
       },
       path: {
         value: cdktf.stringToHclTerraform(this._path),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      workspace_id: {
-        value: cdktf.stringToHclTerraform(this._workspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

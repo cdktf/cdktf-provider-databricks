@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/recipient_federation_policy
+// https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/recipient_federation_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,37 +13,33 @@ import * as cdktf from 'cdktf';
 
 export interface RecipientFederationPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/recipient_federation_policy#comment RecipientFederationPolicy#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/recipient_federation_policy#comment RecipientFederationPolicy#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/recipient_federation_policy#name RecipientFederationPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/recipient_federation_policy#name RecipientFederationPolicy#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/recipient_federation_policy#oidc_policy RecipientFederationPolicy#oidc_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/recipient_federation_policy#oidc_policy RecipientFederationPolicy#oidc_policy}
   */
   readonly oidcPolicy?: RecipientFederationPolicyOidcPolicy;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/recipient_federation_policy#workspace_id RecipientFederationPolicy#workspace_id}
-  */
-  readonly workspaceId?: string;
 }
 export interface RecipientFederationPolicyOidcPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/recipient_federation_policy#audiences RecipientFederationPolicy#audiences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/recipient_federation_policy#audiences RecipientFederationPolicy#audiences}
   */
   readonly audiences?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/recipient_federation_policy#issuer RecipientFederationPolicy#issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/recipient_federation_policy#issuer RecipientFederationPolicy#issuer}
   */
   readonly issuer: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/recipient_federation_policy#subject RecipientFederationPolicy#subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/recipient_federation_policy#subject RecipientFederationPolicy#subject}
   */
   readonly subject: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/recipient_federation_policy#subject_claim RecipientFederationPolicy#subject_claim}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/recipient_federation_policy#subject_claim RecipientFederationPolicy#subject_claim}
   */
   readonly subjectClaim: string;
 }
@@ -215,7 +211,7 @@ export class RecipientFederationPolicyOidcPolicyOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/recipient_federation_policy databricks_recipient_federation_policy}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/recipient_federation_policy databricks_recipient_federation_policy}
 */
 export class RecipientFederationPolicy extends cdktf.TerraformResource {
 
@@ -231,7 +227,7 @@ export class RecipientFederationPolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RecipientFederationPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RecipientFederationPolicy to import
-  * @param importFromId The id of the existing RecipientFederationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/recipient_federation_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RecipientFederationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/recipient_federation_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RecipientFederationPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -243,7 +239,7 @@ export class RecipientFederationPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/recipient_federation_policy databricks_recipient_federation_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/recipient_federation_policy databricks_recipient_federation_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -254,7 +250,7 @@ export class RecipientFederationPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_recipient_federation_policy',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.90.0',
+        providerVersion: '1.91.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -268,7 +264,6 @@ export class RecipientFederationPolicy extends cdktf.TerraformResource {
     this._comment = config.comment;
     this._name = config.name;
     this._oidcPolicy.internalValue = config.oidcPolicy;
-    this._workspaceId = config.workspaceId;
   }
 
   // ==========
@@ -338,22 +333,6 @@ export class RecipientFederationPolicy extends cdktf.TerraformResource {
     return this.getStringAttribute('update_time');
   }
 
-  // workspace_id - computed: false, optional: true, required: false
-  private _workspaceId?: string; 
-  public get workspaceId() {
-    return this.getStringAttribute('workspace_id');
-  }
-  public set workspaceId(value: string) {
-    this._workspaceId = value;
-  }
-  public resetWorkspaceId() {
-    this._workspaceId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get workspaceIdInput() {
-    return this._workspaceId;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -363,7 +342,6 @@ export class RecipientFederationPolicy extends cdktf.TerraformResource {
       comment: cdktf.stringToTerraform(this._comment),
       name: cdktf.stringToTerraform(this._name),
       oidc_policy: recipientFederationPolicyOidcPolicyToTerraform(this._oidcPolicy.internalValue),
-      workspace_id: cdktf.stringToTerraform(this._workspaceId),
     };
   }
 
@@ -386,12 +364,6 @@ export class RecipientFederationPolicy extends cdktf.TerraformResource {
         isBlock: true,
         type: "struct",
         storageClassType: "RecipientFederationPolicyOidcPolicy",
-      },
-      workspace_id: {
-        value: cdktf.stringToHclTerraform(this._workspaceId),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
       },
     };
 

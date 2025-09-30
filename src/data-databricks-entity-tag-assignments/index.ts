@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/entity_tag_assignments
+// https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/entity_tag_assignments
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,33 +13,29 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksEntityTagAssignmentsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/entity_tag_assignments#entity_name DataDatabricksEntityTagAssignments#entity_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/entity_tag_assignments#entity_name DataDatabricksEntityTagAssignments#entity_name}
   */
   readonly entityName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/entity_tag_assignments#entity_type DataDatabricksEntityTagAssignments#entity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/entity_tag_assignments#entity_type DataDatabricksEntityTagAssignments#entity_type}
   */
   readonly entityType: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/entity_tag_assignments#workspace_id DataDatabricksEntityTagAssignments#workspace_id}
-  */
-  readonly workspaceId?: string;
 }
 export interface DataDatabricksEntityTagAssignmentsTagAssignments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/entity_tag_assignments#entity_name DataDatabricksEntityTagAssignments#entity_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/entity_tag_assignments#entity_name DataDatabricksEntityTagAssignments#entity_name}
   */
   readonly entityName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/entity_tag_assignments#entity_type DataDatabricksEntityTagAssignments#entity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/entity_tag_assignments#entity_type DataDatabricksEntityTagAssignments#entity_type}
   */
   readonly entityType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/entity_tag_assignments#tag_key DataDatabricksEntityTagAssignments#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/entity_tag_assignments#tag_key DataDatabricksEntityTagAssignments#tag_key}
   */
   readonly tagKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/entity_tag_assignments#tag_value DataDatabricksEntityTagAssignments#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/entity_tag_assignments#tag_value DataDatabricksEntityTagAssignments#tag_value}
   */
   readonly tagValue?: string;
 }
@@ -223,7 +219,7 @@ export class DataDatabricksEntityTagAssignmentsTagAssignmentsList extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/entity_tag_assignments databricks_entity_tag_assignments}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/entity_tag_assignments databricks_entity_tag_assignments}
 */
 export class DataDatabricksEntityTagAssignments extends cdktf.TerraformDataSource {
 
@@ -239,7 +235,7 @@ export class DataDatabricksEntityTagAssignments extends cdktf.TerraformDataSourc
   * Generates CDKTF code for importing a DataDatabricksEntityTagAssignments resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksEntityTagAssignments to import
-  * @param importFromId The id of the existing DataDatabricksEntityTagAssignments that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/entity_tag_assignments#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksEntityTagAssignments that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/entity_tag_assignments#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksEntityTagAssignments to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -251,7 +247,7 @@ export class DataDatabricksEntityTagAssignments extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/data-sources/entity_tag_assignments databricks_entity_tag_assignments} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/entity_tag_assignments databricks_entity_tag_assignments} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -262,7 +258,7 @@ export class DataDatabricksEntityTagAssignments extends cdktf.TerraformDataSourc
       terraformResourceType: 'databricks_entity_tag_assignments',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.90.0',
+        providerVersion: '1.91.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -275,7 +271,6 @@ export class DataDatabricksEntityTagAssignments extends cdktf.TerraformDataSourc
     });
     this._entityName = config.entityName;
     this._entityType = config.entityType;
-    this._workspaceId = config.workspaceId;
   }
 
   // ==========
@@ -314,22 +309,6 @@ export class DataDatabricksEntityTagAssignments extends cdktf.TerraformDataSourc
     return this._tagAssignments;
   }
 
-  // workspace_id - computed: false, optional: true, required: false
-  private _workspaceId?: string; 
-  public get workspaceId() {
-    return this.getStringAttribute('workspace_id');
-  }
-  public set workspaceId(value: string) {
-    this._workspaceId = value;
-  }
-  public resetWorkspaceId() {
-    this._workspaceId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get workspaceIdInput() {
-    return this._workspaceId;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -338,7 +317,6 @@ export class DataDatabricksEntityTagAssignments extends cdktf.TerraformDataSourc
     return {
       entity_name: cdktf.stringToTerraform(this._entityName),
       entity_type: cdktf.stringToTerraform(this._entityType),
-      workspace_id: cdktf.stringToTerraform(this._workspaceId),
     };
   }
 
@@ -352,12 +330,6 @@ export class DataDatabricksEntityTagAssignments extends cdktf.TerraformDataSourc
       },
       entity_type: {
         value: cdktf.stringToHclTerraform(this._entityType),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      workspace_id: {
-        value: cdktf.stringToHclTerraform(this._workspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
