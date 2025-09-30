@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/database_instance
+// https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/database_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,57 +13,53 @@ import * as cdktf from 'cdktf';
 
 export interface DatabaseInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/database_instance#capacity DatabaseInstance#capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/database_instance#capacity DatabaseInstance#capacity}
   */
   readonly capacity?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/database_instance#enable_pg_native_login DatabaseInstance#enable_pg_native_login}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/database_instance#enable_pg_native_login DatabaseInstance#enable_pg_native_login}
   */
   readonly enablePgNativeLogin?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/database_instance#enable_readable_secondaries DatabaseInstance#enable_readable_secondaries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/database_instance#enable_readable_secondaries DatabaseInstance#enable_readable_secondaries}
   */
   readonly enableReadableSecondaries?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/database_instance#name DatabaseInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/database_instance#name DatabaseInstance#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/database_instance#node_count DatabaseInstance#node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/database_instance#node_count DatabaseInstance#node_count}
   */
   readonly nodeCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/database_instance#parent_instance_ref DatabaseInstance#parent_instance_ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/database_instance#parent_instance_ref DatabaseInstance#parent_instance_ref}
   */
   readonly parentInstanceRef?: DatabaseInstanceParentInstanceRef;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/database_instance#purge_on_delete DatabaseInstance#purge_on_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/database_instance#purge_on_delete DatabaseInstance#purge_on_delete}
   */
   readonly purgeOnDelete?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/database_instance#retention_window_in_days DatabaseInstance#retention_window_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/database_instance#retention_window_in_days DatabaseInstance#retention_window_in_days}
   */
   readonly retentionWindowInDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/database_instance#stopped DatabaseInstance#stopped}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/database_instance#stopped DatabaseInstance#stopped}
   */
   readonly stopped?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/database_instance#workspace_id DatabaseInstance#workspace_id}
-  */
-  readonly workspaceId?: string;
 }
 export interface DatabaseInstanceChildInstanceRefs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/database_instance#branch_time DatabaseInstance#branch_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/database_instance#branch_time DatabaseInstance#branch_time}
   */
   readonly branchTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/database_instance#lsn DatabaseInstance#lsn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/database_instance#lsn DatabaseInstance#lsn}
   */
   readonly lsn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/database_instance#name DatabaseInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/database_instance#name DatabaseInstance#name}
   */
   readonly name?: string;
 }
@@ -237,15 +233,15 @@ export class DatabaseInstanceChildInstanceRefsList extends cdktf.ComplexList {
 }
 export interface DatabaseInstanceParentInstanceRef {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/database_instance#branch_time DatabaseInstance#branch_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/database_instance#branch_time DatabaseInstance#branch_time}
   */
   readonly branchTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/database_instance#lsn DatabaseInstance#lsn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/database_instance#lsn DatabaseInstance#lsn}
   */
   readonly lsn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/database_instance#name DatabaseInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/database_instance#name DatabaseInstance#name}
   */
   readonly name?: string;
 }
@@ -407,7 +403,7 @@ export class DatabaseInstanceParentInstanceRefOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/database_instance databricks_database_instance}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/database_instance databricks_database_instance}
 */
 export class DatabaseInstance extends cdktf.TerraformResource {
 
@@ -423,7 +419,7 @@ export class DatabaseInstance extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DatabaseInstance resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatabaseInstance to import
-  * @param importFromId The id of the existing DatabaseInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/database_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatabaseInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/database_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatabaseInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -435,7 +431,7 @@ export class DatabaseInstance extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/database_instance databricks_database_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/database_instance databricks_database_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -446,7 +442,7 @@ export class DatabaseInstance extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_database_instance',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.90.0',
+        providerVersion: '1.91.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -466,7 +462,6 @@ export class DatabaseInstance extends cdktf.TerraformResource {
     this._purgeOnDelete = config.purgeOnDelete;
     this._retentionWindowInDays = config.retentionWindowInDays;
     this._stopped = config.stopped;
-    this._workspaceId = config.workspaceId;
   }
 
   // ==========
@@ -503,6 +498,11 @@ export class DatabaseInstance extends cdktf.TerraformResource {
   // creator - computed: true, optional: false, required: false
   public get creator() {
     return this.getStringAttribute('creator');
+  }
+
+  // effective_capacity - computed: true, optional: false, required: false
+  public get effectiveCapacity() {
+    return this.getStringAttribute('effective_capacity');
   }
 
   // effective_enable_pg_native_login - computed: true, optional: false, required: false
@@ -680,22 +680,6 @@ export class DatabaseInstance extends cdktf.TerraformResource {
     return this.getStringAttribute('uid');
   }
 
-  // workspace_id - computed: false, optional: true, required: false
-  private _workspaceId?: string; 
-  public get workspaceId() {
-    return this.getStringAttribute('workspace_id');
-  }
-  public set workspaceId(value: string) {
-    this._workspaceId = value;
-  }
-  public resetWorkspaceId() {
-    this._workspaceId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get workspaceIdInput() {
-    return this._workspaceId;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -711,7 +695,6 @@ export class DatabaseInstance extends cdktf.TerraformResource {
       purge_on_delete: cdktf.booleanToTerraform(this._purgeOnDelete),
       retention_window_in_days: cdktf.numberToTerraform(this._retentionWindowInDays),
       stopped: cdktf.booleanToTerraform(this._stopped),
-      workspace_id: cdktf.stringToTerraform(this._workspaceId),
     };
   }
 
@@ -770,12 +753,6 @@ export class DatabaseInstance extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
-      },
-      workspace_id: {
-        value: cdktf.stringToHclTerraform(this._workspaceId),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
       },
     };
 
